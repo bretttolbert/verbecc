@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 from verbecc import __version__
 
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding='utf-8') as f:
     long_description = f.read()
 
 install_requires = [
