@@ -2,6 +2,9 @@
 from setuptools import setup, find_packages
 from verbecc import __version__
 
+with open("README.md", "r") as f:
+    long_description = f.read()
+
 install_requires = [
     "lxml>=4.1.1",
     "mock>=2.0.0,<3.0.0",
@@ -14,6 +17,8 @@ setup(
     name='verbecc',
     version=__version__,
     description='Verbes, complètement conjugués - conjugueur français | Verbs, completely conjugated - French conjugator',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Brett Tolbert',
     author_email='brett.tolbert@gmail.com',
     url='http://verbe.cc',
