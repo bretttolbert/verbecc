@@ -55,7 +55,7 @@ https://github.com/bretttolbert/verbecc-web
 #### Live demo
 http://verbe.cc
 
-Features
+#### Features
 * Dockerized
 * Search suggestions
 * Implemented entirely in Javascript (JQuery) - conjugations are generated without reloading the page
