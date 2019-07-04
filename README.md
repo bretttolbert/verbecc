@@ -30,6 +30,9 @@ https://github.com/bretttolbert/verbecc-svc
 
 [![pipeline status](https://gitlab.com/bretttolbert/verb-conjugate-fr/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verb-conjugate-fr/pipelines)
 
+#### Live demo
+http://verbe.cc/vcfr/conjugate/manger
+
 #### Features
 * Dockerized microservice
 * Unit tested
@@ -49,6 +52,7 @@ Created with the help of [verbecc](https://github.com/bretttolbert/verbecc), [Fa
 
 https://github.com/bretttolbert/verbecc-web
 
+#### Live demo
 http://verbe.cc
 
 Features
@@ -59,10 +63,6 @@ Features
 
 #### Credits
 Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-svc), and [JQuery](https://jquery.com/)
-
-#### See it live
-http://verbe.cc
-http://verbe.cc/vcfr/conjugate/manger
 
 
 ```
