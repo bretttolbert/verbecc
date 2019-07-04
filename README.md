@@ -6,6 +6,8 @@
 
 https://github.com/bretttolbert/verbecc
 
+[![pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines)
+
 # verbecc-svc
 
 ### verbecc-svc Microservice Python avec un API REST pour la conjugaison des verbes français
@@ -13,6 +15,8 @@ https://github.com/bretttolbert/verbecc
 ### verbecc-svc Python microservice with REST API for conjugation of French verbs
 
 https://github.com/bretttolbert/verbecc-svc
+
+[![pipeline status](https://gitlab.com/bretttolbert/verb-conjugate-fr/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verb-conjugate-fr/pipelines)
 
 # verbecc-web
 
@@ -24,6 +28,10 @@ https://github.com/bretttolbert/verbecc-web
 
 http://verbe.cc
 
+Features
+* Over 7,000 verbs supported
+* Unit tested
+* Continuous Integration and Deployment with GitLab CI/CD
 
 ## Installation
 
