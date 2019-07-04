@@ -67,7 +67,6 @@ class ConjugationsParser:
         self._keys = [template.name for template in self.templates]
         self.impersonal_templates = \
             [t.name for t in self.templates if t.impersonal]
-        print('Loaded {} conjugation templates'.format(len(self.templates)))
 
     def find_template(self, name):
         """Assumes templates are already sorted by name"""

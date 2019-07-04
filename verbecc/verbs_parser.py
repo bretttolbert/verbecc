@@ -33,7 +33,6 @@ class VerbsParser:
                 self.verbs.append(Verb(child))
         self.verbs = sorted(self.verbs, key=lambda x: x.infinitive_no_accents)
         self._keys = [verb.infinitive_no_accents for verb in self.verbs]
-        print('Loaded {} verbs'.format(len(self.verbs)))
 
     def find_verb_by_infinitive(self, infinitive):
         """Assumes verbs are already sorted by infinitive"""
