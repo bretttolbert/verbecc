@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
+from verbecc import __version__
 
 install_requires = [
     "lxml>=4.1.1",
@@ -11,7 +12,7 @@ install_requires = [
 
 setup(
     name='verbecc',
-    version='1.0',
+    version=__version__,
     description='Verbes, complètement conjugués - conjugueur français | Verbs, completely conjugated - French conjugator',
     author='Brett Tolbert',
     author_email='brett.tolbert@gmail.com',
