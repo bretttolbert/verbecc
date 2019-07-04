@@ -27,5 +27,15 @@ setup(
     zip_safe=False,
     install_requires=install_requires,
     tests_require=install_requires,
-    test_suite="tests"
+    test_suite="tests",
+    classifiers=[
+        "Programming Language :: Python :: 3.7",
+        "License :: OSI Approved :: GNU General Public License (GPL)",
+        "Operating System :: OS Independent",
+        "Natural Language :: French",
+        "Development Status :: 5 - Production/Stable",
+        "Topic :: Education",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Text Processing :: Linguistic"
+    ],
 )
