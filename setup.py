@@ -21,7 +21,7 @@ setup(
     long_description_content_type="text/markdown",
     author='Brett Tolbert',
     author_email='brett.tolbert@gmail.com',
-    url='http://verbe.cc',
+    url='https://github.com/bretttolbert/verbecc',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
