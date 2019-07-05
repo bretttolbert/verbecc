@@ -26,7 +26,7 @@
 	<!ATTLIST template name CDATA #REQUIRED>
 
 	<!ELEMENT infinitif (infinitif-présent)>
-	<!ELEMENT indicatif (present, imparfait, future, simple-past)>
+	<!ELEMENT indicatif (present, imparfait, futur, simple-past)>
 	<!ELEMENT conditionnel (present)>
 	<!ELEMENT subjonctif (present, imparfait)>
 	<!ELEMENT imperatif (imperatif-présent)>
@@ -35,7 +35,7 @@
 	<!ELEMENT infinitif-présent (p)>
 	<!ELEMENT present (p, p, p, p, p, p)>
 	<!ELEMENT imparfait (p, p, p, p, p, p)>
-	<!ELEMENT future (p, p, p, p, p, p)>
+	<!ELEMENT futur (p, p, p, p, p, p)>
 	<!ELEMENT simple-past (p, p, p, p, p, p)>
 	<!ELEMENT imperatif-présent (p, p, p)>
 	<!ELEMENT participe-présent (p)>
@@ -70,14 +70,14 @@
 			<p><i>ciez</i></p>
 			<p><i>çaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>cerai</i></p>
 			<p><i>ceras</i></p>
 			<p><i>cera</i></p>
 			<p><i>cerons</i></p>
 			<p><i>cerez</i></p>
 			<p><i>ceront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>çai</i></p>
 			<p><i>ças</i></p>
@@ -158,14 +158,14 @@
 			<p><i>ez</i></p>
 			<p><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
 			<p><i>era</i></p>
 			<p><i>erons</i></p>
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ai</i></p>
 			<p><i>as</i></p>
@@ -246,14 +246,14 @@
 			<p><i>eciez</i></p>
 			<p><i>eçaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ecerai</i><i>ècerai</i></p>
 			<p><i>eceras</i><i>èceras</i></p>
 			<p><i>ecera</i><i>ècera</i></p>
 			<p><i>ecerons</i><i>ècerons</i></p>
 			<p><i>ecerez</i><i>ècerez</i></p>
 			<p><i>eceront</i><i>èceront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>eçai</i></p>
 			<p><i>eças</i></p>
@@ -334,14 +334,14 @@
 			<p><i>giez</i></p>
 			<p><i>geaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>gerai</i></p>
 			<p><i>geras</i></p>
 			<p><i>gera</i></p>
 			<p><i>gerons</i></p>
 			<p><i>gerez</i></p>
 			<p><i>geront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>geai</i></p>
 			<p><i>geas</i></p>
@@ -422,14 +422,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>gera</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -510,14 +510,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ierai</i><i>yerai</i></p>
 			<p><i>ieras</i><i>yeras</i></p>
 			<p><i>iera</i><i>yera</i></p>
 			<p><i>ierons</i><i>yerons</i></p>
 			<p><i>ierez</i><i>yerez</i></p>
 			<p><i>ieront</i><i>yeront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>yai</i></p>
 			<p><i>yas</i></p>
@@ -598,14 +598,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ierai</i></p>
 			<p><i>ieras</i></p>
 			<p><i>iera</i></p>
 			<p><i>ierons</i></p>
 			<p><i>ierez</i></p>
 			<p><i>ieront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>yai</i></p>
 			<p><i>yas</i></p>
@@ -686,14 +686,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>yerai</i></p>
 			<p><i>yeras</i></p>
 			<p><i>yera</i></p>
 			<p><i>yerons</i></p>
 			<p><i>yerez</i></p>
 			<p><i>yeront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>yai</i></p>
 			<p><i>yas</i></p>
@@ -774,14 +774,14 @@
 			<p><i>eliez</i></p>
 			<p><i>elaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ellerai</i></p>
 			<p><i>elleras</i></p>
 			<p><i>ellera</i></p>
 			<p><i>ellerons</i></p>
 			<p><i>ellerez</i></p>
 			<p><i>elleront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>elai</i></p>
 			<p><i>elas</i></p>
@@ -862,14 +862,14 @@
 			<p><i>eliez</i></p>
 			<p><i>elaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èlerai</i></p>
 			<p><i>èleras</i></p>
 			<p><i>èlera</i></p>
 			<p><i>èlerons</i></p>
 			<p><i>èlerez</i></p>
 			<p><i>èleront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>elai</i></p>
 			<p><i>elas</i></p>
@@ -950,14 +950,14 @@
 			<p><i>eliez</i></p>
 			<p><i>elaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ellerai</i><i>èlerai</i></p>
 			<p><i>elleras</i><i>èleras</i></p>
 			<p><i>ellera</i><i>èlera</i></p>
 			<p><i>ellerons</i><i>èlerons</i></p>
 			<p><i>ellerez</i><i>èlerez</i></p>
 			<p><i>elleront</i><i>èleront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>elai</i></p>
 			<p><i>elas</i></p>
@@ -1038,14 +1038,14 @@
 			<p><i>etiez</i></p>
 			<p><i>etaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>etterai</i></p>
 			<p><i>etteras</i></p>
 			<p><i>ettera</i></p>
 			<p><i>etterons</i></p>
 			<p><i>etterez</i></p>
 			<p><i>etteront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>etai</i></p>
 			<p><i>etas</i></p>
@@ -1126,14 +1126,14 @@
 			<p><i>etiez</i></p>
 			<p><i>etaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èterai</i></p>
 			<p><i>èteras</i></p>
 			<p><i>ètera</i></p>
 			<p><i>èterons</i></p>
 			<p><i>èterez</i></p>
 			<p><i>èteront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>etai</i></p>
 			<p><i>etas</i></p>
@@ -1214,14 +1214,14 @@
 			<p><i>étiez</i></p>
 			<p><i>étaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èterai</i></p>
 			<p><i>èteras</i></p>
 			<p><i>ètera</i></p>
 			<p><i>èterons</i></p>
 			<p><i>èterez</i></p>
 			<p><i>èteront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>étai</i></p>
 			<p><i>étas</i></p>
@@ -1302,14 +1302,14 @@
 			<p><i>emiez</i></p>
 			<p><i>emaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èmerai</i></p>
 			<p><i>èmeras</i></p>
 			<p><i>èmera</i></p>
 			<p><i>èmerons</i></p>
 			<p><i>èmerez</i></p>
 			<p><i>èmeront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>emai</i></p>
 			<p><i>emas</i></p>
@@ -1390,14 +1390,14 @@
 			<p><i>éguiez</i></p>
 			<p><i>éguaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èguerai</i></p>
 			<p><i>ègueras</i></p>
 			<p><i>èguera</i></p>
 			<p><i>èguerons</i></p>
 			<p><i>èguerez</i></p>
 			<p><i>ègueront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>éguai</i></p>
 			<p><i>éguas</i></p>
@@ -1478,14 +1478,14 @@
 			<p><i>équiez</i></p>
 			<p><i>équaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èquerai</i></p>
 			<p><i>èqueras</i></p>
 			<p><i>èquera</i></p>
 			<p><i>èquerons</i></p>
 			<p><i>èquerez</i></p>
 			<p><i>èqueront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>équai</i></p>
 			<p><i>équas</i></p>
@@ -1566,14 +1566,14 @@
 			<p><i>éliez</i></p>
 			<p><i>élaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>élerai</i><i>èlerai</i></p>
 			<p><i>éleras</i><i>èleras</i></p>
 			<p><i>élera</i><i>èlera</i></p>
 			<p><i>élerons</i><i>èlerons</i></p>
 			<p><i>élerez</i><i>èlerez</i></p>
 			<p><i>éleront</i><i>èleront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>élai</i></p>
 			<p><i>élas</i></p>
@@ -1654,14 +1654,14 @@
 			<p><i>étriez</i></p>
 			<p><i>étraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>étrerai</i><i>ètrerai</i></p>
 			<p><i>étreras</i><i>ètreras</i></p>
 			<p><i>étrera</i><i>ètrera</i></p>
 			<p><i>étrerons</i><i>ètrerons</i></p>
 			<p><i>étrerez</i><i>ètrerez</i></p>
 			<p><i>étreront</i><i>ètreront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>étrai</i></p>
 			<p><i>étras</i></p>
@@ -1742,14 +1742,14 @@
 			<p><i>égliez</i></p>
 			<p><i>églaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>églerai</i><i>èglerai</i></p>
 			<p><i>égleras</i><i>ègleras</i></p>
 			<p><i>églera</i><i>èglera</i></p>
 			<p><i>églerons</i><i>èglerons</i></p>
 			<p><i>églerez</i><i>èglerez</i></p>
 			<p><i>égleront</i><i>ègleront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>églai</i></p>
 			<p><i>églas</i></p>
@@ -1830,14 +1830,14 @@
 			<p><i>égniez</i></p>
 			<p><i>égnaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>égnerai</i><i>ègnerai</i></p>
 			<p><i>égneras</i><i>ègneras</i></p>
 			<p><i>égnera</i><i>ègnera</i></p>
 			<p><i>égnerons</i><i>ègnerons</i></p>
 			<p><i>égnerez</i><i>ègnerez</i></p>
 			<p><i>égneront</i><i>ègneront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>égnai</i></p>
 			<p><i>égnas</i></p>
@@ -1918,14 +1918,14 @@
 			<p><i>ébriez</i></p>
 			<p><i>ébraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ébrerai</i><i>èbrerai</i></p>
 			<p><i>ébreras</i><i>èbreras</i></p>
 			<p><i>ébrera</i><i>èbrera</i></p>
 			<p><i>ébrerons</i><i>èbrerons</i></p>
 			<p><i>ébrerez</i><i>èbrerez</i></p>
 			<p><i>ébreront</i><i>èbreront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ébrai</i></p>
 			<p><i>ébras</i></p>
@@ -2006,14 +2006,14 @@
 			<p><i>égriez</i></p>
 			<p><i>égraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>égrerai</i><i>ègrerai</i></p>
 			<p><i>égreras</i><i>ègreras</i></p>
 			<p><i>égrera</i><i>ègrera</i></p>
 			<p><i>égrerons</i><i>ègrerons</i></p>
 			<p><i>égrerez</i><i>ègrerez</i></p>
 			<p><i>égreront</i><i>ègreront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>égrai</i></p>
 			<p><i>égras</i></p>
@@ -2094,14 +2094,14 @@
 			<p><i>étiez</i></p>
 			<p><i>étaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>éterai</i><i>èterai</i></p>
 			<p><i>éteras</i><i>èteras</i></p>
 			<p><i>étera</i><i>ètera</i></p>
 			<p><i>éterons</i><i>èterons</i></p>
 			<p><i>éterez</i><i>èterez</i></p>
 			<p><i>éteront</i><i>èteront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>étai</i></p>
 			<p><i>étas</i></p>
@@ -2182,14 +2182,14 @@
 			<p><i>éniez</i></p>
 			<p><i>énaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>énerai</i><i>ènerai</i></p>
 			<p><i>éneras</i><i>èneras</i></p>
 			<p><i>énera</i><i>ènera</i></p>
 			<p><i>énerons</i><i>ènerons</i></p>
 			<p><i>énerez</i><i>ènerez</i></p>
 			<p><i>éneront</i><i>èneront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>énai</i></p>
 			<p><i>énas</i></p>
@@ -2270,14 +2270,14 @@
 			<p><i>eniez</i></p>
 			<p><i>enaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ènerai</i></p>
 			<p><i>èneras</i></p>
 			<p><i>ènera</i></p>
 			<p><i>ènerons</i></p>
 			<p><i>ènerez</i></p>
 			<p><i>èneront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>enai</i></p>
 			<p><i>enas</i></p>
@@ -2358,14 +2358,14 @@
 			<p><i>eviez</i></p>
 			<p><i>evaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èverai</i></p>
 			<p><i>èveras</i></p>
 			<p><i>èvera</i></p>
 			<p><i>èverons</i></p>
 			<p><i>èverez</i></p>
 			<p><i>èveront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>evai</i></p>
 			<p><i>evas</i></p>
@@ -2446,14 +2446,14 @@
 			<p><i>esiez</i></p>
 			<p><i>esaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èserai</i></p>
 			<p><i>èseras</i></p>
 			<p><i>èsera</i></p>
 			<p><i>èserons</i></p>
 			<p><i>èserez</i></p>
 			<p><i>èseront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>esai</i></p>
 			<p><i>esas</i></p>
@@ -2534,14 +2534,14 @@
 			<p><i>échiez</i></p>
 			<p><i>échaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>écherai</i></p>
 			<p><i>écheras</i></p>
 			<p><i>échera</i></p>
 			<p><i>écherons</i></p>
 			<p><i>écherez</i></p>
 			<p><i>écheront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>échai</i></p>
 			<p><i>échas</i></p>
@@ -2622,14 +2622,14 @@
 			<p><i>ériez</i></p>
 			<p><i>éraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>érerai</i><i>èrerai</i></p>
 			<p><i>éreras</i><i>èreras</i></p>
 			<p><i>érera</i><i>èrera</i></p>
 			<p><i>érerons</i><i>èrerons</i></p>
 			<p><i>érerez</i><i>èrerez</i></p>
 			<p><i>éreront</i><i>èreront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>érai</i></p>
 			<p><i>éras</i></p>
@@ -2710,14 +2710,14 @@
 			<p><i>evriez</i></p>
 			<p><i>evraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>èvrerai</i></p>
 			<p><i>èvreras</i></p>
 			<p><i>èvrera</i></p>
 			<p><i>èvrerons</i></p>
 			<p><i>èvrerez</i></p>
 			<p><i>èvreront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>evrai</i></p>
 			<p><i>evras</i></p>
@@ -2798,14 +2798,14 @@
 			<p><i>édiez</i></p>
 			<p><i>édaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>éderai</i><i>èderai</i></p>
 			<p><i>éderas</i><i>èderas</i></p>
 			<p><i>édera</i><i>èdera</i></p>
 			<p><i>éderons</i><i>èderons</i></p>
 			<p><i>éderez</i><i>èderez</i></p>
 			<p><i>éderont</i><i>èderont</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>édai</i></p>
 			<p><i>édas</i></p>
@@ -2886,14 +2886,14 @@
 			<p><i>épiez</i></p>
 			<p><i>épaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>éperai</i><i>èperai</i></p>
 			<p><i>éperas</i><i>èperas</i></p>
 			<p><i>épera</i><i>èpera</i></p>
 			<p><i>éperons</i><i>èperons</i></p>
 			<p><i>éperez</i><i>èperez</i></p>
 			<p><i>éperont</i><i>èperont</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>épai</i></p>
 			<p><i>épas</i></p>
@@ -2974,14 +2974,14 @@
 			<p><i>epiez</i></p>
 			<p><i>epaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>eperai</i><i>èperai</i></p>
 			<p><i>eperas</i><i>èperas</i></p>
 			<p><i>epera</i><i>èpera</i></p>
 			<p><i>eperons</i><i>èperons</i></p>
 			<p><i>eperez</i><i>èperez</i></p>
 			<p><i>eperont</i><i>èperont</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>epai</i></p>
 			<p><i>epas</i></p>
@@ -3062,14 +3062,14 @@
 			<p><i>ésiez</i></p>
 			<p><i>ésaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>éserai</i><i>èserai</i></p>
 			<p><i>éseras</i><i>èseras</i></p>
 			<p><i>ésera</i><i>èsera</i></p>
 			<p><i>éserons</i><i>èserons</i></p>
 			<p><i>éserez</i><i>èserez</i></p>
 			<p><i>éseront</i><i>èseront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ésai</i></p>
 			<p><i>ésas</i></p>
@@ -3150,14 +3150,14 @@
 			<p><i>émiez</i></p>
 			<p><i>émaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>émerai</i><i>èmerai</i></p>
 			<p><i>émeras</i><i>èmeras</i></p>
 			<p><i>émera</i><i>èmera</i></p>
 			<p><i>émerons</i><i>èmerons</i></p>
 			<p><i>émerez</i><i>èmerez</i></p>
 			<p><i>émeront</i><i>èmeront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>émai</i></p>
 			<p><i>émas</i></p>
@@ -3238,14 +3238,14 @@
 			<p><i>égiez</i></p>
 			<p><i>égeaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ègerai</i></p>
 			<p><i>ègeras</i></p>
 			<p><i>ègera</i></p>
 			<p><i>ègerons</i></p>
 			<p><i>ègerez</i></p>
 			<p><i>ègeront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>égeai</i></p>
 			<p><i>égeas</i></p>
@@ -3326,14 +3326,14 @@
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
 			<p><i>era</i></p>
 			<p><i>erons</i></p>
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ai</i></p>
 			<p><i>as</i></p>
@@ -3414,14 +3414,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>era</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -3502,14 +3502,14 @@
 			<p><i>évriez</i></p>
 			<p><i>évraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>évrerai</i></p>
 			<p><i>évreras</i></p>
 			<p><i>évrera</i></p>
 			<p><i>évrerons</i></p>
 			<p><i>évrerez</i></p>
 			<p><i>évreront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>évrai</i></p>
 			<p><i>évras</i></p>
@@ -3590,14 +3590,14 @@
 			<p><i>écriez</i></p>
 			<p><i>écraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>écrerai</i></p>
 			<p><i>écreras</i></p>
 			<p><i>écrera</i></p>
 			<p><i>écrerons</i></p>
 			<p><i>écrerez</i></p>
 			<p><i>écreront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>écrai</i></p>
 			<p><i>écras</i></p>
@@ -3678,14 +3678,14 @@
 			<p><i>ériez</i></p>
 			<p><i>éraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>errai</i></p>
 			<p><i>erras</i></p>
 			<p><i>erra</i></p>
 			<p><i>errons</i></p>
 			<p><i>errez</i></p>
 			<p><i>erront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -3766,14 +3766,14 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ïrai</i></p>
 			<p><i>ïras</i></p>
 			<p><i>ïra</i></p>
 			<p><i>ïrons</i></p>
 			<p><i>ïrez</i></p>
 			<p><i>ïront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ïs</i></p>
 			<p><i>ïs</i></p>
@@ -3854,14 +3854,14 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ïrai</i></p>
 			<p><i>ïras</i></p>
 			<p><i>ïra</i></p>
 			<p><i>ïrons</i></p>
 			<p><i>ïrez</i></p>
 			<p><i>ïront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ïs</i></p>
 			<p><i>ïs</i></p>
@@ -3942,14 +3942,14 @@
 			<p><i>eurissiez</i><i>orissiez</i></p>
 			<p><i>eurissaient</i><i>orissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>eurirai</i></p>
 			<p><i>euriras</i></p>
 			<p><i>eurira</i></p>
 			<p><i>eurirons</i></p>
 			<p><i>eurirez</i></p>
 			<p><i>euriront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>euris</i></p>
 			<p><i>euris</i></p>
@@ -4030,14 +4030,14 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>rirai</i></p>
 			<p><i>riras</i></p>
 			<p><i>rira</i></p>
 			<p><i>rirons</i></p>
 			<p><i>rirez</i></p>
 			<p><i>riront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ris</i></p>
 			<p><i>ris</i></p>
@@ -4118,14 +4118,14 @@
 			<p><i>miez</i></p>
 			<p><i>maient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>mirai</i></p>
 			<p><i>miras</i></p>
 			<p><i>mira</i></p>
 			<p><i>mirons</i></p>
 			<p><i>mirez</i></p>
 			<p><i>miront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>mis</i></p>
 			<p><i>mis</i></p>
@@ -4206,14 +4206,14 @@
 			<p><i>tiez</i></p>
 			<p><i>taient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>tirai</i></p>
 			<p><i>tiras</i></p>
 			<p><i>tira</i></p>
 			<p><i>tirons</i></p>
 			<p><i>tirez</i></p>
 			<p><i>tiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>tis</i></p>
 			<p><i>tis</i></p>
@@ -4294,14 +4294,14 @@
 			<p><i>viez</i></p>
 			<p><i>vaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>virai</i></p>
 			<p><i>viras</i></p>
 			<p><i>vira</i></p>
 			<p><i>virons</i></p>
 			<p><i>virez</i></p>
 			<p><i>viront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>vis</i></p>
 			<p><i>vis</i></p>
@@ -4382,14 +4382,14 @@
 			<p><i>illiez</i></p>
 			<p><i>illaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>illirai</i></p>
 			<p><i>illiras</i></p>
 			<p><i>illira</i></p>
 			<p><i>illirons</i></p>
 			<p><i>illirez</i></p>
 			<p><i>illiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>illis</i></p>
 			<p><i>illis</i></p>
@@ -4470,14 +4470,14 @@
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -4558,14 +4558,14 @@
 			<p><i>issiez</i></p>
 			<p><i>issaient</i><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i><i>era</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i><i>eront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -4646,14 +4646,14 @@
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
 			<p><i>era</i></p>
 			<p><i>erons</i></p>
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -4734,14 +4734,14 @@
 			<p><i>eniez</i></p>
 			<p><i>enaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>iendrai</i></p>
 			<p><i>iendras</i></p>
 			<p><i>iendra</i></p>
 			<p><i>iendrons</i></p>
 			<p><i>iendrez</i></p>
 			<p><i>iendront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ins</i></p>
 			<p><i>ins</i></p>
@@ -4822,14 +4822,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>iendra</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -4910,14 +4910,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -4998,14 +4998,14 @@
 			<p><i>ouriez</i></p>
 			<p><i>ouraient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ourrai</i></p>
 			<p><i>ourras</i></p>
 			<p><i>ourra</i></p>
 			<p><i>ourrons</i></p>
 			<p><i>ourrez</i></p>
 			<p><i>ourront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ourus</i></p>
 			<p><i>ourus</i></p>
@@ -5086,14 +5086,14 @@
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5174,14 +5174,14 @@
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
 			<p><i>ra</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -5262,14 +5262,14 @@
 			<p><i>issiez</i></p>
 			<p><i>issaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5350,14 +5350,14 @@
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5438,14 +5438,14 @@
 			<p><i>issiez</i></p>
 			<p><i>issaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5526,14 +5526,14 @@
 			<p><i>illiez</i></p>
 			<p><i>illaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>illirai</i></p>
 			<p><i>illiras</i></p>
 			<p><i>illira</i></p>
 			<p><i>illirons</i></p>
 			<p><i>illirez</i></p>
 			<p><i>illiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>illis</i></p>
 			<p><i>illis</i></p>
@@ -5614,14 +5614,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -5702,14 +5702,14 @@
 			<p><i>ceviez</i></p>
 			<p><i>cevaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>cevrai</i></p>
 			<p><i>cevras</i></p>
 			<p><i>cevra</i></p>
 			<p><i>cevrons</i></p>
 			<p><i>cevrez</i></p>
 			<p><i>cevront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>çus</i></p>
 			<p><i>çus</i></p>
@@ -5790,14 +5790,14 @@
 			<p><i>eviez</i></p>
 			<p><i>evaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>evrai</i></p>
 			<p><i>evras</i></p>
 			<p><i>evra</i></p>
 			<p><i>evrons</i></p>
 			<p><i>evrez</i></p>
 			<p><i>evront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -5878,14 +5878,14 @@
 			<p><i>ouviez</i></p>
 			<p><i>ouvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ouvrai</i></p>
 			<p><i>ouvras</i></p>
 			<p><i>ouvra</i></p>
 			<p><i>ouvrons</i></p>
 			<p><i>ouvrez</i></p>
 			<p><i>ouvront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -5966,14 +5966,14 @@
 			<p><i>ouviez</i></p>
 			<p><i>ouvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ouvrai</i></p>
 			<p><i>ouvras</i></p>
 			<p><i>ouvra</i></p>
 			<p><i>ouvrons</i></p>
 			<p><i>ouvrez</i></p>
 			<p><i>ouvront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -6054,14 +6054,14 @@
 			<p><i>aviez</i></p>
 			<p><i>avaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>aurai</i></p>
 			<p><i>auras</i></p>
 			<p><i>aura</i></p>
 			<p><i>aurons</i></p>
 			<p><i>aurez</i></p>
 			<p><i>auront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -6142,14 +6142,14 @@
 			<p><i>ouliez</i></p>
 			<p><i>oulaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oudrai</i></p>
 			<p><i>oudras</i></p>
 			<p><i>oudra</i></p>
 			<p><i>oudrons</i></p>
 			<p><i>oudrez</i></p>
 			<p><i>oudront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>oulus</i></p>
 			<p><i>oulus</i></p>
@@ -6230,14 +6230,14 @@
 			<p><i>liez</i></p>
 			<p><i>laient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
 			<p><i>udra</i></p>
 			<p><i>udrons</i></p>
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
@@ -6318,14 +6318,14 @@
 			<p><i>liez</i></p>
 			<p><i>laient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
 			<p><i>udra</i></p>
 			<p><i>udrons</i></p>
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
@@ -6406,14 +6406,14 @@
 			<p><i>ouviez</i></p>
 			<p><i>ouvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ourrai</i></p>
 			<p><i>ourras</i></p>
 			<p><i>ourra</i></p>
 			<p><i>ourrons</i></p>
 			<p><i>ourrez</i></p>
 			<p><i>ourront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -6494,14 +6494,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>errai</i></p>
 			<p><i>erras</i></p>
 			<p><i>erra</i></p>
 			<p><i>errons</i></p>
 			<p><i>errez</i></p>
 			<p><i>erront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -6582,14 +6582,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
 			<p><i>oira</i></p>
 			<p><i>oirons</i></p>
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -6670,14 +6670,14 @@
 			<p><i>eyiez</i><i>oyiez</i></p>
 			<p><i>eyaient</i><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>iérai</i><i>eyerai</i><i>oirai</i></p>
 			<p><i>iéras</i><i>eyeras</i><i>oiras</i></p>
 			<p><i>iéra</i><i>eyera</i><i>oira</i></p>
 			<p><i>iérons</i><i>eyerons</i><i>oirons</i></p>
 			<p><i>iérez</i><i>eyerez</i><i>oirez</i></p>
 			<p><i>iéront</i><i>eyeront</i><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -6758,14 +6758,14 @@
 			<p><i>eyiez</i><i>oyiez</i></p>
 			<p><i>eyaient</i><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>iérai</i><i>eyerai</i><i>oirai</i></p>
 			<p><i>iéras</i><i>eyeras</i><i>oiras</i></p>
 			<p><i>iéra</i><i>eyera</i><i>oira</i></p>
 			<p><i>iérons</i><i>eyerons</i><i>oirons</i></p>
 			<p><i>iérez</i><i>eyerez</i><i>oirez</i></p>
 			<p><i>iéront</i><i>eyeront</i><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -6846,14 +6846,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>eoirai</i></p>
 			<p><i>eoiras</i></p>
 			<p><i>eoira</i></p>
 			<p><i>eoirons</i></p>
 			<p><i>eoirez</i></p>
 			<p><i>eoiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -6934,14 +6934,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
 			<p><i>oira</i></p>
 			<p><i>oirons</i></p>
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -7022,14 +7022,14 @@
 			<p></p>
 			<p><i>eyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>iéra</i></p>
 			<p></p>
 			<p></p>
 			<p><i>iéront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -7110,14 +7110,14 @@
 			<p></p>
 			<p><i>euvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>euvra</i></p>
 			<p></p>
 			<p></p>
 			<p><i>euvront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -7198,14 +7198,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>udra</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -7286,14 +7286,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
 			<p><i>oira</i></p>
 			<p><i>oirons</i></p>
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -7374,14 +7374,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
 			<p><i>oira</i></p>
 			<p><i>oirons</i></p>
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -7462,14 +7462,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oirai</i><i>errai</i></p>
 			<p><i>oiras</i><i>erras</i></p>
 			<p><i>oira</i><i>erra</i></p>
 			<p><i>oirons</i><i>errons</i></p>
 			<p><i>oirez</i><i>errez</i></p>
 			<p><i>oiront</i><i>erront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -7550,14 +7550,14 @@
 			<p></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>oira</i><i>erra</i></p>
 			<p></p>
 			<p></p>
 			<p><i>oiront</i><i>erront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -7638,14 +7638,14 @@
 			<p><i>diez</i></p>
 			<p><i>daient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>drai</i></p>
 			<p><i>dras</i></p>
 			<p><i>dra</i></p>
 			<p><i>drons</i></p>
 			<p><i>drez</i></p>
 			<p><i>dront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>dis</i></p>
 			<p><i>dis</i></p>
@@ -7726,14 +7726,14 @@
 			<p><i>quiez</i></p>
 			<p><i>quaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>crai</i></p>
 			<p><i>cras</i></p>
 			<p><i>cra</i></p>
 			<p><i>crons</i></p>
 			<p><i>crez</i></p>
 			<p><i>cront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>quis</i></p>
 			<p><i>quis</i></p>
@@ -7814,14 +7814,14 @@
 			<p><i>tiez</i></p>
 			<p><i>taient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>trai</i></p>
 			<p><i>tras</i></p>
 			<p><i>tra</i></p>
 			<p><i>trons</i></p>
 			<p><i>trez</i></p>
 			<p><i>tront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>tis</i></p>
 			<p><i>tis</i></p>
@@ -7902,14 +7902,14 @@
 			<p><i>tiez</i></p>
 			<p><i>taient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>trai</i></p>
 			<p><i>tras</i></p>
 			<p><i>tra</i></p>
 			<p><i>trons</i></p>
 			<p><i>trez</i></p>
 			<p><i>tront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -7990,14 +7990,14 @@
 			<p><i>ettiez</i></p>
 			<p><i>ettaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ettrai</i></p>
 			<p><i>ettras</i></p>
 			<p><i>ettra</i></p>
 			<p><i>ettrons</i></p>
 			<p><i>ettrez</i></p>
 			<p><i>ettront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -8078,14 +8078,14 @@
 			<p><i>eniez</i></p>
 			<p><i>enaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>endrai</i></p>
 			<p><i>endras</i></p>
 			<p><i>endra</i></p>
 			<p><i>endrons</i></p>
 			<p><i>endrez</i></p>
 			<p><i>endront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -8166,14 +8166,14 @@
 			<p><i>piez</i></p>
 			<p><i>paient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>prai</i></p>
 			<p><i>pras</i></p>
 			<p><i>pra</i></p>
 			<p><i>prons</i></p>
 			<p><i>prez</i></p>
 			<p><i>pront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>pis</i></p>
 			<p><i>pis</i></p>
@@ -8254,14 +8254,14 @@
 			<p><i>liez</i></p>
 			<p><i>laient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>drai</i></p>
 			<p><i>dras</i></p>
 			<p><i>dra</i></p>
 			<p><i>drons</i></p>
 			<p><i>drez</i></p>
 			<p><i>dront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
@@ -8342,14 +8342,14 @@
 			<p><i>siez</i></p>
 			<p><i>saient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>drai</i></p>
 			<p><i>dras</i></p>
 			<p><i>dra</i></p>
 			<p><i>drons</i></p>
 			<p><i>drez</i></p>
 			<p><i>dront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>sis</i></p>
 			<p><i>sis</i></p>
@@ -8430,14 +8430,14 @@
 			<p><i>lviez</i></p>
 			<p><i>lvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
 			<p><i>udra</i></p>
 			<p><i>udrons</i></p>
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
@@ -8518,14 +8518,14 @@
 			<p><i>lviez</i></p>
 			<p><i>lvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
 			<p><i>udra</i></p>
 			<p><i>udrons</i></p>
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -8606,14 +8606,14 @@
 			<p><i>lviez</i></p>
 			<p><i>lvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
 			<p><i>udra</i></p>
 			<p><i>udrons</i></p>
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -8694,14 +8694,14 @@
 			<p><i>gniez</i></p>
 			<p><i>gnaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ndrai</i></p>
 			<p><i>ndras</i></p>
 			<p><i>ndra</i></p>
 			<p><i>ndrons</i></p>
 			<p><i>ndrez</i></p>
 			<p><i>ndront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>gnis</i></p>
 			<p><i>gnis</i></p>
@@ -8782,14 +8782,14 @@
 			<p><i>gniez</i></p>
 			<p><i>gnaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ndrai</i></p>
 			<p><i>ndras</i></p>
 			<p><i>ndra</i></p>
 			<p><i>ndrons</i></p>
 			<p><i>ndrez</i></p>
 			<p><i>ndront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>gnis</i></p>
 			<p><i>gnis</i></p>
@@ -8870,14 +8870,14 @@
 			<p><i>viez</i></p>
 			<p><i>vaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>vrai</i></p>
 			<p><i>vras</i></p>
 			<p><i>vra</i></p>
 			<p><i>vrons</i></p>
 			<p><i>vrez</i></p>
 			<p><i>vront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>vis</i></p>
 			<p><i>vis</i></p>
@@ -8958,14 +8958,14 @@
 			<p><i>iviez</i></p>
 			<p><i>ivaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ivrai</i></p>
 			<p><i>ivras</i></p>
 			<p><i>ivra</i></p>
 			<p><i>ivrons</i></p>
 			<p><i>ivrez</i></p>
 			<p><i>ivront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>écus</i></p>
 			<p><i>écus</i></p>
@@ -9046,14 +9046,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
 			<p><i>aîtra</i></p>
 			<p><i>aîtrons</i></p>
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -9134,14 +9134,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
 			<p><i>aîtra</i></p>
 			<p><i>aîtrons</i></p>
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -9222,14 +9222,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
 			<p><i>aîtra</i></p>
 			<p><i>aîtrons</i></p>
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -9310,14 +9310,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
 			<p><i>aîtra</i></p>
 			<p><i>aîtrons</i></p>
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>aquis</i></p>
 			<p><i>aquis</i></p>
@@ -9398,14 +9398,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
 			<p><i>aîtra</i></p>
 			<p><i>aîtrons</i></p>
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>aquis</i></p>
 			<p><i>aquis</i></p>
@@ -9486,14 +9486,14 @@
 			<p><i>oissiez</i></p>
 			<p><i>oissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oîtrai</i></p>
 			<p><i>oîtras</i></p>
 			<p><i>oîtra</i></p>
 			<p><i>oîtrons</i></p>
 			<p><i>oîtrez</i></p>
 			<p><i>oîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>ûs</i></p>
 			<p><i>ûs</i></p>
@@ -9574,14 +9574,14 @@
 			<p><i>oissiez</i></p>
 			<p><i>oissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oîtrai</i></p>
 			<p><i>oîtras</i></p>
 			<p><i>oîtra</i></p>
 			<p><i>oîtrons</i></p>
 			<p><i>oîtrez</i></p>
 			<p><i>oîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -9663,14 +9663,14 @@
 			<p><i>oissiez</i></p>
 			<p><i>oissaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oîtrai</i></p>
 			<p><i>oîtras</i></p>
 			<p><i>oîtra</i></p>
 			<p><i>oîtrons</i></p>
 			<p><i>oîtrez</i></p>
 			<p><i>oîtront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -9751,14 +9751,14 @@
 			<p><i>iiez</i></p>
 			<p><i>iaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -9839,14 +9839,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -9927,14 +9927,14 @@
 			<p><i>uiez</i></p>
 			<p><i>uaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>urai</i></p>
 			<p><i>uras</i></p>
 			<p><i>ura</i></p>
 			<p><i>urons</i></p>
 			<p><i>urez</i></p>
 			<p><i>uront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -10015,14 +10015,14 @@
 			<p><i>uiez</i></p>
 			<p><i>uaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>urai</i></p>
 			<p><i>uras</i></p>
 			<p><i>ura</i></p>
 			<p><i>urons</i></p>
 			<p><i>urez</i></p>
 			<p><i>uront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -10103,14 +10103,14 @@
 			<p><i>siez</i></p>
 			<p><i>saient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
 			<p><i>ra</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>sis</i></p>
 			<p><i>sis</i></p>
@@ -10191,14 +10191,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i><i>isis</i></p>
 			<p><i>is</i><i>isis</i></p>
@@ -10279,14 +10279,14 @@
 			<p><i>siez</i></p>
 			<p><i>saient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
 			<p><i>ra</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>sis</i></p>
 			<p><i>sis</i></p>
@@ -10367,14 +10367,14 @@
 			<p><i>viez</i></p>
 			<p><i>vaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
 			<p><i>ra</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>vis</i></p>
 			<p><i>vis</i></p>
@@ -10455,14 +10455,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
 			<p><i>oira</i></p>
 			<p><i>oirons</i></p>
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -10543,14 +10543,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10631,14 +10631,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10719,14 +10719,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10807,14 +10807,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10895,14 +10895,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10983,14 +10983,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -11071,14 +11071,14 @@
 			<p><i>uviez</i></p>
 			<p><i>uvaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
 			<p><i>oira</i></p>
 			<p><i>oirons</i></p>
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -11159,14 +11159,14 @@
 			<p><i>aisiez</i></p>
 			<p><i>aisaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>airai</i></p>
 			<p><i>airas</i></p>
 			<p><i>aira</i></p>
 			<p><i>airons</i></p>
 			<p><i>airez</i></p>
 			<p><i>airont</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -11247,14 +11247,14 @@
 			<p><i>aisiez</i></p>
 			<p><i>aisaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>airai</i></p>
 			<p><i>airas</i></p>
 			<p><i>aira</i></p>
 			<p><i>airons</i></p>
 			<p><i>airez</i></p>
 			<p><i>airont</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -11335,14 +11335,14 @@
 			<p><i>aisiez</i></p>
 			<p><i>aisaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
 			<p><i>era</i></p>
 			<p><i>erons</i></p>
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -11423,14 +11423,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -11511,14 +11511,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -11599,14 +11599,14 @@
 			<p></p>
 			<p><i>ourdaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -11687,14 +11687,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>orai</i></p>
 			<p><i>oras</i></p>
 			<p><i>ora</i></p>
 			<p><i>orons</i></p>
 			<p><i>orez</i></p>
 			<p><i>oront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -11775,14 +11775,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
 			<p><i>ra</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -11863,14 +11863,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -11951,14 +11951,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
 			<p><i>ra</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -12039,14 +12039,14 @@
 			<p></p>
 			<p><i>ssaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -12127,14 +12127,14 @@
 			<p><i>gniez</i></p>
 			<p><i>gnaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>ndrai</i></p>
 			<p><i>ndras</i></p>
 			<p><i>ndra</i></p>
 			<p><i>ndrons</i></p>
 			<p><i>ndrez</i></p>
 			<p><i>ndront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>gnis</i></p>
 			<p><i>gnis</i></p>
@@ -12215,14 +12215,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>errai</i></p>
 			<p><i>erras</i></p>
 			<p><i>erra</i></p>
 			<p><i>errons</i></p>
 			<p><i>errez</i></p>
 			<p><i>erront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>oyai</i></p>
 			<p><i>oyas</i></p>
@@ -12303,14 +12303,14 @@
 			<p><i>aviez</i></p>
 			<p><i>avaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>aurai</i></p>
 			<p><i>auras</i></p>
 			<p><i>aura</i></p>
 			<p><i>aurons</i></p>
 			<p><i>aurez</i></p>
 			<p><i>auront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>eus</i></p>
 			<p><i>eus</i></p>
@@ -12391,14 +12391,14 @@
 			<p><i>étiez</i></p>
 			<p><i>étaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>serai</i></p>
 			<p><i>seras</i></p>
 			<p><i>sera</i></p>
 			<p><i>serons</i></p>
 			<p><i>serez</i></p>
 			<p><i>seront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>fus</i></p>
 			<p><i>fus</i></p>
@@ -12479,14 +12479,14 @@
 			<p><i>alliez</i></p>
 			<p><i>allaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
 			<p><i>ira</i></p>
 			<p><i>irons</i></p>
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>allai</i></p>
 			<p><i>allas</i></p>
@@ -12567,14 +12567,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -12655,14 +12655,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>
@@ -12743,14 +12743,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p><i>irai</i><i>uïrai</i><i>rrai</i></p>
 			<p><i>iras</i><i>uïras</i><i>rras</i></p>
 			<p><i>ira</i><i>uïra</i><i>rra</i></p>
 			<p><i>irons</i><i>uïrons</i><i>rrons</i></p>
 			<p><i>irez</i><i>uïrez</i><i>rrez</i></p>
 			<p><i>iront</i><i>uïront</i><i>rront</i></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p><i>uïs</i></p>
 			<p><i>uïs</i></p>
@@ -12831,14 +12831,14 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-		<future>
+		<futur>
 			<p></p>
 			<p></p>
 			<p><i>era</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</future>
+		</futur>
 		<simple-past>
 			<p></p>
 			<p></p>

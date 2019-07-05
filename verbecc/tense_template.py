@@ -41,7 +41,7 @@ class TenseTemplate:
             [5]= 3rd person plural (ils, elles)
 
         The following tenses have all 6 Persons:
-          present, imperfect, future, simple-past
+          présent, impafait, futur, passé-simple
         These do not:
           infinitive-present has only 1
           imperative-present has 3

@@ -167,7 +167,7 @@ class Conjugator:
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'imparfait')
 
     def _conjugate_future_perfect(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'future')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'futur')
 
     def _conjugate_anterior_past(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'simple-past')
