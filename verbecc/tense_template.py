@@ -28,8 +28,8 @@ class TenseTemplate:
             <p><i>ez</i></p>
             <p><i>ent</i></p>
     """
-    def __init__(self, name, tense_elem):
-        self.name = name
+    def __init__(self, tense_elem):
+        self.name = tense_elem.tag
         """
         Normally each <p> elem defines six grammatical persons:
             (see grammar_defines.Person)

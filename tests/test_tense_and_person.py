@@ -17,7 +17,7 @@ def test_tense_and_person():
         <p><i>ient</i><i>yent</i></p>
         </present>""")
     tense_name = 'present'
-    tense = TenseTemplate(tense_name, tense_elem)
+    tense = TenseTemplate(tense_elem)
     assert tense.name == tense_name
     assert tense.person_endings[0].get_ending() == "ie"
     assert tense.person_endings[0].get_alternate_ending() == "ye"

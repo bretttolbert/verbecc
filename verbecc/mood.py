@@ -24,7 +24,6 @@ def is_valid_mood_tense(mood_name, tense_name):
 class MoodError(Exception):
     pass
 
-
 class Mood():
     """
     name
@@ -33,13 +32,8 @@ class Mood():
         contains one or more tense_elems (see class TenseTemplate) with
         tag names as listed in MOOD_TENSES
     """
-    def __init__(self, name, mood_elem):
-        self.name = name
+    def __init__(self, mood_elem):
+        self.name = mood_elem.tag
         self.tenses = {}
-        for tense_name in MOOD_TENSES[self.name]:
-            tense_elem = mood_elem.find(tense_name)
-            if tense_elem is None:
-                raise MoodError(
-                    "failed to find expected tense '{}' for mood '{}'"
-                    .format(tense_name, self.name))
-            self.tenses[tense_name] = TenseTemplate(tense_name, tense_elem)
+        for tense_elem in list(mood_elem):
+            self.tenses[tense_elem.tag] = TenseTemplate(tense_elem)

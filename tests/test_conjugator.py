@@ -26,7 +26,7 @@ test_verbs = [
     (u"pleuvoir")
 ]
 
-@pytest.mark.parametrize("infinitive", test_verbs)
+@pytest.mark.parametrize("infinitif", test_verbs)
 def test_conjugator_conjugate(infinitive):
     for infinitive in test_verbs:
         output = conj.conjugate(infinitive)
@@ -44,7 +44,7 @@ def test_conjugator_conjugate_specific_tense():
         <p><i>gent</i></p>
         </present>""")
     tense_name = 'present'
-    tense = TenseTemplate(tense_name, tense_elem)
+    tense = TenseTemplate(tense_elem)
     out = conj._conjugate_specific_tense(verb_stem, 'indicative', tense)
     assert len(out) == 6
     assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
@@ -271,7 +271,7 @@ expected_resp_conj_manger = {
   "stem": "man"
 },
 "moods": {
-  "infinitive": {
+  "infinitif": {
     "infinitive-present": [
       "manger"
     ]
@@ -428,7 +428,7 @@ expected_resp_conj_pouvoir = {
   "stem": "p"
 },
 "moods": {
-  "infinitive": {
+  "infinitif": {
     "infinitive-present": [
       "pouvoir"
     ]
@@ -577,7 +577,7 @@ expected_resp_conj_pleuvoir = {
   "stem": "pl"
 },
 "moods": {
-  "infinitive": {
+  "infinitif": {
     "infinitive-present": [
       "pleuvoir"
     ]
@@ -670,7 +670,7 @@ expected_resp_conj_se_lever = {
   "stem": "l"
 },
 "moods": {
-  "infinitive": {
+  "infinitif": {
     "infinitive-present": [
       "se lever"
     ]
