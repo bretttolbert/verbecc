@@ -86,26 +86,6 @@ Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-s
 ```   
 
 
-Mode du verbe|"mood" API key
---- | ---
-Infinitif | infinitive
-Indicatif | indicative
-Impératif | imperative
-Conditionnel | conditional
-Participe | participle
-
-Temps du verbe|"tense" API key
---- | ---
-Présent | present
-Passé | past
-Imparfait | imperfect
-Future simple | future
-Future antérieur | future-perfect
-Passé antérieur | anterior-past
-Passé composé | passé-composé
-Plus-que-parfait | pluperfect
-
-
 # verbecc
 
 #### Quick Start

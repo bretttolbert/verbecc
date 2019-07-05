@@ -117,71 +117,71 @@ class Conjugator:
     def _get_compound_conjugations_for_mood(self, co, mood_name, conjugations):
         if mood_name == 'indicatif':
             conjugations['passé-composé'] = self._conjugate_passe_compose(co)
-            conjugations['pluperfect'] = self._conjugate_pluperfect(co)
-            conjugations['future-perfect'] = self._conjugate_future_perfect(co)
-            conjugations['anterior-past'] = self._conjugate_anterior_past(co)
+            conjugations['plus-que-parfait'] = self._conjugate_plusqueparfait(co)
+            conjugations['futur-antérieur'] = self._conjugate_futur_anterieur(co)
+            conjugations['passé-antérieur'] = self._conjugate_passe_anterieur(co)
         elif mood_name == 'subjonctif':
-            conjugations['past'] = self._conjugate_subjonctif_past(co)
-            conjugations['pluperfect'] = self._conjugate_subjonctif_pluperfect(co)
+            conjugations['passé'] = self._conjugate_subjonctif_passe(co)
+            conjugations['plus-que-parfait'] = self._conjugate_subjonctif_plusqueparfait(co)
         elif mood_name == 'conditionnel':
-            conjugations['past'] = self._conjugate_conditionnel_past(co)
+            conjugations['passé'] = self._conjugate_conditionnel_passe(co)
         elif mood_name == 'imperatif':
-            conjugations['imperatif-past'] = self._conjugate_imperatif_past(co)
+            conjugations['imperatif-passé'] = self._conjugate_imperatif_passe(co)
 
     def conjugate_passe_compose(self, infinitive):
         co = self._get_conj_obs(infinitive)
         return self._conjugate_passe_compose(co)
 
-    def conjugate_pluperfect(self, infinitive):
+    def conjugate_plusqueparfait(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_pluperfect(co)
+        return self._conjugate_plusqueparfait(co)
 
-    def conjugate_future_perfect(self, infinitive):
+    def conjugate_futur_anterieur(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_future_perfect(co)
+        return self._conjugate_futur_anterieur(co)
 
-    def conjugate_anterior_past(self, infinitive):
+    def conjugate_passe_anterieur(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_anterior_past(co)
+        return self._conjugate_passe_anterieur(co)
 
-    def conjugate_subjonctif_past(self, infinitive):
+    def conjugate_subjonctif_passe(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_subjonctif_past(co)
+        return self._conjugate_subjonctif_passe(co)
 
-    def conjugate_subjonctif_pluperfect(self, infinitive):
+    def conjugate_subjonctif_plusqueparfait(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_subjonctif_pluperfect(co)
+        return self._conjugate_subjonctif_plusqueparfait(co)
 
-    def conjugate_conditionnel_past(self, infinitive):
+    def conjugate_conditionnel_passe(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_conditionnel_past(co)
+        return self._conjugate_conditionnel_passe(co)
 
-    def conjugate_imperatif_past(self, infinitive):
+    def conjugate_imperatif_passe(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_imperatif_past(co)
+        return self._conjugate_imperatif_passe(co)
 
     def _conjugate_passe_compose(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'présent')
 
-    def _conjugate_pluperfect(self, co):
+    def _conjugate_plusqueparfait(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'imparfait')
 
-    def _conjugate_future_perfect(self, co):
+    def _conjugate_futur_anterieur(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'futur')
 
-    def _conjugate_anterior_past(self, co):
+    def _conjugate_passe_anterieur(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'passé-simple')
 
-    def _conjugate_subjonctif_past(self, co):
+    def _conjugate_subjonctif_passe(self, co):
         return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'présent')
 
-    def _conjugate_subjonctif_pluperfect(self, co):
+    def _conjugate_subjonctif_plusqueparfait(self, co):
         return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'imparfait')
 
-    def _conjugate_conditionnel_past(self, co):
+    def _conjugate_conditionnel_passe(self, co):
         return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'présent')
 
-    def _conjugate_imperatif_past(self, co):
+    def _conjugate_imperatif_passe(self, co):
         return self._conjugate_compound(co, 'imperatif', 'imperatif', 'imperatif-présent')
 
     def _conjugate_compound(self, co, mood_name, hv_mood_name, hv_tense_name):

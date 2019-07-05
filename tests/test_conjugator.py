@@ -69,8 +69,8 @@ def test_conjugator_conjugate_passe_compose_with_etre():
     "ils sont allés"
     ]
 
-def test_conjugator_conjugate_subjonctif_past_with_avoir():
-    assert conj.conjugate_subjonctif_past('manger') == [
+def test_conjugator_conjugate_subjonctif_passe_with_avoir():
+    assert conj.conjugate_subjonctif_passe('manger') == [
     "que j'aie mangé",
     "que tu aies mangé",
     "qu'il ait mangé",
@@ -79,8 +79,8 @@ def test_conjugator_conjugate_subjonctif_past_with_avoir():
     "qu'ils aient mangé"
     ]
 
-def test_conjugator_conjugate_subjonctif_past_with_etre():
-    assert conj.conjugate_subjonctif_past('aller') == [
+def test_conjugator_conjugate_subjonctif_passe_with_etre():
+    assert conj.conjugate_subjonctif_passe('aller') == [
     "que je sois allé",
     "que tu sois allé",
     "qu'il soit allé",
@@ -89,8 +89,8 @@ def test_conjugator_conjugate_subjonctif_past_with_etre():
     "qu'ils soient allés"
     ]
 
-def test_conjugator_conjugate_conditionnel_past_with_avoir():
-    assert conj.conjugate_conditionnel_past('manger') == [
+def test_conjugator_conjugate_conditionnel_passe_with_avoir():
+    assert conj.conjugate_conditionnel_passe('manger') == [
     "j'aurais mangé",
     "tu aurais mangé",
     "il aurait mangé",
@@ -99,8 +99,8 @@ def test_conjugator_conjugate_conditionnel_past_with_avoir():
     "ils auraient mangé"
     ]
 
-def test_conjugator_conjugate_conditionnel_past_with_etre():
-    assert conj.conjugate_conditionnel_past('aller') == [
+def test_conjugator_conjugate_conditionnel_passe_with_etre():
+    assert conj.conjugate_conditionnel_passe('aller') == [
     "je serais allé",
     "tu serais allé",
     "il serait allé",
@@ -109,8 +109,8 @@ def test_conjugator_conjugate_conditionnel_past_with_etre():
     "ils seraient allés"
     ]
 
-def test_conjugator_conjugate_pluperfect_with_avoir():
-    assert conj.conjugate_pluperfect('manger') == [
+def test_conjugator_conjugate_plusqueparfait_with_avoir():
+    assert conj.conjugate_plusqueparfait('manger') == [
     "j'avais mangé",
     "tu avais mangé",
     "il avait mangé",
@@ -119,8 +119,8 @@ def test_conjugator_conjugate_pluperfect_with_avoir():
     "ils avaient mangé"
     ]
 
-def test_conjugator_conjugate_pluperfect_with_etre():
-    assert conj.conjugate_pluperfect('aller') == [
+def test_conjugator_conjugate_plusqueparfait_with_etre():
+    assert conj.conjugate_plusqueparfait('aller') == [
     "j'étais allé",
     "tu étais allé",
     "il était allé",
@@ -129,8 +129,8 @@ def test_conjugator_conjugate_pluperfect_with_etre():
     "ils étaient allés"
     ]
 
-def test_conjugator_conjugate_subjonctif_pluperfect_with_avoir():
-    assert conj.conjugate_subjonctif_pluperfect('manger') == [
+def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir():
+    assert conj.conjugate_subjonctif_plusqueparfait('manger') == [
     "que j'eusse mangé",
     "que tu eusses mangé",
     "qu'il eût mangé",
@@ -139,8 +139,8 @@ def test_conjugator_conjugate_subjonctif_pluperfect_with_avoir():
     "qu'ils eussent mangé"
     ]
 
-def test_conjugator_conjugate_subjonctif_pluperfect_with_etre():
-    assert conj.conjugate_subjonctif_pluperfect('aller') == [
+def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre():
+    assert conj.conjugate_subjonctif_plusqueparfait('aller') == [
     "que je fusse allé",
     "que tu fusses allé",
     "qu'il fût allé",
@@ -149,8 +149,8 @@ def test_conjugator_conjugate_subjonctif_pluperfect_with_etre():
     "qu'ils fussent allés"
     ]
 
-def test_conjugator_conjugate_future_perfect_with_avoir():
-    assert conj.conjugate_future_perfect('manger') == [
+def test_conjugator_conjugate_futur_anterieur_with_avoir():
+    assert conj.conjugate_futur_anterieur('manger') == [
     "j'aurai mangé",
     "tu auras mangé",
     "il aura mangé",
@@ -159,8 +159,8 @@ def test_conjugator_conjugate_future_perfect_with_avoir():
     "ils auront mangé"
     ]
 
-def test_conjugator_conjugate_future_perfect_with_etre():
-    assert conj.conjugate_future_perfect('aller') == [
+def test_conjugator_conjugate_futur_anterieur_with_etre():
+    assert conj.conjugate_futur_anterieur('aller') == [
     "je serai allé",
     "tu seras allé",
     "il sera allé",
@@ -169,8 +169,8 @@ def test_conjugator_conjugate_future_perfect_with_etre():
     "ils seront allés"
     ]
 
-def test_conjugator_conjugate_anterior_past_with_avoir():
-    assert conj.conjugate_anterior_past('manger') == [
+def test_conjugator_conjugate_passe_anterieur_with_avoir():
+    assert conj.conjugate_passe_anterieur('manger') == [
     "j'eus mangé",
     "tu eus mangé",
     "il eut mangé",
@@ -179,8 +179,8 @@ def test_conjugator_conjugate_anterior_past_with_avoir():
     "ils eurent mangé"
     ]
 
-def test_conjugator_conjugate_anterior_past_with_etre():
-    assert conj.conjugate_anterior_past('aller') == [
+def test_conjugator_conjugate_passe_anterieur_with_etre():
+    assert conj.conjugate_passe_anterieur('aller') == [
     "je fus allé",
     "tu fus allé",
     "il fut allé",
@@ -189,15 +189,15 @@ def test_conjugator_conjugate_anterior_past_with_etre():
     "ils furent allés"
     ]
 
-def test_conjugator_conjugate_imperatif_past_with_avoir():
-    assert conj.conjugate_imperatif_past('manger') == [
+def test_conjugator_conjugate_imperatif_passe_with_avoir():
+    assert conj.conjugate_imperatif_passe('manger') == [
     "aie mangé",
     "ayons mangé",
     "ayez mangé"
     ]
 
-def test_conjugator_conjugate_imperatif_past_with_etre():
-    assert conj.conjugate_imperatif_past('aller') == [
+def test_conjugator_conjugate_imperatif_passe_with_etre():
+    assert conj.conjugate_imperatif_passe('aller') == [
     "sois allé",
     "soyons allés",
     "soyez allés"
@@ -320,7 +320,7 @@ expected_resp_conj_manger = {
       "vous avez mangé",
       "ils ont mangé"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "j'avais mangé",
       "tu avais mangé",
       "il avait mangé",
@@ -328,7 +328,7 @@ expected_resp_conj_manger = {
       "vous aviez mangé",
       "ils avaient mangé"
     ],
-    "future-perfect": [
+    "futur-antérieur": [
       "j'aurai mangé",
       "tu auras mangé",
       "il aura mangé",
@@ -336,7 +336,7 @@ expected_resp_conj_manger = {
       "vous aurez mangé",
       "ils auront mangé"
     ],
-    "anterior-past": [
+    "passé-antérieur": [
       "j'eus mangé",
       "tu eus mangé",
       "il eut mangé",
@@ -354,7 +354,7 @@ expected_resp_conj_manger = {
       "vous mangeriez",
       "ils mangeraient"
     ],
-    "past": [
+    "passé": [
       "j'aurais mangé",
       "tu aurais mangé",
       "il aurait mangé",
@@ -380,7 +380,7 @@ expected_resp_conj_manger = {
       "que vous mangeassiez",
       "qu'ils mangeassent"
     ],
-    "past": [
+    "passé": [
       "que j'aie mangé",
       "que tu aies mangé",
       "qu'il ait mangé",
@@ -388,7 +388,7 @@ expected_resp_conj_manger = {
       "que vous ayez mangé",
       "qu'ils aient mangé"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "que j'eusse mangé",
       "que tu eusses mangé",
       "qu'il eût mangé",
@@ -403,7 +403,7 @@ expected_resp_conj_manger = {
       "mangeons",
       "mangez"
     ],
-    "imperatif-past": [
+    "imperatif-passé": [
       "aie mangé",
       "ayons mangé",
       "ayez mangé"
@@ -477,7 +477,7 @@ expected_resp_conj_pouvoir = {
       "vous avez pu",
       "ils ont pu"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "j'avais pu",
       "tu avais pu",
       "il avait pu",
@@ -485,7 +485,7 @@ expected_resp_conj_pouvoir = {
       "vous aviez pu",
       "ils avaient pu"
     ],
-    "future-perfect": [
+    "futur-antérieur": [
       "j'aurai pu",
       "tu auras pu",
       "il aura pu",
@@ -493,7 +493,7 @@ expected_resp_conj_pouvoir = {
       "vous aurez pu",
       "ils auront pu"
     ],
-    "anterior-past": [
+    "passé-antérieur": [
       "j'eus pu",
       "tu eus pu",
       "il eut pu",
@@ -511,7 +511,7 @@ expected_resp_conj_pouvoir = {
       "vous pourriez",
       "ils pourraient"
     ],
-    "past": [
+    "passé": [
       "j'aurais pu",
       "tu aurais pu",
       "il aurait pu",
@@ -537,7 +537,7 @@ expected_resp_conj_pouvoir = {
       "que vous pussiez",
       "qu'ils pussent"
     ],
-    "past": [
+    "passé": [
       "que j'aie pu",
       "que tu aies pu",
       "qu'il ait pu",
@@ -545,7 +545,7 @@ expected_resp_conj_pouvoir = {
       "que vous ayez pu",
       "qu'ils aient pu"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "que j'eusse pu",
       "que tu eusses pu",
       "qu'il eût pu",
@@ -556,7 +556,7 @@ expected_resp_conj_pouvoir = {
   },
   "imperatif": {
     "imperatif-présent": [],
-    "imperatif-past": []
+    "imperatif-passé": []
   },
   "participe": {
     "participe-présent": [
@@ -606,15 +606,15 @@ expected_resp_conj_pleuvoir = {
       "il a plu",
       "ils ont plu"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "il avait plu",
       "ils avaient plu"
     ],
-    "future-perfect": [
+    "futur-antérieur": [
       "il aura plu",
       "ils auront plu"
     ],
-    "anterior-past": [
+    "passé-antérieur": [
       "il eut plu",
       "ils eurent plu"
     ]
@@ -624,7 +624,7 @@ expected_resp_conj_pleuvoir = {
       "il pleuvrait",
       "ils pleuvraient"
     ],
-    "past": [
+    "passé": [
       "il aurait plu",
       "ils auraient plu"
     ]
@@ -638,18 +638,18 @@ expected_resp_conj_pleuvoir = {
       "qu'il plût",
       "qu'ils plussent"
     ],
-    "past": [
+    "passé": [
       "qu'il ait plu",
       "qu'ils aient plu"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "qu'il eût plu",
       "qu'ils eussent plu"
     ]
   },
   "imperatif": {
     "imperatif-présent": [],
-    "imperatif-past": []
+    "imperatif-passé": []
   },
   "participe": {
     "participe-présent": [
@@ -719,7 +719,7 @@ expected_resp_conj_se_lever = {
       "vous vous êtes levés",
       "ils se sont levés"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "je m'étais levé",
       "tu t'étais levé",
       "il s'était levé",
@@ -727,7 +727,7 @@ expected_resp_conj_se_lever = {
       "vous vous étiez levés",
       "ils s'étaient levés"
     ],
-    "future-perfect": [
+    "futur-antérieur": [
       "je me serai levé",
       "tu te seras levé",
       "il se sera levé",
@@ -735,7 +735,7 @@ expected_resp_conj_se_lever = {
       "vous vous serez levés",
       "ils se seront levés"
     ],
-    "anterior-past": [
+    "passé-antérieur": [
       "je me fus levé",
       "tu te fus levé",
       "il se fut levé",
@@ -753,7 +753,7 @@ expected_resp_conj_se_lever = {
       "vous vous lèveriez",
       "ils se lèveraient"
     ],
-    "past": [
+    "passé": [
       "je me serais levé",
       "tu te serais levé",
       "il se serait levé",
@@ -779,7 +779,7 @@ expected_resp_conj_se_lever = {
       "que vous vous levassiez",
       "qu'ils se levassent"
     ],
-    "past": [
+    "passé": [
       "que je me sois levé",
       "que tu te sois levé",
       "qu'il se soit levé",
@@ -787,7 +787,7 @@ expected_resp_conj_se_lever = {
       "que vous vous soyez levés",
       "qu'ils se soient levés"
     ],
-    "pluperfect": [
+    "plus-que-parfait": [
       "que je me fusse levé",
       "que tu te fusses levé",
       "qu'il se fût levé",
@@ -802,7 +802,7 @@ expected_resp_conj_se_lever = {
       "levons-nous",
       "levez-vous"
     ],
-    "imperatif-past": []
+    "imperatif-passé": []
   },
   "participe": {
     "participe-présent": [
