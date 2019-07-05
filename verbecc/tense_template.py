@@ -86,6 +86,6 @@ class TenseTemplate:
                 self.person_endings.append(person_ending)
 
     def get_person_ending_by_pronoun(self, pronoun):
-        if self.name in ('present', 'imperfect', 'future', 'simple-past'):
+        if self.name in ('present', 'imparfait', 'future', 'simple-past'):
             return self.person_endings[get_person_by_pronoun(pronoun).value]
         raise ValueError

@@ -26,15 +26,15 @@
 	<!ATTLIST template name CDATA #REQUIRED>
 
 	<!ELEMENT infinitif (infinitif-présent)>
-	<!ELEMENT indicatif (present, imperfect, future, simple-past)>
+	<!ELEMENT indicatif (present, imparfait, future, simple-past)>
 	<!ELEMENT conditionnel (present)>
-	<!ELEMENT subjonctif (present, imperfect)>
+	<!ELEMENT subjonctif (present, imparfait)>
 	<!ELEMENT imperatif (imperatif-présent)>
 	<!ELEMENT participe (participe-présent, participe-passé)>
 
 	<!ELEMENT infinitif-présent (p)>
 	<!ELEMENT present (p, p, p, p, p, p)>
-	<!ELEMENT imperfect (p, p, p, p, p, p)>
+	<!ELEMENT imparfait (p, p, p, p, p, p)>
 	<!ELEMENT future (p, p, p, p, p, p)>
 	<!ELEMENT simple-past (p, p, p, p, p, p)>
 	<!ELEMENT imperatif-présent (p, p, p)>
@@ -62,14 +62,14 @@
 			<p><i>cez</i></p>
 			<p><i>cent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>çais</i></p>
 			<p><i>çais</i></p>
 			<p><i>çait</i></p>
 			<p><i>cions</i></p>
 			<p><i>ciez</i></p>
 			<p><i>çaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>cerai</i></p>
 			<p><i>ceras</i></p>
@@ -106,14 +106,14 @@
 			<p><i>ciez</i></p>
 			<p><i>cent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>çasse</i></p>
 			<p><i>çasses</i></p>
 			<p><i>çât</i></p>
 			<p><i>çassions</i></p>
 			<p><i>çassiez</i></p>
 			<p><i>çassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -150,14 +150,14 @@
 			<p><i>ez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
 			<p><i>ait</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 			<p><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
@@ -194,14 +194,14 @@
 			<p><i>iez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
 			<p><i>ât</i></p>
 			<p><i>assions</i></p>
 			<p><i>assiez</i></p>
 			<p><i>assent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -238,14 +238,14 @@
 			<p><i>ecez</i></p>
 			<p><i>ecent</i><i>ècent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>eçais</i></p>
 			<p><i>eçais</i></p>
 			<p><i>eçait</i></p>
 			<p><i>ecions</i></p>
 			<p><i>eciez</i></p>
 			<p><i>eçaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ecerai</i><i>ècerai</i></p>
 			<p><i>eceras</i><i>èceras</i></p>
@@ -282,14 +282,14 @@
 			<p><i>eciez</i></p>
 			<p><i>ecent</i><i>ècent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>eçasse</i></p>
 			<p><i>eçasses</i></p>
 			<p><i>eçât</i></p>
 			<p><i>eçassions</i></p>
 			<p><i>eçassiez</i></p>
 			<p><i>eçassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -326,14 +326,14 @@
 			<p><i>gez</i></p>
 			<p><i>gent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>geais</i></p>
 			<p><i>geais</i></p>
 			<p><i>geait</i></p>
 			<p><i>gions</i></p>
 			<p><i>giez</i></p>
 			<p><i>geaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>gerai</i></p>
 			<p><i>geras</i></p>
@@ -370,14 +370,14 @@
 			<p><i>giez</i></p>
 			<p><i>gent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>geasse</i></p>
 			<p><i>geasses</i></p>
 			<p><i>geât</i></p>
 			<p><i>geassions</i></p>
 			<p><i>geassiez</i></p>
 			<p><i>geassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -414,14 +414,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>geait</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -458,14 +458,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>geât</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -502,14 +502,14 @@
 			<p><i>yez</i></p>
 			<p><i>ient</i><i>yent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yais</i></p>
 			<p><i>yais</i></p>
 			<p><i>yait</i></p>
 			<p><i>yions</i></p>
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ierai</i><i>yerai</i></p>
 			<p><i>ieras</i><i>yeras</i></p>
@@ -546,14 +546,14 @@
 			<p><i>yiez</i></p>
 			<p><i>ient</i><i>yent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yasse</i></p>
 			<p><i>yasses</i></p>
 			<p><i>yât</i></p>
 			<p><i>yassions</i></p>
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -590,14 +590,14 @@
 			<p><i>yez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yais</i></p>
 			<p><i>yais</i></p>
 			<p><i>yait</i></p>
 			<p><i>yions</i></p>
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ierai</i></p>
 			<p><i>ieras</i></p>
@@ -634,14 +634,14 @@
 			<p><i>yiez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yasse</i></p>
 			<p><i>yasses</i></p>
 			<p><i>yât</i></p>
 			<p><i>yassions</i></p>
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -678,14 +678,14 @@
 			<p><i>yez</i></p>
 			<p><i>yent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yais</i></p>
 			<p><i>yais</i></p>
 			<p><i>yait</i></p>
 			<p><i>yions</i></p>
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>yerai</i></p>
 			<p><i>yeras</i></p>
@@ -722,14 +722,14 @@
 			<p><i>yiez</i></p>
 			<p><i>yent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yasse</i></p>
 			<p><i>yasses</i></p>
 			<p><i>yât</i></p>
 			<p><i>yassions</i></p>
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -766,14 +766,14 @@
 			<p><i>elez</i></p>
 			<p><i>ellent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>elais</i></p>
 			<p><i>elais</i></p>
 			<p><i>elait</i></p>
 			<p><i>elions</i></p>
 			<p><i>eliez</i></p>
 			<p><i>elaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ellerai</i></p>
 			<p><i>elleras</i></p>
@@ -810,14 +810,14 @@
 			<p><i>eliez</i></p>
 			<p><i>ellent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>elasse</i></p>
 			<p><i>elasses</i></p>
 			<p><i>elât</i></p>
 			<p><i>elassions</i></p>
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -854,14 +854,14 @@
 			<p><i>elez</i></p>
 			<p><i>èlent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>elais</i></p>
 			<p><i>elais</i></p>
 			<p><i>elait</i></p>
 			<p><i>elions</i></p>
 			<p><i>eliez</i></p>
 			<p><i>elaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èlerai</i></p>
 			<p><i>èleras</i></p>
@@ -898,14 +898,14 @@
 			<p><i>eliez</i></p>
 			<p><i>èlent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>elasse</i></p>
 			<p><i>elasses</i></p>
 			<p><i>elât</i></p>
 			<p><i>elassions</i></p>
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -942,14 +942,14 @@
 			<p><i>elez</i></p>
 			<p><i>ellent</i><i>èlent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>elais</i></p>
 			<p><i>elais</i></p>
 			<p><i>elait</i></p>
 			<p><i>elions</i></p>
 			<p><i>eliez</i></p>
 			<p><i>elaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ellerai</i><i>èlerai</i></p>
 			<p><i>elleras</i><i>èleras</i></p>
@@ -986,14 +986,14 @@
 			<p><i>eliez</i></p>
 			<p><i>ellent</i><i>èlent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>elasse</i></p>
 			<p><i>elasses</i></p>
 			<p><i>elât</i></p>
 			<p><i>elassions</i></p>
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1030,14 +1030,14 @@
 			<p><i>etez</i></p>
 			<p><i>ettent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>etais</i></p>
 			<p><i>etais</i></p>
 			<p><i>etait</i></p>
 			<p><i>etions</i></p>
 			<p><i>etiez</i></p>
 			<p><i>etaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>etterai</i></p>
 			<p><i>etteras</i></p>
@@ -1074,14 +1074,14 @@
 			<p><i>etiez</i></p>
 			<p><i>ettent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>etasse</i></p>
 			<p><i>etasses</i></p>
 			<p><i>etât</i></p>
 			<p><i>etassions</i></p>
 			<p><i>etassiez</i></p>
 			<p><i>etassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1118,14 +1118,14 @@
 			<p><i>etez</i></p>
 			<p><i>ètent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>etais</i></p>
 			<p><i>etais</i></p>
 			<p><i>etait</i></p>
 			<p><i>etions</i></p>
 			<p><i>etiez</i></p>
 			<p><i>etaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èterai</i></p>
 			<p><i>èteras</i></p>
@@ -1162,14 +1162,14 @@
 			<p><i>etiez</i></p>
 			<p><i>ètent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>etasse</i></p>
 			<p><i>etasses</i></p>
 			<p><i>etât</i></p>
 			<p><i>etassions</i></p>
 			<p><i>etassiez</i></p>
 			<p><i>etassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1206,14 +1206,14 @@
 			<p><i>étez</i></p>
 			<p><i>ètent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>étais</i></p>
 			<p><i>étais</i></p>
 			<p><i>était</i></p>
 			<p><i>étions</i></p>
 			<p><i>étiez</i></p>
 			<p><i>étaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èterai</i></p>
 			<p><i>èteras</i></p>
@@ -1250,14 +1250,14 @@
 			<p><i>étiez</i></p>
 			<p><i>ètent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>étasse</i></p>
 			<p><i>étasses</i></p>
 			<p><i>étât</i></p>
 			<p><i>étassions</i></p>
 			<p><i>étassiez</i></p>
 			<p><i>étassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1294,14 +1294,14 @@
 			<p><i>emez</i></p>
 			<p><i>èment</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>emais</i></p>
 			<p><i>emais</i></p>
 			<p><i>emait</i></p>
 			<p><i>emions</i></p>
 			<p><i>emiez</i></p>
 			<p><i>emaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èmerai</i></p>
 			<p><i>èmeras</i></p>
@@ -1338,14 +1338,14 @@
 			<p><i>emiez</i></p>
 			<p><i>èment</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>emasse</i></p>
 			<p><i>emasses</i></p>
 			<p><i>emât</i></p>
 			<p><i>emassions</i></p>
 			<p><i>emassiez</i></p>
 			<p><i>emassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1382,14 +1382,14 @@
 			<p><i>éguez</i></p>
 			<p><i>èguent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>éguais</i></p>
 			<p><i>éguais</i></p>
 			<p><i>éguait</i></p>
 			<p><i>éguions</i></p>
 			<p><i>éguiez</i></p>
 			<p><i>éguaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èguerai</i></p>
 			<p><i>ègueras</i></p>
@@ -1426,14 +1426,14 @@
 			<p><i>éguiez</i></p>
 			<p><i>èguent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>éguasse</i></p>
 			<p><i>éguasses</i></p>
 			<p><i>éguât</i></p>
 			<p><i>éguassions</i></p>
 			<p><i>éguassiez</i></p>
 			<p><i>éguassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1470,14 +1470,14 @@
 			<p><i>équez</i></p>
 			<p><i>èquent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>équais</i></p>
 			<p><i>équais</i></p>
 			<p><i>équait</i></p>
 			<p><i>équions</i></p>
 			<p><i>équiez</i></p>
 			<p><i>équaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èquerai</i></p>
 			<p><i>èqueras</i></p>
@@ -1514,14 +1514,14 @@
 			<p><i>équiez</i></p>
 			<p><i>èquent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>équasse</i></p>
 			<p><i>équasses</i></p>
 			<p><i>équât</i></p>
 			<p><i>équassions</i></p>
 			<p><i>équassiez</i></p>
 			<p><i>équassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1558,14 +1558,14 @@
 			<p><i>élez</i></p>
 			<p><i>èlent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>élais</i></p>
 			<p><i>élais</i></p>
 			<p><i>élait</i></p>
 			<p><i>élions</i></p>
 			<p><i>éliez</i></p>
 			<p><i>élaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>élerai</i><i>èlerai</i></p>
 			<p><i>éleras</i><i>èleras</i></p>
@@ -1602,14 +1602,14 @@
 			<p><i>éliez</i></p>
 			<p><i>èlent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>élasse</i></p>
 			<p><i>élasses</i></p>
 			<p><i>élât</i></p>
 			<p><i>élassions</i></p>
 			<p><i>élassiez</i></p>
 			<p><i>élassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1646,14 +1646,14 @@
 			<p><i>étrez</i></p>
 			<p><i>ètrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>étrais</i></p>
 			<p><i>étrais</i></p>
 			<p><i>étrait</i></p>
 			<p><i>étrions</i></p>
 			<p><i>étriez</i></p>
 			<p><i>étraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>étrerai</i><i>ètrerai</i></p>
 			<p><i>étreras</i><i>ètreras</i></p>
@@ -1690,14 +1690,14 @@
 			<p><i>étriez</i></p>
 			<p><i>ètrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>étrasse</i></p>
 			<p><i>étrasses</i></p>
 			<p><i>étrât</i></p>
 			<p><i>étrassions</i></p>
 			<p><i>étrassiez</i></p>
 			<p><i>étrassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1734,14 +1734,14 @@
 			<p><i>églez</i></p>
 			<p><i>èglent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>églais</i></p>
 			<p><i>églais</i></p>
 			<p><i>églait</i></p>
 			<p><i>églions</i></p>
 			<p><i>égliez</i></p>
 			<p><i>églaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>églerai</i><i>èglerai</i></p>
 			<p><i>égleras</i><i>ègleras</i></p>
@@ -1778,14 +1778,14 @@
 			<p><i>égliez</i></p>
 			<p><i>èglent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>églasse</i></p>
 			<p><i>églasses</i></p>
 			<p><i>églât</i></p>
 			<p><i>églassions</i></p>
 			<p><i>églassiez</i></p>
 			<p><i>églassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1822,14 +1822,14 @@
 			<p><i>égnez</i></p>
 			<p><i>ègnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>égnais</i></p>
 			<p><i>égnais</i></p>
 			<p><i>égnait</i></p>
 			<p><i>égnions</i></p>
 			<p><i>égniez</i></p>
 			<p><i>égnaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>égnerai</i><i>ègnerai</i></p>
 			<p><i>égneras</i><i>ègneras</i></p>
@@ -1866,14 +1866,14 @@
 			<p><i>égniez</i></p>
 			<p><i>ègnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>égnasse</i></p>
 			<p><i>égnasses</i></p>
 			<p><i>égnât</i></p>
 			<p><i>égnassions</i></p>
 			<p><i>égnassiez</i></p>
 			<p><i>égnassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1910,14 +1910,14 @@
 			<p><i>ébrez</i></p>
 			<p><i>èbrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ébrais</i></p>
 			<p><i>ébrais</i></p>
 			<p><i>ébrait</i></p>
 			<p><i>ébrions</i></p>
 			<p><i>ébriez</i></p>
 			<p><i>ébraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ébrerai</i><i>èbrerai</i></p>
 			<p><i>ébreras</i><i>èbreras</i></p>
@@ -1954,14 +1954,14 @@
 			<p><i>ébriez</i></p>
 			<p><i>èbrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ébrasse</i></p>
 			<p><i>ébrasses</i></p>
 			<p><i>ébrât</i></p>
 			<p><i>ébrassions</i></p>
 			<p><i>ébrassiez</i></p>
 			<p><i>ébrassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -1998,14 +1998,14 @@
 			<p><i>égrez</i></p>
 			<p><i>ègrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>égrais</i></p>
 			<p><i>égrais</i></p>
 			<p><i>égrait</i></p>
 			<p><i>égrions</i></p>
 			<p><i>égriez</i></p>
 			<p><i>égraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>égrerai</i><i>ègrerai</i></p>
 			<p><i>égreras</i><i>ègreras</i></p>
@@ -2042,14 +2042,14 @@
 			<p><i>égriez</i></p>
 			<p><i>ègrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>égrasse</i></p>
 			<p><i>égrasses</i></p>
 			<p><i>égrât</i></p>
 			<p><i>égrassions</i></p>
 			<p><i>égrassiez</i></p>
 			<p><i>égrassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2086,14 +2086,14 @@
 			<p><i>étez</i></p>
 			<p><i>ètent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>étais</i></p>
 			<p><i>étais</i></p>
 			<p><i>était</i></p>
 			<p><i>étions</i></p>
 			<p><i>étiez</i></p>
 			<p><i>étaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>éterai</i><i>èterai</i></p>
 			<p><i>éteras</i><i>èteras</i></p>
@@ -2130,14 +2130,14 @@
 			<p><i>étiez</i></p>
 			<p><i>ètent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>étasse</i></p>
 			<p><i>étasses</i></p>
 			<p><i>étât</i></p>
 			<p><i>étassions</i></p>
 			<p><i>étassiez</i></p>
 			<p><i>étassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2174,14 +2174,14 @@
 			<p><i>énez</i></p>
 			<p><i>ènent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>énais</i></p>
 			<p><i>énais</i></p>
 			<p><i>énait</i></p>
 			<p><i>énions</i></p>
 			<p><i>éniez</i></p>
 			<p><i>énaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>énerai</i><i>ènerai</i></p>
 			<p><i>éneras</i><i>èneras</i></p>
@@ -2218,14 +2218,14 @@
 			<p><i>éniez</i></p>
 			<p><i>ènent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>énasse</i></p>
 			<p><i>énasses</i></p>
 			<p><i>énât</i></p>
 			<p><i>énassions</i></p>
 			<p><i>énassiez</i></p>
 			<p><i>énassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2262,14 +2262,14 @@
 			<p><i>enez</i></p>
 			<p><i>ènent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>enais</i></p>
 			<p><i>enais</i></p>
 			<p><i>enait</i></p>
 			<p><i>enions</i></p>
 			<p><i>eniez</i></p>
 			<p><i>enaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ènerai</i></p>
 			<p><i>èneras</i></p>
@@ -2306,14 +2306,14 @@
 			<p><i>eniez</i></p>
 			<p><i>ènent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>enasse</i></p>
 			<p><i>enasses</i></p>
 			<p><i>enât</i></p>
 			<p><i>enassions</i></p>
 			<p><i>enassiez</i></p>
 			<p><i>enassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2350,14 +2350,14 @@
 			<p><i>evez</i></p>
 			<p><i>èvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>evais</i></p>
 			<p><i>evais</i></p>
 			<p><i>evait</i></p>
 			<p><i>evions</i></p>
 			<p><i>eviez</i></p>
 			<p><i>evaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èverai</i></p>
 			<p><i>èveras</i></p>
@@ -2394,14 +2394,14 @@
 			<p><i>eviez</i></p>
 			<p><i>èvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>evasse</i></p>
 			<p><i>evasses</i></p>
 			<p><i>evât</i></p>
 			<p><i>evassions</i></p>
 			<p><i>evassiez</i></p>
 			<p><i>evassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2438,14 +2438,14 @@
 			<p><i>esez</i></p>
 			<p><i>èsent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>esais</i></p>
 			<p><i>esais</i></p>
 			<p><i>esait</i></p>
 			<p><i>esions</i></p>
 			<p><i>esiez</i></p>
 			<p><i>esaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èserai</i></p>
 			<p><i>èseras</i></p>
@@ -2482,14 +2482,14 @@
 			<p><i>esiez</i></p>
 			<p><i>èsent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>esasse</i></p>
 			<p><i>esasses</i></p>
 			<p><i>esât</i></p>
 			<p><i>esassions</i></p>
 			<p><i>esassiez</i></p>
 			<p><i>esassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2526,14 +2526,14 @@
 			<p><i>échez</i></p>
 			<p><i>èchent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>échais</i></p>
 			<p><i>échais</i></p>
 			<p><i>échait</i></p>
 			<p><i>échions</i></p>
 			<p><i>échiez</i></p>
 			<p><i>échaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>écherai</i></p>
 			<p><i>écheras</i></p>
@@ -2570,14 +2570,14 @@
 			<p><i>échiez</i></p>
 			<p><i>èchent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>échasse</i></p>
 			<p><i>échasses</i></p>
 			<p><i>échât</i></p>
 			<p><i>échassions</i></p>
 			<p><i>échassiez</i></p>
 			<p><i>échassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2614,14 +2614,14 @@
 			<p><i>érez</i></p>
 			<p><i>èrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>érais</i></p>
 			<p><i>érais</i></p>
 			<p><i>érait</i></p>
 			<p><i>érions</i></p>
 			<p><i>ériez</i></p>
 			<p><i>éraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>érerai</i><i>èrerai</i></p>
 			<p><i>éreras</i><i>èreras</i></p>
@@ -2658,14 +2658,14 @@
 			<p><i>ériez</i></p>
 			<p><i>èrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>érasse</i></p>
 			<p><i>érasses</i></p>
 			<p><i>érât</i></p>
 			<p><i>érassions</i></p>
 			<p><i>érassiez</i></p>
 			<p><i>érassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2702,14 +2702,14 @@
 			<p><i>evrez</i></p>
 			<p><i>èvrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>evrais</i></p>
 			<p><i>evrais</i></p>
 			<p><i>evrait</i></p>
 			<p><i>evrions</i></p>
 			<p><i>evriez</i></p>
 			<p><i>evraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>èvrerai</i></p>
 			<p><i>èvreras</i></p>
@@ -2746,14 +2746,14 @@
 			<p><i>evriez</i></p>
 			<p><i>èvrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>evrasse</i></p>
 			<p><i>evrasses</i></p>
 			<p><i>evrât</i></p>
 			<p><i>evrassions</i></p>
 			<p><i>evrassiez</i></p>
 			<p><i>evrassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2790,14 +2790,14 @@
 			<p><i>édez</i></p>
 			<p><i>èdent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>édais</i></p>
 			<p><i>édais</i></p>
 			<p><i>édait</i></p>
 			<p><i>édions</i></p>
 			<p><i>édiez</i></p>
 			<p><i>édaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>éderai</i><i>èderai</i></p>
 			<p><i>éderas</i><i>èderas</i></p>
@@ -2834,14 +2834,14 @@
 			<p><i>édiez</i></p>
 			<p><i>èdent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>édasse</i></p>
 			<p><i>édasses</i></p>
 			<p><i>édât</i></p>
 			<p><i>édassions</i></p>
 			<p><i>édassiez</i></p>
 			<p><i>édassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2878,14 +2878,14 @@
 			<p><i>épez</i></p>
 			<p><i>èpent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>épais</i></p>
 			<p><i>épais</i></p>
 			<p><i>épait</i></p>
 			<p><i>épions</i></p>
 			<p><i>épiez</i></p>
 			<p><i>épaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>éperai</i><i>èperai</i></p>
 			<p><i>éperas</i><i>èperas</i></p>
@@ -2922,14 +2922,14 @@
 			<p><i>épiez</i></p>
 			<p><i>èpent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>épasse</i></p>
 			<p><i>épasses</i></p>
 			<p><i>épât</i></p>
 			<p><i>épassions</i></p>
 			<p><i>épassiez</i></p>
 			<p><i>épassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -2966,14 +2966,14 @@
 			<p><i>epez</i></p>
 			<p><i>èpent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>epais</i></p>
 			<p><i>epais</i></p>
 			<p><i>epait</i></p>
 			<p><i>epions</i></p>
 			<p><i>epiez</i></p>
 			<p><i>epaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>eperai</i><i>èperai</i></p>
 			<p><i>eperas</i><i>èperas</i></p>
@@ -3010,14 +3010,14 @@
 			<p><i>epiez</i></p>
 			<p><i>èpent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>epasse</i></p>
 			<p><i>epasses</i></p>
 			<p><i>epât</i></p>
 			<p><i>epassions</i></p>
 			<p><i>epassiez</i></p>
 			<p><i>epassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3054,14 +3054,14 @@
 			<p><i>ésez</i></p>
 			<p><i>èsent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ésais</i></p>
 			<p><i>ésais</i></p>
 			<p><i>ésait</i></p>
 			<p><i>ésions</i></p>
 			<p><i>ésiez</i></p>
 			<p><i>ésaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>éserai</i><i>èserai</i></p>
 			<p><i>éseras</i><i>èseras</i></p>
@@ -3098,14 +3098,14 @@
 			<p><i>ésiez</i></p>
 			<p><i>èsent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ésasse</i></p>
 			<p><i>ésasses</i></p>
 			<p><i>ésât</i></p>
 			<p><i>ésassions</i></p>
 			<p><i>ésassiez</i></p>
 			<p><i>ésassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3142,14 +3142,14 @@
 			<p><i>émez</i></p>
 			<p><i>èment</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>émais</i></p>
 			<p><i>émais</i></p>
 			<p><i>émait</i></p>
 			<p><i>émions</i></p>
 			<p><i>émiez</i></p>
 			<p><i>émaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>émerai</i><i>èmerai</i></p>
 			<p><i>émeras</i><i>èmeras</i></p>
@@ -3186,14 +3186,14 @@
 			<p><i>émiez</i></p>
 			<p><i>èment</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>émasse</i></p>
 			<p><i>émasses</i></p>
 			<p><i>émât</i></p>
 			<p><i>émassions</i></p>
 			<p><i>émassiez</i></p>
 			<p><i>émassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3230,14 +3230,14 @@
 			<p><i>égez</i></p>
 			<p><i>ègent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>égeais</i></p>
 			<p><i>égeais</i></p>
 			<p><i>égeait</i></p>
 			<p><i>égions</i></p>
 			<p><i>égiez</i></p>
 			<p><i>égeaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ègerai</i></p>
 			<p><i>ègeras</i></p>
@@ -3274,14 +3274,14 @@
 			<p><i>égiez</i></p>
 			<p><i>ègent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>égeasse</i></p>
 			<p><i>égeasses</i></p>
 			<p><i>égeât</i></p>
 			<p><i>égeassions</i></p>
 			<p><i>égeassiez</i></p>
 			<p><i>égeassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3318,14 +3318,14 @@
 			<p><i>ez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
 			<p><i>ait</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
@@ -3362,14 +3362,14 @@
 			<p><i>iez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
 			<p><i>ât</i></p>
 			<p><i>assions</i></p>
 			<p><i>assiez</i></p>
 			<p><i>assent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3406,14 +3406,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ait</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -3450,14 +3450,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ât</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3494,14 +3494,14 @@
 			<p><i>évrez</i></p>
 			<p><i>èvrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>évrais</i></p>
 			<p><i>évrais</i></p>
 			<p><i>évrait</i></p>
 			<p><i>évrions</i></p>
 			<p><i>évriez</i></p>
 			<p><i>évraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>évrerai</i></p>
 			<p><i>évreras</i></p>
@@ -3538,14 +3538,14 @@
 			<p><i>évriez</i></p>
 			<p><i>èvrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>évrasse</i></p>
 			<p><i>évrasses</i></p>
 			<p><i>évrât</i></p>
 			<p><i>évrassions</i></p>
 			<p><i>évrassiez</i></p>
 			<p><i>évrassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3582,14 +3582,14 @@
 			<p><i>écrez</i></p>
 			<p><i>ècrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>écrais</i></p>
 			<p><i>écrais</i></p>
 			<p><i>écrait</i></p>
 			<p><i>écrions</i></p>
 			<p><i>écriez</i></p>
 			<p><i>écraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>écrerai</i></p>
 			<p><i>écreras</i></p>
@@ -3626,14 +3626,14 @@
 			<p><i>écriez</i></p>
 			<p><i>ècrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>écrasse</i></p>
 			<p><i>écrasses</i></p>
 			<p><i>écrât</i></p>
 			<p><i>écrassions</i></p>
 			<p><i>écrassiez</i></p>
 			<p><i>écrassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3670,14 +3670,14 @@
 			<p><i>érez</i></p>
 			<p><i>ièrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>érais</i></p>
 			<p><i>érais</i></p>
 			<p><i>érait</i></p>
 			<p><i>érions</i></p>
 			<p><i>ériez</i></p>
 			<p><i>éraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>errai</i></p>
 			<p><i>erras</i></p>
@@ -3714,14 +3714,14 @@
 			<p><i>ériez</i></p>
 			<p><i>ièrent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3758,14 +3758,14 @@
 			<p><i>ïssez</i></p>
 			<p><i>ïssent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ïssais</i></p>
 			<p><i>ïssais</i></p>
 			<p><i>ïssait</i></p>
 			<p><i>ïssions</i></p>
 			<p><i>ïssiez</i></p>
 			<p><i>ïssaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ïrai</i></p>
 			<p><i>ïras</i></p>
@@ -3802,14 +3802,14 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ïsse</i></p>
 			<p><i>ïsses</i></p>
 			<p><i>ït</i></p>
 			<p><i>ïssions</i></p>
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3846,14 +3846,14 @@
 			<p><i>ïssez</i></p>
 			<p><i>ïssent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ïssais</i></p>
 			<p><i>ïssais</i></p>
 			<p><i>ïssait</i></p>
 			<p><i>ïssions</i></p>
 			<p><i>ïssiez</i></p>
 			<p><i>ïssaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ïrai</i></p>
 			<p><i>ïras</i></p>
@@ -3890,14 +3890,14 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ïsse</i></p>
 			<p><i>ïsses</i></p>
 			<p><i>ït</i></p>
 			<p><i>ïssions</i></p>
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -3934,14 +3934,14 @@
 			<p><i>eurissez</i></p>
 			<p><i>eurissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>eurissais</i><i>orissais</i></p>
 			<p><i>eurissais</i><i>orissais</i></p>
 			<p><i>eurissait</i><i>orissait</i></p>
 			<p><i>eurissions</i><i>orissions</i></p>
 			<p><i>eurissiez</i><i>orissiez</i></p>
 			<p><i>eurissaient</i><i>orissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>eurirai</i></p>
 			<p><i>euriras</i></p>
@@ -3978,14 +3978,14 @@
 			<p><i>eurissiez</i></p>
 			<p><i>eurissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>eurisse</i></p>
 			<p><i>eurisses</i></p>
 			<p><i>eurît</i></p>
 			<p><i>eurissions</i></p>
 			<p><i>eurissiez</i></p>
 			<p><i>eurissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4022,14 +4022,14 @@
 			<p><i>rez</i></p>
 			<p><i>rent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
 			<p><i>rait</i></p>
 			<p><i>rions</i></p>
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>rirai</i></p>
 			<p><i>riras</i></p>
@@ -4066,14 +4066,14 @@
 			<p><i>riez</i></p>
 			<p><i>rent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>risse</i></p>
 			<p><i>risses</i></p>
 			<p><i>rît</i></p>
 			<p><i>rissions</i></p>
 			<p><i>rissiez</i></p>
 			<p><i>rissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4110,14 +4110,14 @@
 			<p><i>mez</i></p>
 			<p><i>ment</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>mais</i></p>
 			<p><i>mais</i></p>
 			<p><i>mait</i></p>
 			<p><i>mions</i></p>
 			<p><i>miez</i></p>
 			<p><i>maient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>mirai</i></p>
 			<p><i>miras</i></p>
@@ -4154,14 +4154,14 @@
 			<p><i>miez</i></p>
 			<p><i>ment</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>misse</i></p>
 			<p><i>misses</i></p>
 			<p><i>mît</i></p>
 			<p><i>missions</i></p>
 			<p><i>missiez</i></p>
 			<p><i>missent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4198,14 +4198,14 @@
 			<p><i>tez</i></p>
 			<p><i>tent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>tais</i></p>
 			<p><i>tais</i></p>
 			<p><i>tait</i></p>
 			<p><i>tions</i></p>
 			<p><i>tiez</i></p>
 			<p><i>taient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>tirai</i></p>
 			<p><i>tiras</i></p>
@@ -4242,14 +4242,14 @@
 			<p><i>tiez</i></p>
 			<p><i>tent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>tisse</i></p>
 			<p><i>tisses</i></p>
 			<p><i>tît</i></p>
 			<p><i>tissions</i></p>
 			<p><i>tissiez</i></p>
 			<p><i>tissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4286,14 +4286,14 @@
 			<p><i>vez</i></p>
 			<p><i>vent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>vais</i></p>
 			<p><i>vais</i></p>
 			<p><i>vait</i></p>
 			<p><i>vions</i></p>
 			<p><i>viez</i></p>
 			<p><i>vaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>virai</i></p>
 			<p><i>viras</i></p>
@@ -4330,14 +4330,14 @@
 			<p><i>viez</i></p>
 			<p><i>vent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>visse</i></p>
 			<p><i>visses</i></p>
 			<p><i>vît</i></p>
 			<p><i>vissions</i></p>
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4374,14 +4374,14 @@
 			<p><i>illez</i></p>
 			<p><i>illent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>illais</i></p>
 			<p><i>illais</i></p>
 			<p><i>illait</i></p>
 			<p><i>illions</i></p>
 			<p><i>illiez</i></p>
 			<p><i>illaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>illirai</i></p>
 			<p><i>illiras</i></p>
@@ -4418,14 +4418,14 @@
 			<p><i>illiez</i></p>
 			<p><i>illent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>illisse</i></p>
 			<p><i>illisses</i></p>
 			<p><i>illît</i></p>
 			<p><i>illissions</i></p>
 			<p><i>illissiez</i></p>
 			<p><i>illissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4462,14 +4462,14 @@
 			<p><i>ez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
 			<p><i>ait</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -4506,14 +4506,14 @@
 			<p><i>iez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4550,14 +4550,14 @@
 			<p><i>issez</i></p>
 			<p><i>issent</i><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>issais</i></p>
 			<p><i>issais</i></p>
 			<p><i>issait</i><i>ait</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issaient</i><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -4594,14 +4594,14 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4638,14 +4638,14 @@
 			<p><i>ez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
 			<p><i>ait</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
@@ -4682,14 +4682,14 @@
 			<p><i>iez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4726,14 +4726,14 @@
 			<p><i>enez</i></p>
 			<p><i>iennent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>enais</i></p>
 			<p><i>enais</i></p>
 			<p><i>enait</i></p>
 			<p><i>enions</i></p>
 			<p><i>eniez</i></p>
 			<p><i>enaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>iendrai</i></p>
 			<p><i>iendras</i></p>
@@ -4770,14 +4770,14 @@
 			<p><i>eniez</i></p>
 			<p><i>iennent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>insse</i></p>
 			<p><i>insses</i></p>
 			<p><i>înt</i></p>
 			<p><i>inssions</i></p>
 			<p><i>inssiez</i></p>
 			<p><i>inssent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4814,14 +4814,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>enait</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -4858,14 +4858,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>înt</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4902,14 +4902,14 @@
 			<p><i>yez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yais</i></p>
 			<p><i>yais</i></p>
 			<p><i>yait</i></p>
 			<p><i>yions</i></p>
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -4946,14 +4946,14 @@
 			<p><i>yiez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -4990,14 +4990,14 @@
 			<p><i>ourez</i></p>
 			<p><i>eurent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ourais</i></p>
 			<p><i>ourais</i></p>
 			<p><i>ourait</i></p>
 			<p><i>ourions</i></p>
 			<p><i>ouriez</i></p>
 			<p><i>ouraient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ourrai</i></p>
 			<p><i>ourras</i></p>
@@ -5034,14 +5034,14 @@
 			<p><i>ouriez</i></p>
 			<p><i>eurent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ourusse</i></p>
 			<p><i>ourusses</i></p>
 			<p><i>ourût</i></p>
 			<p><i>ourussions</i></p>
 			<p><i>ourussiez</i></p>
 			<p><i>ourussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5078,14 +5078,14 @@
 			<p><i>ez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
 			<p><i>ait</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -5122,14 +5122,14 @@
 			<p><i>iez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5166,14 +5166,14 @@
 			<p><i>ez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
 			<p><i>ait</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
@@ -5210,14 +5210,14 @@
 			<p><i>iez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5254,14 +5254,14 @@
 			<p><i>issez</i></p>
 			<p><i>issent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>issais</i></p>
 			<p><i>issais</i></p>
 			<p><i>issait</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -5298,14 +5298,14 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5342,14 +5342,14 @@
 			<p><i>ez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
 			<p><i>ait</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
 			<p><i>aient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -5386,14 +5386,14 @@
 			<p><i>iez</i></p>
 			<p><i>ent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5430,14 +5430,14 @@
 			<p><i>issez</i></p>
 			<p><i>issent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>issais</i></p>
 			<p><i>issais</i></p>
 			<p><i>issait</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -5474,14 +5474,14 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5518,14 +5518,14 @@
 			<p><i>illez</i></p>
 			<p><i>illent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>illais</i></p>
 			<p><i>illais</i></p>
 			<p><i>illait</i></p>
 			<p><i>illions</i></p>
 			<p><i>illiez</i></p>
 			<p><i>illaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>illirai</i></p>
 			<p><i>illiras</i></p>
@@ -5562,14 +5562,14 @@
 			<p><i>illissiez</i></p>
 			<p><i>illissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>illisse</i></p>
 			<p><i>illisses</i></p>
 			<p><i>illît</i></p>
 			<p><i>illissions</i></p>
 			<p><i>illissiez</i></p>
 			<p><i>illissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5606,14 +5606,14 @@
 			<p><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -5650,14 +5650,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5694,14 +5694,14 @@
 			<p><i>cevez</i></p>
 			<p><i>çoivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>cevais</i></p>
 			<p><i>cevais</i></p>
 			<p><i>cevait</i></p>
 			<p><i>cevions</i></p>
 			<p><i>ceviez</i></p>
 			<p><i>cevaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>cevrai</i></p>
 			<p><i>cevras</i></p>
@@ -5738,14 +5738,14 @@
 			<p><i>ceviez</i></p>
 			<p><i>çoivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>çusse</i></p>
 			<p><i>çusses</i></p>
 			<p><i>çût</i></p>
 			<p><i>çussions</i></p>
 			<p><i>çussiez</i></p>
 			<p><i>çussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5782,14 +5782,14 @@
 			<p><i>evez</i></p>
 			<p><i>oivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>evais</i></p>
 			<p><i>evais</i></p>
 			<p><i>evait</i></p>
 			<p><i>evions</i></p>
 			<p><i>eviez</i></p>
 			<p><i>evaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>evrai</i></p>
 			<p><i>evras</i></p>
@@ -5826,14 +5826,14 @@
 			<p><i>eviez</i></p>
 			<p><i>oivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5870,14 +5870,14 @@
 			<p><i>ouvez</i></p>
 			<p><i>euvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ouvais</i></p>
 			<p><i>ouvais</i></p>
 			<p><i>ouvait</i></p>
 			<p><i>ouvions</i></p>
 			<p><i>ouviez</i></p>
 			<p><i>ouvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ouvrai</i></p>
 			<p><i>ouvras</i></p>
@@ -5914,14 +5914,14 @@
 			<p><i>ouviez</i></p>
 			<p><i>euvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -5958,14 +5958,14 @@
 			<p><i>ouvez</i></p>
 			<p><i>euvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ouvais</i></p>
 			<p><i>ouvais</i></p>
 			<p><i>ouvait</i></p>
 			<p><i>ouvions</i></p>
 			<p><i>ouviez</i></p>
 			<p><i>ouvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ouvrai</i></p>
 			<p><i>ouvras</i></p>
@@ -6002,14 +6002,14 @@
 			<p><i>ouviez</i></p>
 			<p><i>euvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6046,14 +6046,14 @@
 			<p><i>avez</i></p>
 			<p><i>avent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>avais</i></p>
 			<p><i>avais</i></p>
 			<p><i>avait</i></p>
 			<p><i>avions</i></p>
 			<p><i>aviez</i></p>
 			<p><i>avaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>aurai</i></p>
 			<p><i>auras</i></p>
@@ -6090,14 +6090,14 @@
 			<p><i>achiez</i></p>
 			<p><i>achent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6134,14 +6134,14 @@
 			<p><i>oulez</i></p>
 			<p><i>eulent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oulais</i></p>
 			<p><i>oulais</i></p>
 			<p><i>oulait</i></p>
 			<p><i>oulions</i></p>
 			<p><i>ouliez</i></p>
 			<p><i>oulaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oudrai</i></p>
 			<p><i>oudras</i></p>
@@ -6178,14 +6178,14 @@
 			<p><i>ouliez</i></p>
 			<p><i>euillent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oulusse</i></p>
 			<p><i>oulusses</i></p>
 			<p><i>oulût</i></p>
 			<p><i>oulussions</i></p>
 			<p><i>oulussiez</i></p>
 			<p><i>oulussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6222,14 +6222,14 @@
 			<p><i>lez</i></p>
 			<p><i>lent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lais</i></p>
 			<p><i>lais</i></p>
 			<p><i>lait</i></p>
 			<p><i>lions</i></p>
 			<p><i>liez</i></p>
 			<p><i>laient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
@@ -6266,14 +6266,14 @@
 			<p><i>liez</i></p>
 			<p><i>illent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lusse</i></p>
 			<p><i>lusses</i></p>
 			<p><i>lût</i></p>
 			<p><i>lussions</i></p>
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6310,14 +6310,14 @@
 			<p><i>lez</i></p>
 			<p><i>lent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lais</i></p>
 			<p><i>lais</i></p>
 			<p><i>lait</i></p>
 			<p><i>lions</i></p>
 			<p><i>liez</i></p>
 			<p><i>laient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
@@ -6354,14 +6354,14 @@
 			<p><i>liez</i></p>
 			<p><i>lent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lusse</i></p>
 			<p><i>lusses</i></p>
 			<p><i>lût</i></p>
 			<p><i>lussions</i></p>
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6398,14 +6398,14 @@
 			<p><i>ouvez</i></p>
 			<p><i>euvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ouvais</i></p>
 			<p><i>ouvais</i></p>
 			<p><i>ouvait</i></p>
 			<p><i>ouvions</i></p>
 			<p><i>ouviez</i></p>
 			<p><i>ouvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ourrai</i></p>
 			<p><i>ourras</i></p>
@@ -6442,14 +6442,14 @@
 			<p><i>uissiez</i></p>
 			<p><i>uissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6486,14 +6486,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>errai</i></p>
 			<p><i>erras</i></p>
@@ -6530,14 +6530,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6574,14 +6574,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
@@ -6618,14 +6618,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6662,14 +6662,14 @@
 			<p><i>eyez</i><i>oyez</i></p>
 			<p><i>eyent</i><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>eyais</i><i>oyais</i></p>
 			<p><i>eyais</i><i>oyais</i></p>
 			<p><i>eyait</i><i>oyait</i></p>
 			<p><i>eyions</i><i>oyions</i></p>
 			<p><i>eyiez</i><i>oyiez</i></p>
 			<p><i>eyaient</i><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>iérai</i><i>eyerai</i><i>oirai</i></p>
 			<p><i>iéras</i><i>eyeras</i><i>oiras</i></p>
@@ -6706,14 +6706,14 @@
 			<p><i>eyiez</i><i>oyiez</i></p>
 			<p><i>eyent</i><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6750,14 +6750,14 @@
 			<p><i>eyez</i><i>oyez</i></p>
 			<p><i>eyent</i><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>eyais</i><i>oyais</i></p>
 			<p><i>eyais</i><i>oyais</i></p>
 			<p><i>eyait</i><i>oyait</i></p>
 			<p><i>eyions</i><i>oyions</i></p>
 			<p><i>eyiez</i><i>oyiez</i></p>
 			<p><i>eyaient</i><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>iérai</i><i>eyerai</i><i>oirai</i></p>
 			<p><i>iéras</i><i>eyeras</i><i>oiras</i></p>
@@ -6794,14 +6794,14 @@
 			<p><i>eyiez</i><i>oyiez</i></p>
 			<p><i>eyent</i><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6838,14 +6838,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>eoirai</i></p>
 			<p><i>eoiras</i></p>
@@ -6882,14 +6882,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -6926,14 +6926,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
@@ -6970,14 +6970,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7014,14 +7014,14 @@
 			<p></p>
 			<p><i>iéent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>eyait</i></p>
 			<p></p>
 			<p></p>
 			<p><i>eyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -7058,14 +7058,14 @@
 			<p></p>
 			<p><i>iéent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7102,14 +7102,14 @@
 			<p></p>
 			<p><i>euvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>euvait</i></p>
 			<p></p>
 			<p></p>
 			<p><i>euvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -7146,14 +7146,14 @@
 			<p></p>
 			<p><i>euvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ût</i></p>
 			<p></p>
 			<p></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7190,14 +7190,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>llait</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -7234,14 +7234,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>llût</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7278,14 +7278,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
@@ -7322,14 +7322,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7366,14 +7366,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
@@ -7410,14 +7410,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7454,14 +7454,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oirai</i><i>errai</i></p>
 			<p><i>oiras</i><i>erras</i></p>
@@ -7498,14 +7498,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ût</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7542,14 +7542,14 @@
 			<p></p>
 			<p><i>oient</i><i>éent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>oyait</i></p>
 			<p></p>
 			<p></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -7586,14 +7586,14 @@
 			<p></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ût</i></p>
 			<p></p>
 			<p></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7630,14 +7630,14 @@
 			<p><i>dez</i></p>
 			<p><i>dent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>dais</i></p>
 			<p><i>dais</i></p>
 			<p><i>dait</i></p>
 			<p><i>dions</i></p>
 			<p><i>diez</i></p>
 			<p><i>daient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>drai</i></p>
 			<p><i>dras</i></p>
@@ -7674,14 +7674,14 @@
 			<p><i>diez</i></p>
 			<p><i>dent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>disse</i></p>
 			<p><i>disses</i></p>
 			<p><i>dît</i></p>
 			<p><i>dissions</i></p>
 			<p><i>dissiez</i></p>
 			<p><i>dissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7718,14 +7718,14 @@
 			<p><i>quez</i></p>
 			<p><i>quent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>quais</i></p>
 			<p><i>quais</i></p>
 			<p><i>quait</i></p>
 			<p><i>quions</i></p>
 			<p><i>quiez</i></p>
 			<p><i>quaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>crai</i></p>
 			<p><i>cras</i></p>
@@ -7762,14 +7762,14 @@
 			<p><i>quiez</i></p>
 			<p><i>quent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>quisse</i></p>
 			<p><i>quisses</i></p>
 			<p><i>quît</i></p>
 			<p><i>quissions</i></p>
 			<p><i>quissiez</i></p>
 			<p><i>quissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7806,14 +7806,14 @@
 			<p><i>tez</i></p>
 			<p><i>tent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>tais</i></p>
 			<p><i>tais</i></p>
 			<p><i>tait</i></p>
 			<p><i>tions</i></p>
 			<p><i>tiez</i></p>
 			<p><i>taient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>trai</i></p>
 			<p><i>tras</i></p>
@@ -7850,14 +7850,14 @@
 			<p><i>tiez</i></p>
 			<p><i>tent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>tisse</i></p>
 			<p><i>tisses</i></p>
 			<p><i>tît</i></p>
 			<p><i>tissions</i></p>
 			<p><i>tissiez</i></p>
 			<p><i>tissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7894,14 +7894,14 @@
 			<p><i>tez</i></p>
 			<p><i>tent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>tais</i></p>
 			<p><i>tais</i></p>
 			<p><i>tait</i></p>
 			<p><i>tions</i></p>
 			<p><i>tiez</i></p>
 			<p><i>taient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>trai</i></p>
 			<p><i>tras</i></p>
@@ -7938,14 +7938,14 @@
 			<p><i>tiez</i></p>
 			<p><i>tent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -7982,14 +7982,14 @@
 			<p><i>ettez</i></p>
 			<p><i>ettent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ettais</i></p>
 			<p><i>ettais</i></p>
 			<p><i>ettait</i></p>
 			<p><i>ettions</i></p>
 			<p><i>ettiez</i></p>
 			<p><i>ettaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ettrai</i></p>
 			<p><i>ettras</i></p>
@@ -8026,14 +8026,14 @@
 			<p><i>ettiez</i></p>
 			<p><i>ettent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8070,14 +8070,14 @@
 			<p><i>enez</i></p>
 			<p><i>ennent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>enais</i></p>
 			<p><i>enais</i></p>
 			<p><i>enait</i></p>
 			<p><i>enions</i></p>
 			<p><i>eniez</i></p>
 			<p><i>enaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>endrai</i></p>
 			<p><i>endras</i></p>
@@ -8114,14 +8114,14 @@
 			<p><i>eniez</i></p>
 			<p><i>ennent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8158,14 +8158,14 @@
 			<p><i>pez</i></p>
 			<p><i>pent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>pais</i></p>
 			<p><i>pais</i></p>
 			<p><i>pait</i></p>
 			<p><i>pions</i></p>
 			<p><i>piez</i></p>
 			<p><i>paient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>prai</i></p>
 			<p><i>pras</i></p>
@@ -8202,14 +8202,14 @@
 			<p><i>piez</i></p>
 			<p><i>pent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>pisse</i></p>
 			<p><i>pisses</i></p>
 			<p><i>pît</i></p>
 			<p><i>pissions</i></p>
 			<p><i>pissiez</i></p>
 			<p><i>pissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8246,14 +8246,14 @@
 			<p><i>lez</i></p>
 			<p><i>lent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lais</i></p>
 			<p><i>lais</i></p>
 			<p><i>lait</i></p>
 			<p><i>lions</i></p>
 			<p><i>liez</i></p>
 			<p><i>laient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>drai</i></p>
 			<p><i>dras</i></p>
@@ -8290,14 +8290,14 @@
 			<p><i>liez</i></p>
 			<p><i>lent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lusse</i></p>
 			<p><i>lusses</i></p>
 			<p><i>lût</i></p>
 			<p><i>lussions</i></p>
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8334,14 +8334,14 @@
 			<p><i>sez</i></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>sais</i></p>
 			<p><i>sais</i></p>
 			<p><i>sait</i></p>
 			<p><i>sions</i></p>
 			<p><i>siez</i></p>
 			<p><i>saient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>drai</i></p>
 			<p><i>dras</i></p>
@@ -8378,14 +8378,14 @@
 			<p><i>siez</i></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>sisse</i></p>
 			<p><i>sisses</i></p>
 			<p><i>sît</i></p>
 			<p><i>sissions</i></p>
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8422,14 +8422,14 @@
 			<p><i>lvez</i></p>
 			<p><i>lvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lvais</i></p>
 			<p><i>lvais</i></p>
 			<p><i>lvait</i></p>
 			<p><i>lvions</i></p>
 			<p><i>lviez</i></p>
 			<p><i>lvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
@@ -8466,14 +8466,14 @@
 			<p><i>lviez</i></p>
 			<p><i>lvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lusse</i></p>
 			<p><i>lusses</i></p>
 			<p><i>lût</i></p>
 			<p><i>lussions</i></p>
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8510,14 +8510,14 @@
 			<p><i>lvez</i></p>
 			<p><i>lvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lvais</i></p>
 			<p><i>lvais</i></p>
 			<p><i>lvait</i></p>
 			<p><i>lvions</i></p>
 			<p><i>lviez</i></p>
 			<p><i>lvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
@@ -8554,14 +8554,14 @@
 			<p><i>lviez</i></p>
 			<p><i>lvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8598,14 +8598,14 @@
 			<p><i>lvez</i></p>
 			<p><i>lvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>lvais</i></p>
 			<p><i>lvais</i></p>
 			<p><i>lvait</i></p>
 			<p><i>lvions</i></p>
 			<p><i>lviez</i></p>
 			<p><i>lvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>udrai</i></p>
 			<p><i>udras</i></p>
@@ -8642,14 +8642,14 @@
 			<p><i>lviez</i></p>
 			<p><i>lvent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8686,14 +8686,14 @@
 			<p><i>gnez</i></p>
 			<p><i>gnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>gnais</i></p>
 			<p><i>gnais</i></p>
 			<p><i>gnait</i></p>
 			<p><i>gnions</i></p>
 			<p><i>gniez</i></p>
 			<p><i>gnaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ndrai</i></p>
 			<p><i>ndras</i></p>
@@ -8730,14 +8730,14 @@
 			<p><i>gniez</i></p>
 			<p><i>gnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>gnisse</i></p>
 			<p><i>gnisses</i></p>
 			<p><i>gnît</i></p>
 			<p><i>gnissions</i></p>
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8774,14 +8774,14 @@
 			<p><i>gnez</i></p>
 			<p><i>gnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>gnais</i></p>
 			<p><i>gnais</i></p>
 			<p><i>gnait</i></p>
 			<p><i>gnions</i></p>
 			<p><i>gniez</i></p>
 			<p><i>gnaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ndrai</i></p>
 			<p><i>ndras</i></p>
@@ -8818,14 +8818,14 @@
 			<p><i>gniez</i></p>
 			<p><i>gnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>gnisse</i></p>
 			<p><i>gnisses</i></p>
 			<p><i>gnît</i></p>
 			<p><i>gnissions</i></p>
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8862,14 +8862,14 @@
 			<p><i>vez</i></p>
 			<p><i>vent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>vais</i></p>
 			<p><i>vais</i></p>
 			<p><i>vait</i></p>
 			<p><i>vions</i></p>
 			<p><i>viez</i></p>
 			<p><i>vaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>vrai</i></p>
 			<p><i>vras</i></p>
@@ -8906,14 +8906,14 @@
 			<p><i>viez</i></p>
 			<p><i>vent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>visse</i></p>
 			<p><i>visses</i></p>
 			<p><i>vît</i></p>
 			<p><i>vissions</i></p>
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -8950,14 +8950,14 @@
 			<p><i>ivez</i></p>
 			<p><i>ivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ivais</i></p>
 			<p><i>ivais</i></p>
 			<p><i>ivait</i></p>
 			<p><i>ivions</i></p>
 			<p><i>iviez</i></p>
 			<p><i>ivaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ivrai</i></p>
 			<p><i>ivras</i></p>
@@ -8994,14 +8994,14 @@
 			<p><i>iviez</i></p>
 			<p><i>ivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>écusse</i></p>
 			<p><i>écusses</i></p>
 			<p><i>écût</i></p>
 			<p><i>écussions</i></p>
 			<p><i>écussiez</i></p>
 			<p><i>écussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9038,14 +9038,14 @@
 			<p><i>aissez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aissais</i></p>
 			<p><i>aissais</i></p>
 			<p><i>aissait</i></p>
 			<p><i>aissions</i></p>
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
@@ -9082,14 +9082,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9126,14 +9126,14 @@
 			<p><i>aissez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aissais</i></p>
 			<p><i>aissais</i></p>
 			<p><i>aissait</i></p>
 			<p><i>aissions</i></p>
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
@@ -9170,14 +9170,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9214,14 +9214,14 @@
 			<p><i>aissez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aissais</i></p>
 			<p><i>aissais</i></p>
 			<p><i>aissait</i></p>
 			<p><i>aissions</i></p>
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
@@ -9258,14 +9258,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9302,14 +9302,14 @@
 			<p><i>aissez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aissais</i></p>
 			<p><i>aissais</i></p>
 			<p><i>aissait</i></p>
 			<p><i>aissions</i></p>
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
@@ -9346,14 +9346,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aquisse</i></p>
 			<p><i>aquisses</i></p>
 			<p><i>aquît</i></p>
 			<p><i>aquissions</i></p>
 			<p><i>aquissiez</i></p>
 			<p><i>aquissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9390,14 +9390,14 @@
 			<p><i>aissez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aissais</i></p>
 			<p><i>aissais</i></p>
 			<p><i>aissait</i></p>
 			<p><i>aissions</i></p>
 			<p><i>aissiez</i></p>
 			<p><i>aissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>aîtrai</i></p>
 			<p><i>aîtras</i></p>
@@ -9434,14 +9434,14 @@
 			<p><i>aissiez</i></p>
 			<p><i>aissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aquisse</i></p>
 			<p><i>aquisses</i></p>
 			<p><i>aquît</i></p>
 			<p><i>aquissions</i></p>
 			<p><i>aquissiez</i></p>
 			<p><i>aquissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9478,14 +9478,14 @@
 			<p><i>oissez</i></p>
 			<p><i>oissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oissais</i></p>
 			<p><i>oissais</i></p>
 			<p><i>oissait</i></p>
 			<p><i>oissions</i></p>
 			<p><i>oissiez</i></p>
 			<p><i>oissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oîtrai</i></p>
 			<p><i>oîtras</i></p>
@@ -9522,14 +9522,14 @@
 			<p><i>oissiez</i></p>
 			<p><i>oissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>ûsse</i></p>
 			<p><i>ûsses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ûssions</i></p>
 			<p><i>ûssiez</i></p>
 			<p><i>ûssent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9566,14 +9566,14 @@
 			<p><i>oissez</i></p>
 			<p><i>oissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oissais</i></p>
 			<p><i>oissais</i></p>
 			<p><i>oissait</i></p>
 			<p><i>oissions</i></p>
 			<p><i>oissiez</i></p>
 			<p><i>oissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oîtrai</i></p>
 			<p><i>oîtras</i></p>
@@ -9610,14 +9610,14 @@
 			<p><i>oissiez</i></p>
 			<p><i>oissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9655,14 +9655,14 @@
 			<p><i>oissez</i></p>
 			<p><i>oissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oissais</i></p>
 			<p><i>oissais</i></p>
 			<p><i>oissait</i></p>
 			<p><i>oissions</i></p>
 			<p><i>oissiez</i></p>
 			<p><i>oissaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oîtrai</i></p>
 			<p><i>oîtras</i></p>
@@ -9699,14 +9699,14 @@
 			<p><i>oissiez</i></p>
 			<p><i>oissent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9743,14 +9743,14 @@
 			<p><i>iez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>iais</i></p>
 			<p><i>iais</i></p>
 			<p><i>iait</i></p>
 			<p><i>iions</i></p>
 			<p><i>iiez</i></p>
 			<p><i>iaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -9787,14 +9787,14 @@
 			<p><i>iiez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9831,14 +9831,14 @@
 			<p><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -9875,14 +9875,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -9919,14 +9919,14 @@
 			<p><i>uez</i></p>
 			<p><i>uent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>uais</i></p>
 			<p><i>uais</i></p>
 			<p><i>uait</i></p>
 			<p><i>uions</i></p>
 			<p><i>uiez</i></p>
 			<p><i>uaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>urai</i></p>
 			<p><i>uras</i></p>
@@ -9963,14 +9963,14 @@
 			<p><i>uiez</i></p>
 			<p><i>uent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10007,14 +10007,14 @@
 			<p><i>uez</i></p>
 			<p><i>uent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>uais</i></p>
 			<p><i>uais</i></p>
 			<p><i>uait</i></p>
 			<p><i>uions</i></p>
 			<p><i>uiez</i></p>
 			<p><i>uaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>urai</i></p>
 			<p><i>uras</i></p>
@@ -10051,14 +10051,14 @@
 			<p><i>uiez</i></p>
 			<p><i>uent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10095,14 +10095,14 @@
 			<p><i>sez</i></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>sais</i></p>
 			<p><i>sais</i></p>
 			<p><i>sait</i></p>
 			<p><i>sions</i></p>
 			<p><i>siez</i></p>
 			<p><i>saient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
@@ -10139,14 +10139,14 @@
 			<p><i>siez</i></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>sisse</i></p>
 			<p><i>sisses</i></p>
 			<p><i>sît</i></p>
 			<p><i>sissions</i></p>
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10183,14 +10183,14 @@
 			<p><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -10227,14 +10227,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10271,14 +10271,14 @@
 			<p><i>sez</i></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>sais</i></p>
 			<p><i>sais</i></p>
 			<p><i>sait</i></p>
 			<p><i>sions</i></p>
 			<p><i>siez</i></p>
 			<p><i>saient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
@@ -10315,14 +10315,14 @@
 			<p><i>siez</i></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>sisse</i></p>
 			<p><i>sisses</i></p>
 			<p><i>sît</i></p>
 			<p><i>sissions</i></p>
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10359,14 +10359,14 @@
 			<p><i>vez</i></p>
 			<p><i>vent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>vais</i></p>
 			<p><i>vais</i></p>
 			<p><i>vait</i></p>
 			<p><i>vions</i></p>
 			<p><i>viez</i></p>
 			<p><i>vaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
@@ -10403,14 +10403,14 @@
 			<p><i>viez</i></p>
 			<p><i>vent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>visse</i></p>
 			<p><i>visses</i></p>
 			<p><i>vît</i></p>
 			<p><i>vissions</i></p>
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10447,14 +10447,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
@@ -10491,14 +10491,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10535,14 +10535,14 @@
 			<p><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -10579,14 +10579,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10623,14 +10623,14 @@
 			<p><i>ites</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -10667,14 +10667,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10711,14 +10711,14 @@
 			<p><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -10755,14 +10755,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10799,14 +10799,14 @@
 			<p><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -10843,14 +10843,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10887,14 +10887,14 @@
 			<p><i>ites</i><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -10931,14 +10931,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -10975,14 +10975,14 @@
 			<p><i>isez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isais</i></p>
 			<p><i>isais</i></p>
 			<p><i>isait</i></p>
 			<p><i>isions</i></p>
 			<p><i>isiez</i></p>
 			<p><i>isaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -11019,14 +11019,14 @@
 			<p><i>isiez</i></p>
 			<p><i>isent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11063,14 +11063,14 @@
 			<p><i>uvez</i></p>
 			<p><i>oivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>uvais</i></p>
 			<p><i>uvais</i></p>
 			<p><i>uvait</i></p>
 			<p><i>uvions</i></p>
 			<p><i>uviez</i></p>
 			<p><i>uvaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>oirai</i></p>
 			<p><i>oiras</i></p>
@@ -11107,14 +11107,14 @@
 			<p><i>uviez</i></p>
 			<p><i>oivent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11151,14 +11151,14 @@
 			<p><i>aisez</i></p>
 			<p><i>aisent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aisais</i></p>
 			<p><i>aisais</i></p>
 			<p><i>aisait</i></p>
 			<p><i>aisions</i></p>
 			<p><i>aisiez</i></p>
 			<p><i>aisaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>airai</i></p>
 			<p><i>airas</i></p>
@@ -11195,14 +11195,14 @@
 			<p><i>aisiez</i></p>
 			<p><i>aisent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11239,14 +11239,14 @@
 			<p><i>aisez</i></p>
 			<p><i>aisent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aisais</i></p>
 			<p><i>aisais</i></p>
 			<p><i>aisait</i></p>
 			<p><i>aisions</i></p>
 			<p><i>aisiez</i></p>
 			<p><i>aisaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>airai</i></p>
 			<p><i>airas</i></p>
@@ -11283,14 +11283,14 @@
 			<p><i>aisiez</i></p>
 			<p><i>aisent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>usse</i></p>
 			<p><i>usses</i></p>
 			<p><i>ût</i></p>
 			<p><i>ussions</i></p>
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11327,14 +11327,14 @@
 			<p><i>aites</i></p>
 			<p><i>ont</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>aisais</i></p>
 			<p><i>aisais</i></p>
 			<p><i>aisait</i></p>
 			<p><i>aisions</i></p>
 			<p><i>aisiez</i></p>
 			<p><i>aisaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>erai</i></p>
 			<p><i>eras</i></p>
@@ -11371,14 +11371,14 @@
 			<p><i>assiez</i></p>
 			<p><i>assent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
 			<p><i>ît</i></p>
 			<p><i>issions</i></p>
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11415,14 +11415,14 @@
 			<p><i>yez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yais</i></p>
 			<p><i>yais</i></p>
 			<p><i>yait</i></p>
 			<p><i>yions</i></p>
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -11459,14 +11459,14 @@
 			<p><i>yiez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11503,14 +11503,14 @@
 			<p><i>yez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yais</i></p>
 			<p><i>yais</i></p>
 			<p><i>yait</i></p>
 			<p><i>yions</i></p>
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -11547,14 +11547,14 @@
 			<p><i>yiez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11591,14 +11591,14 @@
 			<p></p>
 			<p><i>ourdent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ourdait</i></p>
 			<p></p>
 			<p></p>
 			<p><i>ourdaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -11635,14 +11635,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11679,14 +11679,14 @@
 			<p></p>
 			<p><i>osent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>orai</i></p>
 			<p><i>oras</i></p>
@@ -11723,14 +11723,14 @@
 			<p><i>osiez</i></p>
 			<p><i>osent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11767,14 +11767,14 @@
 			<p></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
@@ -11811,14 +11811,14 @@
 			<p><i>siez</i></p>
 			<p><i>sent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11855,14 +11855,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -11899,14 +11899,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -11943,14 +11943,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>rai</i></p>
 			<p><i>ras</i></p>
@@ -11987,14 +11987,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12031,14 +12031,14 @@
 			<p></p>
 			<p><i>ssent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ssait</i></p>
 			<p></p>
 			<p></p>
 			<p><i>ssaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -12075,14 +12075,14 @@
 			<p></p>
 			<p><i>ssent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12119,14 +12119,14 @@
 			<p><i>gnez</i></p>
 			<p><i>gnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>gnais</i></p>
 			<p><i>gnais</i></p>
 			<p><i>gnait</i></p>
 			<p><i>gnions</i></p>
 			<p><i>gniez</i></p>
 			<p><i>gnaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>ndrai</i></p>
 			<p><i>ndras</i></p>
@@ -12163,14 +12163,14 @@
 			<p><i>gniez</i></p>
 			<p><i>gnent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>gnisse</i></p>
 			<p><i>gnisses</i></p>
 			<p><i>gnît</i></p>
 			<p><i>gnissions</i></p>
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12207,14 +12207,14 @@
 			<p><i>oyez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyais</i></p>
 			<p><i>oyais</i></p>
 			<p><i>oyait</i></p>
 			<p><i>oyions</i></p>
 			<p><i>oyiez</i></p>
 			<p><i>oyaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>errai</i></p>
 			<p><i>erras</i></p>
@@ -12251,14 +12251,14 @@
 			<p><i>oyiez</i></p>
 			<p><i>oient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>oyasse</i></p>
 			<p><i>oyasses</i></p>
 			<p><i>oyât</i></p>
 			<p><i>oyassions</i></p>
 			<p><i>oyassiez</i></p>
 			<p><i>oyassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12295,14 +12295,14 @@
 			<p><i>avez</i></p>
 			<p><i>ont</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>avais</i></p>
 			<p><i>avais</i></p>
 			<p><i>avait</i></p>
 			<p><i>avions</i></p>
 			<p><i>aviez</i></p>
 			<p><i>avaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>aurai</i></p>
 			<p><i>auras</i></p>
@@ -12339,14 +12339,14 @@
 			<p><i>ayez</i></p>
 			<p><i>aient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>eusse</i></p>
 			<p><i>eusses</i></p>
 			<p><i>eût</i></p>
 			<p><i>eussions</i></p>
 			<p><i>eussiez</i></p>
 			<p><i>eussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12383,14 +12383,14 @@
 			<p><i>êtes</i></p>
 			<p><i>sont</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>étais</i></p>
 			<p><i>étais</i></p>
 			<p><i>était</i></p>
 			<p><i>étions</i></p>
 			<p><i>étiez</i></p>
 			<p><i>étaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>serai</i></p>
 			<p><i>seras</i></p>
@@ -12427,14 +12427,14 @@
 			<p><i>soyez</i></p>
 			<p><i>soient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>fusse</i></p>
 			<p><i>fusses</i></p>
 			<p><i>fût</i></p>
 			<p><i>fussions</i></p>
 			<p><i>fussiez</i></p>
 			<p><i>fussent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12471,14 +12471,14 @@
 			<p><i>allez</i></p>
 			<p><i>vont</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>allais</i></p>
 			<p><i>allais</i></p>
 			<p><i>allait</i></p>
 			<p><i>allions</i></p>
 			<p><i>alliez</i></p>
 			<p><i>allaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i></p>
 			<p><i>iras</i></p>
@@ -12515,14 +12515,14 @@
 			<p><i>alliez</i></p>
 			<p><i>aillent</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>allasse</i></p>
 			<p><i>allasses</i></p>
 			<p><i>allât</i></p>
 			<p><i>allassions</i></p>
 			<p><i>allassiez</i></p>
 			<p><i>allassent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12559,14 +12559,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -12603,14 +12603,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12647,14 +12647,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -12691,14 +12691,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12735,14 +12735,14 @@
 			<p><i>yez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>yais</i></p>
 			<p><i>yais</i></p>
 			<p><i>yait</i></p>
 			<p><i>yions</i></p>
 			<p><i>yiez</i></p>
 			<p><i>yaient</i></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p><i>irai</i><i>uïrai</i><i>rrai</i></p>
 			<p><i>iras</i><i>uïras</i><i>rras</i></p>
@@ -12779,14 +12779,14 @@
 			<p><i>yiez</i></p>
 			<p><i>ient</i></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p><i>uïsse</i></p>
 			<p><i>uïsses</i></p>
 			<p><i>uït</i></p>
 			<p><i>uïssions</i></p>
 			<p><i>uïssiez</i></p>
 			<p><i>uïssent</i></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>
@@ -12823,14 +12823,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ait</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 		<future>
 			<p></p>
 			<p></p>
@@ -12867,14 +12867,14 @@
 			<p></p>
 			<p></p>
 		</present>
-		<imperfect>
+		<imparfait>
 			<p></p>
 			<p></p>
 			<p><i>ât</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperfect>
+		</imparfait>
 	</subjonctif>
 	<imperatif>
 		<imperatif-présent>

@@ -288,7 +288,7 @@ expected_resp_conj_manger = {
       "vous mangez",
       "ils mangent"
     ],
-    "imperfect": [
+    "imparfait": [
       "je mangeais",
       "tu mangeais",
       "il mangeait",
@@ -372,7 +372,7 @@ expected_resp_conj_manger = {
       "que vous mangiez",
       "qu'ils mangent"
     ],
-    "imperfect": [
+    "imparfait": [
       "que je mangeasse",
       "que tu mangeasses",
       "qu'il mangeât",
@@ -445,7 +445,7 @@ expected_resp_conj_pouvoir = {
       "vous pouvez",
       "ils peuvent"
     ],
-    "imperfect": [
+    "imparfait": [
       "je pouvais",
       "tu pouvais",
       "il pouvait",
@@ -529,7 +529,7 @@ expected_resp_conj_pouvoir = {
       "que vous puissiez",
       "qu'ils puissent"
     ],
-    "imperfect": [
+    "imparfait": [
       "que je pusse",
       "que tu pusses",
       "qu'il pût",
@@ -590,7 +590,7 @@ expected_resp_conj_pleuvoir = {
       "il pleut",
       "ils pleuvent"
     ],
-    "imperfect": [
+    "imparfait": [
       "il pleuvait",
       "ils pleuvaient"
     ],
@@ -634,7 +634,7 @@ expected_resp_conj_pleuvoir = {
       "qu'il pleuve",
       "qu'ils pleuvent"
     ],
-    "imperfect": [
+    "imparfait": [
       "qu'il plût",
       "qu'ils plussent"
     ],
@@ -687,7 +687,7 @@ expected_resp_conj_se_lever = {
       "vous vous levez",
       "ils se lèvent"
     ],
-    "imperfect": [
+    "imparfait": [
       "je me levais",
       "tu te levais",
       "il se levait",
@@ -771,7 +771,7 @@ expected_resp_conj_se_lever = {
       "que vous vous leviez",
       "qu'ils se lèvent"
     ],
-    "imperfect": [
+    "imparfait": [
       "que je me levasse",
       "que tu te levasses",
       "qu'il se levât",

@@ -164,7 +164,7 @@ class Conjugator:
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'present')
 
     def _conjugate_pluperfect(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'imperfect')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'imparfait')
 
     def _conjugate_future_perfect(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'future')
@@ -176,7 +176,7 @@ class Conjugator:
         return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'present')
 
     def _conjugate_subjonctif_pluperfect(self, co):
-        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'imperfect')
+        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'imparfait')
 
     def _conjugate_conditionnel_past(self, co):
         return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'present')
