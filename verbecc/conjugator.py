@@ -217,8 +217,8 @@ class Conjugator:
             co.is_reflexive)
         participle = self._conjugate_specific_tense(
             co.verb_stem, 
-            'participle', 
-            co.template.moods['participle'].tenses['past-participle'])
+            'participe', 
+            co.template.moods['participe'].tenses['participe-passé'])
         if helping_verb == 'avoir':
             for hv in hvconj:
                 p = participle[0]
@@ -239,7 +239,7 @@ class Conjugator:
         if tense_template.name in TENSES_CONJUGATED_WITHOUT_PRONOUNS:
             for person_ending in tense_template.person_endings:
                 conj = ''
-                if is_reflexive and tense_template.name == 'past-participle':
+                if is_reflexive and tense_template.name == 'participe-passé':
                     conj += 'étant '
                 conj += verb_stem + person_ending.get_ending()
                 if is_reflexive:

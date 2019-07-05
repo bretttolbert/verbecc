@@ -409,11 +409,11 @@ expected_resp_conj_manger = {
       "ayez mangé"
     ]
   },
-  "participle": {
-    "present-participle": [
+  "participe": {
+    "participe-présent": [
       "mangeant"
     ],
-    "past-participle": [
+    "participe-passé": [
       "mangé",
       "mangés",
       "mangée",
@@ -558,11 +558,11 @@ expected_resp_conj_pouvoir = {
     "imperatif-présent": [],
     "imperatif-past": []
   },
-  "participle": {
-    "present-participle": [
+  "participe": {
+    "participe-présent": [
       "pouvant"
     ],
-    "past-participle": [
+    "participe-passé": [
       "pu",
       "pus",
       "pue",
@@ -651,11 +651,11 @@ expected_resp_conj_pleuvoir = {
     "imperatif-présent": [],
     "imperatif-past": []
   },
-  "participle": {
-    "present-participle": [
+  "participe": {
+    "participe-présent": [
       "pleuvant"
     ],
-    "past-participle": [
+    "participe-passé": [
       "plu",
       "plus",
       "plue",
@@ -804,11 +804,11 @@ expected_resp_conj_se_lever = {
     ],
     "imperatif-past": []
   },
-  "participle": {
-    "present-participle": [
+  "participe": {
+    "participe-présent": [
       "se levant"
     ],
-    "past-participle": [
+    "participe-passé": [
       "s'étant levé",
       "s'étant levés",
       "s'étant levée",

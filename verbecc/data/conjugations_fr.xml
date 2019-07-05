@@ -22,7 +22,7 @@
 
 <!DOCTYPE conjugation-fr [
 	<!ELEMENT conjugation-fr (template+)>
-	<!ELEMENT template (infinitif, indicatif, conditionnel, subjonctif, imperatif, participle)>
+	<!ELEMENT template (infinitif, indicatif, conditionnel, subjonctif, imperatif, participe)>
 	<!ATTLIST template name CDATA #REQUIRED>
 
 	<!ELEMENT infinitif (infinitif-présent)>
@@ -30,7 +30,7 @@
 	<!ELEMENT conditionnel (present)>
 	<!ELEMENT subjonctif (present, imperfect)>
 	<!ELEMENT imperatif (imperatif-présent)>
-	<!ELEMENT participle (present-participle, past-participle)>
+	<!ELEMENT participe (participe-présent, participe-passé)>
 
 	<!ELEMENT infinitif-présent (p)>
 	<!ELEMENT present (p, p, p, p, p, p)>
@@ -38,8 +38,8 @@
 	<!ELEMENT future (p, p, p, p, p, p)>
 	<!ELEMENT simple-past (p, p, p, p, p, p)>
 	<!ELEMENT imperatif-présent (p, p, p)>
-	<!ELEMENT present-participle (p)>
-	<!ELEMENT past-participle (p, p, p, p)>
+	<!ELEMENT participe-présent (p)>
+	<!ELEMENT participe-passé (p, p, p, p)>
 
 	<!ELEMENT p (i*)>
 	<!ELEMENT i (#PCDATA)>
@@ -122,17 +122,17 @@
 			<p><i>cez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>çant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>cé</i></p>
 			<p><i>cés</i></p>
 			<p><i>cée</i></p>
 			<p><i>cées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="référenci:er">
@@ -210,17 +210,17 @@
 			<p><i>ez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>é</i></p>
 			<p><i>és</i></p>
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="dép:ecer">
@@ -298,17 +298,17 @@
 			<p><i>ecez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>eçant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ecé</i></p>
 			<p><i>ecés</i></p>
 			<p><i>ecée</i></p>
 			<p><i>ecées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="man:ger">
@@ -386,17 +386,17 @@
 			<p><i>gez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>geant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>gé</i></p>
 			<p><i>gés</i></p>
 			<p><i>gée</i></p>
 			<p><i>gées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="nei:ger">
@@ -474,17 +474,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>geant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>gé</i></p>
 			<p><i>gés</i></p>
 			<p><i>gée</i></p>
 			<p><i>gées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="pa:yer">
@@ -562,17 +562,17 @@
 			<p><i>yez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>yant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>yé</i></p>
 			<p><i>yés</i></p>
 			<p><i>yée</i></p>
 			<p><i>yées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="netto:yer">
@@ -650,17 +650,17 @@
 			<p><i>yez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>yant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>yé</i></p>
 			<p><i>yés</i></p>
 			<p><i>yée</i></p>
 			<p><i>yées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="grasse:yer">
@@ -738,17 +738,17 @@
 			<p><i>yez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>yant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>yé</i></p>
 			<p><i>yés</i></p>
 			<p><i>yée</i></p>
 			<p><i>yées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="app:eler">
@@ -826,17 +826,17 @@
 			<p><i>elez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>elant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>elé</i></p>
 			<p><i>elés</i></p>
 			<p><i>elée</i></p>
 			<p><i>elées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="p:eler">
@@ -914,17 +914,17 @@
 			<p><i>elez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>elant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>elé</i></p>
 			<p><i>elés</i></p>
 			<p><i>elée</i></p>
 			<p><i>elées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="harc:eler">
@@ -1002,17 +1002,17 @@
 			<p><i>elez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>elant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>elé</i></p>
 			<p><i>elés</i></p>
 			<p><i>elée</i></p>
 			<p><i>elées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="j:eter">
@@ -1090,17 +1090,17 @@
 			<p><i>etez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>etant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>eté</i></p>
 			<p><i>etés</i></p>
 			<p><i>etée</i></p>
 			<p><i>etées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ach:eter">
@@ -1178,17 +1178,17 @@
 			<p><i>etez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>etant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>eté</i></p>
 			<p><i>etés</i></p>
 			<p><i>etée</i></p>
 			<p><i>etées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="héb:éter">
@@ -1266,17 +1266,17 @@
 			<p><i>étez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>étant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>été</i></p>
 			<p><i>étés</i></p>
 			<p><i>étée</i></p>
 			<p><i>étées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="s:emer">
@@ -1354,17 +1354,17 @@
 			<p><i>emez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>emant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>emé</i></p>
 			<p><i>emés</i></p>
 			<p><i>emée</i></p>
 			<p><i>emées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="l:éguer">
@@ -1442,17 +1442,17 @@
 			<p><i>éguez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>éguant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>égué</i></p>
 			<p><i>égués</i></p>
 			<p><i>éguée</i></p>
 			<p><i>éguées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="diss:équer">
@@ -1530,17 +1530,17 @@
 			<p><i>équez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>équant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>équé</i></p>
 			<p><i>équés</i></p>
 			<p><i>équée</i></p>
 			<p><i>équées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="rév:éler">
@@ -1618,17 +1618,17 @@
 			<p><i>élez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>élant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>élé</i></p>
 			<p><i>élés</i></p>
 			<p><i>élée</i></p>
 			<p><i>élées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="imp:étrer">
@@ -1706,17 +1706,17 @@
 			<p><i>étrez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>étrant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>étré</i></p>
 			<p><i>étrés</i></p>
 			<p><i>étrée</i></p>
 			<p><i>étrées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="r:égler">
@@ -1794,17 +1794,17 @@
 			<p><i>églez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>églant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>églé</i></p>
 			<p><i>églés</i></p>
 			<p><i>églée</i></p>
 			<p><i>églées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="r:égner">
@@ -1882,17 +1882,17 @@
 			<p><i>égnez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>égnant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>égné</i></p>
 			<p><i>égnés</i></p>
 			<p><i>égnée</i></p>
 			<p><i>égnées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cél:ébrer">
@@ -1970,17 +1970,17 @@
 			<p><i>ébrez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ébrant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ébré</i></p>
 			<p><i>ébrés</i></p>
 			<p><i>ébrée</i></p>
 			<p><i>ébrées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="int:égrer">
@@ -2058,17 +2058,17 @@
 			<p><i>égrez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>égrant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>égré</i></p>
 			<p><i>égrés</i></p>
 			<p><i>égrée</i></p>
 			<p><i>égrées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="décr:éter">
@@ -2146,17 +2146,17 @@
 			<p><i>étez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>étant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>été</i></p>
 			<p><i>étés</i></p>
 			<p><i>étée</i></p>
 			<p><i>étées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ali:éner">
@@ -2234,17 +2234,17 @@
 			<p><i>énez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>énant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>éné</i></p>
 			<p><i>énés</i></p>
 			<p><i>énée</i></p>
 			<p><i>énées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="m:ener">
@@ -2322,17 +2322,17 @@
 			<p><i>enez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>enant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ené</i></p>
 			<p><i>enés</i></p>
 			<p><i>enée</i></p>
 			<p><i>enées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="l:ever">
@@ -2410,17 +2410,17 @@
 			<p><i>evez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>evant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>evé</i></p>
 			<p><i>evés</i></p>
 			<p><i>evée</i></p>
 			<p><i>evées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="p:eser">
@@ -2498,17 +2498,17 @@
 			<p><i>esez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>esant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>esé</i></p>
 			<p><i>esés</i></p>
 			<p><i>esée</i></p>
 			<p><i>esées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="s:écher">
@@ -2586,17 +2586,17 @@
 			<p><i>échez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>échant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>éché</i></p>
 			<p><i>échés</i></p>
 			<p><i>échée</i></p>
 			<p><i>échées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="réf:érer">
@@ -2674,17 +2674,17 @@
 			<p><i>érez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>érant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>éré</i></p>
 			<p><i>érés</i></p>
 			<p><i>érée</i></p>
 			<p><i>érées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="s:evrer">
@@ -2762,17 +2762,17 @@
 			<p><i>evrez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>evrant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>evré</i></p>
 			<p><i>evrés</i></p>
 			<p><i>evrée</i></p>
 			<p><i>evrées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="c:éder">
@@ -2850,17 +2850,17 @@
 			<p><i>édez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>édant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>édé</i></p>
 			<p><i>édés</i></p>
 			<p><i>édée</i></p>
 			<p><i>édées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="rec:éper">
@@ -2938,17 +2938,17 @@
 			<p><i>épez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>épant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>épé</i></p>
 			<p><i>épés</i></p>
 			<p><i>épée</i></p>
 			<p><i>épées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="rec:eper">
@@ -3026,17 +3026,17 @@
 			<p><i>epez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>epant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>epé</i></p>
 			<p><i>epés</i></p>
 			<p><i>epée</i></p>
 			<p><i>epées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="l:éser">
@@ -3114,17 +3114,17 @@
 			<p><i>ésez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ésant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ésé</i></p>
 			<p><i>ésés</i></p>
 			<p><i>ésée</i></p>
 			<p><i>ésées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cr:émer">
@@ -3202,17 +3202,17 @@
 			<p><i>émez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>émant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>émé</i></p>
 			<p><i>émés</i></p>
 			<p><i>émée</i></p>
 			<p><i>émées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="abr:éger">
@@ -3290,17 +3290,17 @@
 			<p><i>égez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>égeant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>égé</i></p>
 			<p><i>égés</i></p>
 			<p><i>égée</i></p>
 			<p><i>égées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="aim:er">
@@ -3378,17 +3378,17 @@
 			<p><i>ez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>é</i></p>
 			<p><i>és</i></p>
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="grêl:er">
@@ -3466,17 +3466,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>é</i></p>
 			<p><i>és</i></p>
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="enfi:évrer">
@@ -3554,17 +3554,17 @@
 			<p><i>évrez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>évrant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>évré</i></p>
 			<p><i>évrés</i></p>
 			<p><i>évrée</i></p>
 			<p><i>évrées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ex:écrer">
@@ -3642,17 +3642,17 @@
 			<p><i>écrez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>écrant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>écré</i></p>
 			<p><i>écrés</i></p>
 			<p><i>écrée</i></p>
 			<p><i>écrées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="acqu:érir">
@@ -3730,17 +3730,17 @@
 			<p><i>érez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>érant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ha:ïr">
@@ -3818,17 +3818,17 @@
 			<p><i>ïssez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ïssant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ï</i></p>
 			<p><i>ïs</i></p>
 			<p><i>ïe</i></p>
 			<p><i>ïes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="amu:ïr">
@@ -3906,17 +3906,17 @@
 			<p><i>ïssez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ïssant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ï</i></p>
 			<p><i>ïs</i></p>
 			<p><i>ïe</i></p>
 			<p><i>ïes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="fl:eurir">
@@ -3994,17 +3994,17 @@
 			<p><i>eurissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>eurissant</i><i>orissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>euri</i></p>
 			<p><i>euris</i></p>
 			<p><i>eurie</i></p>
 			<p><i>euries</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ouv:rir">
@@ -4082,17 +4082,17 @@
 			<p><i>rez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>rant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ert</i></p>
 			<p><i>erts</i></p>
 			<p><i>erte</i></p>
 			<p><i>ertes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="dor:mir">
@@ -4170,17 +4170,17 @@
 			<p><i>mez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>mant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>mi</i></p>
 			<p><i>mis</i></p>
 			<p><i>mie</i></p>
 			<p><i>mies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="men:tir">
@@ -4258,17 +4258,17 @@
 			<p><i>tez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>tant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ti</i></p>
 			<p><i>tis</i></p>
 			<p><i>tie</i></p>
 			<p><i>ties</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ser:vir">
@@ -4346,17 +4346,17 @@
 			<p><i>vez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>vant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>vi</i></p>
 			<p><i>vis</i></p>
 			<p><i>vie</i></p>
 			<p><i>vies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="bou:illir">
@@ -4434,17 +4434,17 @@
 			<p><i>illez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>illant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>illi</i></p>
 			<p><i>illis</i></p>
 			<p><i>illie</i></p>
 			<p><i>illies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="assaill:ir">
@@ -4522,17 +4522,17 @@
 			<p><i>ez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p><i>is</i></p>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="saill:ir">
@@ -4610,17 +4610,17 @@
 			<p><i>issez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>issant</i><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p><i>is</i></p>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cueill:ir">
@@ -4698,17 +4698,17 @@
 			<p><i>ez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p><i>is</i></p>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="t:enir">
@@ -4786,17 +4786,17 @@
 			<p><i>enez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>enant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>enu</i></p>
 			<p><i>enus</i></p>
 			<p><i>enue</i></p>
 			<p><i>enues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="adv:enir">
@@ -4874,17 +4874,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>enant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>enu</i></p>
 			<p><i>enus</i></p>
 			<p><i>enue</i></p>
 			<p><i>enues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="fu:ir">
@@ -4962,17 +4962,17 @@
 			<p><i>yez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>yant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="m:ourir">
@@ -5050,17 +5050,17 @@
 			<p><i>ourez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ourant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ort</i></p>
 			<p><i>orts</i></p>
 			<p><i>orte</i></p>
 			<p><i>ortes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="vêt:ir">
@@ -5138,17 +5138,17 @@
 			<p><i>ez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cour:ir">
@@ -5226,17 +5226,17 @@
 			<p><i>ez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="fin:ir">
@@ -5314,17 +5314,17 @@
 			<p><i>issez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>issant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p><i>is</i></p>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="chauv:ir">
@@ -5402,17 +5402,17 @@
 			<p><i>ez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p><i>is</i></p>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="maud:ire">
@@ -5490,17 +5490,17 @@
 			<p><i>issez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>issant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>it</i></p>
 			<p><i>its</i></p>
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="fa:illir">
@@ -5578,17 +5578,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>illant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>illi</i></p>
 			<p><i>illis</i></p>
 			<p><i>illie</i></p>
 			<p><i>illies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="g:ésir">
@@ -5666,17 +5666,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="dé:cevoir">
@@ -5754,17 +5754,17 @@
 			<p><i>cevez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>cevant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>çu</i></p>
 			<p><i>çus</i></p>
 			<p><i>çue</i></p>
 			<p><i>çues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="d:evoir">
@@ -5842,17 +5842,17 @@
 			<p><i>evez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>evant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>û</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="m:ouvoir">
@@ -5930,17 +5930,17 @@
 			<p><i>ouvez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ouvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i><i>û</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="prom:ouvoir">
@@ -6018,17 +6018,17 @@
 			<p><i>ouvez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ouvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="s:avoir">
@@ -6106,17 +6106,17 @@
 			<p><i>achez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>achant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="v:ouloir">
@@ -6194,17 +6194,17 @@
 			<p><i>euillez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oulant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>oulu</i></p>
 			<p><i>oulus</i></p>
 			<p><i>oulue</i></p>
 			<p><i>oulues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="va:loir">
@@ -6282,17 +6282,17 @@
 			<p><i>lez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>lant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>lu</i></p>
 			<p><i>lus</i></p>
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="préva:loir">
@@ -6370,17 +6370,17 @@
 			<p><i>lez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>lant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>lu</i></p>
 			<p><i>lus</i></p>
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="p:ouvoir">
@@ -6458,17 +6458,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ouvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="v:oir">
@@ -6546,17 +6546,17 @@
 			<p><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="prév:oir">
@@ -6634,17 +6634,17 @@
 			<p><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ass:eoir">
@@ -6722,17 +6722,17 @@
 			<p><i>eyez</i><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>eyant</i><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ass:oir">
@@ -6810,17 +6810,17 @@
 			<p><i>eyez</i><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>eyant</i><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="surs:eoir">
@@ -6898,17 +6898,17 @@
 			<p><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="surs:oir">
@@ -6986,17 +6986,17 @@
 			<p><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="s:eoir">
@@ -7074,17 +7074,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>éant</i><i>eyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="pl:euvoir">
@@ -7162,17 +7162,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>euvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="fa:lloir">
@@ -7250,17 +7250,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>llu</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="déch:oir">
@@ -7338,17 +7338,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="pourv:oir">
@@ -7426,17 +7426,17 @@
 			<p><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ch:oir">
@@ -7514,17 +7514,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i><i>eyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="éch:oir">
@@ -7602,17 +7602,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>éant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ten:dre">
@@ -7690,17 +7690,17 @@
 			<p><i>dez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>dant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>du</i></p>
 			<p><i>dus</i></p>
 			<p><i>due</i></p>
 			<p><i>dues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="vain:cre">
@@ -7778,17 +7778,17 @@
 			<p><i>quez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>quant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>cu</i></p>
 			<p><i>cus</i></p>
 			<p><i>cue</i></p>
 			<p><i>cues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="bat:tre">
@@ -7866,17 +7866,17 @@
 			<p><i>tez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>tant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>tu</i></p>
 			<p><i>tus</i></p>
 			<p><i>tue</i></p>
 			<p><i>tues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="fou:tre">
@@ -7954,17 +7954,17 @@
 			<p><i>tez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>tant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>tu</i></p>
 			<p><i>tus</i></p>
 			<p><i>tue</i></p>
 			<p><i>tues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="m:ettre">
@@ -8042,17 +8042,17 @@
 			<p><i>ettez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ettant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="pr:endre">
@@ -8130,17 +8130,17 @@
 			<p><i>enez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>enant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="rom:pre">
@@ -8218,17 +8218,17 @@
 			<p><i>pez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>pant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>pu</i></p>
 			<p><i>pus</i></p>
 			<p><i>pue</i></p>
 			<p><i>pues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="mou:dre">
@@ -8306,17 +8306,17 @@
 			<p><i>lez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>lant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>lu</i></p>
 			<p><i>lus</i></p>
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cou:dre">
@@ -8394,17 +8394,17 @@
 			<p><i>sez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>sant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>su</i></p>
 			<p><i>sus</i></p>
 			<p><i>sue</i></p>
 			<p><i>sues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="réso:udre">
@@ -8482,17 +8482,17 @@
 			<p><i>lvez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>lvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>lu</i></p>
 			<p><i>lus</i></p>
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="abso:udre">
@@ -8570,17 +8570,17 @@
 			<p><i>lvez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>lvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>us</i><i>ut</i></p>
 			<p><i>us</i></p>
 			<p><i>ute</i></p>
 			<p><i>utes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="disso:udre">
@@ -8658,17 +8658,17 @@
 			<p><i>lvez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>lvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>us</i><i>lu</i></p>
 			<p><i>us</i><i>lus</i></p>
 			<p><i>ute</i><i>lue</i></p>
 			<p><i>utes</i><i>lues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="crai:ndre">
@@ -8746,17 +8746,17 @@
 			<p><i>gnez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>gnant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>nt</i></p>
 			<p><i>nts</i></p>
 			<p><i>nte</i></p>
 			<p><i>ntes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="poi:ndre">
@@ -8834,17 +8834,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>gnant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="sui:vre">
@@ -8922,17 +8922,17 @@
 			<p><i>vez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>vant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>vi</i></p>
 			<p><i>vis</i></p>
 			<p><i>vie</i></p>
 			<p><i>vies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="v:ivre">
@@ -9010,17 +9010,17 @@
 			<p><i>ivez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ivant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>écu</i></p>
 			<p><i>écus</i></p>
 			<p><i>écue</i></p>
 			<p><i>écues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="rep:aître">
@@ -9098,17 +9098,17 @@
 			<p><i>aissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="p:aître">
@@ -9186,17 +9186,17 @@
 			<p><i>aissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>ue</i></p>
 			<p><i>us</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="par:aître">
@@ -9274,17 +9274,17 @@
 			<p><i>aissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="n:aître">
@@ -9362,17 +9362,17 @@
 			<p><i>aissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>é</i></p>
 			<p><i>és</i></p>
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="ren:aître">
@@ -9450,17 +9450,17 @@
 			<p><i>aissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cr:oître">
@@ -9538,17 +9538,17 @@
 			<p><i>oissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>û</i></p>
 			<p><i>ûs</i></p>
 			<p><i>ûe</i></p>
 			<p><i>ûes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="recr:oître">
@@ -9626,17 +9626,17 @@
 			<p><i>oissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>û</i></p>
 			<p><i>ûs</i></p>
 			<p><i>ûe</i></p>
 			<p><i>ûes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 
@@ -9715,17 +9715,17 @@
 			<p><i>oissez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oissant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="r:ire">
@@ -9803,17 +9803,17 @@
 			<p><i>iez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>iant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p><i>is</i></p>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="circonc:ire">
@@ -9891,17 +9891,17 @@
 			<p><i>isez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="concl:ure">
@@ -9979,17 +9979,17 @@
 			<p><i>uez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>uant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="incl:ure">
@@ -10067,17 +10067,17 @@
 			<p><i>uez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>uant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>use</i></p>
 			<p><i>uses</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="nui:re">
@@ -10155,17 +10155,17 @@
 			<p><i>sez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>sant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i></i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="lu:ire">
@@ -10243,17 +10243,17 @@
 			<p><i>isez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="condui:re">
@@ -10331,17 +10331,17 @@
 			<p><i>sez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>sant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>t</i></p>
 			<p><i>ts</i></p>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="écri:re">
@@ -10419,17 +10419,17 @@
 			<p><i>vez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>vant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>t</i></p>
 			<p><i>ts</i></p>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cr:oire">
@@ -10507,17 +10507,17 @@
 			<p><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="suff:ire">
@@ -10595,17 +10595,17 @@
 			<p><i>isez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>i</i></p>
 			<p><i>is</i></p>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="d:ire">
@@ -10683,17 +10683,17 @@
 			<p><i>ites</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>it</i></p>
 			<p><i>its</i></p>
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="interd:ire">
@@ -10771,17 +10771,17 @@
 			<p><i>isez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>it</i></p>
 			<p><i>its</i></p>
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="méd:ire">
@@ -10859,17 +10859,17 @@
 			<p><i>isez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>it</i></p>
 			<p><i>its</i></p>
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="préd:ire">
@@ -10947,17 +10947,17 @@
 			<p><i>ites</i><i>isez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>it</i></p>
 			<p><i>its</i></p>
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="l:ire">
@@ -11035,17 +11035,17 @@
 			<p><i>isez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>isant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="b:oire">
@@ -11123,17 +11123,17 @@
 			<p><i>uvez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>uvant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="t:aire">
@@ -11211,17 +11211,17 @@
 			<p><i>aisez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aisant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="pl:aire">
@@ -11299,17 +11299,17 @@
 			<p><i>aisez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aisant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>u</i></p>
 			<p><i>us</i></p>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="f:aire">
@@ -11387,17 +11387,17 @@
 			<p><i>aites</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>aisant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>ait</i></p>
 			<p><i>aits</i></p>
 			<p><i>aite</i></p>
 			<p><i>aites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="extra:ire">
@@ -11475,17 +11475,17 @@
 			<p><i>yez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>yant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>it</i></p>
 			<p><i>its</i></p>
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="bra:ire">
@@ -11563,17 +11563,17 @@
 			<p><i>yez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>yant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>it</i></p>
 			<p><i>its</i></p>
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="s:ourdre">
@@ -11651,17 +11651,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p></p>
-		</present-participle>
-		<past-participle>
-			<p></p>
-			<p></p>
+		</participe-présent>
+		<participe-passé>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+			<p></p>
+			<p></p>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cl:ore">
@@ -11739,17 +11739,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>osant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>os</i></p>
 			<p><i>os</i></p>
 			<p><i>ose</i></p>
 			<p><i>oses</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="éclo:re">
@@ -11827,17 +11827,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>sant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="forclo:re">
@@ -11915,17 +11915,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="fri:re">
@@ -12003,17 +12003,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>t</i></p>
 			<p><i>ts</i></p>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="brui:re">
@@ -12091,17 +12091,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ssant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="oi:ndre">
@@ -12179,17 +12179,17 @@
 			<p><i>gnez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>gnant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>nt</i></p>
 			<p><i>nts</i></p>
 			<p><i>nte</i></p>
 			<p><i>ntes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="env:oyer">
@@ -12267,17 +12267,17 @@
 			<p><i>oyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>oyant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>oyé</i></p>
 			<p><i>oyés</i></p>
 			<p><i>oyée</i></p>
 			<p><i>oyées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name=":avoir">
@@ -12355,17 +12355,17 @@
 			<p><i>ayez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ayant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>eu</i></p>
 			<p><i>eus</i></p>
 			<p><i>eue</i></p>
 			<p><i>eues</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name=":être">
@@ -12443,17 +12443,17 @@
 			<p><i>soyez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>étant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>été</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name=":aller">
@@ -12531,17 +12531,17 @@
 			<p><i>allez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>allant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>allé</i></p>
 			<p><i>allés</i></p>
 			<p><i>allée</i></p>
 			<p><i>allées</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="app:aroir">
@@ -12619,17 +12619,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p></p>
-		</present-participle>
-		<past-participle>
-			<p></p>
-			<p></p>
+		</participe-présent>
+		<participe-passé>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+			<p></p>
+			<p></p>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="cha:loir">
@@ -12707,17 +12707,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p></p>
-		</present-participle>
-		<past-participle>
-			<p></p>
-			<p></p>
+		</participe-présent>
+		<participe-passé>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+			<p></p>
+			<p></p>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="o:uïr">
@@ -12795,17 +12795,17 @@
 			<p><i>yez</i></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>yant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>uï</i></p>
 			<p><i>uïs</i></p>
 			<p><i>uïe</i></p>
 			<p><i>uïes</i></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 <template name="brumass:er">
@@ -12883,17 +12883,17 @@
 			<p></p>
 		</imperatif-présent>
 	</imperatif>
-	<participle>
-		<present-participle>
+	<participe>
+		<participe-présent>
 			<p><i>ant</i></p>
-		</present-participle>
-		<past-participle>
+		</participe-présent>
+		<participe-passé>
 			<p><i>é</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</past-participle>
-	</participle>
+		</participe-passé>
+	</participe>
 </template>
 
 </conjugation-fr>

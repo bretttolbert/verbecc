@@ -48,8 +48,8 @@ class TenseTemplate:
             [0]= SecondPersonSingular e.g. lève-toi
             [2]= FirstPersonPlural e.g. levons-nous
             [3]= SecondPersonPlural e.g. levez-vous
-          present-participle has 1
-          past-participle has 4
+          participe-présent has 1
+          participe-passé has 4
               (see grammar_defines.ParticipleInflection)
               [0]= MasculineSingular
               [1]= MasculinePlural
