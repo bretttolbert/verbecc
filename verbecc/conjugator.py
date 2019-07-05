@@ -38,17 +38,17 @@ class Conjugator:
     def __init__(self):
         self.verb_parser = VerbsParser()
         self.conj_parser = ConjugationsParser()
-        self._tag_impersonal_verbs()
 
-    def _tag_impersonal_verbs(self):
-        self.impersonal_verbs = []
-        for verb in self.verb_parser.verbs:
-            if verb.template in self.conj_parser.impersonal_templates:
-                verb.impersonal = True
-                self.impersonal_verbs.append(verb.infinitive)
+    def is_impersonal_verb(self, infinitive):
+        ret = False
+        verb = self.verb_parser.find_verb_by_infinitive(infinitive)
+        template = self.conj_parser.find_template(verb.template)
+        if len(template.moods['indicative'].tenses['present'].person_endings) < 6:
+            ret = True
+        return ret
 
     def verb_can_be_reflexive(self, infinitive):
-        return (infinitive not in self.impersonal_verbs 
+        return (not self.is_impersonal_verb(infinitive)
             and infinitive not in 
             VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
 

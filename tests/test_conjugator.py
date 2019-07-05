@@ -231,26 +231,29 @@ def test_conjugator_get_verb_stem():
         verb_stem = get_verb_stem(u"vendre", u"man:ger")
 
 def test_conjugator_impersonal_verbs():
-    assert conj.impersonal_verbs == [
-        "advenir",
-        "apparoir",
-        "bruiner",
-        "bruire",
-        "chaloir",
-        "clore",
-        "déclore",
-        "échoir",
-        "éclore",
-        "enclore",
-        "falloir",
-        "forclore",
-        "frire",
-        "grêler",
-        "messeoir",
-        "neiger",
-        "pleuvoir",
-        "seoir",
-        "sourdre"]
+    impersonal_verbs = \
+        [v.infinitive for v in conj.verb_parser.verbs 
+        if conj.is_impersonal_verb(v.infinitive)]
+    assert impersonal_verbs == [
+    "advenir",
+    "apparoir",
+    "bruiner",
+    "bruire",
+    "chaloir",
+    "clore",
+    "déclore",
+    "échoir",
+    "éclore",
+    "enclore",
+    "falloir",
+    "forclore",
+    "frire",
+    "grêler",
+    "messeoir",
+    "neiger",
+    "pleuvoir",
+    "seoir",
+    "sourdre"]
 
 test_conjugator_verb_can_be_reflexive_data = [
     ("être", False),

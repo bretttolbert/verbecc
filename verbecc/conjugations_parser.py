@@ -65,8 +65,6 @@ class ConjugationsParser:
                 self.templates.append(ConjugationTemplate(child))
         self.templates = sorted(self.templates, key=lambda x: x.name)
         self._keys = [template.name for template in self.templates]
-        self.impersonal_templates = \
-            [t.name for t in self.templates if t.impersonal]
 
     def find_template(self, name):
         """Assumes templates are already sorted by name"""
