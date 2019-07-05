@@ -296,7 +296,7 @@ expected_resp_conj_manger = {
       "vous mangiez",
       "ils mangeaient"
     ],
-    "futur": [
+    "futur-simple": [
       "je mangerai",
       "tu mangeras",
       "il mangera",
@@ -453,7 +453,7 @@ expected_resp_conj_pouvoir = {
       "vous pouviez",
       "ils pouvaient"
     ],
-    "futur": [
+    "futur-simple": [
       "je pourrai",
       "tu pourras",
       "il pourra",
@@ -594,7 +594,7 @@ expected_resp_conj_pleuvoir = {
       "il pleuvait",
       "ils pleuvaient"
     ],
-    "futur": [
+    "futur-simple": [
       "il pleuvra",
       "ils pleuvront"
     ],
@@ -695,7 +695,7 @@ expected_resp_conj_se_lever = {
       "vous vous leviez",
       "ils se levaient"
     ],
-    "futur": [
+    "futur-simple": [
       "je me lèverai",
       "tu te lèveras",
       "il se lèvera",
