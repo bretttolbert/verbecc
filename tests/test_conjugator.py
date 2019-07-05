@@ -35,15 +35,15 @@ def test_conjugator_conjugate(infinitive):
 def test_conjugator_conjugate_specific_tense():
     verb_stem = u"man"
     tense_elem = etree.fromstring(
-        u"""<present>
+        u"""<présent>
         <p><i>ge</i></p>
         <p><i>ges</i></p>
         <p><i>ge</i></p>
         <p><i>geons</i></p>
         <p><i>gez</i></p>
         <p><i>gent</i></p>
-        </present>""")
-    tense_name = 'present'
+        </présent>""")
+    tense_name = 'présent'
     tense = TenseTemplate(tense_elem)
     out = conj._conjugate_specific_tense(verb_stem, 'indicatif', tense)
     assert len(out) == 6
@@ -280,7 +280,7 @@ expected_resp_conj_manger = {
     ]
   },
   "indicatif": {
-    "present": [
+    "présent": [
       "je mange",
       "tu manges",
       "il mange",
@@ -346,7 +346,7 @@ expected_resp_conj_manger = {
     ]
   },
   "conditionnel": {
-    "present": [
+    "présent": [
       "je mangerais",
       "tu mangerais",
       "il mangerait",
@@ -364,7 +364,7 @@ expected_resp_conj_manger = {
     ]
   },
   "subjonctif": {
-    "present": [
+    "présent": [
       "que je mange",
       "que tu manges",
       "qu'il mange",
@@ -437,7 +437,7 @@ expected_resp_conj_pouvoir = {
     ]
   },
   "indicatif": {
-    "present": [
+    "présent": [
       "je peux",
       "tu peux",
       "il peut",
@@ -503,7 +503,7 @@ expected_resp_conj_pouvoir = {
     ]
   },
   "conditionnel": {
-    "present": [
+    "présent": [
       "je pourrais",
       "tu pourrais",
       "il pourrait",
@@ -521,7 +521,7 @@ expected_resp_conj_pouvoir = {
     ]
   },
   "subjonctif": {
-    "present": [
+    "présent": [
       "que je puisse",
       "que tu puisses",
       "qu'il puisse",
@@ -586,7 +586,7 @@ expected_resp_conj_pleuvoir = {
     ]
   },
   "indicatif": {
-    "present": [
+    "présent": [
       "il pleut",
       "ils pleuvent"
     ],
@@ -620,7 +620,7 @@ expected_resp_conj_pleuvoir = {
     ]
   },
   "conditionnel": {
-    "present": [
+    "présent": [
       "il pleuvrait",
       "ils pleuvraient"
     ],
@@ -630,7 +630,7 @@ expected_resp_conj_pleuvoir = {
     ]
   },
   "subjonctif": {
-    "present": [
+    "présent": [
       "qu'il pleuve",
       "qu'ils pleuvent"
     ],
@@ -679,7 +679,7 @@ expected_resp_conj_se_lever = {
     ]
   },
   "indicatif": {
-    "present": [
+    "présent": [
       "je me lève",
       "tu te lèves",
       "il se lève",
@@ -745,7 +745,7 @@ expected_resp_conj_se_lever = {
     ]
   },
   "conditionnel": {
-    "present": [
+    "présent": [
       "je me lèverais",
       "tu te lèverais",
       "il se lèverait",
@@ -763,7 +763,7 @@ expected_resp_conj_se_lever = {
     ]
   },
   "subjonctif": {
-    "present": [
+    "présent": [
       "que je me lève",
       "que tu te lèves",
       "qu'il se lève",

@@ -43,7 +43,7 @@ class Conjugator:
         ret = False
         verb = self.verb_parser.find_verb_by_infinitive(infinitive)
         template = self.conj_parser.find_template(verb.template)
-        if len(template.moods['indicatif'].tenses['present'].person_endings) < 6:
+        if len(template.moods['indicatif'].tenses['présent'].person_endings) < 6:
             ret = True
         return ret
 
@@ -161,7 +161,7 @@ class Conjugator:
         return self._conjugate_imperatif_past(co)
 
     def _conjugate_passe_compose(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'present')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'présent')
 
     def _conjugate_pluperfect(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'imparfait')
@@ -173,13 +173,13 @@ class Conjugator:
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'simple-past')
 
     def _conjugate_subjonctif_past(self, co):
-        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'present')
+        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'présent')
 
     def _conjugate_subjonctif_pluperfect(self, co):
         return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'imparfait')
 
     def _conjugate_conditionnel_past(self, co):
-        return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'present')
+        return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'présent')
 
     def _conjugate_imperatif_past(self, co):
         return self._conjugate_compound(co, 'imperatif', 'imperatif', 'imperatif-présent')
