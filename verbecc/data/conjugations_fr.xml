@@ -25,14 +25,14 @@
 	<!ELEMENT template (infinitif, indicative, conditional, subjunctive, imperative, participle)>
 	<!ATTLIST template name CDATA #REQUIRED>
 
-	<!ELEMENT infinitif (infinitive-present)>
+	<!ELEMENT infinitif (infinitif-présent)>
 	<!ELEMENT indicative (present, imperfect, future, simple-past)>
 	<!ELEMENT conditional (present)>
 	<!ELEMENT subjunctive (present, imperfect)>
 	<!ELEMENT imperative (imperative-present)>
 	<!ELEMENT participle (present-participle, past-participle)>
 
-	<!ELEMENT infinitive-present (p)>
+	<!ELEMENT infinitif-présent (p)>
 	<!ELEMENT present (p, p, p, p, p, p)>
 	<!ELEMENT imperfect (p, p, p, p, p, p)>
 	<!ELEMENT future (p, p, p, p, p, p)>
@@ -49,9 +49,9 @@
 
 <template name="pla:cer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>cer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -137,9 +137,9 @@
 
 <template name="référenci:er">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>er</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -225,9 +225,9 @@
 
 <template name="dép:ecer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ecer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -313,9 +313,9 @@
 
 <template name="man:ger">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ger</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -401,9 +401,9 @@
 
 <template name="nei:ger">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ger</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -489,9 +489,9 @@
 
 <template name="pa:yer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>yer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -577,9 +577,9 @@
 
 <template name="netto:yer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>yer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -665,9 +665,9 @@
 
 <template name="grasse:yer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>yer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -753,9 +753,9 @@
 
 <template name="app:eler">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eler</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -841,9 +841,9 @@
 
 <template name="p:eler">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eler</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -929,9 +929,9 @@
 
 <template name="harc:eler">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eler</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1017,9 +1017,9 @@
 
 <template name="j:eter">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eter</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1105,9 +1105,9 @@
 
 <template name="ach:eter">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eter</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1193,9 +1193,9 @@
 
 <template name="héb:éter">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éter</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1281,9 +1281,9 @@
 
 <template name="s:emer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>emer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1369,9 +1369,9 @@
 
 <template name="l:éguer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éguer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1457,9 +1457,9 @@
 
 <template name="diss:équer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>équer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1545,9 +1545,9 @@
 
 <template name="rév:éler">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éler</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1633,9 +1633,9 @@
 
 <template name="imp:étrer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>étrer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1721,9 +1721,9 @@
 
 <template name="r:égler">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>égler</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1809,9 +1809,9 @@
 
 <template name="r:égner">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>égner</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1897,9 +1897,9 @@
 
 <template name="cél:ébrer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ébrer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -1985,9 +1985,9 @@
 
 <template name="int:égrer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>égrer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2073,9 +2073,9 @@
 
 <template name="décr:éter">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éter</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2161,9 +2161,9 @@
 
 <template name="ali:éner">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éner</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2249,9 +2249,9 @@
 
 <template name="m:ener">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ener</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2337,9 +2337,9 @@
 
 <template name="l:ever">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ever</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2425,9 +2425,9 @@
 
 <template name="p:eser">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eser</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2513,9 +2513,9 @@
 
 <template name="s:écher">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>écher</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2601,9 +2601,9 @@
 
 <template name="réf:érer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>érer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2689,9 +2689,9 @@
 
 <template name="s:evrer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>evrer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2777,9 +2777,9 @@
 
 <template name="c:éder">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éder</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2865,9 +2865,9 @@
 
 <template name="rec:éper">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éper</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -2953,9 +2953,9 @@
 
 <template name="rec:eper">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eper</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3041,9 +3041,9 @@
 
 <template name="l:éser">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éser</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3129,9 +3129,9 @@
 
 <template name="cr:émer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>émer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3217,9 +3217,9 @@
 
 <template name="abr:éger">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>éger</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3305,9 +3305,9 @@
 
 <template name="aim:er">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>er</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3393,9 +3393,9 @@
 
 <template name="grêl:er">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>er</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3481,9 +3481,9 @@
 
 <template name="enfi:évrer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>évrer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3569,9 +3569,9 @@
 
 <template name="ex:écrer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>écrer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3657,9 +3657,9 @@
 
 <template name="acqu:érir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>érir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3745,9 +3745,9 @@
 
 <template name="ha:ïr">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ïr</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3833,9 +3833,9 @@
 
 <template name="amu:ïr">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ïr</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -3921,9 +3921,9 @@
 
 <template name="fl:eurir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eurir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4009,9 +4009,9 @@
 
 <template name="ouv:rir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>rir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4097,9 +4097,9 @@
 
 <template name="dor:mir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>mir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4185,9 +4185,9 @@
 
 <template name="men:tir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>tir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4273,9 +4273,9 @@
 
 <template name="ser:vir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>vir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4361,9 +4361,9 @@
 
 <template name="bou:illir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>illir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4449,9 +4449,9 @@
 
 <template name="assaill:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4537,9 +4537,9 @@
 
 <template name="saill:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4625,9 +4625,9 @@
 
 <template name="cueill:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4713,9 +4713,9 @@
 
 <template name="t:enir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>enir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4801,9 +4801,9 @@
 
 <template name="adv:enir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>enir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4889,9 +4889,9 @@
 
 <template name="fu:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -4977,9 +4977,9 @@
 
 <template name="m:ourir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ourir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5065,9 +5065,9 @@
 
 <template name="vêt:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5153,9 +5153,9 @@
 
 <template name="cour:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5241,9 +5241,9 @@
 
 <template name="fin:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5329,9 +5329,9 @@
 
 <template name="chauv:ir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5417,9 +5417,9 @@
 
 <template name="maud:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5505,9 +5505,9 @@
 
 <template name="fa:illir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>illir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5593,9 +5593,9 @@
 
 <template name="g:ésir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ésir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5681,9 +5681,9 @@
 
 <template name="dé:cevoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>cevoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5769,9 +5769,9 @@
 
 <template name="d:evoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>evoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5857,9 +5857,9 @@
 
 <template name="m:ouvoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ouvoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -5945,9 +5945,9 @@
 
 <template name="prom:ouvoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ouvoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6033,9 +6033,9 @@
 
 <template name="s:avoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>avoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6121,9 +6121,9 @@
 
 <template name="v:ouloir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ouloir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6209,9 +6209,9 @@
 
 <template name="va:loir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>loir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6297,9 +6297,9 @@
 
 <template name="préva:loir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>loir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6385,9 +6385,9 @@
 
 <template name="p:ouvoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ouvoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6473,9 +6473,9 @@
 
 <template name="v:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6561,9 +6561,9 @@
 
 <template name="prév:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6649,9 +6649,9 @@
 
 <template name="ass:eoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eoir</i><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6737,9 +6737,9 @@
 
 <template name="ass:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eoir</i><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6825,9 +6825,9 @@
 
 <template name="surs:eoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -6913,9 +6913,9 @@
 
 <template name="surs:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7001,9 +7001,9 @@
 
 <template name="s:eoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>eoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7089,9 +7089,9 @@
 
 <template name="pl:euvoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>euvoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7177,9 +7177,9 @@
 
 <template name="fa:lloir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>lloir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7265,9 +7265,9 @@
 
 <template name="déch:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7353,9 +7353,9 @@
 
 <template name="pourv:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7441,9 +7441,9 @@
 
 <template name="ch:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7529,9 +7529,9 @@
 
 <template name="éch:oir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7617,9 +7617,9 @@
 
 <template name="ten:dre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>dre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7705,9 +7705,9 @@
 
 <template name="vain:cre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>cre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7793,9 +7793,9 @@
 
 <template name="bat:tre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>tre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7881,9 +7881,9 @@
 
 <template name="fou:tre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>tre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -7969,9 +7969,9 @@
 
 <template name="m:ettre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ettre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8057,9 +8057,9 @@
 
 <template name="pr:endre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>endre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8145,9 +8145,9 @@
 
 <template name="rom:pre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>pre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8233,9 +8233,9 @@
 
 <template name="mou:dre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>dre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8321,9 +8321,9 @@
 
 <template name="cou:dre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>dre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8409,9 +8409,9 @@
 
 <template name="réso:udre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>udre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8497,9 +8497,9 @@
 
 <template name="abso:udre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>udre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8585,9 +8585,9 @@
 
 <template name="disso:udre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>udre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8673,9 +8673,9 @@
 
 <template name="crai:ndre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ndre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8761,9 +8761,9 @@
 
 <template name="poi:ndre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ndre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8849,9 +8849,9 @@
 
 <template name="sui:vre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>vre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -8937,9 +8937,9 @@
 
 <template name="v:ivre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ivre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9025,9 +9025,9 @@
 
 <template name="rep:aître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9113,9 +9113,9 @@
 
 <template name="p:aître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9201,9 +9201,9 @@
 
 <template name="par:aître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9289,9 +9289,9 @@
 
 <template name="n:aître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9377,9 +9377,9 @@
 
 <template name="ren:aître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9465,9 +9465,9 @@
 
 <template name="cr:oître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9553,9 +9553,9 @@
 
 <template name="recr:oître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9642,9 +9642,9 @@
 
 <template name="accr:oître">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oître</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9730,9 +9730,9 @@
 
 <template name="r:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9818,9 +9818,9 @@
 
 <template name="circonc:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9906,9 +9906,9 @@
 
 <template name="concl:ure">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ure</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -9994,9 +9994,9 @@
 
 <template name="incl:ure">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ure</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10082,9 +10082,9 @@
 
 <template name="nui:re">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>re</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10170,9 +10170,9 @@
 
 <template name="lu:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10258,9 +10258,9 @@
 
 <template name="condui:re">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>re</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10346,9 +10346,9 @@
 
 <template name="écri:re">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>re</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10434,9 +10434,9 @@
 
 <template name="cr:oire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10522,9 +10522,9 @@
 
 <template name="suff:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10610,9 +10610,9 @@
 
 <template name="d:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10698,9 +10698,9 @@
 
 <template name="interd:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10786,9 +10786,9 @@
 
 <template name="méd:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10874,9 +10874,9 @@
 
 <template name="préd:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -10962,9 +10962,9 @@
 
 <template name="l:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11050,9 +11050,9 @@
 
 <template name="b:oire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11138,9 +11138,9 @@
 
 <template name="t:aire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11226,9 +11226,9 @@
 
 <template name="pl:aire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11314,9 +11314,9 @@
 
 <template name="f:aire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11402,9 +11402,9 @@
 
 <template name="extra:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11490,9 +11490,9 @@
 
 <template name="bra:ire">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ire</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11578,9 +11578,9 @@
 
 <template name="s:ourdre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ourdre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11666,9 +11666,9 @@
 
 <template name="cl:ore">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ore</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11754,9 +11754,9 @@
 
 <template name="éclo:re">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>re</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11842,9 +11842,9 @@
 
 <template name="forclo:re">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>re</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -11930,9 +11930,9 @@
 
 <template name="fri:re">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>re</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12018,9 +12018,9 @@
 
 <template name="brui:re">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>re</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12106,9 +12106,9 @@
 
 <template name="oi:ndre">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>ndre</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12194,9 +12194,9 @@
 
 <template name="env:oyer">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>oyer</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12282,9 +12282,9 @@
 
 <template name=":avoir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>avoir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12370,9 +12370,9 @@
 
 <template name=":être">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>être</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12458,9 +12458,9 @@
 
 <template name=":aller">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aller</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12546,9 +12546,9 @@
 
 <template name="app:aroir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>aroir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12634,9 +12634,9 @@
 
 <template name="cha:loir">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>loir</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12722,9 +12722,9 @@
 
 <template name="o:uïr">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>uïr</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>
@@ -12810,9 +12810,9 @@
 
 <template name="brumass:er">
 	<infinitif>
-		<infinitive-present>
+		<infinitif-présent>
 			<p><i>er</i></p>
-		</infinitive-present>
+		</infinitif-présent>
 	</infinitif>
 	<indicative>
 		<present>

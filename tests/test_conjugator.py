@@ -275,7 +275,7 @@ expected_resp_conj_manger = {
 },
 "moods": {
   "infinitif": {
-    "infinitive-present": [
+    "infinitif-présent": [
       "manger"
     ]
   },
@@ -432,7 +432,7 @@ expected_resp_conj_pouvoir = {
 },
 "moods": {
   "infinitif": {
-    "infinitive-present": [
+    "infinitif-présent": [
       "pouvoir"
     ]
   },
@@ -581,7 +581,7 @@ expected_resp_conj_pleuvoir = {
 },
 "moods": {
   "infinitif": {
-    "infinitive-present": [
+    "infinitif-présent": [
       "pleuvoir"
     ]
   },
@@ -674,7 +674,7 @@ expected_resp_conj_se_lever = {
 },
 "moods": {
   "infinitif": {
-    "infinitive-present": [
+    "infinitif-présent": [
       "se lever"
     ]
   },

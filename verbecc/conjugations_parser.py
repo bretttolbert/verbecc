@@ -17,38 +17,6 @@ class ConjugationsParserError(Exception):
 class TemplateNotFoundError(Exception):
     pass
 
-
-"""
-Conjugations XML structure:
-
-Moods:
-    infinitive (infinitive-present)
-    indicative (present, imperfect, future, simple-past)
-    conditional (present)
-    subjunctive (present, imperfect)
-    imperative (imperative-present)
-    participle (present-participle, past-participle)
-
-Tenses:
-    infinitive-present (p)
-    present (p, p, p, p, p, p)
-    imperfect (p, p, p, p, p, p)
-    future (p, p, p, p, p, p)
-    simple-past (p, p, p, p, p, p)
-    imperative-present (p, p, p)
-    present-participle (p)
-    past-participle (p, p, p, p)
-
-Class Diagram:
-
-    ConjugationsParser
-        has 1..* Template
-            has 1..* Mood
-                has 1..* Tense
-                    has 1..* Person
-"""
-
-
 class ConjugationsParser:
     def __init__(self):
         self.templates = []

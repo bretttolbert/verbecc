@@ -20,7 +20,7 @@ IMPERATIVE_PRESENT_PERSONS = (
     Person.SecondPersonPlural
 )
 
-TENSES_CONJUGATED_WITHOUT_PRONOUNS = ['infinitive-present', 'present-participle', 
+TENSES_CONJUGATED_WITHOUT_PRONOUNS = ['infinitif-présent', 'present-participle', 
                                       'imperative-present', 'past-participle']
 VERBS_CONJUGATED_WITH_ETRE = [
 "aller",
