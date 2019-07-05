@@ -22,12 +22,12 @@
 
 <!DOCTYPE conjugation-fr [
 	<!ELEMENT conjugation-fr (template+)>
-	<!ELEMENT template (infinitif, indicatif, conditional, subjunctive, imperative, participle)>
+	<!ELEMENT template (infinitif, indicatif, conditionnel, subjunctive, imperative, participle)>
 	<!ATTLIST template name CDATA #REQUIRED>
 
 	<!ELEMENT infinitif (infinitif-présent)>
 	<!ELEMENT indicatif (present, imperfect, future, simple-past)>
-	<!ELEMENT conditional (present)>
+	<!ELEMENT conditionnel (present)>
 	<!ELEMENT subjunctive (present, imperfect)>
 	<!ELEMENT imperative (imperative-present)>
 	<!ELEMENT participle (present-participle, past-participle)>
@@ -87,7 +87,7 @@
 			<p><i>cèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>cerais</i></p>
 			<p><i>cerais</i></p>
@@ -96,7 +96,7 @@
 			<p><i>ceriez</i></p>
 			<p><i>ceraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ce</i></p>
@@ -175,7 +175,7 @@
 			<p><i>èrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -184,7 +184,7 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>e</i></p>
@@ -263,7 +263,7 @@
 			<p><i>ecèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ecerais</i><i>ècerais</i></p>
 			<p><i>ecerais</i><i>ècerais</i></p>
@@ -272,7 +272,7 @@
 			<p><i>eceriez</i><i>èceriez</i></p>
 			<p><i>eceraient</i><i>èceraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ece</i><i>èce</i></p>
@@ -351,7 +351,7 @@
 			<p><i>gèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>gerais</i></p>
 			<p><i>gerais</i></p>
@@ -360,7 +360,7 @@
 			<p><i>geriez</i></p>
 			<p><i>geraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ge</i></p>
@@ -439,7 +439,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -448,7 +448,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -527,7 +527,7 @@
 			<p><i>yèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ierais</i><i>yerais</i></p>
 			<p><i>ierais</i><i>yerais</i></p>
@@ -536,7 +536,7 @@
 			<p><i>ieriez</i><i>yeriez</i></p>
 			<p><i>ieraient</i><i>yeraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ie</i><i>ye</i></p>
@@ -615,7 +615,7 @@
 			<p><i>yèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ierais</i></p>
 			<p><i>ierais</i></p>
@@ -624,7 +624,7 @@
 			<p><i>ieriez</i></p>
 			<p><i>ieraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ie</i></p>
@@ -703,7 +703,7 @@
 			<p><i>yèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>yerais</i></p>
 			<p><i>yerais</i></p>
@@ -712,7 +712,7 @@
 			<p><i>yeriez</i></p>
 			<p><i>yeraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ye</i></p>
@@ -791,7 +791,7 @@
 			<p><i>elèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ellerais</i></p>
 			<p><i>ellerais</i></p>
@@ -800,7 +800,7 @@
 			<p><i>elleriez</i></p>
 			<p><i>elleraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>elle</i></p>
@@ -879,7 +879,7 @@
 			<p><i>elèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èlerais</i></p>
 			<p><i>èlerais</i></p>
@@ -888,7 +888,7 @@
 			<p><i>èleriez</i></p>
 			<p><i>èleraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èle</i></p>
@@ -967,7 +967,7 @@
 			<p><i>elèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ellerais</i><i>èlerais</i></p>
 			<p><i>ellerais</i><i>èlerais</i></p>
@@ -976,7 +976,7 @@
 			<p><i>elleriez</i><i>èleriez</i></p>
 			<p><i>elleraient</i><i>èleraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>elle</i><i>èle</i></p>
@@ -1055,7 +1055,7 @@
 			<p><i>etèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>etterais</i></p>
 			<p><i>etterais</i></p>
@@ -1064,7 +1064,7 @@
 			<p><i>etteriez</i></p>
 			<p><i>etteraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ette</i></p>
@@ -1143,7 +1143,7 @@
 			<p><i>etèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èterais</i></p>
 			<p><i>èterais</i></p>
@@ -1152,7 +1152,7 @@
 			<p><i>èteriez</i></p>
 			<p><i>èteraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ète</i></p>
@@ -1231,7 +1231,7 @@
 			<p><i>étèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èterais</i></p>
 			<p><i>èterais</i></p>
@@ -1240,7 +1240,7 @@
 			<p><i>èteriez</i></p>
 			<p><i>èteraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ète</i></p>
@@ -1319,7 +1319,7 @@
 			<p><i>emèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èmerais</i></p>
 			<p><i>èmerais</i></p>
@@ -1328,7 +1328,7 @@
 			<p><i>èmeriez</i></p>
 			<p><i>èmeraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ème</i></p>
@@ -1407,7 +1407,7 @@
 			<p><i>éguèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èguerais</i></p>
 			<p><i>èguerais</i></p>
@@ -1416,7 +1416,7 @@
 			<p><i>ègueriez</i></p>
 			<p><i>ègueraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ègue</i></p>
@@ -1495,7 +1495,7 @@
 			<p><i>équèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èquerais</i></p>
 			<p><i>èquerais</i></p>
@@ -1504,7 +1504,7 @@
 			<p><i>èqueriez</i></p>
 			<p><i>èqueraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èque</i></p>
@@ -1583,7 +1583,7 @@
 			<p><i>élèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>élerais</i><i>èlerais</i></p>
 			<p><i>élerais</i><i>èlerais</i></p>
@@ -1592,7 +1592,7 @@
 			<p><i>éleriez</i><i>èleriez</i></p>
 			<p><i>éleraient</i><i>èleraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èle</i></p>
@@ -1671,7 +1671,7 @@
 			<p><i>étrèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>étrerais</i><i>ètrerais</i></p>
 			<p><i>étrerais</i><i>ètrerais</i></p>
@@ -1680,7 +1680,7 @@
 			<p><i>étreriez</i><i>ètreriez</i></p>
 			<p><i>étreraient</i><i>ètreraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ètre</i></p>
@@ -1759,7 +1759,7 @@
 			<p><i>églèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>églerais</i><i>èglerais</i></p>
 			<p><i>églerais</i><i>èglerais</i></p>
@@ -1768,7 +1768,7 @@
 			<p><i>égleriez</i><i>ègleriez</i></p>
 			<p><i>égleraient</i><i>ègleraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ègle</i></p>
@@ -1847,7 +1847,7 @@
 			<p><i>égnèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>égnerais</i><i>ègnerais</i></p>
 			<p><i>égnerais</i><i>ègnerais</i></p>
@@ -1856,7 +1856,7 @@
 			<p><i>égneriez</i><i>ègneriez</i></p>
 			<p><i>égneraient</i><i>ègneraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ègne</i></p>
@@ -1935,7 +1935,7 @@
 			<p><i>ébrèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ébrerais</i><i>èbrerais</i></p>
 			<p><i>ébrerais</i><i>èbrerais</i></p>
@@ -1944,7 +1944,7 @@
 			<p><i>ébreriez</i><i>èbreriez</i></p>
 			<p><i>ébreraient</i><i>èbreraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èbre</i></p>
@@ -2023,7 +2023,7 @@
 			<p><i>égrèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>égrerais</i><i>ègrerais</i></p>
 			<p><i>égrerais</i><i>ègrerais</i></p>
@@ -2032,7 +2032,7 @@
 			<p><i>égreriez</i><i>ègreriez</i></p>
 			<p><i>égreraient</i><i>ègreraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ègre</i></p>
@@ -2111,7 +2111,7 @@
 			<p><i>étèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>éterais</i><i>èterais</i></p>
 			<p><i>éterais</i><i>èterais</i></p>
@@ -2120,7 +2120,7 @@
 			<p><i>éteriez</i><i>èteriez</i></p>
 			<p><i>éteraient</i><i>èteraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ète</i></p>
@@ -2199,7 +2199,7 @@
 			<p><i>énèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>énerais</i><i>ènerais</i></p>
 			<p><i>énerais</i><i>ènerais</i></p>
@@ -2208,7 +2208,7 @@
 			<p><i>éneriez</i><i>èneriez</i></p>
 			<p><i>éneraient</i><i>èneraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ène</i></p>
@@ -2287,7 +2287,7 @@
 			<p><i>enèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ènerais</i></p>
 			<p><i>ènerais</i></p>
@@ -2296,7 +2296,7 @@
 			<p><i>èneriez</i></p>
 			<p><i>èneraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ène</i></p>
@@ -2375,7 +2375,7 @@
 			<p><i>evèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èverais</i></p>
 			<p><i>èverais</i></p>
@@ -2384,7 +2384,7 @@
 			<p><i>èveriez</i></p>
 			<p><i>èveraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ève</i></p>
@@ -2463,7 +2463,7 @@
 			<p><i>esèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èserais</i></p>
 			<p><i>èserais</i></p>
@@ -2472,7 +2472,7 @@
 			<p><i>èseriez</i></p>
 			<p><i>èseraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èse</i></p>
@@ -2551,7 +2551,7 @@
 			<p><i>échèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>écherais</i></p>
 			<p><i>écherais</i></p>
@@ -2560,7 +2560,7 @@
 			<p><i>écheriez</i></p>
 			<p><i>écheraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èche</i></p>
@@ -2639,7 +2639,7 @@
 			<p><i>érèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>érerais</i><i>èrerais</i></p>
 			<p><i>érerais</i><i>èrerais</i></p>
@@ -2648,7 +2648,7 @@
 			<p><i>éreriez</i><i>èreriez</i></p>
 			<p><i>éreraient</i><i>èreraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ère</i></p>
@@ -2727,7 +2727,7 @@
 			<p><i>evrèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>èvrerais</i></p>
 			<p><i>èvrerais</i></p>
@@ -2736,7 +2736,7 @@
 			<p><i>èvreriez</i></p>
 			<p><i>èvreraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èvre</i></p>
@@ -2815,7 +2815,7 @@
 			<p><i>édèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>éderais</i><i>èderais</i></p>
 			<p><i>éderais</i><i>èderais</i></p>
@@ -2824,7 +2824,7 @@
 			<p><i>éderiez</i><i>èderiez</i></p>
 			<p><i>éderaient</i><i>èderaient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ède</i></p>
@@ -2903,7 +2903,7 @@
 			<p><i>épèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>éperais</i><i>èperais</i></p>
 			<p><i>éperais</i><i>èperais</i></p>
@@ -2912,7 +2912,7 @@
 			<p><i>éperiez</i><i>èperiez</i></p>
 			<p><i>éperaient</i><i>èperaient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èpe</i></p>
@@ -2991,7 +2991,7 @@
 			<p><i>epèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>eperais</i><i>èperais</i></p>
 			<p><i>eperais</i><i>èperais</i></p>
@@ -3000,7 +3000,7 @@
 			<p><i>eperiez</i><i>èperiez</i></p>
 			<p><i>eperaient</i><i>èperaient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èpe</i></p>
@@ -3079,7 +3079,7 @@
 			<p><i>ésèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>éserais</i><i>èserais</i></p>
 			<p><i>éserais</i><i>èserais</i></p>
@@ -3088,7 +3088,7 @@
 			<p><i>éseriez</i><i>èseriez</i></p>
 			<p><i>éseraient</i><i>èseraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èse</i></p>
@@ -3167,7 +3167,7 @@
 			<p><i>émèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>émerais</i><i>èmerais</i></p>
 			<p><i>émerais</i><i>èmerais</i></p>
@@ -3176,7 +3176,7 @@
 			<p><i>émeriez</i><i>èmeriez</i></p>
 			<p><i>émeraient</i><i>èmeraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ème</i></p>
@@ -3255,7 +3255,7 @@
 			<p><i>égèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ègerais</i></p>
 			<p><i>ègerais</i></p>
@@ -3264,7 +3264,7 @@
 			<p><i>ègeriez</i></p>
 			<p><i>ègeraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ège</i></p>
@@ -3343,7 +3343,7 @@
 			<p><i>èrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -3352,7 +3352,7 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>e</i></p>
@@ -3431,7 +3431,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -3440,7 +3440,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -3519,7 +3519,7 @@
 			<p><i>évrèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>évrerais</i></p>
 			<p><i>évrerais</i></p>
@@ -3528,7 +3528,7 @@
 			<p><i>évreriez</i></p>
 			<p><i>évreraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>èvre</i></p>
@@ -3607,7 +3607,7 @@
 			<p><i>écrèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>écrerais</i></p>
 			<p><i>écrerais</i></p>
@@ -3616,7 +3616,7 @@
 			<p><i>écreriez</i></p>
 			<p><i>écreraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ècre</i></p>
@@ -3695,7 +3695,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>errais</i></p>
 			<p><i>errais</i></p>
@@ -3704,7 +3704,7 @@
 			<p><i>erriez</i></p>
 			<p><i>erraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ière</i></p>
@@ -3783,7 +3783,7 @@
 			<p><i>ïrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ïrais</i></p>
 			<p><i>ïrais</i></p>
@@ -3792,7 +3792,7 @@
 			<p><i>ïriez</i></p>
 			<p><i>ïraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ïsse</i></p>
@@ -3871,7 +3871,7 @@
 			<p><i>ïrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ïrais</i></p>
 			<p><i>ïrais</i></p>
@@ -3880,7 +3880,7 @@
 			<p><i>ïriez</i></p>
 			<p><i>ïraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ïsse</i></p>
@@ -3959,7 +3959,7 @@
 			<p><i>eurirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>eurirais</i></p>
 			<p><i>eurirais</i></p>
@@ -3968,7 +3968,7 @@
 			<p><i>euririez</i></p>
 			<p><i>euriraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>eurisse</i></p>
@@ -4047,7 +4047,7 @@
 			<p><i>rirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>rirais</i></p>
 			<p><i>rirais</i></p>
@@ -4056,7 +4056,7 @@
 			<p><i>ririez</i></p>
 			<p><i>riraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>re</i></p>
@@ -4135,7 +4135,7 @@
 			<p><i>mirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>mirais</i></p>
 			<p><i>mirais</i></p>
@@ -4144,7 +4144,7 @@
 			<p><i>miriez</i></p>
 			<p><i>miraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>me</i></p>
@@ -4223,7 +4223,7 @@
 			<p><i>tirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>tirais</i></p>
 			<p><i>tirais</i></p>
@@ -4232,7 +4232,7 @@
 			<p><i>tiriez</i></p>
 			<p><i>tiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>te</i></p>
@@ -4311,7 +4311,7 @@
 			<p><i>virent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>virais</i></p>
 			<p><i>virais</i></p>
@@ -4320,7 +4320,7 @@
 			<p><i>viriez</i></p>
 			<p><i>viraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ve</i></p>
@@ -4399,7 +4399,7 @@
 			<p><i>illirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>illirais</i></p>
 			<p><i>illirais</i></p>
@@ -4408,7 +4408,7 @@
 			<p><i>illiriez</i></p>
 			<p><i>illiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ille</i></p>
@@ -4487,7 +4487,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -4496,7 +4496,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>e</i></p>
@@ -4575,7 +4575,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -4584,7 +4584,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i><i>eraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>isse</i></p>
@@ -4663,7 +4663,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -4672,7 +4672,7 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>e</i></p>
@@ -4751,7 +4751,7 @@
 			<p><i>inrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>iendrais</i></p>
 			<p><i>iendrais</i></p>
@@ -4760,7 +4760,7 @@
 			<p><i>iendriez</i></p>
 			<p><i>iendraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ienne</i></p>
@@ -4839,7 +4839,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -4848,7 +4848,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -4927,7 +4927,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -4936,7 +4936,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ie</i></p>
@@ -5015,7 +5015,7 @@
 			<p><i>oururent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ourrais</i></p>
 			<p><i>ourrais</i></p>
@@ -5024,7 +5024,7 @@
 			<p><i>ourriez</i></p>
 			<p><i>ourraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>eure</i></p>
@@ -5103,7 +5103,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5112,7 +5112,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>e</i></p>
@@ -5191,7 +5191,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -5200,7 +5200,7 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>e</i></p>
@@ -5279,7 +5279,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5288,7 +5288,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>isse</i></p>
@@ -5367,7 +5367,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5376,7 +5376,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>e</i></p>
@@ -5455,7 +5455,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5464,7 +5464,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>isse</i></p>
@@ -5543,7 +5543,7 @@
 			<p><i>illirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>illirais</i></p>
 			<p><i>illirais</i></p>
@@ -5552,7 +5552,7 @@
 			<p><i>illiriez</i></p>
 			<p><i>illiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>illisse</i></p>
@@ -5631,7 +5631,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -5640,7 +5640,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -5719,7 +5719,7 @@
 			<p><i>çurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>cevrais</i></p>
 			<p><i>cevrais</i></p>
@@ -5728,7 +5728,7 @@
 			<p><i>cevriez</i></p>
 			<p><i>cevraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>çoive</i></p>
@@ -5807,7 +5807,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>evrais</i></p>
 			<p><i>evrais</i></p>
@@ -5816,7 +5816,7 @@
 			<p><i>evriez</i></p>
 			<p><i>evraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oive</i></p>
@@ -5895,7 +5895,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ouvrais</i></p>
 			<p><i>ouvrais</i></p>
@@ -5904,7 +5904,7 @@
 			<p><i>ouvriez</i></p>
 			<p><i>ouvraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>euve</i></p>
@@ -5983,7 +5983,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ouvrais</i></p>
 			<p><i>ouvrais</i></p>
@@ -5992,7 +5992,7 @@
 			<p><i>ouvriez</i></p>
 			<p><i>ouvraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>euve</i></p>
@@ -6071,7 +6071,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>aurais</i></p>
 			<p><i>aurais</i></p>
@@ -6080,7 +6080,7 @@
 			<p><i>auriez</i></p>
 			<p><i>auraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ache</i></p>
@@ -6159,7 +6159,7 @@
 			<p><i>oulurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oudrais</i></p>
 			<p><i>oudrais</i></p>
@@ -6168,7 +6168,7 @@
 			<p><i>oudriez</i></p>
 			<p><i>oudraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>euille</i></p>
@@ -6247,7 +6247,7 @@
 			<p><i>lurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -6256,7 +6256,7 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ille</i></p>
@@ -6335,7 +6335,7 @@
 			<p><i>lurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -6344,7 +6344,7 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>le</i></p>
@@ -6423,7 +6423,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ourrais</i></p>
 			<p><i>ourrais</i></p>
@@ -6432,7 +6432,7 @@
 			<p><i>ourriez</i></p>
 			<p><i>ourraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>uisse</i></p>
@@ -6511,7 +6511,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>errais</i></p>
 			<p><i>errais</i></p>
@@ -6520,7 +6520,7 @@
 			<p><i>erriez</i></p>
 			<p><i>erraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -6599,7 +6599,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -6608,7 +6608,7 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -6687,7 +6687,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
@@ -6696,7 +6696,7 @@
 			<p><i>iériez</i><i>eyeriez</i><i>oiriez</i></p>
 			<p><i>iéraient</i><i>eyeraient</i><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>eye</i><i>oie</i></p>
@@ -6775,7 +6775,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
@@ -6784,7 +6784,7 @@
 			<p><i>iériez</i><i>eyeriez</i><i>oiriez</i></p>
 			<p><i>iéraient</i><i>eyeraient</i><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>eye</i><i>oie</i></p>
@@ -6863,7 +6863,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>eoirais</i></p>
 			<p><i>eoirais</i></p>
@@ -6872,7 +6872,7 @@
 			<p><i>eoiriez</i></p>
 			<p><i>eoiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -6951,7 +6951,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -6960,7 +6960,7 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -7039,7 +7039,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -7048,7 +7048,7 @@
 			<p></p>
 			<p><i>iéraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -7127,7 +7127,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -7136,7 +7136,7 @@
 			<p></p>
 			<p><i>euvraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -7215,7 +7215,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -7224,7 +7224,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -7303,7 +7303,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -7312,7 +7312,7 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -7391,7 +7391,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -7400,7 +7400,7 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -7479,7 +7479,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oirais</i><i>errais</i></p>
 			<p><i>oirais</i><i>errais</i></p>
@@ -7488,7 +7488,7 @@
 			<p><i>oiriez</i><i>erriez</i></p>
 			<p><i>oiraient</i><i>erraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -7567,7 +7567,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -7576,7 +7576,7 @@
 			<p></p>
 			<p><i>oiraient</i><i>erraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -7655,7 +7655,7 @@
 			<p><i>dirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>drais</i></p>
 			<p><i>drais</i></p>
@@ -7664,7 +7664,7 @@
 			<p><i>driez</i></p>
 			<p><i>draient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>de</i></p>
@@ -7743,7 +7743,7 @@
 			<p><i>quirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>crais</i></p>
 			<p><i>crais</i></p>
@@ -7752,7 +7752,7 @@
 			<p><i>criez</i></p>
 			<p><i>craient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>que</i></p>
@@ -7831,7 +7831,7 @@
 			<p><i>tirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>trais</i></p>
 			<p><i>trais</i></p>
@@ -7840,7 +7840,7 @@
 			<p><i>triez</i></p>
 			<p><i>traient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>te</i></p>
@@ -7919,7 +7919,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>trais</i></p>
 			<p><i>trais</i></p>
@@ -7928,7 +7928,7 @@
 			<p><i>triez</i></p>
 			<p><i>traient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>te</i></p>
@@ -8007,7 +8007,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ettrais</i></p>
 			<p><i>ettrais</i></p>
@@ -8016,7 +8016,7 @@
 			<p><i>ettriez</i></p>
 			<p><i>ettraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ette</i></p>
@@ -8095,7 +8095,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>endrais</i></p>
 			<p><i>endrais</i></p>
@@ -8104,7 +8104,7 @@
 			<p><i>endriez</i></p>
 			<p><i>endraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>enne</i></p>
@@ -8183,7 +8183,7 @@
 			<p><i>pirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>prais</i></p>
 			<p><i>prais</i></p>
@@ -8192,7 +8192,7 @@
 			<p><i>priez</i></p>
 			<p><i>praient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>pe</i></p>
@@ -8271,7 +8271,7 @@
 			<p><i>lurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>drais</i></p>
 			<p><i>drais</i></p>
@@ -8280,7 +8280,7 @@
 			<p><i>driez</i></p>
 			<p><i>draient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>le</i></p>
@@ -8359,7 +8359,7 @@
 			<p><i>sirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>drais</i></p>
 			<p><i>drais</i></p>
@@ -8368,7 +8368,7 @@
 			<p><i>driez</i></p>
 			<p><i>draient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>se</i></p>
@@ -8447,7 +8447,7 @@
 			<p><i>lurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -8456,7 +8456,7 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>lve</i></p>
@@ -8535,7 +8535,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -8544,7 +8544,7 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>lve</i></p>
@@ -8623,7 +8623,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -8632,7 +8632,7 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>lve</i></p>
@@ -8711,7 +8711,7 @@
 			<p><i>gnirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ndrais</i></p>
 			<p><i>ndrais</i></p>
@@ -8720,7 +8720,7 @@
 			<p><i>ndriez</i></p>
 			<p><i>ndraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>gne</i></p>
@@ -8799,7 +8799,7 @@
 			<p><i>gnirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ndrais</i></p>
 			<p><i>ndrais</i></p>
@@ -8808,7 +8808,7 @@
 			<p><i>ndriez</i></p>
 			<p><i>ndraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>gne</i></p>
@@ -8887,7 +8887,7 @@
 			<p><i>virent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>vrais</i></p>
 			<p><i>vrais</i></p>
@@ -8896,7 +8896,7 @@
 			<p><i>vriez</i></p>
 			<p><i>vraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ve</i></p>
@@ -8975,7 +8975,7 @@
 			<p><i>écurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ivrais</i></p>
 			<p><i>ivrais</i></p>
@@ -8984,7 +8984,7 @@
 			<p><i>ivriez</i></p>
 			<p><i>ivraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ive</i></p>
@@ -9063,7 +9063,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9072,7 +9072,7 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aisse</i></p>
@@ -9151,7 +9151,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9160,7 +9160,7 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aisse</i></p>
@@ -9239,7 +9239,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9248,7 +9248,7 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aisse</i></p>
@@ -9327,7 +9327,7 @@
 			<p><i>aquirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9336,7 +9336,7 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aisse</i></p>
@@ -9415,7 +9415,7 @@
 			<p><i>aquirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9424,7 +9424,7 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aisse</i></p>
@@ -9503,7 +9503,7 @@
 			<p><i>ûrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oîtrais</i></p>
 			<p><i>oîtrais</i></p>
@@ -9512,7 +9512,7 @@
 			<p><i>oîtriez</i></p>
 			<p><i>oîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oisse</i></p>
@@ -9591,7 +9591,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oîtrais</i></p>
 			<p><i>oîtrais</i></p>
@@ -9600,7 +9600,7 @@
 			<p><i>oîtriez</i></p>
 			<p><i>oîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oisse</i></p>
@@ -9680,7 +9680,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oîtrais</i></p>
 			<p><i>oîtrais</i></p>
@@ -9689,7 +9689,7 @@
 			<p><i>oîtriez</i></p>
 			<p><i>oîtraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oisse</i></p>
@@ -9768,7 +9768,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -9777,7 +9777,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ie</i></p>
@@ -9856,7 +9856,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -9865,7 +9865,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -9944,7 +9944,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>urais</i></p>
 			<p><i>urais</i></p>
@@ -9953,7 +9953,7 @@
 			<p><i>uriez</i></p>
 			<p><i>uraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ue</i></p>
@@ -10032,7 +10032,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>urais</i></p>
 			<p><i>urais</i></p>
@@ -10041,7 +10041,7 @@
 			<p><i>uriez</i></p>
 			<p><i>uraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ue</i></p>
@@ -10120,7 +10120,7 @@
 			<p><i>sirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -10129,7 +10129,7 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>se</i></p>
@@ -10208,7 +10208,7 @@
 			<p><i>irent</i><i>isirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10217,7 +10217,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -10296,7 +10296,7 @@
 			<p><i>sirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -10305,7 +10305,7 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>se</i></p>
@@ -10384,7 +10384,7 @@
 			<p><i>virent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -10393,7 +10393,7 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ve</i></p>
@@ -10472,7 +10472,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -10481,7 +10481,7 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -10560,7 +10560,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10569,7 +10569,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -10648,7 +10648,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10657,7 +10657,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -10736,7 +10736,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10745,7 +10745,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -10824,7 +10824,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10833,7 +10833,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -10912,7 +10912,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10921,7 +10921,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -11000,7 +11000,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -11009,7 +11009,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ise</i></p>
@@ -11088,7 +11088,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -11097,7 +11097,7 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oive</i></p>
@@ -11176,7 +11176,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>airais</i></p>
 			<p><i>airais</i></p>
@@ -11185,7 +11185,7 @@
 			<p><i>airiez</i></p>
 			<p><i>airaient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aise</i></p>
@@ -11264,7 +11264,7 @@
 			<p><i>urent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>airais</i></p>
 			<p><i>airais</i></p>
@@ -11273,7 +11273,7 @@
 			<p><i>airiez</i></p>
 			<p><i>airaient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aise</i></p>
@@ -11352,7 +11352,7 @@
 			<p><i>irent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -11361,7 +11361,7 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>asse</i></p>
@@ -11440,7 +11440,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -11449,7 +11449,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ie</i></p>
@@ -11528,7 +11528,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -11537,7 +11537,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ie</i></p>
@@ -11616,7 +11616,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -11625,7 +11625,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -11704,7 +11704,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>orais</i></p>
 			<p><i>orais</i></p>
@@ -11713,7 +11713,7 @@
 			<p><i>oriez</i></p>
 			<p><i>oraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ose</i></p>
@@ -11792,7 +11792,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -11801,7 +11801,7 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>se</i></p>
@@ -11880,7 +11880,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -11889,7 +11889,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -11968,7 +11968,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -11977,7 +11977,7 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -12056,7 +12056,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -12065,7 +12065,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -12144,7 +12144,7 @@
 			<p><i>gnirent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>ndrais</i></p>
 			<p><i>ndrais</i></p>
@@ -12153,7 +12153,7 @@
 			<p><i>ndriez</i></p>
 			<p><i>ndraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>gne</i></p>
@@ -12232,7 +12232,7 @@
 			<p><i>oyèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>errais</i></p>
 			<p><i>errais</i></p>
@@ -12241,7 +12241,7 @@
 			<p><i>erriez</i></p>
 			<p><i>erraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>oie</i></p>
@@ -12320,7 +12320,7 @@
 			<p><i>eurent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>aurais</i></p>
 			<p><i>aurais</i></p>
@@ -12329,7 +12329,7 @@
 			<p><i>auriez</i></p>
 			<p><i>auraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aie</i></p>
@@ -12408,7 +12408,7 @@
 			<p><i>furent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>serais</i></p>
 			<p><i>serais</i></p>
@@ -12417,7 +12417,7 @@
 			<p><i>seriez</i></p>
 			<p><i>seraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>sois</i></p>
@@ -12496,7 +12496,7 @@
 			<p><i>allèrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -12505,7 +12505,7 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>aille</i></p>
@@ -12584,7 +12584,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -12593,7 +12593,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -12672,7 +12672,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -12681,7 +12681,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>
@@ -12760,7 +12760,7 @@
 			<p><i>uïrent</i></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p><i>irais</i><i>uïrais</i><i>rrais</i></p>
 			<p><i>irais</i><i>uïrais</i><i>rrais</i></p>
@@ -12769,7 +12769,7 @@
 			<p><i>iriez</i><i>uïriez</i><i>rriez</i></p>
 			<p><i>iraient</i><i>uïraient</i><i>rraient</i></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p><i>ie</i></p>
@@ -12848,7 +12848,7 @@
 			<p></p>
 		</simple-past>
 	</indicatif>
-	<conditional>
+	<conditionnel>
 		<present>
 			<p></p>
 			<p></p>
@@ -12857,7 +12857,7 @@
 			<p></p>
 			<p></p>
 		</present>
-	</conditional>
+	</conditionnel>
 	<subjunctive>
 		<present>
 			<p></p>

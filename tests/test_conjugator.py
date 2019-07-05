@@ -89,8 +89,8 @@ def test_conjugator_conjugate_subjunctive_past_with_etre():
     "qu'ils soient allés"
     ]
 
-def test_conjugator_conjugate_conditional_past_with_avoir():
-    assert conj.conjugate_conditional_past('manger') == [
+def test_conjugator_conjugate_conditionnel_past_with_avoir():
+    assert conj.conjugate_conditionnel_past('manger') == [
     "j'aurais mangé",
     "tu aurais mangé",
     "il aurait mangé",
@@ -99,8 +99,8 @@ def test_conjugator_conjugate_conditional_past_with_avoir():
     "ils auraient mangé"
     ]
 
-def test_conjugator_conjugate_conditional_past_with_etre():
-    assert conj.conjugate_conditional_past('aller') == [
+def test_conjugator_conjugate_conditionnel_past_with_etre():
+    assert conj.conjugate_conditionnel_past('aller') == [
     "je serais allé",
     "tu serais allé",
     "il serait allé",
@@ -345,7 +345,7 @@ expected_resp_conj_manger = {
       "ils eurent mangé"
     ]
   },
-  "conditional": {
+  "conditionnel": {
     "present": [
       "je mangerais",
       "tu mangerais",
@@ -502,7 +502,7 @@ expected_resp_conj_pouvoir = {
       "ils eurent pu"
     ]
   },
-  "conditional": {
+  "conditionnel": {
     "present": [
       "je pourrais",
       "tu pourrais",
@@ -619,7 +619,7 @@ expected_resp_conj_pleuvoir = {
       "ils eurent plu"
     ]
   },
-  "conditional": {
+  "conditionnel": {
     "present": [
       "il pleuvrait",
       "ils pleuvraient"
@@ -744,7 +744,7 @@ expected_resp_conj_se_lever = {
       "ils se furent levés"
     ]
   },
-  "conditional": {
+  "conditionnel": {
     "present": [
       "je me lèverais",
       "tu te lèverais",

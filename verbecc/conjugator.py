@@ -123,8 +123,8 @@ class Conjugator:
         elif mood_name == 'subjunctive':
             conjugations['past'] = self._conjugate_subjunctive_past(co)
             conjugations['pluperfect'] = self._conjugate_subjunctive_pluperfect(co)
-        elif mood_name == 'conditional':
-            conjugations['past'] = self._conjugate_conditional_past(co)
+        elif mood_name == 'conditionnel':
+            conjugations['past'] = self._conjugate_conditionnel_past(co)
         elif mood_name == 'imperative':
             conjugations['imperative-past'] = self._conjugate_imperative_past(co)
 
@@ -152,9 +152,9 @@ class Conjugator:
         co = self._get_conj_obs(infinitive)
         return self._conjugate_subjunctive_pluperfect(co)
 
-    def conjugate_conditional_past(self, infinitive):
+    def conjugate_conditionnel_past(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_conditional_past(co)
+        return self._conjugate_conditionnel_past(co)
 
     def conjugate_imperative_past(self, infinitive):
         co = self._get_conj_obs(infinitive)
@@ -178,8 +178,8 @@ class Conjugator:
     def _conjugate_subjunctive_pluperfect(self, co):
         return self._conjugate_compound(co, 'subjunctive', 'subjunctive', 'imperfect')
 
-    def _conjugate_conditional_past(self, co):
-        return self._conjugate_compound(co, 'conditional', 'conditional', 'present')
+    def _conjugate_conditionnel_past(self, co):
+        return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'present')
 
     def _conjugate_imperative_past(self, co):
         return self._conjugate_compound(co, 'imperative', 'imperative', 'imperative-present')
