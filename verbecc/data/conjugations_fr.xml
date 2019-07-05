@@ -26,7 +26,7 @@
 	<!ATTLIST template name CDATA #REQUIRED>
 
 	<!ELEMENT infinitif (infinitif-présent)>
-	<!ELEMENT indicatif (présent, imparfait, futur, simple-past)>
+	<!ELEMENT indicatif (présent, imparfait, futur, passé-simple)>
 	<!ELEMENT conditionnel (présent)>
 	<!ELEMENT subjonctif (présent, imparfait)>
 	<!ELEMENT imperatif (imperatif-présent)>
@@ -36,7 +36,7 @@
 	<!ELEMENT présent (p, p, p, p, p, p)>
 	<!ELEMENT imparfait (p, p, p, p, p, p)>
 	<!ELEMENT futur (p, p, p, p, p, p)>
-	<!ELEMENT simple-past (p, p, p, p, p, p)>
+	<!ELEMENT passé-simple (p, p, p, p, p, p)>
 	<!ELEMENT imperatif-présent (p, p, p)>
 	<!ELEMENT participe-présent (p)>
 	<!ELEMENT participe-passé (p, p, p, p)>
@@ -78,14 +78,14 @@
 			<p><i>cerez</i></p>
 			<p><i>ceront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>çai</i></p>
 			<p><i>ças</i></p>
 			<p><i>ça</i></p>
 			<p><i>çâmes</i></p>
 			<p><i>çâtes</i></p>
 			<p><i>cèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -166,14 +166,14 @@
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ai</i></p>
 			<p><i>as</i></p>
 			<p><i>a</i></p>
 			<p><i>âmes</i></p>
 			<p><i>âtes</i></p>
 			<p><i>èrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -254,14 +254,14 @@
 			<p><i>ecerez</i><i>ècerez</i></p>
 			<p><i>eceront</i><i>èceront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>eçai</i></p>
 			<p><i>eças</i></p>
 			<p><i>eça</i></p>
 			<p><i>eçâmes</i></p>
 			<p><i>eçâtes</i></p>
 			<p><i>ecèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -342,14 +342,14 @@
 			<p><i>gerez</i></p>
 			<p><i>geront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>geai</i></p>
 			<p><i>geas</i></p>
 			<p><i>gea</i></p>
 			<p><i>geâmes</i></p>
 			<p><i>geâtes</i></p>
 			<p><i>gèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -430,14 +430,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p><i>gea</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -518,14 +518,14 @@
 			<p><i>ierez</i><i>yerez</i></p>
 			<p><i>ieront</i><i>yeront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>yai</i></p>
 			<p><i>yas</i></p>
 			<p><i>ya</i></p>
 			<p><i>yâmes</i></p>
 			<p><i>yâtes</i></p>
 			<p><i>yèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -606,14 +606,14 @@
 			<p><i>ierez</i></p>
 			<p><i>ieront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>yai</i></p>
 			<p><i>yas</i></p>
 			<p><i>ya</i></p>
 			<p><i>yâmes</i></p>
 			<p><i>yâtes</i></p>
 			<p><i>yèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -694,14 +694,14 @@
 			<p><i>yerez</i></p>
 			<p><i>yeront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>yai</i></p>
 			<p><i>yas</i></p>
 			<p><i>ya</i></p>
 			<p><i>yâmes</i></p>
 			<p><i>yâtes</i></p>
 			<p><i>yèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -782,14 +782,14 @@
 			<p><i>ellerez</i></p>
 			<p><i>elleront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>elai</i></p>
 			<p><i>elas</i></p>
 			<p><i>ela</i></p>
 			<p><i>elâmes</i></p>
 			<p><i>elâtes</i></p>
 			<p><i>elèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -870,14 +870,14 @@
 			<p><i>èlerez</i></p>
 			<p><i>èleront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>elai</i></p>
 			<p><i>elas</i></p>
 			<p><i>ela</i></p>
 			<p><i>elâmes</i></p>
 			<p><i>elâtes</i></p>
 			<p><i>elèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -958,14 +958,14 @@
 			<p><i>ellerez</i><i>èlerez</i></p>
 			<p><i>elleront</i><i>èleront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>elai</i></p>
 			<p><i>elas</i></p>
 			<p><i>ela</i></p>
 			<p><i>elâmes</i></p>
 			<p><i>elâtes</i></p>
 			<p><i>elèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1046,14 +1046,14 @@
 			<p><i>etterez</i></p>
 			<p><i>etteront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>etai</i></p>
 			<p><i>etas</i></p>
 			<p><i>eta</i></p>
 			<p><i>etâmes</i></p>
 			<p><i>etâtes</i></p>
 			<p><i>etèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1134,14 +1134,14 @@
 			<p><i>èterez</i></p>
 			<p><i>èteront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>etai</i></p>
 			<p><i>etas</i></p>
 			<p><i>eta</i></p>
 			<p><i>etâmes</i></p>
 			<p><i>etâtes</i></p>
 			<p><i>etèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1222,14 +1222,14 @@
 			<p><i>èterez</i></p>
 			<p><i>èteront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>étai</i></p>
 			<p><i>étas</i></p>
 			<p><i>éta</i></p>
 			<p><i>étâmes</i></p>
 			<p><i>étâtes</i></p>
 			<p><i>étèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1310,14 +1310,14 @@
 			<p><i>èmerez</i></p>
 			<p><i>èmeront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>emai</i></p>
 			<p><i>emas</i></p>
 			<p><i>ema</i></p>
 			<p><i>emâmes</i></p>
 			<p><i>emâtes</i></p>
 			<p><i>emèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1398,14 +1398,14 @@
 			<p><i>èguerez</i></p>
 			<p><i>ègueront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>éguai</i></p>
 			<p><i>éguas</i></p>
 			<p><i>égua</i></p>
 			<p><i>éguâmes</i></p>
 			<p><i>éguâtes</i></p>
 			<p><i>éguèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1486,14 +1486,14 @@
 			<p><i>èquerez</i></p>
 			<p><i>èqueront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>équai</i></p>
 			<p><i>équas</i></p>
 			<p><i>équa</i></p>
 			<p><i>équâmes</i></p>
 			<p><i>équâtes</i></p>
 			<p><i>équèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1574,14 +1574,14 @@
 			<p><i>élerez</i><i>èlerez</i></p>
 			<p><i>éleront</i><i>èleront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>élai</i></p>
 			<p><i>élas</i></p>
 			<p><i>éla</i></p>
 			<p><i>élâmes</i></p>
 			<p><i>élâtes</i></p>
 			<p><i>élèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1662,14 +1662,14 @@
 			<p><i>étrerez</i><i>ètrerez</i></p>
 			<p><i>étreront</i><i>ètreront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>étrai</i></p>
 			<p><i>étras</i></p>
 			<p><i>étra</i></p>
 			<p><i>étrâmes</i></p>
 			<p><i>étrâtes</i></p>
 			<p><i>étrèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1750,14 +1750,14 @@
 			<p><i>églerez</i><i>èglerez</i></p>
 			<p><i>égleront</i><i>ègleront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>églai</i></p>
 			<p><i>églas</i></p>
 			<p><i>égla</i></p>
 			<p><i>églâmes</i></p>
 			<p><i>églâtes</i></p>
 			<p><i>églèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1838,14 +1838,14 @@
 			<p><i>égnerez</i><i>ègnerez</i></p>
 			<p><i>égneront</i><i>ègneront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>égnai</i></p>
 			<p><i>égnas</i></p>
 			<p><i>égna</i></p>
 			<p><i>égnâmes</i></p>
 			<p><i>égnâtes</i></p>
 			<p><i>égnèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -1926,14 +1926,14 @@
 			<p><i>ébrerez</i><i>èbrerez</i></p>
 			<p><i>ébreront</i><i>èbreront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ébrai</i></p>
 			<p><i>ébras</i></p>
 			<p><i>ébra</i></p>
 			<p><i>ébrâmes</i></p>
 			<p><i>ébrâtes</i></p>
 			<p><i>ébrèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2014,14 +2014,14 @@
 			<p><i>égrerez</i><i>ègrerez</i></p>
 			<p><i>égreront</i><i>ègreront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>égrai</i></p>
 			<p><i>égras</i></p>
 			<p><i>égra</i></p>
 			<p><i>égrâmes</i></p>
 			<p><i>égrâtes</i></p>
 			<p><i>égrèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2102,14 +2102,14 @@
 			<p><i>éterez</i><i>èterez</i></p>
 			<p><i>éteront</i><i>èteront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>étai</i></p>
 			<p><i>étas</i></p>
 			<p><i>éta</i></p>
 			<p><i>étâmes</i></p>
 			<p><i>étâtes</i></p>
 			<p><i>étèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2190,14 +2190,14 @@
 			<p><i>énerez</i><i>ènerez</i></p>
 			<p><i>éneront</i><i>èneront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>énai</i></p>
 			<p><i>énas</i></p>
 			<p><i>éna</i></p>
 			<p><i>énâmes</i></p>
 			<p><i>énâtes</i></p>
 			<p><i>énèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2278,14 +2278,14 @@
 			<p><i>ènerez</i></p>
 			<p><i>èneront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>enai</i></p>
 			<p><i>enas</i></p>
 			<p><i>ena</i></p>
 			<p><i>enâmes</i></p>
 			<p><i>enâtes</i></p>
 			<p><i>enèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2366,14 +2366,14 @@
 			<p><i>èverez</i></p>
 			<p><i>èveront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>evai</i></p>
 			<p><i>evas</i></p>
 			<p><i>eva</i></p>
 			<p><i>evâmes</i></p>
 			<p><i>evâtes</i></p>
 			<p><i>evèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2454,14 +2454,14 @@
 			<p><i>èserez</i></p>
 			<p><i>èseront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>esai</i></p>
 			<p><i>esas</i></p>
 			<p><i>esa</i></p>
 			<p><i>esâmes</i></p>
 			<p><i>esâtes</i></p>
 			<p><i>esèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2542,14 +2542,14 @@
 			<p><i>écherez</i></p>
 			<p><i>écheront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>échai</i></p>
 			<p><i>échas</i></p>
 			<p><i>écha</i></p>
 			<p><i>échâmes</i></p>
 			<p><i>échâtes</i></p>
 			<p><i>échèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2630,14 +2630,14 @@
 			<p><i>érerez</i><i>èrerez</i></p>
 			<p><i>éreront</i><i>èreront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>érai</i></p>
 			<p><i>éras</i></p>
 			<p><i>éra</i></p>
 			<p><i>érâmes</i></p>
 			<p><i>érâtes</i></p>
 			<p><i>érèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2718,14 +2718,14 @@
 			<p><i>èvrerez</i></p>
 			<p><i>èvreront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>evrai</i></p>
 			<p><i>evras</i></p>
 			<p><i>evra</i></p>
 			<p><i>evrâmes</i></p>
 			<p><i>evrâtes</i></p>
 			<p><i>evrèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2806,14 +2806,14 @@
 			<p><i>éderez</i><i>èderez</i></p>
 			<p><i>éderont</i><i>èderont</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>édai</i></p>
 			<p><i>édas</i></p>
 			<p><i>éda</i></p>
 			<p><i>édâmes</i></p>
 			<p><i>édâtes</i></p>
 			<p><i>édèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2894,14 +2894,14 @@
 			<p><i>éperez</i><i>èperez</i></p>
 			<p><i>éperont</i><i>èperont</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>épai</i></p>
 			<p><i>épas</i></p>
 			<p><i>épa</i></p>
 			<p><i>épâmes</i></p>
 			<p><i>épâtes</i></p>
 			<p><i>épèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -2982,14 +2982,14 @@
 			<p><i>eperez</i><i>èperez</i></p>
 			<p><i>eperont</i><i>èperont</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>epai</i></p>
 			<p><i>epas</i></p>
 			<p><i>epa</i></p>
 			<p><i>epâmes</i></p>
 			<p><i>epâtes</i></p>
 			<p><i>epèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3070,14 +3070,14 @@
 			<p><i>éserez</i><i>èserez</i></p>
 			<p><i>éseront</i><i>èseront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ésai</i></p>
 			<p><i>ésas</i></p>
 			<p><i>ésa</i></p>
 			<p><i>ésâmes</i></p>
 			<p><i>ésâtes</i></p>
 			<p><i>ésèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3158,14 +3158,14 @@
 			<p><i>émerez</i><i>èmerez</i></p>
 			<p><i>émeront</i><i>èmeront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>émai</i></p>
 			<p><i>émas</i></p>
 			<p><i>éma</i></p>
 			<p><i>émâmes</i></p>
 			<p><i>émâtes</i></p>
 			<p><i>émèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3246,14 +3246,14 @@
 			<p><i>ègerez</i></p>
 			<p><i>ègeront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>égeai</i></p>
 			<p><i>égeas</i></p>
 			<p><i>égea</i></p>
 			<p><i>égeâmes</i></p>
 			<p><i>égeâtes</i></p>
 			<p><i>égèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3334,14 +3334,14 @@
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ai</i></p>
 			<p><i>as</i></p>
 			<p><i>a</i></p>
 			<p><i>âmes</i></p>
 			<p><i>âtes</i></p>
 			<p><i>èrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3422,14 +3422,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p><i>a</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3510,14 +3510,14 @@
 			<p><i>évrerez</i></p>
 			<p><i>évreront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>évrai</i></p>
 			<p><i>évras</i></p>
 			<p><i>évra</i></p>
 			<p><i>évrâmes</i></p>
 			<p><i>évrâtes</i></p>
 			<p><i>évrèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3598,14 +3598,14 @@
 			<p><i>écrerez</i></p>
 			<p><i>écreront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>écrai</i></p>
 			<p><i>écras</i></p>
 			<p><i>écra</i></p>
 			<p><i>écrâmes</i></p>
 			<p><i>écrâtes</i></p>
 			<p><i>écrèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3686,14 +3686,14 @@
 			<p><i>errez</i></p>
 			<p><i>erront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3774,14 +3774,14 @@
 			<p><i>ïrez</i></p>
 			<p><i>ïront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ïs</i></p>
 			<p><i>ïs</i></p>
 			<p><i>ït</i></p>
 			<p><i>ïmes</i></p>
 			<p><i>ïtes</i></p>
 			<p><i>ïrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3862,14 +3862,14 @@
 			<p><i>ïrez</i></p>
 			<p><i>ïront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ïs</i></p>
 			<p><i>ïs</i></p>
 			<p><i>ït</i></p>
 			<p><i>ïmes</i></p>
 			<p><i>ïtes</i></p>
 			<p><i>ïrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -3950,14 +3950,14 @@
 			<p><i>eurirez</i></p>
 			<p><i>euriront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>euris</i></p>
 			<p><i>euris</i></p>
 			<p><i>eurit</i></p>
 			<p><i>eurîmes</i></p>
 			<p><i>eurîtes</i></p>
 			<p><i>eurirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4038,14 +4038,14 @@
 			<p><i>rirez</i></p>
 			<p><i>riront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ris</i></p>
 			<p><i>ris</i></p>
 			<p><i>rit</i></p>
 			<p><i>rîmes</i></p>
 			<p><i>rîtes</i></p>
 			<p><i>rirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4126,14 +4126,14 @@
 			<p><i>mirez</i></p>
 			<p><i>miront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>mis</i></p>
 			<p><i>mis</i></p>
 			<p><i>mit</i></p>
 			<p><i>mîmes</i></p>
 			<p><i>mîtes</i></p>
 			<p><i>mirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4214,14 +4214,14 @@
 			<p><i>tirez</i></p>
 			<p><i>tiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>tis</i></p>
 			<p><i>tis</i></p>
 			<p><i>tit</i></p>
 			<p><i>tîmes</i></p>
 			<p><i>tîtes</i></p>
 			<p><i>tirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4302,14 +4302,14 @@
 			<p><i>virez</i></p>
 			<p><i>viront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>vis</i></p>
 			<p><i>vis</i></p>
 			<p><i>vit</i></p>
 			<p><i>vîmes</i></p>
 			<p><i>vîtes</i></p>
 			<p><i>virent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4390,14 +4390,14 @@
 			<p><i>illirez</i></p>
 			<p><i>illiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>illis</i></p>
 			<p><i>illis</i></p>
 			<p><i>illit</i></p>
 			<p><i>illîmes</i></p>
 			<p><i>illîtes</i></p>
 			<p><i>illirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4478,14 +4478,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4566,14 +4566,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i><i>eront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4654,14 +4654,14 @@
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4742,14 +4742,14 @@
 			<p><i>iendrez</i></p>
 			<p><i>iendront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ins</i></p>
 			<p><i>ins</i></p>
 			<p><i>int</i></p>
 			<p><i>înmes</i></p>
 			<p><i>întes</i></p>
 			<p><i>inrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4830,14 +4830,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p><i>int</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -4918,14 +4918,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5006,14 +5006,14 @@
 			<p><i>ourrez</i></p>
 			<p><i>ourront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ourus</i></p>
 			<p><i>ourus</i></p>
 			<p><i>ourut</i></p>
 			<p><i>ourûmes</i></p>
 			<p><i>ourûtes</i></p>
 			<p><i>oururent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5094,14 +5094,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5182,14 +5182,14 @@
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5270,14 +5270,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5358,14 +5358,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5446,14 +5446,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5534,14 +5534,14 @@
 			<p><i>illirez</i></p>
 			<p><i>illiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>illis</i></p>
 			<p><i>illis</i></p>
 			<p><i>illit</i></p>
 			<p><i>illîmes</i></p>
 			<p><i>illîtes</i></p>
 			<p><i>illirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5622,14 +5622,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5710,14 +5710,14 @@
 			<p><i>cevrez</i></p>
 			<p><i>cevront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>çus</i></p>
 			<p><i>çus</i></p>
 			<p><i>çut</i></p>
 			<p><i>çûmes</i></p>
 			<p><i>çûtes</i></p>
 			<p><i>çurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5798,14 +5798,14 @@
 			<p><i>evrez</i></p>
 			<p><i>evront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5886,14 +5886,14 @@
 			<p><i>ouvrez</i></p>
 			<p><i>ouvront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -5974,14 +5974,14 @@
 			<p><i>ouvrez</i></p>
 			<p><i>ouvront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6062,14 +6062,14 @@
 			<p><i>aurez</i></p>
 			<p><i>auront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6150,14 +6150,14 @@
 			<p><i>oudrez</i></p>
 			<p><i>oudront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>oulus</i></p>
 			<p><i>oulus</i></p>
 			<p><i>oulut</i></p>
 			<p><i>oulûmes</i></p>
 			<p><i>oulûtes</i></p>
 			<p><i>oulurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6238,14 +6238,14 @@
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
 			<p><i>lut</i></p>
 			<p><i>lûmes</i></p>
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6326,14 +6326,14 @@
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
 			<p><i>lut</i></p>
 			<p><i>lûmes</i></p>
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6414,14 +6414,14 @@
 			<p><i>ourrez</i></p>
 			<p><i>ourront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6502,14 +6502,14 @@
 			<p><i>errez</i></p>
 			<p><i>erront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6590,14 +6590,14 @@
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6678,14 +6678,14 @@
 			<p><i>iérez</i><i>eyerez</i><i>oirez</i></p>
 			<p><i>iéront</i><i>eyeront</i><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6766,14 +6766,14 @@
 			<p><i>iérez</i><i>eyerez</i><i>oirez</i></p>
 			<p><i>iéront</i><i>eyeront</i><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6854,14 +6854,14 @@
 			<p><i>eoirez</i></p>
 			<p><i>eoiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -6942,14 +6942,14 @@
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7030,14 +7030,14 @@
 			<p></p>
 			<p><i>iéront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7118,14 +7118,14 @@
 			<p></p>
 			<p><i>euvront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p><i>ut</i></p>
 			<p></p>
 			<p></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7206,14 +7206,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p><i>llut</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7294,14 +7294,14 @@
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7382,14 +7382,14 @@
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7470,14 +7470,14 @@
 			<p><i>oirez</i><i>errez</i></p>
 			<p><i>oiront</i><i>erront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7558,14 +7558,14 @@
 			<p></p>
 			<p><i>oiront</i><i>erront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p><i>ut</i></p>
 			<p></p>
 			<p></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7646,14 +7646,14 @@
 			<p><i>drez</i></p>
 			<p><i>dront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>dis</i></p>
 			<p><i>dis</i></p>
 			<p><i>dit</i></p>
 			<p><i>dîmes</i></p>
 			<p><i>dîtes</i></p>
 			<p><i>dirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7734,14 +7734,14 @@
 			<p><i>crez</i></p>
 			<p><i>cront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>quis</i></p>
 			<p><i>quis</i></p>
 			<p><i>quit</i></p>
 			<p><i>quîmes</i></p>
 			<p><i>quîtes</i></p>
 			<p><i>quirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7822,14 +7822,14 @@
 			<p><i>trez</i></p>
 			<p><i>tront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>tis</i></p>
 			<p><i>tis</i></p>
 			<p><i>tit</i></p>
 			<p><i>tîmes</i></p>
 			<p><i>tîtes</i></p>
 			<p><i>tirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7910,14 +7910,14 @@
 			<p><i>trez</i></p>
 			<p><i>tront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -7998,14 +7998,14 @@
 			<p><i>ettrez</i></p>
 			<p><i>ettront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8086,14 +8086,14 @@
 			<p><i>endrez</i></p>
 			<p><i>endront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8174,14 +8174,14 @@
 			<p><i>prez</i></p>
 			<p><i>pront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>pis</i></p>
 			<p><i>pis</i></p>
 			<p><i>pit</i></p>
 			<p><i>pîmes</i></p>
 			<p><i>pîtes</i></p>
 			<p><i>pirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8262,14 +8262,14 @@
 			<p><i>drez</i></p>
 			<p><i>dront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
 			<p><i>lut</i></p>
 			<p><i>lûmes</i></p>
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8350,14 +8350,14 @@
 			<p><i>drez</i></p>
 			<p><i>dront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>sis</i></p>
 			<p><i>sis</i></p>
 			<p><i>sit</i></p>
 			<p><i>sîmes</i></p>
 			<p><i>sîtes</i></p>
 			<p><i>sirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8438,14 +8438,14 @@
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>lus</i></p>
 			<p><i>lus</i></p>
 			<p><i>lut</i></p>
 			<p><i>lûmes</i></p>
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8526,14 +8526,14 @@
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8614,14 +8614,14 @@
 			<p><i>udrez</i></p>
 			<p><i>udront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8702,14 +8702,14 @@
 			<p><i>ndrez</i></p>
 			<p><i>ndront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>gnis</i></p>
 			<p><i>gnis</i></p>
 			<p><i>gnit</i></p>
 			<p><i>gnîmes</i></p>
 			<p><i>gnîtes</i></p>
 			<p><i>gnirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8790,14 +8790,14 @@
 			<p><i>ndrez</i></p>
 			<p><i>ndront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>gnis</i></p>
 			<p><i>gnis</i></p>
 			<p><i>gnit</i></p>
 			<p><i>gnîmes</i></p>
 			<p><i>gnîtes</i></p>
 			<p><i>gnirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8878,14 +8878,14 @@
 			<p><i>vrez</i></p>
 			<p><i>vront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>vis</i></p>
 			<p><i>vis</i></p>
 			<p><i>vit</i></p>
 			<p><i>vîmes</i></p>
 			<p><i>vîtes</i></p>
 			<p><i>virent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -8966,14 +8966,14 @@
 			<p><i>ivrez</i></p>
 			<p><i>ivront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>écus</i></p>
 			<p><i>écus</i></p>
 			<p><i>écut</i></p>
 			<p><i>écûmes</i></p>
 			<p><i>écûtes</i></p>
 			<p><i>écurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9054,14 +9054,14 @@
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9142,14 +9142,14 @@
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9230,14 +9230,14 @@
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9318,14 +9318,14 @@
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>aquis</i></p>
 			<p><i>aquis</i></p>
 			<p><i>aquit</i></p>
 			<p><i>aquîmes</i></p>
 			<p><i>aquîtes</i></p>
 			<p><i>aquirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9406,14 +9406,14 @@
 			<p><i>aîtrez</i></p>
 			<p><i>aîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>aquis</i></p>
 			<p><i>aquis</i></p>
 			<p><i>aquit</i></p>
 			<p><i>aquîmes</i></p>
 			<p><i>aquîtes</i></p>
 			<p><i>aquirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9494,14 +9494,14 @@
 			<p><i>oîtrez</i></p>
 			<p><i>oîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>ûs</i></p>
 			<p><i>ûs</i></p>
 			<p><i>ût</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>ûrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9582,14 +9582,14 @@
 			<p><i>oîtrez</i></p>
 			<p><i>oîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9671,14 +9671,14 @@
 			<p><i>oîtrez</i></p>
 			<p><i>oîtront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9759,14 +9759,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9847,14 +9847,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -9935,14 +9935,14 @@
 			<p><i>urez</i></p>
 			<p><i>uront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10023,14 +10023,14 @@
 			<p><i>urez</i></p>
 			<p><i>uront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10111,14 +10111,14 @@
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>sis</i></p>
 			<p><i>sis</i></p>
 			<p><i>sit</i></p>
 			<p><i>sîmes</i></p>
 			<p><i>sîtes</i></p>
 			<p><i>sirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10199,14 +10199,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i><i>isis</i></p>
 			<p><i>is</i><i>isis</i></p>
 			<p><i>it</i><i>isit</i></p>
 			<p><i>îmes</i><i>isîmes</i></p>
 			<p><i>îtes</i><i>isîtes</i></p>
 			<p><i>irent</i><i>isirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10287,14 +10287,14 @@
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>sis</i></p>
 			<p><i>sis</i></p>
 			<p><i>sit</i></p>
 			<p><i>sîmes</i></p>
 			<p><i>sîtes</i></p>
 			<p><i>sirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10375,14 +10375,14 @@
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>vis</i></p>
 			<p><i>vis</i></p>
 			<p><i>vit</i></p>
 			<p><i>vîmes</i></p>
 			<p><i>vîtes</i></p>
 			<p><i>virent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10463,14 +10463,14 @@
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10551,14 +10551,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10639,14 +10639,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10727,14 +10727,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10815,14 +10815,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10903,14 +10903,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -10991,14 +10991,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11079,14 +11079,14 @@
 			<p><i>oirez</i></p>
 			<p><i>oiront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11167,14 +11167,14 @@
 			<p><i>airez</i></p>
 			<p><i>airont</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11255,14 +11255,14 @@
 			<p><i>airez</i></p>
 			<p><i>airont</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
 			<p><i>ut</i></p>
 			<p><i>ûmes</i></p>
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11343,14 +11343,14 @@
 			<p><i>erez</i></p>
 			<p><i>eront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
 			<p><i>it</i></p>
 			<p><i>îmes</i></p>
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11431,14 +11431,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11519,14 +11519,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11607,14 +11607,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11695,14 +11695,14 @@
 			<p><i>orez</i></p>
 			<p><i>oront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11783,14 +11783,14 @@
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11871,14 +11871,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -11959,14 +11959,14 @@
 			<p><i>rez</i></p>
 			<p><i>ront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12047,14 +12047,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12135,14 +12135,14 @@
 			<p><i>ndrez</i></p>
 			<p><i>ndront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>gnis</i></p>
 			<p><i>gnis</i></p>
 			<p><i>gnit</i></p>
 			<p><i>gnîmes</i></p>
 			<p><i>gnîtes</i></p>
 			<p><i>gnirent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12223,14 +12223,14 @@
 			<p><i>errez</i></p>
 			<p><i>erront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>oyai</i></p>
 			<p><i>oyas</i></p>
 			<p><i>oya</i></p>
 			<p><i>oyâmes</i></p>
 			<p><i>oyâtes</i></p>
 			<p><i>oyèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12311,14 +12311,14 @@
 			<p><i>aurez</i></p>
 			<p><i>auront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>eus</i></p>
 			<p><i>eus</i></p>
 			<p><i>eut</i></p>
 			<p><i>eûmes</i></p>
 			<p><i>eûtes</i></p>
 			<p><i>eurent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12399,14 +12399,14 @@
 			<p><i>serez</i></p>
 			<p><i>seront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>fus</i></p>
 			<p><i>fus</i></p>
 			<p><i>fut</i></p>
 			<p><i>fûmes</i></p>
 			<p><i>fûtes</i></p>
 			<p><i>furent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12487,14 +12487,14 @@
 			<p><i>irez</i></p>
 			<p><i>iront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>allai</i></p>
 			<p><i>allas</i></p>
 			<p><i>alla</i></p>
 			<p><i>allâmes</i></p>
 			<p><i>allâtes</i></p>
 			<p><i>allèrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12575,14 +12575,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12663,14 +12663,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12751,14 +12751,14 @@
 			<p><i>irez</i><i>uïrez</i><i>rrez</i></p>
 			<p><i>iront</i><i>uïront</i><i>rront</i></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p><i>uïs</i></p>
 			<p><i>uïs</i></p>
 			<p><i>uït</i></p>
 			<p><i>uïmes</i></p>
 			<p><i>uïtes</i></p>
 			<p><i>uïrent</i></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>
@@ -12839,14 +12839,14 @@
 			<p></p>
 			<p></p>
 		</futur>
-		<simple-past>
+		<passé-simple>
 			<p></p>
 			<p></p>
 			<p><i>a</i></p>
 			<p></p>
 			<p></p>
 			<p></p>
-		</simple-past>
+		</passé-simple>
 	</indicatif>
 	<conditionnel>
 		<présent>

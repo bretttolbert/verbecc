@@ -170,7 +170,7 @@ class Conjugator:
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'futur')
 
     def _conjugate_anterior_past(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'simple-past')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'passé-simple')
 
     def _conjugate_subjonctif_past(self, co):
         return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'présent')

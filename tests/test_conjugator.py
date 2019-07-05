@@ -304,7 +304,7 @@ expected_resp_conj_manger = {
       "vous mangerez",
       "ils mangeront"
     ],
-    "simple-past": [
+    "passé-simple": [
       "je mangeai",
       "tu mangeas",
       "il mangea",
@@ -461,7 +461,7 @@ expected_resp_conj_pouvoir = {
       "vous pourrez",
       "ils pourront"
     ],
-    "simple-past": [
+    "passé-simple": [
       "je pus",
       "tu pus",
       "il put",
@@ -598,7 +598,7 @@ expected_resp_conj_pleuvoir = {
       "il pleuvra",
       "ils pleuvront"
     ],
-    "simple-past": [
+    "passé-simple": [
       "il plut",
       "ils plurent"
     ],
@@ -703,7 +703,7 @@ expected_resp_conj_se_lever = {
       "vous vous lèverez",
       "ils se lèveront"
     ],
-    "simple-past": [
+    "passé-simple": [
       "je me levai",
       "tu te levas",
       "il se leva",
