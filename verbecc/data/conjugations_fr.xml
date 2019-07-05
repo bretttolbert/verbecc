@@ -22,13 +22,13 @@
 
 <!DOCTYPE conjugation-fr [
 	<!ELEMENT conjugation-fr (template+)>
-	<!ELEMENT template (infinitif, indicatif, conditionnel, subjunctive, imperative, participle)>
+	<!ELEMENT template (infinitif, indicatif, conditionnel, subjonctif, imperative, participle)>
 	<!ATTLIST template name CDATA #REQUIRED>
 
 	<!ELEMENT infinitif (infinitif-présent)>
 	<!ELEMENT indicatif (present, imperfect, future, simple-past)>
 	<!ELEMENT conditionnel (present)>
-	<!ELEMENT subjunctive (present, imperfect)>
+	<!ELEMENT subjonctif (present, imperfect)>
 	<!ELEMENT imperative (imperative-present)>
 	<!ELEMENT participle (present-participle, past-participle)>
 
@@ -97,7 +97,7 @@
 			<p><i>ceraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ce</i></p>
 			<p><i>ces</i></p>
@@ -114,7 +114,7 @@
 			<p><i>çassiez</i></p>
 			<p><i>çassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ce</i></p>
@@ -185,7 +185,7 @@
 			<p><i>eraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -202,7 +202,7 @@
 			<p><i>assiez</i></p>
 			<p><i>assent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>e</i></p>
@@ -273,7 +273,7 @@
 			<p><i>eceraient</i><i>èceraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ece</i><i>èce</i></p>
 			<p><i>eces</i><i>èces</i></p>
@@ -290,7 +290,7 @@
 			<p><i>eçassiez</i></p>
 			<p><i>eçassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ece</i><i>èce</i></p>
@@ -361,7 +361,7 @@
 			<p><i>geraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ge</i></p>
 			<p><i>ges</i></p>
@@ -378,7 +378,7 @@
 			<p><i>geassiez</i></p>
 			<p><i>geassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ge</i></p>
@@ -449,7 +449,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -466,7 +466,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -537,7 +537,7 @@
 			<p><i>ieraient</i><i>yeraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ie</i><i>ye</i></p>
 			<p><i>ies</i><i>yes</i></p>
@@ -554,7 +554,7 @@
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ie</i><i>ye</i></p>
@@ -625,7 +625,7 @@
 			<p><i>ieraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -642,7 +642,7 @@
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ie</i></p>
@@ -713,7 +713,7 @@
 			<p><i>yeraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ye</i></p>
 			<p><i>yes</i></p>
@@ -730,7 +730,7 @@
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ye</i></p>
@@ -801,7 +801,7 @@
 			<p><i>elleraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>elle</i></p>
 			<p><i>elles</i></p>
@@ -818,7 +818,7 @@
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>elle</i></p>
@@ -889,7 +889,7 @@
 			<p><i>èleraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èle</i></p>
 			<p><i>èles</i></p>
@@ -906,7 +906,7 @@
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èle</i></p>
@@ -977,7 +977,7 @@
 			<p><i>elleraient</i><i>èleraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>elle</i><i>èle</i></p>
 			<p><i>elles</i><i>èles</i></p>
@@ -994,7 +994,7 @@
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>elle</i><i>èle</i></p>
@@ -1065,7 +1065,7 @@
 			<p><i>etteraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ette</i></p>
 			<p><i>ettes</i></p>
@@ -1082,7 +1082,7 @@
 			<p><i>etassiez</i></p>
 			<p><i>etassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ette</i></p>
@@ -1153,7 +1153,7 @@
 			<p><i>èteraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -1170,7 +1170,7 @@
 			<p><i>etassiez</i></p>
 			<p><i>etassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ète</i></p>
@@ -1241,7 +1241,7 @@
 			<p><i>èteraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -1258,7 +1258,7 @@
 			<p><i>étassiez</i></p>
 			<p><i>étassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ète</i></p>
@@ -1329,7 +1329,7 @@
 			<p><i>èmeraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ème</i></p>
 			<p><i>èmes</i></p>
@@ -1346,7 +1346,7 @@
 			<p><i>emassiez</i></p>
 			<p><i>emassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ème</i></p>
@@ -1417,7 +1417,7 @@
 			<p><i>ègueraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ègue</i></p>
 			<p><i>ègues</i></p>
@@ -1434,7 +1434,7 @@
 			<p><i>éguassiez</i></p>
 			<p><i>éguassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ègue</i></p>
@@ -1505,7 +1505,7 @@
 			<p><i>èqueraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èque</i></p>
 			<p><i>èques</i></p>
@@ -1522,7 +1522,7 @@
 			<p><i>équassiez</i></p>
 			<p><i>équassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èque</i></p>
@@ -1593,7 +1593,7 @@
 			<p><i>éleraient</i><i>èleraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èle</i></p>
 			<p><i>èles</i></p>
@@ -1610,7 +1610,7 @@
 			<p><i>élassiez</i></p>
 			<p><i>élassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èle</i></p>
@@ -1681,7 +1681,7 @@
 			<p><i>étreraient</i><i>ètreraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ètre</i></p>
 			<p><i>ètres</i></p>
@@ -1698,7 +1698,7 @@
 			<p><i>étrassiez</i></p>
 			<p><i>étrassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ètre</i></p>
@@ -1769,7 +1769,7 @@
 			<p><i>égleraient</i><i>ègleraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ègle</i></p>
 			<p><i>ègles</i></p>
@@ -1786,7 +1786,7 @@
 			<p><i>églassiez</i></p>
 			<p><i>églassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ègle</i></p>
@@ -1857,7 +1857,7 @@
 			<p><i>égneraient</i><i>ègneraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ègne</i></p>
 			<p><i>ègnes</i></p>
@@ -1874,7 +1874,7 @@
 			<p><i>égnassiez</i></p>
 			<p><i>égnassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ègne</i></p>
@@ -1945,7 +1945,7 @@
 			<p><i>ébreraient</i><i>èbreraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èbre</i></p>
 			<p><i>èbres</i></p>
@@ -1962,7 +1962,7 @@
 			<p><i>ébrassiez</i></p>
 			<p><i>ébrassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èbre</i></p>
@@ -2033,7 +2033,7 @@
 			<p><i>égreraient</i><i>ègreraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ègre</i></p>
 			<p><i>ègres</i></p>
@@ -2050,7 +2050,7 @@
 			<p><i>égrassiez</i></p>
 			<p><i>égrassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ègre</i></p>
@@ -2121,7 +2121,7 @@
 			<p><i>éteraient</i><i>èteraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -2138,7 +2138,7 @@
 			<p><i>étassiez</i></p>
 			<p><i>étassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ète</i></p>
@@ -2209,7 +2209,7 @@
 			<p><i>éneraient</i><i>èneraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ène</i></p>
 			<p><i>ènes</i></p>
@@ -2226,7 +2226,7 @@
 			<p><i>énassiez</i></p>
 			<p><i>énassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ène</i></p>
@@ -2297,7 +2297,7 @@
 			<p><i>èneraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ène</i></p>
 			<p><i>ènes</i></p>
@@ -2314,7 +2314,7 @@
 			<p><i>enassiez</i></p>
 			<p><i>enassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ène</i></p>
@@ -2385,7 +2385,7 @@
 			<p><i>èveraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ève</i></p>
 			<p><i>èves</i></p>
@@ -2402,7 +2402,7 @@
 			<p><i>evassiez</i></p>
 			<p><i>evassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ève</i></p>
@@ -2473,7 +2473,7 @@
 			<p><i>èseraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èse</i></p>
 			<p><i>èses</i></p>
@@ -2490,7 +2490,7 @@
 			<p><i>esassiez</i></p>
 			<p><i>esassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èse</i></p>
@@ -2561,7 +2561,7 @@
 			<p><i>écheraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èche</i></p>
 			<p><i>èches</i></p>
@@ -2578,7 +2578,7 @@
 			<p><i>échassiez</i></p>
 			<p><i>échassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èche</i></p>
@@ -2649,7 +2649,7 @@
 			<p><i>éreraient</i><i>èreraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ère</i></p>
 			<p><i>ères</i></p>
@@ -2666,7 +2666,7 @@
 			<p><i>érassiez</i></p>
 			<p><i>érassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ère</i></p>
@@ -2737,7 +2737,7 @@
 			<p><i>èvreraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èvre</i></p>
 			<p><i>èvres</i></p>
@@ -2754,7 +2754,7 @@
 			<p><i>evrassiez</i></p>
 			<p><i>evrassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èvre</i></p>
@@ -2825,7 +2825,7 @@
 			<p><i>éderaient</i><i>èderaient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ède</i></p>
 			<p><i>èdes</i></p>
@@ -2842,7 +2842,7 @@
 			<p><i>édassiez</i></p>
 			<p><i>édassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ède</i></p>
@@ -2913,7 +2913,7 @@
 			<p><i>éperaient</i><i>èperaient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èpe</i></p>
 			<p><i>èpes</i></p>
@@ -2930,7 +2930,7 @@
 			<p><i>épassiez</i></p>
 			<p><i>épassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èpe</i></p>
@@ -3001,7 +3001,7 @@
 			<p><i>eperaient</i><i>èperaient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èpe</i></p>
 			<p><i>èpes</i></p>
@@ -3018,7 +3018,7 @@
 			<p><i>epassiez</i></p>
 			<p><i>epassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èpe</i></p>
@@ -3089,7 +3089,7 @@
 			<p><i>éseraient</i><i>èseraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èse</i></p>
 			<p><i>èses</i></p>
@@ -3106,7 +3106,7 @@
 			<p><i>ésassiez</i></p>
 			<p><i>ésassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èse</i></p>
@@ -3177,7 +3177,7 @@
 			<p><i>émeraient</i><i>èmeraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ème</i></p>
 			<p><i>èmes</i></p>
@@ -3194,7 +3194,7 @@
 			<p><i>émassiez</i></p>
 			<p><i>émassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ème</i></p>
@@ -3265,7 +3265,7 @@
 			<p><i>ègeraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ège</i></p>
 			<p><i>èges</i></p>
@@ -3282,7 +3282,7 @@
 			<p><i>égeassiez</i></p>
 			<p><i>égeassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ège</i></p>
@@ -3353,7 +3353,7 @@
 			<p><i>eraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -3370,7 +3370,7 @@
 			<p><i>assiez</i></p>
 			<p><i>assent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>e</i></p>
@@ -3441,7 +3441,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -3458,7 +3458,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -3529,7 +3529,7 @@
 			<p><i>évreraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>èvre</i></p>
 			<p><i>èvres</i></p>
@@ -3546,7 +3546,7 @@
 			<p><i>évrassiez</i></p>
 			<p><i>évrassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>èvre</i></p>
@@ -3617,7 +3617,7 @@
 			<p><i>écreraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ècre</i></p>
 			<p><i>ècres</i></p>
@@ -3634,7 +3634,7 @@
 			<p><i>écrassiez</i></p>
 			<p><i>écrassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ècre</i></p>
@@ -3705,7 +3705,7 @@
 			<p><i>erraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ière</i></p>
 			<p><i>ières</i></p>
@@ -3722,7 +3722,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>iers</i></p>
@@ -3793,7 +3793,7 @@
 			<p><i>ïraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ïsse</i></p>
 			<p><i>ïsses</i></p>
@@ -3810,7 +3810,7 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -3881,7 +3881,7 @@
 			<p><i>ïraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ïsse</i></p>
 			<p><i>ïsses</i></p>
@@ -3898,7 +3898,7 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ïs</i></p>
@@ -3969,7 +3969,7 @@
 			<p><i>euriraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>eurisse</i></p>
 			<p><i>eurisses</i></p>
@@ -3986,7 +3986,7 @@
 			<p><i>eurissiez</i></p>
 			<p><i>eurissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>euris</i></p>
@@ -4057,7 +4057,7 @@
 			<p><i>riraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>re</i></p>
 			<p><i>res</i></p>
@@ -4074,7 +4074,7 @@
 			<p><i>rissiez</i></p>
 			<p><i>rissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>re</i></p>
@@ -4145,7 +4145,7 @@
 			<p><i>miraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>me</i></p>
 			<p><i>mes</i></p>
@@ -4162,7 +4162,7 @@
 			<p><i>missiez</i></p>
 			<p><i>missent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -4233,7 +4233,7 @@
 			<p><i>tiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
@@ -4250,7 +4250,7 @@
 			<p><i>tissiez</i></p>
 			<p><i>tissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -4321,7 +4321,7 @@
 			<p><i>viraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ve</i></p>
 			<p><i>ves</i></p>
@@ -4338,7 +4338,7 @@
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -4409,7 +4409,7 @@
 			<p><i>illiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ille</i></p>
 			<p><i>illes</i></p>
@@ -4426,7 +4426,7 @@
 			<p><i>illissiez</i></p>
 			<p><i>illissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -4497,7 +4497,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -4514,7 +4514,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>e</i></p>
@@ -4585,7 +4585,7 @@
 			<p><i>iraient</i><i>eraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -4602,7 +4602,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -4673,7 +4673,7 @@
 			<p><i>eraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -4690,7 +4690,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>e</i></p>
@@ -4761,7 +4761,7 @@
 			<p><i>iendraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ienne</i></p>
 			<p><i>iennes</i></p>
@@ -4778,7 +4778,7 @@
 			<p><i>inssiez</i></p>
 			<p><i>inssent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>iens</i></p>
@@ -4849,7 +4849,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -4866,7 +4866,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -4937,7 +4937,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -4954,7 +4954,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -5025,7 +5025,7 @@
 			<p><i>ourraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>eure</i></p>
 			<p><i>eures</i></p>
@@ -5042,7 +5042,7 @@
 			<p><i>ourussiez</i></p>
 			<p><i>ourussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>eurs</i></p>
@@ -5113,7 +5113,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -5130,7 +5130,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -5201,7 +5201,7 @@
 			<p><i>raient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -5218,7 +5218,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -5289,7 +5289,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -5306,7 +5306,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -5377,7 +5377,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -5394,7 +5394,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -5465,7 +5465,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -5482,7 +5482,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -5553,7 +5553,7 @@
 			<p><i>illiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>illisse</i></p>
 			<p><i>illisses</i></p>
@@ -5570,7 +5570,7 @@
 			<p><i>illissiez</i></p>
 			<p><i>illissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -5641,7 +5641,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -5658,7 +5658,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -5729,7 +5729,7 @@
 			<p><i>cevraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>çoive</i></p>
 			<p><i>çoives</i></p>
@@ -5746,7 +5746,7 @@
 			<p><i>çussiez</i></p>
 			<p><i>çussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>çois</i></p>
@@ -5817,7 +5817,7 @@
 			<p><i>evraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oive</i></p>
 			<p><i>oives</i></p>
@@ -5834,7 +5834,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -5905,7 +5905,7 @@
 			<p><i>ouvraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>euve</i></p>
 			<p><i>euves</i></p>
@@ -5922,7 +5922,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>eus</i></p>
@@ -5993,7 +5993,7 @@
 			<p><i>ouvraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>euve</i></p>
 			<p><i>euves</i></p>
@@ -6010,7 +6010,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>eus</i></p>
@@ -6081,7 +6081,7 @@
 			<p><i>auraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ache</i></p>
 			<p><i>aches</i></p>
@@ -6098,7 +6098,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ache</i></p>
@@ -6169,7 +6169,7 @@
 			<p><i>oudraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>euille</i></p>
 			<p><i>euilles</i></p>
@@ -6186,7 +6186,7 @@
 			<p><i>oulussiez</i></p>
 			<p><i>oulussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>euille</i></p>
@@ -6257,7 +6257,7 @@
 			<p><i>udraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ille</i></p>
 			<p><i>illes</i></p>
@@ -6274,7 +6274,7 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ux</i></p>
@@ -6345,7 +6345,7 @@
 			<p><i>udraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>le</i></p>
 			<p><i>les</i></p>
@@ -6362,7 +6362,7 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ux</i></p>
@@ -6433,7 +6433,7 @@
 			<p><i>ourraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>uisse</i></p>
 			<p><i>uisses</i></p>
@@ -6450,7 +6450,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -6521,7 +6521,7 @@
 			<p><i>erraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6538,7 +6538,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -6609,7 +6609,7 @@
 			<p><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6626,7 +6626,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -6697,7 +6697,7 @@
 			<p><i>iéraient</i><i>eyeraient</i><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>eye</i><i>oie</i></p>
 			<p><i>eyes</i><i>oies</i></p>
@@ -6714,7 +6714,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ieds</i><i>ois</i></p>
@@ -6785,7 +6785,7 @@
 			<p><i>iéraient</i><i>eyeraient</i><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>eye</i><i>oie</i></p>
 			<p><i>eyes</i><i>oies</i></p>
@@ -6802,7 +6802,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ieds</i><i>ois</i></p>
@@ -6873,7 +6873,7 @@
 			<p><i>eoiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6890,7 +6890,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -6961,7 +6961,7 @@
 			<p><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6978,7 +6978,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -7049,7 +7049,7 @@
 			<p><i>iéraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -7066,7 +7066,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -7137,7 +7137,7 @@
 			<p><i>euvraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -7154,7 +7154,7 @@
 			<p></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -7225,7 +7225,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -7242,7 +7242,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -7313,7 +7313,7 @@
 			<p><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -7330,7 +7330,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -7401,7 +7401,7 @@
 			<p><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -7418,7 +7418,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -7489,7 +7489,7 @@
 			<p><i>oiraient</i><i>erraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -7506,7 +7506,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -7577,7 +7577,7 @@
 			<p><i>oiraient</i><i>erraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -7594,7 +7594,7 @@
 			<p></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -7665,7 +7665,7 @@
 			<p><i>draient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>de</i></p>
 			<p><i>des</i></p>
@@ -7682,7 +7682,7 @@
 			<p><i>dissiez</i></p>
 			<p><i>dissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ds</i></p>
@@ -7753,7 +7753,7 @@
 			<p><i>craient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>que</i></p>
 			<p><i>ques</i></p>
@@ -7770,7 +7770,7 @@
 			<p><i>quissiez</i></p>
 			<p><i>quissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>cs</i></p>
@@ -7841,7 +7841,7 @@
 			<p><i>traient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
@@ -7858,7 +7858,7 @@
 			<p><i>tissiez</i></p>
 			<p><i>tissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -7929,7 +7929,7 @@
 			<p><i>traient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
@@ -7946,7 +7946,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -8017,7 +8017,7 @@
 			<p><i>ettraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ette</i></p>
 			<p><i>ettes</i></p>
@@ -8034,7 +8034,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ets</i></p>
@@ -8105,7 +8105,7 @@
 			<p><i>endraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>enne</i></p>
 			<p><i>ennes</i></p>
@@ -8122,7 +8122,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ends</i></p>
@@ -8193,7 +8193,7 @@
 			<p><i>praient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>pe</i></p>
 			<p><i>pes</i></p>
@@ -8210,7 +8210,7 @@
 			<p><i>pissiez</i></p>
 			<p><i>pissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ps</i></p>
@@ -8281,7 +8281,7 @@
 			<p><i>draient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>le</i></p>
 			<p><i>les</i></p>
@@ -8298,7 +8298,7 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ds</i></p>
@@ -8369,7 +8369,7 @@
 			<p><i>draient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -8386,7 +8386,7 @@
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ds</i></p>
@@ -8457,7 +8457,7 @@
 			<p><i>udraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>lve</i></p>
 			<p><i>lves</i></p>
@@ -8474,7 +8474,7 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>us</i></p>
@@ -8545,7 +8545,7 @@
 			<p><i>udraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>lve</i></p>
 			<p><i>lves</i></p>
@@ -8562,7 +8562,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>us</i></p>
@@ -8633,7 +8633,7 @@
 			<p><i>udraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>lve</i></p>
 			<p><i>lves</i></p>
@@ -8650,7 +8650,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>us</i></p>
@@ -8721,7 +8721,7 @@
 			<p><i>ndraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>gne</i></p>
 			<p><i>gnes</i></p>
@@ -8738,7 +8738,7 @@
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ns</i></p>
@@ -8809,7 +8809,7 @@
 			<p><i>ndraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>gne</i></p>
 			<p><i>gnes</i></p>
@@ -8826,7 +8826,7 @@
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -8897,7 +8897,7 @@
 			<p><i>vraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ve</i></p>
 			<p><i>ves</i></p>
@@ -8914,7 +8914,7 @@
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -8985,7 +8985,7 @@
 			<p><i>ivraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ive</i></p>
 			<p><i>ives</i></p>
@@ -9002,7 +9002,7 @@
 			<p><i>écussiez</i></p>
 			<p><i>écussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -9073,7 +9073,7 @@
 			<p><i>aîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9090,7 +9090,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -9161,7 +9161,7 @@
 			<p><i>aîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9178,7 +9178,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -9249,7 +9249,7 @@
 			<p><i>aîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9266,7 +9266,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -9337,7 +9337,7 @@
 			<p><i>aîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9354,7 +9354,7 @@
 			<p><i>aquissiez</i></p>
 			<p><i>aquissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -9425,7 +9425,7 @@
 			<p><i>aîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9442,7 +9442,7 @@
 			<p><i>aquissiez</i></p>
 			<p><i>aquissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -9513,7 +9513,7 @@
 			<p><i>oîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oisse</i></p>
 			<p><i>oisses</i></p>
@@ -9530,7 +9530,7 @@
 			<p><i>ûssiez</i></p>
 			<p><i>ûssent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -9601,7 +9601,7 @@
 			<p><i>oîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oisse</i></p>
 			<p><i>oisses</i></p>
@@ -9618,7 +9618,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -9690,7 +9690,7 @@
 			<p><i>oîtraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oisse</i></p>
 			<p><i>oisses</i></p>
@@ -9707,7 +9707,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -9778,7 +9778,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -9795,7 +9795,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -9866,7 +9866,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -9883,7 +9883,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -9954,7 +9954,7 @@
 			<p><i>uraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
@@ -9971,7 +9971,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>us</i></p>
@@ -10042,7 +10042,7 @@
 			<p><i>uraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
@@ -10059,7 +10059,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>us</i></p>
@@ -10130,7 +10130,7 @@
 			<p><i>raient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -10147,7 +10147,7 @@
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -10218,7 +10218,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10235,7 +10235,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -10306,7 +10306,7 @@
 			<p><i>raient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -10323,7 +10323,7 @@
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -10394,7 +10394,7 @@
 			<p><i>raient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ve</i></p>
 			<p><i>ves</i></p>
@@ -10411,7 +10411,7 @@
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -10482,7 +10482,7 @@
 			<p><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -10499,7 +10499,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -10570,7 +10570,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10587,7 +10587,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -10658,7 +10658,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10675,7 +10675,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -10746,7 +10746,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10763,7 +10763,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -10834,7 +10834,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10851,7 +10851,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -10922,7 +10922,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10939,7 +10939,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -11010,7 +11010,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -11027,7 +11027,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -11098,7 +11098,7 @@
 			<p><i>oiraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oive</i></p>
 			<p><i>oives</i></p>
@@ -11115,7 +11115,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ois</i></p>
@@ -11186,7 +11186,7 @@
 			<p><i>airaient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aise</i></p>
 			<p><i>aises</i></p>
@@ -11203,7 +11203,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -11274,7 +11274,7 @@
 			<p><i>airaient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aise</i></p>
 			<p><i>aises</i></p>
@@ -11291,7 +11291,7 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -11362,7 +11362,7 @@
 			<p><i>eraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -11379,7 +11379,7 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ais</i></p>
@@ -11450,7 +11450,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -11467,7 +11467,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -11538,7 +11538,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -11555,7 +11555,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -11626,7 +11626,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -11643,7 +11643,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -11714,7 +11714,7 @@
 			<p><i>oraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ose</i></p>
 			<p><i>oses</i></p>
@@ -11731,7 +11731,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>os</i></p>
@@ -11802,7 +11802,7 @@
 			<p><i>raient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -11819,7 +11819,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -11890,7 +11890,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -11907,7 +11907,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -11978,7 +11978,7 @@
 			<p><i>raient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -11995,7 +11995,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>s</i></p>
@@ -12066,7 +12066,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -12083,7 +12083,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -12154,7 +12154,7 @@
 			<p><i>ndraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>gne</i></p>
 			<p><i>gnes</i></p>
@@ -12171,7 +12171,7 @@
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>ns</i></p>
@@ -12242,7 +12242,7 @@
 			<p><i>erraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -12259,7 +12259,7 @@
 			<p><i>oyassiez</i></p>
 			<p><i>oyassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>oie</i></p>
@@ -12330,7 +12330,7 @@
 			<p><i>auraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aie</i></p>
 			<p><i>aies</i></p>
@@ -12347,7 +12347,7 @@
 			<p><i>eussiez</i></p>
 			<p><i>eussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>aie</i></p>
@@ -12418,7 +12418,7 @@
 			<p><i>seraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>sois</i></p>
 			<p><i>sois</i></p>
@@ -12435,7 +12435,7 @@
 			<p><i>fussiez</i></p>
 			<p><i>fussent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>sois</i></p>
@@ -12506,7 +12506,7 @@
 			<p><i>iraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>aille</i></p>
 			<p><i>ailles</i></p>
@@ -12523,7 +12523,7 @@
 			<p><i>allassiez</i></p>
 			<p><i>allassent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>va</i></p>
@@ -12594,7 +12594,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -12611,7 +12611,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -12682,7 +12682,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -12699,7 +12699,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>
@@ -12770,7 +12770,7 @@
 			<p><i>iraient</i><i>uïraient</i><i>rraient</i></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -12787,7 +12787,7 @@
 			<p><i>uïssiez</i></p>
 			<p><i>uïssent</i></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p><i>is</i></p>
@@ -12858,7 +12858,7 @@
 			<p></p>
 		</present>
 	</conditionnel>
-	<subjunctive>
+	<subjonctif>
 		<present>
 			<p></p>
 			<p></p>
@@ -12875,7 +12875,7 @@
 			<p></p>
 			<p></p>
 		</imperfect>
-	</subjunctive>
+	</subjonctif>
 	<imperative>
 		<imperative-present>
 			<p></p>

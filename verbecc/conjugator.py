@@ -120,9 +120,9 @@ class Conjugator:
             conjugations['pluperfect'] = self._conjugate_pluperfect(co)
             conjugations['future-perfect'] = self._conjugate_future_perfect(co)
             conjugations['anterior-past'] = self._conjugate_anterior_past(co)
-        elif mood_name == 'subjunctive':
-            conjugations['past'] = self._conjugate_subjunctive_past(co)
-            conjugations['pluperfect'] = self._conjugate_subjunctive_pluperfect(co)
+        elif mood_name == 'subjonctif':
+            conjugations['past'] = self._conjugate_subjonctif_past(co)
+            conjugations['pluperfect'] = self._conjugate_subjonctif_pluperfect(co)
         elif mood_name == 'conditionnel':
             conjugations['past'] = self._conjugate_conditionnel_past(co)
         elif mood_name == 'imperative':
@@ -144,13 +144,13 @@ class Conjugator:
         co = self._get_conj_obs(infinitive)
         return self._conjugate_anterior_past(co)
 
-    def conjugate_subjunctive_past(self, infinitive):
+    def conjugate_subjonctif_past(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_subjunctive_past(co)
+        return self._conjugate_subjonctif_past(co)
 
-    def conjugate_subjunctive_pluperfect(self, infinitive):
+    def conjugate_subjonctif_pluperfect(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_subjunctive_pluperfect(co)
+        return self._conjugate_subjonctif_pluperfect(co)
 
     def conjugate_conditionnel_past(self, infinitive):
         co = self._get_conj_obs(infinitive)
@@ -172,11 +172,11 @@ class Conjugator:
     def _conjugate_anterior_past(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'simple-past')
 
-    def _conjugate_subjunctive_past(self, co):
-        return self._conjugate_compound(co, 'subjunctive', 'subjunctive', 'present')
+    def _conjugate_subjonctif_past(self, co):
+        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'present')
 
-    def _conjugate_subjunctive_pluperfect(self, co):
-        return self._conjugate_compound(co, 'subjunctive', 'subjunctive', 'imperfect')
+    def _conjugate_subjonctif_pluperfect(self, co):
+        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'imperfect')
 
     def _conjugate_conditionnel_past(self, co):
         return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'present')
@@ -229,7 +229,7 @@ class Conjugator:
                     get_default_participle_inflection_for_person(persons[i])
                 p = participle[participle_inflection.value]
                 ret.append(hv + ' ' + p)
-        if mood_name == 'subjunctive':
+        if mood_name == 'subjonctif':
             ret = [prepend_with_que(i) for i in ret]
         return ret
 
@@ -255,7 +255,7 @@ class Conjugator:
                 ending = person_ending.get_ending()
                 conjugation = self._conjugate_specific_tense_pronoun(
                     verb_stem, ending, pronoun)
-                if mood_name == 'subjunctive':
+                if mood_name == 'subjonctif':
                     conjugation = prepend_with_que(conjugation)
                 ret.append(conjugation)
         return ret

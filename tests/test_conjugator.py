@@ -69,8 +69,8 @@ def test_conjugator_conjugate_passe_compose_with_etre():
     "ils sont allés"
     ]
 
-def test_conjugator_conjugate_subjunctive_past_with_avoir():
-    assert conj.conjugate_subjunctive_past('manger') == [
+def test_conjugator_conjugate_subjonctif_past_with_avoir():
+    assert conj.conjugate_subjonctif_past('manger') == [
     "que j'aie mangé",
     "que tu aies mangé",
     "qu'il ait mangé",
@@ -79,8 +79,8 @@ def test_conjugator_conjugate_subjunctive_past_with_avoir():
     "qu'ils aient mangé"
     ]
 
-def test_conjugator_conjugate_subjunctive_past_with_etre():
-    assert conj.conjugate_subjunctive_past('aller') == [
+def test_conjugator_conjugate_subjonctif_past_with_etre():
+    assert conj.conjugate_subjonctif_past('aller') == [
     "que je sois allé",
     "que tu sois allé",
     "qu'il soit allé",
@@ -129,8 +129,8 @@ def test_conjugator_conjugate_pluperfect_with_etre():
     "ils étaient allés"
     ]
 
-def test_conjugator_conjugate_subjunctive_pluperfect_with_avoir():
-    assert conj.conjugate_subjunctive_pluperfect('manger') == [
+def test_conjugator_conjugate_subjonctif_pluperfect_with_avoir():
+    assert conj.conjugate_subjonctif_pluperfect('manger') == [
     "que j'eusse mangé",
     "que tu eusses mangé",
     "qu'il eût mangé",
@@ -139,8 +139,8 @@ def test_conjugator_conjugate_subjunctive_pluperfect_with_avoir():
     "qu'ils eussent mangé"
     ]
 
-def test_conjugator_conjugate_subjunctive_pluperfect_with_etre():
-    assert conj.conjugate_subjunctive_pluperfect('aller') == [
+def test_conjugator_conjugate_subjonctif_pluperfect_with_etre():
+    assert conj.conjugate_subjonctif_pluperfect('aller') == [
     "que je fusse allé",
     "que tu fusses allé",
     "qu'il fût allé",
@@ -363,7 +363,7 @@ expected_resp_conj_manger = {
       "ils auraient mangé"
     ]
   },
-  "subjunctive": {
+  "subjonctif": {
     "present": [
       "que je mange",
       "que tu manges",
@@ -520,7 +520,7 @@ expected_resp_conj_pouvoir = {
       "ils auraient pu"
     ]
   },
-  "subjunctive": {
+  "subjonctif": {
     "present": [
       "que je puisse",
       "que tu puisses",
@@ -629,7 +629,7 @@ expected_resp_conj_pleuvoir = {
       "ils auraient plu"
     ]
   },
-  "subjunctive": {
+  "subjonctif": {
     "present": [
       "qu'il pleuve",
       "qu'ils pleuvent"
@@ -762,7 +762,7 @@ expected_resp_conj_se_lever = {
       "ils se seraient levés"
     ]
   },
-  "subjunctive": {
+  "subjonctif": {
     "present": [
       "que je me lève",
       "que tu te lèves",
