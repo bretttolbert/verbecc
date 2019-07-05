@@ -35,7 +35,7 @@ def get_verb_stem(infinitive, template_name):
     return infinitive[:len(infinitive) - len(template_ending)]
 
 class Conjugator:
-    def __init__(self):
+    def __init__(self, lang='fr'):
         self.verb_parser = VerbsParser()
         self.conj_parser = ConjugationsParser()
 
