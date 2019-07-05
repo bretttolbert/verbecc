@@ -15,9 +15,9 @@ class TenseTemplate:
         ConjugationTemplate has many Mood
             Mood has many Tense
                 Tense has many PersonEnding
-    E.g. aim:er indicative present
+    E.g. aim:er indicatif présent
     name
-        the name of the tense, e.g. "present"
+        the name of the tense, e.g. présent
     tense_elem
         A tense_elem contains one or more <p> (PersonEnding) elems
         Example tense_elem children:

@@ -6,8 +6,8 @@ class PersonEnding:
     aka <p>
     Ending for a specific verb template, mood, tense and grammatical person
     May also have an alternate ending for an alternative spelling.
-    E.g. Ending for aim:er Indicative Present 2nd Person Plural = ['ez']
-    E.g. Ending for pa:yer Indicative Present 1st Person Singular = ['ie', 'ye']
+    E.g. Ending for aim:er indicatif présent 2nd Person Plural = ['ez']
+    E.g. Ending for pa:yer indicatif présent 1st Person Singular = ['ie', 'ye']
     Explanation: 'ye' is an alternate spelling (je paie, je paye)
     p_elem
         Example p_elems:

@@ -45,7 +45,7 @@ def test_conjugator_conjugate_specific_tense():
         </present>""")
     tense_name = 'present'
     tense = TenseTemplate(tense_elem)
-    out = conj._conjugate_specific_tense(verb_stem, 'indicative', tense)
+    out = conj._conjugate_specific_tense(verb_stem, 'indicatif', tense)
     assert len(out) == 6
     assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
 
@@ -279,7 +279,7 @@ expected_resp_conj_manger = {
       "manger"
     ]
   },
-  "indicative": {
+  "indicatif": {
     "present": [
       "je mange",
       "tu manges",
@@ -436,7 +436,7 @@ expected_resp_conj_pouvoir = {
       "pouvoir"
     ]
   },
-  "indicative": {
+  "indicatif": {
     "present": [
       "je peux",
       "tu peux",
@@ -585,7 +585,7 @@ expected_resp_conj_pleuvoir = {
       "pleuvoir"
     ]
   },
-  "indicative": {
+  "indicatif": {
     "present": [
       "il pleut",
       "ils pleuvent"
@@ -678,7 +678,7 @@ expected_resp_conj_se_lever = {
       "se lever"
     ]
   },
-  "indicative": {
+  "indicatif": {
     "present": [
       "je me lève",
       "tu te lèves",

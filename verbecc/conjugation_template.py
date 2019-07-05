@@ -15,14 +15,10 @@ class ConjugationTemplate:
             raise ConjugationTemplateError("Unexpected element")
         try:
             self.name = u'' + template_elem.get('name')
-            self.impersonal = False
             self.moods = {}
             for mood_elem in list(template_elem):
                 mood = Mood(mood_elem)
                 self.moods[mood_elem.tag] = mood
-                if (mood_elem.tag == 'indicative'
-                    and len(mood.tenses['present'].person_endings) < 6):
-                    self.impersonal = True
                     
         except AttributeError as e:
             raise ConjugationTemplateError(

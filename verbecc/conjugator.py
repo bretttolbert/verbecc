@@ -43,7 +43,7 @@ class Conjugator:
         ret = False
         verb = self.verb_parser.find_verb_by_infinitive(infinitive)
         template = self.conj_parser.find_template(verb.template)
-        if len(template.moods['indicative'].tenses['present'].person_endings) < 6:
+        if len(template.moods['indicatif'].tenses['present'].person_endings) < 6:
             ret = True
         return ret
 
@@ -115,7 +115,7 @@ class Conjugator:
                 co.is_reflexive)        
 
     def _get_compound_conjugations_for_mood(self, co, mood_name, conjugations):
-        if mood_name == 'indicative':
+        if mood_name == 'indicatif':
             conjugations['passé-composé'] = self._conjugate_passe_compose(co)
             conjugations['pluperfect'] = self._conjugate_pluperfect(co)
             conjugations['future-perfect'] = self._conjugate_future_perfect(co)
@@ -161,16 +161,16 @@ class Conjugator:
         return self._conjugate_imperative_past(co)
 
     def _conjugate_passe_compose(self, co):
-        return self._conjugate_compound(co, 'indicative', 'indicative', 'present')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'present')
 
     def _conjugate_pluperfect(self, co):
-        return self._conjugate_compound(co, 'indicative', 'indicative', 'imperfect')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'imperfect')
 
     def _conjugate_future_perfect(self, co):
-        return self._conjugate_compound(co, 'indicative', 'indicative', 'future')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'future')
 
     def _conjugate_anterior_past(self, co):
-        return self._conjugate_compound(co, 'indicative', 'indicative', 'simple-past')
+        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'simple-past')
 
     def _conjugate_subjunctive_past(self, co):
         return self._conjugate_compound(co, 'subjunctive', 'subjunctive', 'present')
@@ -212,7 +212,7 @@ class Conjugator:
         hvtense_template.person_endings = hvperson_endings
         hvconj = self._conjugate_specific_tense(
             hvco.verb_stem, 
-            'indicative', 
+            'indicatif', 
             hvtense_template,
             co.is_reflexive)
         participle = self._conjugate_specific_tense(
