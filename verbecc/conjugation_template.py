@@ -2,7 +2,7 @@
 
 from lxml import etree
 
-from .mood import (MOOD_TENSES, Mood)
+from .mood import Mood
 
 
 class ConjugationTemplateError(Exception):
