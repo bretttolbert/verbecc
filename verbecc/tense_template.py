@@ -78,7 +78,7 @@ class TenseTemplate:
         person_num = 0
         for p_elem in tense_elem.findall('p'):
             person = Person(person_num)
-            if self.name == 'imperative-present':
+            if self.name == 'imperatif-présent':
                 person = IMPERATIVE_PRESENT_PERSONS[person_num]
             person_ending = PersonEnding(p_elem, person)
             person_num += 1

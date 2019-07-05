@@ -22,14 +22,14 @@
 
 <!DOCTYPE conjugation-fr [
 	<!ELEMENT conjugation-fr (template+)>
-	<!ELEMENT template (infinitif, indicatif, conditionnel, subjonctif, imperative, participle)>
+	<!ELEMENT template (infinitif, indicatif, conditionnel, subjonctif, imperatif, participle)>
 	<!ATTLIST template name CDATA #REQUIRED>
 
 	<!ELEMENT infinitif (infinitif-présent)>
 	<!ELEMENT indicatif (present, imperfect, future, simple-past)>
 	<!ELEMENT conditionnel (present)>
 	<!ELEMENT subjonctif (present, imperfect)>
-	<!ELEMENT imperative (imperative-present)>
+	<!ELEMENT imperatif (imperatif-présent)>
 	<!ELEMENT participle (present-participle, past-participle)>
 
 	<!ELEMENT infinitif-présent (p)>
@@ -37,7 +37,7 @@
 	<!ELEMENT imperfect (p, p, p, p, p, p)>
 	<!ELEMENT future (p, p, p, p, p, p)>
 	<!ELEMENT simple-past (p, p, p, p, p, p)>
-	<!ELEMENT imperative-present (p, p, p)>
+	<!ELEMENT imperatif-présent (p, p, p)>
 	<!ELEMENT present-participle (p)>
 	<!ELEMENT past-participle (p, p, p, p)>
 
@@ -115,13 +115,13 @@
 			<p><i>çassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ce</i></p>
 			<p><i>çons</i></p>
 			<p><i>cez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>çant</i></p>
@@ -203,13 +203,13 @@
 			<p><i>assent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -291,13 +291,13 @@
 			<p><i>eçassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ece</i><i>èce</i></p>
 			<p><i>eçons</i></p>
 			<p><i>ecez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>eçant</i></p>
@@ -379,13 +379,13 @@
 			<p><i>geassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ge</i></p>
 			<p><i>geons</i></p>
 			<p><i>gez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>geant</i></p>
@@ -467,13 +467,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>geant</i></p>
@@ -555,13 +555,13 @@
 			<p><i>yassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ie</i><i>ye</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>yant</i></p>
@@ -643,13 +643,13 @@
 			<p><i>yassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ie</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>yant</i></p>
@@ -731,13 +731,13 @@
 			<p><i>yassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ye</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>yant</i></p>
@@ -819,13 +819,13 @@
 			<p><i>elassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>elle</i></p>
 			<p><i>elons</i></p>
 			<p><i>elez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>elant</i></p>
@@ -907,13 +907,13 @@
 			<p><i>elassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èle</i></p>
 			<p><i>elons</i></p>
 			<p><i>elez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>elant</i></p>
@@ -995,13 +995,13 @@
 			<p><i>elassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>elle</i><i>èle</i></p>
 			<p><i>elons</i></p>
 			<p><i>elez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>elant</i></p>
@@ -1083,13 +1083,13 @@
 			<p><i>etassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ette</i></p>
 			<p><i>etons</i></p>
 			<p><i>etez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>etant</i></p>
@@ -1171,13 +1171,13 @@
 			<p><i>etassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ète</i></p>
 			<p><i>etons</i></p>
 			<p><i>etez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>etant</i></p>
@@ -1259,13 +1259,13 @@
 			<p><i>étassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ète</i></p>
 			<p><i>étons</i></p>
 			<p><i>étez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>étant</i></p>
@@ -1347,13 +1347,13 @@
 			<p><i>emassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ème</i></p>
 			<p><i>emons</i></p>
 			<p><i>emez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>emant</i></p>
@@ -1435,13 +1435,13 @@
 			<p><i>éguassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ègue</i></p>
 			<p><i>éguons</i></p>
 			<p><i>éguez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>éguant</i></p>
@@ -1523,13 +1523,13 @@
 			<p><i>équassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èque</i></p>
 			<p><i>équons</i></p>
 			<p><i>équez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>équant</i></p>
@@ -1611,13 +1611,13 @@
 			<p><i>élassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èle</i></p>
 			<p><i>élons</i></p>
 			<p><i>élez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>élant</i></p>
@@ -1699,13 +1699,13 @@
 			<p><i>étrassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ètre</i></p>
 			<p><i>étrons</i></p>
 			<p><i>étrez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>étrant</i></p>
@@ -1787,13 +1787,13 @@
 			<p><i>églassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ègle</i></p>
 			<p><i>églons</i></p>
 			<p><i>églez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>églant</i></p>
@@ -1875,13 +1875,13 @@
 			<p><i>égnassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ègne</i></p>
 			<p><i>égnons</i></p>
 			<p><i>égnez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>égnant</i></p>
@@ -1963,13 +1963,13 @@
 			<p><i>ébrassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èbre</i></p>
 			<p><i>ébrons</i></p>
 			<p><i>ébrez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ébrant</i></p>
@@ -2051,13 +2051,13 @@
 			<p><i>égrassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ègre</i></p>
 			<p><i>égrons</i></p>
 			<p><i>égrez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>égrant</i></p>
@@ -2139,13 +2139,13 @@
 			<p><i>étassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ète</i></p>
 			<p><i>étons</i></p>
 			<p><i>étez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>étant</i></p>
@@ -2227,13 +2227,13 @@
 			<p><i>énassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ène</i></p>
 			<p><i>énons</i></p>
 			<p><i>énez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>énant</i></p>
@@ -2315,13 +2315,13 @@
 			<p><i>enassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ène</i></p>
 			<p><i>enons</i></p>
 			<p><i>enez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>enant</i></p>
@@ -2403,13 +2403,13 @@
 			<p><i>evassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ève</i></p>
 			<p><i>evons</i></p>
 			<p><i>evez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>evant</i></p>
@@ -2491,13 +2491,13 @@
 			<p><i>esassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èse</i></p>
 			<p><i>esons</i></p>
 			<p><i>esez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>esant</i></p>
@@ -2579,13 +2579,13 @@
 			<p><i>échassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èche</i></p>
 			<p><i>échons</i></p>
 			<p><i>échez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>échant</i></p>
@@ -2667,13 +2667,13 @@
 			<p><i>érassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ère</i></p>
 			<p><i>érons</i></p>
 			<p><i>érez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>érant</i></p>
@@ -2755,13 +2755,13 @@
 			<p><i>evrassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èvre</i></p>
 			<p><i>evrons</i></p>
 			<p><i>evrez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>evrant</i></p>
@@ -2843,13 +2843,13 @@
 			<p><i>édassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ède</i></p>
 			<p><i>édons</i></p>
 			<p><i>édez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>édant</i></p>
@@ -2931,13 +2931,13 @@
 			<p><i>épassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èpe</i></p>
 			<p><i>épons</i></p>
 			<p><i>épez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>épant</i></p>
@@ -3019,13 +3019,13 @@
 			<p><i>epassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èpe</i></p>
 			<p><i>epons</i></p>
 			<p><i>epez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>epant</i></p>
@@ -3107,13 +3107,13 @@
 			<p><i>ésassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èse</i></p>
 			<p><i>ésons</i></p>
 			<p><i>ésez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ésant</i></p>
@@ -3195,13 +3195,13 @@
 			<p><i>émassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ème</i></p>
 			<p><i>émons</i></p>
 			<p><i>émez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>émant</i></p>
@@ -3283,13 +3283,13 @@
 			<p><i>égeassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ège</i></p>
 			<p><i>égeons</i></p>
 			<p><i>égez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>égeant</i></p>
@@ -3371,13 +3371,13 @@
 			<p><i>assent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -3459,13 +3459,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -3547,13 +3547,13 @@
 			<p><i>évrassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>èvre</i></p>
 			<p><i>évrons</i></p>
 			<p><i>évrez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>évrant</i></p>
@@ -3635,13 +3635,13 @@
 			<p><i>écrassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ècre</i></p>
 			<p><i>écrons</i></p>
 			<p><i>écrez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>écrant</i></p>
@@ -3723,13 +3723,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>iers</i></p>
 			<p><i>érons</i></p>
 			<p><i>érez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>érant</i></p>
@@ -3811,13 +3811,13 @@
 			<p><i>ïssent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ïssons</i></p>
 			<p><i>ïssez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ïssant</i></p>
@@ -3899,13 +3899,13 @@
 			<p><i>ïssent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ïs</i></p>
 			<p><i>ïssons</i></p>
 			<p><i>ïssez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ïssant</i></p>
@@ -3987,13 +3987,13 @@
 			<p><i>eurissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>euris</i></p>
 			<p><i>eurissons</i></p>
 			<p><i>eurissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>eurissant</i><i>orissant</i></p>
@@ -4075,13 +4075,13 @@
 			<p><i>rissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>re</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>rant</i></p>
@@ -4163,13 +4163,13 @@
 			<p><i>missent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>mons</i></p>
 			<p><i>mez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>mant</i></p>
@@ -4251,13 +4251,13 @@
 			<p><i>tissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>tons</i></p>
 			<p><i>tez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>tant</i></p>
@@ -4339,13 +4339,13 @@
 			<p><i>vissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>vons</i></p>
 			<p><i>vez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>vant</i></p>
@@ -4427,13 +4427,13 @@
 			<p><i>illissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>illons</i></p>
 			<p><i>illez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>illant</i></p>
@@ -4515,13 +4515,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -4603,13 +4603,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>issons</i></p>
 			<p><i>issez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>issant</i><i>ant</i></p>
@@ -4691,13 +4691,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -4779,13 +4779,13 @@
 			<p><i>inssent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>iens</i></p>
 			<p><i>enons</i></p>
 			<p><i>enez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>enant</i></p>
@@ -4867,13 +4867,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>enant</i></p>
@@ -4955,13 +4955,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>yant</i></p>
@@ -5043,13 +5043,13 @@
 			<p><i>ourussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>eurs</i></p>
 			<p><i>ourons</i></p>
 			<p><i>ourez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ourant</i></p>
@@ -5131,13 +5131,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -5219,13 +5219,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -5307,13 +5307,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>issons</i></p>
 			<p><i>issez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>issant</i></p>
@@ -5395,13 +5395,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>
@@ -5483,13 +5483,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>issons</i></p>
 			<p><i>issez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>issant</i></p>
@@ -5571,13 +5571,13 @@
 			<p><i>illissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>illant</i></p>
@@ -5659,13 +5659,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -5747,13 +5747,13 @@
 			<p><i>çussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>çois</i></p>
 			<p><i>cevons</i></p>
 			<p><i>cevez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>cevant</i></p>
@@ -5835,13 +5835,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>evons</i></p>
 			<p><i>evez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>evant</i></p>
@@ -5923,13 +5923,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>eus</i></p>
 			<p><i>ouvons</i></p>
 			<p><i>ouvez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ouvant</i></p>
@@ -6011,13 +6011,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>eus</i></p>
 			<p><i>ouvons</i></p>
 			<p><i>ouvez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ouvant</i></p>
@@ -6099,13 +6099,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ache</i></p>
 			<p><i>achons</i></p>
 			<p><i>achez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>achant</i></p>
@@ -6187,13 +6187,13 @@
 			<p><i>oulussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>euille</i></p>
 			<p><i>euillons</i></p>
 			<p><i>euillez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oulant</i></p>
@@ -6275,13 +6275,13 @@
 			<p><i>lussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ux</i></p>
 			<p><i>lons</i></p>
 			<p><i>lez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>lant</i></p>
@@ -6363,13 +6363,13 @@
 			<p><i>lussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ux</i></p>
 			<p><i>lons</i></p>
 			<p><i>lez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>lant</i></p>
@@ -6451,13 +6451,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ouvant</i></p>
@@ -6539,13 +6539,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i></p>
@@ -6627,13 +6627,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i></p>
@@ -6715,13 +6715,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ieds</i><i>ois</i></p>
 			<p><i>eyons</i><i>oyons</i></p>
 			<p><i>eyez</i><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>eyant</i><i>oyant</i></p>
@@ -6803,13 +6803,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ieds</i><i>ois</i></p>
 			<p><i>eyons</i><i>oyons</i></p>
 			<p><i>eyez</i><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>eyant</i><i>oyant</i></p>
@@ -6891,13 +6891,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i></p>
@@ -6979,13 +6979,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i></p>
@@ -7067,13 +7067,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>éant</i><i>eyant</i></p>
@@ -7155,13 +7155,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>euvant</i></p>
@@ -7243,13 +7243,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p></p>
@@ -7331,13 +7331,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p></p>
@@ -7419,13 +7419,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i></p>
@@ -7507,13 +7507,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i><i>eyant</i></p>
@@ -7595,13 +7595,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>éant</i></p>
@@ -7683,13 +7683,13 @@
 			<p><i>dissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ds</i></p>
 			<p><i>dons</i></p>
 			<p><i>dez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>dant</i></p>
@@ -7771,13 +7771,13 @@
 			<p><i>quissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>cs</i></p>
 			<p><i>quons</i></p>
 			<p><i>quez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>quant</i></p>
@@ -7859,13 +7859,13 @@
 			<p><i>tissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>tons</i></p>
 			<p><i>tez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>tant</i></p>
@@ -7947,13 +7947,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>tons</i></p>
 			<p><i>tez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>tant</i></p>
@@ -8035,13 +8035,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ets</i></p>
 			<p><i>ettons</i></p>
 			<p><i>ettez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ettant</i></p>
@@ -8123,13 +8123,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ends</i></p>
 			<p><i>enons</i></p>
 			<p><i>enez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>enant</i></p>
@@ -8211,13 +8211,13 @@
 			<p><i>pissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ps</i></p>
 			<p><i>pons</i></p>
 			<p><i>pez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>pant</i></p>
@@ -8299,13 +8299,13 @@
 			<p><i>lussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ds</i></p>
 			<p><i>lons</i></p>
 			<p><i>lez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>lant</i></p>
@@ -8387,13 +8387,13 @@
 			<p><i>sissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ds</i></p>
 			<p><i>sons</i></p>
 			<p><i>sez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>sant</i></p>
@@ -8475,13 +8475,13 @@
 			<p><i>lussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>lvons</i></p>
 			<p><i>lvez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>lvant</i></p>
@@ -8563,13 +8563,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>lvons</i></p>
 			<p><i>lvez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>lvant</i></p>
@@ -8651,13 +8651,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>lvons</i></p>
 			<p><i>lvez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>lvant</i></p>
@@ -8739,13 +8739,13 @@
 			<p><i>gnissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ns</i></p>
 			<p><i>gnons</i></p>
 			<p><i>gnez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>gnant</i></p>
@@ -8827,13 +8827,13 @@
 			<p><i>gnissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>gnant</i></p>
@@ -8915,13 +8915,13 @@
 			<p><i>vissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>vons</i></p>
 			<p><i>vez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>vant</i></p>
@@ -9003,13 +9003,13 @@
 			<p><i>écussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ivons</i></p>
 			<p><i>ivez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ivant</i></p>
@@ -9091,13 +9091,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aissant</i></p>
@@ -9179,13 +9179,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p></p>
 			<p><i>aissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aissant</i></p>
@@ -9267,13 +9267,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aissant</i></p>
@@ -9355,13 +9355,13 @@
 			<p><i>aquissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aissant</i></p>
@@ -9443,13 +9443,13 @@
 			<p><i>aquissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aissant</i></p>
@@ -9531,13 +9531,13 @@
 			<p><i>ûssent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oissons</i></p>
 			<p><i>oissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oissant</i></p>
@@ -9619,13 +9619,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oissons</i></p>
 			<p><i>oissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oissant</i></p>
@@ -9708,13 +9708,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oissons</i></p>
 			<p><i>oissez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oissant</i></p>
@@ -9796,13 +9796,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>iant</i></p>
@@ -9884,13 +9884,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -9972,13 +9972,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>uons</i></p>
 			<p><i>uez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>uant</i></p>
@@ -10060,13 +10060,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>uons</i></p>
 			<p><i>uez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>uant</i></p>
@@ -10148,13 +10148,13 @@
 			<p><i>sissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>sons</i></p>
 			<p><i>sez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>sant</i></p>
@@ -10236,13 +10236,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -10324,13 +10324,13 @@
 			<p><i>sissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>sons</i></p>
 			<p><i>sez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>sant</i></p>
@@ -10412,13 +10412,13 @@
 			<p><i>vissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>vons</i></p>
 			<p><i>vez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>vant</i></p>
@@ -10500,13 +10500,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i></p>
@@ -10588,13 +10588,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -10676,13 +10676,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>ites</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -10764,13 +10764,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -10852,13 +10852,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -10940,13 +10940,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>ites</i><i>isez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -11028,13 +11028,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>isant</i></p>
@@ -11116,13 +11116,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>uvons</i></p>
 			<p><i>uvez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>uvant</i></p>
@@ -11204,13 +11204,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aisons</i></p>
 			<p><i>aisez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aisant</i></p>
@@ -11292,13 +11292,13 @@
 			<p><i>ussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aisons</i></p>
 			<p><i>aisez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aisant</i></p>
@@ -11380,13 +11380,13 @@
 			<p><i>issent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aisons</i></p>
 			<p><i>aites</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>aisant</i></p>
@@ -11468,13 +11468,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>yant</i></p>
@@ -11556,13 +11556,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>yant</i></p>
@@ -11644,13 +11644,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p></p>
@@ -11732,13 +11732,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>os</i></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>osant</i></p>
@@ -11820,13 +11820,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>sant</i></p>
@@ -11908,13 +11908,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p></p>
@@ -11996,13 +11996,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>s</i></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p></p>
@@ -12084,13 +12084,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ssant</i></p>
@@ -12172,13 +12172,13 @@
 			<p><i>gnissent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>ns</i></p>
 			<p><i>gnons</i></p>
 			<p><i>gnez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>gnant</i></p>
@@ -12260,13 +12260,13 @@
 			<p><i>oyassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>oie</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>oyant</i></p>
@@ -12348,13 +12348,13 @@
 			<p><i>eussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>aie</i></p>
 			<p><i>ayons</i></p>
 			<p><i>ayez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ayant</i></p>
@@ -12436,13 +12436,13 @@
 			<p><i>fussent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>sois</i></p>
 			<p><i>soyons</i></p>
 			<p><i>soyez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>étant</i></p>
@@ -12524,13 +12524,13 @@
 			<p><i>allassent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>va</i></p>
 			<p><i>allons</i></p>
 			<p><i>allez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>allant</i></p>
@@ -12612,13 +12612,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p></p>
@@ -12700,13 +12700,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p></p>
@@ -12788,13 +12788,13 @@
 			<p><i>uïssent</i></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>yant</i></p>
@@ -12876,13 +12876,13 @@
 			<p></p>
 		</imperfect>
 	</subjonctif>
-	<imperative>
-		<imperative-present>
+	<imperatif>
+		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
-		</imperative-present>
-	</imperative>
+		</imperatif-présent>
+	</imperatif>
 	<participle>
 		<present-participle>
 			<p><i>ant</i></p>

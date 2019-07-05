@@ -189,15 +189,15 @@ def test_conjugator_conjugate_anterior_past_with_etre():
     "ils furent allés"
     ]
 
-def test_conjugator_conjugate_imperative_past_with_avoir():
-    assert conj.conjugate_imperative_past('manger') == [
+def test_conjugator_conjugate_imperatif_past_with_avoir():
+    assert conj.conjugate_imperatif_past('manger') == [
     "aie mangé",
     "ayons mangé",
     "ayez mangé"
     ]
 
-def test_conjugator_conjugate_imperative_past_with_etre():
-    assert conj.conjugate_imperative_past('aller') == [
+def test_conjugator_conjugate_imperatif_past_with_etre():
+    assert conj.conjugate_imperatif_past('aller') == [
     "sois allé",
     "soyons allés",
     "soyez allés"
@@ -397,13 +397,13 @@ expected_resp_conj_manger = {
       "qu'ils eussent mangé"
     ]
   },
-  "imperative": {
-    "imperative-present": [
+  "imperatif": {
+    "imperatif-présent": [
       "mange",
       "mangeons",
       "mangez"
     ],
-    "imperative-past": [
+    "imperatif-past": [
       "aie mangé",
       "ayons mangé",
       "ayez mangé"
@@ -554,9 +554,9 @@ expected_resp_conj_pouvoir = {
       "qu'ils eussent pu"
     ]
   },
-  "imperative": {
-    "imperative-present": [],
-    "imperative-past": []
+  "imperatif": {
+    "imperatif-présent": [],
+    "imperatif-past": []
   },
   "participle": {
     "present-participle": [
@@ -647,9 +647,9 @@ expected_resp_conj_pleuvoir = {
       "qu'ils eussent plu"
     ]
   },
-  "imperative": {
-    "imperative-present": [],
-    "imperative-past": []
+  "imperatif": {
+    "imperatif-présent": [],
+    "imperatif-past": []
   },
   "participle": {
     "present-participle": [
@@ -796,13 +796,13 @@ expected_resp_conj_se_lever = {
       "qu'ils se fussent levés"
     ]
   },
-  "imperative": {
-    "imperative-present": [
+  "imperatif": {
+    "imperatif-présent": [
       "lève-toi",
       "levons-nous",
       "levez-vous"
     ],
-    "imperative-past": []
+    "imperatif-past": []
   },
   "participle": {
     "present-participle": [

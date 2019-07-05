@@ -125,8 +125,8 @@ class Conjugator:
             conjugations['pluperfect'] = self._conjugate_subjonctif_pluperfect(co)
         elif mood_name == 'conditionnel':
             conjugations['past'] = self._conjugate_conditionnel_past(co)
-        elif mood_name == 'imperative':
-            conjugations['imperative-past'] = self._conjugate_imperative_past(co)
+        elif mood_name == 'imperatif':
+            conjugations['imperatif-past'] = self._conjugate_imperatif_past(co)
 
     def conjugate_passe_compose(self, infinitive):
         co = self._get_conj_obs(infinitive)
@@ -156,9 +156,9 @@ class Conjugator:
         co = self._get_conj_obs(infinitive)
         return self._conjugate_conditionnel_past(co)
 
-    def conjugate_imperative_past(self, infinitive):
+    def conjugate_imperatif_past(self, infinitive):
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_imperative_past(co)
+        return self._conjugate_imperatif_past(co)
 
     def _conjugate_passe_compose(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'present')
@@ -181,8 +181,8 @@ class Conjugator:
     def _conjugate_conditionnel_past(self, co):
         return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'present')
 
-    def _conjugate_imperative_past(self, co):
-        return self._conjugate_compound(co, 'imperative', 'imperative', 'imperative-present')
+    def _conjugate_imperatif_past(self, co):
+        return self._conjugate_compound(co, 'imperatif', 'imperatif', 'imperatif-présent')
 
     def _conjugate_compound(self, co, mood_name, hv_mood_name, hv_tense_name):
         """Conjugate a compound tense
@@ -193,8 +193,8 @@ class Conjugator:
             hv_tense_name: tense_name for conjugating helping verb
         """
         ret = []
-        if (co.is_reflexive and mood_name == 'imperative' 
-            and hv_tense_name == 'imperative-present'):
+        if (co.is_reflexive and mood_name == 'imperatif' 
+            and hv_tense_name == 'imperatif-présent'):
             return ret
         persons = [pe.person for pe in 
             co.template.moods[mood_name].tenses[hv_tense_name].person_endings]
@@ -243,7 +243,7 @@ class Conjugator:
                     conj += 'étant '
                 conj += verb_stem + person_ending.get_ending()
                 if is_reflexive:
-                    if mood_name != 'imperative':
+                    if mood_name != 'imperatif':
                         conj = prepend_with_se(conj)
                     else:
                         conj += get_pronoun_suffix(person_ending.get_person())
