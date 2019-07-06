@@ -40,20 +40,29 @@ def get_verb_stem(infinitive, template_name):
 
 class Conjugator:
     def __init__(self, lang='fr'):
-        self.verb_parser = parse_verbs.VerbsParser(lang)
-        self.conj_parser = parse_conjugations.ConjugationsParser(lang)
+        self._verb_parser = parse_verbs.VerbsParser(lang)
+        self._conj_parser = parse_conjugations.ConjugationsParser(lang)
+        
+    def find_verb_by_infinitive(self, infinitive):
+        ret = None
+        try:
+            ret = self._verb_parser.find_verb_by_infinitive(infinitive)
+        except parse_verbs.VerbNotFoundError:
+            raise VerbNotFoundError
+        return ret
+
+    def find_template(self, name):
+        ret = None
+        try:
+            ret = self._conj_parser.find_template(name)
+        except parse_conjugations.TemplateNotFoundError:
+            raise TemplateNotFoundError
+        return ret
 
     def is_impersonal_verb(self, infinitive):
         ret = False
-        verb = None
-        template = None
-        try:
-            verb = self.verb_parser.find_verb_by_infinitive(infinitive)
-            template = self.conj_parser.find_template(verb.template)
-        except parse_verbs.VerbNotFoundError:
-            raise VerbNotFoundError
-        except parse_conjugations.TemplateNotFoundError:
-            raise TemplateNotFoundError
+        verb = self.find_verb_by_infinitive(infinitive)
+        template = self.find_template(verb.template)
         if len(template.moods['indicatif'].tenses['présent'].person_endings) < 6:
             ret = True
         return ret
@@ -76,15 +85,8 @@ class Conjugator:
         is_reflexive, infinitive = split_reflexive(infinitive)
         if is_reflexive and not self.verb_can_be_reflexive(infinitive):
             raise VerbNotFoundError("Verb cannot be reflexive")
-        verb = None
-        template = None
-        try:
-            verb = self.verb_parser.find_verb_by_infinitive(infinitive)
-            template = self.conj_parser.find_template(verb.template)
-        except parse_verbs.VerbNotFoundError:
-            raise VerbNotFoundError
-        except parse_conjugations.TemplateNotFoundError:
-            raise TemplateNotFoundError
+        verb = self.find_verb_by_infinitive(infinitive)
+        template = self.find_template(verb.template)
         verb_stem = get_verb_stem(verb.infinitive, template.name)
         return Conjugator.ConjugationObjects(
             infinitive, verb, template, verb_stem, is_reflexive)      
@@ -107,19 +109,11 @@ class Conjugator:
     def get_verbs_that_start_with(self, query, max_results):
         query = query.lower()
         is_reflexive, query = split_reflexive(query)
-        matches = self.verb_parser.get_verbs_that_start_with(query, max_results)
+        matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         if is_reflexive:
             matches = [prepend_with_se(m) 
             for m in matches if self.verb_can_be_reflexive(m)]
         return matches
-
-    def find_verb_by_infinitive(self, infinitive):
-        ret = None
-        try:
-            ret = self.verb_parser.find_verb_by_infinitive(infinitive)
-        except parse_verbs.VerbNotFoundError:
-            raise VerbNotFoundError
-        return ret
 
     def _get_full_conjugation_for_mood(self, co, mood_name):
         conjugations = {}

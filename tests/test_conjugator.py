@@ -230,7 +230,7 @@ def test_conjugator_get_verb_stem():
 
 def test_conjugator_impersonal_verbs():
     impersonal_verbs = \
-        [v.infinitive for v in conj.verb_parser.verbs 
+        [v.infinitive for v in conj._verb_parser.verbs
         if conj.is_impersonal_verb(v.infinitive)]
     assert impersonal_verbs == [
     "advenir",
