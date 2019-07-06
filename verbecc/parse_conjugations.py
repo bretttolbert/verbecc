@@ -3,12 +3,10 @@
 from __future__ import print_function
 
 from bisect import bisect_left
-
 from lxml import etree
-
 from pkg_resources import resource_filename
 
-from .conjugation_template import ConjugationTemplate
+from . import conjugation_template
 
 
 class ConjugationsParserError(Exception):
@@ -32,7 +30,8 @@ class ConjugationsParser:
                 "Root XML Tag {} Not Found".format(root_tag))
         for child in root:
             if child.tag == 'template':
-                self.templates.append(ConjugationTemplate(child))
+                self.templates.append(
+                    conjugation_template.ConjugationTemplate(child))
         self.templates = sorted(self.templates, key=lambda x: x.name)
         self._keys = [template.name for template in self.templates]
 

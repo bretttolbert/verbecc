@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from enum import Enum
-
 PERSONS = ('1s', '2s', '3s', '1p', '2p', '3p')
 
 IMPERATIVE_PRESENT_PERSONS = ('2s', '1p', '2p')

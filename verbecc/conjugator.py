@@ -3,19 +3,10 @@
 from __future__ import print_function
 import copy
 
-from .conjugation_template import ConjugationTemplate
 from . import parse_conjugations
 from . import parse_verbs
 from . import grammar_defines
-from .mood import Mood
-from .person_ending import PersonEnding
-from .string_utils import (
-    prepend_with_que,
-    prepend_with_se,
-    split_reflexive,
-    starts_with_vowel)
-from .tense_template import TenseTemplate
-from .verb import Verb
+from . import string_utils
 
 class ConjugatorError(Exception):
     pass
@@ -82,7 +73,7 @@ class Conjugator:
 
     def _get_conj_obs(self, infinitive):
         infinitive = infinitive.lower()
-        is_reflexive, infinitive = split_reflexive(infinitive)
+        is_reflexive, infinitive = string_utils.split_reflexive(infinitive)
         if is_reflexive and not self.verb_can_be_reflexive(infinitive):
             raise VerbNotFoundError("Verb cannot be reflexive")
         verb = self.find_verb_by_infinitive(infinitive)
@@ -108,10 +99,10 @@ class Conjugator:
 
     def get_verbs_that_start_with(self, query, max_results):
         query = query.lower()
-        is_reflexive, query = split_reflexive(query)
+        is_reflexive, query = string_utils.split_reflexive(query)
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         if is_reflexive:
-            matches = [prepend_with_se(m) 
+            matches = [string_utils.prepend_with_se(m) 
             for m in matches if self.verb_can_be_reflexive(m)]
         return matches
 
@@ -247,7 +238,7 @@ class Conjugator:
                 p = participle[grammar_defines.PARTICIPLE_INFLECTIONS.index(participle_inflection)]
                 ret.append(hv + ' ' + p)
         if mood_name == 'subjonctif':
-            ret = [prepend_with_que(i) for i in ret]
+            ret = [string_utils.prepend_with_que(i) for i in ret]
         return ret
 
     def _conjugate_specific_tense(self, verb_stem, mood_name, 
@@ -261,7 +252,7 @@ class Conjugator:
                 conj += verb_stem + person_ending.get_ending()
                 if is_reflexive:
                     if mood_name != 'imperatif':
-                        conj = prepend_with_se(conj)
+                        conj = string_utils.prepend_with_se(conj)
                     else:
                         conj += grammar_defines.get_pronoun_suffix(person_ending.get_person())
                 ret.append(conj)
@@ -273,14 +264,14 @@ class Conjugator:
                 conjugation = self._conjugate_specific_tense_pronoun(
                     verb_stem, ending, pronoun)
                 if mood_name == 'subjonctif':
-                    conjugation = prepend_with_que(conjugation)
+                    conjugation = string_utils.prepend_with_que(conjugation)
                 ret.append(conjugation)
         return ret
 
     def _conjugate_specific_tense_pronoun(self, verb_stem, ending, pronoun):
         ret = u''
         conjugated_verb = verb_stem + ending
-        if pronoun[-1] == "e" and starts_with_vowel(conjugated_verb):
+        if pronoun[-1] == "e" and string_utils.starts_with_vowel(conjugated_verb):
             ret += pronoun[:-1] + "'"
         else:
             ret += pronoun + " "
