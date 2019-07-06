@@ -5,14 +5,13 @@ from lxml import etree
 from mock import patch
 from verbecc.conjugator import (
     Conjugator,
-    get_verb_stem,
     ConjugatorError,
     InvalidMoodError,
     VerbNotFoundError)
 from verbecc.tense_template import TenseTemplate
 from verbecc.string_utils import prepend_with_que
 
-conj = Conjugator()
+cg = Conjugator()
 
 test_verbs = [
     (u"manger"), 
@@ -27,7 +26,7 @@ test_verbs = [
 @pytest.mark.parametrize("infinitif", test_verbs)
 def test_conjugator_conjugate(infinitive):
     for infinitive in test_verbs:
-        output = conj.conjugate(infinitive)
+        output = cg.conjugate(infinitive)
         assert output
 
 def test_conjugator_conjugate_specific_tense():
@@ -43,12 +42,12 @@ def test_conjugator_conjugate_specific_tense():
         </présent>""")
     tense_name = 'présent'
     tense = TenseTemplate(tense_elem)
-    out = conj._conjugate_specific_tense(verb_stem, 'indicatif', tense)
+    out = cg._conjugate_specific_tense(verb_stem, 'indicatif', tense)
     assert len(out) == 6
     assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
 
 def test_conjugator_conjugate_passe_compose_with_avoir():
-    assert conj.conjugate_passe_compose('manger') == [
+    assert cg._conjugate_passe_compose(cg._get_conj_obs('manger')) == [
     "j'ai mangé",
     "tu as mangé",
     "il a mangé",
@@ -58,7 +57,7 @@ def test_conjugator_conjugate_passe_compose_with_avoir():
     ]
 
 def test_conjugator_conjugate_passe_compose_with_etre():
-    assert conj.conjugate_passe_compose('aller') == [
+    assert cg._conjugate_passe_compose(cg._get_conj_obs('aller')) == [
     "je suis allé",
     "tu es allé",
     "il est allé",
@@ -68,7 +67,7 @@ def test_conjugator_conjugate_passe_compose_with_etre():
     ]
 
 def test_conjugator_conjugate_subjonctif_passe_with_avoir():
-    assert conj.conjugate_subjonctif_passe('manger') == [
+    assert cg._conjugate_subjonctif_passe(cg._get_conj_obs('manger')) == [
     "que j'aie mangé",
     "que tu aies mangé",
     "qu'il ait mangé",
@@ -78,7 +77,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_avoir():
     ]
 
 def test_conjugator_conjugate_subjonctif_passe_with_etre():
-    assert conj.conjugate_subjonctif_passe('aller') == [
+    assert cg._conjugate_subjonctif_passe(cg._get_conj_obs('aller')) == [
     "que je sois allé",
     "que tu sois allé",
     "qu'il soit allé",
@@ -88,7 +87,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_etre():
     ]
 
 def test_conjugator_conjugate_conditionnel_passe_with_avoir():
-    assert conj.conjugate_conditionnel_passe('manger') == [
+    assert cg._conjugate_conditionnel_passe(cg._get_conj_obs('manger')) == [
     "j'aurais mangé",
     "tu aurais mangé",
     "il aurait mangé",
@@ -98,7 +97,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_avoir():
     ]
 
 def test_conjugator_conjugate_conditionnel_passe_with_etre():
-    assert conj.conjugate_conditionnel_passe('aller') == [
+    assert cg._conjugate_conditionnel_passe(cg._get_conj_obs('aller')) == [
     "je serais allé",
     "tu serais allé",
     "il serait allé",
@@ -108,7 +107,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_etre():
     ]
 
 def test_conjugator_conjugate_plusqueparfait_with_avoir():
-    assert conj.conjugate_plusqueparfait('manger') == [
+    assert cg._conjugate_plusqueparfait(cg._get_conj_obs('manger')) == [
     "j'avais mangé",
     "tu avais mangé",
     "il avait mangé",
@@ -118,7 +117,7 @@ def test_conjugator_conjugate_plusqueparfait_with_avoir():
     ]
 
 def test_conjugator_conjugate_plusqueparfait_with_etre():
-    assert conj.conjugate_plusqueparfait('aller') == [
+    assert cg._conjugate_plusqueparfait(cg._get_conj_obs('aller')) == [
     "j'étais allé",
     "tu étais allé",
     "il était allé",
@@ -128,7 +127,7 @@ def test_conjugator_conjugate_plusqueparfait_with_etre():
     ]
 
 def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir():
-    assert conj.conjugate_subjonctif_plusqueparfait('manger') == [
+    assert cg._conjugate_subjonctif_plusqueparfait(cg._get_conj_obs('manger')) == [
     "que j'eusse mangé",
     "que tu eusses mangé",
     "qu'il eût mangé",
@@ -138,7 +137,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir():
     ]
 
 def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre():
-    assert conj.conjugate_subjonctif_plusqueparfait('aller') == [
+    assert cg._conjugate_subjonctif_plusqueparfait(cg._get_conj_obs('aller')) == [
     "que je fusse allé",
     "que tu fusses allé",
     "qu'il fût allé",
@@ -148,7 +147,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre():
     ]
 
 def test_conjugator_conjugate_futur_anterieur_with_avoir():
-    assert conj.conjugate_futur_anterieur('manger') == [
+    assert cg._conjugate_futur_anterieur(cg._get_conj_obs('manger')) == [
     "j'aurai mangé",
     "tu auras mangé",
     "il aura mangé",
@@ -158,7 +157,7 @@ def test_conjugator_conjugate_futur_anterieur_with_avoir():
     ]
 
 def test_conjugator_conjugate_futur_anterieur_with_etre():
-    assert conj.conjugate_futur_anterieur('aller') == [
+    assert cg._conjugate_futur_anterieur(cg._get_conj_obs('aller')) == [
     "je serai allé",
     "tu seras allé",
     "il sera allé",
@@ -168,7 +167,7 @@ def test_conjugator_conjugate_futur_anterieur_with_etre():
     ]
 
 def test_conjugator_conjugate_passe_anterieur_with_avoir():
-    assert conj.conjugate_passe_anterieur('manger') == [
+    assert cg._conjugate_passe_anterieur(cg._get_conj_obs('manger')) == [
     "j'eus mangé",
     "tu eus mangé",
     "il eut mangé",
@@ -178,7 +177,7 @@ def test_conjugator_conjugate_passe_anterieur_with_avoir():
     ]
 
 def test_conjugator_conjugate_passe_anterieur_with_etre():
-    assert conj.conjugate_passe_anterieur('aller') == [
+    assert cg._conjugate_passe_anterieur(cg._get_conj_obs('aller')) == [
     "je fus allé",
     "tu fus allé",
     "il fut allé",
@@ -188,14 +187,14 @@ def test_conjugator_conjugate_passe_anterieur_with_etre():
     ]
 
 def test_conjugator_conjugate_imperatif_passe_with_avoir():
-    assert conj.conjugate_imperatif_passe('manger') == [
+    assert cg._conjugate_imperatif_passe(cg._get_conj_obs('manger')) == [
     "aie mangé",
     "ayons mangé",
     "ayez mangé"
     ]
 
 def test_conjugator_conjugate_imperatif_passe_with_etre():
-    assert conj.conjugate_imperatif_passe('aller') == [
+    assert cg._conjugate_imperatif_passe(cg._get_conj_obs('aller')) == [
     "sois allé",
     "soyons allés",
     "soyez allés"
@@ -206,7 +205,7 @@ def test_conjugator_conjugate_specific_tense_pronoun(mock_person):
     verb_stem = u"man"
     pronoun = u"je"
     ending = u"ge"
-    conjugation = conj._conjugate_specific_tense_pronoun(verb_stem, ending, pronoun)
+    conjugation = cg._conjugate_specific_tense_pronoun(verb_stem, ending, pronoun)
     assert conjugation == u"je mange"
 
 def test_conjugator_prepend_with_que():
@@ -215,23 +214,23 @@ def test_conjugator_prepend_with_que():
     assert prepend_with_que("elles mangent") == "qu'elles mangent"
 
 def test_conjugator_get_verb_stem():
-    verb_stem = get_verb_stem(u"manger", u"man:ger")
+    verb_stem = cg._get_verb_stem(u"manger", u"man:ger")
     assert verb_stem == u"man"
-    verb_stem = get_verb_stem(u"téléphoner", u"aim:er")
+    verb_stem = cg._get_verb_stem(u"téléphoner", u"aim:er")
     assert verb_stem == u"téléphon"
-    verb_stem = get_verb_stem(u"vendre", u"ten:dre")
+    verb_stem = cg._get_verb_stem(u"vendre", u"ten:dre")
     assert verb_stem == u"ven"
     # In the case of irregular verbs, the verb stem is empty string
-    verb_stem = get_verb_stem(u"aller", u":aller")
+    verb_stem = cg._get_verb_stem(u"aller", u":aller")
     assert verb_stem == u""
     # The infinitive ending must match the template ending
     with pytest.raises(ConjugatorError):
-        verb_stem = get_verb_stem(u"vendre", u"man:ger")
+        verb_stem = cg._get_verb_stem(u"vendre", u"man:ger")
 
 def test_conjugator_impersonal_verbs():
     impersonal_verbs = \
-        [v.infinitive for v in conj._verb_parser.verbs
-        if conj.is_impersonal_verb(v.infinitive)]
+        [v.infinitive for v in cg._verb_parser.verbs
+        if cg._is_impersonal_verb(v.infinitive)]
     assert impersonal_verbs == [
     "advenir",
     "apparoir",
@@ -262,7 +261,7 @@ test_conjugator_verb_can_be_reflexive_data = [
 @pytest.mark.parametrize("infinitive,expected_result", 
                          test_conjugator_verb_can_be_reflexive_data)
 def test_conjugator_verb_can_be_reflexive(infinitive, expected_result):
-    assert conj.verb_can_be_reflexive(infinitive) == expected_result
+    assert cg._verb_can_be_reflexive(infinitive) == expected_result
 
 expected_resp_conj_manger = {
 "verb": {
@@ -827,8 +826,8 @@ test_conj_data = [
 @pytest.mark.parametrize("infinitive,expected_resp", 
                          test_conj_data)
 def test_conjugator_conjugate(infinitive, expected_resp):
-    assert conj.conjugate(infinitive) == expected_resp
+    assert cg.conjugate(infinitive) == expected_resp
 
 def test_conjugator_conjugate_verb_not_found():
     with pytest.raises(VerbNotFoundError):
-        conj.conjugate("abcdefg")
+        cg.conjugate("abcdefg")

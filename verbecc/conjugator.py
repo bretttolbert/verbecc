@@ -20,15 +20,6 @@ class VerbNotFoundError(Exception):
 class TemplateNotFoundError(Exception):
     pass
 
-def get_verb_stem(infinitive, template_name):
-    template_beg, template_ending = template_name.split(u':')
-    if not infinitive.endswith(template_ending):
-        raise ConjugatorError(
-            "Template {} ending doesn't "
-            "match infinitive {}"
-            .format(template_name, infinitive))
-    return infinitive[:len(infinitive) - len(template_ending)]
-
 class Conjugator:
     def __init__(self, lang='fr'):
         self._verb_parser = parse_verbs.VerbsParser(lang)
@@ -49,38 +40,6 @@ class Conjugator:
         except parse_conjugations.TemplateNotFoundError:
             raise TemplateNotFoundError
         return ret
-
-    def is_impersonal_verb(self, infinitive):
-        ret = False
-        verb = self.find_verb_by_infinitive(infinitive)
-        template = self.find_template(verb.template)
-        if len(template.moods['indicatif'].tenses['présent'].person_endings) < 6:
-            ret = True
-        return ret
-
-    def verb_can_be_reflexive(self, infinitive):
-        return (not self.is_impersonal_verb(infinitive)
-            and infinitive not in 
-            grammar_defines.VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
-
-    class ConjugationObjects:
-        def __init__(self, infinitive, verb, template, verb_stem, is_reflexive):
-            self.infinitive = infinitive
-            self.verb = verb
-            self.template = template
-            self.verb_stem = verb_stem
-            self.is_reflexive = is_reflexive
-
-    def _get_conj_obs(self, infinitive):
-        infinitive = infinitive.lower()
-        is_reflexive, infinitive = string_utils.split_reflexive(infinitive)
-        if is_reflexive and not self.verb_can_be_reflexive(infinitive):
-            raise VerbNotFoundError("Verb cannot be reflexive")
-        verb = self.find_verb_by_infinitive(infinitive)
-        template = self.find_template(verb.template)
-        verb_stem = get_verb_stem(verb.infinitive, template.name)
-        return Conjugator.ConjugationObjects(
-            infinitive, verb, template, verb_stem, is_reflexive)      
 
     def conjugate(self, infinitive):
         co = self._get_conj_obs(infinitive)
@@ -103,8 +62,51 @@ class Conjugator:
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         if is_reflexive:
             matches = [string_utils.prepend_with_se(m) 
-            for m in matches if self.verb_can_be_reflexive(m)]
+            for m in matches if self._verb_can_be_reflexive(m)]
         return matches
+
+    #private:
+
+    def _get_verb_stem(self, infinitive, template_name):
+        template_beg, template_ending = template_name.split(u':')
+        if not infinitive.endswith(template_ending):
+            raise ConjugatorError(
+                "Template {} ending doesn't "
+                "match infinitive {}"
+                .format(template_name, infinitive))
+        return infinitive[:len(infinitive) - len(template_ending)]
+
+    def _is_impersonal_verb(self, infinitive):
+        ret = False
+        verb = self.find_verb_by_infinitive(infinitive)
+        template = self.find_template(verb.template)
+        if len(template.moods['indicatif'].tenses['présent'].person_endings) < 6:
+            ret = True
+        return ret
+
+    def _verb_can_be_reflexive(self, infinitive):
+        return (not self._is_impersonal_verb(infinitive)
+            and infinitive not in 
+            grammar_defines.VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
+
+    class ConjugationObjects:
+        def __init__(self, infinitive, verb, template, verb_stem, is_reflexive):
+            self.infinitive = infinitive
+            self.verb = verb
+            self.template = template
+            self.verb_stem = verb_stem
+            self.is_reflexive = is_reflexive
+
+    def _get_conj_obs(self, infinitive):
+        infinitive = infinitive.lower()
+        is_reflexive, infinitive = string_utils.split_reflexive(infinitive)
+        if is_reflexive and not self._verb_can_be_reflexive(infinitive):
+            raise VerbNotFoundError("Verb cannot be reflexive")
+        verb = self.find_verb_by_infinitive(infinitive)
+        template = self.find_template(verb.template)
+        verb_stem = self._get_verb_stem(verb.infinitive, template.name)
+        return Conjugator.ConjugationObjects(
+            infinitive, verb, template, verb_stem, is_reflexive)     
 
     def _get_full_conjugation_for_mood(self, co, mood_name):
         conjugations = {}
@@ -135,38 +137,6 @@ class Conjugator:
             conjugations['passé'] = self._conjugate_conditionnel_passe(co)
         elif mood_name == 'imperatif':
             conjugations['imperatif-passé'] = self._conjugate_imperatif_passe(co)
-
-    def conjugate_passe_compose(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_passe_compose(co)
-
-    def conjugate_plusqueparfait(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_plusqueparfait(co)
-
-    def conjugate_futur_anterieur(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_futur_anterieur(co)
-
-    def conjugate_passe_anterieur(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_passe_anterieur(co)
-
-    def conjugate_subjonctif_passe(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_subjonctif_passe(co)
-
-    def conjugate_subjonctif_plusqueparfait(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_subjonctif_plusqueparfait(co)
-
-    def conjugate_conditionnel_passe(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_conditionnel_passe(co)
-
-    def conjugate_imperatif_passe(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        return self._conjugate_imperatif_passe(co)
 
     def _conjugate_passe_compose(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'présent')
