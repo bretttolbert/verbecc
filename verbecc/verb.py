@@ -10,7 +10,7 @@ class VerbsParserError(SyntaxError):
 class Verb:
     def __init__(self, v_elem):
         if v_elem.tag != 'v':
-            raise VerbsParserError("parse_verb: not a 'v' elem")
+            raise VerbsParserError("Unexpected element")
         try:
             self.infinitive = u'' + v_elem.find('i').text
             self.infinitive_no_accents = strip_accents(self.infinitive)

@@ -36,8 +36,8 @@ def get_verb_stem(infinitive, template_name):
 
 class Conjugator:
     def __init__(self, lang='fr'):
-        self.verb_parser = VerbsParser()
-        self.conj_parser = ConjugationsParser()
+        self.verb_parser = VerbsParser(lang)
+        self.conj_parser = ConjugationsParser(lang)
 
     def is_impersonal_verb(self, infinitive):
         ret = False

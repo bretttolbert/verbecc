@@ -18,16 +18,18 @@ class TemplateNotFoundError(Exception):
     pass
 
 class ConjugationsParser:
-    def __init__(self):
+    def __init__(self, lang='fr'):
         self.templates = []
         parser = etree.XMLParser(dtd_validation=True, encoding='utf-8')
         tree = etree.parse(
             resource_filename("verbecc",
-                              "data/conjugations_fr.xml"),
+                              "data/conjugations_{}.xml".format(lang)),
             parser)
         root = tree.getroot()
-        if root.tag != 'conjugation-fr':
-            raise ConjugationsParserError("Root XML Tag <conjugation-fr> Not Found")
+        root_tag = 'conjugation-{}'.format(lang)
+        if root.tag != root_tag:
+            raise ConjugationsParserError(
+                "Root XML Tag {} Not Found".format(root_tag))
         for child in root:
             if child.tag == 'template':
                 self.templates.append(ConjugationTemplate(child))

@@ -17,17 +17,18 @@ class VerbNotFoundError(Exception):
 
 
 class VerbsParser:
-    def __init__(self):
+    def __init__(self, lang='fr'):
         self.verbs = []
         parser = etree.XMLParser(encoding='utf-8')
         tree = etree.parse(resource_filename(
                            "verbecc",
-                           "data/verbs_fr.xml"),
+                           "data/verbs_{}.xml".format(lang)),
                            parser)
         root = tree.getroot()
-        if root.tag != 'verbs-fr':
+        root_tag = 'verbs-{}'.format(lang)
+        if root.tag != root_tag:
             raise VerbsParserError(
-                "Root XML Tag <verbs-fr> Not Found")
+                "Root XML Tag {} Not Found".format(root_tag))
         for child in root:
             if child.tag == 'v':
                 self.verbs.append(Verb(child))
@@ -51,7 +52,3 @@ class VerbsParser:
                 if len(ret) >= max_results:
                     break
         return ret
-
-
-if __name__ == "__main__":
-    vp = VerbsParser()
