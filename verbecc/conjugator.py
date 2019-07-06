@@ -77,11 +77,14 @@ class Conjugator:
         if is_reflexive and not self.verb_can_be_reflexive(infinitive):
             raise VerbNotFoundError("Verb cannot be reflexive")
         verb = None
+        template = None
         try:
             verb = self.verb_parser.find_verb_by_infinitive(infinitive)
+            template = self.conj_parser.find_template(verb.template)
         except parse_verbs.VerbNotFoundError:
             raise VerbNotFoundError
-        template = self.conj_parser.find_template(verb.template)
+        except parse_conjugations.TemplateNotFoundError:
+            raise TemplateNotFoundError
         verb_stem = get_verb_stem(verb.infinitive, template.name)
         return Conjugator.ConjugationObjects(
             infinitive, verb, template, verb_stem, is_reflexive)      
