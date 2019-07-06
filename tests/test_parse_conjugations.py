@@ -7,7 +7,7 @@ import pytest
 from verbecc.conjugation_template import (
     ConjugationTemplate, ConjugationTemplateError
 )
-from verbecc.conjugations_parser import (
+from verbecc.parse_conjugations import (
     ConjugationsParser, ConjugationsParserError
 )
 

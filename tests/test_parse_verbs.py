@@ -4,7 +4,7 @@ from mock import patch
 
 import pytest
 
-from verbecc.verbs_parser import (
+from verbecc.parse_verbs import (
     Verb,
     VerbNotFoundError,
     VerbsParser,

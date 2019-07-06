@@ -4,8 +4,9 @@ from __future__ import print_function
 import copy
 
 from .conjugation_template import ConjugationTemplate
-from .conjugations_parser import ConjugationsParser
-from .grammar_defines import *
+from . import parse_conjugations
+from . import parse_verbs
+from . import grammar_defines
 from .mood import Mood
 from .person_ending import PersonEnding
 from .string_utils import (
@@ -15,14 +16,17 @@ from .string_utils import (
     starts_with_vowel)
 from .tense_template import TenseTemplate
 from .verb import Verb
-from .verbs_parser import (
-    VerbNotFoundError, VerbsParser
-)
 
 class ConjugatorError(Exception):
     pass
 
 class InvalidMoodError(Exception):
+    pass
+
+class VerbNotFoundError(Exception):
+    pass
+
+class TemplateNotFoundError(Exception):
     pass
 
 def get_verb_stem(infinitive, template_name):
@@ -36,13 +40,20 @@ def get_verb_stem(infinitive, template_name):
 
 class Conjugator:
     def __init__(self, lang='fr'):
-        self.verb_parser = VerbsParser(lang)
-        self.conj_parser = ConjugationsParser(lang)
+        self.verb_parser = parse_verbs.VerbsParser(lang)
+        self.conj_parser = parse_conjugations.ConjugationsParser(lang)
 
     def is_impersonal_verb(self, infinitive):
         ret = False
-        verb = self.verb_parser.find_verb_by_infinitive(infinitive)
-        template = self.conj_parser.find_template(verb.template)
+        verb = None
+        template = None
+        try:
+            verb = self.verb_parser.find_verb_by_infinitive(infinitive)
+            template = self.conj_parser.find_template(verb.template)
+        except parse_verbs.VerbNotFoundError:
+            raise VerbNotFoundError
+        except parse_conjugations.TemplateNotFoundError:
+            raise TemplateNotFoundError
         if len(template.moods['indicatif'].tenses['présent'].person_endings) < 6:
             ret = True
         return ret
@@ -50,7 +61,7 @@ class Conjugator:
     def verb_can_be_reflexive(self, infinitive):
         return (not self.is_impersonal_verb(infinitive)
             and infinitive not in 
-            VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
+            grammar_defines.VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
 
     class ConjugationObjects:
         def __init__(self, infinitive, verb, template, verb_stem, is_reflexive):
@@ -65,7 +76,11 @@ class Conjugator:
         is_reflexive, infinitive = split_reflexive(infinitive)
         if is_reflexive and not self.verb_can_be_reflexive(infinitive):
             raise VerbNotFoundError("Verb cannot be reflexive")
-        verb = self.verb_parser.find_verb_by_infinitive(infinitive)
+        verb = None
+        try:
+            verb = self.verb_parser.find_verb_by_infinitive(infinitive)
+        except parse_verbs.VerbNotFoundError:
+            raise VerbNotFoundError
         template = self.conj_parser.find_template(verb.template)
         verb_stem = get_verb_stem(verb.infinitive, template.name)
         return Conjugator.ConjugationObjects(
@@ -96,7 +111,12 @@ class Conjugator:
         return matches
 
     def find_verb_by_infinitive(self, infinitive):
-        return self.verb_parser.find_verb_by_infinitive(infinitive)
+        ret = None
+        try:
+            ret = self.verb_parser.find_verb_by_infinitive(infinitive)
+        except parse_verbs.VerbNotFoundError:
+            raise VerbNotFoundError
+        return ret
 
     def _get_full_conjugation_for_mood(self, co, mood_name):
         conjugations = {}
@@ -199,7 +219,7 @@ class Conjugator:
         persons = [pe.person for pe in 
             co.template.moods[mood_name].tenses[hv_tense_name].person_endings]
         helping_verb = 'avoir'
-        if (co.verb.infinitive in VERBS_CONJUGATED_WITH_ETRE
+        if (co.verb.infinitive in grammar_defines.VERBS_CONJUGATED_WITH_ETRE
             or co.is_reflexive):
             helping_verb = 'être'
         hvco = self._get_conj_obs(helping_verb)
@@ -226,7 +246,7 @@ class Conjugator:
         else:
             for i, hv in enumerate(hvconj):
                 participle_inflection = \
-                    get_default_participle_inflection_for_person(persons[i])
+                    grammar_defines.get_default_participle_inflection_for_person(persons[i])
                 p = participle[participle_inflection.value]
                 ret.append(hv + ' ' + p)
         if mood_name == 'subjonctif':
@@ -236,7 +256,7 @@ class Conjugator:
     def _conjugate_specific_tense(self, verb_stem, mood_name, 
                                   tense_template, is_reflexive=False):
         ret = []
-        if tense_template.name in TENSES_CONJUGATED_WITHOUT_PRONOUNS:
+        if tense_template.name in grammar_defines.TENSES_CONJUGATED_WITHOUT_PRONOUNS:
             for person_ending in tense_template.person_endings:
                 conj = ''
                 if is_reflexive and tense_template.name == 'participe-passé':
@@ -246,11 +266,11 @@ class Conjugator:
                     if mood_name != 'imperatif':
                         conj = prepend_with_se(conj)
                     else:
-                        conj += get_pronoun_suffix(person_ending.get_person())
+                        conj += grammar_defines.get_pronoun_suffix(person_ending.get_person())
                 ret.append(conj)
         else:
             for person_ending in tense_template.person_endings:
-                pronoun = get_default_pronoun(
+                pronoun = grammar_defines.get_default_pronoun(
                     person_ending.get_person(), is_reflexive)
                 ending = person_ending.get_ending()
                 conjugation = self._conjugate_specific_tense_pronoun(

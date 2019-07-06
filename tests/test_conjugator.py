@@ -7,12 +7,10 @@ from verbecc.conjugator import (
     Conjugator,
     get_verb_stem,
     ConjugatorError,
-    InvalidMoodError)
+    InvalidMoodError,
+    VerbNotFoundError)
 from verbecc.tense_template import TenseTemplate
 from verbecc.string_utils import prepend_with_que
-from verbecc.verbs_parser import (
-    VerbNotFoundError
-)
 
 conj = Conjugator()
 
@@ -831,6 +829,6 @@ test_conj_data = [
 def test_conjugator_conjugate(infinitive, expected_resp):
     assert conj.conjugate(infinitive) == expected_resp
 
-def test_conjugator_conjugate_vert_not_found():
+def test_conjugator_conjugate_verb_not_found():
     with pytest.raises(VerbNotFoundError):
         conj.conjugate("abcdefg")
