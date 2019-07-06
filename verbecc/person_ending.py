@@ -16,8 +16,8 @@ class PersonEnding:
             <p></p>
 
     person
-    A grammar_defines.Person enum value indicating which person 
-    this PersonEnding is for, e.g. for aim:er, "ez" is Person.SecondPersonPlural
+    A grammar_defines.PERSONS value indicating which person 
+    this PersonEnding is for, e.g. for aim:er, "ez" is '2p' (second person plural)
     """
     def __init__(self, p_elem, person):
         self.person = person

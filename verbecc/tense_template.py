@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from .person_ending import PersonEnding
-from .grammar_defines import (
-    IMPERATIVE_PRESENT_PERSONS,
-    Person, get_person_by_pronoun)
-
+from . import person_ending
+from . import grammar_defines
 
 class TenseTemplate:
     """
@@ -32,29 +29,28 @@ class TenseTemplate:
         self.name = tense_elem.tag
         """
         Normally each <p> elem defines six grammatical persons:
-            (see grammar_defines.Person)
-            [0]= 1st person singular (je)
-            [1]= 2nd person singular (tu)
-            [2]= 3rd person singular (il, elle, on)
-            [3]= 1st person plural (nous)
-            [4]= 2nd person plural (vous)
-            [5]= 3rd person plural (ils, elles)
+            (see grammar_defines.PERSONS)
+            [0]= '1s' (je)
+            [1]= '2s' (tu)
+            [2]= '3s' (il, elle, on)
+            [3]= '1p' (nous)
+            [4]= '2p' (vous)
+            [5]= '3p' (ils, elles)
 
         The following tenses have all 6 Persons:
           présent, impafait, futur, passé-simple
         These do not:
           infinitive-present has only 1
           imperative-present has 3
-            [0]= SecondPersonSingular e.g. lève-toi
-            [2]= FirstPersonPlural e.g. levons-nous
-            [3]= SecondPersonPlural e.g. levez-vous
+            [0]= '2s' e.g. lève-toi
+            [2]= '1p' e.g. levons-nous
+            [3]= '2p' e.g. levez-vous
           participe-présent has 1
           participe-passé has 4
-              (see grammar_defines.ParticipleInflection)
-              [0]= MasculineSingular
-              [1]= MasculinePlural
-              [2]= FeminineSingular
-              [3]= FemininePlural
+              [0]= ms
+              [1]= mp
+              [2]= fs
+              [3]= fp
 
         For some verbs, e.g. être, the past-participle
         is the same for all 4 inflections, so the xml omits them:
@@ -77,10 +73,10 @@ class TenseTemplate:
         self.person_endings = []
         person_num = 0
         for p_elem in tense_elem.findall('p'):
-            person = Person(person_num)
+            person = grammar_defines.PERSONS[person_num]
             if self.name == 'imperatif-présent':
-                person = IMPERATIVE_PRESENT_PERSONS[person_num]
-            person_ending = PersonEnding(p_elem, person)
+                person = grammar_defines.IMPERATIVE_PRESENT_PERSONS[person_num]
+            pe = person_ending.PersonEnding(p_elem, person)
             person_num += 1
-            if len(person_ending.endings) > 0:
-                self.person_endings.append(person_ending)
+            if len(pe.endings) > 0:
+                self.person_endings.append(pe)

@@ -3,7 +3,6 @@
 from lxml import etree
 
 from verbecc.person_ending import PersonEnding
-from verbecc.grammar_defines import Person
 from verbecc.tense_template import TenseTemplate
 
 def test_tense_and_person():
@@ -21,7 +20,7 @@ def test_tense_and_person():
     assert tense.name == tense_name
     assert tense.person_endings[0].get_ending() == "ie"
     assert tense.person_endings[0].get_alternate_ending() == "ye"
-    assert tense.person_endings[0].get_person() == Person.FirstPersonSingular
+    assert tense.person_endings[0].get_person() == '1s'
     assert tense.person_endings[3].get_ending() == "yons"
     assert tense.person_endings[3].get_alternate_ending() is None
-    assert tense.person_endings[3].get_person() == Person.FirstPersonPlural
+    assert tense.person_endings[3].get_person() == '1p'
