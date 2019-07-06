@@ -4,13 +4,9 @@ from enum import Enum
 
 PERSONS = ('1s', '2s', '3s', '1p', '2p', '3p')
 
-class ParticipleInflection(Enum):
-    MasculineSingular = 0
-    MasculinePlural = 1
-    FeminineSingular = 2
-    FemininePlural = 3
-
 IMPERATIVE_PRESENT_PERSONS = ('2s', '1p', '2p')
+
+PARTICIPLE_INFLECTIONS = ('ms', 'mp', 'fs', 'fp')
 
 TENSES_CONJUGATED_WITHOUT_PRONOUNS = ['infinitif-présent', 'participe-présent', 
                                       'imperatif-présent', 'participe-passé']
@@ -107,6 +103,6 @@ def get_person_by_pronoun(pronoun):
 
 def get_default_participle_inflection_for_person(person):
     if person[1] == 's':
-        return ParticipleInflection.MasculineSingular
+        return 'ms'
     else:
-        return ParticipleInflection.MasculinePlural
+        return 'mp'

@@ -244,7 +244,7 @@ class Conjugator:
             for i, hv in enumerate(hvconj):
                 participle_inflection = \
                     grammar_defines.get_default_participle_inflection_for_person(persons[i])
-                p = participle[participle_inflection.value]
+                p = participle[grammar_defines.PARTICIPLE_INFLECTIONS.index(participle_inflection)]
                 ret.append(hv + ' ' + p)
         if mood_name == 'subjonctif':
             ret = [prepend_with_que(i) for i in ret]
