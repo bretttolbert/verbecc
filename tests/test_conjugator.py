@@ -1,15 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from lxml import etree
-from mock import patch
-from verbecc.conjugator import (
-    Conjugator,
-    ConjugatorError,
-    InvalidMoodError,
-    VerbNotFoundError)
-from verbecc.tense_template import TenseTemplate
-from verbecc.string_utils import prepend_with_que
+from verbecc.conjugator import (Conjugator,
+                                VerbNotFoundError)
+from verbecc import string_utils
 
 cg = Conjugator()
 
@@ -28,23 +22,6 @@ def test_conjugator_conjugate(infinitive):
     for infinitive in test_verbs:
         output = cg.conjugate(infinitive)
         assert output
-
-def test_conjugator_conjugate_simple_mood_tense():
-    verb_stem = u"man"
-    tense_elem = etree.fromstring(
-        u"""<présent>
-        <p><i>ge</i></p>
-        <p><i>ges</i></p>
-        <p><i>ge</i></p>
-        <p><i>geons</i></p>
-        <p><i>gez</i></p>
-        <p><i>gent</i></p>
-        </présent>""")
-    tense_name = 'présent'
-    tense_template = TenseTemplate(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, 'indicatif', tense_template)
-    assert len(out) == 6
-    assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
 
 def test_conjugator_conjugate_passe_compose_with_avoir():
     assert cg.conjugate_mood_tense('manger', 'indicatif', 'passé-composé') == [
@@ -199,69 +176,6 @@ def test_conjugator_conjugate_imperatif_passe_with_etre():
     "soyons allés",
     "soyez allés"
     ]
-
-@patch('verbecc.person_ending.PersonEnding')
-def test_conjugator_conjugate_simple_mood_tense_pronoun(mock_person):
-    verb_stem = u"man"
-    pronoun = u"je"
-    ending = u"ge"
-    conjugation = cg._conjugate_simple_mood_tense_pronoun(verb_stem, ending, pronoun)
-    assert conjugation == u"je mange"
-
-def test_conjugator_prepend_with_que():
-    assert prepend_with_que("tu manges") == "que tu manges"
-    assert prepend_with_que("il mange") == "qu'il mange"
-    assert prepend_with_que("elles mangent") == "qu'elles mangent"
-
-def test_conjugator_get_verb_stem():
-    verb_stem = cg._get_verb_stem(u"manger", u"man:ger")
-    assert verb_stem == u"man"
-    verb_stem = cg._get_verb_stem(u"téléphoner", u"aim:er")
-    assert verb_stem == u"téléphon"
-    verb_stem = cg._get_verb_stem(u"vendre", u"ten:dre")
-    assert verb_stem == u"ven"
-    # In the case of irregular verbs, the verb stem is empty string
-    verb_stem = cg._get_verb_stem(u"aller", u":aller")
-    assert verb_stem == u""
-    # The infinitive ending must match the template ending
-    with pytest.raises(ConjugatorError):
-        verb_stem = cg._get_verb_stem(u"vendre", u"man:ger")
-
-def test_conjugator_impersonal_verbs():
-    impersonal_verbs = \
-        [v.infinitive for v in cg._verb_parser.verbs
-        if cg._is_impersonal_verb(v.infinitive)]
-    assert impersonal_verbs == [
-    "advenir",
-    "apparoir",
-    "bruiner",
-    "bruire",
-    "chaloir",
-    "clore",
-    "déclore",
-    "échoir",
-    "éclore",
-    "enclore",
-    "falloir",
-    "forclore",
-    "frire",
-    "grêler",
-    "messeoir",
-    "neiger",
-    "pleuvoir",
-    "seoir",
-    "sourdre"]
-
-test_conjugator_verb_can_be_reflexive_data = [
-    ("être", False),
-    ("lever", True),
-    ("pleuvoir", False),
-    ("manger", True)
-]
-@pytest.mark.parametrize("infinitive,expected_result", 
-                         test_conjugator_verb_can_be_reflexive_data)
-def test_conjugator_verb_can_be_reflexive(infinitive, expected_result):
-    assert cg._verb_can_be_reflexive(infinitive) == expected_result
 
 expected_resp_conj_manger = {
 "verb": {
