@@ -28,15 +28,24 @@ class VerbsParser:
         for child in root:
             if child.tag == 'v':
                 self.verbs.append(verb.Verb(child))
-        self.verbs = sorted(self.verbs, key=lambda x: x.infinitive_no_accents)
-        self._keys = [verb.infinitive_no_accents for verb in self.verbs]
+
+        self.verbs = sorted(self.verbs, key=lambda x: x.infinitive)
+        self._infinitives = [verb.infinitive for verb in self.verbs]
+        self._verbs_no_accents = sorted(self.verbs, key=lambda x: x.infinitive_no_accents)
+        self._infinitives_no_accents = [verb.infinitive_no_accents for verb in self.verbs]
 
     def find_verb_by_infinitive(self, infinitive):
-        """Assumes verbs are already sorted by infinitive"""
-        infinitive_no_accents = string_utils.strip_accents(infinitive.lower())
-        i = bisect_left(self._keys, infinitive_no_accents)
-        if i != len(self._keys) and self._keys[i] == infinitive_no_accents:
+        """First try to find with accents, e.g. if infinitive is 'abañar',
+        search for 'abañar' and not 'abanar'. 
+        If not found then try searching with accents stripped."""
+        i = bisect_left(self._infinitives, infinitive)
+        if i != len(self._infinitives) and self._infinitives[i] == infinitive:
             return self.verbs[i]
+        infinitive_no_accents = string_utils.strip_accents(infinitive.lower())
+        i = bisect_left(self._infinitives_no_accents, infinitive_no_accents)
+        if (i != len(self._infinitives_no_accents) 
+        and self._infinitives_no_accents[i] == infinitive_no_accents):
+            return self._verbs_no_accents[i]
         raise exceptions.VerbNotFoundError
 
     def get_verbs_that_start_with(self, pre, max_results=10):

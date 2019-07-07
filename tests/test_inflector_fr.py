@@ -25,22 +25,22 @@ def test_split_reflexive():
 
 inf = inflector_fr.InflectorFr()
 
-test_inflector_verb_can_be_reflexive_data = [
+test_inflector_fr_verb_can_be_reflexive_data = [
     ("être", False),
     ("lever", True),
     ("pleuvoir", False),
     ("manger", True)
 ]
 @pytest.mark.parametrize("infinitive,expected_result", 
-                         test_inflector_verb_can_be_reflexive_data)
-def test_inflector_verb_can_be_reflexive(infinitive, expected_result):
+                         test_inflector_fr_verb_can_be_reflexive_data)
+def test_inflector_fr_verb_can_be_reflexive(infinitive, expected_result):
     assert inf._verb_can_be_reflexive(infinitive) == expected_result
 
-def test_inflector_impersonal_verbs():
+def test_inflector_fr_impersonal_verbs():
     impersonal_verbs = \
         [v.infinitive for v in inf._verb_parser.verbs
         if inf._is_impersonal_verb(v.infinitive)]
-    assert impersonal_verbs == [
+    assert set(impersonal_verbs) == set([
     "advenir",
     "apparoir",
     "bruiner",
@@ -59,9 +59,9 @@ def test_inflector_impersonal_verbs():
     "neiger",
     "pleuvoir",
     "seoir",
-    "sourdre"]
+    "sourdre"])
 
-def test_inflector_conjugate_simple_mood_tense():
+def test_inflector_fr_conjugate_simple_mood_tense():
     verb_stem = u"man"
     tense_elem = etree.fromstring(
         u"""<présent>
@@ -78,7 +78,7 @@ def test_inflector_conjugate_simple_mood_tense():
     assert len(out) == 6
     assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
 
-def test_inflector_get_verb_stem():
+def test_inflector_fr_get_verb_stem():
     verb_stem = inf._get_verb_stem(u"manger", u"man:ger")
     assert verb_stem == u"man"
     verb_stem = inf._get_verb_stem(u"téléphoner", u"aim:er")

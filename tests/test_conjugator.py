@@ -773,7 +773,7 @@ test_get_verbs_that_start_with_data = [
         "se léviger",
         "se levretter"
     ]),
-        ("s'aim", [
+    ("s'aim", [
         "s'aimanter",
         "s'aimer"
     ])
@@ -782,4 +782,4 @@ test_get_verbs_that_start_with_data = [
 @pytest.mark.parametrize("query,expected_resp",
                          test_get_verbs_that_start_with_data)
 def test_conjugator_get_verbs_that_start_with(query, expected_resp):
-    assert cg.get_verbs_that_start_with(query, max_results=10) == expected_resp
+    assert set(cg.get_verbs_that_start_with(query, max_results=10)) == set(expected_resp)

@@ -24,6 +24,9 @@ class Conjugator:
         return self._inflector.conjugate_mood_tense( 
             infinitive, mood_name, tense_name)
 
+    def get_verbs_list(self):
+        return self._inflector.get_verbs_list()
+
     def find_verb_by_infinitive(self, infinitive):
         return self._inflector.find_verb_by_infinitive(infinitive)
 
