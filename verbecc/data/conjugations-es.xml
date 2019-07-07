@@ -112,7 +112,7 @@
 <!ATTLIST Gerundio-Gerondio xmlns CDATA #FIXED "">
 <!ELEMENT Participo-Participo (p)>
 <!ATTLIST Participo-Participo xmlns CDATA #FIXED "">
-<!ELEMENT p (i)>
+<!ELEMENT p (i)+>
 <!ATTLIST p xmlns CDATA #FIXED "">
 <!ELEMENT i (#PCDATA)>
 <!ATTLIST i xmlns CDATA #FIXED "">
@@ -121,7 +121,71 @@
 
 <template name="abol:ir">
 	<Indicativo>
-		</Indicativo>
+		<Indicativo-presente>
+			<p><i>o</i></p>
+			<p><i>es</i><i>ís</i></p>
+			<p><i>e</i></p>
+			<p><i>imos</i></p>
+			<p><i>ís</i></p>
+			<p><i>en</i></p>
+		</Indicativo-presente>
+		<Indicativo-pretérito-perfecto-compuesto>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+		</Indicativo-pretérito-perfecto-compuesto>
+		<Indicativo-pretérito-imperfecto>
+			<p><i>ía</i></p>
+			<p><i>ías</i></p>
+			<p><i>ía</i></p>
+			<p><i>íamos</i></p>
+			<p><i>íais</i></p>
+			<p><i>ían</i></p>
+		</Indicativo-pretérito-imperfecto>
+		<Indicativo-pretérito-pluscuamperfecto>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+		</Indicativo-pretérito-pluscuamperfecto>
+		<Indicativo-pretérito-perfecto-simple>
+			<p><i>ía</i></p>
+			<p><i>ías</i></p>
+			<p><i>ía</i></p>
+			<p><i>íamos</i></p>
+			<p><i>íais</i></p>
+			<p><i>ían</i></p>
+		</Indicativo-pretérito-perfecto-simple>
+		<Indicativo-pretérito-anterior>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+		</Indicativo-pretérito-anterior>
+		<Indicativo-futuro>
+			<p><i>iré</i></p>
+			<p><i>irás</i></p>
+			<p><i>irrá</i></p>
+			<p><i>iremos</i></p>
+			<p><i>iréis</i></p>
+			<p><i>irán</i></p>
+		</Indicativo-futuro>
+		<Indicativo-futuro-perfecto>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+			<p><i>ido</i></p>
+		</Indicativo-futuro-perfecto>
+	</Indicativo>
 	<Subjuntivo>
 		</Subjuntivo>
 	<Imperativo>
