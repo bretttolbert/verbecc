@@ -13,7 +13,7 @@ class ConjugationTemplate:
         try:
             self.name = u'' + template_elem.get('name')
             self.moods = {}
-            for mood_elem in list(template_elem):
+            for mood_elem in template_elem:
                 mood = Mood(mood_elem)
                 self.moods[mood_elem.tag] = mood
                     
