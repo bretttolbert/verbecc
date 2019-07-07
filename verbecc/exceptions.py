@@ -11,6 +11,9 @@ class ConjugationTemplateError(Exception):
 class InvalidMoodError(Exception):
     pass
 
+class InvalidTenseError(Exception):
+    pass
+
 class TemplateNotFoundError(Exception):
     pass
 

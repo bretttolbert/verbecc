@@ -106,7 +106,10 @@ class Inflector(ABC):
             hv_tense_name = comp_conj_map[mood_name][tense_name]
             return self._conjugate_compound(co, mood_name, hv_tense_name)
         else:
-            tense_template = co.template.moods[mood_name].tenses[tense_name]
+            mood = co.template.moods[mood_name]
+            if tense_name not in mood.tenses:
+                raise exceptions.InvalidTenseError
+            tense_template = mood.tenses[tense_name]
             return self._conjugate_simple_mood_tense(
                 co.verb_stem, mood_name, tense_template,
                 co.is_reflexive)
