@@ -8,6 +8,9 @@ class ConjugationsParserError(Exception):
 class ConjugationTemplateError(Exception):
     pass
 
+class InvalidLangError(Exception):
+    pass
+
 class InvalidMoodError(Exception):
     pass
 

@@ -1,8 +1,8 @@
+# -*- coding: utf-8 -*-
+
 import copy
 
 from . import inflector
-from . import parse_conjugations
-from . import parse_verbs
 from . import grammar_defines
 from . import string_utils
 from . import exceptions
@@ -40,47 +40,6 @@ VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS = [
 "aller",
 "avoir"]
 
-def get_pronoun_suffix(person, gender='m'):
-    return '-' + get_default_pronoun(person, gender).replace('tu', 'toi')
-
-def get_default_pronoun(person, gender='m', is_reflexive=False):
-    ret = None
-    if person == '1s':
-        ret = 'je'
-        if is_reflexive:
-            ret += ' me'
-    elif person == '2s':
-        ret = 'tu'
-        if is_reflexive:
-            ret += ' te'
-    elif person == '3s':
-        ret = 'il'
-        if gender == 'f':
-            ret = 'elle'
-        if is_reflexive:
-            ret += ' se'
-    elif person == '1p':
-        ret = 'nous'
-        if is_reflexive:
-            ret += ' nous'
-    elif person == '2p':
-        ret = 'vous'
-        if is_reflexive:
-            ret += ' vous'
-    elif person == '3p':
-        ret = 'ils'
-        if gender == 'f':
-            ret = 'elles'
-        if is_reflexive:
-            ret += ' se'
-    return ret
-
-def get_default_participle_inflection_for_person(person):
-    if person[1] == 's':
-        return 'ms'
-    else:
-        return 'mp'
-
 def prepend_with_que(pronoun_string):
     if string_utils.starts_with_vowel(pronoun_string):
         return "qu'" + pronoun_string
@@ -96,8 +55,7 @@ def prepend_with_se(s):
 class InflectorFr(inflector.Inflector):
     def __init__(self):
         self.lang = 'fr'
-        self._verb_parser = parse_verbs.VerbsParser(self.lang)
-        self._conj_parser = parse_conjugations.ConjugationsParser(self.lang)
+        super(InflectorFr, self).__init__()
 
     def _is_impersonal_verb(self, infinitive):
         ret = False
@@ -122,6 +80,41 @@ class InflectorFr(inflector.Inflector):
             infinitive = infinitive[2:]
         return is_reflexive, infinitive
 
+    def _get_pronoun_suffix(self, person, gender='m'):
+        return '-' + self._get_default_pronoun(person, gender).replace('tu', 'toi')
+
+    def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
+        ret = ''
+        if person == '1s':
+            ret = 'je'
+            if is_reflexive:
+                ret += ' me'
+        elif person == '2s':
+            ret = 'tu'
+            if is_reflexive:
+                ret += ' te'
+        elif person == '3s':
+            ret = 'il'
+            if gender == 'f':
+                ret = 'elle'
+            if is_reflexive:
+                ret += ' se'
+        elif person == '1p':
+            ret = 'nous'
+            if is_reflexive:
+                ret += ' nous'
+        elif person == '2p':
+            ret = 'vous'
+            if is_reflexive:
+                ret += ' vous'
+        elif person == '3p':
+            ret = 'ils'
+            if gender == 'f':
+                ret = 'elles'
+            if is_reflexive:
+                ret += ' se'
+        return ret
+
     def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
                                      tense_template, is_reflexive=False):
         ret = []
@@ -135,11 +128,11 @@ class InflectorFr(inflector.Inflector):
                     if mood_name != 'imperatif':
                         conj = prepend_with_se(conj)
                     else:
-                        conj += get_pronoun_suffix(person_ending.get_person())
+                        conj += self._get_pronoun_suffix(person_ending.get_person())
                 ret.append(conj)
         else:
             for person_ending in tense_template.person_endings:
-                pronoun = get_default_pronoun(
+                pronoun = self._get_default_pronoun(
                     person_ending.get_person(), is_reflexive=is_reflexive)
                 ending = person_ending.get_ending()
 
@@ -217,7 +210,7 @@ class InflectorFr(inflector.Inflector):
         else:
             for i, hv in enumerate(hvconj):
                 participle_inflection = \
-                    get_default_participle_inflection_for_person(
+                    self._get_default_participle_inflection_for_person(
                         persons[i])
                 p = participle[
                     grammar_defines.PARTICIPLE_INFLECTIONS.index(

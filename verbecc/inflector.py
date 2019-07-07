@@ -1,14 +1,17 @@
+# -*- coding: utf-8 -*-
+
 from abc import ABC, abstractmethod
 
 from . import grammar_defines
 from . import string_utils
 from . import exceptions
+from . import parse_verbs
+from . import parse_conjugations
 
 class Inflector(ABC):
     def __init__(self):
-        self.lang = 'default'
-        self._verb_parser = None
-        self._conj_parser = None
+        self._verb_parser = parse_verbs.VerbsParser(self.lang)
+        self._conj_parser = parse_conjugations.ConjugationsParser(self.lang)
 
     def conjugate(self, infinitive):
         co = self._get_conj_obs(infinitive)
@@ -130,6 +133,15 @@ class Inflector(ABC):
             hv_tense_name: tense_name for conjugating helping verb
         """
         return {}
+
+    def _get_default_participle_inflection_for_person(self, person):
+        if person[1] == 's':
+            return 'ms'
+        else:
+            return 'mp'
+
+    def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
+        return ''
 
     @abstractmethod
     def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 

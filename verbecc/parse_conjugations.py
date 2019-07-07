@@ -15,7 +15,7 @@ class ConjugationsParser:
         parser = etree.XMLParser(dtd_validation=True, encoding='utf-8')
         tree = etree.parse(
             resource_filename("verbecc",
-                              "data/conjugations_{}.xml".format(lang)),
+                              "data/conjugations-{}.xml".format(lang)),
             parser)
         root = tree.getroot()
         root_tag = 'conjugation-{}'.format(lang)

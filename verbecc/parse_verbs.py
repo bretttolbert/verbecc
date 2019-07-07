@@ -18,7 +18,7 @@ class VerbsParser:
         parser = etree.XMLParser(encoding='utf-8')
         tree = etree.parse(resource_filename(
                            "verbecc",
-                           "data/verbs_{}.xml".format(lang)),
+                           "data/verbs-{}.xml".format(lang)),
                            parser)
         root = tree.getroot()
         root_tag = 'verbs-{}'.format(lang)

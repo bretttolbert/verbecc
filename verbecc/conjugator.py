@@ -4,7 +4,12 @@ from . import inflector_fr
 
 class Conjugator:
     def __init__(self, lang='fr'):
-        self._inflector = inflector_fr.InflectorFr()
+        if lang == 'fr':
+            self._inflector = inflector_fr.InflectorFr()
+        elif lang == 'es':
+            self._inflector = inflector_es.InfelctorEs()
+        else:
+            raise InvalidLangError
     
     def conjugate(self, infinitive):
         return self._inflector.conjugate(infinitive)
