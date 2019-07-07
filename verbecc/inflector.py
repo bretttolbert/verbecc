@@ -53,17 +53,10 @@ class Inflector(ABC):
         return infinitive[:len(infinitive) - len(template_ending)]
 
     def _is_impersonal_verb(self, infinitive):
-        ret = False
-        verb = self.find_verb_by_infinitive(infinitive)
-        template = self.find_template(verb.template)
-        if len(template.moods['indicatif'].tenses['présent'].person_endings) < 6:
-            ret = True
-        return ret
+        return False
 
     def _verb_can_be_reflexive(self, infinitive):
-        return (not self._is_impersonal_verb(infinitive)
-            and infinitive not in 
-            grammar_defines.VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
+        return not self._is_impersonal_verb(infinitive) 
 
     class ConjugationObjects:
         def __init__(self, infinitive, verb, template, verb_stem, is_reflexive):
@@ -95,10 +88,8 @@ class Inflector(ABC):
     def _get_simple_conjugations_for_mood(self, co, mood_name):
         ret = {}
         mood = co.template.moods[mood_name]
-        for tense_name, tense_template in mood.tenses.items():
-            ret[tense_name] = self._conjugate_simple_mood_tense(
-                co.verb_stem, mood_name, tense_template,
-                co.is_reflexive)
+        for tense_name in mood.tenses:
+            ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
         return ret
 
     def _get_compound_conjugations_for_mood(self, co, mood_name):
@@ -109,5 +100,35 @@ class Inflector(ABC):
                 ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
         return ret
 
+    def _conjugate_mood_tense(self, co, mood_name, tense_name):
+        comp_conj_map = self._get_compound_conjugations_map()
+        if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
+            hv_tense_name = comp_conj_map[mood_name][tense_name]
+            return self._conjugate_compound(co, mood_name, hv_tense_name)
+        else:
+            tense_template = co.template.moods[mood_name].tenses[tense_name]
+            return self._conjugate_simple_mood_tense(
+                co.verb_stem, mood_name, tense_template,
+                co.is_reflexive)
+
+    @abstractmethod
+    def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
+                                  tense_template, is_reflexive=False):
+        pass
+
+    @abstractmethod
+    def _conjugate_simple_mood_tense_pronoun(self, verb_stem, ending, pronoun):
+        pass
+
     def _get_compound_conjugations_map(self):
         return {}
+
+    @abstractmethod
+    def _conjugate_compound(self, co, mood_name, hv_tense_name):
+        """Conjugate a compound tense
+        Args:
+            co: ConjugationObjects for the verb being conjugated
+            mood_name: mood verb is being conjugated in
+            hv_tense_name: tense_name for conjugating helping verb
+        """
+        pass
