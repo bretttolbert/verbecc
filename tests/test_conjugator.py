@@ -754,6 +754,31 @@ def test_conjugator_conjugate_invalid_tense():
     with pytest.raises(exceptions.InvalidTenseError):
         cg.conjugate_mood_tense("manger", "indicatif", "oops")
 
+expected_resp_etre = {"value":{
+                "infinitive":"être",
+                "infinitive_no_accents": "etre",
+                "template":":être",
+                "translation_en":"be",
+                "impersonal": False}}
+expected_resp_manger = {"value":{
+                "infinitive":"manger",
+                "infinitive_no_accents": "manger",
+                "template":"man:ger",
+                "translation_en":"eat",
+                "impersonal": False}}
+test_find_infinitive_data = [
+    (u"manger", expected_resp_manger),
+    (u"être", expected_resp_etre),
+    (u"etre", expected_resp_etre),
+    (u"Être", expected_resp_etre),
+    (u"Etre", expected_resp_etre)
+]
+
+@pytest.mark.parametrize("query,expected_resp", 
+                         test_find_infinitive_data)
+def test_conjugator_find_verb_by_infinitive_verb(query, expected_resp):
+    cg.find_verb_by_infinitive(query) == expected_resp
+
 def test_conjugator_find_verb_by_infinitive_verb_not_found():
     with pytest.raises(exceptions.VerbNotFoundError):
         cg.find_verb_by_infinitive("oops")

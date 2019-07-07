@@ -15211,134 +15211,134 @@
 <template name=":abarse">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>ano</i></p>
-			<p><i>anas</i></p>
-			<p><i>ana</i></p>
-			<p><i>anamos</i></p>
-			<p><i>anáis</i></p>
-			<p><i>anan</i></p>
+			<p><i>abo</i></p>
+			<p><i>abas</i></p>
+			<p><i>aba</i></p>
+			<p><i>abamos</i></p>
+			<p><i>abáis</i></p>
+			<p><i>aban</i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>anaba</i></p>
-			<p><i>anabas</i></p>
-			<p><i>anaba</i></p>
-			<p><i>anábamos</i></p>
-			<p><i>anabais</i></p>
-			<p><i>anaban</i></p>
+			<p><i>ababa</i></p>
+			<p><i>ababas</i></p>
+			<p><i>ababa</i></p>
+			<p><i>abábamos</i></p>
+			<p><i>ababais</i></p>
+			<p><i>ababan</i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>ané</i></p>
-			<p><i>anaste</i></p>
-			<p><i>anó</i></p>
-			<p><i>anamos</i></p>
-			<p><i>anasteis</i></p>
-			<p><i>anaron</i></p>
+			<p><i>abé</i></p>
+			<p><i>abaste</i></p>
+			<p><i>abó</i></p>
+			<p><i>abamos</i></p>
+			<p><i>abasteis</i></p>
+			<p><i>abaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>anaré</i></p>
-			<p><i>anarás</i></p>
-			<p><i>anará</i></p>
-			<p><i>anaremos</i></p>
-			<p><i>anaréis</i></p>
-			<p><i>anarán</i></p>
+			<p><i>abaré</i></p>
+			<p><i>abarás</i></p>
+			<p><i>abará</i></p>
+			<p><i>abaremos</i></p>
+			<p><i>abaréis</i></p>
+			<p><i>abarán</i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>ane</i></p>
-			<p><i>anes</i></p>
-			<p><i>ane</i></p>
-			<p><i>anemos</i></p>
-			<p><i>anéis</i></p>
-			<p><i>anen</i></p>
+			<p><i>abe</i></p>
+			<p><i>abes</i></p>
+			<p><i>abe</i></p>
+			<p><i>abemos</i></p>
+			<p><i>abéis</i></p>
+			<p><i>aben</i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>anara</i></p>
-			<p><i>anaras</i></p>
-			<p><i>anara</i></p>
-			<p><i>anáramos</i></p>
-			<p><i>anarais</i></p>
-			<p><i>anaran</i></p>
+			<p><i>abara</i></p>
+			<p><i>abaras</i></p>
+			<p><i>abara</i></p>
+			<p><i>abáramos</i></p>
+			<p><i>abarais</i></p>
+			<p><i>abaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>anase</i></p>
-			<p><i>anases</i></p>
-			<p><i>anase</i></p>
-			<p><i>anásemos</i></p>
-			<p><i>anaseis</i></p>
-			<p><i>anasen</i></p>
+			<p><i>abase</i></p>
+			<p><i>abases</i></p>
+			<p><i>abase</i></p>
+			<p><i>abásemos</i></p>
+			<p><i>abaseis</i></p>
+			<p><i>abasen</i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>anare</i></p>
-			<p><i>anares</i></p>
-			<p><i>anare</i></p>
-			<p><i>anáremos</i></p>
-			<p><i>anareis</i></p>
-			<p><i>anaren</i></p>
+			<p><i>abare</i></p>
+			<p><i>abares</i></p>
+			<p><i>abare</i></p>
+			<p><i>abáremos</i></p>
+			<p><i>abareis</i></p>
+			<p><i>abaren</i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
@@ -15359,37 +15359,37 @@
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>anaría</i></p>
-			<p><i>anarías</i></p>
-			<p><i>anaría</i></p>
-			<p><i>anaríamos</i></p>
-			<p><i>anaríais</i></p>
-			<p><i>anarían</i></p>
+			<p><i>abaría</i></p>
+			<p><i>abarías</i></p>
+			<p><i>abaría</i></p>
+			<p><i>abaríamos</i></p>
+			<p><i>abaríais</i></p>
+			<p><i>abarían</i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
+			<p><i>abado</i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
 		<Infinitivo-Infinitivo>
-			<p><i>anarse</i></p>
-			<p><i>anado</i></p>
+			<p><i>abarse</i></p>
+			<p><i>abado</i></p>
 		</Infinitivo-Infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<Gerundio-Gerondio>
-			<p><i>anándose</i></p>
-			<p><i>anado</i></p>
+			<p><i>abándose</i></p>
+			<p><i>abado</i></p>
 		</Gerundio-Gerondio>
 	</Gerundio>
 	<Participo>
 		<Participo-Participo>
-			<p><i>anado</i></p>
+			<p><i>abado</i></p>
 		</Participo-Participo>
 	</Participo>
 </template>
