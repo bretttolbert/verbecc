@@ -25,6 +25,25 @@ class Conjugator:
         self._verb_parser = parse_verbs.VerbsParser(lang)
         self._conj_parser = parse_conjugations.ConjugationsParser(lang)
         
+    def conjugate(self, infinitive):
+        co = self._get_conj_obs(infinitive)
+        moods = {}
+        for mood in co.template.moods:
+            moods[mood] = self._conjugate_mood(co, mood)
+        return {'verb': {'infinitive': co.verb.infinitive, 
+                         'template': co.verb.template,
+                         'translation_en': co.verb.translation_en,
+                         'stem': co.verb_stem}, 
+                'moods': moods}
+
+    def conjugate_mood(self, infinitive, mood_name):
+        co = self._get_conj_obs(infinitive)
+        return self._conjugate_mood(co, mood_name)
+
+    def conjugate_mood_tense(self, infinitive, mood_name, tense_name):
+        co = self._get_conj_obs(infinitive)
+        return self._conjugate_mood_tense(co, mood_name, tense_name)
+
     def find_verb_by_infinitive(self, infinitive):
         ret = None
         try:
@@ -40,21 +59,6 @@ class Conjugator:
         except parse_conjugations.TemplateNotFoundError:
             raise TemplateNotFoundError
         return ret
-
-    def conjugate(self, infinitive):
-        co = self._get_conj_obs(infinitive)
-        moods = {}
-        for mood in co.template.moods:
-            moods[mood] = self._get_full_conjugation_for_mood(co, mood)
-        return {'verb': {'infinitive': co.verb.infinitive, 
-                         'template': co.verb.template,
-                         'translation_en': co.verb.translation_en,
-                         'stem': co.verb_stem}, 
-                'moods': moods}
-
-    def get_full_conjugation_for_mood(self, infinitive, mood_name):
-        co = self._get_conj_obs(infinitive)
-        return self._get_full_conjugation_for_mood(co, mood_name)
 
     def get_verbs_that_start_with(self, query, max_results):
         query = query.lower()
@@ -108,35 +112,59 @@ class Conjugator:
         return Conjugator.ConjugationObjects(
             infinitive, verb, template, verb_stem, is_reflexive)     
 
-    def _get_full_conjugation_for_mood(self, co, mood_name):
-        conjugations = {}
+    def _conjugate_mood(self, co, mood_name):
         if mood_name not in co.template.moods:
             raise InvalidMoodError
-        self._get_simple_conjugations_for_mood(co, mood_name, conjugations);
-        self._get_compound_conjugations_for_mood(co, mood_name, conjugations)
-        return conjugations
+        ret = {}
+        ret.update(self._get_simple_conjugations_for_mood(co, mood_name))
+        ret.update(self._get_compound_conjugations_for_mood(co, mood_name))
+        return ret
 
-    def _get_simple_conjugations_for_mood(self, co, mood_name, conjugations):
+    def _get_simple_conjugations_for_mood(self, co, mood_name):
+        ret = {}
         mood = co.template.moods[mood_name]
-        for tense in mood.tenses:
-            tense_template = mood.tenses[tense]
-            conjugations[tense] = self._conjugate_specific_tense(
+        for tense_name, tense_template in mood.tenses.items():
+            ret[tense_name] = self._conjugate_simple_mood_tense(
                 co.verb_stem, mood_name, tense_template,
-                co.is_reflexive)        
+                co.is_reflexive)
+        return ret
 
-    def _get_compound_conjugations_for_mood(self, co, mood_name, conjugations):
-        if mood_name == 'indicatif':
-            conjugations['passé-composé'] = self._conjugate_passe_compose(co)
-            conjugations['plus-que-parfait'] = self._conjugate_plusqueparfait(co)
-            conjugations['futur-antérieur'] = self._conjugate_futur_anterieur(co)
-            conjugations['passé-antérieur'] = self._conjugate_passe_anterieur(co)
-        elif mood_name == 'subjonctif':
-            conjugations['passé'] = self._conjugate_subjonctif_passe(co)
-            conjugations['plus-que-parfait'] = self._conjugate_subjonctif_plusqueparfait(co)
-        elif mood_name == 'conditionnel':
-            conjugations['passé'] = self._conjugate_conditionnel_passe(co)
-        elif mood_name == 'imperatif':
-            conjugations['imperatif-passé'] = self._conjugate_imperatif_passe(co)
+    def _get_compound_conjugations_for_mood(self, co, mood_name):
+        ret = {}
+        comp_conj_map = self._get_compound_conjugations_map()
+        if mood_name in comp_conj_map:
+            for tense_name in comp_conj_map[mood_name]:
+                ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
+        return ret
+
+    def _get_compound_conjugations_map(self):
+        return {
+            'indicatif': {
+                'passé-composé': self._conjugate_passe_compose,
+                'plus-que-parfait': self._conjugate_plusqueparfait,
+                'futur-antérieur': self._conjugate_futur_anterieur,
+                'passé-antérieur': self._conjugate_passe_anterieur
+            },
+            'subjonctif': {
+                'passé': self._conjugate_subjonctif_passe,
+                'plus-que-parfait': self._conjugate_subjonctif_plusqueparfait
+            },
+            'conditionnel': {
+                'passé': self._conjugate_conditionnel_passe
+            },
+            'imperatif': {
+                'imperatif-passé': self._conjugate_imperatif_passe
+            }
+        }
+
+    def _conjugate_mood_tense(self, co, mood_name, tense_name):
+        comp_conj_map = self._get_compound_conjugations_map()
+        if tense_name in comp_conj_map[mood_name]:
+            return comp_conj_map[mood_name][tense_name](co)
+        else:
+            return self._conjugate_simple_mood_tense(
+                co.verb_stem, mood_name, tense_template,
+                co.is_reflexive)
 
     def _conjugate_passe_compose(self, co):
         return self._conjugate_compound(co, 'indicatif', 'indicatif', 'présent')
@@ -188,12 +216,12 @@ class Conjugator:
             if pe.person in persons:
                 hvperson_endings.append(pe)
         hvtense_template.person_endings = hvperson_endings
-        hvconj = self._conjugate_specific_tense(
+        hvconj = self._conjugate_simple_mood_tense(
             hvco.verb_stem, 
             'indicatif', 
             hvtense_template,
             co.is_reflexive)
-        participle = self._conjugate_specific_tense(
+        participle = self._conjugate_simple_mood_tense(
             co.verb_stem, 
             'participe', 
             co.template.moods['participe'].tenses['participe-passé'])
@@ -211,7 +239,7 @@ class Conjugator:
             ret = [string_utils.prepend_with_que(i) for i in ret]
         return ret
 
-    def _conjugate_specific_tense(self, verb_stem, mood_name, 
+    def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
                                   tense_template, is_reflexive=False):
         ret = []
         if tense_template.name in grammar_defines.TENSES_CONJUGATED_WITHOUT_PRONOUNS:
@@ -231,14 +259,14 @@ class Conjugator:
                 pronoun = grammar_defines.get_default_pronoun(
                     person_ending.get_person(), is_reflexive)
                 ending = person_ending.get_ending()
-                conjugation = self._conjugate_specific_tense_pronoun(
+                conjugation = self._conjugate_simple_mood_tense_pronoun(
                     verb_stem, ending, pronoun)
                 if mood_name == 'subjonctif':
                     conjugation = string_utils.prepend_with_que(conjugation)
                 ret.append(conjugation)
         return ret
 
-    def _conjugate_specific_tense_pronoun(self, verb_stem, ending, pronoun):
+    def _conjugate_simple_mood_tense_pronoun(self, verb_stem, ending, pronoun):
         ret = u''
         conjugated_verb = verb_stem + ending
         if pronoun[-1] == "e" and string_utils.starts_with_vowel(conjugated_verb):

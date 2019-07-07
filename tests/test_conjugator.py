@@ -29,7 +29,7 @@ def test_conjugator_conjugate(infinitive):
         output = cg.conjugate(infinitive)
         assert output
 
-def test_conjugator_conjugate_specific_tense():
+def test_conjugator_conjugate_simple_mood_tense():
     verb_stem = u"man"
     tense_elem = etree.fromstring(
         u"""<présent>
@@ -41,8 +41,8 @@ def test_conjugator_conjugate_specific_tense():
         <p><i>gent</i></p>
         </présent>""")
     tense_name = 'présent'
-    tense = TenseTemplate(tense_elem)
-    out = cg._conjugate_specific_tense(verb_stem, 'indicatif', tense)
+    tense_template = TenseTemplate(tense_elem)
+    out = cg._conjugate_simple_mood_tense(verb_stem, 'indicatif', tense_template)
     assert len(out) == 6
     assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
 
@@ -201,11 +201,11 @@ def test_conjugator_conjugate_imperatif_passe_with_etre():
     ]
 
 @patch('verbecc.person_ending.PersonEnding')
-def test_conjugator_conjugate_specific_tense_pronoun(mock_person):
+def test_conjugator_conjugate_simple_mood_tense_pronoun(mock_person):
     verb_stem = u"man"
     pronoun = u"je"
     ending = u"ge"
-    conjugation = cg._conjugate_specific_tense_pronoun(verb_stem, ending, pronoun)
+    conjugation = cg._conjugate_simple_mood_tense_pronoun(verb_stem, ending, pronoun)
     assert conjugation == u"je mange"
 
 def test_conjugator_prepend_with_que():
