@@ -143,23 +143,7 @@ class Inflector(ABC):
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         return ''
 
+    @abstractmethod
     def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
                                      tense_template, is_reflexive=False):
-        ret = []
-        for person_ending in tense_template.person_endings:
-            pronoun = self._get_default_pronoun(
-                person_ending.get_person(), is_reflexive=is_reflexive)
-            ending = person_ending.get_ending()
-
-            conjugation = ''
-            conjugated_verb = verb_stem + ending
-            if pronoun[-1] == "e" and string_utils.starts_with_vowel(conjugated_verb):
-                conjugation += pronoun[:-1] + "'"
-            else:
-                conjugation += pronoun + " "
-            conjugation += conjugated_verb
-
-            if mood_name == 'subjonctif':
-                conjugation = prepend_with_que(conjugation)
-            ret.append(conjugation)
-        return ret
+        pass
