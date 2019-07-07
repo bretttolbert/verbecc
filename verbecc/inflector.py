@@ -6,6 +6,7 @@ from . import exceptions
 
 class Inflector(ABC):
     def __init__(self):
+        self.lang = 'default'
         self._verb_parser = None
         self._conj_parser = None
 
@@ -36,7 +37,7 @@ class Inflector(ABC):
 
     def get_verbs_that_start_with(self, query, max_results):
         query = query.lower()
-        is_reflexive, query = string_utils.split_reflexive(query)
+        is_reflexive, query = self._split_reflexive(query)
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         if is_reflexive:
             matches = [string_utils.prepend_with_se(m) 
@@ -56,7 +57,10 @@ class Inflector(ABC):
         return False
 
     def _verb_can_be_reflexive(self, infinitive):
-        return not self._is_impersonal_verb(infinitive) 
+        return not self._is_impersonal_verb(infinitive)
+
+    def _split_reflexive(self, infinitive):
+        return (False, infinitive)
 
     class ConjugationObjects:
         def __init__(self, infinitive, verb, template, verb_stem, is_reflexive):
@@ -68,7 +72,7 @@ class Inflector(ABC):
 
     def _get_conj_obs(self, infinitive):
         infinitive = infinitive.lower()
-        is_reflexive, infinitive = string_utils.split_reflexive(infinitive)
+        is_reflexive, infinitive = self._split_reflexive(infinitive)
         if is_reflexive and not self._verb_can_be_reflexive(infinitive):
             raise exceptions.VerbNotFoundError("Verb cannot be reflexive")
         verb = self.find_verb_by_infinitive(infinitive)
@@ -94,14 +98,14 @@ class Inflector(ABC):
 
     def _get_compound_conjugations_for_mood(self, co, mood_name):
         ret = {}
-        comp_conj_map = self._get_compound_conjugations_map()
+        comp_conj_map = self._get_compound_conjugations_hv_map()
         if mood_name in comp_conj_map:
             for tense_name in comp_conj_map[mood_name]:
                 ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
         return ret
 
     def _conjugate_mood_tense(self, co, mood_name, tense_name):
-        comp_conj_map = self._get_compound_conjugations_map()
+        comp_conj_map = self._get_compound_conjugations_hv_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
             hv_tense_name = comp_conj_map[mood_name][tense_name]
             return self._conjugate_compound(co, mood_name, hv_tense_name)
@@ -114,7 +118,8 @@ class Inflector(ABC):
                 co.verb_stem, mood_name, tense_template,
                 co.is_reflexive)
 
-    def _get_compound_conjugations_map(self):
+    def _get_compound_conjugations_hv_map(self):
+        """"Returns a map of the tense of the helping verb for each compound mood and tense"""
         return {}
 
     def _conjugate_compound(self, co, mood_name, hv_tense_name):

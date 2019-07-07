@@ -9,6 +9,22 @@ from verbecc.exceptions import ConjugatorError
 
 inf = inflector_fr.InflectorFr()
 
+def test_prepend_with_que():
+    assert inflector_fr.prepend_with_que("tu manges") == "que tu manges"
+    assert inflector_fr.prepend_with_que("il mange") == "qu'il mange"
+    assert inflector_fr.prepend_with_que("elles mangent") == "qu'elles mangent"
+
+def test_prepend_with_se():
+    assert inflector_fr.prepend_with_se("lever") == "se lever"
+    assert inflector_fr.prepend_with_se("écrouler") == "s'écrouler"
+
+def test_split_reflexive():
+    assert inf._split_reflexive("se lever") == (True, "lever")
+    assert inf._split_reflexive("s'écrouler") == (True, "écrouler")
+    assert inf._split_reflexive("secouer") == (False, "secouer")
+
+inf = inflector_fr.InflectorFr()
+
 test_inflector_verb_can_be_reflexive_data = [
     ("être", False),
     ("lever", True),

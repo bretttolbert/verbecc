@@ -75,6 +75,24 @@ def get_default_pronoun(person, gender='m', is_reflexive=False):
             ret += ' se'
     return ret
 
+def get_default_participle_inflection_for_person(person):
+    if person[1] == 's':
+        return 'ms'
+    else:
+        return 'mp'
+
+def prepend_with_que(pronoun_string):
+    if string_utils.starts_with_vowel(pronoun_string):
+        return "qu'" + pronoun_string
+    else:
+        return "que " + pronoun_string
+
+def prepend_with_se(s):
+    if string_utils.starts_with_vowel(s):
+        return "s'" + s
+    else:
+        return "se " + s
+
 class InflectorFr(inflector.Inflector):
     def __init__(self):
         self.lang = 'fr'
@@ -94,6 +112,16 @@ class InflectorFr(inflector.Inflector):
             and infinitive not in 
             VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
 
+    def _split_reflexive(self, infinitive):
+        is_reflexive = False
+        if infinitive.startswith("se "):
+            is_reflexive = True
+            infinitive = infinitive[3:]
+        elif infinitive.startswith("s'"):
+            is_reflexive = True
+            infinitive = infinitive[2:]
+        return is_reflexive, infinitive
+
     def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
                                      tense_template, is_reflexive=False):
         ret = []
@@ -105,7 +133,7 @@ class InflectorFr(inflector.Inflector):
                 conj += verb_stem + person_ending.get_ending()
                 if is_reflexive:
                     if mood_name != 'imperatif':
-                        conj = string_utils.prepend_with_se(conj)
+                        conj = prepend_with_se(conj)
                     else:
                         conj += get_pronoun_suffix(person_ending.get_person())
                 ret.append(conj)
@@ -124,11 +152,11 @@ class InflectorFr(inflector.Inflector):
                 conjugation += conjugated_verb
 
                 if mood_name == 'subjonctif':
-                    conjugation = string_utils.prepend_with_que(conjugation)
+                    conjugation = prepend_with_que(conjugation)
                 ret.append(conjugation)
         return ret
 
-    def _get_compound_conjugations_map(self):
+    def _get_compound_conjugations_hv_map(self):
         return {
             'indicatif': {
                 'passé-composé': 'présent',
@@ -189,9 +217,12 @@ class InflectorFr(inflector.Inflector):
         else:
             for i, hv in enumerate(hvconj):
                 participle_inflection = \
-                    grammar_defines.get_default_participle_inflection_for_person(persons[i])
-                p = participle[grammar_defines.PARTICIPLE_INFLECTIONS.index(participle_inflection)]
+                    get_default_participle_inflection_for_person(
+                        persons[i])
+                p = participle[
+                    grammar_defines.PARTICIPLE_INFLECTIONS.index(
+                        participle_inflection)]
                 ret.append(hv + ' ' + p)
         if mood_name == 'subjonctif':
-            ret = [string_utils.prepend_with_que(i) for i in ret]
+            ret = [prepend_with_que(i) for i in ret]
         return ret
