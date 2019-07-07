@@ -10,7 +10,7 @@ class Conjugator:
         return self._inflector.conjugate(infinitive)
 
     def conjugate_mood(self, infinitive, mood_name):
-        return self._inflector.conjugate_mood(infinitive)
+        return self._inflector.conjugate_mood(infinitive, mood_name)
 
     def conjugate_mood_tense(self, infinitive, mood_name, tense_name):
         return self._inflector.conjugate_mood_tense( 

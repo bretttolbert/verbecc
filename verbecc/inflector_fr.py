@@ -40,21 +40,27 @@ VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS = [
 "aller",
 "avoir"]
 
-def get_pronoun_suffix(person):
+def get_pronoun_suffix(person, gender='m'):
     if person == '1s':
         return '-je'
     elif person == '2s':
         return '-toi'
     elif person == '3s':
-        return '-il'
+        if gender == 'm':
+            return '-il'
+        else:
+            return '-elle'
     elif person == '1p':
         return '-nous'
     elif person == '2p':
         return '-vous'
     elif person == '3p':
-        return '-ils'
+        if gender == 'm':
+            return '-ils'
+        else:
+            return '-elles'
 
-def get_default_pronoun(person, is_reflexive=False):
+def get_default_pronoun(person, gender='m', is_reflexive=False):
     ret = None
     if person == '1s':
         ret = 'je'
@@ -66,6 +72,8 @@ def get_default_pronoun(person, is_reflexive=False):
             ret += ' te'
     elif person == '3s':
         ret = 'il'
+        if gender == 'f':
+            ret = 'elle'
         if is_reflexive:
             ret += ' se'
     elif person == '1p':
@@ -78,6 +86,8 @@ def get_default_pronoun(person, is_reflexive=False):
             ret += ' vous'
     elif person == '3p':
         ret = 'ils'
+        if gender == 'f':
+            ret = 'elles'
         if is_reflexive:
             ret += ' se'
     return ret
