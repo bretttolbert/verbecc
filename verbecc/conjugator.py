@@ -140,62 +140,39 @@ class Conjugator:
     def _get_compound_conjugations_map(self):
         return {
             'indicatif': {
-                'passé-composé': self._conjugate_passe_compose,
-                'plus-que-parfait': self._conjugate_plusqueparfait,
-                'futur-antérieur': self._conjugate_futur_anterieur,
-                'passé-antérieur': self._conjugate_passe_anterieur
+                'passé-composé': 'présent',
+                'plus-que-parfait': 'imparfait',
+                'futur-antérieur': 'futur-simple',
+                'passé-antérieur': 'passé-simple'
             },
             'subjonctif': {
-                'passé': self._conjugate_subjonctif_passe,
-                'plus-que-parfait': self._conjugate_subjonctif_plusqueparfait
+                'passé': 'présent',
+                'plus-que-parfait': 'imparfait'
             },
             'conditionnel': {
-                'passé': self._conjugate_conditionnel_passe
+                'passé': 'présent'
             },
             'imperatif': {
-                'imperatif-passé': self._conjugate_imperatif_passe
+                'imperatif-passé': 'imperatif-présent'
             }
         }
 
     def _conjugate_mood_tense(self, co, mood_name, tense_name):
         comp_conj_map = self._get_compound_conjugations_map()
         if tense_name in comp_conj_map[mood_name]:
-            return comp_conj_map[mood_name][tense_name](co)
+            hv_tense_name = comp_conj_map[mood_name][tense_name]
+            return self._conjugate_compound(co, mood_name, hv_tense_name)
         else:
+            tense_template = co.template.moods[mood_name].tenses[tense_name]
             return self._conjugate_simple_mood_tense(
                 co.verb_stem, mood_name, tense_template,
                 co.is_reflexive)
 
-    def _conjugate_passe_compose(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'présent')
-
-    def _conjugate_plusqueparfait(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'imparfait')
-
-    def _conjugate_futur_anterieur(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'futur-simple')
-
-    def _conjugate_passe_anterieur(self, co):
-        return self._conjugate_compound(co, 'indicatif', 'indicatif', 'passé-simple')
-
-    def _conjugate_subjonctif_passe(self, co):
-        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'présent')
-
-    def _conjugate_subjonctif_plusqueparfait(self, co):
-        return self._conjugate_compound(co, 'subjonctif', 'subjonctif', 'imparfait')
-
-    def _conjugate_conditionnel_passe(self, co):
-        return self._conjugate_compound(co, 'conditionnel', 'conditionnel', 'présent')
-
-    def _conjugate_imperatif_passe(self, co):
-        return self._conjugate_compound(co, 'imperatif', 'imperatif', 'imperatif-présent')
-
-    def _conjugate_compound(self, co, mood_name, hv_mood_name, hv_tense_name):
+    def _conjugate_compound(self, co, mood_name, hv_tense_name):
         """Conjugate a compound tense
         Args:
             co: ConjugationObjects for the verb being conjugated
             mood_name: mood verb is being conjugated in
-            hv_mood_name: mood_name for conjugating helping verb
             hv_tense_name: tense_name for conjugating helping verb
         """
         ret = []
@@ -210,7 +187,7 @@ class Conjugator:
             helping_verb = 'être'
         hvco = self._get_conj_obs(helping_verb)
         hvtense_template = copy.deepcopy(
-            hvco.template.moods[hv_mood_name].tenses[hv_tense_name])
+            hvco.template.moods[mood_name].tenses[hv_tense_name])
         hvperson_endings = []
         for pe in hvtense_template.person_endings:
             if pe.person in persons:

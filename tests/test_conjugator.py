@@ -47,7 +47,7 @@ def test_conjugator_conjugate_simple_mood_tense():
     assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
 
 def test_conjugator_conjugate_passe_compose_with_avoir():
-    assert cg._conjugate_passe_compose(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'indicatif', 'passé-composé') == [
     "j'ai mangé",
     "tu as mangé",
     "il a mangé",
@@ -57,7 +57,7 @@ def test_conjugator_conjugate_passe_compose_with_avoir():
     ]
 
 def test_conjugator_conjugate_passe_compose_with_etre():
-    assert cg._conjugate_passe_compose(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'indicatif', 'passé-composé') == [
     "je suis allé",
     "tu es allé",
     "il est allé",
@@ -67,7 +67,7 @@ def test_conjugator_conjugate_passe_compose_with_etre():
     ]
 
 def test_conjugator_conjugate_subjonctif_passe_with_avoir():
-    assert cg._conjugate_subjonctif_passe(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'subjonctif', 'passé') == [
     "que j'aie mangé",
     "que tu aies mangé",
     "qu'il ait mangé",
@@ -77,7 +77,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_avoir():
     ]
 
 def test_conjugator_conjugate_subjonctif_passe_with_etre():
-    assert cg._conjugate_subjonctif_passe(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'subjonctif', 'passé') == [
     "que je sois allé",
     "que tu sois allé",
     "qu'il soit allé",
@@ -87,7 +87,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_etre():
     ]
 
 def test_conjugator_conjugate_conditionnel_passe_with_avoir():
-    assert cg._conjugate_conditionnel_passe(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'conditionnel', 'passé') == [
     "j'aurais mangé",
     "tu aurais mangé",
     "il aurait mangé",
@@ -97,7 +97,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_avoir():
     ]
 
 def test_conjugator_conjugate_conditionnel_passe_with_etre():
-    assert cg._conjugate_conditionnel_passe(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'conditionnel', 'passé') == [
     "je serais allé",
     "tu serais allé",
     "il serait allé",
@@ -107,7 +107,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_etre():
     ]
 
 def test_conjugator_conjugate_plusqueparfait_with_avoir():
-    assert cg._conjugate_plusqueparfait(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'indicatif', 'plus-que-parfait') == [
     "j'avais mangé",
     "tu avais mangé",
     "il avait mangé",
@@ -117,7 +117,7 @@ def test_conjugator_conjugate_plusqueparfait_with_avoir():
     ]
 
 def test_conjugator_conjugate_plusqueparfait_with_etre():
-    assert cg._conjugate_plusqueparfait(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'indicatif', 'plus-que-parfait') == [
     "j'étais allé",
     "tu étais allé",
     "il était allé",
@@ -127,7 +127,7 @@ def test_conjugator_conjugate_plusqueparfait_with_etre():
     ]
 
 def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir():
-    assert cg._conjugate_subjonctif_plusqueparfait(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'subjonctif', 'plus-que-parfait') == [
     "que j'eusse mangé",
     "que tu eusses mangé",
     "qu'il eût mangé",
@@ -137,7 +137,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir():
     ]
 
 def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre():
-    assert cg._conjugate_subjonctif_plusqueparfait(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'subjonctif', 'plus-que-parfait') == [
     "que je fusse allé",
     "que tu fusses allé",
     "qu'il fût allé",
@@ -147,7 +147,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre():
     ]
 
 def test_conjugator_conjugate_futur_anterieur_with_avoir():
-    assert cg._conjugate_futur_anterieur(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'indicatif', 'futur-antérieur') == [
     "j'aurai mangé",
     "tu auras mangé",
     "il aura mangé",
@@ -157,7 +157,7 @@ def test_conjugator_conjugate_futur_anterieur_with_avoir():
     ]
 
 def test_conjugator_conjugate_futur_anterieur_with_etre():
-    assert cg._conjugate_futur_anterieur(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'indicatif', 'futur-antérieur') == [
     "je serai allé",
     "tu seras allé",
     "il sera allé",
@@ -167,7 +167,7 @@ def test_conjugator_conjugate_futur_anterieur_with_etre():
     ]
 
 def test_conjugator_conjugate_passe_anterieur_with_avoir():
-    assert cg._conjugate_passe_anterieur(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'indicatif', 'passé-antérieur') == [
     "j'eus mangé",
     "tu eus mangé",
     "il eut mangé",
@@ -177,7 +177,7 @@ def test_conjugator_conjugate_passe_anterieur_with_avoir():
     ]
 
 def test_conjugator_conjugate_passe_anterieur_with_etre():
-    assert cg._conjugate_passe_anterieur(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'indicatif', 'passé-antérieur') == [
     "je fus allé",
     "tu fus allé",
     "il fut allé",
@@ -187,14 +187,14 @@ def test_conjugator_conjugate_passe_anterieur_with_etre():
     ]
 
 def test_conjugator_conjugate_imperatif_passe_with_avoir():
-    assert cg._conjugate_imperatif_passe(cg._get_conj_obs('manger')) == [
+    assert cg.conjugate_mood_tense('manger', 'imperatif', 'imperatif-passé') == [
     "aie mangé",
     "ayons mangé",
     "ayez mangé"
     ]
 
 def test_conjugator_conjugate_imperatif_passe_with_etre():
-    assert cg._conjugate_imperatif_passe(cg._get_conj_obs('aller')) == [
+    assert cg.conjugate_mood_tense('aller', 'imperatif', 'imperatif-passé') == [
     "sois allé",
     "soyons allés",
     "soyez allés"
