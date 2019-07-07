@@ -41,24 +41,7 @@ VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS = [
 "avoir"]
 
 def get_pronoun_suffix(person, gender='m'):
-    if person == '1s':
-        return '-je'
-    elif person == '2s':
-        return '-toi'
-    elif person == '3s':
-        if gender == 'm':
-            return '-il'
-        else:
-            return '-elle'
-    elif person == '1p':
-        return '-nous'
-    elif person == '2p':
-        return '-vous'
-    elif person == '3p':
-        if gender == 'm':
-            return '-ils'
-        else:
-            return '-elles'
+    return '-' + get_default_pronoun(person, gender).replace('tu', 'toi')
 
 def get_default_pronoun(person, gender='m', is_reflexive=False):
     ret = None
