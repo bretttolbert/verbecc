@@ -129,7 +129,7 @@ class InflectorFr(inflector.Inflector):
         else:
             for person_ending in tense_template.person_endings:
                 pronoun = get_default_pronoun(
-                    person_ending.get_person(), is_reflexive)
+                    person_ending.get_person(), is_reflexive=is_reflexive)
                 ending = person_ending.get_ending()
                 conjugation = self._conjugate_simple_mood_tense_pronoun(
                     verb_stem, ending, pronoun)
