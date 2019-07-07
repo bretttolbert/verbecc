@@ -3,16 +3,13 @@
 from lxml import etree
 
 from .mood import Mood
-
-
-class ConjugationTemplateError(Exception):
-    pass
-
+from . import exceptions
 
 class ConjugationTemplate:
     def __init__(self, template_elem):
         if template_elem.tag != 'template':
-            raise ConjugationTemplateError("Unexpected element")
+            raise exceptions.ConjugationTemplateError(
+                "Unexpected element")
         try:
             self.name = u'' + template_elem.get('name')
             self.moods = {}
@@ -21,7 +18,7 @@ class ConjugationTemplate:
                 self.moods[mood_elem.tag] = mood
                     
         except AttributeError as e:
-            raise ConjugationTemplateError(
+            raise exceptions.ConjugationTemplateError(
                 "Error parsing {}: {}".format(
                     etree.tostring(template_elem),
                     str(e)))

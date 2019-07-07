@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from verbecc.conjugator import (Conjugator,
-                                VerbNotFoundError)
+from verbecc import conjugator
 from verbecc import string_utils
+from verbecc.exceptions import VerbNotFoundError
 
-cg = Conjugator()
+cg = conjugator.Conjugator()
 
 test_verbs = [
     (u"manger"), 

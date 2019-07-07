@@ -7,13 +7,7 @@ from lxml import etree
 from pkg_resources import resource_filename
 
 from . import conjugation_template
-
-
-class ConjugationsParserError(Exception):
-    pass
-
-class TemplateNotFoundError(Exception):
-    pass
+from . import exceptions
 
 class ConjugationsParser:
     def __init__(self, lang='fr'):
@@ -26,7 +20,7 @@ class ConjugationsParser:
         root = tree.getroot()
         root_tag = 'conjugation-{}'.format(lang)
         if root.tag != root_tag:
-            raise ConjugationsParserError(
+            raise exceptions.ConjugationsParserError(
                 "Root XML Tag {} Not Found".format(root_tag))
         for child in root:
             if child.tag == 'template':
@@ -40,7 +34,7 @@ class ConjugationsParser:
         i = bisect_left(self._keys, name)
         if i != len(self._keys) and self._keys[i] == name:
             return self.templates[i]
-        raise TemplateNotFoundError
+        raise exceptions.TemplateNotFoundError
 
 
 if __name__ == "__main__":

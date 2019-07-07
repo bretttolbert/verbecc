@@ -4,12 +4,8 @@ from mock import patch
 
 import pytest
 
-from verbecc.conjugation_template import (
-    ConjugationTemplate, ConjugationTemplateError
-)
-from verbecc.parse_conjugations import (
-    ConjugationsParser, ConjugationsParserError
-)
+from verbecc.conjugation_template import ConjugationTemplate
+from verbecc.exceptions import ConjugationTemplateError
 
 @patch('lxml.etree._Element')
 def test_TemplateInvalidXML(mock_template_elem):

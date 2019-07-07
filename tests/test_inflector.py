@@ -4,10 +4,11 @@ import pytest
 from mock import patch
 from lxml import etree
 
-from verbecc import inflector
+from verbecc import inflector_fr
 from verbecc.tense_template import TenseTemplate
+from verbecc.exceptions import ConjugatorError
 
-inf = inflector.Inflector(lang='fr')
+inf = inflector_fr.InflectorFr()
 
 test_inflector_verb_can_be_reflexive_data = [
     ("être", False),
@@ -81,5 +82,5 @@ def test_inflector_get_verb_stem():
     verb_stem = inf._get_verb_stem(u"aller", u":aller")
     assert verb_stem == u""
     # The infinitive ending must match the template ending
-    with pytest.raises(inflector.ConjugatorError):
+    with pytest.raises(ConjugatorError):
         verb_stem = inf._get_verb_stem(u"vendre", u"man:ger")
