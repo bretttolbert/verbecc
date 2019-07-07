@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from mock import patch
 from lxml import etree
 
 from verbecc import inflector_fr
@@ -62,14 +61,6 @@ def test_inflector_conjugate_simple_mood_tense():
     out = inf._conjugate_simple_mood_tense(verb_stem, 'indicatif', tense_template)
     assert len(out) == 6
     assert out == [u"je mange", u"tu manges", u"il mange", u"nous mangeons", u"vous mangez", u"ils mangent"]
-
-@patch('verbecc.person_ending.PersonEnding')
-def test_inflector_conjugate_simple_mood_tense_pronoun(mock_person):
-    verb_stem = u"man"
-    pronoun = u"je"
-    ending = u"ge"
-    conjugation = inf._conjugate_simple_mood_tense_pronoun(verb_stem, ending, pronoun)
-    assert conjugation == u"je mange"
 
 def test_inflector_get_verb_stem():
     verb_stem = inf._get_verb_stem(u"manger", u"man:ger")

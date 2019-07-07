@@ -114,19 +114,9 @@ class Inflector(ABC):
                 co.verb_stem, mood_name, tense_template,
                 co.is_reflexive)
 
-    @abstractmethod
-    def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
-                                  tense_template, is_reflexive=False):
-        pass
-
-    @abstractmethod
-    def _conjugate_simple_mood_tense_pronoun(self, verb_stem, ending, pronoun):
-        pass
-
     def _get_compound_conjugations_map(self):
         return {}
 
-    @abstractmethod
     def _conjugate_compound(self, co, mood_name, hv_tense_name):
         """Conjugate a compound tense
         Args:
@@ -134,4 +124,9 @@ class Inflector(ABC):
             mood_name: mood verb is being conjugated in
             hv_tense_name: tense_name for conjugating helping verb
         """
+        return {}
+
+    @abstractmethod
+    def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
+                                     tense_template, is_reflexive=False):
         pass

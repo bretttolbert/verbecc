@@ -131,21 +131,18 @@ class InflectorFr(inflector.Inflector):
                 pronoun = get_default_pronoun(
                     person_ending.get_person(), is_reflexive=is_reflexive)
                 ending = person_ending.get_ending()
-                conjugation = self._conjugate_simple_mood_tense_pronoun(
-                    verb_stem, ending, pronoun)
+
+                conjugation = ''
+                conjugated_verb = verb_stem + ending
+                if pronoun[-1] == "e" and string_utils.starts_with_vowel(conjugated_verb):
+                    conjugation += pronoun[:-1] + "'"
+                else:
+                    conjugation += pronoun + " "
+                conjugation += conjugated_verb
+
                 if mood_name == 'subjonctif':
                     conjugation = string_utils.prepend_with_que(conjugation)
                 ret.append(conjugation)
-        return ret
-
-    def _conjugate_simple_mood_tense_pronoun(self, verb_stem, ending, pronoun):
-        ret = u''
-        conjugated_verb = verb_stem + ending
-        if pronoun[-1] == "e" and string_utils.starts_with_vowel(conjugated_verb):
-            ret += pronoun[:-1] + "'"
-        else:
-            ret += pronoun + " "
-        ret += conjugated_verb
         return ret
 
     def _get_compound_conjugations_map(self):
