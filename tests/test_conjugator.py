@@ -5,7 +5,7 @@ from verbecc import conjugator
 from verbecc import string_utils
 from verbecc import exceptions
 
-cg = conjugator.Conjugator()
+cg = conjugator.Conjugator(lang='fr')
 
 test_verbs = [
     (u"manger"), 
@@ -761,3 +761,25 @@ def test_conjugator_find_verb_by_infinitive_verb_not_found():
 def test_conjugator_find_template_template_not_found():
     with pytest.raises(exceptions.TemplateNotFoundError):
         cg.find_template("oops")
+
+test_get_verbs_that_start_with_data = [
+    ("lev", [
+        "lever",
+        "léviger",
+        "levretter"
+    ]),
+    ("Se lev", [
+        "se lever",
+        "se léviger",
+        "se levretter"
+    ]),
+        ("s'aim", [
+        "s'aimanter",
+        "s'aimer"
+    ])
+]
+
+@pytest.mark.parametrize("query,expected_resp",
+                         test_get_verbs_that_start_with_data)
+def test_conjugator_get_verbs_that_start_with(query, expected_resp):
+    assert cg.get_verbs_that_start_with(query, max_results=10) == expected_resp

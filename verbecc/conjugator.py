@@ -3,8 +3,10 @@
 from . import inflector_fr
 from . import inflector_es
 
+SUPPORTED_LANGUAGES = ('fr', 'es')
+
 class Conjugator:
-    def __init__(self, lang='fr'):
+    def __init__(self, lang):
         if lang == 'fr':
             self._inflector = inflector_fr.InflectorFr()
         elif lang == 'es':

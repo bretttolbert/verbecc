@@ -40,11 +40,7 @@ class Inflector(ABC):
 
     def get_verbs_that_start_with(self, query, max_results):
         query = query.lower()
-        is_reflexive, query = self._split_reflexive(query)
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
-        if is_reflexive:
-            matches = [string_utils.prepend_with_se(m) 
-            for m in matches if self._verb_can_be_reflexive(m)]
         return matches
 
     def _get_verb_stem(self, infinitive, template_name):
