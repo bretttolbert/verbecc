@@ -190,18 +190,18 @@
 		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iendo</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
 			<p><i>ir</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 </template>
@@ -8765,168 +8765,168 @@
 <template name="pare:cer">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ce</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cía</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ció</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cerá</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zca</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ciera</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ciese</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ciere</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>zca</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>zca</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cería</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -12803,18 +12803,18 @@
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>oliendo</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
 			<p><i>oler</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
@@ -15407,7 +15407,7 @@
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ábate</i></p>
 			<p><i>abándose</i></p>
 			<p><i>abe</i></p>
@@ -19871,18 +19871,18 @@
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ciendo</i></p>
 			<p><i>zca</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
 			<p><i>cer</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>zca</i></p>
 			<p><i>cido</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
@@ -26195,18 +26195,18 @@
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
 			<p><i/></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
@@ -36107,168 +36107,168 @@
 <template name="apedre:ar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>a</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>are</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -40889,18 +40889,18 @@
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>endo</i></p>
 			<p><i>a</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
 			<p><i>er</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>a</i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
@@ -43121,7 +43121,7 @@
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
 			<p><i>iendo</i></p>
 			<p><i>a</i></p>
@@ -51863,7 +51863,7 @@
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
 			<p><i>iendo</i></p>
 			<p><i>a</i></p>
@@ -59171,168 +59171,168 @@
 <template name="encel:ajarse">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aja</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aje</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ájese</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>aje</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ajado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -64751,168 +64751,168 @@
 <template name="gar:uar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>úa</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>úe</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>úe</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>úe</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -65123,168 +65123,168 @@
 <template name="grani:zar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>za</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ce</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ce</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ce</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>zado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -65495,168 +65495,168 @@
 <template name="h:elar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iela</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>eló</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iele</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>iele</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>iele</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>elado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -68285,168 +68285,168 @@
 <template name="n:evar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ieva</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ieve</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ieve</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ieve</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>evado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -68471,168 +68471,168 @@
 <template name="nevis:car">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ca</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>caba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>có</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>que</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>case</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>care</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>que</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>que</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>caría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -68657,168 +68657,168 @@
 <template name="pas:ar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>a</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>are</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -69959,168 +69959,168 @@
 <template name="pring:ar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>a</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ue</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>are</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ue</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>ue</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>aría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -72377,168 +72377,168 @@
 <template name="roc:iar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ía</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ió</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>íe</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>íe</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>íe</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -74237,168 +74237,168 @@
 <template name="suced:er">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ía</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ió</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>erá</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>a</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iera</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iese</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iere</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>a</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>a</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ería</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -75167,168 +75167,168 @@
 <template name="tr:onar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uena</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>uene</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>uene</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>uene</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>onado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
@@ -75539,168 +75539,168 @@
 <template name="v:entar">
 	<Indicativo>
 		<Indicativo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>ienta</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-presente>
 		<Indicativo-pretérito-perfecto-compuesto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-compuesto>
 		<Indicativo-pretérito-imperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entaba</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-imperfecto>
 		<Indicativo-pretérito-pluscuamperfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-pluscuamperfecto>
 		<Indicativo-pretérito-perfecto-simple>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entó</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-perfecto-simple>
 		<Indicativo-pretérito-anterior>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entará</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro>
 		<Indicativo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Indicativo-futuro-perfecto>
 	</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>iente</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-presente>
 		<Subjuntivo-pretérito-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-perfecto>
 		<Subjuntivo-pretérito-imperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entara</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
 		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-imperfecto-2>
 		<Subjuntivo-pretérito-pluscuamperfecto-2>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-pretérito-pluscuamperfecto-2>
 		<Subjuntivo-futuro>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entare</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro>
 		<Subjuntivo-futuro-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Subjuntivo-futuro-perfecto>
 	</Subjuntivo>
 	<Imperativo>
 		<Imperativo-Afirmativo>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>iente</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-Afirmativo>
 		<Imperativo-non>
-			<p><i>-</i></p>
+			<p><i></i></p>
 			<p><i>iente</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Imperativo-non>
 	</Imperativo>
 	<Condicional>
 		<Condicional-Condicional>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entaría</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-Condicional>
 		<Condicional-perfecto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 			<p><i>entado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
+			<p><i></i></p>
+			<p><i></i></p>
+			<p><i></i></p>
 		</Condicional-perfecto>
 	</Condicional>
 	<Infinitivo>
