@@ -8,9 +8,27 @@ from verbecc.tense_template import TenseTemplate
 
 inf = inflector_es.InflectorEs()
 
-def test_inflector_es_conjugate():
-    expected = ['yo abaño', 'tú abañas', 'él abaña', 'nosotros abañamos', 'vosotros abañáis', 'ellos abañan']
-    assert inf.conjugate_mood_tense('abañar', 'Indicativo', 'Indicativo-presente') == expected
+test_es_conjugate_mood_tense_data = [
+    ('abañar', 'Indicativo', 'Indicativo-presente', 
+        ['yo abaño', 'tú abañas', 'él abaña', 'nosotros abañamos', 'vosotros abañáis', 'ellos abañan']),
+    ('estar', 'Indicativo', 'Indicativo-presente', 
+        ['yo estoy', 'tú estás', 'él está', 'nosotros estamos', 'vosotros estáis', 'ellos están']),
+    ('ser', 'Indicativo', 'Indicativo-presente', 
+        ['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']),
+    ('tener', 'Indicativo', 'Indicativo-presente', 
+        ['yo tengo', 'tú tienes', 'él tiene', 'nosotros tenemos', 'vosotros tenéis', 'ellos tienen']),
+    ('haber', 'Indicativo', 'Indicativo-presente', 
+        ['yo he', 'tú has', 'él hay', 'nosotros hemos', 'vosotros habéis', 'ellos han']),
+    ('hacer', 'Indicativo', 'Indicativo-presente', 
+        ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
+    ('ir', 'Indicativo', 'Indicativo-presente', 
+        ['yo voy', 'tú vas', 'él va', 'nosotros vamos', 'vosotros vais', 'ellos van'])
+]
+
+@pytest.mark.parametrize("infinitive,mood,tense,expected_result",
+                         test_es_conjugate_mood_tense_data)
+def test_inflector_es_conjugate_mood_tense(infinitive, mood, tense, expected_result):
+    assert inf.conjugate_mood_tense(infinitive, mood, tense) == expected_result
 
 def test_inflector_es_get_conj_obs():
     co = inf._get_conj_obs('abañar')
