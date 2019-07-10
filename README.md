@@ -16,8 +16,7 @@ https://github.com/bretttolbert/verbecc
 * Dependencies: lxml
 
 #### Credits
-Created with the help of [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/). Verb conjugation template XML files derived from [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html)
-
+Created with the help of [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/). French verb conjugation template XML files derived from [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html) and Spanish verb conjugation XML files dervied from [mlconjug](https://github.com/SekouD/mlconjug).
 
 ## verbecc-svc
 

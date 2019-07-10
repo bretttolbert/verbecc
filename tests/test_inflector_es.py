@@ -22,7 +22,15 @@ test_es_conjugate_mood_tense_data = [
     ('hacer', 'Indicativo', 'Indicativo-presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
     ('ir', 'Indicativo', 'Indicativo-presente', 
-        ['yo voy', 'tú vas', 'él va', 'nosotros vamos', 'vosotros vais', 'ellos van'])
+        ['yo voy', 'tú vas', 'él va', 'nosotros vamos', 'vosotros vais', 'ellos van']),
+    ('comer', 'Indicativo', 'Indicativo-presente', 
+        ['yo como', 'tú comes', 'él come', 'nosotros comemos', 'vosotros coméis', 'ellos comen']),
+    ('comer', 'Indicativo', 'Indicativo-pretérito-perfecto-simple',
+        ['yo comí', 'tú comiste', 'él comió', 'nosotros comimos', 'vosotros comisteis', 'ellos comieron']),
+    ('comer', 'Indicativo', 'Indicativo-pretérito-imperfecto',
+        ['yo comía', 'tú comías', 'él comía', 'nosotros comíamos', 'vosotros comíais', 'ellos comían']),
+    ('comer', 'Condicional', 'Condicional-Condicional',
+        ['yo comería', 'tú comerías', 'él comería', 'nosotros comeríamos', 'vosotros comeríais', 'ellos comerían'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
