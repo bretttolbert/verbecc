@@ -40,7 +40,7 @@ class InflectorEs(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Participo-Participo']
+        return ['Participo-participo']
 
     def _get_helping_verb(self, infinitive):
         return 'haber'
@@ -49,11 +49,12 @@ class InflectorEs(inflector.Inflector):
         return 'Participo'
 
     def _get_participle_tense_name(self):
-        return 'Participo-Participo'
+        return 'Participo-participo'
 
     def _get_compound_conjugations_hv_map(self):
         return {
             'Indicativo': {
-                'Indicativo-pretérito-perfecto-compuesto': 'Indicativo-presente'
+                'Indicativo-pretérito-perfecto-compuesto': 'Indicativo-presente',
+                'Indicativo-pretérito-pluscuamperfecto': 'Indicativo-pretérito-imperfecto'
             }
         }

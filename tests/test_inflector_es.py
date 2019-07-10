@@ -19,6 +19,8 @@ test_es_conjugate_mood_tense_data = [
         ['yo tengo', 'tú tienes', 'él tiene', 'nosotros tenemos', 'vosotros tenéis', 'ellos tienen']),
     ('haber', 'Indicativo', 'Indicativo-presente', 
         ['yo he', 'tú has', 'él hay', 'nosotros hemos', 'vosotros habéis', 'ellos han']),
+    ('haber', 'Indicativo', 'Indicativo-pretérito-imperfecto', 
+        ['yo había', 'tú habías', 'él había', 'nosotros habíamos', 'vosotros habíais', 'ellos habían']),
     ('hacer', 'Indicativo', 'Indicativo-presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
     ('ir', 'Indicativo', 'Indicativo-presente', 
@@ -29,10 +31,12 @@ test_es_conjugate_mood_tense_data = [
         ['yo comí', 'tú comiste', 'él comió', 'nosotros comimos', 'vosotros comisteis', 'ellos comieron']),
     ('comer', 'Indicativo', 'Indicativo-pretérito-imperfecto',
         ['yo comía', 'tú comías', 'él comía', 'nosotros comíamos', 'vosotros comíais', 'ellos comían']),
-    ('comer', 'Condicional', 'Condicional-Condicional',
+    ('comer', 'Condicional', 'Condicional-condicional',
         ['yo comería', 'tú comerías', 'él comería', 'nosotros comeríamos', 'vosotros comeríais', 'ellos comerían']),
     ('comer', 'Indicativo', 'Indicativo-pretérito-perfecto-compuesto',
-        ['yo he comido', 'tú has comido', 'él ha comido', 'nosotros hemos comido', 'vosotros habéis comido', 'ellos han comido'])
+        ['yo he comido', 'tú has comido', 'él ha comido', 'nosotros hemos comido', 'vosotros habéis comido', 'ellos han comido']),
+    ('comer', 'Indicativo', 'Indicativo-pretérito-pluscuamperfecto',
+        ['yo había comido', 'tú habías comido', 'él había comido', 'nosotros habíamos comido', 'vosotros habíais comido', 'ellos habían comido'])
 ]
 
 """
