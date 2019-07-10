@@ -38,3 +38,22 @@ class InflectorEs(inflector.Inflector):
             if is_reflexive:
                 ret += ' se'
         return ret
+
+    def _get_tenses_conjugated_without_pronouns(self):
+        return ['Participo-Participo']
+
+    def _get_helping_verb(self, infinitive):
+        return 'haber'
+
+    def _get_participle_mood_name(self):
+        return 'Participo'
+
+    def _get_participle_tense_name(self):
+        return 'Participo-Participo'
+
+    def _get_compound_conjugations_hv_map(self):
+        return {
+            'Indicativo': {
+                'Indicativo-pretérito-perfecto-compuesto': 'Indicativo-presente'
+            }
+        }

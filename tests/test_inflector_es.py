@@ -30,8 +30,14 @@ test_es_conjugate_mood_tense_data = [
     ('comer', 'Indicativo', 'Indicativo-pretérito-imperfecto',
         ['yo comía', 'tú comías', 'él comía', 'nosotros comíamos', 'vosotros comíais', 'ellos comían']),
     ('comer', 'Condicional', 'Condicional-Condicional',
-        ['yo comería', 'tú comerías', 'él comería', 'nosotros comeríamos', 'vosotros comeríais', 'ellos comerían'])
+        ['yo comería', 'tú comerías', 'él comería', 'nosotros comeríamos', 'vosotros comeríais', 'ellos comerían']),
+    ('comer', 'Indicativo', 'Indicativo-pretérito-perfecto-compuesto',
+        ['yo he comido', 'tú has comido', 'él ha comido', 'nosotros hemos comido', 'vosotros habéis comido', 'ellos han comido'])
 ]
+
+"""
+
+"""
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
                          test_es_conjugate_mood_tense_data)
