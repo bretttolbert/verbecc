@@ -3,7 +3,10 @@
 from . import inflector_fr
 from . import inflector_es
 
-SUPPORTED_LANGUAGES = ('fr', 'es')
+SUPPORTED_LANGUAGES = {
+    'fr': 'français',
+    'es': 'español'
+}
 
 class Conjugator:
     def __init__(self, lang):

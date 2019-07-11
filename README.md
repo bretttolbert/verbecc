@@ -1,15 +1,17 @@
 ## verbecc
 
-#### Verbes, complètement conjugués - conjugueur français
+#### Verbs, completely conjugated - French and Spanish verb conjugator
 
-#### Verbs, completely conjugated - French conjugator
+#### Verbes, complètement conjugués - conjugaison en français et espagnol
+
+#### Verbos, completamente conjugados - conjugador de verbos francés y español
 
 https://github.com/bretttolbert/verbecc
 
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines)
 
 #### Features
-* Over 7,000 verbs supported
+* Over 7,000 French verbs and 9,000 Spanish verbs supported
 * pip installable
 * Unit tested
 * Continuous Integration and Deployment with GitLab CI/CD
