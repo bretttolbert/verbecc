@@ -13,6 +13,7 @@ inf = inflector_es.InflectorEs()
 # Subjuntivo-pretérito-imperfecto-1 = Subjunctive Past 1 (yo hubiera)
 # Subjuntivo-pretérito-imperfecto-2 = Subjunctive Past 2 (yo hubiese)
 # Subjuntivo-pretérito-pluscuamperfecto-1 = Subjunctive Pluperfect 1 (yo hubiera habido)
+# Subjuntivo-pretérito-pluscuamperfecto-2 = Subjunctive Pluperfect 2 (yo hubiese habido)
 
 test_es_conjugate_mood_tense_data = [
     ('abañar', 'Indicativo', 'Indicativo-presente', 
@@ -37,6 +38,8 @@ test_es_conjugate_mood_tense_data = [
         ['yo haya', 'tú hayas', 'él haya', 'nosotros hayamos', 'vosotros hayáis', 'ellos hayan']),
     ('haber', 'Subjuntivo', 'Subjuntivo-pretérito-imperfecto-1',
         ['yo hubiera', 'tú hubieras', 'él hubiera', 'nosotros hubiéramos', 'vosotros hubierais', 'ellos hubieran']),
+    ('haber', 'Subjuntivo', 'Subjuntivo-pretérito-imperfecto-2',
+        ['yo hubiese', 'tú hubieses', 'él hubiese', 'nosotros hubiésemos', 'vosotros hubieseis', 'ellos hubiesen']),
     ('hacer', 'Indicativo', 'Indicativo-presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
     ('ir', 'Indicativo', 'Indicativo-presente',
@@ -62,7 +65,9 @@ test_es_conjugate_mood_tense_data = [
     ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-perfecto',
         ['yo haya comido', 'tú hayas comido', 'él haya comido', 'nosotros hayamos comido', 'vosotros hayáis comido', 'ellos hayan comido']),
     ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-pluscuamperfecto-1',
-        ['yo hubiera comido', 'tú hubieras comido', 'él hubiera comido', 'nosotros hubiéramos comido', 'vosotros hubierais comido', 'ellos hubieran comido'])
+        ['yo hubiera comido', 'tú hubieras comido', 'él hubiera comido', 'nosotros hubiéramos comido', 'vosotros hubierais comido', 'ellos hubieran comido']),
+    ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-pluscuamperfecto-2',
+        ['yo hubiese comido', 'tú hubieses comido', 'él hubiese comido', 'nosotros hubiésemos comido', 'vosotros hubieseis comido', 'ellos hubiesen comido'])
 ]
 
 """
