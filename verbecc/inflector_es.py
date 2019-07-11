@@ -63,9 +63,9 @@ class InflectorEs(inflector.Inflector):
                 'condicional-perfecto': 'condicional-present'
             },
             'subjuntivo': {
-                'subjuntivo-pretérito-perfecto': 'subjuntivo-presente',
-                'subjuntivo-pretérito-pluscuamperfecto-1': 'subjuntivo-pretérito-imperfecto-1',
-                'subjuntivo-pretérito-pluscuamperfecto-2': 'subjuntivo-pretérito-imperfecto-2',
-                'subjuntivo-futuro-perfecto': 'subjuntivo-futuro'
+                'pretérito-perfecto': 'presente',
+                'pretérito-pluscuamperfecto-1': 'pretérito-imperfecto-1',
+                'pretérito-pluscuamperfecto-2': 'pretérito-imperfecto-2',
+                'futuro-perfecto': 'futuro'
             }
         }
