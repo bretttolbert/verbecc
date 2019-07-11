@@ -28,7 +28,7 @@
 <!ELEMENT template (Indicativo , Subjuntivo , Imperativo , (Condicional , Infinitivo , Gerundio , Participo)?)>
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-pretérito-anterior , Indicativo-futuro , Indicativo-futuro-perfecto)?>
+<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-futuro , Indicativo-futuro-perfecto)?>
 <!ATTLIST Indicativo xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo (Subjuntivo-presente , Subjuntivo-pretérito-perfecto , Subjuntivo-pretérito-imperfecto-1 , Subjuntivo-pretérito-pluscuamperfecto-1 , Subjuntivo-pretérito-imperfecto-2 , Subjuntivo-pretérito-pluscuamperfecto-2 , Subjuntivo-futuro , Subjuntivo-futuro-perfecto)?>
 <!ATTLIST Subjuntivo xmlns CDATA #FIXED "">
@@ -42,15 +42,12 @@
 <!ATTLIST Gerundio xmlns CDATA #FIXED "">
 <!ELEMENT Participo (Participo-participo)>
 <!ATTLIST Participo xmlns CDATA #FIXED "">
-
 <!ELEMENT Indicativo-presente (p)+>
 <!ATTLIST Indicativo-presente xmlns CDATA #FIXED "">
 <!ELEMENT Indicativo-pretérito-imperfecto (p)+>
 <!ATTLIST Indicativo-pretérito-imperfecto xmlns CDATA #FIXED "">
 <!ELEMENT Indicativo-pretérito-perfecto-simple (p)+>
 <!ATTLIST Indicativo-pretérito-perfecto-simple xmlns CDATA #FIXED "">
-<!ELEMENT Indicativo-pretérito-anterior (p)+>
-<!ATTLIST Indicativo-pretérito-anterior xmlns CDATA #FIXED "">
 <!ELEMENT Indicativo-futuro (p)+>
 <!ATTLIST Indicativo-futuro xmlns CDATA #FIXED "">
 <!ELEMENT Indicativo-futuro-perfecto (p)+>
@@ -118,14 +115,6 @@
 			<p><i>íais</i></p>
 			<p><i>ían</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -224,14 +213,6 @@
 			<p><i>uasteis</i></p>
 			<p><i>uaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uaré</i></p>
 			<p><i>uarás</i></p>
@@ -394,14 +375,6 @@
 			<p><i>risteis</i></p>
 			<p><i>rieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>riré</i></p>
 			<p><i>rirás</i></p>
@@ -564,14 +537,6 @@
 			<p><i>incasteis</i></p>
 			<p><i>incaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>incaré</i></p>
 			<p><i>incarás</i></p>
@@ -734,14 +699,6 @@
 			<p><i>irasteis</i></p>
 			<p><i>iraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iraré</i></p>
 			<p><i>irarás</i></p>
@@ -904,14 +861,6 @@
 			<p><i>uvisteis</i></p>
 			<p><i>uvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -1074,14 +1023,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -1244,14 +1185,6 @@
 			<p><i>ullasteis</i></p>
 			<p><i>ullaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ullaré</i></p>
 			<p><i>ullarás</i></p>
@@ -1414,14 +1347,6 @@
 			<p><i>onzasteis</i></p>
 			<p><i>onzaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>onzaré</i></p>
 			<p><i>onzarás</i></p>
@@ -1584,14 +1509,6 @@
 			<p><i>uasteis</i></p>
 			<p><i>uaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uaré</i></p>
 			<p><i>uarás</i></p>
@@ -1754,14 +1671,6 @@
 			<p><i>cupisteis</i></p>
 			<p><i>cupieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>cabré</i></p>
 			<p><i>cabrás</i></p>
@@ -1924,14 +1833,6 @@
 			<p><i>ísteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -2094,14 +1995,6 @@
 			<p><i>zasteis</i></p>
 			<p><i>zaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>zaré</i></p>
 			<p><i>zarás</i></p>
@@ -2264,14 +2157,6 @@
 			<p><i>ocisteis</i></p>
 			<p><i>ocieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oceré</i></p>
 			<p><i>ocerás</i></p>
@@ -2434,14 +2319,6 @@
 			<p><i>gisteis</i></p>
 			<p><i>gieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>geré</i></p>
 			<p><i>gerás</i></p>
@@ -2604,14 +2481,6 @@
 			<p><i>olgasteis</i></p>
 			<p><i>olgaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olgaré</i></p>
 			<p><i>olgarás</i></p>
@@ -2774,14 +2643,6 @@
 			<p><i>cisteis</i></p>
 			<p><i>cieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ceré</i></p>
 			<p><i>cerás</i></p>
@@ -2944,14 +2805,6 @@
 			<p><i>asteis</i></p>
 			<p><i>aron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -3114,14 +2967,6 @@
 			<p><i>ísteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -3284,14 +3129,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -3454,14 +3291,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -3624,14 +3453,6 @@
 			<p><i>ijisteis</i></p>
 			<p><i>ijeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -3794,14 +3615,6 @@
 			<p><i>endisteis</i></p>
 			<p><i>endieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enderé</i></p>
 			<p><i>enderás</i></p>
@@ -3964,14 +3777,6 @@
 			<p><i>quisteis</i></p>
 			<p><i>quieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>quiré</i></p>
 			<p><i>quirás</i></p>
@@ -4134,14 +3939,6 @@
 			<p><i>osasteis</i></p>
 			<p><i>osaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>osaré</i></p>
 			<p><i>osarás</i></p>
@@ -4304,14 +4101,6 @@
 			<p><i>ernisteis</i></p>
 			<p><i>ernieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erniré</i></p>
 			<p><i>ernirás</i></p>
@@ -4474,14 +4263,6 @@
 			<p><i>uisteis</i></p>
 			<p><i>uieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uiré</i></p>
 			<p><i>uirás</i></p>
@@ -4644,14 +4425,6 @@
 			<p><i>ormisteis</i></p>
 			<p><i>urmieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ormiré</i></p>
 			<p><i>ormirás</i></p>
@@ -4814,14 +4587,6 @@
 			<p><i>egisteis</i></p>
 			<p><i>igieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>egiré</i></p>
 			<p><i>egirás</i></p>
@@ -4984,14 +4749,6 @@
 			<p><i>ezasteis</i></p>
 			<p><i>ezaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ezaré</i></p>
 			<p><i>ezarás</i></p>
@@ -5154,14 +4911,6 @@
 			<p><i>ontrasteis</i></p>
 			<p><i>ontraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ontraré</i></p>
 			<p><i>ontrarás</i></p>
@@ -5324,14 +5073,6 @@
 			<p><i>izasteis</i></p>
 			<p><i>izaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>izaré</i></p>
 			<p><i>izarás</i></p>
@@ -5494,14 +5235,6 @@
 			<p><i>erguisteis</i></p>
 			<p><i>irguieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erguiré</i></p>
 			<p><i>erguirás</i></p>
@@ -5664,14 +5397,6 @@
 			<p><i>errasteis</i></p>
 			<p><i>erraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erraré</i></p>
 			<p><i>errarás</i></p>
@@ -5834,14 +5559,6 @@
 			<p><i>uvisteis</i></p>
 			<p><i>uvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -6004,14 +5721,6 @@
 			<p><i>orzasteis</i></p>
 			<p><i>orzaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orzaré</i></p>
 			<p><i>orzarás</i></p>
@@ -6174,14 +5883,6 @@
 			<p><i>iasteis</i></p>
 			<p><i>iaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iaré</i></p>
 			<p><i>iarás</i></p>
@@ -6344,14 +6045,6 @@
 			<p><i>ubisteis</i></p>
 			<p><i>ubieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>abré</i></p>
 			<p><i>abrás</i></p>
@@ -6514,14 +6207,6 @@
 			<p><i>icisteis</i></p>
 			<p><i>icieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -6684,14 +6369,6 @@
 			<p><i>isteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -6854,14 +6531,6 @@
 			<p><i>fuisteis</i></p>
 			<p><i>fueron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -7024,14 +6693,6 @@
 			<p><i>gasteis</i></p>
 			<p><i>garon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>garé</i></p>
 			<p><i>garás</i></p>
@@ -7194,14 +6855,6 @@
 			<p><i>ovisteis</i></p>
 			<p><i>ovieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>overé</i></p>
 			<p><i>overás</i></p>
@@ -7364,14 +7017,6 @@
 			<p><i>cisteis</i></p>
 			<p><i>cieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ciré</i></p>
 			<p><i>cirás</i></p>
@@ -7534,14 +7179,6 @@
 			<p><i>cisteis</i></p>
 			<p><i>cieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ceré</i></p>
 			<p><i>cerás</i></p>
@@ -7704,14 +7341,6 @@
 			<p><i>olisteis</i></p>
 			<p><i>olieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oleré</i></p>
 			<p><i>olerás</i></p>
@@ -7874,14 +7503,6 @@
 			<p><i>asteis</i></p>
 			<p><i>aron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -8044,14 +7665,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -8214,14 +7827,6 @@
 			<p><i>edisteis</i></p>
 			<p><i>idieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ediré</i></p>
 			<p><i>edirás</i></p>
@@ -8384,14 +7989,6 @@
 			<p><i>ensasteis</i></p>
 			<p><i>ensaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ensaré</i></p>
 			<p><i>ensarás</i></p>
@@ -8554,14 +8151,6 @@
 			<p><i>acisteis</i></p>
 			<p><i>uguieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aceré</i></p>
 			<p><i>acerás</i></p>
@@ -8724,14 +8313,6 @@
 			<p><i>udisteis</i></p>
 			<p><i>udieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>odré</i></p>
 			<p><i>odrás</i></p>
@@ -8894,14 +8475,6 @@
 			<p><i>udristeis</i></p>
 			<p><i>udrieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>odriré</i></p>
 			<p><i>udrirás</i></p>
@@ -9064,14 +8637,6 @@
 			<p><i>ijisteis</i></p>
 			<p><i>ijeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eciré</i></p>
 			<p><i>ecirás</i></p>
@@ -9234,14 +8799,6 @@
 			<p><i>jisteis</i></p>
 			<p><i>jeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ciré</i></p>
 			<p><i>cirás</i></p>
@@ -9404,14 +8961,6 @@
 			<p><i>ibisteis</i></p>
 			<p><i>ibieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ibiré</i></p>
 			<p><i>ibirás</i></p>
@@ -9574,14 +9123,6 @@
 			<p><i>isisteis</i></p>
 			<p><i>isieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erré</i></p>
 			<p><i>errás</i></p>
@@ -9744,14 +9285,6 @@
 			<p><i>ísteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -9914,14 +9447,6 @@
 			<p><i>egasteis</i></p>
 			<p><i>egaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>egaré</i></p>
 			<p><i>egarás</i></p>
@@ -10084,14 +9609,6 @@
 			<p><i>eísteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eiré</i></p>
 			<p><i>eirás</i></p>
@@ -10254,14 +9771,6 @@
 			<p><i>eñisteis</i></p>
 			<p><i>iñeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eñiré</i></p>
 			<p><i>eñirás</i></p>
@@ -10424,14 +9933,6 @@
 			<p><i>unisteis</i></p>
 			<p><i>unieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uniré</i></p>
 			<p><i>unirás</i></p>
@@ -10594,14 +10095,6 @@
 			<p><i>upisteis</i></p>
 			<p><i>upieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>abré</i></p>
 			<p><i>abrás</i></p>
@@ -10764,14 +10257,6 @@
 			<p><i>casteis</i></p>
 			<p><i>caron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>caré</i></p>
 			<p><i>carás</i></p>
@@ -10934,14 +10419,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>dré</i></p>
 			<p><i>drás</i></p>
@@ -11104,14 +10581,6 @@
 			<p><i>eguisteis</i></p>
 			<p><i>iguieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eguiré</i></p>
 			<p><i>eguirás</i></p>
@@ -11274,14 +10743,6 @@
 			<p><i>entisteis</i></p>
 			<p><i>intieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>entiré</i></p>
 			<p><i>entirás</i></p>
@@ -11444,14 +10905,6 @@
 			<p><i>fuisteis</i></p>
 			<p><i>fueron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>seré</i></p>
 			<p><i>serás</i></p>
@@ -11614,14 +11067,6 @@
 			<p><i>fuisteis</i></p>
 			<p><i>fueron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>seré</i></p>
 			<p><i>serás</i></p>
@@ -11784,14 +11229,6 @@
 			<p><i>isteis</i></p>
 			<p><i>eron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -11954,14 +11391,6 @@
 			<p><i>uvisteis</i></p>
 			<p><i>uvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>endré</i></p>
 			<p><i>endrás</i></p>
@@ -12124,14 +11553,6 @@
 			<p><i>jisteis</i></p>
 			<p><i>jeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -12294,14 +11715,6 @@
 			<p><i>ocasteis</i></p>
 			<p><i>ocaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ocaré</i></p>
 			<p><i>ocarás</i></p>
@@ -12464,14 +11877,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>dré</i></p>
 			<p><i>drás</i></p>
@@ -12634,14 +12039,6 @@
 			<p><i>inisteis</i></p>
 			<p><i>inieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>endré</i></p>
 			<p><i>endrás</i></p>
@@ -12804,14 +12201,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -12974,14 +12363,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -13144,14 +12525,6 @@
 			<p><i>olvisteis</i></p>
 			<p><i>olvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olveré</i></p>
 			<p><i>olverás</i></p>
@@ -13314,14 +12687,6 @@
 			<p><i>cisteis</i></p>
 			<p><i>cieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ceré</i></p>
 			<p><i>cerás</i></p>
@@ -13484,14 +12849,6 @@
 			<p><i>cisteis</i></p>
 			<p><i>cieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ciré</i></p>
 			<p><i>cirás</i></p>
@@ -13654,14 +13011,6 @@
 			<p><i>illasteis</i></p>
 			<p><i>illaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>illaré</i></p>
 			<p><i>illarás</i></p>
@@ -13824,14 +13173,6 @@
 			<p><i>anasteis</i></p>
 			<p><i>anaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>anaré</i></p>
 			<p><i>anarás</i></p>
@@ -13994,14 +13335,6 @@
 			<p><i>abasteis</i></p>
 			<p><i>abaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>abaré</i></p>
 			<p><i>abarás</i></p>
@@ -14164,14 +13497,6 @@
 			<p><i>astasteis</i></p>
 			<p><i>astaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>astaré</i></p>
 			<p><i>astarás</i></p>
@@ -14334,14 +13659,6 @@
 			<p><i>eldasteis</i></p>
 			<p><i>eldaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eldaré</i></p>
 			<p><i>eldarás</i></p>
@@ -14504,14 +13821,6 @@
 			<p><i>iasteis</i></p>
 			<p><i>iaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iaré</i></p>
 			<p><i>iarás</i></p>
@@ -14674,14 +13983,6 @@
 			<p><i>ichasteis</i></p>
 			<p><i>icharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>icharé</i></p>
 			<p><i>icharás</i></p>
@@ -14844,14 +14145,6 @@
 			<p><i>ocasteis</i></p>
 			<p><i>ocaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ocaré</i></p>
 			<p><i>ocarás</i></p>
@@ -15014,14 +14307,6 @@
 			<p><i>ofasteis</i></p>
 			<p><i>ofaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ofaré</i></p>
 			<p><i>ofarás</i></p>
@@ -15184,14 +14469,6 @@
 			<p><i>olsasteis</i></p>
 			<p><i>olsaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olsaré</i></p>
 			<p><i>olsarás</i></p>
@@ -15354,14 +14631,6 @@
 			<p><i>ascasteis</i></p>
 			<p><i>ascaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ascaré</i></p>
 			<p><i>ascarás</i></p>
@@ -15524,14 +14793,6 @@
 			<p><i>egasteis</i></p>
 			<p><i>egaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>egaré</i></p>
 			<p><i>egarás</i></p>
@@ -15694,14 +14955,6 @@
 			<p><i>icasteis</i></p>
 			<p><i>icaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>icaré</i></p>
 			<p><i>icarás</i></p>
@@ -15864,14 +15117,6 @@
 			<p><i>ugasteis</i></p>
 			<p><i>ugaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ugaré</i></p>
 			<p><i>ugarás</i></p>
@@ -16034,14 +15279,6 @@
 			<p><i>agasteis</i></p>
 			<p><i>agaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>agaré</i></p>
 			<p><i>agarás</i></p>
@@ -16204,14 +15441,6 @@
 			<p><i>argasteis</i></p>
 			<p><i>argaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>argaré</i></p>
 			<p><i>argarás</i></p>
@@ -16374,14 +15603,6 @@
 			<p><i>onasteis</i></p>
 			<p><i>onaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>onaré</i></p>
 			<p><i>onarás</i></p>
@@ -16544,14 +15765,6 @@
 			<p><i>risteis</i></p>
 			<p><i>rieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>riré</i></p>
 			<p><i>rirás</i></p>
@@ -16714,14 +15927,6 @@
 			<p><i>omasteis</i></p>
 			<p><i>omaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>omaré</i></p>
 			<p><i>omarás</i></p>
@@ -16884,14 +16089,6 @@
 			<p><i>uzasteis</i></p>
 			<p><i>uzaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uzaré</i></p>
 			<p><i>uzarás</i></p>
@@ -17054,14 +16251,6 @@
 			<p><i>bisteis</i></p>
 			<p><i>bieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>beré</i></p>
 			<p><i>berás</i></p>
@@ -17224,14 +16413,6 @@
 			<p><i>jisteis</i></p>
 			<p><i>jeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -17394,14 +16575,6 @@
 			<p><i>olasteis</i></p>
 			<p><i>olaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olaré</i></p>
 			<p><i>olarás</i></p>
@@ -17564,14 +16737,6 @@
 			<p><i>esasteis</i></p>
 			<p><i>esaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>esaré</i></p>
 			<p><i>esarás</i></p>
@@ -17734,14 +16899,6 @@
 			<p><i>urrasteis</i></p>
 			<p><i>urraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>urraré</i></p>
 			<p><i>urrarás</i></p>
@@ -17904,14 +17061,6 @@
 			<p><i>achasteis</i></p>
 			<p><i>acharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>acharé</i></p>
 			<p><i>acharás</i></p>
@@ -18074,14 +17223,6 @@
 			<p><i>achasteis</i></p>
 			<p><i>acharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>acharé</i></p>
 			<p><i>acharás</i></p>
@@ -18244,14 +17385,6 @@
 			<p><i>asasteis</i></p>
 			<p><i>asaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>asaré</i></p>
 			<p><i>asarás</i></p>
@@ -18414,14 +17547,6 @@
 			<p><i>ambasteis</i></p>
 			<p><i>ambaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ambaré</i></p>
 			<p><i>ambarás</i></p>
@@ -18584,14 +17709,6 @@
 			<p><i>urasteis</i></p>
 			<p><i>uraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uraré</i></p>
 			<p><i>urarás</i></p>
@@ -18754,14 +17871,6 @@
 			<p><i>arrasteis</i></p>
 			<p><i>arraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>arraré</i></p>
 			<p><i>arrarás</i></p>
@@ -18924,14 +18033,6 @@
 			<p><i>ullasteis</i></p>
 			<p><i>ullaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ullaré</i></p>
 			<p><i>ullarás</i></p>
@@ -19094,14 +18195,6 @@
 			<p><i>erasteis</i></p>
 			<p><i>eraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eraré</i></p>
 			<p><i>erarás</i></p>
@@ -19264,14 +18357,6 @@
 			<p><i>atasteis</i></p>
 			<p><i>ataron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ataré</i></p>
 			<p><i>atarás</i></p>
@@ -19434,14 +18519,6 @@
 			<p><i>elasteis</i></p>
 			<p><i>elaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>elaré</i></p>
 			<p><i>elarás</i></p>
@@ -19604,14 +18681,6 @@
 			<p><i>ertasteis</i></p>
 			<p><i>ertaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ertaré</i></p>
 			<p><i>ertarás</i></p>
@@ -19774,14 +18843,6 @@
 			<p><i>ampasteis</i></p>
 			<p><i>amparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>amparé</i></p>
 			<p><i>amparás</i></p>
@@ -19944,14 +19005,6 @@
 			<p><i>inasteis</i></p>
 			<p><i>inaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>inaré</i></p>
 			<p><i>inarás</i></p>
@@ -20114,14 +19167,6 @@
 			<p><i>ochasteis</i></p>
 			<p><i>ocharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ocharé</i></p>
 			<p><i>ocharás</i></p>
@@ -20284,14 +19329,6 @@
 			<p><i>uchasteis</i></p>
 			<p><i>ucharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ucharé</i></p>
 			<p><i>ucharás</i></p>
@@ -20454,14 +19491,6 @@
 			<p><i>apasteis</i></p>
 			<p><i>aparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aparé</i></p>
 			<p><i>aparás</i></p>
@@ -20624,14 +19653,6 @@
 			<p><i>ulasteis</i></p>
 			<p><i>ularon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ularé</i></p>
 			<p><i>ularás</i></p>
@@ -20794,14 +19815,6 @@
 			<p><i>ocasteis</i></p>
 			<p><i>ocaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ocaré</i></p>
 			<p><i>ocarás</i></p>
@@ -20964,14 +19977,6 @@
 			<p><i>ollasteis</i></p>
 			<p><i>ollaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ollaré</i></p>
 			<p><i>ollarás</i></p>
@@ -21134,14 +20139,6 @@
 			<p><i>edisteis</i></p>
 			<p><i>idieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ediré</i></p>
 			<p><i>edirás</i></p>
@@ -21304,14 +20301,6 @@
 			<p><i>unasteis</i></p>
 			<p><i>unaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>unaré</i></p>
 			<p><i>unarás</i></p>
@@ -21474,14 +20463,6 @@
 			<p><i>abasteis</i></p>
 			<p><i>abaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>abaré</i></p>
 			<p><i>abarás</i></p>
@@ -21644,14 +20625,6 @@
 			<p><i>ordasteis</i></p>
 			<p><i>ordaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ordaré</i></p>
 			<p><i>ordarás</i></p>
@@ -21814,14 +20787,6 @@
 			<p><i>ornasteis</i></p>
 			<p><i>ornaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ornaré</i></p>
 			<p><i>ornarás</i></p>
@@ -21984,14 +20949,6 @@
 			<p><i>ucasteis</i></p>
 			<p><i>ucaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ucaré</i></p>
 			<p><i>ucarás</i></p>
@@ -22154,14 +21111,6 @@
 			<p><i>ejasteis</i></p>
 			<p><i>ejaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ejaré</i></p>
 			<p><i>ejarás</i></p>
@@ -22324,14 +21273,6 @@
 			<p><i>ostasteis</i></p>
 			<p><i>ostaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ostaré</i></p>
 			<p><i>ostarás</i></p>
@@ -22494,14 +21435,6 @@
 			<p><i>entasteis</i></p>
 			<p><i>entaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>entaré</i></p>
 			<p><i>entarás</i></p>
@@ -22664,14 +21597,6 @@
 			<p><i>ollasteis</i></p>
 			<p><i>ollaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ollaré</i></p>
 			<p><i>ollarás</i></p>
@@ -22834,14 +21759,6 @@
 			<p><i>ilmasteis</i></p>
 			<p><i>ilmaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ilmaré</i></p>
 			<p><i>ilmarás</i></p>
@@ -23004,14 +21921,6 @@
 			<p><i>uñasteis</i></p>
 			<p><i>uñaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uñaré</i></p>
 			<p><i>uñarás</i></p>
@@ -23174,14 +22083,6 @@
 			<p><i>urdasteis</i></p>
 			<p><i>urdaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>urdaré</i></p>
 			<p><i>urdarás</i></p>
@@ -23344,14 +22245,6 @@
 			<p><i>entrasteis</i></p>
 			<p><i>entraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>entraré</i></p>
 			<p><i>entrarás</i></p>
@@ -23514,14 +22407,6 @@
 			<p><i>estrasteis</i></p>
 			<p><i>estraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>estraré</i></p>
 			<p><i>estrarás</i></p>
@@ -23684,14 +22569,6 @@
 			<p><i>eristeis</i></p>
 			<p><i>irieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eriré</i></p>
 			<p><i>erirás</i></p>
@@ -23854,14 +22731,6 @@
 			<p><i>eristeis</i></p>
 			<p><i>irieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eriré</i></p>
 			<p><i>erirás</i></p>
@@ -24024,14 +22893,6 @@
 			<p><i>izasteis</i></p>
 			<p><i>izaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>izaré</i></p>
 			<p><i>izarás</i></p>
@@ -24194,14 +23055,6 @@
 			<p><i>ilasteis</i></p>
 			<p><i>ilaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ilaré</i></p>
 			<p><i>ilarás</i></p>
@@ -24364,14 +23217,6 @@
 			<p><i>itasteis</i></p>
 			<p><i>itaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>itaré</i></p>
 			<p><i>itarás</i></p>
@@ -24534,14 +23379,6 @@
 			<p><i>bisteis</i></p>
 			<p><i>bieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>biré</i></p>
 			<p><i>birás</i></p>
@@ -24704,14 +23541,6 @@
 			<p><i>gisteis</i></p>
 			<p><i>gieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>giré</i></p>
 			<p><i>girás</i></p>
@@ -24874,14 +23703,6 @@
 			<p><i>eñasteis</i></p>
 			<p><i>eñaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eñaré</i></p>
 			<p><i>eñarás</i></p>
@@ -25044,14 +23865,6 @@
 			<p><i>ertisteis</i></p>
 			<p><i>irtieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ertiré</i></p>
 			<p><i>ertirás</i></p>
@@ -25214,14 +24027,6 @@
 			<p><i>olasteis</i></p>
 			<p><i>olaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olaré</i></p>
 			<p><i>olarás</i></p>
@@ -25384,14 +24189,6 @@
 			<p><i>errasteis</i></p>
 			<p><i>erraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erraré</i></p>
 			<p><i>errarás</i></p>
@@ -25554,14 +24351,6 @@
 			<p><i>ebrasteis</i></p>
 			<p><i>ebraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ebraré</i></p>
 			<p><i>ebrarás</i></p>
@@ -25724,14 +24513,6 @@
 			<p><i>gisteis</i></p>
 			<p><i>gieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>giré</i></p>
 			<p><i>girás</i></p>
@@ -25894,14 +24675,6 @@
 			<p><i>orasteis</i></p>
 			<p><i>oraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oraré</i></p>
 			<p><i>orarás</i></p>
@@ -26064,14 +24837,6 @@
 			<p><i>osasteis</i></p>
 			<p><i>osaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>osaré</i></p>
 			<p><i>osarás</i></p>
@@ -26234,14 +24999,6 @@
 			<p><i>echasteis</i></p>
 			<p><i>echaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>echaré</i></p>
 			<p><i>echarás</i></p>
@@ -26404,14 +25161,6 @@
 			<p><i>utrasteis</i></p>
 			<p><i>utraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>utraré</i></p>
 			<p><i>utrarás</i></p>
@@ -26574,14 +25323,6 @@
 			<p><i>enasteis</i></p>
 			<p><i>enaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enaré</i></p>
 			<p><i>enarás</i></p>
@@ -26744,14 +25485,6 @@
 			<p><i>arbasteis</i></p>
 			<p><i>arbaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>arbaré</i></p>
 			<p><i>arbarás</i></p>
@@ -26914,14 +25647,6 @@
 			<p><i>ojasteis</i></p>
 			<p><i>ojaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ojaré</i></p>
 			<p><i>ojarás</i></p>
@@ -27084,14 +25809,6 @@
 			<p><i>ingasteis</i></p>
 			<p><i>ingaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ingaré</i></p>
 			<p><i>ingarás</i></p>
@@ -27254,14 +25971,6 @@
 			<p><i>aguasteis</i></p>
 			<p><i>aguaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aguaré</i></p>
 			<p><i>aguarás</i></p>
@@ -27424,14 +26133,6 @@
 			<p><i>orasteis</i></p>
 			<p><i>oraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oraré</i></p>
 			<p><i>orarás</i></p>
@@ -27594,14 +26295,6 @@
 			<p><i>ijasteis</i></p>
 			<p><i>ijaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ijaré</i></p>
 			<p><i>ijarás</i></p>
@@ -27764,14 +26457,6 @@
 			<p><i>ilasteis</i></p>
 			<p><i>ilaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ilaré</i></p>
 			<p><i>ilarás</i></p>
@@ -27934,14 +26619,6 @@
 			<p><i>itasteis</i></p>
 			<p><i>itaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>itaré</i></p>
 			<p><i>itarás</i></p>
@@ -28104,14 +26781,6 @@
 			<p><i>ajasteis</i></p>
 			<p><i>ajaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ajaré</i></p>
 			<p><i>ajarás</i></p>
@@ -28274,14 +26943,6 @@
 			<p><i>uchasteis</i></p>
 			<p><i>ucharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ucharé</i></p>
 			<p><i>ucharás</i></p>
@@ -28444,14 +27105,6 @@
 			<p><i>umasteis</i></p>
 			<p><i>umaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>umaré</i></p>
 			<p><i>umarás</i></p>
@@ -28614,14 +27267,6 @@
 			<p><i>usasteis</i></p>
 			<p><i>usaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>usaré</i></p>
 			<p><i>usarás</i></p>
@@ -28784,14 +27429,6 @@
 			<p><i>islasteis</i></p>
 			<p><i>islaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>islaré</i></p>
 			<p><i>islarás</i></p>
@@ -28954,14 +27591,6 @@
 			<p><i>ecasteis</i></p>
 			<p><i>ecaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ecaré</i></p>
 			<p><i>ecarás</i></p>
@@ -29124,14 +27753,6 @@
 			<p><i>umasteis</i></p>
 			<p><i>umaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>umaré</i></p>
 			<p><i>umarás</i></p>
@@ -29294,14 +27915,6 @@
 			<p><i>artasteis</i></p>
 			<p><i>artaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>artaré</i></p>
 			<p><i>artarás</i></p>
@@ -29464,14 +28077,6 @@
 			<p><i>easteis</i></p>
 			<p><i>earon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>earé</i></p>
 			<p><i>earás</i></p>
@@ -29634,14 +28239,6 @@
 			<p><i>ebrasteis</i></p>
 			<p><i>ebraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ebraré</i></p>
 			<p><i>ebrarás</i></p>
@@ -29804,14 +28401,6 @@
 			<p><i>estasteis</i></p>
 			<p><i>estaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>estaré</i></p>
 			<p><i>estarás</i></p>
@@ -29974,14 +28563,6 @@
 			<p><i>ebrasteis</i></p>
 			<p><i>ebraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ebraré</i></p>
 			<p><i>ebrarás</i></p>
@@ -30144,14 +28725,6 @@
 			<p><i>ongasteis</i></p>
 			<p><i>ongaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ongaré</i></p>
 			<p><i>ongarás</i></p>
@@ -30314,14 +28887,6 @@
 			<p><i>ecisteis</i></p>
 			<p><i>ecieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eceré</i></p>
 			<p><i>ecerás</i></p>
@@ -30484,14 +29049,6 @@
 			<p><i>imbrasteis</i></p>
 			<p><i>imbraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>imbraré</i></p>
 			<p><i>imbrarás</i></p>
@@ -30654,14 +29211,6 @@
 			<p><i>orrasteis</i></p>
 			<p><i>orraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orraré</i></p>
 			<p><i>orrarás</i></p>
@@ -30824,14 +29373,6 @@
 			<p><i>inasteis</i></p>
 			<p><i>inaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>inaré</i></p>
 			<p><i>inarás</i></p>
@@ -30994,14 +29535,6 @@
 			<p><i>allasteis</i></p>
 			<p><i>allaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>allaré</i></p>
 			<p><i>allarás</i></p>
@@ -31164,14 +29697,6 @@
 			<p><i>ebasteis</i></p>
 			<p><i>ebaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ebaré</i></p>
 			<p><i>ebarás</i></p>
@@ -31334,14 +29859,6 @@
 			<p><i>antasteis</i></p>
 			<p><i>antaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>antaré</i></p>
 			<p><i>antarás</i></p>
@@ -31504,14 +30021,6 @@
 			<p><i>amasteis</i></p>
 			<p><i>amaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>amaré</i></p>
 			<p><i>amarás</i></p>
@@ -31674,14 +30183,6 @@
 			<p><i>oblasteis</i></p>
 			<p><i>oblaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oblaré</i></p>
 			<p><i>oblarás</i></p>
@@ -31844,14 +30345,6 @@
 			<p><i>iñasteis</i></p>
 			<p><i>iñaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iñaré</i></p>
 			<p><i>iñarás</i></p>
@@ -32014,14 +30507,6 @@
 			<p><i>nejasteis</i></p>
 			<p><i>nejaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>nejaré</i></p>
 			<p><i>nejarás</i></p>
@@ -32184,14 +30669,6 @@
 			<p><i>usisteis</i></p>
 			<p><i>usieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ondré</i></p>
 			<p><i>ondrás</i></p>
@@ -32354,14 +30831,6 @@
 			<p><i>nudasteis</i></p>
 			<p><i>nudaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>nudaré</i></p>
 			<p><i>nudarás</i></p>
@@ -32524,14 +30993,6 @@
 			<p><i>udasteis</i></p>
 			<p><i>udaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>udaré</i></p>
 			<p><i>udarás</i></p>
@@ -32694,14 +31155,6 @@
 			<p><i>angasteis</i></p>
 			<p><i>angaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>angaré</i></p>
 			<p><i>angarás</i></p>
@@ -32864,14 +31317,6 @@
 			<p><i>iguasteis</i></p>
 			<p><i>iguaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iguaré</i></p>
 			<p><i>iguarás</i></p>
@@ -33034,14 +31479,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -33204,14 +31641,6 @@
 			<p><i>ernasteis</i></p>
 			<p><i>ernaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ernaré</i></p>
 			<p><i>ernarás</i></p>
@@ -33374,14 +31803,6 @@
 			<p><i>asteis</i></p>
 			<p><i>aron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -33544,14 +31965,6 @@
 			<p><i>arasteis</i></p>
 			<p><i>araron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>araré</i></p>
 			<p><i>ararás</i></p>
@@ -33714,14 +32127,6 @@
 			<p><i>implasteis</i></p>
 			<p><i>implaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>implaré</i></p>
 			<p><i>implarás</i></p>
@@ -33884,14 +32289,6 @@
 			<p><i>ipasteis</i></p>
 			<p><i>iparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iparé</i></p>
 			<p><i>iparás</i></p>
@@ -34054,14 +32451,6 @@
 			<p><i>ongasteis</i></p>
 			<p><i>ongaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ongaré</i></p>
 			<p><i>ongarás</i></p>
@@ -34224,14 +32613,6 @@
 			<p><i>ismasteis</i></p>
 			<p><i>ismaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ismaré</i></p>
 			<p><i>ismarás</i></p>
@@ -34394,14 +32775,6 @@
 			<p><i>ozasteis</i></p>
 			<p><i>ozaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ozaré</i></p>
 			<p><i>ozarás</i></p>
@@ -34564,14 +32937,6 @@
 			<p><i>etasteis</i></p>
 			<p><i>etaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>etaré</i></p>
 			<p><i>etarás</i></p>
@@ -34734,14 +33099,6 @@
 			<p><i>obasteis</i></p>
 			<p><i>obaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>obaré</i></p>
 			<p><i>obarás</i></p>
@@ -34904,14 +33261,6 @@
 			<p><i>üisteis</i></p>
 			<p><i>uyeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>üiré</i></p>
 			<p><i>üirás</i></p>
@@ -35074,14 +33423,6 @@
 			<p><i>iscasteis</i></p>
 			<p><i>iscaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iscaré</i></p>
 			<p><i>iscarás</i></p>
@@ -35244,14 +33585,6 @@
 			<p><i>imasteis</i></p>
 			<p><i>imaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>imaré</i></p>
 			<p><i>imarás</i></p>
@@ -35414,14 +33747,6 @@
 			<p><i>ostasteis</i></p>
 			<p><i>ostaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ostaré</i></p>
 			<p><i>ostarás</i></p>
@@ -35584,14 +33909,6 @@
 			<p><i>untasteis</i></p>
 			<p><i>untaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>untaré</i></p>
 			<p><i>untarás</i></p>
@@ -35754,14 +34071,6 @@
 			<p><i>endasteis</i></p>
 			<p><i>endaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>endaré</i></p>
 			<p><i>endarás</i></p>
@@ -35924,14 +34233,6 @@
 			<p><i>igasteis</i></p>
 			<p><i>igaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>igaré</i></p>
 			<p><i>igarás</i></p>
@@ -36094,14 +34395,6 @@
 			<p><i>entisteis</i></p>
 			<p><i>intieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>entiré</i></p>
 			<p><i>entirás</i></p>
@@ -36264,14 +34557,6 @@
 			<p><i>icasteis</i></p>
 			<p><i>icaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>icaré</i></p>
 			<p><i>icarás</i></p>
@@ -36434,14 +34719,6 @@
 			<p><i>irasteis</i></p>
 			<p><i>iraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iraré</i></p>
 			<p><i>irarás</i></p>
@@ -36604,14 +34881,6 @@
 			<p><i>oldasteis</i></p>
 			<p><i>oldaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oldaré</i></p>
 			<p><i>oldarás</i></p>
@@ -36774,14 +35043,6 @@
 			<p><i>onasteis</i></p>
 			<p><i>onaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>onaré</i></p>
 			<p><i>onarás</i></p>
@@ -36944,14 +35205,6 @@
 			<p><i>entasteis</i></p>
 			<p><i>entaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>entaré</i></p>
 			<p><i>entarás</i></p>
@@ -37114,14 +35367,6 @@
 			<p><i>isteis</i></p>
 			<p><i>eron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -37284,14 +35529,6 @@
 			<p><i>isteis</i></p>
 			<p><i>eron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -37454,14 +35691,6 @@
 			<p><i>endisteis</i></p>
 			<p><i>endieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enderé</i></p>
 			<p><i>enderás</i></p>
@@ -37624,14 +35853,6 @@
 			<p><i>atuvisteis</i></p>
 			<p><i>atuvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>atendré</i></p>
 			<p><i>atendrás</i></p>
@@ -37794,14 +36015,6 @@
 			<p><i>etasteis</i></p>
 			<p><i>etaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>etaré</i></p>
 			<p><i>etarás</i></p>
@@ -37964,14 +36177,6 @@
 			<p><i>estasteis</i></p>
 			<p><i>estaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>estaré</i></p>
 			<p><i>estarás</i></p>
@@ -38134,14 +36339,6 @@
 			<p><i>ujasteis</i></p>
 			<p><i>ujaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ujaré</i></p>
 			<p><i>ujarás</i></p>
@@ -38304,14 +36501,6 @@
 			<p><i>orcisteis</i></p>
 			<p><i>orcieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orceré</i></p>
 			<p><i>orcerás</i></p>
@@ -38474,14 +36663,6 @@
 			<p><i>oscasteis</i></p>
 			<p><i>oscaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oscaré</i></p>
 			<p><i>oscarás</i></p>
@@ -38644,14 +36825,6 @@
 			<p><i>illasteis</i></p>
 			<p><i>illaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>illaré</i></p>
 			<p><i>illarás</i></p>
@@ -38814,14 +36987,6 @@
 			<p><i>esasteis</i></p>
 			<p><i>esaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>esaré</i></p>
 			<p><i>esarás</i></p>
@@ -38984,14 +37149,6 @@
 			<p><i>unasteis</i></p>
 			<p><i>unaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>unaré</i></p>
 			<p><i>unarás</i></p>
@@ -39154,14 +37311,6 @@
 			<p><i>upasteis</i></p>
 			<p><i>uparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uparé</i></p>
 			<p><i>uparás</i></p>
@@ -39324,14 +37473,6 @@
 			<p><i>upasteis</i></p>
 			<p><i>uparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uparé</i></p>
 			<p><i>uparás</i></p>
@@ -39494,14 +37635,6 @@
 			<p><i>ijisteis</i></p>
 			<p><i>ijeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eciré</i></p>
 			<p><i>ecirás</i></p>
@@ -39664,14 +37797,6 @@
 			<p><i>isisteis</i></p>
 			<p><i>isieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erré</i></p>
 			<p><i>errás</i></p>
@@ -39834,14 +37959,6 @@
 			<p><i>urcasteis</i></p>
 			<p><i>urcaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>urcaré</i></p>
 			<p><i>urcarás</i></p>
@@ -40004,14 +38121,6 @@
 			<p><i>iasteis</i></p>
 			<p><i>iaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iaré</i></p>
 			<p><i>iarás</i></p>
@@ -40174,14 +38283,6 @@
 			<p><i>ernisteis</i></p>
 			<p><i>ernieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erneré</i></p>
 			<p><i>ernerás</i></p>
@@ -40344,14 +38445,6 @@
 			<p><i>afasteis</i></p>
 			<p><i>afaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>afaré</i></p>
 			<p><i>afarás</i></p>
@@ -40514,14 +38607,6 @@
 			<p><i>ispasteis</i></p>
 			<p><i>isparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>isparé</i></p>
 			<p><i>isparás</i></p>
@@ -40684,14 +38769,6 @@
 			<p><i>dasteis</i></p>
 			<p><i>daron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>daré</i></p>
 			<p><i>darás</i></p>
@@ -40854,14 +38931,6 @@
 			<p><i>endisteis</i></p>
 			<p><i>endieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enderé</i></p>
 			<p><i>enderás</i></p>
@@ -41024,14 +39093,6 @@
 			<p><i>olasteis</i></p>
 			<p><i>olaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olaré</i></p>
 			<p><i>olarás</i></p>
@@ -41194,14 +39255,6 @@
 			<p><i>egisteis</i></p>
 			<p><i>igieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>egiré</i></p>
 			<p><i>egirás</i></p>
@@ -41364,14 +39417,6 @@
 			<p><i>enzasteis</i></p>
 			<p><i>enzaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enzaré</i></p>
 			<p><i>enzarás</i></p>
@@ -41534,14 +39579,6 @@
 			<p><i>elisteis</i></p>
 			<p><i>elieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eleré</i></p>
 			<p><i>elerás</i></p>
@@ -41704,14 +39741,6 @@
 			<p><i>etrasteis</i></p>
 			<p><i>etraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>etraré</i></p>
 			<p><i>etrarás</i></p>
@@ -41874,14 +39903,6 @@
 			<p><i>etisteis</i></p>
 			<p><i>itieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>etiré</i></p>
 			<p><i>etirás</i></p>
@@ -42044,14 +40065,6 @@
 			<p><i>ortasteis</i></p>
 			<p><i>ortaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ortaré</i></p>
 			<p><i>ortarás</i></p>
@@ -42214,14 +40227,6 @@
 			<p><i>disteis</i></p>
 			<p><i>dieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>deré</i></p>
 			<p><i>derás</i></p>
@@ -42384,14 +40389,6 @@
 			<p><i>imisteis</i></p>
 			<p><i>imieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>imiré</i></p>
 			<p><i>imirás</i></p>
@@ -42554,14 +40551,6 @@
 			<p><i>ebisteis</i></p>
 			<p><i>ibieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ebiré</i></p>
 			<p><i>ebirás</i></p>
@@ -42724,14 +40713,6 @@
 			<p><i>isteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -42894,14 +40875,6 @@
 			<p><i>omisteis</i></p>
 			<p><i>omieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>omeré</i></p>
 			<p><i>omerás</i></p>
@@ -43064,14 +41037,6 @@
 			<p><i>ijisteis</i></p>
 			<p><i>ijeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -43234,14 +41199,6 @@
 			<p><i>olisteis</i></p>
 			<p><i>olieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oleré</i></p>
 			<p><i>olerás</i></p>
@@ -43404,14 +41361,6 @@
 			<p><i>esasteis</i></p>
 			<p><i>esaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>esaré</i></p>
 			<p><i>esarás</i></p>
@@ -43574,14 +41523,6 @@
 			<p><i>ndisteis</i></p>
 			<p><i>ndieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ndiré</i></p>
 			<p><i>ndirás</i></p>
@@ -43744,14 +41685,6 @@
 			<p><i>misteis</i></p>
 			<p><i>mieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>miré</i></p>
 			<p><i>mirás</i></p>
@@ -43914,14 +41847,6 @@
 			<p><i>ontasteis</i></p>
 			<p><i>ontaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ontaré</i></p>
 			<p><i>ontarás</i></p>
@@ -44084,14 +42009,6 @@
 			<p><i>orcisteis</i></p>
 			<p><i>orcieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orceré</i></p>
 			<p><i>orcerás</i></p>
@@ -44254,14 +42171,6 @@
 			<p><i>ijisteis</i></p>
 			<p><i>ijeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -44424,14 +42333,6 @@
 			<p><i>elisteis</i></p>
 			<p><i>elieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eleré</i></p>
 			<p><i>elerás</i></p>
@@ -44594,14 +42495,6 @@
 			<p><i>encisteis</i></p>
 			<p><i>encieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enceré</i></p>
 			<p><i>encerás</i></p>
@@ -44764,14 +42657,6 @@
 			<p><i>ompisteis</i></p>
 			<p><i>ompieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>omperé</i></p>
 			<p><i>omperás</i></p>
@@ -44934,14 +42819,6 @@
 			<p><i>ostrasteis</i></p>
 			<p><i>ostraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ostraré</i></p>
 			<p><i>ostrarás</i></p>
@@ -45104,14 +42981,6 @@
 			<p><i>ostrasteis</i></p>
 			<p><i>ostraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ostraré</i></p>
 			<p><i>ostrarás</i></p>
@@ -45274,14 +43143,6 @@
 			<p><i>ordasteis</i></p>
 			<p><i>ordaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ordaré</i></p>
 			<p><i>ordarás</i></p>
@@ -45444,14 +43305,6 @@
 			<p><i>itasteis</i></p>
 			<p><i>itaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>itaré</i></p>
 			<p><i>itarás</i></p>
@@ -45614,14 +43467,6 @@
 			<p><i>islasteis</i></p>
 			<p><i>islaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>islaré</i></p>
 			<p><i>islarás</i></p>
@@ -45784,14 +43629,6 @@
 			<p><i>istasteis</i></p>
 			<p><i>istaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>istaré</i></p>
 			<p><i>istarás</i></p>
@@ -45954,14 +43791,6 @@
 			<p><i>orcasteis</i></p>
 			<p><i>orcaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orcaré</i></p>
 			<p><i>orcarás</i></p>
@@ -46124,14 +43953,6 @@
 			<p><i>ancasteis</i></p>
 			<p><i>ancaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ancaré</i></p>
 			<p><i>ancarás</i></p>
@@ -46294,14 +44115,6 @@
 			<p><i>ontasteis</i></p>
 			<p><i>ontaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ontaré</i></p>
 			<p><i>ontarás</i></p>
@@ -46464,14 +44277,6 @@
 			<p><i>ufasteis</i></p>
 			<p><i>ufaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ufaré</i></p>
 			<p><i>ufarás</i></p>
@@ -46634,14 +44439,6 @@
 			<p><i>andasteis</i></p>
 			<p><i>andaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>andaré</i></p>
 			<p><i>andarás</i></p>
@@ -46804,14 +44601,6 @@
 			<p><i>ustasteis</i></p>
 			<p><i>ustaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ustaré</i></p>
 			<p><i>ustarás</i></p>
@@ -46974,14 +44763,6 @@
 			<p><i>azasteis</i></p>
 			<p><i>azaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>azaré</i></p>
 			<p><i>azarás</i></p>
@@ -47144,14 +44925,6 @@
 			<p><i>ullisteis</i></p>
 			<p><i>ulleron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ulliré</i></p>
 			<p><i>ullirás</i></p>
@@ -47314,14 +45087,6 @@
 			<p><i>ullisteis</i></p>
 			<p><i>ulleron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ulliré</i></p>
 			<p><i>ullirás</i></p>
@@ -47484,14 +45249,6 @@
 			<p><i>ostasteis</i></p>
 			<p><i>ostaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ostaré</i></p>
 			<p><i>ostarás</i></p>
@@ -47654,14 +45411,6 @@
 			<p><i>ulasteis</i></p>
 			<p><i>ularon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ularé</i></p>
 			<p><i>ularás</i></p>
@@ -47824,14 +45573,6 @@
 			<p><i>edrasteis</i></p>
 			<p><i>edraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>edraré</i></p>
 			<p><i>edrarás</i></p>
@@ -47994,14 +45735,6 @@
 			<p><i>ovasteis</i></p>
 			<p><i>ovaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ovaré</i></p>
 			<p><i>ovarás</i></p>
@@ -48164,14 +45897,6 @@
 			<p><i>osasteis</i></p>
 			<p><i>osaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>osaré</i></p>
 			<p><i>osarás</i></p>
@@ -48334,14 +46059,6 @@
 			<p><i>ervisteis</i></p>
 			<p><i>irvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erviré</i></p>
 			<p><i>ervirás</i></p>
@@ -48504,14 +46221,6 @@
 			<p><i>ifasteis</i></p>
 			<p><i>ifaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ifaré</i></p>
 			<p><i>ifarás</i></p>
@@ -48674,14 +46383,6 @@
 			<p><i>elasteis</i></p>
 			<p><i>elaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>elaré</i></p>
 			<p><i>elarás</i></p>
@@ -48844,14 +46545,6 @@
 			<p><i>erbasteis</i></p>
 			<p><i>erbaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erbaré</i></p>
 			<p><i>erbarás</i></p>
@@ -49014,14 +46707,6 @@
 			<p><i>endrasteis</i></p>
 			<p><i>endraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>endraré</i></p>
 			<p><i>endrarás</i></p>
@@ -49184,14 +46869,6 @@
 			<p><i>arcasteis</i></p>
 			<p><i>arcaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>arcaré</i></p>
 			<p><i>arcarás</i></p>
@@ -49354,14 +47031,6 @@
 			<p><i>embrasteis</i></p>
 			<p><i>embraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>embraré</i></p>
 			<p><i>embrarás</i></p>
@@ -49524,14 +47193,6 @@
 			<p><i>utristeis</i></p>
 			<p><i>utrieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>utriré</i></p>
 			<p><i>utrirás</i></p>
@@ -49694,14 +47355,6 @@
 			<p><i>ísteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -49864,14 +47517,6 @@
 			<p><i>otasteis</i></p>
 			<p><i>otaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>otaré</i></p>
 			<p><i>otarás</i></p>
@@ -50034,14 +47679,6 @@
 			<p><i>ezasteis</i></p>
 			<p><i>ezaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ezaré</i></p>
 			<p><i>ezarás</i></p>
@@ -50204,14 +47841,6 @@
 			<p><i>ertasteis</i></p>
 			<p><i>ertaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ertaré</i></p>
 			<p><i>ertarás</i></p>
@@ -50374,14 +48003,6 @@
 			<p><i>upasteis</i></p>
 			<p><i>uparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uparé</i></p>
 			<p><i>uparás</i></p>
@@ -50544,14 +48165,6 @@
 			<p><i>eísteis</i></p>
 			<p><i>eyeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eeré</i></p>
 			<p><i>eerás</i></p>
@@ -50714,14 +48327,6 @@
 			<p><i>osisteis</i></p>
 			<p><i>osieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oseré</i></p>
 			<p><i>oserás</i></p>
@@ -50884,14 +48489,6 @@
 			<p><i>estisteis</i></p>
 			<p><i>istieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>estiré</i></p>
 			<p><i>estirás</i></p>
@@ -51054,14 +48651,6 @@
 			<p><i>ivisteis</i></p>
 			<p><i>ivieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iviré</i></p>
 			<p><i>ivirás</i></p>
@@ -51224,14 +48813,6 @@
 			<p><i>ezmasteis</i></p>
 			<p><i>ezmaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ezmaré</i></p>
 			<p><i>ezmarás</i></p>
@@ -51394,14 +48975,6 @@
 			<p><i>ignasteis</i></p>
 			<p><i>ignaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ignaré</i></p>
 			<p><i>ignarás</i></p>
@@ -51564,14 +49137,6 @@
 			<p><i>orzasteis</i></p>
 			<p><i>orzaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orzaré</i></p>
 			<p><i>orzarás</i></p>
@@ -51734,14 +49299,6 @@
 			<p><i>disteis</i></p>
 			<p><i>dieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>diré</i></p>
 			<p><i>dirás</i></p>
@@ -51904,14 +49461,6 @@
 			<p><i>alasteis</i></p>
 			<p><i>alaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>alaré</i></p>
 			<p><i>alarás</i></p>
@@ -52074,14 +49623,6 @@
 			<p><i>inchasteis</i></p>
 			<p><i>incharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>incharé</i></p>
 			<p><i>incharás</i></p>
@@ -52244,14 +49785,6 @@
 			<p><i>oncasteis</i></p>
 			<p><i>oncaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oncaré</i></p>
 			<p><i>oncarás</i></p>
@@ -52414,14 +49947,6 @@
 			<p><i>adrasteis</i></p>
 			<p><i>adraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>adraré</i></p>
 			<p><i>adrarás</i></p>
@@ -52584,14 +50109,6 @@
 			<p><i>añasteis</i></p>
 			<p><i>añaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>añaré</i></p>
 			<p><i>añarás</i></p>
@@ -52754,14 +50271,6 @@
 			<p><i>anzasteis</i></p>
 			<p><i>anzaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>anzaré</i></p>
 			<p><i>anzarás</i></p>
@@ -52924,14 +50433,6 @@
 			<p><i>edasteis</i></p>
 			<p><i>edaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>edaré</i></p>
 			<p><i>edarás</i></p>
@@ -53094,14 +50595,6 @@
 			<p><i>azgasteis</i></p>
 			<p><i>azgaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>azgaré</i></p>
 			<p><i>azgarás</i></p>
@@ -53264,14 +50757,6 @@
 			<p><i>errasteis</i></p>
 			<p><i>erraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erraré</i></p>
 			<p><i>errarás</i></p>
@@ -53434,14 +50919,6 @@
 			<p><i>onchasteis</i></p>
 			<p><i>oncharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oncharé</i></p>
 			<p><i>oncharás</i></p>
@@ -53604,14 +51081,6 @@
 			<p><i>ambrasteis</i></p>
 			<p><i>ambraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ambraré</i></p>
 			<p><i>ambrarás</i></p>
@@ -53774,14 +51243,6 @@
 			<p><i>utasteis</i></p>
 			<p><i>utaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>utaré</i></p>
 			<p><i>utarás</i></p>
@@ -53944,14 +51405,6 @@
 			<p><i>avasteis</i></p>
 			<p><i>avaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>avaré</i></p>
 			<p><i>avarás</i></p>
@@ -54114,14 +51567,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ajado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -54284,14 +51729,6 @@
 			<p><i>ivasteis</i></p>
 			<p><i>ivaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ivaré</i></p>
 			<p><i>ivarás</i></p>
@@ -54454,14 +51891,6 @@
 			<p><i>anchasteis</i></p>
 			<p><i>ancharon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ancharé</i></p>
 			<p><i>ancharás</i></p>
@@ -54624,14 +52053,6 @@
 			<p><i>ogasteis</i></p>
 			<p><i>ogaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ogaré</i></p>
 			<p><i>ogarás</i></p>
@@ -54794,14 +52215,6 @@
 			<p><i>uscasteis</i></p>
 			<p><i>uscaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uscaré</i></p>
 			<p><i>uscarás</i></p>
@@ -54964,14 +52377,6 @@
 			<p><i>asgasteis</i></p>
 			<p><i>asgaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>asgaré</i></p>
 			<p><i>asgarás</i></p>
@@ -55134,14 +52539,6 @@
 			<p><i>usgasteis</i></p>
 			<p><i>usgaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>usgaré</i></p>
 			<p><i>usgarás</i></p>
@@ -55304,14 +52701,6 @@
 			<p><i>gasteis</i></p>
 			<p><i>garon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>garé</i></p>
 			<p><i>garás</i></p>
@@ -55474,14 +52863,6 @@
 			<p><i>ocasteis</i></p>
 			<p><i>ocaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ocaré</i></p>
 			<p><i>ocarás</i></p>
@@ -55644,14 +53025,6 @@
 			<p><i>odasteis</i></p>
 			<p><i>odaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>odaré</i></p>
 			<p><i>odarás</i></p>
@@ -55814,14 +53187,6 @@
 			<p><i>obrasteis</i></p>
 			<p><i>obraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>obraré</i></p>
 			<p><i>obrarás</i></p>
@@ -55984,14 +53349,6 @@
 			<p><i>oñasteis</i></p>
 			<p><i>oñaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oñaré</i></p>
 			<p><i>oñarás</i></p>
@@ -56154,14 +53511,6 @@
 			<p><i>acasteis</i></p>
 			<p><i>acaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>acaré</i></p>
 			<p><i>acarás</i></p>
@@ -56324,14 +53673,6 @@
 			<p><i>ercasteis</i></p>
 			<p><i>ercaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ercaré</i></p>
 			<p><i>ercarás</i></p>
@@ -56494,14 +53835,6 @@
 			<p><i>orcasteis</i></p>
 			<p><i>orcaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orcaré</i></p>
 			<p><i>orcarás</i></p>
@@ -56664,14 +53997,6 @@
 			<p><i>ortasteis</i></p>
 			<p><i>ortaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ortaré</i></p>
 			<p><i>ortarás</i></p>
@@ -56834,14 +54159,6 @@
 			<p><i>oristeis</i></p>
 			<p><i>urieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oriré</i></p>
 			<p><i>orirás</i></p>
@@ -57004,14 +54321,6 @@
 			<p><i>emasteis</i></p>
 			<p><i>emaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>emaré</i></p>
 			<p><i>emarás</i></p>
@@ -57174,14 +54483,6 @@
 			<p><i>ompasteis</i></p>
 			<p><i>omparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>omparé</i></p>
 			<p><i>omparás</i></p>
@@ -57344,14 +54645,6 @@
 			<p><i>umisteis</i></p>
 			<p><i>umieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>umiré</i></p>
 			<p><i>umirás</i></p>
@@ -57514,14 +54807,6 @@
 			<p><i>ijasteis</i></p>
 			<p><i>ijaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ijaré</i></p>
 			<p><i>ijarás</i></p>
@@ -57684,14 +54969,6 @@
 			<p><i>inasteis</i></p>
 			<p><i>inaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>inaré</i></p>
 			<p><i>inarás</i></p>
@@ -57854,14 +55131,6 @@
 			<p><i>uvisteis</i></p>
 			<p><i>uvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -58024,14 +55293,6 @@
 			<p><i>imisteis</i></p>
 			<p><i>imieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>imiré</i></p>
 			<p><i>imirás</i></p>
@@ -58194,14 +55455,6 @@
 			<p><i>asteis</i></p>
 			<p><i>aron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>aré</i></p>
 			<p><i>arás</i></p>
@@ -58364,14 +55617,6 @@
 			<p><i>endisteis</i></p>
 			<p><i>endieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enderé</i></p>
 			<p><i>enderás</i></p>
@@ -58534,14 +55779,6 @@
 			<p><i>guisteis</i></p>
 			<p><i>guieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>guiré</i></p>
 			<p><i>guirás</i></p>
@@ -58704,14 +55941,6 @@
 			<p><i>FALSEasteis</i></p>
 			<p><i>FALSEaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>FALSEaré</i></p>
 			<p><i>FALSEarás</i></p>
@@ -58874,14 +56103,6 @@
 			<p><i>ollasteis</i></p>
 			<p><i>ollaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ollaré</i></p>
 			<p><i>ollarás</i></p>
@@ -59044,14 +56265,6 @@
 			<p><i>eísteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eiré</i></p>
 			<p><i>eirás</i></p>
@@ -59214,14 +56427,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>uado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -59384,14 +56589,6 @@
 			<p><i>emisteis</i></p>
 			<p><i>imieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>emiré</i></p>
 			<p><i>emirás</i></p>
@@ -59554,14 +56751,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>zado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -59724,14 +56913,6 @@
 			<p><i>edisteis</i></p>
 			<p><i>edieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ederé</i></p>
 			<p><i>ederás</i></p>
@@ -59894,14 +57075,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>elado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -60064,14 +57237,6 @@
 			<p><i>enchisteis</i></p>
 			<p><i>inchieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>enchiré</i></p>
 			<p><i>enchirás</i></p>
@@ -60234,14 +57399,6 @@
 			<p><i>endisteis</i></p>
 			<p><i>endieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>endiré</i></p>
 			<p><i>endirás</i></p>
@@ -60404,14 +57561,6 @@
 			<p><i>ervisteis</i></p>
 			<p><i>irvieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erviré</i></p>
 			<p><i>ervirás</i></p>
@@ -60574,14 +57723,6 @@
 			<p><i>opasteis</i></p>
 			<p><i>oparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oparé</i></p>
 			<p><i>oparás</i></p>
@@ -60744,14 +57885,6 @@
 			<p><i>risteis</i></p>
 			<p><i>rieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>riré</i></p>
 			<p><i>rirás</i></p>
@@ -60914,14 +58047,6 @@
 			<p><i>eristeis</i></p>
 			<p><i>irieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eriré</i></p>
 			<p><i>erirás</i></p>
@@ -61084,14 +58209,6 @@
 			<p><i>fuisteis</i></p>
 			<p><i>fueron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -61254,14 +58371,6 @@
 			<p><i>actasteis</i></p>
 			<p><i>actaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>actaré</i></p>
 			<p><i>actarás</i></p>
@@ -61424,14 +58533,6 @@
 			<p><i>erdasteis</i></p>
 			<p><i>erdaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erdaré</i></p>
 			<p><i>erdarás</i></p>
@@ -61594,14 +58695,6 @@
 			<p><i>estasteis</i></p>
 			<p><i>estaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>estaré</i></p>
 			<p><i>estarás</i></p>
@@ -61764,14 +58857,6 @@
 			<p><i>tisteis</i></p>
 			<p><i>tieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>tiré</i></p>
 			<p><i>tirás</i></p>
@@ -61934,14 +59019,6 @@
 			<p><i>irlasteis</i></p>
 			<p><i>irlaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>irlaré</i></p>
 			<p><i>irlarás</i></p>
@@ -62104,14 +59181,6 @@
 			<p><i>ordisteis</i></p>
 			<p><i>ordieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orderé</i></p>
 			<p><i>orderás</i></p>
@@ -62274,14 +59343,6 @@
 			<p><i>cisteis</i></p>
 			<p><i>cieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ceré</i></p>
 			<p><i>cerás</i></p>
@@ -62444,14 +59505,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>evado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -62614,14 +59667,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -62784,14 +59829,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -62954,14 +59991,6 @@
 			<p><i>erdisteis</i></p>
 			<p><i>erdieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erderé</i></p>
 			<p><i>erderás</i></p>
@@ -63124,14 +60153,6 @@
 			<p><i>intasteis</i></p>
 			<p><i>intaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>intaré</i></p>
 			<p><i>intarás</i></p>
@@ -63294,14 +60315,6 @@
 			<p><i>irrasteis</i></p>
 			<p><i>irraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>irraré</i></p>
 			<p><i>irrarás</i></p>
@@ -63464,14 +60477,6 @@
 			<p><i>usisteis</i></p>
 			<p><i>usieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ondré</i></p>
 			<p><i>ondrás</i></p>
@@ -63634,14 +60639,6 @@
 			<p><i>ísteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>
@@ -63804,14 +60801,6 @@
 			<p><i>ndisteis</i></p>
 			<p><i>ndieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>nderé</i></p>
 			<p><i>nderás</i></p>
@@ -63974,14 +60963,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -64144,14 +61125,6 @@
 			<p><i>ellasteis</i></p>
 			<p><i>ellaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ellaré</i></p>
 			<p><i>ellarás</i></p>
@@ -64314,14 +61287,6 @@
 			<p><i>egrasteis</i></p>
 			<p><i>egraron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>egraré</i></p>
 			<p><i>egrarás</i></p>
@@ -64484,14 +61449,6 @@
 			<p><i>urtasteis</i></p>
 			<p><i>urtaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>urtaré</i></p>
 			<p><i>urtarás</i></p>
@@ -64654,14 +61611,6 @@
 			<p><i>ansasteis</i></p>
 			<p><i>ansaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ansaré</i></p>
 			<p><i>ansarás</i></p>
@@ -64824,14 +61773,6 @@
 			<p><i>ilgasteis</i></p>
 			<p><i>ilgaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ilgaré</i></p>
 			<p><i>ilgarás</i></p>
@@ -64994,14 +61935,6 @@
 			<p><i>endisteis</i></p>
 			<p><i>indieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>endiré</i></p>
 			<p><i>endirás</i></p>
@@ -65164,14 +62097,6 @@
 			<p><i>olgasteis</i></p>
 			<p><i>olgaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olgaré</i></p>
 			<p><i>olgarás</i></p>
@@ -65334,14 +62259,6 @@
 			<p><i>emblasteis</i></p>
 			<p><i>emblaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>emblaré</i></p>
 			<p><i>emblarás</i></p>
@@ -65504,14 +62421,6 @@
 			<p><i>orcisteis</i></p>
 			<p><i>orcieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>orceré</i></p>
 			<p><i>orcerás</i></p>
@@ -65674,14 +62583,6 @@
 			<p><i>epasteis</i></p>
 			<p><i>eparon</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eparé</i></p>
 			<p><i>eparás</i></p>
@@ -65844,14 +62745,6 @@
 			<p><i>ertisteis</i></p>
 			<p><i>ertieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erteré</i></p>
 			<p><i>erterás</i></p>
@@ -66014,14 +62907,6 @@
 			<p><i>olcasteis</i></p>
 			<p><i>olcaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>olcaré</i></p>
 			<p><i>olcarás</i></p>
@@ -66184,14 +63069,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>iado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -66354,14 +63231,6 @@
 			<p><i>ogasteis</i></p>
 			<p><i>ogaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ogaré</i></p>
 			<p><i>ogarás</i></p>
@@ -66524,14 +63393,6 @@
 			<p><i>mpisteis</i></p>
 			<p><i>mpieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>mperé</i></p>
 			<p><i>mperás</i></p>
@@ -66694,14 +63555,6 @@
 			<p><i>ornasteis</i></p>
 			<p><i>ornaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ornaré</i></p>
 			<p><i>ornarás</i></p>
@@ -66864,14 +63717,6 @@
 			<p><i>ertisteis</i></p>
 			<p><i>ertieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>erteré</i></p>
 			<p><i>erterás</i></p>
@@ -67034,14 +63879,6 @@
 			<p><i>idasteis</i></p>
 			<p><i>idaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>idaré</i></p>
 			<p><i>idarás</i></p>
@@ -67204,14 +64041,6 @@
 			<p><i>oltasteis</i></p>
 			<p><i>oltaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>oltaré</i></p>
 			<p><i>oltarás</i></p>
@@ -67374,14 +64203,6 @@
 			<p><i>onasteis</i></p>
 			<p><i>onaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>onaré</i></p>
 			<p><i>onarás</i></p>
@@ -67544,14 +64365,6 @@
 			<p><i>odasteis</i></p>
 			<p><i>odaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>odaré</i></p>
 			<p><i>odarás</i></p>
@@ -67714,14 +64527,6 @@
 			<p><i>isteis</i></p>
 			<p><i>yeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>iré</i></p>
 			<p><i>irás</i></p>
@@ -67884,14 +64689,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -68054,14 +64851,6 @@
 			<p><i>imasteis</i></p>
 			<p><i>imaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>imaré</i></p>
 			<p><i>imarás</i></p>
@@ -68224,14 +65013,6 @@
 			<p><i>eñisteis</i></p>
 			<p><i>iñeron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eñiré</i></p>
 			<p><i>eñirás</i></p>
@@ -68394,14 +65175,6 @@
 			<p><i>ucisteis</i></p>
 			<p><i>ucieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uciré</i></p>
 			<p><i>ucirás</i></p>
@@ -68564,14 +65337,6 @@
 			<p><i>ordasteis</i></p>
 			<p><i>ordaron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>ordaré</i></p>
 			<p><i>ordarás</i></p>
@@ -68734,14 +65499,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>onado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -68904,14 +65661,6 @@
 			<p><i>unisteis</i></p>
 			<p><i>unieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>uniré</i></p>
 			<p><i>unirás</i></p>
@@ -69074,14 +65823,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>entado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i/></p>
 			<p><i/></p>
@@ -69244,14 +65985,6 @@
 			<p><i>isteis</i></p>
 			<p><i>ieron</i></p>
 		</Indicativo-pretérito-perfecto-simple>
-		<Indicativo-pretérito-anterior>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-pretérito-anterior>
 		<Indicativo-futuro>
 			<p><i>eré</i></p>
 			<p><i>erás</i></p>

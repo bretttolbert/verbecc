@@ -55,6 +55,7 @@ class InflectorEs(inflector.Inflector):
         return {
             'Indicativo': {
                 'Indicativo-pretérito-perfecto-compuesto': 'Indicativo-presente',
-                'Indicativo-pretérito-pluscuamperfecto': 'Indicativo-pretérito-imperfecto'
+                'Indicativo-pretérito-pluscuamperfecto': 'Indicativo-pretérito-imperfecto',
+                'Indicativo-pretérito-anterior': 'Indicativo-pretérito-perfecto-simple'
             }
         }
