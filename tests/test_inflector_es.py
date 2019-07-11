@@ -14,6 +14,8 @@ inf = inflector_es.InflectorEs()
 # Subjuntivo-pretérito-imperfecto-2 = Subjunctive Past 2 (yo hubiese)
 # Subjuntivo-pretérito-pluscuamperfecto-1 = Subjunctive Pluperfect 1 (yo hubiera habido)
 # Subjuntivo-pretérito-pluscuamperfecto-2 = Subjunctive Pluperfect 2 (yo hubiese habido)
+# Subjuntivo-futuro = Subjunctive Future (yo hubiere)
+# Subjuntivo-futuro-perfecto = Subjunctive Future Perfect (yo hubiere habido)
 
 test_es_conjugate_mood_tense_data = [
     ('abañar', 'Indicativo', 'Indicativo-presente', 
@@ -40,6 +42,8 @@ test_es_conjugate_mood_tense_data = [
         ['yo hubiera', 'tú hubieras', 'él hubiera', 'nosotros hubiéramos', 'vosotros hubierais', 'ellos hubieran']),
     ('haber', 'Subjuntivo', 'Subjuntivo-pretérito-imperfecto-2',
         ['yo hubiese', 'tú hubieses', 'él hubiese', 'nosotros hubiésemos', 'vosotros hubieseis', 'ellos hubiesen']),
+    ('haber', 'Subjuntivo', 'Subjuntivo-futuro',
+        ['yo hubiere', 'tú hubieres', 'él hubiere', 'nosotros hubiéremos', 'vosotros hubiereis', 'ellos hubieren']),
     ('hacer', 'Indicativo', 'Indicativo-presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
     ('ir', 'Indicativo', 'Indicativo-presente',
@@ -67,7 +71,9 @@ test_es_conjugate_mood_tense_data = [
     ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-pluscuamperfecto-1',
         ['yo hubiera comido', 'tú hubieras comido', 'él hubiera comido', 'nosotros hubiéramos comido', 'vosotros hubierais comido', 'ellos hubieran comido']),
     ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-pluscuamperfecto-2',
-        ['yo hubiese comido', 'tú hubieses comido', 'él hubiese comido', 'nosotros hubiésemos comido', 'vosotros hubieseis comido', 'ellos hubiesen comido'])
+        ['yo hubiese comido', 'tú hubieses comido', 'él hubiese comido', 'nosotros hubiésemos comido', 'vosotros hubieseis comido', 'ellos hubiesen comido']),
+    ('comer', 'Subjuntivo', 'Subjuntivo-futuro-perfecto',
+        ['yo hubiere comido', 'tú hubieres comido', 'él hubiere comido', 'nosotros hubiéremos comido', 'vosotros hubiereis comido', 'ellos hubieren comido'])
 ]
 
 """

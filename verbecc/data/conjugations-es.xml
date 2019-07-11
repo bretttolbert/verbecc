@@ -35,7 +35,7 @@
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-futuro)?>
 <!ATTLIST Indicativo xmlns CDATA #FIXED "">
-<!ELEMENT Subjuntivo (Subjuntivo-presente , Subjuntivo-pretérito-imperfecto-1 , Subjuntivo-pretérito-imperfecto-2 , Subjuntivo-futuro , Subjuntivo-futuro-perfecto)?>
+<!ELEMENT Subjuntivo (Subjuntivo-presente , Subjuntivo-pretérito-imperfecto-1 , Subjuntivo-pretérito-imperfecto-2 , Subjuntivo-futuro)?>
 <!ATTLIST Subjuntivo xmlns CDATA #FIXED "">
 <!ELEMENT Imperativo (Imperativo-afirmativo , Imperativo-non)>
 <!ATTLIST Imperativo xmlns CDATA #FIXED "">
@@ -63,8 +63,6 @@
 <!ATTLIST Subjuntivo-pretérito-imperfecto-2 xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo-futuro (p)+>
 <!ATTLIST Subjuntivo-futuro xmlns CDATA #FIXED "">
-<!ELEMENT Subjuntivo-futuro-perfecto (p)+>
-<!ATTLIST Subjuntivo-futuro-perfecto xmlns CDATA #FIXED "">
 <!ELEMENT Imperativo-afirmativo (p)+>
 <!ATTLIST Imperativo-afirmativo xmlns CDATA #FIXED "">
 <!ELEMENT Imperativo-non (p)+>
@@ -234,15 +232,7 @@
 			<p><i>uareis</i></p>
 			<p><i>uaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úa</i></p>
@@ -356,15 +346,7 @@
 			<p><i>riereis</i></p>
 			<p><i>rieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ere</i></p>
@@ -478,15 +460,7 @@
 			<p><i>incareis</i></p>
 			<p><i>incaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ínca</i></p>
@@ -600,15 +574,7 @@
 			<p><i>irareis</i></p>
 			<p><i>iraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íra</i></p>
@@ -722,15 +688,7 @@
 			<p><i>uviereis</i></p>
 			<p><i>uvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>a</i></p>
@@ -844,15 +802,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -966,15 +916,7 @@
 			<p><i>ullareis</i></p>
 			<p><i>ullaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úlla</i></p>
@@ -1088,15 +1030,7 @@
 			<p><i>onzareis</i></p>
 			<p><i>onzaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>üenza</i></p>
@@ -1210,15 +1144,7 @@
 			<p><i>uareis</i></p>
 			<p><i>uaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ua</i></p>
@@ -1332,15 +1258,7 @@
 			<p><i>cupiereis</i></p>
 			<p><i>cupieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>cabe</i></p>
@@ -1454,15 +1372,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -1576,15 +1486,7 @@
 			<p><i>zareis</i></p>
 			<p><i>zaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>za</i></p>
@@ -1698,15 +1600,7 @@
 			<p><i>ociereis</i></p>
 			<p><i>ocieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uece</i></p>
@@ -1820,15 +1714,7 @@
 			<p><i>giereis</i></p>
 			<p><i>gieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ge</i></p>
@@ -1942,15 +1828,7 @@
 			<p><i>olgareis</i></p>
 			<p><i>olgaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uelga</i></p>
@@ -2064,15 +1942,7 @@
 			<p><i>ciereis</i></p>
 			<p><i>cieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ce</i></p>
@@ -2186,15 +2056,7 @@
 			<p><i>areis</i></p>
 			<p><i>aren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>a</i></p>
@@ -2308,15 +2170,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -2430,15 +2284,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>a</i></p>
@@ -2552,15 +2398,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -2674,15 +2512,7 @@
 			<p><i>ijereis</i></p>
 			<p><i>ijeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>i</i></p>
@@ -2796,15 +2626,7 @@
 			<p><i>endiereis</i></p>
 			<p><i>endieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iende</i></p>
@@ -2918,15 +2740,7 @@
 			<p><i>quiereis</i></p>
 			<p><i>quieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>que</i></p>
@@ -3040,15 +2854,7 @@
 			<p><i>osareis</i></p>
 			<p><i>osaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>huesa</i></p>
@@ -3162,15 +2968,7 @@
 			<p><i>erniereis</i></p>
 			<p><i>ernieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierne</i></p>
@@ -3284,15 +3082,7 @@
 			<p><i>uiereis</i></p>
 			<p><i>uieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ue</i></p>
@@ -3406,15 +3196,7 @@
 			<p><i>urmiereis</i></p>
 			<p><i>urmieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerme</i></p>
@@ -3528,15 +3310,7 @@
 			<p><i>igiereis</i></p>
 			<p><i>igieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ige</i></p>
@@ -3650,15 +3424,7 @@
 			<p><i>ezareis</i></p>
 			<p><i>ezaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ieza</i></p>
@@ -3772,15 +3538,7 @@
 			<p><i>ontrareis</i></p>
 			<p><i>ontraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uentra</i></p>
@@ -3894,15 +3652,7 @@
 			<p><i>izareis</i></p>
 			<p><i>izaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íza</i></p>
@@ -4016,15 +3766,7 @@
 			<p><i>irguiereis</i></p>
 			<p><i>irguieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>yergue</i></p>
@@ -4138,15 +3880,7 @@
 			<p><i>errareis</i></p>
 			<p><i>erraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>yerra</i></p>
@@ -4260,15 +3994,7 @@
 			<p><i>uviereis</i></p>
 			<p><i>uvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>á</i></p>
@@ -4382,15 +4108,7 @@
 			<p><i>orzareis</i></p>
 			<p><i>orzaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerza</i></p>
@@ -4504,15 +4222,7 @@
 			<p><i>iareis</i></p>
 			<p><i>iaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ía</i></p>
@@ -4626,15 +4336,7 @@
 			<p><i>ubiereis</i></p>
 			<p><i>ubieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>é</i></p>
@@ -4748,15 +4450,7 @@
 			<p><i>iciereis</i></p>
 			<p><i>icieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>az</i></p>
@@ -4870,15 +4564,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ye</i></p>
@@ -4992,15 +4678,7 @@
 			<p><i>fuereis</i></p>
 			<p><i>fueren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ve</i></p>
@@ -5114,15 +4792,7 @@
 			<p><i>gareis</i></p>
 			<p><i>garen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ega</i></p>
@@ -5236,15 +4906,7 @@
 			<p><i>oviereis</i></p>
 			<p><i>ovieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ueve</i></p>
@@ -5358,15 +5020,7 @@
 			<p><i>ciereis</i></p>
 			<p><i>cieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ce</i></p>
@@ -5480,15 +5134,7 @@
 			<p><i>ciereis</i></p>
 			<p><i>cieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ce</i></p>
@@ -5602,15 +5248,7 @@
 			<p><i>oliereis</i></p>
 			<p><i>olieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>huele</i></p>
@@ -5724,15 +5362,7 @@
 			<p><i>areis</i></p>
 			<p><i>aren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>a</i></p>
@@ -5846,15 +5476,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -5968,15 +5590,7 @@
 			<p><i>idiereis</i></p>
 			<p><i>idieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ide</i></p>
@@ -6090,15 +5704,7 @@
 			<p><i>ensareis</i></p>
 			<p><i>ensaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iensa</i></p>
@@ -6212,15 +5818,7 @@
 			<p><i>aciereis</i></p>
 			<p><i>acieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ace</i></p>
@@ -6334,15 +5932,7 @@
 			<p><i>udiereis</i></p>
 			<p><i>udieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uede</i></p>
@@ -6456,15 +6046,7 @@
 			<p><i>udriereis</i></p>
 			<p><i>udrieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>udre</i></p>
@@ -6578,15 +6160,7 @@
 			<p><i>ijereis</i></p>
 			<p><i>ijeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ice</i></p>
@@ -6700,15 +6274,7 @@
 			<p><i>jereis</i></p>
 			<p><i>jeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ce</i></p>
@@ -6822,15 +6388,7 @@
 			<p><i>ibiereis</i></p>
 			<p><i>ibieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íbe</i></p>
@@ -6944,15 +6502,7 @@
 			<p><i>isiereis</i></p>
 			<p><i>isieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iere</i></p>
@@ -7066,15 +6616,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -7188,15 +6730,7 @@
 			<p><i>egareis</i></p>
 			<p><i>egaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iega</i></p>
@@ -7310,15 +6844,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íe</i></p>
@@ -7432,15 +6958,7 @@
 			<p><i>iñereis</i></p>
 			<p><i>iñeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iñe</i></p>
@@ -7554,15 +7072,7 @@
 			<p><i>uniereis</i></p>
 			<p><i>unieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úne</i></p>
@@ -7676,15 +7186,7 @@
 			<p><i>upiereis</i></p>
 			<p><i>upieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>abe</i></p>
@@ -7798,15 +7300,7 @@
 			<p><i>careis</i></p>
 			<p><i>caren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ca</i></p>
@@ -7920,15 +7414,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -8042,15 +7528,7 @@
 			<p><i>iguiereis</i></p>
 			<p><i>iguieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>igue</i></p>
@@ -8164,15 +7642,7 @@
 			<p><i>intiereis</i></p>
 			<p><i>intieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iente</i></p>
@@ -8286,15 +7756,7 @@
 			<p><i>fuereis</i></p>
 			<p><i>fueren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>sé</i></p>
@@ -8408,15 +7870,7 @@
 			<p><i>fuereis</i></p>
 			<p><i>fueren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -8530,15 +7984,7 @@
 			<p><i>ereis</i></p>
 			<p><i>eren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -8652,15 +8098,7 @@
 			<p><i>uviereis</i></p>
 			<p><i>uvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>en</i></p>
@@ -8774,15 +8212,7 @@
 			<p><i>jereis</i></p>
 			<p><i>jeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -8896,15 +8326,7 @@
 			<p><i>ocareis</i></p>
 			<p><i>ocaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ueca</i></p>
@@ -9018,15 +8440,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -9140,15 +8554,7 @@
 			<p><i>iniereis</i></p>
 			<p><i>inieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>en</i></p>
@@ -9262,15 +8668,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -9384,15 +8782,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -9506,15 +8896,7 @@
 			<p><i>olviereis</i></p>
 			<p><i>olvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uelve</i></p>
@@ -9628,15 +9010,7 @@
 			<p><i>ciereis</i></p>
 			<p><i>cieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>z</i></p>
@@ -9750,15 +9124,7 @@
 			<p><i>ciereis</i></p>
 			<p><i>cieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ce</i></p>
@@ -9872,15 +9238,7 @@
 			<p><i>illareis</i></p>
 			<p><i>illaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íllate</i></p>
@@ -9994,15 +9352,7 @@
 			<p><i>anareis</i></p>
 			<p><i>anaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ánate</i></p>
@@ -10116,15 +9466,7 @@
 			<p><i>abareis</i></p>
 			<p><i>abaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -10238,15 +9580,7 @@
 			<p><i>astareis</i></p>
 			<p><i>astaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ástate</i></p>
@@ -10360,15 +9694,7 @@
 			<p><i>eldareis</i></p>
 			<p><i>eldaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ielda</i></p>
@@ -10482,15 +9808,7 @@
 			<p><i>iareis</i></p>
 			<p><i>iaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íate</i></p>
@@ -10604,15 +9922,7 @@
 			<p><i>ichareis</i></p>
 			<p><i>icharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íchate</i></p>
@@ -10726,15 +10036,7 @@
 			<p><i>ocareis</i></p>
 			<p><i>ocaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ócate</i></p>
@@ -10848,15 +10150,7 @@
 			<p><i>ofareis</i></p>
 			<p><i>ofaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ófate</i></p>
@@ -10970,15 +10264,7 @@
 			<p><i>olsareis</i></p>
 			<p><i>olsaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ólsate</i></p>
@@ -11092,15 +10378,7 @@
 			<p><i>ascareis</i></p>
 			<p><i>ascaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>áscate</i></p>
@@ -11214,15 +10492,7 @@
 			<p><i>egareis</i></p>
 			<p><i>egaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>égate</i></p>
@@ -11336,15 +10606,7 @@
 			<p><i>icareis</i></p>
 			<p><i>icaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ícate</i></p>
@@ -11458,15 +10720,7 @@
 			<p><i>ugareis</i></p>
 			<p><i>ugaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úgate</i></p>
@@ -11580,15 +10834,7 @@
 			<p><i>agareis</i></p>
 			<p><i>agaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ágate</i></p>
@@ -11702,15 +10948,7 @@
 			<p><i>argareis</i></p>
 			<p><i>argaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>árgate</i></p>
@@ -11824,15 +11062,7 @@
 			<p><i>onareis</i></p>
 			<p><i>onaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ónate</i></p>
@@ -11946,15 +11176,7 @@
 			<p><i>riereis</i></p>
 			<p><i>rieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>re</i></p>
@@ -12068,15 +11290,7 @@
 			<p><i>omareis</i></p>
 			<p><i>omaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ómate</i></p>
@@ -12190,15 +11404,7 @@
 			<p><i>uzareis</i></p>
 			<p><i>uzaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úzate</i></p>
@@ -12312,15 +11518,7 @@
 			<p><i>biereis</i></p>
 			<p><i>bieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>be</i></p>
@@ -12434,15 +11632,7 @@
 			<p><i>jereis</i></p>
 			<p><i>jeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -12556,15 +11746,7 @@
 			<p><i>olareis</i></p>
 			<p><i>olaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uela</i></p>
@@ -12678,15 +11860,7 @@
 			<p><i>esareis</i></p>
 			<p><i>esaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ésate</i></p>
@@ -12800,15 +11974,7 @@
 			<p><i>urrareis</i></p>
 			<p><i>urraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úrrate</i></p>
@@ -12922,15 +12088,7 @@
 			<p><i>achareis</i></p>
 			<p><i>acharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>áchate</i></p>
@@ -13044,15 +12202,7 @@
 			<p><i>achareis</i></p>
 			<p><i>acharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -13166,15 +12316,7 @@
 			<p><i>asareis</i></p>
 			<p><i>asaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ásate</i></p>
@@ -13288,15 +12430,7 @@
 			<p><i>ambareis</i></p>
 			<p><i>ambaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ámbate</i></p>
@@ -13410,15 +12544,7 @@
 			<p><i>urareis</i></p>
 			<p><i>uraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úrate</i></p>
@@ -13532,15 +12658,7 @@
 			<p><i>arrareis</i></p>
 			<p><i>arraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>árrate</i></p>
@@ -13654,15 +12772,7 @@
 			<p><i>ullareis</i></p>
 			<p><i>ullaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úllate</i></p>
@@ -13776,15 +12886,7 @@
 			<p><i>erareis</i></p>
 			<p><i>eraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>érate</i></p>
@@ -13898,15 +13000,7 @@
 			<p><i>atareis</i></p>
 			<p><i>ataren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>átate</i></p>
@@ -14020,15 +13114,7 @@
 			<p><i>elareis</i></p>
 			<p><i>elaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>élate</i></p>
@@ -14142,15 +13228,7 @@
 			<p><i>ertareis</i></p>
 			<p><i>ertaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierta</i></p>
@@ -14264,15 +13342,7 @@
 			<p><i>ampareis</i></p>
 			<p><i>amparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ámpate</i></p>
@@ -14386,15 +13456,7 @@
 			<p><i>inareis</i></p>
 			<p><i>inaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ínate</i></p>
@@ -14508,15 +13570,7 @@
 			<p><i>ochareis</i></p>
 			<p><i>ocharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óchate</i></p>
@@ -14630,15 +13684,7 @@
 			<p><i>uchareis</i></p>
 			<p><i>ucharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úchate</i></p>
@@ -14752,15 +13798,7 @@
 			<p><i>apareis</i></p>
 			<p><i>aparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ápate</i></p>
@@ -14874,15 +13912,7 @@
 			<p><i>ulareis</i></p>
 			<p><i>ularen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úlate</i></p>
@@ -14996,15 +14026,7 @@
 			<p><i>ocareis</i></p>
 			<p><i>ocaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ócate</i></p>
@@ -15118,15 +14140,7 @@
 			<p><i>ollareis</i></p>
 			<p><i>ollaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uella</i></p>
@@ -15240,15 +14254,7 @@
 			<p><i>idiereis</i></p>
 			<p><i>idieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ídete</i></p>
@@ -15362,15 +14368,7 @@
 			<p><i>unareis</i></p>
 			<p><i>unaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>únate</i></p>
@@ -15484,15 +14482,7 @@
 			<p><i>abareis</i></p>
 			<p><i>abaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ábate</i></p>
@@ -15606,15 +14596,7 @@
 			<p><i>ordareis</i></p>
 			<p><i>ordaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerda</i></p>
@@ -15728,15 +14710,7 @@
 			<p><i>ornareis</i></p>
 			<p><i>ornaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerna</i></p>
@@ -15850,15 +14824,7 @@
 			<p><i>ucareis</i></p>
 			<p><i>ucaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úcate</i></p>
@@ -15972,15 +14938,7 @@
 			<p><i>ejareis</i></p>
 			<p><i>ejaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>éjate</i></p>
@@ -16094,15 +15052,7 @@
 			<p><i>ostareis</i></p>
 			<p><i>ostaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uesta</i></p>
@@ -16216,15 +15166,7 @@
 			<p><i>entareis</i></p>
 			<p><i>entaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ienta</i></p>
@@ -16338,15 +15280,7 @@
 			<p><i>ollareis</i></p>
 			<p><i>ollaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óllate</i></p>
@@ -16460,15 +15394,7 @@
 			<p><i>ilmareis</i></p>
 			<p><i>ilmaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ílmate</i></p>
@@ -16582,15 +15508,7 @@
 			<p><i>uñareis</i></p>
 			<p><i>uñaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úñate</i></p>
@@ -16704,15 +15622,7 @@
 			<p><i>urdareis</i></p>
 			<p><i>urdaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úrdate</i></p>
@@ -16826,15 +15736,7 @@
 			<p><i>entrareis</i></p>
 			<p><i>entraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>éntrate</i></p>
@@ -16948,15 +15850,7 @@
 			<p><i>estrareis</i></p>
 			<p><i>estraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iestra</i></p>
@@ -17070,15 +15964,7 @@
 			<p><i>iriereis</i></p>
 			<p><i>irieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iere</i></p>
@@ -17192,15 +16078,7 @@
 			<p><i>iriereis</i></p>
 			<p><i>irieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -17314,15 +16192,7 @@
 			<p><i>izareis</i></p>
 			<p><i>izaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ízate</i></p>
@@ -17436,15 +16306,7 @@
 			<p><i>ilareis</i></p>
 			<p><i>ilaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ílate</i></p>
@@ -17558,15 +16420,7 @@
 			<p><i>itareis</i></p>
 			<p><i>itaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ítate</i></p>
@@ -17680,15 +16534,7 @@
 			<p><i>biereis</i></p>
 			<p><i>bieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>be</i></p>
@@ -17802,15 +16648,7 @@
 			<p><i>giereis</i></p>
 			<p><i>gieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ge</i></p>
@@ -17924,15 +16762,7 @@
 			<p><i>eñareis</i></p>
 			<p><i>eñaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>éñate</i></p>
@@ -18046,15 +16876,7 @@
 			<p><i>irtiereis</i></p>
 			<p><i>irtieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierte</i></p>
@@ -18168,15 +16990,7 @@
 			<p><i>olareis</i></p>
 			<p><i>olaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ólate</i></p>
@@ -18290,15 +17104,7 @@
 			<p><i>errareis</i></p>
 			<p><i>erraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierra</i></p>
@@ -18412,15 +17218,7 @@
 			<p><i>ebrareis</i></p>
 			<p><i>ebraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ébrate</i></p>
@@ -18534,15 +17332,7 @@
 			<p><i>giereis</i></p>
 			<p><i>gieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ge</i></p>
@@ -18656,15 +17446,7 @@
 			<p><i>orareis</i></p>
 			<p><i>oraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uera</i></p>
@@ -18778,15 +17560,7 @@
 			<p><i>osareis</i></p>
 			<p><i>osaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ósate</i></p>
@@ -18900,15 +17674,7 @@
 			<p><i>echareis</i></p>
 			<p><i>echaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>échate</i></p>
@@ -19022,15 +17788,7 @@
 			<p><i>utrareis</i></p>
 			<p><i>utraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>útrate</i></p>
@@ -19144,15 +17902,7 @@
 			<p><i>enareis</i></p>
 			<p><i>enaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>énate</i></p>
@@ -19266,15 +18016,7 @@
 			<p><i>arbareis</i></p>
 			<p><i>arbaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>árbate</i></p>
@@ -19388,15 +18130,7 @@
 			<p><i>ojareis</i></p>
 			<p><i>ojaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ójate</i></p>
@@ -19510,15 +18244,7 @@
 			<p><i>ingareis</i></p>
 			<p><i>ingaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íngate</i></p>
@@ -19632,15 +18358,7 @@
 			<p><i>aguareis</i></p>
 			<p><i>aguaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>agúate</i></p>
@@ -19754,15 +18472,7 @@
 			<p><i>orareis</i></p>
 			<p><i>oraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>órate</i></p>
@@ -19876,15 +18586,7 @@
 			<p><i>ijareis</i></p>
 			<p><i>ijaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íja</i></p>
@@ -19998,15 +18700,7 @@
 			<p><i>ilareis</i></p>
 			<p><i>ilaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íla</i></p>
@@ -20120,15 +18814,7 @@
 			<p><i>itareis</i></p>
 			<p><i>itaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íta</i></p>
@@ -20242,15 +18928,7 @@
 			<p><i>ajareis</i></p>
 			<p><i>ajaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ájate</i></p>
@@ -20364,15 +19042,7 @@
 			<p><i>uchareis</i></p>
 			<p><i>ucharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úcha</i></p>
@@ -20486,15 +19156,7 @@
 			<p><i>umareis</i></p>
 			<p><i>umaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úma</i></p>
@@ -20608,15 +19270,7 @@
 			<p><i>usareis</i></p>
 			<p><i>usaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úsa</i></p>
@@ -20730,15 +19384,7 @@
 			<p><i>islareis</i></p>
 			<p><i>islaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ísla</i></p>
@@ -20852,15 +19498,7 @@
 			<p><i>ecareis</i></p>
 			<p><i>ecaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>écate</i></p>
@@ -20974,15 +19612,7 @@
 			<p><i>umareis</i></p>
 			<p><i>umaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úmate</i></p>
@@ -21096,15 +19726,7 @@
 			<p><i>artareis</i></p>
 			<p><i>artaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ártate</i></p>
@@ -21218,15 +19840,7 @@
 			<p><i>eareis</i></p>
 			<p><i>earen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>éate</i></p>
@@ -21340,15 +19954,7 @@
 			<p><i>ebrareis</i></p>
 			<p><i>ebraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iébrate</i></p>
@@ -21462,15 +20068,7 @@
 			<p><i>estareis</i></p>
 			<p><i>estaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>éstate</i></p>
@@ -21584,15 +20182,7 @@
 			<p><i>ebrareis</i></p>
 			<p><i>ebraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iebra</i></p>
@@ -21706,15 +20296,7 @@
 			<p><i>ongareis</i></p>
 			<p><i>ongaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uenga</i></p>
@@ -21828,15 +20410,7 @@
 			<p><i>eciereis</i></p>
 			<p><i>ecieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>écete</i></p>
@@ -21950,15 +20524,7 @@
 			<p><i>imbrareis</i></p>
 			<p><i>imbraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ímbrate</i></p>
@@ -22072,15 +20638,7 @@
 			<p><i>orrareis</i></p>
 			<p><i>orraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>órrate</i></p>
@@ -22194,15 +20752,7 @@
 			<p><i>inareis</i></p>
 			<p><i>inaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ína</i></p>
@@ -22316,15 +20866,7 @@
 			<p><i>allareis</i></p>
 			<p><i>allaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>állate</i></p>
@@ -22438,15 +20980,7 @@
 			<p><i>ebareis</i></p>
 			<p><i>ebaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ébate</i></p>
@@ -22560,15 +21094,7 @@
 			<p><i>antareis</i></p>
 			<p><i>antaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ántate</i></p>
@@ -22682,15 +21208,7 @@
 			<p><i>amareis</i></p>
 			<p><i>amaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ámate</i></p>
@@ -22804,15 +21322,7 @@
 			<p><i>oblareis</i></p>
 			<p><i>oblaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uebla</i></p>
@@ -22926,15 +21436,7 @@
 			<p><i>iñareis</i></p>
 			<p><i>iñaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íñate</i></p>
@@ -23048,15 +21550,7 @@
 			<p><i>nejareis</i></p>
 			<p><i>nejaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>neja</i></p>
@@ -23170,15 +21664,7 @@
 			<p><i>usiereis</i></p>
 			<p><i>usieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ón</i></p>
@@ -23292,15 +21778,7 @@
 			<p><i>nudareis</i></p>
 			<p><i>nudaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>nuda</i></p>
@@ -23414,15 +21892,7 @@
 			<p><i>udareis</i></p>
 			<p><i>udaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>údate</i></p>
@@ -23536,15 +22006,7 @@
 			<p><i>angareis</i></p>
 			<p><i>angaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ángate</i></p>
@@ -23658,15 +22120,7 @@
 			<p><i>iguareis</i></p>
 			<p><i>iguaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>igúate</i></p>
@@ -23780,15 +22234,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -23902,15 +22348,7 @@
 			<p><i>ernareis</i></p>
 			<p><i>ernaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierna</i></p>
@@ -24024,15 +22462,7 @@
 			<p><i>areis</i></p>
 			<p><i>aren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ate</i></p>
@@ -24146,15 +22576,7 @@
 			<p><i>arareis</i></p>
 			<p><i>araren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>árate</i></p>
@@ -24268,15 +22690,7 @@
 			<p><i>implareis</i></p>
 			<p><i>implaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ímplate</i></p>
@@ -24390,15 +22804,7 @@
 			<p><i>ipareis</i></p>
 			<p><i>iparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ípate</i></p>
@@ -24512,15 +22918,7 @@
 			<p><i>ongareis</i></p>
 			<p><i>ongaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óngate</i></p>
@@ -24634,15 +23032,7 @@
 			<p><i>ismareis</i></p>
 			<p><i>ismaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ísmate</i></p>
@@ -24756,15 +23146,7 @@
 			<p><i>ozareis</i></p>
 			<p><i>ozaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ózate</i></p>
@@ -24878,15 +23260,7 @@
 			<p><i>etareis</i></p>
 			<p><i>etaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ieta</i></p>
@@ -25000,15 +23374,7 @@
 			<p><i>obareis</i></p>
 			<p><i>obaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ueba</i></p>
@@ -25122,15 +23488,7 @@
 			<p><i>uyereis</i></p>
 			<p><i>uyeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uye</i></p>
@@ -25244,15 +23602,7 @@
 			<p><i>iscareis</i></p>
 			<p><i>iscaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íscate</i></p>
@@ -25366,15 +23716,7 @@
 			<p><i>imareis</i></p>
 			<p><i>imaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ímate</i></p>
@@ -25488,15 +23830,7 @@
 			<p><i>ostareis</i></p>
 			<p><i>ostaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óstate</i></p>
@@ -25610,15 +23944,7 @@
 			<p><i>untareis</i></p>
 			<p><i>untaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úntate</i></p>
@@ -25732,15 +24058,7 @@
 			<p><i>endareis</i></p>
 			<p><i>endaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ienda</i></p>
@@ -25854,15 +24172,7 @@
 			<p><i>igareis</i></p>
 			<p><i>igaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ígate</i></p>
@@ -25976,15 +24286,7 @@
 			<p><i>intiereis</i></p>
 			<p><i>intieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iéntete</i></p>
@@ -26098,15 +24400,7 @@
 			<p><i>icareis</i></p>
 			<p><i>icaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íca</i></p>
@@ -26220,15 +24514,7 @@
 			<p><i>irareis</i></p>
 			<p><i>iraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>írate</i></p>
@@ -26342,15 +24628,7 @@
 			<p><i>oldareis</i></p>
 			<p><i>oldaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uelda</i></p>
@@ -26464,15 +24742,7 @@
 			<p><i>onareis</i></p>
 			<p><i>onaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uena</i></p>
@@ -26586,15 +24856,7 @@
 			<p><i>entareis</i></p>
 			<p><i>entaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>éntate</i></p>
@@ -26708,15 +24970,7 @@
 			<p><i>ereis</i></p>
 			<p><i>eren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -26830,15 +25084,7 @@
 			<p><i>ereis</i></p>
 			<p><i>eren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -26952,15 +25198,7 @@
 			<p><i>endiereis</i></p>
 			<p><i>endieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iende</i></p>
@@ -27074,15 +25312,7 @@
 			<p><i>atuviereis</i></p>
 			<p><i>atuvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>átente</i></p>
@@ -27196,15 +25426,7 @@
 			<p><i>etareis</i></p>
 			<p><i>etaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>étate</i></p>
@@ -27318,15 +25540,7 @@
 			<p><i>estareis</i></p>
 			<p><i>estaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iesta</i></p>
@@ -27440,15 +25654,7 @@
 			<p><i>ujareis</i></p>
 			<p><i>ujaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>újate</i></p>
@@ -27562,15 +25768,7 @@
 			<p><i>orciereis</i></p>
 			<p><i>orcieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerce</i></p>
@@ -27684,15 +25882,7 @@
 			<p><i>oscareis</i></p>
 			<p><i>oscaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óscate</i></p>
@@ -27806,15 +25996,7 @@
 			<p><i>illareis</i></p>
 			<p><i>illaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ílla</i></p>
@@ -27928,15 +26110,7 @@
 			<p><i>esareis</i></p>
 			<p><i>esaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iesa</i></p>
@@ -28050,15 +26224,7 @@
 			<p><i>unareis</i></p>
 			<p><i>unaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úna</i></p>
@@ -28172,15 +26338,7 @@
 			<p><i>upareis</i></p>
 			<p><i>uparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úpa</i></p>
@@ -28294,15 +26452,7 @@
 			<p><i>upareis</i></p>
 			<p><i>uparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -28416,15 +26566,7 @@
 			<p><i>ijereis</i></p>
 			<p><i>ijeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ice</i></p>
@@ -28538,15 +26680,7 @@
 			<p><i>isiereis</i></p>
 			<p><i>isieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iere</i></p>
@@ -28660,15 +26794,7 @@
 			<p><i>urcareis</i></p>
 			<p><i>urcaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úrcate</i></p>
@@ -28782,15 +26908,7 @@
 			<p><i>iareis</i></p>
 			<p><i>iaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íate</i></p>
@@ -28904,15 +27022,7 @@
 			<p><i>erniereis</i></p>
 			<p><i>ernieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierne</i></p>
@@ -29026,15 +27136,7 @@
 			<p><i>afareis</i></p>
 			<p><i>afaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>áfate</i></p>
@@ -29148,15 +27250,7 @@
 			<p><i>ispareis</i></p>
 			<p><i>isparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íspate</i></p>
@@ -29270,15 +27364,7 @@
 			<p><i>dareis</i></p>
 			<p><i>daren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>da</i></p>
@@ -29392,15 +27478,7 @@
 			<p><i>endiereis</i></p>
 			<p><i>endieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iéndete</i></p>
@@ -29514,15 +27592,7 @@
 			<p><i>olareis</i></p>
 			<p><i>olaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uélate</i></p>
@@ -29636,15 +27706,7 @@
 			<p><i>igiereis</i></p>
 			<p><i>igieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ige</i></p>
@@ -29758,15 +27820,7 @@
 			<p><i>enzareis</i></p>
 			<p><i>enzaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ienza</i></p>
@@ -29880,15 +27934,7 @@
 			<p><i>eliereis</i></p>
 			<p><i>elieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ele</i></p>
@@ -30002,15 +28048,7 @@
 			<p><i>etrareis</i></p>
 			<p><i>etraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>étrate</i></p>
@@ -30124,15 +28162,7 @@
 			<p><i>itiereis</i></p>
 			<p><i>itieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ite</i></p>
@@ -30246,15 +28276,7 @@
 			<p><i>ortareis</i></p>
 			<p><i>ortaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>órtate</i></p>
@@ -30368,15 +28390,7 @@
 			<p><i>diereis</i></p>
 			<p><i>dieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>de</i></p>
@@ -30490,15 +28504,7 @@
 			<p><i>imiereis</i></p>
 			<p><i>imieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ime</i></p>
@@ -30612,15 +28618,7 @@
 			<p><i>ibiereis</i></p>
 			<p><i>ibieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ibe</i></p>
@@ -30734,15 +28732,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ye</i></p>
@@ -30856,15 +28846,7 @@
 			<p><i>omiereis</i></p>
 			<p><i>omieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ómete</i></p>
@@ -30978,15 +28960,7 @@
 			<p><i>ijereis</i></p>
 			<p><i>ijeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ice</i></p>
@@ -31100,15 +29074,7 @@
 			<p><i>oliereis</i></p>
 			<p><i>olieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uele</i></p>
@@ -31222,15 +29188,7 @@
 			<p><i>esareis</i></p>
 			<p><i>esaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iesa</i></p>
@@ -31344,15 +29302,7 @@
 			<p><i>ndiereis</i></p>
 			<p><i>ndieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>nde</i></p>
@@ -31466,15 +29416,7 @@
 			<p><i>miereis</i></p>
 			<p><i>mieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>me</i></p>
@@ -31588,15 +29530,7 @@
 			<p><i>ontareis</i></p>
 			<p><i>ontaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uenta</i></p>
@@ -31710,15 +29644,7 @@
 			<p><i>orciereis</i></p>
 			<p><i>orcieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uércete</i></p>
@@ -31832,15 +29758,7 @@
 			<p><i>ijereis</i></p>
 			<p><i>ijeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ícete</i></p>
@@ -31954,15 +29872,7 @@
 			<p><i>eliereis</i></p>
 			<p><i>elieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>élete</i></p>
@@ -32076,15 +29986,7 @@
 			<p><i>enciereis</i></p>
 			<p><i>encieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ence</i></p>
@@ -32198,15 +30100,7 @@
 			<p><i>ompiereis</i></p>
 			<p><i>ompieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ompe</i></p>
@@ -32320,15 +30214,7 @@
 			<p><i>ostrareis</i></p>
 			<p><i>ostraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uestra</i></p>
@@ -32442,15 +30328,7 @@
 			<p><i>ostrareis</i></p>
 			<p><i>ostraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óstrate</i></p>
@@ -32564,15 +30442,7 @@
 			<p><i>ordareis</i></p>
 			<p><i>ordaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>órdate</i></p>
@@ -32686,15 +30556,7 @@
 			<p><i>itareis</i></p>
 			<p><i>itaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ítate</i></p>
@@ -32808,15 +30670,7 @@
 			<p><i>islareis</i></p>
 			<p><i>islaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íslate</i></p>
@@ -32930,15 +30784,7 @@
 			<p><i>istareis</i></p>
 			<p><i>istaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ístate</i></p>
@@ -33052,15 +30898,7 @@
 			<p><i>orcareis</i></p>
 			<p><i>orcaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerca</i></p>
@@ -33174,15 +31012,7 @@
 			<p><i>ancareis</i></p>
 			<p><i>ancaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>áncate</i></p>
@@ -33296,15 +31126,7 @@
 			<p><i>ontareis</i></p>
 			<p><i>ontaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óntate</i></p>
@@ -33418,15 +31240,7 @@
 			<p><i>ufareis</i></p>
 			<p><i>ufaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úfate</i></p>
@@ -33540,15 +31354,7 @@
 			<p><i>andareis</i></p>
 			<p><i>andaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ándate</i></p>
@@ -33662,15 +31468,7 @@
 			<p><i>ustareis</i></p>
 			<p><i>ustaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ústa</i></p>
@@ -33784,15 +31582,7 @@
 			<p><i>azareis</i></p>
 			<p><i>azaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ázate</i></p>
@@ -33906,15 +31696,7 @@
 			<p><i>ullereis</i></p>
 			<p><i>ulleren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úllete</i></p>
@@ -34028,15 +31810,7 @@
 			<p><i>ullereis</i></p>
 			<p><i>ulleren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -34150,15 +31924,7 @@
 			<p><i>ostareis</i></p>
 			<p><i>ostaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uéstate</i></p>
@@ -34272,15 +32038,7 @@
 			<p><i>ulareis</i></p>
 			<p><i>ularen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úla</i></p>
@@ -34394,15 +32152,7 @@
 			<p><i>edrareis</i></p>
 			<p><i>edraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iedra</i></p>
@@ -34516,15 +32266,7 @@
 			<p><i>ovareis</i></p>
 			<p><i>ovaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ueva</i></p>
@@ -34638,15 +32380,7 @@
 			<p><i>osareis</i></p>
 			<p><i>osaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uesa</i></p>
@@ -34760,15 +32494,7 @@
 			<p><i>irviereis</i></p>
 			<p><i>irvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>irve</i></p>
@@ -34882,15 +32608,7 @@
 			<p><i>ifareis</i></p>
 			<p><i>ifaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ífate</i></p>
@@ -35004,15 +32722,7 @@
 			<p><i>elareis</i></p>
 			<p><i>elaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iela</i></p>
@@ -35126,15 +32836,7 @@
 			<p><i>erbareis</i></p>
 			<p><i>erbaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierba</i></p>
@@ -35248,15 +32950,7 @@
 			<p><i>endrareis</i></p>
 			<p><i>endraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iendra</i></p>
@@ -35370,15 +33064,7 @@
 			<p><i>arcareis</i></p>
 			<p><i>arcaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>árcate</i></p>
@@ -35492,15 +33178,7 @@
 			<p><i>embrareis</i></p>
 			<p><i>embraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iembra</i></p>
@@ -35614,15 +33292,7 @@
 			<p><i>utriereis</i></p>
 			<p><i>utrieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>útrete</i></p>
@@ -35736,15 +33406,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ye</i></p>
@@ -35858,15 +33520,7 @@
 			<p><i>otareis</i></p>
 			<p><i>otaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ótate</i></p>
@@ -35980,15 +33634,7 @@
 			<p><i>ezareis</i></p>
 			<p><i>ezaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ézate</i></p>
@@ -36102,15 +33748,7 @@
 			<p><i>ertareis</i></p>
 			<p><i>ertaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierta</i></p>
@@ -36224,15 +33862,7 @@
 			<p><i>upareis</i></p>
 			<p><i>uparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úpate</i></p>
@@ -36346,15 +33976,7 @@
 			<p><i>eyereis</i></p>
 			<p><i>eyeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ee</i></p>
@@ -36468,15 +34090,7 @@
 			<p><i>osiereis</i></p>
 			<p><i>osieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ósete</i></p>
@@ -36590,15 +34204,7 @@
 			<p><i>istiereis</i></p>
 			<p><i>istieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iste</i></p>
@@ -36712,15 +34318,7 @@
 			<p><i>iviereis</i></p>
 			<p><i>ivieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ívete</i></p>
@@ -36834,15 +34432,7 @@
 			<p><i>ezmareis</i></p>
 			<p><i>ezmaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iezma</i></p>
@@ -36956,15 +34546,7 @@
 			<p><i>ignareis</i></p>
 			<p><i>ignaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ígnate</i></p>
@@ -37078,15 +34660,7 @@
 			<p><i>orzareis</i></p>
 			<p><i>orzaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uérzate</i></p>
@@ -37200,15 +34774,7 @@
 			<p><i>diereis</i></p>
 			<p><i>dieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>de</i></p>
@@ -37322,15 +34888,7 @@
 			<p><i>alareis</i></p>
 			<p><i>alaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>álate</i></p>
@@ -37444,15 +35002,7 @@
 			<p><i>inchareis</i></p>
 			<p><i>incharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ínchate</i></p>
@@ -37566,15 +35116,7 @@
 			<p><i>oncareis</i></p>
 			<p><i>oncaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óncate</i></p>
@@ -37688,15 +35230,7 @@
 			<p><i>adrareis</i></p>
 			<p><i>adraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ádrate</i></p>
@@ -37810,15 +35344,7 @@
 			<p><i>añareis</i></p>
 			<p><i>añaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>áñate</i></p>
@@ -37932,15 +35458,7 @@
 			<p><i>anzareis</i></p>
 			<p><i>anzaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ánzate</i></p>
@@ -38054,15 +35572,7 @@
 			<p><i>edareis</i></p>
 			<p><i>edaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>édate</i></p>
@@ -38176,15 +35686,7 @@
 			<p><i>azgareis</i></p>
 			<p><i>azgaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ázgate</i></p>
@@ -38298,15 +35800,7 @@
 			<p><i>errareis</i></p>
 			<p><i>erraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>érrate</i></p>
@@ -38420,15 +35914,7 @@
 			<p><i>onchareis</i></p>
 			<p><i>oncharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ónchate</i></p>
@@ -38542,15 +36028,7 @@
 			<p><i>ambrareis</i></p>
 			<p><i>ambraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ámbrate</i></p>
@@ -38664,15 +36142,7 @@
 			<p><i>utareis</i></p>
 			<p><i>utaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>útate</i></p>
@@ -38786,15 +36256,7 @@
 			<p><i>avareis</i></p>
 			<p><i>avaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ávate</i></p>
@@ -38908,15 +36370,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ajado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -39030,15 +36484,7 @@
 			<p><i>ivareis</i></p>
 			<p><i>ivaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ívate</i></p>
@@ -39152,15 +36598,7 @@
 			<p><i>anchareis</i></p>
 			<p><i>ancharen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ánchate</i></p>
@@ -39274,15 +36712,7 @@
 			<p><i>ogareis</i></p>
 			<p><i>ogaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ógate</i></p>
@@ -39396,15 +36826,7 @@
 			<p><i>uscareis</i></p>
 			<p><i>uscaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úscate</i></p>
@@ -39518,15 +36940,7 @@
 			<p><i>asgareis</i></p>
 			<p><i>asgaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ásgate</i></p>
@@ -39640,15 +37054,7 @@
 			<p><i>usgareis</i></p>
 			<p><i>usgaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úsgate</i></p>
@@ -39762,15 +37168,7 @@
 			<p><i>gareis</i></p>
 			<p><i>garen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ga</i></p>
@@ -39884,15 +37282,7 @@
 			<p><i>ocareis</i></p>
 			<p><i>ocaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uécate</i></p>
@@ -40006,15 +37396,7 @@
 			<p><i>odareis</i></p>
 			<p><i>odaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ueda</i></p>
@@ -40128,15 +37510,7 @@
 			<p><i>obrareis</i></p>
 			<p><i>obraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>óbrate</i></p>
@@ -40250,15 +37624,7 @@
 			<p><i>oñareis</i></p>
 			<p><i>oñaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ueña</i></p>
@@ -40372,15 +37738,7 @@
 			<p><i>acareis</i></p>
 			<p><i>acaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ácate</i></p>
@@ -40494,15 +37852,7 @@
 			<p><i>ercareis</i></p>
 			<p><i>ercaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ércate</i></p>
@@ -40616,15 +37966,7 @@
 			<p><i>orcareis</i></p>
 			<p><i>orcaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>órcate</i></p>
@@ -40738,15 +38080,7 @@
 			<p><i>ortareis</i></p>
 			<p><i>ortaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerta</i></p>
@@ -40860,15 +38194,7 @@
 			<p><i>uriereis</i></p>
 			<p><i>urieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uere</i></p>
@@ -40982,15 +38308,7 @@
 			<p><i>emareis</i></p>
 			<p><i>emaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iema</i></p>
@@ -41104,15 +38422,7 @@
 			<p><i>ompareis</i></p>
 			<p><i>omparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ómpate</i></p>
@@ -41226,15 +38536,7 @@
 			<p><i>umiereis</i></p>
 			<p><i>umieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úmete</i></p>
@@ -41348,15 +38650,7 @@
 			<p><i>ijareis</i></p>
 			<p><i>ijaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íjate</i></p>
@@ -41470,15 +38764,7 @@
 			<p><i>inareis</i></p>
 			<p><i>inaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ínate</i></p>
@@ -41592,15 +38878,7 @@
 			<p><i>uviereis</i></p>
 			<p><i>uvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ate</i></p>
@@ -41714,15 +38992,7 @@
 			<p><i>imiereis</i></p>
 			<p><i>imieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ime</i></p>
@@ -41836,15 +39106,7 @@
 			<p><i>areis</i></p>
 			<p><i>aren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>a</i></p>
@@ -41958,15 +39220,7 @@
 			<p><i>endiereis</i></p>
 			<p><i>endieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iende</i></p>
@@ -42080,15 +39334,7 @@
 			<p><i>guiereis</i></p>
 			<p><i>guieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>gue</i></p>
@@ -42202,15 +39448,7 @@
 			<p><i>FALSEareis</i></p>
 			<p><i>FALSEaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>FALSEa</i></p>
@@ -42324,15 +39562,7 @@
 			<p><i>ollareis</i></p>
 			<p><i>ollaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uéllate</i></p>
@@ -42446,15 +39676,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íe</i></p>
@@ -42568,15 +39790,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>uado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -42690,15 +39904,7 @@
 			<p><i>imiereis</i></p>
 			<p><i>imieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ime</i></p>
@@ -42812,15 +40018,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>zado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -42934,15 +40132,7 @@
 			<p><i>ediereis</i></p>
 			<p><i>edieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iede</i></p>
@@ -43056,15 +40246,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>elado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -43178,15 +40360,7 @@
 			<p><i>inchiereis</i></p>
 			<p><i>inchieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>inche</i></p>
@@ -43300,15 +40474,7 @@
 			<p><i>endiereis</i></p>
 			<p><i>endieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iende</i></p>
@@ -43422,15 +40588,7 @@
 			<p><i>irviereis</i></p>
 			<p><i>irvieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierve</i></p>
@@ -43544,15 +40702,7 @@
 			<p><i>opareis</i></p>
 			<p><i>oparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ópate</i></p>
@@ -43666,15 +40816,7 @@
 			<p><i>riereis</i></p>
 			<p><i>rieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>re</i></p>
@@ -43788,15 +40930,7 @@
 			<p><i>iriereis</i></p>
 			<p><i>irieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iere</i></p>
@@ -43910,15 +41044,7 @@
 			<p><i>fuereis</i></p>
 			<p><i>fueren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>vete</i></p>
@@ -44032,15 +41158,7 @@
 			<p><i>actareis</i></p>
 			<p><i>actaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>áctate</i></p>
@@ -44154,15 +41272,7 @@
 			<p><i>erdareis</i></p>
 			<p><i>erdaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierda</i></p>
@@ -44276,15 +41386,7 @@
 			<p><i>estareis</i></p>
 			<p><i>estaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iesta</i></p>
@@ -44398,15 +41500,7 @@
 			<p><i>tiereis</i></p>
 			<p><i>tieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>te</i></p>
@@ -44520,15 +41614,7 @@
 			<p><i>irlareis</i></p>
 			<p><i>irlaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>írlate</i></p>
@@ -44642,15 +41728,7 @@
 			<p><i>ordiereis</i></p>
 			<p><i>ordieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerde</i></p>
@@ -44764,15 +41842,7 @@
 			<p><i>ciereis</i></p>
 			<p><i>cieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ce</i></p>
@@ -44886,15 +41956,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>evado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -45008,15 +42070,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -45130,15 +42184,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -45252,15 +42298,7 @@
 			<p><i>erdiereis</i></p>
 			<p><i>erdieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierde</i></p>
@@ -45374,15 +42412,7 @@
 			<p><i>intareis</i></p>
 			<p><i>intaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>íntate</i></p>
@@ -45496,15 +42526,7 @@
 			<p><i>irrareis</i></p>
 			<p><i>irraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>írrate</i></p>
@@ -45618,15 +42640,7 @@
 			<p><i>usiereis</i></p>
 			<p><i>usieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>on</i></p>
@@ -45740,15 +42754,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>e</i></p>
@@ -45862,15 +42868,7 @@
 			<p><i>ndiereis</i></p>
 			<p><i>ndieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>nde</i></p>
@@ -45984,15 +42982,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -46106,15 +43096,7 @@
 			<p><i>ellareis</i></p>
 			<p><i>ellaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>éllate</i></p>
@@ -46228,15 +43210,7 @@
 			<p><i>egrareis</i></p>
 			<p><i>egraren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>égrate</i></p>
@@ -46350,15 +43324,7 @@
 			<p><i>urtareis</i></p>
 			<p><i>urtaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úrtate</i></p>
@@ -46472,15 +43438,7 @@
 			<p><i>ansareis</i></p>
 			<p><i>ansaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ánsate</i></p>
@@ -46594,15 +43552,7 @@
 			<p><i>ilgareis</i></p>
 			<p><i>ilgaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ílgate</i></p>
@@ -46716,15 +43666,7 @@
 			<p><i>indiereis</i></p>
 			<p><i>indieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>inde</i></p>
@@ -46838,15 +43780,7 @@
 			<p><i>olgareis</i></p>
 			<p><i>olgaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uelga</i></p>
@@ -46960,15 +43894,7 @@
 			<p><i>emblareis</i></p>
 			<p><i>emblaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iembla</i></p>
@@ -47082,15 +44008,7 @@
 			<p><i>orciereis</i></p>
 			<p><i>orcieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uerce</i></p>
@@ -47204,15 +44122,7 @@
 			<p><i>epareis</i></p>
 			<p><i>eparen</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>épate</i></p>
@@ -47326,15 +44236,7 @@
 			<p><i>ertiereis</i></p>
 			<p><i>ertieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ierte</i></p>
@@ -47448,15 +44350,7 @@
 			<p><i>olcareis</i></p>
 			<p><i>olcaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uelca</i></p>
@@ -47570,15 +44464,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>iado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -47692,15 +44578,7 @@
 			<p><i>ogareis</i></p>
 			<p><i>ogaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uega</i></p>
@@ -47814,15 +44692,7 @@
 			<p><i>mpiereis</i></p>
 			<p><i>mpieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>mpe</i></p>
@@ -47936,15 +44806,7 @@
 			<p><i>ornareis</i></p>
 			<p><i>ornaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>órnate</i></p>
@@ -48058,15 +44920,7 @@
 			<p><i>ertiereis</i></p>
 			<p><i>ertieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iértete</i></p>
@@ -48180,15 +45034,7 @@
 			<p><i>idareis</i></p>
 			<p><i>idaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ídate</i></p>
@@ -48302,15 +45148,7 @@
 			<p><i>oltareis</i></p>
 			<p><i>oltaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uelta</i></p>
@@ -48424,15 +45262,7 @@
 			<p><i>onareis</i></p>
 			<p><i>onaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uénate</i></p>
@@ -48546,15 +45376,7 @@
 			<p><i>odareis</i></p>
 			<p><i>odaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uédate</i></p>
@@ -48668,15 +45490,7 @@
 			<p><i>yereis</i></p>
 			<p><i>yeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ye</i></p>
@@ -48790,15 +45604,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -48912,15 +45718,7 @@
 			<p><i>imareis</i></p>
 			<p><i>imaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ímate</i></p>
@@ -49034,15 +45832,7 @@
 			<p><i>iñereis</i></p>
 			<p><i>iñeren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>iñe</i></p>
@@ -49156,15 +45946,7 @@
 			<p><i>uciereis</i></p>
 			<p><i>ucieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>úcete</i></p>
@@ -49278,15 +46060,7 @@
 			<p><i>ordareis</i></p>
 			<p><i>ordaren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>uérdate</i></p>
@@ -49400,15 +46174,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>onado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -49522,15 +46288,7 @@
 			<p><i>uniereis</i></p>
 			<p><i>unieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>únete</i></p>
@@ -49644,15 +46402,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>entado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i/></p>
@@ -49766,15 +46516,7 @@
 			<p><i>iereis</i></p>
 			<p><i>ieren</i></p>
 		</Subjuntivo-futuro>
-		<Subjuntivo-futuro-perfecto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Subjuntivo-futuro-perfecto>
-	</Subjuntivo>
+		</Subjuntivo>
 	<Imperativo>
 		<Imperativo-afirmativo>
 			<p><i>ete</i></p>

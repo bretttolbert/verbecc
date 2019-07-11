@@ -65,6 +65,7 @@ class InflectorEs(inflector.Inflector):
             'Subjuntivo': {
                 'Subjuntivo-pretérito-perfecto': 'Subjuntivo-presente',
                 'Subjuntivo-pretérito-pluscuamperfecto-1': 'Subjuntivo-pretérito-imperfecto-1',
-                'Subjuntivo-pretérito-pluscuamperfecto-2': 'Subjuntivo-pretérito-imperfecto-2'
+                'Subjuntivo-pretérito-pluscuamperfecto-2': 'Subjuntivo-pretérito-imperfecto-2',
+                'Subjuntivo-futuro-perfecto': 'Subjuntivo-futuro'
             }
         }
