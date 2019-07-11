@@ -25,6 +25,8 @@ test_es_conjugate_mood_tense_data = [
         ['yo hube', 'tú hubiste', 'él hubo', 'nosotros hubimos', 'vosotros hubisteis', 'ellos hubieron']),
     ('haber', 'Indicativo', 'Indicativo-futuro',
         ['yo habré', 'tú habrás', 'él habrá', 'nosotros habremos', 'vosotros habréis', 'ellos habrán']),
+    ('haber', 'Condicional', 'Condicional-condicional',
+        ['yo habría', 'tú habrías', 'él habría', 'nosotros habríamos', 'vosotros habríais', 'ellos habrían']),
     ('hacer', 'Indicativo', 'Indicativo-presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
     ('ir', 'Indicativo', 'Indicativo-presente',
