@@ -35,7 +35,7 @@
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-futuro)?>
 <!ATTLIST Indicativo xmlns CDATA #FIXED "">
-<!ELEMENT Subjuntivo (Subjuntivo-presente , Subjuntivo-pretérito-imperfecto-1 , Subjuntivo-pretérito-pluscuamperfecto-1 , Subjuntivo-pretérito-imperfecto-2 , Subjuntivo-pretérito-pluscuamperfecto-2 , Subjuntivo-futuro , Subjuntivo-futuro-perfecto)?>
+<!ELEMENT Subjuntivo (Subjuntivo-presente , Subjuntivo-pretérito-imperfecto-1 , Subjuntivo-pretérito-imperfecto-2 , Subjuntivo-pretérito-pluscuamperfecto-2 , Subjuntivo-futuro , Subjuntivo-futuro-perfecto)?>
 <!ATTLIST Subjuntivo xmlns CDATA #FIXED "">
 <!ELEMENT Imperativo (Imperativo-afirmativo , Imperativo-non)>
 <!ATTLIST Imperativo xmlns CDATA #FIXED "">
@@ -59,8 +59,6 @@
 <!ATTLIST Subjuntivo-presente xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo-pretérito-imperfecto-1 (p)+>
 <!ATTLIST Subjuntivo-pretérito-imperfecto-1 xmlns CDATA #FIXED "">
-<!ELEMENT Subjuntivo-pretérito-pluscuamperfecto-1 (p)+>
-<!ATTLIST Subjuntivo-pretérito-pluscuamperfecto-1 xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo-pretérito-imperfecto-2 (p)+>
 <!ATTLIST Subjuntivo-pretérito-imperfecto-2 xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo-pretérito-pluscuamperfecto-2 (p)+>
@@ -222,14 +220,6 @@
 			<p><i>uarais</i></p>
 			<p><i>uaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uase</i></p>
 			<p><i>uases</i></p>
@@ -360,14 +350,6 @@
 			<p><i>rierais</i></p>
 			<p><i>rieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>riese</i></p>
 			<p><i>rieses</i></p>
@@ -498,14 +480,6 @@
 			<p><i>incarais</i></p>
 			<p><i>incaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>incase</i></p>
 			<p><i>incases</i></p>
@@ -636,14 +610,6 @@
 			<p><i>irarais</i></p>
 			<p><i>iraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irase</i></p>
 			<p><i>irases</i></p>
@@ -774,14 +740,6 @@
 			<p><i>uvierais</i></p>
 			<p><i>uvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uviese</i></p>
 			<p><i>uvieses</i></p>
@@ -912,14 +870,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -1050,14 +1000,6 @@
 			<p><i>ullarais</i></p>
 			<p><i>ullaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ullase</i></p>
 			<p><i>ullases</i></p>
@@ -1188,14 +1130,6 @@
 			<p><i>onzarais</i></p>
 			<p><i>onzaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>onzase</i></p>
 			<p><i>onzases</i></p>
@@ -1326,14 +1260,6 @@
 			<p><i>uarais</i></p>
 			<p><i>uaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uase</i></p>
 			<p><i>uases</i></p>
@@ -1464,14 +1390,6 @@
 			<p><i>cupierais</i></p>
 			<p><i>cupieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>cupiese</i></p>
 			<p><i>cupieses</i></p>
@@ -1602,14 +1520,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -1740,14 +1650,6 @@
 			<p><i>zarais</i></p>
 			<p><i>zaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>zase</i></p>
 			<p><i>zases</i></p>
@@ -1878,14 +1780,6 @@
 			<p><i>ocierais</i></p>
 			<p><i>ocieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ociese</i></p>
 			<p><i>ocieses</i></p>
@@ -2016,14 +1910,6 @@
 			<p><i>gierais</i></p>
 			<p><i>gieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>giese</i></p>
 			<p><i>gieses</i></p>
@@ -2154,14 +2040,6 @@
 			<p><i>olgarais</i></p>
 			<p><i>olgaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olgase</i></p>
 			<p><i>olgases</i></p>
@@ -2292,14 +2170,6 @@
 			<p><i>cierais</i></p>
 			<p><i>cieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ciese</i></p>
 			<p><i>cieses</i></p>
@@ -2430,14 +2300,6 @@
 			<p><i>arais</i></p>
 			<p><i>aran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ase</i></p>
 			<p><i>ases</i></p>
@@ -2568,14 +2430,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -2706,14 +2560,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -2844,14 +2690,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -2982,14 +2820,6 @@
 			<p><i>ijerais</i></p>
 			<p><i>ijeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ijese</i></p>
 			<p><i>ijeses</i></p>
@@ -3120,14 +2950,6 @@
 			<p><i>endierais</i></p>
 			<p><i>endieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>endiese</i></p>
 			<p><i>endieses</i></p>
@@ -3258,14 +3080,6 @@
 			<p><i>quierais</i></p>
 			<p><i>quieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>quiese</i></p>
 			<p><i>quieses</i></p>
@@ -3396,14 +3210,6 @@
 			<p><i>osarais</i></p>
 			<p><i>osaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>osase</i></p>
 			<p><i>osases</i></p>
@@ -3534,14 +3340,6 @@
 			<p><i>ernierais</i></p>
 			<p><i>ernieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>erniese</i></p>
 			<p><i>ernieses</i></p>
@@ -3672,14 +3470,6 @@
 			<p><i>uierais</i></p>
 			<p><i>uieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uiese</i></p>
 			<p><i>uieses</i></p>
@@ -3810,14 +3600,6 @@
 			<p><i>urmierais</i></p>
 			<p><i>urmieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>urmiese</i></p>
 			<p><i>urmieses</i></p>
@@ -3948,14 +3730,6 @@
 			<p><i>igierais</i></p>
 			<p><i>igieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>igiese</i></p>
 			<p><i>igieses</i></p>
@@ -4086,14 +3860,6 @@
 			<p><i>ezarais</i></p>
 			<p><i>ezaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ezase</i></p>
 			<p><i>ezases</i></p>
@@ -4224,14 +3990,6 @@
 			<p><i>ontrarais</i></p>
 			<p><i>ontraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ontrase</i></p>
 			<p><i>ontrases</i></p>
@@ -4362,14 +4120,6 @@
 			<p><i>izarais</i></p>
 			<p><i>izaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>izase</i></p>
 			<p><i>izases</i></p>
@@ -4500,14 +4250,6 @@
 			<p><i>irguierais</i></p>
 			<p><i>irguieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irguiese</i></p>
 			<p><i>irguieses</i></p>
@@ -4638,14 +4380,6 @@
 			<p><i>errarais</i></p>
 			<p><i>erraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>errase</i></p>
 			<p><i>errases</i></p>
@@ -4776,14 +4510,6 @@
 			<p><i>uvierais</i></p>
 			<p><i>uvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uviese</i></p>
 			<p><i>uvieses</i></p>
@@ -4914,14 +4640,6 @@
 			<p><i>orzarais</i></p>
 			<p><i>orzaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orzase</i></p>
 			<p><i>orzases</i></p>
@@ -5052,14 +4770,6 @@
 			<p><i>iarais</i></p>
 			<p><i>iaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iase</i></p>
 			<p><i>iases</i></p>
@@ -5190,14 +4900,6 @@
 			<p><i>ubierais</i></p>
 			<p><i>ubieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ubiese</i></p>
 			<p><i>ubieses</i></p>
@@ -5328,14 +5030,6 @@
 			<p><i>icierais</i></p>
 			<p><i>icieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iciese</i></p>
 			<p><i>icieses</i></p>
@@ -5466,14 +5160,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -5604,14 +5290,6 @@
 			<p><i>fuerais</i></p>
 			<p><i>fueran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>fuese</i></p>
 			<p><i>fueses</i></p>
@@ -5742,14 +5420,6 @@
 			<p><i>garais</i></p>
 			<p><i>garan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>gase</i></p>
 			<p><i>gases</i></p>
@@ -5880,14 +5550,6 @@
 			<p><i>ovierais</i></p>
 			<p><i>ovieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oviese</i></p>
 			<p><i>ovieses</i></p>
@@ -6018,14 +5680,6 @@
 			<p><i>cierais</i></p>
 			<p><i>cieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ciese</i></p>
 			<p><i>cieses</i></p>
@@ -6156,14 +5810,6 @@
 			<p><i>cierais</i></p>
 			<p><i>cieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ciese</i></p>
 			<p><i>cieses</i></p>
@@ -6294,14 +5940,6 @@
 			<p><i>olierais</i></p>
 			<p><i>olieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oliese</i></p>
 			<p><i>olieses</i></p>
@@ -6432,14 +6070,6 @@
 			<p><i>arais</i></p>
 			<p><i>aran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ase</i></p>
 			<p><i>ases</i></p>
@@ -6570,14 +6200,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -6708,14 +6330,6 @@
 			<p><i>idierais</i></p>
 			<p><i>idieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>idiese</i></p>
 			<p><i>idieses</i></p>
@@ -6846,14 +6460,6 @@
 			<p><i>ensarais</i></p>
 			<p><i>ensaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ensase</i></p>
 			<p><i>ensases</i></p>
@@ -6984,14 +6590,6 @@
 			<p><i>acierais</i></p>
 			<p><i>acieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>aciese</i></p>
 			<p><i>acieses</i></p>
@@ -7122,14 +6720,6 @@
 			<p><i>udierais</i></p>
 			<p><i>udieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>udiese</i></p>
 			<p><i>udieses</i></p>
@@ -7260,14 +6850,6 @@
 			<p><i>udrierais</i></p>
 			<p><i>udrieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>udriese</i></p>
 			<p><i>udrieses</i></p>
@@ -7398,14 +6980,6 @@
 			<p><i>ijerais</i></p>
 			<p><i>ijeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ijese</i></p>
 			<p><i>ijeses</i></p>
@@ -7536,14 +7110,6 @@
 			<p><i>jerais</i></p>
 			<p><i>jeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>jese</i></p>
 			<p><i>jeses</i></p>
@@ -7674,14 +7240,6 @@
 			<p><i>ibierais</i></p>
 			<p><i>ibieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ibiese</i></p>
 			<p><i>ibieses</i></p>
@@ -7812,14 +7370,6 @@
 			<p><i>isierais</i></p>
 			<p><i>isieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>isiese</i></p>
 			<p><i>isieses</i></p>
@@ -7950,14 +7500,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -8088,14 +7630,6 @@
 			<p><i>egarais</i></p>
 			<p><i>egaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>egase</i></p>
 			<p><i>egases</i></p>
@@ -8226,14 +7760,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -8364,14 +7890,6 @@
 			<p><i>iñerais</i></p>
 			<p><i>iñeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iñese</i></p>
 			<p><i>iñeses</i></p>
@@ -8502,14 +8020,6 @@
 			<p><i>unierais</i></p>
 			<p><i>unieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uniese</i></p>
 			<p><i>unieses</i></p>
@@ -8640,14 +8150,6 @@
 			<p><i>upierais</i></p>
 			<p><i>upieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>upiese</i></p>
 			<p><i>upieses</i></p>
@@ -8778,14 +8280,6 @@
 			<p><i>carais</i></p>
 			<p><i>caran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>case</i></p>
 			<p><i>cases</i></p>
@@ -8916,14 +8410,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -9054,14 +8540,6 @@
 			<p><i>iguierais</i></p>
 			<p><i>iguieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iguiese</i></p>
 			<p><i>iguieses</i></p>
@@ -9192,14 +8670,6 @@
 			<p><i>intierais</i></p>
 			<p><i>intieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>intiese</i></p>
 			<p><i>intieses</i></p>
@@ -9330,14 +8800,6 @@
 			<p><i>fuerais</i></p>
 			<p><i>fueran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>fuese</i></p>
 			<p><i>fueses</i></p>
@@ -9468,14 +8930,6 @@
 			<p><i>fuerais</i></p>
 			<p><i>fueran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>fuese</i></p>
 			<p><i>fueses</i></p>
@@ -9606,14 +9060,6 @@
 			<p><i>erais</i></p>
 			<p><i>eran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ese</i></p>
 			<p><i>eses</i></p>
@@ -9744,14 +9190,6 @@
 			<p><i>uvierais</i></p>
 			<p><i>uvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uviese</i></p>
 			<p><i>uvieses</i></p>
@@ -9882,14 +9320,6 @@
 			<p><i>jerais</i></p>
 			<p><i>jeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>jese</i></p>
 			<p><i>jeses</i></p>
@@ -10020,14 +9450,6 @@
 			<p><i>ocarais</i></p>
 			<p><i>ocaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ocase</i></p>
 			<p><i>ocases</i></p>
@@ -10158,14 +9580,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -10296,14 +9710,6 @@
 			<p><i>inierais</i></p>
 			<p><i>inieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iniese</i></p>
 			<p><i>inieses</i></p>
@@ -10434,14 +9840,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -10572,14 +9970,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -10710,14 +10100,6 @@
 			<p><i>olvierais</i></p>
 			<p><i>olvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olviese</i></p>
 			<p><i>olvieses</i></p>
@@ -10848,14 +10230,6 @@
 			<p><i>cierais</i></p>
 			<p><i>cieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ciese</i></p>
 			<p><i>cieses</i></p>
@@ -10986,14 +10360,6 @@
 			<p><i>cierais</i></p>
 			<p><i>cieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ciese</i></p>
 			<p><i>cieses</i></p>
@@ -11124,14 +10490,6 @@
 			<p><i>illarais</i></p>
 			<p><i>illaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>illase</i></p>
 			<p><i>illases</i></p>
@@ -11262,14 +10620,6 @@
 			<p><i>anarais</i></p>
 			<p><i>anaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>anase</i></p>
 			<p><i>anases</i></p>
@@ -11400,14 +10750,6 @@
 			<p><i>abarais</i></p>
 			<p><i>abaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>abase</i></p>
 			<p><i>abases</i></p>
@@ -11538,14 +10880,6 @@
 			<p><i>astarais</i></p>
 			<p><i>astaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>astase</i></p>
 			<p><i>astases</i></p>
@@ -11676,14 +11010,6 @@
 			<p><i>eldarais</i></p>
 			<p><i>eldaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>eldase</i></p>
 			<p><i>eldases</i></p>
@@ -11814,14 +11140,6 @@
 			<p><i>iarais</i></p>
 			<p><i>iaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iase</i></p>
 			<p><i>iases</i></p>
@@ -11952,14 +11270,6 @@
 			<p><i>icharais</i></p>
 			<p><i>icharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ichase</i></p>
 			<p><i>ichases</i></p>
@@ -12090,14 +11400,6 @@
 			<p><i>ocarais</i></p>
 			<p><i>ocaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ocase</i></p>
 			<p><i>ocases</i></p>
@@ -12228,14 +11530,6 @@
 			<p><i>ofarais</i></p>
 			<p><i>ofaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ofase</i></p>
 			<p><i>ofases</i></p>
@@ -12366,14 +11660,6 @@
 			<p><i>olsarais</i></p>
 			<p><i>olsaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olsase</i></p>
 			<p><i>olsases</i></p>
@@ -12504,14 +11790,6 @@
 			<p><i>ascarais</i></p>
 			<p><i>ascaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ascase</i></p>
 			<p><i>ascases</i></p>
@@ -12642,14 +11920,6 @@
 			<p><i>egarais</i></p>
 			<p><i>egaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>egase</i></p>
 			<p><i>egases</i></p>
@@ -12780,14 +12050,6 @@
 			<p><i>icarais</i></p>
 			<p><i>icaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>icase</i></p>
 			<p><i>icases</i></p>
@@ -12918,14 +12180,6 @@
 			<p><i>ugarais</i></p>
 			<p><i>ugaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ugase</i></p>
 			<p><i>ugases</i></p>
@@ -13056,14 +12310,6 @@
 			<p><i>agarais</i></p>
 			<p><i>agaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>agase</i></p>
 			<p><i>agases</i></p>
@@ -13194,14 +12440,6 @@
 			<p><i>argarais</i></p>
 			<p><i>argaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>argase</i></p>
 			<p><i>argases</i></p>
@@ -13332,14 +12570,6 @@
 			<p><i>onarais</i></p>
 			<p><i>onaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>onase</i></p>
 			<p><i>onases</i></p>
@@ -13470,14 +12700,6 @@
 			<p><i>rierais</i></p>
 			<p><i>rieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>riese</i></p>
 			<p><i>rieses</i></p>
@@ -13608,14 +12830,6 @@
 			<p><i>omarais</i></p>
 			<p><i>omaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>omase</i></p>
 			<p><i>omases</i></p>
@@ -13746,14 +12960,6 @@
 			<p><i>uzarais</i></p>
 			<p><i>uzaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uzase</i></p>
 			<p><i>uzases</i></p>
@@ -13884,14 +13090,6 @@
 			<p><i>bierais</i></p>
 			<p><i>bieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>biese</i></p>
 			<p><i>bieses</i></p>
@@ -14022,14 +13220,6 @@
 			<p><i>jerais</i></p>
 			<p><i>jeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>jese</i></p>
 			<p><i>jeses</i></p>
@@ -14160,14 +13350,6 @@
 			<p><i>olarais</i></p>
 			<p><i>olaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olase</i></p>
 			<p><i>olases</i></p>
@@ -14298,14 +13480,6 @@
 			<p><i>esarais</i></p>
 			<p><i>esaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>esase</i></p>
 			<p><i>esases</i></p>
@@ -14436,14 +13610,6 @@
 			<p><i>urrarais</i></p>
 			<p><i>urraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>urrase</i></p>
 			<p><i>urrases</i></p>
@@ -14574,14 +13740,6 @@
 			<p><i>acharais</i></p>
 			<p><i>acharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>achase</i></p>
 			<p><i>achases</i></p>
@@ -14712,14 +13870,6 @@
 			<p><i>acharais</i></p>
 			<p><i>acharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>achase</i></p>
 			<p><i>achases</i></p>
@@ -14850,14 +14000,6 @@
 			<p><i>asarais</i></p>
 			<p><i>asaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>asase</i></p>
 			<p><i>asases</i></p>
@@ -14988,14 +14130,6 @@
 			<p><i>ambarais</i></p>
 			<p><i>ambaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ambase</i></p>
 			<p><i>ambases</i></p>
@@ -15126,14 +14260,6 @@
 			<p><i>urarais</i></p>
 			<p><i>uraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>urase</i></p>
 			<p><i>urases</i></p>
@@ -15264,14 +14390,6 @@
 			<p><i>arrarais</i></p>
 			<p><i>arraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>arrase</i></p>
 			<p><i>arrases</i></p>
@@ -15402,14 +14520,6 @@
 			<p><i>ullarais</i></p>
 			<p><i>ullaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ullase</i></p>
 			<p><i>ullases</i></p>
@@ -15540,14 +14650,6 @@
 			<p><i>erarais</i></p>
 			<p><i>eraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>erase</i></p>
 			<p><i>erases</i></p>
@@ -15678,14 +14780,6 @@
 			<p><i>atarais</i></p>
 			<p><i>ataran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>atase</i></p>
 			<p><i>atases</i></p>
@@ -15816,14 +14910,6 @@
 			<p><i>elarais</i></p>
 			<p><i>elaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>elase</i></p>
 			<p><i>elases</i></p>
@@ -15954,14 +15040,6 @@
 			<p><i>ertarais</i></p>
 			<p><i>ertaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ertase</i></p>
 			<p><i>ertases</i></p>
@@ -16092,14 +15170,6 @@
 			<p><i>amparais</i></p>
 			<p><i>amparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ampase</i></p>
 			<p><i>ampases</i></p>
@@ -16230,14 +15300,6 @@
 			<p><i>inarais</i></p>
 			<p><i>inaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>inase</i></p>
 			<p><i>inases</i></p>
@@ -16368,14 +15430,6 @@
 			<p><i>ocharais</i></p>
 			<p><i>ocharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ochase</i></p>
 			<p><i>ochases</i></p>
@@ -16506,14 +15560,6 @@
 			<p><i>ucharais</i></p>
 			<p><i>ucharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uchase</i></p>
 			<p><i>uchases</i></p>
@@ -16644,14 +15690,6 @@
 			<p><i>aparais</i></p>
 			<p><i>aparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>apase</i></p>
 			<p><i>apases</i></p>
@@ -16782,14 +15820,6 @@
 			<p><i>ularais</i></p>
 			<p><i>ularan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ulase</i></p>
 			<p><i>ulases</i></p>
@@ -16920,14 +15950,6 @@
 			<p><i>ocarais</i></p>
 			<p><i>ocaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ocase</i></p>
 			<p><i>ocases</i></p>
@@ -17058,14 +16080,6 @@
 			<p><i>ollarais</i></p>
 			<p><i>ollaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ollase</i></p>
 			<p><i>ollases</i></p>
@@ -17196,14 +16210,6 @@
 			<p><i>idierais</i></p>
 			<p><i>idieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>idiese</i></p>
 			<p><i>idieses</i></p>
@@ -17334,14 +16340,6 @@
 			<p><i>unarais</i></p>
 			<p><i>unaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>unase</i></p>
 			<p><i>unases</i></p>
@@ -17472,14 +16470,6 @@
 			<p><i>abarais</i></p>
 			<p><i>abaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>abase</i></p>
 			<p><i>abases</i></p>
@@ -17610,14 +16600,6 @@
 			<p><i>ordarais</i></p>
 			<p><i>ordaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ordase</i></p>
 			<p><i>ordases</i></p>
@@ -17748,14 +16730,6 @@
 			<p><i>ornarais</i></p>
 			<p><i>ornaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ornase</i></p>
 			<p><i>ornases</i></p>
@@ -17886,14 +16860,6 @@
 			<p><i>ucarais</i></p>
 			<p><i>ucaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ucase</i></p>
 			<p><i>ucases</i></p>
@@ -18024,14 +16990,6 @@
 			<p><i>ejarais</i></p>
 			<p><i>ejaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ejase</i></p>
 			<p><i>ejases</i></p>
@@ -18162,14 +17120,6 @@
 			<p><i>ostarais</i></p>
 			<p><i>ostaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ostase</i></p>
 			<p><i>ostases</i></p>
@@ -18300,14 +17250,6 @@
 			<p><i>entarais</i></p>
 			<p><i>entaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>entase</i></p>
 			<p><i>entases</i></p>
@@ -18438,14 +17380,6 @@
 			<p><i>ollarais</i></p>
 			<p><i>ollaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ollase</i></p>
 			<p><i>ollases</i></p>
@@ -18576,14 +17510,6 @@
 			<p><i>ilmarais</i></p>
 			<p><i>ilmaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ilmase</i></p>
 			<p><i>ilmases</i></p>
@@ -18714,14 +17640,6 @@
 			<p><i>uñarais</i></p>
 			<p><i>uñaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uñase</i></p>
 			<p><i>uñases</i></p>
@@ -18852,14 +17770,6 @@
 			<p><i>urdarais</i></p>
 			<p><i>urdaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>urdase</i></p>
 			<p><i>urdases</i></p>
@@ -18990,14 +17900,6 @@
 			<p><i>entrarais</i></p>
 			<p><i>entraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>entrase</i></p>
 			<p><i>entrases</i></p>
@@ -19128,14 +18030,6 @@
 			<p><i>estrarais</i></p>
 			<p><i>estraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>estrase</i></p>
 			<p><i>estrases</i></p>
@@ -19266,14 +18160,6 @@
 			<p><i>irierais</i></p>
 			<p><i>irieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iriese</i></p>
 			<p><i>irieses</i></p>
@@ -19404,14 +18290,6 @@
 			<p><i>irierais</i></p>
 			<p><i>irieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iriese</i></p>
 			<p><i>irieses</i></p>
@@ -19542,14 +18420,6 @@
 			<p><i>izarais</i></p>
 			<p><i>izaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>izase</i></p>
 			<p><i>izases</i></p>
@@ -19680,14 +18550,6 @@
 			<p><i>ilarais</i></p>
 			<p><i>ilaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ilase</i></p>
 			<p><i>ilases</i></p>
@@ -19818,14 +18680,6 @@
 			<p><i>itarais</i></p>
 			<p><i>itaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>itase</i></p>
 			<p><i>itases</i></p>
@@ -19956,14 +18810,6 @@
 			<p><i>bierais</i></p>
 			<p><i>bieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>biese</i></p>
 			<p><i>bieses</i></p>
@@ -20094,14 +18940,6 @@
 			<p><i>gierais</i></p>
 			<p><i>gieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>giese</i></p>
 			<p><i>gieses</i></p>
@@ -20232,14 +19070,6 @@
 			<p><i>eñarais</i></p>
 			<p><i>eñaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>eñase</i></p>
 			<p><i>eñases</i></p>
@@ -20370,14 +19200,6 @@
 			<p><i>irtierais</i></p>
 			<p><i>irtieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irtiese</i></p>
 			<p><i>irtieses</i></p>
@@ -20508,14 +19330,6 @@
 			<p><i>olarais</i></p>
 			<p><i>olaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olase</i></p>
 			<p><i>olases</i></p>
@@ -20646,14 +19460,6 @@
 			<p><i>errarais</i></p>
 			<p><i>erraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>errase</i></p>
 			<p><i>errases</i></p>
@@ -20784,14 +19590,6 @@
 			<p><i>ebrarais</i></p>
 			<p><i>ebraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ebrase</i></p>
 			<p><i>ebrases</i></p>
@@ -20922,14 +19720,6 @@
 			<p><i>gierais</i></p>
 			<p><i>gieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>giese</i></p>
 			<p><i>gieses</i></p>
@@ -21060,14 +19850,6 @@
 			<p><i>orarais</i></p>
 			<p><i>oraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orase</i></p>
 			<p><i>orases</i></p>
@@ -21198,14 +19980,6 @@
 			<p><i>osarais</i></p>
 			<p><i>osaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>osase</i></p>
 			<p><i>osases</i></p>
@@ -21336,14 +20110,6 @@
 			<p><i>echarais</i></p>
 			<p><i>echaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>echase</i></p>
 			<p><i>echases</i></p>
@@ -21474,14 +20240,6 @@
 			<p><i>utrarais</i></p>
 			<p><i>utraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>utrase</i></p>
 			<p><i>utrases</i></p>
@@ -21612,14 +20370,6 @@
 			<p><i>enarais</i></p>
 			<p><i>enaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>enase</i></p>
 			<p><i>enases</i></p>
@@ -21750,14 +20500,6 @@
 			<p><i>arbarais</i></p>
 			<p><i>arbaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>arbase</i></p>
 			<p><i>arbases</i></p>
@@ -21888,14 +20630,6 @@
 			<p><i>ojarais</i></p>
 			<p><i>ojaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ojase</i></p>
 			<p><i>ojases</i></p>
@@ -22026,14 +20760,6 @@
 			<p><i>ingarais</i></p>
 			<p><i>ingaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ingase</i></p>
 			<p><i>ingases</i></p>
@@ -22164,14 +20890,6 @@
 			<p><i>aguarais</i></p>
 			<p><i>aguaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>aguase</i></p>
 			<p><i>aguases</i></p>
@@ -22302,14 +21020,6 @@
 			<p><i>orarais</i></p>
 			<p><i>oraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orase</i></p>
 			<p><i>orases</i></p>
@@ -22440,14 +21150,6 @@
 			<p><i>ijarais</i></p>
 			<p><i>ijaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ijase</i></p>
 			<p><i>ijases</i></p>
@@ -22578,14 +21280,6 @@
 			<p><i>ilarais</i></p>
 			<p><i>ilaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ilase</i></p>
 			<p><i>ilases</i></p>
@@ -22716,14 +21410,6 @@
 			<p><i>itarais</i></p>
 			<p><i>itaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>itase</i></p>
 			<p><i>itases</i></p>
@@ -22854,14 +21540,6 @@
 			<p><i>ajarais</i></p>
 			<p><i>ajaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ajase</i></p>
 			<p><i>ajases</i></p>
@@ -22992,14 +21670,6 @@
 			<p><i>ucharais</i></p>
 			<p><i>ucharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uchase</i></p>
 			<p><i>uchases</i></p>
@@ -23130,14 +21800,6 @@
 			<p><i>umarais</i></p>
 			<p><i>umaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>umase</i></p>
 			<p><i>umases</i></p>
@@ -23268,14 +21930,6 @@
 			<p><i>usarais</i></p>
 			<p><i>usaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>usase</i></p>
 			<p><i>usases</i></p>
@@ -23406,14 +22060,6 @@
 			<p><i>islarais</i></p>
 			<p><i>islaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>islase</i></p>
 			<p><i>islases</i></p>
@@ -23544,14 +22190,6 @@
 			<p><i>ecarais</i></p>
 			<p><i>ecaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ecase</i></p>
 			<p><i>ecases</i></p>
@@ -23682,14 +22320,6 @@
 			<p><i>umarais</i></p>
 			<p><i>umaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>umase</i></p>
 			<p><i>umases</i></p>
@@ -23820,14 +22450,6 @@
 			<p><i>artarais</i></p>
 			<p><i>artaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>artase</i></p>
 			<p><i>artases</i></p>
@@ -23958,14 +22580,6 @@
 			<p><i>earais</i></p>
 			<p><i>earan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ease</i></p>
 			<p><i>eases</i></p>
@@ -24096,14 +22710,6 @@
 			<p><i>ebrarais</i></p>
 			<p><i>ebraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ebrase</i></p>
 			<p><i>ebrases</i></p>
@@ -24234,14 +22840,6 @@
 			<p><i>estarais</i></p>
 			<p><i>estaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>estase</i></p>
 			<p><i>estases</i></p>
@@ -24372,14 +22970,6 @@
 			<p><i>ebrarais</i></p>
 			<p><i>ebraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ebrase</i></p>
 			<p><i>ebrases</i></p>
@@ -24510,14 +23100,6 @@
 			<p><i>ongarais</i></p>
 			<p><i>ongaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ongase</i></p>
 			<p><i>ongases</i></p>
@@ -24648,14 +23230,6 @@
 			<p><i>ecierais</i></p>
 			<p><i>ecieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>eciese</i></p>
 			<p><i>ecieses</i></p>
@@ -24786,14 +23360,6 @@
 			<p><i>imbrarais</i></p>
 			<p><i>imbraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>imbrase</i></p>
 			<p><i>imbrases</i></p>
@@ -24924,14 +23490,6 @@
 			<p><i>orrarais</i></p>
 			<p><i>orraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orrase</i></p>
 			<p><i>orrases</i></p>
@@ -25062,14 +23620,6 @@
 			<p><i>inarais</i></p>
 			<p><i>inaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>inase</i></p>
 			<p><i>inases</i></p>
@@ -25200,14 +23750,6 @@
 			<p><i>allarais</i></p>
 			<p><i>allaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>allase</i></p>
 			<p><i>allases</i></p>
@@ -25338,14 +23880,6 @@
 			<p><i>ebarais</i></p>
 			<p><i>ebaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ebase</i></p>
 			<p><i>ebases</i></p>
@@ -25476,14 +24010,6 @@
 			<p><i>antarais</i></p>
 			<p><i>antaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>antase</i></p>
 			<p><i>antases</i></p>
@@ -25614,14 +24140,6 @@
 			<p><i>amarais</i></p>
 			<p><i>amaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>amase</i></p>
 			<p><i>amases</i></p>
@@ -25752,14 +24270,6 @@
 			<p><i>oblarais</i></p>
 			<p><i>oblaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oblase</i></p>
 			<p><i>oblases</i></p>
@@ -25890,14 +24400,6 @@
 			<p><i>iñarais</i></p>
 			<p><i>iñaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iñase</i></p>
 			<p><i>iñases</i></p>
@@ -26028,14 +24530,6 @@
 			<p><i>nejarais</i></p>
 			<p><i>nejaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>nejase</i></p>
 			<p><i>nejases</i></p>
@@ -26166,14 +24660,6 @@
 			<p><i>usierais</i></p>
 			<p><i>usieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>usiese</i></p>
 			<p><i>usieses</i></p>
@@ -26304,14 +24790,6 @@
 			<p><i>nudarais</i></p>
 			<p><i>nudaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>nudase</i></p>
 			<p><i>nudases</i></p>
@@ -26442,14 +24920,6 @@
 			<p><i>udarais</i></p>
 			<p><i>udaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>udase</i></p>
 			<p><i>udases</i></p>
@@ -26580,14 +25050,6 @@
 			<p><i>angarais</i></p>
 			<p><i>angaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>angase</i></p>
 			<p><i>angases</i></p>
@@ -26718,14 +25180,6 @@
 			<p><i>iguarais</i></p>
 			<p><i>iguaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iguase</i></p>
 			<p><i>iguases</i></p>
@@ -26856,14 +25310,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -26994,14 +25440,6 @@
 			<p><i>ernarais</i></p>
 			<p><i>ernaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ernase</i></p>
 			<p><i>ernases</i></p>
@@ -27132,14 +25570,6 @@
 			<p><i>arais</i></p>
 			<p><i>aran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ase</i></p>
 			<p><i>ases</i></p>
@@ -27270,14 +25700,6 @@
 			<p><i>ararais</i></p>
 			<p><i>araran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>arase</i></p>
 			<p><i>arases</i></p>
@@ -27408,14 +25830,6 @@
 			<p><i>implarais</i></p>
 			<p><i>implaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>implase</i></p>
 			<p><i>implases</i></p>
@@ -27546,14 +25960,6 @@
 			<p><i>iparais</i></p>
 			<p><i>iparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ipase</i></p>
 			<p><i>ipases</i></p>
@@ -27684,14 +26090,6 @@
 			<p><i>ongarais</i></p>
 			<p><i>ongaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ongase</i></p>
 			<p><i>ongases</i></p>
@@ -27822,14 +26220,6 @@
 			<p><i>ismarais</i></p>
 			<p><i>ismaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ismase</i></p>
 			<p><i>ismases</i></p>
@@ -27960,14 +26350,6 @@
 			<p><i>ozarais</i></p>
 			<p><i>ozaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ozase</i></p>
 			<p><i>ozases</i></p>
@@ -28098,14 +26480,6 @@
 			<p><i>etarais</i></p>
 			<p><i>etaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>etase</i></p>
 			<p><i>etases</i></p>
@@ -28236,14 +26610,6 @@
 			<p><i>obarais</i></p>
 			<p><i>obaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>obase</i></p>
 			<p><i>obases</i></p>
@@ -28374,14 +26740,6 @@
 			<p><i>uyerais</i></p>
 			<p><i>uyeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uyese</i></p>
 			<p><i>uyeses</i></p>
@@ -28512,14 +26870,6 @@
 			<p><i>iscarais</i></p>
 			<p><i>iscaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iscase</i></p>
 			<p><i>iscases</i></p>
@@ -28650,14 +27000,6 @@
 			<p><i>imarais</i></p>
 			<p><i>imaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>imase</i></p>
 			<p><i>imases</i></p>
@@ -28788,14 +27130,6 @@
 			<p><i>ostarais</i></p>
 			<p><i>ostaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ostase</i></p>
 			<p><i>ostases</i></p>
@@ -28926,14 +27260,6 @@
 			<p><i>untarais</i></p>
 			<p><i>untaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>untase</i></p>
 			<p><i>untases</i></p>
@@ -29064,14 +27390,6 @@
 			<p><i>endarais</i></p>
 			<p><i>endaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>endase</i></p>
 			<p><i>endases</i></p>
@@ -29202,14 +27520,6 @@
 			<p><i>igarais</i></p>
 			<p><i>igaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>igase</i></p>
 			<p><i>igases</i></p>
@@ -29340,14 +27650,6 @@
 			<p><i>intierais</i></p>
 			<p><i>intieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>intiese</i></p>
 			<p><i>intieses</i></p>
@@ -29478,14 +27780,6 @@
 			<p><i>icarais</i></p>
 			<p><i>icaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>icase</i></p>
 			<p><i>icases</i></p>
@@ -29616,14 +27910,6 @@
 			<p><i>irarais</i></p>
 			<p><i>iraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irase</i></p>
 			<p><i>irases</i></p>
@@ -29754,14 +28040,6 @@
 			<p><i>oldarais</i></p>
 			<p><i>oldaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oldase</i></p>
 			<p><i>oldases</i></p>
@@ -29892,14 +28170,6 @@
 			<p><i>onarais</i></p>
 			<p><i>onaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>onase</i></p>
 			<p><i>onases</i></p>
@@ -30030,14 +28300,6 @@
 			<p><i>entarais</i></p>
 			<p><i>entaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>entase</i></p>
 			<p><i>entases</i></p>
@@ -30168,14 +28430,6 @@
 			<p><i>erais</i></p>
 			<p><i>eran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ese</i></p>
 			<p><i>eses</i></p>
@@ -30306,14 +28560,6 @@
 			<p><i>erais</i></p>
 			<p><i>eran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ese</i></p>
 			<p><i>eses</i></p>
@@ -30444,14 +28690,6 @@
 			<p><i>endierais</i></p>
 			<p><i>endieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>endiese</i></p>
 			<p><i>endieses</i></p>
@@ -30582,14 +28820,6 @@
 			<p><i>atuvierais</i></p>
 			<p><i>atuvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>atuviese</i></p>
 			<p><i>atuvieses</i></p>
@@ -30720,14 +28950,6 @@
 			<p><i>etarais</i></p>
 			<p><i>etaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>etase</i></p>
 			<p><i>etases</i></p>
@@ -30858,14 +29080,6 @@
 			<p><i>estarais</i></p>
 			<p><i>estaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>estase</i></p>
 			<p><i>estases</i></p>
@@ -30996,14 +29210,6 @@
 			<p><i>ujarais</i></p>
 			<p><i>ujaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ujase</i></p>
 			<p><i>ujases</i></p>
@@ -31134,14 +29340,6 @@
 			<p><i>orcierais</i></p>
 			<p><i>orcieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orciese</i></p>
 			<p><i>orcieses</i></p>
@@ -31272,14 +29470,6 @@
 			<p><i>oscarais</i></p>
 			<p><i>oscaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oscase</i></p>
 			<p><i>oscases</i></p>
@@ -31410,14 +29600,6 @@
 			<p><i>illarais</i></p>
 			<p><i>illaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>illase</i></p>
 			<p><i>illases</i></p>
@@ -31548,14 +29730,6 @@
 			<p><i>esarais</i></p>
 			<p><i>esaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>esase</i></p>
 			<p><i>esases</i></p>
@@ -31686,14 +29860,6 @@
 			<p><i>unarais</i></p>
 			<p><i>unaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>unase</i></p>
 			<p><i>unases</i></p>
@@ -31824,14 +29990,6 @@
 			<p><i>uparais</i></p>
 			<p><i>uparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>upase</i></p>
 			<p><i>upases</i></p>
@@ -31962,14 +30120,6 @@
 			<p><i>uparais</i></p>
 			<p><i>uparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>upase</i></p>
 			<p><i>upases</i></p>
@@ -32100,14 +30250,6 @@
 			<p><i>ijerais</i></p>
 			<p><i>ijeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ijese</i></p>
 			<p><i>ijeses</i></p>
@@ -32238,14 +30380,6 @@
 			<p><i>isierais</i></p>
 			<p><i>isieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>isiese</i></p>
 			<p><i>isieses</i></p>
@@ -32376,14 +30510,6 @@
 			<p><i>urcarais</i></p>
 			<p><i>urcaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>urcase</i></p>
 			<p><i>urcases</i></p>
@@ -32514,14 +30640,6 @@
 			<p><i>iarais</i></p>
 			<p><i>iaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iase</i></p>
 			<p><i>iases</i></p>
@@ -32652,14 +30770,6 @@
 			<p><i>ernierais</i></p>
 			<p><i>ernieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>erniese</i></p>
 			<p><i>ernieses</i></p>
@@ -32790,14 +30900,6 @@
 			<p><i>afarais</i></p>
 			<p><i>afaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>afase</i></p>
 			<p><i>afases</i></p>
@@ -32928,14 +31030,6 @@
 			<p><i>isparais</i></p>
 			<p><i>isparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ispase</i></p>
 			<p><i>ispases</i></p>
@@ -33066,14 +31160,6 @@
 			<p><i>darais</i></p>
 			<p><i>daran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>dase</i></p>
 			<p><i>dases</i></p>
@@ -33204,14 +31290,6 @@
 			<p><i>endierais</i></p>
 			<p><i>endieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>endiese</i></p>
 			<p><i>endieses</i></p>
@@ -33342,14 +31420,6 @@
 			<p><i>olarais</i></p>
 			<p><i>olaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olase</i></p>
 			<p><i>olases</i></p>
@@ -33480,14 +31550,6 @@
 			<p><i>igierais</i></p>
 			<p><i>igieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>igiese</i></p>
 			<p><i>igieses</i></p>
@@ -33618,14 +31680,6 @@
 			<p><i>enzarais</i></p>
 			<p><i>enzaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>enzase</i></p>
 			<p><i>enzases</i></p>
@@ -33756,14 +31810,6 @@
 			<p><i>elierais</i></p>
 			<p><i>elieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>eliese</i></p>
 			<p><i>elieses</i></p>
@@ -33894,14 +31940,6 @@
 			<p><i>etrarais</i></p>
 			<p><i>etraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>etrase</i></p>
 			<p><i>etrases</i></p>
@@ -34032,14 +32070,6 @@
 			<p><i>itierais</i></p>
 			<p><i>itieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>itiese</i></p>
 			<p><i>itieses</i></p>
@@ -34170,14 +32200,6 @@
 			<p><i>ortarais</i></p>
 			<p><i>ortaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ortase</i></p>
 			<p><i>ortases</i></p>
@@ -34308,14 +32330,6 @@
 			<p><i>dierais</i></p>
 			<p><i>dieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>diese</i></p>
 			<p><i>dieses</i></p>
@@ -34446,14 +32460,6 @@
 			<p><i>imierais</i></p>
 			<p><i>imieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>imiese</i></p>
 			<p><i>imieses</i></p>
@@ -34584,14 +32590,6 @@
 			<p><i>ibierais</i></p>
 			<p><i>ibieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ibiese</i></p>
 			<p><i>ibieses</i></p>
@@ -34722,14 +32720,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -34860,14 +32850,6 @@
 			<p><i>omierais</i></p>
 			<p><i>omieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>omiese</i></p>
 			<p><i>omieses</i></p>
@@ -34998,14 +32980,6 @@
 			<p><i>ijerais</i></p>
 			<p><i>ijeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ijese</i></p>
 			<p><i>ijeses</i></p>
@@ -35136,14 +33110,6 @@
 			<p><i>olierais</i></p>
 			<p><i>olieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oliese</i></p>
 			<p><i>olieses</i></p>
@@ -35274,14 +33240,6 @@
 			<p><i>esarais</i></p>
 			<p><i>esaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>esase</i></p>
 			<p><i>esases</i></p>
@@ -35412,14 +33370,6 @@
 			<p><i>ndierais</i></p>
 			<p><i>ndieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ndiese</i></p>
 			<p><i>ndieses</i></p>
@@ -35550,14 +33500,6 @@
 			<p><i>mierais</i></p>
 			<p><i>mieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>miese</i></p>
 			<p><i>mieses</i></p>
@@ -35688,14 +33630,6 @@
 			<p><i>ontarais</i></p>
 			<p><i>ontaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ontase</i></p>
 			<p><i>ontases</i></p>
@@ -35826,14 +33760,6 @@
 			<p><i>orcierais</i></p>
 			<p><i>orcieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orciese</i></p>
 			<p><i>orcieses</i></p>
@@ -35964,14 +33890,6 @@
 			<p><i>ijerais</i></p>
 			<p><i>ijeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ijese</i></p>
 			<p><i>ijeses</i></p>
@@ -36102,14 +34020,6 @@
 			<p><i>elierais</i></p>
 			<p><i>elieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>eliese</i></p>
 			<p><i>elieses</i></p>
@@ -36240,14 +34150,6 @@
 			<p><i>encierais</i></p>
 			<p><i>encieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>enciese</i></p>
 			<p><i>encieses</i></p>
@@ -36378,14 +34280,6 @@
 			<p><i>ompierais</i></p>
 			<p><i>ompieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ompiese</i></p>
 			<p><i>ompieses</i></p>
@@ -36516,14 +34410,6 @@
 			<p><i>ostrarais</i></p>
 			<p><i>ostraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ostrase</i></p>
 			<p><i>ostrases</i></p>
@@ -36654,14 +34540,6 @@
 			<p><i>ostrarais</i></p>
 			<p><i>ostraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ostrase</i></p>
 			<p><i>ostrases</i></p>
@@ -36792,14 +34670,6 @@
 			<p><i>ordarais</i></p>
 			<p><i>ordaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ordase</i></p>
 			<p><i>ordases</i></p>
@@ -36930,14 +34800,6 @@
 			<p><i>itarais</i></p>
 			<p><i>itaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>itase</i></p>
 			<p><i>itases</i></p>
@@ -37068,14 +34930,6 @@
 			<p><i>islarais</i></p>
 			<p><i>islaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>islase</i></p>
 			<p><i>islases</i></p>
@@ -37206,14 +35060,6 @@
 			<p><i>istarais</i></p>
 			<p><i>istaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>istase</i></p>
 			<p><i>istases</i></p>
@@ -37344,14 +35190,6 @@
 			<p><i>orcarais</i></p>
 			<p><i>orcaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orcase</i></p>
 			<p><i>orcases</i></p>
@@ -37482,14 +35320,6 @@
 			<p><i>ancarais</i></p>
 			<p><i>ancaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ancase</i></p>
 			<p><i>ancases</i></p>
@@ -37620,14 +35450,6 @@
 			<p><i>ontarais</i></p>
 			<p><i>ontaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ontase</i></p>
 			<p><i>ontases</i></p>
@@ -37758,14 +35580,6 @@
 			<p><i>ufarais</i></p>
 			<p><i>ufaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ufase</i></p>
 			<p><i>ufases</i></p>
@@ -37896,14 +35710,6 @@
 			<p><i>andarais</i></p>
 			<p><i>andaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>andase</i></p>
 			<p><i>andases</i></p>
@@ -38034,14 +35840,6 @@
 			<p><i>ustarais</i></p>
 			<p><i>ustaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ustase</i></p>
 			<p><i>ustases</i></p>
@@ -38172,14 +35970,6 @@
 			<p><i>azarais</i></p>
 			<p><i>azaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>azase</i></p>
 			<p><i>azases</i></p>
@@ -38310,14 +36100,6 @@
 			<p><i>ullerais</i></p>
 			<p><i>ulleran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ullese</i></p>
 			<p><i>ulleses</i></p>
@@ -38448,14 +36230,6 @@
 			<p><i>ullerais</i></p>
 			<p><i>ulleran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ullese</i></p>
 			<p><i>ulleses</i></p>
@@ -38586,14 +36360,6 @@
 			<p><i>ostarais</i></p>
 			<p><i>ostaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ostase</i></p>
 			<p><i>ostases</i></p>
@@ -38724,14 +36490,6 @@
 			<p><i>ularais</i></p>
 			<p><i>ularan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ulase</i></p>
 			<p><i>ulases</i></p>
@@ -38862,14 +36620,6 @@
 			<p><i>edrarais</i></p>
 			<p><i>edraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>edrase</i></p>
 			<p><i>edrases</i></p>
@@ -39000,14 +36750,6 @@
 			<p><i>ovarais</i></p>
 			<p><i>ovaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ovase</i></p>
 			<p><i>ovases</i></p>
@@ -39138,14 +36880,6 @@
 			<p><i>osarais</i></p>
 			<p><i>osaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>osase</i></p>
 			<p><i>osases</i></p>
@@ -39276,14 +37010,6 @@
 			<p><i>irvierais</i></p>
 			<p><i>irvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irviese</i></p>
 			<p><i>irvieses</i></p>
@@ -39414,14 +37140,6 @@
 			<p><i>ifarais</i></p>
 			<p><i>ifaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ifase</i></p>
 			<p><i>ifases</i></p>
@@ -39552,14 +37270,6 @@
 			<p><i>elarais</i></p>
 			<p><i>elaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>elase</i></p>
 			<p><i>elases</i></p>
@@ -39690,14 +37400,6 @@
 			<p><i>erbarais</i></p>
 			<p><i>erbaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>erbase</i></p>
 			<p><i>erbases</i></p>
@@ -39828,14 +37530,6 @@
 			<p><i>endrarais</i></p>
 			<p><i>endraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>endrase</i></p>
 			<p><i>endrases</i></p>
@@ -39966,14 +37660,6 @@
 			<p><i>arcarais</i></p>
 			<p><i>arcaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>arcase</i></p>
 			<p><i>arcases</i></p>
@@ -40104,14 +37790,6 @@
 			<p><i>embrarais</i></p>
 			<p><i>embraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>embrase</i></p>
 			<p><i>embrases</i></p>
@@ -40242,14 +37920,6 @@
 			<p><i>utrierais</i></p>
 			<p><i>utrieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>utriese</i></p>
 			<p><i>utrieses</i></p>
@@ -40380,14 +38050,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -40518,14 +38180,6 @@
 			<p><i>otarais</i></p>
 			<p><i>otaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>otase</i></p>
 			<p><i>otases</i></p>
@@ -40656,14 +38310,6 @@
 			<p><i>ezarais</i></p>
 			<p><i>ezaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ezase</i></p>
 			<p><i>ezases</i></p>
@@ -40794,14 +38440,6 @@
 			<p><i>ertarais</i></p>
 			<p><i>ertaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ertase</i></p>
 			<p><i>ertases</i></p>
@@ -40932,14 +38570,6 @@
 			<p><i>uparais</i></p>
 			<p><i>uparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>upase</i></p>
 			<p><i>upases</i></p>
@@ -41070,14 +38700,6 @@
 			<p><i>eyerais</i></p>
 			<p><i>eyeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>eyese</i></p>
 			<p><i>eyeses</i></p>
@@ -41208,14 +38830,6 @@
 			<p><i>osierais</i></p>
 			<p><i>osieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>osiese</i></p>
 			<p><i>osieses</i></p>
@@ -41346,14 +38960,6 @@
 			<p><i>istierais</i></p>
 			<p><i>istieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>istiese</i></p>
 			<p><i>istieses</i></p>
@@ -41484,14 +39090,6 @@
 			<p><i>ivierais</i></p>
 			<p><i>ivieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iviese</i></p>
 			<p><i>ivieses</i></p>
@@ -41622,14 +39220,6 @@
 			<p><i>ezmarais</i></p>
 			<p><i>ezmaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ezmase</i></p>
 			<p><i>ezmases</i></p>
@@ -41760,14 +39350,6 @@
 			<p><i>ignarais</i></p>
 			<p><i>ignaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ignase</i></p>
 			<p><i>ignases</i></p>
@@ -41898,14 +39480,6 @@
 			<p><i>orzarais</i></p>
 			<p><i>orzaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orzase</i></p>
 			<p><i>orzases</i></p>
@@ -42036,14 +39610,6 @@
 			<p><i>dierais</i></p>
 			<p><i>dieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>diese</i></p>
 			<p><i>dieses</i></p>
@@ -42174,14 +39740,6 @@
 			<p><i>alarais</i></p>
 			<p><i>alaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>alase</i></p>
 			<p><i>alases</i></p>
@@ -42312,14 +39870,6 @@
 			<p><i>incharais</i></p>
 			<p><i>incharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>inchase</i></p>
 			<p><i>inchases</i></p>
@@ -42450,14 +40000,6 @@
 			<p><i>oncarais</i></p>
 			<p><i>oncaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oncase</i></p>
 			<p><i>oncases</i></p>
@@ -42588,14 +40130,6 @@
 			<p><i>adrarais</i></p>
 			<p><i>adraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>adrase</i></p>
 			<p><i>adrases</i></p>
@@ -42726,14 +40260,6 @@
 			<p><i>añarais</i></p>
 			<p><i>añaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>añase</i></p>
 			<p><i>añases</i></p>
@@ -42864,14 +40390,6 @@
 			<p><i>anzarais</i></p>
 			<p><i>anzaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>anzase</i></p>
 			<p><i>anzases</i></p>
@@ -43002,14 +40520,6 @@
 			<p><i>edarais</i></p>
 			<p><i>edaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>edase</i></p>
 			<p><i>edases</i></p>
@@ -43140,14 +40650,6 @@
 			<p><i>azgarais</i></p>
 			<p><i>azgaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>azgase</i></p>
 			<p><i>azgases</i></p>
@@ -43278,14 +40780,6 @@
 			<p><i>errarais</i></p>
 			<p><i>erraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>errase</i></p>
 			<p><i>errases</i></p>
@@ -43416,14 +40910,6 @@
 			<p><i>oncharais</i></p>
 			<p><i>oncharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>onchase</i></p>
 			<p><i>onchases</i></p>
@@ -43554,14 +41040,6 @@
 			<p><i>ambrarais</i></p>
 			<p><i>ambraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ambrase</i></p>
 			<p><i>ambrases</i></p>
@@ -43692,14 +41170,6 @@
 			<p><i>utarais</i></p>
 			<p><i>utaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>utase</i></p>
 			<p><i>utases</i></p>
@@ -43830,14 +41300,6 @@
 			<p><i>avarais</i></p>
 			<p><i>avaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>avase</i></p>
 			<p><i>avases</i></p>
@@ -43968,14 +41430,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ajado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -44106,14 +41560,6 @@
 			<p><i>ivarais</i></p>
 			<p><i>ivaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ivase</i></p>
 			<p><i>ivases</i></p>
@@ -44244,14 +41690,6 @@
 			<p><i>ancharais</i></p>
 			<p><i>ancharan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>anchase</i></p>
 			<p><i>anchases</i></p>
@@ -44382,14 +41820,6 @@
 			<p><i>ogarais</i></p>
 			<p><i>ogaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ogase</i></p>
 			<p><i>ogases</i></p>
@@ -44520,14 +41950,6 @@
 			<p><i>uscarais</i></p>
 			<p><i>uscaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uscase</i></p>
 			<p><i>uscases</i></p>
@@ -44658,14 +42080,6 @@
 			<p><i>asgarais</i></p>
 			<p><i>asgaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>asgase</i></p>
 			<p><i>asgases</i></p>
@@ -44796,14 +42210,6 @@
 			<p><i>usgarais</i></p>
 			<p><i>usgaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>usgase</i></p>
 			<p><i>usgases</i></p>
@@ -44934,14 +42340,6 @@
 			<p><i>garais</i></p>
 			<p><i>garan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>gase</i></p>
 			<p><i>gases</i></p>
@@ -45072,14 +42470,6 @@
 			<p><i>ocarais</i></p>
 			<p><i>ocaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ocase</i></p>
 			<p><i>ocases</i></p>
@@ -45210,14 +42600,6 @@
 			<p><i>odarais</i></p>
 			<p><i>odaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>odase</i></p>
 			<p><i>odases</i></p>
@@ -45348,14 +42730,6 @@
 			<p><i>obrarais</i></p>
 			<p><i>obraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>obrase</i></p>
 			<p><i>obrases</i></p>
@@ -45486,14 +42860,6 @@
 			<p><i>oñarais</i></p>
 			<p><i>oñaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oñase</i></p>
 			<p><i>oñases</i></p>
@@ -45624,14 +42990,6 @@
 			<p><i>acarais</i></p>
 			<p><i>acaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>acase</i></p>
 			<p><i>acases</i></p>
@@ -45762,14 +43120,6 @@
 			<p><i>ercarais</i></p>
 			<p><i>ercaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ercase</i></p>
 			<p><i>ercases</i></p>
@@ -45900,14 +43250,6 @@
 			<p><i>orcarais</i></p>
 			<p><i>orcaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orcase</i></p>
 			<p><i>orcases</i></p>
@@ -46038,14 +43380,6 @@
 			<p><i>ortarais</i></p>
 			<p><i>ortaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ortase</i></p>
 			<p><i>ortases</i></p>
@@ -46176,14 +43510,6 @@
 			<p><i>urierais</i></p>
 			<p><i>urieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uriese</i></p>
 			<p><i>urieses</i></p>
@@ -46314,14 +43640,6 @@
 			<p><i>emarais</i></p>
 			<p><i>emaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>emase</i></p>
 			<p><i>emases</i></p>
@@ -46452,14 +43770,6 @@
 			<p><i>omparais</i></p>
 			<p><i>omparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ompase</i></p>
 			<p><i>ompases</i></p>
@@ -46590,14 +43900,6 @@
 			<p><i>umierais</i></p>
 			<p><i>umieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>umiese</i></p>
 			<p><i>umieses</i></p>
@@ -46728,14 +44030,6 @@
 			<p><i>ijarais</i></p>
 			<p><i>ijaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ijase</i></p>
 			<p><i>ijases</i></p>
@@ -46866,14 +44160,6 @@
 			<p><i>inarais</i></p>
 			<p><i>inaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>inase</i></p>
 			<p><i>inases</i></p>
@@ -47004,14 +44290,6 @@
 			<p><i>uvierais</i></p>
 			<p><i>uvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uviese</i></p>
 			<p><i>uvieses</i></p>
@@ -47142,14 +44420,6 @@
 			<p><i>imierais</i></p>
 			<p><i>imieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>imiese</i></p>
 			<p><i>imieses</i></p>
@@ -47280,14 +44550,6 @@
 			<p><i>arais</i></p>
 			<p><i>aran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ase</i></p>
 			<p><i>ases</i></p>
@@ -47418,14 +44680,6 @@
 			<p><i>endierais</i></p>
 			<p><i>endieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>endiese</i></p>
 			<p><i>endieses</i></p>
@@ -47556,14 +44810,6 @@
 			<p><i>guierais</i></p>
 			<p><i>guieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>guiese</i></p>
 			<p><i>guieses</i></p>
@@ -47694,14 +44940,6 @@
 			<p><i>FALSEarais</i></p>
 			<p><i>FALSEaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>FALSEase</i></p>
 			<p><i>FALSEases</i></p>
@@ -47832,14 +45070,6 @@
 			<p><i>ollarais</i></p>
 			<p><i>ollaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ollase</i></p>
 			<p><i>ollases</i></p>
@@ -47970,14 +45200,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
@@ -48108,14 +45330,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>uado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -48246,14 +45460,6 @@
 			<p><i>imierais</i></p>
 			<p><i>imieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>imiese</i></p>
 			<p><i>imieses</i></p>
@@ -48384,14 +45590,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>zado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -48522,14 +45720,6 @@
 			<p><i>edierais</i></p>
 			<p><i>edieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ediese</i></p>
 			<p><i>edieses</i></p>
@@ -48660,14 +45850,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>elado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -48798,14 +45980,6 @@
 			<p><i>inchierais</i></p>
 			<p><i>inchieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>inchiese</i></p>
 			<p><i>inchieses</i></p>
@@ -48936,14 +46110,6 @@
 			<p><i>endierais</i></p>
 			<p><i>endieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>endiese</i></p>
 			<p><i>endieses</i></p>
@@ -49074,14 +46240,6 @@
 			<p><i>irvierais</i></p>
 			<p><i>irvieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irviese</i></p>
 			<p><i>irvieses</i></p>
@@ -49212,14 +46370,6 @@
 			<p><i>oparais</i></p>
 			<p><i>oparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>opase</i></p>
 			<p><i>opases</i></p>
@@ -49350,14 +46500,6 @@
 			<p><i>rierais</i></p>
 			<p><i>rieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>riese</i></p>
 			<p><i>rieses</i></p>
@@ -49488,14 +46630,6 @@
 			<p><i>irierais</i></p>
 			<p><i>irieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iriese</i></p>
 			<p><i>irieses</i></p>
@@ -49626,14 +46760,6 @@
 			<p><i>fuerais</i></p>
 			<p><i>fueran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>fuese</i></p>
 			<p><i>fueses</i></p>
@@ -49764,14 +46890,6 @@
 			<p><i>actarais</i></p>
 			<p><i>actaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>actase</i></p>
 			<p><i>actases</i></p>
@@ -49902,14 +47020,6 @@
 			<p><i>erdarais</i></p>
 			<p><i>erdaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>erdase</i></p>
 			<p><i>erdases</i></p>
@@ -50040,14 +47150,6 @@
 			<p><i>estarais</i></p>
 			<p><i>estaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>estase</i></p>
 			<p><i>estases</i></p>
@@ -50178,14 +47280,6 @@
 			<p><i>tierais</i></p>
 			<p><i>tieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>tiese</i></p>
 			<p><i>tieses</i></p>
@@ -50316,14 +47410,6 @@
 			<p><i>irlarais</i></p>
 			<p><i>irlaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irlase</i></p>
 			<p><i>irlases</i></p>
@@ -50454,14 +47540,6 @@
 			<p><i>ordierais</i></p>
 			<p><i>ordieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ordiese</i></p>
 			<p><i>ordieses</i></p>
@@ -50592,14 +47670,6 @@
 			<p><i>cierais</i></p>
 			<p><i>cieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ciese</i></p>
 			<p><i>cieses</i></p>
@@ -50730,14 +47800,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>evado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -50868,14 +47930,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -51006,14 +48060,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -51144,14 +48190,6 @@
 			<p><i>erdierais</i></p>
 			<p><i>erdieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>erdiese</i></p>
 			<p><i>erdieses</i></p>
@@ -51282,14 +48320,6 @@
 			<p><i>intarais</i></p>
 			<p><i>intaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>intase</i></p>
 			<p><i>intases</i></p>
@@ -51420,14 +48450,6 @@
 			<p><i>irrarais</i></p>
 			<p><i>irraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>irrase</i></p>
 			<p><i>irrases</i></p>
@@ -51558,14 +48580,6 @@
 			<p><i>usierais</i></p>
 			<p><i>usieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>usiese</i></p>
 			<p><i>usieses</i></p>
@@ -51696,14 +48710,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -51834,14 +48840,6 @@
 			<p><i>ndierais</i></p>
 			<p><i>ndieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ndiese</i></p>
 			<p><i>ndieses</i></p>
@@ -51972,14 +48970,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -52110,14 +49100,6 @@
 			<p><i>ellarais</i></p>
 			<p><i>ellaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ellase</i></p>
 			<p><i>ellases</i></p>
@@ -52248,14 +49230,6 @@
 			<p><i>egrarais</i></p>
 			<p><i>egraran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>egrase</i></p>
 			<p><i>egrases</i></p>
@@ -52386,14 +49360,6 @@
 			<p><i>urtarais</i></p>
 			<p><i>urtaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>urtase</i></p>
 			<p><i>urtases</i></p>
@@ -52524,14 +49490,6 @@
 			<p><i>ansarais</i></p>
 			<p><i>ansaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ansase</i></p>
 			<p><i>ansases</i></p>
@@ -52662,14 +49620,6 @@
 			<p><i>ilgarais</i></p>
 			<p><i>ilgaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ilgase</i></p>
 			<p><i>ilgases</i></p>
@@ -52800,14 +49750,6 @@
 			<p><i>indierais</i></p>
 			<p><i>indieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>indiese</i></p>
 			<p><i>indieses</i></p>
@@ -52938,14 +49880,6 @@
 			<p><i>olgarais</i></p>
 			<p><i>olgaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olgase</i></p>
 			<p><i>olgases</i></p>
@@ -53076,14 +50010,6 @@
 			<p><i>emblarais</i></p>
 			<p><i>emblaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>emblase</i></p>
 			<p><i>emblases</i></p>
@@ -53214,14 +50140,6 @@
 			<p><i>orcierais</i></p>
 			<p><i>orcieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>orciese</i></p>
 			<p><i>orcieses</i></p>
@@ -53352,14 +50270,6 @@
 			<p><i>eparais</i></p>
 			<p><i>eparan</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>epase</i></p>
 			<p><i>epases</i></p>
@@ -53490,14 +50400,6 @@
 			<p><i>ertierais</i></p>
 			<p><i>ertieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ertiese</i></p>
 			<p><i>ertieses</i></p>
@@ -53628,14 +50530,6 @@
 			<p><i>olcarais</i></p>
 			<p><i>olcaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>olcase</i></p>
 			<p><i>olcases</i></p>
@@ -53766,14 +50660,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>iado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -53904,14 +50790,6 @@
 			<p><i>ogarais</i></p>
 			<p><i>ogaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ogase</i></p>
 			<p><i>ogases</i></p>
@@ -54042,14 +50920,6 @@
 			<p><i>mpierais</i></p>
 			<p><i>mpieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>mpiese</i></p>
 			<p><i>mpieses</i></p>
@@ -54180,14 +51050,6 @@
 			<p><i>ornarais</i></p>
 			<p><i>ornaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ornase</i></p>
 			<p><i>ornases</i></p>
@@ -54318,14 +51180,6 @@
 			<p><i>ertierais</i></p>
 			<p><i>ertieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ertiese</i></p>
 			<p><i>ertieses</i></p>
@@ -54456,14 +51310,6 @@
 			<p><i>idarais</i></p>
 			<p><i>idaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>idase</i></p>
 			<p><i>idases</i></p>
@@ -54594,14 +51440,6 @@
 			<p><i>oltarais</i></p>
 			<p><i>oltaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>oltase</i></p>
 			<p><i>oltases</i></p>
@@ -54732,14 +51570,6 @@
 			<p><i>onarais</i></p>
 			<p><i>onaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>onase</i></p>
 			<p><i>onases</i></p>
@@ -54870,14 +51700,6 @@
 			<p><i>odarais</i></p>
 			<p><i>odaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>odase</i></p>
 			<p><i>odases</i></p>
@@ -55008,14 +51830,6 @@
 			<p><i>yerais</i></p>
 			<p><i>yeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>yese</i></p>
 			<p><i>yeses</i></p>
@@ -55146,14 +51960,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -55284,14 +52090,6 @@
 			<p><i>imarais</i></p>
 			<p><i>imaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>imase</i></p>
 			<p><i>imases</i></p>
@@ -55422,14 +52220,6 @@
 			<p><i>iñerais</i></p>
 			<p><i>iñeran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iñese</i></p>
 			<p><i>iñeses</i></p>
@@ -55560,14 +52350,6 @@
 			<p><i>ucierais</i></p>
 			<p><i>ucieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uciese</i></p>
 			<p><i>ucieses</i></p>
@@ -55698,14 +52480,6 @@
 			<p><i>ordarais</i></p>
 			<p><i>ordaran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>ordase</i></p>
 			<p><i>ordases</i></p>
@@ -55836,14 +52610,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>onado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -55974,14 +52740,6 @@
 			<p><i>unierais</i></p>
 			<p><i>unieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>uniese</i></p>
 			<p><i>unieses</i></p>
@@ -56112,14 +52870,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>entado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i/></p>
 			<p><i/></p>
@@ -56250,14 +53000,6 @@
 			<p><i>ierais</i></p>
 			<p><i>ieran</i></p>
 		</Subjuntivo-pretérito-imperfecto-1>
-		<Subjuntivo-pretérito-pluscuamperfecto-1>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Subjuntivo-pretérito-pluscuamperfecto-1>
 		<Subjuntivo-pretérito-imperfecto-2>
 			<p><i>iese</i></p>
 			<p><i>ieses</i></p>
