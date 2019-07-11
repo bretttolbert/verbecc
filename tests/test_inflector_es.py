@@ -23,6 +23,8 @@ test_es_conjugate_mood_tense_data = [
         ['yo había', 'tú habías', 'él había', 'nosotros habíamos', 'vosotros habíais', 'ellos habían']),
     ('haber', 'Indicativo', 'Indicativo-pretérito-perfecto-simple',
         ['yo hube', 'tú hubiste', 'él hubo', 'nosotros hubimos', 'vosotros hubisteis', 'ellos hubieron']),
+    ('haber', 'Indicativo', 'Indicativo-futuro',
+        ['yo habré', 'tú habrás', 'él habrá', 'nosotros habremos', 'vosotros habréis', 'ellos habrán']),
     ('hacer', 'Indicativo', 'Indicativo-presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
     ('ir', 'Indicativo', 'Indicativo-presente',
@@ -40,7 +42,9 @@ test_es_conjugate_mood_tense_data = [
     ('comer', 'Indicativo', 'Indicativo-pretérito-pluscuamperfecto',
         ['yo había comido', 'tú habías comido', 'él había comido', 'nosotros habíamos comido', 'vosotros habíais comido', 'ellos habían comido']),
     ('comer', 'Indicativo', 'Indicativo-pretérito-anterior',
-        ['yo hube comido', 'tú hubiste comido', 'él hubo comido', 'nosotros hubimos comido', 'vosotros hubisteis comido', 'ellos hubieron comido'])
+        ['yo hube comido', 'tú hubiste comido', 'él hubo comido', 'nosotros hubimos comido', 'vosotros hubisteis comido', 'ellos hubieron comido']),
+    ('comer', 'Indicativo', 'Indicativo-futuro-perfecto',
+        ['yo habré comido', 'tú habrás comido', 'él habrá comido', 'nosotros habremos comido', 'vosotros habréis comido', 'ellos habrán comido'])
 ]
 
 """

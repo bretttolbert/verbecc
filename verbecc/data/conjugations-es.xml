@@ -28,7 +28,7 @@
 <!ELEMENT template (Indicativo , Subjuntivo , Imperativo , (Condicional , Infinitivo , Gerundio , Participo)?)>
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-futuro , Indicativo-futuro-perfecto)?>
+<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-futuro )?>
 <!ATTLIST Indicativo xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo (Subjuntivo-presente , Subjuntivo-pretérito-perfecto , Subjuntivo-pretérito-imperfecto-1 , Subjuntivo-pretérito-pluscuamperfecto-1 , Subjuntivo-pretérito-imperfecto-2 , Subjuntivo-pretérito-pluscuamperfecto-2 , Subjuntivo-futuro , Subjuntivo-futuro-perfecto)?>
 <!ATTLIST Subjuntivo xmlns CDATA #FIXED "">
@@ -50,8 +50,6 @@
 <!ATTLIST Indicativo-pretérito-perfecto-simple xmlns CDATA #FIXED "">
 <!ELEMENT Indicativo-futuro (p)+>
 <!ATTLIST Indicativo-futuro xmlns CDATA #FIXED "">
-<!ELEMENT Indicativo-futuro-perfecto (p)+>
-<!ATTLIST Indicativo-futuro-perfecto xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo-presente (p)+>
 <!ATTLIST Subjuntivo-presente xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo-pretérito-perfecto (p)+>
@@ -123,15 +121,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 	</Subjuntivo>
 	<Imperativo>
@@ -221,15 +211,7 @@
 			<p><i>uaréis</i></p>
 			<p><i>uarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úe</i></p>
@@ -383,15 +365,7 @@
 			<p><i>riréis</i></p>
 			<p><i>rirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>era</i></p>
@@ -545,15 +519,7 @@
 			<p><i>incaréis</i></p>
 			<p><i>incarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ínque</i></p>
@@ -707,15 +673,7 @@
 			<p><i>iraréis</i></p>
 			<p><i>irarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íre</i></p>
@@ -869,15 +827,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>e</i></p>
@@ -1031,15 +981,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ga</i></p>
@@ -1193,15 +1135,7 @@
 			<p><i>ullaréis</i></p>
 			<p><i>ullarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úlle</i></p>
@@ -1355,15 +1289,7 @@
 			<p><i>onzaréis</i></p>
 			<p><i>onzarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>üence</i></p>
@@ -1517,15 +1443,7 @@
 			<p><i>uaréis</i></p>
 			<p><i>uarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>üe</i></p>
@@ -1679,15 +1597,7 @@
 			<p><i>cabréis</i></p>
 			<p><i>cabrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>quepa</i></p>
@@ -1841,15 +1751,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -2003,15 +1905,7 @@
 			<p><i>zaréis</i></p>
 			<p><i>zarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ce</i></p>
@@ -2165,15 +2059,7 @@
 			<p><i>oceréis</i></p>
 			<p><i>ocerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueza</i></p>
@@ -2327,15 +2213,7 @@
 			<p><i>geréis</i></p>
 			<p><i>gerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ja</i></p>
@@ -2489,15 +2367,7 @@
 			<p><i>olgaréis</i></p>
 			<p><i>olgarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelgue</i></p>
@@ -2651,15 +2521,7 @@
 			<p><i>ceréis</i></p>
 			<p><i>cerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>zca</i></p>
@@ -2813,15 +2675,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>e</i></p>
@@ -2975,15 +2829,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -3137,15 +2983,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>é</i></p>
@@ -3299,15 +3137,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -3461,15 +3291,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -3623,15 +3445,7 @@
 			<p><i>enderéis</i></p>
 			<p><i>enderán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ienda</i></p>
@@ -3785,15 +3599,7 @@
 			<p><i>quiréis</i></p>
 			<p><i>quirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ca</i></p>
@@ -3947,15 +3753,7 @@
 			<p><i>osaréis</i></p>
 			<p><i>osarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>huese</i></p>
@@ -4109,15 +3907,7 @@
 			<p><i>erniréis</i></p>
 			<p><i>ernirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierna</i></p>
@@ -4271,15 +4061,7 @@
 			<p><i>uiréis</i></p>
 			<p><i>uirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -4433,15 +4215,7 @@
 			<p><i>ormiréis</i></p>
 			<p><i>ormirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerma</i></p>
@@ -4595,15 +4369,7 @@
 			<p><i>egiréis</i></p>
 			<p><i>egirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ija</i></p>
@@ -4757,15 +4523,7 @@
 			<p><i>ezaréis</i></p>
 			<p><i>ezarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iece</i></p>
@@ -4919,15 +4677,7 @@
 			<p><i>ontraréis</i></p>
 			<p><i>ontrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uentre</i></p>
@@ -5081,15 +4831,7 @@
 			<p><i>izaréis</i></p>
 			<p><i>izarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íce</i></p>
@@ -5243,15 +4985,7 @@
 			<p><i>erguiréis</i></p>
 			<p><i>erguirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>yerga</i></p>
@@ -5405,15 +5139,7 @@
 			<p><i>erraréis</i></p>
 			<p><i>errarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>yerre</i></p>
@@ -5567,15 +5293,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>é</i></p>
@@ -5729,15 +5447,7 @@
 			<p><i>orzaréis</i></p>
 			<p><i>orzarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerce</i></p>
@@ -5891,15 +5601,7 @@
 			<p><i>iaréis</i></p>
 			<p><i>iarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íe</i></p>
@@ -6053,15 +5755,7 @@
 			<p><i>abréis</i></p>
 			<p><i>abrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>aya</i></p>
@@ -6215,15 +5909,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>aga</i></p>
@@ -6377,15 +6063,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ya</i></p>
@@ -6539,15 +6217,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>vaya</i></p>
@@ -6701,15 +6371,7 @@
 			<p><i>garéis</i></p>
 			<p><i>garán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>egue</i></p>
@@ -6863,15 +6525,7 @@
 			<p><i>overéis</i></p>
 			<p><i>overán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueva</i></p>
@@ -7025,15 +6679,7 @@
 			<p><i>ciréis</i></p>
 			<p><i>cirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>zca</i></p>
@@ -7187,15 +6833,7 @@
 			<p><i>ceréis</i></p>
 			<p><i>cerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>za</i></p>
@@ -7349,15 +6987,7 @@
 			<p><i>oleréis</i></p>
 			<p><i>olerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>huela</i></p>
@@ -7511,15 +7141,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ue</i></p>
@@ -7673,15 +7295,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -7835,15 +7449,7 @@
 			<p><i>ediréis</i></p>
 			<p><i>edirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ida</i></p>
@@ -7997,15 +7603,7 @@
 			<p><i>ensaréis</i></p>
 			<p><i>ensarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iense</i></p>
@@ -8159,15 +7757,7 @@
 			<p><i>aceréis</i></p>
 			<p><i>acerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>azca</i></p>
@@ -8321,15 +7911,7 @@
 			<p><i>odréis</i></p>
 			<p><i>odrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueda</i></p>
@@ -8483,15 +8065,7 @@
 			<p><i>udriréis</i></p>
 			<p><i>udrirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>udra</i></p>
@@ -8645,15 +8219,7 @@
 			<p><i>eciréis</i></p>
 			<p><i>ecirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -8807,15 +8373,7 @@
 			<p><i>ciréis</i></p>
 			<p><i>cirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>zca</i></p>
@@ -8969,15 +8527,7 @@
 			<p><i>ibiréis</i></p>
 			<p><i>ibirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íba</i></p>
@@ -9131,15 +8681,7 @@
 			<p><i>erréis</i></p>
 			<p><i>errán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iera</i></p>
@@ -9293,15 +8835,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ya</i></p>
@@ -9455,15 +8989,7 @@
 			<p><i>egaréis</i></p>
 			<p><i>egarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iegue</i></p>
@@ -9617,15 +9143,7 @@
 			<p><i>eiréis</i></p>
 			<p><i>eirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ía</i></p>
@@ -9779,15 +9297,7 @@
 			<p><i>eñiréis</i></p>
 			<p><i>eñirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iña</i></p>
@@ -9941,15 +9451,7 @@
 			<p><i>uniréis</i></p>
 			<p><i>unirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úna</i></p>
@@ -10103,15 +9605,7 @@
 			<p><i>abréis</i></p>
 			<p><i>abrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>epa</i></p>
@@ -10265,15 +9759,7 @@
 			<p><i>caréis</i></p>
 			<p><i>carán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>que</i></p>
@@ -10427,15 +9913,7 @@
 			<p><i>dréis</i></p>
 			<p><i>drán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ga</i></p>
@@ -10589,15 +10067,7 @@
 			<p><i>eguiréis</i></p>
 			<p><i>eguirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -10751,15 +10221,7 @@
 			<p><i>entiréis</i></p>
 			<p><i>entirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ienta</i></p>
@@ -10913,15 +10375,7 @@
 			<p><i>seréis</i></p>
 			<p><i>serán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>sea</i></p>
@@ -11075,15 +10529,7 @@
 			<p><i>seréis</i></p>
 			<p><i>serán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>sea</i></p>
@@ -11237,15 +10683,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -11399,15 +10837,7 @@
 			<p><i>endréis</i></p>
 			<p><i>endrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>enga</i></p>
@@ -11561,15 +10991,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -11723,15 +11145,7 @@
 			<p><i>ocaréis</i></p>
 			<p><i>ocarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueque</i></p>
@@ -11885,15 +11299,7 @@
 			<p><i>dréis</i></p>
 			<p><i>drán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ga</i></p>
@@ -12047,15 +11453,7 @@
 			<p><i>endréis</i></p>
 			<p><i>endrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>enga</i></p>
@@ -12209,15 +11607,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ea</i></p>
@@ -12371,15 +11761,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -12533,15 +11915,7 @@
 			<p><i>olveréis</i></p>
 			<p><i>olverán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelva</i></p>
@@ -12695,15 +12069,7 @@
 			<p><i>ceréis</i></p>
 			<p><i>cerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ga</i></p>
@@ -12857,15 +12223,7 @@
 			<p><i>ciréis</i></p>
 			<p><i>cirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>za</i></p>
@@ -13019,15 +12377,7 @@
 			<p><i>illaréis</i></p>
 			<p><i>illarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ille</i></p>
@@ -13181,15 +12531,7 @@
 			<p><i>anaréis</i></p>
 			<p><i>anarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ane</i></p>
@@ -13343,15 +12685,7 @@
 			<p><i>abaréis</i></p>
 			<p><i>abarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>abe</i></p>
@@ -13505,15 +12839,7 @@
 			<p><i>astaréis</i></p>
 			<p><i>astarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>aste</i></p>
@@ -13667,15 +12993,7 @@
 			<p><i>eldaréis</i></p>
 			<p><i>eldarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ielde</i></p>
@@ -13829,15 +13147,7 @@
 			<p><i>iaréis</i></p>
 			<p><i>iarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ie</i></p>
@@ -13991,15 +13301,7 @@
 			<p><i>icharéis</i></p>
 			<p><i>icharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iche</i></p>
@@ -14153,15 +13455,7 @@
 			<p><i>ocaréis</i></p>
 			<p><i>ocarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>oque</i></p>
@@ -14315,15 +13609,7 @@
 			<p><i>ofaréis</i></p>
 			<p><i>ofarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ofe</i></p>
@@ -14477,15 +13763,7 @@
 			<p><i>olsaréis</i></p>
 			<p><i>olsarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>olse</i></p>
@@ -14639,15 +13917,7 @@
 			<p><i>ascaréis</i></p>
 			<p><i>ascarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>asque</i></p>
@@ -14801,15 +14071,7 @@
 			<p><i>egaréis</i></p>
 			<p><i>egarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>egue</i></p>
@@ -14963,15 +14225,7 @@
 			<p><i>icaréis</i></p>
 			<p><i>icarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ique</i></p>
@@ -15125,15 +14379,7 @@
 			<p><i>ugaréis</i></p>
 			<p><i>ugarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ugue</i></p>
@@ -15287,15 +14533,7 @@
 			<p><i>agaréis</i></p>
 			<p><i>agarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ague</i></p>
@@ -15449,15 +14687,7 @@
 			<p><i>argaréis</i></p>
 			<p><i>argarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>argue</i></p>
@@ -15611,15 +14841,7 @@
 			<p><i>onaréis</i></p>
 			<p><i>onarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>one</i></p>
@@ -15773,15 +14995,7 @@
 			<p><i>riréis</i></p>
 			<p><i>rirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ra</i></p>
@@ -15935,15 +15149,7 @@
 			<p><i>omaréis</i></p>
 			<p><i>omarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ome</i></p>
@@ -16097,15 +15303,7 @@
 			<p><i>uzaréis</i></p>
 			<p><i>uzarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uce</i></p>
@@ -16259,15 +15457,7 @@
 			<p><i>beréis</i></p>
 			<p><i>berán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ba</i></p>
@@ -16421,15 +15611,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -16583,15 +15765,7 @@
 			<p><i>olaréis</i></p>
 			<p><i>olarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uele</i></p>
@@ -16745,15 +15919,7 @@
 			<p><i>esaréis</i></p>
 			<p><i>esarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ese</i></p>
@@ -16907,15 +16073,7 @@
 			<p><i>urraréis</i></p>
 			<p><i>urrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>urre</i></p>
@@ -17069,15 +16227,7 @@
 			<p><i>acharéis</i></p>
 			<p><i>acharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ache</i></p>
@@ -17231,15 +16381,7 @@
 			<p><i>acharéis</i></p>
 			<p><i>acharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ache</i></p>
@@ -17393,15 +16535,7 @@
 			<p><i>asaréis</i></p>
 			<p><i>asarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ase</i></p>
@@ -17555,15 +16689,7 @@
 			<p><i>ambaréis</i></p>
 			<p><i>ambarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ambe</i></p>
@@ -17717,15 +16843,7 @@
 			<p><i>uraréis</i></p>
 			<p><i>urarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ure</i></p>
@@ -17879,15 +16997,7 @@
 			<p><i>arraréis</i></p>
 			<p><i>arrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>arre</i></p>
@@ -18041,15 +17151,7 @@
 			<p><i>ullaréis</i></p>
 			<p><i>ullarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ulle</i></p>
@@ -18203,15 +17305,7 @@
 			<p><i>eraréis</i></p>
 			<p><i>erarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ere</i></p>
@@ -18365,15 +17459,7 @@
 			<p><i>ataréis</i></p>
 			<p><i>atarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ate</i></p>
@@ -18527,15 +17613,7 @@
 			<p><i>elaréis</i></p>
 			<p><i>elarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ele</i></p>
@@ -18689,15 +17767,7 @@
 			<p><i>ertaréis</i></p>
 			<p><i>ertarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierte</i></p>
@@ -18851,15 +17921,7 @@
 			<p><i>amparéis</i></p>
 			<p><i>amparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ampe</i></p>
@@ -19013,15 +18075,7 @@
 			<p><i>inaréis</i></p>
 			<p><i>inarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ine</i></p>
@@ -19175,15 +18229,7 @@
 			<p><i>ocharéis</i></p>
 			<p><i>ocharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>oche</i></p>
@@ -19337,15 +18383,7 @@
 			<p><i>ucharéis</i></p>
 			<p><i>ucharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uche</i></p>
@@ -19499,15 +18537,7 @@
 			<p><i>aparéis</i></p>
 			<p><i>aparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ape</i></p>
@@ -19661,15 +18691,7 @@
 			<p><i>ularéis</i></p>
 			<p><i>ularán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ule</i></p>
@@ -19823,15 +18845,7 @@
 			<p><i>ocaréis</i></p>
 			<p><i>ocarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>oce</i></p>
@@ -19985,15 +18999,7 @@
 			<p><i>ollaréis</i></p>
 			<p><i>ollarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelle</i></p>
@@ -20147,15 +19153,7 @@
 			<p><i>ediréis</i></p>
 			<p><i>edirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ida</i></p>
@@ -20309,15 +19307,7 @@
 			<p><i>unaréis</i></p>
 			<p><i>unarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>une</i></p>
@@ -20471,15 +19461,7 @@
 			<p><i>abaréis</i></p>
 			<p><i>abarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>abe</i></p>
@@ -20633,15 +19615,7 @@
 			<p><i>ordaréis</i></p>
 			<p><i>ordarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerde</i></p>
@@ -20795,15 +19769,7 @@
 			<p><i>ornaréis</i></p>
 			<p><i>ornarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerne</i></p>
@@ -20957,15 +19923,7 @@
 			<p><i>ucaréis</i></p>
 			<p><i>ucarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uque</i></p>
@@ -21119,15 +20077,7 @@
 			<p><i>ejaréis</i></p>
 			<p><i>ejarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>eje</i></p>
@@ -21281,15 +20231,7 @@
 			<p><i>ostaréis</i></p>
 			<p><i>ostarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueste</i></p>
@@ -21443,15 +20385,7 @@
 			<p><i>entaréis</i></p>
 			<p><i>entarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iente</i></p>
@@ -21605,15 +20539,7 @@
 			<p><i>ollaréis</i></p>
 			<p><i>ollarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>olle</i></p>
@@ -21767,15 +20693,7 @@
 			<p><i>ilmaréis</i></p>
 			<p><i>ilmarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ilme</i></p>
@@ -21929,15 +20847,7 @@
 			<p><i>uñaréis</i></p>
 			<p><i>uñarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uñe</i></p>
@@ -22091,15 +21001,7 @@
 			<p><i>urdaréis</i></p>
 			<p><i>urdarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>urde</i></p>
@@ -22253,15 +21155,7 @@
 			<p><i>entraréis</i></p>
 			<p><i>entrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>entre</i></p>
@@ -22415,15 +21309,7 @@
 			<p><i>estraréis</i></p>
 			<p><i>estrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iestre</i></p>
@@ -22577,15 +21463,7 @@
 			<p><i>eriréis</i></p>
 			<p><i>erirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iera</i></p>
@@ -22739,15 +21617,7 @@
 			<p><i>eriréis</i></p>
 			<p><i>erirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iera</i></p>
@@ -22901,15 +21771,7 @@
 			<p><i>izaréis</i></p>
 			<p><i>izarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ice</i></p>
@@ -23063,15 +21925,7 @@
 			<p><i>ilaréis</i></p>
 			<p><i>ilarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ile</i></p>
@@ -23225,15 +22079,7 @@
 			<p><i>itaréis</i></p>
 			<p><i>itarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ite</i></p>
@@ -23387,15 +22233,7 @@
 			<p><i>biréis</i></p>
 			<p><i>birán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ba</i></p>
@@ -23549,15 +22387,7 @@
 			<p><i>giréis</i></p>
 			<p><i>girán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ja</i></p>
@@ -23711,15 +22541,7 @@
 			<p><i>eñaréis</i></p>
 			<p><i>eñarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>eñe</i></p>
@@ -23873,15 +22695,7 @@
 			<p><i>ertiréis</i></p>
 			<p><i>ertirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierta</i></p>
@@ -24035,15 +22849,7 @@
 			<p><i>olaréis</i></p>
 			<p><i>olarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ole</i></p>
@@ -24197,15 +23003,7 @@
 			<p><i>erraréis</i></p>
 			<p><i>errarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierre</i></p>
@@ -24359,15 +23157,7 @@
 			<p><i>ebraréis</i></p>
 			<p><i>ebrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ebre</i></p>
@@ -24521,15 +23311,7 @@
 			<p><i>giréis</i></p>
 			<p><i>girán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ja</i></p>
@@ -24683,15 +23465,7 @@
 			<p><i>oraréis</i></p>
 			<p><i>orarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uere</i></p>
@@ -24845,15 +23619,7 @@
 			<p><i>osaréis</i></p>
 			<p><i>osarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ose</i></p>
@@ -25007,15 +23773,7 @@
 			<p><i>echaréis</i></p>
 			<p><i>echarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>eche</i></p>
@@ -25169,15 +23927,7 @@
 			<p><i>utraréis</i></p>
 			<p><i>utrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>utre</i></p>
@@ -25331,15 +24081,7 @@
 			<p><i>enaréis</i></p>
 			<p><i>enarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ene</i></p>
@@ -25493,15 +24235,7 @@
 			<p><i>arbaréis</i></p>
 			<p><i>arbarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>arbe</i></p>
@@ -25655,15 +24389,7 @@
 			<p><i>ojaréis</i></p>
 			<p><i>ojarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>oje</i></p>
@@ -25817,15 +24543,7 @@
 			<p><i>ingaréis</i></p>
 			<p><i>ingarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ingue</i></p>
@@ -25979,15 +24697,7 @@
 			<p><i>aguaréis</i></p>
 			<p><i>aguarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>agüe</i></p>
@@ -26141,15 +24851,7 @@
 			<p><i>oraréis</i></p>
 			<p><i>orarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ore</i></p>
@@ -26303,15 +25005,7 @@
 			<p><i>ijaréis</i></p>
 			<p><i>ijarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íje</i></p>
@@ -26465,15 +25159,7 @@
 			<p><i>ilaréis</i></p>
 			<p><i>ilarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íle</i></p>
@@ -26627,15 +25313,7 @@
 			<p><i>itaréis</i></p>
 			<p><i>itarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íte</i></p>
@@ -26789,15 +25467,7 @@
 			<p><i>ajaréis</i></p>
 			<p><i>ajarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>aje</i></p>
@@ -26951,15 +25621,7 @@
 			<p><i>ucharéis</i></p>
 			<p><i>ucharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úche</i></p>
@@ -27113,15 +25775,7 @@
 			<p><i>umaréis</i></p>
 			<p><i>umarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úme</i></p>
@@ -27275,15 +25929,7 @@
 			<p><i>usaréis</i></p>
 			<p><i>usarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úse</i></p>
@@ -27437,15 +26083,7 @@
 			<p><i>islaréis</i></p>
 			<p><i>islarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ísle</i></p>
@@ -27599,15 +26237,7 @@
 			<p><i>ecaréis</i></p>
 			<p><i>ecarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>eque</i></p>
@@ -27761,15 +26391,7 @@
 			<p><i>umaréis</i></p>
 			<p><i>umarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ume</i></p>
@@ -27923,15 +26545,7 @@
 			<p><i>artaréis</i></p>
 			<p><i>artarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>arte</i></p>
@@ -28085,15 +26699,7 @@
 			<p><i>earéis</i></p>
 			<p><i>earán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ee</i></p>
@@ -28247,15 +26853,7 @@
 			<p><i>ebraréis</i></p>
 			<p><i>ebrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iebre</i></p>
@@ -28409,15 +27007,7 @@
 			<p><i>estaréis</i></p>
 			<p><i>estarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>este</i></p>
@@ -28571,15 +27161,7 @@
 			<p><i>ebraréis</i></p>
 			<p><i>ebrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iebre</i></p>
@@ -28733,15 +27315,7 @@
 			<p><i>ongaréis</i></p>
 			<p><i>ongarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uengue</i></p>
@@ -28895,15 +27469,7 @@
 			<p><i>eceréis</i></p>
 			<p><i>ecerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ezca</i></p>
@@ -29057,15 +27623,7 @@
 			<p><i>imbraréis</i></p>
 			<p><i>imbrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>imbre</i></p>
@@ -29219,15 +27777,7 @@
 			<p><i>orraréis</i></p>
 			<p><i>orrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>orre</i></p>
@@ -29381,15 +27931,7 @@
 			<p><i>inaréis</i></p>
 			<p><i>inarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íne</i></p>
@@ -29543,15 +28085,7 @@
 			<p><i>allaréis</i></p>
 			<p><i>allarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>alle</i></p>
@@ -29705,15 +28239,7 @@
 			<p><i>ebaréis</i></p>
 			<p><i>ebarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ebe</i></p>
@@ -29867,15 +28393,7 @@
 			<p><i>antaréis</i></p>
 			<p><i>antarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ante</i></p>
@@ -30029,15 +28547,7 @@
 			<p><i>amaréis</i></p>
 			<p><i>amarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ame</i></p>
@@ -30191,15 +28701,7 @@
 			<p><i>oblaréis</i></p>
 			<p><i>oblarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueble</i></p>
@@ -30353,15 +28855,7 @@
 			<p><i>iñaréis</i></p>
 			<p><i>iñarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iñe</i></p>
@@ -30515,15 +29009,7 @@
 			<p><i>nejaréis</i></p>
 			<p><i>nejarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>neje</i></p>
@@ -30677,15 +29163,7 @@
 			<p><i>ondréis</i></p>
 			<p><i>ondrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>onga</i></p>
@@ -30839,15 +29317,7 @@
 			<p><i>nudaréis</i></p>
 			<p><i>nudarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>nude</i></p>
@@ -31001,15 +29471,7 @@
 			<p><i>udaréis</i></p>
 			<p><i>udarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ude</i></p>
@@ -31163,15 +29625,7 @@
 			<p><i>angaréis</i></p>
 			<p><i>angarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>angue</i></p>
@@ -31325,15 +29779,7 @@
 			<p><i>iguaréis</i></p>
 			<p><i>iguarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>igüe</i></p>
@@ -31487,15 +29933,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -31649,15 +30087,7 @@
 			<p><i>ernaréis</i></p>
 			<p><i>ernarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierne</i></p>
@@ -31811,15 +30241,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>e</i></p>
@@ -31973,15 +30395,7 @@
 			<p><i>araréis</i></p>
 			<p><i>ararán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>are</i></p>
@@ -32135,15 +30549,7 @@
 			<p><i>implaréis</i></p>
 			<p><i>implarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>imple</i></p>
@@ -32297,15 +30703,7 @@
 			<p><i>iparéis</i></p>
 			<p><i>iparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ipe</i></p>
@@ -32459,15 +30857,7 @@
 			<p><i>ongaréis</i></p>
 			<p><i>ongarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ongue</i></p>
@@ -32621,15 +31011,7 @@
 			<p><i>ismaréis</i></p>
 			<p><i>ismarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>isme</i></p>
@@ -32783,15 +31165,7 @@
 			<p><i>ozaréis</i></p>
 			<p><i>ozarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>oce</i></p>
@@ -32945,15 +31319,7 @@
 			<p><i>etaréis</i></p>
 			<p><i>etarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iete</i></p>
@@ -33107,15 +31473,7 @@
 			<p><i>obaréis</i></p>
 			<p><i>obarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uebe</i></p>
@@ -33269,15 +31627,7 @@
 			<p><i>üiréis</i></p>
 			<p><i>üirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uya</i></p>
@@ -33431,15 +31781,7 @@
 			<p><i>iscaréis</i></p>
 			<p><i>iscarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>isque</i></p>
@@ -33593,15 +31935,7 @@
 			<p><i>imaréis</i></p>
 			<p><i>imarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ime</i></p>
@@ -33755,15 +32089,7 @@
 			<p><i>ostaréis</i></p>
 			<p><i>ostarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>oste</i></p>
@@ -33917,15 +32243,7 @@
 			<p><i>untaréis</i></p>
 			<p><i>untarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>unte</i></p>
@@ -34079,15 +32397,7 @@
 			<p><i>endaréis</i></p>
 			<p><i>endarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iende</i></p>
@@ -34241,15 +32551,7 @@
 			<p><i>igaréis</i></p>
 			<p><i>igarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>igue</i></p>
@@ -34403,15 +32705,7 @@
 			<p><i>entiréis</i></p>
 			<p><i>entirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ienta</i></p>
@@ -34565,15 +32859,7 @@
 			<p><i>icaréis</i></p>
 			<p><i>icarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íque</i></p>
@@ -34727,15 +33013,7 @@
 			<p><i>iraréis</i></p>
 			<p><i>irarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ire</i></p>
@@ -34889,15 +33167,7 @@
 			<p><i>oldaréis</i></p>
 			<p><i>oldarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelde</i></p>
@@ -35051,15 +33321,7 @@
 			<p><i>onaréis</i></p>
 			<p><i>onarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uene</i></p>
@@ -35213,15 +33475,7 @@
 			<p><i>entaréis</i></p>
 			<p><i>entarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ente</i></p>
@@ -35375,15 +33629,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -35537,15 +33783,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -35699,15 +33937,7 @@
 			<p><i>enderéis</i></p>
 			<p><i>enderán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ienda</i></p>
@@ -35861,15 +34091,7 @@
 			<p><i>atendréis</i></p>
 			<p><i>atendrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>atenga</i></p>
@@ -36023,15 +34245,7 @@
 			<p><i>etaréis</i></p>
 			<p><i>etarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ete</i></p>
@@ -36185,15 +34399,7 @@
 			<p><i>estaréis</i></p>
 			<p><i>estarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ieste</i></p>
@@ -36347,15 +34553,7 @@
 			<p><i>ujaréis</i></p>
 			<p><i>ujarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uje</i></p>
@@ -36509,15 +34707,7 @@
 			<p><i>orceréis</i></p>
 			<p><i>orcerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerza</i></p>
@@ -36671,15 +34861,7 @@
 			<p><i>oscaréis</i></p>
 			<p><i>oscarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>osque</i></p>
@@ -36833,15 +35015,7 @@
 			<p><i>illaréis</i></p>
 			<p><i>illarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ílle</i></p>
@@ -36995,15 +35169,7 @@
 			<p><i>esaréis</i></p>
 			<p><i>esarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iese</i></p>
@@ -37157,15 +35323,7 @@
 			<p><i>unaréis</i></p>
 			<p><i>unarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úne</i></p>
@@ -37319,15 +35477,7 @@
 			<p><i>uparéis</i></p>
 			<p><i>uparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úpe</i></p>
@@ -37481,15 +35631,7 @@
 			<p><i>uparéis</i></p>
 			<p><i>uparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úpe</i></p>
@@ -37643,15 +35785,7 @@
 			<p><i>eciréis</i></p>
 			<p><i>ecirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -37805,15 +35939,7 @@
 			<p><i>erréis</i></p>
 			<p><i>errán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iera</i></p>
@@ -37967,15 +36093,7 @@
 			<p><i>urcaréis</i></p>
 			<p><i>urcarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>urque</i></p>
@@ -38129,15 +36247,7 @@
 			<p><i>iaréis</i></p>
 			<p><i>iarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íe</i></p>
@@ -38291,15 +36401,7 @@
 			<p><i>erneréis</i></p>
 			<p><i>ernerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierna</i></p>
@@ -38453,15 +36555,7 @@
 			<p><i>afaréis</i></p>
 			<p><i>afarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>afe</i></p>
@@ -38615,15 +36709,7 @@
 			<p><i>isparéis</i></p>
 			<p><i>isparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ispe</i></p>
@@ -38777,15 +36863,7 @@
 			<p><i>daréis</i></p>
 			<p><i>darán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>de</i></p>
@@ -38939,15 +37017,7 @@
 			<p><i>enderéis</i></p>
 			<p><i>enderán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ienda</i></p>
@@ -39101,15 +37171,7 @@
 			<p><i>olaréis</i></p>
 			<p><i>olarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uele</i></p>
@@ -39263,15 +37325,7 @@
 			<p><i>egiréis</i></p>
 			<p><i>egirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ija</i></p>
@@ -39425,15 +37479,7 @@
 			<p><i>enzaréis</i></p>
 			<p><i>enzarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ience</i></p>
@@ -39587,15 +37633,7 @@
 			<p><i>eleréis</i></p>
 			<p><i>elerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ela</i></p>
@@ -39749,15 +37787,7 @@
 			<p><i>etraréis</i></p>
 			<p><i>etrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>etre</i></p>
@@ -39911,15 +37941,7 @@
 			<p><i>etiréis</i></p>
 			<p><i>etirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ita</i></p>
@@ -40073,15 +38095,7 @@
 			<p><i>ortaréis</i></p>
 			<p><i>ortarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>orte</i></p>
@@ -40235,15 +38249,7 @@
 			<p><i>deréis</i></p>
 			<p><i>derán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>da</i></p>
@@ -40397,15 +38403,7 @@
 			<p><i>imiréis</i></p>
 			<p><i>imirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ima</i></p>
@@ -40559,15 +38557,7 @@
 			<p><i>ebiréis</i></p>
 			<p><i>ebirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iba</i></p>
@@ -40721,15 +38711,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ya</i></p>
@@ -40883,15 +38865,7 @@
 			<p><i>omeréis</i></p>
 			<p><i>omerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>oma</i></p>
@@ -41045,15 +39019,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -41207,15 +39173,7 @@
 			<p><i>oleréis</i></p>
 			<p><i>olerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uela</i></p>
@@ -41369,15 +39327,7 @@
 			<p><i>esaréis</i></p>
 			<p><i>esarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iese</i></p>
@@ -41531,15 +39481,7 @@
 			<p><i>ndiréis</i></p>
 			<p><i>ndirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>nda</i></p>
@@ -41693,15 +39635,7 @@
 			<p><i>miréis</i></p>
 			<p><i>mirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ma</i></p>
@@ -41855,15 +39789,7 @@
 			<p><i>ontaréis</i></p>
 			<p><i>ontarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uente</i></p>
@@ -42017,15 +39943,7 @@
 			<p><i>orceréis</i></p>
 			<p><i>orcerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerza</i></p>
@@ -42179,15 +40097,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -42341,15 +40251,7 @@
 			<p><i>eleréis</i></p>
 			<p><i>elerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ela</i></p>
@@ -42503,15 +40405,7 @@
 			<p><i>enceréis</i></p>
 			<p><i>encerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>enza</i></p>
@@ -42665,15 +40559,7 @@
 			<p><i>omperéis</i></p>
 			<p><i>omperán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ompa</i></p>
@@ -42827,15 +40713,7 @@
 			<p><i>ostraréis</i></p>
 			<p><i>ostrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uestre</i></p>
@@ -42989,15 +40867,7 @@
 			<p><i>ostraréis</i></p>
 			<p><i>ostrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ostre</i></p>
@@ -43151,15 +41021,7 @@
 			<p><i>ordaréis</i></p>
 			<p><i>ordarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>orde</i></p>
@@ -43313,15 +41175,7 @@
 			<p><i>itaréis</i></p>
 			<p><i>itarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íte</i></p>
@@ -43475,15 +41329,7 @@
 			<p><i>islaréis</i></p>
 			<p><i>islarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ísle</i></p>
@@ -43637,15 +41483,7 @@
 			<p><i>istaréis</i></p>
 			<p><i>istarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iste</i></p>
@@ -43799,15 +41637,7 @@
 			<p><i>orcaréis</i></p>
 			<p><i>orcarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerque</i></p>
@@ -43961,15 +41791,7 @@
 			<p><i>ancaréis</i></p>
 			<p><i>ancarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>anque</i></p>
@@ -44123,15 +41945,7 @@
 			<p><i>ontaréis</i></p>
 			<p><i>ontarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>onte</i></p>
@@ -44285,15 +42099,7 @@
 			<p><i>ufaréis</i></p>
 			<p><i>ufarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ufe</i></p>
@@ -44447,15 +42253,7 @@
 			<p><i>andaréis</i></p>
 			<p><i>andarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ande</i></p>
@@ -44609,15 +42407,7 @@
 			<p><i>ustaréis</i></p>
 			<p><i>ustarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úste</i></p>
@@ -44771,15 +42561,7 @@
 			<p><i>azaréis</i></p>
 			<p><i>azarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ace</i></p>
@@ -44933,15 +42715,7 @@
 			<p><i>ulliréis</i></p>
 			<p><i>ullirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ulla</i></p>
@@ -45095,15 +42869,7 @@
 			<p><i>ulliréis</i></p>
 			<p><i>ullirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ulla</i></p>
@@ -45257,15 +43023,7 @@
 			<p><i>ostaréis</i></p>
 			<p><i>ostarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueste</i></p>
@@ -45419,15 +43177,7 @@
 			<p><i>ularéis</i></p>
 			<p><i>ularán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>úle</i></p>
@@ -45581,15 +43331,7 @@
 			<p><i>edraréis</i></p>
 			<p><i>edrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iedre</i></p>
@@ -45743,15 +43485,7 @@
 			<p><i>ovaréis</i></p>
 			<p><i>ovarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueve</i></p>
@@ -45905,15 +43639,7 @@
 			<p><i>osaréis</i></p>
 			<p><i>osarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uese</i></p>
@@ -46067,15 +43793,7 @@
 			<p><i>erviréis</i></p>
 			<p><i>ervirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>irva</i></p>
@@ -46229,15 +43947,7 @@
 			<p><i>ifaréis</i></p>
 			<p><i>ifarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ife</i></p>
@@ -46391,15 +44101,7 @@
 			<p><i>elaréis</i></p>
 			<p><i>elarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iele</i></p>
@@ -46553,15 +44255,7 @@
 			<p><i>erbaréis</i></p>
 			<p><i>erbarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierbe</i></p>
@@ -46715,15 +44409,7 @@
 			<p><i>endraréis</i></p>
 			<p><i>endrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iendre</i></p>
@@ -46877,15 +44563,7 @@
 			<p><i>arcaréis</i></p>
 			<p><i>arcarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>arque</i></p>
@@ -47039,15 +44717,7 @@
 			<p><i>embraréis</i></p>
 			<p><i>embrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iembre</i></p>
@@ -47201,15 +44871,7 @@
 			<p><i>utriréis</i></p>
 			<p><i>utrirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>utra</i></p>
@@ -47363,15 +45025,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iga</i></p>
@@ -47525,15 +45179,7 @@
 			<p><i>otaréis</i></p>
 			<p><i>otarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ote</i></p>
@@ -47687,15 +45333,7 @@
 			<p><i>ezaréis</i></p>
 			<p><i>ezarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ece</i></p>
@@ -47849,15 +45487,7 @@
 			<p><i>ertaréis</i></p>
 			<p><i>ertarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierte</i></p>
@@ -48011,15 +45641,7 @@
 			<p><i>uparéis</i></p>
 			<p><i>uparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>upe</i></p>
@@ -48173,15 +45795,7 @@
 			<p><i>eeréis</i></p>
 			<p><i>eerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ea</i></p>
@@ -48335,15 +45949,7 @@
 			<p><i>oseréis</i></p>
 			<p><i>oserán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>osa</i></p>
@@ -48497,15 +46103,7 @@
 			<p><i>estiréis</i></p>
 			<p><i>estirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ista</i></p>
@@ -48659,15 +46257,7 @@
 			<p><i>iviréis</i></p>
 			<p><i>ivirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iva</i></p>
@@ -48821,15 +46411,7 @@
 			<p><i>ezmaréis</i></p>
 			<p><i>ezmarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iezme</i></p>
@@ -48983,15 +46565,7 @@
 			<p><i>ignaréis</i></p>
 			<p><i>ignarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>igne</i></p>
@@ -49145,15 +46719,7 @@
 			<p><i>orzaréis</i></p>
 			<p><i>orzarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerce</i></p>
@@ -49307,15 +46873,7 @@
 			<p><i>diréis</i></p>
 			<p><i>dirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>da</i></p>
@@ -49469,15 +47027,7 @@
 			<p><i>alaréis</i></p>
 			<p><i>alarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ale</i></p>
@@ -49631,15 +47181,7 @@
 			<p><i>incharéis</i></p>
 			<p><i>incharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>inche</i></p>
@@ -49793,15 +47335,7 @@
 			<p><i>oncaréis</i></p>
 			<p><i>oncarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>onque</i></p>
@@ -49955,15 +47489,7 @@
 			<p><i>adraréis</i></p>
 			<p><i>adrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>adre</i></p>
@@ -50117,15 +47643,7 @@
 			<p><i>añaréis</i></p>
 			<p><i>añarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>añe</i></p>
@@ -50279,15 +47797,7 @@
 			<p><i>anzaréis</i></p>
 			<p><i>anzarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ance</i></p>
@@ -50441,15 +47951,7 @@
 			<p><i>edaréis</i></p>
 			<p><i>edarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ede</i></p>
@@ -50603,15 +48105,7 @@
 			<p><i>azgaréis</i></p>
 			<p><i>azgarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>azgue</i></p>
@@ -50765,15 +48259,7 @@
 			<p><i>erraréis</i></p>
 			<p><i>errarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>erre</i></p>
@@ -50927,15 +48413,7 @@
 			<p><i>oncharéis</i></p>
 			<p><i>oncharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>onche</i></p>
@@ -51089,15 +48567,7 @@
 			<p><i>ambraréis</i></p>
 			<p><i>ambrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ambre</i></p>
@@ -51251,15 +48721,7 @@
 			<p><i>utaréis</i></p>
 			<p><i>utarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ute</i></p>
@@ -51413,15 +48875,7 @@
 			<p><i>avaréis</i></p>
 			<p><i>avarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ave</i></p>
@@ -51575,15 +49029,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ajado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -51737,15 +49183,7 @@
 			<p><i>ivaréis</i></p>
 			<p><i>ivarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ive</i></p>
@@ -51899,15 +49337,7 @@
 			<p><i>ancharéis</i></p>
 			<p><i>ancharán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>anche</i></p>
@@ -52061,15 +49491,7 @@
 			<p><i>ogaréis</i></p>
 			<p><i>ogarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ogue</i></p>
@@ -52223,15 +49645,7 @@
 			<p><i>uscaréis</i></p>
 			<p><i>uscarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>usque</i></p>
@@ -52385,15 +49799,7 @@
 			<p><i>asgaréis</i></p>
 			<p><i>asgarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>asgue</i></p>
@@ -52547,15 +49953,7 @@
 			<p><i>usgaréis</i></p>
 			<p><i>usgarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>usgue</i></p>
@@ -52709,15 +50107,7 @@
 			<p><i>garéis</i></p>
 			<p><i>garán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>gue</i></p>
@@ -52871,15 +50261,7 @@
 			<p><i>ocaréis</i></p>
 			<p><i>ocarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueque</i></p>
@@ -53033,15 +50415,7 @@
 			<p><i>odaréis</i></p>
 			<p><i>odarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uede</i></p>
@@ -53195,15 +50569,7 @@
 			<p><i>obraréis</i></p>
 			<p><i>obrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>obre</i></p>
@@ -53357,15 +50723,7 @@
 			<p><i>oñaréis</i></p>
 			<p><i>oñarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ueñe</i></p>
@@ -53519,15 +50877,7 @@
 			<p><i>acaréis</i></p>
 			<p><i>acarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>aque</i></p>
@@ -53681,15 +51031,7 @@
 			<p><i>ercaréis</i></p>
 			<p><i>ercarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>erque</i></p>
@@ -53843,15 +51185,7 @@
 			<p><i>orcaréis</i></p>
 			<p><i>orcarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>orque</i></p>
@@ -54005,15 +51339,7 @@
 			<p><i>ortaréis</i></p>
 			<p><i>ortarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerte</i></p>
@@ -54167,15 +51493,7 @@
 			<p><i>oriréis</i></p>
 			<p><i>orirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uera</i></p>
@@ -54329,15 +51647,7 @@
 			<p><i>emaréis</i></p>
 			<p><i>emarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ieme</i></p>
@@ -54491,15 +51801,7 @@
 			<p><i>omparéis</i></p>
 			<p><i>omparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ompe</i></p>
@@ -54653,15 +51955,7 @@
 			<p><i>umiréis</i></p>
 			<p><i>umirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uma</i></p>
@@ -54815,15 +52109,7 @@
 			<p><i>ijaréis</i></p>
 			<p><i>ijarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ije</i></p>
@@ -54977,15 +52263,7 @@
 			<p><i>inaréis</i></p>
 			<p><i>inarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íne</i></p>
@@ -55139,15 +52417,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>é</i></p>
@@ -55301,15 +52571,7 @@
 			<p><i>imiréis</i></p>
 			<p><i>imirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ima</i></p>
@@ -55463,15 +52725,7 @@
 			<p><i>aréis</i></p>
 			<p><i>arán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>e</i></p>
@@ -55625,15 +52879,7 @@
 			<p><i>enderéis</i></p>
 			<p><i>enderán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ienda</i></p>
@@ -55787,15 +53033,7 @@
 			<p><i>guiréis</i></p>
 			<p><i>guirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ga</i></p>
@@ -55949,15 +53187,7 @@
 			<p><i>FALSEaréis</i></p>
 			<p><i>FALSEarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>FALSEe</i></p>
@@ -56111,15 +53341,7 @@
 			<p><i>ollaréis</i></p>
 			<p><i>ollarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelle</i></p>
@@ -56273,15 +53495,7 @@
 			<p><i>eiréis</i></p>
 			<p><i>eirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ía</i></p>
@@ -56435,15 +53649,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>uado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -56597,15 +53803,7 @@
 			<p><i>emiréis</i></p>
 			<p><i>emirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ima</i></p>
@@ -56759,15 +53957,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>zado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -56921,15 +54111,7 @@
 			<p><i>ederéis</i></p>
 			<p><i>ederán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ieda</i></p>
@@ -57083,15 +54265,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>elado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -57245,15 +54419,7 @@
 			<p><i>enchiréis</i></p>
 			<p><i>enchirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>incha</i></p>
@@ -57407,15 +54573,7 @@
 			<p><i>endiréis</i></p>
 			<p><i>endirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ienda</i></p>
@@ -57569,15 +54727,7 @@
 			<p><i>erviréis</i></p>
 			<p><i>ervirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierva</i></p>
@@ -57731,15 +54881,7 @@
 			<p><i>oparéis</i></p>
 			<p><i>oparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ope</i></p>
@@ -57893,15 +55035,7 @@
 			<p><i>riréis</i></p>
 			<p><i>rirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ra</i></p>
@@ -58055,15 +55189,7 @@
 			<p><i>eriréis</i></p>
 			<p><i>erirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iera</i></p>
@@ -58217,15 +55343,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>vaya</i></p>
@@ -58379,15 +55497,7 @@
 			<p><i>actaréis</i></p>
 			<p><i>actarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>acte</i></p>
@@ -58541,15 +55651,7 @@
 			<p><i>erdaréis</i></p>
 			<p><i>erdarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierde</i></p>
@@ -58703,15 +55805,7 @@
 			<p><i>estaréis</i></p>
 			<p><i>estarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ieste</i></p>
@@ -58865,15 +55959,7 @@
 			<p><i>tiréis</i></p>
 			<p><i>tirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ta</i></p>
@@ -59027,15 +56113,7 @@
 			<p><i>irlaréis</i></p>
 			<p><i>irlarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>irle</i></p>
@@ -59189,15 +56267,7 @@
 			<p><i>orderéis</i></p>
 			<p><i>orderán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerda</i></p>
@@ -59351,15 +56421,7 @@
 			<p><i>ceréis</i></p>
 			<p><i>cerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>zca</i></p>
@@ -59513,15 +56575,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>evado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -59675,15 +56729,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -59837,15 +56883,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -59999,15 +57037,7 @@
 			<p><i>erderéis</i></p>
 			<p><i>erderán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierda</i></p>
@@ -60161,15 +57191,7 @@
 			<p><i>intaréis</i></p>
 			<p><i>intarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>inte</i></p>
@@ -60323,15 +57345,7 @@
 			<p><i>irraréis</i></p>
 			<p><i>irrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>irre</i></p>
@@ -60485,15 +57499,7 @@
 			<p><i>ondréis</i></p>
 			<p><i>ondrán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>onga</i></p>
@@ -60647,15 +57653,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>a</i></p>
@@ -60809,15 +57807,7 @@
 			<p><i>nderéis</i></p>
 			<p><i>nderán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>nda</i></p>
@@ -60971,15 +57961,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -61133,15 +58115,7 @@
 			<p><i>ellaréis</i></p>
 			<p><i>ellarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>elle</i></p>
@@ -61295,15 +58269,7 @@
 			<p><i>egraréis</i></p>
 			<p><i>egrarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>egre</i></p>
@@ -61457,15 +58423,7 @@
 			<p><i>urtaréis</i></p>
 			<p><i>urtarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>urte</i></p>
@@ -61619,15 +58577,7 @@
 			<p><i>ansaréis</i></p>
 			<p><i>ansarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>anse</i></p>
@@ -61781,15 +58731,7 @@
 			<p><i>ilgaréis</i></p>
 			<p><i>ilgarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ilgue</i></p>
@@ -61943,15 +58885,7 @@
 			<p><i>endiréis</i></p>
 			<p><i>endirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>inda</i></p>
@@ -62105,15 +59039,7 @@
 			<p><i>olgaréis</i></p>
 			<p><i>olgarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelge</i></p>
@@ -62267,15 +59193,7 @@
 			<p><i>emblaréis</i></p>
 			<p><i>emblarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iemble</i></p>
@@ -62429,15 +59347,7 @@
 			<p><i>orceréis</i></p>
 			<p><i>orcerán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerza</i></p>
@@ -62591,15 +59501,7 @@
 			<p><i>eparéis</i></p>
 			<p><i>eparán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>epe</i></p>
@@ -62753,15 +59655,7 @@
 			<p><i>erteréis</i></p>
 			<p><i>erterán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierta</i></p>
@@ -62915,15 +59809,7 @@
 			<p><i>olcaréis</i></p>
 			<p><i>olcarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelque</i></p>
@@ -63077,15 +59963,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>iado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -63239,15 +60117,7 @@
 			<p><i>ogaréis</i></p>
 			<p><i>ogarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uegue</i></p>
@@ -63401,15 +60271,7 @@
 			<p><i>mperéis</i></p>
 			<p><i>mperán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>mpa</i></p>
@@ -63563,15 +60425,7 @@
 			<p><i>ornaréis</i></p>
 			<p><i>ornarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>orne</i></p>
@@ -63725,15 +60579,7 @@
 			<p><i>erteréis</i></p>
 			<p><i>erterán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ierta</i></p>
@@ -63887,15 +60733,7 @@
 			<p><i>idaréis</i></p>
 			<p><i>idarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ide</i></p>
@@ -64049,15 +60887,7 @@
 			<p><i>oltaréis</i></p>
 			<p><i>oltarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uelte</i></p>
@@ -64211,15 +61041,7 @@
 			<p><i>onaréis</i></p>
 			<p><i>onarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uene</i></p>
@@ -64373,15 +61195,7 @@
 			<p><i>odaréis</i></p>
 			<p><i>odarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uede</i></p>
@@ -64535,15 +61349,7 @@
 			<p><i>iréis</i></p>
 			<p><i>irán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ya</i></p>
@@ -64697,15 +61503,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -64859,15 +61657,7 @@
 			<p><i>imaréis</i></p>
 			<p><i>imarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>íme</i></p>
@@ -65021,15 +61811,7 @@
 			<p><i>eñiréis</i></p>
 			<p><i>eñirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>iña</i></p>
@@ -65183,15 +61965,7 @@
 			<p><i>uciréis</i></p>
 			<p><i>ucirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uzca</i></p>
@@ -65345,15 +62119,7 @@
 			<p><i>ordaréis</i></p>
 			<p><i>ordarán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>uerde</i></p>
@@ -65507,15 +62273,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>onado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -65669,15 +62427,7 @@
 			<p><i>uniréis</i></p>
 			<p><i>unirán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>una</i></p>
@@ -65831,15 +62581,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>entado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i/></p>
@@ -65993,15 +62735,7 @@
 			<p><i>eréis</i></p>
 			<p><i>erán</i></p>
 		</Indicativo-futuro>
-		<Indicativo-futuro-perfecto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-futuro-perfecto>
-	</Indicativo>
+		</Indicativo>
 	<Subjuntivo>
 		<Subjuntivo-presente>
 			<p><i>ea</i></p>
