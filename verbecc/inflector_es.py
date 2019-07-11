@@ -54,9 +54,9 @@ class InflectorEs(inflector.Inflector):
     def _get_compound_conjugations_hv_map(self):
         return {
             'indicativo': {
-                'indicativo-pretérito-perfecto-compuesto': 'presente',
-                'indicativo-pretérito-pluscuamperfecto': 'pretérito-imperfecto',
-                'indicativo-pretérito-anterior': 'pretérito-perfecto-simple',
+                'pretérito-perfecto-compuesto': 'presente',
+                'pretérito-pluscuamperfecto': 'pretérito-imperfecto',
+                'pretérito-anterior': 'pretérito-perfecto-simple',
                 'futuro-perfecto': 'futuro'
             },
             'condicional': {
