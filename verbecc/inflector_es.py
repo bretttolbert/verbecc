@@ -60,12 +60,12 @@ class InflectorEs(inflector.Inflector):
                 'futuro-perfecto': 'futuro'
             },
             'condicional': {
-                'condicional-perfecto': 'condicional-condicional'
+                'condicional-perfecto': 'condicional-present'
             },
-            'Subjuntivo': {
-                'Subjuntivo-pretérito-perfecto': 'Subjuntivo-presente',
-                'Subjuntivo-pretérito-pluscuamperfecto-1': 'Subjuntivo-pretérito-imperfecto-1',
-                'Subjuntivo-pretérito-pluscuamperfecto-2': 'Subjuntivo-pretérito-imperfecto-2',
-                'Subjuntivo-futuro-perfecto': 'Subjuntivo-futuro'
+            'subjuntivo': {
+                'subjuntivo-pretérito-perfecto': 'subjuntivo-presente',
+                'subjuntivo-pretérito-pluscuamperfecto-1': 'subjuntivo-pretérito-imperfecto-1',
+                'subjuntivo-pretérito-pluscuamperfecto-2': 'subjuntivo-pretérito-imperfecto-2',
+                'subjuntivo-futuro-perfecto': 'subjuntivo-futuro'
             }
         }

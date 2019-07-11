@@ -8,14 +8,14 @@ from verbecc.tense_template import TenseTemplate
 
 inf = inflector_es.InflectorEs()
 
-# Subjuntivo-presente = Subjunctive Present (yo haya)
-# Subjuntivo-pretérito-perfecto = Subjunctive Perfect (yo haya habido)
-# Subjuntivo-pretérito-imperfecto-1 = Subjunctive Past 1 (yo hubiera)
-# Subjuntivo-pretérito-imperfecto-2 = Subjunctive Past 2 (yo hubiese)
-# Subjuntivo-pretérito-pluscuamperfecto-1 = Subjunctive Pluperfect 1 (yo hubiera habido)
-# Subjuntivo-pretérito-pluscuamperfecto-2 = Subjunctive Pluperfect 2 (yo hubiese habido)
-# Subjuntivo-futuro = Subjunctive Future (yo hubiere)
-# Subjuntivo-futuro-perfecto = Subjunctive Future Perfect (yo hubiere habido)
+# subjuntivo-presente = Subjunctive Present (yo haya)
+# subjuntivo-pretérito-perfecto = Subjunctive Perfect (yo haya habido)
+# subjuntivo-pretérito-imperfecto-1 = Subjunctive Past 1 (yo hubiera)
+# subjuntivo-pretérito-imperfecto-2 = Subjunctive Past 2 (yo hubiese)
+# subjuntivo-pretérito-pluscuamperfecto-1 = Subjunctive Pluperfect 1 (yo hubiera habido)
+# subjuntivo-pretérito-pluscuamperfecto-2 = Subjunctive Pluperfect 2 (yo hubiese habido)
+# subjuntivo-futuro = Subjunctive Future (yo hubiere)
+# subjuntivo-futuro-perfecto = Subjunctive Future Perfect (yo hubiere habido)
 
 test_es_conjugate_mood_tense_data = [
     ('abañar', 'indicativo', 'presente', 
@@ -34,15 +34,15 @@ test_es_conjugate_mood_tense_data = [
         ['yo hube', 'tú hubiste', 'él hubo', 'nosotros hubimos', 'vosotros hubisteis', 'ellos hubieron']),
     ('haber', 'indicativo', 'futuro',
         ['yo habré', 'tú habrás', 'él habrá', 'nosotros habremos', 'vosotros habréis', 'ellos habrán']),
-    ('haber', 'condicional', 'condicional-condicional',
+    ('haber', 'condicional', 'condicional-present',
         ['yo habría', 'tú habrías', 'él habría', 'nosotros habríamos', 'vosotros habríais', 'ellos habrían']),
-    ('haber', 'Subjuntivo', 'Subjuntivo-presente',
+    ('haber', 'subjuntivo', 'subjuntivo-presente',
         ['yo haya', 'tú hayas', 'él haya', 'nosotros hayamos', 'vosotros hayáis', 'ellos hayan']),
-    ('haber', 'Subjuntivo', 'Subjuntivo-pretérito-imperfecto-1',
+    ('haber', 'subjuntivo', 'subjuntivo-pretérito-imperfecto-1',
         ['yo hubiera', 'tú hubieras', 'él hubiera', 'nosotros hubiéramos', 'vosotros hubierais', 'ellos hubieran']),
-    ('haber', 'Subjuntivo', 'Subjuntivo-pretérito-imperfecto-2',
+    ('haber', 'subjuntivo', 'subjuntivo-pretérito-imperfecto-2',
         ['yo hubiese', 'tú hubieses', 'él hubiese', 'nosotros hubiésemos', 'vosotros hubieseis', 'ellos hubiesen']),
-    ('haber', 'Subjuntivo', 'Subjuntivo-futuro',
+    ('haber', 'subjuntivo', 'subjuntivo-futuro',
         ['yo hubiere', 'tú hubieres', 'él hubiere', 'nosotros hubiéremos', 'vosotros hubiereis', 'ellos hubieren']),
     ('hacer', 'indicativo', 'presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
@@ -54,7 +54,7 @@ test_es_conjugate_mood_tense_data = [
         ['yo comí', 'tú comiste', 'él comió', 'nosotros comimos', 'vosotros comisteis', 'ellos comieron']),
     ('comer', 'indicativo', 'pretérito-imperfecto',
         ['yo comía', 'tú comías', 'él comía', 'nosotros comíamos', 'vosotros comíais', 'ellos comían']),
-    ('comer', 'condicional', 'condicional-condicional',
+    ('comer', 'condicional', 'condicional-present',
         ['yo comería', 'tú comerías', 'él comería', 'nosotros comeríamos', 'vosotros comeríais', 'ellos comerían']),
     ('comer', 'indicativo', 'indicativo-pretérito-perfecto-compuesto',
         ['yo he comido', 'tú has comido', 'él ha comido', 'nosotros hemos comido', 'vosotros habéis comido', 'ellos han comido']),
@@ -66,13 +66,13 @@ test_es_conjugate_mood_tense_data = [
         ['yo habré comido', 'tú habrás comido', 'él habrá comido', 'nosotros habremos comido', 'vosotros habréis comido', 'ellos habrán comido']),
     ('comer', 'condicional', 'condicional-perfecto',
         ['yo habría comido', 'tú habrías comido', 'él habría comido', 'nosotros habríamos comido', 'vosotros habríais comido', 'ellos habrían comido']),
-    ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-perfecto',
+    ('comer', 'subjuntivo', 'subjuntivo-pretérito-perfecto',
         ['yo haya comido', 'tú hayas comido', 'él haya comido', 'nosotros hayamos comido', 'vosotros hayáis comido', 'ellos hayan comido']),
-    ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-pluscuamperfecto-1',
+    ('comer', 'subjuntivo', 'subjuntivo-pretérito-pluscuamperfecto-1',
         ['yo hubiera comido', 'tú hubieras comido', 'él hubiera comido', 'nosotros hubiéramos comido', 'vosotros hubierais comido', 'ellos hubieran comido']),
-    ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-pluscuamperfecto-2',
+    ('comer', 'subjuntivo', 'subjuntivo-pretérito-pluscuamperfecto-2',
         ['yo hubiese comido', 'tú hubieses comido', 'él hubiese comido', 'nosotros hubiésemos comido', 'vosotros hubieseis comido', 'ellos hubiesen comido']),
-    ('comer', 'Subjuntivo', 'Subjuntivo-futuro-perfecto',
+    ('comer', 'subjuntivo', 'subjuntivo-futuro-perfecto',
         ['yo hubiere comido', 'tú hubieres comido', 'él hubiere comido', 'nosotros hubiéremos comido', 'vosotros hubiereis comido', 'ellos hubieren comido'])
 ]
 
