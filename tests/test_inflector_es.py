@@ -46,7 +46,9 @@ test_es_conjugate_mood_tense_data = [
     ('comer', 'Indicativo', 'Indicativo-pretérito-anterior',
         ['yo hube comido', 'tú hubiste comido', 'él hubo comido', 'nosotros hubimos comido', 'vosotros hubisteis comido', 'ellos hubieron comido']),
     ('comer', 'Indicativo', 'Indicativo-futuro-perfecto',
-        ['yo habré comido', 'tú habrás comido', 'él habrá comido', 'nosotros habremos comido', 'vosotros habréis comido', 'ellos habrán comido'])
+        ['yo habré comido', 'tú habrás comido', 'él habrá comido', 'nosotros habremos comido', 'vosotros habréis comido', 'ellos habrán comido']),
+    ('comer', 'Condicional', 'Condicional-perfecto',
+        ['yo habría comido', 'tú habrías comido', 'él habría comido', 'nosotros habríamos comido', 'vosotros habríais comido', 'ellos habrían comido'])
 ]
 
 """

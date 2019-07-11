@@ -58,5 +58,8 @@ class InflectorEs(inflector.Inflector):
                 'Indicativo-pretérito-pluscuamperfecto': 'Indicativo-pretérito-imperfecto',
                 'Indicativo-pretérito-anterior': 'Indicativo-pretérito-perfecto-simple',
                 'Indicativo-futuro-perfecto': 'Indicativo-futuro'
+            },
+            'Condicional': {
+                'Condicional-perfecto': 'Condicional-condicional'
             }
         }

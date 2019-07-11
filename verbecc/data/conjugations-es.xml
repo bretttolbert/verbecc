@@ -28,13 +28,13 @@
 <!ELEMENT template (Indicativo , Subjuntivo , Imperativo , (Condicional , Infinitivo , Gerundio , Participo)?)>
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-futuro )?>
+<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfecto , Indicativo-pretérito-perfecto-simple , Indicativo-futuro)?>
 <!ATTLIST Indicativo xmlns CDATA #FIXED "">
 <!ELEMENT Subjuntivo (Subjuntivo-presente , Subjuntivo-pretérito-perfecto , Subjuntivo-pretérito-imperfecto-1 , Subjuntivo-pretérito-pluscuamperfecto-1 , Subjuntivo-pretérito-imperfecto-2 , Subjuntivo-pretérito-pluscuamperfecto-2 , Subjuntivo-futuro , Subjuntivo-futuro-perfecto)?>
 <!ATTLIST Subjuntivo xmlns CDATA #FIXED "">
 <!ELEMENT Imperativo (Imperativo-afirmativo , Imperativo-non)>
 <!ATTLIST Imperativo xmlns CDATA #FIXED "">
-<!ELEMENT Condicional (Condicional-condicional , Condicional-perfecto)>
+<!ELEMENT Condicional (Condicional-condicional)>
 <!ATTLIST Condicional xmlns CDATA #FIXED "">
 <!ELEMENT Infinitivo (Infinitivo-infinitivo)>
 <!ATTLIST Infinitivo xmlns CDATA #FIXED "">
@@ -72,8 +72,6 @@
 <!ATTLIST Imperativo-non xmlns CDATA #FIXED "">
 <!ELEMENT Condicional-condicional (p)+>
 <!ATTLIST Condicional-condicional xmlns CDATA #FIXED "">
-<!ELEMENT Condicional-perfecto (p)+>
-<!ATTLIST Condicional-perfecto xmlns CDATA #FIXED "">
 <!ELEMENT Infinitivo-infinitivo (p)+>
 <!ATTLIST Infinitivo-infinitivo xmlns CDATA #FIXED "">
 <!ELEMENT Gerundio-gerondio (p)+>
@@ -149,15 +147,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i/></p>
@@ -303,15 +293,7 @@
 			<p><i>uaríais</i></p>
 			<p><i>uarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uar</i></p>
@@ -457,15 +439,7 @@
 			<p><i>riríais</i></p>
 			<p><i>rirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>rir</i></p>
@@ -611,15 +585,7 @@
 			<p><i>incaríais</i></p>
 			<p><i>incarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-			<p><i>incado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>incar</i></p>
@@ -765,15 +731,7 @@
 			<p><i>iraríais</i></p>
 			<p><i>irarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>irar</i></p>
@@ -919,15 +877,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -1073,15 +1023,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -1227,15 +1169,7 @@
 			<p><i>ullaríais</i></p>
 			<p><i>ullarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ullar</i></p>
@@ -1381,15 +1315,7 @@
 			<p><i>onzaríais</i></p>
 			<p><i>onzarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-			<p><i>onzado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>onzar</i></p>
@@ -1535,15 +1461,7 @@
 			<p><i>uaríais</i></p>
 			<p><i>uarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uar</i></p>
@@ -1689,15 +1607,7 @@
 			<p><i>cabríais</i></p>
 			<p><i>cabrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-			<p><i>cabido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>caber</i></p>
@@ -1843,15 +1753,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -1997,15 +1899,7 @@
 			<p><i>zaríais</i></p>
 			<p><i>zarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-			<p><i>zado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>zar</i></p>
@@ -2151,15 +2045,7 @@
 			<p><i>oceríais</i></p>
 			<p><i>ocerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-			<p><i>ocido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ocer</i></p>
@@ -2305,15 +2191,7 @@
 			<p><i>geríais</i></p>
 			<p><i>gerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ger</i></p>
@@ -2459,15 +2337,7 @@
 			<p><i>olgaríais</i></p>
 			<p><i>olgarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olgar</i></p>
@@ -2613,15 +2483,7 @@
 			<p><i>ceríais</i></p>
 			<p><i>cerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cer</i></p>
@@ -2767,15 +2629,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -2921,15 +2775,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -3075,15 +2921,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -3229,15 +3067,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -3383,15 +3213,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ecir</i></p>
@@ -3537,15 +3359,7 @@
 			<p><i>enderíais</i></p>
 			<p><i>enderían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ender</i></p>
@@ -3691,15 +3505,7 @@
 			<p><i>quiríais</i></p>
 			<p><i>quirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-			<p><i>quido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>quir</i></p>
@@ -3845,15 +3651,7 @@
 			<p><i>osaríais</i></p>
 			<p><i>osarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>osar</i></p>
@@ -3999,15 +3797,7 @@
 			<p><i>erniríais</i></p>
 			<p><i>ernirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ernir</i></p>
@@ -4153,15 +3943,7 @@
 			<p><i>uiríais</i></p>
 			<p><i>uirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uir</i></p>
@@ -4307,15 +4089,7 @@
 			<p><i>ormiríais</i></p>
 			<p><i>ormirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ormir</i></p>
@@ -4461,15 +4235,7 @@
 			<p><i>egiríais</i></p>
 			<p><i>egirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>egir</i></p>
@@ -4615,15 +4381,7 @@
 			<p><i>ezaríais</i></p>
 			<p><i>ezarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ezar</i></p>
@@ -4769,15 +4527,7 @@
 			<p><i>ontraríais</i></p>
 			<p><i>ontrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-			<p><i>ontrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ontrar</i></p>
@@ -4923,15 +4673,7 @@
 			<p><i>izaríais</i></p>
 			<p><i>izarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>izar</i></p>
@@ -5077,15 +4819,7 @@
 			<p><i>erguiríais</i></p>
 			<p><i>erguirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-			<p><i>erguido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erguir</i></p>
@@ -5231,15 +4965,7 @@
 			<p><i>erraríais</i></p>
 			<p><i>errarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>errar</i></p>
@@ -5385,15 +5111,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -5539,15 +5257,7 @@
 			<p><i>orzaríais</i></p>
 			<p><i>orzarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orzar</i></p>
@@ -5693,15 +5403,7 @@
 			<p><i>iaríais</i></p>
 			<p><i>iarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iar</i></p>
@@ -5847,15 +5549,7 @@
 			<p><i>abríais</i></p>
 			<p><i>abrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>aber</i></p>
@@ -6001,15 +5695,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-			<p><i>echo</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>acer</i></p>
@@ -6155,15 +5841,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -6309,15 +5987,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -6463,15 +6133,7 @@
 			<p><i>garíais</i></p>
 			<p><i>garían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>gar</i></p>
@@ -6617,15 +6279,7 @@
 			<p><i>overíais</i></p>
 			<p><i>overían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-			<p><i>ovido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>over</i></p>
@@ -6771,15 +6425,7 @@
 			<p><i>ciríais</i></p>
 			<p><i>cirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cir</i></p>
@@ -6925,15 +6571,7 @@
 			<p><i>ceríais</i></p>
 			<p><i>cerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cer</i></p>
@@ -7079,15 +6717,7 @@
 			<p><i>oleríais</i></p>
 			<p><i>olerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oler</i></p>
@@ -7233,15 +6863,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -7387,15 +7009,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cer</i></p>
@@ -7541,15 +7155,7 @@
 			<p><i>ediríais</i></p>
 			<p><i>edirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>edir</i></p>
@@ -7695,15 +7301,7 @@
 			<p><i>ensaríais</i></p>
 			<p><i>ensarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-			<p><i>ensado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ensar</i></p>
@@ -7849,15 +7447,7 @@
 			<p><i>aceríais</i></p>
 			<p><i>acerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-			<p><i>acido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>acer</i></p>
@@ -8003,15 +7593,7 @@
 			<p><i>odríais</i></p>
 			<p><i>odrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oder</i></p>
@@ -8157,15 +7739,7 @@
 			<p><i>udriríais</i></p>
 			<p><i>udrirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-			<p><i>odrido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>odrir</i></p>
@@ -8311,15 +7885,7 @@
 			<p><i>eciríais</i></p>
 			<p><i>ecirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ecir</i></p>
@@ -8465,15 +8031,7 @@
 			<p><i>ciríais</i></p>
 			<p><i>cirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cir</i></p>
@@ -8619,15 +8177,7 @@
 			<p><i>ibiríais</i></p>
 			<p><i>ibirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ibir</i></p>
@@ -8773,15 +8323,7 @@
 			<p><i>erríais</i></p>
 			<p><i>errían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erer</i></p>
@@ -8927,15 +8469,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -9081,15 +8615,7 @@
 			<p><i>egaríais</i></p>
 			<p><i>egarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>egar</i></p>
@@ -9235,15 +8761,7 @@
 			<p><i>eiríais</i></p>
 			<p><i>eirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eír</i></p>
@@ -9389,15 +8907,7 @@
 			<p><i>eñiríais</i></p>
 			<p><i>eñirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eñir</i></p>
@@ -9543,15 +9053,7 @@
 			<p><i>uniríais</i></p>
 			<p><i>unirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>unir</i></p>
@@ -9697,15 +9199,7 @@
 			<p><i>abríais</i></p>
 			<p><i>abrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>aber</i></p>
@@ -9851,15 +9345,7 @@
 			<p><i>caríais</i></p>
 			<p><i>carían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>car</i></p>
@@ -10005,15 +9491,7 @@
 			<p><i>dríais</i></p>
 			<p><i>drían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -10159,15 +9637,7 @@
 			<p><i>eguiríais</i></p>
 			<p><i>eguirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eguir</i></p>
@@ -10313,15 +9783,7 @@
 			<p><i>entiríais</i></p>
 			<p><i>entirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>entir</i></p>
@@ -10467,15 +9929,7 @@
 			<p><i>seríais</i></p>
 			<p><i>serían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ser</i></p>
@@ -10621,15 +10075,7 @@
 			<p><i>seríais</i></p>
 			<p><i>serían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ser</i></p>
@@ -10775,15 +10221,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -10929,15 +10367,7 @@
 			<p><i>endríais</i></p>
 			<p><i>endrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ener</i></p>
@@ -11083,15 +10513,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -11237,15 +10659,7 @@
 			<p><i>ocaríais</i></p>
 			<p><i>ocarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ocar</i></p>
@@ -11391,15 +10805,7 @@
 			<p><i>dríais</i></p>
 			<p><i>drían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -11545,15 +10951,7 @@
 			<p><i>endríais</i></p>
 			<p><i>endrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>enir</i></p>
@@ -11699,15 +11097,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -11853,15 +11243,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -12007,15 +11389,7 @@
 			<p><i>olveríais</i></p>
 			<p><i>olverían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-			<p><i>uelto</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olver</i></p>
@@ -12161,15 +11535,7 @@
 			<p><i>ceríais</i></p>
 			<p><i>cerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cer</i></p>
@@ -12315,15 +11681,7 @@
 			<p><i>ciríais</i></p>
 			<p><i>cirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cir</i></p>
@@ -12469,15 +11827,7 @@
 			<p><i>illaríais</i></p>
 			<p><i>illarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>illarse</i></p>
@@ -12623,15 +11973,7 @@
 			<p><i>anaríais</i></p>
 			<p><i>anarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-			<p><i>anado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>anarse</i></p>
@@ -12777,15 +12119,7 @@
 			<p><i>abaríais</i></p>
 			<p><i>abarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>abarse</i></p>
@@ -12931,15 +12265,7 @@
 			<p><i>astaríais</i></p>
 			<p><i>astarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-			<p><i>astado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>astarse</i></p>
@@ -13085,15 +12411,7 @@
 			<p><i>eldaríais</i></p>
 			<p><i>eldarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-			<p><i>eldado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eldar</i></p>
@@ -13239,15 +12557,7 @@
 			<p><i>iaríais</i></p>
 			<p><i>iarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iarse</i></p>
@@ -13393,15 +12703,7 @@
 			<p><i>icharíais</i></p>
 			<p><i>icharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-			<p><i>ichado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>icharse</i></p>
@@ -13547,15 +12849,7 @@
 			<p><i>ocaríais</i></p>
 			<p><i>ocarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ocarse</i></p>
@@ -13701,15 +12995,7 @@
 			<p><i>ofaríais</i></p>
 			<p><i>ofarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-			<p><i>ofado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ofarse</i></p>
@@ -13855,15 +13141,7 @@
 			<p><i>olsaríais</i></p>
 			<p><i>olsarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-			<p><i>olsado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olsarse</i></p>
@@ -14009,15 +13287,7 @@
 			<p><i>ascaríais</i></p>
 			<p><i>ascarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-			<p><i>ascado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ascarse</i></p>
@@ -14163,15 +13433,7 @@
 			<p><i>egaríais</i></p>
 			<p><i>egarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-			<p><i>egado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>egarse</i></p>
@@ -14317,15 +13579,7 @@
 			<p><i>icaríais</i></p>
 			<p><i>icarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>icarse</i></p>
@@ -14471,15 +13725,7 @@
 			<p><i>ugaríais</i></p>
 			<p><i>ugarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-			<p><i>ugado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ugarse</i></p>
@@ -14625,15 +13871,7 @@
 			<p><i>agaríais</i></p>
 			<p><i>agarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-			<p><i>agado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>agarse</i></p>
@@ -14779,15 +14017,7 @@
 			<p><i>argaríais</i></p>
 			<p><i>argarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-			<p><i>argado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>argarse</i></p>
@@ -14933,15 +14163,7 @@
 			<p><i>onaríais</i></p>
 			<p><i>onarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>onarse</i></p>
@@ -15087,15 +14309,7 @@
 			<p><i>riríais</i></p>
 			<p><i>rirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-			<p><i>ierto</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>rir</i></p>
@@ -15241,15 +14455,7 @@
 			<p><i>omaríais</i></p>
 			<p><i>omarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-			<p><i>omado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>omarse</i></p>
@@ -15395,15 +14601,7 @@
 			<p><i>uzaríais</i></p>
 			<p><i>uzarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-			<p><i>uzado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uzarse</i></p>
@@ -15549,15 +14747,7 @@
 			<p><i>beríais</i></p>
 			<p><i>berían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-			<p><i>bido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ber</i></p>
@@ -15703,15 +14893,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -15857,15 +15039,7 @@
 			<p><i>olaríais</i></p>
 			<p><i>olarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olar</i></p>
@@ -16011,15 +15185,7 @@
 			<p><i>esaríais</i></p>
 			<p><i>esarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>esarse</i></p>
@@ -16165,15 +15331,7 @@
 			<p><i>urraríais</i></p>
 			<p><i>urrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-			<p><i>urrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>urrarse</i></p>
@@ -16319,15 +15477,7 @@
 			<p><i>acharíais</i></p>
 			<p><i>acharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>acharse</i></p>
@@ -16473,15 +15623,7 @@
 			<p><i>acharíais</i></p>
 			<p><i>acharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-			<p><i>achado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>acharse</i></p>
@@ -16627,15 +15769,7 @@
 			<p><i>asaríais</i></p>
 			<p><i>asarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-			<p><i>asado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>asarse</i></p>
@@ -16781,15 +15915,7 @@
 			<p><i>ambaríais</i></p>
 			<p><i>ambarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-			<p><i>ambado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ambarse</i></p>
@@ -16935,15 +16061,7 @@
 			<p><i>uraríais</i></p>
 			<p><i>urarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-			<p><i>urado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>urarse</i></p>
@@ -17089,15 +16207,7 @@
 			<p><i>arraríais</i></p>
 			<p><i>arrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-			<p><i>arrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>arrarse</i></p>
@@ -17243,15 +16353,7 @@
 			<p><i>ullaríais</i></p>
 			<p><i>ullarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-			<p><i>ullado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ullarse</i></p>
@@ -17397,15 +16499,7 @@
 			<p><i>eraríais</i></p>
 			<p><i>erarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-			<p><i>erado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erarse</i></p>
@@ -17551,15 +16645,7 @@
 			<p><i>ataríais</i></p>
 			<p><i>atarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>atarse</i></p>
@@ -17705,15 +16791,7 @@
 			<p><i>elaríais</i></p>
 			<p><i>elarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>elarse</i></p>
@@ -17859,15 +16937,7 @@
 			<p><i>ertaríais</i></p>
 			<p><i>ertarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ertar</i></p>
@@ -18013,15 +17083,7 @@
 			<p><i>amparíais</i></p>
 			<p><i>amparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-			<p><i>ampado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>amparse</i></p>
@@ -18167,15 +17229,7 @@
 			<p><i>inaríais</i></p>
 			<p><i>inarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>inarse</i></p>
@@ -18321,15 +17375,7 @@
 			<p><i>ocharíais</i></p>
 			<p><i>ocharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-			<p><i>ochado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ocharse</i></p>
@@ -18475,15 +17521,7 @@
 			<p><i>ucharíais</i></p>
 			<p><i>ucharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ucharse</i></p>
@@ -18629,15 +17667,7 @@
 			<p><i>aparíais</i></p>
 			<p><i>aparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-			<p><i>apado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>aparse</i></p>
@@ -18783,15 +17813,7 @@
 			<p><i>ularíais</i></p>
 			<p><i>ularían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ularse</i></p>
@@ -18937,15 +17959,7 @@
 			<p><i>ocaríais</i></p>
 			<p><i>ocarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ocarse</i></p>
@@ -19091,15 +18105,7 @@
 			<p><i>ollaríais</i></p>
 			<p><i>ollarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ollar</i></p>
@@ -19245,15 +18251,7 @@
 			<p><i>ediríais</i></p>
 			<p><i>edirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>edirse</i></p>
@@ -19399,15 +18397,7 @@
 			<p><i>unaríais</i></p>
 			<p><i>unarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>unarse</i></p>
@@ -19553,15 +18543,7 @@
 			<p><i>abaríais</i></p>
 			<p><i>abarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-			<p><i>abado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>abarse</i></p>
@@ -19707,15 +18689,7 @@
 			<p><i>ordaríais</i></p>
 			<p><i>ordarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ordar</i></p>
@@ -19861,15 +18835,7 @@
 			<p><i>ornaríais</i></p>
 			<p><i>ornarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ornar</i></p>
@@ -20015,15 +18981,7 @@
 			<p><i>ucaríais</i></p>
 			<p><i>ucarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ucarse</i></p>
@@ -20169,15 +19127,7 @@
 			<p><i>ejaríais</i></p>
 			<p><i>ejarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-			<p><i>ejado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ejarse</i></p>
@@ -20323,15 +19273,7 @@
 			<p><i>ostaríais</i></p>
 			<p><i>ostarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ostar</i></p>
@@ -20477,15 +19419,7 @@
 			<p><i>entaríais</i></p>
 			<p><i>entarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>entar</i></p>
@@ -20631,15 +19565,7 @@
 			<p><i>ollaríais</i></p>
 			<p><i>ollarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ollarse</i></p>
@@ -20785,15 +19711,7 @@
 			<p><i>ilmaríais</i></p>
 			<p><i>ilmarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-			<p><i>ilmado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ilmarse</i></p>
@@ -20939,15 +19857,7 @@
 			<p><i>uñaríais</i></p>
 			<p><i>uñarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-			<p><i>uñado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uñarse</i></p>
@@ -21093,15 +20003,7 @@
 			<p><i>urdaríais</i></p>
 			<p><i>urdarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-			<p><i>urdado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>urdarse</i></p>
@@ -21247,15 +20149,7 @@
 			<p><i>entraríais</i></p>
 			<p><i>entrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-			<p><i>entrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>entrarse</i></p>
@@ -21401,15 +20295,7 @@
 			<p><i>estraríais</i></p>
 			<p><i>estrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-			<p><i>estrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>estrar</i></p>
@@ -21555,15 +20441,7 @@
 			<p><i>eriríais</i></p>
 			<p><i>erirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erir</i></p>
@@ -21709,15 +20587,7 @@
 			<p><i>eriríais</i></p>
 			<p><i>erirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erir</i></p>
@@ -21863,15 +20733,7 @@
 			<p><i>izaríais</i></p>
 			<p><i>izarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>izarse</i></p>
@@ -22017,15 +20879,7 @@
 			<p><i>ilaríais</i></p>
 			<p><i>ilarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ilarse</i></p>
@@ -22171,15 +21025,7 @@
 			<p><i>itaríais</i></p>
 			<p><i>itarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>itarse</i></p>
@@ -22325,15 +21171,7 @@
 			<p><i>biríais</i></p>
 			<p><i>birían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>bir</i></p>
@@ -22479,15 +21317,7 @@
 			<p><i>giríais</i></p>
 			<p><i>girían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>gir</i></p>
@@ -22633,15 +21463,7 @@
 			<p><i>eñaríais</i></p>
 			<p><i>eñarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-			<p><i>eñado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eñarse</i></p>
@@ -22787,15 +21609,7 @@
 			<p><i>ertiríais</i></p>
 			<p><i>ertirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ertir</i></p>
@@ -22941,15 +21755,7 @@
 			<p><i>olaríais</i></p>
 			<p><i>olarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olarse</i></p>
@@ -23095,15 +21901,7 @@
 			<p><i>erraríais</i></p>
 			<p><i>errarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>errar</i></p>
@@ -23249,15 +22047,7 @@
 			<p><i>ebraríais</i></p>
 			<p><i>ebrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ebrarse</i></p>
@@ -23403,15 +22193,7 @@
 			<p><i>giríais</i></p>
 			<p><i>girían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>gir</i></p>
@@ -23557,15 +22339,7 @@
 			<p><i>oraríais</i></p>
 			<p><i>orarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orar</i></p>
@@ -23711,15 +22485,7 @@
 			<p><i>osaríais</i></p>
 			<p><i>osarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>osarse</i></p>
@@ -23865,15 +22631,7 @@
 			<p><i>echaríais</i></p>
 			<p><i>echarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-			<p><i>echado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>echarse</i></p>
@@ -24019,15 +22777,7 @@
 			<p><i>utraríais</i></p>
 			<p><i>utrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-			<p><i>utrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>utrarse</i></p>
@@ -24173,15 +22923,7 @@
 			<p><i>enaríais</i></p>
 			<p><i>enarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-			<p><i>enado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>enarse</i></p>
@@ -24327,15 +23069,7 @@
 			<p><i>arbaríais</i></p>
 			<p><i>arbarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-			<p><i>arbado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>arbarse</i></p>
@@ -24481,15 +23215,7 @@
 			<p><i>ojaríais</i></p>
 			<p><i>ojarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-			<p><i>ojado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ojarse</i></p>
@@ -24635,15 +23361,7 @@
 			<p><i>ingaríais</i></p>
 			<p><i>ingarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-			<p><i>ingado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ingarse</i></p>
@@ -24789,15 +23507,7 @@
 			<p><i>aguaríais</i></p>
 			<p><i>aguarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-			<p><i>aguado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>aguarse</i></p>
@@ -24943,15 +23653,7 @@
 			<p><i>oraríais</i></p>
 			<p><i>orarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-			<p><i>orado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orarse</i></p>
@@ -25097,15 +23799,7 @@
 			<p><i>ijaríais</i></p>
 			<p><i>ijarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ijar</i></p>
@@ -25251,15 +23945,7 @@
 			<p><i>ilaríais</i></p>
 			<p><i>ilarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-			<p><i>ilado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ilar</i></p>
@@ -25405,15 +24091,7 @@
 			<p><i>itaríais</i></p>
 			<p><i>itarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>itar</i></p>
@@ -25559,15 +24237,7 @@
 			<p><i>ajaríais</i></p>
 			<p><i>ajarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-			<p><i>ajado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ajarse</i></p>
@@ -25713,15 +24383,7 @@
 			<p><i>ucharíais</i></p>
 			<p><i>ucharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uchar</i></p>
@@ -25867,15 +24529,7 @@
 			<p><i>umaríais</i></p>
 			<p><i>umarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>umar</i></p>
@@ -26021,15 +24675,7 @@
 			<p><i>usaríais</i></p>
 			<p><i>usarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-			<p><i>usado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>usar</i></p>
@@ -26175,15 +24821,7 @@
 			<p><i>islaríais</i></p>
 			<p><i>islarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>islar</i></p>
@@ -26329,15 +24967,7 @@
 			<p><i>ecaríais</i></p>
 			<p><i>ecarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-			<p><i>ecado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ecarse</i></p>
@@ -26483,15 +25113,7 @@
 			<p><i>umaríais</i></p>
 			<p><i>umarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>umarse</i></p>
@@ -26637,15 +25259,7 @@
 			<p><i>artaríais</i></p>
 			<p><i>artarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-			<p><i>artado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>artarse</i></p>
@@ -26791,15 +25405,7 @@
 			<p><i>earíais</i></p>
 			<p><i>earían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-			<p><i>eado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>earse</i></p>
@@ -26945,15 +25551,7 @@
 			<p><i>ebraríais</i></p>
 			<p><i>ebrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ebrarse</i></p>
@@ -27099,15 +25697,7 @@
 			<p><i>estaríais</i></p>
 			<p><i>estarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>estarse</i></p>
@@ -27253,15 +25843,7 @@
 			<p><i>ebraríais</i></p>
 			<p><i>ebrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-			<p><i>ebrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ebrar</i></p>
@@ -27407,15 +25989,7 @@
 			<p><i>ongaríais</i></p>
 			<p><i>ongarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ongar</i></p>
@@ -27561,15 +26135,7 @@
 			<p><i>eceríais</i></p>
 			<p><i>ecerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ecerse</i></p>
@@ -27715,15 +26281,7 @@
 			<p><i>imbraríais</i></p>
 			<p><i>imbrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-			<p><i>imbrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>imbrarse</i></p>
@@ -27869,15 +26427,7 @@
 			<p><i>orraríais</i></p>
 			<p><i>orrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-			<p><i>orrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orrarse</i></p>
@@ -28023,15 +26573,7 @@
 			<p><i>inaríais</i></p>
 			<p><i>inarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>inar</i></p>
@@ -28177,15 +26719,7 @@
 			<p><i>allaríais</i></p>
 			<p><i>allarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-			<p><i>allado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>allarse</i></p>
@@ -28331,15 +26865,7 @@
 			<p><i>ebaríais</i></p>
 			<p><i>ebarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-			<p><i>ebado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ebarse</i></p>
@@ -28485,15 +27011,7 @@
 			<p><i>antaríais</i></p>
 			<p><i>antarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-			<p><i>antado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>antarse</i></p>
@@ -28639,15 +27157,7 @@
 			<p><i>amaríais</i></p>
 			<p><i>amarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-			<p><i>amado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>amarse</i></p>
@@ -28793,15 +27303,7 @@
 			<p><i>oblaríais</i></p>
 			<p><i>oblarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-			<p><i>oblado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oblar</i></p>
@@ -28947,15 +27449,7 @@
 			<p><i>iñaríais</i></p>
 			<p><i>iñarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-			<p><i>iñado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iñarse</i></p>
@@ -29101,15 +27595,7 @@
 			<p><i>nejaríais</i></p>
 			<p><i>nejarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-			<p><i>nejado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>nejar</i></p>
@@ -29255,15 +27741,7 @@
 			<p><i>ondríais</i></p>
 			<p><i>ondrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oner</i></p>
@@ -29409,15 +27887,7 @@
 			<p><i>nudaríais</i></p>
 			<p><i>nudarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-			<p><i>nudado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>nudar</i></p>
@@ -29563,15 +28033,7 @@
 			<p><i>udaríais</i></p>
 			<p><i>udarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>udarse</i></p>
@@ -29717,15 +28179,7 @@
 			<p><i>angaríais</i></p>
 			<p><i>angarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-			<p><i>angado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>angarse</i></p>
@@ -29871,15 +28325,7 @@
 			<p><i>iguaríais</i></p>
 			<p><i>iguarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-			<p><i>iguado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iguarse</i></p>
@@ -30025,15 +28471,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -30179,15 +28617,7 @@
 			<p><i>ernaríais</i></p>
 			<p><i>ernarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-			<p><i>ernado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ernar</i></p>
@@ -30333,15 +28763,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>arse</i></p>
@@ -30487,15 +28909,7 @@
 			<p><i>araríais</i></p>
 			<p><i>ararían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-			<p><i>arado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ararse</i></p>
@@ -30641,15 +29055,7 @@
 			<p><i>implaríais</i></p>
 			<p><i>implarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-			<p><i>implado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>implarse</i></p>
@@ -30795,15 +29201,7 @@
 			<p><i>iparíais</i></p>
 			<p><i>iparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-			<p><i>ipado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iparse</i></p>
@@ -30949,15 +29347,7 @@
 			<p><i>ongaríais</i></p>
 			<p><i>ongarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-			<p><i>ongado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ongarse</i></p>
@@ -31103,15 +29493,7 @@
 			<p><i>ismaríais</i></p>
 			<p><i>ismarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-			<p><i>ismado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ismarse</i></p>
@@ -31257,15 +29639,7 @@
 			<p><i>ozaríais</i></p>
 			<p><i>ozarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-			<p><i>ozado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ozarse</i></p>
@@ -31411,15 +29785,7 @@
 			<p><i>etaríais</i></p>
 			<p><i>etarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>etar</i></p>
@@ -31565,15 +29931,7 @@
 			<p><i>obaríais</i></p>
 			<p><i>obarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-			<p><i>obado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>obar</i></p>
@@ -31719,15 +30077,7 @@
 			<p><i>üiríais</i></p>
 			<p><i>üirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-			<p><i>üido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>üir</i></p>
@@ -31873,15 +30223,7 @@
 			<p><i>iscaríais</i></p>
 			<p><i>iscarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iscarse</i></p>
@@ -32027,15 +30369,7 @@
 			<p><i>imaríais</i></p>
 			<p><i>imarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>imarse</i></p>
@@ -32181,15 +30515,7 @@
 			<p><i>ostaríais</i></p>
 			<p><i>ostarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ostarse</i></p>
@@ -32335,15 +30661,7 @@
 			<p><i>untaríais</i></p>
 			<p><i>untarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-			<p><i>untado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>untarse</i></p>
@@ -32489,15 +30807,7 @@
 			<p><i>endaríais</i></p>
 			<p><i>endarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-			<p><i>endado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>endar</i></p>
@@ -32643,15 +30953,7 @@
 			<p><i>igaríais</i></p>
 			<p><i>igarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-			<p><i>igado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>igarse</i></p>
@@ -32797,15 +31099,7 @@
 			<p><i>entiríais</i></p>
 			<p><i>entirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>entirse</i></p>
@@ -32951,15 +31245,7 @@
 			<p><i>icaríais</i></p>
 			<p><i>icarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-			<p><i>icado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>icar</i></p>
@@ -33105,15 +31391,7 @@
 			<p><i>iraríais</i></p>
 			<p><i>irarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-			<p><i>irado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>irarse</i></p>
@@ -33259,15 +31537,7 @@
 			<p><i>oldaríais</i></p>
 			<p><i>oldarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-			<p><i>oldado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oldar</i></p>
@@ -33413,15 +31683,7 @@
 			<p><i>onaríais</i></p>
 			<p><i>onarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>onar</i></p>
@@ -33567,15 +31829,7 @@
 			<p><i>entaríais</i></p>
 			<p><i>entarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-			<p><i>entado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>entarse</i></p>
@@ -33721,15 +31975,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -33875,15 +32121,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -34029,15 +32267,7 @@
 			<p><i>enderíais</i></p>
 			<p><i>enderían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ender</i></p>
@@ -34183,15 +32413,7 @@
 			<p><i>atendríais</i></p>
 			<p><i>atendrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-			<p><i>atenido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>atenerse</i></p>
@@ -34337,15 +32559,7 @@
 			<p><i>etaríais</i></p>
 			<p><i>etarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-			<p><i>etado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>etarse</i></p>
@@ -34491,15 +32705,7 @@
 			<p><i>estaríais</i></p>
 			<p><i>estarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>estar</i></p>
@@ -34645,15 +32851,7 @@
 			<p><i>ujaríais</i></p>
 			<p><i>ujarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-			<p><i>ujado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ujarse</i></p>
@@ -34799,15 +32997,7 @@
 			<p><i>orceríais</i></p>
 			<p><i>orcerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orcer</i></p>
@@ -34953,15 +33143,7 @@
 			<p><i>oscaríais</i></p>
 			<p><i>oscarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-			<p><i>oscado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oscarse</i></p>
@@ -35107,15 +33289,7 @@
 			<p><i>illaríais</i></p>
 			<p><i>illarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-			<p><i>illado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>illar</i></p>
@@ -35261,15 +33435,7 @@
 			<p><i>esaríais</i></p>
 			<p><i>esarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>esar</i></p>
@@ -35415,15 +33581,7 @@
 			<p><i>unaríais</i></p>
 			<p><i>unarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>unar</i></p>
@@ -35569,15 +33727,7 @@
 			<p><i>uparíais</i></p>
 			<p><i>uparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>upar</i></p>
@@ -35723,15 +33873,7 @@
 			<p><i>uparíais</i></p>
 			<p><i>uparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>upar</i></p>
@@ -35877,15 +34019,7 @@
 			<p><i>eciríais</i></p>
 			<p><i>ecirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ecir</i></p>
@@ -36031,15 +34165,7 @@
 			<p><i>erríais</i></p>
 			<p><i>errían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erer</i></p>
@@ -36185,15 +34311,7 @@
 			<p><i>urcaríais</i></p>
 			<p><i>urcarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-			<p><i>urcado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>urcarse</i></p>
@@ -36339,15 +34457,7 @@
 			<p><i>iaríais</i></p>
 			<p><i>iarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iarse</i></p>
@@ -36493,15 +34603,7 @@
 			<p><i>erneríais</i></p>
 			<p><i>ernerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erner</i></p>
@@ -36647,15 +34749,7 @@
 			<p><i>afaríais</i></p>
 			<p><i>afarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-			<p><i>afado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>afarse</i></p>
@@ -36801,15 +34895,7 @@
 			<p><i>isparíais</i></p>
 			<p><i>isparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-			<p><i>ispado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>isparse</i></p>
@@ -36955,15 +35041,7 @@
 			<p><i>daríais</i></p>
 			<p><i>darían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-			<p><i>dado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>dar</i></p>
@@ -37109,15 +35187,7 @@
 			<p><i>enderíais</i></p>
 			<p><i>enderían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>enderse</i></p>
@@ -37263,15 +35333,7 @@
 			<p><i>olaríais</i></p>
 			<p><i>olarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-			<p><i>olado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olarse</i></p>
@@ -37417,15 +35479,7 @@
 			<p><i>egiríais</i></p>
 			<p><i>egirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-			<p><i>egido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>egir</i></p>
@@ -37571,15 +35625,7 @@
 			<p><i>enzaríais</i></p>
 			<p><i>enzarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-			<p><i>enzado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>enzar</i></p>
@@ -37725,15 +35771,7 @@
 			<p><i>eleríais</i></p>
 			<p><i>elerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eler</i></p>
@@ -37879,15 +35917,7 @@
 			<p><i>etraríais</i></p>
 			<p><i>etrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-			<p><i>etrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>etrarse</i></p>
@@ -38033,15 +36063,7 @@
 			<p><i>etiríais</i></p>
 			<p><i>etirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>etir</i></p>
@@ -38187,15 +36209,7 @@
 			<p><i>ortaríais</i></p>
 			<p><i>ortarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ortarse</i></p>
@@ -38341,15 +36355,7 @@
 			<p><i>deríais</i></p>
 			<p><i>derían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>der</i></p>
@@ -38495,15 +36501,7 @@
 			<p><i>imiríais</i></p>
 			<p><i>imirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>imir</i></p>
@@ -38649,15 +36647,7 @@
 			<p><i>ebiríais</i></p>
 			<p><i>ebirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-			<p><i>ebido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ebir</i></p>
@@ -38803,15 +36793,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -38957,15 +36939,7 @@
 			<p><i>omeríais</i></p>
 			<p><i>omerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-			<p><i>omido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>omerse</i></p>
@@ -39111,15 +37085,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ecir</i></p>
@@ -39265,15 +37231,7 @@
 			<p><i>oleríais</i></p>
 			<p><i>olerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oler</i></p>
@@ -39419,15 +37377,7 @@
 			<p><i>esaríais</i></p>
 			<p><i>esarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-			<p><i>esado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>esar</i></p>
@@ -39573,15 +37523,7 @@
 			<p><i>ndiríais</i></p>
 			<p><i>ndirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ndir</i></p>
@@ -39727,15 +37669,7 @@
 			<p><i>miríais</i></p>
 			<p><i>mirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>mir</i></p>
@@ -39881,15 +37815,7 @@
 			<p><i>ontaríais</i></p>
 			<p><i>ontarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ontar</i></p>
@@ -40035,15 +37961,7 @@
 			<p><i>orceríais</i></p>
 			<p><i>orcerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orcerse</i></p>
@@ -40189,15 +38107,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-			<p><i>icho</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ecirse</i></p>
@@ -40343,15 +38253,7 @@
 			<p><i>eleríais</i></p>
 			<p><i>elerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>elerse</i></p>
@@ -40497,15 +38399,7 @@
 			<p><i>enceríais</i></p>
 			<p><i>encerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-			<p><i>encido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>encer</i></p>
@@ -40651,15 +38545,7 @@
 			<p><i>omperíais</i></p>
 			<p><i>omperían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>omper</i></p>
@@ -40805,15 +38691,7 @@
 			<p><i>ostraríais</i></p>
 			<p><i>ostrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ostrar</i></p>
@@ -40959,15 +38837,7 @@
 			<p><i>ostraríais</i></p>
 			<p><i>ostrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-			<p><i>ostrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ostrarse</i></p>
@@ -41113,15 +38983,7 @@
 			<p><i>ordaríais</i></p>
 			<p><i>ordarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ordarse</i></p>
@@ -41267,15 +39129,7 @@
 			<p><i>itaríais</i></p>
 			<p><i>itarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>itarse</i></p>
@@ -41421,15 +39275,7 @@
 			<p><i>islaríais</i></p>
 			<p><i>islarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-			<p><i>islado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>islarse</i></p>
@@ -41575,15 +39421,7 @@
 			<p><i>istaríais</i></p>
 			<p><i>istarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-			<p><i>istado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>istarse</i></p>
@@ -41729,15 +39567,7 @@
 			<p><i>orcaríais</i></p>
 			<p><i>orcarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orcar</i></p>
@@ -41883,15 +39713,7 @@
 			<p><i>ancaríais</i></p>
 			<p><i>ancarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-			<p><i>ancado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ancarse</i></p>
@@ -42037,15 +39859,7 @@
 			<p><i>ontaríais</i></p>
 			<p><i>ontarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-			<p><i>ontado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ontarse</i></p>
@@ -42191,15 +40005,7 @@
 			<p><i>ufaríais</i></p>
 			<p><i>ufarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-			<p><i>ufado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ufarse</i></p>
@@ -42345,15 +40151,7 @@
 			<p><i>andaríais</i></p>
 			<p><i>andarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-			<p><i>andado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>andarse</i></p>
@@ -42499,15 +40297,7 @@
 			<p><i>ustaríais</i></p>
 			<p><i>ustarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-			<p><i>ustado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ustar</i></p>
@@ -42653,15 +40443,7 @@
 			<p><i>azaríais</i></p>
 			<p><i>azarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-			<p><i>azado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>azarse</i></p>
@@ -42807,15 +40589,7 @@
 			<p><i>ulliríais</i></p>
 			<p><i>ullirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ullirse</i></p>
@@ -42961,15 +40735,7 @@
 			<p><i>ulliríais</i></p>
 			<p><i>ullirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-			<p><i>ullido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ullirse</i></p>
@@ -43115,15 +40881,7 @@
 			<p><i>ostaríais</i></p>
 			<p><i>ostarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-			<p><i>ostado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ostarse</i></p>
@@ -43269,15 +41027,7 @@
 			<p><i>ularíais</i></p>
 			<p><i>ularían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ular</i></p>
@@ -43423,15 +41173,7 @@
 			<p><i>edraríais</i></p>
 			<p><i>edrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-			<p><i>edrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>edrar</i></p>
@@ -43577,15 +41319,7 @@
 			<p><i>ovaríais</i></p>
 			<p><i>ovarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-			<p><i>ovado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ovar</i></p>
@@ -43731,15 +41465,7 @@
 			<p><i>osaríais</i></p>
 			<p><i>osarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-			<p><i>osado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>osar</i></p>
@@ -43885,15 +41611,7 @@
 			<p><i>erviríais</i></p>
 			<p><i>ervirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ervir</i></p>
@@ -44039,15 +41757,7 @@
 			<p><i>ifaríais</i></p>
 			<p><i>ifarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-			<p><i>ifado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ifarse</i></p>
@@ -44193,15 +41903,7 @@
 			<p><i>elaríais</i></p>
 			<p><i>elarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-			<p><i>elado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>elar</i></p>
@@ -44347,15 +42049,7 @@
 			<p><i>erbaríais</i></p>
 			<p><i>erbarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-			<p><i>erbado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erbar</i></p>
@@ -44501,15 +42195,7 @@
 			<p><i>endraríais</i></p>
 			<p><i>endrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-			<p><i>endrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>endrar</i></p>
@@ -44655,15 +42341,7 @@
 			<p><i>arcaríais</i></p>
 			<p><i>arcarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-			<p><i>arcado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>arcarse</i></p>
@@ -44809,15 +42487,7 @@
 			<p><i>embraríais</i></p>
 			<p><i>embrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-			<p><i>embrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>embrar</i></p>
@@ -44963,15 +42633,7 @@
 			<p><i>utriríais</i></p>
 			<p><i>utrirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-			<p><i>utrido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>utrirse</i></p>
@@ -45117,15 +42779,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ír</i></p>
@@ -45271,15 +42925,7 @@
 			<p><i>otaríais</i></p>
 			<p><i>otarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-			<p><i>otado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>otarse</i></p>
@@ -45425,15 +43071,7 @@
 			<p><i>ezaríais</i></p>
 			<p><i>ezarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-			<p><i>ezado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ezarse</i></p>
@@ -45579,15 +43217,7 @@
 			<p><i>ertaríais</i></p>
 			<p><i>ertarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-			<p><i>ertado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ertar</i></p>
@@ -45733,15 +43363,7 @@
 			<p><i>uparíais</i></p>
 			<p><i>uparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-			<p><i>upado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uparse</i></p>
@@ -45887,15 +43509,7 @@
 			<p><i>eeríais</i></p>
 			<p><i>eerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eer</i></p>
@@ -46041,15 +43655,7 @@
 			<p><i>oseríais</i></p>
 			<p><i>oserían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-			<p><i>osido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oserse</i></p>
@@ -46195,15 +43801,7 @@
 			<p><i>estiríais</i></p>
 			<p><i>estirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>estir</i></p>
@@ -46349,15 +43947,7 @@
 			<p><i>iviríais</i></p>
 			<p><i>ivirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-			<p><i>ivido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ivirse</i></p>
@@ -46503,15 +44093,7 @@
 			<p><i>ezmaríais</i></p>
 			<p><i>ezmarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-			<p><i>ezmado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ezmar</i></p>
@@ -46657,15 +44239,7 @@
 			<p><i>ignaríais</i></p>
 			<p><i>ignarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-			<p><i>ignado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ignarse</i></p>
@@ -46811,15 +44385,7 @@
 			<p><i>orzaríais</i></p>
 			<p><i>orzarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-			<p><i>orzado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orzarse</i></p>
@@ -46965,15 +44531,7 @@
 			<p><i>diríais</i></p>
 			<p><i>dirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>dir</i></p>
@@ -47119,15 +44677,7 @@
 			<p><i>alaríais</i></p>
 			<p><i>alarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-			<p><i>alado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>alarse</i></p>
@@ -47273,15 +44823,7 @@
 			<p><i>incharíais</i></p>
 			<p><i>incharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-			<p><i>inchado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>incharse</i></p>
@@ -47427,15 +44969,7 @@
 			<p><i>oncaríais</i></p>
 			<p><i>oncarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-			<p><i>oncado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oncarse</i></p>
@@ -47581,15 +45115,7 @@
 			<p><i>adraríais</i></p>
 			<p><i>adrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-			<p><i>adrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>adrarse</i></p>
@@ -47735,15 +45261,7 @@
 			<p><i>añaríais</i></p>
 			<p><i>añarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-			<p><i>añado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>añarse</i></p>
@@ -47889,15 +45407,7 @@
 			<p><i>anzaríais</i></p>
 			<p><i>anzarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-			<p><i>anzado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>anzarse</i></p>
@@ -48043,15 +45553,7 @@
 			<p><i>edaríais</i></p>
 			<p><i>edarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-			<p><i>edado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>edarse</i></p>
@@ -48197,15 +45699,7 @@
 			<p><i>azgaríais</i></p>
 			<p><i>azgarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-			<p><i>azgado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>azgarse</i></p>
@@ -48351,15 +45845,7 @@
 			<p><i>erraríais</i></p>
 			<p><i>errarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-			<p><i>errado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>errarse</i></p>
@@ -48505,15 +45991,7 @@
 			<p><i>oncharíais</i></p>
 			<p><i>oncharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-			<p><i>onchado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oncharse</i></p>
@@ -48659,15 +46137,7 @@
 			<p><i>ambraríais</i></p>
 			<p><i>ambrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-			<p><i>ambrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ambrarse</i></p>
@@ -48813,15 +46283,7 @@
 			<p><i>utaríais</i></p>
 			<p><i>utarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-			<p><i>utado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>utarse</i></p>
@@ -48967,15 +46429,7 @@
 			<p><i>avaríais</i></p>
 			<p><i>avarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-			<p><i>avado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>avarse</i></p>
@@ -49121,15 +46575,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ajado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ajarse</i></p>
@@ -49275,15 +46721,7 @@
 			<p><i>ivaríais</i></p>
 			<p><i>ivarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-			<p><i>ivado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ivarse</i></p>
@@ -49429,15 +46867,7 @@
 			<p><i>ancharíais</i></p>
 			<p><i>ancharían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-			<p><i>anchado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ancharse</i></p>
@@ -49583,15 +47013,7 @@
 			<p><i>ogaríais</i></p>
 			<p><i>ogarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ogarse</i></p>
@@ -49737,15 +47159,7 @@
 			<p><i>uscaríais</i></p>
 			<p><i>uscarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-			<p><i>uscado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uscarse</i></p>
@@ -49891,15 +47305,7 @@
 			<p><i>asgaríais</i></p>
 			<p><i>asgarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-			<p><i>asgado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>asgarse</i></p>
@@ -50045,15 +47451,7 @@
 			<p><i>usgaríais</i></p>
 			<p><i>usgarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-			<p><i>usgado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>usgarse</i></p>
@@ -50199,15 +47597,7 @@
 			<p><i>garíais</i></p>
 			<p><i>garían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>gar</i></p>
@@ -50353,15 +47743,7 @@
 			<p><i>ocaríais</i></p>
 			<p><i>ocarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-			<p><i>ocado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ocarse</i></p>
@@ -50507,15 +47889,7 @@
 			<p><i>odaríais</i></p>
 			<p><i>odarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>odar</i></p>
@@ -50661,15 +48035,7 @@
 			<p><i>obraríais</i></p>
 			<p><i>obrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-			<p><i>obrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>obrarse</i></p>
@@ -50815,15 +48181,7 @@
 			<p><i>oñaríais</i></p>
 			<p><i>oñarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-			<p><i>oñado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oñar</i></p>
@@ -50969,15 +48327,7 @@
 			<p><i>acaríais</i></p>
 			<p><i>acarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-			<p><i>acado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>acarse</i></p>
@@ -51123,15 +48473,7 @@
 			<p><i>ercaríais</i></p>
 			<p><i>ercarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-			<p><i>ercado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ercarse</i></p>
@@ -51277,15 +48619,7 @@
 			<p><i>orcaríais</i></p>
 			<p><i>orcarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-			<p><i>orcado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orcarse</i></p>
@@ -51431,15 +48765,7 @@
 			<p><i>ortaríais</i></p>
 			<p><i>ortarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-			<p><i>ortado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ortar</i></p>
@@ -51585,15 +48911,7 @@
 			<p><i>oriríais</i></p>
 			<p><i>orirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-			<p><i>uerto</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orir</i></p>
@@ -51739,15 +49057,7 @@
 			<p><i>emaríais</i></p>
 			<p><i>emarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-			<p><i>emado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>emar</i></p>
@@ -51893,15 +49203,7 @@
 			<p><i>omparíais</i></p>
 			<p><i>omparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-			<p><i>ompado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>omparse</i></p>
@@ -52047,15 +49349,7 @@
 			<p><i>umiríais</i></p>
 			<p><i>umirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>umirse</i></p>
@@ -52201,15 +49495,7 @@
 			<p><i>ijaríais</i></p>
 			<p><i>ijarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-			<p><i>ijado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ijarse</i></p>
@@ -52355,15 +49641,7 @@
 			<p><i>inaríais</i></p>
 			<p><i>inarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>inarse</i></p>
@@ -52509,15 +49787,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>arse</i></p>
@@ -52663,15 +49933,7 @@
 			<p><i>imiríais</i></p>
 			<p><i>imirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>imir</i></p>
@@ -52817,15 +50079,7 @@
 			<p><i>aríais</i></p>
 			<p><i>arían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -52971,15 +50225,7 @@
 			<p><i>enderíais</i></p>
 			<p><i>enderían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ender</i></p>
@@ -53125,15 +50371,7 @@
 			<p><i>guiríais</i></p>
 			<p><i>guirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>guir</i></p>
@@ -53279,15 +50517,7 @@
 			<p><i>FALSEaríais</i></p>
 			<p><i>FALSEarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-			<p><i>FALSEado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>FALSEar</i></p>
@@ -53433,15 +50663,7 @@
 			<p><i>ollaríais</i></p>
 			<p><i>ollarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-			<p><i>ollado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ollarse</i></p>
@@ -53587,15 +50809,7 @@
 			<p><i>eiríais</i></p>
 			<p><i>eirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-			<p><i>eído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eír</i></p>
@@ -53741,15 +50955,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>uado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>uar</i></p>
@@ -53895,15 +51101,7 @@
 			<p><i>emiríais</i></p>
 			<p><i>emirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>emir</i></p>
@@ -54049,15 +51247,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>zado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>zar</i></p>
@@ -54203,15 +51393,7 @@
 			<p><i>ederíais</i></p>
 			<p><i>ederían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eder</i></p>
@@ -54357,15 +51539,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>elado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>elar</i></p>
@@ -54511,15 +51685,7 @@
 			<p><i>enchiríais</i></p>
 			<p><i>enchirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-			<p><i>enchido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>enchir</i></p>
@@ -54665,15 +51831,7 @@
 			<p><i>endiríais</i></p>
 			<p><i>endirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>endir</i></p>
@@ -54819,15 +51977,7 @@
 			<p><i>erviríais</i></p>
 			<p><i>ervirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ervir</i></p>
@@ -54973,15 +52123,7 @@
 			<p><i>oparíais</i></p>
 			<p><i>oparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-			<p><i>opado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oparse</i></p>
@@ -55127,15 +52269,7 @@
 			<p><i>riríais</i></p>
 			<p><i>rirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>rir</i></p>
@@ -55281,15 +52415,7 @@
 			<p><i>eriríais</i></p>
 			<p><i>erirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erir</i></p>
@@ -55435,15 +52561,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>irse</i></p>
@@ -55589,15 +52707,7 @@
 			<p><i>actaríais</i></p>
 			<p><i>actarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-			<p><i>actado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>actarse</i></p>
@@ -55743,15 +52853,7 @@
 			<p><i>erdaríais</i></p>
 			<p><i>erdarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-			<p><i>erdado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erdar</i></p>
@@ -55897,15 +52999,7 @@
 			<p><i>estaríais</i></p>
 			<p><i>estarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-			<p><i>estado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>estar</i></p>
@@ -56051,15 +53145,7 @@
 			<p><i>tiríais</i></p>
 			<p><i>tirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>tir</i></p>
@@ -56205,15 +53291,7 @@
 			<p><i>irlaríais</i></p>
 			<p><i>irlarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-			<p><i>irlado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>irlarse</i></p>
@@ -56359,15 +53437,7 @@
 			<p><i>orderíais</i></p>
 			<p><i>orderían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-			<p><i>ordido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>order</i></p>
@@ -56513,15 +53583,7 @@
 			<p><i>ceríais</i></p>
 			<p><i>cerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>cer</i></p>
@@ -56667,15 +53729,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>evado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>evar</i></p>
@@ -56821,15 +53875,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>cado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>car</i></p>
@@ -56975,15 +54021,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -57129,15 +54167,7 @@
 			<p><i>erderíais</i></p>
 			<p><i>erderían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-			<p><i>erdido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erder</i></p>
@@ -57283,15 +54313,7 @@
 			<p><i>intaríais</i></p>
 			<p><i>intarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-			<p><i>intado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>intarse</i></p>
@@ -57437,15 +54459,7 @@
 			<p><i>irraríais</i></p>
 			<p><i>irrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-			<p><i>irrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>irrarse</i></p>
@@ -57591,15 +54605,7 @@
 			<p><i>ondríais</i></p>
 			<p><i>ondrían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-			<p><i>uesto</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oner</i></p>
@@ -57745,15 +54751,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -57899,15 +54897,7 @@
 			<p><i>nderíais</i></p>
 			<p><i>nderían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>nder</i></p>
@@ -58053,15 +55043,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ar</i></p>
@@ -58207,15 +55189,7 @@
 			<p><i>ellaríais</i></p>
 			<p><i>ellarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-			<p><i>ellado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ellarse</i></p>
@@ -58361,15 +55335,7 @@
 			<p><i>egraríais</i></p>
 			<p><i>egrarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-			<p><i>egrado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>egrarse</i></p>
@@ -58515,15 +55481,7 @@
 			<p><i>urtaríais</i></p>
 			<p><i>urtarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-			<p><i>urtado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>urtarse</i></p>
@@ -58669,15 +55627,7 @@
 			<p><i>ansaríais</i></p>
 			<p><i>ansarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-			<p><i>ansado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ansarse</i></p>
@@ -58823,15 +55773,7 @@
 			<p><i>ilgaríais</i></p>
 			<p><i>ilgarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-			<p><i>ilgado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ilgarse</i></p>
@@ -58977,15 +55919,7 @@
 			<p><i>endiríais</i></p>
 			<p><i>endirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>endir</i></p>
@@ -59131,15 +56065,7 @@
 			<p><i>olgaríais</i></p>
 			<p><i>olgarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-			<p><i>olgado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olgar</i></p>
@@ -59285,15 +56211,7 @@
 			<p><i>emblaríais</i></p>
 			<p><i>emblarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-			<p><i>emblado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>emblar</i></p>
@@ -59439,15 +56357,7 @@
 			<p><i>orceríais</i></p>
 			<p><i>orcerían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-			<p><i>orcido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>orcer</i></p>
@@ -59593,15 +56503,7 @@
 			<p><i>eparíais</i></p>
 			<p><i>eparían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-			<p><i>epado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eparse</i></p>
@@ -59747,15 +56649,7 @@
 			<p><i>erteríais</i></p>
 			<p><i>erterían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erter</i></p>
@@ -59901,15 +56795,7 @@
 			<p><i>olcaríais</i></p>
 			<p><i>olcarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-			<p><i>olcado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>olcar</i></p>
@@ -60055,15 +56941,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>iado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>iar</i></p>
@@ -60209,15 +57087,7 @@
 			<p><i>ogaríais</i></p>
 			<p><i>ogarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-			<p><i>ogado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ogar</i></p>
@@ -60363,15 +57233,7 @@
 			<p><i>mperíais</i></p>
 			<p><i>mperían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>mper</i></p>
@@ -60517,15 +57379,7 @@
 			<p><i>ornaríais</i></p>
 			<p><i>ornarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-			<p><i>ornado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ornarse</i></p>
@@ -60671,15 +57525,7 @@
 			<p><i>erteríais</i></p>
 			<p><i>erterían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erterse</i></p>
@@ -60825,15 +57671,7 @@
 			<p><i>idaríais</i></p>
 			<p><i>idarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-			<p><i>idado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>idarse</i></p>
@@ -60979,15 +57817,7 @@
 			<p><i>oltaríais</i></p>
 			<p><i>oltarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-			<p><i>oltado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>oltar</i></p>
@@ -61133,15 +57963,7 @@
 			<p><i>onaríais</i></p>
 			<p><i>onarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-			<p><i>onado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>onarse</i></p>
@@ -61287,15 +58109,7 @@
 			<p><i>odaríais</i></p>
 			<p><i>odarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-			<p><i>odado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>odarse</i></p>
@@ -61441,15 +58255,7 @@
 			<p><i>iríais</i></p>
 			<p><i>irían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ir</i></p>
@@ -61595,15 +58401,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ido</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>er</i></p>
@@ -61749,15 +58547,7 @@
 			<p><i>imaríais</i></p>
 			<p><i>imarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-			<p><i>imado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>imarse</i></p>
@@ -61903,15 +58693,7 @@
 			<p><i>eñiríais</i></p>
 			<p><i>eñirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-			<p><i>eñido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>eñir</i></p>
@@ -62057,15 +58839,7 @@
 			<p><i>uciríais</i></p>
 			<p><i>ucirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-			<p><i>ucido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ucirse</i></p>
@@ -62211,15 +58985,7 @@
 			<p><i>ordaríais</i></p>
 			<p><i>ordarían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-			<p><i>ordado</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>ordarse</i></p>
@@ -62365,15 +59131,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>onado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>onar</i></p>
@@ -62519,15 +59277,7 @@
 			<p><i>uniríais</i></p>
 			<p><i>unirían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>unirse</i></p>
@@ -62673,15 +59423,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>entado</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>entar</i></p>
@@ -62827,15 +59569,7 @@
 			<p><i>eríais</i></p>
 			<p><i>erían</i></p>
 		</Condicional-condicional>
-		<Condicional-perfecto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Condicional-perfecto>
-	</Condicional>
+		</Condicional>
 	<Infinitivo>
 		<Infinitivo-infinitivo>
 			<p><i>erse</i></p>
