@@ -40,27 +40,27 @@ class InflectorEs(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Participo-participo']
+        return ['participo-participo']
 
     def _get_helping_verb(self, infinitive):
         return 'haber'
 
     def _get_participle_mood_name(self):
-        return 'Participo'
+        return 'participo'
 
     def _get_participle_tense_name(self):
-        return 'Participo-participo'
+        return 'participo-participo'
 
     def _get_compound_conjugations_hv_map(self):
         return {
-            'Indicativo': {
-                'Indicativo-pretérito-perfecto-compuesto': 'Indicativo-presente',
-                'Indicativo-pretérito-pluscuamperfecto': 'Indicativo-pretérito-imperfecto',
-                'Indicativo-pretérito-anterior': 'Indicativo-pretérito-perfecto-simple',
-                'Indicativo-futuro-perfecto': 'Indicativo-futuro'
+            'indicativo': {
+                'indicativo-pretérito-perfecto-compuesto': 'presente',
+                'indicativo-pretérito-pluscuamperfecto': 'pretérito-imperfecto',
+                'indicativo-pretérito-anterior': 'pretérito-perfecto-simple',
+                'futuro-perfecto': 'futuro'
             },
-            'Condicional': {
-                'Condicional-perfecto': 'Condicional-condicional'
+            'condicional': {
+                'condicional-perfecto': 'condicional-condicional'
             },
             'Subjuntivo': {
                 'Subjuntivo-pretérito-perfecto': 'Subjuntivo-presente',
