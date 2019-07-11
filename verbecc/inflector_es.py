@@ -61,5 +61,8 @@ class InflectorEs(inflector.Inflector):
             },
             'Condicional': {
                 'Condicional-perfecto': 'Condicional-condicional'
+            },
+            'Subjuntivo': {
+                'Subjuntivo-pretérito-perfecto': 'Subjuntivo-presente'
             }
         }

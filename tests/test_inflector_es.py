@@ -8,6 +8,11 @@ from verbecc.tense_template import TenseTemplate
 
 inf = inflector_es.InflectorEs()
 
+# Subjuntivo-presente = Subjunctive Present (yo haya)
+# Subjuntivo-pretérito-perfecto = Subjunctive Perfect (yo haya habido)
+# Subjuntivo-pretérito-imperfecto-1 = Subjunctive Past 1 (yo hubiera)
+# Subjuntivo-pretérito-imperfecto-2 = Subjunctive Past 2 (yo hubiese)
+
 test_es_conjugate_mood_tense_data = [
     ('abañar', 'Indicativo', 'Indicativo-presente', 
         ['yo abaño', 'tú abañas', 'él abaña', 'nosotros abañamos', 'vosotros abañáis', 'ellos abañan']),
@@ -27,6 +32,8 @@ test_es_conjugate_mood_tense_data = [
         ['yo habré', 'tú habrás', 'él habrá', 'nosotros habremos', 'vosotros habréis', 'ellos habrán']),
     ('haber', 'Condicional', 'Condicional-condicional',
         ['yo habría', 'tú habrías', 'él habría', 'nosotros habríamos', 'vosotros habríais', 'ellos habrían']),
+    ('haber', 'Subjuntivo', 'Subjuntivo-presente',
+        ['yo haya', 'tú hayas', 'él haya', 'nosotros hayamos', 'vosotros hayáis', 'ellos hayan']),
     ('hacer', 'Indicativo', 'Indicativo-presente', 
         ['yo hago', 'tú haces', 'él hace', 'nosotros hacemos', 'vosotros hacéis', 'ellos hacen']),
     ('ir', 'Indicativo', 'Indicativo-presente',
@@ -48,7 +55,9 @@ test_es_conjugate_mood_tense_data = [
     ('comer', 'Indicativo', 'Indicativo-futuro-perfecto',
         ['yo habré comido', 'tú habrás comido', 'él habrá comido', 'nosotros habremos comido', 'vosotros habréis comido', 'ellos habrán comido']),
     ('comer', 'Condicional', 'Condicional-perfecto',
-        ['yo habría comido', 'tú habrías comido', 'él habría comido', 'nosotros habríamos comido', 'vosotros habríais comido', 'ellos habrían comido'])
+        ['yo habría comido', 'tú habrías comido', 'él habría comido', 'nosotros habríamos comido', 'vosotros habríais comido', 'ellos habrían comido']),
+    ('comer', 'Subjuntivo', 'Subjuntivo-pretérito-perfecto',
+        ['yo haya comido', 'tú hayas comido', 'él haya comido', 'nosotros hayamos comido', 'vosotros hayáis comido', 'ellos hayan comido'])
 ]
 
 """
