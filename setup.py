@@ -4,15 +4,16 @@ from setuptools import setup, find_packages
 
 exec(open('verbecc/version.py').read())
 
-with open("README.md", "r", encoding='utf-8') as f:
+with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 requirements = [
-    "lxml>=4.1.1",
-    "mock>=2.0.0,<3.0.0",
-    "pytest>=3.0.6,<4.0.0",
-    "pytest-cov>=2.4.0,<3.0.0",
-    "pylama>=7.4.1,<8.0.0",
+    'lxml>=4.1.1',
+    'mock>=2.0.0,<3.0.0',
+    'pytest>=3.0.6,<4.0.0',
+    'pytest-cov>=2.4.0,<3.0.0',
+    'pylama>=7.4.1,<8.0.0',
+    'cython'
     'numpy',
     'scipy',
     'scikit-learn>=0.20.3'
