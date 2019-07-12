@@ -13,7 +13,7 @@ requirements = [
     'pytest>=3.0.6,<4.0.0',
     'pytest-cov>=2.4.0,<3.0.0',
     'pylama>=7.4.1,<8.0.0',
-    'cython'
+    'cython',
     'numpy',
     'scipy',
     'scikit-learn>=0.20.3'
