@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-from verbecc import __version__, __author__, __license__
+
+exec(open('verbecc/version.py').read())
 
 with open("README.md", "r", encoding='utf-8') as f:
     long_description = f.read()
