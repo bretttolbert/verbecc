@@ -1,6 +1,7 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-from verbecc import __version__
+from verbecc import __version__, __author__, __license__
 
 with open("README.md", "r", encoding='utf-8') as f:
     long_description = f.read()
@@ -19,12 +20,15 @@ setup(
     description='Verbes, complètement conjugués - conjugueur français | Verbs, completely conjugated - French conjugator',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author='Brett Tolbert',
+    author=__author__,
     author_email='brett.tolbert@gmail.com',
     url='https://github.com/bretttolbert/verbecc',
+    license=__license__,
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
+    keywords='conjugate conjugator conjugation conjugaison conjugación'
+             ' verbs verbes verbos linguistics linguistique linguistica',
     install_requires=install_requires,
     tests_require=install_requires,
     test_suite="tests",
@@ -33,6 +37,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Operating System :: OS Independent",
         "Natural Language :: French",
+        "Natural Language :: Spanish",
         "Development Status :: 5 - Production/Stable",
         "Topic :: Education",
         "Topic :: Software Development :: Libraries :: Python Modules",
