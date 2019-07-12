@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import re
-import pickle
 import random
 from collections import defaultdict
-import pkg_resources
-from zipfile import ZipFile
 from functools import partial
 
 from sklearn.feature_selection import SelectFromModel

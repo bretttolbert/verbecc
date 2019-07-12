@@ -11,21 +11,20 @@ https://github.com/bretttolbert/verbecc
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines)
 
 #### Features
-* Over 7,000 French verbs and 9,000 Spanish verbs supported
-* Uses machine learning techniques to conjugate unrecognized verbs with 99% accurracy
+* Built-in support for over 7,000 French verbs and 9,000 Spanish verbs
+* Uses machine learning techniques to predict conjugation of unknown verbs with 99% accurracy
+* Includes both simple and compound conjugations
 * pip installable
 * Unit tested
-* Continuous Integration and Deployment with GitLab CI/CD
-* Dependencies: lxml
+* Continuous integration with GitLab CI/CD
+* Dependencies: scikit-learn, lxml
 
 #### Credits
-Created with the help of [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/). French verb conjugation template XML files derived from [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html). Spanish verb conjugation XML files and machine-learning conjugation template prediction for unknown verbs dervied from [mlconjug](https://github.com/SekouD/mlconjug).
+Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/). French verb conjugation template XML files derived from [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html). Spanish verb conjugation XML files and machine-learning conjugation template prediction for unknown verbs dervied from [mlconjug](https://github.com/SekouD/mlconjug).
 
 ## verbecc-svc
 
-#### verbecc-svc Microservice Python avec un API REST pour la conjugaison des verbes français
-
-#### verbecc-svc Python microservice with REST API for conjugation of French verbs
+#### verbecc-svc Dockerized microservice with REST API for conjugation of any verb in French and Spanish
 
 https://github.com/bretttolbert/verbecc-svc
 
@@ -35,10 +34,10 @@ https://github.com/bretttolbert/verbecc-svc
 http://verbe.cc/vcfr/conjugate/manger
 
 #### Features
-* Dockerized microservice
+* Self-contained dockerized microservice
 * Unit tested
-* Continuous Integration and Deployment with GitLab CI/CD
-* RESTful API with JSON responses
+* Continuous integration with GitLab CI/CD
+* Convenient JSON REST API
 * Dependencies: verbecc
 
 #### Credits
@@ -47,9 +46,7 @@ Created with the help of [verbecc](https://github.com/bretttolbert/verbecc), [Fa
 
 ## verbecc-web
 
-#### Une interface web pour verbecc-svc
-
-#### Web front-end for verbecc-svc
+#### Web front-end for verbecc-svc - conjugation of any verb in French and Spanish
 
 https://github.com/bretttolbert/verbecc-web
 
