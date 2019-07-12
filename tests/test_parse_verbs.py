@@ -26,11 +26,6 @@ def test_verb_two():
     assert verb.template == "bat:tre"
     assert verb.translation_en == "tear down"
 
-def test_verb_not_found():
-    vp = parse_verbs.VerbsParser()
-    with pytest.raises(exceptions.VerbNotFoundError):
-        verb = vp.find_verb_by_infinitive("foo")
-
 @patch('lxml.etree._Element')
 def test_verb_invalid_xml(mock_v_elem):
     mock_v_elem.tag.return_value = "not-v"

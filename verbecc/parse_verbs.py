@@ -11,6 +11,7 @@ from pkg_resources import resource_filename
 from . import string_utils
 from . import verb
 from . import exceptions
+from . import mlconjug
 
 class VerbsParser:
     def __init__(self, lang='fr'):
@@ -33,11 +34,16 @@ class VerbsParser:
         self._infinitives = [v.infinitive for v in self.verbs]
         self._verbs_no_accents = sorted(self.verbs, key=lambda v: v.infinitive_no_accents)
         self._infinitives_no_accents = [v.infinitive_no_accents for v in self._verbs_no_accents]
+        self.template_predictor = mlconjug.TemplatePredictor(
+            [(v.infinitive,v.template) for v in self.verbs], lang)
 
     def find_verb_by_infinitive(self, infinitive):
         """First try to find with accents, e.g. if infinitive is 'Abañar',
         search for 'abañar' and not 'abanar'. 
-        If not found then try searching with accents stripped."""
+        If not found then try searching with accents stripped.
+        If all else fails, use machine-learning magic to predict
+        which conjugation template should be used.
+        """
         query = infinitive.lower()
         i = bisect_left(self._infinitives, query)
         if i != len(self._infinitives) and self._infinitives[i] == query:
@@ -47,7 +53,12 @@ class VerbsParser:
         if (i != len(self._infinitives_no_accents) 
         and self._infinitives_no_accents[i] == query):
             return self._verbs_no_accents[i]
-        raise exceptions.VerbNotFoundError
+        template, pred_score = self.template_predictor.predict(query)
+        verb_xml = "<v><i>{}</i><t>{}</t></v>".format(query, template)
+        ret = verb.Verb(etree.fromstring(verb_xml))
+        ret.predicted = True
+        ret.pred_score = pred_score
+        return ret
 
     def get_verbs_that_start_with(self, pre, max_results=10):
         ret = []

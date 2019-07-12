@@ -9,6 +9,8 @@ class Verb:
         if v_elem.tag != 'v':
             raise exceptions.VerbsParserError("Unexpected element")
         try:
+            self.predicted = False
+            self.pred_score = 1.0
             self.infinitive = u'' + v_elem.find('i').text
             self.infinitive_no_accents = \
                 string_utils.strip_accents(self.infinitive)

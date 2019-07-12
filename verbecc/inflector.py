@@ -20,6 +20,8 @@ class Inflector(ABC):
         for mood in co.template.moods:
             moods[mood] = self._conjugate_mood(co, mood)
         return {'verb': {'infinitive': co.verb.infinitive, 
+                         'predicted': co.verb.predicted,
+                         'pred_score': co.verb.pred_score,
                          'template': co.verb.template,
                          'translation_en': co.verb.translation_en,
                          'stem': co.verb_stem}, 
@@ -35,6 +37,9 @@ class Inflector(ABC):
 
     def get_verbs_list(self):
         return [v.infinitive for v in self._verb_parser.verbs]
+
+    def get_templates_list(self):
+        return [t.name for t in self._conj_parser.templates]
 
     def find_verb_by_infinitive(self, infinitive):
         return self._verb_parser.find_verb_by_infinitive(infinitive)

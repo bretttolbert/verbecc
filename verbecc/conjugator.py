@@ -30,6 +30,9 @@ class Conjugator:
     def get_verbs_list(self):
         return self._inflector.get_verbs_list()
 
+    def get_templates_list(self):
+        return self._inflector.get_templates_list()
+
     def find_verb_by_infinitive(self, infinitive):
         return self._inflector.find_verb_by_infinitive(infinitive)
 

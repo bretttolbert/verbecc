@@ -180,6 +180,8 @@ def test_conjugator_conjugate_imperatif_passe_with_etre():
 expected_resp_conj_manger = {
     "verb": {
         "infinitive": "manger",
+        "predicted": False,
+        "pred_score": 1.0,
         "template": "man:ger",
         "translation_en": "eat",
         "stem": "man"
@@ -337,6 +339,8 @@ expected_resp_conj_manger = {
 expected_resp_conj_pouvoir = {
     "verb": {
         "infinitive": "pouvoir",
+        "predicted": False,
+        "pred_score": 1.0,
         "template": "p:ouvoir",
         "translation_en": "power",
         "stem": "p"
@@ -486,6 +490,8 @@ expected_resp_conj_pouvoir = {
 expected_resp_conj_pleuvoir = {
     "verb": {
         "infinitive": "pleuvoir",
+        "predicted": False,
+        "pred_score": 1.0,
         "template": "pl:euvoir",
         "translation_en": "rain",
         "stem": "pl"
@@ -579,6 +585,8 @@ expected_resp_conj_pleuvoir = {
 expected_resp_conj_se_lever = {
     "verb": {
         "infinitive": "lever",
+        "predicted": False,
+        "pred_score": 1.0,
         "template": "l:ever",
         "translation_en": "lift",
         "stem": "l"
@@ -742,10 +750,6 @@ test_conj_data = [
 def test_conjugator_conjugate(infinitive, expected_resp):
     assert cg.conjugate(infinitive) == expected_resp
 
-def test_conjugator_conjugate_verb_not_found():
-    with pytest.raises(exceptions.VerbNotFoundError):
-        cg.conjugate("oops")
-
 def test_conjugator_conjugate_invalid_mood():
     with pytest.raises(exceptions.InvalidMoodError):
         cg.conjugate_mood("manger", "oops")
@@ -778,10 +782,6 @@ test_find_infinitive_data = [
                          test_find_infinitive_data)
 def test_conjugator_find_verb_by_infinitive_verb(query, expected_resp):
     cg.find_verb_by_infinitive(query) == expected_resp
-
-def test_conjugator_find_verb_by_infinitive_verb_not_found():
-    with pytest.raises(exceptions.VerbNotFoundError):
-        cg.find_verb_by_infinitive("oops")
 
 def test_conjugator_find_template_template_not_found():
     with pytest.raises(exceptions.TemplateNotFoundError):
