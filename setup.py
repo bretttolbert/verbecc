@@ -7,7 +7,7 @@ exec(open('verbecc/version.py').read())
 with open("README.md", "r", encoding='utf-8') as f:
     long_description = f.read()
 
-install_requires = [
+requirements = [
     "lxml>=4.1.1",
     "mock>=2.0.0,<3.0.0",
     "pytest>=3.0.6,<4.0.0",
@@ -21,30 +21,42 @@ install_requires = [
 setup(
     name='verbecc',
     version=__version__,
-    description='Verbes, complètement conjugués - conjugueur français | Verbs, completely conjugated - French conjugator',
+    description='Verbs, Completely Conjugated - Conjugator for French and Spanish using ML techniques to conjugate any verb',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author=__author__,
     author_email='brett.tolbert@gmail.com',
     url='https://github.com/bretttolbert/verbecc',
-    license=__license__,
     packages=find_packages(),
     include_package_data=True,
+    install_requires=requirements,
+    license=__license__,
     zip_safe=False,
     keywords='conjugate conjugator conjugation conjugaison conjugación'
-             ' verbs verbes verbos linguistics linguistique linguistica',
-    install_requires=install_requires,
-    tests_require=install_requires,
-    test_suite="tests",
+             ' verbs verbes verbos ML machine-learning NLP linguistics linguistique linguistica sklearn',
     classifiers=[
-        "Programming Language :: Python :: 3.7",
-        "License :: OSI Approved :: GNU General Public License (GPL)",
-        "Operating System :: OS Independent",
-        "Natural Language :: French",
-        "Natural Language :: Spanish",
-        "Development Status :: 5 - Production/Stable",
-        "Topic :: Education",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: Text Processing :: Linguistic"
+        'Development Status :: 5 - Production/Stable',
+
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Text Processing :: Linguistic'
+        'Topic :: Education',
+        'Topic :: Scientific/Engineering :: Artificial Intelligence',
+        'Topic :: Utilities',
+        'Intended Audience :: Developers',
+        'Intended Audience :: End Users/Desktop',
+        'Intended Audience :: Education',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: GNU General Public License (GPL)',
+        'Natural Language :: French',
+        'Natural Language :: Spanish',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
+    tests_require=requirements,
+    test_suite="tests",
 )
