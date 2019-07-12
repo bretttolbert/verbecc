@@ -38,7 +38,7 @@ setup(
         'Development Status :: 5 - Production/Stable',
 
         'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Text Processing :: Linguistic'
+        'Topic :: Text Processing :: Linguistic',
         'Topic :: Education',
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Topic :: Utilities',
