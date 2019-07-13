@@ -1,2 +1,2 @@
 include *.txt
-recursive-include verbecc *.txt *.py *.xml
+recursive-include verbecc *
