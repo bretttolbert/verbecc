@@ -54,7 +54,7 @@ class VerbsParser:
         and self._infinitives_no_accents[i] == query):
             return self._verbs_no_accents[i]
         template, pred_score = self.template_predictor.predict(query)
-        verb_xml = "<v><i>{}</i><t>{}</t></v>".format(query, template)
+        verb_xml = "<v><i>{}</i><t>{}</t></v>".format(infinitive.lower(), template)
         ret = verb.Verb(etree.fromstring(verb_xml))
         ret.predicted = True
         ret.pred_score = pred_score
