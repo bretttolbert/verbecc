@@ -1,4 +1,7 @@
-## verbecc
+
+![verbecc logo](https://raw.githubusercontent.com/bretttolbert/verbecc/master/logo/verbecc.png)
+
+[![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines)
 
 #### Verbs, completely conjugated - French and Spanish verb conjugator
 
@@ -7,8 +10,6 @@
 #### Verbos, completamente conjugados - conjugador de verbos francés y español
 
 https://github.com/bretttolbert/verbecc
-
-[![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines)
 
 #### Features
 * Built-in support for over 7,000 French verbs and 9,000 Spanish verbs
@@ -22,13 +23,14 @@ https://github.com/bretttolbert/verbecc
 #### Credits
 Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/). French verb conjugation template XML files derived from [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html). Spanish verb conjugation XML files and machine-learning conjugation template prediction for unknown verbs dervied from [mlconjug](https://github.com/SekouD/mlconjug).
 
+
 ## verbecc-svc
+
+[![pipeline status](https://gitlab.com/bretttolbert/verb-conjugate-fr/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verb-conjugate-fr/pipelines)
 
 #### verbecc-svc Dockerized microservice with REST API for conjugation of any verb in French and Spanish
 
 https://github.com/bretttolbert/verbecc-svc
-
-[![pipeline status](https://gitlab.com/bretttolbert/verb-conjugate-fr/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verb-conjugate-fr/pipelines)
 
 #### Live demo
 http://verbe.cc/vcfr/conjugate/manger
