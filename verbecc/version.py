@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-__version__ = '1.3.5'
+__version__ = '1.4.0'
 __author__ = 'Brett Tolbert'
 __maintainer__ = 'Brett Tolbert'
 __copyright__ = 'Copyright (c) 2019 Brett Tolbert'

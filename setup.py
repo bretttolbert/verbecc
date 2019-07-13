@@ -29,6 +29,7 @@ setup(
     author_email='brett.tolbert@gmail.com',
     url='https://github.com/bretttolbert/verbecc',
     packages=find_packages(),
+    package_data={'trained_models': ['verbecc/data/models/*']},
     include_package_data=True,
     install_requires=requirements,
     license=__license__,

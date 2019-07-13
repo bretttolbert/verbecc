@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import re
+import os
 import random
 from collections import defaultdict
 from functools import partial
+import pickle
+import pkg_resources
+from zipfile import ZipFile
 
 from sklearn.feature_selection import SelectFromModel
 from sklearn.feature_extraction.text import CountVectorizer
@@ -17,8 +21,12 @@ from .grammar_defines import ALPHABET
 class TemplatePredictor:
     def __init__(self, verb_template_pairs, lang):
         self.data_set = DataSet(verb_template_pairs)
-        self.model = Model(lang=lang)
-        self.model.train(self.data_set.train_input, self.data_set.train_labels)
+        model = load_model(lang)
+        if not model:
+            model = Model(lang=lang)
+            model.train(self.data_set.train_input, self.data_set.train_labels)
+            save_model(model)
+        self.model = model
 
     def predict(self, verb):
         prediction = self.model.predict([verb])[0]
@@ -137,7 +145,33 @@ def extract_verb_features(verb, lang, ngram_range):
     final_ngrams.extend((length_feature, vowels_number, consonants_number, vow_cons_ratio))
     return final_ngrams
 
+def get_model_zip_filename(lang):
+    return 'data/models/trained_model-{}.zip'.format(lang)
+    
+def get_model_pickle_filename(lang):
+    return 'trained_model-{0}.pickle'.format(lang)
 
+def save_model(model):
+    pickle_filename = get_model_pickle_filename(model.lang)
+    with open(pickle_filename, 'wb') as f:
+        pickle.dump(model, f)
+    zip_filename = get_model_zip_filename(model.lang)
+    with ZipFile(pkg_resources.resource_filename(
+            "verbecc", zip_filename), mode='w') as zf:
+        zf.write(pickle_filename)
+    os.remove(pickle_filename)
+
+def load_model(lang):
+    model = None
+    zip_filename = get_model_zip_filename(lang)
+    try:
+        with ZipFile(pkg_resources.resource_stream(
+                __name__, zip_filename)) as zf:
+            with zf.open(get_model_pickle_filename(lang), 'r') as model_pickle:
+                model = pickle.loads(model_pickle.read())
+    except:
+        pass
+    return model
 
 class Model:
     """
