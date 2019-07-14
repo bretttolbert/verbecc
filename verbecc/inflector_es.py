@@ -51,6 +51,11 @@ class InflectorEs(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participo-participo'
 
+    def _get_alternate_hv_inflection(self, s):
+        if s.endswith('hay'):
+            return s[:-1]
+        return s
+
     def _get_compound_conjugations_hv_map(self):
         return {
             'indicativo': {

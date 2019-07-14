@@ -7,6 +7,9 @@ class InflectorPt(inflector.Inflector):
         self.lang = 'pt'
         super(InflectorPt, self).__init__()
 
+    def _add_subjunctive_relative_pronoun(self, s):
+        return "que " + s
+
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         ret = ''
         if person == '1s':
@@ -44,6 +47,9 @@ class InflectorPt(inflector.Inflector):
 
     def _get_helping_verb(self, infinitive):
         return 'ter'
+
+    def _get_subjunctive_mood_name(self):
+        return 'Conjuntivo'
 
     def _get_participle_mood_name(self):
         return 'Particípio'

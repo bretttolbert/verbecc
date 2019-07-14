@@ -74,6 +74,12 @@ class InflectorFr(inflector.Inflector):
             infinitive = infinitive[2:]
         return is_reflexive, infinitive
 
+    def _add_subjunctive_relative_pronoun(self, s):
+        if string_utils.starts_with_vowel(s):
+            return "qu'" + s
+        else:
+            return "que " + s
+
     def _get_pronoun_suffix(self, person, gender='m'):
         return '-' + self._get_default_pronoun(person, gender).replace('tu', 'toi')
 
@@ -122,6 +128,9 @@ class InflectorFr(inflector.Inflector):
 
     def _is_helping_verb_inflected(self, helping_verb):
         return helping_verb == 'être'
+
+    def _get_subjunctive_mood_name(self):
+        return 'subjonctif'
 
     def _get_participle_mood_name(self):
         return 'participe'

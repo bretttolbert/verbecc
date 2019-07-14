@@ -70,11 +70,8 @@ class Inflector(ABC):
     def _split_reflexive(self, infinitive):
         return (False, infinitive)
 
-    def _prepend_with_que(self, pronoun_string):
-        if string_utils.starts_with_vowel(pronoun_string):
-            return "qu'" + pronoun_string
-        else:
-            return "que " + pronoun_string
+    def _add_subjunctive_relative_pronoun(self, s):
+        return s
 
     def _prepend_with_se(self, s):
         if string_utils.starts_with_vowel(s):
@@ -147,11 +144,17 @@ class Inflector(ABC):
     def _is_helping_verb_inflected(self, helping_verb):
         return False
 
+    def _get_subjunctive_mood_name(self):
+        return 'subjunctive'
+
     def _get_participle_mood_name(self):
         return 'partiple'
 
     def _get_participle_tense_name(self):
         return 'past-participle'
+
+    def _get_alternate_hv_inflection(self, s):
+        return s
 
     def _get_compound_conjugations_hv_map(self):
         """"Returns a map of the tense of the helping verb for each compound mood and tense"""
@@ -204,8 +207,8 @@ class Inflector(ABC):
                     conjugation += pronoun + " "
                 conjugation += conjugated_verb
 
-                if self.lang == 'fr' and mood_name == 'subjonctif':
-                    conjugation = self._prepend_with_que(conjugation)
+                if mood_name == self._get_subjunctive_mood_name():
+                    conjugation = self._add_subjunctive_relative_pronoun(conjugation)
                 ret.append(conjugation)
         return ret
 
@@ -245,8 +248,7 @@ class Inflector(ABC):
         if not self._is_helping_verb_inflected(helping_verb):
             for hv in hvconj:
                 p = participle[0]
-                if self.lang == 'es' and hv == 'él hay':
-                    hv = 'él ha'
+                hv = self._get_alternate_hv_inflection(hv)
                 ret.append(hv + ' ' + p)
         else:
             for i, hv in enumerate(hvconj):
@@ -257,6 +259,6 @@ class Inflector(ABC):
                     grammar_defines.PARTICIPLE_INFLECTIONS.index(
                         participle_inflection)]
                 ret.append(hv + ' ' + p)
-        if mood_name == 'subjonctif':
-            ret = [self._prepend_with_que(i) for i in ret]
+        if mood_name == self._get_subjunctive_mood_name():
+            ret = [self._add_subjunctive_relative_pronoun(i) for i in ret]
         return ret

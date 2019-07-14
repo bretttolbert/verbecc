@@ -9,10 +9,10 @@ from verbecc.exceptions import ConjugatorError
 
 inf = inflector_fr.InflectorFr()
 
-def test_prepend_with_que():
-    assert inf._prepend_with_que("tu manges") == "que tu manges"
-    assert inf._prepend_with_que("il mange") == "qu'il mange"
-    assert inf._prepend_with_que("elles mangent") == "qu'elles mangent"
+def test_add_subjunctive_relative_prounoun():
+    assert inf._add_subjunctive_relative_pronoun("tu manges") == "que tu manges"
+    assert inf._add_subjunctive_relative_pronoun("il mange") == "qu'il mange"
+    assert inf._add_subjunctive_relative_pronoun("elles mangent") == "qu'elles mangent"
 
 def test_prepend_with_se():
     assert inf._prepend_with_se("lever") == "se lever"

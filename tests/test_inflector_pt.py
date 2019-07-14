@@ -24,7 +24,9 @@ test_es_conjugate_mood_tense_data = [
     ('ter', 'Indicativo', 'Indicativo-Futuro-do-Presente-Simples',
         ['eu terei', 'tu terás', 'ele terá', 'nós teremos', 'vós tereis', 'eles terão']),
     ('ter', 'Indicativo', 'Indicativo-Futuro-do-Presente-Composto',
-        ['eu terei tido', 'tu terás tido', 'ele terá tido', 'nós teremos tido', 'vós tereis tido', 'eles terão tido'])
+        ['eu terei tido', 'tu terás tido', 'ele terá tido', 'nós teremos tido', 'vós tereis tido', 'eles terão tido']),
+    ('ter', 'Conjuntivo', 'Conjuntivo--Subjuntivo-Presente',
+        ['que eu tenha', 'que tu tenhas', 'que ele tenha', 'que nós tenhamos', 'que vós tenhais', 'que eles tenham'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
