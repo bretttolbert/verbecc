@@ -76,10 +76,6 @@ test_es_conjugate_mood_tense_data = [
         ['yo hubiere comido', 'tú hubieres comido', 'él hubiere comido', 'nosotros hubiéremos comido', 'vosotros hubiereis comido', 'ellos hubieren comido'])
 ]
 
-"""
-
-"""
-
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
                          test_es_conjugate_mood_tense_data)
 def test_inflector_es_conjugate_mood_tense(infinitive, mood, tense, expected_result):
@@ -110,3 +106,28 @@ def test_inflector_es_conjugate_simple_mood_tense():
     out = inf._conjugate_simple_mood_tense(verb_stem, 'indicativo', tense_template)
     assert len(out) == 6
     assert out == ['yo abaño', 'tú abañas', 'él abaña', 'nosotros abañamos', 'vosotros abañáis', 'ellos abañan']
+
+
+test_inflector_es_get_default_pronoun_data = [
+    ('1s', 'm', False, 'yo'),
+    ('1s', 'm', True, 'yo me'),
+    ('2s', 'm', False, 'tú'),
+    ('2s', 'm', True, 'tú te'),
+    ('3s', 'm', False, 'él'),
+    ('3s', 'm', True, 'él se'),
+    ('3s', 'f', False, 'ella'),
+    ('3s', 'f', True, 'ella se'),
+    ('1p', 'm', False, 'nosotros'),
+    ('1p', 'm', True, 'nosotros nos'),
+    ('2p', 'm', False, 'vosotros'),
+    ('2p', 'm', True, 'vosotros os'),
+    ('3s', 'm', False, 'ellos'),
+    ('3s', 'm', True, 'ellos se'),
+    ('3s', 'f', False, 'ellas'),
+    ('3s', 'f', True, 'ellas se')
+]
+
+@pytest.mark.parametrize("person,gender,is_reflexive,expected_result",
+                         test_inflector_es_get_default_pronoun_data)
+def test_inflector_es_get_default_pronoun(person, gender, is_reflexive, expected_result):
+    inf._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result

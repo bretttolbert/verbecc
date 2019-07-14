@@ -91,3 +91,27 @@ def test_inflector_fr_get_verb_stem():
     # The infinitive ending must match the template ending
     with pytest.raises(ConjugatorError):
         verb_stem = inf._get_verb_stem('vendre', 'man:ger')
+
+test_inflector_fr_get_default_pronoun_data = [
+    ('1s', 'm', False, 'je'),
+    ('1s', 'm', True, 'je me'),
+    ('2s', 'm', False, 'tu'),
+    ('2s', 'm', True, 'tu te'),
+    ('3s', 'm', False, 'il'),
+    ('3s', 'm', True, 'il se'),
+    ('3s', 'f', False, 'elle'),
+    ('3s', 'f', True, 'elle se'),
+    ('1p', 'm', False, 'nous'),
+    ('1p', 'm', True, 'nous nous'),
+    ('2p', 'm', False, 'vous'),
+    ('2p', 'm', True, 'vous vous'),
+    ('3s', 'm', False, 'ils'),
+    ('3s', 'm', True, 'ils se'),
+    ('3s', 'f', False, 'elles'),
+    ('3s', 'f', True, 'elles se')
+]
+
+@pytest.mark.parametrize("person,gender,is_reflexive,expected_result",
+                         test_inflector_fr_get_default_pronoun_data)
+def test_inflector_fr_get_default_pronoun(person, gender, is_reflexive, expected_result):
+    inf._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result

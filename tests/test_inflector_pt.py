@@ -51,3 +51,27 @@ test_es_conjugate_mood_tense_data = [
                          test_es_conjugate_mood_tense_data)
 def test_inflector_pt_conjugate_mood_tense(infinitive, mood, tense, expected_result):
     assert inf.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+
+test_inflector_pt_get_default_pronoun_data = [
+    ('1s', 'm', False, 'eu'),
+    ('1s', 'm', True, 'eu me'),
+    ('2s', 'm', False, 'tu'),
+    ('2s', 'm', True, 'tu te'),
+    ('3s', 'm', False, 'ele'),
+    ('3s', 'm', True, 'ele se'),
+    ('3s', 'f', False, 'ela'),
+    ('3s', 'f', True, 'ela se'),
+    ('1p', 'm', False, 'nós'),
+    ('1p', 'm', True, 'nós nos'),
+    ('2p', 'm', False, 'vós'),
+    ('2p', 'm', True, 'vós se'),
+    ('3s', 'm', False, 'eles'),
+    ('3s', 'm', True, 'eles se'),
+    ('3s', 'f', False, 'elas'),
+    ('3s', 'f', True, 'elas se')
+]
+
+@pytest.mark.parametrize("person,gender,is_reflexive,expected_result",
+                         test_inflector_pt_get_default_pronoun_data)
+def test_inflector_pt_get_default_pronoun(person, gender, is_reflexive, expected_result):
+    inf._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result
