@@ -35,7 +35,7 @@
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples , Indicativo-Futuro-do-Presente-Simples)>
-<!ELEMENT Condicional (Condicional-Futuro-do-Pretérito-Simples , Condicional-Futuro-do-Pretérito-Composto)>
+<!ELEMENT Condicional (Condicional-Futuro-do-Pretérito-Simples)>
 <!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Futuro-Simples)>
 <!ELEMENT Infinitivo (Infinitivo-Pessoal-Presente , Infinitivo-Pessoal-Pretérito , Infinitivo-Infinitivo)>
 <!ELEMENT Imperativo (Imperativo-Afirmativo , Imperativo-Negativo)>
@@ -47,7 +47,6 @@
 <!ELEMENT Indicativo-pretérito-perfeito-simples (p , p , p , p , p , p)>
 <!ELEMENT Indicativo-Futuro-do-Presente-Simples (p , p , p , p , p , p)>
 <!ELEMENT Condicional-Futuro-do-Pretérito-Simples (p , p , p , p , p , p)>
-<!ELEMENT Condicional-Futuro-do-Pretérito-Composto (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Presente (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Pretérito-Imperfeito (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Futuro-Simples (p , p , p , p , p , p)>
@@ -115,15 +114,7 @@
 			<p><i>ceríeis</i></p>
 			<p><i>ceriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ça</i></p>
@@ -255,15 +246,7 @@
 			<p><i>udiríeis</i></p>
 			<p><i>udiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uda</i></p>
@@ -395,15 +378,7 @@
 			<p><i>uaríeis</i></p>
 			<p><i>uariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úe</i></p>
@@ -535,15 +510,7 @@
 			<p><i>ediríeis</i></p>
 			<p><i>ediriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ida</i></p>
@@ -675,15 +642,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -815,15 +774,7 @@
 			<p><i>azeríeis</i></p>
 			<p><i>azeriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aza</i></p>
@@ -955,15 +906,7 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ua</i></p>
@@ -1095,15 +1038,7 @@
 			<p><i>uaríeis</i></p>
 			<p><i>uariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úe</i></p>
@@ -1235,15 +1170,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha</i></p>
@@ -1375,15 +1302,7 @@
 			<p><i>aberíeis</i></p>
 			<p><i>aberiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aiba</i></p>
@@ -1515,15 +1434,7 @@
 			<p><i>erziríeis</i></p>
 			<p><i>erziriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irza</i></p>
@@ -1655,15 +1566,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue</i></p>
@@ -1795,15 +1698,7 @@
 			<p><i>-</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -1935,15 +1830,7 @@
 			<p><i>çaríeis</i></p>
 			<p><i>çariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ce</i></p>
@@ -2075,15 +1962,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ie</i></p>
@@ -2215,15 +2094,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eia</i></p>
@@ -2355,15 +2226,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ê</i></p>
@@ -2495,15 +2358,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -2635,15 +2490,7 @@
 			<p><i>uiríeis</i></p>
 			<p><i>uiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ua</i></p>
@@ -2775,15 +2622,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -2915,15 +2754,7 @@
 			<p><i>ergiríeis</i></p>
 			<p><i>ergiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irja</i></p>
@@ -3055,15 +2886,7 @@
 			<p><i>ríeis</i></p>
 			<p><i>riam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ga</i></p>
@@ -3195,15 +3018,7 @@
 			<p><i>oeríeis</i></p>
 			<p><i>oeriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa</i></p>
@@ -3335,15 +3150,7 @@
 			<p><i>ormiríeis</i></p>
 			<p><i>ormiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>urma</i></p>
@@ -3475,15 +3282,7 @@
 			<p><i>upiríeis</i></p>
 			<p><i>upiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>upa</i></p>
@@ -3615,15 +3414,7 @@
 			<p><i>ueríeis</i></p>
 			<p><i>ueriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -3755,15 +3546,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eja</i></p>
@@ -3895,15 +3678,7 @@
 			<p><i>guiríeis</i></p>
 			<p><i>guiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ga</i></p>
@@ -4035,15 +3810,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -4175,15 +3942,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aça</i></p>
@@ -4315,15 +4074,7 @@
 			<p><i>caríeis</i></p>
 			<p><i>cariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que</i></p>
@@ -4455,15 +4206,7 @@
 			<p><i>giríeis</i></p>
 			<p><i>giriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja</i></p>
@@ -4595,15 +4338,7 @@
 			<p><i>ugiríeis</i></p>
 			<p><i>ugiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uja</i></p>
@@ -4735,15 +4470,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -4875,15 +4602,7 @@
 			<p><i>averíeis</i></p>
 			<p><i>averiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aja</i></p>
@@ -5015,15 +4734,7 @@
 			<p><i>giríeis</i></p>
 			<p><i>giriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -5155,15 +4866,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>vá</i></p>
@@ -5295,15 +4998,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -5435,15 +5130,7 @@
 			<p><i>oeríeis</i></p>
 			<p><i>oeriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa</i></p>
@@ -5575,15 +5262,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -5715,15 +5394,7 @@
 			<p><i>iaríeis</i></p>
 			<p><i>iariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eie</i></p>
@@ -5855,15 +5526,7 @@
 			<p><i>viríeis</i></p>
 			<p><i>viriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ça</i></p>
@@ -5995,15 +5658,7 @@
 			<p><i>diríeis</i></p>
 			<p><i>diriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ça</i></p>
@@ -6135,15 +5790,7 @@
 			<p><i>deríeis</i></p>
 			<p><i>deriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ca</i></p>
@@ -6275,15 +5922,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -6415,15 +6054,7 @@
 			<p><i>oderíeis</i></p>
 			<p><i>oderiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ossa</i></p>
@@ -6555,15 +6186,7 @@
 			<p><i>oliríeis</i></p>
 			<p><i>oliriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ula</i></p>
@@ -6695,15 +6318,7 @@
 			<p><i>oríeis</i></p>
 			<p><i>oriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>onha</i></p>
@@ -6835,15 +6450,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -6975,15 +6582,7 @@
 			<p><i>eriríeis</i></p>
 			<p><i>eririam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ira</i></p>
@@ -7115,15 +6714,7 @@
 			<p><i>ibiríeis</i></p>
 			<p><i>ibiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íba</i></p>
@@ -7255,15 +6846,7 @@
 			<p><i>geríeis</i></p>
 			<p><i>geriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja</i></p>
@@ -7395,15 +6978,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eja</i></p>
@@ -7535,15 +7110,7 @@
 			<p><i>ereríeis</i></p>
 			<p><i>ereriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eira</i></p>
@@ -7675,15 +7242,7 @@
 			<p><i>averíeis</i></p>
 			<p><i>averiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -7815,15 +7374,7 @@
 			<p><i>giríeis</i></p>
 			<p><i>giriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja</i></p>
@@ -7955,15 +7506,7 @@
 			<p><i>ectiríeis</i></p>
 			<p><i>ectiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>icta</i></p>
@@ -8095,15 +7638,7 @@
 			<p><i>miríeis</i></p>
 			<p><i>miriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>dima</i></p>
@@ -8235,15 +7770,7 @@
 			<p><i>reríeis</i></p>
 			<p><i>reriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ira</i></p>
@@ -8375,15 +7902,7 @@
 			<p><i>ciríeis</i></p>
 			<p><i>ciriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ça</i></p>
@@ -8515,15 +8034,7 @@
 			<p><i>uniríeis</i></p>
 			<p><i>uniriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úna</i></p>
@@ -8655,15 +8166,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ia</i></p>
@@ -8795,15 +8298,7 @@
 			<p><i>aberíeis</i></p>
 			<p><i>aberiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aiba</i></p>
@@ -8935,15 +8430,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ia</i></p>
@@ -9075,15 +8562,7 @@
 			<p><i>udaríeis</i></p>
 			<p><i>udariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úde</i></p>
@@ -9215,15 +8694,7 @@
 			<p><i>eguiríeis</i></p>
 			<p><i>eguiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>iga</i></p>
@@ -9355,15 +8826,7 @@
 			<p><i>entiríeis</i></p>
 			<p><i>entiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>inta</i></p>
@@ -9495,15 +8958,7 @@
 			<p><i>seríeis</i></p>
 			<p><i>seriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>seja</i></p>
@@ -9635,15 +9090,7 @@
 			<p><i>erviríeis</i></p>
 			<p><i>erviriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irva</i></p>
@@ -9775,15 +9222,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha</i></p>
@@ -9915,15 +9354,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -10055,15 +9486,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aga</i></p>
@@ -10195,15 +9618,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ha</i></p>
@@ -10335,15 +9750,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -10475,15 +9882,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eja</i></p>
@@ -10615,15 +10014,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha</i></p>
@@ -10755,15 +10146,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -10895,15 +10278,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -11035,15 +10410,7 @@
 			<p><i>ucaríeis</i></p>
 			<p><i>ucariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úque</i></p>
@@ -11175,15 +10542,7 @@
 			<p><i>çar-vos-íeis</i></p>
 			<p><i>çar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ce-me</i></p>
@@ -11315,15 +10674,7 @@
 			<p><i>ustraríeis</i></p>
 			<p><i>ustrariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ústre</i></p>
@@ -11455,15 +10806,7 @@
 			<p><i>caríeis</i></p>
 			<p><i>cariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que</i></p>
@@ -11595,15 +10938,7 @@
 			<p><i>car-vos-íeis</i></p>
 			<p><i>car-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que-me</i></p>
@@ -11735,15 +11070,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ie-me</i></p>
@@ -11875,15 +11202,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -12015,15 +11334,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue-me</i></p>
@@ -12155,15 +11466,7 @@
 			<p><i>cer-vos-íeis</i></p>
 			<p><i>cer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ça-me</i></p>
@@ -12295,15 +11598,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -12435,15 +11730,7 @@
 			<p><i>ularíeis</i></p>
 			<p><i>ulariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úle</i></p>
@@ -12575,15 +11862,7 @@
 			<p><i>caríeis</i></p>
 			<p><i>cariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que</i></p>
@@ -12715,15 +11994,7 @@
 			<p><i>car-vos-íeis</i></p>
 			<p><i>car-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que-me</i></p>
@@ -12855,15 +12126,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -12995,15 +12258,7 @@
 			<p><i>oiaríeis</i></p>
 			<p><i>oiariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>óie</i></p>
@@ -13135,15 +12390,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -13275,15 +12522,7 @@
 			<p><i>ger-vos-íeis</i></p>
 			<p><i>ger-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja-me</i></p>
@@ -13415,15 +12654,7 @@
 			<p><i>riríeis</i></p>
 			<p><i>ririam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ra</i></p>
@@ -13555,15 +12786,7 @@
 			<p><i>rir-vos-íeis</i></p>
 			<p><i>rir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ra-me</i></p>
@@ -13695,15 +12918,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -13835,15 +13050,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -13975,15 +13182,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha</i></p>
@@ -14115,15 +13314,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha-me</i></p>
@@ -14255,15 +13446,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ia-me</i></p>
@@ -14395,15 +13578,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -14535,15 +13710,7 @@
 			<p><i>nderíeis</i></p>
 			<p><i>nderiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>nda</i></p>
@@ -14675,15 +13842,7 @@
 			<p><i>nder-vos-íeis</i></p>
 			<p><i>nder-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>nda-me</i></p>
@@ -14815,15 +13974,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -14955,15 +14106,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -15095,15 +14238,7 @@
 			<p><i>gir-vos-íeis</i></p>
 			<p><i>gir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja-me</i></p>
@@ -15235,15 +14370,7 @@
 			<p><i>udir-vos-íeis</i></p>
 			<p><i>udir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uda-me</i></p>
@@ -15375,15 +14502,7 @@
 			<p><i>uar-vos-íeis</i></p>
 			<p><i>uar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úe-me</i></p>
@@ -15515,15 +14634,7 @@
 			<p><i>erir-vos-íeis</i></p>
 			<p><i>erir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ira-me</i></p>
@@ -15655,15 +14766,7 @@
 			<p><i>everíeis</i></p>
 			<p><i>everiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eva</i></p>
@@ -15795,15 +14898,7 @@
 			<p><i>ever-vos-íeis</i></p>
 			<p><i>ever-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eva-me</i></p>
@@ -15935,15 +15030,7 @@
 			<p><i>ertiríeis</i></p>
 			<p><i>ertiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irta</i></p>
@@ -16075,15 +15162,7 @@
 			<p><i>azer-vos-íeis</i></p>
 			<p><i>azer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aça-me</i></p>
@@ -16215,15 +15294,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ie</i></p>
@@ -16355,15 +15426,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ie-me</i></p>
@@ -16495,15 +15558,7 @@
 			<p><i>uchar-vos-íeis</i></p>
 			<p><i>uchar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úche-me</i></p>
@@ -16635,15 +15690,7 @@
 			<p><i>udaríeis</i></p>
 			<p><i>udariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úde</i></p>
@@ -16775,15 +15822,7 @@
 			<p><i>uaríeis</i></p>
 			<p><i>uariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úe</i></p>
@@ -16915,15 +15954,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -17055,15 +16086,7 @@
 			<p><i>itaríeis</i></p>
 			<p><i>itariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íte</i></p>
@@ -17195,15 +16218,7 @@
 			<p><i>itar-vos-íeis</i></p>
 			<p><i>itar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íte-me</i></p>
@@ -17335,15 +16350,7 @@
 			<p><i>izaríeis</i></p>
 			<p><i>izariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íze</i></p>
@@ -17475,15 +16482,7 @@
 			<p><i>izar-vos-íeis</i></p>
 			<p><i>izar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íze-me</i></p>
@@ -17615,15 +16614,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -17755,15 +16746,7 @@
 			<p><i>çaríeis</i></p>
 			<p><i>çariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ce</i></p>
@@ -17895,15 +16878,7 @@
 			<p><i>uar-vos-íeis</i></p>
 			<p><i>uar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úe-me</i></p>
@@ -18035,15 +17010,7 @@
 			<p><i>-</i></p>
 			<p><i>ceriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -18175,15 +17142,7 @@
 			<p><i>udaríeis</i></p>
 			<p><i>udariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úde</i></p>
@@ -18315,15 +17274,7 @@
 			<p><i>udar-vos-íeis</i></p>
 			<p><i>udar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úde-me</i></p>
@@ -18455,15 +17406,7 @@
 			<p><i>iaríeis</i></p>
 			<p><i>iariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eie</i></p>
@@ -18595,15 +17538,7 @@
 			<p><i>iar-vos-íeis</i></p>
 			<p><i>iar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eie-me</i></p>
@@ -18735,15 +17670,7 @@
 			<p><i>oríeis</i></p>
 			<p><i>oriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>onha</i></p>
@@ -18875,15 +17802,7 @@
 			<p><i>or-vos-íeis</i></p>
 			<p><i>or-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>onha-me</i></p>
@@ -19015,15 +17934,7 @@
 			<p><i>ular-vos-íeis</i></p>
 			<p><i>ular-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úle-me</i></p>
@@ -19155,15 +18066,7 @@
 			<p><i>oiar-vos-íeis</i></p>
 			<p><i>oiar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>óie-me</i></p>
@@ -19295,15 +18198,7 @@
 			<p><i>azer-vos-íeis</i></p>
 			<p><i>azer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aza-me</i></p>
@@ -19435,15 +18330,7 @@
 			<p><i>izaríeis</i></p>
 			<p><i>izariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íze</i></p>
@@ -19575,15 +18462,7 @@
 			<p><i>car-vos-íeis</i></p>
 			<p><i>car-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que-me</i></p>
@@ -19715,15 +18594,7 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ua-me</i></p>
@@ -19855,15 +18726,7 @@
 			<p><i>inaríeis</i></p>
 			<p><i>inariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íne</i></p>
@@ -19995,15 +18858,7 @@
 			<p><i>inar-vos-íeis</i></p>
 			<p><i>inar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íne-me</i></p>
@@ -20135,15 +18990,7 @@
 			<p><i>ergir-vos-íeis</i></p>
 			<p><i>ergir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irja-me</i></p>
@@ -20275,15 +19122,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -20415,15 +19254,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -20555,15 +19386,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -20695,15 +19518,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -20835,15 +19650,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -20975,15 +19782,7 @@
 			<p><i>unaríeis</i></p>
 			<p><i>unariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úne</i></p>
@@ -21115,15 +19914,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha-me</i></p>
@@ -21255,15 +20046,7 @@
 			<p><i>umaríeis</i></p>
 			<p><i>umariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úme</i></p>
@@ -21395,15 +20178,7 @@
 			<p><i>-</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -21535,15 +20310,7 @@
 			<p><i>-</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -21675,15 +20442,7 @@
 			<p><i>erer-vos-íeis</i></p>
 			<p><i>erer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eira-me</i></p>
@@ -21815,15 +20574,7 @@
 			<p><i>zeríeis</i></p>
 			<p><i>zeriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>za</i></p>
@@ -21955,15 +20706,7 @@
 			<p><i>zer-vos-íeis</i></p>
 			<p><i>zer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>za-me</i></p>
@@ -22095,15 +20838,7 @@
 			<p><i>uaríeis</i></p>
 			<p><i>uariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úe</i></p>
@@ -22235,15 +20970,7 @@
 			<p><i>oiaríeis</i></p>
 			<p><i>oiariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>óie</i></p>
@@ -22375,15 +21102,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -22515,15 +21234,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -22655,15 +21366,7 @@
 			<p><i>uliríeis</i></p>
 			<p><i>uliriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ula</i></p>
@@ -22795,15 +21498,7 @@
 			<p><i>ulir-vos-íeis</i></p>
 			<p><i>ulir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ula-me</i></p>
@@ -22935,15 +21630,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue</i></p>
@@ -23075,15 +21762,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue-me</i></p>
@@ -23215,15 +21894,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ie</i></p>
@@ -23355,15 +22026,7 @@
 			<p><i>erniríeis</i></p>
 			<p><i>erniriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irna</i></p>
@@ -23495,15 +22158,7 @@
 			<p><i>-</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -23635,15 +22290,7 @@
 			<p><i>gir-vos-íeis</i></p>
 			<p><i>gir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja-me</i></p>
@@ -23775,15 +22422,7 @@
 			<p><i>umaríeis</i></p>
 			<p><i>umariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úme</i></p>
@@ -23915,15 +22554,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -24055,15 +22686,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -24195,15 +22818,7 @@
 			<p><i>obriríeis</i></p>
 			<p><i>obririam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ubra</i></p>
@@ -24335,15 +22950,7 @@
 			<p><i>obrir-vos-íeis</i></p>
 			<p><i>obrir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ubra-me</i></p>
@@ -24475,15 +23082,7 @@
 			<p><i>ibir-vos-íeis</i></p>
 			<p><i>ibir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íba-me</i></p>
@@ -24615,15 +23214,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -24755,15 +23346,7 @@
 			<p><i>oiaríeis</i></p>
 			<p><i>oiariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>óie</i></p>
@@ -24895,15 +23478,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -25035,15 +23610,7 @@
 			<p><i>eliríeis</i></p>
 			<p><i>eliriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ila</i></p>
@@ -25175,15 +23742,7 @@
 			<p><i>etiríeis</i></p>
 			<p><i>etiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ita</i></p>
@@ -25315,15 +23874,7 @@
 			<p><i>etir-vos-íeis</i></p>
 			<p><i>etir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ita-me</i></p>
@@ -25455,15 +24006,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -25595,15 +24138,7 @@
 			<p><i>oeríeis</i></p>
 			<p><i>oeriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa</i></p>
@@ -25735,15 +24270,7 @@
 			<p><i>oer-vos-íeis</i></p>
 			<p><i>oer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa-me</i></p>
@@ -25875,15 +24402,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -26015,15 +24534,7 @@
 			<p><i>ngiríeis</i></p>
 			<p><i>ngiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>nja</i></p>
@@ -26155,15 +24666,7 @@
 			<p><i>ngir-vos-íeis</i></p>
 			<p><i>ngir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>nja-me</i></p>
@@ -26295,15 +24798,7 @@
 			<p><i>umiríeis</i></p>
 			<p><i>umiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uma</i></p>
@@ -26435,15 +24930,7 @@
 			<p><i>umir-vos-íeis</i></p>
 			<p><i>umir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uma-me</i></p>
@@ -26575,15 +25062,7 @@
 			<p><i>zer-vos-íeis</i></p>
 			<p><i>zer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ga-me</i></p>
@@ -26715,15 +25194,7 @@
 			<p><i>teríeis</i></p>
 			<p><i>teriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ta</i></p>
@@ -26855,15 +25326,7 @@
 			<p><i>omperíeis</i></p>
 			<p><i>omperiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ompa</i></p>
@@ -26995,15 +25458,7 @@
 			<p><i>omper-vos-íeis</i></p>
 			<p><i>omper-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ompa-me</i></p>
@@ -27135,15 +25590,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eia-me</i></p>
@@ -27275,15 +25722,7 @@
 			<p><i>-</i></p>
 			<p><i>cariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -27415,15 +25854,7 @@
 			<p><i>uspiríeis</i></p>
 			<p><i>uspiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uspa</i></p>
@@ -27555,15 +25986,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ê-me</i></p>
@@ -27695,15 +26118,7 @@
 			<p><i>egriríeis</i></p>
 			<p><i>egririam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>igra</i></p>
@@ -27835,15 +26250,7 @@
 			<p><i>egrir-vos-íeis</i></p>
 			<p><i>egrir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>igra-me</i></p>
@@ -27975,15 +26382,7 @@
 			<p><i>çaríeis</i></p>
 			<p><i>çariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ce</i></p>
@@ -28115,15 +26514,7 @@
 			<p><i>çar-vos-íeis</i></p>
 			<p><i>çar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ce-me</i></p>
@@ -28255,15 +26646,7 @@
 			<p><i>obriríeis</i></p>
 			<p><i>obririam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ubra</i></p>
@@ -28395,15 +26778,7 @@
 			<p><i>obrir-vos-íeis</i></p>
 			<p><i>obrir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ubra-me</i></p>
@@ -28535,15 +26910,7 @@
 			<p><i>ularíeis</i></p>
 			<p><i>ulariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úle</i></p>
@@ -28675,15 +27042,7 @@
 			<p><i>oliríeis</i></p>
 			<p><i>oliriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ula</i></p>
@@ -28815,15 +27174,7 @@
 			<p><i>izar-vos-íeis</i></p>
 			<p><i>izar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>íze-me</i></p>
@@ -28955,15 +27306,7 @@
 			<p><i>upir-vos-íeis</i></p>
 			<p><i>upir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>upa-me</i></p>
@@ -29095,15 +27438,7 @@
 			<p><i>veríeis</i></p>
 			<p><i>veriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>va</i></p>
@@ -29235,15 +27570,7 @@
 			<p><i>ver-vos-íeis</i></p>
 			<p><i>ver-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>va-me</i></p>
@@ -29375,15 +27702,7 @@
 			<p><i>estiríeis</i></p>
 			<p><i>estiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ista</i></p>
@@ -29515,15 +27834,7 @@
 			<p><i>dir-vos-íeis</i></p>
 			<p><i>dir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ça-me</i></p>
@@ -29655,15 +27966,7 @@
 			<p><i>entir-vos-íeis</i></p>
 			<p><i>entir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>inta-me</i></p>
@@ -29795,15 +28098,7 @@
 			<p><i>oriríeis</i></p>
 			<p><i>oririam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ura</i></p>
@@ -29935,15 +28230,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -30075,15 +28362,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -30215,15 +28494,7 @@
 			<p><i>espiríeis</i></p>
 			<p><i>espiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ispa</i></p>
@@ -30355,15 +28626,7 @@
 			<p><i>espir-vos-íeis</i></p>
 			<p><i>espir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ispa-me</i></p>
@@ -30495,15 +28758,7 @@
 			<p><i>olir-vos-íeis</i></p>
 			<p><i>olir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ula-me</i></p>
@@ -30635,15 +28890,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -30775,15 +29022,7 @@
 			<p><i>eniríeis</i></p>
 			<p><i>eniriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ina</i></p>
@@ -30915,15 +29154,7 @@
 			<p><i>enir-vos-íeis</i></p>
 			<p><i>enir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ina-me</i></p>
@@ -31055,15 +29286,7 @@
 			<p><i>iaríeis</i></p>
 			<p><i>iariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eie</i></p>
@@ -31195,15 +29418,7 @@
 			<p><i>estir-vos-íeis</i></p>
 			<p><i>estir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ista-me</i></p>
@@ -31335,15 +29550,7 @@
 			<p><i>umiríeis</i></p>
 			<p><i>umiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uma</i></p>
@@ -31475,15 +29682,7 @@
 			<p><i>der-vos-íeis</i></p>
 			<p><i>der-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ca-me</i></p>
@@ -31615,15 +29814,7 @@
 			<p><i>guir-vos-íeis</i></p>
 			<p><i>guir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ga-me</i></p>
@@ -31755,15 +29946,7 @@
 			<p><i>ertir-vos-íeis</i></p>
 			<p><i>ertir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irta-me</i></p>
@@ -31895,15 +30078,7 @@
 			<p><i>oer-vos-íeis</i></p>
 			<p><i>oer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa-me</i></p>
@@ -32035,15 +30210,7 @@
 			<p><i>caríeis</i></p>
 			<p><i>cariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que</i></p>
@@ -32175,15 +30342,7 @@
 			<p><i>geríeis</i></p>
 			<p><i>geriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja</i></p>
@@ -32315,15 +30474,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -32455,15 +30606,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue</i></p>
@@ -32595,15 +30738,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue-me</i></p>
@@ -32735,15 +30870,7 @@
 			<p><i>umaríeis</i></p>
 			<p><i>umariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úme</i></p>
@@ -32875,15 +31002,7 @@
 			<p><i>umar-vos-íeis</i></p>
 			<p><i>umar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úme-me</i></p>
@@ -33015,15 +31134,7 @@
 			<p><i>oiar-vos-íeis</i></p>
 			<p><i>oiar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>óie-me</i></p>
@@ -33155,15 +31266,7 @@
 			<p><i>uiríeis</i></p>
 			<p><i>uiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a</i></p>
@@ -33295,15 +31398,7 @@
 			<p><i>uir-vos-íeis</i></p>
 			<p><i>uir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -33435,15 +31530,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue</i></p>
@@ -33575,15 +31662,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue-me</i></p>
@@ -33715,15 +31794,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eja-me</i></p>
@@ -33855,15 +31926,7 @@
 			<p><i>uvaríeis</i></p>
 			<p><i>uvariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úve</i></p>
@@ -33995,15 +32058,7 @@
 			<p><i>garíeis</i></p>
 			<p><i>gariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>gue</i></p>
@@ -34135,15 +32190,7 @@
 			<p><i>gar-vos-íeis</i></p>
 			<p><i>gar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>gue-me</i></p>
@@ -34275,15 +32322,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ha-me</i></p>
@@ -34415,15 +32454,7 @@
 			<p><i>uer-vos-íeis</i></p>
 			<p><i>uer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -34555,15 +32586,7 @@
 			<p><i>everíeis</i></p>
 			<p><i>everiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eva</i></p>
@@ -34695,15 +32718,7 @@
 			<p><i>ever-vos-íeis</i></p>
 			<p><i>ever-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eva-me</i></p>
@@ -34835,15 +32850,7 @@
 			<p><i>eceríeis</i></p>
 			<p><i>eceriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eça</i></p>
@@ -34975,15 +32982,7 @@
 			<p><i>uçaríeis</i></p>
 			<p><i>uçariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úce</i></p>
@@ -35115,15 +33114,7 @@
 			<p><i>oeríeis</i></p>
 			<p><i>oeriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa</i></p>
@@ -35255,15 +33246,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eja-me</i></p>
@@ -35395,15 +33378,7 @@
 			<p><i>imiríeis</i></p>
 			<p><i>imiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ima</i></p>
@@ -35535,15 +33510,7 @@
 			<p><i>imir-vos-íeis</i></p>
 			<p><i>imir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ima-me</i></p>
@@ -35675,15 +33642,7 @@
 			<p><i>iscaríeis</i></p>
 			<p><i>iscariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ísque</i></p>
@@ -35815,15 +33774,7 @@
 			<p><i>ularíeis</i></p>
 			<p><i>ulariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úle</i></p>
@@ -35955,15 +33906,7 @@
 			<p><i>emiríeis</i></p>
 			<p><i>emiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -36095,15 +34038,7 @@
 			<p><i>ugir-vos-íeis</i></p>
 			<p><i>ugir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uja-me</i></p>
@@ -36235,15 +34170,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -36375,15 +34302,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -36515,15 +34434,7 @@
 			<p><i>ucharíeis</i></p>
 			<p><i>uchariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úche</i></p>
@@ -36655,15 +34566,7 @@
 			<p><i>aver-vos-íeis</i></p>
 			<p><i>aver-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>aja-me</i></p>
@@ -36795,15 +34698,7 @@
 			<p><i>çaríeis</i></p>
 			<p><i>çariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ce</i></p>
@@ -36935,15 +34830,7 @@
 			<p><i>gir-vos-íeis</i></p>
 			<p><i>gir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -37075,15 +34962,7 @@
 			<p><i>eliríeis</i></p>
 			<p><i>eliriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ila</i></p>
@@ -37215,15 +35094,7 @@
 			<p><i>iar-vos-íeis</i></p>
 			<p><i>iar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eie-me</i></p>
@@ -37355,15 +35226,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -37495,15 +35358,7 @@
 			<p><i>orreríeis</i></p>
 			<p><i>orreriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>orra</i></p>
@@ -37635,15 +35490,7 @@
 			<p><i>giríeis</i></p>
 			<p><i>giriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -37775,15 +35622,7 @@
 			<p><i>eriríeis</i></p>
 			<p><i>eririam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ira</i></p>
@@ -37915,15 +35754,7 @@
 			<p><i>erir-vos-íeis</i></p>
 			<p><i>erir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ira-me</i></p>
@@ -38055,15 +35886,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>vá-me</i></p>
@@ -38195,15 +36018,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>a-me</i></p>
@@ -38335,15 +36150,7 @@
 			<p><i>oiaríeis</i></p>
 			<p><i>oiariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>óie</i></p>
@@ -38475,15 +36282,7 @@
 			<p><i>-</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -38615,15 +36414,7 @@
 			<p><i>ataríeis</i></p>
 			<p><i>atariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ate</i></p>
@@ -38755,15 +36546,7 @@
 			<p><i>atar-vos-íeis</i></p>
 			<p><i>atar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ate-me</i></p>
@@ -38895,15 +36678,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ie-me</i></p>
@@ -39035,15 +36810,7 @@
 			<p><i>oer-vos-íeis</i></p>
 			<p><i>oer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa-me</i></p>
@@ -39175,15 +36942,7 @@
 			<p><i>reríeis</i></p>
 			<p><i>reriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ra</i></p>
@@ -39315,15 +37074,7 @@
 			<p><i>rer-vos-íeis</i></p>
 			<p><i>rer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ra-me</i></p>
@@ -39455,15 +37206,7 @@
 			<p><i>sceríeis</i></p>
 			<p><i>sceriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>sça</i></p>
@@ -39595,15 +37338,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -39735,15 +37470,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -39875,15 +37602,7 @@
 			<p><i>iar-vos-íeis</i></p>
 			<p><i>iar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eie-me</i></p>
@@ -40015,15 +37734,7 @@
 			<p><i>tiríeis</i></p>
 			<p><i>tiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ta</i></p>
@@ -40155,15 +37866,7 @@
 			<p><i>tir-vos-íeis</i></p>
 			<p><i>tir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ta-me</i></p>
@@ -40295,15 +37998,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue</i></p>
@@ -40435,15 +38130,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue-me</i></p>
@@ -40575,15 +38262,7 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -40715,15 +38394,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -40855,15 +38526,7 @@
 			<p><i>eguir-vos-íeis</i></p>
 			<p><i>eguir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>iga-me</i></p>
@@ -40995,15 +38658,7 @@
 			<p><i>ter-vos-íeis</i></p>
 			<p><i>ter-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ta-me</i></p>
@@ -41135,15 +38790,7 @@
 			<p><i>deríeis</i></p>
 			<p><i>deriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>da</i></p>
@@ -41275,15 +38922,7 @@
 			<p><i>der-vos-íeis</i></p>
 			<p><i>der-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>da-me</i></p>
@@ -41415,15 +39054,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>eja-me</i></p>
@@ -41555,15 +39186,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha</i></p>
@@ -41695,15 +39318,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -41835,15 +39450,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ua</i></p>
@@ -41975,15 +39582,7 @@
 			<p><i>ger-vos-íeis</i></p>
 			<p><i>ger-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ja-me</i></p>
@@ -42115,15 +39714,7 @@
 			<p><i>ectir-vos-íeis</i></p>
 			<p><i>ectir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>icta-me</i></p>
@@ -42255,15 +39846,7 @@
 			<p><i>-</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -42395,15 +39978,7 @@
 			<p><i>mir-vos-íeis</i></p>
 			<p><i>mir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>dima-me</i></p>
@@ -42535,15 +40110,7 @@
 			<p><i>oer-vos-íeis</i></p>
 			<p><i>oer-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>oa-me</i></p>
@@ -42675,15 +40242,7 @@
 			<p><i>elir-vos-íeis</i></p>
 			<p><i>elir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ila-me</i></p>
@@ -42815,15 +40374,7 @@
 			<p><i>cir-vos-íeis</i></p>
 			<p><i>cir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ça-me</i></p>
@@ -42955,15 +40506,7 @@
 			<p><i>unir-vos-íeis</i></p>
 			<p><i>unir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úna-me</i></p>
@@ -43095,15 +40638,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ia-me</i></p>
@@ -43235,15 +40770,7 @@
 			<p><i>mperíeis</i></p>
 			<p><i>mperiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>mpa</i></p>
@@ -43375,15 +40902,7 @@
 			<p><i>mper-vos-íeis</i></p>
 			<p><i>mper-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>mpa-me</i></p>
@@ -43515,15 +41034,7 @@
 			<p><i>-</i></p>
 			<p><i>giriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -43655,15 +41166,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e</i></p>
@@ -43795,15 +41298,7 @@
 			<p><i>ar-vos-íeis</i></p>
 			<p><i>ar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>e-me</i></p>
@@ -43935,15 +41430,7 @@
 			<p><i>udar-vos-íeis</i></p>
 			<p><i>udar-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úde-me</i></p>
@@ -44075,15 +41562,7 @@
 			<p><i>caríeis</i></p>
 			<p><i>cariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que</i></p>
@@ -44215,15 +41694,7 @@
 			<p><i>car-vos-íeis</i></p>
 			<p><i>car-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>que-me</i></p>
@@ -44355,15 +41826,7 @@
 			<p><i>ervir-vos-íeis</i></p>
 			<p><i>ervir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>irva-me</i></p>
@@ -44495,15 +41958,7 @@
 			<p><i>oeríeis</i></p>
 			<p><i>oeriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>
@@ -44635,15 +42090,7 @@
 			<p><i>ortiríeis</i></p>
 			<p><i>ortiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>urta</i></p>
@@ -44775,15 +42222,7 @@
 			<p><i>ortir-vos-íeis</i></p>
 			<p><i>ortir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>urta-me</i></p>
@@ -44915,15 +42354,7 @@
 			<p><i>ubiríeis</i></p>
 			<p><i>ubiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uba</i></p>
@@ -45055,15 +42486,7 @@
 			<p><i>ubir-vos-íeis</i></p>
 			<p><i>ubir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uba-me</i></p>
@@ -45195,15 +42618,7 @@
 			<p><i>umir-vos-íeis</i></p>
 			<p><i>umir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>uma-me</i></p>
@@ -45335,15 +42750,7 @@
 			<p><i>enderíeis</i></p>
 			<p><i>enderiam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enda</i></p>
@@ -45475,15 +42882,7 @@
 			<p><i>ender-vos-íeis</i></p>
 			<p><i>ender-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enda-me</i></p>
@@ -45615,15 +43014,7 @@
 			<p><i>er-vos-íeis</i></p>
 			<p><i>er-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha-me</i></p>
@@ -45755,15 +43146,7 @@
 			<p><i>ossiríeis</i></p>
 			<p><i>ossiriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ussa</i></p>
@@ -45895,15 +43278,7 @@
 			<p><i>aríeis</i></p>
 			<p><i>ariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>ue</i></p>
@@ -46035,15 +43410,7 @@
 			<p><i>ir-vos-íeis</i></p>
 			<p><i>ir-se-iam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>enha-me</i></p>
@@ -46175,15 +43542,7 @@
 			<p><i>uvaríeis</i></p>
 			<p><i>uvariam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>úve</i></p>
@@ -46315,15 +43674,7 @@
 			<p><i>iríeis</i></p>
 			<p><i>iriam</i></p>
 		</Condicional-Futuro-do-Pretérito-Simples>
-		<Condicional-Futuro-do-Pretérito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Condicional-Futuro-do-Pretérito-Composto>
-	</Condicional>
+		</Condicional>
 	<Conjuntivo>
 		<Conjuntivo--Subjuntivo-Presente>
 			<p><i>-</i></p>

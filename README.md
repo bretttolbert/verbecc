@@ -3,16 +3,18 @@
 
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines)
 
-#### Verbs, completely conjugated - French and Spanish verb conjugator
+#### Verbs, completely conjugated - verb conjugator for French, Spanish and Portuguese
 
-#### Verbes, complètement conjugués - conjugaison en français et espagnol
+#### Verbes, complètement conjugués - conjugaison des verbes français, espagnol et portugais
 
-#### Verbos, completamente conjugados - conjugador de verbos francés y español
+#### Verbos, completamente conjugados - conjugador de verbos francés, español y portugúes
+
+#### Verbos, completamente conjugados - conjugação de verbos francês, espanhol e português
 
 https://github.com/bretttolbert/verbecc
 
 #### Features
-* Built-in support for over 7,000 French verbs and 9,000 Spanish verbs
+* Conjugate verbs in French, Spanish and Portuguese
 * Uses machine learning techniques to predict conjugation of unknown verbs with 99% accurracy
 * Includes both simple and compound conjugations
 * pip installable

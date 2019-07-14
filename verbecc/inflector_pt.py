@@ -49,7 +49,8 @@ class InflectorPt(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Particípio-Particípio']
+        return ['Particípio-Particípio', 'Infinitivo-Pessoal-Presente',
+                'Imperativo-Afirmativo', 'Imperativo-Negativo']
 
     def _get_helping_verb(self, infinitive):
         return 'ter'
@@ -75,5 +76,8 @@ class InflectorPt(inflector.Inflector):
                 'Conjuntivo--Subjuntivo-Pretérito-Perfeito': 'Conjuntivo--Subjuntivo-Presente',
                 'Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito': 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito',
                 'Conjuntivo--Subjuntivo-Futuro-Composto': 'Conjuntivo--Subjuntivo-Futuro-Simples'
+            },
+            'Condicional': {
+                'Condicional-Futuro-do-Pretérito-Composto': 'Condicional-Futuro-do-Pretérito-Simples'
             }
         }
