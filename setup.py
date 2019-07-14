@@ -22,7 +22,7 @@ requirements = [
 setup(
     name='verbecc',
     version=__version__,
-    description='Verbs, Completely Conjugated - Conjugator for French and Spanish using ML techniques to conjugate any verb',
+    description='Complete Conjugation of any Verb in French, Spanish and Portuguese, powered by Machine Learning',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author=__author__,
@@ -34,11 +34,16 @@ setup(
     install_requires=requirements,
     license=__license__,
     zip_safe=False,
-    keywords='conjugate conjugator conjugation conjugaison conjugación'
-             ' verbs verbes verbos ML machine-learning NLP linguistics linguistique linguistica sklearn',
+    keywords='french spanish portuguese'
+             ' français español português'
+             ' conjugate conjuguer conjugado' 
+             ' conjugator conjugueur conjugador'
+             ' conjugation conjugaison conjugación conjugação'
+             ' verbs verbes verbos'
+             ' ML machine-learning apprentissage-automatique aprendizaje-automático aprendizado-máquina'
+             ' NLP linguistics linguistique linguistica sklearn',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Text Processing :: Linguistic',
         'Topic :: Education',
