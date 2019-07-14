@@ -15,7 +15,7 @@ before_script:
   - source venv/bin/activate
 
 after_script:
-    - bash <(curl -s https://codecov.io/bash) -t aef49e7e-2539-47b9-aaf8-268ca78482d8
+    - bash <(curl -s https://codecov.io/bash) -f .coverage -t aef49e7e-2539-47b9-aaf8-268ca78482d8
 
 test:
   script:
@@ -26,7 +26,7 @@ test:
     - pip install -r requirements.txt
     - pip install -e .
     - pytest --cov=./verbecc/
-    
+
 run:
   script:
     - python setup.py bdist_wheel
