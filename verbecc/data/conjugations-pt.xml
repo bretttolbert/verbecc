@@ -34,7 +34,7 @@
 <!ELEMENT template (Indicativo , Condicional , Conjuntivo , Infinitivo , Imperativo , Gerúndio , Particípio)>
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Composto , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples , Indicativo-Pretérito-Mais-que-Perfeito-Anterior , Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
+<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples , Indicativo-Pretérito-Mais-que-Perfeito-Anterior , Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 <!ELEMENT Condicional (Condicional-Futuro-do-Pretérito-Simples , Condicional-Futuro-do-Pretérito-Composto)>
 <!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Perfeito , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito , Conjuntivo--Subjuntivo-Futuro-Simples , Conjuntivo--Subjuntivo-Futuro-Composto)>
 <!ELEMENT Infinitivo (Infinitivo-Pessoal-Presente , Infinitivo-Pessoal-Pretérito , Infinitivo-Infinitivo)>
@@ -43,7 +43,6 @@
 <!ELEMENT Particípio (Particípio-Particípio)>
 <!ELEMENT Indicativo-presente (p , p , p , p , p , p)>
 <!ELEMENT Indicativo-pretérito-imperfeito (p , p , p , p , p , p)>
-<!ELEMENT Indicativo-Pretérito-Mais-que-Perfeito-Composto (p , p , p , p , p , p)>
 <!ELEMENT Indicativo-Pretérito-Mais-que-Perfeito-Simples (p , p , p , p , p , p)>
 <!ELEMENT Indicativo-pretérito-perfeito-simples (p , p , p , p , p , p)>
 <!ELEMENT Indicativo-Pretérito-Mais-que-Perfeito-Anterior (p , p , p , p , p , p)>
@@ -87,14 +86,6 @@
 			<p><i>cíeis</i></p>
 			<p><i>ciam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cera</i></p>
 			<p><i>ceras</i></p>
@@ -275,14 +266,6 @@
 			<p><i>udíeis</i></p>
 			<p><i>udiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udira</i></p>
 			<p><i>udiras</i></p>
@@ -463,14 +446,6 @@
 			<p><i>uáveis</i></p>
 			<p><i>uavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uara</i></p>
 			<p><i>uaras</i></p>
@@ -651,14 +626,6 @@
 			<p><i>edíeis</i></p>
 			<p><i>ediam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>edira</i></p>
 			<p><i>ediras</i></p>
@@ -839,14 +806,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -1027,14 +986,6 @@
 			<p><i>azíeis</i></p>
 			<p><i>aziam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ouvera</i></p>
 			<p><i>ouveras</i></p>
@@ -1215,14 +1166,6 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
@@ -1403,14 +1346,6 @@
 			<p><i>uáveis</i></p>
 			<p><i>uavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uara</i></p>
 			<p><i>uaras</i></p>
@@ -1591,14 +1526,6 @@
 			<p><i>ínheis</i></p>
 			<p><i>inham</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iera</i></p>
 			<p><i>ieras</i></p>
@@ -1779,14 +1706,6 @@
 			<p><i>abíeis</i></p>
 			<p><i>abiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oubera</i></p>
 			<p><i>ouberas</i></p>
@@ -1967,14 +1886,6 @@
 			<p><i>erzíeis</i></p>
 			<p><i>erziam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>erzira</i></p>
 			<p><i>erziras</i></p>
@@ -2155,14 +2066,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -2343,14 +2246,6 @@
 			<p><i>-</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -2531,14 +2426,6 @@
 			<p><i>çáveis</i></p>
 			<p><i>çavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>çara</i></p>
 			<p><i>çaras</i></p>
@@ -2719,14 +2606,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -2907,14 +2786,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -3095,14 +2966,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -3283,14 +3146,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -3471,14 +3326,6 @@
 			<p><i>uíeis</i></p>
 			<p><i>uíam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uíra</i></p>
 			<p><i>uíras</i></p>
@@ -3659,14 +3506,6 @@
 			<p><i>íeis</i></p>
 			<p><i>íam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra</i></p>
 			<p><i>íras</i></p>
@@ -3847,14 +3686,6 @@
 			<p><i>ergíeis</i></p>
 			<p><i>ergiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ergira</i></p>
 			<p><i>ergiras</i></p>
@@ -4035,14 +3866,6 @@
 			<p><i>zíeis</i></p>
 			<p><i>ziam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ssera</i></p>
 			<p><i>sseras</i></p>
@@ -4223,14 +4046,6 @@
 			<p><i>oíeis</i></p>
 			<p><i>oíam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera</i></p>
 			<p><i>oeras</i></p>
@@ -4411,14 +4226,6 @@
 			<p><i>ormíeis</i></p>
 			<p><i>ormiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ormira</i></p>
 			<p><i>ormiras</i></p>
@@ -4599,14 +4406,6 @@
 			<p><i>upíeis</i></p>
 			<p><i>upiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>upira</i></p>
 			<p><i>upiras</i></p>
@@ -4787,14 +4586,6 @@
 			<p><i>uíeis</i></p>
 			<p><i>uiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uera</i></p>
 			<p><i>ueras</i></p>
@@ -4975,14 +4766,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ivera</i></p>
 			<p><i>iveras</i></p>
@@ -5163,14 +4946,6 @@
 			<p><i>guíeis</i></p>
 			<p><i>guiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>guira</i></p>
 			<p><i>guiras</i></p>
@@ -5351,14 +5126,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -5539,14 +5306,6 @@
 			<p><i>azíeis</i></p>
 			<p><i>aziam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>izera</i></p>
 			<p><i>izeras</i></p>
@@ -5727,14 +5486,6 @@
 			<p><i>cáveis</i></p>
 			<p><i>cavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara</i></p>
 			<p><i>caras</i></p>
@@ -5915,14 +5666,6 @@
 			<p><i>gíeis</i></p>
 			<p><i>giam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gira</i></p>
 			<p><i>giras</i></p>
@@ -6103,14 +5846,6 @@
 			<p><i>ugíeis</i></p>
 			<p><i>ugiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ugira</i></p>
 			<p><i>ugiras</i></p>
@@ -6291,14 +6026,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -6479,14 +6206,6 @@
 			<p><i>avíeis</i></p>
 			<p><i>aviam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ouvera</i></p>
 			<p><i>ouveras</i></p>
@@ -6667,14 +6386,6 @@
 			<p><i>gíeis</i></p>
 			<p><i>giam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gira</i></p>
 			<p><i>giras</i></p>
@@ -6855,14 +6566,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>fora</i></p>
 			<p><i>foras</i></p>
@@ -7043,14 +6746,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -7231,14 +6926,6 @@
 			<p><i>oíeis</i></p>
 			<p><i>oíam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera</i></p>
 			<p><i>oeras</i></p>
@@ -7419,14 +7106,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -7607,14 +7286,6 @@
 			<p><i>iáveis</i></p>
 			<p><i>iavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iara</i></p>
 			<p><i>iaras</i></p>
@@ -7795,14 +7466,6 @@
 			<p><i>víeis</i></p>
 			<p><i>viam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>vira</i></p>
 			<p><i>viras</i></p>
@@ -7983,14 +7646,6 @@
 			<p><i>díeis</i></p>
 			<p><i>diam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>dira</i></p>
 			<p><i>diras</i></p>
@@ -8171,14 +7826,6 @@
 			<p><i>díeis</i></p>
 			<p><i>diam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>dera</i></p>
 			<p><i>deras</i></p>
@@ -8359,14 +8006,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -8547,14 +8186,6 @@
 			<p><i>odíeis</i></p>
 			<p><i>odiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udera</i></p>
 			<p><i>uderas</i></p>
@@ -8735,14 +8366,6 @@
 			<p><i>olíeis</i></p>
 			<p><i>oliam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>olira</i></p>
 			<p><i>oliras</i></p>
@@ -8923,14 +8546,6 @@
 			<p><i>únheis</i></p>
 			<p><i>unham</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>usera</i></p>
 			<p><i>useras</i></p>
@@ -9111,14 +8726,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -9299,14 +8906,6 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>erira</i></p>
 			<p><i>eriras</i></p>
@@ -9487,14 +9086,6 @@
 			<p><i>ibíeis</i></p>
 			<p><i>ibiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ibira</i></p>
 			<p><i>ibiras</i></p>
@@ -9675,14 +9266,6 @@
 			<p><i>gíeis</i></p>
 			<p><i>giam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gera</i></p>
 			<p><i>geras</i></p>
@@ -9863,14 +9446,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -10051,14 +9626,6 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>isera</i></p>
 			<p><i>iseras</i></p>
@@ -10239,14 +9806,6 @@
 			<p><i>avíeis</i></p>
 			<p><i>aviam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ouvera</i></p>
 			<p><i>ouveras</i></p>
@@ -10427,14 +9986,6 @@
 			<p><i>gíeis</i></p>
 			<p><i>giam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gira</i></p>
 			<p><i>giras</i></p>
@@ -10615,14 +10166,6 @@
 			<p><i>ectíeis</i></p>
 			<p><i>ectiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ectira</i></p>
 			<p><i>ectiras</i></p>
@@ -10803,14 +10346,6 @@
 			<p><i>míeis</i></p>
 			<p><i>miam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>mira</i></p>
 			<p><i>miras</i></p>
@@ -10991,14 +10526,6 @@
 			<p><i>ríeis</i></p>
 			<p><i>riam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>rera</i></p>
 			<p><i>reras</i></p>
@@ -11179,14 +10706,6 @@
 			<p><i>cíeis</i></p>
 			<p><i>ciam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cira</i></p>
 			<p><i>ciras</i></p>
@@ -11367,14 +10886,6 @@
 			<p><i>uníeis</i></p>
 			<p><i>uniam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>unira</i></p>
 			<p><i>uniras</i></p>
@@ -11555,14 +11066,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -11743,14 +11246,6 @@
 			<p><i>abíeis</i></p>
 			<p><i>abiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oubera</i></p>
 			<p><i>ouberas</i></p>
@@ -11931,14 +11426,6 @@
 			<p><i>íeis</i></p>
 			<p><i>íam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra</i></p>
 			<p><i>íras</i></p>
@@ -12119,14 +11606,6 @@
 			<p><i>udáveis</i></p>
 			<p><i>udavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udara</i></p>
 			<p><i>udaras</i></p>
@@ -12307,14 +11786,6 @@
 			<p><i>eguíeis</i></p>
 			<p><i>eguiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>eguira</i></p>
 			<p><i>eguiras</i></p>
@@ -12495,14 +11966,6 @@
 			<p><i>entíeis</i></p>
 			<p><i>entiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>entira</i></p>
 			<p><i>entiras</i></p>
@@ -12683,14 +12146,6 @@
 			<p><i>éreis</i></p>
 			<p><i>eram</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>fora</i></p>
 			<p><i>foras</i></p>
@@ -12871,14 +12326,6 @@
 			<p><i>ervíeis</i></p>
 			<p><i>erviam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ervira</i></p>
 			<p><i>erviras</i></p>
@@ -13059,14 +12506,6 @@
 			<p><i>ínheis</i></p>
 			<p><i>inham</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ivera</i></p>
 			<p><i>iveras</i></p>
@@ -13247,14 +12686,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -13435,14 +12866,6 @@
 			<p><i>azíeis</i></p>
 			<p><i>aziam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ouxera</i></p>
 			<p><i>ouxeras</i></p>
@@ -13623,14 +13046,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -13811,14 +13226,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -13999,14 +13406,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -14187,14 +13586,6 @@
 			<p><i>ínheis</i></p>
 			<p><i>inham</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iera</i></p>
 			<p><i>ieras</i></p>
@@ -14375,14 +13766,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -14563,14 +13946,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -14751,14 +14126,6 @@
 			<p><i>ucáveis</i></p>
 			<p><i>ucavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ucara</i></p>
 			<p><i>ucaras</i></p>
@@ -14939,14 +14306,6 @@
 			<p><i>çáveis-vos</i></p>
 			<p><i>çavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>çara-me</i></p>
 			<p><i>çaras-te</i></p>
@@ -15127,14 +14486,6 @@
 			<p><i>ustráveis</i></p>
 			<p><i>ustravam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ustrara</i></p>
 			<p><i>ustraras</i></p>
@@ -15315,14 +14666,6 @@
 			<p><i>cáveis</i></p>
 			<p><i>cavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara</i></p>
 			<p><i>caras</i></p>
@@ -15503,14 +14846,6 @@
 			<p><i>cáveis-vos</i></p>
 			<p><i>cavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara-me</i></p>
 			<p><i>caras-te</i></p>
@@ -15691,14 +15026,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -15879,14 +15206,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -16067,14 +15386,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -16255,14 +15566,6 @@
 			<p><i>cíeis-vos</i></p>
 			<p><i>ciam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cera-me</i></p>
 			<p><i>ceras-te</i></p>
@@ -16443,14 +15746,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -16631,14 +15926,6 @@
 			<p><i>uláveis</i></p>
 			<p><i>ulavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ulara</i></p>
 			<p><i>ularas</i></p>
@@ -16819,14 +16106,6 @@
 			<p><i>cáveis</i></p>
 			<p><i>cavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara</i></p>
 			<p><i>caras</i></p>
@@ -17007,14 +16286,6 @@
 			<p><i>cáveis-vos</i></p>
 			<p><i>cavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara-me</i></p>
 			<p><i>caras-te</i></p>
@@ -17195,14 +16466,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>íam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra-me</i></p>
 			<p><i>íras-te</i></p>
@@ -17383,14 +16646,6 @@
 			<p><i>oiáveis</i></p>
 			<p><i>oiavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oiara</i></p>
 			<p><i>oiaras</i></p>
@@ -17571,14 +16826,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira-me</i></p>
 			<p><i>iras-te</i></p>
@@ -17759,14 +17006,6 @@
 			<p><i>gíeis-vos</i></p>
 			<p><i>giam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gera-me</i></p>
 			<p><i>geras-te</i></p>
@@ -17947,14 +17186,6 @@
 			<p><i>ríeis</i></p>
 			<p><i>riam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>rira</i></p>
 			<p><i>riras</i></p>
@@ -18135,14 +17366,6 @@
 			<p><i>ríeis-vos</i></p>
 			<p><i>riam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>rira-me</i></p>
 			<p><i>riras-te</i></p>
@@ -18323,14 +17546,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -18511,14 +17726,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -18699,14 +17906,6 @@
 			<p><i>ínheis</i></p>
 			<p><i>inham</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ivera</i></p>
 			<p><i>iveras</i></p>
@@ -18887,14 +18086,6 @@
 			<p><i>ínheis-vos</i></p>
 			<p><i>inham-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ivera-me</i></p>
 			<p><i>iveras-te</i></p>
@@ -19075,14 +18266,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>íam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra-me</i></p>
 			<p><i>íras-te</i></p>
@@ -19263,14 +18446,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -19451,14 +18626,6 @@
 			<p><i>ndíeis</i></p>
 			<p><i>ndiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ndera</i></p>
 			<p><i>nderas</i></p>
@@ -19639,14 +18806,6 @@
 			<p><i>ndíeis-vos</i></p>
 			<p><i>ndiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ndera-me</i></p>
 			<p><i>nderas-te</i></p>
@@ -19827,14 +18986,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -20015,14 +19166,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -20203,14 +19346,6 @@
 			<p><i>gíeis-vos</i></p>
 			<p><i>giam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gira-me</i></p>
 			<p><i>giras-te</i></p>
@@ -20391,14 +19526,6 @@
 			<p><i>udíeis-vos</i></p>
 			<p><i>udiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udira-me</i></p>
 			<p><i>udiras-te</i></p>
@@ -20579,14 +19706,6 @@
 			<p><i>uáveis-vos</i></p>
 			<p><i>uavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uara-me</i></p>
 			<p><i>uaras-te</i></p>
@@ -20767,14 +19886,6 @@
 			<p><i>eríeis-vos</i></p>
 			<p><i>eriam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>erira-me</i></p>
 			<p><i>eriras-te</i></p>
@@ -20955,14 +20066,6 @@
 			<p><i>evíeis</i></p>
 			<p><i>eviam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>evera</i></p>
 			<p><i>everas</i></p>
@@ -21143,14 +20246,6 @@
 			<p><i>evíeis-vos</i></p>
 			<p><i>eviam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>evera-me</i></p>
 			<p><i>everas-te</i></p>
@@ -21331,14 +20426,6 @@
 			<p><i>ertíeis</i></p>
 			<p><i>ertiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ertira</i></p>
 			<p><i>ertiras</i></p>
@@ -21519,14 +20606,6 @@
 			<p><i>azíeis-vos</i></p>
 			<p><i>aziam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>izera-me</i></p>
 			<p><i>izeras-te</i></p>
@@ -21707,14 +20786,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -21895,14 +20966,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -22083,14 +21146,6 @@
 			<p><i>ucháveis-vos</i></p>
 			<p><i>uchavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uchara-me</i></p>
 			<p><i>ucharas-te</i></p>
@@ -22271,14 +21326,6 @@
 			<p><i>udáveis</i></p>
 			<p><i>udavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udara</i></p>
 			<p><i>udaras</i></p>
@@ -22459,14 +21506,6 @@
 			<p><i>uáveis</i></p>
 			<p><i>uavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uara</i></p>
 			<p><i>uaras</i></p>
@@ -22647,14 +21686,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira-me</i></p>
 			<p><i>iras-te</i></p>
@@ -22835,14 +21866,6 @@
 			<p><i>itáveis</i></p>
 			<p><i>itavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>itara</i></p>
 			<p><i>itaras</i></p>
@@ -23023,14 +22046,6 @@
 			<p><i>itáveis-vos</i></p>
 			<p><i>itavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>itara-me</i></p>
 			<p><i>itaras-te</i></p>
@@ -23211,14 +22226,6 @@
 			<p><i>izáveis</i></p>
 			<p><i>izavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>izara</i></p>
 			<p><i>izaras</i></p>
@@ -23399,14 +22406,6 @@
 			<p><i>izáveis-vos</i></p>
 			<p><i>izavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>izara-me</i></p>
 			<p><i>izaras-te</i></p>
@@ -23587,14 +22586,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -23775,14 +22766,6 @@
 			<p><i>çáveis</i></p>
 			<p><i>çavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>çara</i></p>
 			<p><i>çaras</i></p>
@@ -23963,14 +22946,6 @@
 			<p><i>uáveis-vos</i></p>
 			<p><i>uavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uara-me</i></p>
 			<p><i>uaras-te</i></p>
@@ -24151,14 +23126,6 @@
 			<p><i>-</i></p>
 			<p><i>ciam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -24339,14 +23306,6 @@
 			<p><i>udáveis</i></p>
 			<p><i>udavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udara</i></p>
 			<p><i>udaras</i></p>
@@ -24527,14 +23486,6 @@
 			<p><i>udáveis-vos</i></p>
 			<p><i>udavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udara-me</i></p>
 			<p><i>udaras-te</i></p>
@@ -24715,14 +23666,6 @@
 			<p><i>iáveis</i></p>
 			<p><i>iavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iara</i></p>
 			<p><i>iaras</i></p>
@@ -24903,14 +23846,6 @@
 			<p><i>iáveis-vos</i></p>
 			<p><i>iavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iara-me</i></p>
 			<p><i>iaras-te</i></p>
@@ -25091,14 +24026,6 @@
 			<p><i>únheis</i></p>
 			<p><i>unham</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>usera</i></p>
 			<p><i>useras</i></p>
@@ -25279,14 +24206,6 @@
 			<p><i>únheis-vos</i></p>
 			<p><i>unham-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>usera-me</i></p>
 			<p><i>useras-te</i></p>
@@ -25467,14 +24386,6 @@
 			<p><i>uláveis-vos</i></p>
 			<p><i>ulavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ulara-me</i></p>
 			<p><i>ularas-te</i></p>
@@ -25655,14 +24566,6 @@
 			<p><i>oiáveis-vos</i></p>
 			<p><i>oiavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oiara-me</i></p>
 			<p><i>oiaras-te</i></p>
@@ -25843,14 +24746,6 @@
 			<p><i>azíeis-vos</i></p>
 			<p><i>aziam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ouvera-me</i></p>
 			<p><i>ouveras-te</i></p>
@@ -26031,14 +24926,6 @@
 			<p><i>izáveis</i></p>
 			<p><i>izavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>izara</i></p>
 			<p><i>izaras</i></p>
@@ -26219,14 +25106,6 @@
 			<p><i>cáveis-vos</i></p>
 			<p><i>cavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara-me</i></p>
 			<p><i>caras-te</i></p>
@@ -26407,14 +25286,6 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
@@ -26595,14 +25466,6 @@
 			<p><i>ináveis</i></p>
 			<p><i>inavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>inara</i></p>
 			<p><i>inaras</i></p>
@@ -26783,14 +25646,6 @@
 			<p><i>ináveis-vos</i></p>
 			<p><i>inavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>inara-me</i></p>
 			<p><i>inaras-te</i></p>
@@ -26971,14 +25826,6 @@
 			<p><i>ergíeis-vos</i></p>
 			<p><i>ergiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ergira-me</i></p>
 			<p><i>ergiras-te</i></p>
@@ -27159,14 +26006,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -27347,14 +26186,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -27535,14 +26366,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -27723,14 +26546,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -27911,14 +26726,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -28099,14 +26906,6 @@
 			<p><i>unáveis</i></p>
 			<p><i>unavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>unara</i></p>
 			<p><i>unaras</i></p>
@@ -28287,14 +27086,6 @@
 			<p><i>ínheis-vos</i></p>
 			<p><i>inham-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iera-me</i></p>
 			<p><i>ieras-te</i></p>
@@ -28475,14 +27266,6 @@
 			<p><i>umáveis</i></p>
 			<p><i>umavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umara</i></p>
 			<p><i>umaras</i></p>
@@ -28663,14 +27446,6 @@
 			<p><i>-</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -28851,14 +27626,6 @@
 			<p><i>-</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -29039,14 +27806,6 @@
 			<p><i>eríeis-vos</i></p>
 			<p><i>eriam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>isera-me</i></p>
 			<p><i>iseras-te</i></p>
@@ -29227,14 +27986,6 @@
 			<p><i>zíeis</i></p>
 			<p><i>ziam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>zera</i></p>
 			<p><i>zeras</i></p>
@@ -29415,14 +28166,6 @@
 			<p><i>zíeis-vos</i></p>
 			<p><i>ziam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>zera-me</i></p>
 			<p><i>zeras-te</i></p>
@@ -29603,14 +28346,6 @@
 			<p><i>uáveis</i></p>
 			<p><i>uavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uara</i></p>
 			<p><i>uaras</i></p>
@@ -29791,14 +28526,6 @@
 			<p><i>oiáveis</i></p>
 			<p><i>oiavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oiara</i></p>
 			<p><i>oiaras</i></p>
@@ -29979,14 +28706,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -30167,14 +28886,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
@@ -30355,14 +29066,6 @@
 			<p><i>ulíeis</i></p>
 			<p><i>uliam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ulira</i></p>
 			<p><i>uliras</i></p>
@@ -30543,14 +29246,6 @@
 			<p><i>ulíeis-vos</i></p>
 			<p><i>uliam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ulira-me</i></p>
 			<p><i>uliras-te</i></p>
@@ -30731,14 +29426,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -30919,14 +29606,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -31107,14 +29786,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -31295,14 +29966,6 @@
 			<p><i>erníeis</i></p>
 			<p><i>erniam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ernira</i></p>
 			<p><i>erniras</i></p>
@@ -31483,14 +30146,6 @@
 			<p><i>-</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -31671,14 +30326,6 @@
 			<p><i>gíeis-vos</i></p>
 			<p><i>giam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gira-me</i></p>
 			<p><i>giras-te</i></p>
@@ -31859,14 +30506,6 @@
 			<p><i>umáveis</i></p>
 			<p><i>umavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umara</i></p>
 			<p><i>umaras</i></p>
@@ -32047,14 +30686,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -32235,14 +30866,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -32423,14 +31046,6 @@
 			<p><i>obríeis</i></p>
 			<p><i>obriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>obrira</i></p>
 			<p><i>obriras</i></p>
@@ -32611,14 +31226,6 @@
 			<p><i>obríeis-vos</i></p>
 			<p><i>obriam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>obrira-me</i></p>
 			<p><i>obriras-te</i></p>
@@ -32799,14 +31406,6 @@
 			<p><i>ibíeis-vos</i></p>
 			<p><i>ibiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ibira-me</i></p>
 			<p><i>ibiras-te</i></p>
@@ -32987,14 +31586,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -33175,14 +31766,6 @@
 			<p><i>oiáveis</i></p>
 			<p><i>oiavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oiara</i></p>
 			<p><i>oiaras</i></p>
@@ -33363,14 +31946,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira-me</i></p>
 			<p><i>iras-te</i></p>
@@ -33551,14 +32126,6 @@
 			<p><i>elíeis</i></p>
 			<p><i>eliam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>elira</i></p>
 			<p><i>eliras</i></p>
@@ -33739,14 +32306,6 @@
 			<p><i>etíeis</i></p>
 			<p><i>etiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>etira</i></p>
 			<p><i>etiras</i></p>
@@ -33927,14 +32486,6 @@
 			<p><i>etíeis-vos</i></p>
 			<p><i>etiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>etira-me</i></p>
 			<p><i>etiras-te</i></p>
@@ -34115,14 +32666,6 @@
 			<p><i>íeis</i></p>
 			<p><i>íam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra</i></p>
 			<p><i>íras</i></p>
@@ -34303,14 +32846,6 @@
 			<p><i>oíeis</i></p>
 			<p><i>oíam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera</i></p>
 			<p><i>oeras</i></p>
@@ -34491,14 +33026,6 @@
 			<p><i>oíeis-vos</i></p>
 			<p><i>oíam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera-me</i></p>
 			<p><i>oeras-te</i></p>
@@ -34679,14 +33206,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira-me</i></p>
 			<p><i>iras-te</i></p>
@@ -34867,14 +33386,6 @@
 			<p><i>ngíeis</i></p>
 			<p><i>ngiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ngira</i></p>
 			<p><i>ngiras</i></p>
@@ -35055,14 +33566,6 @@
 			<p><i>ngíeis-vos</i></p>
 			<p><i>ngiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ngira-me</i></p>
 			<p><i>ngiras-te</i></p>
@@ -35243,14 +33746,6 @@
 			<p><i>umíeis</i></p>
 			<p><i>umiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umira</i></p>
 			<p><i>umiras</i></p>
@@ -35431,14 +33926,6 @@
 			<p><i>umíeis-vos</i></p>
 			<p><i>umiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umira-me</i></p>
 			<p><i>umiras-te</i></p>
@@ -35619,14 +34106,6 @@
 			<p><i>zíeis-vos</i></p>
 			<p><i>ziam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ssera-me</i></p>
 			<p><i>sseras-te</i></p>
@@ -35807,14 +34286,6 @@
 			<p><i>tíeis</i></p>
 			<p><i>tiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>tera</i></p>
 			<p><i>teras</i></p>
@@ -35995,14 +34466,6 @@
 			<p><i>ompíeis</i></p>
 			<p><i>ompiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ompera</i></p>
 			<p><i>omperas</i></p>
@@ -36183,14 +34646,6 @@
 			<p><i>ompíeis-vos</i></p>
 			<p><i>ompiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ompera-me</i></p>
 			<p><i>omperas-te</i></p>
@@ -36371,14 +34826,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -36559,14 +35006,6 @@
 			<p><i>-</i></p>
 			<p><i>cavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-            <p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -36747,14 +35186,6 @@
 			<p><i>uspíeis</i></p>
 			<p><i>uspiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uspira</i></p>
 			<p><i>uspiras</i></p>
@@ -36935,14 +35366,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -37123,14 +35546,6 @@
 			<p><i>egríeis</i></p>
 			<p><i>egriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>egrira</i></p>
 			<p><i>egriras</i></p>
@@ -37311,14 +35726,6 @@
 			<p><i>egríeis-vos</i></p>
 			<p><i>egriam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>egrira-me</i></p>
 			<p><i>egriras-te</i></p>
@@ -37499,14 +35906,6 @@
 			<p><i>çáveis</i></p>
 			<p><i>çavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>çara</i></p>
 			<p><i>çaras</i></p>
@@ -37687,14 +36086,6 @@
 			<p><i>çáveis-vos</i></p>
 			<p><i>çavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>çara-me</i></p>
 			<p><i>çaras-te</i></p>
@@ -37875,14 +36266,6 @@
 			<p><i>obríeis</i></p>
 			<p><i>obriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>obrira</i></p>
 			<p><i>obriras</i></p>
@@ -38063,14 +36446,6 @@
 			<p><i>obríeis-vos</i></p>
 			<p><i>obriam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>obrira-me</i></p>
 			<p><i>obriras-te</i></p>
@@ -38251,14 +36626,6 @@
 			<p><i>uláveis</i></p>
 			<p><i>ulavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ulara</i></p>
 			<p><i>ularas</i></p>
@@ -38439,14 +36806,6 @@
 			<p><i>olíeis</i></p>
 			<p><i>oliam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>olira</i></p>
 			<p><i>oliras</i></p>
@@ -38627,14 +36986,6 @@
 			<p><i>izáveis-vos</i></p>
 			<p><i>izavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>izara-me</i></p>
 			<p><i>izaras-te</i></p>
@@ -38815,14 +37166,6 @@
 			<p><i>upíeis-vos</i></p>
 			<p><i>upiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>upira-me</i></p>
 			<p><i>upiras-te</i></p>
@@ -39003,14 +37346,6 @@
 			<p><i>víeis</i></p>
 			<p><i>viam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>vera</i></p>
 			<p><i>veras</i></p>
@@ -39191,14 +37526,6 @@
 			<p><i>víeis-vos</i></p>
 			<p><i>viam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>vera-me</i></p>
 			<p><i>veras-te</i></p>
@@ -39379,14 +37706,6 @@
 			<p><i>estíeis</i></p>
 			<p><i>estiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>estira</i></p>
 			<p><i>estiras</i></p>
@@ -39567,14 +37886,6 @@
 			<p><i>díeis-vos</i></p>
 			<p><i>diam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>dira-me</i></p>
 			<p><i>diras-te</i></p>
@@ -39755,14 +38066,6 @@
 			<p><i>entíeis-vos</i></p>
 			<p><i>entiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>entira-me</i></p>
 			<p><i>entiras-te</i></p>
@@ -39943,14 +38246,6 @@
 			<p><i>oríeis</i></p>
 			<p><i>oriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>orira</i></p>
 			<p><i>oriras</i></p>
@@ -40131,14 +38426,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -40319,14 +38606,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -40507,14 +38786,6 @@
 			<p><i>espíeis</i></p>
 			<p><i>espiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>espira</i></p>
 			<p><i>espiras</i></p>
@@ -40695,14 +38966,6 @@
 			<p><i>espíeis-vos</i></p>
 			<p><i>espiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>espira-me</i></p>
 			<p><i>espiras-te</i></p>
@@ -40883,14 +39146,6 @@
 			<p><i>olíeis-vos</i></p>
 			<p><i>oliam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>olira-me</i></p>
 			<p><i>oliras-te</i></p>
@@ -41071,14 +39326,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -41259,14 +39506,6 @@
 			<p><i>eníeis</i></p>
 			<p><i>eniam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>enira</i></p>
 			<p><i>eniras</i></p>
@@ -41447,14 +39686,6 @@
 			<p><i>eníeis-vos</i></p>
 			<p><i>eniam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>enira-me</i></p>
 			<p><i>eniras-te</i></p>
@@ -41635,14 +39866,6 @@
 			<p><i>iáveis</i></p>
 			<p><i>iavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iara</i></p>
 			<p><i>iaras</i></p>
@@ -41823,14 +40046,6 @@
 			<p><i>estíeis-vos</i></p>
 			<p><i>estiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>estira-me</i></p>
 			<p><i>estiras-te</i></p>
@@ -42011,14 +40226,6 @@
 			<p><i>umíeis</i></p>
 			<p><i>umiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umira</i></p>
 			<p><i>umiras</i></p>
@@ -42199,14 +40406,6 @@
 			<p><i>díeis-vos</i></p>
 			<p><i>diam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>dera-me</i></p>
 			<p><i>deras-te</i></p>
@@ -42387,14 +40586,6 @@
 			<p><i>guíeis-vos</i></p>
 			<p><i>guiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>guira-me</i></p>
 			<p><i>guiras-te</i></p>
@@ -42575,14 +40766,6 @@
 			<p><i>ertíeis-vos</i></p>
 			<p><i>ertiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ertira-me</i></p>
 			<p><i>ertiras-te</i></p>
@@ -42763,14 +40946,6 @@
 			<p><i>oíeis-vos</i></p>
 			<p><i>oíam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera-me</i></p>
 			<p><i>oeras-te</i></p>
@@ -42951,14 +41126,6 @@
 			<p><i>cáveis</i></p>
 			<p><i>cavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara</i></p>
 			<p><i>caras</i></p>
@@ -43139,14 +41306,6 @@
 			<p><i>gíeis</i></p>
 			<p><i>giam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gera</i></p>
 			<p><i>geras</i></p>
@@ -43327,14 +41486,6 @@
 			<p><i>íeis</i></p>
 			<p><i>íam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra</i></p>
 			<p><i>íras</i></p>
@@ -43515,14 +41666,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -43703,14 +41846,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -43891,14 +42026,6 @@
 			<p><i>umáveis</i></p>
 			<p><i>umavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umara</i></p>
 			<p><i>umaras</i></p>
@@ -44079,14 +42206,6 @@
 			<p><i>umáveis-vos</i></p>
 			<p><i>umavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umara-me</i></p>
 			<p><i>umaras-te</i></p>
@@ -44267,14 +42386,6 @@
 			<p><i>oiáveis-vos</i></p>
 			<p><i>oiavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oiara-me</i></p>
 			<p><i>oiaras-te</i></p>
@@ -44455,14 +42566,6 @@
 			<p><i>uíeis</i></p>
 			<p><i>uiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uira</i></p>
 			<p><i>uiras</i></p>
@@ -44643,14 +42746,6 @@
 			<p><i>uíeis-vos</i></p>
 			<p><i>uiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uira-me</i></p>
 			<p><i>uiras-te</i></p>
@@ -44831,14 +42926,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -45019,14 +43106,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -45207,14 +43286,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira-me</i></p>
 			<p><i>iras-te</i></p>
@@ -45395,14 +43466,6 @@
 			<p><i>uváveis</i></p>
 			<p><i>uvavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uvara</i></p>
 			<p><i>uvaras</i></p>
@@ -45583,14 +43646,6 @@
 			<p><i>gáveis</i></p>
 			<p><i>gavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gara</i></p>
 			<p><i>garas</i></p>
@@ -45771,14 +43826,6 @@
 			<p><i>gáveis-vos</i></p>
 			<p><i>gavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gara-me</i></p>
 			<p><i>garas-te</i></p>
@@ -45959,14 +44006,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -46147,14 +44186,6 @@
 			<p><i>uíeis-vos</i></p>
 			<p><i>uiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uera-me</i></p>
 			<p><i>ueras-te</i></p>
@@ -46335,14 +44366,6 @@
 			<p><i>evíeis</i></p>
 			<p><i>eviam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>evera</i></p>
 			<p><i>everas</i></p>
@@ -46523,14 +44546,6 @@
 			<p><i>evíeis-vos</i></p>
 			<p><i>eviam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>evera-me</i></p>
 			<p><i>everas-te</i></p>
@@ -46711,14 +44726,6 @@
 			<p><i>ecíeis</i></p>
 			<p><i>eciam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ecera</i></p>
 			<p><i>eceras</i></p>
@@ -46899,14 +44906,6 @@
 			<p><i>uçáveis</i></p>
 			<p><i>uçavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uçara</i></p>
 			<p><i>uçaras</i></p>
@@ -47087,14 +45086,6 @@
 			<p><i>oíeis</i></p>
 			<p><i>oíam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera</i></p>
 			<p><i>oeras</i></p>
@@ -47275,14 +45266,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ivera-me</i></p>
 			<p><i>iveras-te</i></p>
@@ -47463,14 +45446,6 @@
 			<p><i>imíeis</i></p>
 			<p><i>imiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>imira</i></p>
 			<p><i>imiras</i></p>
@@ -47651,14 +45626,6 @@
 			<p><i>imíeis-vos</i></p>
 			<p><i>imiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>imira-me</i></p>
 			<p><i>imiras-te</i></p>
@@ -47839,14 +45806,6 @@
 			<p><i>iscáveis</i></p>
 			<p><i>iscavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iscara</i></p>
 			<p><i>iscaras</i></p>
@@ -48027,14 +45986,6 @@
 			<p><i>uláveis</i></p>
 			<p><i>ulavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ulara</i></p>
 			<p><i>ularas</i></p>
@@ -48215,14 +46166,6 @@
 			<p><i>emíeis</i></p>
 			<p><i>emiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>emira</i></p>
 			<p><i>emiras</i></p>
@@ -48403,14 +46346,6 @@
 			<p><i>ugíeis-vos</i></p>
 			<p><i>ugiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ugira-me</i></p>
 			<p><i>ugiras-te</i></p>
@@ -48591,14 +46526,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -48779,14 +46706,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -48967,14 +46886,6 @@
 			<p><i>ucháveis</i></p>
 			<p><i>uchavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uchara</i></p>
 			<p><i>ucharas</i></p>
@@ -49155,14 +47066,6 @@
 			<p><i>avíeis-vos</i></p>
 			<p><i>aviam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ouvera-me</i></p>
 			<p><i>ouveras-te</i></p>
@@ -49343,14 +47246,6 @@
 			<p><i>çáveis</i></p>
 			<p><i>çavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>çara</i></p>
 			<p><i>çaras</i></p>
@@ -49531,14 +47426,6 @@
 			<p><i>gíeis-vos</i></p>
 			<p><i>giam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gira-me</i></p>
 			<p><i>giras-te</i></p>
@@ -49719,14 +47606,6 @@
 			<p><i>elíeis</i></p>
 			<p><i>eliam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>elira</i></p>
 			<p><i>eliras</i></p>
@@ -49907,14 +47786,6 @@
 			<p><i>iáveis-vos</i></p>
 			<p><i>iavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iara-me</i></p>
 			<p><i>iaras-te</i></p>
@@ -50095,14 +47966,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>íam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra-me</i></p>
 			<p><i>íras-te</i></p>
@@ -50283,14 +48146,6 @@
 			<p><i>orríeis</i></p>
 			<p><i>orriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>orrera</i></p>
 			<p><i>orreras</i></p>
@@ -50471,14 +48326,6 @@
 			<p><i>gíeis</i></p>
 			<p><i>giam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gira</i></p>
 			<p><i>giras</i></p>
@@ -50659,14 +48506,6 @@
 			<p><i>eríeis</i></p>
 			<p><i>eriam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>erira</i></p>
 			<p><i>eriras</i></p>
@@ -50847,14 +48686,6 @@
 			<p><i>eríeis-vos</i></p>
 			<p><i>eriam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>erira-me</i></p>
 			<p><i>eriras-te</i></p>
@@ -51035,14 +48866,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>fora-me</i></p>
 			<p><i>foras-te</i></p>
@@ -51223,14 +49046,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -51411,14 +49226,6 @@
 			<p><i>oiáveis</i></p>
 			<p><i>oiavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oiara</i></p>
 			<p><i>oiaras</i></p>
@@ -51599,14 +49406,6 @@
 			<p><i>-</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -51787,14 +49586,6 @@
 			<p><i>atáveis</i></p>
 			<p><i>atavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>atara</i></p>
 			<p><i>ataras</i></p>
@@ -51975,14 +49766,6 @@
 			<p><i>atáveis-vos</i></p>
 			<p><i>atavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>atara-me</i></p>
 			<p><i>ataras-te</i></p>
@@ -52163,14 +49946,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -52351,14 +50126,6 @@
 			<p><i>oíeis-vos</i></p>
 			<p><i>oíam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera-me</i></p>
 			<p><i>oeras-te</i></p>
@@ -52539,14 +50306,6 @@
 			<p><i>ríeis</i></p>
 			<p><i>riam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>rera</i></p>
 			<p><i>reras</i></p>
@@ -52727,14 +50486,6 @@
 			<p><i>ríeis-vos</i></p>
 			<p><i>riam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>rera-me</i></p>
 			<p><i>reras-te</i></p>
@@ -52915,14 +50666,6 @@
 			<p><i>scíeis</i></p>
 			<p><i>sciam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>scera</i></p>
 			<p><i>sceras</i></p>
@@ -53103,14 +50846,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -53291,14 +51026,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -53479,14 +51206,6 @@
 			<p><i>iáveis-vos</i></p>
 			<p><i>iavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iara-me</i></p>
 			<p><i>iaras-te</i></p>
@@ -53667,14 +51386,6 @@
 			<p><i>tíeis</i></p>
 			<p><i>tiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>tira</i></p>
 			<p><i>tiras</i></p>
@@ -53855,14 +51566,6 @@
 			<p><i>tíeis-vos</i></p>
 			<p><i>tiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>tira-me</i></p>
 			<p><i>tiras-te</i></p>
@@ -54043,14 +51746,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -54231,14 +51926,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -54419,14 +52106,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era</i></p>
 			<p><i>eras</i></p>
@@ -54607,14 +52286,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -54795,14 +52466,6 @@
 			<p><i>eguíeis-vos</i></p>
 			<p><i>eguiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>eguira-me</i></p>
 			<p><i>eguiras-te</i></p>
@@ -54983,14 +52646,6 @@
 			<p><i>tíeis-vos</i></p>
 			<p><i>tiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>tera-me</i></p>
 			<p><i>teras-te</i></p>
@@ -55171,14 +52826,6 @@
 			<p><i>díeis</i></p>
 			<p><i>diam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>dera</i></p>
 			<p><i>deras</i></p>
@@ -55359,14 +53006,6 @@
 			<p><i>díeis-vos</i></p>
 			<p><i>diam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>dera-me</i></p>
 			<p><i>deras-te</i></p>
@@ -55547,14 +53186,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>era-me</i></p>
 			<p><i>eras-te</i></p>
@@ -55735,14 +53366,6 @@
 			<p><i>ínheis</i></p>
 			<p><i>inham</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iera</i></p>
 			<p><i>ieras</i></p>
@@ -55923,14 +53546,6 @@
 			<p><i>íeis</i></p>
 			<p><i>íam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>íra</i></p>
 			<p><i>íras</i></p>
@@ -56111,14 +53726,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i/></p>
 			<p><i/></p>
@@ -56299,14 +53906,6 @@
 			<p><i>gíeis-vos</i></p>
 			<p><i>giam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>gera-me</i></p>
 			<p><i>geras-te</i></p>
@@ -56487,14 +54086,6 @@
 			<p><i>ectíeis-vos</i></p>
 			<p><i>ectiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ectira-me</i></p>
 			<p><i>ectiras-te</i></p>
@@ -56675,14 +54266,6 @@
 			<p><i>-</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -56863,14 +54446,6 @@
 			<p><i>míeis-vos</i></p>
 			<p><i>miam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>mira-me</i></p>
 			<p><i>miras-te</i></p>
@@ -57051,14 +54626,6 @@
 			<p><i>oíeis-vos</i></p>
 			<p><i>oíam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera-me</i></p>
 			<p><i>oeras-te</i></p>
@@ -57239,14 +54806,6 @@
 			<p><i>elíeis-vos</i></p>
 			<p><i>eliam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>elira-me</i></p>
 			<p><i>eliras-te</i></p>
@@ -57427,14 +54986,6 @@
 			<p><i>cíeis-vos</i></p>
 			<p><i>ciam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cira-me</i></p>
 			<p><i>ciras-te</i></p>
@@ -57615,14 +55166,6 @@
 			<p><i>uníeis-vos</i></p>
 			<p><i>uniam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>unira-me</i></p>
 			<p><i>uniras-te</i></p>
@@ -57803,14 +55346,6 @@
 			<p><i>íeis-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira-me</i></p>
 			<p><i>iras-te</i></p>
@@ -57991,14 +55526,6 @@
 			<p><i>mpíeis</i></p>
 			<p><i>mpiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>mpera</i></p>
 			<p><i>mperas</i></p>
@@ -58179,14 +55706,6 @@
 			<p><i>mpíeis-vos</i></p>
 			<p><i>mpiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>mpera-me</i></p>
 			<p><i>mperas-te</i></p>
@@ -58367,14 +55886,6 @@
 			<p><i>-</i></p>
 			<p><i>giam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -58555,14 +56066,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -58743,14 +56246,6 @@
 			<p><i>áveis-vos</i></p>
 			<p><i>avam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara-me</i></p>
 			<p><i>aras-te</i></p>
@@ -58931,14 +56426,6 @@
 			<p><i>udáveis-vos</i></p>
 			<p><i>udavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>udara-me</i></p>
 			<p><i>udaras-te</i></p>
@@ -59119,14 +56606,6 @@
 			<p><i>cáveis</i></p>
 			<p><i>cavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara</i></p>
 			<p><i>caras</i></p>
@@ -59307,14 +56786,6 @@
 			<p><i>cáveis-vos</i></p>
 			<p><i>cavam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>cara-me</i></p>
 			<p><i>caras-te</i></p>
@@ -59495,14 +56966,6 @@
 			<p><i>ervíeis-vos</i></p>
 			<p><i>erviam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ervira-me</i></p>
 			<p><i>erviras-te</i></p>
@@ -59683,14 +57146,6 @@
 			<p><i>oíeis</i></p>
 			<p><i>oíam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>oera</i></p>
 			<p><i>oeras</i></p>
@@ -59871,14 +57326,6 @@
 			<p><i>ortíeis</i></p>
 			<p><i>ortiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ortira</i></p>
 			<p><i>ortiras</i></p>
@@ -60059,14 +57506,6 @@
 			<p><i>ortíeis-vos</i></p>
 			<p><i>ortiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ortira-me</i></p>
 			<p><i>ortiras-te</i></p>
@@ -60247,14 +57686,6 @@
 			<p><i>ubíeis</i></p>
 			<p><i>ubiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ubira</i></p>
 			<p><i>ubiras</i></p>
@@ -60435,14 +57866,6 @@
 			<p><i>ubíeis-vos</i></p>
 			<p><i>ubiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ubira-me</i></p>
 			<p><i>ubiras-te</i></p>
@@ -60623,14 +58046,6 @@
 			<p><i>umíeis-vos</i></p>
 			<p><i>umiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>umira-me</i></p>
 			<p><i>umiras-te</i></p>
@@ -60811,14 +58226,6 @@
 			<p><i>endíeis</i></p>
 			<p><i>endiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>endera</i></p>
 			<p><i>enderas</i></p>
@@ -60999,14 +58406,6 @@
 			<p><i>endíeis-vos</i></p>
 			<p><i>endiam-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>endera-me</i></p>
 			<p><i>enderas-te</i></p>
@@ -61187,14 +58586,6 @@
 			<p><i>ínheis-vos</i></p>
 			<p><i>inham-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ivera-me</i></p>
 			<p><i>iveras-te</i></p>
@@ -61375,14 +58766,6 @@
 			<p><i>ossíeis</i></p>
 			<p><i>ossiam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ossira</i></p>
 			<p><i>ossiras</i></p>
@@ -61563,14 +58946,6 @@
 			<p><i>áveis</i></p>
 			<p><i>avam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ara</i></p>
 			<p><i>aras</i></p>
@@ -61751,14 +59126,6 @@
 			<p><i>ínheis-vos</i></p>
 			<p><i>inham-se</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>iera-me</i></p>
 			<p><i>ieras-te</i></p>
@@ -61939,14 +59306,6 @@
 			<p><i>uváveis</i></p>
 			<p><i>uvavam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>uvara</i></p>
 			<p><i>uvaras</i></p>
@@ -62127,14 +59486,6 @@
 			<p><i>íeis</i></p>
 			<p><i>iam</i></p>
 		</Indicativo-pretérito-imperfeito>
-		<Indicativo-Pretérito-Mais-que-Perfeito-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Pretérito-Mais-que-Perfeito-Composto>
 		<Indicativo-Pretérito-Mais-que-Perfeito-Simples>
 			<p><i>ira</i></p>
 			<p><i>iras</i></p>
