@@ -6,13 +6,13 @@ import copy
 from . import grammar_defines
 from . import string_utils
 from . import exceptions
-from . import parse_verbs
-from . import parse_conjugations
+from . import verbs_parser
+from . import conjugations_parser
 
 class Inflector(ABC):
     def __init__(self):
-        self._verb_parser = parse_verbs.VerbsParser(self.lang)
-        self._conj_parser = parse_conjugations.ConjugationsParser(self.lang)
+        self._verb_parser = verbs_parser.VerbsParser(self.lang)
+        self._conj_parser = conjugations_parser.ConjugationsParser(self.lang)
 
     def conjugate(self, infinitive):
         co = self._get_conj_obs(infinitive)

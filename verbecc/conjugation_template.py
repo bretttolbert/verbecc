@@ -15,7 +15,7 @@ class ConjugationTemplate:
             self.moods = {}
             for mood_elem in template_elem:
                 mood = Mood(mood_elem)
-                self.moods[mood_elem.tag] = mood
+                self.moods[mood_elem.tag.lower()] = mood
                     
         except AttributeError as e:
             raise exceptions.ConjugationTemplateError(

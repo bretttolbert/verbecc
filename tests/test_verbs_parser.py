@@ -4,23 +4,23 @@ from mock import patch
 
 import pytest
 
-from verbecc import parse_verbs
+from verbecc import verbs_parser
 from verbecc import verb
 from verbecc import exceptions
 
 def test_verbs_parser():
-    vp = parse_verbs.VerbsParser()
+    vp = verbs_parser.VerbsParser()
     assert len(vp.verbs) >= 7000
 
 def test_verb():
-    vp = parse_verbs.VerbsParser()
+    vp = verbs_parser.VerbsParser()
     verb = vp.find_verb_by_infinitive("manger")
     assert verb.infinitive == "manger"
     assert verb.template == "man:ger"
     assert verb.translation_en == "eat"
 
 def test_verb_two():
-    vp = parse_verbs.VerbsParser()
+    vp = verbs_parser.VerbsParser()
     verb = vp.find_verb_by_infinitive("abattre")
     assert verb.infinitive == "abattre"
     assert verb.template == "bat:tre"
@@ -39,6 +39,6 @@ test_data = [
 
 @pytest.mark.parametrize("query,expected_matches", test_data)
 def test_get_verbs_that_start_with(query, expected_matches):
-    vp = parse_verbs.VerbsParser()
+    vp = verbs_parser.VerbsParser()
     matches = vp.get_verbs_that_start_with(query)
     assert matches == expected_matches

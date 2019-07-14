@@ -49,39 +49,39 @@ class InflectorPt(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['particípio-particípio', 
+        return ['particípio', 
                 'infinitivo-pessoal-presente', 'infinitivo-pessoal-composto',
-                'imperativo-afirmativo', 'imperativo-negativo']
+                'afirmativo', 'negativo']
 
     def _get_helping_verb(self, infinitive):
         return 'ter'
 
     def _get_subjunctive_mood_name(self):
-        return 'Subjuntivo'
+        return 'subjuntivo'
 
     def _get_participle_mood_name(self):
-        return 'Particípio'
+        return 'particípio'
 
     def _get_participle_tense_name(self):
-        return 'particípio-particípio'
+        return 'particípio'
 
     def _get_compound_conjugations_hv_map(self):
         return {
-            'Indicativo': {
+            'indicativo': {
                 'pretérito-perfeito-composto': 'presente',
                 'pretérito-mais-que-perfeito-composto': 'pretérito-imperfeito',
                 'pretérito-mais-que-perfeito-anterior': 'pretérito-mais-que-perfeito',
                 'futuro-do-presente-composto': 'futuro-do-presente'
             },
-            'Subjuntivo': {
+            'subjuntivo': {
                 'pretérito-perfeito': 'presente',
                 'pretérito-mais-que-perfeito': 'pretérito-imperfeito',
                 'futuro-composto': 'futuro'
             },
-            'Condicional': {
+            'condicional': {
                 'futuro-do-pretérito-composto': 'futuro-do-pretérito'
             },
-            'Infinitivo': {
+            'infinitivo': {
                 'infinitivo-pessoal-composto': 'infinitivo-pessoal-presente'
             }
         }
