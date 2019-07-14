@@ -71,4 +71,8 @@ class InflectorPt(inflector.Inflector):
             }
         }
         """
-        return {}
+        return {
+            'Indicativo': {
+                'Indicativo-Pretérito-Perfeito-Composto': 'Indicativo-presente'
+            }
+        }
