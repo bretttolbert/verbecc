@@ -74,7 +74,7 @@ class InflectorFr(inflector.Inflector):
             infinitive = infinitive[2:]
         return is_reflexive, infinitive
 
-    def _add_subjunctive_relative_pronoun(self, s):
+    def _add_subjunctive_relative_pronoun(self, s, tense_name):
         if string_utils.starts_with_vowel(s):
             return "qu'" + s
         else:

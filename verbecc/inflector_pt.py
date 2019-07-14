@@ -7,8 +7,14 @@ class InflectorPt(inflector.Inflector):
         self.lang = 'pt'
         super(InflectorPt, self).__init__()
 
-    def _add_subjunctive_relative_pronoun(self, s):
-        return "que " + s
+    def _add_subjunctive_relative_pronoun(self, s, tense_name):
+        if tense_name == 'Conjuntivo--Subjuntivo-Presente':
+            return 'que ' + s
+        elif tense_name == 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito':
+            return 'se ' + s
+        elif tense_name == 'Conjuntivo--Subjuntivo-Futuro-Simples':
+            return 'quando ' + s
+        return s
 
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         ret = ''
@@ -83,5 +89,8 @@ class InflectorPt(inflector.Inflector):
                 'Indicativo-Pretérito-Mais-que-Perfeito-Composto': 'Indicativo-pretérito-imperfeito',
                 'Indicativo-Pretérito-Mais-que-Perfeito-Anterior': 'Indicativo-Pretérito-Mais-que-Perfeito-Simples',
                 'Indicativo-Futuro-do-Presente-Composto': 'Indicativo-Futuro-do-Presente-Simples'
+            },
+            'Conjuntivo': {
+                'Conjuntivo--Subjuntivo-Pretérito-Perfeito': 'Conjuntivo--Subjuntivo-Presente'
             }
         }

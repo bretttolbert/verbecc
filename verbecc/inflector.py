@@ -70,7 +70,7 @@ class Inflector(ABC):
     def _split_reflexive(self, infinitive):
         return (False, infinitive)
 
-    def _add_subjunctive_relative_pronoun(self, s):
+    def _add_subjunctive_relative_pronoun(self, s, tense_name):
         return s
 
     def _prepend_with_se(self, s):
@@ -125,7 +125,7 @@ class Inflector(ABC):
         comp_conj_map = self._get_compound_conjugations_hv_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
             hv_tense_name = comp_conj_map[mood_name][tense_name]
-            return self._conjugate_compound(co, mood_name, hv_tense_name)
+            return self._conjugate_compound(co, mood_name, tense_name, hv_tense_name)
         else:
             mood = co.template.moods[mood_name]
             if tense_name not in mood.tenses:
@@ -160,12 +160,13 @@ class Inflector(ABC):
         """"Returns a map of the tense of the helping verb for each compound mood and tense"""
         return {}
 
-    def _conjugate_compound(self, co, mood_name, hv_tense_name):
+    def _conjugate_compound(self, co, mood_name, tense_name, hv_tense_name):
         """Conjugate a compound tense
         Args:
             co: ConjugationObjects for the verb being conjugated
             mood_name: mood verb is being conjugated in
-            hv_tense_name: tense_name for conjugating helping verb
+            tense_name: name of compound tense
+            hv_tense_name: name of tense to conjugate helping verb in order to form this compound tense
         """
         return {}
 
@@ -208,11 +209,11 @@ class Inflector(ABC):
                 conjugation += conjugated_verb
 
                 if mood_name == self._get_subjunctive_mood_name():
-                    conjugation = self._add_subjunctive_relative_pronoun(conjugation)
+                    conjugation = self._add_subjunctive_relative_pronoun(conjugation, tense_template.name)
                 ret.append(conjugation)
         return ret
 
-    def _conjugate_compound(self, co, mood_name, hv_tense_name):
+    def _conjugate_compound(self, co, mood_name, tense_name, hv_tense_name):
         """Conjugate a compound tense
         Args:
             co: ConjugationObjects for the verb being conjugated
@@ -260,5 +261,5 @@ class Inflector(ABC):
                         participle_inflection)]
                 ret.append(hv + ' ' + p)
         if mood_name == self._get_subjunctive_mood_name():
-            ret = [self._add_subjunctive_relative_pronoun(i) for i in ret]
+            ret = [self._add_subjunctive_relative_pronoun(i, tense_name) for i in ret]
         return ret

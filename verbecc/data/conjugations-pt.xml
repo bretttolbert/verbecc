@@ -36,7 +36,7 @@
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples , Indicativo-Futuro-do-Presente-Simples)>
 <!ELEMENT Condicional (Condicional-Futuro-do-Pretérito-Simples , Condicional-Futuro-do-Pretérito-Composto)>
-<!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Perfeito , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito , Conjuntivo--Subjuntivo-Futuro-Simples , Conjuntivo--Subjuntivo-Futuro-Composto)>
+<!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito , Conjuntivo--Subjuntivo-Futuro-Simples , Conjuntivo--Subjuntivo-Futuro-Composto)>
 <!ELEMENT Infinitivo (Infinitivo-Pessoal-Presente , Infinitivo-Pessoal-Pretérito , Infinitivo-Infinitivo)>
 <!ELEMENT Imperativo (Imperativo-Afirmativo , Imperativo-Negativo)>
 <!ELEMENT Gerúndio (Gerúndio-Gerúndio)>
@@ -49,7 +49,6 @@
 <!ELEMENT Condicional-Futuro-do-Pretérito-Simples (p , p , p , p , p , p)>
 <!ELEMENT Condicional-Futuro-do-Pretérito-Composto (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Presente (p , p , p , p , p , p)>
-<!ELEMENT Conjuntivo--Subjuntivo-Pretérito-Perfeito (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Pretérito-Imperfeito (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Futuro-Simples (p , p , p , p , p , p)>
@@ -136,14 +135,6 @@
 			<p><i>çais</i></p>
 			<p><i>çam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>cesse</i></p>
 			<p><i>cesses</i></p>
@@ -300,14 +291,6 @@
 			<p><i>udais</i></p>
 			<p><i>udam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udisse</i></p>
 			<p><i>udisses</i></p>
@@ -464,14 +447,6 @@
 			<p><i>ueis</i></p>
 			<p><i>úem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uasse</i></p>
 			<p><i>uasses</i></p>
@@ -628,14 +603,6 @@
 			<p><i>idais</i></p>
 			<p><i>idam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>edisse</i></p>
 			<p><i>edisses</i></p>
@@ -792,14 +759,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -956,14 +915,6 @@
 			<p><i>azais</i></p>
 			<p><i>azam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ouvesse</i></p>
 			<p><i>ouvesses</i></p>
@@ -1120,14 +1071,6 @@
 			<p><i>uais</i></p>
 			<p><i>uam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
@@ -1284,14 +1227,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uasse</i></p>
 			<p><i>uasses</i></p>
@@ -1448,14 +1383,6 @@
 			<p><i>enhais</i></p>
 			<p><i>enham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iesse</i></p>
 			<p><i>iesses</i></p>
@@ -1612,14 +1539,6 @@
 			<p><i>aibais</i></p>
 			<p><i>aibam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oubesse</i></p>
 			<p><i>oubesses</i></p>
@@ -1776,14 +1695,6 @@
 			<p><i>irzais</i></p>
 			<p><i>irzam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>erzisse</i></p>
 			<p><i>erzisses</i></p>
@@ -1940,14 +1851,6 @@
 			<p><i>ueis</i></p>
 			<p><i>uem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -2104,14 +2007,6 @@
 			<p><i>-</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -2268,14 +2163,6 @@
 			<p><i>ceis</i></p>
 			<p><i>cem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>çasse</i></p>
 			<p><i>çasses</i></p>
@@ -2432,14 +2319,6 @@
 			<p><i>eis</i></p>
 			<p><i>iem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -2596,14 +2475,6 @@
 			<p><i>eiais</i></p>
 			<p><i>eiam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -2760,14 +2631,6 @@
 			<p><i>eis</i></p>
 			<p><i>êem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -2924,14 +2787,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -3088,14 +2943,6 @@
 			<p><i>uais</i></p>
 			<p><i>uam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uísse</i></p>
 			<p><i>uísses</i></p>
@@ -3252,14 +3099,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse</i></p>
 			<p><i>ísses</i></p>
@@ -3416,14 +3255,6 @@
 			<p><i>irjais</i></p>
 			<p><i>irjam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ergisse</i></p>
 			<p><i>ergisses</i></p>
@@ -3580,14 +3411,6 @@
 			<p><i>gais</i></p>
 			<p><i>gam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ssesse</i></p>
 			<p><i>ssesses</i></p>
@@ -3744,14 +3567,6 @@
 			<p><i>oais</i></p>
 			<p><i>oam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse</i></p>
 			<p><i>oesses</i></p>
@@ -3908,14 +3723,6 @@
 			<p><i>urmais</i></p>
 			<p><i>urmam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ormisse</i></p>
 			<p><i>ormisses</i></p>
@@ -4072,14 +3879,6 @@
 			<p><i>upais</i></p>
 			<p><i>upam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>upisse</i></p>
 			<p><i>upisses</i></p>
@@ -4236,14 +4035,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uesse</i></p>
 			<p><i>uesses</i></p>
@@ -4400,14 +4191,6 @@
 			<p><i>ejais</i></p>
 			<p><i>ejam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ivesse</i></p>
 			<p><i>ivesses</i></p>
@@ -4564,14 +4347,6 @@
 			<p><i>gais</i></p>
 			<p><i>gam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>guisse</i></p>
 			<p><i>guisses</i></p>
@@ -4728,14 +4503,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -4892,14 +4659,6 @@
 			<p><i>açais</i></p>
 			<p><i>açam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>izesse</i></p>
 			<p><i>izesses</i></p>
@@ -5056,14 +4815,6 @@
 			<p><i>queis</i></p>
 			<p><i>quem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse</i></p>
 			<p><i>casses</i></p>
@@ -5220,14 +4971,6 @@
 			<p><i>jais</i></p>
 			<p><i>jam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gisse</i></p>
 			<p><i>gisses</i></p>
@@ -5384,14 +5127,6 @@
 			<p><i>ujais</i></p>
 			<p><i>ujam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ugisse</i></p>
 			<p><i>ugisses</i></p>
@@ -5548,14 +5283,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -5712,14 +5439,6 @@
 			<p><i>ajais</i></p>
 			<p><i>ajam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ouvesse</i></p>
 			<p><i>ouvesses</i></p>
@@ -5876,14 +5595,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gisse</i></p>
 			<p><i>gisses</i></p>
@@ -6040,14 +5751,6 @@
 			<p><i>vades</i></p>
 			<p><i>vão</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>fosse</i></p>
 			<p><i>fosses</i></p>
@@ -6204,14 +5907,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -6368,14 +6063,6 @@
 			<p><i>oais</i></p>
 			<p><i>oam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse</i></p>
 			<p><i>oesses</i></p>
@@ -6532,14 +6219,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -6696,14 +6375,6 @@
 			<p><i>ieis</i></p>
 			<p><i>eiem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iasse</i></p>
 			<p><i>iasses</i></p>
@@ -6860,14 +6531,6 @@
 			<p><i>çais</i></p>
 			<p><i>çam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>visse</i></p>
 			<p><i>visses</i></p>
@@ -7024,14 +6687,6 @@
 			<p><i>çais</i></p>
 			<p><i>çam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>disse</i></p>
 			<p><i>disses</i></p>
@@ -7188,14 +6843,6 @@
 			<p><i>cais</i></p>
 			<p><i>cam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>desse</i></p>
 			<p><i>desses</i></p>
@@ -7352,14 +6999,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -7516,14 +7155,6 @@
 			<p><i>ossais</i></p>
 			<p><i>ossam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udesse</i></p>
 			<p><i>udesses</i></p>
@@ -7680,14 +7311,6 @@
 			<p><i>ulais</i></p>
 			<p><i>ulam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>olisse</i></p>
 			<p><i>olisses</i></p>
@@ -7844,14 +7467,6 @@
 			<p><i>onhais</i></p>
 			<p><i>onham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>usesse</i></p>
 			<p><i>usesses</i></p>
@@ -8008,14 +7623,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -8172,14 +7779,6 @@
 			<p><i>irais</i></p>
 			<p><i>iram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>erisse</i></p>
 			<p><i>erisses</i></p>
@@ -8336,14 +7935,6 @@
 			<p><i>íbais</i></p>
 			<p><i>íbam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ibisse</i></p>
 			<p><i>ibisses</i></p>
@@ -8500,14 +8091,6 @@
 			<p><i>jais</i></p>
 			<p><i>jam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gesse</i></p>
 			<p><i>gesses</i></p>
@@ -8664,14 +8247,6 @@
 			<p><i>ejais</i></p>
 			<p><i>ejam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -8828,14 +8403,6 @@
 			<p><i>eirais</i></p>
 			<p><i>eiram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isesse</i></p>
 			<p><i>isesses</i></p>
@@ -8992,14 +8559,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ouvesse</i></p>
 			<p><i>ouvesses</i></p>
@@ -9156,14 +8715,6 @@
 			<p><i>jais</i></p>
 			<p><i>jam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gisse</i></p>
 			<p><i>gisses</i></p>
@@ -9320,14 +8871,6 @@
 			<p><i>ictais</i></p>
 			<p><i>ictam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ectisse</i></p>
 			<p><i>ectisses</i></p>
@@ -9484,14 +9027,6 @@
 			<p><i>dimais</i></p>
 			<p><i>dimam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>misse</i></p>
 			<p><i>misses</i></p>
@@ -9648,14 +9183,6 @@
 			<p><i>irais</i></p>
 			<p><i>iram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>resse</i></p>
 			<p><i>resses</i></p>
@@ -9812,14 +9339,6 @@
 			<p><i>çais</i></p>
 			<p><i>çam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>cisse</i></p>
 			<p><i>cisses</i></p>
@@ -9976,14 +9495,6 @@
 			<p><i>unais</i></p>
 			<p><i>únam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>unisse</i></p>
 			<p><i>unisses</i></p>
@@ -10140,14 +9651,6 @@
 			<p><i>iais</i></p>
 			<p><i>iam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -10304,14 +9807,6 @@
 			<p><i>aibais</i></p>
 			<p><i>aibam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oubesse</i></p>
 			<p><i>oubesses</i></p>
@@ -10468,14 +9963,6 @@
 			<p><i>iais</i></p>
 			<p><i>iam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse</i></p>
 			<p><i>ísses</i></p>
@@ -10632,14 +10119,6 @@
 			<p><i>udeis</i></p>
 			<p><i>údem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udasse</i></p>
 			<p><i>udasses</i></p>
@@ -10796,14 +10275,6 @@
 			<p><i>igais</i></p>
 			<p><i>igam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>eguisse</i></p>
 			<p><i>eguisses</i></p>
@@ -10960,14 +10431,6 @@
 			<p><i>intais</i></p>
 			<p><i>intam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>entisse</i></p>
 			<p><i>entisses</i></p>
@@ -11124,14 +10587,6 @@
 			<p><i>sejais</i></p>
 			<p><i>sejam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>fosse</i></p>
 			<p><i>fosses</i></p>
@@ -11288,14 +10743,6 @@
 			<p><i>irvais</i></p>
 			<p><i>irvam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ervisse</i></p>
 			<p><i>ervisses</i></p>
@@ -11452,14 +10899,6 @@
 			<p><i>enhais</i></p>
 			<p><i>enham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ivesse</i></p>
 			<p><i>ivesses</i></p>
@@ -11616,14 +11055,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -11780,14 +11211,6 @@
 			<p><i>agais</i></p>
 			<p><i>agam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ouxesse</i></p>
 			<p><i>ouxesses</i></p>
@@ -11944,14 +11367,6 @@
 			<p><i>hais</i></p>
 			<p><i>ham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -12108,14 +11523,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -12272,14 +11679,6 @@
 			<p><i>ejais</i></p>
 			<p><i>ejam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -12436,14 +11835,6 @@
 			<p><i>enhais</i></p>
 			<p><i>enham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iesse</i></p>
 			<p><i>iesses</i></p>
@@ -12600,14 +11991,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -12764,14 +12147,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -12928,14 +12303,6 @@
 			<p><i>uqueis</i></p>
 			<p><i>úquem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ucasse</i></p>
 			<p><i>ucasses</i></p>
@@ -13092,14 +12459,6 @@
 			<p><i>ceis-vos</i></p>
 			<p><i>cem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>çasse-me</i></p>
 			<p><i>çasses-te</i></p>
@@ -13256,14 +12615,6 @@
 			<p><i>ustreis</i></p>
 			<p><i>ústrem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ustrasse</i></p>
 			<p><i>ustrasses</i></p>
@@ -13420,14 +12771,6 @@
 			<p><i>queis</i></p>
 			<p><i>quem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse</i></p>
 			<p><i>casses</i></p>
@@ -13584,14 +12927,6 @@
 			<p><i>queis-vos</i></p>
 			<p><i>quem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse-me</i></p>
 			<p><i>casses-te</i></p>
@@ -13748,14 +13083,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>iem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -13912,14 +13239,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -14076,14 +13395,6 @@
 			<p><i>ueis-vos</i></p>
 			<p><i>uem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -14240,14 +13551,6 @@
 			<p><i>çais-vos</i></p>
 			<p><i>çam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>cesse-me</i></p>
 			<p><i>cesses-te</i></p>
@@ -14404,14 +13707,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -14568,14 +13863,6 @@
 			<p><i>uleis</i></p>
 			<p><i>úlem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ulasse</i></p>
 			<p><i>ulasses</i></p>
@@ -14732,14 +14019,6 @@
 			<p><i>queis</i></p>
 			<p><i>quem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse</i></p>
 			<p><i>casses</i></p>
@@ -14896,14 +14175,6 @@
 			<p><i>queis-vos</i></p>
 			<p><i>quem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse-me</i></p>
 			<p><i>casses-te</i></p>
@@ -15060,14 +14331,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse-me</i></p>
 			<p><i>ísses-te</i></p>
@@ -15224,14 +14487,6 @@
 			<p><i>oieis</i></p>
 			<p><i>óiem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oiasse</i></p>
 			<p><i>oiasses</i></p>
@@ -15388,14 +14643,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse-me</i></p>
 			<p><i>isses-te</i></p>
@@ -15552,14 +14799,6 @@
 			<p><i>jais-vos</i></p>
 			<p><i>jam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gesse-me</i></p>
 			<p><i>gesses-te</i></p>
@@ -15716,14 +14955,6 @@
 			<p><i>rais</i></p>
 			<p><i>ram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>risse</i></p>
 			<p><i>risses</i></p>
@@ -15880,14 +15111,6 @@
 			<p><i>rais-vos</i></p>
 			<p><i>ram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>risse-me</i></p>
 			<p><i>risses-te</i></p>
@@ -16044,14 +15267,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -16208,14 +15423,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -16372,14 +15579,6 @@
 			<p><i>enhais</i></p>
 			<p><i>enham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ivesse</i></p>
 			<p><i>ivesses</i></p>
@@ -16536,14 +15735,6 @@
 			<p><i>enhais-vos</i></p>
 			<p><i>enham-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ivesse-me</i></p>
 			<p><i>ivesses-te</i></p>
@@ -16700,14 +15891,6 @@
 			<p><i>iais-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse-me</i></p>
 			<p><i>ísses-te</i></p>
@@ -16864,14 +16047,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -17028,14 +16203,6 @@
 			<p><i>ndais</i></p>
 			<p><i>ndam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ndesse</i></p>
 			<p><i>ndesses</i></p>
@@ -17192,14 +16359,6 @@
 			<p><i>ndais-vos</i></p>
 			<p><i>ndam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ndesse-me</i></p>
 			<p><i>ndesses-te</i></p>
@@ -17356,14 +16515,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -17520,14 +16671,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -17684,14 +16827,6 @@
 			<p><i>jais-vos</i></p>
 			<p><i>jam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gisse-me</i></p>
 			<p><i>gisses-te</i></p>
@@ -17848,14 +16983,6 @@
 			<p><i>udais-vos</i></p>
 			<p><i>udam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udisse-me</i></p>
 			<p><i>udisses-te</i></p>
@@ -18012,14 +17139,6 @@
 			<p><i>ueis-vos</i></p>
 			<p><i>úem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uasse-me</i></p>
 			<p><i>uasses-te</i></p>
@@ -18176,14 +17295,6 @@
 			<p><i>irais-vos</i></p>
 			<p><i>iram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>erisse-me</i></p>
 			<p><i>erisses-te</i></p>
@@ -18340,14 +17451,6 @@
 			<p><i>evais</i></p>
 			<p><i>evam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>evesse</i></p>
 			<p><i>evesses</i></p>
@@ -18504,14 +17607,6 @@
 			<p><i>evais-vos</i></p>
 			<p><i>evam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>evesse-me</i></p>
 			<p><i>evesses-te</i></p>
@@ -18668,14 +17763,6 @@
 			<p><i>irtais</i></p>
 			<p><i>irtam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ertisse</i></p>
 			<p><i>ertisses</i></p>
@@ -18832,14 +17919,6 @@
 			<p><i>açais-vos</i></p>
 			<p><i>açam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>izesse-me</i></p>
 			<p><i>izesses-te</i></p>
@@ -18996,14 +18075,6 @@
 			<p><i>eis</i></p>
 			<p><i>iem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -19160,14 +18231,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>iem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -19324,14 +18387,6 @@
 			<p><i>ucheis-vos</i></p>
 			<p><i>úchem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uchasse-me</i></p>
 			<p><i>uchasses-te</i></p>
@@ -19488,14 +18543,6 @@
 			<p><i>udeis</i></p>
 			<p><i>údem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udasse</i></p>
 			<p><i>udasses</i></p>
@@ -19652,14 +18699,6 @@
 			<p><i>r)</i></p>
 			<p><i>r)</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uasse</i></p>
 			<p><i>uasses</i></p>
@@ -19816,14 +18855,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse-me</i></p>
 			<p><i>isses-te</i></p>
@@ -19980,14 +19011,6 @@
 			<p><i>iteis</i></p>
 			<p><i>ítem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>itasse</i></p>
 			<p><i>itasses</i></p>
@@ -20144,14 +19167,6 @@
 			<p><i>iteis-vos</i></p>
 			<p><i>ítem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>itasse-me</i></p>
 			<p><i>itasses-te</i></p>
@@ -20308,14 +19323,6 @@
 			<p><i>izeis</i></p>
 			<p><i>ízem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>izasse</i></p>
 			<p><i>izasses</i></p>
@@ -20472,14 +19479,6 @@
 			<p><i>izeis-vos</i></p>
 			<p><i>ízem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>izasse-me</i></p>
 			<p><i>izasses-te</i></p>
@@ -20636,14 +19635,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -20800,14 +19791,6 @@
 			<p><i>ceis</i></p>
 			<p><i>cem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>çasse</i></p>
 			<p><i>çasses</i></p>
@@ -20964,14 +19947,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uasse-me</i></p>
 			<p><i>uasses-te</i></p>
@@ -21128,14 +20103,6 @@
 			<p><i>-</i></p>
 			<p><i>çam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -21292,14 +20259,6 @@
 			<p><i>udeis</i></p>
 			<p><i>údem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udasse</i></p>
 			<p><i>udasses</i></p>
@@ -21456,14 +20415,6 @@
 			<p><i>udeis-vos</i></p>
 			<p><i>údem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udasse-me</i></p>
 			<p><i>udasses-te</i></p>
@@ -21620,14 +20571,6 @@
 			<p><i>ieis</i></p>
 			<p><i>eiem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iasse</i></p>
 			<p><i>iasses</i></p>
@@ -21784,14 +20727,6 @@
 			<p><i>ieis-vos</i></p>
 			<p><i>eiem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iasse-me</i></p>
 			<p><i>iasses-te</i></p>
@@ -21948,14 +20883,6 @@
 			<p><i>onhais</i></p>
 			<p><i>onham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>usesse</i></p>
 			<p><i>usesses</i></p>
@@ -22112,14 +21039,6 @@
 			<p><i>onhais-vos</i></p>
 			<p><i>onham-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>usesse-me</i></p>
 			<p><i>usesses-te</i></p>
@@ -22276,14 +21195,6 @@
 			<p><i>uleis-vos</i></p>
 			<p><i>úlem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ulasse-me</i></p>
 			<p><i>ulasses-te</i></p>
@@ -22440,14 +21351,6 @@
 			<p><i>oieis-vos</i></p>
 			<p><i>óiem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oiasse-me</i></p>
 			<p><i>oiasses-te</i></p>
@@ -22604,14 +21507,6 @@
 			<p><i>azais-vos</i></p>
 			<p><i>azam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ouvesse-me</i></p>
 			<p><i>ouvesses-te</i></p>
@@ -22768,14 +21663,6 @@
 			<p><i>izeis</i></p>
 			<p><i>ízem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>izasse</i></p>
 			<p><i>izasses</i></p>
@@ -22932,14 +21819,6 @@
 			<p><i>queis-vos</i></p>
 			<p><i>quem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse-me</i></p>
 			<p><i>casses-te</i></p>
@@ -23096,14 +21975,6 @@
 			<p><i>uais-vos</i></p>
 			<p><i>uam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
@@ -23260,14 +22131,6 @@
 			<p><i>ineis</i></p>
 			<p><i>ínem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>inasse</i></p>
 			<p><i>inasses</i></p>
@@ -23424,14 +22287,6 @@
 			<p><i>ineis-vos</i></p>
 			<p><i>ínem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>inasse-me</i></p>
 			<p><i>inasses-te</i></p>
@@ -23588,14 +22443,6 @@
 			<p><i>irjais-vos</i></p>
 			<p><i>irjam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ergisse-me</i></p>
 			<p><i>ergisses-te</i></p>
@@ -23752,14 +22599,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -23916,14 +22755,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -24080,14 +22911,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -24244,14 +23067,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -24408,14 +23223,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -24572,14 +23379,6 @@
 			<p><i>uneis</i></p>
 			<p><i>únem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>unasse</i></p>
 			<p><i>unasses</i></p>
@@ -24736,14 +23535,6 @@
 			<p><i>enhais-vos</i></p>
 			<p><i>enham-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iesse-me</i></p>
 			<p><i>iesses-te</i></p>
@@ -24900,14 +23691,6 @@
 			<p><i>umeis</i></p>
 			<p><i>úmem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umasse</i></p>
 			<p><i>umasses</i></p>
@@ -25064,14 +23847,6 @@
 			<p><i>-</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -25228,14 +24003,6 @@
 			<p><i>-</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -25392,14 +24159,6 @@
 			<p><i>eirais-vos</i></p>
 			<p><i>eiram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isesse-me</i></p>
 			<p><i>isesses-te</i></p>
@@ -25556,14 +24315,6 @@
 			<p><i>zais</i></p>
 			<p><i>zam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>zesse</i></p>
 			<p><i>zesses</i></p>
@@ -25720,14 +24471,6 @@
 			<p><i>zais-vos</i></p>
 			<p><i>zam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>zesse-me</i></p>
 			<p><i>zesses-te</i></p>
@@ -25884,14 +24627,6 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uasse</i></p>
 			<p><i>uasses</i></p>
@@ -26048,14 +24783,6 @@
 			<p><i>oieis</i></p>
 			<p><i>óiem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oiasse</i></p>
 			<p><i>oiasses</i></p>
@@ -26212,14 +24939,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -26376,14 +25095,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -26540,14 +25251,6 @@
 			<p><i>ulais</i></p>
 			<p><i>ulam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ulisse</i></p>
 			<p><i>ulisses</i></p>
@@ -26704,14 +25407,6 @@
 			<p><i>ulais-vos</i></p>
 			<p><i>ulam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ulisse-me</i></p>
 			<p><i>ulisses-te</i></p>
@@ -26868,14 +25563,6 @@
 			<p><i>ueis</i></p>
 			<p><i>uem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -27032,14 +25719,6 @@
 			<p><i>ueis-vos</i></p>
 			<p><i>uem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -27196,14 +25875,6 @@
 			<p><i>eis</i></p>
 			<p><i>iem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -27360,14 +26031,6 @@
 			<p><i>irnais</i></p>
 			<p><i>irnam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ernisse</i></p>
 			<p><i>ernisses</i></p>
@@ -27524,14 +26187,6 @@
 			<p><i>-</i></p>
 			<p><i>iem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -27688,14 +26343,6 @@
 			<p><i>jais-vos</i></p>
 			<p><i>jam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gisse-me</i></p>
 			<p><i>gisses-te</i></p>
@@ -27852,14 +26499,6 @@
 			<p><i>umeis</i></p>
 			<p><i>úmem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umasse</i></p>
 			<p><i>umasses</i></p>
@@ -28016,14 +26655,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -28180,14 +26811,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -28344,14 +26967,6 @@
 			<p><i>ubrais</i></p>
 			<p><i>ubram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>obrisse</i></p>
 			<p><i>obrisses</i></p>
@@ -28508,14 +27123,6 @@
 			<p><i>ubrais-vos</i></p>
 			<p><i>ubram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>obrisse-me</i></p>
 			<p><i>obrisses-te</i></p>
@@ -28672,14 +27279,6 @@
 			<p><i>íbais-vos</i></p>
 			<p><i>íbam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ibisse-me</i></p>
 			<p><i>ibisses-te</i></p>
@@ -28836,14 +27435,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -29000,14 +27591,6 @@
 			<p><i>oieis</i></p>
 			<p><i>óiem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oiasse</i></p>
 			<p><i>oiasses</i></p>
@@ -29164,14 +27747,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse-me</i></p>
 			<p><i>isses-te</i></p>
@@ -29328,14 +27903,6 @@
 			<p><i>ilais</i></p>
 			<p><i>ilam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>elisse</i></p>
 			<p><i>elisses</i></p>
@@ -29492,14 +28059,6 @@
 			<p><i>itais</i></p>
 			<p><i>itam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>etisse</i></p>
 			<p><i>etisses</i></p>
@@ -29656,14 +28215,6 @@
 			<p><i>itais-vos</i></p>
 			<p><i>itam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>etisse-me</i></p>
 			<p><i>etisses-te</i></p>
@@ -29820,14 +28371,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse</i></p>
 			<p><i>ísses</i></p>
@@ -29984,14 +28527,6 @@
 			<p><i>oais</i></p>
 			<p><i>oam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse</i></p>
 			<p><i>oesses</i></p>
@@ -30148,14 +28683,6 @@
 			<p><i>oais-vos</i></p>
 			<p><i>oam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse-me</i></p>
 			<p><i>oesses-te</i></p>
@@ -30312,14 +28839,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse-me</i></p>
 			<p><i>isses-te</i></p>
@@ -30476,14 +28995,6 @@
 			<p><i>njais</i></p>
 			<p><i>njam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ngisse</i></p>
 			<p><i>ngisses</i></p>
@@ -30640,14 +29151,6 @@
 			<p><i>njais-vos</i></p>
 			<p><i>njam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ngisse-me</i></p>
 			<p><i>ngisses-te</i></p>
@@ -30804,14 +29307,6 @@
 			<p><i>umais</i></p>
 			<p><i>umam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umisse</i></p>
 			<p><i>umisses</i></p>
@@ -30968,14 +29463,6 @@
 			<p><i>umais-vos</i></p>
 			<p><i>umam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umisse-me</i></p>
 			<p><i>umisses-te</i></p>
@@ -31132,14 +29619,6 @@
 			<p><i>gais-vos</i></p>
 			<p><i>gam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ssesse-me</i></p>
 			<p><i>ssesses-te</i></p>
@@ -31296,14 +29775,6 @@
 			<p><i>tais</i></p>
 			<p><i>tam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>tesse</i></p>
 			<p><i>tesses</i></p>
@@ -31460,14 +29931,6 @@
 			<p><i>ompais</i></p>
 			<p><i>ompam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ompesse</i></p>
 			<p><i>ompesses</i></p>
@@ -31624,14 +30087,6 @@
 			<p><i>ompais-vos</i></p>
 			<p><i>ompam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ompesse-me</i></p>
 			<p><i>ompesses-te</i></p>
@@ -31788,14 +30243,6 @@
 			<p><i>eiais-vos</i></p>
 			<p><i>eiam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -31952,14 +30399,6 @@
 			<p><i>-</i></p>
 			<p><i>quem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -32116,14 +30555,6 @@
 			<p><i>uspais</i></p>
 			<p><i>uspam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uspisse</i></p>
 			<p><i>uspisses</i></p>
@@ -32280,14 +30711,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>êem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -32444,14 +30867,6 @@
 			<p><i>igrais</i></p>
 			<p><i>igram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>egrisse</i></p>
 			<p><i>egrisses</i></p>
@@ -32608,14 +31023,6 @@
 			<p><i>igrais-vos</i></p>
 			<p><i>igram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>egrisse-me</i></p>
 			<p><i>egrisses-te</i></p>
@@ -32772,14 +31179,6 @@
 			<p><i>ceis</i></p>
 			<p><i>cem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>çasse</i></p>
 			<p><i>çasses</i></p>
@@ -32936,14 +31335,6 @@
 			<p><i>ceis-vos</i></p>
 			<p><i>cem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>çasse-me</i></p>
 			<p><i>çasses-te</i></p>
@@ -33100,14 +31491,6 @@
 			<p><i>ubrais</i></p>
 			<p><i>ubram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>obrisse</i></p>
 			<p><i>obrisses</i></p>
@@ -33264,14 +31647,6 @@
 			<p><i>ubrais-vos</i></p>
 			<p><i>ubram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>obrisse-me</i></p>
 			<p><i>obrisses-te</i></p>
@@ -33428,14 +31803,6 @@
 			<p><i>uleis</i></p>
 			<p><i>úlem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ulasse</i></p>
 			<p><i>ulasses</i></p>
@@ -33592,14 +31959,6 @@
 			<p><i>ulais</i></p>
 			<p><i>ulam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>olisse</i></p>
 			<p><i>olisses</i></p>
@@ -33756,14 +32115,6 @@
 			<p><i>izeis-vos</i></p>
 			<p><i>ízem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>izasse-me</i></p>
 			<p><i>izasses-te</i></p>
@@ -33920,14 +32271,6 @@
 			<p><i>upais-vos</i></p>
 			<p><i>upam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>upisse-me</i></p>
 			<p><i>upisses-te</i></p>
@@ -34084,14 +32427,6 @@
 			<p><i>vais</i></p>
 			<p><i>vam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>vesse</i></p>
 			<p><i>vesses</i></p>
@@ -34248,14 +32583,6 @@
 			<p><i>vais-vos</i></p>
 			<p><i>vam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>vesse-me</i></p>
 			<p><i>vesses-te</i></p>
@@ -34412,14 +32739,6 @@
 			<p><i>istais</i></p>
 			<p><i>istam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>estisse</i></p>
 			<p><i>estisses</i></p>
@@ -34576,14 +32895,6 @@
 			<p><i>çais-vos</i></p>
 			<p><i>çam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>disse-me</i></p>
 			<p><i>disses-te</i></p>
@@ -34740,14 +33051,6 @@
 			<p><i>intais-vos</i></p>
 			<p><i>intam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>entisse-me</i></p>
 			<p><i>entisses-te</i></p>
@@ -34904,14 +33207,6 @@
 			<p><i>urais</i></p>
 			<p><i>uram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>orisse</i></p>
 			<p><i>orisses</i></p>
@@ -35068,14 +33363,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -35232,14 +33519,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -35396,14 +33675,6 @@
 			<p><i>ispais</i></p>
 			<p><i>ispam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>espisse</i></p>
 			<p><i>espisses</i></p>
@@ -35560,14 +33831,6 @@
 			<p><i>ispais-vos</i></p>
 			<p><i>ispam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>espisse-me</i></p>
 			<p><i>espisses-te</i></p>
@@ -35724,14 +33987,6 @@
 			<p><i>ulais-vos</i></p>
 			<p><i>ulam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>olisse-me</i></p>
 			<p><i>olisses-te</i></p>
@@ -35888,14 +34143,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -36052,14 +34299,6 @@
 			<p><i>inais</i></p>
 			<p><i>inam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>enisse</i></p>
 			<p><i>enisses</i></p>
@@ -36216,14 +34455,6 @@
 			<p><i>inais-vos</i></p>
 			<p><i>inam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>enisse-me</i></p>
 			<p><i>enisses-te</i></p>
@@ -36380,14 +34611,6 @@
 			<p><i>ieis</i></p>
 			<p><i>eiem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iasse</i></p>
 			<p><i>iasses</i></p>
@@ -36544,14 +34767,6 @@
 			<p><i>istais-vos</i></p>
 			<p><i>istam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>estisse-me</i></p>
 			<p><i>estisses-te</i></p>
@@ -36708,14 +34923,6 @@
 			<p><i>umais</i></p>
 			<p><i>umam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umisse</i></p>
 			<p><i>umisses</i></p>
@@ -36872,14 +35079,6 @@
 			<p><i>cais-vos</i></p>
 			<p><i>cam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>desse-me</i></p>
 			<p><i>desses-te</i></p>
@@ -37036,14 +35235,6 @@
 			<p><i>gais-vos</i></p>
 			<p><i>gam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>guisse-me</i></p>
 			<p><i>guisses-te</i></p>
@@ -37200,14 +35391,6 @@
 			<p><i>irtais-vos</i></p>
 			<p><i>irtam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ertisse-me</i></p>
 			<p><i>ertisses-te</i></p>
@@ -37364,14 +35547,6 @@
 			<p><i>oais-vos</i></p>
 			<p><i>oam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse-me</i></p>
 			<p><i>oesses-te</i></p>
@@ -37528,14 +35703,6 @@
 			<p><i>queis</i></p>
 			<p><i>quem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse</i></p>
 			<p><i>casses</i></p>
@@ -37692,14 +35859,6 @@
 			<p><i>jais</i></p>
 			<p><i>jam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gesse</i></p>
 			<p><i>gesses</i></p>
@@ -37856,14 +36015,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse</i></p>
 			<p><i>ísses</i></p>
@@ -38020,14 +36171,6 @@
 			<p><i>ueis</i></p>
 			<p><i>uem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -38184,14 +36327,6 @@
 			<p><i>ueis-vos</i></p>
 			<p><i>uem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -38348,14 +36483,6 @@
 			<p><i>umeis</i></p>
 			<p><i>úmem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umasse</i></p>
 			<p><i>umasses</i></p>
@@ -38512,14 +36639,6 @@
 			<p><i>umeis-vos</i></p>
 			<p><i>úmem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umasse-me</i></p>
 			<p><i>umasses-te</i></p>
@@ -38676,14 +36795,6 @@
 			<p><i>oieis-vos</i></p>
 			<p><i>óiem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oiasse-me</i></p>
 			<p><i>oiasses-te</i></p>
@@ -38840,14 +36951,6 @@
 			<p><i>ais</i></p>
 			<p><i>am</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uisse</i></p>
 			<p><i>uisses</i></p>
@@ -39004,14 +37107,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uisse-me</i></p>
 			<p><i>uisses-te</i></p>
@@ -39168,14 +37263,6 @@
 			<p><i>ueis</i></p>
 			<p><i>uem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -39332,14 +37419,6 @@
 			<p><i>ueis-vos</i></p>
 			<p><i>uem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -39496,14 +37575,6 @@
 			<p><i>ejais-vos</i></p>
 			<p><i>ejam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse-me</i></p>
 			<p><i>isses-te</i></p>
@@ -39660,14 +37731,6 @@
 			<p><i>uveis</i></p>
 			<p><i>úvem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uvasse</i></p>
 			<p><i>uvasses</i></p>
@@ -39824,14 +37887,6 @@
 			<p><i>gueis</i></p>
 			<p><i>guem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gasse</i></p>
 			<p><i>gasses</i></p>
@@ -39988,14 +38043,6 @@
 			<p><i>gueis-vos</i></p>
 			<p><i>guem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gasse-me</i></p>
 			<p><i>gasses-te</i></p>
@@ -40152,14 +38199,6 @@
 			<p><i>hais-vos</i></p>
 			<p><i>ham-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -40316,14 +38355,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uesse-me</i></p>
 			<p><i>uesses-te</i></p>
@@ -40480,14 +38511,6 @@
 			<p><i>evais</i></p>
 			<p><i>evam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>evesse</i></p>
 			<p><i>evesses</i></p>
@@ -40644,14 +38667,6 @@
 			<p><i>evais-vos</i></p>
 			<p><i>evam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>evesse-me</i></p>
 			<p><i>evesses-te</i></p>
@@ -40808,14 +38823,6 @@
 			<p><i>eçais</i></p>
 			<p><i>eçam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ecesse</i></p>
 			<p><i>ecesses</i></p>
@@ -40972,14 +38979,6 @@
 			<p><i>uceis</i></p>
 			<p><i>úcem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uçasse</i></p>
 			<p><i>uçasses</i></p>
@@ -41136,14 +39135,6 @@
 			<p><i>oais</i></p>
 			<p><i>oam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse</i></p>
 			<p><i>oesses</i></p>
@@ -41300,14 +39291,6 @@
 			<p><i>ejais-vos</i></p>
 			<p><i>ejam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ivesse-me</i></p>
 			<p><i>ivesses-te</i></p>
@@ -41464,14 +39447,6 @@
 			<p><i>imais</i></p>
 			<p><i>imam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>imisse</i></p>
 			<p><i>imisses</i></p>
@@ -41628,14 +39603,6 @@
 			<p><i>imais-vos</i></p>
 			<p><i>imam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>imisse-me</i></p>
 			<p><i>imisses-te</i></p>
@@ -41792,14 +39759,6 @@
 			<p><i>isqueis</i></p>
 			<p><i>ísquem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iscasse</i></p>
 			<p><i>iscasses</i></p>
@@ -41956,14 +39915,6 @@
 			<p><i>uleis</i></p>
 			<p><i>úlem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ulasse</i></p>
 			<p><i>ulasses</i></p>
@@ -42120,14 +40071,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>emisse</i></p>
 			<p><i>emisses</i></p>
@@ -42284,14 +40227,6 @@
 			<p><i>ujais-vos</i></p>
 			<p><i>ujam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ugisse-me</i></p>
 			<p><i>ugisses-te</i></p>
@@ -42448,14 +40383,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -42612,14 +40539,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -42776,14 +40695,6 @@
 			<p><i>ucheis</i></p>
 			<p><i>úchem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uchasse</i></p>
 			<p><i>uchasses</i></p>
@@ -42940,14 +40851,6 @@
 			<p><i>ajais-vos</i></p>
 			<p><i>ajam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ouvesse-me</i></p>
 			<p><i>ouvesses-te</i></p>
@@ -43104,14 +41007,6 @@
 			<p><i>ceis</i></p>
 			<p><i>cem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>çasse</i></p>
 			<p><i>çasses</i></p>
@@ -43268,14 +41163,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gisse-me</i></p>
 			<p><i>gisses-te</i></p>
@@ -43432,14 +41319,6 @@
 			<p><i>ilais</i></p>
 			<p><i>ilam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>elisse</i></p>
 			<p><i>elisses</i></p>
@@ -43596,14 +41475,6 @@
 			<p><i>ieis-vos</i></p>
 			<p><i>eiem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iasse-me</i></p>
 			<p><i>iasses-te</i></p>
@@ -43760,14 +41631,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse-me</i></p>
 			<p><i>ísses-te</i></p>
@@ -43924,14 +41787,6 @@
 			<p><i>orrais</i></p>
 			<p><i>orram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>orresse</i></p>
 			<p><i>orresses</i></p>
@@ -44088,14 +41943,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gisse</i></p>
 			<p><i>gisses</i></p>
@@ -44252,14 +42099,6 @@
 			<p><i>irais</i></p>
 			<p><i>iram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>erisse</i></p>
 			<p><i>erisses</i></p>
@@ -44416,14 +42255,6 @@
 			<p><i>irais-vos</i></p>
 			<p><i>iram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>erisse-me</i></p>
 			<p><i>erisses-te</i></p>
@@ -44580,14 +42411,6 @@
 			<p><i>vades-vos</i></p>
 			<p><i>vão-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>fosse-me</i></p>
 			<p><i>fosses-te</i></p>
@@ -44744,14 +42567,6 @@
 			<p><i>ais-vos</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -44908,14 +42723,6 @@
 			<p><i>oieis</i></p>
 			<p><i>óiem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oiasse</i></p>
 			<p><i>oiasses</i></p>
@@ -45072,14 +42879,6 @@
 			<p><i>-</i></p>
 			<p><i>am-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -45236,14 +43035,6 @@
 			<p><i>ateis</i></p>
 			<p><i>atem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>atasse</i></p>
 			<p><i>atasses</i></p>
@@ -45400,14 +43191,6 @@
 			<p><i>ateis-vos</i></p>
 			<p><i>atem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>atasse-me</i></p>
 			<p><i>atasses-te</i></p>
@@ -45564,14 +43347,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>iem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -45728,14 +43503,6 @@
 			<p><i>oais-vos</i></p>
 			<p><i>oam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse-me</i></p>
 			<p><i>oesses-te</i></p>
@@ -45892,14 +43659,6 @@
 			<p><i>rais</i></p>
 			<p><i>ram</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>resse</i></p>
 			<p><i>resses</i></p>
@@ -46056,14 +43815,6 @@
 			<p><i>rais-vos</i></p>
 			<p><i>ram-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>resse-me</i></p>
 			<p><i>resses-te</i></p>
@@ -46220,14 +43971,6 @@
 			<p><i>sçais</i></p>
 			<p><i>sçam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>scesse</i></p>
 			<p><i>scesses</i></p>
@@ -46384,14 +44127,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -46548,14 +44283,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -46712,14 +44439,6 @@
 			<p><i>ieis-vos</i></p>
 			<p><i>eiem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iasse-me</i></p>
 			<p><i>iasses-te</i></p>
@@ -46876,14 +44595,6 @@
 			<p><i>tais</i></p>
 			<p><i>tam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>tisse</i></p>
 			<p><i>tisses</i></p>
@@ -47040,14 +44751,6 @@
 			<p><i>tais-vos</i></p>
 			<p><i>tam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>tisse-me</i></p>
 			<p><i>tisses-te</i></p>
@@ -47204,14 +44907,6 @@
 			<p><i>ueis</i></p>
 			<p><i>uem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -47368,14 +45063,6 @@
 			<p><i>ueis-vos</i></p>
 			<p><i>uem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -47532,14 +45219,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse</i></p>
 			<p><i>esses</i></p>
@@ -47696,14 +45375,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -47860,14 +45531,6 @@
 			<p><i>igais-vos</i></p>
 			<p><i>igam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>eguisse-me</i></p>
 			<p><i>eguisses-te</i></p>
@@ -48024,14 +45687,6 @@
 			<p><i>tais-vos</i></p>
 			<p><i>tam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>tesse-me</i></p>
 			<p><i>tesses-te</i></p>
@@ -48188,14 +45843,6 @@
 			<p><i>dais</i></p>
 			<p><i>dam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>desse</i></p>
 			<p><i>desses</i></p>
@@ -48352,14 +45999,6 @@
 			<p><i>dais-vos</i></p>
 			<p><i>dam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>desse-me</i></p>
 			<p><i>desses-te</i></p>
@@ -48516,14 +46155,6 @@
 			<p><i>ejais-vos</i></p>
 			<p><i>ejam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>esse-me</i></p>
 			<p><i>esses-te</i></p>
@@ -48680,14 +46311,6 @@
 			<p><i>enhais</i></p>
 			<p><i>enham</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iesse</i></p>
 			<p><i>iesses</i></p>
@@ -48844,14 +46467,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ísse</i></p>
 			<p><i>ísses</i></p>
@@ -49008,14 +46623,6 @@
 			<p><i>uais</i></p>
 			<p><i>uam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i/></p>
 			<p><i/></p>
@@ -49172,14 +46779,6 @@
 			<p><i>jais-vos</i></p>
 			<p><i>jam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>gesse-me</i></p>
 			<p><i>gesses-te</i></p>
@@ -49336,14 +46935,6 @@
 			<p><i>ictais-vos</i></p>
 			<p><i>ictam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ectisse-me</i></p>
 			<p><i>ectisses-te</i></p>
@@ -49500,14 +47091,6 @@
 			<p><i>-</i></p>
 			<p><i>uem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -49664,14 +47247,6 @@
 			<p><i>dimais-vos</i></p>
 			<p><i>dimam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>misse-me</i></p>
 			<p><i>misses-te</i></p>
@@ -49828,14 +47403,6 @@
 			<p><i>oais-vos</i></p>
 			<p><i>oam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse-me</i></p>
 			<p><i>oesses-te</i></p>
@@ -49992,14 +47559,6 @@
 			<p><i>ilais-vos</i></p>
 			<p><i>ilam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>elisse-me</i></p>
 			<p><i>elisses-te</i></p>
@@ -50156,14 +47715,6 @@
 			<p><i>çais-vos</i></p>
 			<p><i>çam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>cisse-me</i></p>
 			<p><i>cisses-te</i></p>
@@ -50320,14 +47871,6 @@
 			<p><i>unais-vos</i></p>
 			<p><i>únam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>unisse-me</i></p>
 			<p><i>unisses-te</i></p>
@@ -50484,14 +48027,6 @@
 			<p><i>iais-vos</i></p>
 			<p><i>iam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse-me</i></p>
 			<p><i>isses-te</i></p>
@@ -50648,14 +48183,6 @@
 			<p><i>mpais</i></p>
 			<p><i>mpam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>mpesse</i></p>
 			<p><i>mpesses</i></p>
@@ -50812,14 +48339,6 @@
 			<p><i>mpais-vos</i></p>
 			<p><i>mpam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>mpesse-me</i></p>
 			<p><i>mpesses-te</i></p>
@@ -50976,14 +48495,6 @@
 			<p><i>-</i></p>
 			<p><i>jam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -51140,14 +48651,6 @@
 			<p><i>eis</i></p>
 			<p><i>em</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -51304,14 +48807,6 @@
 			<p><i>eis-vos</i></p>
 			<p><i>em-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse-me</i></p>
 			<p><i>asses-te</i></p>
@@ -51468,14 +48963,6 @@
 			<p><i>udeis-vos</i></p>
 			<p><i>údem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>udasse-me</i></p>
 			<p><i>udasses-te</i></p>
@@ -51632,14 +49119,6 @@
 			<p><i>queis</i></p>
 			<p><i>quem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse</i></p>
 			<p><i>casses</i></p>
@@ -51796,14 +49275,6 @@
 			<p><i>queis-vos</i></p>
 			<p><i>quem-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>casse-me</i></p>
 			<p><i>casses-te</i></p>
@@ -51960,14 +49431,6 @@
 			<p><i>irvais-vos</i></p>
 			<p><i>irvam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ervisse-me</i></p>
 			<p><i>ervisses-te</i></p>
@@ -52124,14 +49587,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>oesse</i></p>
 			<p><i>oesses</i></p>
@@ -52288,14 +49743,6 @@
 			<p><i>urtais</i></p>
 			<p><i>urtam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ortisse</i></p>
 			<p><i>ortisses</i></p>
@@ -52452,14 +49899,6 @@
 			<p><i>urtais-vos</i></p>
 			<p><i>urtam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ortisse-me</i></p>
 			<p><i>ortisses-te</i></p>
@@ -52616,14 +50055,6 @@
 			<p><i>ubais</i></p>
 			<p><i>ubam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ubisse</i></p>
 			<p><i>ubisses</i></p>
@@ -52780,14 +50211,6 @@
 			<p><i>ubais-vos</i></p>
 			<p><i>ubam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ubisse-me</i></p>
 			<p><i>ubisses-te</i></p>
@@ -52944,14 +50367,6 @@
 			<p><i>umais-vos</i></p>
 			<p><i>umam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>umisse-me</i></p>
 			<p><i>umisses-te</i></p>
@@ -53108,14 +50523,6 @@
 			<p><i>endais</i></p>
 			<p><i>endam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>endesse</i></p>
 			<p><i>endesses</i></p>
@@ -53272,14 +50679,6 @@
 			<p><i>endais-vos</i></p>
 			<p><i>endam-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>endesse-me</i></p>
 			<p><i>endesses-te</i></p>
@@ -53436,14 +50835,6 @@
 			<p><i>enhais-vos</i></p>
 			<p><i>enham-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ivesse-me</i></p>
 			<p><i>ivesses-te</i></p>
@@ -53600,14 +50991,6 @@
 			<p><i>ussais</i></p>
 			<p><i>ussam</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>ossisse</i></p>
 			<p><i>ossisses</i></p>
@@ -53764,14 +51147,6 @@
 			<p><i>ueis</i></p>
 			<p><i>uem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -53928,14 +51303,6 @@
 			<p><i>enhais-vos</i></p>
 			<p><i>enham-se</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>iesse-me</i></p>
 			<p><i>iesses-te</i></p>
@@ -54092,14 +51459,6 @@
 			<p><i>uveis</i></p>
 			<p><i>úvem</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>uvasse</i></p>
 			<p><i>uvasses</i></p>
@@ -54256,14 +51615,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Presente>
-		<Conjuntivo--Subjuntivo-Pretérito-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Perfeito>
 		<Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
