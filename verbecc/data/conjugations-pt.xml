@@ -36,7 +36,7 @@
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples , Indicativo-Futuro-do-Presente-Simples)>
 <!ELEMENT Condicional (Condicional-Futuro-do-Pretérito-Simples , Condicional-Futuro-do-Pretérito-Composto)>
-<!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito , Conjuntivo--Subjuntivo-Futuro-Simples , Conjuntivo--Subjuntivo-Futuro-Composto)>
+<!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Futuro-Simples , Conjuntivo--Subjuntivo-Futuro-Composto)>
 <!ELEMENT Infinitivo (Infinitivo-Pessoal-Presente , Infinitivo-Pessoal-Pretérito , Infinitivo-Infinitivo)>
 <!ELEMENT Imperativo (Imperativo-Afirmativo , Imperativo-Negativo)>
 <!ELEMENT Gerúndio (Gerúndio-Gerúndio)>
@@ -50,7 +50,6 @@
 <!ELEMENT Condicional-Futuro-do-Pretérito-Composto (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Presente (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Pretérito-Imperfeito (p , p , p , p , p , p)>
-<!ELEMENT Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Futuro-Simples (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Futuro-Composto (p , p , p , p , p , p)>
 <!ELEMENT Infinitivo-Pessoal-Presente (p , p , p , p , p , p)>
@@ -143,14 +142,6 @@
 			<p><i>cêsseis</i></p>
 			<p><i>cessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>cer</i></p>
 			<p><i>ceres</i></p>
@@ -299,14 +290,6 @@
 			<p><i>udísseis</i></p>
 			<p><i>udissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>udir</i></p>
 			<p><i>udires</i></p>
@@ -455,14 +438,6 @@
 			<p><i>uásseis</i></p>
 			<p><i>uassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uar</i></p>
 			<p><i>uares</i></p>
@@ -611,14 +586,6 @@
 			<p><i>edísseis</i></p>
 			<p><i>edissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>edir</i></p>
 			<p><i>edires</i></p>
@@ -767,14 +734,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -923,14 +882,6 @@
 			<p><i>ouvésseis</i></p>
 			<p><i>ouvessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouver</i></p>
 			<p><i>ouveres</i></p>
@@ -1079,14 +1030,6 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
@@ -1235,14 +1178,6 @@
 			<p><i>uásseis</i></p>
 			<p><i>uassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uar</i></p>
 			<p><i>uares</i></p>
@@ -1391,14 +1326,6 @@
 			<p><i>iésseis</i></p>
 			<p><i>iessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ier</i></p>
 			<p><i>ieres</i></p>
@@ -1547,14 +1474,6 @@
 			<p><i>oubésseis</i></p>
 			<p><i>oubessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouber</i></p>
 			<p><i>ouberes</i></p>
@@ -1703,14 +1622,6 @@
 			<p><i>erzísseis</i></p>
 			<p><i>erzissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>erzir</i></p>
 			<p><i>erzires</i></p>
@@ -1859,14 +1770,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -2015,14 +1918,6 @@
 			<p><i>-</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -2171,14 +2066,6 @@
 			<p><i>çásseis</i></p>
 			<p><i>çassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>çar</i></p>
 			<p><i>çares</i></p>
@@ -2327,14 +2214,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -2483,14 +2362,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -2639,14 +2510,6 @@
 			<p><i>ésseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -2795,14 +2658,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -2951,14 +2806,6 @@
 			<p><i>uísseis</i></p>
 			<p><i>uíssem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uir</i></p>
 			<p><i>uíres</i></p>
@@ -3107,14 +2954,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>íssem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>íres</i></p>
@@ -3263,14 +3102,6 @@
 			<p><i>ergísseis</i></p>
 			<p><i>ergissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ergir</i></p>
 			<p><i>ergires</i></p>
@@ -3419,14 +3250,6 @@
 			<p><i>ssésseis</i></p>
 			<p><i>ssessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>sser</i></p>
 			<p><i>sseres</i></p>
@@ -3575,14 +3398,6 @@
 			<p><i>oêsseis</i></p>
 			<p><i>oessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer</i></p>
 			<p><i>oeres</i></p>
@@ -3731,14 +3546,6 @@
 			<p><i>ormísseis</i></p>
 			<p><i>ormissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ormir</i></p>
 			<p><i>ormires</i></p>
@@ -3887,14 +3694,6 @@
 			<p><i>upísseis</i></p>
 			<p><i>upissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>upir</i></p>
 			<p><i>upires</i></p>
@@ -4043,14 +3842,6 @@
 			<p><i>uêsseis</i></p>
 			<p><i>uessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uer</i></p>
 			<p><i>ueres</i></p>
@@ -4199,14 +3990,6 @@
 			<p><i>ivésseis</i></p>
 			<p><i>ivessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iver</i></p>
 			<p><i>iveres</i></p>
@@ -4355,14 +4138,6 @@
 			<p><i>guísseis</i></p>
 			<p><i>guissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>guir</i></p>
 			<p><i>guires</i></p>
@@ -4511,14 +4286,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -4667,14 +4434,6 @@
 			<p><i>izésseis</i></p>
 			<p><i>izessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>izer</i></p>
 			<p><i>izeres</i></p>
@@ -4823,14 +4582,6 @@
 			<p><i>cásseis</i></p>
 			<p><i>cassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car</i></p>
 			<p><i>cares</i></p>
@@ -4979,14 +4730,6 @@
 			<p><i>gísseis</i></p>
 			<p><i>gissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gir</i></p>
 			<p><i>gires</i></p>
@@ -5135,14 +4878,6 @@
 			<p><i>ugísseis</i></p>
 			<p><i>ugissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ugir</i></p>
 			<p><i>ugires</i></p>
@@ -5291,14 +5026,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -5447,14 +5174,6 @@
 			<p><i>ouvésseis</i></p>
 			<p><i>ouvessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouver</i></p>
 			<p><i>ouveres</i></p>
@@ -5603,14 +5322,6 @@
 			<p><i>gísseis</i></p>
 			<p><i>gissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gir</i></p>
 			<p><i>gires</i></p>
@@ -5759,14 +5470,6 @@
 			<p><i>fôsseis</i></p>
 			<p><i>fossem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>for</i></p>
 			<p><i>fores</i></p>
@@ -5915,14 +5618,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -6071,14 +5766,6 @@
 			<p><i>oêsseis</i></p>
 			<p><i>oessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer</i></p>
 			<p><i>oeres</i></p>
@@ -6227,14 +5914,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -6383,14 +6062,6 @@
 			<p><i>iásseis</i></p>
 			<p><i>iassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iar</i></p>
 			<p><i>iares</i></p>
@@ -6539,14 +6210,6 @@
 			<p><i>vísseis</i></p>
 			<p><i>vissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>vir</i></p>
 			<p><i>vires</i></p>
@@ -6695,14 +6358,6 @@
 			<p><i>dísseis</i></p>
 			<p><i>dissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>dir</i></p>
 			<p><i>dires</i></p>
@@ -6851,14 +6506,6 @@
 			<p><i>dêsseis</i></p>
 			<p><i>dessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>der</i></p>
 			<p><i>deres</i></p>
@@ -7007,14 +6654,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -7163,14 +6802,6 @@
 			<p><i>udésseis</i></p>
 			<p><i>udessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uder</i></p>
 			<p><i>uderes</i></p>
@@ -7319,14 +6950,6 @@
 			<p><i>olísseis</i></p>
 			<p><i>olissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>olir</i></p>
 			<p><i>olires</i></p>
@@ -7475,14 +7098,6 @@
 			<p><i>usésseis</i></p>
 			<p><i>usessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>user</i></p>
 			<p><i>useres</i></p>
@@ -7631,14 +7246,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -7787,14 +7394,6 @@
 			<p><i>erísseis</i></p>
 			<p><i>erissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>erir</i></p>
 			<p><i>erires</i></p>
@@ -7943,14 +7542,6 @@
 			<p><i>ibísseis</i></p>
 			<p><i>ibissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ibir</i></p>
 			<p><i>ibires</i></p>
@@ -8099,14 +7690,6 @@
 			<p><i>gêsseis</i></p>
 			<p><i>gessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ger</i></p>
 			<p><i>geres</i></p>
@@ -8255,14 +7838,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -8411,14 +7986,6 @@
 			<p><i>isésseis</i></p>
 			<p><i>isessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iser</i></p>
 			<p><i>iseres</i></p>
@@ -8567,14 +8134,6 @@
 			<p><i>ouvésseis</i></p>
 			<p><i>ouvessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouver</i></p>
 			<p><i>ouveres</i></p>
@@ -8723,14 +8282,6 @@
 			<p><i>gísseis</i></p>
 			<p><i>gissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gir</i></p>
 			<p><i>gires</i></p>
@@ -8879,14 +8430,6 @@
 			<p><i>ectísseis</i></p>
 			<p><i>ectissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ectir</i></p>
 			<p><i>ectires</i></p>
@@ -9035,14 +8578,6 @@
 			<p><i>mísseis</i></p>
 			<p><i>missem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>mir</i></p>
 			<p><i>mires</i></p>
@@ -9191,14 +8726,6 @@
 			<p><i>rêsseis</i></p>
 			<p><i>ressem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>rer</i></p>
 			<p><i>reres</i></p>
@@ -9347,14 +8874,6 @@
 			<p><i>císseis</i></p>
 			<p><i>cissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>cir</i></p>
 			<p><i>cires</i></p>
@@ -9503,14 +9022,6 @@
 			<p><i>unísseis</i></p>
 			<p><i>unissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>unir</i></p>
 			<p><i>unires</i></p>
@@ -9659,14 +9170,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -9815,14 +9318,6 @@
 			<p><i>oubésseis</i></p>
 			<p><i>oubessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouber</i></p>
 			<p><i>ouberes</i></p>
@@ -9971,14 +9466,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>íssem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>íres</i></p>
@@ -10127,14 +9614,6 @@
 			<p><i>udásseis</i></p>
 			<p><i>udassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>udar</i></p>
 			<p><i>udares</i></p>
@@ -10283,14 +9762,6 @@
 			<p><i>eguísseis</i></p>
 			<p><i>eguissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>eguir</i></p>
 			<p><i>eguires</i></p>
@@ -10439,14 +9910,6 @@
 			<p><i>entísseis</i></p>
 			<p><i>entissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>entir</i></p>
 			<p><i>entires</i></p>
@@ -10595,14 +10058,6 @@
 			<p><i>fôsseis</i></p>
 			<p><i>fossem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>for</i></p>
 			<p><i>fores</i></p>
@@ -10751,14 +10206,6 @@
 			<p><i>ervísseis</i></p>
 			<p><i>ervissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ervir</i></p>
 			<p><i>ervires</i></p>
@@ -10907,14 +10354,6 @@
 			<p><i>ivésseis</i></p>
 			<p><i>ivessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iver</i></p>
 			<p><i>iveres</i></p>
@@ -11063,14 +10502,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -11219,14 +10650,6 @@
 			<p><i>ouxésseis</i></p>
 			<p><i>ouxessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouxer</i></p>
 			<p><i>ouxeres</i></p>
@@ -11375,14 +10798,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -11531,14 +10946,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -11687,14 +11094,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -11843,14 +11242,6 @@
 			<p><i>iésseis</i></p>
 			<p><i>iessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ier</i></p>
 			<p><i>ieres</i></p>
@@ -11999,14 +11390,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -12155,14 +11538,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -12311,14 +11686,6 @@
 			<p><i>ucásseis</i></p>
 			<p><i>ucassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ucar</i></p>
 			<p><i>ucares</i></p>
@@ -12467,14 +11834,6 @@
 			<p><i>çásseis-vos</i></p>
 			<p><i>çassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>çar-me</i></p>
 			<p><i>çares-te</i></p>
@@ -12623,14 +11982,6 @@
 			<p><i>ustrásseis</i></p>
 			<p><i>ustrassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ustrar</i></p>
 			<p><i>ustrares</i></p>
@@ -12779,14 +12130,6 @@
 			<p><i>cásseis</i></p>
 			<p><i>cassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car</i></p>
 			<p><i>cares</i></p>
@@ -12935,14 +12278,6 @@
 			<p><i>cásseis-vos</i></p>
 			<p><i>cassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car-me</i></p>
 			<p><i>cares-te</i></p>
@@ -13091,14 +12426,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -13247,14 +12574,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -13403,14 +12722,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -13559,14 +12870,6 @@
 			<p><i>cêsseis-vos</i></p>
 			<p><i>cessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>cer-me</i></p>
 			<p><i>ceres-te</i></p>
@@ -13715,14 +13018,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -13871,14 +13166,6 @@
 			<p><i>ulásseis</i></p>
 			<p><i>ulassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ular</i></p>
 			<p><i>ulares</i></p>
@@ -14027,14 +13314,6 @@
 			<p><i>cásseis</i></p>
 			<p><i>cassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car</i></p>
 			<p><i>cares</i></p>
@@ -14183,14 +13462,6 @@
 			<p><i>cásseis-vos</i></p>
 			<p><i>cassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car-me</i></p>
 			<p><i>cares-te</i></p>
@@ -14339,14 +13610,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>íssem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>íres-te</i></p>
@@ -14495,14 +13758,6 @@
 			<p><i>oiásseis</i></p>
 			<p><i>oiassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oiar</i></p>
 			<p><i>oiares</i></p>
@@ -14651,14 +13906,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>issem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>ires-te</i></p>
@@ -14807,14 +14054,6 @@
 			<p><i>gêsseis-vos</i></p>
 			<p><i>gessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ger-me</i></p>
 			<p><i>geres-te</i></p>
@@ -14963,14 +14202,6 @@
 			<p><i>rísseis</i></p>
 			<p><i>rissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>rir</i></p>
 			<p><i>rires</i></p>
@@ -15119,14 +14350,6 @@
 			<p><i>rísseis-vos</i></p>
 			<p><i>rissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>rir-me</i></p>
 			<p><i>rires-te</i></p>
@@ -15275,14 +14498,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -15431,14 +14646,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -15587,14 +14794,6 @@
 			<p><i>ivésseis</i></p>
 			<p><i>ivessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iver</i></p>
 			<p><i>iveres</i></p>
@@ -15743,14 +14942,6 @@
 			<p><i>ivésseis-vos</i></p>
 			<p><i>ivessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iver-me</i></p>
 			<p><i>iveres-te</i></p>
@@ -15899,14 +15090,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>íssem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>íres-te</i></p>
@@ -16055,14 +15238,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -16211,14 +15386,6 @@
 			<p><i>ndêsseis</i></p>
 			<p><i>ndessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>nder</i></p>
 			<p><i>nderes</i></p>
@@ -16367,14 +15534,6 @@
 			<p><i>ndêsseis-vos</i></p>
 			<p><i>ndessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>nder-me</i></p>
 			<p><i>nderes-te</i></p>
@@ -16523,14 +15682,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -16679,14 +15830,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -16835,14 +15978,6 @@
 			<p><i>gísseis-vos</i></p>
 			<p><i>gissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gir-me</i></p>
 			<p><i>gires-te</i></p>
@@ -16991,14 +16126,6 @@
 			<p><i>udísseis-vos</i></p>
 			<p><i>udissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>udir-me</i></p>
 			<p><i>udires-te</i></p>
@@ -17147,14 +16274,6 @@
 			<p><i>uásseis-vos</i></p>
 			<p><i>uassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uar-me</i></p>
 			<p><i>uares-te</i></p>
@@ -17303,14 +16422,6 @@
 			<p><i>erísseis-vos</i></p>
 			<p><i>erissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>erir-me</i></p>
 			<p><i>erires-te</i></p>
@@ -17459,14 +16570,6 @@
 			<p><i>evêsseis</i></p>
 			<p><i>evessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ever</i></p>
 			<p><i>everes</i></p>
@@ -17615,14 +16718,6 @@
 			<p><i>evêsseis-vos</i></p>
 			<p><i>evessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ever-me</i></p>
 			<p><i>everes-te</i></p>
@@ -17771,14 +16866,6 @@
 			<p><i>ertísseis</i></p>
 			<p><i>ertissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ertir</i></p>
 			<p><i>ertires</i></p>
@@ -17927,14 +17014,6 @@
 			<p><i>izésseis-vos</i></p>
 			<p><i>izessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>izer-me</i></p>
 			<p><i>izeres-te</i></p>
@@ -18083,14 +17162,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -18239,14 +17310,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -18395,14 +17458,6 @@
 			<p><i>uchásseis-vos</i></p>
 			<p><i>uchassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uchar-me</i></p>
 			<p><i>uchares-te</i></p>
@@ -18551,14 +17606,6 @@
 			<p><i>udásseis</i></p>
 			<p><i>udassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>udar</i></p>
 			<p><i>udares</i></p>
@@ -18707,14 +17754,6 @@
 			<p><i>uásseis</i></p>
 			<p><i>uassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uar</i></p>
 			<p><i>uares</i></p>
@@ -18863,14 +17902,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>issem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>ires-te</i></p>
@@ -19019,14 +18050,6 @@
 			<p><i>itásseis</i></p>
 			<p><i>itassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>itar</i></p>
 			<p><i>itares</i></p>
@@ -19175,14 +18198,6 @@
 			<p><i>itásseis-vos</i></p>
 			<p><i>itassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>itar-me</i></p>
 			<p><i>itares-te</i></p>
@@ -19331,14 +18346,6 @@
 			<p><i>izásseis</i></p>
 			<p><i>izassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>izar</i></p>
 			<p><i>izares</i></p>
@@ -19487,14 +18494,6 @@
 			<p><i>izásseis-vos</i></p>
 			<p><i>izassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>izar-me</i></p>
 			<p><i>izares-te</i></p>
@@ -19643,14 +18642,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -19799,14 +18790,6 @@
 			<p><i>çásseis</i></p>
 			<p><i>çassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>çar</i></p>
 			<p><i>çares</i></p>
@@ -19955,14 +18938,6 @@
 			<p><i>uásseis-vos</i></p>
 			<p><i>uassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uar-me</i></p>
 			<p><i>uares-te</i></p>
@@ -20111,14 +19086,6 @@
 			<p><i>-</i></p>
 			<p><i>cessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -20267,14 +19234,6 @@
 			<p><i>udásseis</i></p>
 			<p><i>udassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>udar</i></p>
 			<p><i>udares</i></p>
@@ -20423,14 +19382,6 @@
 			<p><i>udásseis-vos</i></p>
 			<p><i>udassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>udar-me</i></p>
 			<p><i>udares-te</i></p>
@@ -20579,14 +19530,6 @@
 			<p><i>iásseis</i></p>
 			<p><i>iassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iar</i></p>
 			<p><i>iares</i></p>
@@ -20735,14 +19678,6 @@
 			<p><i>iásseis-vos</i></p>
 			<p><i>iassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iar-me</i></p>
 			<p><i>iares-te</i></p>
@@ -20891,14 +19826,6 @@
 			<p><i>usésseis</i></p>
 			<p><i>usessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>user</i></p>
 			<p><i>useres</i></p>
@@ -21047,14 +19974,6 @@
 			<p><i>usésseis-vos</i></p>
 			<p><i>usessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>user-me</i></p>
 			<p><i>useres-te</i></p>
@@ -21203,14 +20122,6 @@
 			<p><i>ulásseis-vos</i></p>
 			<p><i>ulassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ular-me</i></p>
 			<p><i>ulares-te</i></p>
@@ -21359,14 +20270,6 @@
 			<p><i>oiásseis-vos</i></p>
 			<p><i>oiassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oiar-me</i></p>
 			<p><i>oiares-te</i></p>
@@ -21515,14 +20418,6 @@
 			<p><i>ouvésseis-vos</i></p>
 			<p><i>ouvessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouver-me</i></p>
 			<p><i>ouveres-te</i></p>
@@ -21671,14 +20566,6 @@
 			<p><i>izásseis</i></p>
 			<p><i>izassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>izar</i></p>
 			<p><i>izares</i></p>
@@ -21827,14 +20714,6 @@
 			<p><i>cásseis-vos</i></p>
 			<p><i>cassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car-me</i></p>
 			<p><i>cares-te</i></p>
@@ -21983,14 +20862,6 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
@@ -22139,14 +21010,6 @@
 			<p><i>inásseis</i></p>
 			<p><i>inassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>inar</i></p>
 			<p><i>inares</i></p>
@@ -22295,14 +21158,6 @@
 			<p><i>inásseis-vos</i></p>
 			<p><i>inassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>inar-me</i></p>
 			<p><i>inares-te</i></p>
@@ -22451,14 +21306,6 @@
 			<p><i>ergísseis-vos</i></p>
 			<p><i>ergissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ergir-me</i></p>
 			<p><i>ergires-te</i></p>
@@ -22607,14 +21454,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -22763,14 +21602,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -22919,14 +21750,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -23075,14 +21898,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -23231,14 +22046,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -23387,14 +22194,6 @@
 			<p><i>unásseis</i></p>
 			<p><i>unassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>unar</i></p>
 			<p><i>unares</i></p>
@@ -23543,14 +22342,6 @@
 			<p><i>iésseis-vos</i></p>
 			<p><i>iessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ier-me</i></p>
 			<p><i>ieres-te</i></p>
@@ -23699,14 +22490,6 @@
 			<p><i>umásseis</i></p>
 			<p><i>umassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umar</i></p>
 			<p><i>umares</i></p>
@@ -23855,14 +22638,6 @@
 			<p><i>-</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -24011,14 +22786,6 @@
 			<p><i>-</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -24167,14 +22934,6 @@
 			<p><i>isésseis-vos</i></p>
 			<p><i>isessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iser-me</i></p>
 			<p><i>iseres-te</i></p>
@@ -24323,14 +23082,6 @@
 			<p><i>zêsseis</i></p>
 			<p><i>zessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>zer</i></p>
 			<p><i>zeres</i></p>
@@ -24479,14 +23230,6 @@
 			<p><i>zêsseis-vos</i></p>
 			<p><i>zessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>zer-me</i></p>
 			<p><i>zeres-te</i></p>
@@ -24635,14 +23378,6 @@
 			<p><i>uásseis</i></p>
 			<p><i>uassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uar</i></p>
 			<p><i>uares</i></p>
@@ -24791,14 +23526,6 @@
 			<p><i>oiásseis</i></p>
 			<p><i>oiassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oiar</i></p>
 			<p><i>oiares</i></p>
@@ -24947,14 +23674,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -25103,14 +23822,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>
@@ -25259,14 +23970,6 @@
 			<p><i>ulísseis</i></p>
 			<p><i>ulissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ulir</i></p>
 			<p><i>ulires</i></p>
@@ -25415,14 +24118,6 @@
 			<p><i>ulísseis-vos</i></p>
 			<p><i>ulissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ulir-me</i></p>
 			<p><i>ulires-te</i></p>
@@ -25571,14 +24266,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -25727,14 +24414,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -25883,14 +24562,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -26039,14 +24710,6 @@
 			<p><i>ernísseis</i></p>
 			<p><i>ernissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ernir</i></p>
 			<p><i>ernires</i></p>
@@ -26195,14 +24858,6 @@
 			<p><i>-</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -26351,14 +25006,6 @@
 			<p><i>gísseis-vos</i></p>
 			<p><i>gissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gir-me</i></p>
 			<p><i>gires-te</i></p>
@@ -26507,14 +25154,6 @@
 			<p><i>umásseis</i></p>
 			<p><i>umassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umar</i></p>
 			<p><i>umares</i></p>
@@ -26663,14 +25302,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -26819,14 +25450,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -26975,14 +25598,6 @@
 			<p><i>obrísseis</i></p>
 			<p><i>obrissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>obrir</i></p>
 			<p><i>obrires</i></p>
@@ -27131,14 +25746,6 @@
 			<p><i>obrísseis-vos</i></p>
 			<p><i>obrissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>obrir-me</i></p>
 			<p><i>obrires-te</i></p>
@@ -27287,14 +25894,6 @@
 			<p><i>ibísseis-vos</i></p>
 			<p><i>ibissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ibir-me</i></p>
 			<p><i>ibires-te</i></p>
@@ -27443,14 +26042,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -27599,14 +26190,6 @@
 			<p><i>oiásseis</i></p>
 			<p><i>oiassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oiar</i></p>
 			<p><i>oiares</i></p>
@@ -27755,14 +26338,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>issem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>ires-te</i></p>
@@ -27911,14 +26486,6 @@
 			<p><i>elísseis</i></p>
 			<p><i>elissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>elir</i></p>
 			<p><i>elires</i></p>
@@ -28067,14 +26634,6 @@
 			<p><i>etísseis</i></p>
 			<p><i>etissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>etir</i></p>
 			<p><i>etires</i></p>
@@ -28223,14 +26782,6 @@
 			<p><i>etísseis-vos</i></p>
 			<p><i>etissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>etir-me</i></p>
 			<p><i>etires-te</i></p>
@@ -28379,14 +26930,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>íssem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>íres</i></p>
@@ -28535,14 +27078,6 @@
 			<p><i>oêsseis</i></p>
 			<p><i>oessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer</i></p>
 			<p><i>oeres</i></p>
@@ -28691,14 +27226,6 @@
 			<p><i>oêsseis-vos</i></p>
 			<p><i>oessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer-me</i></p>
 			<p><i>oeres-te</i></p>
@@ -28847,14 +27374,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>issem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>ires-te</i></p>
@@ -29003,14 +27522,6 @@
 			<p><i>ngísseis</i></p>
 			<p><i>ngissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ngir</i></p>
 			<p><i>ngires</i></p>
@@ -29159,14 +27670,6 @@
 			<p><i>ngísseis-vos</i></p>
 			<p><i>ngissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ngir-me</i></p>
 			<p><i>ngires-te</i></p>
@@ -29315,14 +27818,6 @@
 			<p><i>umísseis</i></p>
 			<p><i>umissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umir</i></p>
 			<p><i>umires</i></p>
@@ -29471,14 +27966,6 @@
 			<p><i>umísseis-vos</i></p>
 			<p><i>umissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umir-me</i></p>
 			<p><i>umires-te</i></p>
@@ -29627,14 +28114,6 @@
 			<p><i>ssésseis-vos</i></p>
 			<p><i>ssessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>sser-me</i></p>
 			<p><i>sseres-te</i></p>
@@ -29783,14 +28262,6 @@
 			<p><i>têsseis</i></p>
 			<p><i>tessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ter</i></p>
 			<p><i>teres</i></p>
@@ -29939,14 +28410,6 @@
 			<p><i>ompêsseis</i></p>
 			<p><i>ompessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>omper</i></p>
 			<p><i>omperes</i></p>
@@ -30095,14 +28558,6 @@
 			<p><i>ompêsseis-vos</i></p>
 			<p><i>ompessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>omper-me</i></p>
 			<p><i>omperes-te</i></p>
@@ -30251,14 +28706,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -30407,14 +28854,6 @@
 			<p><i>-</i></p>
 			<p><i>cassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -30563,14 +29002,6 @@
 			<p><i>uspísseis</i></p>
 			<p><i>uspissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uspir</i></p>
 			<p><i>uspires</i></p>
@@ -30719,14 +29150,6 @@
 			<p><i>ésseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -30875,14 +29298,6 @@
 			<p><i>egrísseis</i></p>
 			<p><i>egrissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>egrir</i></p>
 			<p><i>egrires</i></p>
@@ -31031,14 +29446,6 @@
 			<p><i>egrísseis-vos</i></p>
 			<p><i>egrissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>egrir-me</i></p>
 			<p><i>egrires-te</i></p>
@@ -31187,14 +29594,6 @@
 			<p><i>çásseis</i></p>
 			<p><i>çassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>çar</i></p>
 			<p><i>çares</i></p>
@@ -31343,14 +29742,6 @@
 			<p><i>çásseis-vos</i></p>
 			<p><i>çassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>çar-me</i></p>
 			<p><i>çares-te</i></p>
@@ -31499,14 +29890,6 @@
 			<p><i>obrísseis</i></p>
 			<p><i>obrissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>obrir</i></p>
 			<p><i>obrires</i></p>
@@ -31655,14 +30038,6 @@
 			<p><i>obrísseis-vos</i></p>
 			<p><i>obrissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>obrir-me</i></p>
 			<p><i>obrires-te</i></p>
@@ -31811,14 +30186,6 @@
 			<p><i>ulásseis</i></p>
 			<p><i>ulassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ular</i></p>
 			<p><i>ulares</i></p>
@@ -31967,14 +30334,6 @@
 			<p><i>olísseis</i></p>
 			<p><i>olissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>olir</i></p>
 			<p><i>olires</i></p>
@@ -32123,14 +30482,6 @@
 			<p><i>izásseis-vos</i></p>
 			<p><i>izassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>izar-me</i></p>
 			<p><i>izares-te</i></p>
@@ -32279,14 +30630,6 @@
 			<p><i>upísseis-vos</i></p>
 			<p><i>upissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>upir-me</i></p>
 			<p><i>upires-te</i></p>
@@ -32435,14 +30778,6 @@
 			<p><i>vêsseis</i></p>
 			<p><i>vessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ver</i></p>
 			<p><i>veres</i></p>
@@ -32591,14 +30926,6 @@
 			<p><i>vêsseis-vos</i></p>
 			<p><i>vessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ver-me</i></p>
 			<p><i>veres-te</i></p>
@@ -32747,14 +31074,6 @@
 			<p><i>estísseis</i></p>
 			<p><i>estissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>estir</i></p>
 			<p><i>estires</i></p>
@@ -32903,14 +31222,6 @@
 			<p><i>dísseis-vos</i></p>
 			<p><i>dissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>dir-me</i></p>
 			<p><i>dires-te</i></p>
@@ -33059,14 +31370,6 @@
 			<p><i>entísseis-vos</i></p>
 			<p><i>entissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>entir-me</i></p>
 			<p><i>entires-te</i></p>
@@ -33215,14 +31518,6 @@
 			<p><i>orísseis</i></p>
 			<p><i>orissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>orir</i></p>
 			<p><i>orires</i></p>
@@ -33371,14 +31666,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -33527,14 +31814,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -33683,14 +31962,6 @@
 			<p><i>espísseis</i></p>
 			<p><i>espissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>espir</i></p>
 			<p><i>espires</i></p>
@@ -33839,14 +32110,6 @@
 			<p><i>espísseis-vos</i></p>
 			<p><i>espissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>espir-me</i></p>
 			<p><i>espires-te</i></p>
@@ -33995,14 +32258,6 @@
 			<p><i>olísseis-vos</i></p>
 			<p><i>olissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>olir-me</i></p>
 			<p><i>olires-te</i></p>
@@ -34151,14 +32406,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -34307,14 +32554,6 @@
 			<p><i>enísseis</i></p>
 			<p><i>enissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>enir</i></p>
 			<p><i>enires</i></p>
@@ -34463,14 +32702,6 @@
 			<p><i>enísseis-vos</i></p>
 			<p><i>enissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>enir-me</i></p>
 			<p><i>enires-te</i></p>
@@ -34619,14 +32850,6 @@
 			<p><i>iásseis</i></p>
 			<p><i>iassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iar</i></p>
 			<p><i>iares</i></p>
@@ -34775,14 +32998,6 @@
 			<p><i>estísseis-vos</i></p>
 			<p><i>estissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>estir-me</i></p>
 			<p><i>estires-te</i></p>
@@ -34931,14 +33146,6 @@
 			<p><i>umísseis</i></p>
 			<p><i>umissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umir</i></p>
 			<p><i>umires</i></p>
@@ -35087,14 +33294,6 @@
 			<p><i>dêsseis-vos</i></p>
 			<p><i>dessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>der-me</i></p>
 			<p><i>deres-te</i></p>
@@ -35243,14 +33442,6 @@
 			<p><i>guísseis-vos</i></p>
 			<p><i>guissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>guir-me</i></p>
 			<p><i>guires-te</i></p>
@@ -35399,14 +33590,6 @@
 			<p><i>ertísseis-vos</i></p>
 			<p><i>ertissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ertir-me</i></p>
 			<p><i>ertires-te</i></p>
@@ -35555,14 +33738,6 @@
 			<p><i>oêsseis-vos</i></p>
 			<p><i>oessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer-me</i></p>
 			<p><i>oeres-te</i></p>
@@ -35711,14 +33886,6 @@
 			<p><i>cásseis</i></p>
 			<p><i>cassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car</i></p>
 			<p><i>cares</i></p>
@@ -35867,14 +34034,6 @@
 			<p><i>gêsseis</i></p>
 			<p><i>gessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ger</i></p>
 			<p><i>geres</i></p>
@@ -36023,14 +34182,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>íssem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>íres</i></p>
@@ -36179,14 +34330,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -36335,14 +34478,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -36491,14 +34626,6 @@
 			<p><i>umásseis</i></p>
 			<p><i>umassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umar</i></p>
 			<p><i>umares</i></p>
@@ -36647,14 +34774,6 @@
 			<p><i>umásseis-vos</i></p>
 			<p><i>umassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umar-me</i></p>
 			<p><i>umares-te</i></p>
@@ -36803,14 +34922,6 @@
 			<p><i>oiásseis-vos</i></p>
 			<p><i>oiassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oiar-me</i></p>
 			<p><i>oiares-te</i></p>
@@ -36959,14 +35070,6 @@
 			<p><i>uísseis</i></p>
 			<p><i>uissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uir</i></p>
 			<p><i>uires</i></p>
@@ -37115,14 +35218,6 @@
 			<p><i>uísseis-vos</i></p>
 			<p><i>uissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uir-me</i></p>
 			<p><i>uires-te</i></p>
@@ -37271,14 +35366,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -37427,14 +35514,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -37583,14 +35662,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>issem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>ires-te</i></p>
@@ -37739,14 +35810,6 @@
 			<p><i>uvásseis</i></p>
 			<p><i>uvassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uvar</i></p>
 			<p><i>uvares</i></p>
@@ -37895,14 +35958,6 @@
 			<p><i>gásseis</i></p>
 			<p><i>gassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gar</i></p>
 			<p><i>gares</i></p>
@@ -38051,14 +36106,6 @@
 			<p><i>gásseis-vos</i></p>
 			<p><i>gassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gar-me</i></p>
 			<p><i>gares-te</i></p>
@@ -38207,14 +36254,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -38363,14 +36402,6 @@
 			<p><i>uêsseis-vos</i></p>
 			<p><i>uessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uer-me</i></p>
 			<p><i>ueres-te</i></p>
@@ -38519,14 +36550,6 @@
 			<p><i>evêsseis</i></p>
 			<p><i>evessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ever</i></p>
 			<p><i>everes</i></p>
@@ -38675,14 +36698,6 @@
 			<p><i>evêsseis-vos</i></p>
 			<p><i>evessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ever-me</i></p>
 			<p><i>everes-te</i></p>
@@ -38831,14 +36846,6 @@
 			<p><i>ecêsseis</i></p>
 			<p><i>ecessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ecer</i></p>
 			<p><i>eceres</i></p>
@@ -38987,14 +36994,6 @@
 			<p><i>uçásseis</i></p>
 			<p><i>uçassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uçar</i></p>
 			<p><i>uçares</i></p>
@@ -39143,14 +37142,6 @@
 			<p><i>oêsseis</i></p>
 			<p><i>oessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer</i></p>
 			<p><i>oeres</i></p>
@@ -39299,14 +37290,6 @@
 			<p><i>ivésseis-vos</i></p>
 			<p><i>ivessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iver-me</i></p>
 			<p><i>iveres-te</i></p>
@@ -39455,14 +37438,6 @@
 			<p><i>imísseis</i></p>
 			<p><i>imissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>imir</i></p>
 			<p><i>imires</i></p>
@@ -39611,14 +37586,6 @@
 			<p><i>imísseis-vos</i></p>
 			<p><i>imissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>imir-me</i></p>
 			<p><i>imires-te</i></p>
@@ -39767,14 +37734,6 @@
 			<p><i>iscásseis</i></p>
 			<p><i>iscassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iscar</i></p>
 			<p><i>iscares</i></p>
@@ -39923,14 +37882,6 @@
 			<p><i>ulásseis</i></p>
 			<p><i>ulassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ular</i></p>
 			<p><i>ulares</i></p>
@@ -40079,14 +38030,6 @@
 			<p><i>emísseis</i></p>
 			<p><i>emissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>emir</i></p>
 			<p><i>emires</i></p>
@@ -40235,14 +38178,6 @@
 			<p><i>ugísseis-vos</i></p>
 			<p><i>ugissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ugir-me</i></p>
 			<p><i>ugires-te</i></p>
@@ -40391,14 +38326,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -40547,14 +38474,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -40703,14 +38622,6 @@
 			<p><i>uchásseis</i></p>
 			<p><i>uchassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uchar</i></p>
 			<p><i>uchares</i></p>
@@ -40859,14 +38770,6 @@
 			<p><i>ouvésseis-vos</i></p>
 			<p><i>ouvessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ouver-me</i></p>
 			<p><i>ouveres-te</i></p>
@@ -41015,14 +38918,6 @@
 			<p><i>çásseis</i></p>
 			<p><i>çassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>çar</i></p>
 			<p><i>çares</i></p>
@@ -41171,14 +39066,6 @@
 			<p><i>gísseis-vos</i></p>
 			<p><i>gissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gir-me</i></p>
 			<p><i>gires-te</i></p>
@@ -41327,14 +39214,6 @@
 			<p><i>elísseis</i></p>
 			<p><i>elissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>elir</i></p>
 			<p><i>elires</i></p>
@@ -41483,14 +39362,6 @@
 			<p><i>iásseis-vos</i></p>
 			<p><i>iassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iar-me</i></p>
 			<p><i>iares-te</i></p>
@@ -41639,14 +39510,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>íssem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>íres-te</i></p>
@@ -41795,14 +39658,6 @@
 			<p><i>orrêsseis</i></p>
 			<p><i>orressem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>orrer</i></p>
 			<p><i>orreres</i></p>
@@ -41951,14 +39806,6 @@
 			<p><i>gísseis</i></p>
 			<p><i>gissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>gir</i></p>
 			<p><i>gires</i></p>
@@ -42107,14 +39954,6 @@
 			<p><i>erísseis</i></p>
 			<p><i>erissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>erir</i></p>
 			<p><i>erires</i></p>
@@ -42263,14 +40102,6 @@
 			<p><i>erísseis-vos</i></p>
 			<p><i>erissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>erir-me</i></p>
 			<p><i>erires-te</i></p>
@@ -42419,14 +40250,6 @@
 			<p><i>fôsseis-vos</i></p>
 			<p><i>fossem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>for-me</i></p>
 			<p><i>fores-te</i></p>
@@ -42575,14 +40398,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -42731,14 +40546,6 @@
 			<p><i>oiásseis</i></p>
 			<p><i>oiassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oiar</i></p>
 			<p><i>oiares</i></p>
@@ -42887,14 +40694,6 @@
 			<p><i>-</i></p>
 			<p><i>issem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -43043,14 +40842,6 @@
 			<p><i>atásseis</i></p>
 			<p><i>atassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>atar</i></p>
 			<p><i>atares</i></p>
@@ -43199,14 +40990,6 @@
 			<p><i>atásseis-vos</i></p>
 			<p><i>atassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>atar-me</i></p>
 			<p><i>atares-te</i></p>
@@ -43355,14 +41138,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -43511,14 +41286,6 @@
 			<p><i>oêsseis-vos</i></p>
 			<p><i>oessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer-me</i></p>
 			<p><i>oeres-te</i></p>
@@ -43667,14 +41434,6 @@
 			<p><i>rêsseis</i></p>
 			<p><i>ressem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>rer</i></p>
 			<p><i>reres</i></p>
@@ -43823,14 +41582,6 @@
 			<p><i>rêsseis-vos</i></p>
 			<p><i>ressem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>rer-me</i></p>
 			<p><i>reres-te</i></p>
@@ -43979,14 +41730,6 @@
 			<p><i>scêsseis</i></p>
 			<p><i>scessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>scer</i></p>
 			<p><i>sceres</i></p>
@@ -44135,14 +41878,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -44291,14 +42026,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -44447,14 +42174,6 @@
 			<p><i>iásseis-vos</i></p>
 			<p><i>iassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iar-me</i></p>
 			<p><i>iares-te</i></p>
@@ -44603,14 +42322,6 @@
 			<p><i>tísseis</i></p>
 			<p><i>tissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>tir</i></p>
 			<p><i>tires</i></p>
@@ -44759,14 +42470,6 @@
 			<p><i>tísseis-vos</i></p>
 			<p><i>tissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>tir-me</i></p>
 			<p><i>tires-te</i></p>
@@ -44915,14 +42618,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -45071,14 +42766,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -45227,14 +42914,6 @@
 			<p><i>êsseis</i></p>
 			<p><i>essem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er</i></p>
 			<p><i>eres</i></p>
@@ -45383,14 +43062,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -45539,14 +43210,6 @@
 			<p><i>eguísseis-vos</i></p>
 			<p><i>eguissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>eguir-me</i></p>
 			<p><i>eguires-te</i></p>
@@ -45695,14 +43358,6 @@
 			<p><i>têsseis-vos</i></p>
 			<p><i>tessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ter-me</i></p>
 			<p><i>teres-te</i></p>
@@ -45851,14 +43506,6 @@
 			<p><i>dêsseis</i></p>
 			<p><i>dessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>der</i></p>
 			<p><i>deres</i></p>
@@ -46007,14 +43654,6 @@
 			<p><i>dêsseis-vos</i></p>
 			<p><i>dessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>der-me</i></p>
 			<p><i>deres-te</i></p>
@@ -46163,14 +43802,6 @@
 			<p><i>êsseis-vos</i></p>
 			<p><i>essem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>er-me</i></p>
 			<p><i>eres-te</i></p>
@@ -46319,14 +43950,6 @@
 			<p><i>iésseis</i></p>
 			<p><i>iessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ier</i></p>
 			<p><i>ieres</i></p>
@@ -46475,14 +44098,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>íssem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>íres</i></p>
@@ -46631,14 +44246,6 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i/></p>
 			<p><i/></p>
@@ -46787,14 +44394,6 @@
 			<p><i>gêsseis-vos</i></p>
 			<p><i>gessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ger-me</i></p>
 			<p><i>geres-te</i></p>
@@ -46943,14 +44542,6 @@
 			<p><i>ectísseis-vos</i></p>
 			<p><i>ectissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ectir-me</i></p>
 			<p><i>ectires-te</i></p>
@@ -47099,14 +44690,6 @@
 			<p><i>-</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -47255,14 +44838,6 @@
 			<p><i>mísseis-vos</i></p>
 			<p><i>missem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>mir-me</i></p>
 			<p><i>mires-te</i></p>
@@ -47411,14 +44986,6 @@
 			<p><i>oêsseis-vos</i></p>
 			<p><i>oessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer-me</i></p>
 			<p><i>oeres-te</i></p>
@@ -47567,14 +45134,6 @@
 			<p><i>elísseis-vos</i></p>
 			<p><i>elissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>elir-me</i></p>
 			<p><i>elires-te</i></p>
@@ -47723,14 +45282,6 @@
 			<p><i>císseis-vos</i></p>
 			<p><i>cissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>cir-me</i></p>
 			<p><i>cires-te</i></p>
@@ -47879,14 +45430,6 @@
 			<p><i>unísseis-vos</i></p>
 			<p><i>unissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>unir-me</i></p>
 			<p><i>unires-te</i></p>
@@ -48035,14 +45578,6 @@
 			<p><i>ísseis-vos</i></p>
 			<p><i>issem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir-me</i></p>
 			<p><i>ires-te</i></p>
@@ -48191,14 +45726,6 @@
 			<p><i>mpêsseis</i></p>
 			<p><i>mpessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>mper</i></p>
 			<p><i>mperes</i></p>
@@ -48347,14 +45874,6 @@
 			<p><i>mpêsseis-vos</i></p>
 			<p><i>mpessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>mper-me</i></p>
 			<p><i>mperes-te</i></p>
@@ -48503,14 +46022,6 @@
 			<p><i>-</i></p>
 			<p><i>gissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -48659,14 +46170,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -48815,14 +46318,6 @@
 			<p><i>ásseis-vos</i></p>
 			<p><i>assem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar-me</i></p>
 			<p><i>ares-te</i></p>
@@ -48971,14 +46466,6 @@
 			<p><i>udásseis-vos</i></p>
 			<p><i>udassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>udar-me</i></p>
 			<p><i>udares-te</i></p>
@@ -49127,14 +46614,6 @@
 			<p><i>cásseis</i></p>
 			<p><i>cassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car</i></p>
 			<p><i>cares</i></p>
@@ -49283,14 +46762,6 @@
 			<p><i>cásseis-vos</i></p>
 			<p><i>cassem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>car-me</i></p>
 			<p><i>cares-te</i></p>
@@ -49439,14 +46910,6 @@
 			<p><i>ervísseis-vos</i></p>
 			<p><i>ervissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ervir-me</i></p>
 			<p><i>ervires-te</i></p>
@@ -49595,14 +47058,6 @@
 			<p><i>oêsseis</i></p>
 			<p><i>oessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>oer</i></p>
 			<p><i>oeres</i></p>
@@ -49751,14 +47206,6 @@
 			<p><i>ortísseis</i></p>
 			<p><i>ortissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ortir</i></p>
 			<p><i>ortires</i></p>
@@ -49907,14 +47354,6 @@
 			<p><i>ortísseis-vos</i></p>
 			<p><i>ortissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ortir-me</i></p>
 			<p><i>ortires-te</i></p>
@@ -50063,14 +47502,6 @@
 			<p><i>ubísseis</i></p>
 			<p><i>ubissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ubir</i></p>
 			<p><i>ubires</i></p>
@@ -50219,14 +47650,6 @@
 			<p><i>ubísseis-vos</i></p>
 			<p><i>ubissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ubir-me</i></p>
 			<p><i>ubires-te</i></p>
@@ -50375,14 +47798,6 @@
 			<p><i>umísseis-vos</i></p>
 			<p><i>umissem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>umir-me</i></p>
 			<p><i>umires-te</i></p>
@@ -50531,14 +47946,6 @@
 			<p><i>endêsseis</i></p>
 			<p><i>endessem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ender</i></p>
 			<p><i>enderes</i></p>
@@ -50687,14 +48094,6 @@
 			<p><i>endêsseis-vos</i></p>
 			<p><i>endessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ender-me</i></p>
 			<p><i>enderes-te</i></p>
@@ -50843,14 +48242,6 @@
 			<p><i>ivésseis-vos</i></p>
 			<p><i>ivessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>iver-me</i></p>
 			<p><i>iveres-te</i></p>
@@ -50999,14 +48390,6 @@
 			<p><i>ossísseis</i></p>
 			<p><i>ossissem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ossir</i></p>
 			<p><i>ossires</i></p>
@@ -51155,14 +48538,6 @@
 			<p><i>ásseis</i></p>
 			<p><i>assem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ar</i></p>
 			<p><i>ares</i></p>
@@ -51311,14 +48686,6 @@
 			<p><i>iésseis-vos</i></p>
 			<p><i>iessem-se</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ier-me</i></p>
 			<p><i>ieres-te</i></p>
@@ -51467,14 +48834,6 @@
 			<p><i>uvásseis</i></p>
 			<p><i>uvassem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>uvar</i></p>
 			<p><i>uvares</i></p>
@@ -51623,14 +48982,6 @@
 			<p><i>ísseis</i></p>
 			<p><i>issem</i></p>
 		</Conjuntivo--Subjuntivo-Pretérito-Imperfeito>
-		<Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito>
 		<Conjuntivo--Subjuntivo-Futuro-Simples>
 			<p><i>ir</i></p>
 			<p><i>ires</i></p>

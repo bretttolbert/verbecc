@@ -64,25 +64,6 @@ class InflectorPt(inflector.Inflector):
         return 'Particípio-Particípio'
 
     def _get_compound_conjugations_hv_map(self):
-        """
-        return {
-            'indicativo': {
-                'pretérito-perfecto-compuesto': 'presente',
-                'pretérito-pluscuamperfecto': 'pretérito-imperfecto',
-                'pretérito-anterior': 'pretérito-perfecto-simple',
-                'futuro-perfecto': 'futuro'
-            },
-            'condicional': {
-                'condicional-perfecto': 'condicional-present'
-            },
-            'subjuntivo': {
-                'pretérito-perfecto': 'presente',
-                'pretérito-pluscuamperfecto-1': 'pretérito-imperfecto-1',
-                'pretérito-pluscuamperfecto-2': 'pretérito-imperfecto-2',
-                'futuro-perfecto': 'futuro'
-            }
-        }
-        """
         return {
             'Indicativo': {
                 'Indicativo-Pretérito-Perfeito-Composto': 'Indicativo-presente',
@@ -91,6 +72,7 @@ class InflectorPt(inflector.Inflector):
                 'Indicativo-Futuro-do-Presente-Composto': 'Indicativo-Futuro-do-Presente-Simples'
             },
             'Conjuntivo': {
-                'Conjuntivo--Subjuntivo-Pretérito-Perfeito': 'Conjuntivo--Subjuntivo-Presente'
+                'Conjuntivo--Subjuntivo-Pretérito-Perfeito': 'Conjuntivo--Subjuntivo-Presente',
+                'Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito': 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito'
             }
         }
