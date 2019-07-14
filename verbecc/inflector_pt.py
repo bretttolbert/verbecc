@@ -74,6 +74,7 @@ class InflectorPt(inflector.Inflector):
         return {
             'Indicativo': {
                 'Indicativo-Pretérito-Perfeito-Composto': 'Indicativo-presente',
-                'Indicativo-Pretérito-Mais-que-Perfeito-Composto': 'Indicativo-pretérito-imperfeito'
+                'Indicativo-Pretérito-Mais-que-Perfeito-Composto': 'Indicativo-pretérito-imperfeito',
+                'Indicativo-Pretérito-Mais-que-Perfeito-Anterior': 'Indicativo-Pretérito-Mais-que-Perfeito-Simples'
             }
         }

@@ -18,7 +18,9 @@ test_es_conjugate_mood_tense_data = [
     ('ter', 'Indicativo', 'Indicativo-Pretérito-Perfeito-Composto',
         ['eu tenho tido', 'tu tens tido', 'ele tem tido', 'nós temos tido', 'vós tendes tido', 'eles têm tido']),
     ('ter', 'Indicativo', 'Indicativo-Pretérito-Mais-que-Perfeito-Composto',
-        ['eu tinha tido', 'tu tinhas tido', 'ele tinha tido', 'nós tínhamos tido', 'vós tínheis tido', 'eles tinham tido'])
+        ['eu tinha tido', 'tu tinhas tido', 'ele tinha tido', 'nós tínhamos tido', 'vós tínheis tido', 'eles tinham tido']),
+    ('ter', 'Indicativo', 'Indicativo-Pretérito-Mais-que-Perfeito-Anterior',
+        ['eu tivera tido', 'tu tiveras tido', 'ele tivera tido', 'nós tivéramos tido', 'vós tivéreis tido', 'eles tiveram tido'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

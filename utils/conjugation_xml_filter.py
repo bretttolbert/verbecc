@@ -11,7 +11,7 @@ This script was used to remove unwanted tense elements
 working_dir = '../verbecc/data'
 in_file = "conjugations-pt.xml"
 out_file = "conjugations-pt.mod.xml"
-tenses_to_remove = ['Indicativo-Pretérito-Mais-que-Perfeito-Composto']
+tenses_to_remove = ['Indicativo-Pretérito-Mais-que-Perfeito-Anterior']
 
 def remove_mood_tense():
     removed_elem_cnt = 0
