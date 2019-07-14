@@ -4,6 +4,7 @@ import pytest
 from verbecc import conjugator
 from verbecc import string_utils
 from verbecc import exceptions
+from verbecc import config
 
 cg = conjugator.Conjugator(lang='fr')
 
@@ -24,24 +25,26 @@ def test_conjugator_conjugate(infinitive):
         assert output
 
 def test_conjugator_predict_conjugation_er_verb_indicative_present():
-    assert cg.conjugate_mood_tense('ubériser', 'indicatif', 'présent') == [
-    "j'ubérise",
-    "tu ubérises",
-    "il ubérise",
-    "nous ubérisons",
-    "vous ubérisez",
-    "ils ubérisent"
-    ]
+    if config.ml:
+        assert cg.conjugate_mood_tense('ubériser', 'indicatif', 'présent') == [
+        "j'ubérise",
+        "tu ubérises",
+        "il ubérise",
+        "nous ubérisons",
+        "vous ubérisez",
+        "ils ubérisent"
+        ]
 
 def test_conjugator_predict_conjugation_re_verb_indicative_present():
-    assert cg.conjugate_mood_tense('brettre', 'indicatif', 'présent') == [
-    "je brets",
-    "tu brets",
-    "il bret",
-    "nous brettons",
-    "vous brettez",
-    "ils brettent"
-    ]
+    if config.ml:
+        assert cg.conjugate_mood_tense('brettre', 'indicatif', 'présent') == [
+        "je brets",
+        "tu brets",
+        "il bret",
+        "nous brettons",
+        "vous brettez",
+        "ils brettent"
+        ]
 
 def test_conjugator_conjugate_passe_compose_with_avoir():
     assert cg.conjugate_mood_tense('manger', 'indicatif', 'passé-composé') == [

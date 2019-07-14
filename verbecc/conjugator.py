@@ -1,19 +1,28 @@
 # -*- coding: utf-8 -*-
 
-from . import inflector_fr
-from . import inflector_es
+from . import (
+    inflector_fr,
+    inflector_es,
+    inflector_pt)
+
 
 SUPPORTED_LANGUAGES = {
     'fr': 'français',
-    'es': 'español'
+    'es': 'español',
+    'pt': 'português'
 }
 
 class Conjugator:
+    """
+    :param lang: two-letter language code
+    """
     def __init__(self, lang):
         if lang == 'fr':
             self._inflector = inflector_fr.InflectorFr()
         elif lang == 'es':
             self._inflector = inflector_es.InflectorEs()
+        elif lang == 'pt':
+            self._inflector = inflector_pt.InflectorPt()
         else:
             raise InvalidLangError
     
