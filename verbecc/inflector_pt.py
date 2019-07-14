@@ -49,7 +49,8 @@ class InflectorPt(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Particípio-Particípio', 'Infinitivo-Pessoal-Presente',
+        return ['Particípio-Particípio', 
+                'infinitivo-pessoal-presente', 'infinitivo-pessoal-composto',
                 'Imperativo-Afirmativo', 'Imperativo-Negativo']
 
     def _get_helping_verb(self, infinitive):
@@ -79,5 +80,8 @@ class InflectorPt(inflector.Inflector):
             },
             'Condicional': {
                 'Condicional-Futuro-do-Pretérito-Composto': 'Condicional-Futuro-do-Pretérito-Simples'
+            },
+            'Infinitivo': {
+                'infinitivo-pessoal-composto': 'infinitivo-pessoal-presente'
             }
         }

@@ -41,8 +41,10 @@ test_es_conjugate_mood_tense_data = [
         ['eu teria', 'tu terias', 'ele teria', 'nós teríamos', 'vós teríeis', 'eles teriam']),
     ('ter', 'Condicional', 'Condicional-Futuro-do-Pretérito-Composto',
         ['eu teria tido', 'tu terias tido', 'ele teria tido', 'nós teríamos tido', 'vós teríeis tido', 'eles teriam tido']),
-    ('ter', 'Infinitivo', 'Infinitivo-Pessoal-Presente',
-        ['ter', 'teres', 'ter', 'termos', 'terdes', 'terem'])
+    ('ter', 'Infinitivo', 'infinitivo-pessoal-presente',
+        ['ter', 'teres', 'ter', 'termos', 'terdes', 'terem']),
+    ('ter', 'Infinitivo', 'infinitivo-pessoal-composto',
+        ['ter tido', 'teres tido', 'ter tido', 'termos tido', 'terdes tido', 'terem tido'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
