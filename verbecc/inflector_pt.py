@@ -50,8 +50,8 @@ class InflectorPt(inflector.Inflector):
 
     def _get_tenses_conjugated_without_pronouns(self):
         return ['particípio', 
-                'infinitivo-pessoal-presente', 'infinitivo-pessoal-composto',
-                'afirmativo', 'negativo']
+                'infinitivo', 'infinitivo-pessoal-presente', 'infinitivo-pessoal-composto',
+                'afirmativo', 'negativo', 'gerúndio']
 
     def _get_helping_verb(self, infinitive):
         return 'ter'

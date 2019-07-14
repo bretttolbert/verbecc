@@ -40,7 +40,7 @@ class InflectorEs(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['participo-participo']
+        return ['participo', 'gerundio', 'infinitivo', 'afirmativo', 'negativo']
 
     def _get_helping_verb(self, infinitive):
         return 'haber'
@@ -49,7 +49,7 @@ class InflectorEs(inflector.Inflector):
         return 'participo'
 
     def _get_participle_tense_name(self):
-        return 'participo-participo'
+        return 'participo'
 
     def _get_alternate_hv_inflection(self, s):
         if s.endswith('hay'):
@@ -65,7 +65,7 @@ class InflectorEs(inflector.Inflector):
                 'futuro-perfecto': 'futuro'
             },
             'condicional': {
-                'condicional-perfecto': 'condicional-present'
+                'perfecto': 'presente'
             },
             'subjuntivo': {
                 'pretérito-perfecto': 'presente',
