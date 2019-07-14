@@ -21,6 +21,7 @@ test:
     - tox -e py37
     - pip install codecov
     - pip install -r requirements.txt
+    - pip install -e .
     - pytest --cov=./verbecc/
     - codecov -f .coverage --token="aef49e7e-2539-47b9-aaf8-268ca78482d8"
 
