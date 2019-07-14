@@ -32,7 +32,11 @@ test_es_conjugate_mood_tense_data = [
     ('ter', 'Conjuntivo', 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito',
         ['se eu tivesse', 'se tu tivesses', 'se ele tivesse', 'se nós tivéssemos', 'se vós tivésseis', 'se eles tivessem']),
     ('ter', 'Conjuntivo', 'Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito',
-        ['eu tivesse tido', 'tu tivesses tido', 'ele tivesse tido', 'nós tivéssemos tido', 'vós tivésseis tido', 'eles tivessem tido'])
+        ['eu tivesse tido', 'tu tivesses tido', 'ele tivesse tido', 'nós tivéssemos tido', 'vós tivésseis tido', 'eles tivessem tido']),
+    ('ter', 'Conjuntivo', 'Conjuntivo--Subjuntivo-Futuro-Simples',
+        ['quando eu tiver', 'quando tu tiveres', 'quando ele tiver', 'quando nós tivermos', 'quando vós tiverdes', 'quando eles tiverem']),
+    ('ter', 'Conjuntivo', 'Conjuntivo--Subjuntivo-Futuro-Composto',
+        ['eu tiver tido', 'tu tiveres tido', 'ele tiver tido', 'nós tivermos tido', 'vós tiverdes tido', 'eles tiverem tido'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

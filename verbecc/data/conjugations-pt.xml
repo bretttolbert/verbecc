@@ -36,7 +36,7 @@
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples , Indicativo-Futuro-do-Presente-Simples)>
 <!ELEMENT Condicional (Condicional-Futuro-do-Pretérito-Simples , Condicional-Futuro-do-Pretérito-Composto)>
-<!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Futuro-Simples , Conjuntivo--Subjuntivo-Futuro-Composto)>
+<!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Futuro-Simples)>
 <!ELEMENT Infinitivo (Infinitivo-Pessoal-Presente , Infinitivo-Pessoal-Pretérito , Infinitivo-Infinitivo)>
 <!ELEMENT Imperativo (Imperativo-Afirmativo , Imperativo-Negativo)>
 <!ELEMENT Gerúndio (Gerúndio-Gerúndio)>
@@ -51,7 +51,6 @@
 <!ELEMENT Conjuntivo--Subjuntivo-Presente (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Pretérito-Imperfeito (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Futuro-Simples (p , p , p , p , p , p)>
-<!ELEMENT Conjuntivo--Subjuntivo-Futuro-Composto (p , p , p , p , p , p)>
 <!ELEMENT Infinitivo-Pessoal-Presente (p , p , p , p , p , p)>
 <!ELEMENT Infinitivo-Pessoal-Pretérito (p , p , p , p , p , p)>
 <!ELEMENT Infinitivo-Infinitivo (p , p)>
@@ -150,15 +149,7 @@
 			<p><i>cerdes</i></p>
 			<p><i>cerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>cer</i></p>
@@ -298,15 +289,7 @@
 			<p><i>udirdes</i></p>
 			<p><i>udirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>udir</i></p>
@@ -446,15 +429,7 @@
 			<p><i>uardes</i></p>
 			<p><i>uarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uar</i></p>
@@ -594,15 +569,7 @@
 			<p><i>edirdes</i></p>
 			<p><i>edirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>edir</i></p>
@@ -742,15 +709,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -890,15 +849,7 @@
 			<p><i>ouverdes</i></p>
 			<p><i>ouverem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>azer</i></p>
@@ -1038,15 +989,7 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>)</i></p>
@@ -1186,15 +1129,7 @@
 			<p><i>uardes</i></p>
 			<p><i>uarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uar</i></p>
@@ -1334,15 +1269,7 @@
 			<p><i>ierdes</i></p>
 			<p><i>ierem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -1482,15 +1409,7 @@
 			<p><i>ouberdes</i></p>
 			<p><i>ouberem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>aber</i></p>
@@ -1630,15 +1549,7 @@
 			<p><i>erzirdes</i></p>
 			<p><i>erzirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>erzir</i></p>
@@ -1778,15 +1689,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -1926,15 +1829,7 @@
 			<p><i>-</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -2074,15 +1969,7 @@
 			<p><i>çardes</i></p>
 			<p><i>çarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>çar</i></p>
@@ -2222,15 +2109,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -2370,15 +2249,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -2518,15 +2389,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -2666,15 +2529,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -2814,15 +2669,7 @@
 			<p><i>uirdes</i></p>
 			<p><i>uírem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uir</i></p>
@@ -2962,15 +2809,7 @@
 			<p><i>irdes</i></p>
 			<p><i>írem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -3110,15 +2949,7 @@
 			<p><i>ergirdes</i></p>
 			<p><i>ergirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ergir</i></p>
@@ -3258,15 +3089,7 @@
 			<p><i>sserdes</i></p>
 			<p><i>sserem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>zer</i></p>
@@ -3406,15 +3229,7 @@
 			<p><i>oerdes</i></p>
 			<p><i>oerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer</i></p>
@@ -3554,15 +3369,7 @@
 			<p><i>ormirdes</i></p>
 			<p><i>ormirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ormir</i></p>
@@ -3702,15 +3509,7 @@
 			<p><i>upirdes</i></p>
 			<p><i>upirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>upir</i></p>
@@ -3850,15 +3649,7 @@
 			<p><i>uerdes</i></p>
 			<p><i>uerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uer</i></p>
@@ -3998,15 +3789,7 @@
 			<p><i>iverdes</i></p>
 			<p><i>iverem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -4146,15 +3929,7 @@
 			<p><i>guirdes</i></p>
 			<p><i>guirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>guir</i></p>
@@ -4294,15 +4069,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -4442,15 +4209,7 @@
 			<p><i>izerdes</i></p>
 			<p><i>izerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>azer</i></p>
@@ -4590,15 +4349,7 @@
 			<p><i>cardes</i></p>
 			<p><i>carem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car</i></p>
@@ -4738,15 +4489,7 @@
 			<p><i>girdes</i></p>
 			<p><i>girem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gir</i></p>
@@ -4886,15 +4629,7 @@
 			<p><i>ugirdes</i></p>
 			<p><i>ugirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ugir</i></p>
@@ -5034,15 +4769,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -5182,15 +4909,7 @@
 			<p><i>ouverdes</i></p>
 			<p><i>ouverem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>aver</i></p>
@@ -5330,15 +5049,7 @@
 			<p><i>girdes</i></p>
 			<p><i>girem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gir</i></p>
@@ -5478,15 +5189,7 @@
 			<p><i>fordes</i></p>
 			<p><i>forem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -5626,15 +5329,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -5774,15 +5469,7 @@
 			<p><i>oerdes</i></p>
 			<p><i>oerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer</i></p>
@@ -5922,15 +5609,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -6070,15 +5749,7 @@
 			<p><i>iardes</i></p>
 			<p><i>iarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>iar</i></p>
@@ -6218,15 +5889,7 @@
 			<p><i>virdes</i></p>
 			<p><i>virem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>vir</i></p>
@@ -6366,15 +6029,7 @@
 			<p><i>dirdes</i></p>
 			<p><i>direm</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>dir</i></p>
@@ -6514,15 +6169,7 @@
 			<p><i>derdes</i></p>
 			<p><i>derem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>der</i></p>
@@ -6662,15 +6309,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -6810,15 +6449,7 @@
 			<p><i>uderdes</i></p>
 			<p><i>uderem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oder</i></p>
@@ -6958,15 +6589,7 @@
 			<p><i>olirdes</i></p>
 			<p><i>olirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>olir</i></p>
@@ -7106,15 +6729,7 @@
 			<p><i>userdes</i></p>
 			<p><i>userem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ôr</i></p>
@@ -7254,15 +6869,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -7402,15 +7009,7 @@
 			<p><i>erirdes</i></p>
 			<p><i>erirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>erir</i></p>
@@ -7550,15 +7149,7 @@
 			<p><i>ibirdes</i></p>
 			<p><i>ibirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ibir</i></p>
@@ -7698,15 +7289,7 @@
 			<p><i>gerdes</i></p>
 			<p><i>gerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ger</i></p>
@@ -7846,15 +7429,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -7994,15 +7569,7 @@
 			<p><i>iserdes</i></p>
 			<p><i>iserem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>erer</i></p>
@@ -8142,15 +7709,7 @@
 			<p><i>ouverdes</i></p>
 			<p><i>ouverem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>aver</i></p>
@@ -8290,15 +7849,7 @@
 			<p><i>girdes</i></p>
 			<p><i>girem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gir</i></p>
@@ -8438,15 +7989,7 @@
 			<p><i>ectirdes</i></p>
 			<p><i>ectirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ectir</i></p>
@@ -8586,15 +8129,7 @@
 			<p><i>mirdes</i></p>
 			<p><i>mirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>mir</i></p>
@@ -8734,15 +8269,7 @@
 			<p><i>rerdes</i></p>
 			<p><i>rerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>rer</i></p>
@@ -8882,15 +8409,7 @@
 			<p><i>cirdes</i></p>
 			<p><i>cirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>cir</i></p>
@@ -9030,15 +8549,7 @@
 			<p><i>unirdes</i></p>
 			<p><i>unirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>unir</i></p>
@@ -9178,15 +8689,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -9326,15 +8829,7 @@
 			<p><i>ouberdes</i></p>
 			<p><i>ouberem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>aber</i></p>
@@ -9474,15 +8969,7 @@
 			<p><i>irdes</i></p>
 			<p><i>írem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -9622,15 +9109,7 @@
 			<p><i>udardes</i></p>
 			<p><i>udarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>udar</i></p>
@@ -9770,15 +9249,7 @@
 			<p><i>eguirdes</i></p>
 			<p><i>eguirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>eguir</i></p>
@@ -9918,15 +9389,7 @@
 			<p><i>entirdes</i></p>
 			<p><i>entirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>entir</i></p>
@@ -10066,15 +9529,7 @@
 			<p><i>fordes</i></p>
 			<p><i>forem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ser</i></p>
@@ -10214,15 +9669,7 @@
 			<p><i>ervirdes</i></p>
 			<p><i>ervirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ervir</i></p>
@@ -10362,15 +9809,7 @@
 			<p><i>iverdes</i></p>
 			<p><i>iverem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -10510,15 +9949,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -10658,15 +10089,7 @@
 			<p><i>ouxerdes</i></p>
 			<p><i>ouxerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>azer</i></p>
@@ -10806,15 +10229,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -10954,15 +10369,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -11102,15 +10509,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -11250,15 +10649,7 @@
 			<p><i>ierdes</i></p>
 			<p><i>ierem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -11398,15 +10789,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -11546,15 +10929,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -11694,15 +11069,7 @@
 			<p><i>ucardes</i></p>
 			<p><i>ucarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ucar</i></p>
@@ -11842,15 +11209,7 @@
 			<p><i>çardes-vos</i></p>
 			<p><i>çarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>çar-me</i></p>
@@ -11990,15 +11349,7 @@
 			<p><i>ustrardes</i></p>
 			<p><i>ustrarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ustrar</i></p>
@@ -12138,15 +11489,7 @@
 			<p><i>cardes</i></p>
 			<p><i>carem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car</i></p>
@@ -12286,15 +11629,7 @@
 			<p><i>cardes-vos</i></p>
 			<p><i>carem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car-me</i></p>
@@ -12434,15 +11769,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -12582,15 +11909,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -12730,15 +12049,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -12878,15 +12189,7 @@
 			<p><i>cerdes-vos</i></p>
 			<p><i>cerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>cer-me</i></p>
@@ -13026,15 +12329,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -13174,15 +12469,7 @@
 			<p><i>ulardes</i></p>
 			<p><i>ularem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ular</i></p>
@@ -13322,15 +12609,7 @@
 			<p><i>cardes</i></p>
 			<p><i>carem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car</i></p>
@@ -13470,15 +12749,7 @@
 			<p><i>cardes-vos</i></p>
 			<p><i>carem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car-me</i></p>
@@ -13618,15 +12889,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>írem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -13766,15 +13029,7 @@
 			<p><i>oiardes</i></p>
 			<p><i>oiarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oiar</i></p>
@@ -13914,15 +13169,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>irem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -14062,15 +13309,7 @@
 			<p><i>gerdes-vos</i></p>
 			<p><i>gerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ger-me</i></p>
@@ -14210,15 +13449,7 @@
 			<p><i>rirdes</i></p>
 			<p><i>rirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>rir</i></p>
@@ -14358,15 +13589,7 @@
 			<p><i>rirdes-vos</i></p>
 			<p><i>rirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>rir-me</i></p>
@@ -14506,15 +13729,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -14654,15 +13869,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -14802,15 +14009,7 @@
 			<p><i>iverdes</i></p>
 			<p><i>iverem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -14950,15 +14149,7 @@
 			<p><i>iverdes-vos</i></p>
 			<p><i>iverem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -15098,15 +14289,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>írem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -15246,15 +14429,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -15394,15 +14569,7 @@
 			<p><i>nderdes</i></p>
 			<p><i>nderem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>nder</i></p>
@@ -15542,15 +14709,7 @@
 			<p><i>nderdes-vos</i></p>
 			<p><i>nderem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>nder-me</i></p>
@@ -15690,15 +14849,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -15838,15 +14989,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -15986,15 +15129,7 @@
 			<p><i>girdes-vos</i></p>
 			<p><i>girem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gir-me</i></p>
@@ -16134,15 +15269,7 @@
 			<p><i>udirdes-vos</i></p>
 			<p><i>udirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>udir-me</i></p>
@@ -16282,15 +15409,7 @@
 			<p><i>uardes-vos</i></p>
 			<p><i>uarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uar-me</i></p>
@@ -16430,15 +15549,7 @@
 			<p><i>erirdes-vos</i></p>
 			<p><i>erirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>erir-me</i></p>
@@ -16578,15 +15689,7 @@
 			<p><i>everdes</i></p>
 			<p><i>everem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ever</i></p>
@@ -16726,15 +15829,7 @@
 			<p><i>everdes-vos</i></p>
 			<p><i>everem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ever-me</i></p>
@@ -16874,15 +15969,7 @@
 			<p><i>ertirdes</i></p>
 			<p><i>ertirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ertir</i></p>
@@ -17022,15 +16109,7 @@
 			<p><i>izerdes-vos</i></p>
 			<p><i>izerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>azer-me</i></p>
@@ -17170,15 +16249,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -17318,15 +16389,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -17466,15 +16529,7 @@
 			<p><i>uchardes-vos</i></p>
 			<p><i>ucharem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uchar-me</i></p>
@@ -17614,15 +16669,7 @@
 			<p><i>udardes</i></p>
 			<p><i>udarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>udar</i></p>
@@ -17762,15 +16809,7 @@
 			<p><i>uardes</i></p>
 			<p><i>uarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uar</i></p>
@@ -17910,15 +16949,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>irem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -18058,15 +17089,7 @@
 			<p><i>itardes</i></p>
 			<p><i>itarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>itar</i></p>
@@ -18206,15 +17229,7 @@
 			<p><i>itardes-vos</i></p>
 			<p><i>itarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>itar-me</i></p>
@@ -18354,15 +17369,7 @@
 			<p><i>izardes</i></p>
 			<p><i>izarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>izar</i></p>
@@ -18502,15 +17509,7 @@
 			<p><i>izardes-vos</i></p>
 			<p><i>izarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>izar-me</i></p>
@@ -18650,15 +17649,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -18798,15 +17789,7 @@
 			<p><i>çardes</i></p>
 			<p><i>çarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>çar</i></p>
@@ -18946,15 +17929,7 @@
 			<p><i>uardes-vos</i></p>
 			<p><i>uarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uar-me</i></p>
@@ -19094,15 +18069,7 @@
 			<p><i>-</i></p>
 			<p><i>cerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -19242,15 +18209,7 @@
 			<p><i>udardes</i></p>
 			<p><i>udarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>udar</i></p>
@@ -19390,15 +18349,7 @@
 			<p><i>udardes-vos</i></p>
 			<p><i>udarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>udar-me</i></p>
@@ -19538,15 +18489,7 @@
 			<p><i>iardes</i></p>
 			<p><i>iarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>iar</i></p>
@@ -19686,15 +18629,7 @@
 			<p><i>iardes-vos</i></p>
 			<p><i>iarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>iar-me</i></p>
@@ -19834,15 +18769,7 @@
 			<p><i>userdes</i></p>
 			<p><i>userem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>or</i></p>
@@ -19982,15 +18909,7 @@
 			<p><i>userdes-vos</i></p>
 			<p><i>userem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>or-me</i></p>
@@ -20130,15 +19049,7 @@
 			<p><i>ulardes-vos</i></p>
 			<p><i>ularem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ular-me</i></p>
@@ -20278,15 +19189,7 @@
 			<p><i>oiardes-vos</i></p>
 			<p><i>oiarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oiar-me</i></p>
@@ -20426,15 +19329,7 @@
 			<p><i>ouverdes-vos</i></p>
 			<p><i>ouverem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>azer-me</i></p>
@@ -20574,15 +19469,7 @@
 			<p><i>izardes</i></p>
 			<p><i>izarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>izar</i></p>
@@ -20722,15 +19609,7 @@
 			<p><i>cardes-vos</i></p>
 			<p><i>carem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car-me</i></p>
@@ -20870,15 +19749,7 @@
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>)</i></p>
@@ -21018,15 +19889,7 @@
 			<p><i>inardes</i></p>
 			<p><i>inarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>inar</i></p>
@@ -21166,15 +20029,7 @@
 			<p><i>inardes-vos</i></p>
 			<p><i>inarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>inar-me</i></p>
@@ -21314,15 +20169,7 @@
 			<p><i>ergirdes-vos</i></p>
 			<p><i>ergirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ergir-me</i></p>
@@ -21462,15 +20309,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -21610,15 +20449,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -21758,15 +20589,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -21906,15 +20729,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -22054,15 +20869,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -22202,15 +21009,7 @@
 			<p><i>unardes</i></p>
 			<p><i>unarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>unar</i></p>
@@ -22350,15 +21149,7 @@
 			<p><i>ierdes-vos</i></p>
 			<p><i>ierem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -22498,15 +21289,7 @@
 			<p><i>umardes</i></p>
 			<p><i>umarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umar</i></p>
@@ -22646,15 +21429,7 @@
 			<p><i>-</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -22794,15 +21569,7 @@
 			<p><i>-</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -22942,15 +21709,7 @@
 			<p><i>iserdes-vos</i></p>
 			<p><i>iserem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>erer-me</i></p>
@@ -23090,15 +21849,7 @@
 			<p><i>zerdes</i></p>
 			<p><i>zerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>zer</i></p>
@@ -23238,15 +21989,7 @@
 			<p><i>zerdes-vos</i></p>
 			<p><i>zerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>zer-me</i></p>
@@ -23386,15 +22129,7 @@
 			<p><i>uardes</i></p>
 			<p><i>uarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uar</i></p>
@@ -23534,15 +22269,7 @@
 			<p><i>oiardes</i></p>
 			<p><i>oiarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oiar</i></p>
@@ -23682,15 +22409,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -23830,15 +22549,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -23978,15 +22689,7 @@
 			<p><i>ulirdes</i></p>
 			<p><i>ulirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ulir</i></p>
@@ -24126,15 +22829,7 @@
 			<p><i>ulirdes-vos</i></p>
 			<p><i>ulirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ulir-me</i></p>
@@ -24274,15 +22969,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -24422,15 +23109,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -24570,15 +23249,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -24718,15 +23389,7 @@
 			<p><i>ernirdes</i></p>
 			<p><i>ernirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ernir</i></p>
@@ -24866,15 +23529,7 @@
 			<p><i>-</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -25014,15 +23669,7 @@
 			<p><i>girdes-vos</i></p>
 			<p><i>girem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gir-me</i></p>
@@ -25162,15 +23809,7 @@
 			<p><i>umardes</i></p>
 			<p><i>umarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umar</i></p>
@@ -25310,15 +23949,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -25458,15 +24089,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -25606,15 +24229,7 @@
 			<p><i>obrirdes</i></p>
 			<p><i>obrirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>obrir</i></p>
@@ -25754,15 +24369,7 @@
 			<p><i>obrirdes-vos</i></p>
 			<p><i>obrirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>obrir-me</i></p>
@@ -25902,15 +24509,7 @@
 			<p><i>ibirdes-vos</i></p>
 			<p><i>ibirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ibir-me</i></p>
@@ -26050,15 +24649,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -26198,15 +24789,7 @@
 			<p><i>oiardes</i></p>
 			<p><i>oiarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oiar</i></p>
@@ -26346,15 +24929,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>irem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -26494,15 +25069,7 @@
 			<p><i>elirdes</i></p>
 			<p><i>elirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>elir</i></p>
@@ -26642,15 +25209,7 @@
 			<p><i>etirdes</i></p>
 			<p><i>etirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>etir</i></p>
@@ -26790,15 +25349,7 @@
 			<p><i>etirdes-vos</i></p>
 			<p><i>etirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>etir-me</i></p>
@@ -26938,15 +25489,7 @@
 			<p><i>irdes</i></p>
 			<p><i>írem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -27086,15 +25629,7 @@
 			<p><i>oerdes</i></p>
 			<p><i>oerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer</i></p>
@@ -27234,15 +25769,7 @@
 			<p><i>oerdes-vos</i></p>
 			<p><i>oerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer-me</i></p>
@@ -27382,15 +25909,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>irem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -27530,15 +26049,7 @@
 			<p><i>ngirdes</i></p>
 			<p><i>ngirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ngir</i></p>
@@ -27678,15 +26189,7 @@
 			<p><i>ngirdes-vos</i></p>
 			<p><i>ngirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ngir-me</i></p>
@@ -27826,15 +26329,7 @@
 			<p><i>umirdes</i></p>
 			<p><i>umirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umir</i></p>
@@ -27974,15 +26469,7 @@
 			<p><i>umirdes-vos</i></p>
 			<p><i>umirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umir-me</i></p>
@@ -28122,15 +26609,7 @@
 			<p><i>sserdes-vos</i></p>
 			<p><i>sserem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>zer-me</i></p>
@@ -28270,15 +26749,7 @@
 			<p><i>terdes</i></p>
 			<p><i>terem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ter</i></p>
@@ -28418,15 +26889,7 @@
 			<p><i>omperdes</i></p>
 			<p><i>omperem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>omper</i></p>
@@ -28566,15 +27029,7 @@
 			<p><i>omperdes-vos</i></p>
 			<p><i>omperem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>omper-me</i></p>
@@ -28714,15 +27169,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -28862,15 +27309,7 @@
 			<p><i>-</i></p>
 			<p><i>carem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -29010,15 +27449,7 @@
 			<p><i>uspirdes</i></p>
 			<p><i>uspirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uspir</i></p>
@@ -29158,15 +27589,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -29306,15 +27729,7 @@
 			<p><i>egrirdes</i></p>
 			<p><i>egrirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>egrir</i></p>
@@ -29454,15 +27869,7 @@
 			<p><i>egrirdes-vos</i></p>
 			<p><i>egrirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>egrir-me</i></p>
@@ -29602,15 +28009,7 @@
 			<p><i>çardes</i></p>
 			<p><i>çarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>çar</i></p>
@@ -29750,15 +28149,7 @@
 			<p><i>çardes-vos</i></p>
 			<p><i>çarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>çar-me</i></p>
@@ -29898,15 +28289,7 @@
 			<p><i>obrirdes</i></p>
 			<p><i>obrirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>obrir</i></p>
@@ -30046,15 +28429,7 @@
 			<p><i>obrirdes-vos</i></p>
 			<p><i>obrirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>obrir-me</i></p>
@@ -30194,15 +28569,7 @@
 			<p><i>ulardes</i></p>
 			<p><i>ularem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ular</i></p>
@@ -30342,15 +28709,7 @@
 			<p><i>olirdes</i></p>
 			<p><i>olirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>olir</i></p>
@@ -30490,15 +28849,7 @@
 			<p><i>izardes-vos</i></p>
 			<p><i>izarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>izar-me</i></p>
@@ -30638,15 +28989,7 @@
 			<p><i>upirdes-vos</i></p>
 			<p><i>upirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>upir-me</i></p>
@@ -30786,15 +29129,7 @@
 			<p><i>verdes</i></p>
 			<p><i>verem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ver</i></p>
@@ -30934,15 +29269,7 @@
 			<p><i>verdes-vos</i></p>
 			<p><i>verem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ver-me</i></p>
@@ -31082,15 +29409,7 @@
 			<p><i>estirdes</i></p>
 			<p><i>estirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>estir</i></p>
@@ -31230,15 +29549,7 @@
 			<p><i>dirdes-vos</i></p>
 			<p><i>direm-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>dir-me</i></p>
@@ -31378,15 +29689,7 @@
 			<p><i>entirdes-vos</i></p>
 			<p><i>entirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>entir-me</i></p>
@@ -31526,15 +29829,7 @@
 			<p><i>orirdes</i></p>
 			<p><i>orirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>orir</i></p>
@@ -31674,15 +29969,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -31822,15 +30109,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -31970,15 +30249,7 @@
 			<p><i>espirdes</i></p>
 			<p><i>espirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>espir</i></p>
@@ -32118,15 +30389,7 @@
 			<p><i>espirdes-vos</i></p>
 			<p><i>espirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>espir-me</i></p>
@@ -32266,15 +30529,7 @@
 			<p><i>olirdes-vos</i></p>
 			<p><i>olirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>olir-me</i></p>
@@ -32414,15 +30669,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -32562,15 +30809,7 @@
 			<p><i>enirdes</i></p>
 			<p><i>enirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>enir</i></p>
@@ -32710,15 +30949,7 @@
 			<p><i>enirdes-vos</i></p>
 			<p><i>enirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>enir-me</i></p>
@@ -32858,15 +31089,7 @@
 			<p><i>iardes</i></p>
 			<p><i>iarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>iar</i></p>
@@ -33006,15 +31229,7 @@
 			<p><i>estirdes-vos</i></p>
 			<p><i>estirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>estir-me</i></p>
@@ -33154,15 +31369,7 @@
 			<p><i>umirdes</i></p>
 			<p><i>umirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umir</i></p>
@@ -33302,15 +31509,7 @@
 			<p><i>derdes-vos</i></p>
 			<p><i>derem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>der-me</i></p>
@@ -33450,15 +31649,7 @@
 			<p><i>guirdes-vos</i></p>
 			<p><i>guirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>guir-me</i></p>
@@ -33598,15 +31789,7 @@
 			<p><i>ertirdes-vos</i></p>
 			<p><i>ertirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ertir-me</i></p>
@@ -33746,15 +31929,7 @@
 			<p><i>oerdes-vos</i></p>
 			<p><i>oerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer-me</i></p>
@@ -33894,15 +32069,7 @@
 			<p><i>cardes</i></p>
 			<p><i>carem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car</i></p>
@@ -34042,15 +32209,7 @@
 			<p><i>gerdes</i></p>
 			<p><i>gerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ger</i></p>
@@ -34190,15 +32349,7 @@
 			<p><i>irdes</i></p>
 			<p><i>írem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -34338,15 +32489,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -34486,15 +32629,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -34634,15 +32769,7 @@
 			<p><i>umardes</i></p>
 			<p><i>umarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umar</i></p>
@@ -34782,15 +32909,7 @@
 			<p><i>umardes-vos</i></p>
 			<p><i>umarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umar-me</i></p>
@@ -34930,15 +33049,7 @@
 			<p><i>oiardes-vos</i></p>
 			<p><i>oiarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oiar-me</i></p>
@@ -35078,15 +33189,7 @@
 			<p><i>uirdes</i></p>
 			<p><i>uirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uir</i></p>
@@ -35226,15 +33329,7 @@
 			<p><i>uirdes-vos</i></p>
 			<p><i>uirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uir-me</i></p>
@@ -35374,15 +33469,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -35522,15 +33609,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -35670,15 +33749,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>irem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -35818,15 +33889,7 @@
 			<p><i>uvardes</i></p>
 			<p><i>uvarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uvar</i></p>
@@ -35966,15 +34029,7 @@
 			<p><i>gardes</i></p>
 			<p><i>garem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gar</i></p>
@@ -36114,15 +34169,7 @@
 			<p><i>gardes-vos</i></p>
 			<p><i>garem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gar-me</i></p>
@@ -36262,15 +34309,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -36410,15 +34449,7 @@
 			<p><i>uerdes-vos</i></p>
 			<p><i>uerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uer-me</i></p>
@@ -36558,15 +34589,7 @@
 			<p><i>everdes</i></p>
 			<p><i>everem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ever</i></p>
@@ -36706,15 +34729,7 @@
 			<p><i>everdes-vos</i></p>
 			<p><i>everem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ever-me</i></p>
@@ -36854,15 +34869,7 @@
 			<p><i>ecerdes</i></p>
 			<p><i>ecerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ecer</i></p>
@@ -37002,15 +35009,7 @@
 			<p><i>uçardes</i></p>
 			<p><i>uçarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uçar</i></p>
@@ -37150,15 +35149,7 @@
 			<p><i>oerdes</i></p>
 			<p><i>oerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer</i></p>
@@ -37298,15 +35289,7 @@
 			<p><i>iverdes-vos</i></p>
 			<p><i>iverem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -37446,15 +35429,7 @@
 			<p><i>imirdes</i></p>
 			<p><i>imirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>imir</i></p>
@@ -37594,15 +35569,7 @@
 			<p><i>imirdes-vos</i></p>
 			<p><i>imirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>imir-me</i></p>
@@ -37742,15 +35709,7 @@
 			<p><i>iscardes</i></p>
 			<p><i>iscarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>iscar</i></p>
@@ -37890,15 +35849,7 @@
 			<p><i>ulardes</i></p>
 			<p><i>ularem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ular</i></p>
@@ -38038,15 +35989,7 @@
 			<p><i>emirdes</i></p>
 			<p><i>emirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>emir</i></p>
@@ -38186,15 +36129,7 @@
 			<p><i>ugirdes-vos</i></p>
 			<p><i>ugirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ugir-me</i></p>
@@ -38334,15 +36269,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -38482,15 +36409,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -38630,15 +36549,7 @@
 			<p><i>uchardes</i></p>
 			<p><i>ucharem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uchar</i></p>
@@ -38778,15 +36689,7 @@
 			<p><i>ouverdes-vos</i></p>
 			<p><i>ouverem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>aver-me</i></p>
@@ -38926,15 +36829,7 @@
 			<p><i>çardes</i></p>
 			<p><i>çarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>çar</i></p>
@@ -39074,15 +36969,7 @@
 			<p><i>girdes-vos</i></p>
 			<p><i>girem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gir-me</i></p>
@@ -39222,15 +37109,7 @@
 			<p><i>elirdes</i></p>
 			<p><i>elirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>elir</i></p>
@@ -39370,15 +37249,7 @@
 			<p><i>iardes-vos</i></p>
 			<p><i>iarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>iar-me</i></p>
@@ -39518,15 +37389,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>írem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -39666,15 +37529,7 @@
 			<p><i>orrerdes</i></p>
 			<p><i>orrerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>orrer</i></p>
@@ -39814,15 +37669,7 @@
 			<p><i>girdes</i></p>
 			<p><i>girem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>gir</i></p>
@@ -39962,15 +37809,7 @@
 			<p><i>erirdes</i></p>
 			<p><i>erirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>erir</i></p>
@@ -40110,15 +37949,7 @@
 			<p><i>erirdes-vos</i></p>
 			<p><i>erirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>erir-me</i></p>
@@ -40258,15 +38089,7 @@
 			<p><i>fordes-vos</i></p>
 			<p><i>forem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -40406,15 +38229,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -40554,15 +38369,7 @@
 			<p><i>oiardes</i></p>
 			<p><i>oiarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oiar</i></p>
@@ -40702,15 +38509,7 @@
 			<p><i>-</i></p>
 			<p><i>irem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -40850,15 +38649,7 @@
 			<p><i>atardes</i></p>
 			<p><i>atarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>atar</i></p>
@@ -40998,15 +38789,7 @@
 			<p><i>atardes-vos</i></p>
 			<p><i>atarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>atar-me</i></p>
@@ -41146,15 +38929,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -41294,15 +39069,7 @@
 			<p><i>oerdes-vos</i></p>
 			<p><i>oerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer-me</i></p>
@@ -41442,15 +39209,7 @@
 			<p><i>rerdes</i></p>
 			<p><i>rerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>rer</i></p>
@@ -41590,15 +39349,7 @@
 			<p><i>rerdes-vos</i></p>
 			<p><i>rerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>rer-me</i></p>
@@ -41738,15 +39489,7 @@
 			<p><i>scerdes</i></p>
 			<p><i>scerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>scer</i></p>
@@ -41886,15 +39629,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -42034,15 +39769,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -42182,15 +39909,7 @@
 			<p><i>iardes-vos</i></p>
 			<p><i>iarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>iar-me</i></p>
@@ -42330,15 +40049,7 @@
 			<p><i>tirdes</i></p>
 			<p><i>tirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>tir</i></p>
@@ -42478,15 +40189,7 @@
 			<p><i>tirdes-vos</i></p>
 			<p><i>tirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>tir-me</i></p>
@@ -42626,15 +40329,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -42774,15 +40469,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -42922,15 +40609,7 @@
 			<p><i>erdes</i></p>
 			<p><i>erem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er</i></p>
@@ -43070,15 +40749,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -43218,15 +40889,7 @@
 			<p><i>eguirdes-vos</i></p>
 			<p><i>eguirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>eguir-me</i></p>
@@ -43366,15 +41029,7 @@
 			<p><i>terdes-vos</i></p>
 			<p><i>terem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ter-me</i></p>
@@ -43514,15 +41169,7 @@
 			<p><i>derdes</i></p>
 			<p><i>derem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>der</i></p>
@@ -43662,15 +41309,7 @@
 			<p><i>derdes-vos</i></p>
 			<p><i>derem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>der-me</i></p>
@@ -43810,15 +41449,7 @@
 			<p><i>erdes-vos</i></p>
 			<p><i>erem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -43958,15 +41589,7 @@
 			<p><i>ierdes</i></p>
 			<p><i>ierem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -44106,15 +41729,7 @@
 			<p><i>irdes</i></p>
 			<p><i>írem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>
@@ -44254,15 +41869,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i/></p>
@@ -44402,15 +42009,7 @@
 			<p><i>gerdes-vos</i></p>
 			<p><i>gerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ger-me</i></p>
@@ -44550,15 +42149,7 @@
 			<p><i>ectirdes-vos</i></p>
 			<p><i>ectirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ectir-me</i></p>
@@ -44698,15 +42289,7 @@
 			<p><i>-</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -44846,15 +42429,7 @@
 			<p><i>mirdes-vos</i></p>
 			<p><i>mirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>mir-me</i></p>
@@ -44994,15 +42569,7 @@
 			<p><i>oerdes-vos</i></p>
 			<p><i>oerem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer-me</i></p>
@@ -45142,15 +42709,7 @@
 			<p><i>elirdes-vos</i></p>
 			<p><i>elirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>elir-me</i></p>
@@ -45290,15 +42849,7 @@
 			<p><i>cirdes-vos</i></p>
 			<p><i>cirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>cir-me</i></p>
@@ -45438,15 +42989,7 @@
 			<p><i>unirdes-vos</i></p>
 			<p><i>unirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>unir-me</i></p>
@@ -45586,15 +43129,7 @@
 			<p><i>irdes-vos</i></p>
 			<p><i>irem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -45734,15 +43269,7 @@
 			<p><i>mperdes</i></p>
 			<p><i>mperem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>mper</i></p>
@@ -45882,15 +43409,7 @@
 			<p><i>mperdes-vos</i></p>
 			<p><i>mperem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>mper-me</i></p>
@@ -46030,15 +43549,7 @@
 			<p><i>-</i></p>
 			<p><i>girem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>-</i></p>
@@ -46178,15 +43689,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -46326,15 +43829,7 @@
 			<p><i>ardes-vos</i></p>
 			<p><i>arem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar-me</i></p>
@@ -46474,15 +43969,7 @@
 			<p><i>udardes-vos</i></p>
 			<p><i>udarem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>udar-me</i></p>
@@ -46622,15 +44109,7 @@
 			<p><i>cardes</i></p>
 			<p><i>carem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car</i></p>
@@ -46770,15 +44249,7 @@
 			<p><i>cardes-vos</i></p>
 			<p><i>carem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>car-me</i></p>
@@ -46918,15 +44389,7 @@
 			<p><i>ervirdes-vos</i></p>
 			<p><i>ervirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ervir-me</i></p>
@@ -47066,15 +44529,7 @@
 			<p><i>oerdes</i></p>
 			<p><i>oerem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>oer</i></p>
@@ -47214,15 +44669,7 @@
 			<p><i>ortirdes</i></p>
 			<p><i>ortirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ortir</i></p>
@@ -47362,15 +44809,7 @@
 			<p><i>ortirdes-vos</i></p>
 			<p><i>ortirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ortir-me</i></p>
@@ -47510,15 +44949,7 @@
 			<p><i>ubirdes</i></p>
 			<p><i>ubirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ubir</i></p>
@@ -47658,15 +45089,7 @@
 			<p><i>ubirdes-vos</i></p>
 			<p><i>ubirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ubir-me</i></p>
@@ -47806,15 +45229,7 @@
 			<p><i>umirdes-vos</i></p>
 			<p><i>umirem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>umir-me</i></p>
@@ -47954,15 +45369,7 @@
 			<p><i>enderdes</i></p>
 			<p><i>enderem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ender</i></p>
@@ -48102,15 +45509,7 @@
 			<p><i>enderdes-vos</i></p>
 			<p><i>enderem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ender-me</i></p>
@@ -48250,15 +45649,7 @@
 			<p><i>iverdes-vos</i></p>
 			<p><i>iverem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>er-me</i></p>
@@ -48398,15 +45789,7 @@
 			<p><i>ossirdes</i></p>
 			<p><i>ossirem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ossir</i></p>
@@ -48546,15 +45929,7 @@
 			<p><i>ardes</i></p>
 			<p><i>arem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ar</i></p>
@@ -48694,15 +46069,7 @@
 			<p><i>ierdes-vos</i></p>
 			<p><i>ierem-se</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir-me</i></p>
@@ -48842,15 +46209,7 @@
 			<p><i>uvardes</i></p>
 			<p><i>uvarem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>uvar</i></p>
@@ -48990,15 +46349,7 @@
 			<p><i>irdes</i></p>
 			<p><i>irem</i></p>
 		</Conjuntivo--Subjuntivo-Futuro-Simples>
-		<Conjuntivo--Subjuntivo-Futuro-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Conjuntivo--Subjuntivo-Futuro-Composto>
-	</Conjuntivo>
+		</Conjuntivo>
 	<Infinitivo>
 		<Infinitivo-Pessoal-Presente>
 			<p><i>ir</i></p>

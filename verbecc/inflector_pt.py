@@ -73,6 +73,7 @@ class InflectorPt(inflector.Inflector):
             },
             'Conjuntivo': {
                 'Conjuntivo--Subjuntivo-Pretérito-Perfeito': 'Conjuntivo--Subjuntivo-Presente',
-                'Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito': 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito'
+                'Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito': 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito',
+                'Conjuntivo--Subjuntivo-Futuro-Composto': 'Conjuntivo--Subjuntivo-Futuro-Simples'
             }
         }
