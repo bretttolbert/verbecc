@@ -34,8 +34,7 @@
 <!ELEMENT template (Indicativo , Condicional , Conjuntivo , Infinitivo , Imperativo , Gerúndio , Particípio)>
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples ,
-Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
+<!ELEMENT Indicativo (Indicativo-presente , Indicativo-pretérito-imperfeito , Indicativo-Pretérito-Mais-que-Perfeito-Simples , Indicativo-pretérito-perfeito-simples , Indicativo-Futuro-do-Presente-Simples)>
 <!ELEMENT Condicional (Condicional-Futuro-do-Pretérito-Simples , Condicional-Futuro-do-Pretérito-Composto)>
 <!ELEMENT Conjuntivo (Conjuntivo--Subjuntivo-Presente , Conjuntivo--Subjuntivo-Pretérito-Perfeito , Conjuntivo--Subjuntivo-Pretérito-Imperfeito , Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito , Conjuntivo--Subjuntivo-Futuro-Simples , Conjuntivo--Subjuntivo-Futuro-Composto)>
 <!ELEMENT Infinitivo (Infinitivo-Pessoal-Presente , Infinitivo-Pessoal-Pretérito , Infinitivo-Infinitivo)>
@@ -47,7 +46,6 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 <!ELEMENT Indicativo-Pretérito-Mais-que-Perfeito-Simples (p , p , p , p , p , p)>
 <!ELEMENT Indicativo-pretérito-perfeito-simples (p , p , p , p , p , p)>
 <!ELEMENT Indicativo-Futuro-do-Presente-Simples (p , p , p , p , p , p)>
-<!ELEMENT Indicativo-Futuro-do-Presente-Composto (p , p , p , p , p , p)>
 <!ELEMENT Condicional-Futuro-do-Pretérito-Simples (p , p , p , p , p , p)>
 <!ELEMENT Condicional-Futuro-do-Pretérito-Composto (p , p , p , p , p , p)>
 <!ELEMENT Conjuntivo--Subjuntivo-Presente (p , p , p , p , p , p)>
@@ -110,15 +108,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>cereis</i></p>
 			<p><i>cerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ceria</i></p>
@@ -282,15 +272,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>udireis</i></p>
 			<p><i>udirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>udiria</i></p>
@@ -454,15 +436,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uareis</i></p>
 			<p><i>uarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uaria</i></p>
@@ -626,15 +600,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>edireis</i></p>
 			<p><i>edirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-			<p><i>edido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ediria</i></p>
@@ -798,15 +764,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -970,15 +928,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>azereis</i></p>
 			<p><i>azerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>azeria</i></p>
@@ -1142,15 +1092,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>)</i></p>
@@ -1314,15 +1256,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uareis</i></p>
 			<p><i>uarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uaria</i></p>
@@ -1486,15 +1420,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -1658,15 +1584,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>abereis</i></p>
 			<p><i>aberão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aberia</i></p>
@@ -1830,15 +1748,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>erzireis</i></p>
 			<p><i>erzirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-			<p><i>erzido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>erziria</i></p>
@@ -2002,15 +1912,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -2174,15 +2076,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -2346,15 +2240,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>çareis</i></p>
 			<p><i>çarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>çaria</i></p>
@@ -2518,15 +2404,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -2690,15 +2568,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -2862,15 +2732,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -3034,15 +2896,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -3206,15 +3060,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uireis</i></p>
 			<p><i>uirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-			<p><i>uído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uiria</i></p>
@@ -3378,15 +3224,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -3550,15 +3388,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ergireis</i></p>
 			<p><i>ergirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ergiria</i></p>
@@ -3722,15 +3552,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>reis</i></p>
 			<p><i>rão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ria</i></p>
@@ -3894,15 +3716,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oereis</i></p>
 			<p><i>oerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oeria</i></p>
@@ -4066,15 +3880,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ormireis</i></p>
 			<p><i>ormirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-			<p><i>ormido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ormiria</i></p>
@@ -4238,15 +4044,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>upireis</i></p>
 			<p><i>upirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>upiria</i></p>
@@ -4410,15 +4208,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uereis</i></p>
 			<p><i>uerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ueria</i></p>
@@ -4582,15 +4372,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -4754,15 +4536,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>guireis</i></p>
 			<p><i>guirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>guiria</i></p>
@@ -4926,15 +4700,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -5098,15 +4864,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -5270,15 +5028,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>careis</i></p>
 			<p><i>carão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>caria</i></p>
@@ -5442,15 +5192,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gireis</i></p>
 			<p><i>girão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>giria</i></p>
@@ -5614,15 +5356,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ugireis</i></p>
 			<p><i>ugirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ugiria</i></p>
@@ -5786,15 +5520,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -5958,15 +5684,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>avereis</i></p>
 			<p><i>averão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>averia</i></p>
@@ -6130,15 +5848,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gireis</i></p>
 			<p><i>girão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>giria</i></p>
@@ -6302,15 +6012,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -6474,15 +6176,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -6646,15 +6340,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oereis</i></p>
 			<p><i>oerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oeria</i></p>
@@ -6818,15 +6504,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -6990,15 +6668,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>iareis</i></p>
 			<p><i>iarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iaria</i></p>
@@ -7162,15 +6832,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>vireis</i></p>
 			<p><i>virão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>viria</i></p>
@@ -7334,15 +6996,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>direis</i></p>
 			<p><i>dirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>diria</i></p>
@@ -7506,15 +7160,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>dereis</i></p>
 			<p><i>derão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>deria</i></p>
@@ -7678,15 +7324,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -7850,15 +7488,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>odereis</i></p>
 			<p><i>oderão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-			<p><i>odido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oderia</i></p>
@@ -8022,15 +7652,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>olireis</i></p>
 			<p><i>olirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oliria</i></p>
@@ -8194,15 +7816,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oreis</i></p>
 			<p><i>orão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oria</i></p>
@@ -8366,15 +7980,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -8538,15 +8144,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>erireis</i></p>
 			<p><i>erirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eriria</i></p>
@@ -8710,15 +8308,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ibireis</i></p>
 			<p><i>ibirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ibiria</i></p>
@@ -8882,15 +8472,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gereis</i></p>
 			<p><i>gerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>geria</i></p>
@@ -9054,15 +8636,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -9226,15 +8800,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>erereis</i></p>
 			<p><i>ererão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ereria</i></p>
@@ -9398,15 +8964,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>avereis</i></p>
 			<p><i>averão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>averia</i></p>
@@ -9570,15 +9128,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gireis</i></p>
 			<p><i>girão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>giria</i></p>
@@ -9742,15 +9292,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ectireis</i></p>
 			<p><i>ectirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ectiria</i></p>
@@ -9914,15 +9456,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>mireis</i></p>
 			<p><i>mirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>miria</i></p>
@@ -10086,15 +9620,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>rereis</i></p>
 			<p><i>rerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>reria</i></p>
@@ -10258,15 +9784,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>cireis</i></p>
 			<p><i>cirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ciria</i></p>
@@ -10430,15 +9948,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>unireis</i></p>
 			<p><i>unirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uniria</i></p>
@@ -10602,15 +10112,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -10774,15 +10276,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>abereis</i></p>
 			<p><i>aberão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-			<p><i>abido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aberia</i></p>
@@ -10946,15 +10440,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -11118,15 +10604,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>udareis</i></p>
 			<p><i>udarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>udaria</i></p>
@@ -11290,15 +10768,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>eguireis</i></p>
 			<p><i>eguirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eguiria</i></p>
@@ -11462,15 +10932,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>entireis</i></p>
 			<p><i>entirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>entiria</i></p>
@@ -11634,15 +11096,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>sereis</i></p>
 			<p><i>serão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-			<p><i>sido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>seria</i></p>
@@ -11806,15 +11260,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ervireis</i></p>
 			<p><i>ervirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>erviria</i></p>
@@ -11978,15 +11424,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -12150,15 +11588,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -12322,15 +11752,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -12494,15 +11916,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -12666,15 +12080,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -12838,15 +12244,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -13010,15 +12408,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -13182,15 +12572,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -13354,15 +12736,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -13526,15 +12900,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ucareis</i></p>
 			<p><i>ucarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-			<p><i>ucado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ucaria</i></p>
@@ -13698,15 +13064,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>çar-vos-eis</i></p>
 			<p><i>çar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>çar-me-ia</i></p>
@@ -13870,15 +13228,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ustrareis</i></p>
 			<p><i>ustrarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-			<p><i>ustrado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ustraria</i></p>
@@ -14042,15 +13392,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>careis</i></p>
 			<p><i>carão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>caria</i></p>
@@ -14214,15 +13556,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>car-vos-eis</i></p>
 			<p><i>car-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>car-me-ia</i></p>
@@ -14386,15 +13720,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -14558,15 +13884,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -14730,15 +14048,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -14902,15 +14212,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>cer-vos-eis</i></p>
 			<p><i>cer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>cer-me-ia</i></p>
@@ -15074,15 +14376,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -15246,15 +14540,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ulareis</i></p>
 			<p><i>ularão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ularia</i></p>
@@ -15418,15 +14704,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>careis</i></p>
 			<p><i>carão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>caria</i></p>
@@ -15590,15 +14868,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>car-vos-eis</i></p>
 			<p><i>car-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>car-me-ia</i></p>
@@ -15762,15 +15032,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -15934,15 +15196,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oiareis</i></p>
 			<p><i>oiarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oiaria</i></p>
@@ -16106,15 +15360,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -16278,15 +15524,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ger-vos-eis</i></p>
 			<p><i>ger-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ger-me-ia</i></p>
@@ -16450,15 +15688,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>rireis</i></p>
 			<p><i>rirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>riria</i></p>
@@ -16622,15 +15852,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>rir-vos-eis</i></p>
 			<p><i>rir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-			<p><i>erto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>rir-me-ia</i></p>
@@ -16794,15 +16016,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -16966,15 +16180,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -17138,15 +16344,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -17310,15 +16508,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -17482,15 +16672,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -17654,15 +16836,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -17826,15 +17000,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ndereis</i></p>
 			<p><i>nderão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>nderia</i></p>
@@ -17998,15 +17164,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>nder-vos-eis</i></p>
 			<p><i>nder-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-			<p><i>ndido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>nder-me-ia</i></p>
@@ -18170,15 +17328,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -18342,15 +17492,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -18514,15 +17656,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gir-vos-eis</i></p>
 			<p><i>gir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>gir-me-ia</i></p>
@@ -18686,15 +17820,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>udir-vos-eis</i></p>
 			<p><i>udir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-			<p><i>udido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>udir-me-ia</i></p>
@@ -18858,15 +17984,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uar-vos-eis</i></p>
 			<p><i>uar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uar-me-ia</i></p>
@@ -19030,15 +18148,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>erir-vos-eis</i></p>
 			<p><i>erir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>erir-me-ia</i></p>
@@ -19202,15 +18312,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>evereis</i></p>
 			<p><i>everão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>everia</i></p>
@@ -19374,15 +18476,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ever-vos-eis</i></p>
 			<p><i>ever-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-			<p><i>ito</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ever-me-ia</i></p>
@@ -19546,15 +18640,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ertireis</i></p>
 			<p><i>ertirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ertiria</i></p>
@@ -19718,15 +18804,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>azer-vos-eis</i></p>
 			<p><i>azer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-			<p><i>eito</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>azer-me-ia</i></p>
@@ -19890,15 +18968,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -20062,15 +19132,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -20234,15 +19296,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uchar-vos-eis</i></p>
 			<p><i>uchar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uchar-me-ia</i></p>
@@ -20406,15 +19460,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>udareis</i></p>
 			<p><i>udarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>udaria</i></p>
@@ -20578,15 +19624,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uareis</i></p>
 			<p><i>uarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uaria</i></p>
@@ -20750,15 +19788,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -20922,15 +19952,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>itareis</i></p>
 			<p><i>itarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>itaria</i></p>
@@ -21094,15 +20116,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>itar-vos-eis</i></p>
 			<p><i>itar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-			<p><i>itado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>itar-me-ia</i></p>
@@ -21266,15 +20280,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>izareis</i></p>
 			<p><i>izarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>izaria</i></p>
@@ -21438,15 +20444,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>izar-vos-eis</i></p>
 			<p><i>izar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>izar-me-ia</i></p>
@@ -21610,15 +20608,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -21782,15 +20772,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>çareis</i></p>
 			<p><i>çarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>çaria</i></p>
@@ -21954,15 +20936,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uar-vos-eis</i></p>
 			<p><i>uar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uar-me-ia</i></p>
@@ -22126,15 +21100,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>cerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -22298,15 +21264,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>udareis</i></p>
 			<p><i>udarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>udaria</i></p>
@@ -22470,15 +21428,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>udar-vos-eis</i></p>
 			<p><i>udar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>udar-me-ia</i></p>
@@ -22642,15 +21592,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>iareis</i></p>
 			<p><i>iarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iaria</i></p>
@@ -22814,15 +21756,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>iar-vos-eis</i></p>
 			<p><i>iar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iar-me-ia</i></p>
@@ -22986,15 +21920,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oreis</i></p>
 			<p><i>orão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oria</i></p>
@@ -23158,15 +22084,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>or-vos-eis</i></p>
 			<p><i>or-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-			<p><i>osto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>or-me-ia</i></p>
@@ -23330,15 +22248,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ular-vos-eis</i></p>
 			<p><i>ular-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ular-me-ia</i></p>
@@ -23502,15 +22412,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oiar-vos-eis</i></p>
 			<p><i>oiar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oiar-me-ia</i></p>
@@ -23674,15 +22576,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>azer-vos-eis</i></p>
 			<p><i>azer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-			<p><i>azido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>azer-me-ia</i></p>
@@ -23846,15 +22740,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>izareis</i></p>
 			<p><i>izarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>izaria</i></p>
@@ -24018,15 +22904,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>car-vos-eis</i></p>
 			<p><i>car-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>car-me-ia</i></p>
@@ -24190,15 +23068,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>)</i></p>
 			<p><i>)</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>)</i></p>
@@ -24362,15 +23232,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>inareis</i></p>
 			<p><i>inarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>inaria</i></p>
@@ -24534,15 +23396,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>inar-vos-eis</i></p>
 			<p><i>inar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-			<p><i>inado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>inar-me-ia</i></p>
@@ -24706,15 +23560,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ergir-vos-eis</i></p>
 			<p><i>ergir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-			<p><i>ergido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ergir-me-ia</i></p>
@@ -24878,15 +23724,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -25050,15 +23888,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -25222,15 +24052,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -25394,15 +24216,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -25566,15 +24380,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -25738,15 +24544,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>unareis</i></p>
 			<p><i>unarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-			<p><i>unado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>unaria</i></p>
@@ -25910,15 +24708,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -26082,15 +24872,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umareis</i></p>
 			<p><i>umarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umaria</i></p>
@@ -26254,15 +25036,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -26426,15 +25200,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -26598,15 +25364,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>erer-vos-eis</i></p>
 			<p><i>erer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>erer-me-ia</i></p>
@@ -26770,15 +25528,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>zereis</i></p>
 			<p><i>zerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>zeria</i></p>
@@ -26942,15 +25692,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>zer-vos-eis</i></p>
 			<p><i>zer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-			<p><i>zido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>zer-me-ia</i></p>
@@ -27114,15 +25856,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uareis</i></p>
 			<p><i>uarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-			<p><i>uado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uaria</i></p>
@@ -27286,15 +26020,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oiareis</i></p>
 			<p><i>oiarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oiaria</i></p>
@@ -27458,15 +26184,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -27630,15 +26348,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -27802,15 +26512,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ulireis</i></p>
 			<p><i>ulirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uliria</i></p>
@@ -27974,15 +26676,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ulir-vos-eis</i></p>
 			<p><i>ulir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-			<p><i>ulido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ulir-me-ia</i></p>
@@ -28146,15 +26840,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -28318,15 +27004,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -28490,15 +27168,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -28662,15 +27332,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ernireis</i></p>
 			<p><i>ernirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-			<p><i>ernido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>erniria</i></p>
@@ -28834,15 +27496,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -29006,15 +27660,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gir-vos-eis</i></p>
 			<p><i>gir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>gir-me-ia</i></p>
@@ -29178,15 +27824,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umareis</i></p>
 			<p><i>umarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umaria</i></p>
@@ -29350,15 +27988,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -29522,15 +28152,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -29694,15 +28316,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>obrireis</i></p>
 			<p><i>obrirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>obriria</i></p>
@@ -29866,15 +28480,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>obrir-vos-eis</i></p>
 			<p><i>obrir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-			<p><i>obrido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>obrir-me-ia</i></p>
@@ -30038,15 +28644,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ibir-vos-eis</i></p>
 			<p><i>ibir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-			<p><i>ibido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ibir-me-ia</i></p>
@@ -30210,15 +28808,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -30382,15 +28972,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oiareis</i></p>
 			<p><i>oiarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oiaria</i></p>
@@ -30554,15 +29136,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -30726,15 +29300,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>elireis</i></p>
 			<p><i>elirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eliria</i></p>
@@ -30898,15 +29464,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>etireis</i></p>
 			<p><i>etirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>etiria</i></p>
@@ -31070,15 +29628,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>etir-vos-eis</i></p>
 			<p><i>etir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-			<p><i>etido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>etir-me-ia</i></p>
@@ -31242,15 +29792,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -31414,15 +29956,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oereis</i></p>
 			<p><i>oerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oeria</i></p>
@@ -31586,15 +30120,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oer-vos-eis</i></p>
 			<p><i>oer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oer-me-ia</i></p>
@@ -31758,15 +30284,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -31930,15 +30448,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ngireis</i></p>
 			<p><i>ngirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ngiria</i></p>
@@ -32102,15 +30612,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ngir-vos-eis</i></p>
 			<p><i>ngir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-			<p><i>ngido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ngir-me-ia</i></p>
@@ -32274,15 +30776,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umireis</i></p>
 			<p><i>umirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umiria</i></p>
@@ -32446,15 +30940,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umir-vos-eis</i></p>
 			<p><i>umir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umir-me-ia</i></p>
@@ -32618,15 +31104,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>zer-vos-eis</i></p>
 			<p><i>zer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-			<p><i>to</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>zer-me-ia</i></p>
@@ -32790,15 +31268,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>tereis</i></p>
 			<p><i>terão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>teria</i></p>
@@ -32962,15 +31432,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ompereis</i></p>
 			<p><i>omperão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>omperia</i></p>
@@ -33134,15 +31596,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>omper-vos-eis</i></p>
 			<p><i>omper-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-			<p><i>ompido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>omper-me-ia</i></p>
@@ -33306,15 +31760,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -33478,15 +31924,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>carão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -33650,15 +32088,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uspireis</i></p>
 			<p><i>uspirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-			<p><i>uspido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uspiria</i></p>
@@ -33822,15 +32252,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -33994,15 +32416,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>egrireis</i></p>
 			<p><i>egrirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>egriria</i></p>
@@ -34166,15 +32580,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>egrir-vos-eis</i></p>
 			<p><i>egrir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-			<p><i>egrido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>egrir-me-ia</i></p>
@@ -34338,15 +32744,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>çareis</i></p>
 			<p><i>çarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>çaria</i></p>
@@ -34510,15 +32908,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>çar-vos-eis</i></p>
 			<p><i>çar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>çar-me-ia</i></p>
@@ -34682,15 +33072,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>obrireis</i></p>
 			<p><i>obrirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>obriria</i></p>
@@ -34854,15 +33236,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>obrir-vos-eis</i></p>
 			<p><i>obrir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-			<p><i>oberto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>obrir-me-ia</i></p>
@@ -35026,15 +33400,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ulareis</i></p>
 			<p><i>ularão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ularia</i></p>
@@ -35198,15 +33564,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>olireis</i></p>
 			<p><i>olirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oliria</i></p>
@@ -35370,15 +33728,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>izar-vos-eis</i></p>
 			<p><i>izar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-			<p><i>izado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>izar-me-ia</i></p>
@@ -35542,15 +33892,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>upir-vos-eis</i></p>
 			<p><i>upir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-			<p><i>upido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>upir-me-ia</i></p>
@@ -35714,15 +34056,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>vereis</i></p>
 			<p><i>verão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>veria</i></p>
@@ -35886,15 +34220,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ver-vos-eis</i></p>
 			<p><i>ver-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-			<p><i>vido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ver-me-ia</i></p>
@@ -36058,15 +34384,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>estireis</i></p>
 			<p><i>estirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>estiria</i></p>
@@ -36230,15 +34548,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>dir-vos-eis</i></p>
 			<p><i>dir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>dir-me-ia</i></p>
@@ -36402,15 +34712,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>entir-vos-eis</i></p>
 			<p><i>entir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-			<p><i>entido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>entir-me-ia</i></p>
@@ -36574,15 +34876,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>orireis</i></p>
 			<p><i>orirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-			<p><i>orido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oriria</i></p>
@@ -36746,15 +35040,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -36918,15 +35204,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -37090,15 +35368,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>espireis</i></p>
 			<p><i>espirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>espiria</i></p>
@@ -37262,15 +35532,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>espir-vos-eis</i></p>
 			<p><i>espir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-			<p><i>espido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>espir-me-ia</i></p>
@@ -37434,15 +35696,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>olir-vos-eis</i></p>
 			<p><i>olir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-			<p><i>olido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>olir-me-ia</i></p>
@@ -37606,15 +35860,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -37778,15 +36024,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>enireis</i></p>
 			<p><i>enirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eniria</i></p>
@@ -37950,15 +36188,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>enir-vos-eis</i></p>
 			<p><i>enir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-			<p><i>enido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>enir-me-ia</i></p>
@@ -38122,15 +36352,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>iareis</i></p>
 			<p><i>iarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iaria</i></p>
@@ -38294,15 +36516,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>estir-vos-eis</i></p>
 			<p><i>estir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-			<p><i>estido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>estir-me-ia</i></p>
@@ -38466,15 +36680,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umireis</i></p>
 			<p><i>umirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umiria</i></p>
@@ -38638,15 +36844,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>der-vos-eis</i></p>
 			<p><i>der-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>der-me-ia</i></p>
@@ -38810,15 +37008,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>guir-vos-eis</i></p>
 			<p><i>guir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-			<p><i>guido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>guir-me-ia</i></p>
@@ -38982,15 +37172,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ertir-vos-eis</i></p>
 			<p><i>ertir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-			<p><i>ertido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ertir-me-ia</i></p>
@@ -39154,15 +37336,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oer-vos-eis</i></p>
 			<p><i>oer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oer-me-ia</i></p>
@@ -39326,15 +37500,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>careis</i></p>
 			<p><i>carão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>caria</i></p>
@@ -39498,15 +37664,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gereis</i></p>
 			<p><i>gerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>geria</i></p>
@@ -39670,15 +37828,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -39842,15 +37992,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -40014,15 +38156,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-			<p><i>ue</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -40186,15 +38320,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umareis</i></p>
 			<p><i>umarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umaria</i></p>
@@ -40358,15 +38484,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umar-vos-eis</i></p>
 			<p><i>umar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-			<p><i>umado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umar-me-ia</i></p>
@@ -40530,15 +38648,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oiar-vos-eis</i></p>
 			<p><i>oiar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oiar-me-ia</i></p>
@@ -40702,15 +38812,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uireis</i></p>
 			<p><i>uirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uiria</i></p>
@@ -40874,15 +38976,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uir-vos-eis</i></p>
 			<p><i>uir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uir-me-ia</i></p>
@@ -41046,15 +39140,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -41218,15 +39304,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -41390,15 +39468,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-			<p><i>isto</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -41562,15 +39632,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uvareis</i></p>
 			<p><i>uvarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uvaria</i></p>
@@ -41734,15 +39796,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gareis</i></p>
 			<p><i>garão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>garia</i></p>
@@ -41906,15 +39960,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gar-vos-eis</i></p>
 			<p><i>gar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-			<p><i>gado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>gar-me-ia</i></p>
@@ -42078,15 +40124,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -42250,15 +40288,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uer-vos-eis</i></p>
 			<p><i>uer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uer-me-ia</i></p>
@@ -42422,15 +40452,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>evereis</i></p>
 			<p><i>everão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>everia</i></p>
@@ -42594,15 +40616,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ever-vos-eis</i></p>
 			<p><i>ever-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-			<p><i>evido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ever-me-ia</i></p>
@@ -42766,15 +40780,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ecereis</i></p>
 			<p><i>ecerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-			<p><i>ecido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eceria</i></p>
@@ -42938,15 +40944,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uçareis</i></p>
 			<p><i>uçarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-			<p><i>uçado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uçaria</i></p>
@@ -43110,15 +41108,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oereis</i></p>
 			<p><i>oerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oeria</i></p>
@@ -43282,15 +41272,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -43454,15 +41436,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>imireis</i></p>
 			<p><i>imirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>imiria</i></p>
@@ -43626,15 +41600,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>imir-vos-eis</i></p>
 			<p><i>imir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-			<p><i>imido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>imir-me-ia</i></p>
@@ -43798,15 +41764,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>iscareis</i></p>
 			<p><i>iscarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-			<p><i>iscado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iscaria</i></p>
@@ -43970,15 +41928,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ulareis</i></p>
 			<p><i>ularão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-			<p><i>ulado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ularia</i></p>
@@ -44142,15 +42092,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>emireis</i></p>
 			<p><i>emirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-			<p><i>emido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>emiria</i></p>
@@ -44314,15 +42256,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ugir-vos-eis</i></p>
 			<p><i>ugir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-			<p><i>ugido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ugir-me-ia</i></p>
@@ -44486,15 +42420,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -44658,15 +42584,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -44830,15 +42748,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uchareis</i></p>
 			<p><i>ucharão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-			<p><i>uchado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ucharia</i></p>
@@ -45002,15 +42912,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>aver-vos-eis</i></p>
 			<p><i>aver-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-			<p><i>avido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aver-me-ia</i></p>
@@ -45174,15 +43076,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>çareis</i></p>
 			<p><i>çarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-			<p><i>çado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>çaria</i></p>
@@ -45346,15 +43240,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gir-vos-eis</i></p>
 			<p><i>gir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>gir-me-ia</i></p>
@@ -45518,15 +43404,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>elireis</i></p>
 			<p><i>elirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eliria</i></p>
@@ -45690,15 +43568,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>iar-vos-eis</i></p>
 			<p><i>iar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iar-me-ia</i></p>
@@ -45862,15 +43732,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -46034,15 +43896,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>orrereis</i></p>
 			<p><i>orrerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-			<p><i>orrido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>orreria</i></p>
@@ -46206,15 +44060,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>gireis</i></p>
 			<p><i>girão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>giria</i></p>
@@ -46378,15 +44224,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>erireis</i></p>
 			<p><i>erirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eriria</i></p>
@@ -46550,15 +44388,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>erir-vos-eis</i></p>
 			<p><i>erir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-			<p><i>erido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>erir-me-ia</i></p>
@@ -46722,15 +44552,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -46894,15 +44716,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -47066,15 +44880,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oiareis</i></p>
 			<p><i>oiarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-			<p><i>oiado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oiaria</i></p>
@@ -47238,15 +45044,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -47410,15 +45208,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>atareis</i></p>
 			<p><i>atarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ataria</i></p>
@@ -47582,15 +45372,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>atar-vos-eis</i></p>
 			<p><i>atar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-			<p><i>atado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>atar-me-ia</i></p>
@@ -47754,15 +45536,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -47926,15 +45700,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oer-vos-eis</i></p>
 			<p><i>oer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oer-me-ia</i></p>
@@ -48098,15 +45864,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>rereis</i></p>
 			<p><i>rerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>reria</i></p>
@@ -48270,15 +46028,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>rer-vos-eis</i></p>
 			<p><i>rer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-			<p><i>rido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>rer-me-ia</i></p>
@@ -48442,15 +46192,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>scereis</i></p>
 			<p><i>scerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-			<p><i>scido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>sceria</i></p>
@@ -48614,15 +46356,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -48786,15 +46520,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -48958,15 +46684,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>iar-vos-eis</i></p>
 			<p><i>iar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-			<p><i>iado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iar-me-ia</i></p>
@@ -49130,15 +46848,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>tireis</i></p>
 			<p><i>tirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>tiria</i></p>
@@ -49302,15 +47012,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>tir-vos-eis</i></p>
 			<p><i>tir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>tir-me-ia</i></p>
@@ -49474,15 +47176,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -49646,15 +47340,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-			<p><i>o</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -49818,15 +47504,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ereis</i></p>
 			<p><i>erão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eria</i></p>
@@ -49990,15 +47668,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -50162,15 +47832,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>eguir-vos-eis</i></p>
 			<p><i>eguir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-			<p><i>eguido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>eguir-me-ia</i></p>
@@ -50334,15 +47996,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ter-vos-eis</i></p>
 			<p><i>ter-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-			<p><i>tido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ter-me-ia</i></p>
@@ -50506,15 +48160,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>dereis</i></p>
 			<p><i>derão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>deria</i></p>
@@ -50678,15 +48324,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>der-vos-eis</i></p>
 			<p><i>der-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-			<p><i>dido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>der-me-ia</i></p>
@@ -50850,15 +48488,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -51022,15 +48652,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -51194,15 +48816,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-			<p><i>ído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
@@ -51366,15 +48980,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i/></p>
 			<p><i/></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-			<p><i>uido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i/></p>
@@ -51538,15 +49144,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ger-vos-eis</i></p>
 			<p><i>ger-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ger-me-ia</i></p>
@@ -51710,15 +49308,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ectir-vos-eis</i></p>
 			<p><i>ectir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-			<p><i>ectido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ectir-me-ia</i></p>
@@ -51882,15 +49472,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -52054,15 +49636,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>mir-vos-eis</i></p>
 			<p><i>mir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-			<p><i>mido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>mir-me-ia</i></p>
@@ -52226,15 +49800,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oer-vos-eis</i></p>
 			<p><i>oer-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oer-me-ia</i></p>
@@ -52398,15 +49964,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>elir-vos-eis</i></p>
 			<p><i>elir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-			<p><i>elido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>elir-me-ia</i></p>
@@ -52570,15 +50128,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>cir-vos-eis</i></p>
 			<p><i>cir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-			<p><i>cido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>cir-me-ia</i></p>
@@ -52742,15 +50292,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>unir-vos-eis</i></p>
 			<p><i>unir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-			<p><i>unido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>unir-me-ia</i></p>
@@ -52914,15 +50456,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -53086,15 +50620,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>mpereis</i></p>
 			<p><i>mperão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>mperia</i></p>
@@ -53258,15 +50784,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>mper-vos-eis</i></p>
 			<p><i>mper-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-			<p><i>mpido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>mper-me-ia</i></p>
@@ -53430,15 +50948,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>-</i></p>
 			<p><i>girão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>-</i></p>
@@ -53602,15 +51112,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -53774,15 +51276,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ar-vos-eis</i></p>
 			<p><i>ar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ar-me-ia</i></p>
@@ -53946,15 +51440,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>udar-vos-eis</i></p>
 			<p><i>udar-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-			<p><i>udado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>udar-me-ia</i></p>
@@ -54118,15 +51604,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>careis</i></p>
 			<p><i>carão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>caria</i></p>
@@ -54290,15 +51768,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>car-vos-eis</i></p>
 			<p><i>car-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-			<p><i>cado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>car-me-ia</i></p>
@@ -54462,15 +51932,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ervir-vos-eis</i></p>
 			<p><i>ervir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-			<p><i>ervido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ervir-me-ia</i></p>
@@ -54634,15 +52096,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>oereis</i></p>
 			<p><i>oerão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-			<p><i>oído</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>oeria</i></p>
@@ -54806,15 +52260,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ortireis</i></p>
 			<p><i>ortirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ortiria</i></p>
@@ -54978,15 +52424,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ortir-vos-eis</i></p>
 			<p><i>ortir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-			<p><i>ortido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ortir-me-ia</i></p>
@@ -55150,15 +52588,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ubireis</i></p>
 			<p><i>ubirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ubiria</i></p>
@@ -55322,15 +52752,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ubir-vos-eis</i></p>
 			<p><i>ubir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-			<p><i>ubido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ubir-me-ia</i></p>
@@ -55494,15 +52916,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>umir-vos-eis</i></p>
 			<p><i>umir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-			<p><i>umido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>umir-me-ia</i></p>
@@ -55666,15 +53080,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>endereis</i></p>
 			<p><i>enderão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>enderia</i></p>
@@ -55838,15 +53244,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ender-vos-eis</i></p>
 			<p><i>ender-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-			<p><i>endido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ender-me-ia</i></p>
@@ -56010,15 +53408,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>er-vos-eis</i></p>
 			<p><i>er-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>er-me-ia</i></p>
@@ -56182,15 +53572,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ossireis</i></p>
 			<p><i>ossirão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-			<p><i>ossido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ossiria</i></p>
@@ -56354,15 +53736,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>areis</i></p>
 			<p><i>arão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-			<p><i>ado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>aria</i></p>
@@ -56526,15 +53900,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ir-vos-eis</i></p>
 			<p><i>ir-se-ão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>ir-me-ia</i></p>
@@ -56698,15 +54064,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>uvareis</i></p>
 			<p><i>uvarão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-			<p><i>uvado</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>uvaria</i></p>
@@ -56870,15 +54228,7 @@ Indicativo-Futuro-do-Presente-Simples , Indicativo-Futuro-do-Presente-Composto)>
 			<p><i>ireis</i></p>
 			<p><i>irão</i></p>
 		</Indicativo-Futuro-do-Presente-Simples>
-		<Indicativo-Futuro-do-Presente-Composto>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-			<p><i>ido</i></p>
-		</Indicativo-Futuro-do-Presente-Composto>
-	</Indicativo>
+		</Indicativo>
 	<Condicional>
 		<Condicional-Futuro-do-Pretérito-Simples>
 			<p><i>iria</i></p>
