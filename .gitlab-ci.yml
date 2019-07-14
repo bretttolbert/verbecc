@@ -17,7 +17,7 @@ before_script:
 test:
   script:
     - python setup.py test
-    - pip install tox codecov
+    - pip install pytest pytest-cov tox codecov
     - tox -e py37
     - pytest --cov=./verbecc/
     - codecov -f .coverage --token="aef49e7e-2539-47b9-aaf8-268ca78482d8"
