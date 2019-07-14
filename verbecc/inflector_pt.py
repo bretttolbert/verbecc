@@ -8,11 +8,11 @@ class InflectorPt(inflector.Inflector):
         super(InflectorPt, self).__init__()
 
     def _add_subjunctive_relative_pronoun(self, s, tense_name):
-        if tense_name == 'Conjuntivo--Subjuntivo-Presente':
+        if tense_name == 'presente':
             return 'que ' + s
-        elif tense_name == 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito':
+        elif tense_name == 'pretérito-imperfeito':
             return 'se ' + s
-        elif tense_name == 'Conjuntivo--Subjuntivo-Futuro-Simples':
+        elif tense_name == 'futuro':
             return 'quando ' + s
         return s
 
@@ -49,37 +49,37 @@ class InflectorPt(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Particípio-Particípio', 
+        return ['particípio-particípio', 
                 'infinitivo-pessoal-presente', 'infinitivo-pessoal-composto',
-                'Imperativo-Afirmativo', 'Imperativo-Negativo']
+                'imperativo-afirmativo', 'imperativo-negativo']
 
     def _get_helping_verb(self, infinitive):
         return 'ter'
 
     def _get_subjunctive_mood_name(self):
-        return 'Conjuntivo'
+        return 'Subjuntivo'
 
     def _get_participle_mood_name(self):
         return 'Particípio'
 
     def _get_participle_tense_name(self):
-        return 'Particípio-Particípio'
+        return 'particípio-particípio'
 
     def _get_compound_conjugations_hv_map(self):
         return {
             'Indicativo': {
-                'Indicativo-Pretérito-Perfeito-Composto': 'Indicativo-presente',
-                'Indicativo-Pretérito-Mais-que-Perfeito-Composto': 'Indicativo-pretérito-imperfeito',
-                'Indicativo-Pretérito-Mais-que-Perfeito-Anterior': 'Indicativo-Pretérito-Mais-que-Perfeito-Simples',
-                'Indicativo-Futuro-do-Presente-Composto': 'Indicativo-Futuro-do-Presente-Simples'
+                'pretérito-perfeito-composto': 'presente',
+                'pretérito-mais-que-perfeito-composto': 'pretérito-imperfeito',
+                'pretérito-mais-que-perfeito-anterior': 'pretérito-mais-que-perfeito',
+                'futuro-do-presente-composto': 'futuro-do-presente'
             },
-            'Conjuntivo': {
-                'Conjuntivo--Subjuntivo-Pretérito-Perfeito': 'Conjuntivo--Subjuntivo-Presente',
-                'Conjuntivo--Subjuntivo-Pretérito-Mais-que-Perfeito': 'Conjuntivo--Subjuntivo-Pretérito-Imperfeito',
-                'Conjuntivo--Subjuntivo-Futuro-Composto': 'Conjuntivo--Subjuntivo-Futuro-Simples'
+            'Subjuntivo': {
+                'pretérito-perfeito': 'presente',
+                'pretérito-mais-que-perfeito': 'pretérito-imperfeito',
+                'futuro-composto': 'futuro'
             },
             'Condicional': {
-                'Condicional-Futuro-do-Pretérito-Composto': 'Condicional-Futuro-do-Pretérito-Simples'
+                'futuro-do-pretérito-composto': 'futuro-do-pretérito'
             },
             'Infinitivo': {
                 'infinitivo-pessoal-composto': 'infinitivo-pessoal-presente'

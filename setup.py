@@ -51,6 +51,7 @@ setup(
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Natural Language :: French',
         'Natural Language :: Spanish',
+        'Natural Language :: Portuguese',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
