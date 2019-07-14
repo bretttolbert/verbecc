@@ -24,15 +24,15 @@
 
 <!DOCTYPE conjugation-fr [
 	<!ELEMENT conjugation-fr (template+)>
-	<!ELEMENT template (infinitif, indicatif, conditionnel, subjonctif, imperatif, participe)>
+	<!ELEMENT template (Infinitif, Indicatif, Conditionnel, Subjonctif, Imperatif, Participe)>
 	<!ATTLIST template name CDATA #REQUIRED>
 
-	<!ELEMENT infinitif (infinitif-présent)>
-	<!ELEMENT indicatif (présent, imparfait, futur-simple, passé-simple)>
-	<!ELEMENT conditionnel (présent)>
-	<!ELEMENT subjonctif (présent, imparfait)>
-	<!ELEMENT imperatif (imperatif-présent)>
-	<!ELEMENT participe (participe-présent, participe-passé)>
+	<!ELEMENT Infinitif (infinitif-présent)>
+	<!ELEMENT Indicatif (présent, imparfait, futur-simple, passé-simple)>
+	<!ELEMENT Conditionnel (présent)>
+	<!ELEMENT Subjonctif (présent, imparfait)>
+	<!ELEMENT Imperatif (imperatif-présent)>
+	<!ELEMENT Participe (participe-présent, participe-passé)>
 
 	<!ELEMENT infinitif-présent (p)>
 	<!ELEMENT présent (p, p, p, p, p, p)>
@@ -50,12 +50,12 @@
 <conjugation-fr>
 
 <template name="pla:cer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>cer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ce</i></p>
 			<p><i>ces</i></p>
@@ -88,8 +88,8 @@
 			<p><i>çâtes</i></p>
 			<p><i>cèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>cerais</i></p>
 			<p><i>cerais</i></p>
@@ -98,8 +98,8 @@
 			<p><i>ceriez</i></p>
 			<p><i>ceraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ce</i></p>
 			<p><i>ces</i></p>
@@ -116,15 +116,15 @@
 			<p><i>çassiez</i></p>
 			<p><i>çassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ce</i></p>
 			<p><i>çons</i></p>
 			<p><i>cez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>çant</i></p>
 		</participe-présent>
@@ -134,16 +134,16 @@
 			<p><i>cée</i></p>
 			<p><i>cées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="référenci:er">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>er</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -176,8 +176,8 @@
 			<p><i>âtes</i></p>
 			<p><i>èrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -186,8 +186,8 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -204,15 +204,15 @@
 			<p><i>assiez</i></p>
 			<p><i>assent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -222,16 +222,16 @@
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="dép:ecer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ecer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ece</i><i>èce</i></p>
 			<p><i>eces</i><i>èces</i></p>
@@ -264,8 +264,8 @@
 			<p><i>eçâtes</i></p>
 			<p><i>ecèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ecerais</i><i>ècerais</i></p>
 			<p><i>ecerais</i><i>ècerais</i></p>
@@ -274,8 +274,8 @@
 			<p><i>eceriez</i><i>èceriez</i></p>
 			<p><i>eceraient</i><i>èceraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ece</i><i>èce</i></p>
 			<p><i>eces</i><i>èces</i></p>
@@ -292,15 +292,15 @@
 			<p><i>eçassiez</i></p>
 			<p><i>eçassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ece</i><i>èce</i></p>
 			<p><i>eçons</i></p>
 			<p><i>ecez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>eçant</i></p>
 		</participe-présent>
@@ -310,16 +310,16 @@
 			<p><i>ecée</i></p>
 			<p><i>ecées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="man:ger">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ger</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ge</i></p>
 			<p><i>ges</i></p>
@@ -352,8 +352,8 @@
 			<p><i>geâtes</i></p>
 			<p><i>gèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>gerais</i></p>
 			<p><i>gerais</i></p>
@@ -362,8 +362,8 @@
 			<p><i>geriez</i></p>
 			<p><i>geraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ge</i></p>
 			<p><i>ges</i></p>
@@ -380,15 +380,15 @@
 			<p><i>geassiez</i></p>
 			<p><i>geassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ge</i></p>
 			<p><i>geons</i></p>
 			<p><i>gez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>geant</i></p>
 		</participe-présent>
@@ -398,16 +398,16 @@
 			<p><i>gée</i></p>
 			<p><i>gées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="nei:ger">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ger</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -440,8 +440,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -450,8 +450,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -468,15 +468,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>geant</i></p>
 		</participe-présent>
@@ -486,16 +486,16 @@
 			<p><i>gée</i></p>
 			<p><i>gées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="pa:yer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>yer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ie</i><i>ye</i></p>
 			<p><i>ies</i><i>yes</i></p>
@@ -528,8 +528,8 @@
 			<p><i>yâtes</i></p>
 			<p><i>yèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ierais</i><i>yerais</i></p>
 			<p><i>ierais</i><i>yerais</i></p>
@@ -538,8 +538,8 @@
 			<p><i>ieriez</i><i>yeriez</i></p>
 			<p><i>ieraient</i><i>yeraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ie</i><i>ye</i></p>
 			<p><i>ies</i><i>yes</i></p>
@@ -556,15 +556,15 @@
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ie</i><i>ye</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>yant</i></p>
 		</participe-présent>
@@ -574,16 +574,16 @@
 			<p><i>yée</i></p>
 			<p><i>yées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="netto:yer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>yer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -616,8 +616,8 @@
 			<p><i>yâtes</i></p>
 			<p><i>yèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ierais</i></p>
 			<p><i>ierais</i></p>
@@ -626,8 +626,8 @@
 			<p><i>ieriez</i></p>
 			<p><i>ieraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -644,15 +644,15 @@
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ie</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>yant</i></p>
 		</participe-présent>
@@ -662,16 +662,16 @@
 			<p><i>yée</i></p>
 			<p><i>yées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="grasse:yer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>yer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ye</i></p>
 			<p><i>yes</i></p>
@@ -704,8 +704,8 @@
 			<p><i>yâtes</i></p>
 			<p><i>yèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>yerais</i></p>
 			<p><i>yerais</i></p>
@@ -714,8 +714,8 @@
 			<p><i>yeriez</i></p>
 			<p><i>yeraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ye</i></p>
 			<p><i>yes</i></p>
@@ -732,15 +732,15 @@
 			<p><i>yassiez</i></p>
 			<p><i>yassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ye</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>yant</i></p>
 		</participe-présent>
@@ -750,16 +750,16 @@
 			<p><i>yée</i></p>
 			<p><i>yées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="app:eler">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eler</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>elle</i></p>
 			<p><i>elles</i></p>
@@ -792,8 +792,8 @@
 			<p><i>elâtes</i></p>
 			<p><i>elèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ellerais</i></p>
 			<p><i>ellerais</i></p>
@@ -802,8 +802,8 @@
 			<p><i>elleriez</i></p>
 			<p><i>elleraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>elle</i></p>
 			<p><i>elles</i></p>
@@ -820,15 +820,15 @@
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>elle</i></p>
 			<p><i>elons</i></p>
 			<p><i>elez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>elant</i></p>
 		</participe-présent>
@@ -838,16 +838,16 @@
 			<p><i>elée</i></p>
 			<p><i>elées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="p:eler">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eler</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èle</i></p>
 			<p><i>èles</i></p>
@@ -880,8 +880,8 @@
 			<p><i>elâtes</i></p>
 			<p><i>elèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èlerais</i></p>
 			<p><i>èlerais</i></p>
@@ -890,8 +890,8 @@
 			<p><i>èleriez</i></p>
 			<p><i>èleraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èle</i></p>
 			<p><i>èles</i></p>
@@ -908,15 +908,15 @@
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èle</i></p>
 			<p><i>elons</i></p>
 			<p><i>elez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>elant</i></p>
 		</participe-présent>
@@ -926,16 +926,16 @@
 			<p><i>elée</i></p>
 			<p><i>elées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="harc:eler">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eler</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>elle</i><i>èle</i></p>
 			<p><i>elles</i><i>èles</i></p>
@@ -968,8 +968,8 @@
 			<p><i>elâtes</i></p>
 			<p><i>elèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ellerais</i><i>èlerais</i></p>
 			<p><i>ellerais</i><i>èlerais</i></p>
@@ -978,8 +978,8 @@
 			<p><i>elleriez</i><i>èleriez</i></p>
 			<p><i>elleraient</i><i>èleraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>elle</i><i>èle</i></p>
 			<p><i>elles</i><i>èles</i></p>
@@ -996,15 +996,15 @@
 			<p><i>elassiez</i></p>
 			<p><i>elassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>elle</i><i>èle</i></p>
 			<p><i>elons</i></p>
 			<p><i>elez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>elant</i></p>
 		</participe-présent>
@@ -1014,16 +1014,16 @@
 			<p><i>elée</i></p>
 			<p><i>elées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="j:eter">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eter</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ette</i></p>
 			<p><i>ettes</i></p>
@@ -1056,8 +1056,8 @@
 			<p><i>etâtes</i></p>
 			<p><i>etèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>etterais</i></p>
 			<p><i>etterais</i></p>
@@ -1066,8 +1066,8 @@
 			<p><i>etteriez</i></p>
 			<p><i>etteraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ette</i></p>
 			<p><i>ettes</i></p>
@@ -1084,15 +1084,15 @@
 			<p><i>etassiez</i></p>
 			<p><i>etassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ette</i></p>
 			<p><i>etons</i></p>
 			<p><i>etez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>etant</i></p>
 		</participe-présent>
@@ -1102,16 +1102,16 @@
 			<p><i>etée</i></p>
 			<p><i>etées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ach:eter">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eter</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -1144,8 +1144,8 @@
 			<p><i>etâtes</i></p>
 			<p><i>etèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èterais</i></p>
 			<p><i>èterais</i></p>
@@ -1154,8 +1154,8 @@
 			<p><i>èteriez</i></p>
 			<p><i>èteraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -1172,15 +1172,15 @@
 			<p><i>etassiez</i></p>
 			<p><i>etassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ète</i></p>
 			<p><i>etons</i></p>
 			<p><i>etez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>etant</i></p>
 		</participe-présent>
@@ -1190,16 +1190,16 @@
 			<p><i>etée</i></p>
 			<p><i>etées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="héb:éter">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éter</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -1232,8 +1232,8 @@
 			<p><i>étâtes</i></p>
 			<p><i>étèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èterais</i></p>
 			<p><i>èterais</i></p>
@@ -1242,8 +1242,8 @@
 			<p><i>èteriez</i></p>
 			<p><i>èteraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -1260,15 +1260,15 @@
 			<p><i>étassiez</i></p>
 			<p><i>étassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ète</i></p>
 			<p><i>étons</i></p>
 			<p><i>étez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>étant</i></p>
 		</participe-présent>
@@ -1278,16 +1278,16 @@
 			<p><i>étée</i></p>
 			<p><i>étées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="s:emer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>emer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ème</i></p>
 			<p><i>èmes</i></p>
@@ -1320,8 +1320,8 @@
 			<p><i>emâtes</i></p>
 			<p><i>emèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èmerais</i></p>
 			<p><i>èmerais</i></p>
@@ -1330,8 +1330,8 @@
 			<p><i>èmeriez</i></p>
 			<p><i>èmeraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ème</i></p>
 			<p><i>èmes</i></p>
@@ -1348,15 +1348,15 @@
 			<p><i>emassiez</i></p>
 			<p><i>emassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ème</i></p>
 			<p><i>emons</i></p>
 			<p><i>emez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>emant</i></p>
 		</participe-présent>
@@ -1366,16 +1366,16 @@
 			<p><i>emée</i></p>
 			<p><i>emées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="l:éguer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éguer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ègue</i></p>
 			<p><i>ègues</i></p>
@@ -1408,8 +1408,8 @@
 			<p><i>éguâtes</i></p>
 			<p><i>éguèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èguerais</i></p>
 			<p><i>èguerais</i></p>
@@ -1418,8 +1418,8 @@
 			<p><i>ègueriez</i></p>
 			<p><i>ègueraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ègue</i></p>
 			<p><i>ègues</i></p>
@@ -1436,15 +1436,15 @@
 			<p><i>éguassiez</i></p>
 			<p><i>éguassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ègue</i></p>
 			<p><i>éguons</i></p>
 			<p><i>éguez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>éguant</i></p>
 		</participe-présent>
@@ -1454,16 +1454,16 @@
 			<p><i>éguée</i></p>
 			<p><i>éguées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="diss:équer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>équer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èque</i></p>
 			<p><i>èques</i></p>
@@ -1496,8 +1496,8 @@
 			<p><i>équâtes</i></p>
 			<p><i>équèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èquerais</i></p>
 			<p><i>èquerais</i></p>
@@ -1506,8 +1506,8 @@
 			<p><i>èqueriez</i></p>
 			<p><i>èqueraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èque</i></p>
 			<p><i>èques</i></p>
@@ -1524,15 +1524,15 @@
 			<p><i>équassiez</i></p>
 			<p><i>équassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èque</i></p>
 			<p><i>équons</i></p>
 			<p><i>équez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>équant</i></p>
 		</participe-présent>
@@ -1542,16 +1542,16 @@
 			<p><i>équée</i></p>
 			<p><i>équées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="rév:éler">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éler</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èle</i></p>
 			<p><i>èles</i></p>
@@ -1584,8 +1584,8 @@
 			<p><i>élâtes</i></p>
 			<p><i>élèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>élerais</i><i>èlerais</i></p>
 			<p><i>élerais</i><i>èlerais</i></p>
@@ -1594,8 +1594,8 @@
 			<p><i>éleriez</i><i>èleriez</i></p>
 			<p><i>éleraient</i><i>èleraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èle</i></p>
 			<p><i>èles</i></p>
@@ -1612,15 +1612,15 @@
 			<p><i>élassiez</i></p>
 			<p><i>élassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èle</i></p>
 			<p><i>élons</i></p>
 			<p><i>élez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>élant</i></p>
 		</participe-présent>
@@ -1630,16 +1630,16 @@
 			<p><i>élée</i></p>
 			<p><i>élées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="imp:étrer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>étrer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ètre</i></p>
 			<p><i>ètres</i></p>
@@ -1672,8 +1672,8 @@
 			<p><i>étrâtes</i></p>
 			<p><i>étrèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>étrerais</i><i>ètrerais</i></p>
 			<p><i>étrerais</i><i>ètrerais</i></p>
@@ -1682,8 +1682,8 @@
 			<p><i>étreriez</i><i>ètreriez</i></p>
 			<p><i>étreraient</i><i>ètreraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ètre</i></p>
 			<p><i>ètres</i></p>
@@ -1700,15 +1700,15 @@
 			<p><i>étrassiez</i></p>
 			<p><i>étrassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ètre</i></p>
 			<p><i>étrons</i></p>
 			<p><i>étrez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>étrant</i></p>
 		</participe-présent>
@@ -1718,16 +1718,16 @@
 			<p><i>étrée</i></p>
 			<p><i>étrées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="r:égler">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>égler</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ègle</i></p>
 			<p><i>ègles</i></p>
@@ -1760,8 +1760,8 @@
 			<p><i>églâtes</i></p>
 			<p><i>églèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>églerais</i><i>èglerais</i></p>
 			<p><i>églerais</i><i>èglerais</i></p>
@@ -1770,8 +1770,8 @@
 			<p><i>égleriez</i><i>ègleriez</i></p>
 			<p><i>égleraient</i><i>ègleraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ègle</i></p>
 			<p><i>ègles</i></p>
@@ -1788,15 +1788,15 @@
 			<p><i>églassiez</i></p>
 			<p><i>églassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ègle</i></p>
 			<p><i>églons</i></p>
 			<p><i>églez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>églant</i></p>
 		</participe-présent>
@@ -1806,16 +1806,16 @@
 			<p><i>églée</i></p>
 			<p><i>églées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="r:égner">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>égner</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ègne</i></p>
 			<p><i>ègnes</i></p>
@@ -1848,8 +1848,8 @@
 			<p><i>égnâtes</i></p>
 			<p><i>égnèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>égnerais</i><i>ègnerais</i></p>
 			<p><i>égnerais</i><i>ègnerais</i></p>
@@ -1858,8 +1858,8 @@
 			<p><i>égneriez</i><i>ègneriez</i></p>
 			<p><i>égneraient</i><i>ègneraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ègne</i></p>
 			<p><i>ègnes</i></p>
@@ -1876,15 +1876,15 @@
 			<p><i>égnassiez</i></p>
 			<p><i>égnassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ègne</i></p>
 			<p><i>égnons</i></p>
 			<p><i>égnez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>égnant</i></p>
 		</participe-présent>
@@ -1894,16 +1894,16 @@
 			<p><i>égnée</i></p>
 			<p><i>égnées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cél:ébrer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ébrer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èbre</i></p>
 			<p><i>èbres</i></p>
@@ -1936,8 +1936,8 @@
 			<p><i>ébrâtes</i></p>
 			<p><i>ébrèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ébrerais</i><i>èbrerais</i></p>
 			<p><i>ébrerais</i><i>èbrerais</i></p>
@@ -1946,8 +1946,8 @@
 			<p><i>ébreriez</i><i>èbreriez</i></p>
 			<p><i>ébreraient</i><i>èbreraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èbre</i></p>
 			<p><i>èbres</i></p>
@@ -1964,15 +1964,15 @@
 			<p><i>ébrassiez</i></p>
 			<p><i>ébrassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èbre</i></p>
 			<p><i>ébrons</i></p>
 			<p><i>ébrez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ébrant</i></p>
 		</participe-présent>
@@ -1982,16 +1982,16 @@
 			<p><i>ébrée</i></p>
 			<p><i>ébrées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="int:égrer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>égrer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ègre</i></p>
 			<p><i>ègres</i></p>
@@ -2024,8 +2024,8 @@
 			<p><i>égrâtes</i></p>
 			<p><i>égrèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>égrerais</i><i>ègrerais</i></p>
 			<p><i>égrerais</i><i>ègrerais</i></p>
@@ -2034,8 +2034,8 @@
 			<p><i>égreriez</i><i>ègreriez</i></p>
 			<p><i>égreraient</i><i>ègreraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ègre</i></p>
 			<p><i>ègres</i></p>
@@ -2052,15 +2052,15 @@
 			<p><i>égrassiez</i></p>
 			<p><i>égrassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ègre</i></p>
 			<p><i>égrons</i></p>
 			<p><i>égrez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>égrant</i></p>
 		</participe-présent>
@@ -2070,16 +2070,16 @@
 			<p><i>égrée</i></p>
 			<p><i>égrées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="décr:éter">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éter</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -2112,8 +2112,8 @@
 			<p><i>étâtes</i></p>
 			<p><i>étèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>éterais</i><i>èterais</i></p>
 			<p><i>éterais</i><i>èterais</i></p>
@@ -2122,8 +2122,8 @@
 			<p><i>éteriez</i><i>èteriez</i></p>
 			<p><i>éteraient</i><i>èteraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ète</i></p>
 			<p><i>ètes</i></p>
@@ -2140,15 +2140,15 @@
 			<p><i>étassiez</i></p>
 			<p><i>étassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ète</i></p>
 			<p><i>étons</i></p>
 			<p><i>étez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>étant</i></p>
 		</participe-présent>
@@ -2158,16 +2158,16 @@
 			<p><i>étée</i></p>
 			<p><i>étées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ali:éner">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éner</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ène</i></p>
 			<p><i>ènes</i></p>
@@ -2200,8 +2200,8 @@
 			<p><i>énâtes</i></p>
 			<p><i>énèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>énerais</i><i>ènerais</i></p>
 			<p><i>énerais</i><i>ènerais</i></p>
@@ -2210,8 +2210,8 @@
 			<p><i>éneriez</i><i>èneriez</i></p>
 			<p><i>éneraient</i><i>èneraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ène</i></p>
 			<p><i>ènes</i></p>
@@ -2228,15 +2228,15 @@
 			<p><i>énassiez</i></p>
 			<p><i>énassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ène</i></p>
 			<p><i>énons</i></p>
 			<p><i>énez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>énant</i></p>
 		</participe-présent>
@@ -2246,16 +2246,16 @@
 			<p><i>énée</i></p>
 			<p><i>énées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="m:ener">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ener</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ène</i></p>
 			<p><i>ènes</i></p>
@@ -2288,8 +2288,8 @@
 			<p><i>enâtes</i></p>
 			<p><i>enèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ènerais</i></p>
 			<p><i>ènerais</i></p>
@@ -2298,8 +2298,8 @@
 			<p><i>èneriez</i></p>
 			<p><i>èneraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ène</i></p>
 			<p><i>ènes</i></p>
@@ -2316,15 +2316,15 @@
 			<p><i>enassiez</i></p>
 			<p><i>enassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ène</i></p>
 			<p><i>enons</i></p>
 			<p><i>enez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>enant</i></p>
 		</participe-présent>
@@ -2334,16 +2334,16 @@
 			<p><i>enée</i></p>
 			<p><i>enées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="l:ever">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ever</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ève</i></p>
 			<p><i>èves</i></p>
@@ -2376,8 +2376,8 @@
 			<p><i>evâtes</i></p>
 			<p><i>evèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èverais</i></p>
 			<p><i>èverais</i></p>
@@ -2386,8 +2386,8 @@
 			<p><i>èveriez</i></p>
 			<p><i>èveraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ève</i></p>
 			<p><i>èves</i></p>
@@ -2404,15 +2404,15 @@
 			<p><i>evassiez</i></p>
 			<p><i>evassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ève</i></p>
 			<p><i>evons</i></p>
 			<p><i>evez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>evant</i></p>
 		</participe-présent>
@@ -2422,16 +2422,16 @@
 			<p><i>evée</i></p>
 			<p><i>evées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="p:eser">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eser</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èse</i></p>
 			<p><i>èses</i></p>
@@ -2464,8 +2464,8 @@
 			<p><i>esâtes</i></p>
 			<p><i>esèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èserais</i></p>
 			<p><i>èserais</i></p>
@@ -2474,8 +2474,8 @@
 			<p><i>èseriez</i></p>
 			<p><i>èseraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èse</i></p>
 			<p><i>èses</i></p>
@@ -2492,15 +2492,15 @@
 			<p><i>esassiez</i></p>
 			<p><i>esassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èse</i></p>
 			<p><i>esons</i></p>
 			<p><i>esez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>esant</i></p>
 		</participe-présent>
@@ -2510,16 +2510,16 @@
 			<p><i>esée</i></p>
 			<p><i>esées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="s:écher">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>écher</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èche</i></p>
 			<p><i>èches</i></p>
@@ -2552,8 +2552,8 @@
 			<p><i>échâtes</i></p>
 			<p><i>échèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>écherais</i></p>
 			<p><i>écherais</i></p>
@@ -2562,8 +2562,8 @@
 			<p><i>écheriez</i></p>
 			<p><i>écheraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èche</i></p>
 			<p><i>èches</i></p>
@@ -2580,15 +2580,15 @@
 			<p><i>échassiez</i></p>
 			<p><i>échassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èche</i></p>
 			<p><i>échons</i></p>
 			<p><i>échez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>échant</i></p>
 		</participe-présent>
@@ -2598,16 +2598,16 @@
 			<p><i>échée</i></p>
 			<p><i>échées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="réf:érer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>érer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ère</i></p>
 			<p><i>ères</i></p>
@@ -2640,8 +2640,8 @@
 			<p><i>érâtes</i></p>
 			<p><i>érèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>érerais</i><i>èrerais</i></p>
 			<p><i>érerais</i><i>èrerais</i></p>
@@ -2650,8 +2650,8 @@
 			<p><i>éreriez</i><i>èreriez</i></p>
 			<p><i>éreraient</i><i>èreraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ère</i></p>
 			<p><i>ères</i></p>
@@ -2668,15 +2668,15 @@
 			<p><i>érassiez</i></p>
 			<p><i>érassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ère</i></p>
 			<p><i>érons</i></p>
 			<p><i>érez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>érant</i></p>
 		</participe-présent>
@@ -2686,16 +2686,16 @@
 			<p><i>érée</i></p>
 			<p><i>érées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="s:evrer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>evrer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èvre</i></p>
 			<p><i>èvres</i></p>
@@ -2728,8 +2728,8 @@
 			<p><i>evrâtes</i></p>
 			<p><i>evrèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>èvrerais</i></p>
 			<p><i>èvrerais</i></p>
@@ -2738,8 +2738,8 @@
 			<p><i>èvreriez</i></p>
 			<p><i>èvreraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èvre</i></p>
 			<p><i>èvres</i></p>
@@ -2756,15 +2756,15 @@
 			<p><i>evrassiez</i></p>
 			<p><i>evrassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èvre</i></p>
 			<p><i>evrons</i></p>
 			<p><i>evrez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>evrant</i></p>
 		</participe-présent>
@@ -2774,16 +2774,16 @@
 			<p><i>evrée</i></p>
 			<p><i>evrées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="c:éder">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éder</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ède</i></p>
 			<p><i>èdes</i></p>
@@ -2816,8 +2816,8 @@
 			<p><i>édâtes</i></p>
 			<p><i>édèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>éderais</i><i>èderais</i></p>
 			<p><i>éderais</i><i>èderais</i></p>
@@ -2826,8 +2826,8 @@
 			<p><i>éderiez</i><i>èderiez</i></p>
 			<p><i>éderaient</i><i>èderaient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ède</i></p>
 			<p><i>èdes</i></p>
@@ -2844,15 +2844,15 @@
 			<p><i>édassiez</i></p>
 			<p><i>édassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ède</i></p>
 			<p><i>édons</i></p>
 			<p><i>édez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>édant</i></p>
 		</participe-présent>
@@ -2862,16 +2862,16 @@
 			<p><i>édée</i></p>
 			<p><i>édées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="rec:éper">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éper</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èpe</i></p>
 			<p><i>èpes</i></p>
@@ -2904,8 +2904,8 @@
 			<p><i>épâtes</i></p>
 			<p><i>épèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>éperais</i><i>èperais</i></p>
 			<p><i>éperais</i><i>èperais</i></p>
@@ -2914,8 +2914,8 @@
 			<p><i>éperiez</i><i>èperiez</i></p>
 			<p><i>éperaient</i><i>èperaient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èpe</i></p>
 			<p><i>èpes</i></p>
@@ -2932,15 +2932,15 @@
 			<p><i>épassiez</i></p>
 			<p><i>épassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èpe</i></p>
 			<p><i>épons</i></p>
 			<p><i>épez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>épant</i></p>
 		</participe-présent>
@@ -2950,16 +2950,16 @@
 			<p><i>épée</i></p>
 			<p><i>épées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="rec:eper">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eper</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èpe</i></p>
 			<p><i>èpes</i></p>
@@ -2992,8 +2992,8 @@
 			<p><i>epâtes</i></p>
 			<p><i>epèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>eperais</i><i>èperais</i></p>
 			<p><i>eperais</i><i>èperais</i></p>
@@ -3002,8 +3002,8 @@
 			<p><i>eperiez</i><i>èperiez</i></p>
 			<p><i>eperaient</i><i>èperaient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èpe</i></p>
 			<p><i>èpes</i></p>
@@ -3020,15 +3020,15 @@
 			<p><i>epassiez</i></p>
 			<p><i>epassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èpe</i></p>
 			<p><i>epons</i></p>
 			<p><i>epez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>epant</i></p>
 		</participe-présent>
@@ -3038,16 +3038,16 @@
 			<p><i>epée</i></p>
 			<p><i>epées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="l:éser">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éser</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èse</i></p>
 			<p><i>èses</i></p>
@@ -3080,8 +3080,8 @@
 			<p><i>ésâtes</i></p>
 			<p><i>ésèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>éserais</i><i>èserais</i></p>
 			<p><i>éserais</i><i>èserais</i></p>
@@ -3090,8 +3090,8 @@
 			<p><i>éseriez</i><i>èseriez</i></p>
 			<p><i>éseraient</i><i>èseraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èse</i></p>
 			<p><i>èses</i></p>
@@ -3108,15 +3108,15 @@
 			<p><i>ésassiez</i></p>
 			<p><i>ésassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èse</i></p>
 			<p><i>ésons</i></p>
 			<p><i>ésez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ésant</i></p>
 		</participe-présent>
@@ -3126,16 +3126,16 @@
 			<p><i>ésée</i></p>
 			<p><i>ésées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cr:émer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>émer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ème</i></p>
 			<p><i>èmes</i></p>
@@ -3168,8 +3168,8 @@
 			<p><i>émâtes</i></p>
 			<p><i>émèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>émerais</i><i>èmerais</i></p>
 			<p><i>émerais</i><i>èmerais</i></p>
@@ -3178,8 +3178,8 @@
 			<p><i>émeriez</i><i>èmeriez</i></p>
 			<p><i>émeraient</i><i>èmeraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ème</i></p>
 			<p><i>èmes</i></p>
@@ -3196,15 +3196,15 @@
 			<p><i>émassiez</i></p>
 			<p><i>émassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ème</i></p>
 			<p><i>émons</i></p>
 			<p><i>émez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>émant</i></p>
 		</participe-présent>
@@ -3214,16 +3214,16 @@
 			<p><i>émée</i></p>
 			<p><i>émées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="abr:éger">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>éger</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ège</i></p>
 			<p><i>èges</i></p>
@@ -3256,8 +3256,8 @@
 			<p><i>égeâtes</i></p>
 			<p><i>égèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ègerais</i></p>
 			<p><i>ègerais</i></p>
@@ -3266,8 +3266,8 @@
 			<p><i>ègeriez</i></p>
 			<p><i>ègeraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ège</i></p>
 			<p><i>èges</i></p>
@@ -3284,15 +3284,15 @@
 			<p><i>égeassiez</i></p>
 			<p><i>égeassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ège</i></p>
 			<p><i>égeons</i></p>
 			<p><i>égez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>égeant</i></p>
 		</participe-présent>
@@ -3302,16 +3302,16 @@
 			<p><i>égée</i></p>
 			<p><i>égées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="aim:er">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>er</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -3344,8 +3344,8 @@
 			<p><i>âtes</i></p>
 			<p><i>èrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -3354,8 +3354,8 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -3372,15 +3372,15 @@
 			<p><i>assiez</i></p>
 			<p><i>assent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -3390,16 +3390,16 @@
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="grêl:er">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>er</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -3432,8 +3432,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -3442,8 +3442,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -3460,15 +3460,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -3478,16 +3478,16 @@
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="enfi:évrer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>évrer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>èvre</i></p>
 			<p><i>èvres</i></p>
@@ -3520,8 +3520,8 @@
 			<p><i>évrâtes</i></p>
 			<p><i>évrèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>évrerais</i></p>
 			<p><i>évrerais</i></p>
@@ -3530,8 +3530,8 @@
 			<p><i>évreriez</i></p>
 			<p><i>évreraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>èvre</i></p>
 			<p><i>èvres</i></p>
@@ -3548,15 +3548,15 @@
 			<p><i>évrassiez</i></p>
 			<p><i>évrassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>èvre</i></p>
 			<p><i>évrons</i></p>
 			<p><i>évrez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>évrant</i></p>
 		</participe-présent>
@@ -3566,16 +3566,16 @@
 			<p><i>évrée</i></p>
 			<p><i>évrées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ex:écrer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>écrer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ècre</i></p>
 			<p><i>ècres</i></p>
@@ -3608,8 +3608,8 @@
 			<p><i>écrâtes</i></p>
 			<p><i>écrèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>écrerais</i></p>
 			<p><i>écrerais</i></p>
@@ -3618,8 +3618,8 @@
 			<p><i>écreriez</i></p>
 			<p><i>écreraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ècre</i></p>
 			<p><i>ècres</i></p>
@@ -3636,15 +3636,15 @@
 			<p><i>écrassiez</i></p>
 			<p><i>écrassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ècre</i></p>
 			<p><i>écrons</i></p>
 			<p><i>écrez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>écrant</i></p>
 		</participe-présent>
@@ -3654,16 +3654,16 @@
 			<p><i>écrée</i></p>
 			<p><i>écrées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="acqu:érir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>érir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>iers</i></p>
 			<p><i>iers</i></p>
@@ -3696,8 +3696,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>errais</i></p>
 			<p><i>errais</i></p>
@@ -3706,8 +3706,8 @@
 			<p><i>erriez</i></p>
 			<p><i>erraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ière</i></p>
 			<p><i>ières</i></p>
@@ -3724,15 +3724,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>iers</i></p>
 			<p><i>érons</i></p>
 			<p><i>érez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>érant</i></p>
 		</participe-présent>
@@ -3742,16 +3742,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ha:ïr">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ïr</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -3784,8 +3784,8 @@
 			<p><i>ïtes</i></p>
 			<p><i>ïrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ïrais</i></p>
 			<p><i>ïrais</i></p>
@@ -3794,8 +3794,8 @@
 			<p><i>ïriez</i></p>
 			<p><i>ïraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ïsse</i></p>
 			<p><i>ïsses</i></p>
@@ -3812,15 +3812,15 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ïssons</i></p>
 			<p><i>ïssez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ïssant</i></p>
 		</participe-présent>
@@ -3830,16 +3830,16 @@
 			<p><i>ïe</i></p>
 			<p><i>ïes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="amu:ïr">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ïr</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ïs</i></p>
 			<p><i>ïs</i></p>
@@ -3872,8 +3872,8 @@
 			<p><i>ïtes</i></p>
 			<p><i>ïrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ïrais</i></p>
 			<p><i>ïrais</i></p>
@@ -3882,8 +3882,8 @@
 			<p><i>ïriez</i></p>
 			<p><i>ïraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ïsse</i></p>
 			<p><i>ïsses</i></p>
@@ -3900,15 +3900,15 @@
 			<p><i>ïssiez</i></p>
 			<p><i>ïssent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ïs</i></p>
 			<p><i>ïssons</i></p>
 			<p><i>ïssez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ïssant</i></p>
 		</participe-présent>
@@ -3918,16 +3918,16 @@
 			<p><i>ïe</i></p>
 			<p><i>ïes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="fl:eurir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eurir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>euris</i></p>
 			<p><i>euris</i></p>
@@ -3960,8 +3960,8 @@
 			<p><i>eurîtes</i></p>
 			<p><i>eurirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>eurirais</i></p>
 			<p><i>eurirais</i></p>
@@ -3970,8 +3970,8 @@
 			<p><i>euririez</i></p>
 			<p><i>euriraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>eurisse</i></p>
 			<p><i>eurisses</i></p>
@@ -3988,15 +3988,15 @@
 			<p><i>eurissiez</i></p>
 			<p><i>eurissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>euris</i></p>
 			<p><i>eurissons</i></p>
 			<p><i>eurissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>eurissant</i><i>orissant</i></p>
 		</participe-présent>
@@ -4006,16 +4006,16 @@
 			<p><i>eurie</i></p>
 			<p><i>euries</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ouv:rir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>rir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>re</i></p>
 			<p><i>res</i></p>
@@ -4048,8 +4048,8 @@
 			<p><i>rîtes</i></p>
 			<p><i>rirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>rirais</i></p>
 			<p><i>rirais</i></p>
@@ -4058,8 +4058,8 @@
 			<p><i>ririez</i></p>
 			<p><i>riraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>re</i></p>
 			<p><i>res</i></p>
@@ -4076,15 +4076,15 @@
 			<p><i>rissiez</i></p>
 			<p><i>rissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>re</i></p>
 			<p><i>rons</i></p>
 			<p><i>rez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>rant</i></p>
 		</participe-présent>
@@ -4094,16 +4094,16 @@
 			<p><i>erte</i></p>
 			<p><i>ertes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="dor:mir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>mir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -4136,8 +4136,8 @@
 			<p><i>mîtes</i></p>
 			<p><i>mirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>mirais</i></p>
 			<p><i>mirais</i></p>
@@ -4146,8 +4146,8 @@
 			<p><i>miriez</i></p>
 			<p><i>miraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>me</i></p>
 			<p><i>mes</i></p>
@@ -4164,15 +4164,15 @@
 			<p><i>missiez</i></p>
 			<p><i>missent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>mons</i></p>
 			<p><i>mez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>mant</i></p>
 		</participe-présent>
@@ -4182,16 +4182,16 @@
 			<p><i>mie</i></p>
 			<p><i>mies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="men:tir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>tir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -4224,8 +4224,8 @@
 			<p><i>tîtes</i></p>
 			<p><i>tirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>tirais</i></p>
 			<p><i>tirais</i></p>
@@ -4234,8 +4234,8 @@
 			<p><i>tiriez</i></p>
 			<p><i>tiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
@@ -4252,15 +4252,15 @@
 			<p><i>tissiez</i></p>
 			<p><i>tissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>tons</i></p>
 			<p><i>tez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>tant</i></p>
 		</participe-présent>
@@ -4270,16 +4270,16 @@
 			<p><i>tie</i></p>
 			<p><i>ties</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ser:vir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>vir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -4312,8 +4312,8 @@
 			<p><i>vîtes</i></p>
 			<p><i>virent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>virais</i></p>
 			<p><i>virais</i></p>
@@ -4322,8 +4322,8 @@
 			<p><i>viriez</i></p>
 			<p><i>viraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ve</i></p>
 			<p><i>ves</i></p>
@@ -4340,15 +4340,15 @@
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>vons</i></p>
 			<p><i>vez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>vant</i></p>
 		</participe-présent>
@@ -4358,16 +4358,16 @@
 			<p><i>vie</i></p>
 			<p><i>vies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="bou:illir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>illir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -4400,8 +4400,8 @@
 			<p><i>illîtes</i></p>
 			<p><i>illirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>illirais</i></p>
 			<p><i>illirais</i></p>
@@ -4410,8 +4410,8 @@
 			<p><i>illiriez</i></p>
 			<p><i>illiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ille</i></p>
 			<p><i>illes</i></p>
@@ -4428,15 +4428,15 @@
 			<p><i>illissiez</i></p>
 			<p><i>illissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>illons</i></p>
 			<p><i>illez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>illant</i></p>
 		</participe-présent>
@@ -4446,16 +4446,16 @@
 			<p><i>illie</i></p>
 			<p><i>illies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="assaill:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -4488,8 +4488,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -4498,8 +4498,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -4516,15 +4516,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -4534,16 +4534,16 @@
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="saill:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -4576,8 +4576,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -4586,8 +4586,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i><i>eraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -4604,15 +4604,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>issons</i></p>
 			<p><i>issez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>issant</i><i>ant</i></p>
 		</participe-présent>
@@ -4622,16 +4622,16 @@
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cueill:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -4664,8 +4664,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -4674,8 +4674,8 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -4692,15 +4692,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>e</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -4710,16 +4710,16 @@
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="t:enir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>enir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>iens</i></p>
 			<p><i>iens</i></p>
@@ -4752,8 +4752,8 @@
 			<p><i>întes</i></p>
 			<p><i>inrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>iendrais</i></p>
 			<p><i>iendrais</i></p>
@@ -4762,8 +4762,8 @@
 			<p><i>iendriez</i></p>
 			<p><i>iendraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ienne</i></p>
 			<p><i>iennes</i></p>
@@ -4780,15 +4780,15 @@
 			<p><i>inssiez</i></p>
 			<p><i>inssent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>iens</i></p>
 			<p><i>enons</i></p>
 			<p><i>enez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>enant</i></p>
 		</participe-présent>
@@ -4798,16 +4798,16 @@
 			<p><i>enue</i></p>
 			<p><i>enues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="adv:enir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>enir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -4840,8 +4840,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -4850,8 +4850,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -4868,15 +4868,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>enant</i></p>
 		</participe-présent>
@@ -4886,16 +4886,16 @@
 			<p><i>enue</i></p>
 			<p><i>enues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="fu:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -4928,8 +4928,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -4938,8 +4938,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -4956,15 +4956,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>yant</i></p>
 		</participe-présent>
@@ -4974,16 +4974,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="m:ourir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ourir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>eurs</i></p>
 			<p><i>eurs</i></p>
@@ -5016,8 +5016,8 @@
 			<p><i>ourûtes</i></p>
 			<p><i>oururent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ourrais</i></p>
 			<p><i>ourrais</i></p>
@@ -5026,8 +5026,8 @@
 			<p><i>ourriez</i></p>
 			<p><i>ourraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>eure</i></p>
 			<p><i>eures</i></p>
@@ -5044,15 +5044,15 @@
 			<p><i>ourussiez</i></p>
 			<p><i>ourussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>eurs</i></p>
 			<p><i>ourons</i></p>
 			<p><i>ourez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ourant</i></p>
 		</participe-présent>
@@ -5062,16 +5062,16 @@
 			<p><i>orte</i></p>
 			<p><i>ortes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="vêt:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -5104,8 +5104,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5114,8 +5114,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -5132,15 +5132,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -5150,16 +5150,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cour:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -5192,8 +5192,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -5202,8 +5202,8 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -5220,15 +5220,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -5238,16 +5238,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="fin:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5280,8 +5280,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5290,8 +5290,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -5308,15 +5308,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>issons</i></p>
 			<p><i>issez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>issant</i></p>
 		</participe-présent>
@@ -5326,16 +5326,16 @@
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="chauv:ir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5368,8 +5368,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5378,8 +5378,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>e</i></p>
 			<p><i>es</i></p>
@@ -5396,15 +5396,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ons</i></p>
 			<p><i>ez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -5414,16 +5414,16 @@
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="maud:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5456,8 +5456,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -5466,8 +5466,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>isse</i></p>
 			<p><i>isses</i></p>
@@ -5484,15 +5484,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>issons</i></p>
 			<p><i>issez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>issant</i></p>
 		</participe-présent>
@@ -5502,16 +5502,16 @@
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="fa:illir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>illir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ux</i></p>
 			<p><i>ux</i></p>
@@ -5544,8 +5544,8 @@
 			<p><i>illîtes</i></p>
 			<p><i>illirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>illirais</i></p>
 			<p><i>illirais</i></p>
@@ -5554,8 +5554,8 @@
 			<p><i>illiriez</i></p>
 			<p><i>illiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>illisse</i></p>
 			<p><i>illisses</i></p>
@@ -5572,15 +5572,15 @@
 			<p><i>illissiez</i></p>
 			<p><i>illissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>illant</i></p>
 		</participe-présent>
@@ -5590,16 +5590,16 @@
 			<p><i>illie</i></p>
 			<p><i>illies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="g:ésir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ésir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -5632,8 +5632,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -5642,8 +5642,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -5660,15 +5660,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -5678,16 +5678,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="dé:cevoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>cevoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>çois</i></p>
 			<p><i>çois</i></p>
@@ -5720,8 +5720,8 @@
 			<p><i>çûtes</i></p>
 			<p><i>çurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>cevrais</i></p>
 			<p><i>cevrais</i></p>
@@ -5730,8 +5730,8 @@
 			<p><i>cevriez</i></p>
 			<p><i>cevraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>çoive</i></p>
 			<p><i>çoives</i></p>
@@ -5748,15 +5748,15 @@
 			<p><i>çussiez</i></p>
 			<p><i>çussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>çois</i></p>
 			<p><i>cevons</i></p>
 			<p><i>cevez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>cevant</i></p>
 		</participe-présent>
@@ -5766,16 +5766,16 @@
 			<p><i>çue</i></p>
 			<p><i>çues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="d:evoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>evoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -5808,8 +5808,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>evrais</i></p>
 			<p><i>evrais</i></p>
@@ -5818,8 +5818,8 @@
 			<p><i>evriez</i></p>
 			<p><i>evraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oive</i></p>
 			<p><i>oives</i></p>
@@ -5836,15 +5836,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>evons</i></p>
 			<p><i>evez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>evant</i></p>
 		</participe-présent>
@@ -5854,16 +5854,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="m:ouvoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ouvoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>eus</i></p>
 			<p><i>eus</i></p>
@@ -5896,8 +5896,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ouvrais</i></p>
 			<p><i>ouvrais</i></p>
@@ -5906,8 +5906,8 @@
 			<p><i>ouvriez</i></p>
 			<p><i>ouvraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>euve</i></p>
 			<p><i>euves</i></p>
@@ -5924,15 +5924,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>eus</i></p>
 			<p><i>ouvons</i></p>
 			<p><i>ouvez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ouvant</i></p>
 		</participe-présent>
@@ -5942,16 +5942,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="prom:ouvoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ouvoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>eus</i></p>
 			<p><i>eus</i></p>
@@ -5984,8 +5984,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ouvrais</i></p>
 			<p><i>ouvrais</i></p>
@@ -5994,8 +5994,8 @@
 			<p><i>ouvriez</i></p>
 			<p><i>ouvraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>euve</i></p>
 			<p><i>euves</i></p>
@@ -6012,15 +6012,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>eus</i></p>
 			<p><i>ouvons</i></p>
 			<p><i>ouvez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ouvant</i></p>
 		</participe-présent>
@@ -6030,16 +6030,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="s:avoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>avoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -6072,8 +6072,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>aurais</i></p>
 			<p><i>aurais</i></p>
@@ -6082,8 +6082,8 @@
 			<p><i>auriez</i></p>
 			<p><i>auraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ache</i></p>
 			<p><i>aches</i></p>
@@ -6100,15 +6100,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ache</i></p>
 			<p><i>achons</i></p>
 			<p><i>achez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>achant</i></p>
 		</participe-présent>
@@ -6118,16 +6118,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="v:ouloir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ouloir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>eux</i></p>
 			<p><i>eux</i></p>
@@ -6160,8 +6160,8 @@
 			<p><i>oulûtes</i></p>
 			<p><i>oulurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oudrais</i></p>
 			<p><i>oudrais</i></p>
@@ -6170,8 +6170,8 @@
 			<p><i>oudriez</i></p>
 			<p><i>oudraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>euille</i></p>
 			<p><i>euilles</i></p>
@@ -6188,15 +6188,15 @@
 			<p><i>oulussiez</i></p>
 			<p><i>oulussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>euille</i></p>
 			<p><i>euillons</i></p>
 			<p><i>euillez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oulant</i></p>
 		</participe-présent>
@@ -6206,16 +6206,16 @@
 			<p><i>oulue</i></p>
 			<p><i>oulues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="va:loir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>loir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ux</i></p>
 			<p><i>ux</i></p>
@@ -6248,8 +6248,8 @@
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -6258,8 +6258,8 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ille</i></p>
 			<p><i>illes</i></p>
@@ -6276,15 +6276,15 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ux</i></p>
 			<p><i>lons</i></p>
 			<p><i>lez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>lant</i></p>
 		</participe-présent>
@@ -6294,16 +6294,16 @@
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="préva:loir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>loir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ux</i></p>
 			<p><i>ux</i></p>
@@ -6336,8 +6336,8 @@
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -6346,8 +6346,8 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>le</i></p>
 			<p><i>les</i></p>
@@ -6364,15 +6364,15 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ux</i></p>
 			<p><i>lons</i></p>
 			<p><i>lez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>lant</i></p>
 		</participe-présent>
@@ -6382,16 +6382,16 @@
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="p:ouvoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ouvoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>eux</i><i>uis</i></p>
 			<p><i>eux</i></p>
@@ -6424,8 +6424,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ourrais</i></p>
 			<p><i>ourrais</i></p>
@@ -6434,8 +6434,8 @@
 			<p><i>ourriez</i></p>
 			<p><i>ourraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>uisse</i></p>
 			<p><i>uisses</i></p>
@@ -6452,15 +6452,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ouvant</i></p>
 		</participe-présent>
@@ -6470,16 +6470,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="v:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -6512,8 +6512,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>errais</i></p>
 			<p><i>errais</i></p>
@@ -6522,8 +6522,8 @@
 			<p><i>erriez</i></p>
 			<p><i>erraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6540,15 +6540,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i></p>
 		</participe-présent>
@@ -6558,16 +6558,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="prév:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -6600,8 +6600,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -6610,8 +6610,8 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6628,15 +6628,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i></p>
 		</participe-présent>
@@ -6646,16 +6646,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ass:eoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eoir</i><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ieds</i><i>ois</i></p>
 			<p><i>ieds</i><i>ois</i></p>
@@ -6688,8 +6688,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
@@ -6698,8 +6698,8 @@
 			<p><i>iériez</i><i>eyeriez</i><i>oiriez</i></p>
 			<p><i>iéraient</i><i>eyeraient</i><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>eye</i><i>oie</i></p>
 			<p><i>eyes</i><i>oies</i></p>
@@ -6716,15 +6716,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ieds</i><i>ois</i></p>
 			<p><i>eyons</i><i>oyons</i></p>
 			<p><i>eyez</i><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>eyant</i><i>oyant</i></p>
 		</participe-présent>
@@ -6734,16 +6734,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ass:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eoir</i><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ieds</i><i>ois</i></p>
 			<p><i>ieds</i><i>ois</i></p>
@@ -6776,8 +6776,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
 			<p><i>iérais</i><i>eyerais</i><i>oirais</i></p>
@@ -6786,8 +6786,8 @@
 			<p><i>iériez</i><i>eyeriez</i><i>oiriez</i></p>
 			<p><i>iéraient</i><i>eyeraient</i><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>eye</i><i>oie</i></p>
 			<p><i>eyes</i><i>oies</i></p>
@@ -6804,15 +6804,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ieds</i><i>ois</i></p>
 			<p><i>eyons</i><i>oyons</i></p>
 			<p><i>eyez</i><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>eyant</i><i>oyant</i></p>
 		</participe-présent>
@@ -6822,16 +6822,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="surs:eoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -6864,8 +6864,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>eoirais</i></p>
 			<p><i>eoirais</i></p>
@@ -6874,8 +6874,8 @@
 			<p><i>eoiriez</i></p>
 			<p><i>eoiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6892,15 +6892,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i></p>
 		</participe-présent>
@@ -6910,16 +6910,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="surs:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -6952,8 +6952,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -6962,8 +6962,8 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -6980,15 +6980,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i></p>
 		</participe-présent>
@@ -6998,16 +6998,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="s:eoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>eoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7040,8 +7040,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7050,8 +7050,8 @@
 			<p></p>
 			<p><i>iéraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7068,15 +7068,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>éant</i><i>eyant</i></p>
 		</participe-présent>
@@ -7086,16 +7086,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="pl:euvoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>euvoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7128,8 +7128,8 @@
 			<p></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7138,8 +7138,8 @@
 			<p></p>
 			<p><i>euvraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7156,15 +7156,15 @@
 			<p></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>euvant</i></p>
 		</participe-présent>
@@ -7174,16 +7174,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="fa:lloir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>lloir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7216,8 +7216,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7226,8 +7226,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7244,15 +7244,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p></p>
 		</participe-présent>
@@ -7262,16 +7262,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="déch:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -7304,8 +7304,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -7314,8 +7314,8 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -7332,15 +7332,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p></p>
 		</participe-présent>
@@ -7350,16 +7350,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="pourv:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -7392,8 +7392,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -7402,8 +7402,8 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -7420,15 +7420,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i></p>
 		</participe-présent>
@@ -7438,16 +7438,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ch:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -7480,8 +7480,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oirais</i><i>errais</i></p>
 			<p><i>oirais</i><i>errais</i></p>
@@ -7490,8 +7490,8 @@
 			<p><i>oiriez</i><i>erriez</i></p>
 			<p><i>oiraient</i><i>erraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7508,15 +7508,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i><i>eyant</i></p>
 		</participe-présent>
@@ -7526,16 +7526,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="éch:oir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7568,8 +7568,8 @@
 			<p></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7578,8 +7578,8 @@
 			<p></p>
 			<p><i>oiraient</i><i>erraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -7596,15 +7596,15 @@
 			<p></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>éant</i></p>
 		</participe-présent>
@@ -7614,16 +7614,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ten:dre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>dre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ds</i></p>
 			<p><i>ds</i></p>
@@ -7656,8 +7656,8 @@
 			<p><i>dîtes</i></p>
 			<p><i>dirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>drais</i></p>
 			<p><i>drais</i></p>
@@ -7666,8 +7666,8 @@
 			<p><i>driez</i></p>
 			<p><i>draient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>de</i></p>
 			<p><i>des</i></p>
@@ -7684,15 +7684,15 @@
 			<p><i>dissiez</i></p>
 			<p><i>dissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ds</i></p>
 			<p><i>dons</i></p>
 			<p><i>dez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>dant</i></p>
 		</participe-présent>
@@ -7702,16 +7702,16 @@
 			<p><i>due</i></p>
 			<p><i>dues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="vain:cre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>cre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>cs</i></p>
 			<p><i>cs</i></p>
@@ -7744,8 +7744,8 @@
 			<p><i>quîtes</i></p>
 			<p><i>quirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>crais</i></p>
 			<p><i>crais</i></p>
@@ -7754,8 +7754,8 @@
 			<p><i>criez</i></p>
 			<p><i>craient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>que</i></p>
 			<p><i>ques</i></p>
@@ -7772,15 +7772,15 @@
 			<p><i>quissiez</i></p>
 			<p><i>quissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>cs</i></p>
 			<p><i>quons</i></p>
 			<p><i>quez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>quant</i></p>
 		</participe-présent>
@@ -7790,16 +7790,16 @@
 			<p><i>cue</i></p>
 			<p><i>cues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="bat:tre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>tre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -7832,8 +7832,8 @@
 			<p><i>tîtes</i></p>
 			<p><i>tirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>trais</i></p>
 			<p><i>trais</i></p>
@@ -7842,8 +7842,8 @@
 			<p><i>triez</i></p>
 			<p><i>traient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
@@ -7860,15 +7860,15 @@
 			<p><i>tissiez</i></p>
 			<p><i>tissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>tons</i></p>
 			<p><i>tez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>tant</i></p>
 		</participe-présent>
@@ -7878,16 +7878,16 @@
 			<p><i>tue</i></p>
 			<p><i>tues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="fou:tre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>tre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -7920,8 +7920,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>trais</i></p>
 			<p><i>trais</i></p>
@@ -7930,8 +7930,8 @@
 			<p><i>triez</i></p>
 			<p><i>traient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
@@ -7948,15 +7948,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>tons</i></p>
 			<p><i>tez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>tant</i></p>
 		</participe-présent>
@@ -7966,16 +7966,16 @@
 			<p><i>tue</i></p>
 			<p><i>tues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="m:ettre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ettre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ets</i></p>
 			<p><i>ets</i></p>
@@ -8008,8 +8008,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ettrais</i></p>
 			<p><i>ettrais</i></p>
@@ -8018,8 +8018,8 @@
 			<p><i>ettriez</i></p>
 			<p><i>ettraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ette</i></p>
 			<p><i>ettes</i></p>
@@ -8036,15 +8036,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ets</i></p>
 			<p><i>ettons</i></p>
 			<p><i>ettez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ettant</i></p>
 		</participe-présent>
@@ -8054,16 +8054,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="pr:endre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>endre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ends</i></p>
 			<p><i>ends</i></p>
@@ -8096,8 +8096,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>endrais</i></p>
 			<p><i>endrais</i></p>
@@ -8106,8 +8106,8 @@
 			<p><i>endriez</i></p>
 			<p><i>endraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>enne</i></p>
 			<p><i>ennes</i></p>
@@ -8124,15 +8124,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ends</i></p>
 			<p><i>enons</i></p>
 			<p><i>enez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>enant</i></p>
 		</participe-présent>
@@ -8142,16 +8142,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="rom:pre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>pre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ps</i></p>
 			<p><i>ps</i></p>
@@ -8184,8 +8184,8 @@
 			<p><i>pîtes</i></p>
 			<p><i>pirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>prais</i></p>
 			<p><i>prais</i></p>
@@ -8194,8 +8194,8 @@
 			<p><i>priez</i></p>
 			<p><i>praient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>pe</i></p>
 			<p><i>pes</i></p>
@@ -8212,15 +8212,15 @@
 			<p><i>pissiez</i></p>
 			<p><i>pissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ps</i></p>
 			<p><i>pons</i></p>
 			<p><i>pez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>pant</i></p>
 		</participe-présent>
@@ -8230,16 +8230,16 @@
 			<p><i>pue</i></p>
 			<p><i>pues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="mou:dre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>dre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ds</i></p>
 			<p><i>ds</i></p>
@@ -8272,8 +8272,8 @@
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>drais</i></p>
 			<p><i>drais</i></p>
@@ -8282,8 +8282,8 @@
 			<p><i>driez</i></p>
 			<p><i>draient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>le</i></p>
 			<p><i>les</i></p>
@@ -8300,15 +8300,15 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ds</i></p>
 			<p><i>lons</i></p>
 			<p><i>lez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>lant</i></p>
 		</participe-présent>
@@ -8318,16 +8318,16 @@
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cou:dre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>dre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ds</i></p>
 			<p><i>ds</i></p>
@@ -8360,8 +8360,8 @@
 			<p><i>sîtes</i></p>
 			<p><i>sirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>drais</i></p>
 			<p><i>drais</i></p>
@@ -8370,8 +8370,8 @@
 			<p><i>driez</i></p>
 			<p><i>draient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -8388,15 +8388,15 @@
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ds</i></p>
 			<p><i>sons</i></p>
 			<p><i>sez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>sant</i></p>
 		</participe-présent>
@@ -8406,16 +8406,16 @@
 			<p><i>sue</i></p>
 			<p><i>sues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="réso:udre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>udre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -8448,8 +8448,8 @@
 			<p><i>lûtes</i></p>
 			<p><i>lurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -8458,8 +8458,8 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>lve</i></p>
 			<p><i>lves</i></p>
@@ -8476,15 +8476,15 @@
 			<p><i>lussiez</i></p>
 			<p><i>lussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>lvons</i></p>
 			<p><i>lvez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>lvant</i></p>
 		</participe-présent>
@@ -8494,16 +8494,16 @@
 			<p><i>lue</i></p>
 			<p><i>lues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="abso:udre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>udre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -8536,8 +8536,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -8546,8 +8546,8 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>lve</i></p>
 			<p><i>lves</i></p>
@@ -8564,15 +8564,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>lvons</i></p>
 			<p><i>lvez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>lvant</i></p>
 		</participe-présent>
@@ -8582,16 +8582,16 @@
 			<p><i>ute</i></p>
 			<p><i>utes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="disso:udre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>udre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -8624,8 +8624,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>udrais</i></p>
 			<p><i>udrais</i></p>
@@ -8634,8 +8634,8 @@
 			<p><i>udriez</i></p>
 			<p><i>udraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>lve</i></p>
 			<p><i>lves</i></p>
@@ -8652,15 +8652,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>lvons</i></p>
 			<p><i>lvez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>lvant</i></p>
 		</participe-présent>
@@ -8670,16 +8670,16 @@
 			<p><i>ute</i><i>lue</i></p>
 			<p><i>utes</i><i>lues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="crai:ndre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ndre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ns</i></p>
 			<p><i>ns</i></p>
@@ -8712,8 +8712,8 @@
 			<p><i>gnîtes</i></p>
 			<p><i>gnirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ndrais</i></p>
 			<p><i>ndrais</i></p>
@@ -8722,8 +8722,8 @@
 			<p><i>ndriez</i></p>
 			<p><i>ndraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>gne</i></p>
 			<p><i>gnes</i></p>
@@ -8740,15 +8740,15 @@
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ns</i></p>
 			<p><i>gnons</i></p>
 			<p><i>gnez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>gnant</i></p>
 		</participe-présent>
@@ -8758,16 +8758,16 @@
 			<p><i>nte</i></p>
 			<p><i>ntes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="poi:ndre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ndre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ns</i></p>
 			<p><i>ns</i></p>
@@ -8800,8 +8800,8 @@
 			<p><i>gnîtes</i></p>
 			<p><i>gnirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ndrais</i></p>
 			<p><i>ndrais</i></p>
@@ -8810,8 +8810,8 @@
 			<p><i>ndriez</i></p>
 			<p><i>ndraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>gne</i></p>
 			<p><i>gnes</i></p>
@@ -8828,15 +8828,15 @@
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>gnant</i></p>
 		</participe-présent>
@@ -8846,16 +8846,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="sui:vre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>vre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -8888,8 +8888,8 @@
 			<p><i>vîtes</i></p>
 			<p><i>virent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>vrais</i></p>
 			<p><i>vrais</i></p>
@@ -8898,8 +8898,8 @@
 			<p><i>vriez</i></p>
 			<p><i>vraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ve</i></p>
 			<p><i>ves</i></p>
@@ -8916,15 +8916,15 @@
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>vons</i></p>
 			<p><i>vez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>vant</i></p>
 		</participe-présent>
@@ -8934,16 +8934,16 @@
 			<p><i>vie</i></p>
 			<p><i>vies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="v:ivre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ivre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -8976,8 +8976,8 @@
 			<p><i>écûtes</i></p>
 			<p><i>écurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ivrais</i></p>
 			<p><i>ivrais</i></p>
@@ -8986,8 +8986,8 @@
 			<p><i>ivriez</i></p>
 			<p><i>ivraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ive</i></p>
 			<p><i>ives</i></p>
@@ -9004,15 +9004,15 @@
 			<p><i>écussiez</i></p>
 			<p><i>écussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ivons</i></p>
 			<p><i>ivez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ivant</i></p>
 		</participe-présent>
@@ -9022,16 +9022,16 @@
 			<p><i>écue</i></p>
 			<p><i>écues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="rep:aître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -9064,8 +9064,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9074,8 +9074,8 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9092,15 +9092,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aissant</i></p>
 		</participe-présent>
@@ -9110,16 +9110,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="p:aître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -9152,8 +9152,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9162,8 +9162,8 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9180,15 +9180,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p></p>
 			<p><i>aissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aissant</i></p>
 		</participe-présent>
@@ -9198,16 +9198,16 @@
 			<p><i>us</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="par:aître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -9240,8 +9240,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9250,8 +9250,8 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9268,15 +9268,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aissant</i></p>
 		</participe-présent>
@@ -9286,16 +9286,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="n:aître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -9328,8 +9328,8 @@
 			<p><i>aquîtes</i></p>
 			<p><i>aquirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9338,8 +9338,8 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9356,15 +9356,15 @@
 			<p><i>aquissiez</i></p>
 			<p><i>aquissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aissant</i></p>
 		</participe-présent>
@@ -9374,16 +9374,16 @@
 			<p><i>ée</i></p>
 			<p><i>ées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="ren:aître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -9416,8 +9416,8 @@
 			<p><i>aquîtes</i></p>
 			<p><i>aquirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>aîtrais</i></p>
 			<p><i>aîtrais</i></p>
@@ -9426,8 +9426,8 @@
 			<p><i>aîtriez</i></p>
 			<p><i>aîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aisse</i></p>
 			<p><i>aisses</i></p>
@@ -9444,15 +9444,15 @@
 			<p><i>aquissiez</i></p>
 			<p><i>aquissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aissons</i></p>
 			<p><i>aissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aissant</i></p>
 		</participe-présent>
@@ -9462,16 +9462,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cr:oître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>oîs</i></p>
 			<p><i>oîs</i></p>
@@ -9504,8 +9504,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>ûrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oîtrais</i></p>
 			<p><i>oîtrais</i></p>
@@ -9514,8 +9514,8 @@
 			<p><i>oîtriez</i></p>
 			<p><i>oîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oisse</i></p>
 			<p><i>oisses</i></p>
@@ -9532,15 +9532,15 @@
 			<p><i>ûssiez</i></p>
 			<p><i>ûssent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oissons</i></p>
 			<p><i>oissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oissant</i></p>
 		</participe-présent>
@@ -9550,16 +9550,16 @@
 			<p><i>ûe</i></p>
 			<p><i>ûes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="recr:oître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>oîs</i></p>
 			<p><i>oîs</i></p>
@@ -9592,8 +9592,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oîtrais</i></p>
 			<p><i>oîtrais</i></p>
@@ -9602,8 +9602,8 @@
 			<p><i>oîtriez</i></p>
 			<p><i>oîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oisse</i></p>
 			<p><i>oisses</i></p>
@@ -9620,15 +9620,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oissons</i></p>
 			<p><i>oissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oissant</i></p>
 		</participe-présent>
@@ -9638,17 +9638,17 @@
 			<p><i>ûe</i></p>
 			<p><i>ûes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 
 <template name="accr:oître">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oître</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>oîs</i></p>
 			<p><i>oîs</i></p>
@@ -9681,8 +9681,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oîtrais</i></p>
 			<p><i>oîtrais</i></p>
@@ -9691,8 +9691,8 @@
 			<p><i>oîtriez</i></p>
 			<p><i>oîtraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oisse</i></p>
 			<p><i>oisses</i></p>
@@ -9709,15 +9709,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oissons</i></p>
 			<p><i>oissez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oissant</i></p>
 		</participe-présent>
@@ -9727,16 +9727,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="r:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -9769,8 +9769,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -9779,8 +9779,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -9797,15 +9797,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>ions</i></p>
 			<p><i>iez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>iant</i></p>
 		</participe-présent>
@@ -9815,16 +9815,16 @@
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="circonc:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -9857,8 +9857,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -9867,8 +9867,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -9885,15 +9885,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -9903,16 +9903,16 @@
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="concl:ure">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ure</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -9945,8 +9945,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>urais</i></p>
 			<p><i>urais</i></p>
@@ -9955,8 +9955,8 @@
 			<p><i>uriez</i></p>
 			<p><i>uraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
@@ -9973,15 +9973,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>uons</i></p>
 			<p><i>uez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>uant</i></p>
 		</participe-présent>
@@ -9991,16 +9991,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="incl:ure">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ure</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>us</i></p>
 			<p><i>us</i></p>
@@ -10033,8 +10033,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>urais</i></p>
 			<p><i>urais</i></p>
@@ -10043,8 +10043,8 @@
 			<p><i>uriez</i></p>
 			<p><i>uraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
@@ -10061,15 +10061,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>us</i></p>
 			<p><i>uons</i></p>
 			<p><i>uez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>uant</i></p>
 		</participe-présent>
@@ -10079,16 +10079,16 @@
 			<p><i>use</i></p>
 			<p><i>uses</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="nui:re">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>re</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -10121,8 +10121,8 @@
 			<p><i>sîtes</i></p>
 			<p><i>sirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -10131,8 +10131,8 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -10149,15 +10149,15 @@
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>sons</i></p>
 			<p><i>sez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>sant</i></p>
 		</participe-présent>
@@ -10167,16 +10167,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="lu:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10209,8 +10209,8 @@
 			<p><i>îtes</i><i>isîtes</i></p>
 			<p><i>irent</i><i>isirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10219,8 +10219,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10237,15 +10237,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -10255,16 +10255,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="condui:re">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>re</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -10297,8 +10297,8 @@
 			<p><i>sîtes</i></p>
 			<p><i>sirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -10307,8 +10307,8 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -10325,15 +10325,15 @@
 			<p><i>sissiez</i></p>
 			<p><i>sissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>sons</i></p>
 			<p><i>sez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>sant</i></p>
 		</participe-présent>
@@ -10343,16 +10343,16 @@
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="écri:re">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>re</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -10385,8 +10385,8 @@
 			<p><i>vîtes</i></p>
 			<p><i>virent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -10395,8 +10395,8 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ve</i></p>
 			<p><i>ves</i></p>
@@ -10413,15 +10413,15 @@
 			<p><i>vissiez</i></p>
 			<p><i>vissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p><i>vons</i></p>
 			<p><i>vez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>vant</i></p>
 		</participe-présent>
@@ -10431,16 +10431,16 @@
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cr:oire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -10473,8 +10473,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -10483,8 +10483,8 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -10501,15 +10501,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i></p>
 		</participe-présent>
@@ -10519,16 +10519,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="suff:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10561,8 +10561,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10571,8 +10571,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10589,15 +10589,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -10607,16 +10607,16 @@
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="d:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10649,8 +10649,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10659,8 +10659,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10677,15 +10677,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>ites</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -10695,16 +10695,16 @@
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="interd:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10737,8 +10737,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10747,8 +10747,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10765,15 +10765,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -10783,16 +10783,16 @@
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="méd:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10825,8 +10825,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10835,8 +10835,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10853,15 +10853,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -10871,16 +10871,16 @@
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="préd:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -10913,8 +10913,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -10923,8 +10923,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -10941,15 +10941,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>ites</i><i>isez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -10959,16 +10959,16 @@
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="l:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -11001,8 +11001,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -11011,8 +11011,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ise</i></p>
 			<p><i>ises</i></p>
@@ -11029,15 +11029,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>isons</i></p>
 			<p><i>isez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>isant</i></p>
 		</participe-présent>
@@ -11047,16 +11047,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="b:oire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ois</i></p>
 			<p><i>ois</i></p>
@@ -11089,8 +11089,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>oirais</i></p>
 			<p><i>oirais</i></p>
@@ -11099,8 +11099,8 @@
 			<p><i>oiriez</i></p>
 			<p><i>oiraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oive</i></p>
 			<p><i>oives</i></p>
@@ -11117,15 +11117,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ois</i></p>
 			<p><i>uvons</i></p>
 			<p><i>uvez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>uvant</i></p>
 		</participe-présent>
@@ -11135,16 +11135,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="t:aire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -11177,8 +11177,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>airais</i></p>
 			<p><i>airais</i></p>
@@ -11187,8 +11187,8 @@
 			<p><i>airiez</i></p>
 			<p><i>airaient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aise</i></p>
 			<p><i>aises</i></p>
@@ -11205,15 +11205,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aisons</i></p>
 			<p><i>aisez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aisant</i></p>
 		</participe-présent>
@@ -11223,16 +11223,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="pl:aire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -11265,8 +11265,8 @@
 			<p><i>ûtes</i></p>
 			<p><i>urent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>airais</i></p>
 			<p><i>airais</i></p>
@@ -11275,8 +11275,8 @@
 			<p><i>airiez</i></p>
 			<p><i>airaient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aise</i></p>
 			<p><i>aises</i></p>
@@ -11293,15 +11293,15 @@
 			<p><i>ussiez</i></p>
 			<p><i>ussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aisons</i></p>
 			<p><i>aisez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aisant</i></p>
 		</participe-présent>
@@ -11311,16 +11311,16 @@
 			<p><i>ue</i></p>
 			<p><i>ues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="f:aire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ais</i></p>
 			<p><i>ais</i></p>
@@ -11353,8 +11353,8 @@
 			<p><i>îtes</i></p>
 			<p><i>irent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>erais</i></p>
 			<p><i>erais</i></p>
@@ -11363,8 +11363,8 @@
 			<p><i>eriez</i></p>
 			<p><i>eraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>asse</i></p>
 			<p><i>asses</i></p>
@@ -11381,15 +11381,15 @@
 			<p><i>issiez</i></p>
 			<p><i>issent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ais</i></p>
 			<p><i>aisons</i></p>
 			<p><i>aites</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>aisant</i></p>
 		</participe-présent>
@@ -11399,16 +11399,16 @@
 			<p><i>aite</i></p>
 			<p><i>aites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="extra:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -11441,8 +11441,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -11451,8 +11451,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -11469,15 +11469,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>yant</i></p>
 		</participe-présent>
@@ -11487,16 +11487,16 @@
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="bra:ire">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ire</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -11529,8 +11529,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -11539,8 +11539,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -11557,15 +11557,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>yant</i></p>
 		</participe-présent>
@@ -11575,16 +11575,16 @@
 			<p><i>ite</i></p>
 			<p><i>ites</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="s:ourdre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ourdre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -11617,8 +11617,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -11627,8 +11627,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -11645,15 +11645,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p></p>
 		</participe-présent>
@@ -11663,16 +11663,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cl:ore">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ore</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>os</i></p>
 			<p><i>os</i></p>
@@ -11705,8 +11705,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>orais</i></p>
 			<p><i>orais</i></p>
@@ -11715,8 +11715,8 @@
 			<p><i>oriez</i></p>
 			<p><i>oraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ose</i></p>
 			<p><i>oses</i></p>
@@ -11733,15 +11733,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>os</i></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>osant</i></p>
 		</participe-présent>
@@ -11751,16 +11751,16 @@
 			<p><i>ose</i></p>
 			<p><i>oses</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="éclo:re">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>re</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -11793,8 +11793,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -11803,8 +11803,8 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
@@ -11821,15 +11821,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>sant</i></p>
 		</participe-présent>
@@ -11839,16 +11839,16 @@
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="forclo:re">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>re</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -11881,8 +11881,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -11891,8 +11891,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -11909,15 +11909,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p></p>
 		</participe-présent>
@@ -11927,16 +11927,16 @@
 			<p><i>se</i></p>
 			<p><i>ses</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="fri:re">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>re</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>s</i></p>
 			<p><i>s</i></p>
@@ -11969,8 +11969,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>rais</i></p>
 			<p><i>rais</i></p>
@@ -11979,8 +11979,8 @@
 			<p><i>riez</i></p>
 			<p><i>raient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -11997,15 +11997,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>s</i></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p></p>
 		</participe-présent>
@@ -12015,16 +12015,16 @@
 			<p><i>te</i></p>
 			<p><i>tes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="brui:re">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>re</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12057,8 +12057,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12067,8 +12067,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12085,15 +12085,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ssant</i></p>
 		</participe-présent>
@@ -12103,16 +12103,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="oi:ndre">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>ndre</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ns</i></p>
 			<p><i>ns</i></p>
@@ -12145,8 +12145,8 @@
 			<p><i>gnîtes</i></p>
 			<p><i>gnirent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>ndrais</i></p>
 			<p><i>ndrais</i></p>
@@ -12155,8 +12155,8 @@
 			<p><i>ndriez</i></p>
 			<p><i>ndraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>gne</i></p>
 			<p><i>gnes</i></p>
@@ -12173,15 +12173,15 @@
 			<p><i>gnissiez</i></p>
 			<p><i>gnissent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>ns</i></p>
 			<p><i>gnons</i></p>
 			<p><i>gnez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>gnant</i></p>
 		</participe-présent>
@@ -12191,16 +12191,16 @@
 			<p><i>nte</i></p>
 			<p><i>ntes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="env:oyer">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>oyer</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -12233,8 +12233,8 @@
 			<p><i>oyâtes</i></p>
 			<p><i>oyèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>errais</i></p>
 			<p><i>errais</i></p>
@@ -12243,8 +12243,8 @@
 			<p><i>erriez</i></p>
 			<p><i>erraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>oie</i></p>
 			<p><i>oies</i></p>
@@ -12261,15 +12261,15 @@
 			<p><i>oyassiez</i></p>
 			<p><i>oyassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>oie</i></p>
 			<p><i>oyons</i></p>
 			<p><i>oyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>oyant</i></p>
 		</participe-présent>
@@ -12279,16 +12279,16 @@
 			<p><i>oyée</i></p>
 			<p><i>oyées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name=":avoir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>avoir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>ai</i></p>
 			<p><i>as</i></p>
@@ -12321,8 +12321,8 @@
 			<p><i>eûtes</i></p>
 			<p><i>eurent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>aurais</i></p>
 			<p><i>aurais</i></p>
@@ -12331,8 +12331,8 @@
 			<p><i>auriez</i></p>
 			<p><i>auraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aie</i></p>
 			<p><i>aies</i></p>
@@ -12349,15 +12349,15 @@
 			<p><i>eussiez</i></p>
 			<p><i>eussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>aie</i></p>
 			<p><i>ayons</i></p>
 			<p><i>ayez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ayant</i></p>
 		</participe-présent>
@@ -12367,16 +12367,16 @@
 			<p><i>eue</i></p>
 			<p><i>eues</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name=":être">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>être</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>suis</i></p>
 			<p><i>es</i></p>
@@ -12409,8 +12409,8 @@
 			<p><i>fûtes</i></p>
 			<p><i>furent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>serais</i></p>
 			<p><i>serais</i></p>
@@ -12419,8 +12419,8 @@
 			<p><i>seriez</i></p>
 			<p><i>seraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>sois</i></p>
 			<p><i>sois</i></p>
@@ -12437,15 +12437,15 @@
 			<p><i>fussiez</i></p>
 			<p><i>fussent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>sois</i></p>
 			<p><i>soyons</i></p>
 			<p><i>soyez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>étant</i></p>
 		</participe-présent>
@@ -12455,16 +12455,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name=":aller">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aller</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>vais</i></p>
 			<p><i>vas</i></p>
@@ -12497,8 +12497,8 @@
 			<p><i>allâtes</i></p>
 			<p><i>allèrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i></p>
 			<p><i>irais</i></p>
@@ -12507,8 +12507,8 @@
 			<p><i>iriez</i></p>
 			<p><i>iraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>aille</i></p>
 			<p><i>ailles</i></p>
@@ -12525,15 +12525,15 @@
 			<p><i>allassiez</i></p>
 			<p><i>allassent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>va</i></p>
 			<p><i>allons</i></p>
 			<p><i>allez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>allant</i></p>
 		</participe-présent>
@@ -12543,16 +12543,16 @@
 			<p><i>allée</i></p>
 			<p><i>allées</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="app:aroir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>aroir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12585,8 +12585,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12595,8 +12595,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12613,15 +12613,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p></p>
 		</participe-présent>
@@ -12631,16 +12631,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="cha:loir">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>loir</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12673,8 +12673,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12683,8 +12683,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12701,15 +12701,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p></p>
 		</participe-présent>
@@ -12719,16 +12719,16 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="o:uïr">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>uïr</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p><i>is</i></p>
 			<p><i>is</i></p>
@@ -12761,8 +12761,8 @@
 			<p><i>uïtes</i></p>
 			<p><i>uïrent</i></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p><i>irais</i><i>uïrais</i><i>rrais</i></p>
 			<p><i>irais</i><i>uïrais</i><i>rrais</i></p>
@@ -12771,8 +12771,8 @@
 			<p><i>iriez</i><i>uïriez</i><i>rriez</i></p>
 			<p><i>iraient</i><i>uïraient</i><i>rraient</i></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p><i>ie</i></p>
 			<p><i>ies</i></p>
@@ -12789,15 +12789,15 @@
 			<p><i>uïssiez</i></p>
 			<p><i>uïssent</i></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p><i>is</i></p>
 			<p><i>yons</i></p>
 			<p><i>yez</i></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>yant</i></p>
 		</participe-présent>
@@ -12807,16 +12807,16 @@
 			<p><i>uïe</i></p>
 			<p><i>uïes</i></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 <template name="brumass:er">
-	<infinitif>
+	<Infinitif>
 		<infinitif-présent>
 			<p><i>er</i></p>
 		</infinitif-présent>
-	</infinitif>
-	<indicatif>
+	</Infinitif>
+	<Indicatif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12849,8 +12849,8 @@
 			<p></p>
 			<p></p>
 		</passé-simple>
-	</indicatif>
-	<conditionnel>
+	</Indicatif>
+	<Conditionnel>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12859,8 +12859,8 @@
 			<p></p>
 			<p></p>
 		</présent>
-	</conditionnel>
-	<subjonctif>
+	</Conditionnel>
+	<Subjonctif>
 		<présent>
 			<p></p>
 			<p></p>
@@ -12877,15 +12877,15 @@
 			<p></p>
 			<p></p>
 		</imparfait>
-	</subjonctif>
-	<imperatif>
+	</Subjonctif>
+	<Imperatif>
 		<imperatif-présent>
 			<p></p>
 			<p></p>
 			<p></p>
 		</imperatif-présent>
-	</imperatif>
-	<participe>
+	</Imperatif>
+	<Participe>
 		<participe-présent>
 			<p><i>ant</i></p>
 		</participe-présent>
@@ -12895,7 +12895,7 @@
 			<p></p>
 			<p></p>
 		</participe-passé>
-	</participe>
+	</Participe>
 </template>
 
 </conjugation-fr>
