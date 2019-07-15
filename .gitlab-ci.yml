@@ -28,7 +28,7 @@ test:
     - pytest --cov=./verbecc/
   artifacts:
     paths:
-      .coverage
+      - .coverage
 
 run:
   script:
