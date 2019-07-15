@@ -7,14 +7,15 @@ from verbecc.string_utils import (
 )
 
 def test_starts_with_vowel():
-    assert starts_with_vowel(u"aller")
-    assert not starts_with_vowel(u"banane")
-    assert starts_with_vowel(u"éparpiller")
-    assert not starts_with_vowel(u"yodler")
+    assert starts_with_vowel('aller')
+    assert not starts_with_vowel('banane')
+    assert starts_with_vowel('éparpiller')
+    assert not starts_with_vowel('yodler')
+    assert not starts_with_vowel('')
 
 def test_strip_accents():
-    assert strip_accents(u"français, être, égalité, très") \
-        == u"francais, etre, egalite, tres"
+    assert strip_accents('français, être, égalité, très') \
+        == 'francais, etre, egalite, tres'
 
 def test_unicodefix():
-    assert unicodefix("éparpiller") == u'éparpiller'
+    assert unicodefix('éparpiller') == 'éparpiller'

@@ -2,9 +2,9 @@
 
 import pytest
 
-from verbecc import inflector_pt
+from verbecc import Conjugator
 
-inf = inflector_pt.InflectorPt()
+cg = Conjugator(lang='pt')
 
 test_es_conjugate_mood_tense_data = [
     ('ter', 'indicativo', 'presente',
@@ -50,7 +50,7 @@ test_es_conjugate_mood_tense_data = [
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
                          test_es_conjugate_mood_tense_data)
 def test_inflector_pt_conjugate_mood_tense(infinitive, mood, tense, expected_result):
-    assert inf.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+    assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
 
 test_inflector_pt_get_default_pronoun_data = [
     ('1s', 'm', False, 'eu'),
@@ -74,4 +74,4 @@ test_inflector_pt_get_default_pronoun_data = [
 @pytest.mark.parametrize("person,gender,is_reflexive,expected_result",
                          test_inflector_pt_get_default_pronoun_data)
 def test_inflector_pt_get_default_pronoun(person, gender, is_reflexive, expected_result):
-    inf._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result
+    cg._inflector._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result

@@ -8,6 +8,16 @@ from verbecc import config
 
 cg = conjugator.Conjugator(lang='fr')
 
+def test_get_verbs_list():
+    verbs_list = cg.get_verbs_list()
+    assert len(verbs_list) > 7000
+    assert 'parler' in verbs_list
+
+def test_get_templates_list():
+    templates_list = cg.get_templates_list()
+    assert len(templates_list) >= 146
+    assert 'aim:er' in templates_list
+
 test_verbs = [
     (u"manger"), 
     (u"venir"), 

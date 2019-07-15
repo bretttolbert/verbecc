@@ -3,10 +3,10 @@
 import pytest
 from lxml import etree
 
-from verbecc import inflector_es
+from verbecc import Conjugator
 from verbecc.tense_template import TenseTemplate
 
-inf = inflector_es.InflectorEs()
+cg = Conjugator(lang='es')
 
 # presente = Subjunctive Present (yo haya)
 # pretérito-perfecto = Subjunctive Perfect (yo haya habido)
@@ -79,15 +79,15 @@ test_es_conjugate_mood_tense_data = [
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
                          test_es_conjugate_mood_tense_data)
 def test_inflector_es_conjugate_mood_tense(infinitive, mood, tense, expected_result):
-    assert inf.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+    assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
 
 def test_inflector_es_get_conj_obs():
-    co = inf._get_conj_obs('abañar')
+    co = cg._inflector._get_conj_obs('abañar')
     assert co.verb.infinitive == "abañar"
     assert co.verb_stem == "abañ"
 
 def test_inflector_es_get_verb_stem():
-    verb_stem = inf._get_verb_stem(u"abañar", u"cort:ar")
+    verb_stem = cg._inflector._get_verb_stem(u"abañar", u"cort:ar")
     assert verb_stem == u"abañ", repr(conj_obs)
 
 def test_inflector_es_conjugate_simple_mood_tense():
@@ -103,7 +103,7 @@ def test_inflector_es_conjugate_simple_mood_tense():
         </presente>""")
     tense_name = 'présent'
     tense_template = TenseTemplate(tense_elem)
-    out = inf._conjugate_simple_mood_tense(verb_stem, 'indicativo', tense_template)
+    out = cg._inflector._conjugate_simple_mood_tense(verb_stem, 'indicativo', tense_template)
     assert len(out) == 6
     assert out == ['yo abaño', 'tú abañas', 'él abaña', 'nosotros abañamos', 'vosotros abañáis', 'ellos abañan']
 
@@ -130,4 +130,4 @@ test_inflector_es_get_default_pronoun_data = [
 @pytest.mark.parametrize("person,gender,is_reflexive,expected_result",
                          test_inflector_es_get_default_pronoun_data)
 def test_inflector_es_get_default_pronoun(person, gender, is_reflexive, expected_result):
-    inf._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result
+    cg._inflector._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result
