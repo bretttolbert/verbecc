@@ -26,6 +26,9 @@ test:
     - pip install -r requirements.txt
     - pip install -e .
     - pytest --cov=./verbecc/
+  artifacts:
+    paths:
+      .coverage
 
 run:
   script:
