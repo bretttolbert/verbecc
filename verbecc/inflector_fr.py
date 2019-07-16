@@ -138,6 +138,12 @@ class InflectorFr(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participe-passé'
 
+    def _add_present_participle_if_applicable(self, s, is_reflexive, tense_name):
+        ret = s
+        if is_reflexive and tense_name == self._get_participle_tense_name():
+            ret += 'étant '
+        return ret
+
     def _get_compound_conjugations_hv_map(self):
         return {
             'indicatif': {

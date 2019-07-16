@@ -153,6 +153,9 @@ class Inflector(ABC):
     def _get_participle_tense_name(self):
         return 'past-participle'
 
+    def _add_present_participle_if_applicable(self, s, is_reflexive, tense_name):
+        return s
+
     def _get_alternate_hv_inflection(self, s):
         return s
 
@@ -184,9 +187,7 @@ class Inflector(ABC):
         ret = []
         if tense_template.name in self._get_tenses_conjugated_without_pronouns():
             for person_ending in tense_template.person_endings:
-                conj = ''
-                if self.lang == 'fr' and is_reflexive and tense_template.name == 'participe-passé':
-                    conj += 'étant '
+                conj = self._add_present_participle_if_applicable('', is_reflexive, tense_template.name)
                 conj += verb_stem + person_ending.get_ending()
                 if is_reflexive:
                     if self.lang == 'fr' and mood_name != 'imperatif':
