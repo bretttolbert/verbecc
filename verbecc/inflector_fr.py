@@ -135,6 +135,9 @@ class InflectorFr(inflector.Inflector):
     def _is_helping_verb_inflected(self, helping_verb):
         return helping_verb == 'être'
 
+    def _get_imperative_mood_name(self):
+        return 'imperatif'
+
     def _get_subjunctive_mood_name(self):
         return 'subjonctif'
 
@@ -161,14 +164,14 @@ class InflectorFr(inflector.Inflector):
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, person):
         if is_reflexive:
-            if mood_name != 'imperatif':
+            if mood_name != self._get_imperative_mood_name():
                 s = self._prepend_with_se(s)
             else:
                 s += self._get_pronoun_suffix(person)
         return s
 
     def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, hv_tense_name):
-        return (is_reflexive and mood_name == 'imperatif' 
+        return (is_reflexive and mood_name == self._get_imperative_mood_name() 
             and hv_tense_name == 'imperatif-présent')
 
     def _get_compound_conjugations_hv_map(self):

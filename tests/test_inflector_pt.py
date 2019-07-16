@@ -44,7 +44,11 @@ test_es_conjugate_mood_tense_data = [
     ('ter', 'infinitivo', 'infinitivo-pessoal-presente',
         ['ter', 'teres', 'ter', 'termos', 'terdes', 'terem']),
     ('ter', 'infinitivo', 'infinitivo-pessoal-composto',
-        ['ter tido', 'teres tido', 'ter tido', 'termos tido', 'terdes tido', 'terem tido'])
+        ['ter tido', 'teres tido', 'ter tido', 'termos tido', 'terdes tido', 'terem tido']),
+    ('ter', 'imperativo', 'afirmativo',
+        ['-', 'tem tu', 'tenha você', 'tenhamos nós', 'tende vós', 'tenham vocês']),
+    ('ter', 'imperativo', 'negativo',
+        ['-', 'não tenhas tu', 'não tenha você', 'não tenhamos nós', 'não tenhais vós', 'não tenham vocês'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

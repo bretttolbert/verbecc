@@ -138,6 +138,9 @@ class Inflector(ABC):
     def _is_helping_verb_inflected(self, helping_verb):
         return False
 
+    def _get_imperative_mood_name(self):
+        return 'imperative'
+
     def _get_subjunctive_mood_name(self):
         return 'subjunctive'
 
@@ -182,12 +185,19 @@ class Inflector(ABC):
     def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
                                      tense_template, is_reflexive=False):
         ret = []
-        if tense_template.name in self._get_tenses_conjugated_without_pronouns():
+        tense_name = tense_template.name
+        if tense_name in self._get_tenses_conjugated_without_pronouns():
             for person_ending in tense_template.person_endings:
-                s = self._add_present_participle_if_applicable('', is_reflexive, tense_template.name)
-                s += verb_stem + person_ending.get_ending()
-                s = self._add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-                    s, is_reflexive, mood_name, person_ending.get_person())
+                s = self._add_present_participle_if_applicable('', is_reflexive, tense_name)
+                ending = person_ending.get_ending()
+                if ending != '-':
+                    s += verb_stem
+                s += ending
+                if ending != '-':
+                    s = self._add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
+                        s, is_reflexive, mood_name, person_ending.get_person())
+                if ending != '-' and mood_name == self._get_imperative_mood_name():
+                    s = self._add_imperative_adverb_if_applicable(s, tense_name)
                 ret.append(s)
         else:
             for person_ending in tense_template.person_endings:
@@ -196,9 +206,15 @@ class Inflector(ABC):
                 ending = person_ending.get_ending()
                 s = self._combine_pronoun_and_conj(pronoun, verb_stem + ending)
                 if mood_name == self._get_subjunctive_mood_name():
-                    s = self._add_subjunctive_relative_pronoun(s, tense_template.name)
+                    s = self._add_subjunctive_relative_pronoun(s, tense_name)
                 ret.append(s)
         return ret
+
+    def _get_pronoun_suffix(self, person, gender='m'):
+        return ' ' + self._get_default_pronoun(person, gender)
+
+    def _add_imperative_adverb_if_applicable(self, s, tense_name):
+        return s
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, person):
         if is_reflexive:

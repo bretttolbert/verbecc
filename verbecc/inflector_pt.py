@@ -16,6 +16,16 @@ class InflectorPt(inflector.Inflector):
             return 'quando ' + s
         return s
 
+    def _add_imperative_adverb_if_applicable(self, s, tense_name):
+        if tense_name == 'negativo':
+            return 'não ' + s
+        return s
+
+    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, person):
+        if mood_name == self._get_imperative_mood_name():
+            s += ' ' + self._get_pronoun_suffix(person)
+        return s
+
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         ret = ''
         if person == '1s':
@@ -48,13 +58,32 @@ class InflectorPt(inflector.Inflector):
                 ret += ' se'
         return ret
 
+    def _get_pronoun_suffix(self, person, gender='m'):
+        ret = ''
+        if person == '2s':
+            ret = 'tu'
+        elif person == '3s':
+            ret = 'você'
+        elif person == '1p':
+            ret = 'nós'
+        elif person == '2p':
+            ret = 'vós'
+        elif person == '3p':
+            ret = 'vocês'
+        return ret
+
     def _get_tenses_conjugated_without_pronouns(self):
         return ['particípio', 
-                'infinitivo', 'infinitivo-pessoal-presente', 'infinitivo-pessoal-composto',
-                'afirmativo', 'negativo', 'gerúndio']
+                'infinitivo', 
+                'infinitivo-pessoal-presente', 'infinitivo-pessoal-composto',
+                'afirmativo', 'negativo', 
+                'gerúndio']
 
     def _get_helping_verb(self, infinitive):
         return 'ter'
+
+    def _get_imperative_mood_name(self):
+        return 'imperativo'
 
     def _get_subjunctive_mood_name(self):
         return 'subjuntivo'
