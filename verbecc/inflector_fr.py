@@ -80,6 +80,12 @@ class InflectorFr(inflector.Inflector):
         else:
             return "que " + s
 
+    def _prepend_with_se(self, s):
+        if string_utils.starts_with_vowel(s):
+            return "s'" + s
+        else:
+            return "se " + s
+
     def _get_pronoun_suffix(self, person, gender='m'):
         return '-' + self._get_default_pronoun(person, gender).replace('tu', 'toi')
 
@@ -137,6 +143,15 @@ class InflectorFr(inflector.Inflector):
 
     def _get_participle_tense_name(self):
         return 'participe-passé'
+
+    def _combine_pronoun_and_conj(self, pronoun, conj):
+        ret = ''
+        if pronoun[-1] == "e" and string_utils.starts_with_vowel(conj):
+            ret += pronoun[:-1] + "'"
+        else:
+            ret += pronoun + " "
+        ret += conj
+        return ret
 
     def _add_present_participle_if_applicable(self, s, is_reflexive, tense_name):
         ret = s

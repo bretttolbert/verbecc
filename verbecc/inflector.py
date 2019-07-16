@@ -73,12 +73,6 @@ class Inflector(ABC):
     def _add_subjunctive_relative_pronoun(self, s, tense_name):
         return s
 
-    def _prepend_with_se(self, s):
-        if string_utils.starts_with_vowel(s):
-            return "s'" + s
-        else:
-            return "se " + s
-
     class ConjugationObjects:
         def __init__(self, infinitive, verb, template, verb_stem, is_reflexive):
             self.infinitive = infinitive
@@ -182,6 +176,9 @@ class Inflector(ABC):
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         return ''
 
+    def _combine_pronoun_and_conj(self, pronoun, conj):
+        return pronoun + " " + conj
+
     def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 
                                      tense_template, is_reflexive=False):
         ret = []
@@ -197,15 +194,7 @@ class Inflector(ABC):
                 pronoun = self._get_default_pronoun(
                     person_ending.get_person(), is_reflexive=is_reflexive)
                 ending = person_ending.get_ending()
-
-                s = ''
-                conjugated_verb = verb_stem + ending
-                if self.lang == 'fr' and pronoun[-1] == "e" and string_utils.starts_with_vowel(conjugated_verb):
-                    s += pronoun[:-1] + "'"
-                else:
-                    s += pronoun + " "
-                s += conjugated_verb
-
+                s = self._combine_pronoun_and_conj(pronoun, verb_stem + ending)
                 if mood_name == self._get_subjunctive_mood_name():
                     s = self._add_subjunctive_relative_pronoun(s, tense_template.name)
                 ret.append(s)
