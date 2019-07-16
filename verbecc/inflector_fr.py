@@ -144,6 +144,14 @@ class InflectorFr(inflector.Inflector):
             ret += 'étant '
         return ret
 
+    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, person):
+        if is_reflexive:
+            if mood_name != 'imperatif':
+                s = self._prepend_with_se(s)
+            else:
+                s += self._get_pronoun_suffix(person)
+        return s
+
     def _get_compound_conjugations_hv_map(self):
         return {
             'indicatif': {

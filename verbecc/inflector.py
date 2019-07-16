@@ -187,32 +187,34 @@ class Inflector(ABC):
         ret = []
         if tense_template.name in self._get_tenses_conjugated_without_pronouns():
             for person_ending in tense_template.person_endings:
-                conj = self._add_present_participle_if_applicable('', is_reflexive, tense_template.name)
-                conj += verb_stem + person_ending.get_ending()
-                if is_reflexive:
-                    if self.lang == 'fr' and mood_name != 'imperatif':
-                        conj = self._prepend_with_se(conj)
-                    else:
-                        conj += self._get_pronoun_suffix(person_ending.get_person())
-                ret.append(conj)
+                s = self._add_present_participle_if_applicable('', is_reflexive, tense_template.name)
+                s += verb_stem + person_ending.get_ending()
+                s = self._add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
+                    s, is_reflexive, mood_name, person_ending.get_person())
+                ret.append(s)
         else:
             for person_ending in tense_template.person_endings:
                 pronoun = self._get_default_pronoun(
                     person_ending.get_person(), is_reflexive=is_reflexive)
                 ending = person_ending.get_ending()
 
-                conjugation = ''
+                s = ''
                 conjugated_verb = verb_stem + ending
                 if self.lang == 'fr' and pronoun[-1] == "e" and string_utils.starts_with_vowel(conjugated_verb):
-                    conjugation += pronoun[:-1] + "'"
+                    s += pronoun[:-1] + "'"
                 else:
-                    conjugation += pronoun + " "
-                conjugation += conjugated_verb
+                    s += pronoun + " "
+                s += conjugated_verb
 
                 if mood_name == self._get_subjunctive_mood_name():
-                    conjugation = self._add_subjunctive_relative_pronoun(conjugation, tense_template.name)
-                ret.append(conjugation)
+                    s = self._add_subjunctive_relative_pronoun(s, tense_template.name)
+                ret.append(s)
         return ret
+
+    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, person):
+        if is_reflexive:
+            s += self._get_pronoun_suffix(person)
+        return s
 
     def _conjugate_compound(self, co, mood_name, tense_name, hv_tense_name):
         """Conjugate a compound tense
