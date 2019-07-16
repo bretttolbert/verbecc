@@ -167,6 +167,10 @@ class InflectorFr(inflector.Inflector):
                 s += self._get_pronoun_suffix(person)
         return s
 
+    def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, hv_tense_name):
+        return (is_reflexive and mood_name == 'imperatif' 
+            and hv_tense_name == 'imperatif-présent')
+
     def _get_compound_conjugations_hv_map(self):
         return {
             'indicatif': {

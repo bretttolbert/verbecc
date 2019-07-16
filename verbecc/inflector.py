@@ -205,6 +205,9 @@ class Inflector(ABC):
             s += self._get_pronoun_suffix(person)
         return s
 
+    def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, hv_tense_name):
+        return False
+
     def _conjugate_compound(self, co, mood_name, tense_name, hv_tense_name):
         """Conjugate a compound tense
         Args:
@@ -213,8 +216,7 @@ class Inflector(ABC):
             hv_tense_name: tense_name for conjugating helping verb
         """
         ret = []
-        if (co.is_reflexive and mood_name == 'imperatif' 
-            and hv_tense_name == 'imperatif-présent'):
+        if self._compound_conjugation_not_applicable(co.is_reflexive, mood_name, hv_tense_name):
             return ret
         persons = [pe.person for pe in 
             co.template.moods[mood_name].tenses[hv_tense_name].person_endings]
