@@ -73,7 +73,11 @@ test_es_conjugate_mood_tense_data = [
     ('comer', 'subjuntivo', 'pretérito-pluscuamperfecto-2',
         ['yo hubiese comido', 'tú hubieses comido', 'él hubiese comido', 'nosotros hubiésemos comido', 'vosotros hubieseis comido', 'ellos hubiesen comido']),
     ('comer', 'subjuntivo', 'futuro-perfecto',
-        ['yo hubiere comido', 'tú hubieres comido', 'él hubiere comido', 'nosotros hubiéremos comido', 'vosotros hubiereis comido', 'ellos hubieren comido'])
+        ['yo hubiere comido', 'tú hubieres comido', 'él hubiere comido', 'nosotros hubiéremos comido', 'vosotros hubiereis comido', 'ellos hubieren comido']),
+    ('comer', 'imperativo', 'afirmativo',
+        ['come', 'coma', 'comamos', 'comed', 'coman']),
+    ('comer', 'imperativo', 'negativo',
+        ['no comas', 'no coma', 'no comamos', 'no comáis', 'no coman'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

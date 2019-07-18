@@ -7,6 +7,11 @@ class InflectorEs(inflector.Inflector):
         self.lang = 'es'
         super(InflectorEs, self).__init__()
 
+    def _add_imperative_adverb_if_applicable(self, s, tense_name):
+        if tense_name == 'negativo':
+            return 'no ' + s
+        return s
+
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         ret = ''
         if person == '1s':
@@ -44,6 +49,9 @@ class InflectorEs(inflector.Inflector):
 
     def _get_helping_verb(self, infinitive):
         return 'haber'
+
+    def _get_imperative_mood_name(self):
+        return 'imperativo'
 
     def _get_participle_mood_name(self):
         return 'participo'
