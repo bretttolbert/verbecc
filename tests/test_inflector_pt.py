@@ -42,7 +42,7 @@ test_es_conjugate_mood_tense_data = [
     ('ter', 'condicional', 'futuro-do-pretérito-composto',
         ['eu teria tido', 'tu terias tido', 'ele teria tido', 'nós teríamos tido', 'vós teríeis tido', 'eles teriam tido']),
     ('ter', 'infinitivo', 'infinitivo-pessoal-presente',
-        ['ter', 'teres', 'ter', 'termos', 'terdes', 'terem']),
+        ['por ter eu', 'por teres tu', 'por ter ele', 'por termos nós', 'por terdes vós', 'por terem eles']),
     ('ter', 'infinitivo', 'infinitivo-pessoal-composto',
         ['ter tido', 'teres tido', 'ter tido', 'termos tido', 'terdes tido', 'terem tido']),
     ('ter', 'imperativo', 'afirmativo',

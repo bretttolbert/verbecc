@@ -16,14 +16,18 @@ class InflectorPt(inflector.Inflector):
             return 'quando ' + s
         return s
 
-    def _add_imperative_adverb_if_applicable(self, s, tense_name):
-        if tense_name == 'negativo':
+    def _add_adverb_if_applicable(self, s, mood_name, tense_name):
+        if mood_name == 'imperativo' and tense_name == 'negativo':
             return 'não ' + s
+        elif mood_name == 'infinitivo' and tense_name == 'infinitivo-pessoal-presente':
+            return 'por ' + s
         return s
 
-    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, person):
-        if mood_name == self._get_imperative_mood_name():
-            s += ' ' + self._get_pronoun_suffix(person)
+    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, tense_name, person):
+        imperative = (mood_name == 'imperativo')
+        if imperative \
+        or (mood_name == 'infinitivo' and tense_name == 'infinitivo-pessoal-presente'):
+            s += ' ' + self._get_pronoun_suffix(person, imperative=imperative)
         return s
 
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
@@ -58,18 +62,24 @@ class InflectorPt(inflector.Inflector):
                 ret += ' se'
         return ret
 
-    def _get_pronoun_suffix(self, person, gender='m'):
+    def _get_pronoun_suffix(self, person, gender='m', imperative=True):
         ret = ''
+        if person == '1s':
+            ret = 'eu'
         if person == '2s':
             ret = 'tu'
         elif person == '3s':
             ret = 'você'
+            if not imperative:
+                ret = 'ele'
         elif person == '1p':
             ret = 'nós'
         elif person == '2p':
             ret = 'vós'
         elif person == '3p':
             ret = 'vocês'
+            if not imperative:
+                ret = 'eles'
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
@@ -81,9 +91,6 @@ class InflectorPt(inflector.Inflector):
 
     def _get_helping_verb(self, infinitive):
         return 'ter'
-
-    def _get_imperative_mood_name(self):
-        return 'imperativo'
 
     def _get_subjunctive_mood_name(self):
         return 'subjuntivo'
