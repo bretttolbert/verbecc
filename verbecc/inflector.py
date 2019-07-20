@@ -70,6 +70,9 @@ class Inflector(ABC):
     def _split_reflexive(self, infinitive):
         return (False, infinitive)
 
+    def _add_reflexive_pronoun(self, s):
+        pass
+
     def _add_subjunctive_relative_pronoun(self, s, tense_name):
         return s
 

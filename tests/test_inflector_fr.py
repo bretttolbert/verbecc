@@ -14,9 +14,9 @@ def test_add_subjunctive_relative_prounoun():
     assert inf._add_subjunctive_relative_pronoun('il mange', '') == 'qu\'il mange'
     assert inf._add_subjunctive_relative_pronoun('elles mangent', '') == 'qu\'elles mangent'
 
-def test_prepend_with_se():
-    assert inf._prepend_with_se('lever') == 'se lever'
-    assert inf._prepend_with_se('écrouler') == 's\'écrouler'
+def test_add_reflexive_pronoun():
+    assert inf._add_reflexive_pronoun('lever') == 'se lever'
+    assert inf._add_reflexive_pronoun('écrouler') == 's\'écrouler'
 
 def test_split_reflexive():
     assert inf._split_reflexive('se lever') == (True, 'lever')

@@ -3,12 +3,14 @@
 from . import (
     inflector_fr,
     inflector_es,
+    inflector_it,
     inflector_pt)
 
 
 SUPPORTED_LANGUAGES = {
     'fr': 'français',
     'es': 'español',
+    'it': 'italiano',
     'pt': 'português'
 }
 
@@ -21,6 +23,8 @@ class Conjugator:
             self._inflector = inflector_fr.InflectorFr()
         elif lang == 'es':
             self._inflector = inflector_es.InflectorEs()
+        elif lang == 'it':
+            self._inflector = inflector_it.InflectorIt()
         elif lang == 'pt':
             self._inflector = inflector_pt.InflectorPt()
         else:

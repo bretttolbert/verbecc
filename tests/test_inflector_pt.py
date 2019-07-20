@@ -6,7 +6,7 @@ from verbecc import Conjugator
 
 cg = Conjugator(lang='pt')
 
-test_es_conjugate_mood_tense_data = [
+test_pt_conjugate_mood_tense_data = [
     ('ter', 'indicativo', 'presente',
         ['eu tenho', 'tu tens', 'ele tem', 'nós temos', 'vós tendes', 'eles têm']),
     ('ter', 'indicativo', 'pretérito-perfeito',
@@ -52,7 +52,7 @@ test_es_conjugate_mood_tense_data = [
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
-                         test_es_conjugate_mood_tense_data)
+                         test_pt_conjugate_mood_tense_data)
 def test_inflector_pt_conjugate_mood_tense(infinitive, mood, tense, expected_result):
     assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
 

@@ -47,7 +47,7 @@ class InflectorFr(inflector.Inflector):
         is_reflexive, query = self._split_reflexive(query)
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         if is_reflexive:
-            matches = [self._prepend_with_se(m) 
+            matches = [self._add_reflexive_pronoun(m) 
             for m in matches if self._verb_can_be_reflexive(m)]
         return matches
 
@@ -74,17 +74,17 @@ class InflectorFr(inflector.Inflector):
             infinitive = infinitive[2:]
         return is_reflexive, infinitive
 
+    def _add_reflexive_pronoun(self, s):
+        if string_utils.starts_with_vowel(s):
+            return "s'" + s
+        else:
+            return "se " + s
+
     def _add_subjunctive_relative_pronoun(self, s, tense_name):
         if string_utils.starts_with_vowel(s):
             return "qu'" + s
         else:
             return "que " + s
-
-    def _prepend_with_se(self, s):
-        if string_utils.starts_with_vowel(s):
-            return "s'" + s
-        else:
-            return "se " + s
 
     def _get_pronoun_suffix(self, person, gender='m'):
         return '-' + self._get_default_pronoun(person, gender).replace('tu', 'toi')
@@ -162,7 +162,7 @@ class InflectorFr(inflector.Inflector):
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, tense_name, person):
         if is_reflexive:
             if mood_name != 'imperatif':
-                s = self._prepend_with_se(s)
+                s = self._add_reflexive_pronoun(s)
             else:
                 s += self._get_pronoun_suffix(person)
         return s

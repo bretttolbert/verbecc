@@ -9,14 +9,20 @@ This script was used to remove unwanted tense elements
 """
 
 working_dir = '../verbecc/data'
-in_file = "conjugations-pt.xml"
-out_file = "conjugations-pt.mod.xml"
-tenses_to_remove = ['Infinitivo-Pessoal-Pretérito']
+in_file = "conjugations-it.xml"
+out_file = "conjugations-it.mod.xml"
+tenses_to_remove = ['Indicativo-passato-prossimo',
+'Indicativo-trapassato-prossimo',
+'Indicativo-trapassato-remoto',
+'Indicativo-futuro-anteriore',
+'Congiuntivo-passato',
+'Congiuntivo-trapassato',
+'Condizionale-passato']
 
 def remove_mood_tense():
     removed_elem_cnt = 0
     tenses = set()
-    parser = etree.XMLParser(dtd_validation=True, encoding='utf-8')
+    parser = etree.XMLParser(dtd_validation=False, encoding='utf-8')
     tree = etree.parse(os.path.join(working_dir, in_file), parser)
     root = tree.getroot()
     for template_elem in root:
