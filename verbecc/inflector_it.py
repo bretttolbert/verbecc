@@ -64,10 +64,10 @@ class InflectorIt(inflector.Inflector):
         return 'avere'
 
     def _get_subjunctive_mood_name(self):
-        return 'Congiuntivo'
+        return 'congiuntivo'
 
     def _get_participle_mood_name(self):
-        return 'Participio'
+        return 'participio'
 
     def _get_participle_tense_name(self):
         return 'Participio-Participio'
