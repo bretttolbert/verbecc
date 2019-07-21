@@ -22,7 +22,7 @@ requirements = [
 setup(
     name='verbecc',
     version=__version__,
-    description='Complete Conjugation of any Verb in French, Spanish and Portuguese, powered by Machine Learning',
+    description='Verbs Conjugated Completely in French, Spanish, Portuguese and Italian using Machine Learning',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author=__author__,
@@ -34,13 +34,13 @@ setup(
     install_requires=requirements,
     license=__license__,
     zip_safe=False,
-    keywords='french spanish portuguese'
-             ' français español português'
-             ' conjugate conjuguer conjugado' 
+    keywords='french italian spanish portuguese'
+             ' français italiano español português'
+             ' conjugate coniugare conjuguer conjugado' 
              ' conjugator conjugueur conjugador'
-             ' conjugation conjugaison conjugación conjugação'
-             ' verbs verbes verbos'
-             ' ML machine-learning apprentissage-automatique aprendizaje-automático aprendizado-máquina'
+             ' conjugation coniugazione conjugaison conjugación conjugação'
+             ' verbs verbi verbes verbos'
+             ' ML machine-learning apprentissage-automatique apprendimento-automatico aprendizaje-automático aprendizado-máquina'
              ' NLP linguistics linguistique linguistica sklearn',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -55,6 +55,7 @@ setup(
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Natural Language :: French',
+        'Natural Language :: Italian',
         'Natural Language :: Spanish',
         'Natural Language :: Portuguese',
         'Operating System :: OS Independent',
@@ -64,6 +65,7 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8'
     ],
     tests_require=requirements,
     test_suite="tests",
