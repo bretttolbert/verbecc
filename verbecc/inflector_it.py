@@ -57,8 +57,8 @@ class InflectorIt(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Imperativo-Affermativo', 'Imperativo-Non', 
-                'Infinito--Gerundio', 'Participio-Participio']
+        return ['affermativo', 'negativo', 'Negativo', 
+                'gerundio', 'participio']
 
     def _get_helping_verb(self, infinitive):
         return 'avere'
@@ -70,21 +70,21 @@ class InflectorIt(inflector.Inflector):
         return 'participio'
 
     def _get_participle_tense_name(self):
-        return 'Participio-Participio'
+        return 'participio'
 
     def _get_compound_conjugations_hv_map(self):
         return {
             'indicativo': {
-                'Indicativo-passato-prossimo': 'Indicativo-presente',
-                'Indicativo-trapassato-prossimo': 'Indicativo-imperfetto',
-                'Indicativo-trapassato-remoto': 'Indicativo-passato-remoto',
-                'Indicativo-futuro-anteriore': 'Indicativo-futuro-semplice'
+                'passato-prossimo': 'presente',
+                'trapassato-prossimo': 'imperfetto',
+                'trapassato-remoto': 'passato-remoto',
+                'futuro-anteriore': 'futuro'
             },
             'congiuntivo': {
-                'Congiuntivo-passato': 'Congiuntivo-presente',
-                'Congiuntivo-trapassato': 'Congiuntivo-imperfetto'
+                'passato': 'presente',
+                'trapassato': 'imperfetto'
             },
             'condizionale': {
-                'Condizionale-passato': 'Condizionale-presente'
+                'passato': 'presente'
             }
         }

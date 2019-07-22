@@ -7,8 +7,14 @@ from verbecc import Conjugator
 cg = Conjugator(lang='it')
 
 test_it_conjugate_mood_tense_data = [
-    ('avere', 'indicativo', 'Indicativo-presente',
-        ['io ho', 'tu hai', 'lui ha', 'noi abbiamo', 'voi avete', 'loro hanno'])
+    ('avere', 'indicativo', 'presente',
+        ['io ho', 'tu hai', 'lui ha', 'noi abbiamo', 'voi avete', 'loro hanno']),
+    ('avere', 'indicativo', 'imperfetto',
+        ['io avevo', 'tu avevi', 'lui aveva', 'noi avevamo', 'voi avevate', 'loro avevano']),
+    ('avere', 'indicativo', 'passato-remoto',
+        ['io ebbi', 'tu avesti', 'lui ebbe', 'noi avemmo', 'voi aveste', 'loro ebbero']),
+    ('avere', 'indicativo', 'futuro',
+        ['io avrò', 'tu avrai', 'lui avrà', 'noi avremo', 'voi avrete', 'loro avranno'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
