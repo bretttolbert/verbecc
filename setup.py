@@ -22,7 +22,7 @@ requirements = [
 setup(
     name='verbecc',
     version=__version__,
-    description='Verbs Conjugated Completely in French, Spanish, Portuguese and Italian using Machine Learning',
+    description='Verbs Completely Conjugated: verb conjugations for French, Spanish, Portuguese and Italian, enhanced by machine learning',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author=__author__,

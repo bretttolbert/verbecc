@@ -3,13 +3,15 @@
 
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines) [![Code Coverage](https://codecov.io/gl/bretttolbert/verbecc/branch/master/graph/badge.svg)](https://codecov.io/gl/bretttolbert/verbecc)
 
-#### Verbs, completely conjugated - verb conjugator for French, Spanish and Portuguese
+#### Verbs Completely Conjugated: verb conjugations for French, Spanish, Portuguese and Italian, enhanced by machine learning
 
-#### Verbes, complètement conjugués - conjugaison des verbes français, espagnol et portugais
+#### Conjugaison complète des verbes: conjugaisons des verbes français, espagnol, portugais et italien, à l'aide de l'apprentissage automatique
 
-#### Verbos, completamente conjugados - conjugador de verbos francés, español y portugúes
+#### Verbi Completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese e italiano, migliorate dall'apprendimento automatico
 
-#### Verbos, completamente conjugados - conjugação de verbos francês, espanhol e português
+#### Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués e italiano, mejoradas por aprendizaje automático
+
+#### Verbos Completamente Conjugados - conjugações verbais para francês, espanhol, português e italiano, aprimoradas pelo aprendizado de máquina
 
 https://github.com/bretttolbert/verbecc
 
