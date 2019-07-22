@@ -3,20 +3,20 @@
 
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines) [![Code Coverage](https://codecov.io/gl/bretttolbert/verbecc/branch/master/graph/badge.svg)](https://codecov.io/gl/bretttolbert/verbecc)
 
-#### Verbs Completely Conjugated: verb conjugations for French, Spanish, Portuguese and Italian, enhanced by machine learning
+#### Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese and Italian, enhanced by machine learning
 
-#### Conjugaison complète des verbes: conjugaisons des verbes français, espagnol, portugais et italien, à l'aide de l'apprentissage automatique
+#### Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais et italien, à l'aide de l'apprentissage automatique
 
-#### Verbi Completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese e italiano, migliorate dall'apprendimento automatico
+#### Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese e italiano, migliorate dall'apprendimento automatico
 
 #### Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués e italiano, mejoradas por aprendizaje automático
 
-#### Verbos Completamente Conjugados - conjugações verbais para francês, espanhol, português e italiano, aprimoradas pelo aprendizado de máquina
+#### Verbos completamente conjugados: conjugações verbais para francês, espanhol, português e italiano, aprimoradas pelo aprendizado de máquina
 
 https://github.com/bretttolbert/verbecc
 
 #### Features
-* Conjugate verbs in French, Spanish and Portuguese
+* Conjugate verbs in French, Spanish, Portuguese and Italian
 * Uses machine learning techniques to predict conjugation of unknown verbs with 99% accurracy
 * Includes both simple and compound conjugations
 * pip installable
