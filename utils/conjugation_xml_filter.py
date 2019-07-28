@@ -55,7 +55,7 @@ def main():
     root = tree.getroot()
     
     #remove_mood_tense(root, [''])
-    move_tense(root, 'Mai-mult-ca-perfect', 'Mai', 'Indicativ', True)
+    move_tense(root, 'Viitor-II-popular', 'Viitor', 'Indicativ', True)
 
     with open(os.path.join(working_dir, out_file), 'wb') as f:
         objectify.deannotate(root, cleanup_namespaces=True)
