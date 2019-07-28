@@ -7,7 +7,7 @@ from verbecc import Conjugator
 cg = Conjugator(lang='ro')
 
 test_ro_conjugate_mood_tense_data = [
-    ('avea', 'prezent', 'Prezent-Prezent',
+    ('avea', 'indicativ', 'Prezent-Prezent',
         ['eu am', 'tu ai', 'el a', 'noi am', 'voi aţi', 'ei au'])
 ]
 
