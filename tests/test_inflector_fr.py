@@ -105,13 +105,13 @@ test_inflector_fr_get_default_pronoun_data = [
     ('1p', 'm', True, 'nous nous'),
     ('2p', 'm', False, 'vous'),
     ('2p', 'm', True, 'vous vous'),
-    ('3s', 'm', False, 'ils'),
-    ('3s', 'm', True, 'ils se'),
-    ('3s', 'f', False, 'elles'),
-    ('3s', 'f', True, 'elles se')
+    ('3p', 'm', False, 'ils'),
+    ('3p', 'm', True, 'ils se'),
+    ('3p', 'f', False, 'elles'),
+    ('3p', 'f', True, 'elles se')
 ]
 
 @pytest.mark.parametrize("person,gender,is_reflexive,expected_result",
                          test_inflector_fr_get_default_pronoun_data)
 def test_inflector_fr_get_default_pronoun(person, gender, is_reflexive, expected_result):
-    inf._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result
+    assert inf._get_default_pronoun(person, gender, is_reflexive=is_reflexive) == expected_result

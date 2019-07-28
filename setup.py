@@ -22,7 +22,7 @@ requirements = [
 setup(
     name='verbecc',
     version=__version__,
-    description='Verbs Completely Conjugated: verb conjugations for French, Spanish, Portuguese and Italian, enhanced by machine learning',
+    description='Verbs Completely Conjugated: machine learning conjugator for French, Spanish, Portuguese, Italian and Romanian',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author=__author__,
@@ -34,14 +34,14 @@ setup(
     install_requires=requirements,
     license=__license__,
     zip_safe=False,
-    keywords='french italian spanish portuguese'
-             ' français italiano español português'
+    keywords='french italian spanish portuguese romanian'
+             ' français italiano español português română'
              ' conjugate coniugare conjuguer conjugado' 
              ' conjugator conjugueur conjugador'
              ' conjugation coniugazione conjugaison conjugación conjugação'
              ' verbs verbi verbes verbos'
-             ' ML machine-learning apprentissage-automatique apprendimento-automatico aprendizaje-automático aprendizado-máquina'
-             ' NLP linguistics linguistique linguistica sklearn',
+             ' ML machine-learning apprentissage-automatique apprendimento-automatico aprendizaje-automático aprendizado-máquina învățarea-mașinilor'
+             ' NLP linguistics linguistique linguistica lingvistică sklearn',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Topic :: Software Development :: Libraries :: Python Modules',
@@ -58,6 +58,7 @@ setup(
         'Natural Language :: Italian',
         'Natural Language :: Spanish',
         'Natural Language :: Portuguese',
+        'Natural Language :: Romanian',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',

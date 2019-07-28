@@ -3,20 +3,22 @@
 
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/pipelines) [![Code Coverage](https://codecov.io/gl/bretttolbert/verbecc/branch/master/graph/badge.svg)](https://codecov.io/gl/bretttolbert/verbecc)
 
-#### Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese and Italian, enhanced by machine learning
+#### Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian and Romanian, enhanced by machine learning
 
-#### Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais et italien, à l'aide de l'apprentissage automatique
+#### Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais, italien et roumain, à l'aide de l'apprentissage automatique
 
-#### Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese e italiano, migliorate dall'apprendimento automatico
+#### Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, italiano e rumeno, migliorate dall'apprendimento automatico
 
-#### Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués e italiano, mejoradas por aprendizaje automático
+#### Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués, italiano y rumano, mejoradas por aprendizaje automático
 
-#### Verbos completamente conjugados: conjugações verbais para francês, espanhol, português e italiano, aprimoradas pelo aprendizado de máquina
+#### Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano e romeno, aprimoradas pelo aprendizado de máquina
+
+#### Verbe complet conjugate: conjugări de verbe franceză, spaniolă, portugheză, italiană și română, utilizând învățarea prin mașină
 
 https://github.com/bretttolbert/verbecc
 
 #### Features
-* Conjugate verbs in French, Spanish, Portuguese and Italian
+* Conjugate verbs in French, Spanish, Portuguese, Italian and Romanian
 * Uses machine learning techniques to predict conjugation of unknown verbs with 99% accurracy
 * Includes both simple and compound conjugations
 * pip installable
@@ -25,7 +27,7 @@ https://github.com/bretttolbert/verbecc
 * Dependencies: scikit-learn, lxml
 
 #### Credits
-Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/). French verb conjugation template XML files derived from [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html). Spanish verb conjugation XML files and machine-learning conjugation template prediction for unknown verbs dervied from [mlconjug](https://github.com/SekouD/mlconjug).
+Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/). French verb conjugation template XML files derived from [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html). Conjugation XML files for other languages and machine-learning conjugation template prediction for unknown verbs dervied from [mlconjug](https://github.com/SekouD/mlconjug).
 
 
 ## verbecc-svc

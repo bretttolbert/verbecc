@@ -12,39 +12,40 @@ class InflectorRo(inflector.Inflector):
             return 'nu ' + s
         return s
 
-    """There are two types of reflexive verbs in Romanian: 
-    preceded by the reflexive pronouns “se” (in the accusative) and “și” (in the dative)."""
+    """TODO: There are two types of reflexive verbs in Romanian: 
+    preceded by the reflexive pronouns “se” (in the accusative) and “și” (in the dative).
+    """
 
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         ret = ''
         if person == '1s':
             ret = 'eu'
             if is_reflexive:
-                ret = 'mă'
+                ret += ' mă'
         elif person == '2s':
             ret = 'tu'
             if is_reflexive:
-                ret = 'te'
+                ret += ' te'
         elif person == '3s':
             ret = 'el'
             if gender == 'f':
                 ret = 'ea'
             if is_reflexive:
-                ret = 'se'
+                ret += ' se'
         elif person == '1p':
             ret = 'noi'
             if is_reflexive:
-                ret = 'ne'
+                ret += ' ne'
         elif person == '2p':
             ret = 'voi'
             if is_reflexive:
-                ret = 'vă'
+                ret += ' vă'
         elif person == '3p':
             ret = 'ei'
             if gender == 'f':
                 ret = 'ele'
             if is_reflexive:
-                ret = 'se'
+                ret += ' se'
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):

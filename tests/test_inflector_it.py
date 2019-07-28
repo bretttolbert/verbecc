@@ -28,7 +28,7 @@ def test_inflector_it_conjugate():
 def test_inflector_it_add_subjunctive_relative_pronoun():
     assert cg._inflector._add_subjunctive_relative_pronoun('io abbia', '') == 'che io abbia'
 
-test_inflector_pt_get_default_pronoun_data = [
+test_inflector_it_get_default_pronoun_data = [
     ('1s', 'm', False, 'io'),
     ('1s', 'm', True, 'mi'),
     ('2s', 'm', False, 'tu'),
@@ -41,13 +41,13 @@ test_inflector_pt_get_default_pronoun_data = [
     ('1p', 'm', True, 'ci'),
     ('2p', 'm', False, 'voi'),
     ('2p', 'm', True, 'vi'),
-    ('3s', 'm', False, 'loro'),
-    ('3s', 'm', True, 'si'),
-    ('3s', 'f', False, 'loro'),
-    ('3s', 'f', True, 'si')
+    ('3p', 'm', False, 'loro'),
+    ('3p', 'm', True, 'si'),
+    ('3p', 'f', False, 'loro'),
+    ('3p', 'f', True, 'si')
 ]
 
 @pytest.mark.parametrize("person,gender,is_reflexive,expected_result",
-                         test_inflector_pt_get_default_pronoun_data)
-def test_inflector_pt_get_default_pronoun(person, gender, is_reflexive, expected_result):
-    cg._inflector._get_default_pronoun(person, is_reflexive=is_reflexive) == expected_result
+                         test_inflector_it_get_default_pronoun_data)
+def test_inflector_it_get_default_pronoun(person, gender, is_reflexive, expected_result):
+    assert cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive) == expected_result
