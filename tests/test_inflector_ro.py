@@ -8,7 +8,11 @@ cg = Conjugator(lang='ro')
 
 test_ro_conjugate_mood_tense_data = [
     ('avea', 'indicativ', 'Prezent-Prezent',
-        ['eu am', 'tu ai', 'el a', 'noi am', 'voi aţi', 'ei au'])
+        ['eu am', 'tu ai', 'el a', 'noi am', 'voi aţi', 'ei au']),
+    ('face', 'indicativ', 'Prezent-Prezent',
+        ['eu fac', 'tu faci', 'el face', 'noi facem', 'voi faceţi', 'ei fac']),
+    ('face', 'indicativ', 'Perfect-compus',
+        ['eu am făcut', 'tu ai făcut', 'el a făcut', 'noi am făcut', 'voi aţi făcut', 'ei au făcut']),
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

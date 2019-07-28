@@ -49,7 +49,7 @@ class InflectorRo(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Participiu', 
+        return ['Participiu-Participiu', 
                 'Infinitiv-Afirmativ', 
                 'Imperativ-Imperativ', 'Imperativ-Negativ', 
                 'Gerunziu-Gerunziu']
@@ -64,20 +64,11 @@ class InflectorRo(inflector.Inflector):
         return 'participiu'
 
     def _get_participle_tense_name(self):
-        return 'Participiu'
+        return 'Participiu-Participiu'
 
     def _get_compound_conjugations_hv_map(self):
         return {
-            'indicativo': {
-
-            },
-            'conjunctiv': {
-
-            },
-            'conditional': {
-
-            },
-            'infinitiv': {
-
+            'indicativ': {
+                'Perfect-compus': 'Prezent-Prezent'
             }
         }
