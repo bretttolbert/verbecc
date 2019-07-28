@@ -30,17 +30,15 @@
 <!DOCTYPE conjugation-ro [
 <!ELEMENT conjugation-ro (template)+>
 <!ATTLIST conjugation-ro xmlns CDATA #FIXED "">
-<!ELEMENT template (Indicativ , Conjunctiv , Infinitiv , (Mai , Viitor , Conditional , Imperativ , Gerunziu , Participiu)?)>
+<!ELEMENT template (Indicativ , Conjunctiv , Infinitiv , (Viitor , Conditional , Imperativ , Gerunziu , Participiu)?)>
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicativ (Prezent-Prezent , Imperfect-Imperfect , Perfect-simplu)>
+<!ELEMENT Indicativ (Prezent-Prezent , Imperfect-Imperfect , Perfect-simplu , Mai-mult-ca-perfect?)>
 <!ATTLIST Indicativ xmlns CDATA #FIXED "">
 <!ELEMENT Conjunctiv (Conjunctiv-prezent , Conjunctiv-perfect?)>
 <!ATTLIST Conjunctiv xmlns CDATA #FIXED "">
 <!ELEMENT Infinitiv (Infinitiv-Afirmativ)>
 <!ATTLIST Infinitiv xmlns CDATA #FIXED "">
-<!ELEMENT Mai (Mai-mult-ca-perfect)>
-<!ATTLIST Mai xmlns CDATA #FIXED "">
 <!ELEMENT Viitor (Viitor-I , Viitor-I-popular , Viitor-II , Viitor-II-popular)>
 <!ATTLIST Viitor xmlns CDATA #FIXED "">
 <!ELEMENT Conditional (Conditional-prezent , Conditional-perfect)>
@@ -63,8 +61,6 @@
 <!ATTLIST Infinitiv-Afirmativ xmlns CDATA #FIXED "">
 <!ELEMENT Perfect-simplu (p)+>
 <!ATTLIST Perfect-simplu xmlns CDATA #FIXED "">
-<!ELEMENT Perfect-compus (p)+>
-<!ATTLIST Perfect-compus xmlns CDATA #FIXED "">
 <!ELEMENT Mai-mult-ca-perfect (p)+>
 <!ATTLIST Mai-mult-ca-perfect xmlns CDATA #FIXED "">
 <!ELEMENT Viitor-I (p)+>
@@ -164,6 +160,14 @@
 			<p><i>ăurăţi</i></p>
 			<p><i>ăură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăusem</i></p>
+			<p><i>ăuseși</i></p>
+			<p><i>ăuse</i></p>
+			<p><i>ăuserăm</i></p>
+			<p><i>ăuserăţi</i></p>
+			<p><i>ăuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -188,16 +192,6 @@
 			<p><i>ea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăusem</i></p>
-			<p><i>ăuseși</i></p>
-			<p><i>ăuse</i></p>
-			<p><i>ăuserăm</i></p>
-			<p><i>ăuserăţi</i></p>
-			<p><i>ăuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ea</i></p>
@@ -298,6 +292,14 @@
 			<p><i>rurăţi</i></p>
 			<p><i>rură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rusem</i></p>
+			<p><i>ruseși</i></p>
+			<p><i>ruse</i></p>
+			<p><i>ruserăm</i></p>
+			<p><i>ruserăţi</i></p>
+			<p><i>ruseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -322,16 +324,6 @@
 			<p><i>re</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rusem</i></p>
-			<p><i>ruseși</i></p>
-			<p><i>ruse</i></p>
-			<p><i>ruserăm</i></p>
-			<p><i>ruserăţi</i></p>
-			<p><i>ruseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>re</i></p>
@@ -432,6 +424,14 @@
 			<p><i>ădurăţi</i></p>
 			<p><i>ădură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ădusem</i></p>
+			<p><i>ăduseși</i></p>
+			<p><i>ăduse</i></p>
+			<p><i>ăduserăm</i></p>
+			<p><i>ăduserăţi</i></p>
+			<p><i>ăduseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -456,16 +456,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ădusem</i></p>
-			<p><i>ăduseși</i></p>
-			<p><i>ăduse</i></p>
-			<p><i>ăduserăm</i></p>
-			<p><i>ăduserăţi</i></p>
-			<p><i>ăduseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -566,6 +556,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -590,16 +588,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -700,6 +688,14 @@
 			<p><i>rmirăţi</i></p>
 			<p><i>rmiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rmisem</i></p>
+			<p><i>rmiseși</i></p>
+			<p><i>rmise</i></p>
+			<p><i>rmiserăm</i></p>
+			<p><i>rmiserăţi</i></p>
+			<p><i>rmiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -724,16 +720,6 @@
 			<p><i>rmi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rmisem</i></p>
-			<p><i>rmiseși</i></p>
-			<p><i>rmise</i></p>
-			<p><i>rmiserăm</i></p>
-			<p><i>rmiserăţi</i></p>
-			<p><i>rmiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rmi</i></p>
@@ -834,6 +820,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -858,16 +852,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -968,6 +952,14 @@
 			<p><i>furăţi</i></p>
 			<p><i>fură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>fusesem</i></p>
+			<p><i>fuseseși</i></p>
+			<p><i>fusese</i></p>
+			<p><i>fuseserăm</i></p>
+			<p><i>fuseserăţi</i></p>
+			<p><i>fuseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -992,16 +984,6 @@
 			<p><i>fi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>fusesem</i></p>
-			<p><i>fuseseși</i></p>
-			<p><i>fusese</i></p>
-			<p><i>fuseserăm</i></p>
-			<p><i>fuseserăţi</i></p>
-			<p><i>fuseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>fi</i></p>
@@ -1102,6 +1084,14 @@
 			<p><i>răţi</i></p>
 			<p><i>ră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sem</i></p>
+			<p><i>seși</i></p>
+			<p><i>se</i></p>
+			<p><i>serăm</i></p>
+			<p><i>serăţi</i></p>
+			<p><i>seră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -1126,16 +1116,6 @@
 			<p><i/></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sem</i></p>
-			<p><i>seși</i></p>
-			<p><i>se</i></p>
-			<p><i>serăm</i></p>
-			<p><i>serăţi</i></p>
-			<p><i>seră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i/></p>
@@ -1236,6 +1216,14 @@
 			<p><i>luarăţi</i></p>
 			<p><i>luară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>luasem</i></p>
+			<p><i>luaseși</i></p>
+			<p><i>luase</i></p>
+			<p><i>luaserăm</i></p>
+			<p><i>luaserăţi</i></p>
+			<p><i>luaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -1260,16 +1248,6 @@
 			<p><i>lua</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>luasem</i></p>
-			<p><i>luaseși</i></p>
-			<p><i>luase</i></p>
-			<p><i>luaserăm</i></p>
-			<p><i>luaserăţi</i></p>
-			<p><i>luaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>lua</i></p>
@@ -1370,6 +1348,14 @@
 			<p><i>âncarăţi</i></p>
 			<p><i>âncară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>âncasem</i></p>
+			<p><i>âncaseși</i></p>
+			<p><i>âncase</i></p>
+			<p><i>âncaserăm</i></p>
+			<p><i>âncaserăţi</i></p>
+			<p><i>âncaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -1394,16 +1380,6 @@
 			<p><i>ânca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>âncasem</i></p>
-			<p><i>âncaseși</i></p>
-			<p><i>âncase</i></p>
-			<p><i>âncaserăm</i></p>
-			<p><i>âncaserăţi</i></p>
-			<p><i>âncaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ânca</i></p>
@@ -1504,6 +1480,14 @@
 			<p><i>ărurăţi</i></p>
 			<p><i>ărură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărusem</i></p>
+			<p><i>ăruseși</i></p>
+			<p><i>ăruse</i></p>
+			<p><i>ăruserăm</i></p>
+			<p><i>ăruserăţi</i></p>
+			<p><i>ăruseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -1528,16 +1512,6 @@
 			<p><i>ărea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărusem</i></p>
-			<p><i>ăruseși</i></p>
-			<p><i>ăruse</i></p>
-			<p><i>ăruserăm</i></p>
-			<p><i>ăruserăţi</i></p>
-			<p><i>ăruseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ărea</i></p>
@@ -1638,6 +1612,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -1662,16 +1644,6 @@
 			<p><i>ne</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ne</i></p>
@@ -1772,6 +1744,14 @@
 			<p><i>uturăţi</i></p>
 			<p><i>utură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>utusem</i></p>
+			<p><i>utuseși</i></p>
+			<p><i>utuse</i></p>
+			<p><i>utuserăm</i></p>
+			<p><i>utuserăţi</i></p>
+			<p><i>utuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -1796,16 +1776,6 @@
 			<p><i>utea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>utusem</i></p>
-			<p><i>utuseși</i></p>
-			<p><i>utuse</i></p>
-			<p><i>utuserăm</i></p>
-			<p><i>utuserăţi</i></p>
-			<p><i>utuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>utea</i></p>
@@ -1906,6 +1876,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -1930,16 +1908,6 @@
 			<p><i>e</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>e</i></p>
@@ -2040,6 +2008,14 @@
 			<p><i>ălarăţi</i></p>
 			<p><i>ălară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ălasem</i></p>
+			<p><i>ălaseși</i></p>
+			<p><i>ălase</i></p>
+			<p><i>ălaserăm</i></p>
+			<p><i>ălaserăţi</i></p>
+			<p><i>ălaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -2064,16 +2040,6 @@
 			<p><i>ăla</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ălasem</i></p>
-			<p><i>ălaseși</i></p>
-			<p><i>ălase</i></p>
-			<p><i>ălaserăm</i></p>
-			<p><i>ălaserăţi</i></p>
-			<p><i>ălaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăla</i></p>
@@ -2174,6 +2140,14 @@
 			<p><i>ăturăţi</i></p>
 			<p><i>ătură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătusem</i></p>
+			<p><i>ătuseși</i></p>
+			<p><i>ătuse</i></p>
+			<p><i>ătuserăm</i></p>
+			<p><i>ătuserăţi</i></p>
+			<p><i>ătuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -2198,16 +2172,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătusem</i></p>
-			<p><i>ătuseși</i></p>
-			<p><i>ătuse</i></p>
-			<p><i>ătuserăm</i></p>
-			<p><i>ătuserăţi</i></p>
-			<p><i>ătuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -2308,6 +2272,14 @@
 			<p><i>urăţi</i></p>
 			<p><i>ură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>usem</i></p>
+			<p><i>useși</i></p>
+			<p><i>use</i></p>
+			<p><i>userăm</i></p>
+			<p><i>userăţi</i></p>
+			<p><i>useră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -2332,16 +2304,6 @@
 			<p><i>e</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>usem</i></p>
-			<p><i>useși</i></p>
-			<p><i>use</i></p>
-			<p><i>userăm</i></p>
-			<p><i>userăţi</i></p>
-			<p><i>useră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>e</i></p>
@@ -2442,6 +2404,14 @@
 			<p><i>carăţi</i></p>
 			<p><i>cară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>casem</i></p>
+			<p><i>caseși</i></p>
+			<p><i>case</i></p>
+			<p><i>caserăm</i></p>
+			<p><i>caserăţi</i></p>
+			<p><i>caseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -2466,16 +2436,6 @@
 			<p><i>ca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>casem</i></p>
-			<p><i>caseși</i></p>
-			<p><i>case</i></p>
-			<p><i>caserăm</i></p>
-			<p><i>caserăţi</i></p>
-			<p><i>caseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ca</i></p>
@@ -2576,6 +2536,14 @@
 			<p><i>ârăţi</i></p>
 			<p><i>âră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>âsem</i></p>
+			<p><i>âseși</i></p>
+			<p><i>âse</i></p>
+			<p><i>âserăm</i></p>
+			<p><i>âserăţi</i></p>
+			<p><i>âseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -2600,16 +2568,6 @@
 			<p><i>î</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>âsem</i></p>
-			<p><i>âseși</i></p>
-			<p><i>âse</i></p>
-			<p><i>âserăm</i></p>
-			<p><i>âserăţi</i></p>
-			<p><i>âseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>î</i></p>
@@ -2710,6 +2668,14 @@
 			<p><i>ăzurăţi</i></p>
 			<p><i>ăzură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăzusem</i></p>
+			<p><i>ăzuseși</i></p>
+			<p><i>ăzuse</i></p>
+			<p><i>ăzuserăm</i></p>
+			<p><i>ăzuserăţi</i></p>
+			<p><i>ăzuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -2734,16 +2700,6 @@
 			<p><i>edea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăzusem</i></p>
-			<p><i>ăzuseși</i></p>
-			<p><i>ăzuse</i></p>
-			<p><i>ăzuserăm</i></p>
-			<p><i>ăzuserăţi</i></p>
-			<p><i>ăzuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>edea</i></p>
@@ -2844,6 +2800,14 @@
 			<p><i>enirăţi</i></p>
 			<p><i>eniră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>enisem</i></p>
+			<p><i>eniseși</i></p>
+			<p><i>enise</i></p>
+			<p><i>eniserăm</i></p>
+			<p><i>eniserăţi</i></p>
+			<p><i>eniseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -2868,16 +2832,6 @@
 			<p><i>eni</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>enisem</i></p>
-			<p><i>eniseși</i></p>
-			<p><i>enise</i></p>
-			<p><i>eniserăm</i></p>
-			<p><i>eniserăţi</i></p>
-			<p><i>eniseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eni</i></p>
@@ -2978,6 +2932,14 @@
 			<p><i>enirăţi</i></p>
 			<p><i>eniră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>enisem</i></p>
+			<p><i>eniseși</i></p>
+			<p><i>enise</i></p>
+			<p><i>eniserăm</i></p>
+			<p><i>eniserăţi</i></p>
+			<p><i>eniseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3002,16 +2964,6 @@
 			<p><i>vrea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>enisem</i></p>
-			<p><i>eniseși</i></p>
-			<p><i>enise</i></p>
-			<p><i>eniserăm</i></p>
-			<p><i>eniserăţi</i></p>
-			<p><i>eniseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eni</i></p>
@@ -3112,6 +3064,14 @@
 			<p><i>ăturăţi</i></p>
 			<p><i>ătură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătusem</i></p>
+			<p><i>ătuseși</i></p>
+			<p><i>ătuse</i></p>
+			<p><i>ătuserăm</i></p>
+			<p><i>ătuserăţi</i></p>
+			<p><i>ătuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3136,16 +3096,6 @@
 			<p><i>ate</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătusem</i></p>
-			<p><i>ătuseși</i></p>
-			<p><i>ătuse</i></p>
-			<p><i>ătuserăm</i></p>
-			<p><i>ătuserăţi</i></p>
-			<p><i>ătuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ate</i></p>
@@ -3246,6 +3196,14 @@
 			<p><i>durăţi</i></p>
 			<p><i>dură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dusem</i></p>
+			<p><i>duseși</i></p>
+			<p><i>duse</i></p>
+			<p><i>duserăm</i></p>
+			<p><i>duserăţi</i></p>
+			<p><i>duseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3270,16 +3228,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dusem</i></p>
-			<p><i>duseși</i></p>
-			<p><i>duse</i></p>
-			<p><i>duserăm</i></p>
-			<p><i>duserăţi</i></p>
-			<p><i>duseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -3380,6 +3328,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3404,16 +3360,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -3514,6 +3460,14 @@
 			<p><i>curăţi</i></p>
 			<p><i>cură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>cusem</i></p>
+			<p><i>cuseși</i></p>
+			<p><i>cuse</i></p>
+			<p><i>cuserăm</i></p>
+			<p><i>cuserăţi</i></p>
+			<p><i>cuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3538,16 +3492,6 @@
 			<p><i>ce</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>cusem</i></p>
-			<p><i>cuseși</i></p>
-			<p><i>cuse</i></p>
-			<p><i>cuserăm</i></p>
-			<p><i>cuserăţi</i></p>
-			<p><i>cuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ce</i></p>
@@ -3648,6 +3592,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ase</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3672,16 +3624,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -3782,6 +3724,14 @@
 			<p><i>garăţi</i></p>
 			<p><i>gară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>gasem</i></p>
+			<p><i>gaseși</i></p>
+			<p><i>gase</i></p>
+			<p><i>gaserăm</i></p>
+			<p><i>gaserăţi</i></p>
+			<p><i>gaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3806,16 +3756,6 @@
 			<p><i>ga</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>gasem</i></p>
-			<p><i>gaseși</i></p>
-			<p><i>gase</i></p>
-			<p><i>gaserăm</i></p>
-			<p><i>gaserăţi</i></p>
-			<p><i>gaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ga</i></p>
@@ -3916,6 +3856,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -3940,16 +3888,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -4050,6 +3988,14 @@
 			<p><i>rbirăţi</i></p>
 			<p><i>rbiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rbisem</i></p>
+			<p><i>rbiseși</i></p>
+			<p><i>rbise</i></p>
+			<p><i>rbiserăm</i></p>
+			<p><i>rbiserăţi</i></p>
+			<p><i>rbiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -4074,16 +4020,6 @@
 			<p><i>rbi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rbisem</i></p>
-			<p><i>rbiseși</i></p>
-			<p><i>rbise</i></p>
-			<p><i>rbiserăm</i></p>
-			<p><i>rbiserăţi</i></p>
-			<p><i>rbiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rbi</i></p>
@@ -4184,6 +4120,14 @@
 			<p><i>ăserăţi</i></p>
 			<p><i>ăseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăsesem</i></p>
+			<p><i>ăseseși</i></p>
+			<p><i>ăsese</i></p>
+			<p><i>ăseserăm</i></p>
+			<p><i>ăseserăţi</i></p>
+			<p><i>ăseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -4208,16 +4152,6 @@
 			<p><i>age</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăsesem</i></p>
-			<p><i>ăseseși</i></p>
-			<p><i>ăsese</i></p>
-			<p><i>ăseserăm</i></p>
-			<p><i>ăseserăţi</i></p>
-			<p><i>ăseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>age</i></p>
@@ -4318,6 +4252,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ase</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -4342,16 +4284,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -4452,6 +4384,14 @@
 			<p><i>curăţi</i></p>
 			<p><i>cură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>cusem</i></p>
+			<p><i>cuseși</i></p>
+			<p><i>cuse</i></p>
+			<p><i>cuserăm</i></p>
+			<p><i>cuserăţi</i></p>
+			<p><i>cuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -4476,16 +4416,6 @@
 			<p><i>ce</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>cusem</i></p>
-			<p><i>cuseși</i></p>
-			<p><i>cuse</i></p>
-			<p><i>cuserăm</i></p>
-			<p><i>cuserăţi</i></p>
-			<p><i>cuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ce</i></p>
@@ -4586,6 +4516,14 @@
 			<p><i>ăţarăţi</i></p>
 			<p><i>ăţară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăţasem</i></p>
+			<p><i>ăţaseși</i></p>
+			<p><i>ăţase</i></p>
+			<p><i>ăţaserăm</i></p>
+			<p><i>ăţaserăţi</i></p>
+			<p><i>ăţaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -4610,16 +4548,6 @@
 			<p><i>ăţa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăţasem</i></p>
-			<p><i>ăţaseși</i></p>
-			<p><i>ăţase</i></p>
-			<p><i>ăţaserăm</i></p>
-			<p><i>ăţaserăţi</i></p>
-			<p><i>ăţaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăţa</i></p>
@@ -4720,6 +4648,14 @@
 			<p><i>ăţărarăţi</i></p>
 			<p><i>ăţărară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăţărasem</i></p>
+			<p><i>ăţăraseși</i></p>
+			<p><i>ăţărase</i></p>
+			<p><i>ăţăraserăm</i></p>
+			<p><i>ăţăraserăţi</i></p>
+			<p><i>ăţăraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -4744,16 +4680,6 @@
 			<p><i>ăţăra</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăţărasem</i></p>
-			<p><i>ăţăraseși</i></p>
-			<p><i>ăţărase</i></p>
-			<p><i>ăţăraserăm</i></p>
-			<p><i>ăţăraserăţi</i></p>
-			<p><i>ăţăraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăţăra</i></p>
@@ -4854,6 +4780,14 @@
 			<p><i>tarăţi</i></p>
 			<p><i>tară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>tasem</i></p>
+			<p><i>taseși</i></p>
+			<p><i>tase</i></p>
+			<p><i>taserăm</i></p>
+			<p><i>taserăţi</i></p>
+			<p><i>taseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -4878,16 +4812,6 @@
 			<p><i>ta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>tasem</i></p>
-			<p><i>taseși</i></p>
-			<p><i>tase</i></p>
-			<p><i>taserăm</i></p>
-			<p><i>taserăţi</i></p>
-			<p><i>taseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ta</i></p>
@@ -4988,6 +4912,14 @@
 			<p><i>erirăţi</i></p>
 			<p><i>eriră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>erisem</i></p>
+			<p><i>eriseși</i></p>
+			<p><i>erise</i></p>
+			<p><i>eriserăm</i></p>
+			<p><i>eriserăţi</i></p>
+			<p><i>eriseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5012,16 +4944,6 @@
 			<p><i>eri</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>erisem</i></p>
-			<p><i>eriseși</i></p>
-			<p><i>erise</i></p>
-			<p><i>eriserăm</i></p>
-			<p><i>eriserăţi</i></p>
-			<p><i>eriseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eri</i></p>
@@ -5122,6 +5044,14 @@
 			<p><i>darăţi</i></p>
 			<p><i>dară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dasem</i></p>
+			<p><i>daseși</i></p>
+			<p><i>dase</i></p>
+			<p><i>daserăm</i></p>
+			<p><i>daserăţi</i></p>
+			<p><i>daseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5146,16 +5076,6 @@
 			<p><i>da</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dasem</i></p>
-			<p><i>daseși</i></p>
-			<p><i>dase</i></p>
-			<p><i>daserăm</i></p>
-			<p><i>daserăţi</i></p>
-			<p><i>daseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>da</i></p>
@@ -5256,6 +5176,14 @@
 			<p><i>ăugarăţi</i></p>
 			<p><i>ăugară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăugasem</i></p>
+			<p><i>ăugaseși</i></p>
+			<p><i>ăugase</i></p>
+			<p><i>ăugaserăm</i></p>
+			<p><i>ăugaserăţi</i></p>
+			<p><i>ăugaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5280,16 +5208,6 @@
 			<p><i>ăuga</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăugasem</i></p>
-			<p><i>ăugaseși</i></p>
-			<p><i>ăugase</i></p>
-			<p><i>ăugaserăm</i></p>
-			<p><i>ăugaserăţi</i></p>
-			<p><i>ăugaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăuga</i></p>
@@ -5390,6 +5308,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5414,16 +5340,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -5524,6 +5440,14 @@
 			<p><i>turăţi</i></p>
 			<p><i>tură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>tusem</i></p>
+			<p><i>tuseși</i></p>
+			<p><i>tuse</i></p>
+			<p><i>tuserăm</i></p>
+			<p><i>tuserăţi</i></p>
+			<p><i>tuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5548,16 +5472,6 @@
 			<p><i>te</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>tusem</i></p>
-			<p><i>tuseși</i></p>
-			<p><i>tuse</i></p>
-			<p><i>tuserăm</i></p>
-			<p><i>tuserăţi</i></p>
-			<p><i>tuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>te</i></p>
@@ -5658,6 +5572,14 @@
 			<p><i>curăţi</i></p>
 			<p><i>cură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>cusem</i></p>
+			<p><i>cuseși</i></p>
+			<p><i>cuse</i></p>
+			<p><i>cuserăm</i></p>
+			<p><i>cuserăţi</i></p>
+			<p><i>cuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5682,16 +5604,6 @@
 			<p><i>ce</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>cusem</i></p>
-			<p><i>cuseși</i></p>
-			<p><i>cuse</i></p>
-			<p><i>cuserăm</i></p>
-			<p><i>cuserăţi</i></p>
-			<p><i>cuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ce</i></p>
@@ -5792,6 +5704,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5816,16 +5736,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -5926,6 +5836,14 @@
 			<p><i>eptarăţi</i></p>
 			<p><i>eptară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>eptasem</i></p>
+			<p><i>eptaseși</i></p>
+			<p><i>eptase</i></p>
+			<p><i>eptaserăm</i></p>
+			<p><i>eptaserăţi</i></p>
+			<p><i>eptaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -5950,16 +5868,6 @@
 			<p><i>epta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>eptasem</i></p>
-			<p><i>eptaseși</i></p>
-			<p><i>eptase</i></p>
-			<p><i>eptaserăm</i></p>
-			<p><i>eptaserăţi</i></p>
-			<p><i>eptaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>epta</i></p>
@@ -6060,6 +5968,14 @@
 			<p><i>gurăţi</i></p>
 			<p><i>gură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>gusem</i></p>
+			<p><i>guseși</i></p>
+			<p><i>guse</i></p>
+			<p><i>guserăm</i></p>
+			<p><i>guserăţi</i></p>
+			<p><i>guseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -6084,16 +6000,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>gusem</i></p>
-			<p><i>guseși</i></p>
-			<p><i>guse</i></p>
-			<p><i>guserăm</i></p>
-			<p><i>guserăţi</i></p>
-			<p><i>guseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ge</i></p>
@@ -6194,6 +6100,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -6218,16 +6132,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -6328,6 +6232,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ise</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -6352,16 +6264,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ise</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -6462,6 +6364,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ise</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -6486,16 +6396,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ise</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -6596,6 +6496,14 @@
 			<p><i>gurăţi</i></p>
 			<p><i>gură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>gusem</i></p>
+			<p><i>guseși</i></p>
+			<p><i>guse</i></p>
+			<p><i>guserăm</i></p>
+			<p><i>guserăţi</i></p>
+			<p><i>guseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -6620,16 +6528,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>gusem</i></p>
-			<p><i>guseși</i></p>
-			<p><i>guse</i></p>
-			<p><i>guserăm</i></p>
-			<p><i>guserăţi</i></p>
-			<p><i>guseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ge</i></p>
@@ -6730,6 +6628,14 @@
 			<p><i>rgarăţi</i></p>
 			<p><i>rgară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rgasem</i></p>
+			<p><i>rgaseși</i></p>
+			<p><i>rgase</i></p>
+			<p><i>rgaserăm</i></p>
+			<p><i>rgaserăţi</i></p>
+			<p><i>rgaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -6754,16 +6660,6 @@
 			<p><i>rga</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rgasem</i></p>
-			<p><i>rgaseși</i></p>
-			<p><i>rgase</i></p>
-			<p><i>rgaserăm</i></p>
-			<p><i>rgaserăţi</i></p>
-			<p><i>rgaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rga</i></p>
@@ -6864,6 +6760,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -6888,16 +6792,6 @@
 			<p><i>ne</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ne</i></p>
@@ -6998,6 +6892,14 @@
 			<p><i>ărarăţi</i></p>
 			<p><i>ărară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărasem</i></p>
+			<p><i>ăraseși</i></p>
+			<p><i>ărase</i></p>
+			<p><i>ăraserăm</i></p>
+			<p><i>ăraserăţi</i></p>
+			<p><i>ăraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7022,16 +6924,6 @@
 			<p><i>ăra</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărasem</i></p>
-			<p><i>ăraseși</i></p>
-			<p><i>ărase</i></p>
-			<p><i>ăraserăm</i></p>
-			<p><i>ăraserăţi</i></p>
-			<p><i>ăraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăra</i></p>
@@ -7132,6 +7024,14 @@
 			<p><i>ăsarăţi</i></p>
 			<p><i>ăsară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăsasem</i></p>
+			<p><i>ăsaseși</i></p>
+			<p><i>ăsase</i></p>
+			<p><i>ăsaserăm</i></p>
+			<p><i>ăsaserăţi</i></p>
+			<p><i>ăsaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7156,16 +7056,6 @@
 			<p><i>ăsa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăsasem</i></p>
-			<p><i>ăsaseși</i></p>
-			<p><i>ăsase</i></p>
-			<p><i>ăsaserăm</i></p>
-			<p><i>ăsaserăţi</i></p>
-			<p><i>ăsaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăsa</i></p>
@@ -7266,6 +7156,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7290,16 +7188,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -7400,6 +7288,14 @@
 			<p><i>ătarăţi</i></p>
 			<p><i>ătară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătasem</i></p>
+			<p><i>ătaseși</i></p>
+			<p><i>ătase</i></p>
+			<p><i>ătaserăm</i></p>
+			<p><i>ătaserăţi</i></p>
+			<p><i>ătaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7424,16 +7320,6 @@
 			<p><i>ăta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătasem</i></p>
-			<p><i>ătaseși</i></p>
-			<p><i>ătase</i></p>
-			<p><i>ătaserăm</i></p>
-			<p><i>ătaserăţi</i></p>
-			<p><i>ătaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăta</i></p>
@@ -7534,6 +7420,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7558,16 +7452,6 @@
 			<p><i>rde</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rde</i></p>
@@ -7668,6 +7552,14 @@
 			<p><i>ţirăţi</i></p>
 			<p><i>ţiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ţisem</i></p>
+			<p><i>ţiseși</i></p>
+			<p><i>ţise</i></p>
+			<p><i>ţiserăm</i></p>
+			<p><i>ţiserăţi</i></p>
+			<p><i>ţiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7692,16 +7584,6 @@
 			<p><i>ţi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ţisem</i></p>
-			<p><i>ţiseși</i></p>
-			<p><i>ţise</i></p>
-			<p><i>ţiserăm</i></p>
-			<p><i>ţiserăţi</i></p>
-			<p><i>ţiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ţi</i></p>
@@ -7802,6 +7684,14 @@
 			<p><i>ezarăţi</i></p>
 			<p><i>ezară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ezasem</i></p>
+			<p><i>ezaseși</i></p>
+			<p><i>ezase</i></p>
+			<p><i>ezaserăm</i></p>
+			<p><i>ezaserăţi</i></p>
+			<p><i>ezaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7826,16 +7716,6 @@
 			<p><i>eza</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ezasem</i></p>
-			<p><i>ezaseși</i></p>
-			<p><i>ezase</i></p>
-			<p><i>ezaserăm</i></p>
-			<p><i>ezaserăţi</i></p>
-			<p><i>ezaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eza</i></p>
@@ -7936,6 +7816,14 @@
 			<p><i>ptarăţi</i></p>
 			<p><i>ptară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ptasem</i></p>
+			<p><i>ptaseși</i></p>
+			<p><i>ptase</i></p>
+			<p><i>ptaserăm</i></p>
+			<p><i>ptaserăţi</i></p>
+			<p><i>ptaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -7960,16 +7848,6 @@
 			<p><i>pta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ptasem</i></p>
-			<p><i>ptaseși</i></p>
-			<p><i>ptase</i></p>
-			<p><i>ptaserăm</i></p>
-			<p><i>ptaserăţi</i></p>
-			<p><i>ptaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>pta</i></p>
@@ -8070,6 +7948,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -8094,16 +7980,6 @@
 			<p><i>rne</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rne</i></p>
@@ -8204,6 +8080,14 @@
 			<p><i>starăţi</i></p>
 			<p><i>stară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>stasem</i></p>
+			<p><i>staseși</i></p>
+			<p><i>stase</i></p>
+			<p><i>staserăm</i></p>
+			<p><i>staserăţi</i></p>
+			<p><i>staseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -8228,16 +8112,6 @@
 			<p><i>sta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>stasem</i></p>
-			<p><i>staseși</i></p>
-			<p><i>stase</i></p>
-			<p><i>staserăm</i></p>
-			<p><i>staserăţi</i></p>
-			<p><i>staseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>sta</i></p>
@@ -8338,6 +8212,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -8362,16 +8244,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ge</i></p>
@@ -8472,6 +8344,14 @@
 			<p><i>răţi</i></p>
 			<p><i>ră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sem</i></p>
+			<p><i>seși</i></p>
+			<p><i>se</i></p>
+			<p><i>serăm</i></p>
+			<p><i>serăţi</i></p>
+			<p><i>seră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -8496,16 +8376,6 @@
 			<p><i/></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sem</i></p>
-			<p><i>seși</i></p>
-			<p><i>se</i></p>
-			<p><i>serăm</i></p>
-			<p><i>serăţi</i></p>
-			<p><i>seră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i/></p>
@@ -8606,6 +8476,14 @@
 			<p><i>nurăţi</i></p>
 			<p><i>nură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>nusem</i></p>
+			<p><i>nuseși</i></p>
+			<p><i>nuse</i></p>
+			<p><i>nuserăm</i></p>
+			<p><i>nuserăţi</i></p>
+			<p><i>nuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -8630,16 +8508,6 @@
 			<p><i>ne</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>nusem</i></p>
-			<p><i>nuseși</i></p>
-			<p><i>nuse</i></p>
-			<p><i>nuserăm</i></p>
-			<p><i>nuserăţi</i></p>
-			<p><i>nuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ne</i></p>
@@ -8740,6 +8608,14 @@
 			<p><i>scarăţi</i></p>
 			<p><i>scară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>scasem</i></p>
+			<p><i>scaseși</i></p>
+			<p><i>scase</i></p>
+			<p><i>scaserăm</i></p>
+			<p><i>scaserăţi</i></p>
+			<p><i>scaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -8764,16 +8640,6 @@
 			<p><i>sca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>scasem</i></p>
-			<p><i>scaseși</i></p>
-			<p><i>scase</i></p>
-			<p><i>scaserăm</i></p>
-			<p><i>scaserăţi</i></p>
-			<p><i>scaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>sca</i></p>
@@ -8874,6 +8740,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -8898,16 +8772,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ge</i></p>
@@ -9008,6 +8872,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9032,16 +8904,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -9142,6 +9004,14 @@
 			<p><i>zirăţi</i></p>
 			<p><i>ziră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>zisem</i></p>
+			<p><i>ziseși</i></p>
+			<p><i>zise</i></p>
+			<p><i>ziserăm</i></p>
+			<p><i>ziserăţi</i></p>
+			<p><i>ziseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9166,16 +9036,6 @@
 			<p><i>zi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>zisem</i></p>
-			<p><i>ziseși</i></p>
-			<p><i>zise</i></p>
-			<p><i>ziserăm</i></p>
-			<p><i>ziserăţi</i></p>
-			<p><i>ziseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>zi</i></p>
@@ -9276,6 +9136,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9300,16 +9168,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -9410,6 +9268,14 @@
 			<p><i>ăgarăţi</i></p>
 			<p><i>ăgară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăgasem</i></p>
+			<p><i>ăgaseși</i></p>
+			<p><i>ăgase</i></p>
+			<p><i>ăgaserăm</i></p>
+			<p><i>ăgaserăţi</i></p>
+			<p><i>ăgaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9434,16 +9300,6 @@
 			<p><i>ăga</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăgasem</i></p>
-			<p><i>ăgaseși</i></p>
-			<p><i>ăgase</i></p>
-			<p><i>ăgaserăm</i></p>
-			<p><i>ăgaserăţi</i></p>
-			<p><i>ăgaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăga</i></p>
@@ -9544,6 +9400,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>se</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9568,16 +9432,6 @@
 			<p><i/></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>se</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -9678,6 +9532,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>se</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9702,16 +9564,6 @@
 			<p><i/></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>se</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -9812,6 +9664,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ase</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9836,16 +9696,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -9946,6 +9796,14 @@
 			<p><i>ăcarăţi</i></p>
 			<p><i>ăcară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăcasem</i></p>
+			<p><i>ăcaseși</i></p>
+			<p><i>ăcase</i></p>
+			<p><i>ăcaserăm</i></p>
+			<p><i>ăcaserăţi</i></p>
+			<p><i>ăcaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -9970,16 +9828,6 @@
 			<p><i>ăca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăcasem</i></p>
-			<p><i>ăcaseși</i></p>
-			<p><i>ăcase</i></p>
-			<p><i>ăcaserăm</i></p>
-			<p><i>ăcaserăţi</i></p>
-			<p><i>ăcaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăca</i></p>
@@ -10080,6 +9928,14 @@
 			<p><i>ăzurăţi</i></p>
 			<p><i>ăzură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăzusem</i></p>
+			<p><i>ăzuseși</i></p>
+			<p><i>ăzuse</i></p>
+			<p><i>ăzuserăm</i></p>
+			<p><i>ăzuserăţi</i></p>
+			<p><i>ăzuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -10104,16 +9960,6 @@
 			<p><i>ădea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăzusem</i></p>
-			<p><i>ăzuseși</i></p>
-			<p><i>ăzuse</i></p>
-			<p><i>ăzuserăm</i></p>
-			<p><i>ăzuserăţi</i></p>
-			<p><i>ăzuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ădea</i></p>
@@ -10214,6 +10060,14 @@
 			<p><i>ălcarăţi</i></p>
 			<p><i>ălcară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ălcasem</i></p>
+			<p><i>ălcaseși</i></p>
+			<p><i>ălcase</i></p>
+			<p><i>ălcaserăm</i></p>
+			<p><i>ălcaserăţi</i></p>
+			<p><i>ălcaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -10238,16 +10092,6 @@
 			<p><i>ălca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ălcasem</i></p>
-			<p><i>ălcaseși</i></p>
-			<p><i>ălcase</i></p>
-			<p><i>ălcaserăm</i></p>
-			<p><i>ălcaserăţi</i></p>
-			<p><i>ălcaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ălca</i></p>
@@ -10348,6 +10192,14 @@
 			<p><i>ătarăţi</i></p>
 			<p><i>ătară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătasem</i></p>
+			<p><i>ătaseși</i></p>
+			<p><i>ătase</i></p>
+			<p><i>ătaserăm</i></p>
+			<p><i>ătaserăţi</i></p>
+			<p><i>ătaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -10372,16 +10224,6 @@
 			<p><i>ăta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătasem</i></p>
-			<p><i>ătaseși</i></p>
-			<p><i>ătase</i></p>
-			<p><i>ătaserăm</i></p>
-			<p><i>ătaserăţi</i></p>
-			<p><i>ătaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăta</i></p>
@@ -10482,6 +10324,14 @@
 			<p><i>ărarăţi</i></p>
 			<p><i>ărară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărasem</i></p>
+			<p><i>ăraseși</i></p>
+			<p><i>ărase</i></p>
+			<p><i>ăraserăm</i></p>
+			<p><i>ăraserăţi</i></p>
+			<p><i>ăraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -10506,16 +10356,6 @@
 			<p><i>ăra</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărasem</i></p>
-			<p><i>ăraseși</i></p>
-			<p><i>ărase</i></p>
-			<p><i>ăraserăm</i></p>
-			<p><i>ăraserăţi</i></p>
-			<p><i>ăraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăra</i></p>
@@ -10616,6 +10456,14 @@
 			<p><i>ăscarăţi</i></p>
 			<p><i>ăscară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăscasem</i></p>
+			<p><i>ăscaseși</i></p>
+			<p><i>ăscase</i></p>
+			<p><i>ăscaserăm</i></p>
+			<p><i>ăscaserăţi</i></p>
+			<p><i>ăscaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -10640,16 +10488,6 @@
 			<p><i>ăsca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăscasem</i></p>
-			<p><i>ăscaseși</i></p>
-			<p><i>ăscase</i></p>
-			<p><i>ăscaserăm</i></p>
-			<p><i>ăscaserăţi</i></p>
-			<p><i>ăscaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăsca</i></p>
@@ -10750,6 +10588,14 @@
 			<p><i>ăutarăţi</i></p>
 			<p><i>ăutară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăutasem</i></p>
+			<p><i>ăutaseși</i></p>
+			<p><i>ăutase</i></p>
+			<p><i>ăutaserăm</i></p>
+			<p><i>ăutaserăţi</i></p>
+			<p><i>ăutaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -10774,16 +10620,6 @@
 			<p><i>ăuta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăutasem</i></p>
-			<p><i>ăutaseși</i></p>
-			<p><i>ăutase</i></p>
-			<p><i>ăutaserăm</i></p>
-			<p><i>ăutaserăţi</i></p>
-			<p><i>ăutaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăuta</i></p>
@@ -10884,6 +10720,14 @@
 			<p><i>rnurăţi</i></p>
 			<p><i>rnură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rnusem</i></p>
+			<p><i>rnuseși</i></p>
+			<p><i>rnuse</i></p>
+			<p><i>rnuserăm</i></p>
+			<p><i>rnuserăţi</i></p>
+			<p><i>rnuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -10908,16 +10752,6 @@
 			<p><i>rne</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rnusem</i></p>
-			<p><i>rnuseși</i></p>
-			<p><i>rnuse</i></p>
-			<p><i>rnuserăm</i></p>
-			<p><i>rnuserăţi</i></p>
-			<p><i>rnuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rne</i></p>
@@ -11018,6 +10852,14 @@
 			<p><i>ătinarăţi</i></p>
 			<p><i>ătinară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătinasem</i></p>
+			<p><i>ătinaseși</i></p>
+			<p><i>ătinase</i></p>
+			<p><i>ătinaserăm</i></p>
+			<p><i>ătinaserăţi</i></p>
+			<p><i>ătinaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11042,16 +10884,6 @@
 			<p><i>ătina</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătinasem</i></p>
-			<p><i>ătinaseși</i></p>
-			<p><i>ătinase</i></p>
-			<p><i>ătinaserăm</i></p>
-			<p><i>ătinaserăţi</i></p>
-			<p><i>ătinaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ătina</i></p>
@@ -11152,6 +10984,14 @@
 			<p><i>pserăţi</i></p>
 			<p><i>pseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>psesem</i></p>
+			<p><i>pseseși</i></p>
+			<p><i>psese</i></p>
+			<p><i>pseserăm</i></p>
+			<p><i>pseserăţi</i></p>
+			<p><i>pseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11176,16 +11016,6 @@
 			<p><i>ace</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>psesem</i></p>
-			<p><i>pseseși</i></p>
-			<p><i>psese</i></p>
-			<p><i>pseserăm</i></p>
-			<p><i>pseserăţi</i></p>
-			<p><i>pseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ace</i></p>
@@ -11286,6 +11116,14 @@
 			<p><i>opserăţi</i></p>
 			<p><i>opseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>opsesem</i></p>
+			<p><i>opseseși</i></p>
+			<p><i>opsese</i></p>
+			<p><i>opseserăm</i></p>
+			<p><i>opseserăţi</i></p>
+			<p><i>opseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11310,16 +11148,6 @@
 			<p><i>oase</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>opsesem</i></p>
-			<p><i>opseseși</i></p>
-			<p><i>opsese</i></p>
-			<p><i>opseserăm</i></p>
-			<p><i>opseserăţi</i></p>
-			<p><i>opseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>oase</i></p>
@@ -11420,6 +11248,14 @@
 			<p><i>rârăţi</i></p>
 			<p><i>râră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>râsem</i></p>
+			<p><i>râseși</i></p>
+			<p><i>râse</i></p>
+			<p><i>râserăm</i></p>
+			<p><i>râserăţi</i></p>
+			<p><i>râseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11444,16 +11280,6 @@
 			<p><i>rî</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>râsem</i></p>
-			<p><i>râseși</i></p>
-			<p><i>râse</i></p>
-			<p><i>râserăm</i></p>
-			<p><i>râserăţi</i></p>
-			<p><i>râseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rî</i></p>
@@ -11554,6 +11380,14 @@
 			<p><i>starăţi</i></p>
 			<p><i>stară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>stasem</i></p>
+			<p><i>staseși</i></p>
+			<p><i>stase</i></p>
+			<p><i>staserăm</i></p>
+			<p><i>staserăţi</i></p>
+			<p><i>staseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11578,16 +11412,6 @@
 			<p><i>sta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>stasem</i></p>
-			<p><i>staseși</i></p>
-			<p><i>stase</i></p>
-			<p><i>staserăm</i></p>
-			<p><i>staserăţi</i></p>
-			<p><i>staseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>sta</i></p>
@@ -11688,6 +11512,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11712,16 +11544,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -11822,6 +11644,14 @@
 			<p><i>andarăţi</i></p>
 			<p><i>andară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>andasem</i></p>
+			<p><i>andaseși</i></p>
+			<p><i>andase</i></p>
+			<p><i>andaserăm</i></p>
+			<p><i>andaserăţi</i></p>
+			<p><i>andaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11846,16 +11676,6 @@
 			<p><i>anda</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>andasem</i></p>
-			<p><i>andaseși</i></p>
-			<p><i>andase</i></p>
-			<p><i>andaserăm</i></p>
-			<p><i>andaserăţi</i></p>
-			<p><i>andaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>anda</i></p>
@@ -11956,6 +11776,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -11980,16 +11808,6 @@
 			<p><i>te</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>te</i></p>
@@ -12090,6 +11908,14 @@
 			<p><i>ăcurăţi</i></p>
 			<p><i>ăcură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăcusem</i></p>
+			<p><i>ăcuseși</i></p>
+			<p><i>ăcuse</i></p>
+			<p><i>ăcuserăm</i></p>
+			<p><i>ăcuserăţi</i></p>
+			<p><i>ăcuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -12114,16 +11940,6 @@
 			<p><i>ăcea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăcusem</i></p>
-			<p><i>ăcuseși</i></p>
-			<p><i>ăcuse</i></p>
-			<p><i>ăcuserăm</i></p>
-			<p><i>ăcuserăţi</i></p>
-			<p><i>ăcuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăcea</i></p>
@@ -12224,6 +12040,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -12248,16 +12072,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -12358,6 +12172,14 @@
 			<p><i>purăţi</i></p>
 			<p><i>pură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>pusem</i></p>
+			<p><i>puseși</i></p>
+			<p><i>puse</i></p>
+			<p><i>puserăm</i></p>
+			<p><i>puserăţi</i></p>
+			<p><i>puseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -12382,16 +12204,6 @@
 			<p><i>pe</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>pusem</i></p>
-			<p><i>puseși</i></p>
-			<p><i>puse</i></p>
-			<p><i>puserăm</i></p>
-			<p><i>puserăţi</i></p>
-			<p><i>puseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>pe</i></p>
@@ -12492,6 +12304,14 @@
 			<p><i>scurăţi</i></p>
 			<p><i>scură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>scusem</i></p>
+			<p><i>scuseși</i></p>
+			<p><i>scuse</i></p>
+			<p><i>scuserăm</i></p>
+			<p><i>scuserăţi</i></p>
+			<p><i>scuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -12516,16 +12336,6 @@
 			<p><i>ște</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>scusem</i></p>
-			<p><i>scuseși</i></p>
-			<p><i>scuse</i></p>
-			<p><i>scuserăm</i></p>
-			<p><i>scuserăţi</i></p>
-			<p><i>scuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ște</i></p>
@@ -12626,6 +12436,14 @@
 			<p><i>rserăţi</i></p>
 			<p><i>rseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rsesem</i></p>
+			<p><i>rseseși</i></p>
+			<p><i>rsese</i></p>
+			<p><i>rseserăm</i></p>
+			<p><i>rseserăţi</i></p>
+			<p><i>rseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -12650,16 +12468,6 @@
 			<p><i>rge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rsesem</i></p>
-			<p><i>rseseși</i></p>
-			<p><i>rsese</i></p>
-			<p><i>rseserăm</i></p>
-			<p><i>rseserăţi</i></p>
-			<p><i>rseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rge</i></p>
@@ -12760,6 +12568,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -12784,16 +12600,6 @@
 			<p><i>ce</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ce</i></p>
@@ -12894,6 +12700,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -12918,16 +12732,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -13028,6 +12832,14 @@
 			<p><i>ăcurăţi</i></p>
 			<p><i>ăcură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăcusem</i></p>
+			<p><i>ăcuseși</i></p>
+			<p><i>ăcuse</i></p>
+			<p><i>ăcuserăm</i></p>
+			<p><i>ăcuserăţi</i></p>
+			<p><i>ăcuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13052,16 +12864,6 @@
 			<p><i>udrir;odrir</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăcusem</i></p>
-			<p><i>ăcuseși</i></p>
-			<p><i>ăcuse</i></p>
-			<p><i>ăcuserăm</i></p>
-			<p><i>ăcuserăţi</i></p>
-			<p><i>ăcuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>udrir;odrir</i></p>
@@ -13162,6 +12964,14 @@
 			<p><i>urnarăţi</i></p>
 			<p><i>urnară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>urnasem</i></p>
+			<p><i>urnaseși</i></p>
+			<p><i>urnase</i></p>
+			<p><i>urnaserăm</i></p>
+			<p><i>urnaserăţi</i></p>
+			<p><i>urnaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13186,16 +12996,6 @@
 			<p><i>urna</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>urnasem</i></p>
-			<p><i>urnaseși</i></p>
-			<p><i>urnase</i></p>
-			<p><i>urnaserăm</i></p>
-			<p><i>urnaserăţi</i></p>
-			<p><i>urnaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>urna</i></p>
@@ -13296,6 +13096,14 @@
 			<p><i>carăţi</i></p>
 			<p><i>cară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>casem</i></p>
+			<p><i>caseși</i></p>
+			<p><i>case</i></p>
+			<p><i>caserăm</i></p>
+			<p><i>caserăţi</i></p>
+			<p><i>caseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13320,16 +13128,6 @@
 			<p><i>ca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>casem</i></p>
-			<p><i>caseși</i></p>
-			<p><i>case</i></p>
-			<p><i>caserăm</i></p>
-			<p><i>caserăţi</i></p>
-			<p><i>caseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ca</i></p>
@@ -13430,6 +13228,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13454,16 +13260,6 @@
 			<p><i>e</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>e</i></p>
@@ -13564,6 +13360,14 @@
 			<p><i>sirăţi</i></p>
 			<p><i>siră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sisem</i></p>
+			<p><i>siseși</i></p>
+			<p><i>sise</i></p>
+			<p><i>siserăm</i></p>
+			<p><i>siserăţi</i></p>
+			<p><i>siseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13588,16 +13392,6 @@
 			<p><i>si</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sisem</i></p>
-			<p><i>siseși</i></p>
-			<p><i>sise</i></p>
-			<p><i>siserăm</i></p>
-			<p><i>siserăţi</i></p>
-			<p><i>siseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>si</i></p>
@@ -13698,6 +13492,14 @@
 			<p><i>ăparăţi</i></p>
 			<p><i>ăpară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăpasem</i></p>
+			<p><i>ăpaseși</i></p>
+			<p><i>ăpase</i></p>
+			<p><i>ăpaserăm</i></p>
+			<p><i>ăpaserăţi</i></p>
+			<p><i>ăpaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13722,16 +13524,6 @@
 			<p><i>ăpa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăpasem</i></p>
-			<p><i>ăpaseși</i></p>
-			<p><i>ăpase</i></p>
-			<p><i>ăpaserăm</i></p>
-			<p><i>ăpaserăţi</i></p>
-			<p><i>ăpaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăpa</i></p>
@@ -13832,6 +13624,14 @@
 			<p><i>carăţi</i></p>
 			<p><i>cară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>casem</i></p>
+			<p><i>caseși</i></p>
+			<p><i>case</i></p>
+			<p><i>caserăm</i></p>
+			<p><i>caserăţi</i></p>
+			<p><i>caseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13856,16 +13656,6 @@
 			<p><i>ca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>casem</i></p>
-			<p><i>caseși</i></p>
-			<p><i>case</i></p>
-			<p><i>caserăm</i></p>
-			<p><i>caserăţi</i></p>
-			<p><i>caseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ca</i></p>
@@ -13966,6 +13756,14 @@
 			<p><i>zurăţi</i></p>
 			<p><i>zură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>zusem</i></p>
+			<p><i>zuseși</i></p>
+			<p><i>zuse</i></p>
+			<p><i>zuserăm</i></p>
+			<p><i>zuserăţi</i></p>
+			<p><i>zuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -13990,16 +13788,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>zusem</i></p>
-			<p><i>zuseși</i></p>
-			<p><i>zuse</i></p>
-			<p><i>zuserăm</i></p>
-			<p><i>zuserăţi</i></p>
-			<p><i>zuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -14100,6 +13888,14 @@
 			<p><i>ăscurăţi</i></p>
 			<p><i>ăscură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăscusem</i></p>
+			<p><i>ăscuseși</i></p>
+			<p><i>ăscuse</i></p>
+			<p><i>ăscuserăm</i></p>
+			<p><i>ăscuserăţi</i></p>
+			<p><i>ăscuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -14124,16 +13920,6 @@
 			<p><i>aște</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăscusem</i></p>
-			<p><i>ăscuseși</i></p>
-			<p><i>ăscuse</i></p>
-			<p><i>ăscuserăm</i></p>
-			<p><i>ăscuserăţi</i></p>
-			<p><i>ăscuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>aște</i></p>
@@ -14234,6 +14020,14 @@
 			<p><i>ăţarăţi</i></p>
 			<p><i>ăţară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăţasem</i></p>
+			<p><i>ăţaseși</i></p>
+			<p><i>ăţase</i></p>
+			<p><i>ăţaserăm</i></p>
+			<p><i>ăţaserăţi</i></p>
+			<p><i>ăţaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -14258,16 +14052,6 @@
 			<p><i>ăţa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăţasem</i></p>
-			<p><i>ăţaseși</i></p>
-			<p><i>ăţase</i></p>
-			<p><i>ăţaserăm</i></p>
-			<p><i>ăţaserăţi</i></p>
-			<p><i>ăţaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăţa</i></p>
@@ -14368,6 +14152,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>rsese</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -14392,16 +14184,6 @@
 			<p><i>rge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rsese</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -14502,6 +14284,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>enise</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -14526,16 +14316,6 @@
 			<p><i>eni</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>enise</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -14636,6 +14416,14 @@
 			<p><i>ăpărarăţi</i></p>
 			<p><i>ăpărară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăpărasem</i></p>
+			<p><i>ăpăraseși</i></p>
+			<p><i>ăpărase</i></p>
+			<p><i>ăpăraserăm</i></p>
+			<p><i>ăpăraserăţi</i></p>
+			<p><i>ăpăraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -14660,16 +14448,6 @@
 			<p><i>ăpăra</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăpărasem</i></p>
-			<p><i>ăpăraseși</i></p>
-			<p><i>ăpărase</i></p>
-			<p><i>ăpăraserăm</i></p>
-			<p><i>ăpăraserăţi</i></p>
-			<p><i>ăpăraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăpăra</i></p>
@@ -14770,6 +14548,14 @@
 			<p><i>ăpănarăţi</i></p>
 			<p><i>ăpănară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăpănasem</i></p>
+			<p><i>ăpănaseși</i></p>
+			<p><i>ăpănase</i></p>
+			<p><i>ăpănaserăm</i></p>
+			<p><i>ăpănaserăţi</i></p>
+			<p><i>ăpănaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -14794,16 +14580,6 @@
 			<p><i>ăpăna</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăpănasem</i></p>
-			<p><i>ăpănaseși</i></p>
-			<p><i>ăpănase</i></p>
-			<p><i>ăpănaserăm</i></p>
-			<p><i>ăpănaserăţi</i></p>
-			<p><i>ăpănaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăpăna</i></p>
@@ -14904,6 +14680,14 @@
 			<p><i>ucarăţi</i></p>
 			<p><i>ucară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ucasem</i></p>
+			<p><i>ucaseși</i></p>
+			<p><i>ucase</i></p>
+			<p><i>ucaserăm</i></p>
+			<p><i>ucaserăţi</i></p>
+			<p><i>ucaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -14928,16 +14712,6 @@
 			<p><i>uca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ucasem</i></p>
-			<p><i>ucaseși</i></p>
-			<p><i>ucase</i></p>
-			<p><i>ucaserăm</i></p>
-			<p><i>ucaserăţi</i></p>
-			<p><i>ucaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>uca</i></p>
@@ -15038,6 +14812,14 @@
 			<p><i>ăsarăţi</i></p>
 			<p><i>ăsară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăsasem</i></p>
+			<p><i>ăsaseși</i></p>
+			<p><i>ăsase</i></p>
+			<p><i>ăsaserăm</i></p>
+			<p><i>ăsaserăţi</i></p>
+			<p><i>ăsaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -15062,16 +14844,6 @@
 			<p><i>ăsa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăsasem</i></p>
-			<p><i>ăsaseși</i></p>
-			<p><i>ăsase</i></p>
-			<p><i>ăsaserăm</i></p>
-			<p><i>ăsaserăţi</i></p>
-			<p><i>ăsaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăsa</i></p>
@@ -15172,6 +14944,14 @@
 			<p><i>garăţi</i></p>
 			<p><i>gară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>gasem</i></p>
+			<p><i>gaseși</i></p>
+			<p><i>gase</i></p>
+			<p><i>gaserăm</i></p>
+			<p><i>gaserăţi</i></p>
+			<p><i>gaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -15196,16 +14976,6 @@
 			<p><i>ga</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>gasem</i></p>
-			<p><i>gaseși</i></p>
-			<p><i>gase</i></p>
-			<p><i>gaserăm</i></p>
-			<p><i>gaserăţi</i></p>
-			<p><i>gaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ga</i></p>
@@ -15306,6 +15076,14 @@
 			<p><i>chearăţi</i></p>
 			<p><i>cheară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>cheasem</i></p>
+			<p><i>cheaseși</i></p>
+			<p><i>chease</i></p>
+			<p><i>cheaserăm</i></p>
+			<p><i>cheaserăţi</i></p>
+			<p><i>cheaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -15330,16 +15108,6 @@
 			<p><i>chea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>cheasem</i></p>
-			<p><i>cheaseși</i></p>
-			<p><i>chease</i></p>
-			<p><i>cheaserăm</i></p>
-			<p><i>cheaserăţi</i></p>
-			<p><i>cheaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>chea</i></p>
@@ -15440,6 +15208,14 @@
 			<p><i>anarăţi</i></p>
 			<p><i>anară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>anasem</i></p>
+			<p><i>anaseși</i></p>
+			<p><i>anase</i></p>
+			<p><i>anaserăm</i></p>
+			<p><i>anaserăţi</i></p>
+			<p><i>anaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -15464,16 +15240,6 @@
 			<p><i>ana</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>anasem</i></p>
-			<p><i>anaseși</i></p>
-			<p><i>anase</i></p>
-			<p><i>anaserăm</i></p>
-			<p><i>anaserăţi</i></p>
-			<p><i>anaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ana</i></p>
@@ -15574,6 +15340,14 @@
 			<p><i>părarăţi</i></p>
 			<p><i>părară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>părasem</i></p>
+			<p><i>păraseși</i></p>
+			<p><i>părase</i></p>
+			<p><i>păraserăm</i></p>
+			<p><i>păraserăţi</i></p>
+			<p><i>păraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -15598,16 +15372,6 @@
 			<p><i>păra</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>părasem</i></p>
-			<p><i>păraseși</i></p>
-			<p><i>părase</i></p>
-			<p><i>păraserăm</i></p>
-			<p><i>păraserăţi</i></p>
-			<p><i>păraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>păra</i></p>
@@ -15708,6 +15472,14 @@
 			<p><i>ălecarăţi</i></p>
 			<p><i>ălecară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ălecasem</i></p>
+			<p><i>ălecaseși</i></p>
+			<p><i>ălecase</i></p>
+			<p><i>ălecaserăm</i></p>
+			<p><i>ălecaserăţi</i></p>
+			<p><i>ălecaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -15732,16 +15504,6 @@
 			<p><i>ăleca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ălecasem</i></p>
-			<p><i>ălecaseși</i></p>
-			<p><i>ălecase</i></p>
-			<p><i>ălecaserăm</i></p>
-			<p><i>ălecaserăţi</i></p>
-			<p><i>ălecaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăleca</i></p>
@@ -15842,6 +15604,14 @@
 			<p><i>ălţarăţi</i></p>
 			<p><i>ălţară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ălţasem</i></p>
+			<p><i>ălţaseși</i></p>
+			<p><i>ălţase</i></p>
+			<p><i>ălţaserăm</i></p>
+			<p><i>ălţaserăţi</i></p>
+			<p><i>ălţaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -15866,16 +15636,6 @@
 			<p><i>ălţa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ălţasem</i></p>
-			<p><i>ălţaseși</i></p>
-			<p><i>ălţase</i></p>
-			<p><i>ălţaserăm</i></p>
-			<p><i>ălţaserăţi</i></p>
-			<p><i>ălţaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ălţa</i></p>
@@ -15976,6 +15736,14 @@
 			<p><i>ărcarăţi</i></p>
 			<p><i>ărcară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărcasem</i></p>
+			<p><i>ărcaseși</i></p>
+			<p><i>ărcase</i></p>
+			<p><i>ărcaserăm</i></p>
+			<p><i>ărcaserăţi</i></p>
+			<p><i>ărcaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16000,16 +15768,6 @@
 			<p><i>ărca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărcasem</i></p>
-			<p><i>ărcaseși</i></p>
-			<p><i>ărcase</i></p>
-			<p><i>ărcaserăm</i></p>
-			<p><i>ărcaserăţi</i></p>
-			<p><i>ărcaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ărca</i></p>
@@ -16110,6 +15868,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16134,16 +15900,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -16244,6 +16000,14 @@
 			<p><i>erirăţi</i></p>
 			<p><i>eriră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>erisem</i></p>
+			<p><i>eriseși</i></p>
+			<p><i>erise</i></p>
+			<p><i>eriserăm</i></p>
+			<p><i>eriserăţi</i></p>
+			<p><i>eriseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16268,16 +16032,6 @@
 			<p><i>eri</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>erisem</i></p>
-			<p><i>eriseși</i></p>
-			<p><i>erise</i></p>
-			<p><i>eriserăm</i></p>
-			<p><i>eriserăţi</i></p>
-			<p><i>eriseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eri</i></p>
@@ -16378,6 +16132,14 @@
 			<p><i>tarăţi</i></p>
 			<p><i>tară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>tasem</i></p>
+			<p><i>taseși</i></p>
+			<p><i>tase</i></p>
+			<p><i>taserăm</i></p>
+			<p><i>taserăţi</i></p>
+			<p><i>taseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16402,16 +16164,6 @@
 			<p><i>ta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>tasem</i></p>
-			<p><i>taseși</i></p>
-			<p><i>tase</i></p>
-			<p><i>taserăm</i></p>
-			<p><i>taserăţi</i></p>
-			<p><i>taseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ta</i></p>
@@ -16512,6 +16264,14 @@
 			<p><i>durăţi</i></p>
 			<p><i>dură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dusem</i></p>
+			<p><i>duseși</i></p>
+			<p><i>duse</i></p>
+			<p><i>duserăm</i></p>
+			<p><i>duserăţi</i></p>
+			<p><i>duseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16536,16 +16296,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dusem</i></p>
-			<p><i>duseși</i></p>
-			<p><i>duse</i></p>
-			<p><i>duserăm</i></p>
-			<p><i>duserăţi</i></p>
-			<p><i>duseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -16646,6 +16396,14 @@
 			<p><i>iarăţi</i></p>
 			<p><i>iară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>iasem</i></p>
+			<p><i>iaseși</i></p>
+			<p><i>iase</i></p>
+			<p><i>iaserăm</i></p>
+			<p><i>iaserăţi</i></p>
+			<p><i>iaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16670,16 +16428,6 @@
 			<p><i>ia</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>iasem</i></p>
-			<p><i>iaseși</i></p>
-			<p><i>iase</i></p>
-			<p><i>iaserăm</i></p>
-			<p><i>iaserăţi</i></p>
-			<p><i>iaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ia</i></p>
@@ -16780,6 +16528,14 @@
 			<p><i>ămarăţi</i></p>
 			<p><i>ămară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ămasem</i></p>
+			<p><i>ămaseși</i></p>
+			<p><i>ămase</i></p>
+			<p><i>ămaserăm</i></p>
+			<p><i>ămaserăţi</i></p>
+			<p><i>ămaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16804,16 +16560,6 @@
 			<p><i>ăma</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ămasem</i></p>
-			<p><i>ămaseși</i></p>
-			<p><i>ămase</i></p>
-			<p><i>ămaserăm</i></p>
-			<p><i>ămaserăţi</i></p>
-			<p><i>ămaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăma</i></p>
@@ -16914,6 +16660,14 @@
 			<p><i>rţirăţi</i></p>
 			<p><i>rţiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rţisem</i></p>
+			<p><i>rţiseși</i></p>
+			<p><i>rţise</i></p>
+			<p><i>rţiserăm</i></p>
+			<p><i>rţiserăţi</i></p>
+			<p><i>rţiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -16938,16 +16692,6 @@
 			<p><i>rţi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rţisem</i></p>
-			<p><i>rţiseși</i></p>
-			<p><i>rţise</i></p>
-			<p><i>rţiserăm</i></p>
-			<p><i>rţiserăţi</i></p>
-			<p><i>rţiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rţi</i></p>
@@ -17048,6 +16792,14 @@
 			<p><i>uiarăţi</i></p>
 			<p><i>uiară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>uiasem</i></p>
+			<p><i>uiaseși</i></p>
+			<p><i>uiase</i></p>
+			<p><i>uiaserăm</i></p>
+			<p><i>uiaserăţi</i></p>
+			<p><i>uiaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -17072,16 +16824,6 @@
 			<p><i>uia</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>uiasem</i></p>
-			<p><i>uiaseși</i></p>
-			<p><i>uiase</i></p>
-			<p><i>uiaserăm</i></p>
-			<p><i>uiaserăţi</i></p>
-			<p><i>uiaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>uia</i></p>
@@ -17182,6 +16924,14 @@
 			<p><i>urarăţi</i></p>
 			<p><i>urară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>urasem</i></p>
+			<p><i>uraseși</i></p>
+			<p><i>urase</i></p>
+			<p><i>uraserăm</i></p>
+			<p><i>uraserăţi</i></p>
+			<p><i>uraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -17206,16 +16956,6 @@
 			<p><i>ura</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>urasem</i></p>
-			<p><i>uraseși</i></p>
-			<p><i>urase</i></p>
-			<p><i>uraserăm</i></p>
-			<p><i>uraserăţi</i></p>
-			<p><i>uraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ura</i></p>
@@ -17316,6 +17056,14 @@
 			<p><i>elarăţi</i></p>
 			<p><i>elară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>elasem</i></p>
+			<p><i>elaseși</i></p>
+			<p><i>elase</i></p>
+			<p><i>elaserăm</i></p>
+			<p><i>elaserăţi</i></p>
+			<p><i>elaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -17340,16 +17088,6 @@
 			<p><i>ela</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>elasem</i></p>
-			<p><i>elaseși</i></p>
-			<p><i>elase</i></p>
-			<p><i>elaserăm</i></p>
-			<p><i>elaserăţi</i></p>
-			<p><i>elaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ela</i></p>
@@ -17450,6 +17188,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -17474,16 +17220,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -17584,6 +17320,14 @@
 			<p><i>parăţi</i></p>
 			<p><i>pară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>pasem</i></p>
+			<p><i>paseși</i></p>
+			<p><i>pase</i></p>
+			<p><i>paserăm</i></p>
+			<p><i>paserăţi</i></p>
+			<p><i>paseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -17608,16 +17352,6 @@
 			<p><i>pa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>pasem</i></p>
-			<p><i>paseși</i></p>
-			<p><i>pase</i></p>
-			<p><i>paserăm</i></p>
-			<p><i>paserăţi</i></p>
-			<p><i>paseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>pa</i></p>
@@ -17718,6 +17452,14 @@
 			<p><i>ăţarăţi</i></p>
 			<p><i>ăţară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăţasem</i></p>
+			<p><i>ăţaseși</i></p>
+			<p><i>ăţase</i></p>
+			<p><i>ăţaserăm</i></p>
+			<p><i>ăţaserăţi</i></p>
+			<p><i>ăţaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -17742,16 +17484,6 @@
 			<p><i>ăţa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăţasem</i></p>
-			<p><i>ăţaseși</i></p>
-			<p><i>ăţase</i></p>
-			<p><i>ăţaserăm</i></p>
-			<p><i>ăţaserăţi</i></p>
-			<p><i>ăţaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăţa</i></p>
@@ -17852,6 +17584,14 @@
 			<p><i>nţirăţi</i></p>
 			<p><i>nţiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>nţisem</i></p>
+			<p><i>nţiseși</i></p>
+			<p><i>nţise</i></p>
+			<p><i>nţiserăm</i></p>
+			<p><i>nţiserăţi</i></p>
+			<p><i>nţiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -17876,16 +17616,6 @@
 			<p><i>nţi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>nţisem</i></p>
-			<p><i>nţiseși</i></p>
-			<p><i>nţise</i></p>
-			<p><i>nţiserăm</i></p>
-			<p><i>nţiserăţi</i></p>
-			<p><i>nţiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>nţi</i></p>
@@ -17986,6 +17716,14 @@
 			<p><i>darăţi</i></p>
 			<p><i>dară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dasem</i></p>
+			<p><i>daseși</i></p>
+			<p><i>dase</i></p>
+			<p><i>daserăm</i></p>
+			<p><i>daserăţi</i></p>
+			<p><i>daseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18010,16 +17748,6 @@
 			<p><i>da</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dasem</i></p>
-			<p><i>daseși</i></p>
-			<p><i>dase</i></p>
-			<p><i>daserăm</i></p>
-			<p><i>daserăţi</i></p>
-			<p><i>daseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>da</i></p>
@@ -18120,6 +17848,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>rguse</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18144,16 +17880,6 @@
 			<p><i>rge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rguse</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -18254,6 +17980,14 @@
 			<p><i>durăţi</i></p>
 			<p><i>dură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dusem</i></p>
+			<p><i>duseși</i></p>
+			<p><i>duse</i></p>
+			<p><i>duserăm</i></p>
+			<p><i>duserăţi</i></p>
+			<p><i>duseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18278,16 +18012,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dusem</i></p>
-			<p><i>duseși</i></p>
-			<p><i>duse</i></p>
-			<p><i>duserăm</i></p>
-			<p><i>duserăţi</i></p>
-			<p><i>duseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -18388,6 +18112,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>rguse</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18412,16 +18144,6 @@
 			<p><i>rge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rguse</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -18522,6 +18244,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18546,16 +18276,6 @@
 			<p><i>te</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>te</i></p>
@@ -18656,6 +18376,14 @@
 			<p><i>erarăţi</i></p>
 			<p><i>erară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>erasem</i></p>
+			<p><i>eraseși</i></p>
+			<p><i>erase</i></p>
+			<p><i>eraserăm</i></p>
+			<p><i>eraserăţi</i></p>
+			<p><i>eraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18680,16 +18408,6 @@
 			<p><i>era</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>erasem</i></p>
-			<p><i>eraseși</i></p>
-			<p><i>erase</i></p>
-			<p><i>eraserăm</i></p>
-			<p><i>eraserăţi</i></p>
-			<p><i>eraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>era</i></p>
@@ -18790,6 +18508,14 @@
 			<p><i>gurăţi</i></p>
 			<p><i>gură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>gusem</i></p>
+			<p><i>guseși</i></p>
+			<p><i>guse</i></p>
+			<p><i>guserăm</i></p>
+			<p><i>guserăţi</i></p>
+			<p><i>guseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18814,16 +18540,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>gusem</i></p>
-			<p><i>guseși</i></p>
-			<p><i>guse</i></p>
-			<p><i>guserăm</i></p>
-			<p><i>guserăţi</i></p>
-			<p><i>guseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ge</i></p>
@@ -18924,6 +18640,14 @@
 			<p><i>sificarăţi</i></p>
 			<p><i>sificară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sificasem</i></p>
+			<p><i>sificaseși</i></p>
+			<p><i>sificase</i></p>
+			<p><i>sificaserăm</i></p>
+			<p><i>sificaserăţi</i></p>
+			<p><i>sificaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -18948,16 +18672,6 @@
 			<p><i>sifica</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sificasem</i></p>
-			<p><i>sificaseși</i></p>
-			<p><i>sificase</i></p>
-			<p><i>sificaserăm</i></p>
-			<p><i>sificaserăţi</i></p>
-			<p><i>sificaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>sifica</i></p>
@@ -19058,6 +18772,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ătase</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -19082,16 +18804,6 @@
 			<p><i>ăta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ătase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -19192,6 +18904,14 @@
 			<p><i>ermecarăţi</i></p>
 			<p><i>ermecară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ermecasem</i></p>
+			<p><i>ermecaseși</i></p>
+			<p><i>ermecase</i></p>
+			<p><i>ermecaserăm</i></p>
+			<p><i>ermecaserăţi</i></p>
+			<p><i>ermecaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -19216,16 +18936,6 @@
 			<p><i>ermeca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ermecasem</i></p>
-			<p><i>ermecaseși</i></p>
-			<p><i>ermecase</i></p>
-			<p><i>ermecaserăm</i></p>
-			<p><i>ermecaserăţi</i></p>
-			<p><i>ermecaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ermeca</i></p>
@@ -19326,6 +19036,14 @@
 			<p><i>pserăţi</i></p>
 			<p><i>pseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>psesem</i></p>
+			<p><i>pseseși</i></p>
+			<p><i>psese</i></p>
+			<p><i>pseserăm</i></p>
+			<p><i>pseserăţi</i></p>
+			<p><i>pseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -19350,16 +19068,6 @@
 			<p><i>rbe</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>psesem</i></p>
-			<p><i>pseseși</i></p>
-			<p><i>psese</i></p>
-			<p><i>pseserăm</i></p>
-			<p><i>pseserăţi</i></p>
-			<p><i>pseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rbe</i></p>
@@ -19460,6 +19168,14 @@
 			<p><i>rfecarăţi</i></p>
 			<p><i>rfecară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rfecasem</i></p>
+			<p><i>rfecaseși</i></p>
+			<p><i>rfecase</i></p>
+			<p><i>rfecaserăm</i></p>
+			<p><i>rfecaserăţi</i></p>
+			<p><i>rfecaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -19484,16 +19200,6 @@
 			<p><i>rfeca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rfecasem</i></p>
-			<p><i>rfecaseși</i></p>
-			<p><i>rfecase</i></p>
-			<p><i>rfecaserăm</i></p>
-			<p><i>rfecaserăţi</i></p>
-			<p><i>rfecaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rfeca</i></p>
@@ -19594,6 +19300,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -19618,16 +19332,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ge</i></p>
@@ -19728,6 +19432,14 @@
 			<p><i>pserăţi</i></p>
 			<p><i>pseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>psesem</i></p>
+			<p><i>pseseși</i></p>
+			<p><i>psese</i></p>
+			<p><i>pseserăm</i></p>
+			<p><i>pseserăţi</i></p>
+			<p><i>pseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -19752,16 +19464,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>psesem</i></p>
-			<p><i>pseseși</i></p>
-			<p><i>psese</i></p>
-			<p><i>pseserăm</i></p>
-			<p><i>pseserăţi</i></p>
-			<p><i>pseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ge</i></p>
@@ -19862,6 +19564,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -19886,16 +19596,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -19996,6 +19696,14 @@
 			<p><i>ăgăirăţi</i></p>
 			<p><i>ăgăiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăgăisem</i></p>
+			<p><i>ăgăiseși</i></p>
+			<p><i>ăgăise</i></p>
+			<p><i>ăgăiserăm</i></p>
+			<p><i>ăgăiserăţi</i></p>
+			<p><i>ăgăiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20020,16 +19728,6 @@
 			<p><i>ăgăi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăgăisem</i></p>
-			<p><i>ăgăiseși</i></p>
-			<p><i>ăgăise</i></p>
-			<p><i>ăgăiserăm</i></p>
-			<p><i>ăgăiserăţi</i></p>
-			<p><i>ăgăiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăgăi</i></p>
@@ -20130,6 +19828,14 @@
 			<p><i>murăţi</i></p>
 			<p><i>mură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>musem</i></p>
+			<p><i>museși</i></p>
+			<p><i>muse</i></p>
+			<p><i>muserăm</i></p>
+			<p><i>muserăţi</i></p>
+			<p><i>museră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20154,16 +19860,6 @@
 			<p><i>me</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>musem</i></p>
-			<p><i>museși</i></p>
-			<p><i>muse</i></p>
-			<p><i>muserăm</i></p>
-			<p><i>muserăţi</i></p>
-			<p><i>museră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>me</i></p>
@@ -20264,6 +19960,14 @@
 			<p><i>tirăţi</i></p>
 			<p><i>tiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>tisem</i></p>
+			<p><i>tiseși</i></p>
+			<p><i>tise</i></p>
+			<p><i>tiserăm</i></p>
+			<p><i>tiserăţi</i></p>
+			<p><i>tiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20288,16 +19992,6 @@
 			<p><i>ti</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>tisem</i></p>
-			<p><i>tiseși</i></p>
-			<p><i>tise</i></p>
-			<p><i>tiserăm</i></p>
-			<p><i>tiserăţi</i></p>
-			<p><i>tiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ti</i></p>
@@ -20398,6 +20092,14 @@
 			<p><i>ăirăţi</i></p>
 			<p><i>ăiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăisem</i></p>
+			<p><i>ăiseși</i></p>
+			<p><i>ăise</i></p>
+			<p><i>ăiserăm</i></p>
+			<p><i>ăiserăţi</i></p>
+			<p><i>ăiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20422,16 +20124,6 @@
 			<p><i>ăi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăisem</i></p>
-			<p><i>ăiseși</i></p>
-			<p><i>ăise</i></p>
-			<p><i>ăiserăm</i></p>
-			<p><i>ăiserăţi</i></p>
-			<p><i>ăiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăi</i></p>
@@ -20532,6 +20224,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ămăise</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20556,16 +20256,6 @@
 			<p><i>ămăi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ămăise</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -20666,6 +20356,14 @@
 			<p><i>ărţuirăţi</i></p>
 			<p><i>ărţuiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărţuisem</i></p>
+			<p><i>ărţuiseși</i></p>
+			<p><i>ărţuise</i></p>
+			<p><i>ărţuiserăm</i></p>
+			<p><i>ărţuiserăţi</i></p>
+			<p><i>ărţuiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20690,16 +20388,6 @@
 			<p><i>ărţui</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărţuisem</i></p>
-			<p><i>ărţuiseși</i></p>
-			<p><i>ărţuise</i></p>
-			<p><i>ărţuiserăm</i></p>
-			<p><i>ărţuiserăţi</i></p>
-			<p><i>ărţuiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ărţui</i></p>
@@ -20800,6 +20488,14 @@
 			<p><i>tuirăţi</i></p>
 			<p><i>tuiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>tuisem</i></p>
+			<p><i>tuiseși</i></p>
+			<p><i>tuise</i></p>
+			<p><i>tuiserăm</i></p>
+			<p><i>tuiserăţi</i></p>
+			<p><i>tuiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20824,16 +20520,6 @@
 			<p><i>tui</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>tuisem</i></p>
-			<p><i>tuiseși</i></p>
-			<p><i>tuise</i></p>
-			<p><i>tuiserăm</i></p>
-			<p><i>tuiserăţi</i></p>
-			<p><i>tuiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>tui</i></p>
@@ -20934,6 +20620,14 @@
 			<p><i>eșirăţi</i></p>
 			<p><i>eșiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>eșisem</i></p>
+			<p><i>eșiseși</i></p>
+			<p><i>eșise</i></p>
+			<p><i>eșiserăm</i></p>
+			<p><i>eșiserăţi</i></p>
+			<p><i>eșiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -20958,16 +20652,6 @@
 			<p><i>eși</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>eșisem</i></p>
-			<p><i>eșiseși</i></p>
-			<p><i>eșise</i></p>
-			<p><i>eșiserăm</i></p>
-			<p><i>eșiserăţi</i></p>
-			<p><i>eșiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eși</i></p>
@@ -21068,6 +20752,14 @@
 			<p><i>implantarăţi</i></p>
 			<p><i>implantară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>implantasem</i></p>
+			<p><i>implantaseși</i></p>
+			<p><i>implantase</i></p>
+			<p><i>implantaserăm</i></p>
+			<p><i>implantaserăţi</i></p>
+			<p><i>implantaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -21092,16 +20784,6 @@
 			<p><i>implanta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>implantasem</i></p>
-			<p><i>implantaseși</i></p>
-			<p><i>implantase</i></p>
-			<p><i>implantaserăm</i></p>
-			<p><i>implantaserăţi</i></p>
-			<p><i>implantaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>implanta</i></p>
@@ -21202,6 +20884,14 @@
 			<p><i>șirăţi</i></p>
 			<p><i>șiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>șisem</i></p>
+			<p><i>șiseși</i></p>
+			<p><i>șise</i></p>
+			<p><i>șiserăm</i></p>
+			<p><i>șiserăţi</i></p>
+			<p><i>șiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -21226,16 +20916,6 @@
 			<p><i>și</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>șisem</i></p>
-			<p><i>șiseși</i></p>
-			<p><i>șise</i></p>
-			<p><i>șiserăm</i></p>
-			<p><i>șiserăţi</i></p>
-			<p><i>șiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>și</i></p>
@@ -21336,6 +21016,14 @@
 			<p><i>ăierarăţi</i></p>
 			<p><i>ăierară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăierasem</i></p>
+			<p><i>ăieraseși</i></p>
+			<p><i>ăierase</i></p>
+			<p><i>ăieraserăm</i></p>
+			<p><i>ăieraserăţi</i></p>
+			<p><i>ăieraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -21360,16 +21048,6 @@
 			<p><i>ăiera</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăierasem</i></p>
-			<p><i>ăieraseși</i></p>
-			<p><i>ăierase</i></p>
-			<p><i>ăieraserăm</i></p>
-			<p><i>ăieraserăţi</i></p>
-			<p><i>ăieraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăiera</i></p>
@@ -21470,6 +21148,14 @@
 			<p><i>incarnarăţi</i></p>
 			<p><i>incarnară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>incarnasem</i></p>
+			<p><i>incarnaseși</i></p>
+			<p><i>incarnase</i></p>
+			<p><i>incarnaserăm</i></p>
+			<p><i>incarnaserăţi</i></p>
+			<p><i>incarnaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -21494,16 +21180,6 @@
 			<p><i>incarna</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>incarnasem</i></p>
-			<p><i>incarnaseși</i></p>
-			<p><i>incarnase</i></p>
-			<p><i>incarnaserăm</i></p>
-			<p><i>incarnaserăţi</i></p>
-			<p><i>incarnaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>incarna</i></p>
@@ -21604,6 +21280,14 @@
 			<p><i>voiarăţi</i></p>
 			<p><i>voiară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>voiasem</i></p>
+			<p><i>voiaseși</i></p>
+			<p><i>voiase</i></p>
+			<p><i>voiaserăm</i></p>
+			<p><i>voiaserăţi</i></p>
+			<p><i>voiaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -21628,16 +21312,6 @@
 			<p><i>voia</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>voiasem</i></p>
-			<p><i>voiaseși</i></p>
-			<p><i>voiase</i></p>
-			<p><i>voiaserăm</i></p>
-			<p><i>voiaserăţi</i></p>
-			<p><i>voiaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>voia</i></p>
@@ -21738,6 +21412,14 @@
 			<p><i>mnarăţi</i></p>
 			<p><i>mnară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>mnasem</i></p>
+			<p><i>mnaseși</i></p>
+			<p><i>mnase</i></p>
+			<p><i>mnaserăm</i></p>
+			<p><i>mnaserăţi</i></p>
+			<p><i>mnaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -21762,16 +21444,6 @@
 			<p><i>mna</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>mnasem</i></p>
-			<p><i>mnaseși</i></p>
-			<p><i>mnase</i></p>
-			<p><i>mnaserăm</i></p>
-			<p><i>mnaserăţi</i></p>
-			<p><i>mnaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>mna</i></p>
@@ -21872,6 +21544,14 @@
 			<p><i>aţișarăţi</i></p>
 			<p><i>aţișară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>aţișasem</i></p>
+			<p><i>aţișaseși</i></p>
+			<p><i>aţișase</i></p>
+			<p><i>aţișaserăm</i></p>
+			<p><i>aţișaserăţi</i></p>
+			<p><i>aţișaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -21896,16 +21576,6 @@
 			<p><i>aţișa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>aţișasem</i></p>
-			<p><i>aţișaseși</i></p>
-			<p><i>aţișase</i></p>
-			<p><i>aţișaserăm</i></p>
-			<p><i>aţișaserăţi</i></p>
-			<p><i>aţișaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>aţișa</i></p>
@@ -22006,6 +21676,14 @@
 			<p><i>ingrădirăţi</i></p>
 			<p><i>ingrădiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ingrădisem</i></p>
+			<p><i>ingrădiseși</i></p>
+			<p><i>ingrădise</i></p>
+			<p><i>ingrădiserăm</i></p>
+			<p><i>ingrădiserăţi</i></p>
+			<p><i>ingrădiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22030,16 +21708,6 @@
 			<p><i>ingrădi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ingrădisem</i></p>
-			<p><i>ingrădiseși</i></p>
-			<p><i>ingrădise</i></p>
-			<p><i>ingrădiserăm</i></p>
-			<p><i>ingrădiserăţi</i></p>
-			<p><i>ingrădiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ingrădi</i></p>
@@ -22140,6 +21808,14 @@
 			<p><i>ingrămădirăţi</i></p>
 			<p><i>ingrămădiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ingrămădisem</i></p>
+			<p><i>ingrămădiseși</i></p>
+			<p><i>ingrămădise</i></p>
+			<p><i>ingrămădiserăm</i></p>
+			<p><i>ingrămădiserăţi</i></p>
+			<p><i>ingrămădiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22164,16 +21840,6 @@
 			<p><i>ingrămădi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ingrămădisem</i></p>
-			<p><i>ingrămădiseși</i></p>
-			<p><i>ingrămădise</i></p>
-			<p><i>ingrămădiserăm</i></p>
-			<p><i>ingrămădiserăţi</i></p>
-			<p><i>ingrămădiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ingrămădi</i></p>
@@ -22274,6 +21940,14 @@
 			<p><i>ășarăţi</i></p>
 			<p><i>ășară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ășasem</i></p>
+			<p><i>ășaseși</i></p>
+			<p><i>ășase</i></p>
+			<p><i>ășaserăm</i></p>
+			<p><i>ășaserăţi</i></p>
+			<p><i>ășaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22298,16 +21972,6 @@
 			<p><i>ășa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ășasem</i></p>
-			<p><i>ășaseși</i></p>
-			<p><i>ășase</i></p>
-			<p><i>ășaserăm</i></p>
-			<p><i>ășaserăţi</i></p>
-			<p><i>ășaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ășa</i></p>
@@ -22408,6 +22072,14 @@
 			<p><i>îngrozirăţi</i></p>
 			<p><i>îngroziră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>îngrozisem</i></p>
+			<p><i>îngroziseși</i></p>
+			<p><i>îngrozise</i></p>
+			<p><i>îngroziserăm</i></p>
+			<p><i>îngroziserăţi</i></p>
+			<p><i>îngroziseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22432,16 +22104,6 @@
 			<p><i>îngrozi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>îngrozisem</i></p>
-			<p><i>îngroziseși</i></p>
-			<p><i>îngrozise</i></p>
-			<p><i>îngroziserăm</i></p>
-			<p><i>îngroziserăţi</i></p>
-			<p><i>îngroziseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>îngrozi</i></p>
@@ -22542,6 +22204,14 @@
 			<p><i>îngurluirăţi</i></p>
 			<p><i>îngurluiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>îngurluisem</i></p>
+			<p><i>îngurluiseși</i></p>
+			<p><i>îngurluise</i></p>
+			<p><i>îngurluiserăm</i></p>
+			<p><i>îngurluiserăţi</i></p>
+			<p><i>îngurluiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22566,16 +22236,6 @@
 			<p><i>îngurlui</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>îngurluisem</i></p>
-			<p><i>îngurluiseși</i></p>
-			<p><i>îngurluise</i></p>
-			<p><i>îngurluiserăm</i></p>
-			<p><i>îngurluiserăţi</i></p>
-			<p><i>îngurluiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>îngurlui</i></p>
@@ -22676,6 +22336,14 @@
 			<p><i>îngustarăţi</i></p>
 			<p><i>îngustară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>îngustasem</i></p>
+			<p><i>îngustaseși</i></p>
+			<p><i>îngustase</i></p>
+			<p><i>îngustaserăm</i></p>
+			<p><i>îngustaserăţi</i></p>
+			<p><i>îngustaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22700,16 +22368,6 @@
 			<p><i>îngusta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>îngustasem</i></p>
-			<p><i>îngustaseși</i></p>
-			<p><i>îngustase</i></p>
-			<p><i>îngustaserăm</i></p>
-			<p><i>îngustaserăţi</i></p>
-			<p><i>îngustaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>îngusta</i></p>
@@ -22810,6 +22468,14 @@
 			<p><i>înhăitarăţi</i></p>
 			<p><i>înhăitară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>înhăitasem</i></p>
+			<p><i>înhăitaseși</i></p>
+			<p><i>înhăitase</i></p>
+			<p><i>înhăitaserăm</i></p>
+			<p><i>înhăitaserăţi</i></p>
+			<p><i>înhăitaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22834,16 +22500,6 @@
 			<p><i>înhăita</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>înhăitasem</i></p>
-			<p><i>înhăitaseși</i></p>
-			<p><i>înhăitase</i></p>
-			<p><i>înhăitaserăm</i></p>
-			<p><i>înhăitaserăţi</i></p>
-			<p><i>înhăitaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>înhăita</i></p>
@@ -22944,6 +22600,14 @@
 			<p><i>ăţarăţi</i></p>
 			<p><i>ăţară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăţasem</i></p>
+			<p><i>ăţaseși</i></p>
+			<p><i>ăţase</i></p>
+			<p><i>ăţaserăm</i></p>
+			<p><i>ăţaserăţi</i></p>
+			<p><i>ăţaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -22968,16 +22632,6 @@
 			<p><i>ăţa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăţasem</i></p>
-			<p><i>ăţaseși</i></p>
-			<p><i>ăţase</i></p>
-			<p><i>ăţaserăm</i></p>
-			<p><i>ăţaserăţi</i></p>
-			<p><i>ăţaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăţa</i></p>
@@ -23078,6 +22732,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -23102,16 +22764,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -23212,6 +22864,14 @@
 			<p><i>inserarăţi</i></p>
 			<p><i>inserară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>inserasem</i></p>
+			<p><i>inseraseși</i></p>
+			<p><i>inserase</i></p>
+			<p><i>inseraserăm</i></p>
+			<p><i>inseraserăţi</i></p>
+			<p><i>inseraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -23236,16 +22896,6 @@
 			<p><i>insera</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>inserasem</i></p>
-			<p><i>inseraseși</i></p>
-			<p><i>inserase</i></p>
-			<p><i>inseraserăm</i></p>
-			<p><i>inseraserăţi</i></p>
-			<p><i>inseraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>insera</i></p>
@@ -23346,6 +22996,14 @@
 			<p><i>pserăţi</i></p>
 			<p><i>pseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>psesem</i></p>
+			<p><i>pseseși</i></p>
+			<p><i>psese</i></p>
+			<p><i>pseserăm</i></p>
+			<p><i>pseserăţi</i></p>
+			<p><i>pseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -23370,16 +23028,6 @@
 			<p><i>arce</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>psesem</i></p>
-			<p><i>pseseși</i></p>
-			<p><i>psese</i></p>
-			<p><i>pseserăm</i></p>
-			<p><i>pseserăţi</i></p>
-			<p><i>pseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>arce</i></p>
@@ -23480,6 +23128,14 @@
 			<p><i>ăiarăţi</i></p>
 			<p><i>ăiară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăiasem</i></p>
+			<p><i>ăiaseși</i></p>
+			<p><i>ăiase</i></p>
+			<p><i>ăiaserăm</i></p>
+			<p><i>ăiaserăţi</i></p>
+			<p><i>ăiaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -23504,16 +23160,6 @@
 			<p><i>ăia</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăiasem</i></p>
-			<p><i>ăiaseși</i></p>
-			<p><i>ăiase</i></p>
-			<p><i>ăiaserăm</i></p>
-			<p><i>ăiaserăţi</i></p>
-			<p><i>ăiaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăia</i></p>
@@ -23614,6 +23260,14 @@
 			<p><i>surăţi</i></p>
 			<p><i>sură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>susem</i></p>
+			<p><i>suseși</i></p>
+			<p><i>suse</i></p>
+			<p><i>suserăm</i></p>
+			<p><i>suserăţi</i></p>
+			<p><i>suseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -23638,16 +23292,6 @@
 			<p><i>se</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>susem</i></p>
-			<p><i>suseși</i></p>
-			<p><i>suse</i></p>
-			<p><i>suserăm</i></p>
-			<p><i>suserăţi</i></p>
-			<p><i>suseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>se</i></p>
@@ -23748,6 +23392,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -23772,16 +23424,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -23882,6 +23524,14 @@
 			<p><i>ucarăţi</i></p>
 			<p><i>ucară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ucasem</i></p>
+			<p><i>ucaseși</i></p>
+			<p><i>ucase</i></p>
+			<p><i>ucaserăm</i></p>
+			<p><i>ucaserăţi</i></p>
+			<p><i>ucaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -23906,16 +23556,6 @@
 			<p><i>uca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ucasem</i></p>
-			<p><i>ucaseși</i></p>
-			<p><i>ucase</i></p>
-			<p><i>ucaserăm</i></p>
-			<p><i>ucaserăţi</i></p>
-			<p><i>ucaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>uca</i></p>
@@ -24016,6 +23656,14 @@
 			<p><i>uirăţi</i></p>
 			<p><i>uiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>uisem</i></p>
+			<p><i>uiseși</i></p>
+			<p><i>uise</i></p>
+			<p><i>uiserăm</i></p>
+			<p><i>uiserăţi</i></p>
+			<p><i>uiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24040,16 +23688,6 @@
 			<p><i>ui</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>uisem</i></p>
-			<p><i>uiseși</i></p>
-			<p><i>uise</i></p>
-			<p><i>uiserăm</i></p>
-			<p><i>uiserăţi</i></p>
-			<p><i>uiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ui</i></p>
@@ -24150,6 +23788,14 @@
 			<p><i>ăsarăţi</i></p>
 			<p><i>ăsară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăsasem</i></p>
+			<p><i>ăsaseși</i></p>
+			<p><i>ăsase</i></p>
+			<p><i>ăsaserăm</i></p>
+			<p><i>ăsaserăţi</i></p>
+			<p><i>ăsaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24174,16 +23820,6 @@
 			<p><i>ăsa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăsasem</i></p>
-			<p><i>ăsaseși</i></p>
-			<p><i>ăsase</i></p>
-			<p><i>ăsaserăm</i></p>
-			<p><i>ăsaserăţi</i></p>
-			<p><i>ăsaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăsa</i></p>
@@ -24284,6 +23920,14 @@
 			<p><i>ătrarăţi</i></p>
 			<p><i>ătrară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătrasem</i></p>
+			<p><i>ătraseși</i></p>
+			<p><i>ătrase</i></p>
+			<p><i>ătraserăm</i></p>
+			<p><i>ătraserăţi</i></p>
+			<p><i>ătraseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24308,16 +23952,6 @@
 			<p><i>ătra</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătrasem</i></p>
-			<p><i>ătraseși</i></p>
-			<p><i>ătrase</i></p>
-			<p><i>ătraserăm</i></p>
-			<p><i>ătraserăţi</i></p>
-			<p><i>ătraseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ătra</i></p>
@@ -24418,6 +24052,14 @@
 			<p><i>aniarăţi</i></p>
 			<p><i>aniară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>aniasem</i></p>
+			<p><i>aniaseși</i></p>
+			<p><i>aniase</i></p>
+			<p><i>aniaserăm</i></p>
+			<p><i>aniaserăţi</i></p>
+			<p><i>aniaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24442,16 +24084,6 @@
 			<p><i>ania</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>aniasem</i></p>
-			<p><i>aniaseși</i></p>
-			<p><i>aniase</i></p>
-			<p><i>aniaserăm</i></p>
-			<p><i>aniaserăţi</i></p>
-			<p><i>aniaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ania</i></p>
@@ -24552,6 +24184,14 @@
 			<p><i>eunarăţi</i></p>
 			<p><i>eunară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>eunasem</i></p>
+			<p><i>eunaseși</i></p>
+			<p><i>eunase</i></p>
+			<p><i>eunaserăm</i></p>
+			<p><i>eunaserăţi</i></p>
+			<p><i>eunaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24576,16 +24216,6 @@
 			<p><i>euna</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>eunasem</i></p>
-			<p><i>eunaseși</i></p>
-			<p><i>eunase</i></p>
-			<p><i>eunaserăm</i></p>
-			<p><i>eunaserăţi</i></p>
-			<p><i>eunaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>euna</i></p>
@@ -24686,6 +24316,14 @@
 			<p><i>sirăţi</i></p>
 			<p><i>siră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sisem</i></p>
+			<p><i>siseși</i></p>
+			<p><i>sise</i></p>
+			<p><i>siserăm</i></p>
+			<p><i>siserăţi</i></p>
+			<p><i>siseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24710,16 +24348,6 @@
 			<p><i>si</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sisem</i></p>
-			<p><i>siseși</i></p>
-			<p><i>sise</i></p>
-			<p><i>siserăm</i></p>
-			<p><i>siserăţi</i></p>
-			<p><i>siseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>si</i></p>
@@ -24820,6 +24448,14 @@
 			<p><i>carăţi</i></p>
 			<p><i>cară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>casem</i></p>
+			<p><i>caseși</i></p>
+			<p><i>case</i></p>
+			<p><i>caserăm</i></p>
+			<p><i>caserăţi</i></p>
+			<p><i>caseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24844,16 +24480,6 @@
 			<p><i>ca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>casem</i></p>
-			<p><i>caseși</i></p>
-			<p><i>case</i></p>
-			<p><i>caserăm</i></p>
-			<p><i>caserăţi</i></p>
-			<p><i>caseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ca</i></p>
@@ -24954,6 +24580,14 @@
 			<p><i>uiarăţi</i></p>
 			<p><i>uiară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>uiasem</i></p>
+			<p><i>uiaseși</i></p>
+			<p><i>uiase</i></p>
+			<p><i>uiaserăm</i></p>
+			<p><i>uiaserăţi</i></p>
+			<p><i>uiaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -24978,16 +24612,6 @@
 			<p><i>uia</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>uiasem</i></p>
-			<p><i>uiaseși</i></p>
-			<p><i>uiase</i></p>
-			<p><i>uiaserăm</i></p>
-			<p><i>uiaserăţi</i></p>
-			<p><i>uiaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>uia</i></p>
@@ -25088,6 +24712,14 @@
 			<p><i>urirăţi</i></p>
 			<p><i>uriră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>urisem</i></p>
+			<p><i>uriseși</i></p>
+			<p><i>urise</i></p>
+			<p><i>uriserăm</i></p>
+			<p><i>uriserăţi</i></p>
+			<p><i>uriseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -25112,16 +24744,6 @@
 			<p><i>uri</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>urisem</i></p>
-			<p><i>uriseși</i></p>
-			<p><i>urise</i></p>
-			<p><i>uriserăm</i></p>
-			<p><i>uriserăţi</i></p>
-			<p><i>uriseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>uri</i></p>
@@ -25222,6 +24844,14 @@
 			<p><i>ăscurăţi</i></p>
 			<p><i>ăscură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăscusem</i></p>
+			<p><i>ăscuseși</i></p>
+			<p><i>ăscuse</i></p>
+			<p><i>ăscuserăm</i></p>
+			<p><i>ăscuserăţi</i></p>
+			<p><i>ăscuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -25246,16 +24876,6 @@
 			<p><i>aște</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăscusem</i></p>
-			<p><i>ăscuseși</i></p>
-			<p><i>ăscuse</i></p>
-			<p><i>ăscuserăm</i></p>
-			<p><i>ăscuserăţi</i></p>
-			<p><i>ăscuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>aște</i></p>
@@ -25356,6 +24976,14 @@
 			<p><i>zarăţi</i></p>
 			<p><i>zară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>zasem</i></p>
+			<p><i>zaseși</i></p>
+			<p><i>zase</i></p>
+			<p><i>zaserăm</i></p>
+			<p><i>zaserăţi</i></p>
+			<p><i>zaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -25380,16 +25008,6 @@
 			<p><i>za</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>zasem</i></p>
-			<p><i>zaseși</i></p>
-			<p><i>zase</i></p>
-			<p><i>zaserăm</i></p>
-			<p><i>zaserăţi</i></p>
-			<p><i>zaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>za</i></p>
@@ -25490,6 +25108,14 @@
 			<p><i>zarăţi</i></p>
 			<p><i>zară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>zasem</i></p>
+			<p><i>zaseși</i></p>
+			<p><i>zase</i></p>
+			<p><i>zaserăm</i></p>
+			<p><i>zaserăţi</i></p>
+			<p><i>zaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -25514,16 +25140,6 @@
 			<p><i>za</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>zasem</i></p>
-			<p><i>zaseși</i></p>
-			<p><i>zase</i></p>
-			<p><i>zaserăm</i></p>
-			<p><i>zaserăţi</i></p>
-			<p><i>zaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>za</i></p>
@@ -25624,6 +25240,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>sese</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -25648,16 +25272,6 @@
 			<p><i>ge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>sese</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -25758,6 +25372,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>sese</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -25782,16 +25404,6 @@
 			<p><i>rge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>sese</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -25892,6 +25504,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -25916,16 +25536,6 @@
 			<p><i>te</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>te</i></p>
@@ -26026,6 +25636,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ase</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26050,16 +25668,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -26160,6 +25768,14 @@
 			<p><i>asarăţi</i></p>
 			<p><i>asară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asasem</i></p>
+			<p><i>asaseși</i></p>
+			<p><i>asase</i></p>
+			<p><i>asaserăm</i></p>
+			<p><i>asaserăţi</i></p>
+			<p><i>asaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26184,16 +25800,6 @@
 			<p><i>asa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asasem</i></p>
-			<p><i>asaseși</i></p>
-			<p><i>asase</i></p>
-			<p><i>asaserăm</i></p>
-			<p><i>asaserăţi</i></p>
-			<p><i>asaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>asa</i></p>
@@ -26294,6 +25900,14 @@
 			<p><i>ăparăţi</i></p>
 			<p><i>ăpară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăpasem</i></p>
+			<p><i>ăpaseși</i></p>
+			<p><i>ăpase</i></p>
+			<p><i>ăpaserăm</i></p>
+			<p><i>ăpaserăţi</i></p>
+			<p><i>ăpaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26318,16 +25932,6 @@
 			<p><i>ăpa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăpasem</i></p>
-			<p><i>ăpaseși</i></p>
-			<p><i>ăpase</i></p>
-			<p><i>ăpaserăm</i></p>
-			<p><i>ăpaserăţi</i></p>
-			<p><i>ăpaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăpa</i></p>
@@ -26428,6 +26032,14 @@
 			<p><i>ârlogirăţi</i></p>
 			<p><i>ârlogiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ârlogisem</i></p>
+			<p><i>ârlogiseși</i></p>
+			<p><i>ârlogise</i></p>
+			<p><i>ârlogiserăm</i></p>
+			<p><i>ârlogiserăţi</i></p>
+			<p><i>ârlogiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26452,16 +26064,6 @@
 			<p><i>ârlogi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ârlogisem</i></p>
-			<p><i>ârlogiseși</i></p>
-			<p><i>ârlogise</i></p>
-			<p><i>ârlogiserăm</i></p>
-			<p><i>ârlogiserăţi</i></p>
-			<p><i>ârlogiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ârlogi</i></p>
@@ -26562,6 +26164,14 @@
 			<p><i>așlirăţi</i></p>
 			<p><i>așliră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>așlisem</i></p>
+			<p><i>așliseși</i></p>
+			<p><i>așlise</i></p>
+			<p><i>așliserăm</i></p>
+			<p><i>așliserăţi</i></p>
+			<p><i>așliseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26586,16 +26196,6 @@
 			<p><i>așli</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>așlisem</i></p>
-			<p><i>așliseși</i></p>
-			<p><i>așlise</i></p>
-			<p><i>așliserăm</i></p>
-			<p><i>așliserăţi</i></p>
-			<p><i>așliseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>așli</i></p>
@@ -26696,6 +26296,14 @@
 			<p><i>erirăţi</i></p>
 			<p><i>eriră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>erisem</i></p>
+			<p><i>eriseși</i></p>
+			<p><i>erise</i></p>
+			<p><i>eriserăm</i></p>
+			<p><i>eriserăţi</i></p>
+			<p><i>eriseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26720,16 +26328,6 @@
 			<p><i>eri</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>erisem</i></p>
-			<p><i>eriseși</i></p>
-			<p><i>erise</i></p>
-			<p><i>eriserăm</i></p>
-			<p><i>eriserăţi</i></p>
-			<p><i>eriseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eri</i></p>
@@ -26830,6 +26428,14 @@
 			<p><i>erdurăţi</i></p>
 			<p><i>erdură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>erdusem</i></p>
+			<p><i>erduseși</i></p>
+			<p><i>erduse</i></p>
+			<p><i>erduserăm</i></p>
+			<p><i>erduserăţi</i></p>
+			<p><i>erduseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26854,16 +26460,6 @@
 			<p><i>erde</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>erdusem</i></p>
-			<p><i>erduseși</i></p>
-			<p><i>erduse</i></p>
-			<p><i>erduserăm</i></p>
-			<p><i>erduserăţi</i></p>
-			<p><i>erduseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>erde</i></p>
@@ -26964,6 +26560,14 @@
 			<p><i>sarăţi</i></p>
 			<p><i>sară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sasem</i></p>
+			<p><i>saseși</i></p>
+			<p><i>sase</i></p>
+			<p><i>saserăm</i></p>
+			<p><i>saserăţi</i></p>
+			<p><i>saseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -26988,16 +26592,6 @@
 			<p><i>sa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sasem</i></p>
-			<p><i>saseși</i></p>
-			<p><i>sase</i></p>
-			<p><i>saserăm</i></p>
-			<p><i>saserăţi</i></p>
-			<p><i>saseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>sa</i></p>
@@ -27098,6 +26692,14 @@
 			<p><i>darăţi</i></p>
 			<p><i>dară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dasem</i></p>
+			<p><i>daseși</i></p>
+			<p><i>dase</i></p>
+			<p><i>daserăm</i></p>
+			<p><i>daserăţi</i></p>
+			<p><i>daseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -27122,16 +26724,6 @@
 			<p><i>da</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dasem</i></p>
-			<p><i>daseși</i></p>
-			<p><i>dase</i></p>
-			<p><i>daserăm</i></p>
-			<p><i>daserăţi</i></p>
-			<p><i>daseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>da</i></p>
@@ -27232,6 +26824,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -27256,16 +26856,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -27366,6 +26956,14 @@
 			<p><i>urtarăţi</i></p>
 			<p><i>urtară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>urtasem</i></p>
+			<p><i>urtaseși</i></p>
+			<p><i>urtase</i></p>
+			<p><i>urtaserăm</i></p>
+			<p><i>urtaserăţi</i></p>
+			<p><i>urtaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -27390,16 +26988,6 @@
 			<p><i>urta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>urtasem</i></p>
-			<p><i>urtaseși</i></p>
-			<p><i>urtase</i></p>
-			<p><i>urtaserăm</i></p>
-			<p><i>urtaserăţi</i></p>
-			<p><i>urtaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>urta</i></p>
@@ -27500,6 +27088,14 @@
 			<p><i>ăserăţi</i></p>
 			<p><i>ăseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăsesem</i></p>
+			<p><i>ăseseși</i></p>
+			<p><i>ăsese</i></p>
+			<p><i>ăseserăm</i></p>
+			<p><i>ăseserăţi</i></p>
+			<p><i>ăseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -27524,16 +27120,6 @@
 			<p><i>ade</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăsesem</i></p>
-			<p><i>ăseseși</i></p>
-			<p><i>ăsese</i></p>
-			<p><i>ăseserăm</i></p>
-			<p><i>ăseserăţi</i></p>
-			<p><i>ăseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ade</i></p>
@@ -27634,6 +27220,14 @@
 			<p><i>ăgilarăţi</i></p>
 			<p><i>ăgilară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăgilasem</i></p>
+			<p><i>ăgilaseși</i></p>
+			<p><i>ăgilase</i></p>
+			<p><i>ăgilaserăm</i></p>
+			<p><i>ăgilaserăţi</i></p>
+			<p><i>ăgilaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -27658,16 +27252,6 @@
 			<p><i>ăgila</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăgilasem</i></p>
-			<p><i>ăgilaseși</i></p>
-			<p><i>ăgilase</i></p>
-			<p><i>ăgilaserăm</i></p>
-			<p><i>ăgilaserăţi</i></p>
-			<p><i>ăgilaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăgila</i></p>
@@ -27768,6 +27352,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -27792,16 +27384,6 @@
 			<p><i>ne</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ne</i></p>
@@ -27902,6 +27484,14 @@
 			<p><i>ărirăţi</i></p>
 			<p><i>ăriră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărisem</i></p>
+			<p><i>ăriseși</i></p>
+			<p><i>ărise</i></p>
+			<p><i>ăriserăm</i></p>
+			<p><i>ăriserăţi</i></p>
+			<p><i>ăriseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -27926,16 +27516,6 @@
 			<p><i>ări</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărisem</i></p>
-			<p><i>ăriseși</i></p>
-			<p><i>ărise</i></p>
-			<p><i>ăriserăm</i></p>
-			<p><i>ăriserăţi</i></p>
-			<p><i>ăriseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ări</i></p>
@@ -28036,6 +27616,14 @@
 			<p><i>rburăţi</i></p>
 			<p><i>rbură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rbusem</i></p>
+			<p><i>rbuseși</i></p>
+			<p><i>rbuse</i></p>
+			<p><i>rbuserăm</i></p>
+			<p><i>rbuserăţi</i></p>
+			<p><i>rbuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28060,16 +27648,6 @@
 			<p><i>rbe</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rbusem</i></p>
-			<p><i>rbuseși</i></p>
-			<p><i>rbuse</i></p>
-			<p><i>rbuserăm</i></p>
-			<p><i>rbuserăţi</i></p>
-			<p><i>rbuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rbe</i></p>
@@ -28170,6 +27748,14 @@
 			<p><i>urăţi</i></p>
 			<p><i>ură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>usem</i></p>
+			<p><i>useși</i></p>
+			<p><i>use</i></p>
+			<p><i>userăm</i></p>
+			<p><i>userăţi</i></p>
+			<p><i>useră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28194,16 +27780,6 @@
 			<p><i/></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>usem</i></p>
-			<p><i>useși</i></p>
-			<p><i>use</i></p>
-			<p><i>userăm</i></p>
-			<p><i>userăţi</i></p>
-			<p><i>useră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i/></p>
@@ -28304,6 +27880,14 @@
 			<p><i>amarăţi</i></p>
 			<p><i>amară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>amasem</i></p>
+			<p><i>amaseși</i></p>
+			<p><i>amase</i></p>
+			<p><i>amaserăm</i></p>
+			<p><i>amaserăţi</i></p>
+			<p><i>amaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28328,16 +27912,6 @@
 			<p><i>ama</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>amasem</i></p>
-			<p><i>amaseși</i></p>
-			<p><i>amase</i></p>
-			<p><i>amaserăm</i></p>
-			<p><i>amaserăţi</i></p>
-			<p><i>amaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ama</i></p>
@@ -28438,6 +28012,14 @@
 			<p><i>ânduirăţi</i></p>
 			<p><i>ânduiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ânduisem</i></p>
+			<p><i>ânduiseși</i></p>
+			<p><i>ânduise</i></p>
+			<p><i>ânduiserăm</i></p>
+			<p><i>ânduiserăţi</i></p>
+			<p><i>ânduiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28462,16 +28044,6 @@
 			<p><i>ândui</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ânduisem</i></p>
-			<p><i>ânduiseși</i></p>
-			<p><i>ânduise</i></p>
-			<p><i>ânduiserăm</i></p>
-			<p><i>ânduiserăţi</i></p>
-			<p><i>ânduiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ândui</i></p>
@@ -28572,6 +28144,14 @@
 			<p><i>ănirăţi</i></p>
 			<p><i>ăniră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ănisem</i></p>
+			<p><i>ăniseși</i></p>
+			<p><i>ănise</i></p>
+			<p><i>ăniserăm</i></p>
+			<p><i>ăniserăţi</i></p>
+			<p><i>ăniseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28596,16 +28176,6 @@
 			<p><i>ăni</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ănisem</i></p>
-			<p><i>ăniseși</i></p>
-			<p><i>ănise</i></p>
-			<p><i>ăniserăm</i></p>
-			<p><i>ăniserăţi</i></p>
-			<p><i>ăniseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăni</i></p>
@@ -28706,6 +28276,14 @@
 			<p><i>ăturăţi</i></p>
 			<p><i>ătură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătusem</i></p>
+			<p><i>ătuseși</i></p>
+			<p><i>ătuse</i></p>
+			<p><i>ătuserăm</i></p>
+			<p><i>ătuserăţi</i></p>
+			<p><i>ătuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28730,16 +28308,6 @@
 			<p><i>ate</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătusem</i></p>
-			<p><i>ătuseși</i></p>
-			<p><i>ătuse</i></p>
-			<p><i>ătuserăm</i></p>
-			<p><i>ătuserăţi</i></p>
-			<p><i>ătuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ate</i></p>
@@ -28840,6 +28408,14 @@
 			<p><i>marăţi</i></p>
 			<p><i>mară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>masem</i></p>
+			<p><i>maseși</i></p>
+			<p><i>mase</i></p>
+			<p><i>maserăm</i></p>
+			<p><i>maserăţi</i></p>
+			<p><i>maseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28864,16 +28440,6 @@
 			<p><i>ma</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>masem</i></p>
-			<p><i>maseși</i></p>
-			<p><i>mase</i></p>
-			<p><i>maserăm</i></p>
-			<p><i>maserăţi</i></p>
-			<p><i>maseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ma</i></p>
@@ -28974,6 +28540,14 @@
 			<p><i>erirăţi</i></p>
 			<p><i>eriră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>erisem</i></p>
+			<p><i>eriseși</i></p>
+			<p><i>erise</i></p>
+			<p><i>eriserăm</i></p>
+			<p><i>eriserăţi</i></p>
+			<p><i>eriseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -28998,16 +28572,6 @@
 			<p><i>eri</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>erisem</i></p>
-			<p><i>eriseși</i></p>
-			<p><i>erise</i></p>
-			<p><i>eriserăm</i></p>
-			<p><i>eriserăţi</i></p>
-			<p><i>eriseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>eri</i></p>
@@ -29108,6 +28672,14 @@
 			<p><i>carăţi</i></p>
 			<p><i>cară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>casem</i></p>
+			<p><i>caseși</i></p>
+			<p><i>case</i></p>
+			<p><i>caserăm</i></p>
+			<p><i>caserăţi</i></p>
+			<p><i>caseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -29132,16 +28704,6 @@
 			<p><i>ca</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>casem</i></p>
-			<p><i>caseși</i></p>
-			<p><i>case</i></p>
-			<p><i>caserăm</i></p>
-			<p><i>caserăţi</i></p>
-			<p><i>caseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ca</i></p>
@@ -29242,6 +28804,14 @@
 			<p><i>zirăţi</i></p>
 			<p><i>ziră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>zisem</i></p>
+			<p><i>ziseși</i></p>
+			<p><i>zise</i></p>
+			<p><i>ziserăm</i></p>
+			<p><i>ziserăţi</i></p>
+			<p><i>ziseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -29266,16 +28836,6 @@
 			<p><i>zi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>zisem</i></p>
-			<p><i>ziseși</i></p>
-			<p><i>zise</i></p>
-			<p><i>ziserăm</i></p>
-			<p><i>ziserăţi</i></p>
-			<p><i>ziseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>zi</i></p>
@@ -29376,6 +28936,14 @@
 			<p><i>entarăţi</i></p>
 			<p><i>entară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>entasem</i></p>
+			<p><i>entaseși</i></p>
+			<p><i>entase</i></p>
+			<p><i>entaserăm</i></p>
+			<p><i>entaserăţi</i></p>
+			<p><i>entaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -29400,16 +28968,6 @@
 			<p><i>enta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>entasem</i></p>
-			<p><i>entaseși</i></p>
-			<p><i>entase</i></p>
-			<p><i>entaserăm</i></p>
-			<p><i>entaserăţi</i></p>
-			<p><i>entaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>enta</i></p>
@@ -29510,6 +29068,14 @@
 			<p><i>urtarăţi</i></p>
 			<p><i>urtară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>urtasem</i></p>
+			<p><i>urtaseși</i></p>
+			<p><i>urtase</i></p>
+			<p><i>urtaserăm</i></p>
+			<p><i>urtaserăţi</i></p>
+			<p><i>urtaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -29534,16 +29100,6 @@
 			<p><i>urta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>urtasem</i></p>
-			<p><i>urtaseși</i></p>
-			<p><i>urtase</i></p>
-			<p><i>urtaserăm</i></p>
-			<p><i>urtaserăţi</i></p>
-			<p><i>urtaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>urta</i></p>
@@ -29644,6 +29200,14 @@
 			<p><i>mţirăţi</i></p>
 			<p><i>mţiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>mţisem</i></p>
+			<p><i>mţiseși</i></p>
+			<p><i>mţise</i></p>
+			<p><i>mţiserăm</i></p>
+			<p><i>mţiserăţi</i></p>
+			<p><i>mţiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -29668,16 +29232,6 @@
 			<p><i>mţi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>mţisem</i></p>
-			<p><i>mţiseși</i></p>
-			<p><i>mţise</i></p>
-			<p><i>mţiserăm</i></p>
-			<p><i>mţiserăţi</i></p>
-			<p><i>mţiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>mţi</i></p>
@@ -29778,6 +29332,14 @@
 			<p><i>ărsarăţi</i></p>
 			<p><i>ărsară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărsasem</i></p>
+			<p><i>ărsaseși</i></p>
+			<p><i>ărsase</i></p>
+			<p><i>ărsaserăm</i></p>
+			<p><i>ărsaserăţi</i></p>
+			<p><i>ărsaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -29802,16 +29364,6 @@
 			<p><i>ărsa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărsasem</i></p>
-			<p><i>ărsaseși</i></p>
-			<p><i>ărsase</i></p>
-			<p><i>ărsaserăm</i></p>
-			<p><i>ărsaserăţi</i></p>
-			<p><i>ărsaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ărsa</i></p>
@@ -29912,6 +29464,14 @@
 			<p><i>ândurăţi</i></p>
 			<p><i>ândură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ândusem</i></p>
+			<p><i>ânduseși</i></p>
+			<p><i>ânduse</i></p>
+			<p><i>ânduserăm</i></p>
+			<p><i>ânduserăţi</i></p>
+			<p><i>ânduseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -29936,16 +29496,6 @@
 			<p><i>inde</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ândusem</i></p>
-			<p><i>ânduseși</i></p>
-			<p><i>ânduse</i></p>
-			<p><i>ânduserăm</i></p>
-			<p><i>ânduserăţi</i></p>
-			<p><i>ânduseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>inde</i></p>
@@ -30046,6 +29596,14 @@
 			<p><i>zemarăţi</i></p>
 			<p><i>zemară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>zemasem</i></p>
+			<p><i>zemaseși</i></p>
+			<p><i>zemase</i></p>
+			<p><i>zemaserăm</i></p>
+			<p><i>zemaserăţi</i></p>
+			<p><i>zemaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -30070,16 +29628,6 @@
 			<p><i>zema</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>zemasem</i></p>
-			<p><i>zemaseși</i></p>
-			<p><i>zemase</i></p>
-			<p><i>zemaserăm</i></p>
-			<p><i>zemaserăţi</i></p>
-			<p><i>zemaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>zema</i></p>
@@ -30180,6 +29728,14 @@
 			<p><i>pserăţi</i></p>
 			<p><i>pseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>psesem</i></p>
+			<p><i>pseseși</i></p>
+			<p><i>psese</i></p>
+			<p><i>pseserăm</i></p>
+			<p><i>pseserăţi</i></p>
+			<p><i>pseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -30204,16 +29760,6 @@
 			<p><i>ade</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>psesem</i></p>
-			<p><i>pseseși</i></p>
-			<p><i>psese</i></p>
-			<p><i>pseserăm</i></p>
-			<p><i>pseserăţi</i></p>
-			<p><i>pseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ade</i></p>
@@ -30314,6 +29860,14 @@
 			<p><i>anizarăţi</i></p>
 			<p><i>anizară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>anizasem</i></p>
+			<p><i>anizaseși</i></p>
+			<p><i>anizase</i></p>
+			<p><i>anizaserăm</i></p>
+			<p><i>anizaserăţi</i></p>
+			<p><i>anizaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -30338,16 +29892,6 @@
 			<p><i>aniza</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>anizasem</i></p>
-			<p><i>anizaseși</i></p>
-			<p><i>anizase</i></p>
-			<p><i>anizaserăm</i></p>
-			<p><i>anizaserăţi</i></p>
-			<p><i>anizaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>aniza</i></p>
@@ -30448,6 +29992,14 @@
 			<p><i>ugarăţi</i></p>
 			<p><i>ugară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ugasem</i></p>
+			<p><i>ugaseși</i></p>
+			<p><i>ugase</i></p>
+			<p><i>ugaserăm</i></p>
+			<p><i>ugaserăţi</i></p>
+			<p><i>ugaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -30472,16 +30024,6 @@
 			<p><i>uga</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ugasem</i></p>
-			<p><i>ugaseși</i></p>
-			<p><i>ugase</i></p>
-			<p><i>ugaserăm</i></p>
-			<p><i>ugaserăţi</i></p>
-			<p><i>ugaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>uga</i></p>
@@ -30582,6 +30124,14 @@
 			<p><i>ăltarăţi</i></p>
 			<p><i>ăltară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăltasem</i></p>
+			<p><i>ăltaseși</i></p>
+			<p><i>ăltase</i></p>
+			<p><i>ăltaserăm</i></p>
+			<p><i>ăltaserăţi</i></p>
+			<p><i>ăltaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -30606,16 +30156,6 @@
 			<p><i>ălta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăltasem</i></p>
-			<p><i>ăltaseși</i></p>
-			<p><i>ăltase</i></p>
-			<p><i>ăltaserăm</i></p>
-			<p><i>ăltaserăţi</i></p>
-			<p><i>ăltaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ălta</i></p>
@@ -30716,6 +30256,14 @@
 			<p><i>aturarăţi</i></p>
 			<p><i>aturară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>aturasem</i></p>
+			<p><i>aturaseși</i></p>
+			<p><i>aturase</i></p>
+			<p><i>aturaserăm</i></p>
+			<p><i>aturaserăţi</i></p>
+			<p><i>aturaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -30740,16 +30288,6 @@
 			<p><i>atura</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>aturasem</i></p>
-			<p><i>aturaseși</i></p>
-			<p><i>aturase</i></p>
-			<p><i>aturaserăm</i></p>
-			<p><i>aturaserăţi</i></p>
-			<p><i>aturaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>atura</i></p>
@@ -30850,6 +30388,14 @@
 			<p><i>ăldarăţi</i></p>
 			<p><i>ăldară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăldasem</i></p>
+			<p><i>ăldaseși</i></p>
+			<p><i>ăldase</i></p>
+			<p><i>ăldaserăm</i></p>
+			<p><i>ăldaserăţi</i></p>
+			<p><i>ăldaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -30874,16 +30420,6 @@
 			<p><i>ălda</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăldasem</i></p>
-			<p><i>ăldaseși</i></p>
-			<p><i>ăldase</i></p>
-			<p><i>ăldaserăm</i></p>
-			<p><i>ăldaserăţi</i></p>
-			<p><i>ăldaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ălda</i></p>
@@ -30984,6 +30520,14 @@
 			<p><i>arăţi</i></p>
 			<p><i>ară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>asem</i></p>
+			<p><i>aseși</i></p>
+			<p><i>ase</i></p>
+			<p><i>aserăm</i></p>
+			<p><i>aserăţi</i></p>
+			<p><i>aseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31008,16 +30552,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>asem</i></p>
-			<p><i>aseși</i></p>
-			<p><i>ase</i></p>
-			<p><i>aserăm</i></p>
-			<p><i>aserăţi</i></p>
-			<p><i>aseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>a</i></p>
@@ -31118,6 +30652,14 @@
 			<p><i>pserăţi</i></p>
 			<p><i>pseră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>psesem</i></p>
+			<p><i>pseseși</i></p>
+			<p><i>psese</i></p>
+			<p><i>pseserăm</i></p>
+			<p><i>pseserăţi</i></p>
+			<p><i>pseseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31142,16 +30684,6 @@
 			<p><i>ate</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>psesem</i></p>
-			<p><i>pseseși</i></p>
-			<p><i>psese</i></p>
-			<p><i>pseserăm</i></p>
-			<p><i>pseserăţi</i></p>
-			<p><i>pseseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ate</i></p>
@@ -31252,6 +30784,14 @@
 			<p><i>ularăţi</i></p>
 			<p><i>ulară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ulasem</i></p>
+			<p><i>ulaseși</i></p>
+			<p><i>ulase</i></p>
+			<p><i>ulaserăm</i></p>
+			<p><i>ulaserăţi</i></p>
+			<p><i>ulaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31276,16 +30816,6 @@
 			<p><i>ula</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ulasem</i></p>
-			<p><i>ulaseși</i></p>
-			<p><i>ulase</i></p>
-			<p><i>ulaserăm</i></p>
-			<p><i>ulaserăţi</i></p>
-			<p><i>ulaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ula</i></p>
@@ -31386,6 +30916,14 @@
 			<p><i>mănarăţi</i></p>
 			<p><i>mănară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>mănasem</i></p>
+			<p><i>mănaseși</i></p>
+			<p><i>mănase</i></p>
+			<p><i>mănaserăm</i></p>
+			<p><i>mănaserăţi</i></p>
+			<p><i>mănaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31410,16 +30948,6 @@
 			<p><i>măna</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>mănasem</i></p>
-			<p><i>mănaseși</i></p>
-			<p><i>mănase</i></p>
-			<p><i>mănaserăm</i></p>
-			<p><i>mănaserăţi</i></p>
-			<p><i>mănaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>măna</i></p>
@@ -31520,6 +31048,14 @@
 			<p><i>irăţi</i></p>
 			<p><i>iră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>isem</i></p>
+			<p><i>iseși</i></p>
+			<p><i>ise</i></p>
+			<p><i>iserăm</i></p>
+			<p><i>iserăţi</i></p>
+			<p><i>iseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31544,16 +31080,6 @@
 			<p><i>i</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>isem</i></p>
-			<p><i>iseși</i></p>
-			<p><i>ise</i></p>
-			<p><i>iserăm</i></p>
-			<p><i>iserăţi</i></p>
-			<p><i>iseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>i</i></p>
@@ -31654,6 +31180,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31678,16 +31212,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -31788,6 +31312,14 @@
 			<p><i>zirăţi</i></p>
 			<p><i>ziră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>zisem</i></p>
+			<p><i>ziseși</i></p>
+			<p><i>zise</i></p>
+			<p><i>ziserăm</i></p>
+			<p><i>ziserăţi</i></p>
+			<p><i>ziseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31812,16 +31344,6 @@
 			<p><i>zi</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>zisem</i></p>
-			<p><i>ziseși</i></p>
-			<p><i>zise</i></p>
-			<p><i>ziserăm</i></p>
-			<p><i>ziserăţi</i></p>
-			<p><i>ziseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>zi</i></p>
@@ -31922,6 +31444,14 @@
 			<p><i>tirăţi</i></p>
 			<p><i>tiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>tisem</i></p>
+			<p><i>tiseși</i></p>
+			<p><i>tise</i></p>
+			<p><i>tiserăm</i></p>
+			<p><i>tiserăţi</i></p>
+			<p><i>tiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -31946,16 +31476,6 @@
 			<p><i>ti</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>tisem</i></p>
-			<p><i>tiseși</i></p>
-			<p><i>tise</i></p>
-			<p><i>tiserăm</i></p>
-			<p><i>tiserăţi</i></p>
-			<p><i>tiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ti</i></p>
@@ -32056,6 +31576,14 @@
 			<p><i>nirăţi</i></p>
 			<p><i>niră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>nisem</i></p>
+			<p><i>niseși</i></p>
+			<p><i>nise</i></p>
+			<p><i>niserăm</i></p>
+			<p><i>niserăţi</i></p>
+			<p><i>niseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -32080,16 +31608,6 @@
 			<p><i>ni</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>nisem</i></p>
-			<p><i>niseși</i></p>
-			<p><i>nise</i></p>
-			<p><i>niserăm</i></p>
-			<p><i>niserăţi</i></p>
-			<p><i>niseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ni</i></p>
@@ -32190,6 +31708,14 @@
 			<p><i>durăţi</i></p>
 			<p><i>dură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dusem</i></p>
+			<p><i>duseși</i></p>
+			<p><i>duse</i></p>
+			<p><i>duserăm</i></p>
+			<p><i>duserăţi</i></p>
+			<p><i>duseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -32214,16 +31740,6 @@
 			<p><i>de</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dusem</i></p>
-			<p><i>duseși</i></p>
-			<p><i>duse</i></p>
-			<p><i>duserăm</i></p>
-			<p><i>duserăţi</i></p>
-			<p><i>duseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>de</i></p>
@@ -32324,6 +31840,14 @@
 			<p><i>darăţi</i></p>
 			<p><i>dară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>dasem</i></p>
+			<p><i>daseși</i></p>
+			<p><i>dase</i></p>
+			<p><i>daserăm</i></p>
+			<p><i>daserăţi</i></p>
+			<p><i>daseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -32348,16 +31872,6 @@
 			<p><i>da</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>dasem</i></p>
-			<p><i>daseși</i></p>
-			<p><i>dase</i></p>
-			<p><i>daserăm</i></p>
-			<p><i>daserăţi</i></p>
-			<p><i>daseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>da</i></p>
@@ -32458,6 +31972,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -32482,16 +32004,6 @@
 			<p><i>ne</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ne</i></p>
@@ -32592,6 +32104,14 @@
 			<p><i>ăzurăţi</i></p>
 			<p><i>ăzură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăzusem</i></p>
+			<p><i>ăzuseși</i></p>
+			<p><i>ăzuse</i></p>
+			<p><i>ăzuserăm</i></p>
+			<p><i>ăzuserăţi</i></p>
+			<p><i>ăzuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -32616,16 +32136,6 @@
 			<p><i>edea</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăzusem</i></p>
-			<p><i>ăzuseși</i></p>
-			<p><i>ăzuse</i></p>
-			<p><i>ăzuserăm</i></p>
-			<p><i>ăzuserăţi</i></p>
-			<p><i>ăzuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>edea</i></p>
@@ -32726,6 +32236,14 @@
 			<p><i>somarăţi</i></p>
 			<p><i>somară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>somasem</i></p>
+			<p><i>somaseși</i></p>
+			<p><i>somase</i></p>
+			<p><i>somaserăm</i></p>
+			<p><i>somaserăţi</i></p>
+			<p><i>somaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -32750,16 +32268,6 @@
 			<p><i>soma</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>somasem</i></p>
-			<p><i>somaseși</i></p>
-			<p><i>somase</i></p>
-			<p><i>somaserăm</i></p>
-			<p><i>somaserăţi</i></p>
-			<p><i>somaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>soma</i></p>
@@ -32860,6 +32368,14 @@
 			<p><i>spionarăţi</i></p>
 			<p><i>spionară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>spionasem</i></p>
+			<p><i>spionaseși</i></p>
+			<p><i>spionase</i></p>
+			<p><i>spionaserăm</i></p>
+			<p><i>spionaserăţi</i></p>
+			<p><i>spionaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -32884,16 +32400,6 @@
 			<p><i>spiona</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>spionasem</i></p>
-			<p><i>spionaseși</i></p>
-			<p><i>spionase</i></p>
-			<p><i>spionaserăm</i></p>
-			<p><i>spionaserăţi</i></p>
-			<p><i>spionaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>spiona</i></p>
@@ -32994,6 +32500,14 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>sesem</i></p>
+			<p><i>seseși</i></p>
+			<p><i>sese</i></p>
+			<p><i>seserăm</i></p>
+			<p><i>seserăţi</i></p>
+			<p><i>seseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33018,16 +32532,6 @@
 			<p><i>rge</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>sesem</i></p>
-			<p><i>seseși</i></p>
-			<p><i>sese</i></p>
-			<p><i>seserăm</i></p>
-			<p><i>seserăţi</i></p>
-			<p><i>seseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rge</i></p>
@@ -33128,6 +32632,14 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>ase</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33152,16 +32664,6 @@
 			<p><i>a</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ase</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>-</i></p>
@@ -33262,6 +32764,14 @@
 			<p><i>ăbărârăţi</i></p>
 			<p><i>ăbărâră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăbărâsem</i></p>
+			<p><i>ăbărâseși</i></p>
+			<p><i>ăbărâse</i></p>
+			<p><i>ăbărâserăm</i></p>
+			<p><i>ăbărâserăţi</i></p>
+			<p><i>ăbărâseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33286,16 +32796,6 @@
 			<p><i>ăbărî</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăbărâsem</i></p>
-			<p><i>ăbărâseși</i></p>
-			<p><i>ăbărâse</i></p>
-			<p><i>ăbărâserăm</i></p>
-			<p><i>ăbărâserăţi</i></p>
-			<p><i>ăbărâseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăbărî</i></p>
@@ -33396,6 +32896,14 @@
 			<p><i>turăţi</i></p>
 			<p><i>tură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>tusem</i></p>
+			<p><i>tuseși</i></p>
+			<p><i>tuse</i></p>
+			<p><i>tuserăm</i></p>
+			<p><i>tuserăţi</i></p>
+			<p><i>tuseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33420,16 +32928,6 @@
 			<p><i>te</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>tusem</i></p>
-			<p><i>tuseși</i></p>
-			<p><i>tuse</i></p>
-			<p><i>tuserăm</i></p>
-			<p><i>tuserăţi</i></p>
-			<p><i>tuseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>te</i></p>
@@ -33530,6 +33028,14 @@
 			<p><i>ndurăţi</i></p>
 			<p><i>ndură</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ndusem</i></p>
+			<p><i>nduseși</i></p>
+			<p><i>nduse</i></p>
+			<p><i>nduserăm</i></p>
+			<p><i>nduserăţi</i></p>
+			<p><i>nduseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33554,16 +33060,6 @@
 			<p><i>nde</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ndusem</i></p>
-			<p><i>nduseși</i></p>
-			<p><i>nduse</i></p>
-			<p><i>nduserăm</i></p>
-			<p><i>nduserăţi</i></p>
-			<p><i>nduseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>nde</i></p>
@@ -33664,6 +33160,14 @@
 			<p><i>ădarăţi</i></p>
 			<p><i>ădară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ădasem</i></p>
+			<p><i>ădaseși</i></p>
+			<p><i>ădase</i></p>
+			<p><i>ădaserăm</i></p>
+			<p><i>ădaserăţi</i></p>
+			<p><i>ădaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33688,16 +33192,6 @@
 			<p><i>ăda</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ădasem</i></p>
-			<p><i>ădaseși</i></p>
-			<p><i>ădase</i></p>
-			<p><i>ădaserăm</i></p>
-			<p><i>ădaserăţi</i></p>
-			<p><i>ădaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăda</i></p>
@@ -33798,6 +33292,14 @@
 			<p><i>ăltarăţi</i></p>
 			<p><i>ăltară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ăltasem</i></p>
+			<p><i>ăltaseși</i></p>
+			<p><i>ăltase</i></p>
+			<p><i>ăltaserăm</i></p>
+			<p><i>ăltaserăţi</i></p>
+			<p><i>ăltaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33822,16 +33324,6 @@
 			<p><i>ălta</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ăltasem</i></p>
-			<p><i>ăltaseși</i></p>
-			<p><i>ăltase</i></p>
-			<p><i>ăltaserăm</i></p>
-			<p><i>ăltaserăţi</i></p>
-			<p><i>ăltaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ălta</i></p>
@@ -33932,6 +33424,14 @@
 			<p><i>ărsarăţi</i></p>
 			<p><i>ărsară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ărsasem</i></p>
+			<p><i>ărsaseși</i></p>
+			<p><i>ărsase</i></p>
+			<p><i>ărsaserăm</i></p>
+			<p><i>ărsaserăţi</i></p>
+			<p><i>ărsaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -33956,16 +33456,6 @@
 			<p><i>ărsa</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ărsasem</i></p>
-			<p><i>ărsaseși</i></p>
-			<p><i>ărsase</i></p>
-			<p><i>ărsaserăm</i></p>
-			<p><i>ărsaserăţi</i></p>
-			<p><i>ărsaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ărsa</i></p>
@@ -34066,6 +33556,14 @@
 			<p><i>ătămarăţi</i></p>
 			<p><i>ătămară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ătămasem</i></p>
+			<p><i>ătămaseși</i></p>
+			<p><i>ătămase</i></p>
+			<p><i>ătămaserăm</i></p>
+			<p><i>ătămaserăţi</i></p>
+			<p><i>ătămaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -34090,16 +33588,6 @@
 			<p><i>ătăma</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ătămasem</i></p>
-			<p><i>ătămaseși</i></p>
-			<p><i>ătămase</i></p>
-			<p><i>ătămaserăm</i></p>
-			<p><i>ătămaserăţi</i></p>
-			<p><i>ătămaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ătăma</i></p>
@@ -34200,6 +33688,14 @@
 			<p><i>ârăţi</i></p>
 			<p><i>âră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>âsem</i></p>
+			<p><i>âseși</i></p>
+			<p><i>âse</i></p>
+			<p><i>âserăm</i></p>
+			<p><i>âserăţi</i></p>
+			<p><i>âseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -34224,16 +33720,6 @@
 			<p><i>î</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>âsem</i></p>
-			<p><i>âseși</i></p>
-			<p><i>âse</i></p>
-			<p><i>âserăm</i></p>
-			<p><i>âserăţi</i></p>
-			<p><i>âseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>î</i></p>
@@ -34334,6 +33820,14 @@
 			<p><i>ănţuirăţi</i></p>
 			<p><i>ănţuiră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ănţuisem</i></p>
+			<p><i>ănţuiseși</i></p>
+			<p><i>ănţuise</i></p>
+			<p><i>ănţuiserăm</i></p>
+			<p><i>ănţuiserăţi</i></p>
+			<p><i>ănţuiseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -34358,16 +33852,6 @@
 			<p><i>ănţui</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ănţuisem</i></p>
-			<p><i>ănţuiseși</i></p>
-			<p><i>ănţuise</i></p>
-			<p><i>ănţuiserăm</i></p>
-			<p><i>ănţuiserăţi</i></p>
-			<p><i>ănţuiseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ănţui</i></p>
@@ -34468,6 +33952,14 @@
 			<p><i>ănarăţi</i></p>
 			<p><i>ănară</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>ănasem</i></p>
+			<p><i>ănaseși</i></p>
+			<p><i>ănase</i></p>
+			<p><i>ănaserăm</i></p>
+			<p><i>ănaserăţi</i></p>
+			<p><i>ănaseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -34492,16 +33984,6 @@
 			<p><i>ăna</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>ănasem</i></p>
-			<p><i>ănaseși</i></p>
-			<p><i>ănase</i></p>
-			<p><i>ănaserăm</i></p>
-			<p><i>ănaserăţi</i></p>
-			<p><i>ănaseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>ăna</i></p>
@@ -34602,6 +34084,14 @@
 			<p><i>rlirăţi</i></p>
 			<p><i>rliră</i></p>
 		</Perfect-simplu>
+		<Mai-mult-ca-perfect>
+			<p><i>rlisem</i></p>
+			<p><i>rliseși</i></p>
+			<p><i>rlise</i></p>
+			<p><i>rliserăm</i></p>
+			<p><i>rliserăţi</i></p>
+			<p><i>rliseră</i></p>
+		</Mai-mult-ca-perfect>
 	</Indicativ>
 	<Conjunctiv>
 		<Conjunctiv-prezent>
@@ -34626,16 +34116,6 @@
 			<p><i>rli</i></p>
 		</Infinitiv-Afirmativ>
 	</Infinitiv>
-	<Mai>
-		<Mai-mult-ca-perfect>
-			<p><i>rlisem</i></p>
-			<p><i>rliseși</i></p>
-			<p><i>rlise</i></p>
-			<p><i>rliserăm</i></p>
-			<p><i>rliserăţi</i></p>
-			<p><i>rliseră</i></p>
-		</Mai-mult-ca-perfect>
-	</Mai>
 	<Viitor>
 		<Viitor-I>
 			<p><i>rli</i></p>
