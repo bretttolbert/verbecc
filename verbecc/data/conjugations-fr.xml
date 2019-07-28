@@ -2,7 +2,10 @@
 
 <!--
 	conjugation-fr.xml - French conjugation templates
-
+	Created by Pierre Sarrazin
+	Further improved by Brett Tolbert:
+	- Converted tense tag names to lowercase for ease of use
+	- Added templates for impersonal verbs, e.g. "pl:euvoir"
 	Coypright (C) 2019 Brett Tolbert <https://github.com/bretttolbert/verbecc>
 	Copyright (C) 2003-2016 Pierre Sarrazin <http://sarrazip.com/>
 

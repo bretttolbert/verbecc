@@ -7,16 +7,26 @@ from verbecc import Conjugator
 cg = Conjugator(lang='ro')
 
 test_ro_conjugate_mood_tense_data = [
-    ('avea', 'indicativ', 'Prezent-Prezent',
+    ('avea', 'indicativ', 'prezent',
         ['eu am', 'tu ai', 'el a', 'noi am', 'voi aţi', 'ei au']),
-    ('face', 'indicativ', 'Prezent-Prezent',
+    ('avea', 'indicativ', 'imperfect',
+        ['eu aveam', 'tu aveai', 'el avea', 'noi aveam', 'voi aveaţi', 'ei aveau']),
+    ('avea', 'indicativ', 'perfect-simplu',
+        ['eu avui', 'tu avuși', 'el avu', 'noi avurăm', 'voi avurăţi', 'ei avură']),
+    ('avea', 'indicativ', 'perfect-compus',
+        ['eu am avut', 'tu ai avut', 'el a avut', 'noi am avut', 'voi aţi avut', 'ei au avut']),
+    ('avea', 'indicativ', 'mai-mult-ca-perfect',
+        ['eu avusem', 'tu avuseși', 'el avuse', 'noi avuserăm', 'voi avuserăţi', 'ei avuseră']),
+    ('face', 'indicativ', 'prezent',
         ['eu fac', 'tu faci', 'el face', 'noi facem', 'voi faceţi', 'ei fac']),
-    ('face', 'indicativ', 'Imperfect-Imperfect',
+    ('face', 'indicativ', 'imperfect',
         ['eu făceam', 'tu făceai', 'el făcea', 'noi făceam', 'voi făceaţi', 'ei făceau']),
-    ('face', 'indicativ', 'Perfect-simplu',
+    ('face', 'indicativ', 'perfect-simplu',
         ['eu făcui', 'tu făcuși', 'el făcu', 'noi făcurăm', 'voi făcurăţi', 'ei făcură']),
-    ('face', 'indicativ', 'Perfect-compus',
+    ('face', 'indicativ', 'perfect-compus',
         ['eu am făcut', 'tu ai făcut', 'el a făcut', 'noi am făcut', 'voi aţi făcut', 'ei au făcut']),
+    ('face', 'indicativ', 'mai-mult-ca-perfect',
+        ['eu făcusem', 'tu făcuseși', 'el făcuse', 'noi făcuserăm', 'voi făcuserăţi', 'ei făcuseră']),
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

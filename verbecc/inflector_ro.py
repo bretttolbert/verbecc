@@ -8,7 +8,7 @@ class InflectorRo(inflector.Inflector):
         super(InflectorRo, self).__init__()
 
     def _add_adverb_if_applicable(self, s, mood_name, tense_name):
-        if mood_name == 'imperativ' and tense_name == 'Imperativ-Negativ':
+        if mood_name == 'imperativ' and tense_name == 'negativ':
             return 'nu ' + s
         return s
 
@@ -49,10 +49,10 @@ class InflectorRo(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ['Participiu-Participiu', 
-                'Infinitiv-Afirmativ', 
-                'Imperativ-Imperativ', 'Imperativ-Negativ', 
-                'Gerunziu-Gerunziu']
+        return ['participiu', 
+                'afirmativ', 
+                'imperativ', 'negativ', 
+                'gerunziu']
 
     def _get_helping_verb(self, infinitive):
         return 'avea'
@@ -64,11 +64,11 @@ class InflectorRo(inflector.Inflector):
         return 'participiu'
 
     def _get_participle_tense_name(self):
-        return 'Participiu-Participiu'
+        return 'participiu'
 
     def _get_compound_conjugations_hv_map(self):
         return {
             'indicativ': {
-                'Perfect-compus': 'Prezent-Prezent'
+                'perfect-compus': 'prezent'
             }
         }

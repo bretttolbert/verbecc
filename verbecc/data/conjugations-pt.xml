@@ -9,7 +9,7 @@
 	- Improved DTD, made number of p elements strict, fixed some tenses
 	  with incorrect number of p elements
 	- Removed mood name from tense names to eliminate redundancy
-	- Converted tag names to lowercase for ease of use
+	- Converted tense tag names to lowercase for ease of use
 
 	Coypright (C) 2019 Brett Tolbert <https://github.com/bretttolbert/verbecc>
 	Copyright (C) 2018 SekouD <https://github.com/SekouD>
