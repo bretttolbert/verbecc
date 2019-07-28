@@ -11,6 +11,10 @@ test_ro_conjugate_mood_tense_data = [
         ['eu am', 'tu ai', 'el a', 'noi am', 'voi aţi', 'ei au']),
     ('face', 'indicativ', 'Prezent-Prezent',
         ['eu fac', 'tu faci', 'el face', 'noi facem', 'voi faceţi', 'ei fac']),
+    ('face', 'indicativ', 'Imperfect-Imperfect',
+        ['eu făceam', 'tu făceai', 'el făcea', 'noi făceam', 'voi făceaţi', 'ei făceau']),
+    ('face', 'indicativ', 'Perfect-simplu',
+        ['eu făcui', 'tu făcuși', 'el făcu', 'noi făcurăm', 'voi făcurăţi', 'ei făcură']),
     ('face', 'indicativ', 'Perfect-compus',
         ['eu am făcut', 'tu ai făcut', 'el a făcut', 'noi am făcut', 'voi aţi făcut', 'ei au făcut']),
 ]
