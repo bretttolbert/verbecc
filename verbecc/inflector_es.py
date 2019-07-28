@@ -47,7 +47,7 @@ class InflectorEs(inflector.Inflector):
     def _get_tenses_conjugated_without_pronouns(self):
         return ['participo', 'gerundio', 'infinitivo', 'afirmativo', 'negativo']
 
-    def _get_helping_verb(self, infinitive):
+    def _get_auxilary_verb(self, co, mood_name, tense_name):
         return 'haber'
 
     def _get_participle_mood_name(self):

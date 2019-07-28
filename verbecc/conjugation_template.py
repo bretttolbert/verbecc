@@ -22,3 +22,6 @@ class ConjugationTemplate:
                 "Error parsing {}: {}".format(
                     etree.tostring(template_elem),
                     str(e)))
+
+    def __repr__(self):
+        return 'name={} moods={}'.format(self.name, self.moods)

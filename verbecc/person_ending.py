@@ -34,8 +34,10 @@ class PersonEnding:
     def get_ending(self):
         return self.endings[0]
 
-    def get_alternate_ending(self):
-        ret = None
+    def get_alternate_ending_if_available(self):
         if len(self.endings) > 1:
-            ret = self.endings[1]
-        return ret
+            return self.endings[1]
+        return self.endings[0]
+
+    def __repr__(self):
+        return 'person={} endings={}'.format(self.person, self.endings)

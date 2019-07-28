@@ -54,7 +54,9 @@ class InflectorRo(inflector.Inflector):
                 'imperativ', 'negativ', 
                 'gerunziu']
 
-    def _get_helping_verb(self, infinitive):
+    def _get_auxilary_verb(self, co, mood_name, tense_name):
+        if tense_name == 'viitor-1':
+            return 'voi'
         return 'avea'
 
     def _get_subjunctive_mood_name(self):

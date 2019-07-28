@@ -125,7 +125,7 @@ class InflectorFr(inflector.Inflector):
         return ['infinitif-présent', 'participe-présent', 
                 'imperatif-présent', 'participe-passé']
 
-    def _get_helping_verb(self, co):
+    def _get_auxilary_verb(self, co, mood_name, tense_name):
         ret = 'avoir'
         if (co.verb.infinitive in VERBS_CONJUGATED_WITH_ETRE
             or co.is_reflexive):

@@ -80,3 +80,6 @@ class TenseTemplate:
             person_num += 1
             if len(pe.endings) > 0:
                 self.person_endings.append(pe)
+
+    def __repr__(self):
+        return 'person_endings={}'.format(self.person_endings)

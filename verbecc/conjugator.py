@@ -40,9 +40,9 @@ class Conjugator:
     def conjugate_mood(self, infinitive, mood_name):
         return self._inflector.conjugate_mood(infinitive, mood_name)
 
-    def conjugate_mood_tense(self, infinitive, mood_name, tense_name):
+    def conjugate_mood_tense(self, infinitive, mood_name, tense_name, alternate=False):
         return self._inflector.conjugate_mood_tense( 
-            infinitive, mood_name, tense_name)
+            infinitive, mood_name, tense_name, alternate)
 
     def get_verbs_list(self):
         return self._inflector.get_verbs_list()

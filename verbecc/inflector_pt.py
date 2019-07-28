@@ -89,7 +89,7 @@ class InflectorPt(inflector.Inflector):
                 'afirmativo', 'negativo', 
                 'gerúndio']
 
-    def _get_helping_verb(self, infinitive):
+    def _get_auxilary_verb(self, co, mood_name, tense_name):
         return 'ter'
 
     def _get_subjunctive_mood_name(self):

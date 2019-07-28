@@ -79,7 +79,7 @@
 <!ATTLIST gerunziu xmlns CDATA #FIXED "">
 <!ELEMENT participiu (p)>
 <!ATTLIST participiu xmlns CDATA #FIXED "">
-<!ELEMENT p (i)>
+<!ELEMENT p (i*)>
 <!ATTLIST p xmlns CDATA #FIXED "">
 <!ELEMENT i (#PCDATA)>
 <!ATTLIST i xmlns CDATA #FIXED "">
@@ -1082,6 +1082,136 @@
 	<Participiu>
 		<participiu>
 			<p><i>fost</i></p>
+		</participiu>
+	</Participiu>
+</template>
+
+<template name="v:oi">
+	<Indicativ>
+		<prezent>
+			<p><i>oiesc</i><i>oi</i></p>
+			<p><i>oiești</i><i>ei</i></p>
+			<p><i>oiește</i><i>a</i></p>
+			<p><i>oim</i><i>om</i></p>
+			<p><i>oiţi</i><i>eţi</i></p>
+			<p><i>oiesc</i><i>or</i></p>
+		</prezent>
+		<imperfect>
+			<p><i>oiam</i></p>
+			<p><i>oiai</i></p>
+			<p><i>oia</i></p>
+			<p><i>oiam</i></p>
+			<p><i>oiaţi</i></p>
+			<p><i>oiau</i></p>
+		</imperfect>
+		<perfect-simplu>
+			<p><i>oii</i></p>
+			<p><i>oiși</i></p>
+			<p><i>oi</i></p>
+			<p><i>oirăm</i></p>
+			<p><i>oirăţi</i></p>
+			<p><i>oiră</i></p>
+		</perfect-simplu>
+		<mai-mult-ca-perfect>
+			<p><i>oisem</i></p>
+			<p><i>oiseși</i></p>
+			<p><i>oise</i></p>
+			<p><i>oiserăm</i></p>
+			<p><i>oiserăţi</i></p>
+			<p><i>oiseră</i></p>
+		</mai-mult-ca-perfect>
+		<viitor-1>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+		</viitor-1>
+		<viitor-2>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+		</viitor-2>
+		<viitor-1-popular>
+			<p><i>oiesc</i></p>
+			<p><i>oiești</i></p>
+			<p><i>oiască</i></p>
+			<p><i>oim</i></p>
+			<p><i>oiţi</i></p>
+			<p><i>oiască</i></p>
+		</viitor-1-popular>
+		<viitor-2-popular>
+			<p><i>oiesc</i></p>
+			<p><i>oiești</i></p>
+			<p><i>oiască</i></p>
+			<p><i>oim</i></p>
+			<p><i>oiţi</i></p>
+			<p><i>oiască</i></p>
+		</viitor-2-popular>
+	</Indicativ>
+	<Conjunctiv>
+		<prezent>
+			<p><i>oiesc</i></p>
+			<p><i>oiești</i></p>
+			<p><i>oiască</i></p>
+			<p><i>oim</i></p>
+			<p><i>oiţi</i></p>
+			<p><i>oiască</i></p>
+		</prezent>
+		<perfect>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+		</perfect>
+	</Conjunctiv>
+	<Infinitiv>
+		<afirmativ>
+			<p><i/></p>
+		</afirmativ>
+	</Infinitiv>
+	<Conditional>
+		<prezent>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+			<p><i>oi</i></p>
+		</prezent>
+		<perfect>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+			<p><i>oit</i></p>
+		</perfect>
+	</Conditional>
+	<Imperativ>
+		<imperativ>
+			<p><i>oiește</i></p>
+			<p><i>oiţi</i></p>
+		</imperativ>
+		<negativ>
+			<p><i>oi</i></p>
+			<p><i>oiţi</i></p>
+		</negativ>
+	</Imperativ>
+	<Gerunziu>
+		<gerunziu>
+			<p><i>oind</i></p>
+		</gerunziu>
+	</Gerunziu>
+	<Participiu>
+		<participiu>
+			<p><i>oit</i></p>
 		</participiu>
 	</Participiu>
 </template>
