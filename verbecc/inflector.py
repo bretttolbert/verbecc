@@ -122,11 +122,16 @@ class Inflector(ABC):
                 ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
         return ret
 
+    def _auxilary_verb_uses_alternate_conjugation(self, tense_name):
+        return False
+
     def _conjugate_mood_tense(self, co, mood_name, tense_name, alternate=False):
         comp_conj_map = self._get_compound_conjugations_hv_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
-            hv_tense_name = comp_conj_map[mood_name][tense_name]
-            return self._conjugate_compound(co, mood_name, tense_name, hv_tense_name)
+            aux_tense_name = comp_conj_map[mood_name][tense_name]
+            return self._conjugate_compound(
+                co, mood_name, tense_name, aux_tense_name, 
+                self._auxilary_verb_uses_alternate_conjugation(tense_name))
         else:
             mood = co.template.moods[mood_name]
             if tense_name not in mood.tenses:
@@ -142,7 +147,7 @@ class Inflector(ABC):
     def _get_auxilary_verb(self, co, mood_name, tense_name):
         return ''
 
-    def _is_helping_verb_inflected(self, helping_verb):
+    def _is_auxilary_verb_inflected(self, auxilary_verb):
         return False
 
     def _get_subjunctive_mood_name(self):
@@ -162,16 +167,6 @@ class Inflector(ABC):
 
     def _get_compound_conjugations_hv_map(self):
         """"Returns a map of the tense of the helping verb for each compound mood and tense"""
-        return {}
-
-    def _conjugate_compound(self, co, mood_name, tense_name, hv_tense_name):
-        """Conjugate a compound tense
-        Args:
-            co: ConjugationObjects for the verb being conjugated
-            mood_name: mood verb is being conjugated in
-            tense_name: name of compound tense
-            hv_tense_name: name of tense to conjugate helping verb in order to form this compound tense
-        """
         return {}
 
     def _get_default_participle_inflection_for_person(self, person):
@@ -229,48 +224,24 @@ class Inflector(ABC):
             s += self._get_pronoun_suffix(person)
         return s
 
-    def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, hv_tense_name):
+    def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, aux_tense_name):
         return False
 
-    def _conjugate_compound(self, co, mood_name, tense_name, hv_tense_name):
-        """Conjugate a compound tense
-        Args:
-            co: ConjugationObjects for the verb being conjugated
-            mood_name: mood verb is being conjugated in
-            hv_tense_name: tense_name for conjugating helping verb
-        """
+    def _conjugate_compound_primary_verb(self, co, mood_name, tense_name, persons, aux_verb, aux_conj):
         ret = []
-        if self._compound_conjugation_not_applicable(co.is_reflexive, mood_name, hv_tense_name):
-            return ret
-        persons = [pe.person for pe in 
-            co.template.moods[mood_name].tenses[hv_tense_name].person_endings]
-        helping_verb = self._get_auxilary_verb(co, mood_name, tense_name)
-        hvco = self._get_conj_obs(helping_verb)
-        hvtense_template = copy.deepcopy(
-            hvco.template.moods[mood_name].tenses[hv_tense_name])
-        hvperson_endings = []
-        for pe in hvtense_template.person_endings:
-            if pe.person in persons:
-                hvperson_endings.append(pe)
-        hvtense_template.person_endings = hvperson_endings
-        hvconj = self._conjugate_simple_mood_tense(
-            hvco.verb_stem, 
-            '', 
-            hvtense_template,
-            co.is_reflexive)
         pmood = self._get_participle_mood_name()
         ptense = self._get_participle_tense_name()
         participle = self._conjugate_simple_mood_tense(
             co.verb_stem, 
             pmood, 
             co.template.moods[pmood].tenses[ptense])
-        if not self._is_helping_verb_inflected(helping_verb):
-            for hv in hvconj:
+        if not self._is_auxilary_verb_inflected(aux_verb):
+            for hv in aux_conj:
                 p = participle[0]
                 hv = self._get_alternate_hv_inflection(hv)
                 ret.append(hv + ' ' + p)
         else:
-            for i, hv in enumerate(hvconj):
+            for i, hv in enumerate(aux_conj):
                 participle_inflection = \
                     self._get_default_participle_inflection_for_person(
                         persons[i])
@@ -278,6 +249,36 @@ class Inflector(ABC):
                     grammar_defines.PARTICIPLE_INFLECTIONS.index(
                         participle_inflection)]
                 ret.append(hv + ' ' + p)
+        return ret
+
+    def _conjugate_compound(self, co, mood_name, tense_name, aux_tense_name, aux_alternate):
+        """Conjugate a compound tense
+        Args:
+            co: ConjugationObjects for the verb being conjugated
+            mood_name: mood verb is being conjugated in
+            aux_tense_name: tense_name for conjugating auxilary verb
+        """
+        ret = []
+        if self._compound_conjugation_not_applicable(co.is_reflexive, mood_name, aux_tense_name):
+            return ret
+        persons = [pe.person for pe in 
+            co.template.moods[mood_name].tenses[aux_tense_name].person_endings]
+        aux_verb = self._get_auxilary_verb(co, mood_name, tense_name)
+        aux_co = self._get_conj_obs(aux_verb)
+        aux_tense_template = copy.deepcopy(
+            aux_co.template.moods[mood_name].tenses[aux_tense_name])
+        aux_person_endings = []
+        for pe in aux_tense_template.person_endings:
+            if pe.person in persons:
+                aux_person_endings.append(pe)
+        aux_tense_template.person_endings = aux_person_endings
+        aux_conj = self._conjugate_simple_mood_tense(
+            aux_co.verb_stem, 
+            '', 
+            aux_tense_template,
+            co.is_reflexive,
+            aux_alternate)
+        ret = self._conjugate_compound_primary_verb(co, mood_name, tense_name, persons, aux_verb, aux_conj)
         if mood_name == self._get_subjunctive_mood_name():
             ret = [self._add_subjunctive_relative_pronoun(i, tense_name) for i in ret]
         return ret

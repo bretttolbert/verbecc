@@ -54,8 +54,8 @@ def main():
     tree = etree.parse(os.path.join(working_dir, in_file), parser)
     root = tree.getroot()
     
-    #remove_mood_tense(root, [''])
-    move_tense(root, 'Viitor-II-popular', 'Viitor', 'Indicativ', True)
+    remove_mood_tense(root, ['viitor-1'])
+    #move_tense(root, 'Viitor-II-popular', 'Viitor', 'Indicativ', True)
 
     with open(os.path.join(working_dir, out_file), 'wb') as f:
         objectify.deannotate(root, cleanup_namespaces=True)

@@ -132,8 +132,8 @@ class InflectorFr(inflector.Inflector):
             ret = 'être'
         return ret
 
-    def _is_helping_verb_inflected(self, helping_verb):
-        return helping_verb == 'être'
+    def _is_auxilary_verb_inflected(self, auxilary_verb):
+        return auxilary_verb == 'être'
 
     def _get_subjunctive_mood_name(self):
         return 'subjonctif'
