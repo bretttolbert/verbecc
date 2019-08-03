@@ -86,8 +86,6 @@ class InflectorRo(inflector.Inflector):
         conj = super(InflectorRo, self)._conjugate_compound_primary_verb(
             co, mood_name, tense_name, persons, aux_verb, aux_conj)
         if mood_name == 'indicativ' and tense_name == 'viitor-2':
-            conj_mod = []
-            for pronoun, hv, participle in [c.split(' ') for c in conj]:
-                conj_mod += [' '.join([pronoun, hv, 'fi', participle])]
-            conj = conj_mod
+            conj = [' '.join([pro, hv, 'fi', part]) \
+            for pro, hv, part in [c.split(' ') for c in conj]]
         return conj
