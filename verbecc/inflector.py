@@ -227,30 +227,6 @@ class Inflector(ABC):
     def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, aux_tense_name):
         return False
 
-    def _conjugate_compound_primary_verb(self, co, mood_name, tense_name, persons, aux_verb, aux_conj):
-        ret = []
-        pmood = self._get_participle_mood_name()
-        ptense = self._get_participle_tense_name()
-        participle = self._conjugate_simple_mood_tense(
-            co.verb_stem, 
-            pmood, 
-            co.template.moods[pmood].tenses[ptense])
-        if not self._is_auxilary_verb_inflected(aux_verb):
-            for hv in aux_conj:
-                p = participle[0]
-                hv = self._get_alternate_hv_inflection(hv)
-                ret.append(hv + ' ' + p)
-        else:
-            for i, hv in enumerate(aux_conj):
-                participle_inflection = \
-                    self._get_default_participle_inflection_for_person(
-                        persons[i])
-                p = participle[
-                    grammar_defines.PARTICIPLE_INFLECTIONS.index(
-                        participle_inflection)]
-                ret.append(hv + ' ' + p)
-        return ret
-
     def _conjugate_compound(self, co, mood_name, tense_name, aux_tense_name, aux_alternate):
         """Conjugate a compound tense
         Args:
@@ -281,4 +257,28 @@ class Inflector(ABC):
         ret = self._conjugate_compound_primary_verb(co, mood_name, tense_name, persons, aux_verb, aux_conj)
         if mood_name == self._get_subjunctive_mood_name():
             ret = [self._add_subjunctive_relative_pronoun(i, tense_name) for i in ret]
+        return ret
+
+    def _conjugate_compound_primary_verb(self, co, mood_name, tense_name, persons, aux_verb, aux_conj):
+        ret = []
+        pmood = self._get_participle_mood_name()
+        ptense = self._get_participle_tense_name()
+        participle = self._conjugate_simple_mood_tense(
+            co.verb_stem, 
+            pmood, 
+            co.template.moods[pmood].tenses[ptense])
+        if not self._is_auxilary_verb_inflected(aux_verb):
+            for hv in aux_conj:
+                p = participle[0]
+                hv = self._get_alternate_hv_inflection(hv)
+                ret.append(hv + ' ' + p)
+        else:
+            for i, hv in enumerate(aux_conj):
+                participle_inflection = \
+                    self._get_default_participle_inflection_for_person(
+                        persons[i])
+                p = participle[
+                    grammar_defines.PARTICIPLE_INFLECTIONS.index(
+                        participle_inflection)]
+                ret.append(hv + ' ' + p)
         return ret

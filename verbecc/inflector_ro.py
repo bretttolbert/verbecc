@@ -55,7 +55,7 @@ class InflectorRo(inflector.Inflector):
                 'gerunziu']
 
     def _get_auxilary_verb(self, co, mood_name, tense_name):
-        if tense_name == 'viitor-1':
+        if tense_name in ('viitor-1', 'viitor-2'):
             return 'voi'
         return 'avea'
 
@@ -72,15 +72,22 @@ class InflectorRo(inflector.Inflector):
         return {
             'indicativ': {
                 'perfect-compus': 'prezent',
-                'viitor-1': 'prezent'
+                'viitor-1': 'prezent',
+                'viitor-2': 'prezent'
             }
         }
 
     def _auxilary_verb_uses_alternate_conjugation(self, tense_name):
-        return tense_name == 'viitor-1'
+        return tense_name in ('viitor-1', 'viitor-2')
 
     def _conjugate_compound_primary_verb(self, co, mood_name, tense_name, persons, aux_verb, aux_conj):
         if mood_name == 'indicativ' and tense_name == 'viitor-1':
             return [hv + ' ' + co.verb.infinitive for hv in aux_conj]
-        return super(InflectorRo, self)._conjugate_compound_primary_verb(
+        conj = super(InflectorRo, self)._conjugate_compound_primary_verb(
             co, mood_name, tense_name, persons, aux_verb, aux_conj)
+        if mood_name == 'indicativ' and tense_name == 'viitor-2':
+            conj_mod = []
+            for pronoun, hv, participle in [c.split(' ') for c in conj]:
+                conj_mod += [' '.join([pronoun, hv, 'fi', participle])]
+            conj = conj_mod
+        return conj
