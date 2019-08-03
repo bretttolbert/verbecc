@@ -34,7 +34,11 @@ test_ro_conjugate_mood_tense_data = [
     ('face', 'indicativ', 'viitor-1', False,
         ['eu voi face', 'tu vei face', 'el va face', 'noi vom face', 'voi veţi face', 'ei vor face']),
     ('face', 'indicativ', 'viitor-2', False,
-        ['eu voi fi făcut', 'tu vei fi făcut', 'el va fi făcut', 'noi vom fi făcut', 'voi veţi fi făcut', 'ei vor fi făcut'])
+        ['eu voi fi făcut', 'tu vei fi făcut', 'el va fi făcut', 'noi vom fi făcut', 'voi veţi fi făcut', 'ei vor fi făcut']),
+    ('face', 'conjunctiv', 'prezent', False,
+        ['eu fac', 'tu faci', 'el facă', 'noi facem', 'voi faceţi', 'ei facă']),
+    ('face', 'indicativ', 'viitor-1-popular', False,
+        ['eu o să fac', 'tu o să faci', 'el o să facă', 'noi o să facem', 'voi o să faceţi', 'ei o să facă'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,alternate,expected_result",

@@ -37,7 +37,7 @@
 <!ELEMENT template (Indicativ , Conjunctiv , Infinitiv , (Conditional , Imperativ , Gerunziu , Participiu)?)>
 <!ATTLIST template xmlns CDATA #FIXED "">
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicativ (prezent , imperfect , perfect-simplu , mai-mult-ca-perfect? , (viitor-1-popular , viitor-2-popular)?)>
+<!ELEMENT Indicativ (prezent , imperfect , perfect-simplu , mai-mult-ca-perfect? , (viitor-2-popular)?)>
 <!ATTLIST Indicativ xmlns CDATA #FIXED "">
 <!ELEMENT Conjunctiv (prezent , perfect?)>
 <!ATTLIST Conjunctiv xmlns CDATA #FIXED "">
@@ -61,8 +61,6 @@
 <!ATTLIST perfect-simplu xmlns CDATA #FIXED "">
 <!ELEMENT mai-mult-ca-perfect (p)+>
 <!ATTLIST mai-mult-ca-perfect xmlns CDATA #FIXED "">
-<!ELEMENT viitor-1-popular (p)+>
-<!ATTLIST viitor-1-popular xmlns CDATA #FIXED "">
 <!ELEMENT viitor-2-popular (p)+>
 <!ATTLIST viitor-2-popular xmlns CDATA #FIXED "">
 <!ELEMENT perfect (p)+>
@@ -206,14 +204,6 @@
 			<p><i>ăuserăţi</i></p>
 			<p><i>ăuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>eau</i></p>
-			<p><i>ei</i></p>
-			<p><i>eie</i></p>
-			<p><i>em</i></p>
-			<p><i>eţi</i></p>
-			<p><i>eie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>eau</i></p>
 			<p><i>ei</i></p>
@@ -320,14 +310,6 @@
 			<p><i>ruserăţi</i></p>
 			<p><i>ruseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>r</i></p>
-			<p><i>ri</i></p>
-			<p><i>ară</i></p>
-			<p><i>rem</i></p>
-			<p><i>reţi</i></p>
-			<p><i>ară</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>r</i></p>
 			<p><i>ri</i></p>
@@ -434,14 +416,6 @@
 			<p><i>ăduserăţi</i></p>
 			<p><i>ăduseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>au</i></p>
-			<p><i>ai</i></p>
-			<p><i>ea</i></p>
-			<p><i>ăm</i></p>
-			<p><i>aţi</i></p>
-			<p><i>ea</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>au</i></p>
 			<p><i>ai</i></p>
@@ -548,14 +522,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ez</i></p>
-			<p><i>ezi</i></p>
-			<p><i>eze</i></p>
-			<p><i>ăm</i></p>
-			<p><i>aţi</i></p>
-			<p><i>eze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ez</i></p>
 			<p><i>ezi</i></p>
@@ -662,14 +628,6 @@
 			<p><i>rmiserăţi</i></p>
 			<p><i>rmiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rm</i></p>
-			<p><i>rmi</i></p>
-			<p><i>armă</i></p>
-			<p><i>rmim</i></p>
-			<p><i>rmiţi</i></p>
-			<p><i>armă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rm</i></p>
 			<p><i>rmi</i></p>
@@ -776,14 +734,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>esc</i></p>
-			<p><i>ești</i></p>
-			<p><i>ească</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>ească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>esc</i></p>
 			<p><i>ești</i></p>
@@ -890,14 +840,6 @@
 			<p><i>fuseserăţi</i></p>
 			<p><i>fuseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>fiu</i></p>
-			<p><i>fii</i></p>
-			<p><i>fie</i></p>
-			<p><i>fim</i></p>
-			<p><i>fiţi</i></p>
-			<p><i>fie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>fiu</i></p>
 			<p><i>fii</i></p>
@@ -1004,14 +946,6 @@
 			<p><i>oiserăţi</i></p>
 			<p><i>oiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>oiesc</i></p>
-			<p><i>oiești</i></p>
-			<p><i>oiască</i></p>
-			<p><i>oim</i></p>
-			<p><i>oiţi</i></p>
-			<p><i>oiască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>oiesc</i></p>
 			<p><i>oiești</i></p>
@@ -1118,14 +1052,6 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>esc</i></p>
-			<p><i>ești</i></p>
-			<p><i>ască</i></p>
-			<p><i>m</i></p>
-			<p><i>ţi</i></p>
-			<p><i>ască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>esc</i></p>
 			<p><i>ești</i></p>
@@ -1232,14 +1158,6 @@
 			<p><i>luaserăţi</i></p>
 			<p><i>luaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>iau</i></p>
-			<p><i>iei</i></p>
-			<p><i>ia</i></p>
-			<p><i>luăm</i></p>
-			<p><i>luaţi</i></p>
-			<p><i>ia</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>iau</i></p>
 			<p><i>iei</i></p>
@@ -1346,14 +1264,6 @@
 			<p><i>âncaserăţi</i></p>
 			<p><i>âncaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ănânc</i></p>
-			<p><i>ănânci</i></p>
-			<p><i>ănânce</i></p>
-			<p><i>âncăm</i></p>
-			<p><i>âncaţi</i></p>
-			<p><i>ănânce</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ănânc</i></p>
 			<p><i>ănânci</i></p>
@@ -1460,14 +1370,6 @@
 			<p><i>ăruserăţi</i></p>
 			<p><i>ăruseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ar</i></p>
-			<p><i>ari</i></p>
-			<p><i>ară</i></p>
-			<p><i>ărem</i></p>
-			<p><i>ăreţi</i></p>
-			<p><i>ară</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ar</i></p>
 			<p><i>ari</i></p>
@@ -1574,14 +1476,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>n</i></p>
-			<p><i>i</i></p>
-			<p><i>ie</i></p>
-			<p><i>nem</i></p>
-			<p><i>neţi</i></p>
-			<p><i>ie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>n</i></p>
 			<p><i>i</i></p>
@@ -1688,14 +1582,6 @@
 			<p><i>utuserăţi</i></p>
 			<p><i>utuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ot</i></p>
-			<p><i>oţi</i></p>
-			<p><i>oată</i></p>
-			<p><i>utem</i></p>
-			<p><i>uteţi</i></p>
-			<p><i>oată</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ot</i></p>
 			<p><i>oţi</i></p>
@@ -1802,14 +1688,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>u</i></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>em</i></p>
-			<p><i>eţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>u</i></p>
 			<p><i>i</i></p>
@@ -1916,14 +1794,6 @@
 			<p><i>ălaserăţi</i></p>
 			<p><i>ălaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăl</i></p>
-			<p><i>eli</i></p>
-			<p><i>ele</i></p>
-			<p><i>ălăm</i></p>
-			<p><i>ălaţi</i></p>
-			<p><i>ele</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăl</i></p>
 			<p><i>eli</i></p>
@@ -2030,14 +1900,6 @@
 			<p><i>ătuserăţi</i></p>
 			<p><i>ătuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>au</i></p>
-			<p><i>ai</i></p>
-			<p><i>eie</i></p>
-			<p><i>ăm</i></p>
-			<p><i>aţi</i></p>
-			<p><i>eie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>au</i></p>
 			<p><i>ai</i></p>
@@ -2144,14 +2006,6 @@
 			<p><i>userăţi</i></p>
 			<p><i>useră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>u</i></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>em</i></p>
-			<p><i>eţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>u</i></p>
 			<p><i>i</i></p>
@@ -2258,14 +2112,6 @@
 			<p><i>caserăţi</i></p>
 			<p><i>caseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>uc</i></p>
-			<p><i>uci</i></p>
-			<p><i>uce</i></p>
-			<p><i>căm</i></p>
-			<p><i>caţi</i></p>
-			<p><i>uce</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>uc</i></p>
 			<p><i>uci</i></p>
@@ -2372,14 +2218,6 @@
 			<p><i>âserăţi</i></p>
 			<p><i>âseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăsc</i></p>
-			<p><i>ăști</i></p>
-			<p><i>ască</i></p>
-			<p><i>âm</i></p>
-			<p><i>âţi</i></p>
-			<p><i>ască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăsc</i></p>
 			<p><i>ăști</i></p>
@@ -2486,14 +2324,6 @@
 			<p><i>ăzuserăţi</i></p>
 			<p><i>ăzuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăd</i></p>
-			<p><i>ezi</i></p>
-			<p><i>adă</i></p>
-			<p><i>edem</i></p>
-			<p><i>edeţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăd</i></p>
 			<p><i>ezi</i></p>
@@ -2600,14 +2430,6 @@
 			<p><i>eniserăţi</i></p>
 			<p><i>eniseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>in</i></p>
-			<p><i>ii</i></p>
-			<p><i>ină</i></p>
-			<p><i>enim</i></p>
-			<p><i>eniţi</i></p>
-			<p><i>ină</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>in</i></p>
 			<p><i>ii</i></p>
@@ -2714,14 +2536,6 @@
 			<p><i>eniserăţi</i></p>
 			<p><i>eniseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>in</i></p>
-			<p><i>ii</i></p>
-			<p><i>ină</i></p>
-			<p><i>enim</i></p>
-			<p><i>eniţi</i></p>
-			<p><i>ină</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>in</i></p>
 			<p><i>ii</i></p>
@@ -2828,14 +2642,6 @@
 			<p><i>ătuserăţi</i></p>
 			<p><i>ătuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>at</i></p>
-			<p><i>aţi</i></p>
-			<p><i>ată</i></p>
-			<p><i>atem</i></p>
-			<p><i>ateţi</i></p>
-			<p><i>ată</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>at</i></p>
 			<p><i>aţi</i></p>
@@ -2942,14 +2748,6 @@
 			<p><i>duserăţi</i></p>
 			<p><i>duseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>di</i></p>
-			<p><i>adă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>di</i></p>
@@ -3056,14 +2854,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>ăm</i></p>
-			<p><i>aţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i>i</i></p>
@@ -3170,14 +2960,6 @@
 			<p><i>cuserăţi</i></p>
 			<p><i>cuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ci</i></p>
-			<p><i>acă</i></p>
-			<p><i>cem</i></p>
-			<p><i>ceţi</i></p>
-			<p><i>acă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ci</i></p>
@@ -3284,14 +3066,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>eze</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -3398,14 +3172,6 @@
 			<p><i>gaserăţi</i></p>
 			<p><i>gaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>ge</i></p>
-			<p><i>găm</i></p>
-			<p><i>gaţi</i></p>
-			<p><i>ge</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -3512,14 +3278,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ez</i></p>
-			<p><i>ezi</i></p>
-			<p><i>eze</i></p>
-			<p><i>em</i></p>
-			<p><i>aţi</i></p>
-			<p><i>eze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ez</i></p>
 			<p><i>ezi</i></p>
@@ -3626,14 +3384,6 @@
 			<p><i>rbiserăţi</i></p>
 			<p><i>rbiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rb</i></p>
-			<p><i>rbi</i></p>
-			<p><i>arbă</i></p>
-			<p><i>rbim</i></p>
-			<p><i>rbiţi</i></p>
-			<p><i>arbă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rb</i></p>
 			<p><i>rbi</i></p>
@@ -3740,14 +3490,6 @@
 			<p><i>ăseserăţi</i></p>
 			<p><i>ăseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ag</i></p>
-			<p><i>agi</i></p>
-			<p><i>agă</i></p>
-			<p><i>agem</i></p>
-			<p><i>ageţi</i></p>
-			<p><i>agă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ag</i></p>
 			<p><i>agi</i></p>
@@ -3854,14 +3596,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -3968,14 +3702,6 @@
 			<p><i>cuserăţi</i></p>
 			<p><i>cuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ci</i></p>
-			<p><i>acă</i></p>
-			<p><i>cem</i></p>
-			<p><i>ceţi</i></p>
-			<p><i>acă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ci</i></p>
@@ -4082,14 +3808,6 @@
 			<p><i>ăţaserăţi</i></p>
 			<p><i>ăţaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăţ</i></p>
-			<p><i>ăţi</i></p>
-			<p><i>aţe</i></p>
-			<p><i>ăţăm</i></p>
-			<p><i>ăţaţi</i></p>
-			<p><i>aţe</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăţ</i></p>
 			<p><i>ăţi</i></p>
@@ -4196,14 +3914,6 @@
 			<p><i>ăţăraserăţi</i></p>
 			<p><i>ăţăraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aţăr</i></p>
-			<p><i>aţări</i></p>
-			<p><i>aţăre</i></p>
-			<p><i>ăţărăm</i></p>
-			<p><i>ăţăraţi</i></p>
-			<p><i>aţăre</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aţăr</i></p>
 			<p><i>aţări</i></p>
@@ -4310,14 +4020,6 @@
 			<p><i>taserăţi</i></p>
 			<p><i>taseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ţi</i></p>
-			<p><i>te</i></p>
-			<p><i>tăm</i></p>
-			<p><i>taţi</i></p>
-			<p><i>te</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ţi</i></p>
@@ -4424,14 +4126,6 @@
 			<p><i>eriserăţi</i></p>
 			<p><i>eriseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăr</i></p>
-			<p><i>eri</i></p>
-			<p><i>ere</i></p>
-			<p><i>erim</i></p>
-			<p><i>eriţi</i></p>
-			<p><i>ere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăr</i></p>
 			<p><i>eri</i></p>
@@ -4538,14 +4232,6 @@
 			<p><i>daserăţi</i></p>
 			<p><i>daseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>de</i></p>
-			<p><i>dăm</i></p>
-			<p><i>daţi</i></p>
-			<p><i>de</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -4652,14 +4338,6 @@
 			<p><i>ăugaserăţi</i></p>
 			<p><i>ăugaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aug</i></p>
-			<p><i>augi</i></p>
-			<p><i>auge</i></p>
-			<p><i>ăugăm</i></p>
-			<p><i>ăugaţi</i></p>
-			<p><i>auge</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aug</i></p>
 			<p><i>augi</i></p>
@@ -4766,14 +4444,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>i</i></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>em</i></p>
-			<p><i>aţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>i</i></p>
 			<p><i>i</i></p>
@@ -4880,14 +4550,6 @@
 			<p><i>tuserăţi</i></p>
 			<p><i>tuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ti</i></p>
-			<p><i>tă</i></p>
-			<p><i>tem</i></p>
-			<p><i>teţi</i></p>
-			<p><i>ată</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ti</i></p>
@@ -4994,14 +4656,6 @@
 			<p><i>cuserăţi</i></p>
 			<p><i>cuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ci</i></p>
-			<p><i>că</i></p>
-			<p><i>cem</i></p>
-			<p><i>ceţi</i></p>
-			<p><i>că</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ci</i></p>
@@ -5108,14 +4762,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>u</i></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>ăm</i></p>
-			<p><i>aţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>u</i></p>
 			<p><i>i</i></p>
@@ -5222,14 +4868,6 @@
 			<p><i>eptaserăţi</i></p>
 			<p><i>eptaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ept</i></p>
-			<p><i>epţi</i></p>
-			<p><i>epte</i></p>
-			<p><i>eptăm</i></p>
-			<p><i>eptaţi</i></p>
-			<p><i>epte</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ept</i></p>
 			<p><i>epţi</i></p>
@@ -5336,14 +4974,6 @@
 			<p><i>guserăţi</i></p>
 			<p><i>guseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>gă</i></p>
-			<p><i>gem</i></p>
-			<p><i>geţi</i></p>
-			<p><i>gă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -5450,14 +5080,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>hez</i></p>
-			<p><i>hezi</i></p>
-			<p><i>heze</i></p>
-			<p><i>ăm</i></p>
-			<p><i>aţi</i></p>
-			<p><i>heze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>hez</i></p>
 			<p><i>hezi</i></p>
@@ -5564,14 +5186,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ască</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -5678,14 +5292,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ească</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -5792,14 +5398,6 @@
 			<p><i>guserăţi</i></p>
 			<p><i>guseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>agă</i></p>
-			<p><i>gem</i></p>
-			<p><i>geţi</i></p>
-			<p><i>agă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -5906,14 +5504,6 @@
 			<p><i>rgaserăţi</i></p>
 			<p><i>rgaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rg</i></p>
-			<p><i>rgi</i></p>
-			<p><i>rge</i></p>
-			<p><i>rgăm</i></p>
-			<p><i>rgaţi</i></p>
-			<p><i>rge</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rg</i></p>
 			<p><i>rgi</i></p>
@@ -6020,14 +5610,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>n</i></p>
-			<p><i>i</i></p>
-			<p><i>ie</i></p>
-			<p><i>nem</i></p>
-			<p><i>neţi</i></p>
-			<p><i>ie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>n</i></p>
 			<p><i>i</i></p>
@@ -6134,14 +5716,6 @@
 			<p><i>ăraserăţi</i></p>
 			<p><i>ăraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăr</i></p>
-			<p><i>eri</i></p>
-			<p><i>ere</i></p>
-			<p><i>ărăm</i></p>
-			<p><i>ăraţi</i></p>
-			<p><i>ere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăr</i></p>
 			<p><i>eri</i></p>
@@ -6248,14 +5822,6 @@
 			<p><i>ăsaserăţi</i></p>
 			<p><i>ăsaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăs</i></p>
-			<p><i>eși</i></p>
-			<p><i>ese</i></p>
-			<p><i>ăsăm</i></p>
-			<p><i>ăsaţi</i></p>
-			<p><i>ese</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăs</i></p>
 			<p><i>eși</i></p>
@@ -6362,14 +5928,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -6476,14 +6034,6 @@
 			<p><i>ătaserăţi</i></p>
 			<p><i>ătaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăt</i></p>
-			<p><i>ăţi</i></p>
-			<p><i>ate</i></p>
-			<p><i>ătăm</i></p>
-			<p><i>ătaţi</i></p>
-			<p><i>ate</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăt</i></p>
 			<p><i>ăţi</i></p>
@@ -6590,14 +6140,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rd</i></p>
-			<p><i>rdi</i></p>
-			<p><i>rdă</i></p>
-			<p><i>rdem</i></p>
-			<p><i>rdeţi</i></p>
-			<p><i>rdă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rd</i></p>
 			<p><i>rdi</i></p>
@@ -6704,14 +6246,6 @@
 			<p><i>ţiserăţi</i></p>
 			<p><i>ţiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ţi</i></p>
-			<p><i>tă</i></p>
-			<p><i>ţim</i></p>
-			<p><i>ţiţi</i></p>
-			<p><i>tă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ţi</i></p>
@@ -6818,14 +6352,6 @@
 			<p><i>ezaserăţi</i></p>
 			<p><i>ezaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ez</i></p>
-			<p><i>ezi</i></p>
-			<p><i>eze</i></p>
-			<p><i>ezăm</i></p>
-			<p><i>ezaţi</i></p>
-			<p><i>eze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ez</i></p>
 			<p><i>ezi</i></p>
@@ -6932,14 +6458,6 @@
 			<p><i>ptaserăţi</i></p>
 			<p><i>ptaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>pt</i></p>
-			<p><i>pţi</i></p>
-			<p><i>pte</i></p>
-			<p><i>ptăm</i></p>
-			<p><i>ptaţi</i></p>
-			<p><i>pte</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>pt</i></p>
 			<p><i>pţi</i></p>
@@ -7046,14 +6564,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rn</i></p>
-			<p><i>i</i></p>
-			<p><i>ie</i></p>
-			<p><i>rnem</i></p>
-			<p><i>rneţi</i></p>
-			<p><i>ie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rn</i></p>
 			<p><i>i</i></p>
@@ -7160,14 +6670,6 @@
 			<p><i>staserăţi</i></p>
 			<p><i>staseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>st</i></p>
-			<p><i>sţi</i></p>
-			<p><i>ste</i></p>
-			<p><i>stăm</i></p>
-			<p><i>staţi</i></p>
-			<p><i>ste</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>st</i></p>
 			<p><i>sţi</i></p>
@@ -7274,14 +6776,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>gă</i></p>
-			<p><i>gem</i></p>
-			<p><i>geţi</i></p>
-			<p><i>gă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -7388,14 +6882,6 @@
 			<p><i>serăţi</i></p>
 			<p><i>seră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>e</i></p>
-			<p><i>m</i></p>
-			<p><i>ţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i/></p>
@@ -7502,14 +6988,6 @@
 			<p><i>nuserăţi</i></p>
 			<p><i>nuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>n</i></p>
-			<p><i>i</i></p>
-			<p><i>ană</i></p>
-			<p><i>nem</i></p>
-			<p><i>neţi</i></p>
-			<p><i>ană</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>n</i></p>
 			<p><i>i</i></p>
@@ -7616,14 +7094,6 @@
 			<p><i>scaserăţi</i></p>
 			<p><i>scaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>sc</i></p>
-			<p><i>ști</i></p>
-			<p><i>ște</i></p>
-			<p><i>scăm</i></p>
-			<p><i>scaţi</i></p>
-			<p><i>ște</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>sc</i></p>
 			<p><i>ști</i></p>
@@ -7730,14 +7200,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>gă</i></p>
-			<p><i>gem</i></p>
-			<p><i>geţi</i></p>
-			<p><i>gă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -7844,14 +7306,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>z</i></p>
-			<p><i>zi</i></p>
-			<p><i>ze</i></p>
-			<p><i>m</i></p>
-			<p><i>aţi</i></p>
-			<p><i>ze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>z</i></p>
 			<p><i>zi</i></p>
@@ -7958,14 +7412,6 @@
 			<p><i>ziserăţi</i></p>
 			<p><i>ziseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>zim</i></p>
-			<p><i>ziţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -8072,14 +7518,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i>i</i></p>
@@ -8186,14 +7624,6 @@
 			<p><i>ăgaserăţi</i></p>
 			<p><i>ăgaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ag</i></p>
-			<p><i>agi</i></p>
-			<p><i>age</i></p>
-			<p><i>ăgăm</i></p>
-			<p><i>ăgaţi</i></p>
-			<p><i>age</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ag</i></p>
 			<p><i>agi</i></p>
@@ -8300,14 +7730,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ască</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -8414,14 +7836,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>e</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -8528,14 +7942,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>eze</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -8642,14 +8048,6 @@
 			<p><i>ăcaserăţi</i></p>
 			<p><i>ăcaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ac</i></p>
-			<p><i>aci</i></p>
-			<p><i>ace</i></p>
-			<p><i>ăcăm</i></p>
-			<p><i>ăcaţi</i></p>
-			<p><i>ace</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ac</i></p>
 			<p><i>aci</i></p>
@@ -8756,14 +8154,6 @@
 			<p><i>ăzuserăţi</i></p>
 			<p><i>ăzuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ad</i></p>
-			<p><i>azi</i></p>
-			<p><i>adă</i></p>
-			<p><i>ădem</i></p>
-			<p><i>ădeţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ad</i></p>
 			<p><i>azi</i></p>
@@ -8870,14 +8260,6 @@
 			<p><i>ălcaserăţi</i></p>
 			<p><i>ălcaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>alc</i></p>
-			<p><i>alci</i></p>
-			<p><i>alce</i></p>
-			<p><i>ălcăm</i></p>
-			<p><i>ălcaţi</i></p>
-			<p><i>alce</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>alc</i></p>
 			<p><i>alci</i></p>
@@ -8984,14 +8366,6 @@
 			<p><i>ătaserăţi</i></p>
 			<p><i>ătaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăt</i></p>
-			<p><i>eti</i></p>
-			<p><i>ete</i></p>
-			<p><i>ătăm</i></p>
-			<p><i>ătaţi</i></p>
-			<p><i>ete</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăt</i></p>
 			<p><i>eti</i></p>
@@ -9098,14 +8472,6 @@
 			<p><i>ăraserăţi</i></p>
 			<p><i>ăraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ar</i></p>
-			<p><i>ari</i></p>
-			<p><i>are</i></p>
-			<p><i>ărăm</i></p>
-			<p><i>ăraţi</i></p>
-			<p><i>are</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ar</i></p>
 			<p><i>ari</i></p>
@@ -9212,14 +8578,6 @@
 			<p><i>ăscaserăţi</i></p>
 			<p><i>ăscaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>asc</i></p>
-			<p><i>asci</i></p>
-			<p><i>asce</i></p>
-			<p><i>ăscăm</i></p>
-			<p><i>ăscaţi</i></p>
-			<p><i>asce</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>asc</i></p>
 			<p><i>asci</i></p>
@@ -9326,14 +8684,6 @@
 			<p><i>ăutaserăţi</i></p>
 			<p><i>ăutaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aut</i></p>
-			<p><i>auţi</i></p>
-			<p><i>aute</i></p>
-			<p><i>ăutăm</i></p>
-			<p><i>ăutaţi</i></p>
-			<p><i>aute</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aut</i></p>
 			<p><i>auţi</i></p>
@@ -9440,14 +8790,6 @@
 			<p><i>rnuserăţi</i></p>
 			<p><i>rnuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rn</i></p>
-			<p><i>rni</i></p>
-			<p><i>arnă</i></p>
-			<p><i>rnem</i></p>
-			<p><i>rneţi</i></p>
-			<p><i>arnă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rn</i></p>
 			<p><i>rni</i></p>
@@ -9554,14 +8896,6 @@
 			<p><i>ătinaserăţi</i></p>
 			<p><i>ătinaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>atin</i></p>
-			<p><i>atini</i></p>
-			<p><i>atine</i></p>
-			<p><i>ătinăm</i></p>
-			<p><i>ătinaţi</i></p>
-			<p><i>atine</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>atin</i></p>
 			<p><i>atini</i></p>
@@ -9668,14 +9002,6 @@
 			<p><i>pseserăţi</i></p>
 			<p><i>pseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ci</i></p>
-			<p><i>acă</i></p>
-			<p><i>acem</i></p>
-			<p><i>aceţi</i></p>
-			<p><i>acă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ci</i></p>
@@ -9782,14 +9108,6 @@
 			<p><i>opseserăţi</i></p>
 			<p><i>opseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>os</i></p>
-			<p><i>osi</i></p>
-			<p><i>oasă</i></p>
-			<p><i>oasem</i></p>
-			<p><i>oaseţi</i></p>
-			<p><i>oasă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>os</i></p>
 			<p><i>osi</i></p>
@@ -9896,14 +9214,6 @@
 			<p><i>râserăţi</i></p>
 			<p><i>râseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>r</i></p>
-			<p><i>ri</i></p>
-			<p><i>are</i></p>
-			<p><i>râm</i></p>
-			<p><i>râţi</i></p>
-			<p><i>are</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>r</i></p>
 			<p><i>ri</i></p>
@@ -10010,14 +9320,6 @@
 			<p><i>staserăţi</i></p>
 			<p><i>staseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>st</i></p>
-			<p><i>ști</i></p>
-			<p><i>ste</i></p>
-			<p><i>stăm</i></p>
-			<p><i>staţi</i></p>
-			<p><i>ste</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>st</i></p>
 			<p><i>ști</i></p>
@@ -10124,14 +9426,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -10238,14 +9532,6 @@
 			<p><i>andaserăţi</i></p>
 			<p><i>andaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>and</i></p>
-			<p><i>ânzi</i></p>
-			<p><i>ande</i></p>
-			<p><i>andăm</i></p>
-			<p><i>andaţi</i></p>
-			<p><i>ande</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>and</i></p>
 			<p><i>ânzi</i></p>
@@ -10352,14 +9638,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ţi</i></p>
-			<p><i>tă</i></p>
-			<p><i>tem</i></p>
-			<p><i>teţi</i></p>
-			<p><i>tă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ţi</i></p>
@@ -10466,14 +9744,6 @@
 			<p><i>ăcuserăţi</i></p>
 			<p><i>ăcuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ac</i></p>
-			<p><i>aci</i></p>
-			<p><i>acă</i></p>
-			<p><i>ăcem</i></p>
-			<p><i>ăceţi</i></p>
-			<p><i>acă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ac</i></p>
 			<p><i>aci</i></p>
@@ -10580,14 +9850,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -10694,14 +9956,6 @@
 			<p><i>puserăţi</i></p>
 			<p><i>puseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>p</i></p>
-			<p><i>pi</i></p>
-			<p><i>apă</i></p>
-			<p><i>pem</i></p>
-			<p><i>peţi</i></p>
-			<p><i>apă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>p</i></p>
 			<p><i>pi</i></p>
@@ -10808,14 +10062,6 @@
 			<p><i>scuserăţi</i></p>
 			<p><i>scuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>sc</i></p>
-			<p><i>ști</i></p>
-			<p><i>ască</i></p>
-			<p><i>ștem</i></p>
-			<p><i>șteţi</i></p>
-			<p><i>ască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>sc</i></p>
 			<p><i>ști</i></p>
@@ -10922,14 +10168,6 @@
 			<p><i>rseserăţi</i></p>
 			<p><i>rseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rg</i></p>
-			<p><i>rgi</i></p>
-			<p><i>argă</i></p>
-			<p><i>rgem</i></p>
-			<p><i>rgeţi</i></p>
-			<p><i>argă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rg</i></p>
 			<p><i>rgi</i></p>
@@ -11036,14 +10274,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ci</i></p>
-			<p><i>că</i></p>
-			<p><i>cem</i></p>
-			<p><i>ceţi</i></p>
-			<p><i>că</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ci</i></p>
@@ -11150,14 +10380,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i>i</i></p>
@@ -11264,14 +10486,6 @@
 			<p><i>ăcuserăţi</i></p>
 			<p><i>ăcuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ac</i></p>
-			<p><i>aci</i></p>
-			<p><i>acă</i></p>
-			<p><i>acem</i></p>
-			<p><i>aceţi</i></p>
-			<p><i>acă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ac</i></p>
 			<p><i>aci</i></p>
@@ -11378,14 +10592,6 @@
 			<p><i>urnaserăţi</i></p>
 			<p><i>urnaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>orn</i></p>
-			<p><i>orni</i></p>
-			<p><i>oarne</i></p>
-			<p><i>urnăm</i></p>
-			<p><i>urnaţi</i></p>
-			<p><i>oarne</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>orn</i></p>
 			<p><i>orni</i></p>
@@ -11492,14 +10698,6 @@
 			<p><i>caserăţi</i></p>
 			<p><i>caseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ci</i></p>
-			<p><i>ace</i></p>
-			<p><i>căm</i></p>
-			<p><i>caţi</i></p>
-			<p><i>ace</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ci</i></p>
@@ -11606,14 +10804,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i>i</i></p>
-			<p><i>ă</i></p>
-			<p><i>em</i></p>
-			<p><i>eţi</i></p>
-			<p><i>ă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i>i</i></p>
@@ -11720,14 +10910,6 @@
 			<p><i>siserăţi</i></p>
 			<p><i>siseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>sesc</i></p>
-			<p><i>sești</i></p>
-			<p><i>sească</i></p>
-			<p><i>sim</i></p>
-			<p><i>siţi</i></p>
-			<p><i>sească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>sesc</i></p>
 			<p><i>sești</i></p>
@@ -11834,14 +11016,6 @@
 			<p><i>ăpaserăţi</i></p>
 			<p><i>ăpaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăp</i></p>
-			<p><i>ăpi</i></p>
-			<p><i>ape</i></p>
-			<p><i>ăpăm</i></p>
-			<p><i>ăpaţi</i></p>
-			<p><i>ape</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăp</i></p>
 			<p><i>ăpi</i></p>
@@ -11948,14 +11122,6 @@
 			<p><i>caserăţi</i></p>
 			<p><i>caseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ti</i></p>
-			<p><i>te</i></p>
-			<p><i>căm</i></p>
-			<p><i>caţi</i></p>
-			<p><i>te</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ti</i></p>
@@ -12062,14 +11228,6 @@
 			<p><i>zuserăţi</i></p>
 			<p><i>zuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>adă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -12176,14 +11334,6 @@
 			<p><i>ăscuserăţi</i></p>
 			<p><i>ăscuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>asc</i></p>
-			<p><i>aști</i></p>
-			<p><i>ască</i></p>
-			<p><i>aștem</i></p>
-			<p><i>așteţi</i></p>
-			<p><i>ască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>asc</i></p>
 			<p><i>aști</i></p>
@@ -12290,14 +11440,6 @@
 			<p><i>ăţaserăţi</i></p>
 			<p><i>ăţaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăţ</i></p>
-			<p><i>eţi</i></p>
-			<p><i>eţe</i></p>
-			<p><i>ăţăm</i></p>
-			<p><i>ăţaţi</i></p>
-			<p><i>eţe</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăţ</i></p>
 			<p><i>eţi</i></p>
@@ -12404,14 +11546,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>argă</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -12518,14 +11652,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ină</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -12632,14 +11758,6 @@
 			<p><i>ăpăraserăţi</i></p>
 			<p><i>ăpăraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>apăr</i></p>
-			<p><i>aperi</i></p>
-			<p><i>apere</i></p>
-			<p><i>ăpărăm</i></p>
-			<p><i>ăpăraţi</i></p>
-			<p><i>apere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>apăr</i></p>
 			<p><i>aperi</i></p>
@@ -12746,14 +11864,6 @@
 			<p><i>ăpănaserăţi</i></p>
 			<p><i>ăpănaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>apăn</i></p>
-			<p><i>apeni</i></p>
-			<p><i>apene</i></p>
-			<p><i>ăpănăm</i></p>
-			<p><i>ăpănaţi</i></p>
-			<p><i>apene</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>apăn</i></p>
 			<p><i>apeni</i></p>
@@ -12860,14 +11970,6 @@
 			<p><i>ucaserăţi</i></p>
 			<p><i>ucaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>oc</i></p>
-			<p><i>oci</i></p>
-			<p><i>oace</i></p>
-			<p><i>ucăm</i></p>
-			<p><i>ucaţi</i></p>
-			<p><i>oace</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>oc</i></p>
 			<p><i>oci</i></p>
@@ -12974,14 +12076,6 @@
 			<p><i>ăsaserăţi</i></p>
 			<p><i>ăsaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>as</i></p>
-			<p><i>asi</i></p>
-			<p><i>ase</i></p>
-			<p><i>ăsăm</i></p>
-			<p><i>ăsaţi</i></p>
-			<p><i>ase</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>as</i></p>
 			<p><i>asi</i></p>
@@ -13088,14 +12182,6 @@
 			<p><i>gaserăţi</i></p>
 			<p><i>gaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>ge</i></p>
-			<p><i>găm</i></p>
-			<p><i>gaţi</i></p>
-			<p><i>ge</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -13202,14 +12288,6 @@
 			<p><i>cheaserăţi</i></p>
 			<p><i>cheaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>chi</i></p>
-			<p><i>chi</i></p>
-			<p><i>ache</i></p>
-			<p><i>chem</i></p>
-			<p><i>cheaţi</i></p>
-			<p><i>ache</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>chi</i></p>
 			<p><i>chi</i></p>
@@ -13316,14 +12394,6 @@
 			<p><i>anaserăţi</i></p>
 			<p><i>anaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>anez</i></p>
-			<p><i>anezi</i></p>
-			<p><i>aneze</i></p>
-			<p><i>anăm</i></p>
-			<p><i>anaţi</i></p>
-			<p><i>aneze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>anez</i></p>
 			<p><i>anezi</i></p>
@@ -13430,14 +12500,6 @@
 			<p><i>păraserăţi</i></p>
 			<p><i>păraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>păr</i></p>
-			<p><i>peri</i></p>
-			<p><i>pere</i></p>
-			<p><i>părăm</i></p>
-			<p><i>păraţi</i></p>
-			<p><i>pere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>păr</i></p>
 			<p><i>peri</i></p>
@@ -13544,14 +12606,6 @@
 			<p><i>ălecaserăţi</i></p>
 			<p><i>ălecaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>alec</i></p>
-			<p><i>aleci</i></p>
-			<p><i>alece</i></p>
-			<p><i>ălecăm</i></p>
-			<p><i>ălecaţi</i></p>
-			<p><i>alece</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>alec</i></p>
 			<p><i>aleci</i></p>
@@ -13658,14 +12712,6 @@
 			<p><i>ălţaserăţi</i></p>
 			<p><i>ălţaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>alţ</i></p>
-			<p><i>alţi</i></p>
-			<p><i>alţe</i></p>
-			<p><i>ălţăm</i></p>
-			<p><i>ălţaţi</i></p>
-			<p><i>alţe</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>alţ</i></p>
 			<p><i>alţi</i></p>
@@ -13772,14 +12818,6 @@
 			<p><i>ărcaserăţi</i></p>
 			<p><i>ărcaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>arc</i></p>
-			<p><i>arci</i></p>
-			<p><i>arce</i></p>
-			<p><i>ărcăm</i></p>
-			<p><i>ărcaţi</i></p>
-			<p><i>arce</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>arc</i></p>
 			<p><i>arci</i></p>
@@ -13886,14 +12924,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>e</i></p>
-			<p><i>em</i></p>
-			<p><i>aţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i/></p>
@@ -14000,14 +13030,6 @@
 			<p><i>eriserăţi</i></p>
 			<p><i>eriseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăr</i></p>
-			<p><i>eri</i></p>
-			<p><i>ere</i></p>
-			<p><i>erim</i></p>
-			<p><i>eriţi</i></p>
-			<p><i>ere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăr</i></p>
 			<p><i>eri</i></p>
@@ -14114,14 +13136,6 @@
 			<p><i>taserăţi</i></p>
 			<p><i>taseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>tez</i></p>
-			<p><i>tezi</i></p>
-			<p><i>teze</i></p>
-			<p><i>tăm</i></p>
-			<p><i>taţi</i></p>
-			<p><i>teze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>tez</i></p>
 			<p><i>tezi</i></p>
@@ -14228,14 +13242,6 @@
 			<p><i>duserăţi</i></p>
 			<p><i>duseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>adă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -14342,14 +13348,6 @@
 			<p><i>iaserăţi</i></p>
 			<p><i>iaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>i</i></p>
-			<p><i>i</i></p>
-			<p><i>aie</i></p>
-			<p><i>iem</i></p>
-			<p><i>iaţi</i></p>
-			<p><i>aie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>i</i></p>
 			<p><i>i</i></p>
@@ -14456,14 +13454,6 @@
 			<p><i>ămaserăţi</i></p>
 			<p><i>ămaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>am</i></p>
-			<p><i>ami</i></p>
-			<p><i>ame</i></p>
-			<p><i>ămăm</i></p>
-			<p><i>ămaţi</i></p>
-			<p><i>ame</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>am</i></p>
 			<p><i>ami</i></p>
@@ -14570,14 +13560,6 @@
 			<p><i>rţiserăţi</i></p>
 			<p><i>rţiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>rţi</i></p>
-			<p><i>tă</i></p>
-			<p><i>rţim</i></p>
-			<p><i>rţiţi</i></p>
-			<p><i>tă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>rţi</i></p>
@@ -14684,14 +13666,6 @@
 			<p><i>uiaserăţi</i></p>
 			<p><i>uiaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>oi</i></p>
-			<p><i>oi</i></p>
-			<p><i>oaie</i></p>
-			<p><i>uiem</i></p>
-			<p><i>uiaţi</i></p>
-			<p><i>oaie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>oi</i></p>
 			<p><i>oi</i></p>
@@ -14798,14 +13772,6 @@
 			<p><i>uraserăţi</i></p>
 			<p><i>uraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>or</i></p>
-			<p><i>ori</i></p>
-			<p><i>oare</i></p>
-			<p><i>urăm</i></p>
-			<p><i>uraţi</i></p>
-			<p><i>oare</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>or</i></p>
 			<p><i>ori</i></p>
@@ -14912,14 +13878,6 @@
 			<p><i>elaserăţi</i></p>
 			<p><i>elaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>el</i></p>
-			<p><i>eli</i></p>
-			<p><i>ele</i></p>
-			<p><i>elăm</i></p>
-			<p><i>elaţi</i></p>
-			<p><i>ele</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>el</i></p>
 			<p><i>eli</i></p>
@@ -15026,14 +13984,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>i</i></p>
-			<p><i>i</i></p>
-			<p><i>aie</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>aie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>i</i></p>
 			<p><i>i</i></p>
@@ -15140,14 +14090,6 @@
 			<p><i>paserăţi</i></p>
 			<p><i>paseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>p</i></p>
-			<p><i>pi</i></p>
-			<p><i>ape</i></p>
-			<p><i>păm</i></p>
-			<p><i>paţi</i></p>
-			<p><i>ape</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>p</i></p>
 			<p><i>pi</i></p>
@@ -15254,14 +14196,6 @@
 			<p><i>ăţaserăţi</i></p>
 			<p><i>ăţaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăţ</i></p>
-			<p><i>eţi</i></p>
-			<p><i>eţe</i></p>
-			<p><i>ăţăm</i></p>
-			<p><i>ăţaţi</i></p>
-			<p><i>eţe</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăţ</i></p>
 			<p><i>eţi</i></p>
@@ -15368,14 +14302,6 @@
 			<p><i>nţiserăţi</i></p>
 			<p><i>nţiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>nţi</i></p>
-			<p><i>tă</i></p>
-			<p><i>nţim</i></p>
-			<p><i>nţiţi</i></p>
-			<p><i>tă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>nţi</i></p>
@@ -15482,14 +14408,6 @@
 			<p><i>daserăţi</i></p>
 			<p><i>daseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>ade</i></p>
-			<p><i>dăm</i></p>
-			<p><i>daţi</i></p>
-			<p><i>ade</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -15596,14 +14514,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>argă</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -15710,14 +14620,6 @@
 			<p><i>duserăţi</i></p>
 			<p><i>duseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -15824,14 +14726,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>argă</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -15938,14 +14832,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ţi</i></p>
-			<p><i>tă</i></p>
-			<p><i>tem</i></p>
-			<p><i>teţi</i></p>
-			<p><i>tă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ţi</i></p>
@@ -16052,14 +14938,6 @@
 			<p><i>eraserăţi</i></p>
 			<p><i>eraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăr</i></p>
-			<p><i>eri</i></p>
-			<p><i>ere</i></p>
-			<p><i>erăm</i></p>
-			<p><i>eraţi</i></p>
-			<p><i>ere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăr</i></p>
 			<p><i>eri</i></p>
@@ -16166,14 +15044,6 @@
 			<p><i>guserăţi</i></p>
 			<p><i>guseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>agă</i></p>
-			<p><i>gem</i></p>
-			<p><i>geţi</i></p>
-			<p><i>agă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -16280,14 +15150,6 @@
 			<p><i>sificaserăţi</i></p>
 			<p><i>sificaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>sific</i></p>
-			<p><i>sifici</i></p>
-			<p><i>sifice</i></p>
-			<p><i>sificăm</i></p>
-			<p><i>sificaţi</i></p>
-			<p><i>sifice</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>sific</i></p>
 			<p><i>sifici</i></p>
@@ -16394,14 +15256,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ete</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -16508,14 +15362,6 @@
 			<p><i>ermecaserăţi</i></p>
 			<p><i>ermecaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>armec</i></p>
-			<p><i>armeci</i></p>
-			<p><i>armece</i></p>
-			<p><i>ermecăm</i></p>
-			<p><i>ermecaţi</i></p>
-			<p><i>armece</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>armec</i></p>
 			<p><i>armeci</i></p>
@@ -16622,14 +15468,6 @@
 			<p><i>pseserăţi</i></p>
 			<p><i>pseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rb</i></p>
-			<p><i>rbi</i></p>
-			<p><i>rbă</i></p>
-			<p><i>rbem</i></p>
-			<p><i>rbeţi</i></p>
-			<p><i>rbă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rb</i></p>
 			<p><i>rbi</i></p>
@@ -16736,14 +15574,6 @@
 			<p><i>rfecaserăţi</i></p>
 			<p><i>rfecaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>arfec</i></p>
-			<p><i>arfeci</i></p>
-			<p><i>arfece</i></p>
-			<p><i>rfecăm</i></p>
-			<p><i>rfecaţi</i></p>
-			<p><i>arfece</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>arfec</i></p>
 			<p><i>arfeci</i></p>
@@ -16850,14 +15680,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>gă</i></p>
-			<p><i>gem</i></p>
-			<p><i>geţi</i></p>
-			<p><i>gă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -16964,14 +15786,6 @@
 			<p><i>pseserăţi</i></p>
 			<p><i>pseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>g</i></p>
-			<p><i>gi</i></p>
-			<p><i>gă</i></p>
-			<p><i>gem</i></p>
-			<p><i>geţi</i></p>
-			<p><i>gă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>g</i></p>
 			<p><i>gi</i></p>
@@ -17078,14 +15892,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i>i</i></p>
-			<p><i>ă</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>ă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i>i</i></p>
@@ -17192,14 +15998,6 @@
 			<p><i>ăgăiserăţi</i></p>
 			<p><i>ăgăiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăgăi</i></p>
-			<p><i>ăgăi</i></p>
-			<p><i>ăgăie</i></p>
-			<p><i>ăgăim</i></p>
-			<p><i>ăgăiţi</i></p>
-			<p><i>ăgăie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăgăi</i></p>
 			<p><i>ăgăi</i></p>
@@ -17306,14 +16104,6 @@
 			<p><i>muserăţi</i></p>
 			<p><i>museră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>m</i></p>
-			<p><i>mi</i></p>
-			<p><i>amă</i></p>
-			<p><i>mem</i></p>
-			<p><i>meţi</i></p>
-			<p><i>amă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>m</i></p>
 			<p><i>mi</i></p>
@@ -17420,14 +16210,6 @@
 			<p><i>tiserăţi</i></p>
 			<p><i>tiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>tesc</i></p>
-			<p><i>tești</i></p>
-			<p><i>tească</i></p>
-			<p><i>tim</i></p>
-			<p><i>tiţi</i></p>
-			<p><i>tească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>tesc</i></p>
 			<p><i>tești</i></p>
@@ -17534,14 +16316,6 @@
 			<p><i>ăiserăţi</i></p>
 			<p><i>ăiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăiesc</i></p>
-			<p><i>ăiești</i></p>
-			<p><i>ăiască</i></p>
-			<p><i>ăim</i></p>
-			<p><i>ăiţi</i></p>
-			<p><i>ăiască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăiesc</i></p>
 			<p><i>ăiești</i></p>
@@ -17648,14 +16422,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ămăiască</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -17762,14 +16528,6 @@
 			<p><i>ărţuiserăţi</i></p>
 			<p><i>ărţuiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ărţuiesc</i></p>
-			<p><i>ărţuiești</i></p>
-			<p><i>ărţuiască</i></p>
-			<p><i>ărţuim</i></p>
-			<p><i>ărţuiţi</i></p>
-			<p><i>ărţuiască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ărţuiesc</i></p>
 			<p><i>ărţuiești</i></p>
@@ -17876,14 +16634,6 @@
 			<p><i>tuiserăţi</i></p>
 			<p><i>tuiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>tuiesc</i></p>
-			<p><i>tuiești</i></p>
-			<p><i>tuiască</i></p>
-			<p><i>tuim</i></p>
-			<p><i>tuiţi</i></p>
-			<p><i>tuiască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>tuiesc</i></p>
 			<p><i>tuiești</i></p>
@@ -17990,14 +16740,6 @@
 			<p><i>eșiserăţi</i></p>
 			<p><i>eșiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>es</i></p>
-			<p><i>eși</i></p>
-			<p><i>asă</i></p>
-			<p><i>eșim</i></p>
-			<p><i>eșiţi</i></p>
-			<p><i>asă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>es</i></p>
 			<p><i>eși</i></p>
@@ -18104,14 +16846,6 @@
 			<p><i>implantaserăţi</i></p>
 			<p><i>implantaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>implantez</i></p>
-			<p><i>implantezi</i></p>
-			<p><i>implanteze</i></p>
-			<p><i>implantăm</i></p>
-			<p><i>implantaţi</i></p>
-			<p><i>implanteze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>implantez</i></p>
 			<p><i>implantezi</i></p>
@@ -18218,14 +16952,6 @@
 			<p><i>șiserăţi</i></p>
 			<p><i>șiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ș</i></p>
-			<p><i>și</i></p>
-			<p><i>așă</i></p>
-			<p><i>șim</i></p>
-			<p><i>șiţi</i></p>
-			<p><i>așă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ș</i></p>
 			<p><i>și</i></p>
@@ -18332,14 +17058,6 @@
 			<p><i>ăieraserăţi</i></p>
 			<p><i>ăieraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăier</i></p>
-			<p><i>ăieri</i></p>
-			<p><i>ăiere</i></p>
-			<p><i>ăierăm</i></p>
-			<p><i>ăieraţi</i></p>
-			<p><i>ăiere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăier</i></p>
 			<p><i>ăieri</i></p>
@@ -18446,14 +17164,6 @@
 			<p><i>incarnaserăţi</i></p>
 			<p><i>incarnaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>incarnez</i></p>
-			<p><i>incarnezi</i></p>
-			<p><i>incarneze</i></p>
-			<p><i>incarnăm</i></p>
-			<p><i>incarnaţi</i></p>
-			<p><i>incarneze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>incarnez</i></p>
 			<p><i>incarnezi</i></p>
@@ -18560,14 +17270,6 @@
 			<p><i>voiaserăţi</i></p>
 			<p><i>voiaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>voi</i></p>
-			<p><i>voi</i></p>
-			<p><i>nvoaie</i></p>
-			<p><i>voiem</i></p>
-			<p><i>voiaţi</i></p>
-			<p><i>nvoaie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>voi</i></p>
 			<p><i>voi</i></p>
@@ -18674,14 +17376,6 @@
 			<p><i>mnaserăţi</i></p>
 			<p><i>mnaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>mn</i></p>
-			<p><i>mni</i></p>
-			<p><i>mne</i></p>
-			<p><i>mnăm</i></p>
-			<p><i>mnaţi</i></p>
-			<p><i>mne</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>mn</i></p>
 			<p><i>mni</i></p>
@@ -18788,14 +17482,6 @@
 			<p><i>aţișaserăţi</i></p>
 			<p><i>aţișaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aţișez</i></p>
-			<p><i>aţișezi</i></p>
-			<p><i>aţișeze</i></p>
-			<p><i>aţișăm</i></p>
-			<p><i>aţișaţi</i></p>
-			<p><i>aţișeze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aţișez</i></p>
 			<p><i>aţișezi</i></p>
@@ -18902,14 +17588,6 @@
 			<p><i>ingrădiserăţi</i></p>
 			<p><i>ingrădiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ingrădesc</i></p>
-			<p><i>ingrădești</i></p>
-			<p><i>ingrădească</i></p>
-			<p><i>ingrădim</i></p>
-			<p><i>ingrădiţi</i></p>
-			<p><i>ingrădească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ingrădesc</i></p>
 			<p><i>ingrădești</i></p>
@@ -19016,14 +17694,6 @@
 			<p><i>ingrămădiserăţi</i></p>
 			<p><i>ingrămădiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ingrămădesc</i></p>
-			<p><i>ingrămădești</i></p>
-			<p><i>ingrămădească</i></p>
-			<p><i>ingrămădim</i></p>
-			<p><i>ingrămădiţi</i></p>
-			<p><i>ingrămădească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ingrămădesc</i></p>
 			<p><i>ingrămădești</i></p>
@@ -19130,14 +17800,6 @@
 			<p><i>ășaserăţi</i></p>
 			<p><i>ășaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aș</i></p>
-			<p><i>ași</i></p>
-			<p><i>așe</i></p>
-			<p><i>ășăm</i></p>
-			<p><i>ășaţi</i></p>
-			<p><i>așe</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aș</i></p>
 			<p><i>ași</i></p>
@@ -19244,14 +17906,6 @@
 			<p><i>îngroziserăţi</i></p>
 			<p><i>îngroziseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>îngrozesc</i></p>
-			<p><i>îngrozești</i></p>
-			<p><i>îngrozească</i></p>
-			<p><i>îngrozim</i></p>
-			<p><i>îngroziţi</i></p>
-			<p><i>îngrozească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>îngrozesc</i></p>
 			<p><i>îngrozești</i></p>
@@ -19358,14 +18012,6 @@
 			<p><i>îngurluiserăţi</i></p>
 			<p><i>îngurluiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>îngurluiesc</i></p>
-			<p><i>îngurluiești</i></p>
-			<p><i>îngurluiască</i></p>
-			<p><i>îngurluim</i></p>
-			<p><i>îngurluiţi</i></p>
-			<p><i>îngurluiască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>îngurluiesc</i></p>
 			<p><i>îngurluiești</i></p>
@@ -19472,14 +18118,6 @@
 			<p><i>îngustaserăţi</i></p>
 			<p><i>îngustaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>îngustez</i></p>
-			<p><i>îngustezi</i></p>
-			<p><i>îngusteze</i></p>
-			<p><i>îngustăm</i></p>
-			<p><i>îngustaţi</i></p>
-			<p><i>îngusteze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>îngustez</i></p>
 			<p><i>îngustezi</i></p>
@@ -19586,14 +18224,6 @@
 			<p><i>înhăitaserăţi</i></p>
 			<p><i>înhăitaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>înhăitez</i></p>
-			<p><i>înhăitezi</i></p>
-			<p><i>înhăiteze</i></p>
-			<p><i>înhăităm</i></p>
-			<p><i>înhăitaţi</i></p>
-			<p><i>înhăiteze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>înhăitez</i></p>
 			<p><i>înhăitezi</i></p>
@@ -19700,14 +18330,6 @@
 			<p><i>ăţaserăţi</i></p>
 			<p><i>ăţaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aţ</i></p>
-			<p><i>aţi</i></p>
-			<p><i>aţe</i></p>
-			<p><i>ăţăm</i></p>
-			<p><i>ăţaţi</i></p>
-			<p><i>aţe</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aţ</i></p>
 			<p><i>aţi</i></p>
@@ -19814,14 +18436,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>esc</i></p>
-			<p><i>ești</i></p>
-			<p><i>ască</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>ască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>esc</i></p>
 			<p><i>ești</i></p>
@@ -19928,14 +18542,6 @@
 			<p><i>inseraserăţi</i></p>
 			<p><i>inseraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>inserez</i></p>
-			<p><i>inserezi</i></p>
-			<p><i>insereze</i></p>
-			<p><i>inserăm</i></p>
-			<p><i>inseraţi</i></p>
-			<p><i>insereze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>inserez</i></p>
 			<p><i>inserezi</i></p>
@@ -20042,14 +18648,6 @@
 			<p><i>pseserăţi</i></p>
 			<p><i>pseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rc</i></p>
-			<p><i>rci</i></p>
-			<p><i>arcă</i></p>
-			<p><i>arcem</i></p>
-			<p><i>arceţi</i></p>
-			<p><i>arcă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rc</i></p>
 			<p><i>rci</i></p>
@@ -20156,14 +18754,6 @@
 			<p><i>ăiaserăţi</i></p>
 			<p><i>ăiaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ai</i></p>
-			<p><i>ai</i></p>
-			<p><i>aie</i></p>
-			<p><i>ăiem</i></p>
-			<p><i>ăiaţi</i></p>
-			<p><i>aie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ai</i></p>
 			<p><i>ai</i></p>
@@ -20270,14 +18860,6 @@
 			<p><i>suserăţi</i></p>
 			<p><i>suseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>s</i></p>
-			<p><i>si</i></p>
-			<p><i>asă</i></p>
-			<p><i>sem</i></p>
-			<p><i>seţi</i></p>
-			<p><i>asă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>s</i></p>
 			<p><i>si</i></p>
@@ -20384,14 +18966,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>esc</i></p>
-			<p><i>ești</i></p>
-			<p><i>ească</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>ească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>esc</i></p>
 			<p><i>ești</i></p>
@@ -20498,14 +19072,6 @@
 			<p><i>ucaserăţi</i></p>
 			<p><i>ucaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>oc</i></p>
-			<p><i>oci</i></p>
-			<p><i>oacă</i></p>
-			<p><i>ucăm</i></p>
-			<p><i>ucaţi</i></p>
-			<p><i>oace</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>oc</i></p>
 			<p><i>oci</i></p>
@@ -20612,14 +19178,6 @@
 			<p><i>uiserăţi</i></p>
 			<p><i>uiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>oi</i></p>
-			<p><i>oi</i></p>
-			<p><i>oaie</i></p>
-			<p><i>uim</i></p>
-			<p><i>uiţi</i></p>
-			<p><i>oaie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>oi</i></p>
 			<p><i>oi</i></p>
@@ -20726,14 +19284,6 @@
 			<p><i>ăsaserăţi</i></p>
 			<p><i>ăsaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>as</i></p>
-			<p><i>eși</i></p>
-			<p><i>ese</i></p>
-			<p><i>ăsăm</i></p>
-			<p><i>ăsaţi</i></p>
-			<p><i>ese</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>as</i></p>
 			<p><i>eși</i></p>
@@ -20840,14 +19390,6 @@
 			<p><i>ătraserăţi</i></p>
 			<p><i>ătraseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>atru</i></p>
-			<p><i>atri</i></p>
-			<p><i>atre</i></p>
-			<p><i>ătrăm</i></p>
-			<p><i>ătraţi</i></p>
-			<p><i>atre</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>atru</i></p>
 			<p><i>atri</i></p>
@@ -20954,14 +19496,6 @@
 			<p><i>aniaserăţi</i></p>
 			<p><i>aniaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aniez</i></p>
-			<p><i>aniezi</i></p>
-			<p><i>anieze</i></p>
-			<p><i>aniem</i></p>
-			<p><i>aniaţi</i></p>
-			<p><i>anieze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aniez</i></p>
 			<p><i>aniezi</i></p>
@@ -21068,14 +19602,6 @@
 			<p><i>eunaserăţi</i></p>
 			<p><i>eunaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aun</i></p>
-			<p><i>auni</i></p>
-			<p><i>aune</i></p>
-			<p><i>eunăm</i></p>
-			<p><i>eunaţi</i></p>
-			<p><i>aune</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aun</i></p>
 			<p><i>auni</i></p>
@@ -21182,14 +19708,6 @@
 			<p><i>siserăţi</i></p>
 			<p><i>siseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>s</i></p>
-			<p><i>și</i></p>
-			<p><i>asă</i></p>
-			<p><i>sim</i></p>
-			<p><i>siţi</i></p>
-			<p><i>asă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>s</i></p>
 			<p><i>și</i></p>
@@ -21296,14 +19814,6 @@
 			<p><i>caserăţi</i></p>
 			<p><i>caseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ti</i></p>
-			<p><i>ce</i></p>
-			<p><i>căm</i></p>
-			<p><i>caţi</i></p>
-			<p><i>ce</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ti</i></p>
@@ -21410,14 +19920,6 @@
 			<p><i>uiaserăţi</i></p>
 			<p><i>uiaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>oaie</i></p>
-			<p><i>oi</i></p>
-			<p><i>oaie</i></p>
-			<p><i>uiem</i></p>
-			<p><i>uiaţi</i></p>
-			<p><i>oaie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>oaie</i></p>
 			<p><i>oi</i></p>
@@ -21524,14 +20026,6 @@
 			<p><i>uriserăţi</i></p>
 			<p><i>uriseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>or</i></p>
-			<p><i>ori</i></p>
-			<p><i>oară</i></p>
-			<p><i>urim</i></p>
-			<p><i>uriţi</i></p>
-			<p><i>oară</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>or</i></p>
 			<p><i>ori</i></p>
@@ -21638,14 +20132,6 @@
 			<p><i>ăscuserăţi</i></p>
 			<p><i>ăscuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>asc</i></p>
-			<p><i>aști</i></p>
-			<p><i>ască</i></p>
-			<p><i>aștem</i></p>
-			<p><i>așteţi</i></p>
-			<p><i>ască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>asc</i></p>
 			<p><i>aști</i></p>
@@ -21752,14 +20238,6 @@
 			<p><i>zaserăţi</i></p>
 			<p><i>zaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>z</i></p>
-			<p><i>zi</i></p>
-			<p><i>ze</i></p>
-			<p><i>zăm</i></p>
-			<p><i>zaţi</i></p>
-			<p><i>ze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>z</i></p>
 			<p><i>zi</i></p>
@@ -21866,14 +20344,6 @@
 			<p><i>zaserăţi</i></p>
 			<p><i>zaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>z</i></p>
-			<p><i>zi</i></p>
-			<p><i>ze</i></p>
-			<p><i>zăm</i></p>
-			<p><i>zaţi</i></p>
-			<p><i>ze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>z</i></p>
 			<p><i>zi</i></p>
@@ -21980,14 +20450,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>gă</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -22094,14 +20556,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rgă</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -22208,14 +20662,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ti</i></p>
-			<p><i>tă</i></p>
-			<p><i>tem</i></p>
-			<p><i>teţi</i></p>
-			<p><i>tă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ti</i></p>
@@ -22322,14 +20768,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ă</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -22436,14 +20874,6 @@
 			<p><i>asaserăţi</i></p>
 			<p><i>asaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>asez</i></p>
-			<p><i>eși</i></p>
-			<p><i>aseze</i></p>
-			<p><i>asăm</i></p>
-			<p><i>asaţi</i></p>
-			<p><i>aseze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>asez</i></p>
 			<p><i>eși</i></p>
@@ -22550,14 +20980,6 @@
 			<p><i>ăpaserăţi</i></p>
 			<p><i>ăpaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ap</i></p>
-			<p><i>api</i></p>
-			<p><i>ape</i></p>
-			<p><i>ăpăm</i></p>
-			<p><i>ăpaţi</i></p>
-			<p><i>ape</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ap</i></p>
 			<p><i>api</i></p>
@@ -22664,14 +21086,6 @@
 			<p><i>ârlogiserăţi</i></p>
 			<p><i>ârlogiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ârlogesc</i></p>
-			<p><i>ârlogești</i></p>
-			<p><i>ârlogească</i></p>
-			<p><i>ârlogim</i></p>
-			<p><i>ârlogiţi</i></p>
-			<p><i>ârlogească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ârlogesc</i></p>
 			<p><i>ârlogești</i></p>
@@ -22778,14 +21192,6 @@
 			<p><i>așliserăţi</i></p>
 			<p><i>așliseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>așlesc</i></p>
-			<p><i>așlești</i></p>
-			<p><i>așlească</i></p>
-			<p><i>așlim</i></p>
-			<p><i>așliţi</i></p>
-			<p><i>așlească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>așlesc</i></p>
 			<p><i>așlești</i></p>
@@ -22892,14 +21298,6 @@
 			<p><i>eriserăţi</i></p>
 			<p><i>eriseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>er</i></p>
-			<p><i>eri</i></p>
-			<p><i>ară</i></p>
-			<p><i>erim</i></p>
-			<p><i>eriţi</i></p>
-			<p><i>ară</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>er</i></p>
 			<p><i>eri</i></p>
@@ -23006,14 +21404,6 @@
 			<p><i>erduserăţi</i></p>
 			<p><i>erduseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>erd</i></p>
-			<p><i>erzi</i></p>
-			<p><i>ardă</i></p>
-			<p><i>erdem</i></p>
-			<p><i>erdeţi</i></p>
-			<p><i>ardă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>erd</i></p>
 			<p><i>erzi</i></p>
@@ -23120,14 +21510,6 @@
 			<p><i>saserăţi</i></p>
 			<p><i>saseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>sez</i></p>
-			<p><i>sezi</i></p>
-			<p><i>seze</i></p>
-			<p><i>săm</i></p>
-			<p><i>saţi</i></p>
-			<p><i>seze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>sez</i></p>
 			<p><i>sezi</i></p>
@@ -23234,14 +21616,6 @@
 			<p><i>daserăţi</i></p>
 			<p><i>daseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>dez</i></p>
-			<p><i>zi</i></p>
-			<p><i>deze</i></p>
-			<p><i>dăm</i></p>
-			<p><i>daţi</i></p>
-			<p><i>deze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>dez</i></p>
 			<p><i>zi</i></p>
@@ -23348,14 +21722,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -23462,14 +21828,6 @@
 			<p><i>urtaserăţi</i></p>
 			<p><i>urtaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ort</i></p>
-			<p><i>orti</i></p>
-			<p><i>oarte</i></p>
-			<p><i>urtăm</i></p>
-			<p><i>urtaţi</i></p>
-			<p><i>oarte</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ort</i></p>
 			<p><i>orti</i></p>
@@ -23576,14 +21934,6 @@
 			<p><i>ăseserăţi</i></p>
 			<p><i>ăseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ad</i></p>
-			<p><i>âzi</i></p>
-			<p><i>adă</i></p>
-			<p><i>adem</i></p>
-			<p><i>adeţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ad</i></p>
 			<p><i>âzi</i></p>
@@ -23690,14 +22040,6 @@
 			<p><i>ăgilaserăţi</i></p>
 			<p><i>ăgilaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>agil</i></p>
-			<p><i>agili</i></p>
-			<p><i>agile</i></p>
-			<p><i>ăgilăm</i></p>
-			<p><i>ăgilaţi</i></p>
-			<p><i>agile</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>agil</i></p>
 			<p><i>agili</i></p>
@@ -23804,14 +22146,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>n</i></p>
-			<p><i>ni</i></p>
-			<p><i>nă</i></p>
-			<p><i>nem</i></p>
-			<p><i>neţi</i></p>
-			<p><i>nă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>n</i></p>
 			<p><i>ni</i></p>
@@ -23918,14 +22252,6 @@
 			<p><i>ăriserăţi</i></p>
 			<p><i>ăriseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ar</i></p>
-			<p><i>ari</i></p>
-			<p><i>ară</i></p>
-			<p><i>ărim</i></p>
-			<p><i>ăriţi</i></p>
-			<p><i>ară</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ar</i></p>
 			<p><i>ari</i></p>
@@ -24032,14 +22358,6 @@
 			<p><i>rbuserăţi</i></p>
 			<p><i>rbuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rb</i></p>
-			<p><i>rbi</i></p>
-			<p><i>arbă</i></p>
-			<p><i>rbem</i></p>
-			<p><i>rbeţi</i></p>
-			<p><i>arbă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rb</i></p>
 			<p><i>rbi</i></p>
@@ -24146,14 +22464,6 @@
 			<p><i>userăţi</i></p>
 			<p><i>useră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>u</i></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>m</i></p>
-			<p><i>ţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>u</i></p>
 			<p><i>i</i></p>
@@ -24260,14 +22570,6 @@
 			<p><i>amaserăţi</i></p>
 			<p><i>amaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>amez</i></p>
-			<p><i>amezi</i></p>
-			<p><i>ameze</i></p>
-			<p><i>amăm</i></p>
-			<p><i>amaţi</i></p>
-			<p><i>ameze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>amez</i></p>
 			<p><i>amezi</i></p>
@@ -24374,14 +22676,6 @@
 			<p><i>ânduiserăţi</i></p>
 			<p><i>ânduiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ânduiesc</i></p>
-			<p><i>ânduiești</i></p>
-			<p><i>ânduiască</i></p>
-			<p><i>ânduim</i></p>
-			<p><i>ânduiţi</i></p>
-			<p><i>ânduiască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ânduiesc</i></p>
 			<p><i>ânduiești</i></p>
@@ -24488,14 +22782,6 @@
 			<p><i>ăniserăţi</i></p>
 			<p><i>ăniseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ănesc</i></p>
-			<p><i>ănești</i></p>
-			<p><i>ănească</i></p>
-			<p><i>ănim</i></p>
-			<p><i>ăniţi</i></p>
-			<p><i>ănească</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ănesc</i></p>
 			<p><i>ănești</i></p>
@@ -24602,14 +22888,6 @@
 			<p><i>ătuserăţi</i></p>
 			<p><i>ătuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>at</i></p>
-			<p><i>aţi</i></p>
-			<p><i>ată</i></p>
-			<p><i>atem</i></p>
-			<p><i>ateţi</i></p>
-			<p><i>ată</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>at</i></p>
 			<p><i>aţi</i></p>
@@ -24716,14 +22994,6 @@
 			<p><i>maserăţi</i></p>
 			<p><i>maseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>m</i></p>
-			<p><i>mi</i></p>
-			<p><i>me</i></p>
-			<p><i>măm</i></p>
-			<p><i>maţi</i></p>
-			<p><i>me</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>m</i></p>
 			<p><i>mi</i></p>
@@ -24830,14 +23100,6 @@
 			<p><i>eriserăţi</i></p>
 			<p><i>eriseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>er</i></p>
-			<p><i>eri</i></p>
-			<p><i>eară</i></p>
-			<p><i>erim</i></p>
-			<p><i>eriţi</i></p>
-			<p><i>eară</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>er</i></p>
 			<p><i>eri</i></p>
@@ -24944,14 +23206,6 @@
 			<p><i>caserăţi</i></p>
 			<p><i>caseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>c</i></p>
-			<p><i>ci</i></p>
-			<p><i>ce</i></p>
-			<p><i>căm</i></p>
-			<p><i>caţi</i></p>
-			<p><i>ce</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>c</i></p>
 			<p><i>ci</i></p>
@@ -25058,14 +23312,6 @@
 			<p><i>ziserăţi</i></p>
 			<p><i>ziseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>zim</i></p>
-			<p><i>ziţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -25172,14 +23418,6 @@
 			<p><i>entaserăţi</i></p>
 			<p><i>entaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>int</i></p>
-			<p><i>inţi</i></p>
-			<p><i>inte</i></p>
-			<p><i>entăm</i></p>
-			<p><i>entaţi</i></p>
-			<p><i>inte</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>int</i></p>
 			<p><i>inţi</i></p>
@@ -25286,14 +23524,6 @@
 			<p><i>urtaserăţi</i></p>
 			<p><i>urtaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ort</i></p>
-			<p><i>orţi</i></p>
-			<p><i>orte</i></p>
-			<p><i>urtăm</i></p>
-			<p><i>urtaţi</i></p>
-			<p><i>orte</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ort</i></p>
 			<p><i>orţi</i></p>
@@ -25400,14 +23630,6 @@
 			<p><i>mţiserăţi</i></p>
 			<p><i>mţiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>mţi</i></p>
-			<p><i>tă</i></p>
-			<p><i>mţim</i></p>
-			<p><i>mţiţi</i></p>
-			<p><i>tă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>mţi</i></p>
@@ -25514,14 +23736,6 @@
 			<p><i>ărsaserăţi</i></p>
 			<p><i>ărsaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ărs</i></p>
-			<p><i>ersi</i></p>
-			<p><i>erse</i></p>
-			<p><i>ărsăm</i></p>
-			<p><i>ărsaţi</i></p>
-			<p><i>erse</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ărs</i></p>
 			<p><i>ersi</i></p>
@@ -25628,14 +23842,6 @@
 			<p><i>ânduserăţi</i></p>
 			<p><i>ânduseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ând</i></p>
-			<p><i>inzi</i></p>
-			<p><i>ândă</i></p>
-			<p><i>indem</i></p>
-			<p><i>indeţi</i></p>
-			<p><i>ândă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ând</i></p>
 			<p><i>inzi</i></p>
@@ -25742,14 +23948,6 @@
 			<p><i>zemaserăţi</i></p>
 			<p><i>zemaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>azem</i></p>
-			<p><i>azemi</i></p>
-			<p><i>zeme</i></p>
-			<p><i>zemăm</i></p>
-			<p><i>zemaţi</i></p>
-			<p><i>zeme</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>azem</i></p>
 			<p><i>azemi</i></p>
@@ -25856,14 +24054,6 @@
 			<p><i>pseserăţi</i></p>
 			<p><i>pseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>di</i></p>
-			<p><i>adă</i></p>
-			<p><i>adem</i></p>
-			<p><i>adeţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>di</i></p>
@@ -25970,14 +24160,6 @@
 			<p><i>anizaserăţi</i></p>
 			<p><i>anizaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>anizez</i></p>
-			<p><i>anizezi</i></p>
-			<p><i>anizeze</i></p>
-			<p><i>anizăm</i></p>
-			<p><i>anizaţi</i></p>
-			<p><i>anizeze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>anizez</i></p>
 			<p><i>anizezi</i></p>
@@ -26084,14 +24266,6 @@
 			<p><i>ugaserăţi</i></p>
 			<p><i>ugaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>og</i></p>
-			<p><i>ogi</i></p>
-			<p><i>oage</i></p>
-			<p><i>ugăm</i></p>
-			<p><i>ugaţi</i></p>
-			<p><i>oage</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>og</i></p>
 			<p><i>ogi</i></p>
@@ -26198,14 +24372,6 @@
 			<p><i>ăltaserăţi</i></p>
 			<p><i>ăltaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>alt</i></p>
-			<p><i>alti</i></p>
-			<p><i>alte</i></p>
-			<p><i>ăltăm</i></p>
-			<p><i>ăltaţi</i></p>
-			<p><i>alte</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>alt</i></p>
 			<p><i>alti</i></p>
@@ -26312,14 +24478,6 @@
 			<p><i>aturaserăţi</i></p>
 			<p><i>aturaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>aturez</i></p>
-			<p><i>aturezi</i></p>
-			<p><i>atureze</i></p>
-			<p><i>aturăm</i></p>
-			<p><i>aturaţi</i></p>
-			<p><i>atureze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>aturez</i></p>
 			<p><i>aturezi</i></p>
@@ -26426,14 +24584,6 @@
 			<p><i>ăldaserăţi</i></p>
 			<p><i>ăldaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ald</i></p>
-			<p><i>aldi</i></p>
-			<p><i>alde</i></p>
-			<p><i>ăldăm</i></p>
-			<p><i>ăldaţi</i></p>
-			<p><i>alde</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ald</i></p>
 			<p><i>aldi</i></p>
@@ -26540,14 +24690,6 @@
 			<p><i>aserăţi</i></p>
 			<p><i>aseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ez</i></p>
-			<p><i>ezi</i></p>
-			<p><i>eze</i></p>
-			<p><i>ăm</i></p>
-			<p><i>aţi</i></p>
-			<p><i>eze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ez</i></p>
 			<p><i>ezi</i></p>
@@ -26654,14 +24796,6 @@
 			<p><i>pseserăţi</i></p>
 			<p><i>pseseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ti</i></p>
-			<p><i>ată</i></p>
-			<p><i>atem</i></p>
-			<p><i>ateţi</i></p>
-			<p><i>ată</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ti</i></p>
@@ -26768,14 +24902,6 @@
 			<p><i>ulaserăţi</i></p>
 			<p><i>ulaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ol</i></p>
-			<p><i>oli</i></p>
-			<p><i>oale</i></p>
-			<p><i>ulăm</i></p>
-			<p><i>ulaţi</i></p>
-			<p><i>oale</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ol</i></p>
 			<p><i>oli</i></p>
@@ -26882,14 +25008,6 @@
 			<p><i>mănaserăţi</i></p>
 			<p><i>mănaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>măn</i></p>
-			<p><i>meni</i></p>
-			<p><i>mene</i></p>
-			<p><i>mănăm</i></p>
-			<p><i>mănaţi</i></p>
-			<p><i>mene</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>măn</i></p>
 			<p><i>meni</i></p>
@@ -26996,14 +25114,6 @@
 			<p><i>iserăţi</i></p>
 			<p><i>iseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>esc</i></p>
-			<p><i>ești</i></p>
-			<p><i>ască</i></p>
-			<p><i>im</i></p>
-			<p><i>iţi</i></p>
-			<p><i>ască</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>esc</i></p>
 			<p><i>ești</i></p>
@@ -27110,14 +25220,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -27224,14 +25326,6 @@
 			<p><i>ziserăţi</i></p>
 			<p><i>ziseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>adă</i></p>
-			<p><i>zim</i></p>
-			<p><i>ziţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -27338,14 +25432,6 @@
 			<p><i>tiserăţi</i></p>
 			<p><i>tiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ţi</i></p>
-			<p><i>ată</i></p>
-			<p><i>tim</i></p>
-			<p><i>tiţi</i></p>
-			<p><i>ată</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ţi</i></p>
@@ -27452,14 +25538,6 @@
 			<p><i>niserăţi</i></p>
 			<p><i>niseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>n</i></p>
-			<p><i>ni</i></p>
-			<p><i>ană</i></p>
-			<p><i>nim</i></p>
-			<p><i>niţi</i></p>
-			<p><i>ană</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>n</i></p>
 			<p><i>ni</i></p>
@@ -27566,14 +25644,6 @@
 			<p><i>duserăţi</i></p>
 			<p><i>duseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>dă</i></p>
-			<p><i>dem</i></p>
-			<p><i>deţi</i></p>
-			<p><i>dă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -27680,14 +25750,6 @@
 			<p><i>daserăţi</i></p>
 			<p><i>daseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>d</i></p>
-			<p><i>zi</i></p>
-			<p><i>adă</i></p>
-			<p><i>dăm</i></p>
-			<p><i>daţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>d</i></p>
 			<p><i>zi</i></p>
@@ -27794,14 +25856,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>n</i></p>
-			<p><i>i</i></p>
-			<p><i>ie</i></p>
-			<p><i>nem</i></p>
-			<p><i>neţi</i></p>
-			<p><i>ie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>n</i></p>
 			<p><i>i</i></p>
@@ -27908,14 +25962,6 @@
 			<p><i>ăzuserăţi</i></p>
 			<p><i>ăzuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăd</i></p>
-			<p><i>ezi</i></p>
-			<p><i>adă</i></p>
-			<p><i>edem</i></p>
-			<p><i>edeţi</i></p>
-			<p><i>adă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăd</i></p>
 			<p><i>ezi</i></p>
@@ -28022,14 +26068,6 @@
 			<p><i>somaserăţi</i></p>
 			<p><i>somaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>somez</i></p>
-			<p><i>somezi</i></p>
-			<p><i>someze</i></p>
-			<p><i>somăm</i></p>
-			<p><i>somaţi</i></p>
-			<p><i>someze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>somez</i></p>
 			<p><i>somezi</i></p>
@@ -28136,14 +26174,6 @@
 			<p><i>spionaserăţi</i></p>
 			<p><i>spionaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>spionez</i></p>
-			<p><i>spionezi</i></p>
-			<p><i>spioneze</i></p>
-			<p><i>spionăm</i></p>
-			<p><i>spionaţi</i></p>
-			<p><i>spioneze</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>spionez</i></p>
 			<p><i>spionezi</i></p>
@@ -28250,14 +26280,6 @@
 			<p><i>seserăţi</i></p>
 			<p><i>seseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rg</i></p>
-			<p><i>rgi</i></p>
-			<p><i>rgă</i></p>
-			<p><i>rgem</i></p>
-			<p><i>rgeţi</i></p>
-			<p><i>rgă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rg</i></p>
 			<p><i>rgi</i></p>
@@ -28364,14 +26386,6 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>heze</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>-</i></p>
 			<p><i>-</i></p>
@@ -28478,14 +26492,6 @@
 			<p><i>ăbărâserăţi</i></p>
 			<p><i>ăbărâseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăbăr</i></p>
-			<p><i>ăbări</i></p>
-			<p><i>abere</i></p>
-			<p><i>ăbărâm</i></p>
-			<p><i>ăbărâţi</i></p>
-			<p><i>abere</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăbăr</i></p>
 			<p><i>ăbări</i></p>
@@ -28592,14 +26598,6 @@
 			<p><i>tuserăţi</i></p>
 			<p><i>tuseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>t</i></p>
-			<p><i>ti</i></p>
-			<p><i>ată</i></p>
-			<p><i>tem</i></p>
-			<p><i>teţi</i></p>
-			<p><i>ată</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>t</i></p>
 			<p><i>ti</i></p>
@@ -28706,14 +26704,6 @@
 			<p><i>nduserăţi</i></p>
 			<p><i>nduseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>nd</i></p>
-			<p><i>ndi</i></p>
-			<p><i>andă</i></p>
-			<p><i>ndem</i></p>
-			<p><i>ndeţi</i></p>
-			<p><i>andă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>nd</i></p>
 			<p><i>ndi</i></p>
@@ -28820,14 +26810,6 @@
 			<p><i>ădaserăţi</i></p>
 			<p><i>ădaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăd</i></p>
-			<p><i>edi</i></p>
-			<p><i>ede</i></p>
-			<p><i>ădăm</i></p>
-			<p><i>ădaţi</i></p>
-			<p><i>ede</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăd</i></p>
 			<p><i>edi</i></p>
@@ -28934,14 +26916,6 @@
 			<p><i>ăltaserăţi</i></p>
 			<p><i>ăltaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ălt</i></p>
-			<p><i>alţi</i></p>
-			<p><i>elte</i></p>
-			<p><i>ăltăm</i></p>
-			<p><i>ăltaţi</i></p>
-			<p><i>elte</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ălt</i></p>
 			<p><i>alţi</i></p>
@@ -29048,14 +27022,6 @@
 			<p><i>ărsaserăţi</i></p>
 			<p><i>ărsaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ars</i></p>
-			<p><i>arsi</i></p>
-			<p><i>arse</i></p>
-			<p><i>ărsăm</i></p>
-			<p><i>ărsaţi</i></p>
-			<p><i>arse</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ars</i></p>
 			<p><i>arsi</i></p>
@@ -29162,14 +27128,6 @@
 			<p><i>ătămaserăţi</i></p>
 			<p><i>ătămaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>atăm</i></p>
-			<p><i>atămi</i></p>
-			<p><i>atăme</i></p>
-			<p><i>ătămăm</i></p>
-			<p><i>ătămaţi</i></p>
-			<p><i>atăme</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>atăm</i></p>
 			<p><i>atămi</i></p>
@@ -29276,14 +27234,6 @@
 			<p><i>âserăţi</i></p>
 			<p><i>âseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i/></p>
-			<p><i>i</i></p>
-			<p><i>e</i></p>
-			<p><i>âm</i></p>
-			<p><i>âţi</i></p>
-			<p><i>e</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i/></p>
 			<p><i>i</i></p>
@@ -29390,14 +27340,6 @@
 			<p><i>ănţuiserăţi</i></p>
 			<p><i>ănţuiseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ănţui</i></p>
-			<p><i>ănţui</i></p>
-			<p><i>ănţuie</i></p>
-			<p><i>ănţuim</i></p>
-			<p><i>ănţuiţi</i></p>
-			<p><i>ănţuie</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ănţui</i></p>
 			<p><i>ănţui</i></p>
@@ -29504,14 +27446,6 @@
 			<p><i>ănaserăţi</i></p>
 			<p><i>ănaseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>ăn</i></p>
-			<p><i>eni</i></p>
-			<p><i>ene</i></p>
-			<p><i>ănăm</i></p>
-			<p><i>ănaţi</i></p>
-			<p><i>ene</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>ăn</i></p>
 			<p><i>eni</i></p>
@@ -29618,14 +27552,6 @@
 			<p><i>rliserăţi</i></p>
 			<p><i>rliseră</i></p>
 		</mai-mult-ca-perfect>
-		<viitor-1-popular>
-			<p><i>rl</i></p>
-			<p><i>rli</i></p>
-			<p><i>arlă</i></p>
-			<p><i>rlim</i></p>
-			<p><i>rliţi</i></p>
-			<p><i>arlă</i></p>
-		</viitor-1-popular>
 		<viitor-2-popular>
 			<p><i>rl</i></p>
 			<p><i>rli</i></p>
