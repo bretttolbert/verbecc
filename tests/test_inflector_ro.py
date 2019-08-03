@@ -9,6 +9,8 @@ cg = Conjugator(lang='ro')
 test_ro_conjugate_mood_tense_data = [
     ('avea', 'indicativ', 'prezent', False,
         ['eu am', 'tu ai', 'el a', 'noi am', 'voi aţi', 'ei au']),
+    ('avea', 'indicativ', 'prezent', True,
+        ['eu am', 'tu ai', 'el are', 'noi avem', 'voi aveţi', 'ei au']),
     ('avea', 'indicativ', 'imperfect', False,
         ['eu aveam', 'tu aveai', 'el avea', 'noi aveam', 'voi aveaţi', 'ei aveau']),
     ('avea', 'indicativ', 'perfect-simplu', False,
@@ -38,7 +40,11 @@ test_ro_conjugate_mood_tense_data = [
     ('face', 'conjunctiv', 'prezent', False,
         ['eu fac', 'tu faci', 'el facă', 'noi facem', 'voi faceţi', 'ei facă']),
     ('face', 'indicativ', 'viitor-1-popular', False,
-        ['eu o să fac', 'tu o să faci', 'el o să facă', 'noi o să facem', 'voi o să faceţi', 'ei o să facă'])
+        ['eu o să fac', 'tu o să faci', 'el o să facă', 'noi o să facem', 'voi o să faceţi', 'ei o să facă']),
+    ('face', 'indicativ', 'viitor-2-popular', False,
+        ['eu am să fi făcut', 'tu ai să fi făcut', 'el are să fi făcut', 'noi avem să fi făcut', 'voi aveţi să fi făcut', 'ei au să fi făcut']),
+    ('avea', 'conjunctiv', 'prezent', False,
+        ['eu am', 'tu ai', 'el aibă', 'noi avem', 'voi aveţi', 'ei aibă'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,alternate,expected_result",

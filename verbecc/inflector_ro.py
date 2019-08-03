@@ -76,12 +76,13 @@ class InflectorRo(inflector.Inflector):
                 'perfect-compus': ('indicativ', 'prezent'),
                 'viitor-1': ('indicativ', 'prezent'),
                 'viitor-2': ('indicativ', 'prezent'),
-                'viitor-1-popular': ('conjunctiv', 'prezent')
+                'viitor-1-popular': ('conjunctiv', 'prezent'),
+                'viitor-2-popular': ('indicativ', 'prezent')
             }
         }
 
     def _auxilary_verb_uses_alternate_conjugation(self, tense_name):
-        return tense_name in ('viitor-1', 'viitor-2')
+        return tense_name.startswith('viitor')
 
     def _conjugate_compound_primary_verb(self, co, mood_name, tense_name, persons, aux_verb, aux_conj):
         if mood_name == 'indicativ' and tense_name == 'viitor-1':
@@ -93,5 +94,8 @@ class InflectorRo(inflector.Inflector):
             for pro, hv, part in [c.split(' ') for c in conj]]
         if mood_name == 'indicativ' and tense_name == 'viitor-1-popular':
             conj = [' '.join([pro, 'o să', hv]) \
+            for pro, hv, part in [c.split(' ') for c in conj]]
+        if mood_name == 'indicativ' and tense_name == 'viitor-2-popular':
+            conj = [' '.join([pro, hv, 'să fi', part]) \
             for pro, hv, part in [c.split(' ') for c in conj]]
         return conj
