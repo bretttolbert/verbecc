@@ -101,23 +101,23 @@ class InflectorPt(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'particípio'
 
-    def _get_compound_conjugations_hv_map(self):
+    def _get_compound_conjugations_aux_verb_map(self):
         return {
             'indicativo': {
-                'pretérito-perfeito-composto': 'presente',
-                'pretérito-mais-que-perfeito-composto': 'pretérito-imperfeito',
-                'pretérito-mais-que-perfeito-anterior': 'pretérito-mais-que-perfeito',
-                'futuro-do-presente-composto': 'futuro-do-presente'
+                'pretérito-perfeito-composto': ('indicativo', 'presente'),
+                'pretérito-mais-que-perfeito-composto': ('indicativo', 'pretérito-imperfeito'),
+                'pretérito-mais-que-perfeito-anterior': ('indicativo', 'pretérito-mais-que-perfeito'),
+                'futuro-do-presente-composto': ('indicativo', 'futuro-do-presente')
             },
             'subjuntivo': {
-                'pretérito-perfeito': 'presente',
-                'pretérito-mais-que-perfeito': 'pretérito-imperfeito',
-                'futuro-composto': 'futuro'
+                'pretérito-perfeito': ('subjuntivo', 'presente'),
+                'pretérito-mais-que-perfeito': ('subjuntivo', 'pretérito-imperfeito'),
+                'futuro-composto': ('subjuntivo', 'futuro')
             },
             'condicional': {
-                'futuro-do-pretérito-composto': 'futuro-do-pretérito'
+                'futuro-do-pretérito-composto': ('condicional', 'futuro-do-pretérito')
             },
             'infinitivo': {
-                'infinitivo-pessoal-composto': 'infinitivo-pessoal-presente'
+                'infinitivo-pessoal-composto': ('infinitivo', 'infinitivo-pessoal-presente')
             }
         }

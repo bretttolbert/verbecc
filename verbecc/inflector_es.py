@@ -61,21 +61,21 @@ class InflectorEs(inflector.Inflector):
             return s[:-1]
         return s
 
-    def _get_compound_conjugations_hv_map(self):
+    def _get_compound_conjugations_aux_verb_map(self):
         return {
             'indicativo': {
-                'pretérito-perfecto-compuesto': 'presente',
-                'pretérito-pluscuamperfecto': 'pretérito-imperfecto',
-                'pretérito-anterior': 'pretérito-perfecto-simple',
-                'futuro-perfecto': 'futuro'
+                'pretérito-perfecto-compuesto': ('indicativo', 'presente'),
+                'pretérito-pluscuamperfecto': ('indicativo', 'pretérito-imperfecto'),
+                'pretérito-anterior': ('indicativo', 'pretérito-perfecto-simple'),
+                'futuro-perfecto': ('indicativo', 'futuro')
             },
             'condicional': {
-                'perfecto': 'presente'
+                'perfecto': ('condicional', 'presente')
             },
             'subjuntivo': {
-                'pretérito-perfecto': 'presente',
-                'pretérito-pluscuamperfecto-1': 'pretérito-imperfecto-1',
-                'pretérito-pluscuamperfecto-2': 'pretérito-imperfecto-2',
-                'futuro-perfecto': 'futuro'
+                'pretérito-perfecto': ('subjuntivo', 'presente'),
+                'pretérito-pluscuamperfecto-1': ('subjuntivo', 'pretérito-imperfecto-1'),
+                'pretérito-pluscuamperfecto-2': ('subjuntivo', 'pretérito-imperfecto-2'),
+                'futuro-perfecto': ('subjuntivo', 'futuro')
             }
         }

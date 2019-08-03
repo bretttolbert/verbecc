@@ -171,22 +171,22 @@ class InflectorFr(inflector.Inflector):
         return (is_reflexive and mood_name == 'imperatif'
             and hv_tense_name == 'imperatif-présent')
 
-    def _get_compound_conjugations_hv_map(self):
+    def _get_compound_conjugations_aux_verb_map(self):
         return {
             'indicatif': {
-                'passé-composé': 'présent',
-                'plus-que-parfait': 'imparfait',
-                'futur-antérieur': 'futur-simple',
-                'passé-antérieur': 'passé-simple'
+                'passé-composé': ('indicatif', 'présent'),
+                'plus-que-parfait': ('indicatif', 'imparfait'),
+                'futur-antérieur': ('indicatif', 'futur-simple'),
+                'passé-antérieur': ('indicatif', 'passé-simple')
             },
             'subjonctif': {
-                'passé': 'présent',
-                'plus-que-parfait': 'imparfait'
+                'passé': ('subjonctif', 'présent'),
+                'plus-que-parfait': ('subjonctif', 'imparfait')
             },
             'conditionnel': {
-                'passé': 'présent'
+                'passé': ('conditionnel', 'présent')
             },
             'imperatif': {
-                'imperatif-passé': 'imperatif-présent'
+                'imperatif-passé': ('imperatif', 'imperatif-présent')
             }
         }

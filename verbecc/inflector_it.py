@@ -72,19 +72,19 @@ class InflectorIt(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participio'
 
-    def _get_compound_conjugations_hv_map(self):
+    def _get_compound_conjugations_aux_verb_map(self):
         return {
             'indicativo': {
-                'passato-prossimo': 'presente',
-                'trapassato-prossimo': 'imperfetto',
-                'trapassato-remoto': 'passato-remoto',
-                'futuro-anteriore': 'futuro'
+                'passato-prossimo': ('indicativo', 'presente'),
+                'trapassato-prossimo': ('indicativo', 'imperfetto'),
+                'trapassato-remoto': ('indicativo', 'passato-remoto'),
+                'futuro-anteriore': ('indicativo', 'futuro')
             },
             'congiuntivo': {
-                'passato': 'presente',
-                'trapassato': 'imperfetto'
+                'passato': ('congiuntivo', 'presente'),
+                'trapassato': ('congiuntivo', 'imperfetto')
             },
             'condizionale': {
-                'passato': 'presente'
+                'passato': ('condizionale', 'presente')
             }
         }

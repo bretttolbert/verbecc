@@ -116,7 +116,7 @@ class Inflector(ABC):
 
     def _get_compound_conjugations_for_mood(self, co, mood_name):
         ret = {}
-        comp_conj_map = self._get_compound_conjugations_hv_map()
+        comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map:
             for tense_name in comp_conj_map[mood_name]:
                 ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
@@ -126,11 +126,11 @@ class Inflector(ABC):
         return False
 
     def _conjugate_mood_tense(self, co, mood_name, tense_name, alternate=False):
-        comp_conj_map = self._get_compound_conjugations_hv_map()
+        comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
-            aux_tense_name = comp_conj_map[mood_name][tense_name]
+            aux_mood_name, aux_tense_name = comp_conj_map[mood_name][tense_name]
             return self._conjugate_compound(
-                co, mood_name, tense_name, aux_tense_name, 
+                co, mood_name, tense_name, aux_mood_name, aux_tense_name, 
                 self._auxilary_verb_uses_alternate_conjugation(tense_name))
         else:
             mood = co.template.moods[mood_name]
@@ -165,7 +165,7 @@ class Inflector(ABC):
     def _get_alternate_hv_inflection(self, s):
         return s
 
-    def _get_compound_conjugations_hv_map(self):
+    def _get_compound_conjugations_aux_verb_map(self):
         """"Returns a map of the tense of the helping verb for each compound mood and tense"""
         return {}
 
@@ -227,13 +227,7 @@ class Inflector(ABC):
     def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, aux_tense_name):
         return False
 
-    def _conjugate_compound(self, co, mood_name, tense_name, aux_tense_name, aux_alternate):
-        """Conjugate a compound tense
-        Args:
-            co: ConjugationObjects for the verb being conjugated
-            mood_name: mood verb is being conjugated in
-            aux_tense_name: tense_name for conjugating auxilary verb
-        """
+    def _conjugate_compound(self, co, mood_name, tense_name, aux_mood_name, aux_tense_name, aux_alternate):
         ret = []
         if self._compound_conjugation_not_applicable(co.is_reflexive, mood_name, aux_tense_name):
             return ret
@@ -242,7 +236,7 @@ class Inflector(ABC):
         aux_verb = self._get_auxilary_verb(co, mood_name, tense_name)
         aux_co = self._get_conj_obs(aux_verb)
         aux_tense_template = copy.deepcopy(
-            aux_co.template.moods[mood_name].tenses[aux_tense_name])
+            aux_co.template.moods[aux_mood_name].tenses[aux_tense_name])
         aux_person_endings = []
         for pe in aux_tense_template.person_endings:
             if pe.person in persons:

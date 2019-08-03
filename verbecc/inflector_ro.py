@@ -68,12 +68,12 @@ class InflectorRo(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participiu'
 
-    def _get_compound_conjugations_hv_map(self):
+    def _get_compound_conjugations_aux_verb_map(self):
         return {
             'indicativ': {
-                'perfect-compus': 'prezent',
-                'viitor-1': 'prezent',
-                'viitor-2': 'prezent'
+                'perfect-compus': ('indicativ', 'prezent'),
+                'viitor-1': ('indicativ', 'prezent'),
+                'viitor-2': ('indicativ', 'prezent')
             }
         }
 
