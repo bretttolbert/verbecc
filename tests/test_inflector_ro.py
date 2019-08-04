@@ -50,7 +50,9 @@ test_ro_conjugate_mood_tense_data = [
     ('face', 'indicativ', 'viitor-2-popular', False,
         ['eu am să fi făcut', 'tu ai să fi făcut', 'el are să fi făcut', 'noi avem să fi făcut', 'voi aveţi să fi făcut', 'ei au să fi făcut']),
     ('avea', 'conjunctiv', 'prezent', False,
-        ['eu să am', 'tu să ai', 'el să aibă', 'noi să avem', 'voi să aveţi', 'ei să aibă'])
+        ['eu să am', 'tu să ai', 'el să aibă', 'noi să avem', 'voi să aveţi', 'ei să aibă']),
+    ('avea', 'conditional', 'prezent', False,
+        ['eu aş avea', 'tu ai avea', 'el ar avea', 'noi am avea', 'voi aţi avea', 'ei ar avea'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,alternate,expected_result",

@@ -69,6 +69,9 @@ class InflectorRo(inflector.Inflector):
             return co.verb.infinitive
         return 'avea'
 
+    def _get_indicative_mood_name(self):
+        return 'indicativ'
+
     def _get_subjunctive_mood_name(self):
         return 'conjunctiv'
 
@@ -89,6 +92,9 @@ class InflectorRo(inflector.Inflector):
             },
             'conjunctiv': {
                 'perfect': ('conjunctiv', 'prezent')
+            },
+            'conditional': {
+                'prezent': ('indicativ', 'prezent')
             }
         }
 
@@ -98,6 +104,16 @@ class InflectorRo(inflector.Inflector):
     def _conjugate_compound_primary_verb(self, co, mood_name, tense_name, persons, aux_verb, aux_conj):
         if mood_name == 'indicativ' and tense_name == 'viitor-1':
             return [hv + ' ' + co.verb.infinitive for hv in aux_conj]
+        elif mood_name == 'conditional' and tense_name == 'prezent':
+            #TODO: figure out a more elegant way of doing this
+            return [
+                'eu aş ' + co.verb.infinitive,
+                'tu ai ' + co.verb.infinitive,
+                'el ar ' + co.verb.infinitive,
+                'noi am ' + co.verb.infinitive,
+                'voi aţi ' + co.verb.infinitive,
+                'ei ar ' + co.verb.infinitive
+            ]
         conj = super(InflectorRo, self)._conjugate_compound_primary_verb(
             co, mood_name, tense_name, persons, aux_verb, aux_conj)
         if mood_name == 'indicativ' and tense_name == 'viitor-2':

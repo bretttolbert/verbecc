@@ -150,6 +150,9 @@ class Inflector(ABC):
     def _is_auxilary_verb_inflected(self, auxilary_verb):
         return False
 
+    def _get_indicative_mood_name(self):
+        return 'indicative'
+
     def _get_subjunctive_mood_name(self):
         return 'subjunctive'
 
@@ -232,8 +235,11 @@ class Inflector(ABC):
         ret = []
         if self._compound_conjugation_not_applicable(co.is_reflexive, mood_name, aux_tense_name):
             return ret
+        persons_mood_name = mood_name
+        if mood_name not in co.template.moods:
+            persons_mood_name = self._get_indicative_mood_name()
         persons = [pe.person for pe in 
-            co.template.moods[mood_name].tenses[aux_tense_name].person_endings]
+            co.template.moods[persons_mood_name].tenses[aux_tense_name].person_endings]
         aux_verb = self._get_auxilary_verb(co, mood_name, tense_name)
         aux_co = self._get_conj_obs(aux_verb)
         aux_tense_template = copy.deepcopy(
