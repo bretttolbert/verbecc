@@ -7,6 +7,10 @@ from verbecc import Conjugator
 cg = Conjugator(lang='ro')
 
 test_ro_conjugate_mood_tense_data = [
+    ('avea', 'participiu', 'participiu', False,
+        ['avut']),
+    ('face', 'participiu', 'participiu', False,
+        ['făcut']),
     ('avea', 'indicativ', 'prezent', False,
         ['eu am', 'tu ai', 'el a', 'noi am', 'voi aţi', 'ei au']),
     ('avea', 'indicativ', 'prezent', True,
@@ -38,13 +42,13 @@ test_ro_conjugate_mood_tense_data = [
     ('face', 'indicativ', 'viitor-2', False,
         ['eu voi fi făcut', 'tu vei fi făcut', 'el va fi făcut', 'noi vom fi făcut', 'voi veţi fi făcut', 'ei vor fi făcut']),
     ('face', 'conjunctiv', 'prezent', False,
-        ['eu fac', 'tu faci', 'el facă', 'noi facem', 'voi faceţi', 'ei facă']),
+        ['eu să fac', 'tu să faci', 'el să facă', 'noi să facem', 'voi să faceţi', 'ei să facă']),
     ('face', 'indicativ', 'viitor-1-popular', False,
         ['eu o să fac', 'tu o să faci', 'el o să facă', 'noi o să facem', 'voi o să faceţi', 'ei o să facă']),
     ('face', 'indicativ', 'viitor-2-popular', False,
         ['eu am să fi făcut', 'tu ai să fi făcut', 'el are să fi făcut', 'noi avem să fi făcut', 'voi aveţi să fi făcut', 'ei au să fi făcut']),
     ('avea', 'conjunctiv', 'prezent', False,
-        ['eu am', 'tu ai', 'el aibă', 'noi avem', 'voi aveţi', 'ei aibă'])
+        ['eu să am', 'tu să ai', 'el să aibă', 'noi să avem', 'voi să aveţi', 'ei să aibă'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,alternate,expected_result",

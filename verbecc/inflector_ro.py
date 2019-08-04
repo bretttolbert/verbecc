@@ -7,6 +7,14 @@ class InflectorRo(inflector.Inflector):
         self.lang = 'ro'
         super(InflectorRo, self).__init__()
 
+    def _add_subjunctive_relative_pronoun(self, s, tense_name):
+        pronoun, conj = s.split(' ')
+        if tense_name == 'prezent':
+            s = pronoun + ' să ' + conj
+        elif tense_name == 'perfect':
+            s = pronoun + ' să fi ' + conj
+        return s
+
     def _add_adverb_if_applicable(self, s, mood_name, tense_name):
         if mood_name == 'imperativ' and tense_name == 'negativ':
             return 'nu ' + s

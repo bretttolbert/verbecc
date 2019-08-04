@@ -207,7 +207,8 @@ class Inflector(ABC):
                 ending = person_ending.get_ending()
                 if alternate:
                     ending = person_ending.get_alternate_ending_if_available()
-                s = self._combine_pronoun_and_conj(pronoun, verb_stem + ending)
+                conj = verb_stem + ending
+                s = self._combine_pronoun_and_conj(pronoun, conj)
                 if mood_name == self._get_subjunctive_mood_name():
                     s = self._add_subjunctive_relative_pronoun(s, tense_name)
                 ret.append(s)
