@@ -82,6 +82,7 @@ class InflectorRo(inflector.Inflector):
         return 'participiu'
 
     def _get_compound_conjugations_aux_verb_map(self):
+        #TODO: those last three don't actually use an auxiliary verb, refactor to make aux verb optional
         return {
             'indicativ': {
                 'perfect-compus': ('indicativ', 'prezent'),
@@ -91,10 +92,11 @@ class InflectorRo(inflector.Inflector):
                 'viitor-2-popular': ('indicativ', 'prezent')
             },
             'conjunctiv': {
-                'perfect': ('conjunctiv', 'prezent')
+                'perfect': ('indicativ', 'prezent')
             },
             'conditional': {
-                'prezent': ('indicativ', 'prezent')
+                'prezent': ('indicativ', 'prezent'),
+                'perfect': ('indicativ', 'prezent')
             }
         }
 
@@ -102,18 +104,15 @@ class InflectorRo(inflector.Inflector):
         return tense_name.startswith('viitor')
 
     def _conjugate_compound_primary_verb(self, co, mood_name, tense_name, persons, aux_verb, aux_conj):
+        conditional_aux_verb = ['aş', 'ai', 'ar', 'am', 'aţi', 'ar', 'ar']
         if mood_name == 'indicativ' and tense_name == 'viitor-1':
             return [hv + ' ' + co.verb.infinitive for hv in aux_conj]
         elif mood_name == 'conditional' and tense_name == 'prezent':
-            #TODO: figure out a more elegant way of doing this
-            return [
-                'eu aş ' + co.verb.infinitive,
-                'tu ai ' + co.verb.infinitive,
-                'el ar ' + co.verb.infinitive,
-                'noi am ' + co.verb.infinitive,
-                'voi aţi ' + co.verb.infinitive,
-                'ei ar ' + co.verb.infinitive
-            ]
+            conj = []
+            for i, s in enumerate(aux_conj):
+                pronoun = s.split(' ')[0]
+                conj.append(' '.join([pronoun, conditional_aux_verb[i], co.verb.infinitive]))
+            return conj
         conj = super(InflectorRo, self)._conjugate_compound_primary_verb(
             co, mood_name, tense_name, persons, aux_verb, aux_conj)
         if mood_name == 'indicativ' and tense_name == 'viitor-2':
@@ -128,4 +127,10 @@ class InflectorRo(inflector.Inflector):
         elif mood_name == 'conjunctiv' and tense_name == 'perfect':
             conj = [' '.join([pro, part]) \
             for pro, hv, part in [c.split(' ') for c in conj]]
+        elif mood_name == 'conditional' and tense_name == 'perfect':
+            ogconj = conj
+            conj = []
+            for i, s in enumerate(ogconj):
+                pronoun, aux_verb, participle = s.split(' ')
+                conj.append(' '.join([pronoun, conditional_aux_verb[i], 'fi', participle]))
         return conj
