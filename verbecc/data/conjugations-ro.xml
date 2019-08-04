@@ -39,11 +39,11 @@
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ELEMENT Indicativ (prezent , imperfect , perfect-simplu , mai-mult-ca-perfect?)>
 <!ATTLIST Indicativ xmlns CDATA #FIXED "">
-<!ELEMENT Conjunctiv (prezent , perfect?)>
+<!ELEMENT Conjunctiv (prezent)>
 <!ATTLIST Conjunctiv xmlns CDATA #FIXED "">
 <!ELEMENT Infinitiv (afirmativ)>
 <!ATTLIST Infinitiv xmlns CDATA #FIXED "">
-<!ELEMENT Conditional (prezent , perfect)>
+<!ELEMENT Conditional (prezent)>
 <!ATTLIST Conditional xmlns CDATA #FIXED "">
 <!ELEMENT Imperativ (imperativ , negativ)>
 <!ATTLIST Imperativ xmlns CDATA #FIXED "">
@@ -61,8 +61,6 @@
 <!ATTLIST perfect-simplu xmlns CDATA #FIXED "">
 <!ELEMENT mai-mult-ca-perfect (p)+>
 <!ATTLIST mai-mult-ca-perfect xmlns CDATA #FIXED "">
-<!ELEMENT perfect (p)+>
-<!ATTLIST perfect xmlns CDATA #FIXED "">
 <!ELEMENT imperativ (p)+>
 <!ATTLIST imperativ xmlns CDATA #FIXED "">
 <!ELEMENT negativ (p)+>
@@ -137,15 +135,7 @@
 			<p><i>vea</i></p>
 			<p><i>vea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>vut</i></p>
-			<p><i>vut</i></p>
-			<p><i>vut</i></p>
-			<p><i>vut</i></p>
-			<p><i>vut</i></p>
-			<p><i>vut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ai</i></p>
@@ -212,15 +202,7 @@
 			<p><i>eţi</i></p>
 			<p><i>eie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ea</i></p>
@@ -235,15 +217,7 @@
 			<p><i>ea</i></p>
 			<p><i>ea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-			<p><i>ăut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ea</i></p>
@@ -310,15 +284,7 @@
 			<p><i>reţi</i></p>
 			<p><i>ară</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>re</i></p>
@@ -333,15 +299,7 @@
 			<p><i>re</i></p>
 			<p><i>re</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-			<p><i>rut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>re</i></p>
@@ -408,15 +366,7 @@
 			<p><i>aţi</i></p>
 			<p><i>ea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -431,15 +381,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ă</i></p>
@@ -506,15 +448,7 @@
 			<p><i>aţi</i></p>
 			<p><i>eze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -529,15 +463,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ează</i></p>
@@ -604,15 +530,7 @@
 			<p><i>rmiţi</i></p>
 			<p><i>armă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rmi</i></p>
@@ -627,15 +545,7 @@
 			<p><i>rmi</i></p>
 			<p><i>rmi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-			<p><i>rmit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>rmi</i></p>
@@ -702,15 +612,7 @@
 			<p><i>iţi</i></p>
 			<p><i>ească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -725,15 +627,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ește</i></p>
@@ -800,15 +694,7 @@
 			<p><i>fiţi</i></p>
 			<p><i>fie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>fi</i></p>
@@ -823,15 +709,7 @@
 			<p><i>fi</i></p>
 			<p><i>fi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-			<p><i>fost</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>fii</i></p>
@@ -898,15 +776,7 @@
 			<p><i>oiţi</i></p>
 			<p><i>oiască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i/></p>
@@ -921,15 +791,7 @@
 			<p><i>oi</i></p>
 			<p><i>oi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-			<p><i>oit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oiește</i></p>
@@ -996,15 +858,7 @@
 			<p><i>ţi</i></p>
 			<p><i>ască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i/></p>
@@ -1019,15 +873,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ește</i></p>
@@ -1094,15 +940,7 @@
 			<p><i>luaţi</i></p>
 			<p><i>ia</i></p>
 		</prezent>
-		<perfect>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>lua</i></p>
@@ -1117,15 +955,7 @@
 			<p><i>lua</i></p>
 			<p><i>lua</i></p>
 		</prezent>
-		<perfect>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-			<p><i>luat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ia</i></p>
@@ -1192,15 +1022,7 @@
 			<p><i>âncaţi</i></p>
 			<p><i>ănânce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ânca</i></p>
@@ -1215,15 +1037,7 @@
 			<p><i>ânca</i></p>
 			<p><i>ânca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-			<p><i>âncat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ănâncă</i></p>
@@ -1290,15 +1104,7 @@
 			<p><i>ăreţi</i></p>
 			<p><i>ară</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ărea</i></p>
@@ -1313,15 +1119,7 @@
 			<p><i>ărea</i></p>
 			<p><i>ărea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-			<p><i>ărut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>are</i></p>
@@ -1388,15 +1186,7 @@
 			<p><i>neţi</i></p>
 			<p><i>ie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ne</i></p>
@@ -1411,15 +1201,7 @@
 			<p><i>ne</i></p>
 			<p><i>ne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ne</i></p>
@@ -1486,15 +1268,7 @@
 			<p><i>uteţi</i></p>
 			<p><i>oată</i></p>
 		</prezent>
-		<perfect>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>utea</i></p>
@@ -1509,15 +1283,7 @@
 			<p><i>utea</i></p>
 			<p><i>utea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-			<p><i>utut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oate</i></p>
@@ -1584,15 +1350,7 @@
 			<p><i>eţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>e</i></p>
@@ -1607,15 +1365,7 @@
 			<p><i>e</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -1682,15 +1432,7 @@
 			<p><i>ălaţi</i></p>
 			<p><i>ele</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăla</i></p>
@@ -1705,15 +1447,7 @@
 			<p><i>ăla</i></p>
 			<p><i>ăla</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-			<p><i>ălat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ală</i></p>
@@ -1780,15 +1514,7 @@
 			<p><i>aţi</i></p>
 			<p><i>eie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -1803,15 +1529,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ăi</i></p>
@@ -1878,15 +1596,7 @@
 			<p><i>eţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>e</i></p>
@@ -1901,15 +1611,7 @@
 			<p><i>e</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -1976,15 +1678,7 @@
 			<p><i>caţi</i></p>
 			<p><i>uce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ca</i></p>
@@ -1999,15 +1693,7 @@
 			<p><i>ca</i></p>
 			<p><i>ca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ucă</i></p>
@@ -2074,15 +1760,7 @@
 			<p><i>âţi</i></p>
 			<p><i>ască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>î</i></p>
@@ -2097,15 +1775,7 @@
 			<p><i>î</i></p>
 			<p><i>î</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ăște</i></p>
@@ -2172,15 +1842,7 @@
 			<p><i>edeţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>edea</i></p>
@@ -2195,15 +1857,7 @@
 			<p><i>edea</i></p>
 			<p><i>edea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ezi</i></p>
@@ -2270,15 +1924,7 @@
 			<p><i>eniţi</i></p>
 			<p><i>ină</i></p>
 		</prezent>
-		<perfect>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eni</i></p>
@@ -2293,15 +1939,7 @@
 			<p><i>eni</i></p>
 			<p><i>eni</i></p>
 		</prezent>
-		<perfect>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ino</i></p>
@@ -2368,15 +2006,7 @@
 			<p><i>oţi</i></p>
 			<p><i>or</i></p>
 		</prezent>
-		<perfect>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>vrea</i></p>
@@ -2391,15 +2021,7 @@
 			<p><i>eni</i></p>
 			<p><i>eni</i></p>
 		</prezent>
-		<perfect>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-			<p><i>enit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ino</i></p>
@@ -2466,15 +2088,7 @@
 			<p><i>ateţi</i></p>
 			<p><i>ată</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ate</i></p>
@@ -2489,15 +2103,7 @@
 			<p><i>ate</i></p>
 			<p><i>ate</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-			<p><i>ătut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ate</i></p>
@@ -2564,15 +2170,7 @@
 			<p><i>deţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -2587,15 +2185,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -2662,15 +2252,7 @@
 			<p><i>aţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -2685,15 +2267,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ă</i></p>
@@ -2760,15 +2334,7 @@
 			<p><i>ceţi</i></p>
 			<p><i>acă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ce</i></p>
@@ -2783,15 +2349,7 @@
 			<p><i>ce</i></p>
 			<p><i>ce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-			<p><i>cut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ce</i></p>
@@ -2858,15 +2416,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -2881,15 +2431,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -2956,15 +2498,7 @@
 			<p><i>gaţi</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ga</i></p>
@@ -2979,15 +2513,7 @@
 			<p><i>ga</i></p>
 			<p><i>ga</i></p>
 		</prezent>
-		<perfect>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>gă</i></p>
@@ -3054,15 +2580,7 @@
 			<p><i>aţi</i></p>
 			<p><i>eze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -3077,15 +2595,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ază</i></p>
@@ -3152,15 +2662,7 @@
 			<p><i>rbiţi</i></p>
 			<p><i>arbă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rbi</i></p>
@@ -3175,15 +2677,7 @@
 			<p><i>rbi</i></p>
 			<p><i>rbi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-			<p><i>rbit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>arbe</i></p>
@@ -3250,15 +2744,7 @@
 			<p><i>ageţi</i></p>
 			<p><i>agă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>age</i></p>
@@ -3273,15 +2759,7 @@
 			<p><i>age</i></p>
 			<p><i>age</i></p>
 		</prezent>
-		<perfect>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>age</i></p>
@@ -3348,15 +2826,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -3371,15 +2841,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -3446,15 +2908,7 @@
 			<p><i>ceţi</i></p>
 			<p><i>acă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ce</i></p>
@@ -3469,15 +2923,7 @@
 			<p><i>ce</i></p>
 			<p><i>ce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ce</i></p>
@@ -3544,15 +2990,7 @@
 			<p><i>ăţaţi</i></p>
 			<p><i>aţe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăţa</i></p>
@@ -3567,15 +3005,7 @@
 			<p><i>ăţa</i></p>
 			<p><i>ăţa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aţă</i></p>
@@ -3642,15 +3072,7 @@
 			<p><i>ăţăraţi</i></p>
 			<p><i>aţăre</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăţăra</i></p>
@@ -3665,15 +3087,7 @@
 			<p><i>ăţăra</i></p>
 			<p><i>ăţăra</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-			<p><i>ăţărat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aţără</i></p>
@@ -3740,15 +3154,7 @@
 			<p><i>taţi</i></p>
 			<p><i>te</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ta</i></p>
@@ -3763,15 +3169,7 @@
 			<p><i>ta</i></p>
 			<p><i>ta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>tă</i></p>
@@ -3838,15 +3236,7 @@
 			<p><i>eriţi</i></p>
 			<p><i>ere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eri</i></p>
@@ -3861,15 +3251,7 @@
 			<p><i>eri</i></p>
 			<p><i>eri</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>eri</i></p>
@@ -3936,15 +3318,7 @@
 			<p><i>daţi</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>da</i></p>
@@ -3959,15 +3333,7 @@
 			<p><i>da</i></p>
 			<p><i>da</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>dă</i></p>
@@ -4034,15 +3400,7 @@
 			<p><i>ăugaţi</i></p>
 			<p><i>auge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăuga</i></p>
@@ -4057,15 +3415,7 @@
 			<p><i>ăuga</i></p>
 			<p><i>ăuga</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-			<p><i>ăugat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>augi</i></p>
@@ -4132,15 +3482,7 @@
 			<p><i>aţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -4155,15 +3497,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -4230,15 +3564,7 @@
 			<p><i>teţi</i></p>
 			<p><i>ată</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>te</i></p>
@@ -4253,15 +3579,7 @@
 			<p><i>te</i></p>
 			<p><i>te</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>te</i></p>
@@ -4328,15 +3646,7 @@
 			<p><i>ceţi</i></p>
 			<p><i>că</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ce</i></p>
@@ -4351,15 +3661,7 @@
 			<p><i>ce</i></p>
 			<p><i>ce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ce</i></p>
@@ -4426,15 +3728,7 @@
 			<p><i>aţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -4449,15 +3743,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ă</i></p>
@@ -4524,15 +3810,7 @@
 			<p><i>eptaţi</i></p>
 			<p><i>epte</i></p>
 		</prezent>
-		<perfect>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>epta</i></p>
@@ -4547,15 +3825,7 @@
 			<p><i>epta</i></p>
 			<p><i>epta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-			<p><i>eptat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aptă</i></p>
@@ -4622,15 +3892,7 @@
 			<p><i>geţi</i></p>
 			<p><i>gă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -4645,15 +3907,7 @@
 			<p><i>ge</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ge</i></p>
@@ -4720,15 +3974,7 @@
 			<p><i>aţi</i></p>
 			<p><i>heze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -4743,15 +3989,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>hează</i></p>
@@ -4818,15 +4056,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>it</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -4841,15 +4071,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>it</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -4916,15 +4138,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>it</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -4939,15 +4153,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>it</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -5014,15 +4220,7 @@
 			<p><i>geţi</i></p>
 			<p><i>agă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -5037,15 +4235,7 @@
 			<p><i>ge</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ge</i></p>
@@ -5112,15 +4302,7 @@
 			<p><i>rgaţi</i></p>
 			<p><i>rge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rga</i></p>
@@ -5135,15 +4317,7 @@
 			<p><i>rga</i></p>
 			<p><i>rga</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-			<p><i>rgat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>argă</i></p>
@@ -5210,15 +4384,7 @@
 			<p><i>neţi</i></p>
 			<p><i>ie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ne</i></p>
@@ -5233,15 +4399,7 @@
 			<p><i>ne</i></p>
 			<p><i>ne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ne</i></p>
@@ -5308,15 +4466,7 @@
 			<p><i>ăraţi</i></p>
 			<p><i>ere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăra</i></p>
@@ -5331,15 +4481,7 @@
 			<p><i>ăra</i></p>
 			<p><i>ăra</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ară</i></p>
@@ -5406,15 +4548,7 @@
 			<p><i>ăsaţi</i></p>
 			<p><i>ese</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăsa</i></p>
@@ -5429,15 +4563,7 @@
 			<p><i>ăsa</i></p>
 			<p><i>ăsa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>asă</i></p>
@@ -5504,15 +4630,7 @@
 			<p><i>deţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -5527,15 +4645,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -5602,15 +4712,7 @@
 			<p><i>ătaţi</i></p>
 			<p><i>ate</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăta</i></p>
@@ -5625,15 +4727,7 @@
 			<p><i>ăta</i></p>
 			<p><i>ăta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ătă</i></p>
@@ -5700,15 +4794,7 @@
 			<p><i>rdeţi</i></p>
 			<p><i>rdă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rde</i></p>
@@ -5723,15 +4809,7 @@
 			<p><i>rde</i></p>
 			<p><i>rde</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -5798,15 +4876,7 @@
 			<p><i>ţiţi</i></p>
 			<p><i>tă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ţi</i></p>
@@ -5821,15 +4891,7 @@
 			<p><i>ţi</i></p>
 			<p><i>ţi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-			<p><i>ţit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>te</i></p>
@@ -5896,15 +4958,7 @@
 			<p><i>ezaţi</i></p>
 			<p><i>eze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eza</i></p>
@@ -5919,15 +4973,7 @@
 			<p><i>eza</i></p>
 			<p><i>eza</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-			<p><i>ezat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ază</i></p>
@@ -5994,15 +5040,7 @@
 			<p><i>ptaţi</i></p>
 			<p><i>pte</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>pta</i></p>
@@ -6017,15 +5055,7 @@
 			<p><i>pta</i></p>
 			<p><i>pta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-			<p><i>ptat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aptă</i></p>
@@ -6092,15 +5122,7 @@
 			<p><i>rneţi</i></p>
 			<p><i>ie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rne</i></p>
@@ -6115,15 +5137,7 @@
 			<p><i>rne</i></p>
 			<p><i>rne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>rne</i></p>
@@ -6190,15 +5204,7 @@
 			<p><i>staţi</i></p>
 			<p><i>ste</i></p>
 		</prezent>
-		<perfect>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>sta</i></p>
@@ -6213,15 +5219,7 @@
 			<p><i>sta</i></p>
 			<p><i>sta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>stă</i></p>
@@ -6288,15 +5286,7 @@
 			<p><i>geţi</i></p>
 			<p><i>gă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -6311,15 +5301,7 @@
 			<p><i>ge</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ge</i></p>
@@ -6386,15 +5368,7 @@
 			<p><i>ţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i/></p>
@@ -6409,15 +5383,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -6484,15 +5450,7 @@
 			<p><i>neţi</i></p>
 			<p><i>ană</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ne</i></p>
@@ -6507,15 +5465,7 @@
 			<p><i>ne</i></p>
 			<p><i>ne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ne</i></p>
@@ -6582,15 +5532,7 @@
 			<p><i>scaţi</i></p>
 			<p><i>ște</i></p>
 		</prezent>
-		<perfect>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>sca</i></p>
@@ -6605,15 +5547,7 @@
 			<p><i>sca</i></p>
 			<p><i>sca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-			<p><i>scat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>scă</i></p>
@@ -6680,15 +5614,7 @@
 			<p><i>geţi</i></p>
 			<p><i>gă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -6703,15 +5629,7 @@
 			<p><i>ge</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -6778,15 +5696,7 @@
 			<p><i>aţi</i></p>
 			<p><i>ze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -6801,15 +5711,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ază</i></p>
@@ -6876,15 +5778,7 @@
 			<p><i>ziţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>zi</i></p>
@@ -6899,15 +5793,7 @@
 			<p><i>zi</i></p>
 			<p><i>zi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>zi</i></p>
@@ -6974,15 +5860,7 @@
 			<p><i>iţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -6997,15 +5875,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -7072,15 +5942,7 @@
 			<p><i>ăgaţi</i></p>
 			<p><i>age</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăga</i></p>
@@ -7095,15 +5957,7 @@
 			<p><i>ăga</i></p>
 			<p><i>ăga</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-			<p><i>ăgat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>agă</i></p>
@@ -7170,15 +6024,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>t</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i/></p>
@@ -7193,15 +6039,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>t</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -7268,15 +6106,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>t</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i/></p>
@@ -7291,15 +6121,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>t</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -7366,15 +6188,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -7389,15 +6203,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -7464,15 +6270,7 @@
 			<p><i>ăcaţi</i></p>
 			<p><i>ace</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăca</i></p>
@@ -7487,15 +6285,7 @@
 			<p><i>ăca</i></p>
 			<p><i>ăca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-			<p><i>ăcat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>acă</i></p>
@@ -7562,15 +6352,7 @@
 			<p><i>ădeţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ădea</i></p>
@@ -7585,15 +6367,7 @@
 			<p><i>ădea</i></p>
 			<p><i>ădea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-			<p><i>ăzut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ade</i></p>
@@ -7660,15 +6434,7 @@
 			<p><i>ălcaţi</i></p>
 			<p><i>alce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ălca</i></p>
@@ -7683,15 +6449,7 @@
 			<p><i>ălca</i></p>
 			<p><i>ălca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-			<p><i>ălcat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>alcă</i></p>
@@ -7758,15 +6516,7 @@
 			<p><i>ătaţi</i></p>
 			<p><i>ete</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăta</i></p>
@@ -7781,15 +6531,7 @@
 			<p><i>ăta</i></p>
 			<p><i>ăta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-			<p><i>ătat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ată</i></p>
@@ -7856,15 +6598,7 @@
 			<p><i>ăraţi</i></p>
 			<p><i>are</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăra</i></p>
@@ -7879,15 +6613,7 @@
 			<p><i>ăra</i></p>
 			<p><i>ăra</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-			<p><i>ărat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ară</i></p>
@@ -7954,15 +6680,7 @@
 			<p><i>ăscaţi</i></p>
 			<p><i>asce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăsca</i></p>
@@ -7977,15 +6695,7 @@
 			<p><i>ăsca</i></p>
 			<p><i>ăsca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-			<p><i>ăscat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ască</i></p>
@@ -8052,15 +6762,7 @@
 			<p><i>ăutaţi</i></p>
 			<p><i>aute</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăuta</i></p>
@@ -8075,15 +6777,7 @@
 			<p><i>ăuta</i></p>
 			<p><i>ăuta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-			<p><i>ăutat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aută</i></p>
@@ -8150,15 +6844,7 @@
 			<p><i>rneţi</i></p>
 			<p><i>arnă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rne</i></p>
@@ -8173,15 +6859,7 @@
 			<p><i>rne</i></p>
 			<p><i>rne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-			<p><i>rnut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>rne</i></p>
@@ -8248,15 +6926,7 @@
 			<p><i>ătinaţi</i></p>
 			<p><i>atine</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ătina</i></p>
@@ -8271,15 +6941,7 @@
 			<p><i>ătina</i></p>
 			<p><i>ătina</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-			<p><i>ătinat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>atină</i></p>
@@ -8346,15 +7008,7 @@
 			<p><i>aceţi</i></p>
 			<p><i>acă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ace</i></p>
@@ -8369,15 +7023,7 @@
 			<p><i>ace</i></p>
 			<p><i>ace</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ace</i></p>
@@ -8444,15 +7090,7 @@
 			<p><i>oaseţi</i></p>
 			<p><i>oasă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>oase</i></p>
@@ -8467,15 +7105,7 @@
 			<p><i>oase</i></p>
 			<p><i>oase</i></p>
 		</prezent>
-		<perfect>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-			<p><i>usut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oase</i></p>
@@ -8542,15 +7172,7 @@
 			<p><i>râţi</i></p>
 			<p><i>are</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rî</i></p>
@@ -8565,15 +7187,7 @@
 			<p><i>rî</i></p>
 			<p><i>rî</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-			<p><i>rât</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ară</i></p>
@@ -8640,15 +7254,7 @@
 			<p><i>staţi</i></p>
 			<p><i>ste</i></p>
 		</prezent>
-		<perfect>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>sta</i></p>
@@ -8663,15 +7269,7 @@
 			<p><i>sta</i></p>
 			<p><i>sta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-			<p><i>stat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>stă</i></p>
@@ -8738,15 +7336,7 @@
 			<p><i>deţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -8761,15 +7351,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -8836,15 +7418,7 @@
 			<p><i>andaţi</i></p>
 			<p><i>ande</i></p>
 		</prezent>
-		<perfect>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>anda</i></p>
@@ -8859,15 +7433,7 @@
 			<p><i>anda</i></p>
 			<p><i>anda</i></p>
 		</prezent>
-		<perfect>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-			<p><i>andat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>andă</i></p>
@@ -8934,15 +7500,7 @@
 			<p><i>teţi</i></p>
 			<p><i>tă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>te</i></p>
@@ -8957,15 +7515,7 @@
 			<p><i>te</i></p>
 			<p><i>te</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -9032,15 +7582,7 @@
 			<p><i>ăceţi</i></p>
 			<p><i>acă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăcea</i></p>
@@ -9055,15 +7597,7 @@
 			<p><i>ăcea</i></p>
 			<p><i>ăcea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ace</i></p>
@@ -9130,15 +7664,7 @@
 			<p><i>deţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -9153,15 +7679,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -9228,15 +7746,7 @@
 			<p><i>peţi</i></p>
 			<p><i>apă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>pe</i></p>
@@ -9251,15 +7761,7 @@
 			<p><i>pe</i></p>
 			<p><i>pe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-			<p><i>put</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>pe</i></p>
@@ -9326,15 +7828,7 @@
 			<p><i>șteţi</i></p>
 			<p><i>ască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ște</i></p>
@@ -9349,15 +7843,7 @@
 			<p><i>ște</i></p>
 			<p><i>ște</i></p>
 		</prezent>
-		<perfect>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ște</i></p>
@@ -9424,15 +7910,7 @@
 			<p><i>rgeţi</i></p>
 			<p><i>argă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rge</i></p>
@@ -9447,15 +7925,7 @@
 			<p><i>rge</i></p>
 			<p><i>rge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>rge</i></p>
@@ -9522,15 +7992,7 @@
 			<p><i>ceţi</i></p>
 			<p><i>că</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ce</i></p>
@@ -9545,15 +8007,7 @@
 			<p><i>ce</i></p>
 			<p><i>ce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -9620,15 +8074,7 @@
 			<p><i>iţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -9643,15 +8089,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ă</i></p>
@@ -9718,15 +8156,7 @@
 			<p><i>aceţi</i></p>
 			<p><i>acă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>udrir;odrir</i></p>
@@ -9741,15 +8171,7 @@
 			<p><i>udrir;odrir</i></p>
 			<p><i>udrir;odrir</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-			<p><i>ăcut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ă</i></p>
@@ -9816,15 +8238,7 @@
 			<p><i>urnaţi</i></p>
 			<p><i>oarne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>urna</i></p>
@@ -9839,15 +8253,7 @@
 			<p><i>urna</i></p>
 			<p><i>urna</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-			<p><i>urnat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oarnă</i></p>
@@ -9914,15 +8320,7 @@
 			<p><i>caţi</i></p>
 			<p><i>ace</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ca</i></p>
@@ -9937,15 +8335,7 @@
 			<p><i>ca</i></p>
 			<p><i>ca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>acă</i></p>
@@ -10012,15 +8402,7 @@
 			<p><i>eţi</i></p>
 			<p><i>ă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>e</i></p>
@@ -10035,15 +8417,7 @@
 			<p><i>e</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -10110,15 +8484,7 @@
 			<p><i>siţi</i></p>
 			<p><i>sească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>si</i></p>
@@ -10133,15 +8499,7 @@
 			<p><i>si</i></p>
 			<p><i>si</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>sește</i></p>
@@ -10208,15 +8566,7 @@
 			<p><i>ăpaţi</i></p>
 			<p><i>ape</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăpa</i></p>
@@ -10231,15 +8581,7 @@
 			<p><i>ăpa</i></p>
 			<p><i>ăpa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>apă</i></p>
@@ -10306,15 +8648,7 @@
 			<p><i>caţi</i></p>
 			<p><i>te</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ca</i></p>
@@ -10329,15 +8663,7 @@
 			<p><i>ca</i></p>
 			<p><i>ca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>că</i></p>
@@ -10404,15 +8730,7 @@
 			<p><i>deţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -10427,15 +8745,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-			<p><i>zut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -10502,15 +8812,7 @@
 			<p><i>așteţi</i></p>
 			<p><i>ască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>aște</i></p>
@@ -10525,15 +8827,7 @@
 			<p><i>aște</i></p>
 			<p><i>aște</i></p>
 		</prezent>
-		<perfect>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-			<p><i>scut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aște</i></p>
@@ -10600,15 +8894,7 @@
 			<p><i>ăţaţi</i></p>
 			<p><i>eţe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăţa</i></p>
@@ -10623,15 +8909,7 @@
 			<p><i>ăţa</i></p>
 			<p><i>ăţa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ăţă</i></p>
@@ -10698,15 +8976,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rs</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rge</i></p>
@@ -10721,15 +8991,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rs</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -10796,15 +9058,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>enit</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eni</i></p>
@@ -10819,15 +9073,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>enit</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -10894,15 +9140,7 @@
 			<p><i>ăpăraţi</i></p>
 			<p><i>apere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăpăra</i></p>
@@ -10917,15 +9155,7 @@
 			<p><i>ăpăra</i></p>
 			<p><i>ăpăra</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-			<p><i>ăpărat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>apără</i></p>
@@ -10992,15 +9222,7 @@
 			<p><i>ăpănaţi</i></p>
 			<p><i>apene</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăpăna</i></p>
@@ -11015,15 +9237,7 @@
 			<p><i>ăpăna</i></p>
 			<p><i>ăpăna</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-			<p><i>ăpănat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>apănă</i></p>
@@ -11090,15 +9304,7 @@
 			<p><i>ucaţi</i></p>
 			<p><i>oace</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>uca</i></p>
@@ -11113,15 +9319,7 @@
 			<p><i>uca</i></p>
 			<p><i>uca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oacă</i></p>
@@ -11188,15 +9386,7 @@
 			<p><i>ăsaţi</i></p>
 			<p><i>ase</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăsa</i></p>
@@ -11211,15 +9401,7 @@
 			<p><i>ăsa</i></p>
 			<p><i>ăsa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>asă</i></p>
@@ -11286,15 +9468,7 @@
 			<p><i>gaţi</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ga</i></p>
@@ -11309,15 +9483,7 @@
 			<p><i>ga</i></p>
 			<p><i>ga</i></p>
 		</prezent>
-		<perfect>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-			<p><i>gat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>agă</i></p>
@@ -11384,15 +9550,7 @@
 			<p><i>cheaţi</i></p>
 			<p><i>ache</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>chea</i></p>
@@ -11407,15 +9565,7 @@
 			<p><i>chea</i></p>
 			<p><i>chea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-			<p><i>cheat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ache</i></p>
@@ -11482,15 +9632,7 @@
 			<p><i>anaţi</i></p>
 			<p><i>aneze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ana</i></p>
@@ -11505,15 +9647,7 @@
 			<p><i>ana</i></p>
 			<p><i>ana</i></p>
 		</prezent>
-		<perfect>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-			<p><i>anat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>anează</i></p>
@@ -11580,15 +9714,7 @@
 			<p><i>păraţi</i></p>
 			<p><i>pere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>păra</i></p>
@@ -11603,15 +9729,7 @@
 			<p><i>păra</i></p>
 			<p><i>păra</i></p>
 		</prezent>
-		<perfect>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-			<p><i>părat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>apără</i></p>
@@ -11678,15 +9796,7 @@
 			<p><i>ălecaţi</i></p>
 			<p><i>alece</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăleca</i></p>
@@ -11701,15 +9811,7 @@
 			<p><i>ăleca</i></p>
 			<p><i>ăleca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-			<p><i>ălecat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>alecă</i></p>
@@ -11776,15 +9878,7 @@
 			<p><i>ălţaţi</i></p>
 			<p><i>alţe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ălţa</i></p>
@@ -11799,15 +9893,7 @@
 			<p><i>ălţa</i></p>
 			<p><i>ălţa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-			<p><i>ălţat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>alţă</i></p>
@@ -11874,15 +9960,7 @@
 			<p><i>ărcaţi</i></p>
 			<p><i>arce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ărca</i></p>
@@ -11897,15 +9975,7 @@
 			<p><i>ărca</i></p>
 			<p><i>ărca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-			<p><i>ărcat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>arcă</i></p>
@@ -11972,15 +10042,7 @@
 			<p><i>aţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -11995,15 +10057,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -12070,15 +10124,7 @@
 			<p><i>eriţi</i></p>
 			<p><i>ere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eri</i></p>
@@ -12093,15 +10139,7 @@
 			<p><i>eri</i></p>
 			<p><i>eri</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>eră</i></p>
@@ -12168,15 +10206,7 @@
 			<p><i>taţi</i></p>
 			<p><i>teze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ta</i></p>
@@ -12191,15 +10221,7 @@
 			<p><i>ta</i></p>
 			<p><i>ta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-			<p><i>tat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>tează</i></p>
@@ -12266,15 +10288,7 @@
 			<p><i>deţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -12289,15 +10303,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -12364,15 +10370,7 @@
 			<p><i>iaţi</i></p>
 			<p><i>aie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ia</i></p>
@@ -12387,15 +10385,7 @@
 			<p><i>ia</i></p>
 			<p><i>ia</i></p>
 		</prezent>
-		<perfect>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-			<p><i>iat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aie</i></p>
@@ -12462,15 +10452,7 @@
 			<p><i>ămaţi</i></p>
 			<p><i>ame</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăma</i></p>
@@ -12485,15 +10467,7 @@
 			<p><i>ăma</i></p>
 			<p><i>ăma</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-			<p><i>ămat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>amă</i></p>
@@ -12560,15 +10534,7 @@
 			<p><i>rţiţi</i></p>
 			<p><i>tă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rţi</i></p>
@@ -12583,15 +10549,7 @@
 			<p><i>rţi</i></p>
 			<p><i>rţi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-			<p><i>rţit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>te</i></p>
@@ -12658,15 +10616,7 @@
 			<p><i>uiaţi</i></p>
 			<p><i>oaie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>uia</i></p>
@@ -12681,15 +10631,7 @@
 			<p><i>uia</i></p>
 			<p><i>uia</i></p>
 		</prezent>
-		<perfect>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oaie</i></p>
@@ -12756,15 +10698,7 @@
 			<p><i>uraţi</i></p>
 			<p><i>oare</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ura</i></p>
@@ -12779,15 +10713,7 @@
 			<p><i>ura</i></p>
 			<p><i>ura</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-			<p><i>urat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oară</i></p>
@@ -12854,15 +10780,7 @@
 			<p><i>elaţi</i></p>
 			<p><i>ele</i></p>
 		</prezent>
-		<perfect>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ela</i></p>
@@ -12877,15 +10795,7 @@
 			<p><i>ela</i></p>
 			<p><i>ela</i></p>
 		</prezent>
-		<perfect>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-			<p><i>elat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ală</i></p>
@@ -12952,15 +10862,7 @@
 			<p><i>iţi</i></p>
 			<p><i>aie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -12975,15 +10877,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aie</i></p>
@@ -13050,15 +10944,7 @@
 			<p><i>paţi</i></p>
 			<p><i>ape</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>pa</i></p>
@@ -13073,15 +10959,7 @@
 			<p><i>pa</i></p>
 			<p><i>pa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-			<p><i>pat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>apă</i></p>
@@ -13148,15 +11026,7 @@
 			<p><i>ăţaţi</i></p>
 			<p><i>eţe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăţa</i></p>
@@ -13171,15 +11041,7 @@
 			<p><i>ăţa</i></p>
 			<p><i>ăţa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aţă</i></p>
@@ -13246,15 +11108,7 @@
 			<p><i>nţiţi</i></p>
 			<p><i>tă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>nţi</i></p>
@@ -13269,15 +11123,7 @@
 			<p><i>nţi</i></p>
 			<p><i>nţi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-			<p><i>nţit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>te</i></p>
@@ -13344,15 +11190,7 @@
 			<p><i>daţi</i></p>
 			<p><i>ade</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>da</i></p>
@@ -13367,15 +11205,7 @@
 			<p><i>da</i></p>
 			<p><i>da</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>adă</i></p>
@@ -13442,15 +11272,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rgut</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rge</i></p>
@@ -13465,15 +11287,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rgut</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -13540,15 +11354,7 @@
 			<p><i>deţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -13563,15 +11369,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -13638,15 +11436,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rs</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rge</i></p>
@@ -13661,15 +11451,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rs</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -13736,15 +11518,7 @@
 			<p><i>teţi</i></p>
 			<p><i>tă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>te</i></p>
@@ -13759,15 +11533,7 @@
 			<p><i>te</i></p>
 			<p><i>te</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -13834,15 +11600,7 @@
 			<p><i>eraţi</i></p>
 			<p><i>ere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>era</i></p>
@@ -13857,15 +11615,7 @@
 			<p><i>era</i></p>
 			<p><i>era</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-			<p><i>erat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>eră</i></p>
@@ -13932,15 +11682,7 @@
 			<p><i>geţi</i></p>
 			<p><i>agă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -13955,15 +11697,7 @@
 			<p><i>ge</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-			<p><i>gut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ge</i></p>
@@ -14030,15 +11764,7 @@
 			<p><i>sificaţi</i></p>
 			<p><i>sifice</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>sifica</i></p>
@@ -14053,15 +11779,7 @@
 			<p><i>sifica</i></p>
 			<p><i>sifica</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-			<p><i>sificat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>sifică</i></p>
@@ -14128,15 +11846,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ătat</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăta</i></p>
@@ -14151,15 +11861,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ătat</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -14226,15 +11928,7 @@
 			<p><i>ermecaţi</i></p>
 			<p><i>armece</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ermeca</i></p>
@@ -14249,15 +11943,7 @@
 			<p><i>ermeca</i></p>
 			<p><i>ermeca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-			<p><i>ermecat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>armecă</i></p>
@@ -14324,15 +12010,7 @@
 			<p><i>rbeţi</i></p>
 			<p><i>rbă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rbe</i></p>
@@ -14347,15 +12025,7 @@
 			<p><i>rbe</i></p>
 			<p><i>rbe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>rbe</i></p>
@@ -14422,15 +12092,7 @@
 			<p><i>rfecaţi</i></p>
 			<p><i>arfece</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rfeca</i></p>
@@ -14445,15 +12107,7 @@
 			<p><i>rfeca</i></p>
 			<p><i>rfeca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-			<p><i>rfecat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>arfecă</i></p>
@@ -14520,15 +12174,7 @@
 			<p><i>geţi</i></p>
 			<p><i>gă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -14543,15 +12189,7 @@
 			<p><i>ge</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-			<p><i>t</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ge</i></p>
@@ -14618,15 +12256,7 @@
 			<p><i>geţi</i></p>
 			<p><i>gă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -14641,15 +12271,7 @@
 			<p><i>ge</i></p>
 			<p><i>ge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ge</i></p>
@@ -14716,15 +12338,7 @@
 			<p><i>iţi</i></p>
 			<p><i>ă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -14739,15 +12353,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>i</i></p>
@@ -14814,15 +12420,7 @@
 			<p><i>ăgăiţi</i></p>
 			<p><i>ăgăie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăgăi</i></p>
@@ -14837,15 +12435,7 @@
 			<p><i>ăgăi</i></p>
 			<p><i>ăgăi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-			<p><i>ăgăit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ăgăie</i></p>
@@ -14912,15 +12502,7 @@
 			<p><i>meţi</i></p>
 			<p><i>amă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>me</i></p>
@@ -14935,15 +12517,7 @@
 			<p><i>me</i></p>
 			<p><i>me</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-			<p><i>mut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>me</i></p>
@@ -15010,15 +12584,7 @@
 			<p><i>tiţi</i></p>
 			<p><i>tească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ti</i></p>
@@ -15033,15 +12599,7 @@
 			<p><i>ti</i></p>
 			<p><i>ti</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>tește</i></p>
@@ -15108,15 +12666,7 @@
 			<p><i>ăiţi</i></p>
 			<p><i>ăiască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăi</i></p>
@@ -15131,15 +12681,7 @@
 			<p><i>ăi</i></p>
 			<p><i>ăi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-			<p><i>ăit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ăiește</i></p>
@@ -15206,15 +12748,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ămăit</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ămăi</i></p>
@@ -15229,15 +12763,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>ămăit</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -15304,15 +12830,7 @@
 			<p><i>ărţuiţi</i></p>
 			<p><i>ărţuiască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ărţui</i></p>
@@ -15327,15 +12845,7 @@
 			<p><i>ărţui</i></p>
 			<p><i>ărţui</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-			<p><i>ărţuit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ărţuiește</i></p>
@@ -15402,15 +12912,7 @@
 			<p><i>tuiţi</i></p>
 			<p><i>tuiască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>tui</i></p>
@@ -15425,15 +12927,7 @@
 			<p><i>tui</i></p>
 			<p><i>tui</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-			<p><i>tuit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>tuiește</i></p>
@@ -15500,15 +12994,7 @@
 			<p><i>eșiţi</i></p>
 			<p><i>asă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eși</i></p>
@@ -15523,15 +13009,7 @@
 			<p><i>eși</i></p>
 			<p><i>eși</i></p>
 		</prezent>
-		<perfect>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-			<p><i>eșit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>eși</i></p>
@@ -15598,15 +13076,7 @@
 			<p><i>implantaţi</i></p>
 			<p><i>implanteze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>implanta</i></p>
@@ -15621,15 +13091,7 @@
 			<p><i>implanta</i></p>
 			<p><i>implanta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-			<p><i>implantat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>implantează</i></p>
@@ -15696,15 +13158,7 @@
 			<p><i>șiţi</i></p>
 			<p><i>așă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>și</i></p>
@@ -15719,15 +13173,7 @@
 			<p><i>și</i></p>
 			<p><i>și</i></p>
 		</prezent>
-		<perfect>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-			<p><i>șit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>și</i></p>
@@ -15794,15 +13240,7 @@
 			<p><i>ăieraţi</i></p>
 			<p><i>ăiere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăiera</i></p>
@@ -15817,15 +13255,7 @@
 			<p><i>ăiera</i></p>
 			<p><i>ăiera</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-			<p><i>ăierat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ăieră</i></p>
@@ -15892,15 +13322,7 @@
 			<p><i>incarnaţi</i></p>
 			<p><i>incarneze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>incarna</i></p>
@@ -15915,15 +13337,7 @@
 			<p><i>incarna</i></p>
 			<p><i>incarna</i></p>
 		</prezent>
-		<perfect>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-			<p><i>incarnat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>incarnează</i></p>
@@ -15990,15 +13404,7 @@
 			<p><i>voiaţi</i></p>
 			<p><i>nvoaie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>voia</i></p>
@@ -16013,15 +13419,7 @@
 			<p><i>voia</i></p>
 			<p><i>voia</i></p>
 		</prezent>
-		<perfect>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-			<p><i>voiat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>nvoaie</i></p>
@@ -16088,15 +13486,7 @@
 			<p><i>mnaţi</i></p>
 			<p><i>mne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>mna</i></p>
@@ -16111,15 +13501,7 @@
 			<p><i>mna</i></p>
 			<p><i>mna</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-			<p><i>mnat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>amnă</i></p>
@@ -16186,15 +13568,7 @@
 			<p><i>aţișaţi</i></p>
 			<p><i>aţișeze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>aţișa</i></p>
@@ -16209,15 +13583,7 @@
 			<p><i>aţișa</i></p>
 			<p><i>aţișa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-			<p><i>aţișat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aţișează</i></p>
@@ -16284,15 +13650,7 @@
 			<p><i>ingrădiţi</i></p>
 			<p><i>ingrădească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ingrădi</i></p>
@@ -16307,15 +13665,7 @@
 			<p><i>ingrădi</i></p>
 			<p><i>ingrădi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-			<p><i>ingrădit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ingrădește</i></p>
@@ -16382,15 +13732,7 @@
 			<p><i>ingrămădiţi</i></p>
 			<p><i>ingrămădească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ingrămădi</i></p>
@@ -16405,15 +13747,7 @@
 			<p><i>ingrămădi</i></p>
 			<p><i>ingrămădi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-			<p><i>ingrămădit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ingrămădește</i></p>
@@ -16480,15 +13814,7 @@
 			<p><i>ășaţi</i></p>
 			<p><i>așe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ășa</i></p>
@@ -16503,15 +13829,7 @@
 			<p><i>ășa</i></p>
 			<p><i>ășa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-			<p><i>ășat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>așă</i></p>
@@ -16578,15 +13896,7 @@
 			<p><i>îngroziţi</i></p>
 			<p><i>îngrozească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>îngrozi</i></p>
@@ -16601,15 +13911,7 @@
 			<p><i>îngrozi</i></p>
 			<p><i>îngrozi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-			<p><i>îngrozit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>îngrozește</i></p>
@@ -16676,15 +13978,7 @@
 			<p><i>îngurluiţi</i></p>
 			<p><i>îngurluiască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>îngurlui</i></p>
@@ -16699,15 +13993,7 @@
 			<p><i>îngurlui</i></p>
 			<p><i>îngurlui</i></p>
 		</prezent>
-		<perfect>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-			<p><i>îngurluit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>îngurluiește</i></p>
@@ -16774,15 +14060,7 @@
 			<p><i>îngustaţi</i></p>
 			<p><i>îngusteze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>îngusta</i></p>
@@ -16797,15 +14075,7 @@
 			<p><i>îngusta</i></p>
 			<p><i>îngusta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-			<p><i>îngustat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>îngustează</i></p>
@@ -16872,15 +14142,7 @@
 			<p><i>înhăitaţi</i></p>
 			<p><i>înhăiteze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>înhăita</i></p>
@@ -16895,15 +14157,7 @@
 			<p><i>înhăita</i></p>
 			<p><i>înhăita</i></p>
 		</prezent>
-		<perfect>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-			<p><i>înhăitat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>înhăitează</i></p>
@@ -16970,15 +14224,7 @@
 			<p><i>ăţaţi</i></p>
 			<p><i>aţe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăţa</i></p>
@@ -16993,15 +14239,7 @@
 			<p><i>ăţa</i></p>
 			<p><i>ăţa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-			<p><i>ăţat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aţă</i></p>
@@ -17068,15 +14306,7 @@
 			<p><i>iţi</i></p>
 			<p><i>ască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -17091,15 +14321,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>esc</i></p>
@@ -17166,15 +14388,7 @@
 			<p><i>inseraţi</i></p>
 			<p><i>insereze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>insera</i></p>
@@ -17189,15 +14403,7 @@
 			<p><i>insera</i></p>
 			<p><i>insera</i></p>
 		</prezent>
-		<perfect>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-			<p><i>inserat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>inserează</i></p>
@@ -17264,15 +14470,7 @@
 			<p><i>arceţi</i></p>
 			<p><i>arcă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>arce</i></p>
@@ -17287,15 +14485,7 @@
 			<p><i>arce</i></p>
 			<p><i>arce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>arce</i></p>
@@ -17362,15 +14552,7 @@
 			<p><i>ăiaţi</i></p>
 			<p><i>aie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăia</i></p>
@@ -17385,15 +14567,7 @@
 			<p><i>ăia</i></p>
 			<p><i>ăia</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-			<p><i>ăiat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aie</i></p>
@@ -17460,15 +14634,7 @@
 			<p><i>seţi</i></p>
 			<p><i>asă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>se</i></p>
@@ -17483,15 +14649,7 @@
 			<p><i>se</i></p>
 			<p><i>se</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-			<p><i>sut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>se</i></p>
@@ -17558,15 +14716,7 @@
 			<p><i>iţi</i></p>
 			<p><i>ească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -17581,15 +14731,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ește-te</i></p>
@@ -17656,15 +14798,7 @@
 			<p><i>ucaţi</i></p>
 			<p><i>oace</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>uca</i></p>
@@ -17679,15 +14813,7 @@
 			<p><i>uca</i></p>
 			<p><i>uca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-			<p><i>ucat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oacă</i></p>
@@ -17754,15 +14880,7 @@
 			<p><i>uiţi</i></p>
 			<p><i>oaie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ui</i></p>
@@ -17777,15 +14895,7 @@
 			<p><i>ui</i></p>
 			<p><i>ui</i></p>
 		</prezent>
-		<perfect>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-			<p><i>uit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oaie</i></p>
@@ -17852,15 +14962,7 @@
 			<p><i>ăsaţi</i></p>
 			<p><i>ese</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăsa</i></p>
@@ -17875,15 +14977,7 @@
 			<p><i>ăsa</i></p>
 			<p><i>ăsa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-			<p><i>ăsat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>asă</i></p>
@@ -17950,15 +15044,7 @@
 			<p><i>ătraţi</i></p>
 			<p><i>atre</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ătra</i></p>
@@ -17973,15 +15059,7 @@
 			<p><i>ătra</i></p>
 			<p><i>ătra</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-			<p><i>ătrat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>atră</i></p>
@@ -18048,15 +15126,7 @@
 			<p><i>aniaţi</i></p>
 			<p><i>anieze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ania</i></p>
@@ -18071,15 +15141,7 @@
 			<p><i>ania</i></p>
 			<p><i>ania</i></p>
 		</prezent>
-		<perfect>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-			<p><i>aniat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aniază</i></p>
@@ -18146,15 +15208,7 @@
 			<p><i>eunaţi</i></p>
 			<p><i>aune</i></p>
 		</prezent>
-		<perfect>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>euna</i></p>
@@ -18169,15 +15223,7 @@
 			<p><i>euna</i></p>
 			<p><i>euna</i></p>
 		</prezent>
-		<perfect>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-			<p><i>eunat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aună</i></p>
@@ -18244,15 +15290,7 @@
 			<p><i>siţi</i></p>
 			<p><i>asă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>si</i></p>
@@ -18267,15 +15305,7 @@
 			<p><i>si</i></p>
 			<p><i>si</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-			<p><i>sit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>si</i></p>
@@ -18342,15 +15372,7 @@
 			<p><i>caţi</i></p>
 			<p><i>ce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ca</i></p>
@@ -18365,15 +15387,7 @@
 			<p><i>ca</i></p>
 			<p><i>ca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>că</i></p>
@@ -18440,15 +15454,7 @@
 			<p><i>uiaţi</i></p>
 			<p><i>oaie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>uia</i></p>
@@ -18463,15 +15469,7 @@
 			<p><i>uia</i></p>
 			<p><i>uia</i></p>
 		</prezent>
-		<perfect>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-			<p><i>uiat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>uiă</i></p>
@@ -18538,15 +15536,7 @@
 			<p><i>uriţi</i></p>
 			<p><i>oară</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>uri</i></p>
@@ -18561,15 +15551,7 @@
 			<p><i>uri</i></p>
 			<p><i>uri</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-			<p><i>urit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ori</i></p>
@@ -18636,15 +15618,7 @@
 			<p><i>așteţi</i></p>
 			<p><i>ască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>aște</i></p>
@@ -18659,15 +15633,7 @@
 			<p><i>aște</i></p>
 			<p><i>aște</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-			<p><i>ăscut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aște</i></p>
@@ -18734,15 +15700,7 @@
 			<p><i>zaţi</i></p>
 			<p><i>ze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>za</i></p>
@@ -18757,15 +15715,7 @@
 			<p><i>za</i></p>
 			<p><i>za</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ază</i></p>
@@ -18832,15 +15782,7 @@
 			<p><i>zaţi</i></p>
 			<p><i>ze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>za</i></p>
@@ -18855,15 +15797,7 @@
 			<p><i>za</i></p>
 			<p><i>za</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-			<p><i>zat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>zează</i></p>
@@ -18930,15 +15864,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>s</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ge</i></p>
@@ -18953,15 +15879,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>s</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -19028,15 +15946,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rs</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rge</i></p>
@@ -19051,15 +15961,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>rs</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -19126,15 +16028,7 @@
 			<p><i>teţi</i></p>
 			<p><i>tă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>te</i></p>
@@ -19149,15 +16043,7 @@
 			<p><i>te</i></p>
 			<p><i>te</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -19224,15 +16110,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -19247,15 +16125,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -19322,15 +16192,7 @@
 			<p><i>asaţi</i></p>
 			<p><i>aseze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>asa</i></p>
@@ -19345,15 +16207,7 @@
 			<p><i>asa</i></p>
 			<p><i>asa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-			<p><i>asat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>asează</i></p>
@@ -19420,15 +16274,7 @@
 			<p><i>ăpaţi</i></p>
 			<p><i>ape</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăpa</i></p>
@@ -19443,15 +16289,7 @@
 			<p><i>ăpa</i></p>
 			<p><i>ăpa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-			<p><i>ăpat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>apă</i></p>
@@ -19518,15 +16356,7 @@
 			<p><i>ârlogiţi</i></p>
 			<p><i>ârlogească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ârlogi</i></p>
@@ -19541,15 +16371,7 @@
 			<p><i>ârlogi</i></p>
 			<p><i>ârlogi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-			<p><i>ârlogit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ârlogește</i></p>
@@ -19616,15 +16438,7 @@
 			<p><i>așliţi</i></p>
 			<p><i>așlească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>așli</i></p>
@@ -19639,15 +16453,7 @@
 			<p><i>așli</i></p>
 			<p><i>așli</i></p>
 		</prezent>
-		<perfect>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-			<p><i>așlit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>așlește</i></p>
@@ -19714,15 +16520,7 @@
 			<p><i>eriţi</i></p>
 			<p><i>ară</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eri</i></p>
@@ -19737,15 +16535,7 @@
 			<p><i>eri</i></p>
 			<p><i>eri</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ere</i></p>
@@ -19812,15 +16602,7 @@
 			<p><i>erdeţi</i></p>
 			<p><i>ardă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>erde</i></p>
@@ -19835,15 +16617,7 @@
 			<p><i>erde</i></p>
 			<p><i>erde</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-			<p><i>erdut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>erde</i></p>
@@ -19910,15 +16684,7 @@
 			<p><i>saţi</i></p>
 			<p><i>seze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>sa</i></p>
@@ -19933,15 +16699,7 @@
 			<p><i>sa</i></p>
 			<p><i>sa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-			<p><i>sat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>sează</i></p>
@@ -20008,15 +16766,7 @@
 			<p><i>daţi</i></p>
 			<p><i>deze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>da</i></p>
@@ -20031,15 +16781,7 @@
 			<p><i>da</i></p>
 			<p><i>da</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>dează</i></p>
@@ -20106,15 +16848,7 @@
 			<p><i>deţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -20129,15 +16863,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-			<p><i>zând</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -20204,15 +16930,7 @@
 			<p><i>urtaţi</i></p>
 			<p><i>oarte</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>urta</i></p>
@@ -20227,15 +16945,7 @@
 			<p><i>urta</i></p>
 			<p><i>urta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oartă</i></p>
@@ -20302,15 +17012,7 @@
 			<p><i>adeţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ade</i></p>
@@ -20325,15 +17027,7 @@
 			<p><i>ade</i></p>
 			<p><i>ade</i></p>
 		</prezent>
-		<perfect>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-			<p><i>as</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ade</i></p>
@@ -20400,15 +17094,7 @@
 			<p><i>ăgilaţi</i></p>
 			<p><i>agile</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăgila</i></p>
@@ -20423,15 +17109,7 @@
 			<p><i>ăgila</i></p>
 			<p><i>ăgila</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-			<p><i>ăgilat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>agilă</i></p>
@@ -20498,15 +17176,7 @@
 			<p><i>neţi</i></p>
 			<p><i>nă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ne</i></p>
@@ -20521,15 +17191,7 @@
 			<p><i>ne</i></p>
 			<p><i>ne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -20596,15 +17258,7 @@
 			<p><i>ăriţi</i></p>
 			<p><i>ară</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ări</i></p>
@@ -20619,15 +17273,7 @@
 			<p><i>ări</i></p>
 			<p><i>ări</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-			<p><i>ărit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ari</i></p>
@@ -20694,15 +17340,7 @@
 			<p><i>rbeţi</i></p>
 			<p><i>arbă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rbe</i></p>
@@ -20717,15 +17355,7 @@
 			<p><i>rbe</i></p>
 			<p><i>rbe</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-			<p><i>rt</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>rbe</i></p>
@@ -20792,15 +17422,7 @@
 			<p><i>ţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i/></p>
@@ -20815,15 +17437,7 @@
 			<p><i/></p>
 			<p><i/></p>
 		</prezent>
-		<perfect>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-			<p><i>ut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>e</i></p>
@@ -20890,15 +17504,7 @@
 			<p><i>amaţi</i></p>
 			<p><i>ameze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ama</i></p>
@@ -20913,15 +17519,7 @@
 			<p><i>ama</i></p>
 			<p><i>ama</i></p>
 		</prezent>
-		<perfect>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-			<p><i>amat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>amează</i></p>
@@ -20988,15 +17586,7 @@
 			<p><i>ânduiţi</i></p>
 			<p><i>ânduiască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ândui</i></p>
@@ -21011,15 +17601,7 @@
 			<p><i>ândui</i></p>
 			<p><i>ândui</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-			<p><i>ânduit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ânduiește</i></p>
@@ -21086,15 +17668,7 @@
 			<p><i>ăniţi</i></p>
 			<p><i>ănească</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăni</i></p>
@@ -21109,15 +17683,7 @@
 			<p><i>ăni</i></p>
 			<p><i>ăni</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-			<p><i>ănit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ănește</i></p>
@@ -21184,15 +17750,7 @@
 			<p><i>ateţi</i></p>
 			<p><i>ată</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ate</i></p>
@@ -21207,15 +17765,7 @@
 			<p><i>ate</i></p>
 			<p><i>ate</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-			<p><i>ătur</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ate</i></p>
@@ -21282,15 +17832,7 @@
 			<p><i>maţi</i></p>
 			<p><i>me</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ma</i></p>
@@ -21305,15 +17847,7 @@
 			<p><i>ma</i></p>
 			<p><i>ma</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-			<p><i>mat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>amă</i></p>
@@ -21380,15 +17914,7 @@
 			<p><i>eriţi</i></p>
 			<p><i>eară</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>eri</i></p>
@@ -21403,15 +17929,7 @@
 			<p><i>eri</i></p>
 			<p><i>eri</i></p>
 		</prezent>
-		<perfect>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-			<p><i>erit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>eră</i></p>
@@ -21478,15 +17996,7 @@
 			<p><i>caţi</i></p>
 			<p><i>ce</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ca</i></p>
@@ -21501,15 +18011,7 @@
 			<p><i>ca</i></p>
 			<p><i>ca</i></p>
 		</prezent>
-		<perfect>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-			<p><i>cat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>acă</i></p>
@@ -21576,15 +18078,7 @@
 			<p><i>ziţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>zi</i></p>
@@ -21599,15 +18093,7 @@
 			<p><i>zi</i></p>
 			<p><i>zi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -21674,15 +18160,7 @@
 			<p><i>entaţi</i></p>
 			<p><i>inte</i></p>
 		</prezent>
-		<perfect>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>enta</i></p>
@@ -21697,15 +18175,7 @@
 			<p><i>enta</i></p>
 			<p><i>enta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-			<p><i>entat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>intă</i></p>
@@ -21772,15 +18242,7 @@
 			<p><i>urtaţi</i></p>
 			<p><i>orte</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>urta</i></p>
@@ -21795,15 +18257,7 @@
 			<p><i>urta</i></p>
 			<p><i>urta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-			<p><i>urtat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ortă</i></p>
@@ -21870,15 +18324,7 @@
 			<p><i>mţiţi</i></p>
 			<p><i>tă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>mţi</i></p>
@@ -21893,15 +18339,7 @@
 			<p><i>mţi</i></p>
 			<p><i>mţi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-			<p><i>mţit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>te</i></p>
@@ -21968,15 +18406,7 @@
 			<p><i>ărsaţi</i></p>
 			<p><i>erse</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ărsa</i></p>
@@ -21991,15 +18421,7 @@
 			<p><i>ărsa</i></p>
 			<p><i>ărsa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>arsă</i></p>
@@ -22066,15 +18488,7 @@
 			<p><i>indeţi</i></p>
 			<p><i>ândă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>inde</i></p>
@@ -22089,15 +18503,7 @@
 			<p><i>inde</i></p>
 			<p><i>inde</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-			<p><i>ândut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>inde</i></p>
@@ -22164,15 +18570,7 @@
 			<p><i>zemaţi</i></p>
 			<p><i>zeme</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>zema</i></p>
@@ -22187,15 +18585,7 @@
 			<p><i>zema</i></p>
 			<p><i>zema</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-			<p><i>zemat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>azemă</i></p>
@@ -22262,15 +18652,7 @@
 			<p><i>adeţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ade</i></p>
@@ -22285,15 +18667,7 @@
 			<p><i>ade</i></p>
 			<p><i>ade</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ade</i></p>
@@ -22360,15 +18734,7 @@
 			<p><i>anizaţi</i></p>
 			<p><i>anizeze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>aniza</i></p>
@@ -22383,15 +18749,7 @@
 			<p><i>aniza</i></p>
 			<p><i>aniza</i></p>
 		</prezent>
-		<perfect>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-			<p><i>anizat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>anizează</i></p>
@@ -22458,15 +18816,7 @@
 			<p><i>ugaţi</i></p>
 			<p><i>oage</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>uga</i></p>
@@ -22481,15 +18831,7 @@
 			<p><i>uga</i></p>
 			<p><i>uga</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-			<p><i>ugat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oagă</i></p>
@@ -22556,15 +18898,7 @@
 			<p><i>ăltaţi</i></p>
 			<p><i>alte</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ălta</i></p>
@@ -22579,15 +18913,7 @@
 			<p><i>ălta</i></p>
 			<p><i>ălta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>altă</i></p>
@@ -22654,15 +18980,7 @@
 			<p><i>aturaţi</i></p>
 			<p><i>atureze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>atura</i></p>
@@ -22677,15 +18995,7 @@
 			<p><i>atura</i></p>
 			<p><i>atura</i></p>
 		</prezent>
-		<perfect>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-			<p><i>aturat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aturează</i></p>
@@ -22752,15 +19062,7 @@
 			<p><i>ăldaţi</i></p>
 			<p><i>alde</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ălda</i></p>
@@ -22775,15 +19077,7 @@
 			<p><i>ălda</i></p>
 			<p><i>ălda</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-			<p><i>ăldat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>aldă</i></p>
@@ -22850,15 +19144,7 @@
 			<p><i>aţi</i></p>
 			<p><i>eze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -22873,15 +19159,7 @@
 			<p><i>a</i></p>
 			<p><i>a</i></p>
 		</prezent>
-		<perfect>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-			<p><i>at</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ează-te</i></p>
@@ -22948,15 +19226,7 @@
 			<p><i>ateţi</i></p>
 			<p><i>ată</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ate</i></p>
@@ -22971,15 +19241,7 @@
 			<p><i>ate</i></p>
 			<p><i>ate</i></p>
 		</prezent>
-		<perfect>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-			<p><i>pt</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ate</i></p>
@@ -23046,15 +19308,7 @@
 			<p><i>ulaţi</i></p>
 			<p><i>oale</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ula</i></p>
@@ -23069,15 +19323,7 @@
 			<p><i>ula</i></p>
 			<p><i>ula</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-			<p><i>ulat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>oală</i></p>
@@ -23144,15 +19390,7 @@
 			<p><i>mănaţi</i></p>
 			<p><i>mene</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>măna</i></p>
@@ -23167,15 +19405,7 @@
 			<p><i>măna</i></p>
 			<p><i>măna</i></p>
 		</prezent>
-		<perfect>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-			<p><i>mănat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>amănă</i></p>
@@ -23242,15 +19472,7 @@
 			<p><i>iţi</i></p>
 			<p><i>ască</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>i</i></p>
@@ -23265,15 +19487,7 @@
 			<p><i>i</i></p>
 			<p><i>i</i></p>
 		</prezent>
-		<perfect>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-			<p><i>it</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ește</i></p>
@@ -23340,15 +19554,7 @@
 			<p><i>deţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -23363,15 +19569,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-			<p><i>s</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -23438,15 +19636,7 @@
 			<p><i>ziţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>zi</i></p>
@@ -23461,15 +19651,7 @@
 			<p><i>zi</i></p>
 			<p><i>zi</i></p>
 		</prezent>
-		<perfect>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-			<p><i>zit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>zi</i></p>
@@ -23536,15 +19718,7 @@
 			<p><i>tiţi</i></p>
 			<p><i>ată</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ti</i></p>
@@ -23559,15 +19733,7 @@
 			<p><i>ti</i></p>
 			<p><i>ti</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-			<p><i>tit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ate</i></p>
@@ -23634,15 +19800,7 @@
 			<p><i>niţi</i></p>
 			<p><i>ană</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ni</i></p>
@@ -23657,15 +19815,7 @@
 			<p><i>ni</i></p>
 			<p><i>ni</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-			<p><i>nit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ni</i></p>
@@ -23732,15 +19882,7 @@
 			<p><i>deţi</i></p>
 			<p><i>dă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>de</i></p>
@@ -23755,15 +19897,7 @@
 			<p><i>de</i></p>
 			<p><i>de</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-			<p><i>dut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>de</i></p>
@@ -23830,15 +19964,7 @@
 			<p><i>daţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>da</i></p>
@@ -23853,15 +19979,7 @@
 			<p><i>da</i></p>
 			<p><i>da</i></p>
 		</prezent>
-		<perfect>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-			<p><i>dat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>dă</i></p>
@@ -23928,15 +20046,7 @@
 			<p><i>neţi</i></p>
 			<p><i>ie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ne</i></p>
@@ -23951,15 +20061,7 @@
 			<p><i>ne</i></p>
 			<p><i>ne</i></p>
 		</prezent>
-		<perfect>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-			<p><i>nut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ne</i></p>
@@ -24026,15 +20128,7 @@
 			<p><i>edeţi</i></p>
 			<p><i>adă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>edea</i></p>
@@ -24049,15 +20143,7 @@
 			<p><i>edea</i></p>
 			<p><i>edea</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-			<p><i>ezut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ezi</i></p>
@@ -24124,15 +20210,7 @@
 			<p><i>somaţi</i></p>
 			<p><i>someze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>soma</i></p>
@@ -24147,15 +20225,7 @@
 			<p><i>soma</i></p>
 			<p><i>soma</i></p>
 		</prezent>
-		<perfect>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-			<p><i>somat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>somează</i></p>
@@ -24222,15 +20292,7 @@
 			<p><i>spionaţi</i></p>
 			<p><i>spioneze</i></p>
 		</prezent>
-		<perfect>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>spiona</i></p>
@@ -24245,15 +20307,7 @@
 			<p><i>spiona</i></p>
 			<p><i>spiona</i></p>
 		</prezent>
-		<perfect>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-			<p><i>spionat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>spionează</i></p>
@@ -24320,15 +20374,7 @@
 			<p><i>rgeţi</i></p>
 			<p><i>rgă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rge</i></p>
@@ -24343,15 +20389,7 @@
 			<p><i>rge</i></p>
 			<p><i>rge</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-			<p><i>rs</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i/></p>
@@ -24418,15 +20456,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>a</i></p>
@@ -24441,15 +20471,7 @@
 			<p><i>-</i></p>
 			<p><i>-</i></p>
 		</prezent>
-		<perfect>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>at</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-			<p><i>-</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>-</i></p>
@@ -24516,15 +20538,7 @@
 			<p><i>ăbărâţi</i></p>
 			<p><i>abere</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăbărî</i></p>
@@ -24539,15 +20553,7 @@
 			<p><i>ăbărî</i></p>
 			<p><i>ăbărî</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-			<p><i>ăbărât</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ăbăară</i></p>
@@ -24614,15 +20620,7 @@
 			<p><i>teţi</i></p>
 			<p><i>ată</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>te</i></p>
@@ -24637,15 +20635,7 @@
 			<p><i>te</i></p>
 			<p><i>te</i></p>
 		</prezent>
-		<perfect>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-			<p><i>tut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>te</i></p>
@@ -24712,15 +20702,7 @@
 			<p><i>ndeţi</i></p>
 			<p><i>andă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>nde</i></p>
@@ -24735,15 +20717,7 @@
 			<p><i>nde</i></p>
 			<p><i>nde</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-			<p><i>ndut</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>nde</i></p>
@@ -24810,15 +20784,7 @@
 			<p><i>ădaţi</i></p>
 			<p><i>ede</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăda</i></p>
@@ -24833,15 +20799,7 @@
 			<p><i>ăda</i></p>
 			<p><i>ăda</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-			<p><i>ădat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>adă</i></p>
@@ -24908,15 +20866,7 @@
 			<p><i>ăltaţi</i></p>
 			<p><i>elte</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ălta</i></p>
@@ -24931,15 +20881,7 @@
 			<p><i>ălta</i></p>
 			<p><i>ălta</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-			<p><i>ăltat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>altă</i></p>
@@ -25006,15 +20948,7 @@
 			<p><i>ărsaţi</i></p>
 			<p><i>arse</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ărsa</i></p>
@@ -25029,15 +20963,7 @@
 			<p><i>ărsa</i></p>
 			<p><i>ărsa</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-			<p><i>ărsat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>arsă</i></p>
@@ -25104,15 +21030,7 @@
 			<p><i>ătămaţi</i></p>
 			<p><i>atăme</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ătăma</i></p>
@@ -25127,15 +21045,7 @@
 			<p><i>ătăma</i></p>
 			<p><i>ătăma</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-			<p><i>ătămat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>atămă</i></p>
@@ -25202,15 +21112,7 @@
 			<p><i>âţi</i></p>
 			<p><i>e</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>î</i></p>
@@ -25225,15 +21127,7 @@
 			<p><i>î</i></p>
 			<p><i>î</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-			<p><i>ât</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ă</i></p>
@@ -25300,15 +21194,7 @@
 			<p><i>ănţuiţi</i></p>
 			<p><i>ănţuie</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ănţui</i></p>
@@ -25323,15 +21209,7 @@
 			<p><i>ănţui</i></p>
 			<p><i>ănţui</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-			<p><i>ănţuit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ănţuie</i></p>
@@ -25398,15 +21276,7 @@
 			<p><i>ănaţi</i></p>
 			<p><i>ene</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>ăna</i></p>
@@ -25421,15 +21291,7 @@
 			<p><i>ăna</i></p>
 			<p><i>ăna</i></p>
 		</prezent>
-		<perfect>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-			<p><i>ănat</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>ană</i></p>
@@ -25496,15 +21358,7 @@
 			<p><i>rliţi</i></p>
 			<p><i>arlă</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-		</perfect>
-	</Conjunctiv>
+		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
 			<p><i>rli</i></p>
@@ -25519,15 +21373,7 @@
 			<p><i>rli</i></p>
 			<p><i>rli</i></p>
 		</prezent>
-		<perfect>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-			<p><i>rlit</i></p>
-		</perfect>
-	</Conditional>
+		</Conditional>
 	<Imperativ>
 		<imperativ>
 			<p><i>rli</i></p>

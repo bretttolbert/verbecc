@@ -43,6 +43,8 @@ test_ro_conjugate_mood_tense_data = [
         ['eu voi fi făcut', 'tu vei fi făcut', 'el va fi făcut', 'noi vom fi făcut', 'voi veţi fi făcut', 'ei vor fi făcut']),
     ('face', 'conjunctiv', 'prezent', False,
         ['eu să fac', 'tu să faci', 'el să facă', 'noi să facem', 'voi să faceţi', 'ei să facă']),
+    ('face', 'conjunctiv', 'perfect', False,
+        ['eu să fi făcut', 'tu să fi făcut', 'el să fi făcut', 'noi să fi făcut', 'voi să fi făcut', 'ei să fi făcut']),
     ('face', 'indicativ', 'viitor-1-popular', False,
         ['eu o să fac', 'tu o să faci', 'el o să facă', 'noi o să facem', 'voi o să faceţi', 'ei o să facă']),
     ('face', 'indicativ', 'viitor-2-popular', False,

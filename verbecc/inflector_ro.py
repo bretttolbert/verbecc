@@ -8,12 +8,12 @@ class InflectorRo(inflector.Inflector):
         super(InflectorRo, self).__init__()
 
     def _add_subjunctive_relative_pronoun(self, s, tense_name):
-        pronoun, conj = s.split(' ')
+        tokens = s.split(' ')
         if tense_name == 'prezent':
-            s = pronoun + ' să ' + conj
+            tokens.insert(1, 'să')
         elif tense_name == 'perfect':
-            s = pronoun + ' să fi ' + conj
-        return s
+            tokens.insert(1, 'să fi')
+        return ' '.join(tokens)
 
     def _add_adverb_if_applicable(self, s, mood_name, tense_name):
         if mood_name == 'imperativ' and tense_name == 'negativ':
@@ -86,6 +86,9 @@ class InflectorRo(inflector.Inflector):
                 'viitor-2': ('indicativ', 'prezent'),
                 'viitor-1-popular': ('conjunctiv', 'prezent'),
                 'viitor-2-popular': ('indicativ', 'prezent')
+            },
+            'conjunctiv': {
+                'perfect': ('conjunctiv', 'prezent')
             }
         }
 
@@ -100,10 +103,13 @@ class InflectorRo(inflector.Inflector):
         if mood_name == 'indicativ' and tense_name == 'viitor-2':
             conj = [' '.join([pro, hv, 'fi', part]) \
             for pro, hv, part in [c.split(' ') for c in conj]]
-        if mood_name == 'indicativ' and tense_name == 'viitor-1-popular':
+        elif mood_name == 'indicativ' and tense_name == 'viitor-1-popular':
             conj = [' '.join([pro, 'o să', hv]) \
             for pro, hv, part in [c.split(' ') for c in conj]]
-        if mood_name == 'indicativ' and tense_name == 'viitor-2-popular':
+        elif mood_name == 'indicativ' and tense_name == 'viitor-2-popular':
             conj = [' '.join([pro, hv, 'să fi', part]) \
+            for pro, hv, part in [c.split(' ') for c in conj]]
+        elif mood_name == 'conjunctiv' and tense_name == 'perfect':
+            conj = [' '.join([pro, part]) \
             for pro, hv, part in [c.split(' ') for c in conj]]
         return conj
