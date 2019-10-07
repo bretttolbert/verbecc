@@ -39,7 +39,7 @@ Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https:
 https://github.com/bretttolbert/verbecc-svc
 
 #### Live demo
-http://verbe.cc/vcfr/conjugate/manger
+http://verbe.cc/vcfr/conjugate/fr/manger
 
 #### Features
 * Self-contained dockerized microservice
