@@ -97,8 +97,12 @@ Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-s
 
 #### Quick Start
 ```
-pip install verbecc
+git clone https://github.com/bretttolbert/verbecc
+cd verbecc
+pip install .
 ```
+or if you plan to edit the code:
+`pip install -e .`
 
 ## Usage
 ```
