@@ -1,5 +1,35 @@
 # -*- coding: utf-8 -*-
 
+"""
+Brett Tolbert note:
+
+This module adds an ML-based conjugation template prediction
+feature. E.g. given the infinitive form of a verb, it can accurately 
+predict which conjugation template the verb should be conjugated
+with. 
+
+The code in this file is based on an early version of mlconjug by Sekou Diao. 
+Sekou Diao notes that a newer version of mjconjug is available (mlconjug3)
+https://github.com/SekouDiaoNlp
+This file is the only thing verbecc has in common with mlconjug.
+verbecc predates mlconjug and verbecc's verb conjugation implementation
+was developed independently of mlconjug.
+I found mlconjug and was impressed by the machine learning feature and I 
+wanted some hand's on experience with ML so I borrowed this feature and 
+bolted it onto verbecc. 
+I chose not to add mlconjug as a dependency because it duplicates much
+of the functionality of verbecc and would be redundant. So this one source 
+file of verbecc is based mlconjug's mlconjug.py but mlconjug and verbecc 
+are independent projects and this file has diverged.
+
+verbecc is Open Source Software (GNU GPL license)
+mlconjug is also Open Source Software (MIT license)
+
+"""
+
+__credits__ = ["Sekou Diao"]
+
+
 import re
 import os
 import random

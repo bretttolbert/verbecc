@@ -27,6 +27,8 @@ setup(
     long_description_content_type="text/markdown",
     author=__author__,
     author_email='brett.tolbert@gmail.com',
+    maintainer=__maintainer__,
+    maintainer_email='brett.tolbert@gmail.com',
     url='https://github.com/bretttolbert/verbecc',
     packages=find_packages(),
     package_data={'trained_models': ['verbecc/data/models/*']},

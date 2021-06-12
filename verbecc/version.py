@@ -5,5 +5,5 @@ __author__ = 'Brett Tolbert'
 __maintainer__ = 'Brett Tolbert'
 __copyright__ = 'Copyright (c) 2021 Brett Tolbert'
 __license__ = 'GNU General Public License (GPL)'
-__credits__ = ('Pierre Sarrazin', 'SekouD')
+__credits__ = ('Pierre Sarrazin', 'Sekou Diao')
 __status__ = 'Production'
