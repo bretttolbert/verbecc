@@ -1,6 +1,8 @@
 
 ![verbecc logo](https://raw.githubusercontent.com/bretttolbert/verbecc/master/logo/verbecc.png)
 
+# verbecc - python library (verbecc), dockerized microservice (verbecc-svc) and web app (verbecc-web) for verb conjugation in French, Spanish, Italian, Portuguese and Romanian, powered by ML
+
 verbecc
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) 
 [![PyPi Downloads Per Month](https://img.shields.io/pypi/dm/verbecc)](https://pypistats.org/packages/verbecc)
