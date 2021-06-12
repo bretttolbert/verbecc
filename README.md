@@ -15,6 +15,9 @@
 
 #### Verbe complet conjugate: conjugări de verbe franceză, spaniolă, portugheză, italiană și română, utilizând învățarea prin mașină
 
+#### Live demo
+http://verbe.cc
+
 https://github.com/bretttolbert/verbecc
 
 #### Features
