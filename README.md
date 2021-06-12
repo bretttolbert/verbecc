@@ -12,7 +12,6 @@ verbecc
 verbecc-svc
 [![Docker Pulls](https://img.shields.io/docker/pulls/bretttolbert/verbecc-svc)](https://hub.docker.com/r/bretttolbert/verbecc-svc)
 [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verb-conjugate-fr/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verb-conjugate-fr/-/pipelines)
-[![Code Coverage](https://codecov.io/gl/bretttolbert/verbecc/branch/master/graph/badge.svg)](https://codecov.io/gl/bretttolbert/verbecc-svc)
 
 #### Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian and Romanian, enhanced by machine learning
 
