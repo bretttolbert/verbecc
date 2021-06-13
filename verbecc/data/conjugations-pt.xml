@@ -811,51 +811,51 @@
 			<p><i>uo</i></p>
 			<p><i>úis</i></p>
 			<p><i>úi</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uimos</i></p>
+			<p><i>uistes</i></p>
 			<p><i>úem</i></p>
 		</presente>
 		<pretérito-imperfeito>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i/></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uia</i></p>
+			<p><i>uas</i></p>
+			<p><i>uia</i></p>
+			<p><i>uíamos</i></p>
+			<p><i>uíeis</i></p>
+			<p><i>uiam</i></p>
 		</pretérito-imperfeito>
 		<pretérito-mais-que-perfeito>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uira</i></p>
+			<p><i>uiras</i></p>
+			<p><i>uira</i></p>
+			<p><i>uíramos</i></p>
+			<p><i>uíreis</i></p>
+			<p><i>uiram</i></p>
 		</pretérito-mais-que-perfeito>
 		<pretérito-perfeito>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>ui</i></p>
+			<p><i>uiste</i></p>
+			<p><i>uiu</i></p>
+			<p><i>uimos</i></p>
+			<p><i>uistes</i></p>
+			<p><i>uiram</i></p>
 		</pretérito-perfeito>
 		<futuro-do-presente>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uirei</i></p>
+			<p><i>uirás</i></p>
+			<p><i>uirá</i></p>
+			<p><i>uiremos</i></p>
+			<p><i>uireis</i></p>
+			<p><i>uirão</i></p>
 		</futuro-do-presente>
 		</Indicativo>
 	<Condicional>
 		<futuro-do-pretérito>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uiria</i></p>
+			<p><i>uirias</i></p>
+			<p><i>uiria</i></p>
+			<p><i>uiríamos</i></p>
+			<p><i>uiríeis</i></p>
+			<p><i>uiriam</i></p>
 		</futuro-do-pretérito>
 		</Condicional>
 	<Subjuntivo>
@@ -868,30 +868,30 @@
 			<p><i>uam</i></p>
 		</presente>
 		<pretérito-imperfeito>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uisse</i></p>
+			<p><i>uisses</i></p>
+			<p><i>uisse</i></p>
+			<p><i>uíssemos</i></p>
+			<p><i>uísseis</i></p>
+			<p><i>uissem</i></p>
 		</pretérito-imperfeito>
 		<futuro>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uir</i></p>
+			<p><i>uires</i></p>
+			<p><i>uir</i></p>
+			<p><i>uirmos</i></p>
+			<p><i>uirdes</i></p>
+			<p><i>uirem</i></p>
 		</futuro>
 		</Subjuntivo>
 	<Infinitivo>
 		<infinitivo-pessoal-presente>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
-			<p><i>)</i></p>
+			<p><i>uir</i></p>
+			<p><i>uíres</i></p>
+			<p><i>uir</i></p>
+			<p><i>uirmos</i></p>
+			<p><i>uirdes</i></p>
+			<p><i>uírem</i></p>
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uir</i></p>
@@ -904,7 +904,7 @@
 			<p><i>úi</i></p>
 			<p><i>ua</i></p>
 			<p><i>uamos</i></p>
-			<p><i>)</i></p>
+			<p><i>uí</i></p>
 			<p><i>uam</i></p>
 		</afirmativo>
 		<negativo>
@@ -2792,7 +2792,7 @@
 <template name="d:oer">
 	<Indicativo>
 		<presente>
-			<p><i>Br)</i></p>
+			<p><i>o</i></p>
 			<p><i>óis</i></p>
 			<p><i>ói</i></p>
 			<p><i>oemos</i></p>
@@ -3811,7 +3811,7 @@
 			<p><i>quei</i></p>
 			<p><i>caste</i></p>
 			<p><i>cou</i></p>
-			<p><i>r)</i></p>
+			<p><i>cámos</i></p>
 			<p><i>castes</i></p>
 			<p><i>caram</i></p>
 		</pretérito-perfeito>
@@ -4776,7 +4776,7 @@
 <template name="m:oer">
 	<Indicativo>
 		<presente>
-			<p><i>Br)</i></p>
+			<p><i>o</i></p>
 			<p><i>óis</i></p>
 			<p><i>ói</i></p>
 			<p><i>oemos</i></p>
@@ -5051,7 +5051,7 @@
 			<p><i>iei</i></p>
 			<p><i>iaste</i></p>
 			<p><i>iou</i></p>
-			<p><i>r)</i></p>
+			<p><i>iámos</i></p>
 			<p><i>iastes</i></p>
 			<p><i>iaram</i></p>
 		</pretérito-perfeito>
@@ -10507,7 +10507,7 @@
 			<p><i>ei</i></p>
 			<p><i>aste</i></p>
 			<p><i>ou</i></p>
-			<p><i>r)</i></p>
+			<p><i>ámos</i></p>
 			<p><i>astes</i></p>
 			<p><i>aram</i></p>
 		</pretérito-perfeito>
@@ -13111,7 +13111,7 @@
 			<p><i>ei</i></p>
 			<p><i>aste</i></p>
 			<p><i>ou</i></p>
-			<p><i>)</i></p>
+			<p><i>ámos</i></p>
 			<p><i>astes</i></p>
 			<p><i>aram</i></p>
 		</pretérito-perfeito>
