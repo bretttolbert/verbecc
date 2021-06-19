@@ -1,12 +1,20 @@
 verbecc
-Verbes, complètement conjugués - conjugueur français
-Verbs, completely conjugated - French conjugator
-Copyright (C) 2019 Brett Tolbert 
+Tous les verbes complètement conjugués
+Verbs Completely Conjugated
+Verb conjugations for French, Spanish, Portuguese, Italian and Romanian, 
+enhanced by machine learning
+
+Copyright (C) 2021 Brett Tolbert 
 <https://github.com/bretttolbert/verbecc>
-Verb conjugation XML data files are Copyright (C) 2003-2016
+
+Credits:
+French Verb conjugation XML data files are Copyright (C) 2003-2016
 by Pierre Sarrazin <http://sarrazip.com/> (also GNU license)
 Derived from his conjugation system Verbiste, written in C++
 <https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html>
+Verb conjugation XML data files for other languages generated
+by Sekou Diao using unsupervised learning <https://github.com/SekouD>
+and further improved by Brett Tolbert (added missing data)
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
