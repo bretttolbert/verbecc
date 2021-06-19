@@ -110,7 +110,7 @@ Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-s
 
 #### Quick Start
 ```
-git clone https://github.com/bretttolbert/verbecc
+git clone https://github.com/bretttolbert/verbecc.git
 cd verbecc
 pip install .
 ```
