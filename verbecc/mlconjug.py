@@ -6,28 +6,38 @@ Brett Tolbert note:
 This module adds an ML-based conjugation template prediction
 feature. E.g. given the infinitive form of a verb, it can accurately 
 predict which conjugation template the verb should be conjugated
-with. 
+with.
 
-The code in this file is based on an early version of mlconjug by Sekou Diao. 
-Sekou Diao notes that a newer version of mjconjug is available (mlconjug3)
-https://github.com/SekouDiaoNlp
-This file is the only thing verbecc has in common with mlconjug.
+The code in this module is based on an early version of mlconjug by Sekou Diao:
+https://github.com/SekouD/mlconjug 
+Sekou Diao notes that a newer version of mjconjug is now available (mlconjug3):
+https://github.com/SekouDiaoNlp/mlconjug3
+
 verbecc predates mlconjug and verbecc's verb conjugation implementation
-was developed independently of mlconjug.
+was developed independently of mlconjug, but credit to Sekou Diao for the ML
+template prediction code in this module and for and the XML conjugation templates
+for languages other than French. Credit to Pierre Sarrazin (Verbiste) for the 
+developing the original French XML conjugation template format on which both 
+verbecc and mlconjug are based.
+
 I found mlconjug and was impressed by the machine learning feature and I 
-wanted some hand's on experience with ML so I borrowed this feature and 
-bolted it onto verbecc. 
-I chose not to add mlconjug as a dependency because it duplicates much
-of the functionality of verbecc and would be redundant. So this one source 
-file of verbecc is based mlconjug's mlconjug.py but mlconjug and verbecc 
-are independent projects and this file has diverged.
+so I borrowed this feature and retrofit it onto verbecc. 
+I chose not to add the entire mlconjug python package as a dependency because 
+it duplicates much of the functionality of verbecc and would be redundant. 
+So this one source file of verbecc is based mlconjug's mlconjug.py but 
+mlconjug and verbecc are independent projects and this file has diverged.
 
 verbecc is Open Source Software (GNU GPL license)
 mlconjug is also Open Source Software (MIT license)
+Verbiste is Open Source Software (GNU GPL license)
 
+Copyright (c) 2021, Brett Tolbert <http://bretttolbert.com/>
+Copyright (c) 2017, SekouD <https://github.com/SekouDiaoNlp/>
+Copyright (c) 2003-2016, Pierre Sarrazin <http://sarrazip.com/>
 """
 
-__credits__ = ["Sekou Diao"]
+__author__ = ["Sekou Diao"]
+__credits__ = ["Sekou Diao", "Pierre Sarrazin"]
 
 
 import re
