@@ -104,7 +104,9 @@ https://github.com/bretttolbert/verbecc-web
 #### Features
 * Dockerized
 * Search suggestions
-* Implemented entirely in Javascript (JQuery) - conjugations are generated without reloading the page
+* Responsive Javascript (JQuery) frontend
+    * Conjugates verbs without reloading the page
+    * Sends HTTP requests to the JSON REST API of the `verbecc-svc` microservice running on the backend
 * Dependencies: `verbecc-svc`
 
 #### Credits
