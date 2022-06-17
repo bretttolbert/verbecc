@@ -158,4 +158,4 @@ https://github.com/bretttolbert/verbecc-web
 * Dependencies: `verbecc-svc`
 
 #### Credits
-- Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-svc), and [JQuery](https://jquery.com/)
+- Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-svc), [docker](https://www.docker.com) and [JQuery](https://jquery.com/)
