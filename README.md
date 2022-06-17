@@ -29,9 +29,9 @@ https://github.com/bretttolbert/verbecc
 * Conjugate verbs in French, Spanish, Portuguese, Italian and Romanian
 * Uses machine learning techniques to predict conjugation of unknown verbs with 99% accurracy
 * Includes both simple and compound conjugations
-* pip installable
+* `pip` installable
 * Unit tested
-* Continuous integration with GitLab CI/CD
+* Continuous integration with GitLab CI/CD pipeline
 * Dependencies: `scikit-learn`, `lxml`
 
 
