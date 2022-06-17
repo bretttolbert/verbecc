@@ -1,7 +1,7 @@
 
 ![verbecc logo](https://raw.githubusercontent.com/bretttolbert/verbecc/master/logo/verbecc.png)
 
-# verbecc - python library (verbecc), dockerized microservice (verbecc-svc) and web app (verbecc-web) for verb conjugation in French, Spanish, Italian, Portuguese and Romanian, powered by ML
+# verbecc - python library (`verbecc`), dockerized microservice (`verbecc-svc`) and web app (`verbecc-web`) for verb conjugation in French, Spanish, Italian, Portuguese and Romanian, powered by machine learning
 
 verbecc
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) 
@@ -13,20 +13,15 @@ verbecc-svc
 [![Docker Pulls](https://img.shields.io/docker/pulls/bretttolbert/verbecc-svc)](https://hub.docker.com/r/bretttolbert/verbecc-svc)
 [![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verb-conjugate-fr/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verb-conjugate-fr/-/pipelines)
 
-#### Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian and Romanian, enhanced by machine learning
-
-#### Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais, italien et roumain, à l'aide de l'apprentissage automatique
-
-#### Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, italiano e rumeno, migliorate dall'apprendimento automatico
-
-#### Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués, italiano y rumano, mejoradas por aprendizaje automático
-
-#### Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano e romeno, aprimoradas pelo aprendizado de máquina
-
-#### Verbe complet conjugate: conjugări de verbe franceză, spaniolă, portugheză, italiană și română, utilizând învățarea prin mașină
+###### Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian and Romanian, enhanced by machine learning
+###### Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais, italien et roumain, à l'aide de l'apprentissage automatique
+###### Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, italiano e rumeno, migliorate dall'apprendimento automatico
+###### Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués, italiano y rumano, mejoradas por aprendizaje automático
+###### Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano e romeno, aprimoradas pelo aprendizado de máquina
+###### Verbe complet conjugate: conjugări de verbe franceză, spaniolă, portugheză, italiană și română, utilizând învățarea prin mașină
 
 #### Live demo
-http://verbe.cc
+~~http://verbe.cc~~ (currently offline, sadly)
 
 https://github.com/bretttolbert/verbecc
 
@@ -44,15 +39,14 @@ Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https:
 
 
 ## verbecc-svc
-
 [![pipeline status](https://gitlab.com/bretttolbert/verb-conjugate-fr/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verb-conjugate-fr/pipelines)
 
-#### verbecc-svc Dockerized microservice with REST API for conjugation of any verb in French and Spanish
+#### verbecc-svc - Dockerized microservice with REST API for conjugation of any verb in French, Spanish, Italian, Portuguese and Romanian
 
 https://github.com/bretttolbert/verbecc-svc
 
 #### Live demo
-http://verbe.cc/vcfr/conjugate/fr/manger
+~~http://verbe.cc/vcfr/conjugate/fr/manger~~ (currently offline, sadly)
 
 #### Features
 * Self-contained dockerized microservice
@@ -62,17 +56,17 @@ http://verbe.cc/vcfr/conjugate/fr/manger
 * Dependencies: verbecc
 
 #### Credits
-Created with the help of [verbecc](https://github.com/bretttolbert/verbecc), [FastAPI](https://github.com/tiangolo/fastapi), [uvicorn](https://github.com/encode/uvicorn), [starlette](https://github.com/encode/starlette), [docker](https://docker.com), [docker-compose](https://docs.docker.com/compose/), [pytest](https://docs.pytest.org) and [python](https://www.python.org/).
+- Created with the help of [verbecc](https://github.com/bretttolbert/verbecc), [FastAPI](https://github.com/tiangolo/fastapi), [uvicorn](https://github.com/encode/uvicorn), [starlette](https://github.com/encode/starlette), [docker](https://docker.com), [docker-compose](https://docs.docker.com/compose/), [pytest](https://docs.pytest.org) and [python](https://www.python.org/)
 
 
 ## verbecc-web
 
-#### Web front-end for verbecc-svc - conjugation of any verb in French and Spanish
+#### Web front-end for verbecc-svc - conjugation of any verb in French, Spanish, Italian, Portuguese and Romanian
 
 https://github.com/bretttolbert/verbecc-web
 
 #### Live demo
-http://verbe.cc
+~~http://verbe.cc~~ (currently offline, sadly)
 
 #### Features
 * Dockerized
@@ -81,13 +75,20 @@ http://verbe.cc
 * Dependencies: verbecc-svc
 
 #### Credits
-Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-svc), and [JQuery](https://jquery.com/)
+- Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-svc), and [JQuery](https://jquery.com/)
 
+## Flexible Modular Architecture
+- `verbecc-web` **web application**
+    - depends on:
+- `verbecc-svc` **dockerized microservice**
+    - depends on:
+- `verbecc` **python library**
+    - depends on: [requirements.txt](verbecc/requirements.txt)
 
-```
+```bash
 +------------------------------------------------------+                                                                               
 |               verbecc-web                            |                                                                               
-|               web application                        |                                                                               
+|             (web application)                        |                                                                               
 |               docker-compose                         |                                                                               
 |                      |                               |                                                                               
 |                  REST API                            |                                                                               
@@ -95,11 +96,11 @@ Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-s
 |      +----------------------------------------+      |                                                                               
 |      |                                        |      |                                                                               
 |      |       verbecc-svc                      |      |                                                                               
-|      |       Dockerized microservice          |      |                                                                               
+|      |    (Dockerized microservice)           |      |                                                                               
 |      |                                        |      |                                                                               
 |      |        +----------------------+        |      |                                                                               
 |      |        |   verbecc            |        |      |                                                                               
-|      |        |   Python library     |        |      |                                                                               
+|      |        | (Python library)     |        |      |                                                                               
 |      |        +----------------------+        |      |                                                                               
 |      +----------------------------------------+      |                                                                               
 +------------------------------------------------------+                                                                               
@@ -109,16 +110,18 @@ Created with the help of [verbecc-svc](https://github.com/bretttolbert/verbecc-s
 # verbecc
 
 #### Quick Start
-```
+```bash
 git clone https://github.com/bretttolbert/verbecc.git
 cd verbecc
 pip install .
 ```
 or if you plan to edit the code:
-`pip install -e .`
+```bash
+pip install -e .
+```
 
 ## Usage
-```
+```python
 >>> from verbecc import Conjugator
 >>> cg = Conjugator(lang='fr')
 >>> conjugation = cg.conjugate('manger')
