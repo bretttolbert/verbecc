@@ -8,15 +8,15 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 requirements = [
-    'lxml>=4.6.3,<5.0.0',
-    'mock>=4.0.3,<5.0.0',
-    'pytest>=6.2.4,<7.0.0',
-    'pytest-cov>=2.12.1,<3.0.0',
-    'pylama>=7.7.1,<8.0.0',
-    'cython>=0.29.23,<1.0.0',
-    'numpy>=1.20.3,<2.0.0',
-    'scipy>=1.6.3,<2.0.0',
-    'scikit-learn>=0.24.2,<1.0.0'
+    'lxml>=4.9.2,<5.0.0',
+    'mock>=5.0.0,<6.0.0',
+    'pytest>=7.2.0,<8.0.0',
+    'pytest-cov>=4.0.0,<5.0.0',
+    'pylama>=8.4.1,<9.0.0',
+    'cython>=0.29.32,<1.0.0',
+    'numpy>=1.24.1,<2.0.0',
+    'scipy>=1.9.3,<2.0.0',
+    'scikit-learn>=1.1.3,<1.2.0'
 ]
 
 setup(
@@ -69,7 +69,8 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9'
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10'
     ],
     tests_require=requirements,
     test_suite="tests",

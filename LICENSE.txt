@@ -4,7 +4,7 @@ Verbs Completely Conjugated
 Verb conjugations for French, Spanish, Portuguese, Italian and Romanian, 
 enhanced by machine learning
 
-Copyright (C) 2021 Brett Tolbert 
+Copyright (C) 2023 Brett Tolbert 
 <https://github.com/bretttolbert/verbecc>
 
 Credits:

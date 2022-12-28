@@ -31,7 +31,7 @@ verbecc is Open Source Software (GNU GPL license)
 mlconjug is also Open Source Software (MIT license)
 Verbiste is Open Source Software (GNU GPL license)
 
-Copyright (c) 2021, Brett Tolbert <http://bretttolbert.com/>
+Copyright (c) 2023, Brett Tolbert <http://bretttolbert.com/>
 Copyright (c) 2017, SekouD <https://github.com/SekouDiaoNlp/>
 Copyright (c) 2003-2016, Pierre Sarrazin <http://sarrazip.com/>
 """
@@ -229,12 +229,23 @@ class Model:
 
     def __init__(self, vectorizer=None, feature_selector=None, classifier=None, lang=None):
         if not vectorizer:
-            vectorizer = CountVectorizer(analyzer=partial(extract_verb_features, lang=lang, ngram_range=(2, 7)), binary=True)
+            vectorizer = CountVectorizer(analyzer=partial(extract_verb_features, 
+                                                          lang=lang, 
+                                                          ngram_range=(2, 7)), 
+                                        binary=True)
         if not feature_selector:
-            feature_selector = SelectFromModel(LinearSVC(penalty='l1', max_iter=12000, dual=False, verbose=2))
+            feature_selector = SelectFromModel(LinearSVC(penalty='l1', 
+                                                         max_iter=12000, 
+                                                         dual=False, 
+                                                         verbose=0))
         if not classifier:
-            classifier = SGDClassifier(loss='log', penalty='elasticnet', l1_ratio=0.15,
-                                       max_iter=4000, alpha=1e-5, random_state=42, verbose=2)
+            classifier = SGDClassifier(loss='log_loss', 
+                                       penalty='elasticnet', 
+                                       l1_ratio=0.15,
+                                       max_iter=40000, 
+                                       alpha=1e-5, 
+                                       verbose=0)
+                                       
         self.pipeline = Pipeline([('vectorizer', vectorizer),
                                   ('feature_selector', feature_selector),
                                   ('classifier', classifier)])
