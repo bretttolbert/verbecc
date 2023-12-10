@@ -8,15 +8,15 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 requirements = [
-    'lxml>=4.9.2,<5.0.0',
-    'mock>=5.0.0,<6.0.0',
-    'pytest>=7.2.0,<8.0.0',
-    'pytest-cov>=4.0.0,<5.0.0',
+    'lxml>=4.9.3,<5.0.0',
+    'mock>=5.1.0,<6.0.0',
+    'pytest>=7.4.3,<8.0.0',
+    'pytest-cov>=4.1.0,<5.0.0',
     'pylama>=8.4.1,<9.0.0',
-    'cython>=0.29.32,<1.0.0',
-    'numpy>=1.24.1,<2.0.0',
-    'scipy>=1.9.3,<2.0.0',
-    'scikit-learn>=1.1.3,<1.2.0'
+    'cython>=3.0.6,<4.0.0',
+    'numpy>=1.26.2,<2.0.0',
+    'scipy>=1.11.4,<2.0.0',
+    'scikit-learn>=1.3.2,<1.4.0'
 ]
 
 setup(
@@ -26,9 +26,9 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author=__author__,
-    author_email='brett.tolbert@gmail.com',
+    author_email='bretttolbert@gmail.com',
     maintainer=__maintainer__,
-    maintainer_email='brett.tolbert@gmail.com',
+    maintainer_email='bretttolbert@gmail.com',
     url='https://github.com/bretttolbert/verbecc',
     packages=find_packages(),
     package_data={'trained_models': ['verbecc/data/models/*']},
@@ -70,7 +70,8 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10'
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11'
     ],
     tests_require=requirements,
     test_suite="tests",
