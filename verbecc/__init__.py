@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .version import *
-from .exceptions import *
-from .conjugator import *
-from .mlconjug import *
+from verbecc.version import *
+from verbecc.exceptions import *
+from verbecc.conjugator import *
+from verbecc.mlconjug import *

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from . import (
+from verbecc.exceptions import InvalidLangError
+
+from verbecc import (
     inflector_fr,
     inflector_es,
     inflector_it,
@@ -20,7 +22,7 @@ class Conjugator:
     """
     :param lang: two-letter language code
     """
-    def __init__(self, lang):
+    def __init__(self, lang: str):
         if lang == 'fr':
             self._inflector = inflector_fr.InflectorFr()
         elif lang == 'es':
@@ -34,7 +36,7 @@ class Conjugator:
         else:
             raise InvalidLangError
     
-    def conjugate(self, infinitive):
+    def conjugate(self, infinitive: str):
         return self._inflector.conjugate(infinitive)
 
     def conjugate_mood(self, infinitive, mood_name):

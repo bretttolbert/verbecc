@@ -2,7 +2,7 @@
 
 import pytest
 
-from verbecc import Conjugator
+from verbecc.conjugator import Conjugator
 
 cg = Conjugator(lang='ro')
 

@@ -55,7 +55,7 @@ from sklearn.svm import LinearSVC
 from sklearn.linear_model import SGDClassifier
 from sklearn.pipeline import Pipeline
 
-from .grammar_defines import ALPHABET
+from verbecc.grammar_defines import ALPHABET
 
 
 class TemplatePredictor:

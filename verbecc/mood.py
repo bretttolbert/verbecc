@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .tense_template import TenseTemplate
+from verbecc.tense_template import TenseTemplate
 
 class Mood():
     def __init__(self, mood_elem):

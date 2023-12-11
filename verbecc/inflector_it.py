@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
 
 from verbecc import inflector
+from verbecc import string_utils
 
 class InflectorIt(inflector.Inflector):
+
+    @property
+    def lang(self) -> str:
+        return 'it'
+    
     def __init__(self):
-        self.lang = 'it'
         super(InflectorIt, self).__init__()
 
     def _split_reflexive(self, infinitive):

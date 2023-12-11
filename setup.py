@@ -16,7 +16,7 @@ requirements = [
     'cython>=3.0.6,<4.0.0',
     'numpy>=1.26.2,<2.0.0',
     'scipy>=1.11.4,<2.0.0',
-    'scikit-learn>=1.3.2,<1.4.0'
+    'scikit-learn>=1.3.2,<2.0.0'
 ]
 
 setup(

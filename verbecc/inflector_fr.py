@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from . import inflector
-from . import grammar_defines
-from . import string_utils
-from . import exceptions
+from verbecc import inflector
+from verbecc import grammar_defines
+from verbecc import string_utils
+from verbecc import exceptions
 
 VERBS_CONJUGATED_WITH_ETRE = [
 "aller",
@@ -38,8 +38,12 @@ VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS = [
 
 
 class InflectorFr(inflector.Inflector):
+
+    @property
+    def lang(self) -> str:
+        return 'fr'
+
     def __init__(self):
-        self.lang = 'fr'
         super(InflectorFr, self).__init__()
 
     def get_verbs_that_start_with(self, query, max_results):

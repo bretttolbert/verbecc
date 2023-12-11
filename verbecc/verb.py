@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
 
 from lxml import etree
-from . import string_utils
-from . import exceptions
+from verbecc.string_utils import strip_accents
+from verbecc.exceptions import VerbsParserError
 
 class Verb:
     def __init__(self, v_elem):
         if v_elem.tag != 'v':
-            raise exceptions.VerbsParserError("Unexpected element")
+            raise VerbsParserError("Unexpected element")
         try:
             self.predicted = False
             self.pred_score = 1.0
             self.infinitive = u'' + v_elem.find('i').text
-            self.infinitive_no_accents = \
-                string_utils.strip_accents(self.infinitive)
+            self.infinitive_no_accents = strip_accents(self.infinitive)
             self.template = u'' + v_elem.find('t').text
             self.translation_en = ''
             en_node = v_elem.find('en')
@@ -21,7 +20,7 @@ class Verb:
                 self.translation_en = u'' + en_node.text
             self.impersonal = False
         except AttributeError as e:
-            raise exceptions.VerbsParserError(
+            raise VerbsParserError(
                 "Error parsing {}: {}".format(
                     etree.tostring(v_elem),
                     str(e)))

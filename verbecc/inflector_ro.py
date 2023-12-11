@@ -3,8 +3,12 @@
 from verbecc import inflector
 
 class InflectorRo(inflector.Inflector):
+
+    @property
+    def lang(self) -> str:
+        return 'ro'
+
     def __init__(self):
-        self.lang = 'ro'
         super(InflectorRo, self).__init__()
 
     def _add_subjunctive_relative_pronoun(self, s, tense_name):

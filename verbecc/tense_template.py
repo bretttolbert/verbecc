@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from . import person_ending
-from . import grammar_defines
+from typing import List
+
+from verbecc import person_ending
+from verbecc import grammar_defines
 
 class TenseTemplate:
     """
@@ -70,7 +72,7 @@ class TenseTemplate:
             <p></p>
             <p><i>euvent</i></p> e.g. ils pleuvent (rare, but valid)
         """
-        self.person_endings = []
+        self.person_endings:List[person_ending.PersonEnding] = []
         person_num = 0
         for p_elem in tense_elem.findall('p'):
             person = grammar_defines.PERSONS[person_num]

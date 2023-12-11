@@ -3,18 +3,23 @@
 from abc import ABC, abstractmethod
 import copy
 
-from . import grammar_defines
-from . import string_utils
-from . import exceptions
-from . import verbs_parser
-from . import conjugations_parser
+from verbecc import grammar_defines
+from verbecc import exceptions
+from verbecc import verbs_parser
+from verbecc import conjugations_parser
 
 class Inflector(ABC):
+    
+    @property
+    @abstractmethod
+    def lang(self) -> str:
+        pass
+
     def __init__(self):
         self._verb_parser = verbs_parser.VerbsParser(self.lang)
         self._conj_parser = conjugations_parser.ConjugationsParser(self.lang)
 
-    def conjugate(self, infinitive):
+    def conjugate(self, infinitive: str):
         co = self._get_conj_obs(infinitive)
         moods = {}
         for mood in co.template.moods:

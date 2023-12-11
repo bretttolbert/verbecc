@@ -6,7 +6,7 @@ import pytest
 
 from verbecc import verbs_parser
 from verbecc import verb
-from verbecc import exceptions
+from verbecc.exceptions import VerbsParserError
 
 def test_verbs_parser():
     vp = verbs_parser.VerbsParser()
@@ -29,7 +29,7 @@ def test_verb_two():
 @patch('lxml.etree._Element')
 def test_verb_invalid_xml(mock_v_elem):
     mock_v_elem.tag.return_value = "not-v"
-    with pytest.raises(exceptions.VerbsParserError):
+    with pytest.raises(VerbsParserError):
         v = verb.Verb(mock_v_elem)
 
 test_data = [

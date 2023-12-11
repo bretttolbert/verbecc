@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from typing import List
+
 class PersonEnding:
     """
     p_elem
@@ -21,20 +23,20 @@ class PersonEnding:
     """
     def __init__(self, p_elem, person):
         self.person = person
-        self.endings = []
+        self.endings: List[str] = []
         for i_elem in p_elem.findall('i'):
-            ending = u''
+            ending = str(u'')
             if i_elem.text is not None:
-                ending += i_elem.text
+                ending += str(i_elem.text)
             self.endings.append(ending)
 
     def get_person(self):
         return self.person
 
-    def get_ending(self):
+    def get_ending(self) -> str:
         return self.endings[0]
 
-    def get_alternate_ending_if_available(self):
+    def get_alternate_ending_if_available(self) -> str:
         if len(self.endings) > 1:
             return self.endings[1]
         return self.endings[0]

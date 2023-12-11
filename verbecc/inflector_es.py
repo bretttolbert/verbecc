@@ -3,8 +3,12 @@
 from verbecc import inflector
 
 class InflectorEs(inflector.Inflector):
+
+    @property
+    def lang(self) -> str:
+        return 'es'
+
     def __init__(self):
-        self.lang = 'es'
         super(InflectorEs, self).__init__()
 
     def _add_adverb_if_applicable(self, s, mood_name, tense_name):

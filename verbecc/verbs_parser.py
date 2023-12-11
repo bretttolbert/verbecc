@@ -8,11 +8,11 @@ from lxml import etree
 
 from pkg_resources import resource_filename
 
-from . import string_utils
-from . import verb
-from . import exceptions
-from . import mlconjug
-from . import config
+from verbecc.verb import Verb
+from verbecc import string_utils
+from verbecc import exceptions
+from verbecc import mlconjug
+from verbecc import config
 
 class VerbsParser:
     def __init__(self, lang='fr'):
@@ -29,7 +29,7 @@ class VerbsParser:
                 "Root XML Tag {} Not Found".format(root_tag))
         for child in root:
             if child.tag == 'v':
-                self.verbs.append(verb.Verb(child))
+                self.verbs.append(Verb(child))
 
         self.verbs = sorted(self.verbs, key=lambda v: v.infinitive)
         self._infinitives = [v.infinitive for v in self.verbs]
@@ -58,7 +58,7 @@ class VerbsParser:
         if config.ml:
             template, pred_score = self.template_predictor.predict(query)
             verb_xml = "<v><i>{}</i><t>{}</t></v>".format(infinitive.lower(), template)
-            ret = verb.Verb(etree.fromstring(verb_xml))
+            ret = Verb(etree.fromstring(verb_xml))
             ret.predicted = True
             ret.pred_score = pred_score
             return ret
