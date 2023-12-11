@@ -5,19 +5,25 @@ from verbecc.string_utils import strip_accents
 from verbecc.exceptions import VerbsParserError
 
 class Verb:
-    def __init__(self, v_elem):
+    def __init__(self, v_elem: etree._Element):
         if v_elem.tag != 'v':
             raise VerbsParserError("Unexpected element")
         try:
             self.predicted = False
             self.pred_score = 1.0
-            self.infinitive = u'' + v_elem.find('i').text
+            self.infinitive = ''
+            e = v_elem.find('i')
+            if e is not None:
+                self.infinitive: str = e.text if e.text is not None else ''
             self.infinitive_no_accents = strip_accents(self.infinitive)
-            self.template = u'' + v_elem.find('t').text
+            self.template = ''
+            e = v_elem.find('t')
+            if e is not None:
+                self.template: str = e.text if e.text is not None else ''
             self.translation_en = ''
-            en_node = v_elem.find('en')
-            if en_node is not None:
-                self.translation_en = u'' + en_node.text
+            e = v_elem.find('en')
+            if e is not None:
+                self.translation_en: str = e.text if e.text is not None else ''
             self.impersonal = False
         except AttributeError as e:
             raise VerbsParserError(

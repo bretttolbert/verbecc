@@ -2,14 +2,12 @@
 
 import unicodedata
 
-from verbecc import grammar_defines
 
-
-def strip_accents(s):
+def strip_accents(s: str) -> str:
     return ''.join(c for c in unicodedata.normalize('NFD', s)
                    if unicodedata.category(c) != 'Mn')
 
-def starts_with_vowel(s):
+def starts_with_vowel(s: str) -> bool:
     if len(s) == 0:
         return False
     return strip_accents(s)[0] in ('a', 'e', 'i', 'o', 'u')

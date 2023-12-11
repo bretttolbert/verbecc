@@ -72,7 +72,7 @@ class TenseTemplate:
             <p></p>
             <p><i>euvent</i></p> e.g. ils pleuvent (rare, but valid)
         """
-        self.person_endings:List[person_ending.PersonEnding] = []
+        self.person_endings: List[person_ending.PersonEnding] = []
         person_num = 0
         for p_elem in tense_elem.findall('p'):
             person = grammar_defines.PERSONS[person_num]

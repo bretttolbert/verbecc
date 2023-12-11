@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from typing import Dict
+from typing import Dict, List
 
 from verbecc.exceptions import InvalidLangError
+from verbecc import conjugation_template
 
 from verbecc import (
     inflector_fr,
@@ -48,7 +49,7 @@ class Conjugator:
         return self._inflector.conjugate_mood_tense( 
             infinitive, mood_name, tense_name, alternate)
 
-    def get_verbs_list(self):
+    def get_verbs_list(self) -> List[str]:
         return self._inflector.get_verbs_list()
 
     def get_templates_list(self):
@@ -57,7 +58,7 @@ class Conjugator:
     def find_verb_by_infinitive(self, infinitive: str):
         return self._inflector.find_verb_by_infinitive(infinitive)
 
-    def find_template(self, name: int):
+    def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
         return self._inflector.find_template(name)
 
     def get_verbs_that_start_with(self, query: str, max_results: int):

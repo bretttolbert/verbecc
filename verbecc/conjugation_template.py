@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from lxml import etree
+from typing import Dict
 
 from verbecc.mood import Mood
 from verbecc.exceptions import ConjugationTemplateError
@@ -12,7 +13,7 @@ class ConjugationTemplate:
                 "Unexpected element")
         try:
             self.name = str(template_elem.get('name'))
-            self.moods = {}
+            self.moods: Dict[str, Mood] = {}
             for mood_elem in template_elem:
                 mood = Mood(mood_elem)
                 self.moods[mood_elem.tag.lower()] = mood
