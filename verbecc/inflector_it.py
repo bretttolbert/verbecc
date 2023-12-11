@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from typing import Dict, List, Tuple
+
 from verbecc import inflector
 from verbecc import string_utils
 
@@ -77,7 +79,7 @@ class InflectorIt(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participio'
 
-    def _get_compound_conjugations_aux_verb_map(self):
+    def _get_compound_conjugations_aux_verb_map(self) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         return {
             'indicativo': {
                 'passato-prossimo': ('indicativo', 'presente'),

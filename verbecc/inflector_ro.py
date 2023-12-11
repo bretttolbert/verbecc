@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from typing import Dict, List, Tuple
+
 from verbecc import inflector
 
 class InflectorRo(inflector.Inflector):
@@ -85,7 +87,7 @@ class InflectorRo(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participiu'
 
-    def _get_compound_conjugations_aux_verb_map(self):
+    def _get_compound_conjugations_aux_verb_map(self) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         #TODO: those last three don't actually use an auxiliary verb, refactor to make aux verb optional
         return {
             'indicativ': {

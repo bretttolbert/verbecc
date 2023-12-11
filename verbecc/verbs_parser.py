@@ -1,22 +1,20 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-
 from bisect import bisect_left
-
 from lxml import etree
-
 from pkg_resources import resource_filename
+from typing import List
 
-from verbecc.verb import Verb
-from verbecc import string_utils
+from verbecc import config
 from verbecc import exceptions
 from verbecc import mlconjug
-from verbecc import config
+from verbecc import string_utils
+from verbecc import verb
 
 class VerbsParser:
     def __init__(self, lang='fr'):
-        self.verbs = []
+        self.verbs: List[verb.Verb] = []
         parser = etree.XMLParser(encoding='utf-8')
         tree = etree.parse(resource_filename(
                            "verbecc",
@@ -29,7 +27,7 @@ class VerbsParser:
                 "Root XML Tag {} Not Found".format(root_tag))
         for child in root:
             if child.tag == 'v':
-                self.verbs.append(Verb(child))
+                self.verbs.append(verb.Verb(child))
 
         self.verbs = sorted(self.verbs, key=lambda v: v.infinitive)
         self._infinitives = [v.infinitive for v in self.verbs]
@@ -39,7 +37,7 @@ class VerbsParser:
             self.template_predictor = mlconjug.TemplatePredictor(
                 [(v.infinitive,v.template) for v in self.verbs], lang)
 
-    def find_verb_by_infinitive(self, infinitive):
+    def find_verb_by_infinitive(self, infinitive: str) -> verb.Verb:
         """First try to find with accents, e.g. if infinitive is 'Abañar',
         search for 'abañar' and not 'abanar'. 
         If not found then try searching with accents stripped.
@@ -58,14 +56,14 @@ class VerbsParser:
         if config.ml:
             template, pred_score = self.template_predictor.predict(query)
             verb_xml = "<v><i>{}</i><t>{}</t></v>".format(infinitive.lower(), template)
-            ret = Verb(etree.fromstring(verb_xml))
+            ret = verb.Verb(etree.fromstring(verb_xml))
             ret.predicted = True
             ret.pred_score = pred_score
             return ret
         else:
             raise exceptions.VerbNotFoundError
 
-    def get_verbs_that_start_with(self, pre, max_results=10):
+    def get_verbs_that_start_with(self, pre: str, max_results: int=10) -> List[str]:
         ret = []
         pre_no_accents = string_utils.strip_accents(pre.lower())
         for verb in self.verbs:

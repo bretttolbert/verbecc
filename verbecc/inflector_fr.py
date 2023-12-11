@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
+from typing import Dict, List, Tuple
+
 from verbecc import inflector
-from verbecc import grammar_defines
 from verbecc import string_utils
-from verbecc import exceptions
 
 VERBS_CONJUGATED_WITH_ETRE = [
 "aller",
@@ -46,7 +46,7 @@ class InflectorFr(inflector.Inflector):
     def __init__(self):
         super(InflectorFr, self).__init__()
 
-    def get_verbs_that_start_with(self, query, max_results):
+    def get_verbs_that_start_with(self, query: str, max_results: int) -> List[str]:
         query = query.lower()
         is_reflexive, query = self._split_reflexive(query)
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
@@ -55,7 +55,7 @@ class InflectorFr(inflector.Inflector):
             for m in matches if self._verb_can_be_reflexive(m)]
         return matches
 
-    def _is_impersonal_verb(self, infinitive):
+    def _is_impersonal_verb(self, infinitive: str) -> bool:
         ret = False
         verb = self.find_verb_by_infinitive(infinitive)
         template = self.find_template(verb.template)
@@ -63,12 +63,12 @@ class InflectorFr(inflector.Inflector):
             ret = True
         return ret
 
-    def _verb_can_be_reflexive(self, infinitive):
+    def _verb_can_be_reflexive(self, infinitive: str) -> bool:
         return (not self._is_impersonal_verb(infinitive) 
             and infinitive not in 
             VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS) 
 
-    def _split_reflexive(self, infinitive):
+    def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
         is_reflexive = False
         if infinitive.startswith("se "):
             is_reflexive = True
@@ -78,22 +78,22 @@ class InflectorFr(inflector.Inflector):
             infinitive = infinitive[2:]
         return is_reflexive, infinitive
 
-    def _add_reflexive_pronoun(self, s):
+    def _add_reflexive_pronoun(self, s: str) -> str:
         if string_utils.starts_with_vowel(s):
             return "s'" + s
         else:
             return "se " + s
 
-    def _add_subjunctive_relative_pronoun(self, s, tense_name):
+    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str) -> str:
         if string_utils.starts_with_vowel(s):
             return "qu'" + s
         else:
             return "que " + s
 
-    def _get_pronoun_suffix(self, person, gender='m'):
+    def _get_pronoun_suffix(self, person: str, gender: str='m') -> str:
         return '-' + self._get_default_pronoun(person, gender).replace('tu', 'toi')
 
-    def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
+    def _get_default_pronoun(self, person: str, gender: str='m', is_reflexive: bool=False) -> str:
         ret = ''
         if person == '1s':
             ret = 'je'
@@ -125,30 +125,30 @@ class InflectorFr(inflector.Inflector):
                 ret += ' se'
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self):
+    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return ['infinitif-présent', 'participe-présent', 
                 'imperatif-présent', 'participe-passé']
 
-    def _get_auxilary_verb(self, co, mood_name, tense_name):
+    def _get_auxilary_verb(self, co: inflector.Inflector.ConjugationObjects, mood_name: str, tense_name: str) -> str:
         ret = 'avoir'
         if (co.verb.infinitive in VERBS_CONJUGATED_WITH_ETRE
             or co.is_reflexive):
             ret = 'être'
         return ret
 
-    def _is_auxilary_verb_inflected(self, auxilary_verb):
+    def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return auxilary_verb == 'être'
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood_name(self) -> str:
         return 'subjonctif'
 
-    def _get_participle_mood_name(self):
+    def _get_participle_mood_name(self) -> str:
         return 'participe'
 
-    def _get_participle_tense_name(self):
+    def _get_participle_tense_name(self) -> str:
         return 'participe-passé'
 
-    def _combine_pronoun_and_conj(self, pronoun, conj):
+    def _combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         ret = ''
         if pronoun[-1] == "e" and string_utils.starts_with_vowel(conj):
             ret += pronoun[:-1] + "'"
@@ -157,13 +157,13 @@ class InflectorFr(inflector.Inflector):
         ret += conj
         return ret
 
-    def _add_present_participle_if_applicable(self, s, is_reflexive, tense_name):
+    def _add_present_participle_if_applicable(self, s: str, is_reflexive: bool, tense_name: str) -> str:
         ret = s
         if is_reflexive and tense_name == self._get_participle_tense_name():
             ret += 'étant '
         return ret
 
-    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s, is_reflexive, mood_name, tense_name, person):
+    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(self, s: str, is_reflexive: bool, mood_name: str, tense_name: str, person: str) -> str:
         if is_reflexive:
             if mood_name != 'imperatif':
                 s = self._add_reflexive_pronoun(s)
@@ -171,11 +171,11 @@ class InflectorFr(inflector.Inflector):
                 s += self._get_pronoun_suffix(person)
         return s
 
-    def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, hv_tense_name):
+    def _compound_conjugation_not_applicable(self, is_reflexive, mood_name, hv_tense_name) -> bool:
         return (is_reflexive and mood_name == 'imperatif'
             and hv_tense_name == 'imperatif-présent')
 
-    def _get_compound_conjugations_aux_verb_map(self):
+    def _get_compound_conjugations_aux_verb_map(self) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         return {
             'indicatif': {
                 'passé-composé': ('indicatif', 'présent'),

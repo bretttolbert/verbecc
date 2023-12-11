@@ -41,10 +41,10 @@ class Conjugator:
     def conjugate(self, infinitive: str):
         return self._inflector.conjugate(infinitive)
 
-    def conjugate_mood(self, infinitive, mood_name):
+    def conjugate_mood(self, infinitive: str, mood_name: str):
         return self._inflector.conjugate_mood(infinitive, mood_name)
 
-    def conjugate_mood_tense(self, infinitive, mood_name, tense_name, alternate=False):
+    def conjugate_mood_tense(self, infinitive: str, mood_name: str, tense_name: str, alternate: bool=False):
         return self._inflector.conjugate_mood_tense( 
             infinitive, mood_name, tense_name, alternate)
 
@@ -54,11 +54,11 @@ class Conjugator:
     def get_templates_list(self):
         return self._inflector.get_templates_list()
 
-    def find_verb_by_infinitive(self, infinitive):
+    def find_verb_by_infinitive(self, infinitive: str):
         return self._inflector.find_verb_by_infinitive(infinitive)
 
-    def find_template(self, name):
+    def find_template(self, name: int):
         return self._inflector.find_template(name)
 
-    def get_verbs_that_start_with(self, query, max_results):
+    def get_verbs_that_start_with(self, query: str, max_results: int):
         return self._inflector.get_verbs_that_start_with(query, max_results)
