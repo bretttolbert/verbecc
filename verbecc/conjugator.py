@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from typing import Dict
+
 from verbecc.exceptions import InvalidLangError
 
 from verbecc import (
@@ -10,7 +12,7 @@ from verbecc import (
     inflector_ro)
 
 
-SUPPORTED_LANGUAGES = {
+SUPPORTED_LANGUAGES: Dict[str,str] = {
     'fr': 'français',
     'es': 'español',
     'it': 'italiano',

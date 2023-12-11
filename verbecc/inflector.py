@@ -32,7 +32,7 @@ class Inflector(ABC):
                          'stem': co.verb_stem}, 
                 'moods': moods}
 
-    def conjugate_mood(self, infinitive, mood_name):
+    def conjugate_mood(self, infinitive: str, mood_name: str):
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood(co, mood_name)
 
@@ -93,7 +93,7 @@ class Inflector(ABC):
             return 'infinitive={} verb={} template={} verb_stem={} is_reflexive={}'.format(
                 self.infinitive, self.verb, self.template, self.verb_stem, self.is_reflexive)
 
-    def _get_conj_obs(self, infinitive):
+    def _get_conj_obs(self, infinitive) -> ConjugationObjects:
         infinitive = infinitive.lower()
         is_reflexive, infinitive = self._split_reflexive(infinitive)
         if is_reflexive and not self._verb_can_be_reflexive(infinitive):
@@ -130,7 +130,7 @@ class Inflector(ABC):
     def _auxilary_verb_uses_alternate_conjugation(self, tense_name):
         return False
 
-    def _conjugate_mood_tense(self, co, mood_name, tense_name, alternate=False):
+    def _conjugate_mood_tense(self, co: ConjugationObjects, mood_name: str, tense_name: str, alternate: bool=False):
         comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
             aux_mood_name, aux_tense_name = comp_conj_map[mood_name][tense_name]
