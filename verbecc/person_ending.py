@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+from lxml import etree
+from typing import List
+
 class PersonEnding:
     """
     p_elem
@@ -19,25 +22,25 @@ class PersonEnding:
     A grammar_defines.PERSONS value indicating which person 
     this PersonEnding is for, e.g. for aim:er, "ez" is '2p' (second person plural)
     """
-    def __init__(self, p_elem, person):
+    def __init__(self, p_elem: etree._Element, person: str):
         self.person = person
-        self.endings = []
+        self.endings: List[str] = []
         for i_elem in p_elem.findall('i'):
-            ending = u''
+            ending = str(u'')
             if i_elem.text is not None:
-                ending += i_elem.text
+                ending += str(i_elem.text)
             self.endings.append(ending)
 
-    def get_person(self):
+    def get_person(self) -> str:
         return self.person
 
-    def get_ending(self):
+    def get_ending(self) -> str:
         return self.endings[0]
 
-    def get_alternate_ending_if_available(self):
+    def get_alternate_ending_if_available(self) -> str:
         if len(self.endings) > 1:
             return self.endings[1]
         return self.endings[0]
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return 'person={} endings={}'.format(self.person, self.endings)

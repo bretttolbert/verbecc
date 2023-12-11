@@ -1,10 +1,17 @@
 # -*- coding: utf-8 -*-
 
+from typing import Dict, List, Tuple
+
 from verbecc import inflector
+from verbecc import string_utils
 
 class InflectorIt(inflector.Inflector):
+
+    @property
+    def lang(self) -> str:
+        return 'it'
+    
     def __init__(self):
-        self.lang = 'it'
         super(InflectorIt, self).__init__()
 
     def _split_reflexive(self, infinitive):
@@ -72,7 +79,7 @@ class InflectorIt(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participio'
 
-    def _get_compound_conjugations_aux_verb_map(self):
+    def _get_compound_conjugations_aux_verb_map(self) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         return {
             'indicativo': {
                 'passato-prossimo': ('indicativo', 'presente'),

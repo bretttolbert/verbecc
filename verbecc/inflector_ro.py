@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
 
+from typing import Dict, List, Tuple
+
 from verbecc import inflector
 
 class InflectorRo(inflector.Inflector):
+
+    @property
+    def lang(self) -> str:
+        return 'ro'
+
     def __init__(self):
-        self.lang = 'ro'
         super(InflectorRo, self).__init__()
 
     def _add_subjunctive_relative_pronoun(self, s, tense_name):
@@ -81,7 +87,7 @@ class InflectorRo(inflector.Inflector):
     def _get_participle_tense_name(self):
         return 'participiu'
 
-    def _get_compound_conjugations_aux_verb_map(self):
+    def _get_compound_conjugations_aux_verb_map(self) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         #TODO: those last three don't actually use an auxiliary verb, refactor to make aux verb optional
         return {
             'indicativ': {

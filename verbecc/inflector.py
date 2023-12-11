@@ -2,19 +2,28 @@
 
 from abc import ABC, abstractmethod
 import copy
+from typing import Dict, List, Tuple
 
-from . import grammar_defines
-from . import string_utils
-from . import exceptions
-from . import verbs_parser
-from . import conjugations_parser
+from verbecc import grammar_defines
+from verbecc import exceptions
+from verbecc import inflector
+from verbecc import conjugations_parser
+from verbecc import conjugation_template
+from verbecc import verb
+from verbecc import verbs_parser
 
 class Inflector(ABC):
+    
+    @property
+    @abstractmethod
+    def lang(self) -> str:
+        pass
+
     def __init__(self):
         self._verb_parser = verbs_parser.VerbsParser(self.lang)
         self._conj_parser = conjugations_parser.ConjugationsParser(self.lang)
 
-    def conjugate(self, infinitive):
+    def conjugate(self, infinitive: str):
         co = self._get_conj_obs(infinitive)
         moods = {}
         for mood in co.template.moods:
@@ -27,24 +36,24 @@ class Inflector(ABC):
                          'stem': co.verb_stem}, 
                 'moods': moods}
 
-    def conjugate_mood(self, infinitive, mood_name):
+    def conjugate_mood(self, infinitive: str, mood_name: str):
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood(co, mood_name)
 
-    def conjugate_mood_tense(self, infinitive, mood_name, tense_name, alternate=False):
+    def conjugate_mood_tense(self, infinitive: str, mood_name: str, tense_name: str, alternate=False):
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood_tense(co, mood_name, tense_name, alternate)
 
-    def get_verbs_list(self):
+    def get_verbs_list(self) -> List[str]:
         return [v.infinitive for v in self._verb_parser.verbs]
 
     def get_templates_list(self):
         return [t.name for t in self._conj_parser.templates]
 
-    def find_verb_by_infinitive(self, infinitive):
+    def find_verb_by_infinitive(self, infinitive) -> verb.Verb:
         return self._verb_parser.find_verb_by_infinitive(infinitive)
 
-    def find_template(self, name):
+    def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
         return self._conj_parser.find_template(name)
 
     def get_verbs_that_start_with(self, query, max_results):
@@ -73,11 +82,11 @@ class Inflector(ABC):
     def _add_reflexive_pronoun(self, s):
         pass
 
-    def _add_subjunctive_relative_pronoun(self, s, tense_name):
+    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str):
         return s
 
     class ConjugationObjects:
-        def __init__(self, infinitive, verb, template, verb_stem, is_reflexive):
+        def __init__(self, infinitive: str, verb, template, verb_stem, is_reflexive):
             self.infinitive = infinitive
             self.verb = verb
             self.template = template
@@ -88,7 +97,7 @@ class Inflector(ABC):
             return 'infinitive={} verb={} template={} verb_stem={} is_reflexive={}'.format(
                 self.infinitive, self.verb, self.template, self.verb_stem, self.is_reflexive)
 
-    def _get_conj_obs(self, infinitive):
+    def _get_conj_obs(self, infinitive) -> ConjugationObjects:
         infinitive = infinitive.lower()
         is_reflexive, infinitive = self._split_reflexive(infinitive)
         if is_reflexive and not self._verb_can_be_reflexive(infinitive):
@@ -114,7 +123,7 @@ class Inflector(ABC):
             ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
         return ret
 
-    def _get_compound_conjugations_for_mood(self, co, mood_name):
+    def _get_compound_conjugations_for_mood(self, co: ConjugationObjects, mood_name: str):
         ret = {}
         comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map:
@@ -122,10 +131,10 @@ class Inflector(ABC):
                 ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
         return ret
 
-    def _auxilary_verb_uses_alternate_conjugation(self, tense_name):
+    def _auxilary_verb_uses_alternate_conjugation(self, tense_name: str):
         return False
 
-    def _conjugate_mood_tense(self, co, mood_name, tense_name, alternate=False):
+    def _conjugate_mood_tense(self, co: ConjugationObjects, mood_name: str, tense_name: str, alternate: bool=False):
         comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
             aux_mood_name, aux_tense_name = comp_conj_map[mood_name][tense_name]
@@ -150,27 +159,29 @@ class Inflector(ABC):
     def _is_auxilary_verb_inflected(self, auxilary_verb):
         return False
 
-    def _get_indicative_mood_name(self):
+    def _get_indicative_mood_name(self) -> str:
         return 'indicative'
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood_name(self) -> str:
         return 'subjunctive'
 
-    def _get_participle_mood_name(self):
+    def _get_participle_mood_name(self) -> str:
         return 'partiple'
 
-    def _get_participle_tense_name(self):
+    def _get_participle_tense_name(self) -> str:
         return 'past-participle'
 
-    def _add_present_participle_if_applicable(self, s, is_reflexive, tense_name):
+    def _add_present_participle_if_applicable(self, s: str, is_reflexive: bool, tense_name: str) -> str:
         return s
 
-    def _get_alternate_hv_inflection(self, s):
+    def _get_alternate_hv_inflection(self, s: str) -> str:
+        """Some language override this e.g. Spanish changes ending in 'hay' to 'ay' """
         return s
 
-    def _get_compound_conjugations_aux_verb_map(self):
+    @abstractmethod
+    def _get_compound_conjugations_aux_verb_map(self) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         """"Returns a map of the tense of the helping verb for each compound mood and tense"""
-        return {}
+        pass
 
     def _get_default_participle_inflection_for_person(self, person):
         if person[1] == 's':
@@ -181,7 +192,7 @@ class Inflector(ABC):
     def _get_default_pronoun(self, person, gender='m', is_reflexive=False):
         return ''
 
-    def _combine_pronoun_and_conj(self, pronoun, conj):
+    def _combine_pronoun_and_conj(self, pronoun: str, conj: str):
         return pronoun + " " + conj
 
     def _conjugate_simple_mood_tense(self, verb_stem, mood_name, 

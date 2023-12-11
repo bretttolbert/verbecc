@@ -1,0 +1,58 @@
+[project]
+name = "verbecc"
+version = "1.9.0"
+dependencies = [
+  "lxml",
+  "lxml-stubs",
+  "cython",
+  "numpy",
+  "scipy",
+  "scikit-learn"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Brett Tolbert", email = "bretttolbert@gmail.com"},
+]
+maintainers = [
+  {name = "Brett Tolbert", email = "bretttolbert@gmail.com"}
+]
+description = "Verbs Completely Conjugated: machine learning conjugator for French, Spanish, Portuguese, Italian and Romanian"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+    keywords= ['verb,', 'conjugator', 'conjugation', 'french', 'italian', 'spanish', 'portuguese', 'romanian']
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Text Processing :: Linguistic',
+    'Topic :: Education',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Topic :: Utilities',
+    'Intended Audience :: Developers',
+    'Intended Audience :: End Users/Desktop',
+    'Intended Audience :: Education',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: GNU General Public License (GPL)',
+    'Natural Language :: French',
+    'Natural Language :: Italian',
+    'Natural Language :: Spanish',
+    'Natural Language :: Portuguese',
+    'Natural Language :: Romanian',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11'
+]
+
+[project.urls]
+Homepage = "https://github.com/bretttolbert/verbecc"
+Documentation = "https://github.com/bretttolbert/verbecc"
+Repository = "https://github.com/bretttolbert/verbecc.git"
+"Bug Tracker" = "https://github.com/bretttolbert/verbecc/issues"
+Changelog = "https://github.com/bretttolbert/verbecc/blob/master/CHANGELOG.md"

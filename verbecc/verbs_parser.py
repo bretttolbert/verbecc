@@ -1,22 +1,20 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-
 from bisect import bisect_left
-
 from lxml import etree
-
 from pkg_resources import resource_filename
+from typing import List
 
-from . import string_utils
-from . import verb
-from . import exceptions
-from . import mlconjug
-from . import config
+from verbecc import config
+from verbecc import exceptions
+from verbecc import mlconjug
+from verbecc import string_utils
+from verbecc import verb
 
 class VerbsParser:
-    def __init__(self, lang='fr'):
-        self.verbs = []
+    def __init__(self, lang: str='fr'):
+        self.verbs: List[verb.Verb] = []
         parser = etree.XMLParser(encoding='utf-8')
         tree = etree.parse(resource_filename(
                            "verbecc",
@@ -39,7 +37,7 @@ class VerbsParser:
             self.template_predictor = mlconjug.TemplatePredictor(
                 [(v.infinitive,v.template) for v in self.verbs], lang)
 
-    def find_verb_by_infinitive(self, infinitive):
+    def find_verb_by_infinitive(self, infinitive: str) -> verb.Verb:
         """First try to find with accents, e.g. if infinitive is 'Abañar',
         search for 'abañar' and not 'abanar'. 
         If not found then try searching with accents stripped.
@@ -65,8 +63,8 @@ class VerbsParser:
         else:
             raise exceptions.VerbNotFoundError
 
-    def get_verbs_that_start_with(self, pre, max_results=10):
-        ret = []
+    def get_verbs_that_start_with(self, pre: str, max_results: int=10) -> List[str]:
+        ret: List[str] = []
         pre_no_accents = string_utils.strip_accents(pre.lower())
         for verb in self.verbs:
             if verb.infinitive_no_accents.startswith(pre_no_accents):

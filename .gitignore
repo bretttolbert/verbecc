@@ -6,3 +6,4 @@ dist
 build
 .coverage
 coverage.xml
+.vscode

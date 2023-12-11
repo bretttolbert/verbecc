@@ -48,6 +48,7 @@ from functools import partial
 import pickle
 import pkg_resources
 from zipfile import ZipFile
+from typing import Dict, List, Tuple
 
 from sklearn.feature_selection import SelectFromModel
 from sklearn.feature_extraction.text import CountVectorizer
@@ -55,11 +56,11 @@ from sklearn.svm import LinearSVC
 from sklearn.linear_model import SGDClassifier
 from sklearn.pipeline import Pipeline
 
-from .grammar_defines import ALPHABET
+from verbecc.grammar_defines import ALPHABET
 
 
 class TemplatePredictor:
-    def __init__(self, verb_template_pairs, lang):
+    def __init__(self, verb_template_pairs: List[Tuple[str,str]], lang: str):
         self.data_set = DataSet(verb_template_pairs)
         model = load_model(lang)
         if not model:
@@ -74,145 +75,6 @@ class TemplatePredictor:
         template = self.data_set.templates[prediction]
         return (template, prediction_score)
 
-
-class DataSet:
-    """
-    | This class holds and manages the data set.
-    | Defines helper methodss for managing Machine Learning tasks like constructing a training and testing set.
-    """
-
-    def __init__(self, verb_template_pairs):
-        self.verbs = [pair[0] for pair in verb_template_pairs]
-        self.templates = sorted(set([pair[1] for pair in verb_template_pairs]))
-        self.dict_conjug = self._construct_dict_conjug(verb_template_pairs)
-        self._split_test_train()
-
-    def _construct_dict_conjug(self, verb_template_pairs):
-        """
-        | Populates the dictionary containing the conjugation templates.
-        | Populates the lists containing the verbs and their templates.
-
-        :param verb_template_pairs: list.
-            List of tuples of (verb,template) e.g. ('abaisser','aim:er')
-        :return: defaultdict.
-            defaultdict mapping each template to one or more verbs e.g. {'aim:er': ['abaisser', ...]}
-        """
-        ret = defaultdict(list)
-        random.shuffle(verb_template_pairs)
-        for verb, template in verb_template_pairs:
-            ret[template].append(verb)
-        return ret
-
-    def _split_test_train(self, threshold=8, proportion=0.5):
-        """
-        Splits the template:verbs dict into a training and a testing set.
-
-        :param verb_template_pairs: list.
-            List of tuples of (verb,template) e.g. ('abaisser','aim:er')
-        :param threshold: int.
-            Minimum size of conjugation class to be split.
-        :param proportion: float.
-            Proportion of samples in the training set.
-            Must be between 0 and 1.
-
-        """
-        if proportion <= 0 or proportion > 1:
-            raise ValueError(_('The split proportion must be between 0 and 1.'))
-        self.min_threshold = threshold
-        self.split_proportion = proportion
-        train_set = []
-        test_set = []
-        for template, lverbs in self.dict_conjug.items():
-            if len(lverbs) <= threshold:
-                for verb in lverbs:
-                    train_set.append((verb, template))
-            else:
-                index = round(len(lverbs) * proportion)
-                for verb in lverbs[:index]:
-                    train_set.append((verb, template))
-                for verb in lverbs[index:]:
-                    test_set.append((verb, template))
-        random.shuffle(train_set)
-        random.shuffle(test_set)
-        self.train_input = [elmt[0] for elmt in train_set]
-        self.train_labels = [self.templates.index(elmt[1]) for elmt in train_set]
-        self.test_input = [elmt[0] for elmt in test_set]
-        self.test_labels = [self.templates.index(elmt[1]) for elmt in test_set]
-        return
-
-
-def extract_verb_features(verb, lang, ngram_range):
-    """
-    | Custom Vectorizer optimized for extracting verbs features.
-    | The Vectorizer subclasses sklearn.feature_extraction.text.CountVectorizer .
-    | As in Indo-European languages verbs are inflected by adding a morphological suffix,
-     the vectorizer extracts verb endings and produces a vector representation of the verb with binary features.
-
-    | To enhance the results of the feature extration, several other features have been included:
-
-    | The features are the verb's ending n-grams, starting n-grams, length of the verb, number of vowels,
-     number of consonants and the ratio of vowels over consonants.
-
-    :param verb: string.
-        Verb to vectorize.
-    :param lang: string.
-        Language to analyze.
-    :param ngram_range: tuple.
-        The range of the ngram sliding window.
-    :return: list.
-        List of the most salient features of the verb for the task of finding it's conjugation's class.
-
-    """
-    _white_spaces = re.compile(r"\s\s+")
-    verb = _white_spaces.sub(" ", verb)
-    verb = verb.lower()
-    verb_len = len(verb)
-    length_feature = 'LEN={0}'.format(str(verb_len))
-    min_n, max_n = ngram_range
-    final_ngrams = ['END={0}'.format(verb[-n:]) for n in range(min_n, min(max_n + 1, verb_len + 1))]
-    initial_ngrams = ['START={0}'.format(verb[:n]) for n in range(min_n, min(max_n + 1, verb_len + 1))]
-    if lang not in ALPHABET:
-        lang = 'en'  # We chose 'en' as the default alphabet because english is more standard, without accents or diactrics.
-    vowels = sum(verb.count(c) for c in ALPHABET[lang]['vowels'])
-    vowels_number = 'VOW_NUM={0}'.format(vowels)
-    consonants = sum(verb.count(c) for c in ALPHABET[lang]['consonants'])
-    consonants_number = 'CONS_NUM={0}'.format(consonants)
-    if consonants == 0:
-        vow_cons_ratio = 'V/C=N/A'
-    else:
-        vow_cons_ratio = 'V/C={0}'.format(round(vowels / consonants, 2))
-    final_ngrams.extend(initial_ngrams)
-    final_ngrams.extend((length_feature, vowels_number, consonants_number, vow_cons_ratio))
-    return final_ngrams
-
-def get_model_zip_filename(lang):
-    return 'data/models/trained_model-{}.zip'.format(lang)
-    
-def get_model_pickle_filename(lang):
-    return 'trained_model-{0}.pickle'.format(lang)
-
-def save_model(model):
-    pickle_filename = get_model_pickle_filename(model.lang)
-    with open(pickle_filename, 'wb') as f:
-        pickle.dump(model, f)
-    zip_filename = get_model_zip_filename(model.lang)
-    with ZipFile(pkg_resources.resource_filename(
-            "verbecc", zip_filename), mode='w') as zf:
-        zf.write(pickle_filename)
-    os.remove(pickle_filename)
-
-def load_model(lang):
-    model = None
-    zip_filename = get_model_zip_filename(lang)
-    try:
-        with ZipFile(pkg_resources.resource_stream(
-                __name__, zip_filename)) as zf:
-            with zf.open(get_model_pickle_filename(lang), 'r') as model_pickle:
-                model = pickle.loads(model_pickle.read())
-    except:
-        pass
-    return model
-
 class Model:
     """
     | This class manages the scikit-learn pipeline.
@@ -226,8 +88,7 @@ class Model:
     :param language: language of the corpus of verbs to be analyzed.
 
     """
-
-    def __init__(self, vectorizer=None, feature_selector=None, classifier=None, lang=None):
+    def __init__(self, vectorizer=None, feature_selector=None, classifier=None, lang='fr'):
         if not vectorizer:
             vectorizer = CountVectorizer(analyzer=partial(extract_verb_features, 
                                                           lang=lang, 
@@ -280,3 +141,143 @@ class Model:
         """
         prediction = self.pipeline.predict(verbs)
         return prediction
+
+
+
+class DataSet:
+    """
+    | This class holds and manages the data set.
+    | Defines helper methodss for managing Machine Learning tasks like constructing a training and testing set.
+    """
+
+    def __init__(self, verb_template_pairs: List[Tuple[str,str]]):
+        self.verbs = [pair[0] for pair in verb_template_pairs]
+        self.templates = sorted(set([pair[1] for pair in verb_template_pairs]))
+        self.dict_conjug = self._construct_dict_conjug(verb_template_pairs)
+        self._split_test_train()
+
+    def _construct_dict_conjug(self, verb_template_pairs: List[Tuple[str,str]]) -> Dict[str, List[str]]:
+        """
+        | Populates the dictionary containing the conjugation templates.
+        | Populates the lists containing the verbs and their templates.
+
+        :param verb_template_pairs: list.
+            List of tuples of (verb,template) e.g. ('abaisser','aim:er')
+        :return: defaultdict.
+            defaultdict mapping each template to one or more verbs e.g. {'aim:er': ['abaisser', ...]}
+        """
+        ret = defaultdict(list)
+        random.shuffle(verb_template_pairs)
+        for verb, template in verb_template_pairs:
+            ret[template].append(verb)
+        return ret
+
+    def _split_test_train(self, threshold: int=8, proportion: float=0.5):
+        """
+        Splits the template:verbs dict into a training and a testing set.
+
+        :param verb_template_pairs: list.
+            List of tuples of (verb,template) e.g. ('abaisser','aim:er')
+        :param threshold: int.
+            Minimum size of conjugation class to be split.
+        :param proportion: float.
+            Proportion of samples in the training set.
+            Must be between 0 and 1.
+
+        """
+        if proportion <= 0 or proportion > 1:
+            raise ValueError(f'The split proportion ({proportion}) must be between 0 and 1.')
+        self.min_threshold = threshold
+        self.split_proportion = proportion
+        train_set = []
+        test_set = []
+        for template, lverbs in self.dict_conjug.items():
+            if len(lverbs) <= threshold:
+                for verb in lverbs:
+                    train_set.append((verb, template))
+            else:
+                index = round(len(lverbs) * proportion)
+                for verb in lverbs[:index]:
+                    train_set.append((verb, template))
+                for verb in lverbs[index:]:
+                    test_set.append((verb, template))
+        random.shuffle(train_set)
+        random.shuffle(test_set)
+        self.train_input = [elmt[0] for elmt in train_set]
+        self.train_labels = [self.templates.index(elmt[1]) for elmt in train_set]
+        self.test_input = [elmt[0] for elmt in test_set]
+        self.test_labels = [self.templates.index(elmt[1]) for elmt in test_set]
+        return
+
+
+def extract_verb_features(verb, lang: str, ngram_range: Tuple[int, int]):
+    """
+    | Custom Vectorizer optimized for extracting verbs features.
+    | The Vectorizer subclasses sklearn.feature_extraction.text.CountVectorizer .
+    | As in Indo-European languages verbs are inflected by adding a morphological suffix,
+     the vectorizer extracts verb endings and produces a vector representation of the verb with binary features.
+
+    | To enhance the results of the feature extration, several other features have been included:
+
+    | The features are the verb's ending n-grams, starting n-grams, length of the verb, number of vowels,
+     number of consonants and the ratio of vowels over consonants.
+
+    :param verb: string.
+        Verb to vectorize.
+    :param lang: string.
+        Language to analyze.
+    :param ngram_range: tuple.
+        The range of the ngram sliding window.
+    :return: list.
+        List of the most salient features of the verb for the task of finding it's conjugation's class.
+
+    """
+    _white_spaces = re.compile(r"\s\s+")
+    verb = _white_spaces.sub(" ", verb)
+    verb = verb.lower()
+    verb_len = len(verb)
+    length_feature = 'LEN={0}'.format(str(verb_len))
+    min_n, max_n = ngram_range
+    final_ngrams = ['END={0}'.format(verb[-n:]) for n in range(min_n, min(max_n + 1, verb_len + 1))]
+    initial_ngrams = ['START={0}'.format(verb[:n]) for n in range(min_n, min(max_n + 1, verb_len + 1))]
+    if lang not in ALPHABET:
+        lang = 'en'  # We chose 'en' as the default alphabet because english is more standard, without accents or diactrics.
+    vowels = sum(verb.count(c) for c in ALPHABET[lang]['vowels'])
+    vowels_number = 'VOW_NUM={0}'.format(vowels)
+    consonants = sum(verb.count(c) for c in ALPHABET[lang]['consonants'])
+    consonants_number = 'CONS_NUM={0}'.format(consonants)
+    if consonants == 0:
+        vow_cons_ratio = 'V/C=N/A'
+    else:
+        vow_cons_ratio = 'V/C={0}'.format(round(vowels / consonants, 2))
+    final_ngrams.extend(initial_ngrams)
+    final_ngrams.extend((length_feature, vowels_number, consonants_number, vow_cons_ratio))
+    return final_ngrams
+
+def get_model_zip_filename(lang: str) -> str:
+    return 'data/models/trained_model-{}.zip'.format(lang)
+    
+def get_model_pickle_filename(lang: str) -> str:
+    return 'trained_model-{0}.pickle'.format(lang)
+
+def save_model(model: Model):
+    pickle_filename = get_model_pickle_filename(model.lang)
+    with open(pickle_filename, 'wb') as f:
+        pickle.dump(model, f)
+    zip_filename = get_model_zip_filename(model.lang)
+    with ZipFile(pkg_resources.resource_filename(
+            "verbecc", zip_filename), mode='w') as zf:
+        zf.write(pickle_filename)
+    os.remove(pickle_filename)
+
+def load_model(lang):
+    model = None
+    zip_filename = get_model_zip_filename(lang)
+    try:
+        with ZipFile(pkg_resources.resource_stream(
+                __name__, zip_filename)) as zf:
+            with zf.open(get_model_pickle_filename(lang), 'r') as model_pickle:
+                model = pickle.loads(model_pickle.read())
+    except:
+        pass
+    return model
