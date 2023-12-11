@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from lxml import etree
 from typing import List
 
 from verbecc import person_ending
@@ -27,7 +28,7 @@ class TenseTemplate:
             <p><i>ez</i></p>
             <p><i>ent</i></p>
     """
-    def __init__(self, tense_elem):
+    def __init__(self, tense_elem: etree._Element):
         self.name = tense_elem.tag
         """
         Normally each <p> elem defines six grammatical persons:
@@ -83,5 +84,5 @@ class TenseTemplate:
             if len(pe.endings) > 0:
                 self.person_endings.append(pe)
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return 'person_endings={}'.format(self.person_endings)

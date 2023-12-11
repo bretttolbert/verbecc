@@ -13,7 +13,7 @@ from verbecc import string_utils
 from verbecc import verb
 
 class VerbsParser:
-    def __init__(self, lang='fr'):
+    def __init__(self, lang: str='fr'):
         self.verbs: List[verb.Verb] = []
         parser = etree.XMLParser(encoding='utf-8')
         tree = etree.parse(resource_filename(
@@ -64,7 +64,7 @@ class VerbsParser:
             raise exceptions.VerbNotFoundError
 
     def get_verbs_that_start_with(self, pre: str, max_results: int=10) -> List[str]:
-        ret = []
+        ret: List[str] = []
         pre_no_accents = string_utils.strip_accents(pre.lower())
         for verb in self.verbs:
             if verb.infinitive_no_accents.startswith(pre_no_accents):

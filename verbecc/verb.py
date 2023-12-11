@@ -31,6 +31,6 @@ class Verb:
                     etree.tostring(v_elem),
                     str(e)))
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return 'infinitive={} infinitive_no_accents={} template={} translation_en={} impersonal={} predicted={} pred_score={}'.format(
             self.infinitive, self.infinitive_no_accents, self.template, self.translation_en, self.impersonal, self.predicted, self.pred_score)
