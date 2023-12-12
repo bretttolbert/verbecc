@@ -22,9 +22,9 @@
 	02110-1301, USA.
 -->
 
-<!DOCTYPE verbs-es [
-    <!ELEMENT verbs-es (v)+>
-    <!ATTLIST verbs-es
+<!DOCTYPE verbs-ca [
+    <!ELEMENT verbs-ca (v)+>
+    <!ATTLIST verbs-ca
       xmlns CDATA #FIXED ''>
 
     <!ELEMENT v (i,t)> <!-- verb's conjugation information (infinitive, radical) -->
