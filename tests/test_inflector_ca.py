@@ -11,18 +11,6 @@ cg = Conjugator(lang='ca')
 """
     ('tenir', 'indicatiu', 'present', 
         ['jo tinc', 'tu tens', 'ell té', 'nosaltres tenim', 'vosaltres teniu', 'ells tenen']),
-    ('haver', 'indicatiu', 'present', 
-        ['jo he', 'tu has', 'ell ha', 'nosaltres havem', 'vosaltres haveu', 'ells han']),
-    ('haver', 'indicatiu', 'imperfet', 
-        ['jo havia', 'tu havies', 'ell havia', 'nosaltres havíem', 'vosaltres habíeu', 'ells habien']),
-    ('haver', 'indicatiu', 'pretèrit',
-        ['jo haguí', 'tu hagueres', 'ell hagué', 'nosaltres haguérem', 'vosaltres hubisteis', 'ells hubieron']),
-    ('haver', 'indicatiu', 'futuro',
-        ['jo hauré', 'tu hauràs', 'ell haurà', 'nosaltres haurem', 'vosaltres haureu', 'ells hauran']),
-    ('haver', 'condicional', 'present',
-        ['jo hauria', 'tu hauries', 'ell habria', 'nosaltres hauríem', 'vosaltres hauríeu', 'ells haurien']),
-    ('haver', 'subjuntiu', 'present',
-        ['jo hagi', 'tu hagis', 'ell hagi', 'nosaltres hàgim', 'vosaltres hàgiu', 'ells hagin']),
 """
 
 test_ca_conjugate_mood_tense_data = [
@@ -70,6 +58,18 @@ test_ca_conjugate_mood_tense_data = [
         ['jo estigués', 'tu estiguessis', 'ell estigués', 'nosaltres estiguéssim', 'vosaltres estiguéssiu', 'ells estiguessin']),
     ('estar', 'condicional', 'present',
         ['jo estaria', 'tu estaries', 'ell estaria', 'nosaltres estaríem', 'vosaltres estaríeu', 'ells estarien']),
+    ('haver', 'indicatiu', 'present', 
+        ['jo he', 'tu has', 'ell ha', 'nosaltres havem', 'vosaltres haveu', 'ells han']),
+    ('haver', 'indicatiu', 'imperfet', 
+        ['jo havia', 'tu havies', 'ell havia', 'nosaltres havíem', 'vosaltres havíeu', 'ells havien']),
+    ('haver', 'indicatiu', 'pretèrit',
+        ['jo haguí', 'tu hagueres', 'ell hagué', 'nosaltres haguérem', 'vosaltres haguéreu', 'ells hagueren']),
+    ('haver', 'indicatiu', 'futur',
+        ['jo hauré', 'tu hauràs', 'ell haurà', 'nosaltres haurem', 'vosaltres haureu', 'ells hauran']),
+    ('haver', 'condicional', 'present',
+        ['jo hauria', 'tu hauries', 'ell hauria', 'nosaltres hauríem', 'vosaltres hauríeu', 'ells haurien']),
+    ('haver', 'subjuntiu', 'present',
+        ['jo hagi', 'tu hagis', 'ell hagi', 'nosaltres hàgim', 'vosaltres hàgiu', 'ells hagin']),
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
