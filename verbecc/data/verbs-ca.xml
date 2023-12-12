@@ -49,14 +49,12 @@ try to add an adequate translation if you can.
 <!-- <v><i>ababillarse</i>		<t>abab:illarse</t></v> -->
 <!-- <v><i>abacadejar</i><t></t>cort:ar</v> -->
 
-
 <v><i>ser</i>		<t>:ser</t></v>
 <v><i>estar</i>		<t>est:ar</t></v>
-<v><i>tenir</i>		<t>:tenir</t></v>
+<v><i>tenir</i>		<t>t:enir</t></v>
 <v><i>haver</i>		<t>h:aver</t></v>
 <v><i>cantar</i>	<t>cant:ar</t></v>
 <v><i>parlar</i>	<t>cant:ar</t></v>
-
 
 <!-- above this line have been translated from spanish to catalan 
 	 below this line need to be translated from spanish to catalan

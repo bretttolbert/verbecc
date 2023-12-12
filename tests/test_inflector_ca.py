@@ -8,11 +8,6 @@ from verbecc.tense_template import TenseTemplate
 
 cg = Conjugator(lang='ca')
 
-"""
-    ('tenir', 'indicatiu', 'present', 
-        ['jo tinc', 'tu tens', 'ell té', 'nosaltres tenim', 'vosaltres teniu', 'ells tenen']),
-"""
-
 test_ca_conjugate_mood_tense_data = [
     ('ser', 'indicatiu', 'present', 
         ['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']),
@@ -70,6 +65,8 @@ test_ca_conjugate_mood_tense_data = [
         ['jo hauria', 'tu hauries', 'ell hauria', 'nosaltres hauríem', 'vosaltres hauríeu', 'ells haurien']),
     ('haver', 'subjuntiu', 'present',
         ['jo hagi', 'tu hagis', 'ell hagi', 'nosaltres hàgim', 'vosaltres hàgiu', 'ells hagin']),
+    ('tenir', 'indicatiu', 'present', 
+        ['jo tinc', 'tu tens', 'ell té', 'nosaltres tenim', 'vosaltres teniu', 'ells tenen']),
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

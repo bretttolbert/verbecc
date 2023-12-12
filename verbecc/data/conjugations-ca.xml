@@ -457,6 +457,103 @@ so Catalan 'haver' should use 'h:aver'
 </template>
 
 <!--
+Spanish 'tener' uses template 't:ener'
+so Catalan 'tenir' should use 't:enir'
+-->
+<template name="t:enir">
+	<Indicatiu>
+		<present>
+			<p><i>inc</i></p>
+			<p><i>ens</i></p>
+			<p><i>é</i></p>
+			<p><i>enim</i></p>
+			<p><i>eniu</i></p>
+			<p><i>enen</i></p>
+		</present>
+		<imperfet>
+			<p><i>enia</i></p>
+			<p><i>enies</i></p>
+			<p><i>enia</i></p>
+			<p><i>eníem</i></p>
+			<p><i>eníeu</i></p>
+			<p><i>enien</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>inguí</i></p>
+			<p><i>ingueres</i></p>
+			<p><i>ingué</i></p>
+			<p><i>inguérem</i></p>
+			<p><i>inguéreu</i></p>
+			<p><i>ingueren</i></p>
+		</pretèrit>
+		<futur>
+			<p><i>indré</i></p>
+			<p><i>indràs</i></p>
+			<p><i>indrà</i></p>
+			<p><i>indrem</i></p>
+			<p><i>indreu</i></p>
+			<p><i>indran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>ingui</i></p>
+			<p><i>inguis</i></p>
+			<p><i>ingui</i></p>
+			<p><i>inguem</i></p>
+			<p><i>ingueu</i></p>
+			<p><i>inguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>ingués</i></p>
+			<p><i>inguessis</i></p>
+			<p><i>ingués</i></p>
+			<p><i>inguéssim</i></p>
+			<p><i>inguéssiu</i></p>
+			<p><i>inguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>en</i><i>é</i><i>ingues</i></p>
+			<p><i>ingui</i></p>
+			<p><i>inguem</i></p>
+			<p><i>eniu</i><i>ingueu</i></p>
+			<p><i>inguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>indria</i></p>
+			<p><i>indries</i></p>
+			<p><i>indria</i></p>
+			<p><i>indríem</i></p>
+			<p><i>indríeu</i></p>
+			<p><i>indrien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>enir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>enint</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>ingut</i></p>
+			<p><i>inguda</i></p>
+			<p><i>inguts</i></p>
+			<p><i>ingudes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!--
+
 <template name="abol:ir">
 	<Indicatiu>
 		<present>
@@ -7945,120 +8042,6 @@ so Catalan 'haver' should use 'h:aver'
 	<Particip>
 		<particip>
 			<p><i>ido</i></p>
-		</particip>
-	</Particip>
-</template>
-
-<template name="t:ener">
-	<Indicatiu>
-		<present>
-			<p><i>engo</i></p>
-			<p><i>ienes</i></p>
-			<p><i>iene</i></p>
-			<p><i>enemos</i></p>
-			<p><i>enéis</i></p>
-			<p><i>ienen</i></p>
-		</present>
-		<imperfet>
-			<p><i>enía</i></p>
-			<p><i>enías</i></p>
-			<p><i>enía</i></p>
-			<p><i>eníamos</i></p>
-			<p><i>eníais</i></p>
-			<p><i>enían</i></p>
-		</imperfet>
-		<pretèrit>
-			<p><i>uve</i></p>
-			<p><i>uviste</i></p>
-			<p><i>uvo</i></p>
-			<p><i>uvimos</i></p>
-			<p><i>uvisteis</i></p>
-			<p><i>uvieron</i></p>
-		</pretèrit>
-		<futur>
-			<p><i>endré</i></p>
-			<p><i>endrás</i></p>
-			<p><i>endrá</i></p>
-			<p><i>endremos</i></p>
-			<p><i>endréis</i></p>
-			<p><i>endrán</i></p>
-		</futur>
-		</Indicatiu>
-	<Subjuntiu>
-		<present>
-			<p><i>enga</i></p>
-			<p><i>engas</i></p>
-			<p><i>enga</i></p>
-			<p><i>engamos</i></p>
-			<p><i>engáis</i></p>
-			<p><i>engan</i></p>
-		</present>
-		<imperfet>
-			<p><i>uviera</i></p>
-			<p><i>uvieras</i></p>
-			<p><i>uviera</i></p>
-			<p><i>uviéramos</i></p>
-			<p><i>uvierais</i></p>
-			<p><i>uvieran</i></p>
-		</imperfet>
-		<DELETE_ME>
-			<p><i>uviese</i></p>
-			<p><i>uvieses</i></p>
-			<p><i>uviese</i></p>
-			<p><i>uviésemos</i></p>
-			<p><i>uvieseis</i></p>
-			<p><i>uviesen</i></p>
-		</DELETE_ME>
-		<futur>
-			<p><i>uviere</i></p>
-			<p><i>uvieres</i></p>
-			<p><i>uviere</i></p>
-			<p><i>uviéremos</i></p>
-			<p><i>uviereis</i></p>
-			<p><i>uvieren</i></p>
-		</futur>
-		</Subjuntiu>
-	<Imperatiu>
-		<afirmativo>
-			<p><i>en</i></p>
-			<p><i>enga</i></p>
-			<p><i>engamos</i></p>
-			<p><i>ened</i></p>
-			<p><i>engan</i></p>
-		</afirmativo>
-		<negativo>
-			<p><i>engas</i></p>
-			<p><i>enga</i></p>
-			<p><i>engamos</i></p>
-			<p><i>engáis</i></p>
-			<p><i>engan</i></p>
-		</negativo>
-	</Imperatiu>
-	<Condicional>
-		<present>
-			<p><i>endría</i></p>
-			<p><i>endrías</i></p>
-			<p><i>endría</i></p>
-			<p><i>endríamos</i></p>
-			<p><i>endríais</i></p>
-			<p><i>endrían</i></p>
-		</present>
-		</Condicional>
-	<Infinitiu>
-		<infinitiu>
-			<p><i>ener</i></p>
-			<p><i>enido</i></p>
-		</infinitiu>
-	</Infinitiu>
-	<Gerundi>
-		<gerundi>
-			<p><i>eniendo</i></p>
-			<p><i>enido</i></p>
-		</gerundi>
-	</Gerundi>
-	<Particip>
-		<particip>
-			<p><i>enido</i></p>
 		</particip>
 	</Particip>
 </template>
