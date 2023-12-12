@@ -9,8 +9,6 @@ from verbecc.tense_template import TenseTemplate
 cg = Conjugator(lang='ca')
 
 """
-    ('estar', 'indicatiu', 'present', 
-        ['jo estic', 'tu estás', 'ell está', 'nosaltres estem', 'vosaltres esteu', 'ells estan']),
     ('tenir', 'indicatiu', 'present', 
         ['jo tinc', 'tu tens', 'ell té', 'nosaltres tenim', 'vosaltres teniu', 'ells tenen']),
     ('haver', 'indicatiu', 'present', 
@@ -57,7 +55,11 @@ test_ca_conjugate_mood_tense_data = [
     ('parlar', 'subjuntiu', 'imperfet',
         ['jo parlés', 'tu parlessis', 'ell parlés', 'nosaltres parléssim', 'vosaltres parléssiu', 'ells parlessin']),
     ('parlar', 'condicional', 'present',
-        ['jo parlaria', 'tu parlaries', 'ell parlaria', 'nosaltres parlaríem', 'vosaltres parlaríeu', 'ells parlarien'])
+        ['jo parlaria', 'tu parlaries', 'ell parlaria', 'nosaltres parlaríem', 'vosaltres parlaríeu', 'ells parlarien']),
+    ('estar', 'indicatiu', 'present', 
+        ['jo estic', 'tu estàs', 'ell està', 'nosaltres estem', 'vosaltres esteu', 'ells estan']),
+    ('estar', 'indicatiu', 'imperfet', 
+        ['jo estava', 'tu estaves', 'ell estava', 'nosaltres estàvem', 'vosaltres estàveu', 'ells estaven']),
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
