@@ -16,10 +16,10 @@ authors = [
 maintainers = [
   {name = "Brett Tolbert", email = "bretttolbert@gmail.com"}
 ]
-description = "Verbs Completely Conjugated: machine learning conjugator for French, Spanish, Portuguese, Italian and Romanian"
+description = "Verbs Completely Conjugated: machine learning conjugator for Catalan, French, Italian, Portuguese, Romanian and Spanish"
 readme = "README.md"
 license = {file = "LICENSE.txt"}
-    keywords= ['verb,', 'conjugator', 'conjugation', 'french', 'italian', 'spanish', 'portuguese', 'romanian']
+    keywords= ['verb,', 'conjugator', 'conjugation', 'Catalan', 'French', 'Italian', 'Portuguese', 'Romanian', 'Spanish']
 classifiers = [
     'Development Status :: 5 - Production/Stable',
     'Topic :: Software Development :: Libraries :: Python Modules',
@@ -32,11 +32,12 @@ classifiers = [
     'Intended Audience :: Education',
     'Intended Audience :: Science/Research',
     'License :: OSI Approved :: GNU General Public License (GPL)',
+    'Natural Language :: Catalan',
     'Natural Language :: French',
     'Natural Language :: Italian',
-    'Natural Language :: Spanish',
     'Natural Language :: Portuguese',
     'Natural Language :: Romanian',
+    'Natural Language :: Spanish',
     'Operating System :: OS Independent',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.3',
@@ -56,3 +57,6 @@ Documentation = "https://github.com/bretttolbert/verbecc"
 Repository = "https://github.com/bretttolbert/verbecc.git"
 "Bug Tracker" = "https://github.com/bretttolbert/verbecc/issues"
 Changelog = "https://github.com/bretttolbert/verbecc/blob/master/CHANGELOG.md"
+
+[tool.setuptools.package-data]
+trained_models = ['verbecc/data/models/*']

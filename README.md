@@ -1,6 +1,3 @@
-
-![verbecc logo](https://raw.githubusercontent.com/bretttolbert/verbecc/master/logo/verbecc.png)
-
 # python library, dockerized microservice and web app for verb conjugation in French, Spanish, Italian, Portuguese and Romanian, powered by machine learning
 
 - `verbecc` python library

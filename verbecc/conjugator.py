@@ -6,16 +6,18 @@ from verbecc.exceptions import InvalidLangError
 from verbecc import conjugation_template
 
 from verbecc import (
-    inflector_fr,
+    inflector_ca,
     inflector_es,
+    inflector_fr,
     inflector_it,
     inflector_pt,
     inflector_ro)
 
 
 SUPPORTED_LANGUAGES: Dict[str,str] = {
-    'fr': 'français',
+    'ca': 'català',
     'es': 'español',
+    'fr': 'français',
     'it': 'italiano',
     'pt': 'português',
     'ro': 'română'
@@ -26,10 +28,12 @@ class Conjugator:
     :param lang: two-letter language code
     """
     def __init__(self, lang: str):
-        if lang == 'fr':
-            self._inflector = inflector_fr.InflectorFr()
+        if lang == 'ca':
+            self._inflector = inflector_ca.InflectorCa()
         elif lang == 'es':
             self._inflector = inflector_es.InflectorEs()
+        elif lang == 'fr':
+            self._inflector = inflector_fr.InflectorFr()
         elif lang == 'it':
             self._inflector = inflector_it.InflectorIt()
         elif lang == 'pt':
