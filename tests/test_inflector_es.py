@@ -116,7 +116,7 @@ def test_inflector_es_get_conj_obs():
 
 def test_inflector_es_get_verb_stem():
     verb_stem = cg._inflector._get_verb_stem(u"abañar", u"cort:ar")
-    assert verb_stem == u"abañ", repr(conj_obs)
+    assert verb_stem == u"abañ"
 
 def test_inflector_es_conjugate_simple_mood_tense():
     verb_stem = u"abañ"
