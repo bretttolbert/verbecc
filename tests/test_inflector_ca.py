@@ -51,7 +51,13 @@ test_ca_conjugate_mood_tense_data = [
     ('parlar', 'indicatiu', 'pretèrit',
         ['jo parlí', 'tu parlares', 'ell parlà', 'nosaltres parlàrem', 'vosaltres parlàreu', 'ells parlaren']),
     ('parlar', 'indicatiu', 'futur',
-        ['jo parlaré', 'tu parlaràs', 'ell parlarà', 'nosaltres parlarem', 'vosaltres parlareu', 'ells parlaran'])
+        ['jo parlaré', 'tu parlaràs', 'ell parlarà', 'nosaltres parlarem', 'vosaltres parlareu', 'ells parlaran']),
+    ('parlar', 'subjuntiu', 'present',
+        ['jo parli', 'tu parlis', 'ell parli', 'nosaltres parlem', 'vosaltres parleu', 'ells parlin']),
+    ('parlar', 'subjuntiu', 'imperfet',
+        ['jo parlés', 'tu parlessis', 'ell parlés', 'nosaltres parléssim', 'vosaltres parléssiu', 'ells parlessin']),
+    ('parlar', 'condicional', 'present',
+        ['jo parlaria', 'tu parlaries', 'ell parlaria', 'nosaltres parlaríem', 'vosaltres parlaríeu', 'ells parlarien'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
