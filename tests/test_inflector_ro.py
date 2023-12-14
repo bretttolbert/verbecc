@@ -6,6 +6,15 @@ from verbecc.conjugator import Conjugator
 
 cg = Conjugator(lang='ro')
 
+def test_all_verbs_have_templates():
+    verbs = cg.get_verbs()
+    template_names = cg.get_template_names()
+    missing_templates = set()
+    for verb in verbs:
+        if verb.template not in template_names:
+            missing_templates.add(verb.template)
+    assert len(missing_templates) == 0
+
 test_ro_conjugate_mood_tense_data = [
     ('avea', 'participiu', 'participiu', False,
         ['avut']),

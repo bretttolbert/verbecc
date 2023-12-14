@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "verbecc"
 version = "1.9.0"
@@ -60,3 +64,6 @@ Changelog = "https://github.com/bretttolbert/verbecc/blob/master/CHANGELOG.md"
 
 [tool.setuptools.package-data]
 trained_models = ['verbecc/data/models/*']
+
+[tool.setuptools.packages]
+find = {}

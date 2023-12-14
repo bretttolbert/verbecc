@@ -2,6 +2,7 @@
 
 from typing import Dict, List
 
+from verbecc import verb
 from verbecc.exceptions import InvalidLangError
 from verbecc import conjugation_template
 
@@ -53,13 +54,19 @@ class Conjugator:
         return self._inflector.conjugate_mood_tense( 
             infinitive, mood_name, tense_name, alternate)
 
-    def get_verbs_list(self) -> List[str]:
-        return self._inflector.get_verbs_list()
+    def get_verbs(self) -> List[verb.Verb]:
+        return self._inflector.get_verbs()
 
-    def get_templates_list(self):
-        return self._inflector.get_templates_list()
+    def get_infinitives(self) -> List[str]:
+        return self._inflector.get_infinitives()
 
-    def find_verb_by_infinitive(self, infinitive: str):
+    def get_templates(self) -> List[conjugation_template.ConjugationTemplate]:
+        return self._inflector.get_templates()
+
+    def get_template_names(self) -> List[str]:
+        return self._inflector.get_template_names()
+
+    def find_verb_by_infinitive(self, infinitive: str) -> verb.Verb:
         return self._inflector.find_verb_by_infinitive(infinitive)
 
     def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
