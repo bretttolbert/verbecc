@@ -95,6 +95,38 @@
 		</futuro>
 	</Indicativo>
 	<Subjuntivo>
+		<presente>
+			<p><i>a</i></p>
+			<p><i>as</i></p>
+			<p><i>a</i></p>
+			<p><i>amos</i></p>
+			<p><i>áis</i></p>
+			<p><i>lan</i></p>
+		</presente>
+		<pretérito-imperfecto-1>
+			<p><i>iera</i></p>
+			<p><i>ieras</i></p>
+			<p><i>iera</i></p>
+			<p><i>iéramos</i></p>
+			<p><i>ierais</i></p>
+			<p><i>ieran</i></p>
+		</pretérito-imperfecto-1>
+		<pretérito-imperfecto-2>
+			<p><i>iese</i></p>
+			<p><i>ieses</i></p>
+			<p><i>iese</i></p>
+			<p><i>iésemos</i></p>
+			<p><i>ieseis</i></p>
+			<p><i>iesen</i></p>
+		</pretérito-imperfecto-2>
+		<futuro>
+			<p><i>iere</i></p>
+			<p><i>ieres</i></p>
+			<p><i>iere</i></p>
+			<p><i>iéremos</i></p>
+			<p><i>iereis</i></p>
+			<p><i>ieren</i></p>
+		</futuro>
 	</Subjuntivo>
 	<Imperativo>
 		<afirmativo>
@@ -209,7 +241,7 @@
 			<p><i>uareis</i></p>
 			<p><i>uaren</i></p>
 		</futuro>
-		</Subjuntivo>
+	</Subjuntivo>
 	<Imperativo>
 		<afirmativo>
 			<p><i>úa</i></p>

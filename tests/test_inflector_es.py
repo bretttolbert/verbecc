@@ -111,12 +111,30 @@ test_es_conjugate_mood_tense_data = [
         ['yo parecería', 'tú parecerías', 'él parecería', 'nosotros pareceríamos', 'vosotros pareceríais', 'ellos parecerían']),
     ('parecer', 'indicativo', 'pretérito-perfecto-compuesto',
         ['yo he parecido', 'tú has parecido', 'él ha parecido', 'nosotros hemos parecido', 'vosotros habéis parecido', 'ellos han parecido']),
+    ('abolir', 'indicativo', 'presente',
+        ['yo abolo', 'tú aboles', 'él abole', 'nosotros abolimos', 'vosotros abolís', 'ellos abolen']),
+    ('abolir', 'subjuntivo', 'futuro',
+        ['yo aboliere', 'tú abolieres', 'él aboliere', 'nosotros aboliéremos', 'vosotros aboliereis', 'ellos abolieren'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
                          test_es_conjugate_mood_tense_data)
 def test_inflector_es_conjugate_mood_tense(infinitive, mood, tense, expected_result):
     assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+
+def test_abolir():
+    """
+    Reproduce error:
+
+    >           co.template.moods[persons_mood_name].tenses[aux_tense_name].person_endings]
+    E       KeyError: 'presente'
+
+    ../../PyVEnvs/Py311/lib/python3.11/site-packages/verbecc/inflector.py:259: KeyError
+
+    Error was occuring because the "<Subvuntivo>" was empty in the "abol:ir" template.
+    """
+    result = cg.conjugate('abolir')
+    assert result is not None
 
 def test_inflector_es_get_conj_obs():
     co = cg._inflector._get_conj_obs('abañar')
