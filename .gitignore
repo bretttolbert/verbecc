@@ -7,3 +7,4 @@ build
 .coverage
 coverage.xml
 .vscode
+verbecc/data/models/*
