@@ -8,15 +8,15 @@ from verbecc import config
 
 cg = conjugator.Conjugator(lang='fr')
 
-def test_get_verbs_list():
-    verbs_list = cg.get_verbs_list()
-    assert len(verbs_list) > 7000
-    assert 'parler' in verbs_list
+def test_get_infinitives():
+    infinitives = cg.get_infinitives()
+    assert len(infinitives) > 7000
+    assert 'parler' in infinitives
 
-def test_get_templates_list():
-    templates_list = cg.get_templates_list()
-    assert len(templates_list) >= 146
-    assert 'aim:er' in templates_list
+def test_get_template_names():
+    template_names = cg.get_template_names()
+    assert len(template_names) >= 146
+    assert 'aim:er' in template_names
 
 test_verbs = [
     (u"manger"), 
@@ -28,11 +28,10 @@ test_verbs = [
     (u"pleuvoir")
 ]
 
-@pytest.mark.parametrize("infinitif", test_verbs)
-def test_conjugator_conjugate(infinitive):
-    for infinitive in test_verbs:
-        output = cg.conjugate(infinitive)
-        assert output
+@pytest.mark.parametrize("infinitive", test_verbs)
+def test_conjugator_conjugate_basic(infinitive):
+    output = cg.conjugate(infinitive)
+    assert output
 
 def test_conjugator_predict_conjugation_er_verb_indicative_present():
     if config.ml:

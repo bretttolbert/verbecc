@@ -44,10 +44,16 @@ class Inflector(ABC):
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood_tense(co, mood_name, tense_name, alternate)
 
-    def get_verbs_list(self) -> List[str]:
+    def get_verbs(self) -> List[verb.Verb]:
+        return self._verb_parser.verbs
+
+    def get_infinitives(self) -> List[str]:
         return [v.infinitive for v in self._verb_parser.verbs]
 
-    def get_templates_list(self):
+    def get_templates(self) -> List[conjugation_template.ConjugationTemplate]:
+        return self._conj_parser.templates
+
+    def get_template_names(self) -> List[str]:
         return [t.name for t in self._conj_parser.templates]
 
     def find_verb_by_infinitive(self, infinitive) -> verb.Verb:

@@ -3,9 +3,21 @@
 import pytest
 from lxml import etree
 
+from verbecc import Conjugator
 from verbecc import inflector_fr
 from verbecc.tense_template import TenseTemplate
 from verbecc.exceptions import ConjugatorError
+
+cg = Conjugator(lang='fr')
+
+def test_all_verbs_have_templates():
+    verbs = cg.get_verbs()
+    template_names = cg.get_template_names()
+    missing_templates = set()
+    for verb in verbs:
+        if verb.template not in template_names:
+            missing_templates.add(verb.template)
+    assert len(missing_templates) == 0
 
 inf = inflector_fr.InflectorFr()
 

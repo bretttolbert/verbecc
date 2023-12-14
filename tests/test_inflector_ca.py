@@ -8,6 +8,22 @@ from verbecc.tense_template import TenseTemplate
 
 cg = Conjugator(lang='ca')
 
+@pytest.mark.skip("known failure")
+def test_all_verbs_have_templates():
+    """Have not finished adding templates for all verbs, so this should fail"""
+    verbs = cg.get_verbs()
+    template_names = cg.get_template_names()
+    missing_templates = set()
+    for verb in verbs:
+        if verb.template not in template_names:
+            missing_templates.add(verb.template)
+    assert len(missing_templates) == 0
+
+def test_find_verb_by_infinitive():
+    v = cg.find_verb_by_infinitive('abandonar')
+    assert v.infinitive == 'abandonar'
+    assert v.template == 'cant:ar'
+
 test_ca_conjugate_mood_tense_data = [
     ('ser', 'indicatiu', 'present', 
         ['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']),
@@ -67,6 +83,20 @@ test_ca_conjugate_mood_tense_data = [
         ['jo hagi', 'tu hagis', 'ell hagi', 'nosaltres hàgim', 'vosaltres hàgiu', 'ells hagin']),
     ('tenir', 'indicatiu', 'present', 
         ['jo tinc', 'tu tens', 'ell té', 'nosaltres tenim', 'vosaltres teniu', 'ells tenen']),
+    ('fer', 'indicatiu', 'present', 
+        ['jo faig', 'tu fas', 'ell fa', 'nosaltres fem', 'vosaltres feu', 'ells fan']),
+    ('fer', 'indicatiu', 'imperfet', 
+        ['jo feia', 'tu feies', 'ell feia', 'nosaltres fèiem', 'vosaltres fèieu', 'ells feien']),
+    ('servir', 'indicatiu', 'present', 
+        ['jo serveixo', 'tu serveixes', 'ell serveix', 'nosaltres servim', 'vosaltres serviu', 'ells serveixen']),
+    ('veure', 'indicatiu', 'present', 
+        ['jo veig', 'tu veus', 'ell veu', 'nosaltres veiem', 'vosaltres veieu', 'ells veuen']),
+    ('abandonar', 'indicatiu', 'present', 
+        ['jo abandono', 'tu abandones', 'ell abandona', 'nosaltres abandonem', 'vosaltres abandoneu', 'ells abandonen']),
+    ('rebre', 'indicatiu', 'present', 
+        ['jo rebo', 'tu reps', 'ell rep', 'nosaltres rebem', 'vosaltres rebeu', 'ells reben']),
+    ('cabre', 'indicatiu', 'present', 
+        ['jo cabo', 'tu caps', 'ell cap', 'nosaltres cabem', 'vosaltres cabeu', 'ells caben']),
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
@@ -78,10 +108,21 @@ def test_inflector_ca_get_conj_obs():
     co = cg._inflector._get_conj_obs('parlar')
     assert co.verb.infinitive == "parlar"
     assert co.verb_stem == "parl"
+    assert co.template.name == "cant:ar"
+
+def test_inflector_ca_get_conj_obs_2():
+    co = cg._inflector._get_conj_obs('abandonar')
+    assert co.verb.infinitive == "abandonar"
+    assert co.verb_stem == "abandon"
+    assert co.template.name == "cant:ar"
 
 def test_inflector_ca_get_verb_stem():
     verb_stem = cg._inflector._get_verb_stem(u"parlar", u"cant:ar")
     assert verb_stem == u"parl"
+
+def test_inflector_ca_get_verb_stem_2():
+    verb_stem = cg._inflector._get_verb_stem(u"abandonar", u"cant:ar")
+    assert verb_stem == u"abandon"
 
 def test_inflector_ca_conjugate_simple_mood_tense():
     verb_stem = u"parl"

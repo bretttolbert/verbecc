@@ -13,7 +13,7 @@ from verbecc import exceptions
 class ConjugationsParser:
     def __init__(self, lang: str='fr'):
         self.templates: List[conjugation_template.ConjugationTemplate] = []
-        parser = etree.XMLParser(dtd_validation=True, encoding='utf-8')
+        parser = etree.XMLParser(dtd_validation=True, encoding='utf-8', remove_comments=True)
         tree = etree.parse(
             resource_filename("verbecc",
                               "data/conjugations-{}.xml".format(lang)),

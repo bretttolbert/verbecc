@@ -6,6 +6,15 @@ from verbecc import Conjugator
 
 cg = Conjugator(lang='pt')
 
+def test_all_verbs_have_templates():
+    verbs = cg.get_verbs()
+    template_names = cg.get_template_names()
+    missing_templates = set()
+    for verb in verbs:
+        if verb.template not in template_names:
+            missing_templates.add(verb.template)
+    assert len(missing_templates) == 0
+
 test_pt_conjugate_mood_tense_data = [
     ('ter', 'indicativo', 'presente',
         ['eu tenho', 'tu tens', 'ele tem', 'nós temos', 'vós tendes', 'eles têm']),

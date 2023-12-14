@@ -8,6 +8,15 @@ from verbecc.tense_template import TenseTemplate
 
 cg = Conjugator(lang='es')
 
+def test_all_verbs_have_templates():
+    verbs = cg.get_verbs()
+    template_names = cg.get_template_names()
+    missing_templates = set()
+    for verb in verbs:
+        if verb.template not in template_names:
+            missing_templates.add(verb.template)
+    assert len(missing_templates) == 0
+
 # presente = Subjunctive Present (yo haya)
 # pretérito-perfecto = Subjunctive Perfect (yo haya habido)
 # pretérito-imperfecto-1 = Subjunctive Past 1 (yo hubiera)
