@@ -26,7 +26,7 @@
 <!ATTLIST conjugation-ca xmlns CDATA #FIXED "">
 <!ELEMENT template (Indicatiu , Subjuntiu , Imperatiu , (Condicional , Infinitiu , Gerundi , Particip)?)>
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicatiu (present , imperfet , pretèrit , futur)?>
+<!ELEMENT Indicatiu (present , imperfet , passat-simple , futur)?>
 <!ELEMENT Subjuntiu (present , imperfet)?>
 <!ELEMENT Imperatiu (imperatiu-present)>
 <!ELEMENT Condicional (present)>
@@ -35,7 +35,7 @@
 <!ELEMENT Particip (particip)>
 <!ELEMENT present (p , p , p , p , p , p)>
 <!ELEMENT imperfet (p , p , p , p , p , p)>
-<!ELEMENT pretèrit (p , p , p , p , p , p)>
+<!ELEMENT passat-simple (p , p , p , p , p , p)>
 <!ELEMENT futur (p , p , p , p , p , p)>
 <!ELEMENT imperatiu-present (p , p , p , p , p)>
 <!ELEMENT infinitiu-present (p)+>
@@ -71,7 +71,7 @@ nosotros habláramos, nosotros hablásemos = nosaltres parléssim, nosaltres par
 
 -->
 
-<template name="v:eure">
+<template name="malv:eure">
 	<Indicatiu>
 		<present>
 			<p><i>eig</i></p>
@@ -89,14 +89,14 @@ nosotros habláramos, nosotros hablásemos = nosaltres parléssim, nosaltres par
 			<p><i>èieu</i></p>
 			<p><i>eien</i></p>
 		</imperfet>
-		<pretèrit> <!-- Preterite (Indicative Past) aka Passé simple -->
+		<passat-simple> <!-- Preterite (Indicative Past) aka Passé simple -->
 			<p><i>iu</i></p>
 			<p><i>eieres</i><i>eres</i></p>
 			<p><i>eié</i><i>eu</i></p>
 			<p><i>eiérem</i><i>érem</i></p>
 			<p><i>eiéreu</i><i>éreu</i></p>
 			<p><i>eieren</i><i>eren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>euré</i></p>
 			<p><i>euràs</i></p>
@@ -170,7 +170,7 @@ It includes most of the irregular verbs, the most-frequently-used:
 ser ("to be"), haver ("to have"), fer ("to do"), veure ("to see"), poder ("can"), 
 voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get"). 
 -->
-<template name=":ser">
+<template name="és:ser">
 	<Indicatiu>
 		<present>
 			<p><i>sóc</i></p>
@@ -188,14 +188,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>éreu</i></p>
 			<p><i>eren</i></p>
 		</imperfet>
-		<pretèrit> <!-- Preterite (Indicative Past) aka Passé simple -->
+		<passat-simple> <!-- Preterite (Indicative Past) aka Passé simple -->
 			<p><i>fui</i></p>
 			<p><i>fores</i></p>
 			<p><i>fou</i></p>
 			<p><i>fórem</i></p>
 			<p><i>fóreu</i></p>
 			<p><i>foren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>seré</i></p>
 			<p><i>seràs</i></p>
@@ -265,6 +265,191 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
+<template name=":dir">
+	<Indicatiu>
+		<present>
+			<p><i>dic</i></p>
+			<p><i>dius</i></p>
+			<p><i>diu</i></p>
+			<p><i>diem</i></p>
+			<p><i>dieu</i></p>
+			<p><i>diuen</i></p>
+		</present>
+		<imperfet>
+			<p><i>deia</i></p>
+			<p><i>deies</i></p>
+			<p><i>deia</i></p>
+			<p><i>dèiem</i></p>
+			<p><i>dèieu</i></p>
+			<p><i>deien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>diguí</i></p>
+			<p><i>digueres</i></p>
+			<p><i>digué</i></p>
+			<p><i>diguérem</i></p>
+			<p><i>diguéreu</i></p>
+			<p><i>digueren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>diré</i></p>
+			<p><i>diràs</i></p>
+			<p><i>dirà</i></p>
+			<p><i>direm</i></p>
+			<p><i>direu</i></p>
+			<p><i>diran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>digui</i></p>
+			<p><i>diguis</i></p>
+			<p><i>digui</i></p>
+			<p><i>diguem</i></p>
+			<p><i>digue</i></p>
+			<p><i>diguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>digués</i></p>
+			<p><i>diguessis</i></p>
+			<p><i>digués</i></p>
+			<p><i>diguéssim</i></p>
+			<p><i>diguéssiu</i></p>
+			<p><i>diguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>digues</i></p>
+			<p><i>digui</i></p>
+			<p><i>diguem</i></p>
+			<p><i>digueu</i></p>
+			<p><i>diguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>diria</i></p>
+			<p><i>diries</i></p>
+			<p><i>diria</i></p>
+			<p><i>diríem</i></p>
+			<p><i>diríeu</i></p>
+			<p><i>dirien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>dir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>dient</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>dit</i></p>
+			<p><i>dita</i></p>
+			<p><i>dits</i></p>
+			<p><i>dites</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: This should inherit from cantar -->
+<template name=":anar">
+	<Indicatiu>
+		<present>
+			<p><i>vaig</i></p>
+			<p><i>vas</i></p>
+			<p><i>va</i></p>
+			<p><i>anem</i></p>
+			<p><i>aneu</i></p>
+			<p><i>van</i></p>
+		</present>
+		<imperfet>
+			<p><i>anava</i></p>
+			<p><i>anaves</i></p>
+			<p><i>anava</i></p>
+			<p><i>anàvem</i></p>
+			<p><i>anàveu</i></p>
+			<p><i>anaven</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>aní</i></p>
+			<p><i>anares</i></p>
+			<p><i>anà</i></p>
+			<p><i>anàrem</i></p>
+			<p><i>anàreu</i></p>
+			<p><i>anaren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>aniré</i></p>
+			<p><i>aniràs</i></p>
+			<p><i>anirà</i></p>
+			<p><i>anirem</i></p>
+			<p><i>anireu</i></p>
+			<p><i>aniran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>vagi</i></p>
+			<p><i>vagis</i></p>
+			<p><i>vagi</i></p>
+			<p><i>anem</i></p>
+			<p><i>aneu</i></p>
+			<p><i>vagin</i></p>
+		</present>
+		<imperfet>
+			<p><i>anés</i></p>
+			<p><i>anessis</i></p>
+			<p><i>anés</i></p>
+			<p><i>anéssim</i></p>
+			<p><i>anéssiu</i></p>
+			<p><i>anessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ves</i></p>
+			<p><i>vagi</i></p>
+			<p><i>anem</i></p>
+			<p><i>aneu</i></p>
+			<p><i>vagin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>aniria</i></p>
+			<p><i>aniries</i></p>
+			<p><i>aniria</i></p>
+			<p><i>aniríem</i></p>
+			<p><i>aniríeu</i></p>
+			<p><i>anirien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>anar</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>anant</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>anat</i></p>
+			<p><i>anada</i></p>
+			<p><i>anats</i></p>
+			<p><i>anades</i></p>
+		</particip>
+	</Particip>
+</template>
+
 <template name="re:bre">
 	<Indicatiu>
 		<present>
@@ -283,14 +468,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>bíeu</i></p>
 			<p><i>bien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>bí</i></p>
 			<p><i>beres</i></p>
 			<p><i>bé</i></p>
 			<p><i>bérem</i></p>
 			<p><i>béreu</i></p>
 			<p><i>beren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>bré</i></p>
 			<p><i>bràs</i></p>
@@ -349,102 +534,764 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>but</i></p> <!-- m participle, alt m participle? -->
-			<p><i>buda</i></p> <!-- f participle, alt f participle? -->
-			<p><i>buts</i></p> <!-- pm participle, alt pm participle? -->
-			<p><i>budes</i></p> <!-- pf participle, alt pf participle? -->
+			<p><i>but</i></p>
+			<p><i>buda</i></p>
+			<p><i>buts</i></p>
+			<p><i>budes</i></p>
 		</particip>
 	</Particip>
 </template>
 
-<template name=":fer">
+<template name="perd:re">
 	<Indicatiu>
 		<present>
-			<p><i>faig</i></p>
-			<p><i>fas</i></p>
-			<p><i>fa</i></p>
-			<p><i>fem</i></p>
-			<p><i>feu</i></p>
-			<p><i>fan</i></p>
+			<p><i>o</i></p>
+			<p><i>s</i></p>
+			<p><i></i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>en</i></p>
 		</present>
 		<imperfet>
-			<p><i>feia</i></p>
-			<p><i>feies</i></p>
-			<p><i>feia</i></p>
-			<p><i>fèiem</i></p>
-			<p><i>fèieu</i></p>
-			<p><i>feien</i></p>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>íeu</i></p>
+			<p><i>ien</i></p>
 		</imperfet>
-		<pretèrit>
-			<p><i>fiu</i></p>
-			<p><i>feres</i></p>
-			<p><i>feu</i></p>
-			<p><i>férem</i></p>
-			<p><i>féreu</i></p>
-			<p><i>feren</i></p>
-		</pretèrit>
+		<passat-simple>
+			<p><i>í</i></p>
+			<p><i>eres</i></p>
+			<p><i>é</i></p>
+			<p><i>érem</i></p>
+			<p><i>éreu</i></p>
+			<p><i>eren</i></p>
+		</passat-simple>
 		<futur>
-			<p><i>faré</i></p>
-			<p><i>faràs</i></p>
-			<p><i>farà</i></p>
-			<p><i>farem</i></p>
-			<p><i>fareu</i></p>
-			<p><i>faran</i></p>
+			<p><i>é</i></p>
+			<p><i>às</i></p>
+			<p><i>à</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>an</i></p>
 		</futur>
 		</Indicatiu>
 	<Subjuntiu>
 		<present>
-			<p><i>faci</i></p>
-			<p><i>facis</i></p>
-			<p><i>faci</i></p>
-			<p><i>fem</i></p>
-			<p><i>feu</i></p>
-			<p><i>facin</i></p>
+			<p><i>i</i></p>
+			<p><i>is</i></p>
+			<p><i>i</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>in</i></p>
 		</present>
 		<imperfet>
-			<p><i>fes</i></p>
-			<p><i>fessis</i></p>
-			<p><i>fes</i></p>
-			<p><i>féssim</i></p>
-			<p><i>féssiu</i></p>
-			<p><i>fessin</i></p>
+			<p><i>és</i></p>
+			<p><i>essis</i></p>
+			<p><i>és</i></p>
+			<p><i>éssim</i></p>
+			<p><i>éssiu</i></p>
+			<p><i>essin</i></p>
 		</imperfet>
 	</Subjuntiu>
 	<Imperatiu>
 		<imperatiu-present>
-			<p><i>fes</i></p>
-			<p><i>faci</i></p>
-			<p><i>fem</i></p>
-			<p><i>feu</i></p>
-			<p><i>facin</i></p>
+			<p><i></i></p>
+			<p><i>i</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>in</i></p>
 		</imperatiu-present>
 	</Imperatiu>
 	<Condicional>
 		<present>
-			<p><i>faria</i></p>
-			<p><i>faries</i></p>
-			<p><i>faria</i></p>
-			<p><i>faríem</i></p>
-			<p><i>faríeu</i></p>
-			<p><i>farien</i></p>
+			<p><i>ria</i></p>
+			<p><i>ries</i></p>
+			<p><i>ria</i></p>
+			<p><i>ríem</i></p>
+			<p><i>ríeu</i></p>
+			<p><i>rien</i></p>
 		</present>
 		</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>fer</i></p>
+			<p><i>re</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>fent</i></p>
+			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>fet</i></p>
-			<p><i>feta</i></p>
-			<p><i>fets</i></p>
-			<p><i>fetes</i></p>
+			<p><i>ut</i></p>
+			<p><i>uda</i></p>
+			<p><i>uts</i></p>
+			<p><i>udes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: This should inherit from 'perd:re' as 'pod:er' -->
+<template name=":poder">
+	<Indicatiu>
+		<present>
+			<p><i>puc</i></p>
+			<p><i>pots</i></p>
+			<p><i>pot</i></p>
+			<p><i>podem</i></p>
+			<p><i>podeu</i></p>
+			<p><i>poden</i></p>
+		</present>
+		<imperfet>
+			<p><i>podia</i></p>
+			<p><i>podies</i></p>
+			<p><i>podia</i></p>
+			<p><i>podíem</i></p>
+			<p><i>podíeu</i></p>
+			<p><i>podien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>poguí</i></p>
+			<p><i>pogueres</i></p>
+			<p><i>pogué</i></p>
+			<p><i>poguérem</i></p>
+			<p><i>poguéreu</i></p>
+			<p><i>pogueren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>podré</i></p>
+			<p><i>podràs</i></p>
+			<p><i>podrà</i></p>
+			<p><i>podrem</i></p>
+			<p><i>podreu</i></p>
+			<p><i>podran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>pugui</i></p>
+			<p><i>puguis</i></p>
+			<p><i>pugui</i></p>
+			<p><i>puguem</i></p>
+			<p><i>pugueu</i></p>
+			<p><i>puguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>pogués</i></p>
+			<p><i>poguessis</i></p>
+			<p><i>pogués</i></p>
+			<p><i>poguéssim</i></p>
+			<p><i>poguéssiu</i></p>
+			<p><i>poguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>pugues</i></p>
+			<p><i>pugui</i></p>
+			<p><i>puguem</i></p>
+			<p><i>pugueu</i></p>
+			<p><i>puguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>podria</i></p>
+			<p><i>podries</i></p>
+			<p><i>poderria</i></p>
+			<p><i>podríem</i></p>
+			<p><i>podríeu</i></p>
+			<p><i>podrien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>poder</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>podent</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>pogut</i></p>
+			<p><i>poguda</i></p>
+			<p><i>poguts</i></p>
+			<p><i>pogudes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<template name=":caure">
+	<Indicatiu>
+		<present>
+			<p><i>caic</i></p>
+			<p><i>caus</i></p>
+			<p><i>cau</i></p>
+			<p><i>caiem</i></p>
+			<p><i>caieu</i></p>
+			<p><i>cauen</i></p>
+		</present>
+		<imperfet>
+			<p><i>queia</i></p>
+			<p><i>queies</i></p>
+			<p><i>queia</i></p>
+			<p><i>quèiem</i></p>
+			<p><i>quèieu</i></p>
+			<p><i>queien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>caiguí</i></p>
+			<p><i>caigueres</i></p>
+			<p><i>caigué</i></p>
+			<p><i>caiguérem</i></p>
+			<p><i>caiguéreu</i></p>
+			<p><i>caigueren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>cauré</i></p>
+			<p><i>cauràs</i></p>
+			<p><i>caurà</i></p>
+			<p><i>caurem</i></p>
+			<p><i>caureu</i></p>
+			<p><i>cauran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>caigui</i></p>
+			<p><i>caiguis</i></p>
+			<p><i>caigui</i></p>
+			<p><i>caiguem</i></p>
+			<p><i>caigueu</i></p>
+			<p><i>caiguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>caigués</i></p>
+			<p><i>caiguessis</i></p>
+			<p><i>caigués</i></p>
+			<p><i>caiguéssim</i></p>
+			<p><i>caiguéssiu</i></p>
+			<p><i>caiguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>cau</i></p>
+			<p><i>caigui</i></p>
+			<p><i>caiguem</i></p>
+			<p><i>caieu</i></p>
+			<p><i>caiguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>cauria</i></p>
+			<p><i>cauries</i></p>
+			<p><i>cauria</i></p>
+			<p><i>cauríem</i></p>
+			<p><i>cauríeu</i></p>
+			<p><i>caurien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>caure</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>caient</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>caigut</i></p>
+			<p><i>caiguda</i></p>
+			<p><i>caiguts</i></p>
+			<p><i>caigudes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: Inherit from :dormir 
+
+collir and tossir are both based on 'dorm:ir'
+Except the 'o' becomes 'u' in the present tense (both indicatiu and subjuntiu)
+and in the imperative tense
+except in the first and second person plural.
+
+-->
+<template name="c:ollir">
+	<Indicatiu>
+		<present>
+			<p><i>ullo</i></p>
+			<p><i>ulls</i></p>
+			<p><i>ull</i></p>
+			<p><i>ollim</i></p>
+			<p><i>olliu</i></p>
+			<p><i>ullen</i></p>
+		</present>
+		<imperfet>
+			<p><i>ollia</i></p>
+			<p><i>ollies</i></p>
+			<p><i>ollia</i></p>
+			<p><i>ollíem</i></p>
+			<p><i>ollíeu</i></p>
+			<p><i>ollíen</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>ollí</i></p>
+			<p><i>ollires</i></p>
+			<p><i>ollí</i></p>
+			<p><i>ollírem</i></p>
+			<p><i>ollíreu</i></p>
+			<p><i>olliren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>olliré</i></p>
+			<p><i>olliràs</i></p>
+			<p><i>ollirà</i></p>
+			<p><i>ollirem</i></p>
+			<p><i>ollireu</i></p>
+			<p><i>olliran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>ulli</i></p>
+			<p><i>ullis</i></p>
+			<p><i>ulli</i></p>
+			<p><i>ollim</i></p>
+			<p><i>olliu</i></p>
+			<p><i>ullin</i></p>
+		</present>
+		<imperfet>
+			<p><i>ollís</i></p>
+			<p><i>ollissis</i></p>
+			<p><i>ollís</i></p>
+			<p><i>ollíssim</i></p>
+			<p><i>ollíssiu</i></p>
+			<p><i>ollissin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ull</i></p>
+			<p><i>ulli</i></p>
+			<p><i>ollim</i></p>
+			<p><i>olliu</i></p>
+			<p><i>ullin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>olliria</i></p>
+			<p><i>olliries</i></p>
+			<p><i>olliria</i></p>
+			<p><i>olliríem</i></p>
+			<p><i>olliríeu</i></p>
+			<p><i>ollirien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ollir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>ollint</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>ollit</i></p>
+			<p><i>ollida</i></p>
+			<p><i>ollits</i></p>
+			<p><i>ollides</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: Inherit from 'dorm:ir'
+
+collir and tossir are both based on 'dorm:ir'
+Except the 'o' becomes 'u' in the present tense (both indicatiu and subjuntiu)
+and in the imperative tense
+except in the first and second person plural.
+
+-->
+<template name="t:ossir">
+	<Indicatiu>
+		<present>
+			<p><i>usso</i></p>
+			<p><i>usses</i></p>
+			<p><i>us</i></p>
+			<p><i>ossim</i></p>
+			<p><i>ossiu</i></p>
+			<p><i>ussen</i></p>
+		</present>
+		<imperfet>
+			<p><i>ossia</i></p>
+			<p><i>ossies</i></p>
+			<p><i>ossia</i></p>
+			<p><i>ossíem</i></p>
+			<p><i>ossíeu</i></p>
+			<p><i>ossíen</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>ossí</i></p>
+			<p><i>ossires</i></p>
+			<p><i>ossí</i></p>
+			<p><i>ossírem</i></p>
+			<p><i>ossíreu</i></p>
+			<p><i>ossiren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>ossiré</i></p>
+			<p><i>ossiràs</i></p>
+			<p><i>ossirà</i></p>
+			<p><i>ossirem</i></p>
+			<p><i>ossireu</i></p>
+			<p><i>ossiran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>ussi</i></p>
+			<p><i>ussis</i></p>
+			<p><i>ussi</i></p>
+			<p><i>ossim</i></p>
+			<p><i>ossiu</i></p>
+			<p><i>ussin</i></p>
+		</present>
+		<imperfet>
+			<p><i>ossís</i></p>
+			<p><i>ossissis</i></p>
+			<p><i>ossís</i></p>
+			<p><i>ossíssim</i></p>
+			<p><i>ossíssiu</i></p>
+			<p><i>ossissin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>uss</i></p>
+			<p><i>ussi</i></p>
+			<p><i>ossim</i></p>
+			<p><i>ossiu</i></p>
+			<p><i>ussin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>ossiria</i></p>
+			<p><i>ossiries</i></p>
+			<p><i>ossiria</i></p>
+			<p><i>ossiríem</i></p>
+			<p><i>ossiríeu</i></p>
+			<p><i>ossirien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ossir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>ossint</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>ossit</i></p>
+			<p><i>ossida</i></p>
+			<p><i>ossits</i></p>
+			<p><i>ossides</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<template name="dorm:ir">
+	<Indicatiu>
+		<present>
+			<p><i>o</i></p>
+			<p><i>s</i></p>
+			<p><i></i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>en</i></p>
+		</present>
+		<imperfet>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>ieu</i></p>
+			<p><i>ien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>í</i></p>
+			<p><i>ires</i></p>
+			<p><i>í</i></p>
+			<p><i>írem</i></p>
+			<p><i>íreu</i></p>
+			<p><i>iren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>i</i></p>
+			<p><i>is</i></p>
+			<p><i>i</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>in</i></p>
+		</present>
+		<imperfet>
+			<p><i>ís</i></p>
+			<p><i>issis</i></p>
+			<p><i>ís</i></p>
+			<p><i>íssim</i></p>
+			<p><i>íssiu</i></p>
+			<p><i>issin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i></i></p>
+			<p><i>i</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>in</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>int</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>it</i></p>
+			<p><i>ida</i></p>
+			<p><i>its</i></p>
+			<p><i>ides</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: Inherit from dorm:ir as eix:ir -->
+<template name=":eixir">
+	<Indicatiu>
+		<present>
+			<p><i>ixo</i><i>isc</i></p>
+			<p><i>ixes</i></p>
+			<p><i>ix</i></p>
+			<p><i>eixim</i></p>
+			<p><i>eixiu</i></p>
+			<p><i>ixen</i></p>
+		</present>
+		<imperfet>
+			<p><i>eixia</i></p>
+			<p><i>eixies</i></p>
+			<p><i>eixia</i></p>
+			<p><i>eixíem</i></p>
+			<p><i>eixieu</i></p>
+			<p><i>eixien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>eixí</i></p>
+			<p><i>eixires</i></p>
+			<p><i>eixí</i></p>
+			<p><i>eixírem</i></p>
+			<p><i>eixíreu</i></p>
+			<p><i>eixiren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>eixiré</i></p>
+			<p><i>eixiràs</i></p>
+			<p><i>eixirà</i></p>
+			<p><i>eixirem</i></p>
+			<p><i>eixireu</i></p>
+			<p><i>eixiran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>ixi</i></p>
+			<p><i>ixis</i></p>
+			<p><i>ixi</i></p>
+			<p><i>eixim</i></p>
+			<p><i>eixiu</i></p>
+			<p><i>ixin</i></p>
+		</present>
+		<imperfet>
+			<p><i>eixís</i></p>
+			<p><i>eixissis</i></p>
+			<p><i>eixís</i></p>
+			<p><i>eixíssim</i></p>
+			<p><i>eixíssiu</i></p>
+			<p><i>eixissin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ix</i></p>
+			<p><i>ixi</i></p>
+			<p><i>eixim</i></p>
+			<p><i>eixiu</i></p>
+			<p><i>ixin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>eixiria</i></p>
+			<p><i>eixiries</i></p>
+			<p><i>eixiria</i></p>
+			<p><i>eixiríem</i></p>
+			<p><i>eixiríeu</i></p>
+			<p><i>eixirien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>eixir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>eixint</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>eixit</i></p>
+			<p><i>eixida</i></p>
+			<p><i>eixits</i></p>
+			<p><i>eixides</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<template name="desf:er">
+	<Indicatiu>
+		<present>
+			<p><i>aig</i></p>
+			<p><i>as</i></p>
+			<p><i>a</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>an</i></p>
+		</present>
+		<imperfet>
+			<p><i>eia</i></p>
+			<p><i>eies</i></p>
+			<p><i>eia</i></p>
+			<p><i>èiem</i></p>
+			<p><i>èieu</i></p>
+			<p><i>eien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>iu</i></p>
+			<p><i>eres</i></p>
+			<p><i>eu</i></p>
+			<p><i>érem</i></p>
+			<p><i>éreu</i></p>
+			<p><i>eren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>aré</i></p>
+			<p><i>aràs</i></p>
+			<p><i>arà</i></p>
+			<p><i>arem</i></p>
+			<p><i>areu</i></p>
+			<p><i>aran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>aci</i></p>
+			<p><i>acis</i></p>
+			<p><i>aci</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>acin</i></p>
+		</present>
+		<imperfet>
+			<p><i>es</i></p>
+			<p><i>essis</i></p>
+			<p><i>es</i></p>
+			<p><i>éssim</i></p>
+			<p><i>éssiu</i></p>
+			<p><i>essin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>es</i></p>
+			<p><i>aci</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>acin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>aria</i></p>
+			<p><i>aries</i></p>
+			<p><i>aria</i></p>
+			<p><i>aríem</i></p>
+			<p><i>aríeu</i></p>
+			<p><i>arien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>er</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>ent</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>et</i></p>
+			<p><i>eta</i></p>
+			<p><i>ets</i></p>
+			<p><i>etes</i></p>
 		</particip>
 	</Particip>
 </template>
@@ -467,14 +1314,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>àveu</i></p>
 			<p><i>aven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>iguí</i></p>
 			<p><i>igueres</i></p>
 			<p><i>igué</i></p>
 			<p><i>iguérem</i></p>
 			<p><i>iguéreu</i></p>
 			<p><i>igueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>aré</i></p>
 			<p><i>aràs</i></p>
@@ -568,14 +1415,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>àveu</i></p>
 			<p><i>aven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>í</i></p>
 			<p><i>ares</i></p>
 			<p><i>à</i></p>
 			<p><i>àrem</i></p>
 			<p><i>àreu</i></p>
 			<p><i>aren</i></p>
-		</pretèrit> 
+		</passat-simple> 
 		<futur>
 			<p><i>aré</i></p>
 			<p><i>aràs</i></p>
@@ -642,6 +1489,378 @@ About 86 percent of Catalan verbs belong to this group.
 	</Particip>
 </template>
 
+<!-- TODO: This template should inherit from base template "cant:ar"-->
+<template name="comen:çar">
+	<Indicatiu>
+		<present>
+			<p><i>ço</i></p>
+			<p><i>ces</i></p>
+			<p><i>ça</i></p>
+			<p><i>cem</i></p>
+			<p><i>ceu</i></p>
+			<p><i>cen</i></p>
+		</present>
+		<imperfet>
+			<p><i>çava</i></p>
+			<p><i>çaves</i></p>
+			<p><i>çava</i></p>
+			<p><i>çàvem</i></p>
+			<p><i>çàveu</i></p>
+			<p><i>çaven</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>cí</i></p>
+			<p><i>çares</i></p>
+			<p><i>çà</i></p>
+			<p><i>çàrem</i></p>
+			<p><i>çàreu</i></p>
+			<p><i>çaren</i></p>
+		</passat-simple> 
+		<futur>
+			<p><i>çaré</i></p>
+			<p><i>çaràs</i></p>
+			<p><i>çarà</i></p>
+			<p><i>çarem</i></p>
+			<p><i>çareu</i></p>
+			<p><i>çaran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>ci</i></p>
+			<p><i>cis</i></p>
+			<p><i>ci</i></p>
+			<p><i>cem</i></p>
+			<p><i>ceu</i></p>
+			<p><i>cin</i></p>
+		</present>
+		<imperfet>
+			<p><i>cés</i></p>
+			<p><i>cessis</i></p>
+			<p><i>cés</i></p>
+			<p><i>céssim</i></p>
+			<p><i>céssiu</i></p>
+			<p><i>cessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ça</i></p>
+			<p><i>ci</i></p>
+			<p><i>cem</i></p>
+			<p><i>ceu</i></p>
+			<p><i>cin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>çaria</i></p>
+			<p><i>çaries</i></p>
+			<p><i>çaria</i></p>
+			<p><i>çaríem</i></p>
+			<p><i>çaríeu</i></p>
+			<p><i>çarien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>çar</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>çant</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>çat</i></p>
+			<p><i>çada</i></p>
+			<p><i>çats</i></p>
+			<p><i>çades</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: This template should inherit from base template "cant:ar"-->
+<template name="enaig:uar">
+	<Indicatiu>
+		<present>
+			<p><i>uo</i></p>
+			<p><i>ües</i></p>
+			<p><i>ua</i></p>
+			<p><i>üem</i></p>
+			<p><i>üeu</i></p>
+			<p><i>üen</i></p>
+		</present>
+		<imperfet>
+			<p><i>uava</i></p>
+			<p><i>uaves</i></p>
+			<p><i>uava</i></p>
+			<p><i>uàvem</i></p>
+			<p><i>uàveu</i></p>
+			<p><i>uaven</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>üí</i></p>
+			<p><i>uares</i></p>
+			<p><i>uà</i></p>
+			<p><i>uàrem</i></p>
+			<p><i>uàreu</i></p>
+			<p><i>uaren</i></p>
+		</passat-simple> 
+		<futur>
+			<p><i>uaré</i></p>
+			<p><i>uaràs</i></p>
+			<p><i>uarà</i></p>
+			<p><i>uarem</i></p>
+			<p><i>uareu</i></p>
+			<p><i>uaran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>üi</i></p>
+			<p><i>üis</i></p>
+			<p><i>üi</i></p>
+			<p><i>üem</i></p>
+			<p><i>üeu</i></p>
+			<p><i>üin</i></p>
+		</present>
+		<imperfet>
+			<p><i>üés</i></p>
+			<p><i>üessis</i></p>
+			<p><i>üés</i></p>
+			<p><i>üéssim</i></p>
+			<p><i>üéssiu</i></p>
+			<p><i>üessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ua</i></p>
+			<p><i>üi</i></p>
+			<p><i>üem</i></p>
+			<p><i>üeu</i></p>
+			<p><i>üin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>uaria</i></p>
+			<p><i>uaries</i></p>
+			<p><i>uaria</i></p>
+			<p><i>uaríem</i></p>
+			<p><i>uaríeu</i></p>
+			<p><i>uarien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>uar</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>uant</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>uat</i></p>
+			<p><i>uada</i></p>
+			<p><i>uats</i></p>
+			<p><i>uades</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: This template should inherit from base template "cant:ar"-->
+<template name="enve:jar">
+	<Indicatiu>
+		<present>
+			<p><i>jo</i></p>
+			<p><i>ges</i></p>
+			<p><i>ja</i></p>
+			<p><i>gem</i></p>
+			<p><i>geu</i></p>
+			<p><i>gen</i></p>
+		</present>
+		<imperfet>
+			<p><i>java</i></p>
+			<p><i>javes</i></p>
+			<p><i>java</i></p>
+			<p><i>jàvem</i></p>
+			<p><i>jàveu</i></p>
+			<p><i>javen</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>gí</i></p>
+			<p><i>jares</i></p>
+			<p><i>jà</i></p>
+			<p><i>jàrem</i></p>
+			<p><i>jàreu</i></p>
+			<p><i>jaren</i></p>
+		</passat-simple> 
+		<futur>
+			<p><i>jaré</i></p>
+			<p><i>jaràs</i></p>
+			<p><i>jarà</i></p>
+			<p><i>jarem</i></p>
+			<p><i>jareu</i></p>
+			<p><i>jaran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>gi</i></p>
+			<p><i>gis</i></p>
+			<p><i>gi</i></p>
+			<p><i>gem</i></p>
+			<p><i>geu</i></p>
+			<p><i>gin</i></p>
+		</present>
+		<imperfet>
+			<p><i>gés</i></p>
+			<p><i>gessis</i></p>
+			<p><i>gés</i></p>
+			<p><i>géssim</i></p>
+			<p><i>géssiu</i></p>
+			<p><i>gessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ja</i></p>
+			<p><i>gi</i></p>
+			<p><i>gem</i></p>
+			<p><i>geu</i></p>
+			<p><i>gin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>jaria</i></p>
+			<p><i>jaries</i></p>
+			<p><i>jaria</i></p>
+			<p><i>jaríem</i></p>
+			<p><i>jaríeu</i></p>
+			<p><i>jarien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>jar</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>jant</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>jat</i></p>
+			<p><i>jada</i></p>
+			<p><i>jats</i></p>
+			<p><i>jades</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: This template should inherit from the base template "cant:ar" -->
+<template name="tren:car">
+	<Indicatiu>
+		<present>
+			<p><i>co</i></p>
+			<p><i>ques</i></p>
+			<p><i>ca</i></p>
+			<p><i>quem</i></p>
+			<p><i>queu</i></p>
+			<p><i>quen</i></p>
+		</present>
+		<imperfet>
+			<p><i>cava</i></p>
+			<p><i>caves</i></p>
+			<p><i>cava</i></p>
+			<p><i>càvem</i></p>
+			<p><i>càveu</i></p>
+			<p><i>caven</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>quí</i></p>
+			<p><i>cares</i></p>
+			<p><i>cà</i></p>
+			<p><i>càrem</i></p>
+			<p><i>càreu</i></p>
+			<p><i>caren</i></p>
+		</passat-simple> 
+		<futur>
+			<p><i>caré</i></p>
+			<p><i>caràs</i></p>
+			<p><i>carà</i></p>
+			<p><i>carem</i></p>
+			<p><i>careu</i></p>
+			<p><i>caran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>qi</i></p>
+			<p><i>quis</i></p>
+			<p><i>qui</i></p>
+			<p><i>quem</i></p>
+			<p><i>queu</i></p>
+			<p><i>quin</i></p>
+		</present>
+		<imperfet>
+			<p><i>qués</i></p>
+			<p><i>quessis</i></p>
+			<p><i>qués</i></p>
+			<p><i>quéssim</i></p>
+			<p><i>quéssiu</i></p>
+			<p><i>quessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ca</i></p>
+			<p><i>qui</i></p>
+			<p><i>quem</i></p>
+			<p><i>queu</i></p>
+			<p><i>quin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>caria</i></p>
+			<p><i>caries</i></p>
+			<p><i>caria</i></p>
+			<p><i>caríem</i></p>
+			<p><i>caríeu</i></p>
+			<p><i>carien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>car</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>cant</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>cat</i></p>
+			<p><i>cada</i></p>
+			<p><i>cats</i></p>
+			<p><i>cades</i></p>
+		</particip>
+	</Particip>
+</template>
+
 <!--
 Spanish 'haber' uses 'h:aber'
 so Catalan 'haver' should use 'h:aver'
@@ -664,14 +1883,14 @@ so Catalan 'haver' should use 'h:aver'
 			<p><i>avíeu</i></p>
 			<p><i>avien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>aguí</i></p>
 			<p><i>agueres</i></p>
 			<p><i>agué</i></p>
 			<p><i>aguérem</i></p>
 			<p><i>aguéreu</i></p>
 			<p><i>agueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>auré</i></p>
 			<p><i>auràs</i></p>
@@ -742,7 +1961,7 @@ so Catalan 'haver' should use 'h:aver'
 Spanish 'tener' uses template 't:ener'
 so Catalan 'tenir' should use 't:enir'
 -->
-<template name="t:enir">
+<template name="obt:enir">
 	<Indicatiu>
 		<present>
 			<p><i>inc</i></p>
@@ -760,14 +1979,14 @@ so Catalan 'tenir' should use 't:enir'
 			<p><i>eníeu</i></p>
 			<p><i>enien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>inguí</i></p>
 			<p><i>ingueres</i></p>
 			<p><i>ingué</i></p>
 			<p><i>inguérem</i></p>
 			<p><i>inguéreu</i></p>
 			<p><i>ingueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>indré</i></p>
 			<p><i>indràs</i></p>
@@ -857,14 +2076,14 @@ This is the second-largest group of regular verbs in the Catalan language
 			<p><i>íeu</i></p>
 			<p><i>ien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>í</i></p>
 			<p><i>es</i></p>
 			<p><i>í</i></p>
 			<p><i>írem</i></p>
 			<p><i>íreu</i></p>
 			<p><i>iren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>iré</i></p>
 			<p><i>iràs</i></p>
