@@ -126,7 +126,9 @@ test_ca_conjugate_mood_tense_data = [
     ('tossir', 'subjuntiu', 'present',
         ['jo tussi', 'tu tussis', 'ell tussi', 'nosaltres tossim', 'vosaltres tossiu', 'ells tussin']),
     ('dir', 'indicatiu', 'present',
-        ['jo dic', 'tu dius', 'ell diu', 'nosaltres diem', 'vosaltres dieu', 'ells diuen'])
+        ['jo dic', 'tu dius', 'ell diu', 'nosaltres diem', 'vosaltres dieu', 'ells diuen']),
+    ('anar', 'indicatiu', 'present',
+        ['jo vaig', 'tu vas', 'ell va', 'nosaltres anem', 'vosaltres aneu', 'ells van'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
