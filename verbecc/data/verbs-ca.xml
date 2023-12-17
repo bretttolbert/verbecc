@@ -3202,7 +3202,7 @@
 <v><i>diplomar</i><t>cant:ar</t><en></en></v>
 <v><i>dipositar</i><t>cant:ar</t><en></en></v>
 <v><i>diputar</i><t>cant:ar</t><en></en></v>
-<v><i>dir</i><t>:perdre</t><en></en></v>
+<v><i>dir</i><t>:dir</t><en>say</en></v>
 <v><i>dirigir</i><t>serv:ir</t><en></en></v>
 <v><i>dirimir</i><t>serv:ir</t><en></en></v>
 <v><i>disbauxar</i><t>cant:ar</t><en></en></v>
