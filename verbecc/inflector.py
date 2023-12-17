@@ -6,7 +6,6 @@ from typing import Dict, List, Tuple
 
 from verbecc import grammar_defines
 from verbecc import exceptions
-from verbecc import inflector
 from verbecc import conjugations_parser
 from verbecc import conjugation_template
 from verbecc import verb
@@ -62,40 +61,34 @@ class Inflector(ABC):
     def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
         return self._conj_parser.find_template(name)
 
-    def get_verbs_that_start_with(self, query, max_results):
+    def get_verbs_that_start_with(self, query: str, max_results: int):
         query = query.lower()
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         return matches
 
-    def _get_verb_stem(self, infinitive, template_name):
-        template_beg, template_ending = template_name.split(u':')
+    def _get_verb_stem(self, infinitive: str, template_name: str):
+        """Get the verb stem given an ininitive and a colon-delimited template name.
+        E.g. infinitive='parler' template_name='aim:er' -> 'parl'
+        Note: Catalan overrides this base class implementation to allow looser matching
+        (only requires the last n-1 chars of template ending to match infinitive ending)"""
+        _, template_ending = template_name.split(u':')
         if not infinitive.endswith(template_ending):
-            # Used to raise exception here immediately, but for Catalan, some verbs
-            # have endings where at least the first letter doesn't match.
-            # E.g. ConjugatorError: Template j:aure ending doesn't match infinitive jeure
-            # Problem: in Catalan both 'jaure' and and 'jeure' are apparently conjugated
-            # identically, so we want either one to use the 'j:aure' template.
-            # So if Catalan, let it pass if the last n-1 letters of the template_ending 
-            # match the infinitive ending
-            if self.lang == 'ca' and infinitive.endswith(template_ending[1:]):
-                pass
-            else:
-                raise exceptions.ConjugatorError(
-                    "Template {} ending doesn't "
-                    "match infinitive {}"
-                    .format(template_name, infinitive))
+            raise exceptions.ConjugatorError(
+                "Template {} ending doesn't "
+                "match infinitive {}"
+                .format(template_name, infinitive))
         return infinitive[:len(infinitive) - len(template_ending)]
 
-    def _is_impersonal_verb(self, infinitive):
+    def _is_impersonal_verb(self, infinitive: str):
         return False
 
-    def _verb_can_be_reflexive(self, infinitive):
+    def _verb_can_be_reflexive(self, infinitive: str):
         return not self._is_impersonal_verb(infinitive)
 
-    def _split_reflexive(self, infinitive):
+    def _split_reflexive(self, infinitive: str):
         return (False, infinitive)
 
-    def _add_reflexive_pronoun(self, s):
+    def _add_reflexive_pronoun(self, s: str):
         pass
 
     def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str):

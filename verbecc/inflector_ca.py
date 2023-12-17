@@ -2,6 +2,7 @@
 
 from typing import Dict, List, Tuple
 
+from verbecc import exceptions
 from verbecc import inflector
 
 class InflectorCa(inflector.Inflector):
@@ -67,6 +68,7 @@ class InflectorCa(inflector.Inflector):
 
     def _get_compound_conjugations_aux_verb_map(self) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         """
+        TODO: Implement all these compound tenses (Spanish compound tenses in this commment, for reference)
         return {
             'indicatiu': {
                 'pretèrit-perfet-compuest': ('indicatiu', 'present'),
@@ -85,3 +87,26 @@ class InflectorCa(inflector.Inflector):
         }
         """
         return {}
+
+    def _get_verb_stem(self, infinitive: str, template_name: str):
+        """Get the verb stem given an ininitive and a colon-delimited template name.
+        E.g. infinitive='parlar' template_name='cant:ar' -> 'parl'
+
+        Note: Base class _get_verb_stem raises exception if template ending doesn't 
+        match infinitive ending exactly but for Catalan, some verbs
+        have endings where at least the first letter doesn't match.
+
+        E.g. both 'jaure' and and 'jeure' are apparently conjugated
+        identically, so we want either one to use the 'j:aure' template.
+        So since this is Catalan, let it pass if the last n-1 letters of the 
+        template ending match the infinitive ending
+        """
+        _, template_ending = template_name.split(u':')
+        if not infinitive.endswith(template_ending) \
+        and not infinitive.endswith(template_ending[1:]):
+                raise exceptions.ConjugatorError(
+                    "Template {} ending doesn't "
+                    "match infinitive {},"
+                    "not even a little bit"
+                    .format(template_name, infinitive))
+        return infinitive[:len(infinitive) - len(template_ending)]
