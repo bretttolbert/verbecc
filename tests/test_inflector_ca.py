@@ -97,6 +97,8 @@ test_ca_conjugate_mood_tense_data = [
         ['jo rebo', 'tu reps', 'ell rep', 'nosaltres rebem', 'vosaltres rebeu', 'ells reben']),
     ('cabre', 'indicatiu', 'present', 
         ['jo cabo', 'tu caps', 'ell cap', 'nosaltres cabem', 'vosaltres cabeu', 'ells caben']),
+    ('començar', 'indicatiu', 'present',
+        ['jo començo',  'tu comences', 'ell comença', 'nosaltres comencem', 'vosaltres comenceu', 'ells comencen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
