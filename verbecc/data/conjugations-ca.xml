@@ -642,6 +642,7 @@ About 86 percent of Catalan verbs belong to this group.
 	</Particip>
 </template>
 
+<!-- TODO: This template should inherit from base template "cant:ar"-->
 <template name="comen:çar">
 	<Indicatiu>
 		<present>
@@ -734,6 +735,7 @@ About 86 percent of Catalan verbs belong to this group.
 	</Particip>
 </template>
 
+<!-- TODO: This template should inherit from base template "cant:ar"-->
 <template name="enaig:uar">
 	<Indicatiu>
 		<present>
@@ -822,6 +824,99 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>uada</i></p>
 			<p><i>uats</i></p>
 			<p><i>uades</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: This template should inherit from base template "cant:ar"-->
+<template name="enve:jar">
+	<Indicatiu>
+		<present>
+			<p><i>jo</i></p>
+			<p><i>ges</i></p>
+			<p><i>ja</i></p>
+			<p><i>gem</i></p>
+			<p><i>geu</i></p>
+			<p><i>gen</i></p>
+		</present>
+		<imperfet>
+			<p><i>java</i></p>
+			<p><i>javes</i></p>
+			<p><i>java</i></p>
+			<p><i>jàvem</i></p>
+			<p><i>jàveu</i></p>
+			<p><i>javen</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>gí</i></p>
+			<p><i>jares</i></p>
+			<p><i>jà</i></p>
+			<p><i>jàrem</i></p>
+			<p><i>jàreu</i></p>
+			<p><i>jaren</i></p>
+		</pretèrit> 
+		<futur>
+			<p><i>jaré</i></p>
+			<p><i>jaràs</i></p>
+			<p><i>jarà</i></p>
+			<p><i>jarem</i></p>
+			<p><i>jareu</i></p>
+			<p><i>jaran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>gi</i></p>
+			<p><i>gis</i></p>
+			<p><i>gi</i></p>
+			<p><i>gem</i></p>
+			<p><i>geu</i></p>
+			<p><i>gin</i></p>
+		</present>
+		<imperfet>
+			<p><i>gés</i></p>
+			<p><i>gessis</i></p>
+			<p><i>gés</i></p>
+			<p><i>géssim</i></p>
+			<p><i>géssiu</i></p>
+			<p><i>gessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ja</i></p>
+			<p><i>gi</i></p>
+			<p><i>gem</i></p>
+			<p><i>geu</i></p>
+			<p><i>gin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>jaria</i></p>
+			<p><i>jaries</i></p>
+			<p><i>jaria</i></p>
+			<p><i>jaríem</i></p>
+			<p><i>jaríeu</i></p>
+			<p><i>jarien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>jar</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>jant</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>jat</i></p>
+			<p><i>jada</i></p>
+			<p><i>jats</i></p>
+			<p><i>jades</i></p>
 		</particip>
 	</Particip>
 </template>
