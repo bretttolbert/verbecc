@@ -19,7 +19,7 @@
 - [HTTP API : /verbecc/conjugate/fr/manger](http://verbe.cc/verbecc/conjugate/fr/manger)
 
 ### Features
-* Conjugate verbs in six romance languages: French, Spanish, Portuguese, Italian, Romanian, Catalan (limited-support)
+* Conjugate verbs in six romance languages: French, Spanish, Portuguese, Italian, Romanian, Catalan
 * Uses machine learning techniques to predict conjugation of unknown verbs with 99% accurracy
 * Includes both simple and compound conjugations
 * Unit-tested
