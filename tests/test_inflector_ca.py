@@ -114,7 +114,9 @@ test_ca_conjugate_mood_tense_data = [
     ('collar', 'indicatiu', 'present',
         ['jo collo', 'tu colles', 'ell colla', 'nosaltres collem', 'vosaltres colleu', 'ells collen']),
     ('collir', 'indicatiu', 'present',
-        ['jo cullo', 'tu culls', 'ell cull', 'nosaltres collim', 'vosaltres colliu', 'ells cullen'])
+        ['jo cullo', 'tu culls', 'ell cull', 'nosaltres collim', 'vosaltres colliu', 'ells cullen']),
+    ('dormir', 'indicatiu', 'present',
+        ['jo dormo', 'tu dorms', 'ell dorm', 'nosaltres dormim', 'vosaltres dormiu', 'ells dormen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

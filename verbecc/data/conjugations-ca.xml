@@ -541,6 +541,7 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
+<!-- TODO: Inherit from :dormir -->
 <template name=":collir">
 	<Indicatiu>
 		<present>
@@ -552,12 +553,12 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>cullen</i></p>
 		</present>
 		<imperfet>
-			<p><i>collmia</i></p>
-			<p><i>collmies</i></p>
-			<p><i>collmia</i></p>
-			<p><i>collmiem</i></p>
-			<p><i>collmieu</i></p>
-			<p><i>collmien</i></p>
+			<p><i>collia</i></p>
+			<p><i>collies</i></p>
+			<p><i>collia</i></p>
+			<p><i>collíem</i></p>
+			<p><i>collíeu</i></p>
+			<p><i>collíen</i></p>
 		</imperfet>
 		<pretèrit>
 			<p><i>collí</i></p>
@@ -629,6 +630,98 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>collida</i></p>
 			<p><i>collits</i></p>
 			<p><i>collides</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<template name=":dormir">
+	<Indicatiu>
+		<present>
+			<p><i>dormo</i></p>
+			<p><i>dorms</i></p>
+			<p><i>dorm</i></p>
+			<p><i>dormim</i></p>
+			<p><i>dormiu</i></p>
+			<p><i>dormen</i></p>
+		</present>
+		<imperfet>
+			<p><i>dormia</i></p>
+			<p><i>dormies</i></p>
+			<p><i>dormia</i></p>
+			<p><i>dormíem</i></p>
+			<p><i>dormieu</i></p>
+			<p><i>dormien</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>dormí</i></p>
+			<p><i>dormires</i></p>
+			<p><i>dormí</i></p>
+			<p><i>dormírem</i></p>
+			<p><i>dormíreu</i></p>
+			<p><i>dormiren</i></p>
+		</pretèrit>
+		<futur>
+			<p><i>dormiré</i></p>
+			<p><i>dormiràs</i></p>
+			<p><i>dormirà</i></p>
+			<p><i>dormirem</i></p>
+			<p><i>dormireu</i></p>
+			<p><i>dormiran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>dormi</i></p>
+			<p><i>dormis</i></p>
+			<p><i>dormi</i></p>
+			<p><i>dormim</i></p>
+			<p><i>dormiu</i></p>
+			<p><i>dormin</i></p>
+		</present>
+		<imperfet>
+			<p><i>dormís</i></p>
+			<p><i>dormissis</i></p>
+			<p><i>dormís</i></p>
+			<p><i>dormíssim</i></p>
+			<p><i>dormíssiu</i></p>
+			<p><i>dormissin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>dorm</i></p>
+			<p><i>dormi</i></p>
+			<p><i>dormim</i></p>
+			<p><i>dormiu</i></p>
+			<p><i>dormin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>dormiria</i></p>
+			<p><i>dormiries</i></p>
+			<p><i>dormiria</i></p>
+			<p><i>dormiríem</i></p>
+			<p><i>dormiríeu</i></p>
+			<p><i>dormirien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>dormir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>dormint</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>dormit</i></p>
+			<p><i>dormida</i></p>
+			<p><i>dormits</i></p>
+			<p><i>dormides</i></p>
 		</particip>
 	</Particip>
 </template>
