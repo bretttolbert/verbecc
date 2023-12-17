@@ -1635,7 +1635,7 @@
 <v><i>colgar</i><t>preg:ar</t><en></en></v>
 <v><i>collar</i><t>cant:ar</t><en>collar</en></v>
 <v><i>collejar</i><t>enve:jar</t><en>pick up</en></v>
-<v><i>collir</i><t>:collir</t><en>harvest</en></v>
+<v><i>collir</i><t>c:ollir</t><en>harvest</en></v>
 <v><i>collportar</i><t>cant:ar</t><en>carry</en></v>
 <v><i>colltorçar</i><t>comen:çar</t><en>twist</en></v>
 <v><i>colltrencar</i><t>tren:car</t><en></en></v>
@@ -2422,7 +2422,7 @@
 <v><i>descordar</i><t>cant:ar</t><en></en></v>
 <v><i>descoronar</i><t>cant:ar</t><en></en></v>
 <v><i>descorporar</i><t>cant:ar</t><en></en></v>
-<v><i>descosir</i><t>:dormir</t><en></en></v>
+<v><i>descosir</i><t>dorm:ir</t><en></en></v>
 <v><i>descossar</i><t>cant:ar</t><en></en></v>
 <v><i>descossolar</i><t>cant:ar</t><en></en></v>
 <v><i>descotxar</i><t>cant:ar</t><en></en></v>
@@ -3282,7 +3282,7 @@
 <v><i>donar</i><t>cant:ar</t><en></en></v>
 <v><i>donejar</i><t>enve:jar</t><en></en></v>
 <v><i>dopar</i><t>cant:ar</t><en></en></v>
-<v><i>dormir</i><t>:dormir</t><en>to sleep</en></v>
+<v><i>dormir</i><t>dorm:ir</t><en>to sleep</en></v>
 <v><i>dormisquejar</i><t>enve:jar</t><en></en></v>
 <v><i>dormitar</i><t>cant:ar</t><en></en></v>
 <v><i>dosar</i><t>cant:ar</t><en></en></v>
@@ -3337,7 +3337,7 @@
 <v><i>eixaugar</i><t>preg:ar</t><en></en></v>
 <v><i>eixavuirar</i><t>cant:ar</t><en></en></v>
 <v><i>eixermar</i><t>cant:ar</t><en></en></v>
-<v><i>eixir</i><t>:dormir</t><en></en></v>
+<v><i>eixir</i><t>dorm:ir</t><en></en></v>
 <v><i>eixivernar</i><t>cant:ar</t><en></en></v>
 <v><i>eixobrir</i><t>serv:ir</t><en></en></v>
 <v><i>eixonar</i><t>cant:ar</t><en></en></v>
@@ -4322,7 +4322,7 @@
 <v><i>entrelligar</i><t>preg:ar</t><en></en></v>
 <v><i>entrelligassar</i><t>cant:ar</t><en></en></v>
 <v><i>entrellucar</i><t>tren:car</t><en></en></v>
-<v><i>entrelluir</i><t>:dormir</t><en></en></v>
+<v><i>entrelluir</i><t>dorm:ir</t><en></en></v>
 <v><i>entrelluscar</i><t>tren:car</t><en></en></v>
 <v><i>entremaliejar</i><t>enve:jar</t><en></en></v>
 <v><i>entrematar</i><t>cant:ar</t><en></en></v>
@@ -4672,7 +4672,7 @@
 <v><i>escridar</i><t>cant:ar</t><en></en></v>
 <v><i>escridassar</i><t>cant:ar</t><en></en></v>
 <v><i>escripturar</i><t>cant:ar</t><en></en></v>
-<v><i>escriure</i><t>:dormir</t><en></en></v>
+<v><i>escriure</i><t>dorm:ir</t><en></en></v>
 <v><i>escrostar</i><t>cant:ar</t><en></en></v>
 <v><i>escrostissar</i><t>cant:ar</t><en></en></v>
 <v><i>escrostonar</i><t>cant:ar</t><en></en></v>
@@ -5427,7 +5427,7 @@
 <v><i>frunzir</i><t>serv:ir</t><en></en></v>
 <v><i>frustrar</i><t>cant:ar</t><en></en></v>
 <v><i>fuetejar</i><t>enve:jar</t><en></en></v>
-<v><i>fugir</i><t>:dormir</t><en></en></v>
+<v><i>fugir</i><t>dorm:ir</t><en></en></v>
 <v><i>fulardar</i><t>cant:ar</t><en></en></v>
 <v><i>fulgir</i><t>serv:ir</t><en></en></v>
 <v><i>fulgurar</i><t>cant:ar</t><en></en></v>
@@ -6478,7 +6478,7 @@
 <v><i>obliterar</i><t>cant:ar</t><en></en></v>
 <v><i>obnubilar</i><t>cant:ar</t><en></en></v>
 <v><i>obrar</i><t>cant:ar</t><en></en></v>
-<v><i>obrir</i><t>:dormir</t><en></en></v>
+<v><i>obrir</i><t>dorm:ir</t><en></en></v>
 <v><i>obscurir</i><t>serv:ir</t><en></en></v>
 <v><i>obsedir</i><t>serv:ir</t><en></en></v>
 <v><i>obsequiar</i><t>canvi:ar</t><en></en></v>
@@ -6974,7 +6974,7 @@
 <v><i>preuar</i><t>cant:ar</t><en></en></v>
 <v><i>prevaler</i><t>val:er</t><en></en></v>
 <v><i>prevaricar</i><t>tren:car</t><en></en></v>
-<v><i>prevenir</i><t>:dormir</t><en></en></v>
+<v><i>prevenir</i><t>dorm:ir</t><en></en></v>
 <v><i>preveure</i><t>malv:eure</t><en></en></v>
 <v><i>primejar</i><t>enve:jar</t><en></en></v>
 <v><i>primerejar</i><t>enve:jar</t><en></en></v>
@@ -7052,7 +7052,7 @@
 <v><i>psicoanalitzar</i><t>cant:ar</t><en></en></v>
 <v><i>publicar</i><t>tren:car</t><en></en></v>
 <v><i>pudelar</i><t>cant:ar</t><en></en></v>
-<v><i>pudir</i><t>:dormir</t><en></en></v>
+<v><i>pudir</i><t>dorm:ir</t><en></en></v>
 <v><i>pugnar</i><t>cant:ar</t><en></en></v>
 <v><i>pujar</i><t>enve:jar</t><en></en></v>
 <v><i>pullejar</i><t>enve:jar</t><en></en></v>
@@ -8012,7 +8012,7 @@
 <v><i>sorregar</i><t>preg:ar</t><en></en></v>
 <v><i>sorrejar</i><t>enve:jar</t><en></en></v>
 <v><i>sortejar</i><t>enve:jar</t><en></en></v>
-<v><i>sortir</i><t>:collir</t><en></en></v>
+<v><i>sortir</i><t>c:ollir</t><en></en></v>
 <v><i>soscavar</i><t>cant:ar</t><en></en></v>
 <v><i>sospedrar</i><t>cant:ar</t><en></en></v>
 <v><i>sospesar</i><t>cant:ar</t><en></en></v>
@@ -8268,7 +8268,7 @@
 <v><i>tosquejar</i><t>enve:jar</t><en></en></v>
 <v><i>tosquirar</i><t>cant:ar</t><en></en></v>
 <v><i>tossar</i><t>cant:ar</t><en></en></v>
-<v><i>tossir</i><t>:descosir</t><en></en></v>
+<v><i>tossir</i><t>t:ossir</t><en>cough</en></v>
 <v><i>totalitzar</i><t>cant:ar</t><en></en></v>
 <v><i>trabocar</i><t>tren:car</t><en></en></v>
 <v><i>trabucar</i><t>tren:car</t><en></en></v>

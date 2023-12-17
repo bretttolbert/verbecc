@@ -541,187 +541,294 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
-<!-- TODO: Inherit from :dormir -->
-<template name=":collir">
+<!-- TODO: Inherit from :dormir 
+
+collir and tossir are both based on 'dorm:ir'
+Except the 'o' becomes 'u' in the present tense (both indicatiu and subjuntiu)
+and in the imperative tense
+except in the first and second person plural.
+
+-->
+<template name="c:ollir">
 	<Indicatiu>
 		<present>
-			<p><i>cullo</i></p>
-			<p><i>culls</i></p>
-			<p><i>cull</i></p>
-			<p><i>collim</i></p>
-			<p><i>colliu</i></p>
-			<p><i>cullen</i></p>
+			<p><i>ullo</i></p>
+			<p><i>ulls</i></p>
+			<p><i>ull</i></p>
+			<p><i>ollim</i></p>
+			<p><i>olliu</i></p>
+			<p><i>ullen</i></p>
 		</present>
 		<imperfet>
-			<p><i>collia</i></p>
-			<p><i>collies</i></p>
-			<p><i>collia</i></p>
-			<p><i>collíem</i></p>
-			<p><i>collíeu</i></p>
-			<p><i>collíen</i></p>
+			<p><i>ollia</i></p>
+			<p><i>ollies</i></p>
+			<p><i>ollia</i></p>
+			<p><i>ollíem</i></p>
+			<p><i>ollíeu</i></p>
+			<p><i>ollíen</i></p>
 		</imperfet>
 		<pretèrit>
-			<p><i>collí</i></p>
-			<p><i>collires</i></p>
-			<p><i>collí</i></p>
-			<p><i>collírem</i></p>
-			<p><i>collíreu</i></p>
-			<p><i>colliren</i></p>
+			<p><i>ollí</i></p>
+			<p><i>ollires</i></p>
+			<p><i>ollí</i></p>
+			<p><i>ollírem</i></p>
+			<p><i>ollíreu</i></p>
+			<p><i>olliren</i></p>
 		</pretèrit>
 		<futur>
-			<p><i>colliré</i></p>
-			<p><i>colliràs</i></p>
-			<p><i>collirà</i></p>
-			<p><i>collirem</i></p>
-			<p><i>collireu</i></p>
-			<p><i>colliran</i></p>
+			<p><i>olliré</i></p>
+			<p><i>olliràs</i></p>
+			<p><i>ollirà</i></p>
+			<p><i>ollirem</i></p>
+			<p><i>ollireu</i></p>
+			<p><i>olliran</i></p>
 		</futur>
 		</Indicatiu>
 	<Subjuntiu>
 		<present>
-			<p><i>colli</i></p>
-			<p><i>collis</i></p>
-			<p><i>colli</i></p>
-			<p><i>collim</i></p>
-			<p><i>colliu</i></p>
-			<p><i>collin</i></p>
+			<p><i>ulli</i></p>
+			<p><i>ullis</i></p>
+			<p><i>ulli</i></p>
+			<p><i>ollim</i></p>
+			<p><i>olliu</i></p>
+			<p><i>ullin</i></p>
 		</present>
 		<imperfet>
-			<p><i>collís</i></p>
-			<p><i>collissis</i></p>
-			<p><i>collís</i></p>
-			<p><i>collíssim</i></p>
-			<p><i>collíssiu</i></p>
-			<p><i>collissin</i></p>
+			<p><i>ollís</i></p>
+			<p><i>ollissis</i></p>
+			<p><i>ollís</i></p>
+			<p><i>ollíssim</i></p>
+			<p><i>ollíssiu</i></p>
+			<p><i>ollissin</i></p>
 		</imperfet>
 	</Subjuntiu>
 	<Imperatiu>
 		<imperatiu-present>
-			<p><i>coll</i></p>
-			<p><i>colli</i></p>
-			<p><i>collim</i></p>
-			<p><i>colliu</i></p>
-			<p><i>collin</i></p>
+			<p><i>ull</i></p>
+			<p><i>ulli</i></p>
+			<p><i>ollim</i></p>
+			<p><i>olliu</i></p>
+			<p><i>ullin</i></p>
 		</imperatiu-present>
 	</Imperatiu>
 	<Condicional>
 		<present>
-			<p><i>colliria</i></p>
-			<p><i>colliries</i></p>
-			<p><i>colliria</i></p>
-			<p><i>colliríem</i></p>
-			<p><i>colliríeu</i></p>
-			<p><i>collirien</i></p>
+			<p><i>olliria</i></p>
+			<p><i>olliries</i></p>
+			<p><i>olliria</i></p>
+			<p><i>olliríem</i></p>
+			<p><i>olliríeu</i></p>
+			<p><i>ollirien</i></p>
 		</present>
 		</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>collir</i></p>
+			<p><i>ollir</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>collint</i></p>
+			<p><i>ollint</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>collit</i></p>
-			<p><i>collida</i></p>
-			<p><i>collits</i></p>
-			<p><i>collides</i></p>
+			<p><i>ollit</i></p>
+			<p><i>ollida</i></p>
+			<p><i>ollits</i></p>
+			<p><i>ollides</i></p>
 		</particip>
 	</Particip>
 </template>
 
-<template name=":dormir">
+<!-- TODO: Inherit from 'dorm:ir'
+
+collir and tossir are both based on 'dorm:ir'
+Except the 'o' becomes 'u' in the present tense (both indicatiu and subjuntiu)
+and in the imperative tense
+except in the first and second person plural.
+
+-->
+<template name="t:ossir">
 	<Indicatiu>
 		<present>
-			<p><i>dormo</i></p>
-			<p><i>dorms</i></p>
-			<p><i>dorm</i></p>
-			<p><i>dormim</i></p>
-			<p><i>dormiu</i></p>
-			<p><i>dormen</i></p>
+			<p><i>usso</i></p>
+			<p><i>usses</i></p>
+			<p><i>us</i></p>
+			<p><i>ossim</i></p>
+			<p><i>ossiu</i></p>
+			<p><i>ussen</i></p>
 		</present>
 		<imperfet>
-			<p><i>dormia</i></p>
-			<p><i>dormies</i></p>
-			<p><i>dormia</i></p>
-			<p><i>dormíem</i></p>
-			<p><i>dormieu</i></p>
-			<p><i>dormien</i></p>
+			<p><i>ossia</i></p>
+			<p><i>ossies</i></p>
+			<p><i>ossia</i></p>
+			<p><i>ossíem</i></p>
+			<p><i>ossíeu</i></p>
+			<p><i>ossíen</i></p>
 		</imperfet>
 		<pretèrit>
-			<p><i>dormí</i></p>
-			<p><i>dormires</i></p>
-			<p><i>dormí</i></p>
-			<p><i>dormírem</i></p>
-			<p><i>dormíreu</i></p>
-			<p><i>dormiren</i></p>
+			<p><i>ossí</i></p>
+			<p><i>ossires</i></p>
+			<p><i>ossí</i></p>
+			<p><i>ossírem</i></p>
+			<p><i>ossíreu</i></p>
+			<p><i>ossiren</i></p>
 		</pretèrit>
 		<futur>
-			<p><i>dormiré</i></p>
-			<p><i>dormiràs</i></p>
-			<p><i>dormirà</i></p>
-			<p><i>dormirem</i></p>
-			<p><i>dormireu</i></p>
-			<p><i>dormiran</i></p>
+			<p><i>ossiré</i></p>
+			<p><i>ossiràs</i></p>
+			<p><i>ossirà</i></p>
+			<p><i>ossirem</i></p>
+			<p><i>ossireu</i></p>
+			<p><i>ossiran</i></p>
 		</futur>
 		</Indicatiu>
 	<Subjuntiu>
 		<present>
-			<p><i>dormi</i></p>
-			<p><i>dormis</i></p>
-			<p><i>dormi</i></p>
-			<p><i>dormim</i></p>
-			<p><i>dormiu</i></p>
-			<p><i>dormin</i></p>
+			<p><i>ussi</i></p>
+			<p><i>ussis</i></p>
+			<p><i>ussi</i></p>
+			<p><i>ossim</i></p>
+			<p><i>ossiu</i></p>
+			<p><i>ussin</i></p>
 		</present>
 		<imperfet>
-			<p><i>dormís</i></p>
-			<p><i>dormissis</i></p>
-			<p><i>dormís</i></p>
-			<p><i>dormíssim</i></p>
-			<p><i>dormíssiu</i></p>
-			<p><i>dormissin</i></p>
+			<p><i>ossís</i></p>
+			<p><i>ossissis</i></p>
+			<p><i>ossís</i></p>
+			<p><i>ossíssim</i></p>
+			<p><i>ossíssiu</i></p>
+			<p><i>ossissin</i></p>
 		</imperfet>
 	</Subjuntiu>
 	<Imperatiu>
 		<imperatiu-present>
-			<p><i>dorm</i></p>
-			<p><i>dormi</i></p>
-			<p><i>dormim</i></p>
-			<p><i>dormiu</i></p>
-			<p><i>dormin</i></p>
+			<p><i>uss</i></p>
+			<p><i>ussi</i></p>
+			<p><i>ossim</i></p>
+			<p><i>ossiu</i></p>
+			<p><i>ussin</i></p>
 		</imperatiu-present>
 	</Imperatiu>
 	<Condicional>
 		<present>
-			<p><i>dormiria</i></p>
-			<p><i>dormiries</i></p>
-			<p><i>dormiria</i></p>
-			<p><i>dormiríem</i></p>
-			<p><i>dormiríeu</i></p>
-			<p><i>dormirien</i></p>
+			<p><i>ossiria</i></p>
+			<p><i>ossiries</i></p>
+			<p><i>ossiria</i></p>
+			<p><i>ossiríem</i></p>
+			<p><i>ossiríeu</i></p>
+			<p><i>ossirien</i></p>
 		</present>
 		</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>dormir</i></p>
+			<p><i>ossir</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>dormint</i></p>
+			<p><i>ossint</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>dormit</i></p>
-			<p><i>dormida</i></p>
-			<p><i>dormits</i></p>
-			<p><i>dormides</i></p>
+			<p><i>ossit</i></p>
+			<p><i>ossida</i></p>
+			<p><i>ossits</i></p>
+			<p><i>ossides</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<template name="dorm:ir">
+	<Indicatiu>
+		<present>
+			<p><i>o</i></p>
+			<p><i>s</i></p>
+			<p><i></i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>en</i></p>
+		</present>
+		<imperfet>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>ieu</i></p>
+			<p><i>ien</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>í</i></p>
+			<p><i>ires</i></p>
+			<p><i>í</i></p>
+			<p><i>írem</i></p>
+			<p><i>íreu</i></p>
+			<p><i>iren</i></p>
+		</pretèrit>
+		<futur>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>i</i></p>
+			<p><i>is</i></p>
+			<p><i>i</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>in</i></p>
+		</present>
+		<imperfet>
+			<p><i>ís</i></p>
+			<p><i>issis</i></p>
+			<p><i>ís</i></p>
+			<p><i>íssim</i></p>
+			<p><i>íssiu</i></p>
+			<p><i>issin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i></i></p>
+			<p><i>i</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>in</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>int</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>it</i></p>
+			<p><i>ida</i></p>
+			<p><i>its</i></p>
+			<p><i>ides</i></p>
 		</particip>
 	</Particip>
 </template>
