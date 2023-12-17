@@ -357,6 +357,7 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
+<!-- TODO: This should inherit from cantar -->
 <template name=":anar">
 	<Indicatiu>
 		<present>
@@ -629,6 +630,99 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: This should inherit from 'perd:re' as 'pod:er' -->
+<template name=":poder">
+	<Indicatiu>
+		<present>
+			<p><i>puc</i></p>
+			<p><i>pots</i></p>
+			<p><i>pot</i></p>
+			<p><i>podem</i></p>
+			<p><i>podeu</i></p>
+			<p><i>poden</i></p>
+		</present>
+		<imperfet>
+			<p><i>podia</i></p>
+			<p><i>podies</i></p>
+			<p><i>podia</i></p>
+			<p><i>podíem</i></p>
+			<p><i>podíeu</i></p>
+			<p><i>podien</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>poguí</i></p>
+			<p><i>pogueres</i></p>
+			<p><i>pogué</i></p>
+			<p><i>poguérem</i></p>
+			<p><i>poguéreu</i></p>
+			<p><i>pogueren</i></p>
+		</pretèrit>
+		<futur>
+			<p><i>podré</i></p>
+			<p><i>podràs</i></p>
+			<p><i>podrà</i></p>
+			<p><i>podrem</i></p>
+			<p><i>podreu</i></p>
+			<p><i>podran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>pugui</i></p>
+			<p><i>puguis</i></p>
+			<p><i>pugui</i></p>
+			<p><i>puguem</i></p>
+			<p><i>pugueu</i></p>
+			<p><i>puguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>pogués</i></p>
+			<p><i>poguessis</i></p>
+			<p><i>pogués</i></p>
+			<p><i>poguéssim</i></p>
+			<p><i>poguéssiu</i></p>
+			<p><i>poguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>pugues</i></p>
+			<p><i>pugui</i></p>
+			<p><i>puguem</i></p>
+			<p><i>pugueu</i></p>
+			<p><i>puguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>podria</i></p>
+			<p><i>podries</i></p>
+			<p><i>poderria</i></p>
+			<p><i>podríem</i></p>
+			<p><i>podríeu</i></p>
+			<p><i>podrien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>poder</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>podent</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>pogut</i></p>
+			<p><i>poguda</i></p>
+			<p><i>poguts</i></p>
+			<p><i>pogudes</i></p>
 		</particip>
 	</Particip>
 </template>
