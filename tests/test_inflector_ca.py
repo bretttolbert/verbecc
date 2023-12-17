@@ -8,6 +8,7 @@ from verbecc.tense_template import TenseTemplate
 
 cg = Conjugator(lang='ca')
 
+# TODO: Fix all of these missing templates
 @pytest.mark.skip("known failure")
 def test_all_verbs_have_templates():
     """Have not finished adding templates for all verbs, so this should fail"""
@@ -140,7 +141,11 @@ test_ca_conjugate_mood_tense_data = [
     ('morir', 'indicatiu', 'present',
         ['jo moro', 'tu mors', 'ell mor', 'nosaltres morim', 'vosaltres moriu', 'ells moren']),
     ('eixir', 'indicatiu', 'present',
-        ['jo ixo', 'tu ixes', 'ell ix', 'nosaltres eixim', 'vosaltres eixiu', 'ells ixen'])
+        ['jo ixo', 'tu ixes', 'ell ix', 'nosaltres eixim', 'vosaltres eixiu', 'ells ixen']),
+    ('jaure', 'indicatiu', 'present',
+        ['jo jec', 'tu jeus', 'ell jeu', 'nosaltres jaiem', 'vosaltres jaieu', 'ells jeuen']),
+    ('jeure', 'indicatiu', 'present',
+        ['jo jec', 'tu jeus', 'ell jeu', 'nosaltres jaiem', 'vosaltres jaieu', 'ells jeuen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",

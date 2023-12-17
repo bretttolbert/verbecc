@@ -70,10 +70,20 @@ class Inflector(ABC):
     def _get_verb_stem(self, infinitive, template_name):
         template_beg, template_ending = template_name.split(u':')
         if not infinitive.endswith(template_ending):
-            raise exceptions.ConjugatorError(
-                "Template {} ending doesn't "
-                "match infinitive {}"
-                .format(template_name, infinitive))
+            # Used to raise exception here immediately, but for Catalan, some verbs
+            # have endings where at least the first letter doesn't match.
+            # E.g. ConjugatorError: Template j:aure ending doesn't match infinitive jeure
+            # Problem: in Catalan both 'jaure' and and 'jeure' are apparently conjugated
+            # identically, so we want either one to use the 'j:aure' template.
+            # So if Catalan, let it pass if the last n-1 letters of the template_ending 
+            # match the infinitive ending
+            if self.lang == 'ca' and infinitive.endswith(template_ending[1:]):
+                pass
+            else:
+                raise exceptions.ConjugatorError(
+                    "Template {} ending doesn't "
+                    "match infinitive {}"
+                    .format(template_name, infinitive))
         return infinitive[:len(infinitive) - len(template_ending)]
 
     def _is_impersonal_verb(self, infinitive):
