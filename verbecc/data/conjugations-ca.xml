@@ -265,7 +265,6 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
-<!-- TODO: See if this can be replaced with "perd:re" -->
 <template name="re:bre">
 	<Indicatiu>
 		<present>
@@ -350,10 +349,10 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>but</i></p> <!-- m participle, alt m participle? -->
-			<p><i>buda</i></p> <!-- f participle, alt f participle? -->
-			<p><i>buts</i></p> <!-- pm participle, alt pm participle? -->
-			<p><i>budes</i></p> <!-- pf participle, alt pf participle? -->
+			<p><i>but</i></p>
+			<p><i>buda</i></p>
+			<p><i>buts</i></p>
+			<p><i>budes</i></p>
 		</particip>
 	</Particip>
 </template>
@@ -446,6 +445,98 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<template name=":caure">
+	<Indicatiu>
+		<present>
+			<p><i>caic</i></p>
+			<p><i>caus</i></p>
+			<p><i>cau</i></p>
+			<p><i>caiem</i></p>
+			<p><i>caieu</i></p>
+			<p><i>cauen</i></p>
+		</present>
+		<imperfet>
+			<p><i>queia</i></p>
+			<p><i>queies</i></p>
+			<p><i>queia</i></p>
+			<p><i>quèiem</i></p>
+			<p><i>quèieu</i></p>
+			<p><i>queien</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>caiguí</i></p>
+			<p><i>caigueres</i></p>
+			<p><i>caigué</i></p>
+			<p><i>caiguérem</i></p>
+			<p><i>caiguéreu</i></p>
+			<p><i>caigueren</i></p>
+		</pretèrit>
+		<futur>
+			<p><i>cauré</i></p>
+			<p><i>cauràs</i></p>
+			<p><i>caurà</i></p>
+			<p><i>caurem</i></p>
+			<p><i>caureu</i></p>
+			<p><i>cauran</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>caigui</i></p>
+			<p><i>caiguis</i></p>
+			<p><i>caigui</i></p>
+			<p><i>caiguem</i></p>
+			<p><i>caigueu</i></p>
+			<p><i>caiguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>caigués</i></p>
+			<p><i>caiguessis</i></p>
+			<p><i>caigués</i></p>
+			<p><i>caiguéssim</i></p>
+			<p><i>caiguéssiu</i></p>
+			<p><i>caiguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>cau</i></p>
+			<p><i>caigui</i></p>
+			<p><i>caiguem</i></p>
+			<p><i>caieu</i></p>
+			<p><i>caiguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>cauria</i></p>
+			<p><i>cauries</i></p>
+			<p><i>cauria</i></p>
+			<p><i>cauríem</i></p>
+			<p><i>cauríeu</i></p>
+			<p><i>caurien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>caure</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>caient</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>caigut</i></p>
+			<p><i>caiguda</i></p>
+			<p><i>caiguts</i></p>
+			<p><i>caigudes</i></p>
 		</particip>
 	</Particip>
 </template>

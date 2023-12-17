@@ -108,7 +108,9 @@ test_ca_conjugate_mood_tense_data = [
     ('trencar', 'indicatiu', 'present',
         ['jo trenco', 'tu trenques', 'ell trenca', 'nosaltres trenquem', 'vosaltres trenqueu', 'ells trenquen']),
     ('perdre', 'indicatiu', 'present',
-        ['jo perdo', 'tu perds', 'ell perd', 'nosaltres perdem', 'vosaltres perdeu', 'ells perden'])
+        ['jo perdo', 'tu perds', 'ell perd', 'nosaltres perdem', 'vosaltres perdeu', 'ells perden']),
+    ('caure', 'indicatiu', 'present',
+        ['jo caic', 'tu caus', 'ell cau', 'nosaltres caiem', 'vosaltres caieu', 'ells cauen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
