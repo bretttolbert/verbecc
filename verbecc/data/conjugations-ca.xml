@@ -265,6 +265,7 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
+<!-- TODO: See if this can be replaced with "perd:re" -->
 <template name="re:bre">
 	<Indicatiu>
 		<present>
@@ -353,6 +354,98 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>buda</i></p> <!-- f participle, alt f participle? -->
 			<p><i>buts</i></p> <!-- pm participle, alt pm participle? -->
 			<p><i>budes</i></p> <!-- pf participle, alt pf participle? -->
+		</particip>
+	</Particip>
+</template>
+
+<template name="perd:re">
+	<Indicatiu>
+		<present>
+			<p><i>o</i></p>
+			<p><i>s</i></p>
+			<p><i></i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>en</i></p>
+		</present>
+		<imperfet>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>íeu</i></p>
+			<p><i>ien</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>í</i></p>
+			<p><i>eres</i></p>
+			<p><i>é</i></p>
+			<p><i>érem</i></p>
+			<p><i>éreu</i></p>
+			<p><i>eren</i></p>
+		</pretèrit>
+		<futur>
+			<p><i>é</i></p>
+			<p><i>às</i></p>
+			<p><i>à</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>an</i></p>
+		</futur>
+		</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>i</i></p>
+			<p><i>is</i></p>
+			<p><i>i</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>in</i></p>
+		</present>
+		<imperfet>
+			<p><i>és</i></p>
+			<p><i>essis</i></p>
+			<p><i>és</i></p>
+			<p><i>éssim</i></p>
+			<p><i>éssiu</i></p>
+			<p><i>essin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i></i></p>
+			<p><i>i</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>in</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>ria</i></p>
+			<p><i>ries</i></p>
+			<p><i>ria</i></p>
+			<p><i>ríem</i></p>
+			<p><i>ríeu</i></p>
+			<p><i>rien</i></p>
+		</present>
+		</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>re</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>ent</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>ut</i></p>
+			<p><i>uda</i></p>
+			<p><i>uts</i></p>
+			<p><i>udes</i></p>
 		</particip>
 	</Particip>
 </template>
