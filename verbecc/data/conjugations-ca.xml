@@ -26,7 +26,7 @@
 <!ATTLIST conjugation-ca xmlns CDATA #FIXED "">
 <!ELEMENT template (Indicatiu , Subjuntiu , Imperatiu , (Condicional , Infinitiu , Gerundi , Particip)?)>
 <!ATTLIST template name NMTOKEN #REQUIRED>
-<!ELEMENT Indicatiu (present , imperfet , pretèrit , futur)?>
+<!ELEMENT Indicatiu (present , imperfet , passat-simple , futur)?>
 <!ELEMENT Subjuntiu (present , imperfet)?>
 <!ELEMENT Imperatiu (imperatiu-present)>
 <!ELEMENT Condicional (present)>
@@ -35,7 +35,7 @@
 <!ELEMENT Particip (particip)>
 <!ELEMENT present (p , p , p , p , p , p)>
 <!ELEMENT imperfet (p , p , p , p , p , p)>
-<!ELEMENT pretèrit (p , p , p , p , p , p)>
+<!ELEMENT passat-simple (p , p , p , p , p , p)>
 <!ELEMENT futur (p , p , p , p , p , p)>
 <!ELEMENT imperatiu-present (p , p , p , p , p)>
 <!ELEMENT infinitiu-present (p)+>
@@ -89,14 +89,14 @@ nosotros habláramos, nosotros hablásemos = nosaltres parléssim, nosaltres par
 			<p><i>èieu</i></p>
 			<p><i>eien</i></p>
 		</imperfet>
-		<pretèrit> <!-- Preterite (Indicative Past) aka Passé simple -->
+		<passat-simple> <!-- Preterite (Indicative Past) aka Passé simple -->
 			<p><i>iu</i></p>
 			<p><i>eieres</i><i>eres</i></p>
 			<p><i>eié</i><i>eu</i></p>
 			<p><i>eiérem</i><i>érem</i></p>
 			<p><i>eiéreu</i><i>éreu</i></p>
 			<p><i>eieren</i><i>eren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>euré</i></p>
 			<p><i>euràs</i></p>
@@ -188,14 +188,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>éreu</i></p>
 			<p><i>eren</i></p>
 		</imperfet>
-		<pretèrit> <!-- Preterite (Indicative Past) aka Passé simple -->
+		<passat-simple> <!-- Preterite (Indicative Past) aka Passé simple -->
 			<p><i>fui</i></p>
 			<p><i>fores</i></p>
 			<p><i>fou</i></p>
 			<p><i>fórem</i></p>
 			<p><i>fóreu</i></p>
 			<p><i>foren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>seré</i></p>
 			<p><i>seràs</i></p>
@@ -283,14 +283,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>dèieu</i></p>
 			<p><i>deien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>diguí</i></p>
 			<p><i>digueres</i></p>
 			<p><i>digué</i></p>
 			<p><i>diguérem</i></p>
 			<p><i>diguéreu</i></p>
 			<p><i>digueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>diré</i></p>
 			<p><i>diràs</i></p>
@@ -376,14 +376,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>anàveu</i></p>
 			<p><i>anaven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>aní</i></p>
 			<p><i>anares</i></p>
 			<p><i>anà</i></p>
 			<p><i>anàrem</i></p>
 			<p><i>anàreu</i></p>
 			<p><i>anaren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>aniré</i></p>
 			<p><i>aniràs</i></p>
@@ -468,14 +468,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>bíeu</i></p>
 			<p><i>bien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>bí</i></p>
 			<p><i>beres</i></p>
 			<p><i>bé</i></p>
 			<p><i>bérem</i></p>
 			<p><i>béreu</i></p>
 			<p><i>beren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>bré</i></p>
 			<p><i>bràs</i></p>
@@ -560,14 +560,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>íeu</i></p>
 			<p><i>ien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>í</i></p>
 			<p><i>eres</i></p>
 			<p><i>é</i></p>
 			<p><i>érem</i></p>
 			<p><i>éreu</i></p>
 			<p><i>eren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>é</i></p>
 			<p><i>às</i></p>
@@ -653,14 +653,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>podíeu</i></p>
 			<p><i>podien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>poguí</i></p>
 			<p><i>pogueres</i></p>
 			<p><i>pogué</i></p>
 			<p><i>poguérem</i></p>
 			<p><i>poguéreu</i></p>
 			<p><i>pogueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>podré</i></p>
 			<p><i>podràs</i></p>
@@ -745,14 +745,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>quèieu</i></p>
 			<p><i>queien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>caiguí</i></p>
 			<p><i>caigueres</i></p>
 			<p><i>caigué</i></p>
 			<p><i>caiguérem</i></p>
 			<p><i>caiguéreu</i></p>
 			<p><i>caigueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>cauré</i></p>
 			<p><i>cauràs</i></p>
@@ -845,14 +845,14 @@ except in the first and second person plural.
 			<p><i>ollíeu</i></p>
 			<p><i>ollíen</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>ollí</i></p>
 			<p><i>ollires</i></p>
 			<p><i>ollí</i></p>
 			<p><i>ollírem</i></p>
 			<p><i>ollíreu</i></p>
 			<p><i>olliren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>olliré</i></p>
 			<p><i>olliràs</i></p>
@@ -945,14 +945,14 @@ except in the first and second person plural.
 			<p><i>ossíeu</i></p>
 			<p><i>ossíen</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>ossí</i></p>
 			<p><i>ossires</i></p>
 			<p><i>ossí</i></p>
 			<p><i>ossírem</i></p>
 			<p><i>ossíreu</i></p>
 			<p><i>ossiren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>ossiré</i></p>
 			<p><i>ossiràs</i></p>
@@ -1037,14 +1037,14 @@ except in the first and second person plural.
 			<p><i>ieu</i></p>
 			<p><i>ien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>í</i></p>
 			<p><i>ires</i></p>
 			<p><i>í</i></p>
 			<p><i>írem</i></p>
 			<p><i>íreu</i></p>
 			<p><i>iren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>iré</i></p>
 			<p><i>iràs</i></p>
@@ -1130,14 +1130,14 @@ except in the first and second person plural.
 			<p><i>eixieu</i></p>
 			<p><i>eixien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>eixí</i></p>
 			<p><i>eixires</i></p>
 			<p><i>eixí</i></p>
 			<p><i>eixírem</i></p>
 			<p><i>eixíreu</i></p>
 			<p><i>eixiren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>eixiré</i></p>
 			<p><i>eixiràs</i></p>
@@ -1222,14 +1222,14 @@ except in the first and second person plural.
 			<p><i>èieu</i></p>
 			<p><i>eien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>iu</i></p>
 			<p><i>eres</i></p>
 			<p><i>eu</i></p>
 			<p><i>érem</i></p>
 			<p><i>éreu</i></p>
 			<p><i>eren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>aré</i></p>
 			<p><i>aràs</i></p>
@@ -1314,14 +1314,14 @@ except in the first and second person plural.
 			<p><i>àveu</i></p>
 			<p><i>aven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>iguí</i></p>
 			<p><i>igueres</i></p>
 			<p><i>igué</i></p>
 			<p><i>iguérem</i></p>
 			<p><i>iguéreu</i></p>
 			<p><i>igueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>aré</i></p>
 			<p><i>aràs</i></p>
@@ -1415,14 +1415,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>àveu</i></p>
 			<p><i>aven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>í</i></p>
 			<p><i>ares</i></p>
 			<p><i>à</i></p>
 			<p><i>àrem</i></p>
 			<p><i>àreu</i></p>
 			<p><i>aren</i></p>
-		</pretèrit> 
+		</passat-simple> 
 		<futur>
 			<p><i>aré</i></p>
 			<p><i>aràs</i></p>
@@ -1508,14 +1508,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>çàveu</i></p>
 			<p><i>çaven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>cí</i></p>
 			<p><i>çares</i></p>
 			<p><i>çà</i></p>
 			<p><i>çàrem</i></p>
 			<p><i>çàreu</i></p>
 			<p><i>çaren</i></p>
-		</pretèrit> 
+		</passat-simple> 
 		<futur>
 			<p><i>çaré</i></p>
 			<p><i>çaràs</i></p>
@@ -1601,14 +1601,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>uàveu</i></p>
 			<p><i>uaven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>üí</i></p>
 			<p><i>uares</i></p>
 			<p><i>uà</i></p>
 			<p><i>uàrem</i></p>
 			<p><i>uàreu</i></p>
 			<p><i>uaren</i></p>
-		</pretèrit> 
+		</passat-simple> 
 		<futur>
 			<p><i>uaré</i></p>
 			<p><i>uaràs</i></p>
@@ -1694,14 +1694,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>jàveu</i></p>
 			<p><i>javen</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>gí</i></p>
 			<p><i>jares</i></p>
 			<p><i>jà</i></p>
 			<p><i>jàrem</i></p>
 			<p><i>jàreu</i></p>
 			<p><i>jaren</i></p>
-		</pretèrit> 
+		</passat-simple> 
 		<futur>
 			<p><i>jaré</i></p>
 			<p><i>jaràs</i></p>
@@ -1787,14 +1787,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>càveu</i></p>
 			<p><i>caven</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>quí</i></p>
 			<p><i>cares</i></p>
 			<p><i>cà</i></p>
 			<p><i>càrem</i></p>
 			<p><i>càreu</i></p>
 			<p><i>caren</i></p>
-		</pretèrit> 
+		</passat-simple> 
 		<futur>
 			<p><i>caré</i></p>
 			<p><i>caràs</i></p>
@@ -1883,14 +1883,14 @@ so Catalan 'haver' should use 'h:aver'
 			<p><i>avíeu</i></p>
 			<p><i>avien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>aguí</i></p>
 			<p><i>agueres</i></p>
 			<p><i>agué</i></p>
 			<p><i>aguérem</i></p>
 			<p><i>aguéreu</i></p>
 			<p><i>agueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>auré</i></p>
 			<p><i>auràs</i></p>
@@ -1979,14 +1979,14 @@ so Catalan 'tenir' should use 't:enir'
 			<p><i>eníeu</i></p>
 			<p><i>enien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>inguí</i></p>
 			<p><i>ingueres</i></p>
 			<p><i>ingué</i></p>
 			<p><i>inguérem</i></p>
 			<p><i>inguéreu</i></p>
 			<p><i>ingueren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>indré</i></p>
 			<p><i>indràs</i></p>
@@ -2076,14 +2076,14 @@ This is the second-largest group of regular verbs in the Catalan language
 			<p><i>íeu</i></p>
 			<p><i>ien</i></p>
 		</imperfet>
-		<pretèrit>
+		<passat-simple>
 			<p><i>í</i></p>
 			<p><i>es</i></p>
 			<p><i>í</i></p>
 			<p><i>írem</i></p>
 			<p><i>íreu</i></p>
 			<p><i>iren</i></p>
-		</pretèrit>
+		</passat-simple>
 		<futur>
 			<p><i>iré</i></p>
 			<p><i>iràs</i></p>

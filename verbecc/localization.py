@@ -80,10 +80,11 @@ TENSE_MAP = {
         'pt': 'pretérito-imperfeito'
     },
     'simple-past': {
-        'ca': 'pretèrit',
+        'ca': 'passat-simple',
         'es': 'pretérito-perfecto-simple',
         'fr': 'passé-simple',
-        'it': 'passato-remoto',
+        'it': 'passato-remoto', # The passato prossimo (compound tense) is roughly equivalent to the present perfect and past simple tenses
+                                  # however passato-remoto is the literal simple past tense e.g. 'io fui, tu fosti, lui fu, noi fummo',
         'pt': 'pretérito-perfeito',
         'ro': 'perfect-simplu'
     },
