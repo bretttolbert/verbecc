@@ -672,7 +672,7 @@
 <v><i>apedregar</i><t>preg:ar</t><en></en></v>
 <v><i>apegar</i><t>preg:ar</t><en></en></v>
 <v><i>apeixar</i><t>cant:ar</t><en></en></v>
-<v><i>apeixir</i><t>serv:ir</t><en></en></v>
+<v><i>apeixir</i><t>:eixir</t><en></en></v>
 <v><i>apelfar</i><t>cant:ar</t><en></en></v>
 <v><i>apellar</i><t>cant:ar</t><en></en></v>
 <v><i>apel·lar</i><t>cant:ar</t><en></en></v>
@@ -3082,7 +3082,7 @@
 <v><i>destapiar</i><t>canvi:ar</t><en></en></v>
 <v><i>destarotar</i><t>cant:ar</t><en></en></v>
 <v><i>desteixinar</i><t>cant:ar</t><en></en></v>
-<v><i>desteixir</i><t>serv:ir</t><en></en></v>
+<v><i>desteixir</i><t>:eixir</t><en></en></v>
 <v><i>destemprar</i><t>cant:ar</t><en></en></v>
 <v><i>destemptar</i><t>cant:ar</t><en></en></v>
 <v><i>destensar</i><t>cant:ar</t><en></en></v>
@@ -3337,7 +3337,7 @@
 <v><i>eixaugar</i><t>preg:ar</t><en></en></v>
 <v><i>eixavuirar</i><t>cant:ar</t><en></en></v>
 <v><i>eixermar</i><t>cant:ar</t><en></en></v>
-<v><i>eixir</i><t>dorm:ir</t><en></en></v>
+<v><i>eixir</i><t>:eixir</t><en>go out</en></v>
 <v><i>eixivernar</i><t>cant:ar</t><en></en></v>
 <v><i>eixobrir</i><t>serv:ir</t><en></en></v>
 <v><i>eixonar</i><t>cant:ar</t><en></en></v>
@@ -4345,7 +4345,7 @@
 <v><i>entresuar</i><t>evacu:ar</t><en></en></v>
 <v><i>entretallar</i><t>cant:ar</t><en></en></v>
 <v><i>entretancar</i><t>tren:car</t><en></en></v>
-<v><i>entreteixir</i><t>serv:ir</t><en></en></v>
+<v><i>entreteixir</i><t>:eixir</t><en></en></v>
 <v><i>entretelar</i><t>cant:ar</t><en></en></v>
 <v><i>entretenir</i><t>obt:enir</t><en></en></v>
 <v><i>entretocar</i><t>tren:car</t><en></en></v>
@@ -7597,7 +7597,7 @@
 <v><i>retanyar</i><t>cant:ar</t><en></en></v>
 <v><i>retardar</i><t>cant:ar</t><en></en></v>
 <v><i>retastar</i><t>cant:ar</t><en></en></v>
-<v><i>reteixir</i><t>serv:ir</t><en></en></v>
+<v><i>reteixir</i><t>:eixir</t><en></en></v>
 <v><i>retemptar</i><t>cant:ar</t><en></en></v>
 <v><i>retenir</i><t>obt:enir</t><en></en></v>
 <v><i>retentir</i><t>serv:ir</t><en></en></v>
@@ -7917,7 +7917,7 @@
 <v><i>sobrecréixer</i><t>cr:éixer</t><en></en></v>
 <v><i>sobredaurar</i><t>cant:ar</t><en></en></v>
 <v><i>sobreedificar</i><t>tren:car</t><en></en></v>
-<v><i>sobreeixir</i><t>re:eixir</t><en></en></v>
+<v><i>sobreeixir</i><t>:eixir</t><en></en></v>
 <v><i>sobreentendre</i><t>at:endre</t><en></en></v>
 <v><i>sobreescalfar</i><t>cant:ar</t><en></en></v>
 <v><i>sobreescriure</i><t>escri:ure</t><en></en></v>
@@ -7946,7 +7946,7 @@
 <v><i>sobreseure</i><t>cr:eure</t><en></en></v>
 <v><i>sobresolar</i><t>cant:ar</t><en></en></v>
 <v><i>sobresortir</i><t>s:ortir</t><en></en></v>
-<v><i>sobreteixir</i><t>serv:ir</t><en></en></v>
+<v><i>sobreteixir</i><t>:eixir</t><en></en></v>
 <v><i>sobrevaler</i><t>val:er</t><en></en></v>
 <v><i>sobrevalorar</i><t>cant:ar</t><en></en></v>
 <v><i>sobrevenir</i><t>prev:enir</t><en></en></v>
@@ -8164,7 +8164,7 @@
 <v><i>teclejar</i><t>enve:jar</t><en></en></v>
 <v><i>tecnificar</i><t>tren:car</t><en></en></v>
 <v><i>teginar</i><t>cant:ar</t><en></en></v>
-<v><i>teixir</i><t>serv:ir</t><en></en></v>
+<v><i>teixir</i><t>:eixir</t><en></en></v>
 <v><i>telar</i><t>cant:ar</t><en></en></v>
 <v><i>telecomandar</i><t>cant:ar</t><en></en></v>
 <v><i>teledirigir</i><t>serv:ir</t><en></en></v>

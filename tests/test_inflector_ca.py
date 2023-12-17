@@ -130,7 +130,17 @@ test_ca_conjugate_mood_tense_data = [
     ('anar', 'indicatiu', 'present',
         ['jo vaig', 'tu vas', 'ell va', 'nosaltres anem', 'vosaltres aneu', 'ells van']),
     ('poder', 'indicatiu', 'present',
-        ['jo puc', 'tu pots', 'ell pot', 'nosaltres podem', 'vosaltres podeu', 'ells poden'])
+        ['jo puc', 'tu pots', 'ell pot', 'nosaltres podem', 'vosaltres podeu', 'ells poden']),
+    ('arribar', 'indicatiu', 'present',
+        ['jo arribo', 'tu arribes', 'ell arriba', 'nosaltres arribem', 'vosaltres arribeu', 'ells arriben']),
+    ('trobar', 'indicatiu', 'present',
+        ['jo trobo', 'tu trobes', 'ell troba', 'nosaltres trobem', 'vosaltres trobeu', 'ells troben']),
+    ('partir', 'indicatiu', 'present',
+        ['jo parteixo', 'tu parteixes', 'ell parteix', 'nosaltres partim', 'vosaltres partiu', 'ells parteixen']),
+    ('morir', 'indicatiu', 'present',
+        ['jo moro', 'tu mors', 'ell mor', 'nosaltres morim', 'vosaltres moriu', 'ells moren']),
+    ('eixir', 'indicatiu', 'present',
+        ['jo ixo', 'tu ixes', 'ell ix', 'nosaltres eixim', 'vosaltres eixiu', 'ells ixen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
