@@ -921,6 +921,99 @@ About 86 percent of Catalan verbs belong to this group.
 	</Particip>
 </template>
 
+<!-- TODO: This template should inherit from the base template "cant:ar" -->
+<template name="tren:car">
+	<Indicatiu>
+		<present>
+			<p><i>co</i></p>
+			<p><i>ques</i></p>
+			<p><i>ca</i></p>
+			<p><i>quem</i></p>
+			<p><i>queu</i></p>
+			<p><i>quen</i></p>
+		</present>
+		<imperfet>
+			<p><i>cava</i></p>
+			<p><i>caves</i></p>
+			<p><i>cava</i></p>
+			<p><i>càvem</i></p>
+			<p><i>càveu</i></p>
+			<p><i>caven</i></p>
+		</imperfet>
+		<pretèrit>
+			<p><i>quí</i></p>
+			<p><i>cares</i></p>
+			<p><i>cà</i></p>
+			<p><i>càrem</i></p>
+			<p><i>càreu</i></p>
+			<p><i>caren</i></p>
+		</pretèrit> 
+		<futur>
+			<p><i>caré</i></p>
+			<p><i>caràs</i></p>
+			<p><i>carà</i></p>
+			<p><i>carem</i></p>
+			<p><i>careu</i></p>
+			<p><i>caran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>qi</i></p>
+			<p><i>quis</i></p>
+			<p><i>qui</i></p>
+			<p><i>quem</i></p>
+			<p><i>queu</i></p>
+			<p><i>quin</i></p>
+		</present>
+		<imperfet>
+			<p><i>qués</i></p>
+			<p><i>quessis</i></p>
+			<p><i>qués</i></p>
+			<p><i>quéssim</i></p>
+			<p><i>quéssiu</i></p>
+			<p><i>quessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>ca</i></p>
+			<p><i>qui</i></p>
+			<p><i>quem</i></p>
+			<p><i>queu</i></p>
+			<p><i>quin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>caria</i></p>
+			<p><i>caries</i></p>
+			<p><i>caria</i></p>
+			<p><i>caríem</i></p>
+			<p><i>caríeu</i></p>
+			<p><i>carien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>car</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>cant</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>cat</i></p>
+			<p><i>cada</i></p>
+			<p><i>cats</i></p>
+			<p><i>cades</i></p>
+		</particip>
+	</Particip>
+</template>
+
 <!--
 Spanish 'haber' uses 'h:aber'
 so Catalan 'haver' should use 'h:aver'

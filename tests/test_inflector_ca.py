@@ -102,7 +102,11 @@ test_ca_conjugate_mood_tense_data = [
     ('enaiguar', 'indicatiu', 'present',
         ['jo enaiguo', 'tu enaigües', 'ell enaigua', 'nosaltres enaigüem', 'vosaltres enaigüeu', 'ells enaigüen']),
     ('envejar', 'indicatiu', 'present',
-        ['jo envejo', 'tu enveges', 'ell enveja', 'nosaltres envegem', 'vosaltres envegeu', 'ells envegen'])
+        ['jo envejo', 'tu enveges', 'ell enveja', 'nosaltres envegem', 'vosaltres envegeu', 'ells envegen']),
+    ('esglaiar', 'indicatiu', 'present',
+        ['jo esglaio', 'tu esglaies', 'ell esglaia', 'nosaltres esglaiem', 'vosaltres esglaieu', 'ells esglaien']),
+    ('trencar', 'indicatiu', 'present',
+        ['jo trenco', 'tu trenques', 'ell trenca', 'nosaltres trenquem', 'vosaltres trenqueu', 'ells trenquen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
@@ -140,7 +144,7 @@ def test_inflector_ca_conjugate_simple_mood_tense():
             <p><i>em</i></p>
             <p><i>eu</i></p>
             <p><i>en</i></p>
-        </present>""")
+        </present>""", parser=None)
     tense_name = 'present'
     tense_template = TenseTemplate(tense_elem)
     out = cg._inflector._conjugate_simple_mood_tense(verb_stem, 'indicatiu', tense_template)
