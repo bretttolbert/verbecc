@@ -32,7 +32,7 @@
                 "vosaltres éreu",
                 "ells eren"
             ],
-            "pretèrit": [
+            "passat-simple": [
                 "jo fui",
                 "tu fores",
                 "ell fou",
