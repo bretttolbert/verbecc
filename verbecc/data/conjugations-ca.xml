@@ -71,7 +71,7 @@ nosotros habláramos, nosotros hablásemos = nosaltres parléssim, nosaltres par
 
 -->
 
-<template name="v:eure">
+<template name="malv:eure">
 	<Indicatiu>
 		<present>
 			<p><i>eig</i></p>
@@ -170,7 +170,7 @@ It includes most of the irregular verbs, the most-frequently-used:
 ser ("to be"), haver ("to have"), fer ("to do"), veure ("to see"), poder ("can"), 
 voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get"). 
 -->
-<template name=":ser">
+<template name="és:ser">
 	<Indicatiu>
 		<present>
 			<p><i>sóc</i></p>
@@ -357,94 +357,94 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
-<template name=":fer">
+<template name="desf:er">
 	<Indicatiu>
 		<present>
-			<p><i>faig</i></p>
-			<p><i>fas</i></p>
-			<p><i>fa</i></p>
-			<p><i>fem</i></p>
-			<p><i>feu</i></p>
-			<p><i>fan</i></p>
+			<p><i>aig</i></p>
+			<p><i>as</i></p>
+			<p><i>a</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>an</i></p>
 		</present>
 		<imperfet>
-			<p><i>feia</i></p>
-			<p><i>feies</i></p>
-			<p><i>feia</i></p>
-			<p><i>fèiem</i></p>
-			<p><i>fèieu</i></p>
-			<p><i>feien</i></p>
+			<p><i>eia</i></p>
+			<p><i>eies</i></p>
+			<p><i>eia</i></p>
+			<p><i>èiem</i></p>
+			<p><i>èieu</i></p>
+			<p><i>eien</i></p>
 		</imperfet>
 		<pretèrit>
-			<p><i>fiu</i></p>
-			<p><i>feres</i></p>
-			<p><i>feu</i></p>
-			<p><i>férem</i></p>
-			<p><i>féreu</i></p>
-			<p><i>feren</i></p>
+			<p><i>iu</i></p>
+			<p><i>eres</i></p>
+			<p><i>eu</i></p>
+			<p><i>érem</i></p>
+			<p><i>éreu</i></p>
+			<p><i>eren</i></p>
 		</pretèrit>
 		<futur>
-			<p><i>faré</i></p>
-			<p><i>faràs</i></p>
-			<p><i>farà</i></p>
-			<p><i>farem</i></p>
-			<p><i>fareu</i></p>
-			<p><i>faran</i></p>
+			<p><i>aré</i></p>
+			<p><i>aràs</i></p>
+			<p><i>arà</i></p>
+			<p><i>arem</i></p>
+			<p><i>areu</i></p>
+			<p><i>aran</i></p>
 		</futur>
 		</Indicatiu>
 	<Subjuntiu>
 		<present>
-			<p><i>faci</i></p>
-			<p><i>facis</i></p>
-			<p><i>faci</i></p>
-			<p><i>fem</i></p>
-			<p><i>feu</i></p>
-			<p><i>facin</i></p>
+			<p><i>aci</i></p>
+			<p><i>acis</i></p>
+			<p><i>aci</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>acin</i></p>
 		</present>
 		<imperfet>
-			<p><i>fes</i></p>
-			<p><i>fessis</i></p>
-			<p><i>fes</i></p>
-			<p><i>féssim</i></p>
-			<p><i>féssiu</i></p>
-			<p><i>fessin</i></p>
+			<p><i>es</i></p>
+			<p><i>essis</i></p>
+			<p><i>es</i></p>
+			<p><i>éssim</i></p>
+			<p><i>éssiu</i></p>
+			<p><i>essin</i></p>
 		</imperfet>
 	</Subjuntiu>
 	<Imperatiu>
 		<imperatiu-present>
-			<p><i>fes</i></p>
-			<p><i>faci</i></p>
-			<p><i>fem</i></p>
-			<p><i>feu</i></p>
-			<p><i>facin</i></p>
+			<p><i>es</i></p>
+			<p><i>aci</i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>acin</i></p>
 		</imperatiu-present>
 	</Imperatiu>
 	<Condicional>
 		<present>
-			<p><i>faria</i></p>
-			<p><i>faries</i></p>
-			<p><i>faria</i></p>
-			<p><i>faríem</i></p>
-			<p><i>faríeu</i></p>
-			<p><i>farien</i></p>
+			<p><i>aria</i></p>
+			<p><i>aries</i></p>
+			<p><i>aria</i></p>
+			<p><i>aríem</i></p>
+			<p><i>aríeu</i></p>
+			<p><i>arien</i></p>
 		</present>
 		</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>fer</i></p>
+			<p><i>er</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>fent</i></p>
+			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>fet</i></p>
-			<p><i>feta</i></p>
-			<p><i>fets</i></p>
-			<p><i>fetes</i></p>
+			<p><i>et</i></p>
+			<p><i>eta</i></p>
+			<p><i>ets</i></p>
+			<p><i>etes</i></p>
 		</particip>
 	</Particip>
 </template>
@@ -1114,7 +1114,7 @@ so Catalan 'haver' should use 'h:aver'
 Spanish 'tener' uses template 't:ener'
 so Catalan 'tenir' should use 't:enir'
 -->
-<template name="t:enir">
+<template name="obt:enir">
 	<Indicatiu>
 		<present>
 			<p><i>inc</i></p>

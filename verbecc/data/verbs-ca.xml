@@ -46,42 +46,6 @@
 
 <verbs-ca>
 
-<!--
-https://www.verbix.com/webverbix/go.php?D1=7&T1=abadanar
--->
-
-<!--
-First-conjugation (-ar) verbs
-	About 86 percent of Catalan verbs belong to this group. 
-	Examples include estimar ("to love"), esperar ("to wait" and "to hope"), 
-	menjar ("to eat") and pensar ("to think").
--->
-
-<v><i>cantar</i>	<t>cant:ar</t></v>
-<v><i>parlar</i>	<t>cant:ar</t></v>
-
-<!--	
-Second-conjugation (-re, -er) verbs
-	The most-frequently-used second-conjugation (-re, -er) verbs: 
-	ser ("to be"), haver ("to have"), fer ("to do"), veure ("to see"), poder ("can"), 
-	voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get"). 
--->
-
-<v><i>ser</i>		<t>:ser</t></v>
-<v><i>haver</i>		<t>h:aver</t></v>
-<v><i>fer</i>		<t>:fer</t></v>
-<v><i>veure</i>		<t>v:eure</t></v>
-<v><i>estar</i>		<t>est:ar</t></v>
-
-<!--
-Third-conjugation (-ir) verbs
-This is the second-largest group of regular verbs in the Catalan language 
-(about 10 percent of verbs in the dictionary). 
--->
-
-<v><i>servir</i>	<t>serv:ir</t></v>
-<v><i>tenir</i>		<t>t:enir</t></v>
-
 <!-- Verbs imported from catverbs -->
 <v><i>abacallanar</i>	<t>cant:ar</t></v>
 <v><i>abadanar</i>	<t>cant:ar</t></v>
@@ -1438,7 +1402,7 @@ This is the second-largest group of regular verbs in the Catalan language
 <v><i>canonejar</i>	<t>enve:jar</t></v>
 <v><i>canonitzar</i>	<t>cant:ar</t></v>
 <v><i>cansar</i>	<t>cant:ar</t></v>
-<v><i>cantar</i>	<t>:</t></v>
+<v><i>cantar</i>	<t>cant:ar</t></v>
 <v><i>cantarellejar</i>	<t>enve:jar</t></v>
 <v><i>cantellejar</i>	<t>enve:jar</t></v>
 <v><i>cantussar</i>	<t>cant:ar</t></v>
@@ -5014,7 +4978,7 @@ This is the second-largest group of regular verbs in the Catalan language
 <v><i>estandarditzar</i>	<t>cant:ar</t></v>
 <v><i>estantolar</i>	<t>cant:ar</t></v>
 <v><i>estanyar</i>	<t>cant:ar</t></v>
-<v><i>estar</i>	<t>cant:ar</t></v>
+<v><i>estar</i>	<t>est:ar</t></v>
 <v><i>estarrufar</i>	<t>cant:ar</t></v>
 <v><i>estassar</i>	<t>cant:ar</t></v>
 <v><i>estatitzar</i>	<t>cant:ar</t></v>
@@ -5691,7 +5655,7 @@ This is the second-largest group of regular verbs in the Catalan language
 <v><i>halar</i>	<t>cant:ar</t></v>
 <v><i>handicapar</i>	<t>cant:ar</t></v>
 <v><i>harmonitzar</i>	<t>cant:ar</t></v>
-<v><i>haver</i>	<t>:heure</t></v>
+<v><i>haver</i>	<t>h:aver</t></v>
 <v><i>hebraïtzar</i>	<t>cant:ar</t></v>
 <v><i>hel·lenitzar</i>	<t>cant:ar</t></v>
 <v><i>hemodialitzar</i>	<t>cant:ar</t></v>
@@ -7900,7 +7864,7 @@ This is the second-largest group of regular verbs in the Catalan language
 <v><i>serrar</i>	<t>cant:ar</t></v>
 <v><i>serrejar</i>	<t>enve:jar</t></v>
 <v><i>servar</i>	<t>cant:ar</t></v>
-<v><i>servir</i>	<t>dorm:ir</t></v>
+<v><i>servir</i>	<t>serv:ir</t></v>
 <v><i>sestar</i>	<t>cant:ar</t></v>
 <v><i>sestejar</i>	<t>enve:jar</t></v>
 <v><i>setantejar</i>	<t>enve:jar</t></v>
