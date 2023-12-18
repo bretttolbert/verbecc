@@ -1,27 +1,28 @@
 import pytest
 
-from verbecc.localization import localize_mood, localize_tense
+from verbecc.localization import xmood, xtense
 
 
 @pytest.mark.parametrize(
-    "lang,mood,xmood",
+    "lang,mood,expected",
     [
         ("es", "subjunctive", "subjuntivo"),
         ("fr", "indicative", "indicatif"),
         ("ca", "indicative", "indicatiu"),
     ],
 )
-def test_localize_mood(lang, mood, xmood):
-    assert localize_mood(lang, mood) == xmood
+def test_xmood(lang, mood, expected):
+    assert xmood(lang, mood) == expected
 
 
 @pytest.mark.parametrize(
-    "lang,tense,xtense",
+    "lang,tense,expected",
     [
         ("es", "present", "presente"),
         ("es", "gerund", "gerundio"),
         ("fr", "gerund", "participe-présent"),
+        ("fr", "present", "présent"),
     ],
 )
-def test_localize_tense(lang, tense, xtense):
-    assert localize_tense(lang, tense) == xtense
+def test_xtense(lang, tense, expected):
+    assert xtense(lang, tense) == expected
