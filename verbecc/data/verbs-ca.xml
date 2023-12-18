@@ -232,7 +232,7 @@
 <v><i>actuar</i><t>evacu:ar</t><en></en></v>
 <v><i>acubar</i><t>cant:ar</t><en></en></v>
 <v><i>acubillar</i><t>cant:ar</t><en></en></v>
-<v><i>acudir</i><t>:mentir</t><en></en></v>
+<v><i>acudir</i><t>ment:ir</t><en></en></v>
 <v><i>acugular</i><t>cant:ar</t><en></en></v>
 <v><i>acuindar</i><t>cant:ar</t><en></en></v>
 <v><i>acuitar</i><t>cant:ar</t><en></en></v>
@@ -2945,7 +2945,7 @@
 <v><i>desmemoriar</i><t>canvi:ar</t><en></en></v>
 <v><i>desmemoriejar</i><t>enve:jar</t><en></en></v>
 <v><i>desmenjar</i><t>enve:jar</t><en></en></v>
-<v><i>desmentir</i><t>ment:ir</t><en></en></v>
+<v><i>desmentir</i><t>ment:ir</t><en>deny</en></v>
 <v><i>desmerèixer</i><t>mer:èixer</t><en></en></v>
 <v><i>desmesclar</i><t>cant:ar</t><en></en></v>
 <v><i>desmetilar</i><t>cant:ar</t><en></en></v>

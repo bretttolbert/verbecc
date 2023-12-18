@@ -149,7 +149,9 @@ test_ca_conjugate_mood_tense_data = [
     ('pagar', 'indicatiu', 'present',
         ['jo pago', 'tu pagues', 'ell paga', 'nosaltres paguem', 'vosaltres pagueu', 'ells paguen']),
     ('mentir', 'indicatiu', 'present',
-        ['jo menteixo', 'tu menteixes', 'ell menteix', 'nosaltres mentim', 'vosaltres mentiu', 'ells menteixen'])
+        ['jo menteixo', 'tu menteixes', 'ell menteix', 'nosaltres mentim', 'vosaltres mentiu', 'ells menteixen']),
+    ('desmentir', 'indicatiu', 'present',
+        ['jo desmenteixo', 'tu desmenteixes', 'ell desmenteix', 'nosaltres desmentim', 'vosaltres desmentiu', 'ells desmenteixen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
