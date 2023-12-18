@@ -66,7 +66,6 @@ TENSE_MAP = {
         "ca": "present",
         "es": "presente",
         "fr": "présent",
-        "fr": "indicatif",
         "it": "presente",
         "pt": "presente",
         "ro": "prezent",
@@ -98,7 +97,7 @@ TENSE_MAP = {
     "gerund": {
         "ca": "gerundi",
         "es": "gerundio",
-        "fr": "participe-présent",
+        "fr": "participe-présent",  # TODO: Make French consistent
         "it": "gerundio",
         "pt": "gerúndio",
         "ro": "gerunziu",
@@ -114,17 +113,17 @@ TENSE_MAP = {
 }
 
 
-def localize_mood(lang, m):
-    """Takes a mood name in English and converts to the specified language
+def xmood(lang, m):
+    """Takes a mood name in English and translates it to the specified language
 
-    :raises: Exception if it doesn't exist
+    :raises: Exception if mood or lang doesn't exist
     """
-    return MOOD_MAP[m]
+    return MOOD_MAP[m][lang]
 
 
-def localize_tense(lang, t):
-    """Takes a tense name in English and converts to the specified language
+def xtense(lang, t):
+    """Takes a tense name in English and translates it to the specified language
 
-    :raises: Exception if it doesn't exist
+    :raises: Exception if tense or lang doesn't exist
     """
-    return TENSE_MAP[t]
+    return TENSE_MAP[t][lang]

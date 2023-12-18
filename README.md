@@ -386,9 +386,10 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
-### Multi-Language Conjugation Example
+### Example: Multi-Language Conjugation
 
 ```python
+>>> from verbecc import Conjugator
 >>> Conjugator('fr').conjugate('etre')['moods']['indicatif']['présent']
 ['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
 >>> Conjugator('es').conjugate('ser')['moods']['indicativo']['presente']
@@ -402,6 +403,29 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 >>> Conjugator('ro').conjugate('fi')['moods']['indicativ']['prezent']
 ['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
 ```
+
+### Example Multi-Language Conjugation using English mood and tense names via `localization` module
+
+```python
+>>> from verbecc import Conjugator
+>>> from verbecc.localization import xmood, xtense
+>>> def xconj(lang, infinitive, mood, tense):
+...     return Conjugator(lang).conjugate(infinitive)['moods'][xmood(lang, mood)][xtense(lang, tense)]
+... 
+>>> xconj('fr', 'etre', 'indicative', 'present')
+['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
+>>> xconj('es', 'ser', 'indicative', 'present')
+['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+>>> xconj('pt', 'ser', 'indicative', 'present')
+['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
+>>> xconj('ca', 'ser', 'indicative', 'present')
+['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
+>>> xconj('it', 'essere', 'indicative', 'present')
+['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
+>>> xconj('ro', 'fi', 'indicative', 'present')
+['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
+```
+
 
 ### Example: Catalan `ser` (to be)
 ```python
