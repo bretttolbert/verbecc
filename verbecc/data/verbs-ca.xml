@@ -6249,7 +6249,7 @@
 <v><i>menjussar</i><t>cant:ar</t><en></en></v>
 <v><i>menstruar</i><t>evacu:ar</t><en></en></v>
 <v><i>mentalitzar</i><t>cant:ar</t><en></en></v>
-<v><i>mentir</i><t>dorm:ir</t><en></en></v>
+<v><i>mentir</i><t>ment:ir</t><en></en>to lie</v>
 <v><i>menyscabar</i><t>cant:ar</t><en></en></v>
 <v><i>menyscreure</i><t>cr:eure</t><en></en></v>
 <v><i>menysprear</i><t>canvi:ar</t><en></en></v>
@@ -6580,7 +6580,7 @@
 <v><i>pactejar</i><t>enve:jar</t><en></en></v>
 <v><i>padrinejar</i><t>enve:jar</t><en></en></v>
 <v><i>paganitzar</i><t>cant:ar</t><en></en></v>
-<v><i>pagar</i><t>preg:ar</t><en></en></v>
+<v><i>pagar</i><t>preg:ar</t><en>to pay</en></v>
 <v><i>pagesejar</i><t>enve:jar</t><en></en></v>
 <v><i>paginar</i><t>cant:ar</t><en></en></v>
 <v><i>pair</i><t>redu:ir</t><en></en></v>
