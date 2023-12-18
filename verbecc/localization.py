@@ -98,7 +98,7 @@ TENSE_MAP = {
     "gerund": {
         "ca": "gerundi",
         "es": "gerundio",
-        "fr": "participe-présent",
+        "fr": "participe-présent",  # TODO: Make French consistent
         "it": "gerundio",
         "pt": "gerúndio",
         "ro": "gerunziu",
@@ -119,7 +119,7 @@ def localize_mood(lang, m):
 
     :raises: Exception if it doesn't exist
     """
-    return MOOD_MAP[m]
+    return MOOD_MAP[m][lang]
 
 
 def localize_tense(lang, t):
@@ -127,4 +127,4 @@ def localize_tense(lang, t):
 
     :raises: Exception if it doesn't exist
     """
-    return TENSE_MAP[t]
+    return TENSE_MAP[t][lang]
