@@ -404,7 +404,7 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 ['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
 ```
 
-### Example Multi-Language Conjugation using English mood and tense names via `localization` module
+### Example: Multi-Language Conjugation using English mood and tense names via `localization` module
 
 ```python
 >>> from verbecc import Conjugator
