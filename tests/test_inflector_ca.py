@@ -151,7 +151,9 @@ test_ca_conjugate_mood_tense_data = [
     ('mentir', 'indicatiu', 'present',
         ['jo menteixo', 'tu menteixes', 'ell menteix', 'nosaltres mentim', 'vosaltres mentiu', 'ells menteixen']),
     ('desmentir', 'indicatiu', 'present',
-        ['jo desmenteixo', 'tu desmenteixes', 'ell desmenteix', 'nosaltres desmentim', 'vosaltres desmentiu', 'ells desmenteixen'])
+        ['jo desmenteixo', 'tu desmenteixes', 'ell desmenteix', 'nosaltres desmentim', 'vosaltres desmentiu', 'ells desmenteixen']),
+    ('naixer', 'indicatiu', 'present',
+        ['jo naixo', 'tu naixes', 'ell naix', 'nosaltres naixem', 'vosaltres naixeu', 'ells naixen'])
 ]
 
 @pytest.mark.parametrize("infinitive,mood,tense,expected_result",
