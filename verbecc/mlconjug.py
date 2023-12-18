@@ -60,7 +60,7 @@ from verbecc.grammar_defines import ALPHABET
 
 
 class TemplatePredictor:
-    def __init__(self, verb_template_pairs: List[Tuple[str,str]], lang: str):
+    def __init__(self, verb_template_pairs: List[Tuple[str, str]], lang: str):
         self.data_set = DataSet(verb_template_pairs)
         model = load_model(lang)
         if not model:
@@ -75,6 +75,7 @@ class TemplatePredictor:
         template = self.data_set.templates[prediction]
         return (template, prediction_score)
 
+
 class Model:
     """
     | This class manages the scikit-learn pipeline.
@@ -88,33 +89,43 @@ class Model:
     :param language: language of the corpus of verbs to be analyzed.
 
     """
-    def __init__(self, vectorizer=None, feature_selector=None, classifier=None, lang='fr'):
+
+    def __init__(
+        self, vectorizer=None, feature_selector=None, classifier=None, lang="fr"
+    ):
         if not vectorizer:
-            vectorizer = CountVectorizer(analyzer=partial(extract_verb_features, 
-                                                          lang=lang, 
-                                                          ngram_range=(2, 7)), 
-                                        binary=True)
+            vectorizer = CountVectorizer(
+                analyzer=partial(extract_verb_features, lang=lang, ngram_range=(2, 7)),
+                binary=True,
+            )
         if not feature_selector:
-            feature_selector = SelectFromModel(LinearSVC(penalty='l1', 
-                                                         max_iter=12000, 
-                                                         dual=False, 
-                                                         verbose=0))
+            feature_selector = SelectFromModel(
+                LinearSVC(penalty="l1", max_iter=12000, dual=False, verbose=0)
+            )
         if not classifier:
-            classifier = SGDClassifier(loss='log_loss', 
-                                       penalty='elasticnet', 
-                                       l1_ratio=0.15,
-                                       max_iter=40000, 
-                                       alpha=1e-5, 
-                                       verbose=0)
-                                       
-        self.pipeline = Pipeline([('vectorizer', vectorizer),
-                                  ('feature_selector', feature_selector),
-                                  ('classifier', classifier)])
+            classifier = SGDClassifier(
+                loss="log_loss",
+                penalty="elasticnet",
+                l1_ratio=0.15,
+                max_iter=40000,
+                alpha=1e-5,
+                verbose=0,
+            )
+
+        self.pipeline = Pipeline(
+            [
+                ("vectorizer", vectorizer),
+                ("feature_selector", feature_selector),
+                ("classifier", classifier),
+            ]
+        )
         self.lang = lang
         return
 
     def __repr__(self):
-        return '{0}.{1}({2}, {3}, {4})'.format(__name__, self.__class__.__name__, *sorted(self.pipeline.named_steps))
+        return "{0}.{1}({2}, {3}, {4})".format(
+            __name__, self.__class__.__name__, *sorted(self.pipeline.named_steps)
+        )
 
     def train(self, samples, labels):
         """
@@ -143,20 +154,21 @@ class Model:
         return prediction
 
 
-
 class DataSet:
     """
     | This class holds and manages the data set.
     | Defines helper methodss for managing Machine Learning tasks like constructing a training and testing set.
     """
 
-    def __init__(self, verb_template_pairs: List[Tuple[str,str]]):
+    def __init__(self, verb_template_pairs: List[Tuple[str, str]]):
         self.verbs = [pair[0] for pair in verb_template_pairs]
         self.templates = sorted(set([pair[1] for pair in verb_template_pairs]))
         self.dict_conjug = self._construct_dict_conjug(verb_template_pairs)
         self._split_test_train()
 
-    def _construct_dict_conjug(self, verb_template_pairs: List[Tuple[str,str]]) -> Dict[str, List[str]]:
+    def _construct_dict_conjug(
+        self, verb_template_pairs: List[Tuple[str, str]]
+    ) -> Dict[str, List[str]]:
         """
         | Populates the dictionary containing the conjugation templates.
         | Populates the lists containing the verbs and their templates.
@@ -172,7 +184,7 @@ class DataSet:
             ret[template].append(verb)
         return ret
 
-    def _split_test_train(self, threshold: int=8, proportion: float=0.5):
+    def _split_test_train(self, threshold: int = 8, proportion: float = 0.5):
         """
         Splits the template:verbs dict into a training and a testing set.
 
@@ -186,7 +198,9 @@ class DataSet:
 
         """
         if proportion <= 0 or proportion > 1:
-            raise ValueError(f'The split proportion ({proportion}) must be between 0 and 1.')
+            raise ValueError(
+                f"The split proportion ({proportion}) must be between 0 and 1."
+            )
         self.min_threshold = threshold
         self.split_proportion = proportion
         train_set = []
@@ -236,47 +250,57 @@ def extract_verb_features(verb, lang: str, ngram_range: Tuple[int, int]):
     verb = _white_spaces.sub(" ", verb)
     verb = verb.lower()
     verb_len = len(verb)
-    length_feature = 'LEN={0}'.format(str(verb_len))
+    length_feature = "LEN={0}".format(str(verb_len))
     min_n, max_n = ngram_range
-    final_ngrams = ['END={0}'.format(verb[-n:]) for n in range(min_n, min(max_n + 1, verb_len + 1))]
-    initial_ngrams = ['START={0}'.format(verb[:n]) for n in range(min_n, min(max_n + 1, verb_len + 1))]
+    final_ngrams = [
+        "END={0}".format(verb[-n:]) for n in range(min_n, min(max_n + 1, verb_len + 1))
+    ]
+    initial_ngrams = [
+        "START={0}".format(verb[:n]) for n in range(min_n, min(max_n + 1, verb_len + 1))
+    ]
     if lang not in ALPHABET:
-        lang = 'en'  # We chose 'en' as the default alphabet because english is more standard, without accents or diactrics.
-    vowels = sum(verb.count(c) for c in ALPHABET[lang]['vowels'])
-    vowels_number = 'VOW_NUM={0}'.format(vowels)
-    consonants = sum(verb.count(c) for c in ALPHABET[lang]['consonants'])
-    consonants_number = 'CONS_NUM={0}'.format(consonants)
+        lang = "en"  # We chose 'en' as the default alphabet because english is more standard, without accents or diactrics.
+    vowels = sum(verb.count(c) for c in ALPHABET[lang]["vowels"])
+    vowels_number = "VOW_NUM={0}".format(vowels)
+    consonants = sum(verb.count(c) for c in ALPHABET[lang]["consonants"])
+    consonants_number = "CONS_NUM={0}".format(consonants)
     if consonants == 0:
-        vow_cons_ratio = 'V/C=N/A'
+        vow_cons_ratio = "V/C=N/A"
     else:
-        vow_cons_ratio = 'V/C={0}'.format(round(vowels / consonants, 2))
+        vow_cons_ratio = "V/C={0}".format(round(vowels / consonants, 2))
     final_ngrams.extend(initial_ngrams)
-    final_ngrams.extend((length_feature, vowels_number, consonants_number, vow_cons_ratio))
+    final_ngrams.extend(
+        (length_feature, vowels_number, consonants_number, vow_cons_ratio)
+    )
     return final_ngrams
 
+
 def get_model_zip_filename(lang: str) -> str:
-    return 'data/models/trained_model-{}.zip'.format(lang)
-    
+    return "data/models/trained_model-{}.zip".format(lang)
+
+
 def get_model_pickle_filename(lang: str) -> str:
-    return 'trained_model-{0}.pickle'.format(lang)
+    return "trained_model-{0}.pickle".format(lang)
+
 
 def save_model(model: Model):
     pickle_filename = get_model_pickle_filename(model.lang)
-    with open(pickle_filename, 'wb') as f:
+    with open(pickle_filename, "wb") as f:
         pickle.dump(model, f)
     zip_filename = get_model_zip_filename(model.lang)
-    with ZipFile(pkg_resources.resource_filename(
-            "verbecc", zip_filename), mode='w') as zf:
+    with ZipFile(
+        pkg_resources.resource_filename("verbecc", zip_filename), mode="w"
+    ) as zf:
         zf.write(pickle_filename)
     os.remove(pickle_filename)
+
 
 def load_model(lang):
     model = None
     zip_filename = get_model_zip_filename(lang)
     try:
-        with ZipFile(pkg_resources.resource_stream(
-                __name__, zip_filename)) as zf:
-            with zf.open(get_model_pickle_filename(lang), 'r') as model_pickle:
+        with ZipFile(pkg_resources.resource_stream(__name__, zip_filename)) as zf:
+            with zf.open(get_model_pickle_filename(lang), "r") as model_pickle:
                 model = pickle.loads(model_pickle.read())
     except:
         pass

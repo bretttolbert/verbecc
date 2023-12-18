@@ -10,23 +10,26 @@ from typing import List
 from verbecc import conjugation_template
 from verbecc import exceptions
 
+
 class ConjugationsParser:
-    def __init__(self, lang: str='fr'):
+    def __init__(self, lang: str = "fr"):
         self.templates: List[conjugation_template.ConjugationTemplate] = []
-        parser = etree.XMLParser(dtd_validation=True, encoding='utf-8', remove_comments=True)
+        parser = etree.XMLParser(
+            dtd_validation=True, encoding="utf-8", remove_comments=True
+        )
         tree = etree.parse(
-            resource_filename("verbecc",
-                              "data/conjugations-{}.xml".format(lang)),
-            parser)
+            resource_filename("verbecc", "data/conjugations-{}.xml".format(lang)),
+            parser,
+        )
         root = tree.getroot()
-        root_tag = 'conjugation-{}'.format(lang)
+        root_tag = "conjugation-{}".format(lang)
         if root.tag != root_tag:
             raise exceptions.ConjugationsParserError(
-                "Root XML Tag {} Not Found".format(root_tag))
+                "Root XML Tag {} Not Found".format(root_tag)
+            )
         for child in root:
-            if child.tag == 'template':
-                self.templates.append(
-                    conjugation_template.ConjugationTemplate(child))
+            if child.tag == "template":
+                self.templates.append(conjugation_template.ConjugationTemplate(child))
         self.templates = sorted(self.templates, key=lambda x: x.name)
         self._keys = [template.name for template in self.templates]
 

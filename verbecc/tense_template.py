@@ -6,6 +6,7 @@ from typing import List
 from verbecc import person_ending
 from verbecc import grammar_defines
 
+
 class TenseTemplate:
     """
     Contains PersonEndings for a specific verb template, mood and tense
@@ -28,6 +29,7 @@ class TenseTemplate:
             <p><i>ez</i></p>
             <p><i>ent</i></p>
     """
+
     def __init__(self, tense_elem: etree._Element):
         self.name = tense_elem.tag
         """
@@ -75,9 +77,9 @@ class TenseTemplate:
         """
         self.person_endings: List[person_ending.PersonEnding] = []
         person_num = 0
-        for p_elem in tense_elem.findall('p'):
+        for p_elem in tense_elem.findall("p"):
             person = grammar_defines.PERSONS[person_num]
-            if self.name == 'imperatif-présent':
+            if self.name == "imperatif-présent":
                 person = grammar_defines.IMPERATIVE_PRESENT_PERSONS[person_num]
             pe = person_ending.PersonEnding(p_elem, person)
             person_num += 1
@@ -85,4 +87,4 @@ class TenseTemplate:
                 self.person_endings.append(pe)
 
     def __repr__(self) -> str:
-        return 'person_endings={}'.format(self.person_endings)
+        return "person_endings={}".format(self.person_endings)

@@ -12,47 +12,53 @@ from verbecc import (
     inflector_fr,
     inflector_it,
     inflector_pt,
-    inflector_ro)
+    inflector_ro,
+)
 
 
-SUPPORTED_LANGUAGES: Dict[str,str] = {
-    'ca': 'català',
-    'es': 'español',
-    'fr': 'français',
-    'it': 'italiano',
-    'pt': 'português',
-    'ro': 'română'
+SUPPORTED_LANGUAGES: Dict[str, str] = {
+    "ca": "català",
+    "es": "español",
+    "fr": "français",
+    "it": "italiano",
+    "pt": "português",
+    "ro": "română",
 }
+
 
 class Conjugator:
     """
     :param lang: two-letter language code
     """
+
     def __init__(self, lang: str):
-        if lang == 'ca':
+        if lang == "ca":
             self._inflector = inflector_ca.InflectorCa()
-        elif lang == 'es':
+        elif lang == "es":
             self._inflector = inflector_es.InflectorEs()
-        elif lang == 'fr':
+        elif lang == "fr":
             self._inflector = inflector_fr.InflectorFr()
-        elif lang == 'it':
+        elif lang == "it":
             self._inflector = inflector_it.InflectorIt()
-        elif lang == 'pt':
+        elif lang == "pt":
             self._inflector = inflector_pt.InflectorPt()
-        elif lang == 'ro':
+        elif lang == "ro":
             self._inflector = inflector_ro.InflectorRo()
         else:
             raise InvalidLangError
-    
+
     def conjugate(self, infinitive: str):
         return self._inflector.conjugate(infinitive)
 
     def conjugate_mood(self, infinitive: str, mood_name: str):
         return self._inflector.conjugate_mood(infinitive, mood_name)
 
-    def conjugate_mood_tense(self, infinitive: str, mood_name: str, tense_name: str, alternate: bool=False):
-        return self._inflector.conjugate_mood_tense( 
-            infinitive, mood_name, tense_name, alternate)
+    def conjugate_mood_tense(
+        self, infinitive: str, mood_name: str, tense_name: str, alternate: bool = False
+    ):
+        return self._inflector.conjugate_mood_tense(
+            infinitive, mood_name, tense_name, alternate
+        )
 
     def get_verbs(self) -> List[verb.Verb]:
         return self._inflector.get_verbs()

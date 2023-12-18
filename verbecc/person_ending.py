@@ -3,6 +3,7 @@
 from lxml import etree
 from typing import List
 
+
 class PersonEnding:
     """
     p_elem
@@ -19,14 +20,15 @@ class PersonEnding:
             <p></p>
 
     person
-    A grammar_defines.PERSONS value indicating which person 
+    A grammar_defines.PERSONS value indicating which person
     this PersonEnding is for, e.g. for aim:er, "ez" is '2p' (second person plural)
     """
+
     def __init__(self, p_elem: etree._Element, person: str):
         self.person = person
         self.endings: List[str] = []
-        for i_elem in p_elem.findall('i'):
-            ending = str(u'')
+        for i_elem in p_elem.findall("i", None):
+            ending = str("")
             if i_elem.text is not None:
                 ending += str(i_elem.text)
             self.endings.append(ending)
@@ -43,4 +45,4 @@ class PersonEnding:
         return self.endings[0]
 
     def __repr__(self) -> str:
-        return 'person={} endings={}'.format(self.person, self.endings)
+        return "person={} endings={}".format(self.person, self.endings)

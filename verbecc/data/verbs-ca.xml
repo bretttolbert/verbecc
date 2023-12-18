@@ -232,7 +232,7 @@
 <v><i>actuar</i><t>evacu:ar</t><en></en></v>
 <v><i>acubar</i><t>cant:ar</t><en></en></v>
 <v><i>acubillar</i><t>cant:ar</t><en></en></v>
-<v><i>acudir</i><t>:mentir</t><en></en></v>
+<v><i>acudir</i><t>ment:ir</t><en></en></v>
 <v><i>acugular</i><t>cant:ar</t><en></en></v>
 <v><i>acuindar</i><t>cant:ar</t><en></en></v>
 <v><i>acuitar</i><t>cant:ar</t><en></en></v>
@@ -2945,7 +2945,7 @@
 <v><i>desmemoriar</i><t>canvi:ar</t><en></en></v>
 <v><i>desmemoriejar</i><t>enve:jar</t><en></en></v>
 <v><i>desmenjar</i><t>enve:jar</t><en></en></v>
-<v><i>desmentir</i><t>ment:ir</t><en></en></v>
+<v><i>desmentir</i><t>ment:ir</t><en>deny</en></v>
 <v><i>desmerèixer</i><t>mer:èixer</t><en></en></v>
 <v><i>desmesclar</i><t>cant:ar</t><en></en></v>
 <v><i>desmetilar</i><t>cant:ar</t><en></en></v>
@@ -6249,7 +6249,7 @@
 <v><i>menjussar</i><t>cant:ar</t><en></en></v>
 <v><i>menstruar</i><t>evacu:ar</t><en></en></v>
 <v><i>mentalitzar</i><t>cant:ar</t><en></en></v>
-<v><i>mentir</i><t>dorm:ir</t><en></en></v>
+<v><i>mentir</i><t>ment:ir</t><en></en>to lie</v>
 <v><i>menyscabar</i><t>cant:ar</t><en></en></v>
 <v><i>menyscreure</i><t>cr:eure</t><en></en></v>
 <v><i>menysprear</i><t>canvi:ar</t><en></en></v>
@@ -6464,8 +6464,8 @@
 <v><i>numerar</i><t>cant:ar</t><en></en></v>
 <v><i>nyacar</i><t>tren:car</t><en></en></v>
 <v><i>nyaufar</i><t>cant:ar</t><en></en></v>
-<v><i>nàixer</i><t>:perdre</t><en></en></v>
-<v><i>néixer</i><t>:nàixer</t><en></en></v>
+<v><i>nàixer</i><t>n:àixer</t><en>be born</en></v>
+<v><i>néixer</i><t>n:àixer</t><en>be born</en></v>
 <v><i>nòmer</i><t>tém:er</t><en></en></v>
 <v><i>obcecar</i><t>tren:car</t><en></en></v>
 <v><i>obeir</i><t>redu:ir</t><en></en></v>
@@ -6580,7 +6580,7 @@
 <v><i>pactejar</i><t>enve:jar</t><en></en></v>
 <v><i>padrinejar</i><t>enve:jar</t><en></en></v>
 <v><i>paganitzar</i><t>cant:ar</t><en></en></v>
-<v><i>pagar</i><t>preg:ar</t><en></en></v>
+<v><i>pagar</i><t>preg:ar</t><en>to pay</en></v>
 <v><i>pagesejar</i><t>enve:jar</t><en></en></v>
 <v><i>paginar</i><t>cant:ar</t><en></en></v>
 <v><i>pair</i><t>redu:ir</t><en></en></v>
@@ -6932,7 +6932,7 @@
 <v><i>preferir</i><t>serv:ir</t><en></en></v>
 <v><i>prefigurar</i><t>cant:ar</t><en></en></v>
 <v><i>prefixar</i><t>cant:ar</t><en></en></v>
-<v><i>pregar</i><t>cant:ar</t><en></en></v>
+<v><i>pregar</i><t>preg:ar</t><en></en></v>
 <v><i>pregonar</i><t>cant:ar</t><en></en></v>
 <v><i>preguntar</i><t>cant:ar</t><en></en></v>
 <v><i>prejutjar</i><t>enve:jar</t><en></en></v>
