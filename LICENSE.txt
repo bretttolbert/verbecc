@@ -1,7 +1,7 @@
 verbecc
 Tous les verbes complètement conjugués
 Verbs Completely Conjugated
-Verb conjugations for French, Spanish, Portuguese, Italian and Romanian, 
+Verb conjugations for Catalan, French, Italian, Portuguese, Romanian and Spanish
 enhanced by machine learning
 
 Copyright (C) 2023 Brett Tolbert 
@@ -20,6 +20,8 @@ Credits:
 - Verb conjugation XML data files for other languages generated
   by Sekou Diao using unsupervised learning and further improved 
   by Brett Tolbert (added missing data)
+- Catalan verbs list imported from catverbs
+  <https://github.com/bpeel/catverbs>
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
