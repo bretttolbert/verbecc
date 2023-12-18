@@ -1,5 +1,12 @@
 # verbecc Changelog
 
+- 1.9.2 [17 December 2023]
+  - Fixed bug in new `localization` module
+  - Renamed `localize_mood` and `localize_tense` to `xmood` and `xtense`
+  - Added `localization` example
+  - Fixed Catalan verbs: mentir, pagar, naixer, néixer
+  - Ran autoformatter
+
 - 1.9.1 [17 December 2023]
   - Renamed Catalan 'preterit' to 'passat-simple'
   - Cont. added more missing conjugation templates for Catalan, decent support for most Catalan verbs now
