@@ -6464,8 +6464,8 @@
 <v><i>numerar</i><t>cant:ar</t><en></en></v>
 <v><i>nyacar</i><t>tren:car</t><en></en></v>
 <v><i>nyaufar</i><t>cant:ar</t><en></en></v>
-<v><i>nàixer</i><t>n:àixer</t><en></en></v>
-<v><i>néixer</i><t>:nàixer</t><en></en></v>
+<v><i>nàixer</i><t>n:àixer</t><en>be born</en></v>
+<v><i>néixer</i><t>n:àixer</t><en>be born</en></v>
 <v><i>nòmer</i><t>tém:er</t><en></en></v>
 <v><i>obcecar</i><t>tren:car</t><en></en></v>
 <v><i>obeir</i><t>redu:ir</t><en></en></v>

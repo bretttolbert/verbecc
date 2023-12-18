@@ -152,7 +152,9 @@ test_ca_conjugate_mood_tense_data = [
         ['jo menteixo', 'tu menteixes', 'ell menteix', 'nosaltres mentim', 'vosaltres mentiu', 'ells menteixen']),
     ('desmentir', 'indicatiu', 'present',
         ['jo desmenteixo', 'tu desmenteixes', 'ell desmenteix', 'nosaltres desmentim', 'vosaltres desmentiu', 'ells desmenteixen']),
-    ('naixer', 'indicatiu', 'present',
+    ('nàixer', 'indicatiu', 'present',
+        ['jo naixo', 'tu naixes', 'ell naix', 'nosaltres naixem', 'vosaltres naixeu', 'ells naixen']),
+    ('néixer', 'indicatiu', 'present',
         ['jo naixo', 'tu naixes', 'ell naix', 'nosaltres naixem', 'vosaltres naixeu', 'ells naixen'])
 ]
 
