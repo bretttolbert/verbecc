@@ -1770,7 +1770,7 @@
 <v><i>confiscar</i><t>tren:car</t><en></en></v>
 <v><i>confitar</i><t>cant:ar</t><en></en></v>
 <v><i>confluir</i><t>obe:ir</t><en></en></v>
-<v><i>confondre</i><t>perd:re</t><en></en></v>
+<v><i>confondre</i><t>confon:dre</t><en></en></v>
 <v><i>conformar</i><t>cant:ar</t><en></en></v>
 <v><i>confortar</i><t>cant:ar</t><en></en></v>
 <v><i>confraternitzar</i><t>cant:ar</t><en></en></v>
@@ -1936,7 +1936,7 @@
 <v><i>corejar</i><t>enve:jar</t><en></en></v>
 <v><i>coresforçar</i><t>comen:çar</t><en></en></v>
 <v><i>corferir</i><t>serv:ir</t><en></en></v>
-<v><i>corfondre</i><t>conf:ondre</t><en></en></v>
+<v><i>corfondre</i><t>confon:dre</t><en>merge</en></v>
 <v><i>corgelar</i><t>cant:ar</t><en></en></v>
 <v><i>corglaçar</i><t>comen:çar</t><en></en></v>
 <v><i>cornar</i><t>cant:ar</t><en></en></v>
@@ -3173,7 +3173,7 @@
 <v><i>diferir</i><t>serv:ir</t><en></en></v>
 <v><i>dificultar</i><t>cant:ar</t><en></en></v>
 <v><i>difluir</i><t>obe:ir</t><en></en></v>
-<v><i>difondre</i><t>conf:ondre</t><en></en></v>
+<v><i>difondre</i><t>confon:dre</t><en></en></v>
 <v><i>difractar</i><t>cant:ar</t><en></en></v>
 <v><i>diftongar</i><t>preg:ar</t><en></en></v>
 <v><i>difuminar</i><t>cant:ar</t><en></en></v>
@@ -3947,7 +3947,7 @@
 <v><i>enfolcar</i><t>tren:car</t><en></en></v>
 <v><i>enfollir</i><t>serv:ir</t><en></en></v>
 <v><i>enfondir</i><t>serv:ir</t><en></en></v>
-<v><i>enfondre</i><t>conf:ondre</t><en></en></v>
+<v><i>enfondre</i><t>confon:dre</t><en></en></v>
 <v><i>enfonsar</i><t>cant:ar</t><en></en></v>
 <v><i>enfonyar</i><t>cant:ar</t><en></en></v>
 <v><i>enforatar</i><t>cant:ar</t><en></en></v>
@@ -5352,7 +5352,7 @@
 <v><i>fonamentar</i><t>cant:ar</t><en></en></v>
 <v><i>fonar</i><t>cant:ar</t><en></en></v>
 <v><i>fondejar</i><t>enve:jar</t><en></en></v>
-<v><i>fondre</i><t>conf:ondre</t><en></en></v>
+<v><i>fondre</i><t>confon:dre</t><en></en></v>
 <v><i>fonellar</i><t>cant:ar</t><en></en></v>
 <v><i>fonyar</i><t>cant:ar</t><en></en></v>
 <v><i>fonyegar</i><t>preg:ar</t><en></en></v>
@@ -5815,7 +5815,7 @@
 <v><i>infligir</i><t>serv:ir</t><en></en></v>
 <v><i>influenciar</i><t>canvi:ar</t><en></en></v>
 <v><i>influir</i><t>obe:ir</t><en></en></v>
-<v><i>infondre</i><t>conf:ondre</t><en></en></v>
+<v><i>infondre</i><t>confon:dre</t><en></en></v>
 <v><i>informar</i><t>cant:ar</t><en></en></v>
 <v><i>informatitzar</i><t>cant:ar</t><en></en></v>
 <v><i>infrautilitzar</i><t>cant:ar</t><en></en></v>
@@ -6188,7 +6188,7 @@
 <v><i>marcir</i><t>serv:ir</t><en></en></v>
 <v><i>marejar</i><t>enve:jar</t><en></en></v>
 <v><i>marfondir</i><t>serv:ir</t><en></en></v>
-<v><i>marfondre</i><t>conf:ondre</t><en></en></v>
+<v><i>marfondre</i><t>confon:dre</t><en></en></v>
 <v><i>margar</i><t>preg:ar</t><en></en></v>
 <v><i>margenar</i><t>cant:ar</t><en></en></v>
 <v><i>marginar</i><t>cant:ar</t><en></en></v>
@@ -6260,7 +6260,7 @@
 <v><i>mercantilitzar</i><t>cant:ar</t><en></en></v>
 <v><i>merceritzar</i><t>cant:ar</t><en></en></v>
 <v><i>meritar</i><t>cant:ar</t><en></en></v>
-<v><i>merèixer</i><t>con:éixer</t><en></en></v>
+<v><i>merèixer</i><t>créix:er</t><en>deserve</en></v>
 <v><i>mesar</i><t>cant:ar</t><en></en></v>
 <v><i>mesclar</i><t>cant:ar</t><en></en></v>
 <v><i>mesquinejar</i><t>enve:jar</t><en></en></v>
@@ -7344,7 +7344,7 @@
 <v><i>refluir</i><t>obe:ir</t><en></en></v>
 <v><i>refocil·lar</i><t>cant:ar</t><en></en></v>
 <v><i>refonamentar</i><t>cant:ar</t><en></en></v>
-<v><i>refondre</i><t>conf:ondre</t><en></en></v>
+<v><i>refondre</i><t>confon:dre</t><en></en></v>
 <v><i>reforestar</i><t>cant:ar</t><en></en></v>
 <v><i>reforjar</i><t>enve:jar</t><en></en></v>
 <v><i>reformar</i><t>cant:ar</t><en></en></v>
@@ -7606,7 +7606,7 @@
 <v><i>retirar</i><t>cant:ar</t><en></en></v>
 <v><i>retocar</i><t>tren:car</t><en></en></v>
 <v><i>retolar</i><t>cant:ar</t><en></en></v>
-<v><i>retondre</i><t>conf:ondre</t><en></en></v>
+<v><i>retondre</i><t>confon:dre</t><en></en></v>
 <v><i>retopar</i><t>cant:ar</t><en></en></v>
 <v><i>retornar</i><t>cant:ar</t><en></en></v>
 <v><i>retorquir</i><t>serv:ir</t><en></en></v>
@@ -8303,7 +8303,7 @@
 <v><i>transferir</i><t>serv:ir</t><en></en></v>
 <v><i>transfigurar</i><t>cant:ar</t><en></en></v>
 <v><i>transflorar</i><t>cant:ar</t><en></en></v>
-<v><i>transfondre</i><t>conf:ondre</t><en></en></v>
+<v><i>transfondre</i><t>confon:dre</t><en></en></v>
 <v><i>transformar</i><t>cant:ar</t><en></en></v>
 <v><i>transgredir</i><t>serv:ir</t><en></en></v>
 <v><i>transhumar</i><t>cant:ar</t><en></en></v>

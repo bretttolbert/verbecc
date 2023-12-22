@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 42
+    assert len(template_names) == 43
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
@@ -1636,6 +1636,36 @@ def test_find_verb_by_infinitive():
                 "nosaltres acresquéssim",
                 "vosaltres acresquéssiu",
                 "elles acresquessin",
+            ],
+        ),
+        (
+            "merèixer",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo mereixo",
+                "tu mereixes",
+                "ella mereix",
+                "nosaltres mereixem",
+                "vosaltres mereixeu",
+                "elles mereixen",
+            ],
+        ),
+        (
+            "confondre",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo confonc",
+                "tu confons",
+                "ella confon",
+                "nosaltres confonem",
+                "vosaltres confoneu",
+                "elles confonen",
             ],
         ),
     ],
