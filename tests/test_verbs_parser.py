@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from unittest.mock import patch
 
 import pytest
@@ -37,13 +35,13 @@ def test_verb_invalid_xml(mock_v_elem):
         v = verb.Verb(mock_v_elem)
 
 
-test_data = [
-    ("mang", ["mangeotter", "manger"]),
-    ("Mang", ["mangeotter", "manger"]),
-]
-
-
-@pytest.mark.parametrize("query,expected_matches", test_data)
+@pytest.mark.parametrize(
+    "query,expected_matches",
+    [
+        ("mang", ["mangeotter", "manger"]),
+        ("Mang", ["mangeotter", "manger"]),
+    ],
+)
 def test_get_verbs_that_start_with(query, expected_matches):
     vp = verbs_parser.VerbsParser()
     matches = vp.get_verbs_that_start_with(query)

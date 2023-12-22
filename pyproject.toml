@@ -4,55 +4,61 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "verbecc"
-version = "1.9.2"
+version = "1.9.3"
 dependencies = [
   "lxml",
   "lxml-stubs",
   "cython",
   "numpy",
   "scipy",
-  "scikit-learn"
+  "scikit-learn",
 ]
 requires-python = ">=3.8"
-authors = [
-  {name = "Brett Tolbert", email = "bretttolbert@gmail.com"},
-]
-maintainers = [
-  {name = "Brett Tolbert", email = "bretttolbert@gmail.com"}
-]
+authors = [{ name = "Brett Tolbert", email = "bretttolbert@gmail.com" }]
+maintainers = [{ name = "Brett Tolbert", email = "bretttolbert@gmail.com" }]
 description = "Verbs Completely Conjugated: machine learning conjugator for Catalan, French, Italian, Portuguese, Romanian and Spanish"
 readme = "README.md"
-license = {file = "LICENSE.txt"}
-    keywords= ['verb,', 'conjugator', 'conjugation', 'Catalan', 'French', 'Italian', 'Portuguese', 'Romanian', 'Spanish']
+license = { file = "LICENSE.txt" }
+keywords = [
+  'verb,',
+  'conjugator',
+  'conjugation',
+  'Catalan',
+  'French',
+  'Italian',
+  'Portuguese',
+  'Romanian',
+  'Spanish',
+]
 classifiers = [
-    'Development Status :: 5 - Production/Stable',
-    'Topic :: Software Development :: Libraries :: Python Modules',
-    'Topic :: Text Processing :: Linguistic',
-    'Topic :: Education',
-    'Topic :: Scientific/Engineering :: Artificial Intelligence',
-    'Topic :: Utilities',
-    'Intended Audience :: Developers',
-    'Intended Audience :: End Users/Desktop',
-    'Intended Audience :: Education',
-    'Intended Audience :: Science/Research',
-    'License :: OSI Approved :: GNU General Public License (GPL)',
-    'Natural Language :: Catalan',
-    'Natural Language :: French',
-    'Natural Language :: Italian',
-    'Natural Language :: Portuguese',
-    'Natural Language :: Romanian',
-    'Natural Language :: Spanish',
-    'Operating System :: OS Independent',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.3',
-    'Programming Language :: Python :: 3.4',
-    'Programming Language :: Python :: 3.5',
-    'Programming Language :: Python :: 3.6',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    'Programming Language :: Python :: 3.10',
-    'Programming Language :: Python :: 3.11'
+  'Development Status :: 5 - Production/Stable',
+  'Topic :: Software Development :: Libraries :: Python Modules',
+  'Topic :: Text Processing :: Linguistic',
+  'Topic :: Education',
+  'Topic :: Scientific/Engineering :: Artificial Intelligence',
+  'Topic :: Utilities',
+  'Intended Audience :: Developers',
+  'Intended Audience :: End Users/Desktop',
+  'Intended Audience :: Education',
+  'Intended Audience :: Science/Research',
+  'License :: OSI Approved :: GNU General Public License (GPL)',
+  'Natural Language :: Catalan',
+  'Natural Language :: French',
+  'Natural Language :: Italian',
+  'Natural Language :: Portuguese',
+  'Natural Language :: Romanian',
+  'Natural Language :: Spanish',
+  'Operating System :: OS Independent',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.3',
+  'Programming Language :: Python :: 3.4',
+  'Programming Language :: Python :: 3.5',
+  'Programming Language :: Python :: 3.6',
+  'Programming Language :: Python :: 3.7',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
 ]
 
 [project.urls]
@@ -67,3 +73,6 @@ trained_models = ['verbecc/data/models/*']
 
 [tool.setuptools.packages]
 find = {}
+
+[project.scripts]
+verbecc-train-models = 'verbecc.utils:train_models'

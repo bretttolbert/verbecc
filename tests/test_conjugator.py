@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import pytest
 from verbecc import conjugator
 from verbecc import string_utils
@@ -693,16 +691,17 @@ expected_resp_conj_se_lever = {
     },
 }
 
-test_conj_data = [
-    ("manger", expected_resp_conj_manger),
-    ("pouvoir", expected_resp_conj_pouvoir),
-    ("Pouvoir", expected_resp_conj_pouvoir),
-    ("pleuvoir", expected_resp_conj_pleuvoir),
-    ("Se lever", expected_resp_conj_se_lever),
-]
 
-
-@pytest.mark.parametrize("infinitive,expected_resp", test_conj_data)
+@pytest.mark.parametrize(
+    "infinitive,expected_resp",
+    [
+        ("manger", expected_resp_conj_manger),
+        ("pouvoir", expected_resp_conj_pouvoir),
+        ("Pouvoir", expected_resp_conj_pouvoir),
+        ("pleuvoir", expected_resp_conj_pleuvoir),
+        ("Se lever", expected_resp_conj_se_lever),
+    ],
+)
 def test_conjugator_conjugate(infinitive, expected_resp):
     assert cg.conjugate(infinitive) == expected_resp
 
@@ -722,14 +721,14 @@ def test_conjugator_find_template_template_not_found():
         cg.find_template("oops")
 
 
-test_get_verbs_that_start_with_data = [
-    ("lev", ["lever", "léviger", "levretter"]),
-    ("Se lev", ["se lever", "se léviger", "se levretter"]),
-    ("s'aim", ["s'aimanter", "s'aimer"]),
-]
-
-
-@pytest.mark.parametrize("query,expected_resp", test_get_verbs_that_start_with_data)
+@pytest.mark.parametrize(
+    "query,expected_resp",
+    [
+        ("lev", ["lever", "léviger", "levretter"]),
+        ("Se lev", ["se lever", "se léviger", "se levretter"]),
+        ("s'aim", ["s'aimanter", "s'aimer"]),
+    ],
+)
 def test_conjugator_get_verbs_that_start_with(query, expected_resp):
     assert set(cg.get_verbs_that_start_with(query, max_results=10)) == set(
         expected_resp

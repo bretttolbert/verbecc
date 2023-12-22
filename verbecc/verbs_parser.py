@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from __future__ import print_function
 from bisect import bisect_left
 from lxml import etree
@@ -64,7 +62,7 @@ class VerbsParser:
         if config.ml:
             template, pred_score = self.template_predictor.predict(query)
             verb_xml = "<v><i>{}</i><t>{}</t></v>".format(infinitive.lower(), template)
-            ret = verb.Verb(etree.fromstring(verb_xml))
+            ret = verb.Verb(etree.fromstring(verb_xml, parser=None))
             ret.predicted = True
             ret.pred_score = pred_score
             return ret

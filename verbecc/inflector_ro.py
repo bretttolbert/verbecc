@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from typing import Dict, List, Tuple
 
 from verbecc import inflector
@@ -107,7 +105,14 @@ class InflectorRo(inflector.Inflector):
         return tense_name.startswith("viitor")
 
     def _conjugate_compound_primary_verb(
-        self, co, mood_name, tense_name, persons, aux_verb, aux_conj
+        self,
+        co: inflector.Inflector.ConjugationObjects,
+        mood_name: str,
+        tense_name: str,
+        persons: List[str],
+        aux_verb: str,
+        aux_conj: List[str],
+        gender: str = "m",
     ):
         conditional_aux_verb = ["aş", "ai", "ar", "am", "aţi", "ar", "ar"]
         if mood_name == "indicativ" and tense_name == "viitor-1":
@@ -121,7 +126,7 @@ class InflectorRo(inflector.Inflector):
                 )
             return conj
         conj = super(InflectorRo, self)._conjugate_compound_primary_verb(
-            co, mood_name, tense_name, persons, aux_verb, aux_conj
+            co, mood_name, tense_name, persons, aux_verb, aux_conj, gender
         )
         if mood_name == "indicativ" and tense_name == "viitor-2":
             conj = [

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from lxml import etree
 from verbecc.string_utils import strip_accents
 from verbecc.exceptions import VerbsParserError

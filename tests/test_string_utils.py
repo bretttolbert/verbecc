@@ -1,6 +1,10 @@
-# -*- coding: utf-8 -*-
-
-from verbecc.string_utils import starts_with_vowel, strip_accents, unicodefix
+from verbecc.string_utils import (
+    get_common_letters,
+    get_common_letter_count,
+    starts_with_vowel,
+    strip_accents,
+    unicodefix,
+)
 
 
 def test_starts_with_vowel():
@@ -16,6 +20,16 @@ def test_strip_accents():
         strip_accents("français, être, égalité, très")
         == "francais, etre, egalite, tres"
     )
+
+
+def test_get_common_letters():
+    assert get_common_letters("brett", "tolbert") == {"b": 1, "e": 1, "r": 1, "t": 2}
+
+
+def test_get_common_letters_count():
+    assert get_common_letter_count("brett", "tolbert") == 5
+    assert get_common_letter_count("çar", "cer") == 1
+    assert get_common_letter_count(strip_accents("çar"), "cer") == 2
 
 
 def test_unicodefix():

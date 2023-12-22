@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from typing import Tuple
 
 # This refers to grammatical person ('usted' is 3s despite being semantically 2p)
