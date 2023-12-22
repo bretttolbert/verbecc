@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import pytest
 from lxml import etree
 
@@ -45,16 +43,15 @@ def test_split_reflexive():
 
 inf = inflector_fr.InflectorFr()
 
-test_inflector_fr_verb_can_be_reflexive_data = [
-    ("être", False),
-    ("lever", True),
-    ("pleuvoir", False),
-    ("manger", True),
-]
-
 
 @pytest.mark.parametrize(
-    "infinitive,expected_result", test_inflector_fr_verb_can_be_reflexive_data
+    "infinitive,expected_result",
+    [
+        ("être", False),
+        ("lever", True),
+        ("pleuvoir", False),
+        ("manger", True),
+    ],
 )
 def test_inflector_fr_verb_can_be_reflexive(infinitive, expected_result):
     assert inf._verb_can_be_reflexive(infinitive) == expected_result
@@ -118,44 +115,41 @@ def test_inflector_fr_conjugate_simple_mood_tense():
     ]
 
 
-def test_inflector_fr_get_verb_stem():
-    verb_stem = inf._get_verb_stem("manger", "man:ger")
+def test_inflector_fr_get_verb_stem_from_template_name():
+    verb_stem = inf._get_verb_stem_from_template_name("manger", "man:ger")
     assert verb_stem == "man"
-    verb_stem = inf._get_verb_stem("téléphoner", "aim:er")
+    verb_stem = inf._get_verb_stem_from_template_name("téléphoner", "aim:er")
     assert verb_stem == "téléphon"
-    verb_stem = inf._get_verb_stem("vendre", "ten:dre")
+    verb_stem = inf._get_verb_stem_from_template_name("vendre", "ten:dre")
     assert verb_stem == "ven"
     # In the case of irregular verbs, the verb stem is empty string
-    verb_stem = inf._get_verb_stem("aller", ":aller")
+    verb_stem = inf._get_verb_stem_from_template_name("aller", ":aller")
     assert verb_stem == ""
     # The infinitive ending must match the template ending
     with pytest.raises(ConjugatorError):
-        verb_stem = inf._get_verb_stem("vendre", "man:ger")
-
-
-test_inflector_fr_get_default_pronoun_data = [
-    ("1s", "m", False, "je"),
-    ("1s", "m", True, "je me"),
-    ("2s", "m", False, "tu"),
-    ("2s", "m", True, "tu te"),
-    ("3s", "m", False, "il"),
-    ("3s", "m", True, "il se"),
-    ("3s", "f", False, "elle"),
-    ("3s", "f", True, "elle se"),
-    ("1p", "m", False, "nous"),
-    ("1p", "m", True, "nous nous"),
-    ("2p", "m", False, "vous"),
-    ("2p", "m", True, "vous vous"),
-    ("3p", "m", False, "ils"),
-    ("3p", "m", True, "ils se"),
-    ("3p", "f", False, "elles"),
-    ("3p", "f", True, "elles se"),
-]
+        verb_stem = inf._get_verb_stem_from_template_name("vendre", "man:ger")
 
 
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
-    test_inflector_fr_get_default_pronoun_data,
+    [
+        ("1s", "m", False, "je"),
+        ("1s", "m", True, "je me"),
+        ("2s", "m", False, "tu"),
+        ("2s", "m", True, "tu te"),
+        ("3s", "m", False, "il"),
+        ("3s", "m", True, "il se"),
+        ("3s", "f", False, "elle"),
+        ("3s", "f", True, "elle se"),
+        ("1p", "m", False, "nous"),
+        ("1p", "m", True, "nous nous"),
+        ("2p", "m", False, "vous"),
+        ("2p", "m", True, "vous vous"),
+        ("3p", "m", False, "ils"),
+        ("3p", "m", True, "ils se"),
+        ("3p", "f", False, "elles"),
+        ("3p", "f", True, "elles se"),
+    ],
 )
 def test_inflector_fr_get_default_pronoun(
     person, gender, is_reflexive, expected_result

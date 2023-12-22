@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from abc import ABC, abstractmethod
 import copy
 from typing import Dict, List, Tuple
@@ -8,6 +6,8 @@ from verbecc import grammar_defines
 from verbecc import exceptions
 from verbecc import conjugations_parser
 from verbecc import conjugation_template
+from verbecc.string_utils import strip_accents
+from verbecc import tense_template
 from verbecc import verb
 from verbecc import verbs_parser
 
@@ -39,15 +39,20 @@ class Inflector(ABC):
             "moods": moods,
         }
 
-    def conjugate_mood(self, infinitive: str, mood_name: str):
+    def conjugate_mood(self, infinitive: str, mood_name: str) -> Dict[str, List[str]]:
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood(co, mood_name)
 
     def conjugate_mood_tense(
-        self, infinitive: str, mood_name: str, tense_name: str, alternate=False
-    ):
+        self,
+        infinitive: str,
+        mood_name: str,
+        tense_name: str,
+        alternate=False,
+        gender="m",
+    ) -> List[str]:
         co = self._get_conj_obs(infinitive)
-        return self._conjugate_mood_tense(co, mood_name, tense_name, alternate)
+        return self._conjugate_mood_tense(co, mood_name, tense_name, alternate, gender)
 
     def get_verbs(self) -> List[verb.Verb]:
         return self._verb_parser.verbs
@@ -61,18 +66,18 @@ class Inflector(ABC):
     def get_template_names(self) -> List[str]:
         return [t.name for t in self._conj_parser.templates]
 
-    def find_verb_by_infinitive(self, infinitive) -> verb.Verb:
+    def find_verb_by_infinitive(self, infinitive: str) -> verb.Verb:
         return self._verb_parser.find_verb_by_infinitive(infinitive)
 
     def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
         return self._conj_parser.find_template(name)
 
-    def get_verbs_that_start_with(self, query: str, max_results: int):
+    def get_verbs_that_start_with(self, query: str, max_results: int) -> List[str]:
         query = query.lower()
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         return matches
 
-    def _get_verb_stem(self, infinitive: str, template_name: str):
+    def _get_verb_stem_from_template_name(self, infinitive: str, template_name: str):
         """Get the verb stem given an ininitive and a colon-delimited template name.
         E.g. infinitive='parler' template_name='aim:er' -> 'parl'
         Note: Catalan overrides this base class implementation to allow looser matching
@@ -98,11 +103,23 @@ class Inflector(ABC):
     def _add_reflexive_pronoun(self, s: str):
         pass
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str):
+    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str) -> str:
         return s
 
     class ConjugationObjects:
-        def __init__(self, infinitive: str, verb, template, verb_stem, is_reflexive):
+        def __init__(
+            self,
+            infinitive: str,
+            verb: verb.Verb,
+            template: conjugation_template.ConjugationTemplate,
+            verb_stem: str,
+            is_reflexive: bool,
+        ):
+            """
+            :param verb_stem: the verb stem after applicable template
+                              stem modifications i.e. modify-stem="strip-accents"
+            :type verb_stem: str
+            """
             self.infinitive = infinitive
             self.verb = verb
             self.template = template
@@ -120,19 +137,25 @@ class Inflector(ABC):
                 )
             )
 
-    def _get_conj_obs(self, infinitive) -> ConjugationObjects:
+    def _get_conj_obs(self, infinitive: str) -> ConjugationObjects:
         infinitive = infinitive.lower()
         is_reflexive, infinitive = self._split_reflexive(infinitive)
         if is_reflexive and not self._verb_can_be_reflexive(infinitive):
             raise exceptions.VerbNotFoundError("Verb cannot be reflexive")
         verb = self.find_verb_by_infinitive(infinitive)
         template = self.find_template(verb.template)
-        verb_stem = self._get_verb_stem(verb.infinitive, template.name)
+        verb_stem = self._get_verb_stem_from_template_name(
+            verb.infinitive, template.name
+        )
+        if template.modify_stem == "strip-accents":
+            verb_stem = strip_accents(verb_stem)
         return Inflector.ConjugationObjects(
             infinitive, verb, template, verb_stem, is_reflexive
         )
 
-    def _conjugate_mood(self, co, mood_name):
+    def _conjugate_mood(
+        self, co: ConjugationObjects, mood_name: str
+    ) -> Dict[str, List[str]]:
         if mood_name not in co.template.moods:
             raise exceptions.InvalidMoodError
         ret = {}
@@ -140,7 +163,9 @@ class Inflector(ABC):
         ret.update(self._get_compound_conjugations_for_mood(co, mood_name))
         return ret
 
-    def _get_simple_conjugations_for_mood(self, co, mood_name):
+    def _get_simple_conjugations_for_mood(
+        self, co: ConjugationObjects, mood_name: str
+    ) -> Dict[str, List[str]]:
         ret = {}
         mood = co.template.moods[mood_name]
         for tense_name in mood.tenses:
@@ -149,7 +174,7 @@ class Inflector(ABC):
 
     def _get_compound_conjugations_for_mood(
         self, co: ConjugationObjects, mood_name: str
-    ):
+    ) -> Dict[str, List[str]]:
         ret = {}
         comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map:
@@ -157,7 +182,7 @@ class Inflector(ABC):
                 ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
         return ret
 
-    def _auxilary_verb_uses_alternate_conjugation(self, tense_name: str):
+    def _auxilary_verb_uses_alternate_conjugation(self, tense_name: str) -> bool:
         return False
 
     def _conjugate_mood_tense(
@@ -166,7 +191,8 @@ class Inflector(ABC):
         mood_name: str,
         tense_name: str,
         alternate: bool = False,
-    ):
+        gender: str = "m",
+    ) -> List[str]:
         comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
             aux_mood_name, aux_tense_name = comp_conj_map[mood_name][tense_name]
@@ -184,15 +210,20 @@ class Inflector(ABC):
                 raise exceptions.InvalidTenseError
             tense_template = mood.tenses[tense_name]
             return self._conjugate_simple_mood_tense(
-                co.verb_stem, mood_name, tense_template, co.is_reflexive, alternate
+                co.verb_stem,
+                mood_name,
+                tense_template,
+                is_reflexive=co.is_reflexive,
+                alternate=alternate,
+                gender=gender,
             )
 
-    def _get_tenses_conjugated_without_pronouns(self):
+    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return []
 
     def _get_auxilary_verb(
         self, co: ConjugationObjects, mood_name: str, tense_name: str
-    ):
+    ) -> str:
         return ""
 
     def _is_auxilary_verb_inflected(self, auxilary_verb: str):
@@ -232,15 +263,60 @@ class Inflector(ABC):
         else:
             return "mp"
 
-    def _get_default_pronoun(self, person, gender="m", is_reflexive=False):
+    def _get_default_pronoun(
+        self, person: str, gender: str = "m", is_reflexive: bool = False
+    ) -> str:
         return ""
 
-    def _combine_pronoun_and_conj(self, pronoun: str, conj: str):
+    def _combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         return pronoun + " " + conj
 
+    def _combine_verb_stem_and_ending(self, verb_stem: str, ending: str) -> str:
+        """
+        Originally this would simply combine the verb_stem and the ending.
+        E.g. "parl" + "er" = "parler"
+
+        Now for Catalan/enhanced templates we need to support stem-modifying verbs.
+
+        E.g. for infintive "pertànyer" in the indicative mood simple-past tense,
+        two new stem-modifying template feature will be used:
+
+        First the template's modify-stem="strip-accents" attribute is used to
+        remove the accent from the stem for all inflected forms.
+
+        infinitive "pertànyer" matches template "pertàny:er" which has
+        modify-stem="strip-accents"
+        So the stem "pertàny" becomes "pertany"
+
+        modify-stem="strip-accents" is applied in the constructor of ConjugationObjects,
+        and so the verb_stem argument to _conjugate_simple_mood_tense and consequently
+        this function is presumed to already have applicable modifications applied.
+
+        Next, the "pertàny:er" template endings will use the new delete operator
+        to delete one letter from the end of the stem.
+
+        For "pertàny:er" in the i
+
+        "pertany" + "-guí" = "pertanguí"
+
+        Caution: A single "-" is also used as the placeholder for tenses that are
+        not conjugated, in some verbs. "-" should only delete from the stem if it
+        is followed by one or more characters.
+        """
+        while ending != "-" and ending.startswith("-"):
+            ending = ending[1:]
+            verb_stem = verb_stem[:-1]
+        return verb_stem + ending
+
     def _conjugate_simple_mood_tense(
-        self, verb_stem, mood_name, tense_template, is_reflexive=False, alternate=False
-    ):
+        self,
+        verb_stem: str,
+        mood_name: str,
+        tense_template: tense_template.TenseTemplate,
+        is_reflexive: bool = False,
+        alternate: bool = False,
+        gender: str = "m",
+    ) -> List[str]:
         ret = []
         tense_name = tense_template.name
         if tense_name in self._get_tenses_conjugated_without_pronouns():
@@ -252,8 +328,9 @@ class Inflector(ABC):
                 if alternate:
                     ending = person_ending.get_alternate_ending_if_available()
                 if ending != "-":
-                    s += verb_stem
-                s += ending
+                    s += self._combine_verb_stem_and_ending(verb_stem, ending)
+                else:
+                    s += ending
                 if ending != "-":
                     s = self._add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
                         s,
@@ -268,15 +345,19 @@ class Inflector(ABC):
         else:
             for person_ending in tense_template.person_endings:
                 pronoun = self._get_default_pronoun(
-                    person_ending.get_person(), is_reflexive=is_reflexive
+                    person=person_ending.get_person(),
+                    gender=gender,
+                    is_reflexive=is_reflexive,
                 )
                 ending = person_ending.get_ending()
                 if alternate:
                     ending = person_ending.get_alternate_ending_if_available()
-                conj = verb_stem + ending
-                s = self._combine_pronoun_and_conj(pronoun, conj)
-                if mood_name == self._get_subjunctive_mood_name():
-                    s = self._add_subjunctive_relative_pronoun(s, tense_name)
+                s = "-"
+                if ending != "-":
+                    conj = self._combine_verb_stem_and_ending(verb_stem, ending)
+                    s = self._combine_pronoun_and_conj(pronoun, conj)
+                    if mood_name == self._get_subjunctive_mood_name():
+                        s = self._add_subjunctive_relative_pronoun(s, tense_name)
                 ret.append(s)
         return ret
 
@@ -299,7 +380,14 @@ class Inflector(ABC):
         return False
 
     def _conjugate_compound(
-        self, co, mood_name, tense_name, aux_mood_name, aux_tense_name, aux_alternate
+        self,
+        co: ConjugationObjects,
+        mood_name: str,
+        tense_name: str,
+        aux_mood_name: str,
+        aux_tense_name: str,
+        aux_alternate: bool,
+        gender: str = "m",
     ):
         ret = []
         if self._compound_conjugation_not_applicable(
@@ -329,7 +417,7 @@ class Inflector(ABC):
             aux_co.verb_stem, "", aux_tense_template, co.is_reflexive, aux_alternate
         )
         ret = self._conjugate_compound_primary_verb(
-            co, mood_name, tense_name, persons, aux_verb, aux_conj
+            co, mood_name, tense_name, persons, aux_verb, aux_conj, gender
         )
         if mood_name == self._get_subjunctive_mood_name():
             ret = [self._add_subjunctive_relative_pronoun(i, tense_name) for i in ret]
@@ -340,15 +428,16 @@ class Inflector(ABC):
         co: ConjugationObjects,
         mood_name: str,
         tense_name: str,
-        persons,
-        aux_verb,
-        aux_conj,
+        persons: List[str],
+        aux_verb: str,
+        aux_conj: List[str],
+        gender: str = "m",
     ):
         ret = []
         pmood = self._get_participle_mood_name()
         ptense = self._get_participle_tense_name()
         participle = self._conjugate_simple_mood_tense(
-            co.verb_stem, pmood, co.template.moods[pmood].tenses[ptense]
+            co.verb_stem, pmood, co.template.moods[pmood].tenses[ptense], gender=gender
         )
         if not self._is_auxilary_verb_inflected(aux_verb):
             for hv in aux_conj:

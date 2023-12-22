@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import pytest
 from verbecc import mlconjug
 from verbecc import inflector_fr
@@ -29,13 +27,13 @@ def test_extract_verb_features():
         ]
 
 
-def test_data_set_construct_dict_conjug():
+def test_DataSet_construct_dict_conjug():
     if config.ml:
         dict_conjug = mlconjug.DataSet(verb_template_pairs).dict_conjug
         assert "abaisser" in dict_conjug["aim:er"]
 
 
-def test_data_set_split_test_train():
+def test_DataSet_split_test_train():
     if config.ml:
         data_set = mlconjug.DataSet(verb_template_pairs)
         assert data_set.min_threshold == 8

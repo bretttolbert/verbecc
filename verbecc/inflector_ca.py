@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
-
 from typing import Dict, List, Tuple
 
 from verbecc import exceptions
 from verbecc import inflector
+from verbecc.string_utils import get_common_letter_count, strip_accents
 
 
 class InflectorCa(inflector.Inflector):
@@ -97,26 +96,42 @@ class InflectorCa(inflector.Inflector):
         """
         return {}
 
-    def _get_verb_stem(self, infinitive: str, template_name: str):
+    def _get_verb_stem_from_template_name(self, infinitive: str, template_name: str):
         """Get the verb stem given an ininitive and a colon-delimited template name.
         E.g. infinitive='parlar' template_name='cant:ar' -> 'parl'
 
-        Note: Base class _get_verb_stem raises exception if template ending doesn't
-        match infinitive ending exactly but for Catalan, some verbs
+        Note: Base class _get_verb_stem_from_template_name raises exception if template
+        ending doesn't match infinitive ending exactly but for Catalan, some verbs
         have endings where at least the first letter doesn't match.
 
         E.g. both 'jaure' and and 'jeure' are apparently conjugated
         identically, so we want either one to use the 'j:aure' template.
         So since this is Catalan, let it pass if the last n-1 letters of the
         template ending match the infinitive ending
+
+        New problem: Template comen:çar ending doesn't match infinitive tòrcer
+
+        Solution we'll just verify that, ignoring accents, the template either
+        matches exactly or has at least len(template_ending)-1 characters in
+        common.
+        Ignoring accents, "çar" and "cer" have 2 characters in common which is at least 3-1
+        "aure" and "eure" have 3 characters in common which is at least 4-1
         """
         _, template_ending = template_name.split(":")
-        if not infinitive.endswith(template_ending) and not infinitive.endswith(
-            template_ending[1:]
+        infinitive_no_accents = strip_accents(infinitive)
+        template_ending_no_accents = strip_accents(infinitive)
+        infinitive_ending_no_accents = infinitive_no_accents[-len(template_ending) :]
+        if (
+            not infinitive_ending_no_accents == template_ending_no_accents
+            and not infinitive_no_accents[1:] == template_ending_no_accents[1:]
+            and get_common_letter_count(
+                infinitive_ending_no_accents, template_ending_no_accents
+            )
+            < len(template_ending) - 1
         ):
             raise exceptions.ConjugatorError(
-                "Template {} ending doesn't "
-                "match infinitive {},"
+                "Template '{}' ending doesn't "
+                "match infinitive '{}', "
                 "not even a little bit".format(template_name, infinitive)
             )
         return infinitive[: len(infinitive) - len(template_ending)]

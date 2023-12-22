@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from lxml import etree
 from typing import List
 
@@ -77,7 +75,7 @@ class TenseTemplate:
         """
         self.person_endings: List[person_ending.PersonEnding] = []
         person_num = 0
-        for p_elem in tense_elem.findall("p"):
+        for p_elem in tense_elem.findall("p", namespaces=None):
             person = grammar_defines.PERSONS[person_num]
             if self.name == "imperatif-présent":
                 person = grammar_defines.IMPERATIVE_PRESENT_PERSONS[person_num]

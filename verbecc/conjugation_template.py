@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
-
 from lxml import etree
 from typing import Dict
 
 from verbecc.mood import Mood
+
+
 from verbecc.exceptions import ConjugationTemplateError
 
 
@@ -18,6 +18,16 @@ class ConjugationTemplate:
             for mood_elem in template_elem:  # type: ignore
                 mood = Mood(mood_elem)
                 self.moods[mood_elem.tag.lower()] = mood
+            self.modify_stem = ""
+            modify_stem_attrib = template_elem.get("modify-stem", default=None)
+            if modify_stem_attrib is not None:
+                self.modify_stem = str(modify_stem_attrib)
+                if self.modify_stem not in ("strip-accents"):
+                    raise ConjugationTemplateError(
+                        "Invalid 'modify-stem' attribute value '{self.modify_stem}'"
+                    )
+            else:
+                self.modify_stem = ""
 
         except AttributeError as e:
             raise ConjugationTemplateError(

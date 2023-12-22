@@ -1,5 +1,43 @@
 # verbecc Changelog
 
+- 1.9.3 [22 December 2023]
+  - Improved Catalan support
+    - Added more missing verb conjugation templates
+      - Can now conjugate 8578 verbs using 42 templates
+      - TODO: Still missing templates for 38 out of 8616 verbs
+      - See `test_inflector_ca.test_all_verbs_have_templates`
+    - Made Catalan inflector template matching more loose
+      - Added `verbecc.string_utils.get_common_letter_count`
+      - Now matches if template ending has len()-1 chars in common with infinitive ending (not counting accents)
+      - E.g. Not just `aure` and `eure` match, but also `çar` and `cer`
+  - Enhanced conjugation template syntax: now supports stem-changing verbs through two new features:
+    - 1. New stem-modifying XML attribute: `modify-stem="strip-accents"`
+    - 2. Stem-modifying delete operator '`-`'
+    - e.g. 
+    ```xml
+    <template name="conèix:er" modify-stem="strip-accents">
+    		<passat-simple>
+			<p><i>--guí</i></p>
+    ```
+    - With the above template, `conèix` + `--guí` = `jo coneguí` and `reconèix` + `--guí` = `jo reconeguí`
+  - Added `gender` flag to support feminine pronouns
+  - Modified to put `-` placeholder in conjugation for tenses that aren't conjugated e.g.
+  ```python
+    "caldre",
+    "indicatiu",
+    "present",
+    False,
+    "f",
+    [
+        "-",
+        "-",
+        "ella cal",
+        "-",
+        "-",
+        "elles calen",
+    ]
+  ```
+
 - 1.9.2 [17 December 2023]
   - Fixed bug in new `localization` module
   - Renamed `localize_mood` and `localize_tense` to `xmood` and `xtense`

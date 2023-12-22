@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from typing import Dict, List
 
 from verbecc import verb
@@ -27,11 +25,11 @@ SUPPORTED_LANGUAGES: Dict[str, str] = {
 
 
 class Conjugator:
-    """
-    :param lang: two-letter language code
-    """
-
     def __init__(self, lang: str):
+        """
+        :param lang: two-letter language code
+        :type lang: str
+        """
         if lang == "ca":
             self._inflector = inflector_ca.InflectorCa()
         elif lang == "es":
@@ -54,10 +52,15 @@ class Conjugator:
         return self._inflector.conjugate_mood(infinitive, mood_name)
 
     def conjugate_mood_tense(
-        self, infinitive: str, mood_name: str, tense_name: str, alternate: bool = False
+        self,
+        infinitive: str,
+        mood_name: str,
+        tense_name: str,
+        alternate: bool = False,
+        gender: str = "m",
     ):
         return self._inflector.conjugate_mood_tense(
-            infinitive, mood_name, tense_name, alternate
+            infinitive, mood_name, tense_name, alternate, gender
         )
 
     def get_verbs(self) -> List[verb.Verb]:
@@ -78,5 +81,5 @@ class Conjugator:
     def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
         return self._inflector.find_template(name)
 
-    def get_verbs_that_start_with(self, query: str, max_results: int):
+    def get_verbs_that_start_with(self, query: str, max_results: int) -> List[str]:
         return self._inflector.get_verbs_that_start_with(query, max_results)
