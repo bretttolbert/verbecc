@@ -14,14 +14,13 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 44
+    assert len(template_names) == 45
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
             missing_verbs.append(verb)
-    assert len(missing_verbs) == 0
     assert len(missing_templates) == 0
 
 
@@ -1716,6 +1715,36 @@ def test_find_verb_by_infinitive():
             False,
             "f",
             ["dit", "dita", "dits", "dites"],
+        ),
+        (
+            "creure",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo crec",
+                "tu creus",
+                "ella creu",
+                "nosaltres creiem",
+                "vosaltres creieu",
+                "elles creuen",
+            ],
+        ),
+        (
+            "creure",
+            "indicatiu",
+            "futur",
+            False,
+            "f",
+            [
+                "jo creuré",
+                "tu creuràs",
+                "ella creurà",
+                "nosaltres creurem",
+                "vosaltres creureu",
+                "elles creuran",
+            ],
         ),
     ],
 )
