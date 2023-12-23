@@ -2214,6 +2214,102 @@ TODO: Inherit from j:aure or perd:re
 	</Particip>
 </template>
 
+<!--
+Another stem-changing to add accents to the imperfect
+first and second person plural
+-->
+<template name="d:ur">
+	<Indicatiu>
+		<present>
+			<p><i>uc</i></p>
+			<p><i>uus</i><i>us</i></p>
+			<p><i>uu</i><i>u</i></p>
+			<p><i>uem</i></p>
+			<p><i>ueu</i></p>
+			<p><i>uen</i></p>
+		</present>
+		<imperfet>
+			<p><i>uia</i></p>
+			<p><i>uies</i></p>
+			<p><i>uia</i></p>
+			<p><i>úiem</i></p>
+			<p><i>úieu</i></p>
+			<p><i>uien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>uguí</i></p>
+			<p><i>ugueres</i></p>
+			<p><i>ugué</i></p>
+			<p><i>uguérem</i></p>
+			<p><i>uguéreu</i></p>
+			<p><i>uguéren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>uré</i></p>
+			<p><i>uràs</i></p>
+			<p><i>urà</i></p>
+			<p><i>urem</i></p>
+			<p><i>ureu</i></p>
+			<p><i>uran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>ugui</i></p>
+			<p><i>uguis</i></p>
+			<p><i>ugui</i></p>
+			<p><i>uguem</i></p>
+			<p><i>ugueu</i></p>
+			<p><i>uguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>ugués</i></p>
+			<p><i>uguessis</i></p>
+			<p><i>ugués</i></p>
+			<p><i>uguéssim</i></p>
+			<p><i>uguéssiu</i></p>
+			<p><i>uguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>uu</i><i>u</i></p>
+			<p><i>ugui</i></p>
+			<p><i>uguem</i></p>
+			<p><i>ueu</i></p>
+			<p><i>uguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>uria</i></p>
+			<p><i>uries</i></p>
+			<p><i>uria</i></p>
+			<p><i>uríem</i></p>
+			<p><i>uríeu</i></p>
+			<p><i>urien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ur</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>uent</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>dut</i></p>
+			<p><i>duta</i></p>
+			<p><i>duts</i></p>
+			<p><i>dutes</i></p>
+		</particip>
+	</Particip>
+</template>
+
 <!-- TODO: This should inherit from 'perd:re' as 'pod:er' -->
 <template name=":poder">
 	<Indicatiu>

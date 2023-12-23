@@ -3,7 +3,7 @@
 - 1.9.4 [23 December 2023]
   - Improved Catalan Support
     - Added (4) more missing templates
-    - TODO: Still missing 32 templates for 187 out of 8616 verbs
+    - TODO: Still missing 31 templates for 186 out of 8616 verbs
     - See `test_inflector_ca.test_all_verbs_have_templates`
 
 - 1.9.3 [22 December 2023]

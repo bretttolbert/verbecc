@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 45
+    assert len(template_names) == 46
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -22,6 +22,7 @@ def test_all_verbs_have_templates():
             missing_templates.add(verb.template)
             missing_verbs.append(verb)
     assert len(missing_templates) == 0
+    #assert len(missing_verbs) == 0
 
 
 def test_find_verb_by_infinitive():
@@ -1745,6 +1746,52 @@ def test_find_verb_by_infinitive():
                 "vosaltres creureu",
                 "elles creuran",
             ],
+        ),
+        (
+            "dur",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo duc",
+                "tu duus",
+                "ella duu",
+                "nosaltres duem",
+                "vosaltres dueu",
+                "elles duen",
+            ],
+        ),
+        (
+            "dur",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo duc",
+                "tu dus",
+                "ella du",
+                "nosaltres duem",
+                "vosaltres dueu",
+                "elles duen",
+            ],
+        ),
+        (
+            "dur",
+            "imperatiu",
+            "imperatiu-present",
+            False,
+            "m",
+            ["duu", "dugui", "duguem", "dueu", "duguin"],
+        ),
+        (
+            "dur",
+            "imperatiu",
+            "imperatiu-present",
+            True,
+            "m",
+            ["du", "dugui", "duguem", "dueu", "duguin"],
         ),
     ],
 )
