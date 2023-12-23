@@ -1961,7 +1961,7 @@
 <v><i>cortejar</i><t>enve:jar</t><en></en></v>
 <v><i>cortrencar</i><t>tren:car</t><en></en></v>
 <v><i>cosificar</i><t>tren:car</t><en></en></v>
-<v><i>cosir</i><t>desc:osir</t><en></en></v>
+<v><i>cosir</i><t>descos:ir</t><en></en></v>
 <v><i>cossar</i><t>cant:ar</t><en></en></v>
 <v><i>cossolar</i><t>cant:ar</t><en></en></v>
 <v><i>costar</i><t>cant:ar</t><en></en></v>
@@ -2422,7 +2422,7 @@
 <v><i>descordar</i><t>cant:ar</t><en></en></v>
 <v><i>descoronar</i><t>cant:ar</t><en></en></v>
 <v><i>descorporar</i><t>cant:ar</t><en></en></v>
-<v><i>descosir</i><t>dorm:ir</t><en></en></v>
+<v><i>descosir</i><t>descos:ir</t><en>unstitch</en></v>
 <v><i>descossar</i><t>cant:ar</t><en></en></v>
 <v><i>descossolar</i><t>cant:ar</t><en></en></v>
 <v><i>descotxar</i><t>cant:ar</t><en></en></v>
@@ -7269,7 +7269,7 @@
 <v><i>recorbar</i><t>cant:ar</t><en></en></v>
 <v><i>recordar</i><t>cant:ar</t><en></en></v>
 <v><i>recorregir</i><t>serv:ir</t><en></en></v>
-<v><i>recosir</i><t>desc:osir</t><en></en></v>
+<v><i>recosir</i><t>descos:ir</t><en></en></v>
 <v><i>recoure</i><t>desclou:re</t><en></en></v>
 <v><i>recrear</i><t>canvi:ar</t><en></en></v>
 <v><i>recremar</i><t>cant:ar</t><en></en></v>

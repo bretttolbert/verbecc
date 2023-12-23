@@ -14,15 +14,15 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 46
+    assert len(template_names) == 47
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
             missing_verbs.append(verb)
-    assert len(missing_templates) == 0
-    #assert len(missing_verbs) == 0
+    # assert len(missing_templates) == 0
+    assert len(missing_verbs) == 0
 
 
 def test_find_verb_by_infinitive():
@@ -1792,6 +1792,44 @@ def test_find_verb_by_infinitive():
             True,
             "m",
             ["du", "dugui", "duguem", "dueu", "duguin"],
+        ),
+        (
+            "descosir",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo descuso",
+                "tu descuses",
+                "ella descús",
+                "nosaltres descosim",
+                "vosaltres descosiu",
+                "elles descusen",
+            ],
+        ),
+        (
+            "descosir",
+            "subjuntiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo descusi",
+                "tu descusis",
+                "ella descusi",
+                "nosaltres descosim",
+                "vosaltres descosiu",
+                "elles descusin",
+            ],
+        ),
+        (
+            "descosir",
+            "imperatiu",
+            "imperatiu-present",
+            False,
+            "m",
+            ["descús", "descusi", "descosim", "descosiu", "descusin"],
         ),
     ],
 )
