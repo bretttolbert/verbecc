@@ -14,11 +14,14 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 43
+    assert len(template_names) == 44
+    missing_verbs = []
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
+            missing_verbs.append(verb)
+    assert len(missing_verbs) == 0
     assert len(missing_templates) == 0
 
 
@@ -1667,6 +1670,52 @@ def test_find_verb_by_infinitive():
                 "vosaltres confoneu",
                 "elles confonen",
             ],
+        ),
+        (
+            "consternar",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo consterno",
+                "tu consternes",
+                "ella consterna",
+                "nosaltres consternem",
+                "vosaltres consterneu",
+                "elles consternen",
+            ],
+        ),
+        (
+            "contradir",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo contradic",
+                "tu contradius",
+                "ella contradiu",
+                "nosaltres contradiem",
+                "vosaltres contradieu",
+                "elles contradiuen",
+            ],
+        ),
+        (
+            "contradir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["contradit", "contradida", "contradits", "contradides"],
+        ),
+        (
+            "dir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["dit", "dita", "dits", "dites"],
         ),
     ],
 )

@@ -271,94 +271,189 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Particip>
 </template>
 
-<template name=":dir">
+<template name="d:ir">
 	<Indicatiu>
 		<present>
-			<p><i>dic</i></p>
-			<p><i>dius</i></p>
-			<p><i>diu</i></p>
-			<p><i>diem</i></p>
-			<p><i>dieu</i></p>
-			<p><i>diuen</i></p>
+			<p><i>ic</i></p>
+			<p><i>ius</i></p>
+			<p><i>iu</i></p>
+			<p><i>iem</i></p>
+			<p><i>ieu</i></p>
+			<p><i>iuen</i></p>
 		</present>
 		<imperfet>
-			<p><i>deia</i></p>
-			<p><i>deies</i></p>
-			<p><i>deia</i></p>
-			<p><i>dèiem</i></p>
-			<p><i>dèieu</i></p>
-			<p><i>deien</i></p>
+			<p><i>eia</i></p>
+			<p><i>eies</i></p>
+			<p><i>eia</i></p>
+			<p><i>èiem</i></p>
+			<p><i>èieu</i></p>
+			<p><i>eien</i></p>
 		</imperfet>
 		<passat-simple>
-			<p><i>diguí</i></p>
-			<p><i>digueres</i></p>
-			<p><i>digué</i></p>
-			<p><i>diguérem</i></p>
-			<p><i>diguéreu</i></p>
-			<p><i>digueren</i></p>
+			<p><i>iguí</i></p>
+			<p><i>igueres</i></p>
+			<p><i>igué</i></p>
+			<p><i>iguérem</i></p>
+			<p><i>iguéreu</i></p>
+			<p><i>igueren</i></p>
 		</passat-simple>
 		<futur>
-			<p><i>diré</i></p>
-			<p><i>diràs</i></p>
-			<p><i>dirà</i></p>
-			<p><i>direm</i></p>
-			<p><i>direu</i></p>
-			<p><i>diran</i></p>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
 		</futur>
 	</Indicatiu>
 	<Subjuntiu>
 		<present>
-			<p><i>digui</i></p>
-			<p><i>diguis</i></p>
-			<p><i>digui</i></p>
-			<p><i>diguem</i></p>
-			<p><i>digue</i></p>
-			<p><i>diguin</i></p>
+			<p><i>igui</i></p>
+			<p><i>iguis</i></p>
+			<p><i>igui</i></p>
+			<p><i>iguem</i></p>
+			<p><i>igue</i></p>
+			<p><i>iguin</i></p>
 		</present>
 		<imperfet>
-			<p><i>digués</i></p>
-			<p><i>diguessis</i></p>
-			<p><i>digués</i></p>
-			<p><i>diguéssim</i></p>
-			<p><i>diguéssiu</i></p>
-			<p><i>diguessin</i></p>
+			<p><i>igués</i></p>
+			<p><i>iguessis</i></p>
+			<p><i>igués</i></p>
+			<p><i>iguéssim</i></p>
+			<p><i>iguéssiu</i></p>
+			<p><i>iguessin</i></p>
 		</imperfet>
 	</Subjuntiu>
 	<Imperatiu>
 		<imperatiu-present>
-			<p><i>digues</i></p>
-			<p><i>digui</i></p>
-			<p><i>diguem</i></p>
-			<p><i>digueu</i></p>
-			<p><i>diguin</i></p>
+			<p><i>igues</i></p>
+			<p><i>igui</i></p>
+			<p><i>iguem</i></p>
+			<p><i>igueu</i></p>
+			<p><i>iguin</i></p>
 		</imperatiu-present>
 	</Imperatiu>
 	<Condicional>
 		<present>
-			<p><i>diria</i></p>
-			<p><i>diries</i></p>
-			<p><i>diria</i></p>
-			<p><i>diríem</i></p>
-			<p><i>diríeu</i></p>
-			<p><i>dirien</i></p>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
 		</present>
 	</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>dir</i></p>
+			<p><i>ir</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>dient</i></p>
+			<p><i>ient</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>dit</i></p>
-			<p><i>dita</i></p>
-			<p><i>dits</i></p>
-			<p><i>dites</i></p>
+			<p><i>it</i></p>
+			<p><i>ita</i></p>
+			<p><i>its</i></p>
+			<p><i>ites</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: Inherit from d:ir 
+Only difference is the participles
+-->
+<template name="contrad:ir">
+	<Indicatiu>
+		<present>
+			<p><i>ic</i></p>
+			<p><i>ius</i></p>
+			<p><i>iu</i></p>
+			<p><i>iem</i></p>
+			<p><i>ieu</i></p>
+			<p><i>iuen</i></p>
+		</present>
+		<imperfet>
+			<p><i>eia</i></p>
+			<p><i>eies</i></p>
+			<p><i>eia</i></p>
+			<p><i>èiem</i></p>
+			<p><i>èieu</i></p>
+			<p><i>eien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>iguí</i></p>
+			<p><i>igueres</i></p>
+			<p><i>igué</i></p>
+			<p><i>iguérem</i></p>
+			<p><i>iguéreu</i></p>
+			<p><i>igueren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>igui</i></p>
+			<p><i>iguis</i></p>
+			<p><i>igui</i></p>
+			<p><i>iguem</i></p>
+			<p><i>igue</i></p>
+			<p><i>iguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>igués</i></p>
+			<p><i>iguessis</i></p>
+			<p><i>igués</i></p>
+			<p><i>iguéssim</i></p>
+			<p><i>iguéssiu</i></p>
+			<p><i>iguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>igues</i></p>
+			<p><i>igui</i></p>
+			<p><i>iguem</i></p>
+			<p><i>igueu</i></p>
+			<p><i>iguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>ient</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>it</i></p>
+			<p><i>ida</i></p>
+			<p><i>its</i></p>
+			<p><i>ides</i></p>
 		</particip>
 	</Particip>
 </template>

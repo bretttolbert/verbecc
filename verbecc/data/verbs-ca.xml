@@ -256,7 +256,7 @@
 <v><i>adiar</i><t>canvi:ar</t><en></en></v>
 <v><i>adinerar</i><t>cant:ar</t><en></en></v>
 <v><i>adir</i><t>serv:ir</t><en></en></v>
-<v><i>adir-se</i><t>:dir</t><en></en></v>
+<v><i>adir-se</i><t>d:ir</t><en></en></v>
 <v><i>adjectivar</i><t>cant:ar</t><en></en></v>
 <v><i>adjudicar</i><t>tren:car</t><en></en></v>
 <v><i>adjuntar</i><t>cant:ar</t><en></en></v>
@@ -1832,7 +1832,7 @@
 <v><i>constipar</i><t>cant:ar</t><en></en></v>
 <v><i>constituir</i><t>obe:ir</t><en></en></v>
 <v><i>construir</i><t>obe:ir</t><en></en></v>
-<v><i>constrènyer</i><t>perd:re</t><en></en></v>
+<v><i>constrènyer</i><t>perd:re</t><en>constrain</en></v>
 <v><i>consultar</i><t>cant:ar</t><en></en></v>
 <v><i>consumar</i><t>cant:ar</t><en></en></v>
 <v><i>consumir</i><t>ment:ir</t><en></en></v>
@@ -1858,7 +1858,7 @@
 <v><i>contrabatre</i><t>perd:re</t><en></en></v>
 <v><i>contracalcar</i><t>tren:car</t><en></en></v>
 <v><i>contractar</i><t>cant:ar</t><en></en></v>
-<v><i>contradir</i><t>d:ir</t><en></en></v>
+<v><i>contradir</i><t>contrad:ir</t><en></en></v>
 <v><i>contraenvidar</i><t>cant:ar</t><en></en></v>
 <v><i>contrafallar</i><t>cant:ar</t><en></en></v>
 <v><i>contrafer</i><t>desf:er</t><en></en></v>
@@ -3110,7 +3110,7 @@
 <v><i>destrossar</i><t>cant:ar</t><en></en></v>
 <v><i>destruir</i><t>obe:ir</t><en></en></v>
 <v><i>destrumfar</i><t>cant:ar</t><en></en></v>
-<v><i>destrènyer</i><t>constr:ènyer</t><en></en></v>
+<v><i>destrènyer</i><t>perd:re</t><en></en></v>
 <v><i>destòrcer</i><t>comen:çar</t><en></en></v>
 <v><i>desullar</i><t>cant:ar</t><en></en></v>
 <v><i>desunglar</i><t>cant:ar</t><en></en></v>
@@ -3202,7 +3202,7 @@
 <v><i>diplomar</i><t>cant:ar</t><en></en></v>
 <v><i>dipositar</i><t>cant:ar</t><en></en></v>
 <v><i>diputar</i><t>cant:ar</t><en></en></v>
-<v><i>dir</i><t>:dir</t><en>say</en></v>
+<v><i>dir</i><t>d:ir</t><en>say</en></v>
 <v><i>dirigir</i><t>serv:ir</t><en></en></v>
 <v><i>dirimir</i><t>serv:ir</t><en></en></v>
 <v><i>disbauxar</i><t>cant:ar</t><en></en></v>
@@ -5060,7 +5060,7 @@
 <v><i>estronyar</i><t>cant:ar</t><en></en></v>
 <v><i>estropellar</i><t>cant:ar</t><en></en></v>
 <v><i>estructurar</i><t>cant:ar</t><en></en></v>
-<v><i>estrènyer</i><t>constr:ènyer</t><en></en></v>
+<v><i>estrènyer</i><t>perd:re</t><en></en></v>
 <v><i>estubar</i><t>cant:ar</t><en></en></v>
 <v><i>estucar</i><t>tren:car</t><en></en></v>
 <v><i>estudiar</i><t>canvi:ar</t><en></en></v>
@@ -7590,7 +7590,7 @@
 <v><i>restituir</i><t>obe:ir</t><en></en></v>
 <v><i>restoblar</i><t>cant:ar</t><en></en></v>
 <v><i>restringir</i><t>serv:ir</t><en></en></v>
-<v><i>restrènyer</i><t>constr:ènyer</t><en></en></v>
+<v><i>restrènyer</i><t>perd:re</t><en></en></v>
 <v><i>resultar</i><t>cant:ar</t><en></en></v>
 <v><i>resumir</i><t>ment:ir</t><en></en></v>
 <v><i>retallar</i><t>cant:ar</t><en></en></v>

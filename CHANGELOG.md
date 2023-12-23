@@ -1,15 +1,15 @@
 # verbecc Changelog
 
-- 1.9.4 [22 December 2023]
+- 1.9.4 [23 December 2023]
   - Improved Catalan Support
-    - Added templates for 2 verbs
-    - TODO: Still missing templates for 36 out of 8616 verbs
+    - Added (4) more missing templates
+    - TODO: Still missing 34 templates for 190 out of 8616 verbs
 
 - 1.9.3 [22 December 2023]
   - Improved Catalan support
     - Added more missing verb conjugation templates
       - Can now conjugate 8578 verbs using 42 templates
-      - TODO: Still missing templates for 38 out of 8616 verbs
+      - TODO: Still missing 38 templates for 200+ verbs
       - See `test_inflector_ca.test_all_verbs_have_templates`
     - Made Catalan inflector template matching more loose
       - Added `verbecc.string_utils.get_common_letter_count`
