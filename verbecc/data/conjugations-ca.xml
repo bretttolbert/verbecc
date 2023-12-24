@@ -923,6 +923,99 @@ Note: this verb is only conjugated in the third-person.
 </template>
 
 <!-- TODO: Inherit from perd:re -->
+<template name="val:er" modify-stem="strip-accents">
+	<Indicatiu>
+		<present>
+			<p><i>c</i></p>
+			<p><i>s</i></p>
+			<p><i></i></p>
+			<p><i>em</i></p>
+			<p><i>eu</i></p>
+			<p><i>en</i></p>
+		</present>
+		<imperfet>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>íeu</i></p>
+			<p><i>ien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>guí</i></p>
+			<p><i>gueres</i></p>
+			<p><i>gué</i></p>
+			<p><i>guérem</i></p>
+			<p><i>guéreu</i></p>
+			<p><i>gueren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>dré</i></p>
+			<p><i>dràs</i></p>
+			<p><i>drà</i></p>
+			<p><i>drem</i></p>
+			<p><i>dreu</i></p>
+			<p><i>dran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>gui</i></p>
+			<p><i>guis</i></p>
+			<p><i>gui</i></p>
+			<p><i>guem</i></p>
+			<p><i>gueu</i></p>
+			<p><i>guin</i></p>
+		</present>
+		<imperfet>
+			<p><i>gués</i></p>
+			<p><i>guessis</i></p>
+			<p><i>gués</i></p>
+			<p><i>guéssim</i></p>
+			<p><i>guéssiu</i></p>
+			<p><i>guessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i></i></p>
+			<p><i>gui</i></p>
+			<p><i>guem</i></p>
+			<p><i>gueu</i></p>
+			<p><i>guin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>dria</i></p>
+			<p><i>dries</i></p>
+			<p><i>dria</i></p>
+			<p><i>dríem</i></p>
+			<p><i>dríeu</i></p>
+			<p><i>drien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>er</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>ent</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>gut</i></p>
+			<p><i>guda</i></p>
+			<p><i>guts</i></p>
+			<p><i>gudes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: Inherit from perd:re -->
 <template name="confon:dre" modify-stem="strip-accents">
 	<Indicatiu>
 		<present>
