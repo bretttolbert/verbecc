@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 61
+    assert len(template_names) == 62
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2536,6 +2536,96 @@ def test_find_verb_by_infinitive():
             False,
             "f",
             ["temut", "temuda", "temuts", "temudes"],
+        ),
+        (
+            "retraure",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo retrec",
+                "tu retreus",
+                "ella retreu",
+                "nosaltres retraiem",
+                "vosaltres retraieu",
+                "elles retreuen",
+            ],
+        ),
+        (
+            "retraure",
+            "indicatiu",
+            "imperfet",
+            False,
+            "f",
+            [
+                "jo retreia",
+                "tu retreies",
+                "ella retreia",
+                "nosaltres retrèiem",
+                "vosaltres retrèieu",
+                "elles retreien",
+            ],
+        ),
+        (
+            "retraure",
+            "indicatiu",
+            "passat-simple",
+            False,
+            "f",
+            [
+                "jo retraguí",
+                "tu retragueres",
+                "ella retragué",
+                "nosaltres retraguérem",
+                "vosaltres retraguéreu",
+                "elles retragueren",
+            ],
+        ),
+        (
+            "retraure",
+            "indicatiu",
+            "futur",
+            False,
+            "f",
+            [
+                "jo retraué",
+                "tu retrauàs",
+                "ella retrauà",
+                "nosaltres retrauem",
+                "vosaltres retraueu",
+                "elles retrauan",
+            ],
+        ),
+        (
+            "retraure",
+            "condicional",
+            "present",
+            False,
+            "f",
+            [
+                "jo retrauia",
+                "tu retrauies",
+                "ella retrauia",
+                "nosaltres retrauíem",
+                "vosaltres retrauíeu",
+                "elles retrauien",
+            ],
+        ),
+        (
+            "retraure",
+            "subjuntiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo retregui",
+                "tu retreguis",
+                "ella retregui",
+                "nosaltres retreguem",
+                "vosaltres retregueu",
+                "elles retreguin",
+            ],
         ),
     ],
 )

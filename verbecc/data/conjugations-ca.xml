@@ -923,6 +923,101 @@ Note: this verb is only conjugated in the third-person.
 </template>
 
 <!-- TODO: Inherit from perdre 
+Very similar to j:aure and cr:eure
+-->
+<template name="tr:aure" modify-stem="strip-accents">
+	<Indicatiu>
+		<present>
+			<p><i>ec</i></p>
+			<p><i>eus</i></p>
+			<p><i>eu</i></p>
+			<p><i>aiem</i></p>
+			<p><i>aieu</i></p>
+			<p><i>euen</i></p>
+		</present>
+		<imperfet>
+			<p><i>eia</i></p>
+			<p><i>eies</i></p>
+			<p><i>eia</i></p>
+			<p><i>èiem</i></p>
+			<p><i>èieu</i></p>
+			<p><i>eien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>aguí</i></p>
+			<p><i>agueres</i></p>
+			<p><i>agué</i></p>
+			<p><i>aguérem</i></p>
+			<p><i>aguéreu</i></p>
+			<p><i>agueren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>aué</i></p>
+			<p><i>auàs</i></p>
+			<p><i>auà</i></p>
+			<p><i>auem</i></p>
+			<p><i>aueu</i></p>
+			<p><i>auan</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>egui</i></p>
+			<p><i>eguis</i></p>
+			<p><i>egui</i></p>
+			<p><i>eguem</i></p>
+			<p><i>egueu</i></p>
+			<p><i>eguin</i></p>
+		</present>
+		<imperfet>
+			<p><i>agués</i></p>
+			<p><i>aguessis</i></p>
+			<p><i>agués</i></p>
+			<p><i>aguéssim</i></p>
+			<p><i>aguéssiu</i></p>
+			<p><i>aguessin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>eu</i></p>
+			<p><i>egui</i></p>
+			<p><i>eguem</i></p>
+			<p><i>aieu</i></p>
+			<p><i>eguin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>auia</i></p>
+			<p><i>auies</i></p>
+			<p><i>auia</i></p>
+			<p><i>auíem</i></p>
+			<p><i>auíeu</i></p>
+			<p><i>auien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>re</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>ent</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>ut</i></p>
+			<p><i>uda</i></p>
+			<p><i>uts</i></p>
+			<p><i>udes</i></p>
+		</particip>
+	</Particip>
+</template>
+
+<!-- TODO: Inherit from perdre 
 Literally exactly the same except for infinitive ending.
 -->
 <template name="tém:er" modify-stem="strip-accents">
