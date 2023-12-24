@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 55
+    assert len(template_names) == 56
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2200,6 +2200,45 @@ def test_find_verb_by_infinitive():
                 "vosaltres malvenguéssiu",
                 "elles malvenguessin",
             ],
+        ),
+        (
+            "omplir",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo omplo",
+                "tu omples",
+                "ella omple",
+                "nosaltres omplim",
+                "vosaltres ompliu",
+                "elles omplen",
+            ],
+        ),
+        (
+            "omplir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["omplert", "omplerta", "omplerts", "omplertes"],
+        ),
+        (
+            "omplir",
+            "particip",
+            "particip",
+            True,
+            "f",
+            ["omplit", "omplida", "omplits", "omplides"],
+        ),
+        (
+            "omplir",
+            "imperatiu",
+            "imperatiu-present",
+            True,
+            "m",
+            ["omple", "ompli", "omplim", "ompliu", "omplin"],
         ),
     ],
 )
