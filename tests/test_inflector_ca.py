@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 57
+    assert len(template_names) == 58
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2284,6 +2284,29 @@ def test_find_verb_by_infinitive():
                 "vosaltres movíeu",
                 "elles movien",
             ],
+        ),
+        (
+            "absoldre",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo absolc",
+                "tu absols",
+                "ella absol",
+                "nosaltres absolem",
+                "vosaltres absoleu",
+                "elles absolen",
+            ],
+        ),
+        (
+            "absoldre",
+            "particip",
+            "particip",
+            True,
+            "f",
+            ["absolt", "absolta", "absolts", "absoltes"],
         ),
     ],
 )
