@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 60
+    assert len(template_names) == 61
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2498,6 +2498,45 @@ def test_find_verb_by_infinitive():
             "m",
             ["surt", "surti", "sortim", "sortiu", "surtin"],
         ),
+        (
+            "témer",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo temo",
+                "tu tems",
+                "ella tem",
+                "nosaltres temem",
+                "vosaltres temeu",
+                "elles temen",
+            ],
+        ),
+        (
+            "témer",
+            "infinitiu",
+            "infinitiu-present",
+            False,
+            "m",
+            ["témer"],
+        ),
+        (
+            "témer",
+            "gerundi",
+            "gerundi",
+            False,
+            "m",
+            ["tement"],
+        ),
+        (
+            "témer",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["temut", "temuda", "temuts", "temudes"],
+        ),
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
@@ -2528,10 +2567,9 @@ def test_inflector_ca_get_conj_obs_2():
 def test_inflector_ca_get_conj_obs_3():
     co = cg._inflector._get_conj_obs("pertànyer")
     assert co.verb.infinitive == "pertànyer"
-    assert (
-        co.verb_stem == "pertany"
-    )  # modify-stem="strip-accents" changes "pertàny" to "pertany"
+    assert co.verb_stem == "pertàny"
     assert co.template.name == "pertàny:er"
+    assert co.template.modify_stem == "strip-accents"
 
 
 def test_inflector_ca_get_verb_stem_from_template_name():

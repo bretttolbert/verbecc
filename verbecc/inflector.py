@@ -147,8 +147,6 @@ class Inflector(ABC):
         verb_stem = self._get_verb_stem_from_template_name(
             verb.infinitive, template.name
         )
-        if template.modify_stem == "strip-accents":
-            verb_stem = strip_accents(verb_stem)
         return Inflector.ConjugationObjects(
             infinitive, verb, template, verb_stem, is_reflexive
         )
@@ -216,6 +214,9 @@ class Inflector(ABC):
                 is_reflexive=co.is_reflexive,
                 alternate=alternate,
                 gender=gender,
+                modify_stem_strip_accents=bool(
+                    co.template.modify_stem == "strip-accents"
+                ),
             )
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
@@ -229,11 +230,17 @@ class Inflector(ABC):
     def _is_auxilary_verb_inflected(self, auxilary_verb: str):
         return False
 
+    def _get_infinitive_mood_name(self) -> str:
+        return "infinitive"
+
     def _get_indicative_mood_name(self) -> str:
         return "indicative"
 
     def _get_subjunctive_mood_name(self) -> str:
         return "subjunctive"
+
+    def _get_conditional_mood_name(self) -> str:
+        return "conditional"
 
     def _get_participle_mood_name(self) -> str:
         return "partiple"
@@ -288,9 +295,9 @@ class Inflector(ABC):
         modify-stem="strip-accents"
         So the stem "pertàny" becomes "pertany"
 
-        modify-stem="strip-accents" is applied in the constructor of ConjugationObjects,
-        and so the verb_stem argument to _conjugate_simple_mood_tense and consequently
-        this function is presumed to already have applicable modifications applied.
+        modify-stem="strip-accents" is applied in _conjugate_simple_mood_tense,
+        so the verb_stem argument to this function is presumed to already have
+        applicable modifications applied.
 
         Next, the "pertàny:er" template endings will use the new delete operator
         to delete one letter from the end of the stem.
@@ -316,7 +323,10 @@ class Inflector(ABC):
         is_reflexive: bool = False,
         alternate: bool = False,
         gender: str = "m",
+        modify_stem_strip_accents: bool = False,
     ) -> List[str]:
+        if modify_stem_strip_accents and mood_name != self._get_infinitive_mood_name():
+            verb_stem = strip_accents(verb_stem)
         ret = []
         tense_name = tense_template.name
         if tense_name in self._get_tenses_conjugated_without_pronouns():

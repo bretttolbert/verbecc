@@ -67,8 +67,17 @@ class InflectorIt(inflector.Inflector):
     def _get_auxilary_verb(self, co, mood_name, tense_name):
         return "avere"
 
+    def _get_infinitive_mood_name(self):
+        return "infinitivo"
+
+    def _get_indicative_mood_name(self):
+        return "indicativo"
+
     def _get_subjunctive_mood_name(self):
         return "congiuntivo"
+
+    def _get_conditional_mood_name(self):
+        return "condizionale"
 
     def _get_participle_mood_name(self):
         return "participio"

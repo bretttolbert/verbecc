@@ -61,6 +61,18 @@ class InflectorCa(inflector.Inflector):
     ) -> str:
         return "haver"
 
+    def _get_infinitive_mood_name(self):
+        return "infinitiu"
+
+    def _get_indicative_mood_name(self):
+        return "indicatiu"
+
+    def _get_subjunctive_mood_name(self):
+        return "subjuntiu"
+
+    def _get_conditional_mood_name(self):
+        return "condicional"
+
     def _get_participle_mood_name(self) -> str:
         return "particip"
 

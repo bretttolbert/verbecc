@@ -70,11 +70,17 @@ class InflectorRo(inflector.Inflector):
             return co.verb.infinitive
         return "avea"
 
+    def _get_infinitive_mood_name(self):
+        return "infinitiv"
+
     def _get_indicative_mood_name(self):
         return "indicativ"
 
     def _get_subjunctive_mood_name(self):
         return "conjunctiv"
+
+    def _get_conditional_mood_name(self):
+        raise NotImplementedError
 
     def _get_participle_mood_name(self):
         return "participiu"

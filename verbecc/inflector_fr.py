@@ -149,8 +149,17 @@ class InflectorFr(inflector.Inflector):
     def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return auxilary_verb == "être"
 
+    def _get_infinitive_mood_name(self) -> str:
+        return "infinitif"
+
+    def _get_indicative_mood_name(self) -> str:
+        return "indicatif"
+
     def _get_subjunctive_mood_name(self) -> str:
         return "subjonctif"
+
+    def _get_conditional_mood_name(self) -> str:
+        return "conditionnel"
 
     def _get_participle_mood_name(self) -> str:
         return "participe"
