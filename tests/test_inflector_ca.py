@@ -14,15 +14,14 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 54
+    assert len(template_names) == 55
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
             missing_verbs.append(verb)
-    assert len(missing_templates) == 0
-    # assert len(missing_verbs) == 0
+    assert len(missing_templates) == len(missing_verbs) == 0
 
 
 def test_find_verb_by_infinitive():
@@ -2096,6 +2095,111 @@ def test_find_verb_by_infinitive():
             False,
             "f",
             ["imprès", "impresa", "impresos", "impreses"],
+        ),
+        (
+            "ajeure",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo ajec",
+                "tu ajeus",
+                "ella ajeu",
+                "nosaltres ajaiem",
+                "vosaltres ajaieu",
+                "elles ajeuen",
+            ],
+        ),
+        (
+            "moldre",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo molc",
+                "tu mols",
+                "ella mol",
+                "nosaltres molem",
+                "vosaltres moleu",
+                "elles molen",
+            ],
+        ),
+        (
+            "malvendre",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo malvenc",
+                "tu malvens",
+                "ella malvèn",
+                "nosaltres malvenem",
+                "vosaltres malveneu",
+                "elles malvenen",
+            ],
+        ),
+        (
+            "malvendre",
+            "indicatiu",
+            "imperfet",
+            True,
+            "f",
+            [
+                "jo malvenia",
+                "tu malvenies",
+                "ella malvenia",
+                "nosaltres malveníem",
+                "vosaltres malveníeu",
+                "elles malvenien",
+            ],
+        ),
+        (
+            "malvendre",
+            "indicatiu",
+            "passat-simple",
+            True,
+            "f",
+            [
+                "jo malvenguí",
+                "tu malvengueres",
+                "ella malvengué",
+                "nosaltres malvenguérem",
+                "vosaltres malvenguéreu",
+                "elles malvengueren",
+            ],
+        ),
+        (
+            "malvendre",
+            "subjuntiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo malvengui",
+                "tu malvenguis",
+                "ella malvengui",
+                "nosaltres malvenguem",
+                "vosaltres malvengueu",
+                "elles malvenguin",
+            ],
+        ),
+        (
+            "malvendre",
+            "subjuntiu",
+            "imperfet",
+            True,
+            "f",
+            [
+                "jo malvengués",
+                "tu malvenguessis",
+                "ella malvengués",
+                "nosaltres malvenguéssim",
+                "vosaltres malvenguéssiu",
+                "elles malvenguessin",
+            ],
         ),
     ],
 )

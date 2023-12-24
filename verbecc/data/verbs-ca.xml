@@ -429,7 +429,7 @@
 <v><i>aixoplugar</i><t>preg:ar</t><en></en></v>
 <v><i>ajaure</i><t>j:aure</t><en></en></v>
 <v><i>ajaçar</i><t>comen:çar</t><en></en></v>
-<v><i>ajeure</i><t>j:eure</t><en></en></v>
+<v><i>ajeure</i><t>j:aure</t><en></en></v>
 <v><i>ajocar</i><t>tren:car</t><en></en></v>
 <v><i>ajornalar</i><t>cant:ar</t><en></en></v>
 <v><i>ajornar</i><t>cant:ar</t><en></en></v>
@@ -1487,7 +1487,7 @@
 <v><i>cartejar</i><t>enve:jar</t><en></en></v>
 <v><i>cartenir</i><t>obt:enir</t><en></en></v>
 <v><i>cartografiar</i><t>canvi:ar</t><en></en></v>
-<v><i>carvendre</i><t>malv:endre</t><en></en></v>
+<v><i>carvendre</i><t>malven:dre</t><en></en></v>
 <v><i>casar</i><t>cant:ar</t><en></en></v>
 <v><i>cascadejar</i><t>enve:jar</t><en></en></v>
 <v><i>cascar</i><t>tren:car</t><en></en></v>
@@ -6142,7 +6142,7 @@
 <v><i>malservir</i><t>serv:ir</t><en></en></v>
 <v><i>maltractar</i><t>cant:ar</t><en></en></v>
 <v><i>malvantar</i><t>cant:ar</t><en></en></v>
-<v><i>malvendre</i><t>perd:re</t><en></en></v>
+<v><i>malvendre</i><t>malven:dre</t><en></en></v>
 <v><i>malversar</i><t>cant:ar</t><en></en></v>
 <v><i>malveure</i><t>perd:re</t><en></en></v>
 <v><i>malviure</i><t>vi:ure</t><en></en></v>
@@ -7449,7 +7449,7 @@
 <v><i>remodelar</i><t>cant:ar</t><en></en></v>
 <v><i>remolar</i><t>cant:ar</t><en></en></v>
 <v><i>remolcar</i><t>tren:car</t><en></en></v>
-<v><i>remoldre</i><t>m:oldre</t><en></en></v>
+<v><i>remoldre</i><t>col:dre</t><en></en></v>
 <v><i>remolejar</i><t>enve:jar</t><en></en></v>
 <v><i>remolinar</i><t>cant:ar</t><en></en></v>
 <v><i>remollir</i><t>serv:ir</t><en></en></v>
@@ -7630,7 +7630,7 @@
 <v><i>retrossar</i><t>cant:ar</t><en></en></v>
 <v><i>retrotraure</i><t>tr:aure</t><en></en></v>
 <v><i>retrotreure</i><t>malv:eure</t><en></en></v>
-<v><i>retrovendre</i><t>malv:endre</t><en></en></v>
+<v><i>retrovendre</i><t>malven:dre</t><en></en></v>
 <v><i>retrucar</i><t>tren:car</t><en></en></v>
 <v><i>retrumfar</i><t>cant:ar</t><en></en></v>
 <v><i>retrunyir</i><t>dorm:ir</t><en></en></v>
@@ -7648,7 +7648,7 @@
 <v><i>revelar</i><t>cant:ar</t><en></en></v>
 <v><i>revellir</i><t>serv:ir</t><en></en></v>
 <v><i>revel·lir</i><t>serv:ir</t><en></en></v>
-<v><i>revendre</i><t>malv:endre</t><en></en></v>
+<v><i>revendre</i><t>malven:dre</t><en></en></v>
 <v><i>revenir</i><t>prev:enir</t><en></en></v>
 <v><i>revenjar</i><t>enve:jar</t><en></en></v>
 <v><i>revenxinar</i><t>cant:ar</t><en></en></v>
@@ -8504,7 +8504,7 @@
 <v><i>vellotejar</i><t>enve:jar</t><en></en></v>
 <v><i>vellutejar</i><t>enve:jar</t><en></en></v>
 <v><i>vencillar</i><t>cant:ar</t><en></en></v>
-<v><i>vendre</i><t>malv:endre</t><en></en></v>
+<v><i>vendre</i><t>malven:dre</t><en></en></v>
 <v><i>venerar</i><t>cant:ar</t><en></en></v>
 <v><i>venir</i><t>prev:enir</t><en></en></v>
 <v><i>venjar</i><t>enve:jar</t><en></en></v>
