@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 56
+    assert len(template_names) == 57
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2239,6 +2239,51 @@ def test_find_verb_by_infinitive():
             True,
             "m",
             ["omple", "ompli", "omplim", "ompliu", "omplin"],
+        ),
+        (
+            "moure",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo moc",
+                "tu mous",
+                "ella mou",
+                "nosaltres movem",
+                "vosaltres moveu",
+                "elles mouen",
+            ],
+        ),
+        (
+            "moure",
+            "indicatiu",
+            "passat-simple",
+            False,
+            "f",
+            [
+                "jo moguí",
+                "tu mogueres",
+                "ella mogué",
+                "nosaltres moguérem",
+                "vosaltres moguéreu",
+                "elles mogueren",
+            ],
+        ),
+        (
+            "moure",
+            "indicatiu",
+            "imperfet",
+            False,
+            "f",
+            [
+                "jo movia",
+                "tu movies",
+                "ella movia",
+                "nosaltres movíem",
+                "vosaltres movíeu",
+                "elles movien",
+            ],
         ),
     ],
 )
