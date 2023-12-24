@@ -1775,7 +1775,7 @@
 <v><i>confortar</i><t>cant:ar</t><en></en></v>
 <v><i>confraternitzar</i><t>cant:ar</t><en></en></v>
 <v><i>confrontar</i><t>cant:ar</t><en></en></v>
-<v><i>confugir</i><t>fu:gir</t><en></en></v>
+<v><i>confugir</i><t>fug:ir</t><en></en></v>
 <v><i>confutar</i><t>cant:ar</t><en></en></v>
 <v><i>congelar</i><t>cant:ar</t><en></en></v>
 <v><i>congeniar</i><t>canvi:ar</t><en></en></v>
@@ -2101,7 +2101,7 @@
 <v><i>defoliar</i><t>canvi:ar</t><en></en></v>
 <v><i>deformar</i><t>cant:ar</t><en></en></v>
 <v><i>defraudar</i><t>cant:ar</t><en></en></v>
-<v><i>defugir</i><t>fu:gir</t><en></en></v>
+<v><i>defugir</i><t>fug:ir</t><en></en></v>
 <v><i>degenerar</i><t>cant:ar</t><en></en></v>
 <v><i>deglutir</i><t>serv:ir</t><en></en></v>
 <v><i>degollar</i><t>cant:ar</t><en></en></v>
@@ -3970,7 +3970,7 @@
 <v><i>enfreixurar</i><t>cant:ar</t><en></en></v>
 <v><i>enfrenar</i><t>cant:ar</t><en></en></v>
 <v><i>enfrontar</i><t>cant:ar</t><en></en></v>
-<v><i>enfugir</i><t>fu:gir</t><en></en></v>
+<v><i>enfugir</i><t>fug:ir</t><en></en></v>
 <v><i>enfundar</i><t>cant:ar</t><en></en></v>
 <v><i>enfuriar</i><t>canvi:ar</t><en></en></v>
 <v><i>enfurir</i><t>serv:ir</t><en></en></v>
@@ -5427,7 +5427,7 @@
 <v><i>frunzir</i><t>serv:ir</t><en></en></v>
 <v><i>frustrar</i><t>cant:ar</t><en></en></v>
 <v><i>fuetejar</i><t>enve:jar</t><en></en></v>
-<v><i>fugir</i><t>dorm:ir</t><en></en></v>
+<v><i>fugir</i><t>fug:ir</t><en>run away</en></v>
 <v><i>fulardar</i><t>cant:ar</t><en></en></v>
 <v><i>fulgir</i><t>serv:ir</t><en></en></v>
 <v><i>fulgurar</i><t>cant:ar</t><en></en></v>

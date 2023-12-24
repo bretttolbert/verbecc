@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 52
+    assert len(template_names) == 53
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2050,6 +2050,29 @@ def test_find_verb_by_infinitive():
                 "vosaltres toneu",
                 "elles tonen",
             ],
+        ),
+        (
+            "fugir",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo fujo",
+                "tu fuges",
+                "ella fuig",
+                "nosaltres fugim",
+                "vosaltres fugiu",
+                "elles fugen",
+            ],
+        ),
+        (
+            "fugir",
+            "imperatiu",
+            "imperatiu-present",
+            True,
+            "m",
+            ["fuig", "fugi", "fugim", "fugiu", "fugin"],
         ),
     ],
 )
