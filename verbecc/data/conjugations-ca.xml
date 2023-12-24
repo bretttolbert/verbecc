@@ -3159,6 +3159,106 @@ except in the first and second person plural.
 	</Particip>
 </template>
 
+<!-- TODO: Inherit from dorm:ir 
+Note: This template is very similar to coll:ir
+They're both stem-changing verbs that modify the 
+vowel of the stem from 'o' to 'u'
+
+TODO: Need a better way to express this vowel shift
+than using the stem-modifying delete operator '-'
+-->
+<template name="sort:ir">
+	<Indicatiu>
+		<present>
+			<p><i>---urto</i></p>
+			<p><i>---urts</i></p>
+			<p><i>---urt</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---urten</i></p>
+		</present>
+		<imperfet>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>ieu</i></p>
+			<p><i>ien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>í</i></p>
+			<p><i>ires</i></p>
+			<p><i>í</i></p>
+			<p><i>írem</i></p>
+			<p><i>íreu</i></p>
+			<p><i>iren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>---urti</i></p>
+			<p><i>---urtis</i></p>
+			<p><i>---urti</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---urtin</i></p>
+		</present>
+		<imperfet>
+			<p><i>ís</i></p>
+			<p><i>issis</i></p>
+			<p><i>ís</i></p>
+			<p><i>íssim</i></p>
+			<p><i>íssiu</i></p>
+			<p><i>issin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<p><i>---urt</i></p>
+			<p><i>---urti</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---urtin</i></p>
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>int</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>it</i></p>
+			<p><i>ida</i></p>
+			<p><i>its</i></p>
+			<p><i>ides</i></p>
+		</particip>
+	</Particip>
+</template>
+
 <!-- TODO: Inherit from dorm:ir -->
 <template name="prev:enir">
 	<Indicatiu>

@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 59
+    assert len(template_names) == 60
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2451,6 +2451,52 @@ def test_find_verb_by_infinitive():
             False,
             "m",
             ["prevén", "previngui", "previnguem", "preveniu", "previnguin"],
+        ),
+        (
+            "sortir",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo surto",
+                "tu surts",
+                "ella surt",
+                "nosaltres sortim",
+                "vosaltres sortiu",
+                "elles surten",
+            ],
+        ),
+        (
+            "sortir",
+            "subjuntiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo surti",
+                "tu surtis",
+                "ella surti",
+                "nosaltres sortim",
+                "vosaltres sortiu",
+                "elles surtin",
+            ],
+        ),
+        (
+            "sortir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["sortit", "sortida", "sortits", "sortides"],
+        ),
+        (
+            "sortir",
+            "imperatiu",
+            "imperatiu-present",
+            False,
+            "m",
+            ["surt", "surti", "sortim", "sortiu", "surtin"],
         ),
     ],
 )

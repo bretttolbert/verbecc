@@ -913,7 +913,7 @@
 <v><i>assolellar</i><t>cant:ar</t><en></en></v>
 <v><i>assolir</i><t>serv:ir</t><en></en></v>
 <v><i>assonar</i><t>cant:ar</t><en></en></v>
-<v><i>assortir</i><t>serv:ir</t><en></en></v>
+<v><i>assortir</i><t>sort:ir</t><en></en></v>
 <v><i>assossegar</i><t>preg:ar</t><en></en></v>
 <v><i>assotar</i><t>cant:ar</t><en></en></v>
 <v><i>assuaujar</i><t>enve:jar</t><en></en></v>
@@ -4335,7 +4335,7 @@
 <v><i>entreobrir</i><t>obr:rir</t><en></en></v>
 <v><i>entreoir</i><t>o:ir</t><en></en></v>
 <v><i>entrepassegar</i><t>preg:ar</t><en></en></v>
-<v><i>entreploure</i><t>plo:ure</t><en></en></v>
+<v><i>entreploure</i><t>mou:re</t><en></en></v>
 <v><i>entresaludar</i><t>cant:ar</t><en></en></v>
 <v><i>entrescar</i><t>tren:car</t><en></en></v>
 <v><i>entreseguir</i><t>serv:ir</t><en></en></v>
@@ -7582,7 +7582,7 @@
 <v><i>ressonar</i><t>cant:ar</t><en></en></v>
 <v><i>ressopar</i><t>cant:ar</t><en></en></v>
 <v><i>ressorgir</i><t>serv:ir</t><en></en></v>
-<v><i>ressortir</i><t>s:ortir</t><en></en></v>
+<v><i>ressortir</i><t>sort:ir</t><en></en></v>
 <v><i>ressuscitar</i><t>cant:ar</t><en></en></v>
 <v><i>restablir</i><t>compl:ir</t><en></en></v>
 <v><i>restar</i><t>cant:ar</t><en></en></v>
@@ -7945,7 +7945,7 @@
 <v><i>sobresembrar</i><t>cant:ar</t><en></en></v>
 <v><i>sobreseure</i><t>cr:eure</t><en></en></v>
 <v><i>sobresolar</i><t>cant:ar</t><en></en></v>
-<v><i>sobresortir</i><t>s:ortir</t><en></en></v>
+<v><i>sobresortir</i><t>sort:ir</t><en></en></v>
 <v><i>sobreteixir</i><t>:eixir</t><en></en></v>
 <v><i>sobrevaler</i><t>val:er</t><en></en></v>
 <v><i>sobrevalorar</i><t>cant:ar</t><en></en></v>
@@ -8012,7 +8012,7 @@
 <v><i>sorregar</i><t>preg:ar</t><en></en></v>
 <v><i>sorrejar</i><t>enve:jar</t><en></en></v>
 <v><i>sortejar</i><t>enve:jar</t><en></en></v>
-<v><i>sortir</i><t>c:ollir</t><en></en></v>
+<v><i>sortir</i><t>sort:ir</t><en></en></v>
 <v><i>soscavar</i><t>cant:ar</t><en></en></v>
 <v><i>sospedrar</i><t>cant:ar</t><en></en></v>
 <v><i>sospesar</i><t>cant:ar</t><en></en></v>
