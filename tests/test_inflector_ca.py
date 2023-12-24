@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 49
+    assert len(template_names) == 50
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -1875,6 +1875,67 @@ def test_find_verb_by_infinitive():
                 "vosaltres doleu",
                 "elles dolen",
             ],
+        ),
+        (
+            "entrelluir",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo entrelluo",
+                "tu entrelluus",
+                "ella entrelluu",
+                "nosaltres entrelluïm",
+                "vosaltres entrelluïu",
+                "elles entrelluen",
+            ],
+        ),
+        (
+            "entrelluir",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo entrelluo",
+                "tu entrelluus",
+                "ella entrellú",
+                "nosaltres entrelluïm",
+                "vosaltres entrelluïu",
+                "elles entrelluen",
+            ],
+        ),
+        (
+            "entrelluir",
+            "indicatiu",
+            "imperfet",
+            True,
+            "f",
+            [
+                "jo entrelluïa",
+                "tu entrelluïes",
+                "ella entrelluïa",
+                "nosaltres entrelluíem",
+                "vosaltres entrelluíeu",
+                "elles entrelluïen",
+            ],
+        ),
+        (
+            "entrelluir",
+            "imperatiu",
+            "imperatiu-present",
+            False,
+            "m",
+            ["entrelluu", "entrelluï", "entrelluïm", "entrelluïu", "entrelluïn"],
+        ),
+        (
+            "entrelluir",
+            "imperatiu",
+            "imperatiu-present",
+            True,
+            "m",
+            ["entrellú", "entrelluï", "entrelluïm", "entrelluïu", "entrelluïn"],
         ),
     ],
 )

@@ -4322,7 +4322,7 @@
 <v><i>entrelligar</i><t>preg:ar</t><en></en></v>
 <v><i>entrelligassar</i><t>cant:ar</t><en></en></v>
 <v><i>entrellucar</i><t>tren:car</t><en></en></v>
-<v><i>entrelluir</i><t>dorm:ir</t><en></en></v>
+<v><i>entrelluir</i><t>entrellu:ir</t><en></en></v>
 <v><i>entrelluscar</i><t>tren:car</t><en></en></v>
 <v><i>entremaliejar</i><t>enve:jar</t><en></en></v>
 <v><i>entrematar</i><t>cant:ar</t><en></en></v>
@@ -6075,7 +6075,7 @@
 <v><i>lluentejar</i><t>enve:jar</t><en></en></v>
 <v><i>lluertejar</i><t>enve:jar</t><en></en></v>
 <v><i>llufar</i><t>cant:ar</t><en></en></v>
-<v><i>lluir</i><t>entrell:uir</t><en></en></v>
+<v><i>lluir</i><t>entrellu:ir</t><en></en></v>
 <v><i>lluitar</i><t>cant:ar</t><en></en></v>
 <v><i>llumejar</i><t>enve:jar</t><en></en></v>
 <v><i>llunyejar</i><t>enve:jar</t><en></en></v>
@@ -7046,7 +7046,7 @@
 <v><i>proveir</i><t>obe:ir</t><en></en></v>
 <v><i>provenir</i><t>prev:enir</t><en></en></v>
 <v><i>provocar</i><t>tren:car</t><en></en></v>
-<v><i>pruir</i><t>entrell:uir</t><en></en></v>
+<v><i>pruir</i><t>entrellu:ir</t><en></en></v>
 <v><i>prémer</i><t>t:émer</t><en></en></v>
 <v><i>pseudomorfitzar</i><t>cant:ar</t><en></en></v>
 <v><i>psicoanalitzar</i><t>cant:ar</t><en></en></v>
@@ -7430,7 +7430,7 @@
 <v><i>relliscar</i><t>tren:car</t><en></en></v>
 <v><i>rellogar</i><t>preg:ar</t><en></en></v>
 <v><i>rellucar</i><t>tren:car</t><en></en></v>
-<v><i>relluir</i><t>entrell:uir</t><en></en></v>
+<v><i>relluir</i><t>entrellu:ir</t><en></en></v>
 <v><i>remagencar</i><t>tren:car</t><en></en></v>
 <v><i>remallar</i><t>cant:ar</t><en></en></v>
 <v><i>remar</i><t>cant:ar</t><en></en></v>
@@ -8329,7 +8329,7 @@
 <v><i>trascamar</i><t>cant:ar</t><en></en></v>
 <v><i>trascolar</i><t>cant:ar</t><en></en></v>
 <v><i>traslladar</i><t>cant:ar</t><en></en></v>
-<v><i>traslluir</i><t>entrell:uir</t><en></en></v>
+<v><i>traslluir</i><t>entrellu:ir</t><en></en></v>
 <v><i>trasmudar</i><t>cant:ar</t><en></en></v>
 <v><i>traspalar</i><t>cant:ar</t><en></en></v>
 <v><i>traspaperar</i><t>cant:ar</t><en></en></v>
