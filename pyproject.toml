@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "verbecc"
-version = "1.9.4"
+version = "1.9.5"
 dependencies = [
   "lxml",
   "lxml-stubs",

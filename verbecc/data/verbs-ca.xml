@@ -85,7 +85,7 @@
 <v><i>ablanir</i><t>serv:ir</t><en></en></v>
 <v><i>ablenar</i><t>cant:ar</t><en></en></v>
 <v><i>abocar</i><t>tren:car</t><en></en></v>
-<v><i>aboiar</i><t>esgla:iar</t><en></en></v>
+<v><i>aboiar</i><t>esglai:ar</t><en></en></v>
 <v><i>aboldronar</i><t>cant:ar</t><en></en></v>
 <v><i>abolir</i><t>serv:ir</t><en></en></v>
 <v><i>abominar</i><t>cant:ar</t><en></en></v>
@@ -197,7 +197,7 @@
 <v><i>acolorar</i><t>cant:ar</t><en></en></v>
 <v><i>acolorir</i><t>serv:ir</t><en></en></v>
 <v><i>acoltellar</i><t>cant:ar</t><en></en></v>
-<v><i>acomboiar</i><t>esgla:iar</t><en></en></v>
+<v><i>acomboiar</i><t>esglai:ar</t><en></en></v>
 <v><i>acomiadar</i><t>cant:ar</t><en></en></v>
 <v><i>acomodar</i><t>cant:ar</t><en></en></v>
 <v><i>acompanyar</i><t>cant:ar</t><en></en></v>
@@ -383,7 +383,7 @@
 <v><i>aglevar</i><t>cant:ar</t><en></en></v>
 <v><i>aglomerar</i><t>cant:ar</t><en></en></v>
 <v><i>aglutinar</i><t>cant:ar</t><en></en></v>
-<v><i>agomboiar</i><t>esgla:iar</t><en></en></v>
+<v><i>agomboiar</i><t>esglai:ar</t><en></en></v>
 <v><i>agombolar</i><t>cant:ar</t><en></en></v>
 <v><i>agonitzar</i><t>cant:ar</t><en></en></v>
 <v><i>agostar</i><t>cant:ar</t><en></en></v>
@@ -602,7 +602,7 @@
 <v><i>ancorar</i><t>cant:ar</t><en></en></v>
 <v><i>andanar</i><t>cant:ar</t><en></en></v>
 <v><i>andarejar</i><t>enve:jar</t><en></en></v>
-<v><i>andoiar</i><t>esgla:iar</t><en></en></v>
+<v><i>andoiar</i><t>esglai:ar</t><en></en></v>
 <v><i>anellar</i><t>cant:ar</t><en></en></v>
 <v><i>anestesiar</i><t>canvi:ar</t><en></en></v>
 <v><i>angelicar</i><t>tren:car</t><en></en></v>
@@ -926,7 +926,7 @@
 <v><i>atabuixar</i><t>cant:ar</t><en></en></v>
 <v><i>atacar</i><t>tren:car</t><en></en></v>
 <v><i>ataconar</i><t>cant:ar</t><en></en></v>
-<v><i>atalaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>atalaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>atallar</i><t>cant:ar</t><en></en></v>
 <v><i>atalussar</i><t>cant:ar</t><en></en></v>
 <v><i>atandar</i><t>cant:ar</t><en></en></v>
@@ -1199,13 +1199,13 @@
 <v><i>bofegar</i><t>preg:ar</t><en></en></v>
 <v><i>bogar</i><t>preg:ar</t><en></en></v>
 <v><i>bogejar</i><t>enve:jar</t><en></en></v>
-<v><i>boiar</i><t>esgla:iar</t><en></en></v>
+<v><i>boiar</i><t>esglai:ar</t><en></en></v>
 <v><i>boicotar</i><t>cant:ar</t><en></en></v>
 <v><i>boicotejar</i><t>enve:jar</t><en></en></v>
 <v><i>boirar</i><t>cant:ar</t><en></en></v>
 <v><i>boixar</i><t>cant:ar</t><en></en></v>
 <v><i>bolcar</i><t>tren:car</t><en></en></v>
-<v><i>boleiar</i><t>esgla:iar</t><en></en></v>
+<v><i>boleiar</i><t>esglai:ar</t><en></en></v>
 <v><i>bollar</i><t>cant:ar</t><en></en></v>
 <v><i>bombar</i><t>cant:ar</t><en></en></v>
 <v><i>bombardejar</i><t>enve:jar</t><en></en></v>
@@ -2009,7 +2009,7 @@
 <v><i>croquisar</i><t>cant:ar</t><en></en></v>
 <v><i>crucificar</i><t>tren:car</t><en></en></v>
 <v><i>cruejar</i><t>enve:jar</t><en></en></v>
-<v><i>cruiar</i><t>esgla:iar</t><en></en></v>
+<v><i>cruiar</i><t>esglai:ar</t><en></en></v>
 <v><i>cruixir</i><t>dorm:ir</t><en></en></v>
 <v><i>cruspir</i><t>serv:ir</t><en></en></v>
 <v><i>créixer</i><t>perd:re</t><en></en></v>
@@ -2457,7 +2457,7 @@
 <v><i>desedificar</i><t>tren:car</t><en></en></v>
 <v><i>deseixir</i><t>:eixir</t><en></en></v>
 <v><i>deselectritzar</i><t>cant:ar</t><en></en></v>
-<v><i>desembabaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>desembabaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>desembadalir</i><t>serv:ir</t><en></en></v>
 <v><i>desembadocar</i><t>tren:car</t><en></en></v>
 <v><i>desembafar</i><t>cant:ar</t><en></en></v>
@@ -2930,7 +2930,7 @@
 <v><i>desllustrar</i><t>cant:ar</t><en></en></v>
 <v><i>deslocalitzar</i><t>cant:ar</t><en></en></v>
 <v><i>desmagnetitzar</i><t>cant:ar</t><en></en></v>
-<v><i>desmaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>desmaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>desmallar</i><t>cant:ar</t><en></en></v>
 <v><i>desmamar</i><t>cant:ar</t><en></en></v>
 <v><i>desmamellar</i><t>cant:ar</t><en></en></v>
@@ -3367,7 +3367,7 @@
 <v><i>emanar</i><t>cant:ar</t><en></en></v>
 <v><i>emancipar</i><t>cant:ar</t><en></en></v>
 <v><i>emascular</i><t>cant:ar</t><en></en></v>
-<v><i>embabaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>embabaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>embacinar</i><t>cant:ar</t><en></en></v>
 <v><i>embadalir</i><t>serv:ir</t><en></en></v>
 <v><i>embadocar</i><t>tren:car</t><en></en></v>
@@ -4073,7 +4073,7 @@
 <v><i>enherbar</i><t>cant:ar</t><en></en></v>
 <v><i>enjardinar</i><t>cant:ar</t><en></en></v>
 <v><i>enjogassar</i><t>cant:ar</t><en></en></v>
-<v><i>enjoiar</i><t>esgla:iar</t><en></en></v>
+<v><i>enjoiar</i><t>esglai:ar</t><en></en></v>
 <v><i>enjoiellar</i><t>cant:ar</t><en></en></v>
 <v><i>enjoncar</i><t>tren:car</t><en></en></v>
 <v><i>enjovar</i><t>cant:ar</t><en></en></v>
@@ -4137,7 +4137,7 @@
 <v><i>enquistar</i><t>cant:ar</t><en></en></v>
 <v><i>enquitranar</i><t>cant:ar</t><en></en></v>
 <v><i>enrabiar</i><t>canvi:ar</t><en></en></v>
-<v><i>enraiar</i><t>esgla:iar</t><en></en></v>
+<v><i>enraiar</i><t>esglai:ar</t><en></en></v>
 <v><i>enraigar</i><t>preg:ar</t><en></en></v>
 <v><i>enrajar</i><t>enve:jar</t><en></en></v>
 <v><i>enrajolar</i><t>cant:ar</t><en></en></v>
@@ -4276,7 +4276,7 @@
 <v><i>entimar</i><t>cant:ar</t><en></en></v>
 <v><i>entinar</i><t>cant:ar</t><en></en></v>
 <v><i>entintar</i><t>cant:ar</t><en></en></v>
-<v><i>entoiar</i><t>esgla:iar</t><en></en></v>
+<v><i>entoiar</i><t>esglai:ar</t><en></en></v>
 <v><i>entoixar</i><t>cant:ar</t><en></en></v>
 <v><i>entollar</i><t>cant:ar</t><en></en></v>
 <v><i>entomar</i><t>cant:ar</t><en></en></v>
@@ -4498,7 +4498,7 @@
 <v><i>esbordellar</i><t>cant:ar</t><en></en></v>
 <v><i>esborifar</i><t>cant:ar</t><en></en></v>
 <v><i>esbornagar</i><t>preg:ar</t><en></en></v>
-<v><i>esborneiar</i><t>esgla:iar</t><en></en></v>
+<v><i>esborneiar</i><t>esglai:ar</t><en></en></v>
 <v><i>esborrallar</i><t>cant:ar</t><en></en></v>
 <v><i>esborrar</i><t>cant:ar</t><en></en></v>
 <v><i>esborrifar</i><t>cant:ar</t><en></en></v>
@@ -4716,7 +4716,7 @@
 <v><i>esfreixurar</i><t>cant:ar</t><en></en></v>
 <v><i>esfullar</i><t>cant:ar</t><en></en></v>
 <v><i>esfumar</i><t>cant:ar</t><en></en></v>
-<v><i>esgaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>esgaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>esgalabrar</i><t>cant:ar</t><en></en></v>
 <v><i>esgaldinyar</i><t>cant:ar</t><en></en></v>
 <v><i>esgallar</i><t>cant:ar</t><en></en></v>
@@ -4734,7 +4734,7 @@
 <v><i>esgatifinyar</i><t>cant:ar</t><en></en></v>
 <v><i>esgatinyar</i><t>cant:ar</t><en></en></v>
 <v><i>esgavellar</i><t>cant:ar</t><en></en></v>
-<v><i>esglaiar</i><t>cant:ar</t><en></en></v>
+<v><i>esglaiar</i><t>esglai:ar</t><en>frighten</en></v>
 <v><i>esglaonar</i><t>cant:ar</t><en></en></v>
 <v><i>esglevar</i><t>cant:ar</t><en></en></v>
 <v><i>esgolar</i><t>cant:ar</t><en></en></v>
@@ -4804,7 +4804,7 @@
 <v><i>esnovar</i><t>cant:ar</t><en></en></v>
 <v><i>espadar</i><t>cant:ar</t><en></en></v>
 <v><i>espadellar</i><t>cant:ar</t><en></en></v>
-<v><i>espaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>espaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>espair</i><t>obe:ir</t><en></en></v>
 <v><i>espallussar</i><t>cant:ar</t><en></en></v>
 <v><i>espalmar</i><t>cant:ar</t><en></en></v>
@@ -4897,7 +4897,7 @@
 <v><i>espitrar</i><t>cant:ar</t><en></en></v>
 <v><i>espitregar</i><t>preg:ar</t><en></en></v>
 <v><i>espitxar</i><t>cant:ar</t><en></en></v>
-<v><i>esplaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>esplaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>esplanar</i><t>cant:ar</t><en></en></v>
 <v><i>espletar</i><t>cant:ar</t><en></en></v>
 <v><i>esplomar</i><t>cant:ar</t><en></en></v>
@@ -4968,7 +4968,7 @@
 <v><i>estacar</i><t>tren:car</t><en></en></v>
 <v><i>estacionar</i><t>cant:ar</t><en></en></v>
 <v><i>estafar</i><t>cant:ar</t><en></en></v>
-<v><i>estaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>estaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>estalonar</i><t>cant:ar</t><en></en></v>
 <v><i>estalviar</i><t>canvi:ar</t><en></en></v>
 <v><i>estamenejar</i><t>enve:jar</t><en></en></v>
@@ -5028,7 +5028,7 @@
 <v><i>estorar</i><t>cant:ar</t><en></en></v>
 <v><i>estordir</i><t>serv:ir</t><en></en></v>
 <v><i>estorinar</i><t>cant:ar</t><en></en></v>
-<v><i>estormeiar</i><t>esgla:iar</t><en></en></v>
+<v><i>estormeiar</i><t>esglai:ar</t><en></en></v>
 <v><i>estossar</i><t>cant:ar</t><en></en></v>
 <v><i>estossegar</i><t>preg:ar</t><en></en></v>
 <v><i>estossinar</i><t>cant:ar</t><en></en></v>
@@ -6337,7 +6337,7 @@
 <v><i>momificar</i><t>tren:car</t><en></en></v>
 <v><i>monedar</i><t>cant:ar</t><en></en></v>
 <v><i>monetitzar</i><t>cant:ar</t><en></en></v>
-<v><i>monjoiar</i><t>esgla:iar</t><en></en></v>
+<v><i>monjoiar</i><t>esglai:ar</t><en></en></v>
 <v><i>monoftongar</i><t>preg:ar</t><en></en></v>
 <v><i>monologar</i><t>preg:ar</t><en></en></v>
 <v><i>monopolitzar</i><t>cant:ar</t><en></en></v>
@@ -6511,7 +6511,7 @@
 <v><i>oficiar</i><t>canvi:ar</t><en></en></v>
 <v><i>ofrenar</i><t>cant:ar</t><en></en></v>
 <v><i>ofuscar</i><t>tren:car</t><en></en></v>
-<v><i>oiar</i><t>esgla:iar</t><en></en></v>
+<v><i>oiar</i><t>esglai:ar</t><en></en></v>
 <v><i>oir</i><t>obe:ir</t><en></en></v>
 <v><i>oldre</i><t>col:dre</t><en></en></v>
 <v><i>oliar</i><t>canvi:ar</t><en></en></v>
@@ -7095,7 +7095,7 @@
 <v><i>quintaessenciar</i><t>canvi:ar</t><en></en></v>
 <v><i>quintar</i><t>cant:ar</t><en></en></v>
 <v><i>quintuplicar</i><t>tren:car</t><en></en></v>
-<v><i>quissoiar</i><t>esgla:iar</t><en></en></v>
+<v><i>quissoiar</i><t>esglai:ar</t><en></en></v>
 <v><i>quitar</i><t>cant:ar</t><en></en></v>
 <v><i>qüestionar</i><t>cant:ar</t><en></en></v>
 <v><i>qüestionejar</i><t>enve:jar</t><en></en></v>
@@ -7437,7 +7437,7 @@
 <v><i>remarcar</i><t>tren:car</t><en></en></v>
 <v><i>remaridar</i><t>cant:ar</t><en></en></v>
 <v><i>rematar</i><t>cant:ar</t><en></en></v>
-<v><i>remeiar</i><t>esgla:iar</t><en></en></v>
+<v><i>remeiar</i><t>esglai:ar</t><en></en></v>
 <v><i>remembrar</i><t>cant:ar</t><en></en></v>
 <v><i>rememorar</i><t>cant:ar</t><en></en></v>
 <v><i>remenar</i><t>cant:ar</t><en></en></v>
@@ -8579,7 +8579,7 @@
 <v><i>vogir</i><t>serv:ir</t><en></en></v>
 <v><i>volar</i><t>cant:ar</t><en></en></v>
 <v><i>volatilitzar</i><t>cant:ar</t><en></en></v>
-<v><i>voleiar</i><t>esgla:iar</t><en></en></v>
+<v><i>voleiar</i><t>esglai:ar</t><en></en></v>
 <v><i>voler</i><t>perd:re</t><en></en></v>
 <v><i>voletejar</i><t>enve:jar</t><en></en></v>
 <v><i>voltar</i><t>cant:ar</t><en></en></v>
@@ -8600,7 +8600,7 @@
 <v><i>xafardejar</i><t>enve:jar</t><en></en></v>
 <v><i>xafarotejar</i><t>enve:jar</t><en></en></v>
 <v><i>xafigar</i><t>preg:ar</t><en></en></v>
-<v><i>xaiar</i><t>esgla:iar</t><en></en></v>
+<v><i>xaiar</i><t>esglai:ar</t><en></en></v>
 <v><i>xalar</i><t>cant:ar</t><en></en></v>
 <v><i>xaloquejar</i><t>enve:jar</t><en></en></v>
 <v><i>xamar</i><t>cant:ar</t><en></en></v>

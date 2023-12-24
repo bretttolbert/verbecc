@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 50
+    assert len(template_names) == 51
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -1936,6 +1936,67 @@ def test_find_verb_by_infinitive():
             True,
             "m",
             ["entrellú", "entrelluï", "entrelluïm", "entrelluïu", "entrelluïn"],
+        ),
+        (
+            "esglaiar",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo esglaio",
+                "tu esglaies",
+                "ella esglaia",
+                "nosaltres esglaiem",
+                "vosaltres esglaieu",
+                "elles esglaien",
+            ],
+        ),
+        (
+            "esglaiar",
+            "indicatiu",
+            "passat-simple",
+            True,
+            "f",
+            [
+                "jo esglaí",
+                "tu esglaiares",
+                "ella esglaià",
+                "nosaltres esglaiàrem",
+                "vosaltres esglaiàreu",
+                "elles esglaiaren",
+            ],
+        ),
+        (
+            "esglaiar",
+            "subjuntiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo esglaï",
+                "tu esglaïs",
+                "ella esglaï",
+                "nosaltres esglaiem",
+                "vosaltres esglaieu",
+                "elles esglaïn",
+            ],
+        ),
+        (
+            "esglaiar",
+            "imperatiu",
+            "imperatiu-present",
+            True,
+            "m",
+            ["esglaia", "esglaï", "esglaiem", "esglaieu", "esglaïn"],
+        ),
+        (
+            "esglaiar",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["esglaiat", "esglaiada", "esglaiats", "esglaiades"],
         ),
     ],
 )
