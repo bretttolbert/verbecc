@@ -2873,196 +2873,197 @@ collir and tossir are both based on 'dorm:ir'
 Except the 'o' becomes 'u' in the present tense (both indicatiu and subjuntiu)
 and in the imperative tense
 except in the first and second person plural.
+See also: sort:ir
 
 -->
-<template name="c:ollir">
+<template name="coll:ir">
 	<Indicatiu>
 		<present>
-			<p><i>ullo</i></p>
-			<p><i>ulls</i></p>
-			<p><i>ull</i></p>
-			<p><i>ollim</i></p>
-			<p><i>olliu</i></p>
-			<p><i>ullen</i></p>
+			<p><i>---ullo</i></p>
+			<p><i>---ulls</i></p>
+			<p><i>---ull</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---ullen</i></p>
 		</present>
 		<imperfet>
-			<p><i>ollia</i></p>
-			<p><i>ollies</i></p>
-			<p><i>ollia</i></p>
-			<p><i>ollíem</i></p>
-			<p><i>ollíeu</i></p>
-			<p><i>ollíen</i></p>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>íeu</i></p>
+			<p><i>íen</i></p>
 		</imperfet>
 		<passat-simple>
-			<p><i>ollí</i></p>
-			<p><i>ollires</i></p>
-			<p><i>ollí</i></p>
-			<p><i>ollírem</i></p>
-			<p><i>ollíreu</i></p>
-			<p><i>olliren</i></p>
+			<p><i>í</i></p>
+			<p><i>ires</i></p>
+			<p><i>í</i></p>
+			<p><i>írem</i></p>
+			<p><i>íreu</i></p>
+			<p><i>iren</i></p>
 		</passat-simple>
 		<futur>
-			<p><i>olliré</i></p>
-			<p><i>olliràs</i></p>
-			<p><i>ollirà</i></p>
-			<p><i>ollirem</i></p>
-			<p><i>ollireu</i></p>
-			<p><i>olliran</i></p>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
 		</futur>
 	</Indicatiu>
 	<Subjuntiu>
 		<present>
-			<p><i>ulli</i></p>
-			<p><i>ullis</i></p>
-			<p><i>ulli</i></p>
-			<p><i>ollim</i></p>
-			<p><i>olliu</i></p>
-			<p><i>ullin</i></p>
+			<p><i>---ulli</i></p>
+			<p><i>---ullis</i></p>
+			<p><i>---ulli</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---ullin</i></p>
 		</present>
 		<imperfet>
-			<p><i>ollís</i></p>
-			<p><i>ollissis</i></p>
-			<p><i>ollís</i></p>
-			<p><i>ollíssim</i></p>
-			<p><i>ollíssiu</i></p>
-			<p><i>ollissin</i></p>
+			<p><i>ís</i></p>
+			<p><i>issis</i></p>
+			<p><i>ís</i></p>
+			<p><i>íssim</i></p>
+			<p><i>íssiu</i></p>
+			<p><i>issin</i></p>
 		</imperfet>
 	</Subjuntiu>
 	<Imperatiu>
 		<imperatiu-present>
-			<p><i>ull</i></p>
-			<p><i>ulli</i></p>
-			<p><i>ollim</i></p>
-			<p><i>olliu</i></p>
-			<p><i>ullin</i></p>
+			<p><i>---ull</i></p>
+			<p><i>---ulli</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>in</i></p>
 		</imperatiu-present>
 	</Imperatiu>
 	<Condicional>
 		<present>
-			<p><i>olliria</i></p>
-			<p><i>olliries</i></p>
-			<p><i>olliria</i></p>
-			<p><i>olliríem</i></p>
-			<p><i>olliríeu</i></p>
-			<p><i>ollirien</i></p>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
 		</present>
 	</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>ollir</i></p>
+			<p><i>ir</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>ollint</i></p>
+			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>ollit</i></p>
-			<p><i>ollida</i></p>
-			<p><i>ollits</i></p>
-			<p><i>ollides</i></p>
+			<p><i>it</i></p>
+			<p><i>ida</i></p>
+			<p><i>its</i></p>
+			<p><i>ides</i></p>
 		</particip>
 	</Particip>
 </template>
 
 <!-- TODO: Inherit from 'dorm:ir'
 
-collir and tossir are both based on 'dorm:ir'
+coll:ir, sort:ir toss:ir are both based on 'dorm:ir'
 Except the 'o' becomes 'u' in the present tense (both indicatiu and subjuntiu)
 and in the imperative tense
 except in the first and second person plural.
 
 -->
-<template name="t:ossir">
+<template name="toss:ir">
 	<Indicatiu>
 		<present>
-			<p><i>usso</i></p>
-			<p><i>usses</i></p>
-			<p><i>us</i></p>
-			<p><i>ossim</i></p>
-			<p><i>ossiu</i></p>
-			<p><i>ussen</i></p>
+			<p><i>---usso</i></p>
+			<p><i>---usses</i></p>
+			<p><i>---us</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---ussen</i></p>
 		</present>
 		<imperfet>
-			<p><i>ossia</i></p>
-			<p><i>ossies</i></p>
-			<p><i>ossia</i></p>
-			<p><i>ossíem</i></p>
-			<p><i>ossíeu</i></p>
-			<p><i>ossíen</i></p>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>íeu</i></p>
+			<p><i>íen</i></p>
 		</imperfet>
 		<passat-simple>
-			<p><i>ossí</i></p>
-			<p><i>ossires</i></p>
-			<p><i>ossí</i></p>
-			<p><i>ossírem</i></p>
-			<p><i>ossíreu</i></p>
-			<p><i>ossiren</i></p>
+			<p><i>í</i></p>
+			<p><i>ires</i></p>
+			<p><i>í</i></p>
+			<p><i>írem</i></p>
+			<p><i>íreu</i></p>
+			<p><i>iren</i></p>
 		</passat-simple>
 		<futur>
-			<p><i>ossiré</i></p>
-			<p><i>ossiràs</i></p>
-			<p><i>ossirà</i></p>
-			<p><i>ossirem</i></p>
-			<p><i>ossireu</i></p>
-			<p><i>ossiran</i></p>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
 		</futur>
 	</Indicatiu>
 	<Subjuntiu>
 		<present>
-			<p><i>ussi</i></p>
-			<p><i>ussis</i></p>
-			<p><i>ussi</i></p>
-			<p><i>ossim</i></p>
-			<p><i>ossiu</i></p>
-			<p><i>ussin</i></p>
+			<p><i>---ussi</i></p>
+			<p><i>---ussis</i></p>
+			<p><i>---ussi</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---ussin</i></p>
 		</present>
 		<imperfet>
-			<p><i>ossís</i></p>
-			<p><i>ossissis</i></p>
-			<p><i>ossís</i></p>
-			<p><i>ossíssim</i></p>
-			<p><i>ossíssiu</i></p>
-			<p><i>ossissin</i></p>
+			<p><i>ís</i></p>
+			<p><i>issis</i></p>
+			<p><i>ís</i></p>
+			<p><i>íssim</i></p>
+			<p><i>íssiu</i></p>
+			<p><i>issin</i></p>
 		</imperfet>
 	</Subjuntiu>
 	<Imperatiu>
 		<imperatiu-present>
-			<p><i>uss</i></p>
-			<p><i>ussi</i></p>
-			<p><i>ossim</i></p>
-			<p><i>ossiu</i></p>
-			<p><i>ussin</i></p>
+			<p><i>---uss</i></p>
+			<p><i>---ussi</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>---ussin</i></p>
 		</imperatiu-present>
 	</Imperatiu>
 	<Condicional>
 		<present>
-			<p><i>ossiria</i></p>
-			<p><i>ossiries</i></p>
-			<p><i>ossiria</i></p>
-			<p><i>ossiríem</i></p>
-			<p><i>ossiríeu</i></p>
-			<p><i>ossirien</i></p>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
 		</present>
 	</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>ossir</i></p>
+			<p><i>ir</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>ossint</i></p>
+			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>
 		<particip>
-			<p><i>ossit</i></p>
-			<p><i>ossida</i></p>
-			<p><i>ossits</i></p>
-			<p><i>ossides</i></p>
+			<p><i>it</i></p>
+			<p><i>ida</i></p>
+			<p><i>its</i></p>
+			<p><i>ides</i></p>
 		</particip>
 	</Particip>
 </template>
@@ -3166,6 +3167,17 @@ vowel of the stem from 'o' to 'u'
 
 TODO: Need a better way to express this vowel shift
 than using the stem-modifying delete operator '-'
+
+Idea: Instead of \-\-\-urto  use  -u==o
+
+Where the '=' means "preserve stem character"
+So together it means, "preserve the "rt" of the stem "sort",
+then delete the last unpreserved character "o" and insert
+the character "u".
+
+By supporting this feature, we can combine the templates
+"coll:ir", "sort:ir" and "toss:ir"
+
 -->
 <template name="sort:ir">
 	<Indicatiu>
