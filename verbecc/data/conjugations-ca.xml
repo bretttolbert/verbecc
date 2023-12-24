@@ -5041,6 +5041,100 @@ This is the second-largest group of regular verbs in the Catalan language
 	</Particip>
 </template>
 
+<!-- TODO: Inherit from serv:ir -->
+<template name="imprim:ir">
+	<Indicatiu>
+		<present>
+			<p><i>eixo</i></p>
+			<p><i>eixes</i></p>
+			<p><i>eix</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>eixen</i></p>
+		</present>
+		<imperfet>
+			<p><i>ia</i></p>
+			<p><i>ies</i></p>
+			<p><i>ia</i></p>
+			<p><i>íem</i></p>
+			<p><i>íeu</i></p>
+			<p><i>ien</i></p>
+		</imperfet>
+		<passat-simple>
+			<p><i>í</i></p>
+			<p><i>es</i></p>
+			<p><i>í</i></p>
+			<p><i>írem</i></p>
+			<p><i>íreu</i></p>
+			<p><i>iren</i></p>
+		</passat-simple>
+		<futur>
+			<p><i>iré</i></p>
+			<p><i>iràs</i></p>
+			<p><i>irà</i></p>
+			<p><i>irem</i></p>
+			<p><i>ireu</i></p>
+			<p><i>iran</i></p>
+		</futur>
+	</Indicatiu>
+	<Subjuntiu>
+		<present>
+			<p><i>eixi</i></p>
+			<p><i>eixis</i></p>
+			<p><i>eixi</i></p>
+			<p><i>im</i></p>
+			<p><i>iu</i></p>
+			<p><i>eixin</i></p>
+		</present>
+		<imperfet>
+			<p><i>ís</i></p>
+			<p><i>issis</i></p>
+			<p><i>ís</i></p>
+			<p><i>íssim</i></p>
+			<p><i>íssiu</i></p>
+			<p><i>issin</i></p>
+		</imperfet>
+	</Subjuntiu>
+	<Imperatiu>
+		<imperatiu-present>
+			<!-- Note: There is no 'jo' in imperatiu -->
+			<p><i>eix</i></p> <!-- (tu) -->
+			<p><i>eixi</i></p> <!-- (vostè) -->
+			<p><i>im</i></p> <!-- (nosaltres) -->
+			<p><i>iu</i></p> <!-- (vosaltres) -->
+			<p><i>eixin</i></p> <!-- (vostès) -->
+		</imperatiu-present>
+	</Imperatiu>
+	<Condicional>
+		<present>
+			<p><i>iria</i></p>
+			<p><i>iries</i></p>
+			<p><i>iria</i></p>
+			<p><i>iríem</i></p>
+			<p><i>iríeu</i></p>
+			<p><i>irien</i></p>
+		</present>
+	</Condicional>
+	<Infinitiu>
+		<infinitiu-present>
+			<p><i>ir</i></p>
+		</infinitiu-present>
+	</Infinitiu>
+	<Gerundi>
+		<gerundi>
+			<p><i>int</i></p>
+		</gerundi>
+	</Gerundi>
+	<Particip>
+		<particip>
+			<p><i>--ès</i></p>
+			<p><i>--esa</i></p>
+			<p><i>--esos</i></p>
+			<p><i>--eses</i></p>
+		</particip>
+	</Particip>
+</template>
+
 <!-- TODO: Should inherit from serv:ir
 Only difference is this one has some alt participles-->
 <template name="compl:ir">

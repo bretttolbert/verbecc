@@ -5748,7 +5748,7 @@
 <v><i>impregnar</i><t>cant:ar</t><en></en></v>
 <v><i>impremtar</i><t>cant:ar</t><en></en></v>
 <v><i>impressionar</i><t>cant:ar</t><en></en></v>
-<v><i>imprimir</i><t>serv:ir</t><en>print</en></v>
+<v><i>imprimir</i><t>imprim:ir</t><en>print</en></v>
 <v><i>improperar</i><t>cant:ar</t><en></en></v>
 <v><i>improvar</i><t>cant:ar</t><en></en></v>
 <v><i>improvisar</i><t>cant:ar</t><en></en></v>
@@ -7401,7 +7401,7 @@
 <v><i>reimplantar</i><t>cant:ar</t><en></en></v>
 <v><i>reimportar</i><t>cant:ar</t><en></en></v>
 <v><i>reimposar</i><t>cant:ar</t><en></en></v>
-<v><i>reimprimir</i><t>impr:imir</t><en></en></v>
+<v><i>reimprimir</i><t>imprim:ir</t><en></en></v>
 <v><i>reincidir</i><t>serv:ir</t><en></en></v>
 <v><i>reincorporar</i><t>cant:ar</t><en></en></v>
 <v><i>reinflar</i><t>cant:ar</t><en></en></v>
@@ -7925,7 +7925,7 @@
 <v><i>sobreexcedir</i><t>serv:ir</t><en></en></v>
 <v><i>sobreexcitar</i><t>cant:ar</t><en></en></v>
 <v><i>sobrefilar</i><t>cant:ar</t><en></en></v>
-<v><i>sobreimprimir</i><t>impr:imir</t><en></en></v>
+<v><i>sobreimprimir</i><t>imprim:ir</t><en></en></v>
 <v><i>sobremenjar</i><t>enve:jar</t><en></en></v>
 <v><i>sobremuntar</i><t>cant:ar</t><en></en></v>
 <v><i>sobrenedar</i><t>cant:ar</t><en></en></v>

@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 53
+    assert len(template_names) == 54
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2073,6 +2073,29 @@ def test_find_verb_by_infinitive():
             True,
             "m",
             ["fuig", "fugi", "fugim", "fugiu", "fugin"],
+        ),
+        (
+            "imprimir",
+            "indicatiu",
+            "present",
+            True,
+            "f",
+            [
+                "jo imprimeixo",
+                "tu imprimeixes",
+                "ella imprimeix",
+                "nosaltres imprimim",
+                "vosaltres imprimiu",
+                "elles imprimeixen",
+            ],
+        ),
+        (
+            "imprimir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["imprès", "impresa", "impresos", "impreses"],
         ),
     ],
 )
