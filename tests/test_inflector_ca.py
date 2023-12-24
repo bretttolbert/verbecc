@@ -2308,6 +2308,29 @@ def test_find_verb_by_infinitive():
             "f",
             ["absolt", "absolta", "absolts", "absoltes"],
         ),
+        (
+            "obrir",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo obro",
+                "tu obres",
+                "ella obre",
+                "nosaltres obrim",
+                "vosaltres obriu",
+                "elles obren",
+            ],
+        ),
+        (
+            "obrir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["obert", "oberta", "oberts", "obertes"],
+        ),
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
