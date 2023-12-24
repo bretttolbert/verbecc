@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 58
+    assert len(template_names) == 59
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2330,6 +2330,127 @@ def test_find_verb_by_infinitive():
             False,
             "f",
             ["obert", "oberta", "oberts", "obertes"],
+        ),
+        (
+            "prevenir",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo previnc",
+                "tu prevens",
+                "ella prevé",
+                "nosaltres prevenim",
+                "vosaltres preveniu",
+                "elles prevenen",
+            ],
+        ),
+        (
+            "prevenir",
+            "indicatiu",
+            "passat-simple",
+            False,
+            "f",
+            [
+                "jo previnguí",
+                "tu previngueres",
+                "ella previngué",
+                "nosaltres previnguérem",
+                "vosaltres previnguéreu",
+                "elles previngueren",
+            ],
+        ),
+        (
+            "prevenir",
+            "indicatiu",
+            "imperfet",
+            False,
+            "f",
+            [
+                "jo prevenia",
+                "tu prevenies",
+                "ella prevenia",
+                "nosaltres preveníem",
+                "vosaltres preveníeu",
+                "elles prevenien",
+            ],
+        ),
+        (
+            "prevenir",
+            "indicatiu",
+            "futur",
+            False,
+            "f",
+            [
+                "jo previndré",
+                "tu previndràs",
+                "ella previndrà",
+                "nosaltres previndrem",
+                "vosaltres previndreu",
+                "elles previndran",
+            ],
+        ),
+        (
+            "prevenir",
+            "subjuntiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo previngui",
+                "tu previnguis",
+                "ella previngui",
+                "nosaltres previnguem",
+                "vosaltres previngueu",
+                "elles previnguin",
+            ],
+        ),
+        (
+            "prevenir",
+            "subjuntiu",
+            "imperfet",
+            False,
+            "f",
+            [
+                "jo previngués",
+                "tu previnguessis",
+                "ella previngués",
+                "nosaltres previnguéssim",
+                "vosaltres previnguéssiu",
+                "elles previnguessin",
+            ],
+        ),
+        (
+            "prevenir",
+            "condicional",
+            "present",
+            False,
+            "f",
+            [
+                "jo previndria",
+                "tu previndries",
+                "ella previndria",
+                "nosaltres previndríem",
+                "vosaltres previndríeu",
+                "elles previndrien",
+            ],
+        ),
+        (
+            "prevenir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["previngut", "previnguda", "previnguts", "previngudes"],
+        ),
+        (
+            "prevenir",
+            "imperatiu",
+            "imperatiu-present",
+            False,
+            "m",
+            ["prevén", "previngui", "previnguem", "preveniu", "previnguin"],
         ),
     ],
 )
