@@ -2012,7 +2012,7 @@
 <v><i>cruiar</i><t>esglai:ar</t><en></en></v>
 <v><i>cruixir</i><t>dorm:ir</t><en></en></v>
 <v><i>cruspir</i><t>serv:ir</t><en></en></v>
-<v><i>créixer</i><t>perd:re</t><en></en></v>
+<v><i>créixer</i><t>créix:er</t><en></en></v>
 <v><i>cubicar</i><t>tren:car</t><en></en></v>
 <v><i>cucar</i><t>tren:car</t><en></en></v>
 <v><i>cuclejar</i><t>enve:jar</t><en></en></v>
@@ -7068,7 +7068,7 @@
 <v><i>punyir</i><t>dorm:ir</t><en></en></v>
 <v><i>purgar</i><t>preg:ar</t><en></en></v>
 <v><i>purificar</i><t>tren:car</t><en></en></v>
-<v><i>péixer</i><t>perd:re</t><en></en></v>
+<v><i>péixer</i><t>n:àixer</t><en></en></v>
 <v><i>quadrar</i><t>cant:ar</t><en></en></v>
 <v><i>quadrejar</i><t>enve:jar</t><en></en></v>
 <v><i>quadricular</i><t>cant:ar</t><en></en></v>
@@ -7478,7 +7478,7 @@
 <v><i>renyir</i><t>serv:ir</t><en></en></v>
 <v><i>renyoquejar</i><t>enve:jar</t><en></en></v>
 <v><i>renàixer</i><t>n:àixer</t><en></en></v>
-<v><i>renéixer</i><t>n:éixer</t><en></en></v>
+<v><i>renéixer</i><t>n:àixer</t><en></en></v>
 <v><i>reobrir</i><t>obr:rir</t><en></en></v>
 <v><i>reocupar</i><t>cant:ar</t><en></en></v>
 <v><i>reomplir</i><t>ompl:ir</t><en></en></v>
@@ -7931,7 +7931,7 @@
 <v><i>sobrenedar</i><t>cant:ar</t><en></en></v>
 <v><i>sobrenomenar</i><t>cant:ar</t><en></en></v>
 <v><i>sobrenàixer</i><t>n:àixer</t><en></en></v>
-<v><i>sobrenéixer</i><t>n:éixer</t><en></en></v>
+<v><i>sobrenéixer</i><t>n:àixer</t><en></en></v>
 <v><i>sobreoxidar</i><t>cant:ar</t><en></en></v>
 <v><i>sobrepassar</i><t>cant:ar</t><en></en></v>
 <v><i>sobreplomar</i><t>cant:ar</t><en></en></v>
