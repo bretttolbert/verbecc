@@ -2627,6 +2627,21 @@ def test_find_verb_by_infinitive():
                 "elles retreguin",
             ],
         ),
+        (
+            "premorir",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo premoro",
+                "tu premors",
+                "ella premor",
+                "nosaltres premorim",
+                "vosaltres premoriu",
+                "elles premoren"
+            ]
+        )
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
