@@ -14,7 +14,7 @@ def test_all_verbs_have_templates():
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 62
+    assert len(template_names) == 63
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2640,6 +2640,51 @@ def test_find_verb_by_infinitive():
                 "nosaltres premorim",
                 "vosaltres premoriu",
                 "elles premoren"
+            ]
+        ),
+        (
+            "conviure",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo convisc",
+                "tu convius",
+                "ella conviu",
+                "nosaltres convivim",
+                "vosaltres conviviu",
+                "elles conviuen"
+            ]
+        ),
+        (
+            "conviure",
+            "indicatiu",
+            "imperfet",
+            False,
+            "f",
+            [
+                "jo convivia",
+                "tu convivies",
+                "ella convivia",
+                "nosaltres convivíem",
+                "vosaltres convivíeu",
+                "elles convivien"
+            ]
+        ),
+        (
+            "conviure",
+            "indicatiu",
+            "passat-simple",
+            False,
+            "f",
+            [
+                "jo convisquí",
+                "tu convisqueres",
+                "ella convisqué",
+                "nosaltres convisquérem",
+                "vosaltres convisquéreu",
+                "elles convisqueren"
             ]
         )
     ],
