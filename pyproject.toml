@@ -41,7 +41,7 @@ classifiers = [
   'Intended Audience :: End Users/Desktop',
   'Intended Audience :: Education',
   'Intended Audience :: Science/Research',
-  'License :: OSI Approved :: GNU General Public License (GPL)',
+  'License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
   'Natural Language :: Catalan',
   'Natural Language :: French',
   'Natural Language :: Italian',
