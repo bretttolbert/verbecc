@@ -677,7 +677,7 @@
 <v><i>apellar</i><t>cant:ar</t><en></en></v>
 <v><i>apel·lar</i><t>cant:ar</t><en></en></v>
 <v><i>apequinar</i><t>cant:ar</t><en></en></v>
-<v><i>apercebre</i><t>re:bre</t><en></en></v>
+<v><i>apercebre</i><t>reb:re</t><en></en></v>
 <v><i>aperduar</i><t>evacu:ar</t><en></en></v>
 <v><i>apergaminar</i><t>cant:ar</t><en></en></v>
 <v><i>apesarar</i><t>cant:ar</t><en></en></v>
@@ -1329,7 +1329,7 @@
 <v><i>butxaquejar</i><t>enve:jar</t><en></en></v>
 <v><i>cabassejar</i><t>enve:jar</t><en></en></v>
 <v><i>cabdellar</i><t>cant:ar</t><en></en></v>
-<v><i>caber</i><t>re:bre</t><en></en></v>
+<v><i>caber</i><t>reb:re</t><en></en></v>
 <v><i>cabestrar</i><t>cant:ar</t><en></en></v>
 <v><i>cabestrejar</i><t>enve:jar</t><en></en></v>
 <v><i>cabeçar</i><t>comen:çar</t><en></en></v>
@@ -1338,7 +1338,7 @@
 <v><i>caboriejar</i><t>enve:jar</t><en></en></v>
 <v><i>cabotejar</i><t>enve:jar</t><en></en></v>
 <v><i>cabrafigar</i><t>preg:ar</t><en></en></v>
-<v><i>cabre</i><t>re:bre</t><en></en></v>
+<v><i>cabre</i><t>reb:re</t><en></en></v>
 <v><i>cabrejar</i><t>enve:jar</t><en></en></v>
 <v><i>cabridar</i><t>cant:ar</t><en></en></v>
 <v><i>cabriolar</i><t>cant:ar</t><en></en></v>
@@ -1538,7 +1538,7 @@
 <v><i>cerciorar</i><t>cant:ar</t><en></en></v>
 <v><i>cerclar</i><t>cant:ar</t><en></en></v>
 <v><i>cercolar</i><t>cant:ar</t><en></en></v>
-<v><i>cerndre</i><t>té:mer</t><en></en></v>
+<v><i>cerndre</i><t>cern:dre</t><en>sift</en></v>
 <v><i>certificar</i><t>tren:car</t><en></en></v>
 <v><i>cessar</i><t>cant:ar</t><en></en></v>
 <v><i>cianurar</i><t>cant:ar</t><en></en></v>
@@ -1727,7 +1727,7 @@
 <v><i>comunir</i><t>serv:ir</t><en></en></v>
 <v><i>concassar</i><t>cant:ar</t><en></en></v>
 <v><i>concatenar</i><t>cant:ar</t><en></en></v>
-<v><i>concebre</i><t>re:bre</t><en></en></v>
+<v><i>concebre</i><t>reb:re</t><en></en></v>
 <v><i>concedir</i><t>serv:ir</t><en></en></v>
 <v><i>concelebrar</i><t>cant:ar</t><en></en></v>
 <v><i>concentrar</i><t>cant:ar</t><en></en></v>
@@ -1907,7 +1907,7 @@
 <v><i>conviure</i><t>v:iure</t><en>live together</en></v>
 <v><i>convocar</i><t>tren:car</t><en></en></v>
 <v><i>convulsar</i><t>cant:ar</t><en></en></v>
-<v><i>convèncer</i><t>v:èncer</t><en></en></v>
+<v><i>convèncer</i><t>vènc:er</t><en></en></v>
 <v><i>conxar</i><t>cant:ar</t><en></en></v>
 <v><i>conxorxar</i><t>cant:ar</t><en></en></v>
 <v><i>conèixer</i><t>conèix:er</t><en></en></v>
@@ -2069,7 +2069,7 @@
 <v><i>decapitar</i><t>cant:ar</t><en></en></v>
 <v><i>decatir</i><t>serv:ir</t><en></en></v>
 <v><i>decaure</i><t>:caure</t><en></en></v>
-<v><i>decebre</i><t>re:bre</t><en></en></v>
+<v><i>decebre</i><t>reb:re</t><en></en></v>
 <v><i>decidir</i><t>serv:ir</t><en></en></v>
 <v><i>declamar</i><t>cant:ar</t><en></en></v>
 <v><i>declarar</i><t>cant:ar</t><en></en></v>
@@ -4332,7 +4332,7 @@
 <v><i>entrenar</i><t>cant:ar</t><en></en></v>
 <v><i>entrenyellar</i><t>cant:ar</t><en></en></v>
 <v><i>entrenyorar</i><t>cant:ar</t><en></en></v>
-<v><i>entreobrir</i><t>obr:rir</t><en></en></v>
+<v><i>entreobrir</i><t>obr:ir</t><en></en></v>
 <v><i>entreoir</i><t>o:ir</t><en></en></v>
 <v><i>entrepassegar</i><t>preg:ar</t><en></en></v>
 <v><i>entreploure</i><t>mou:re</t><en></en></v>
@@ -4672,7 +4672,7 @@
 <v><i>escridar</i><t>cant:ar</t><en></en></v>
 <v><i>escridassar</i><t>cant:ar</t><en></en></v>
 <v><i>escripturar</i><t>cant:ar</t><en></en></v>
-<v><i>escriure</i><t>r:iuire</t><en></en></v>
+<v><i>escriure</i><t>r:iure</t><en></en></v>
 <v><i>escrostar</i><t>cant:ar</t><en></en></v>
 <v><i>escrostissar</i><t>cant:ar</t><en></en></v>
 <v><i>escrostonar</i><t>cant:ar</t><en></en></v>
@@ -6512,7 +6512,7 @@
 <v><i>ofrenar</i><t>cant:ar</t><en></en></v>
 <v><i>ofuscar</i><t>tren:car</t><en></en></v>
 <v><i>oiar</i><t>esglai:ar</t><en></en></v>
-<v><i>oir</i><t>obe:ir</t><en></en></v>
+<v><i>oir</i><t>o:ir</t><en>hear</en></v>
 <v><i>oldre</i><t>col:dre</t><en></en></v>
 <v><i>oliar</i><t>canvi:ar</t><en></en></v>
 <v><i>olivar</i><t>cant:ar</t><en></en></v>
@@ -6678,7 +6678,7 @@
 <v><i>pelfar</i><t>cant:ar</t><en></en></v>
 <v><i>pellar</i><t>cant:ar</t><en></en></v>
 <v><i>pellicar</i><t>tren:car</t><en></en></v>
-<v><i>pellobrir</i><t>obr:rir</t><en></en></v>
+<v><i>pellobrir</i><t>obr:ir</t><en>peel off</en></v>
 <v><i>pellpartir</i><t>serv:ir</t><en></en></v>
 <v><i>pelltrencar</i><t>tren:car</t><en></en></v>
 <v><i>pellucar</i><t>tren:car</t><en></en></v>
@@ -6702,7 +6702,7 @@
 <v><i>perbocar</i><t>tren:car</t><en></en></v>
 <v><i>perbullir</i><t>dorm:ir</t><en></en></v>
 <v><i>percaçar</i><t>comen:çar</t><en></en></v>
-<v><i>percebre</i><t>re:bre</t><en></en></v>
+<v><i>percebre</i><t>reb:re</t><en></en></v>
 <v><i>percolar</i><t>cant:ar</t><en></en></v>
 <v><i>percudir</i><t>ment:ir</t><en>hit</en></v>
 <v><i>perdonar</i><t>cant:ar</t><en></en></v>
@@ -7199,7 +7199,7 @@
 <v><i>rebotegar</i><t>preg:ar</t><en></en></v>
 <v><i>rebotir</i><t>serv:ir</t><en></en></v>
 <v><i>rebotre</i><t>perd:re</t><en></en></v>
-<v><i>rebre</i><t>re:bre</t><en></en></v>
+<v><i>rebre</i><t>reb:re</t><en></en></v>
 <v><i>rebregar</i><t>preg:ar</t><en></en></v>
 <v><i>rebrollar</i><t>cant:ar</t><en></en></v>
 <v><i>rebrostar</i><t>cant:ar</t><en></en></v>
@@ -7479,7 +7479,7 @@
 <v><i>renyoquejar</i><t>enve:jar</t><en></en></v>
 <v><i>renàixer</i><t>n:àixer</t><en></en></v>
 <v><i>renéixer</i><t>n:àixer</t><en></en></v>
-<v><i>reobrir</i><t>obr:rir</t><en></en></v>
+<v><i>reobrir</i><t>obr:ir</t><en></en></v>
 <v><i>reocupar</i><t>cant:ar</t><en></en></v>
 <v><i>reomplir</i><t>ompl:ir</t><en></en></v>
 <v><i>reordenar</i><t>cant:ar</t><en></en></v>
@@ -7677,7 +7677,7 @@
 <v><i>revoltar</i><t>cant:ar</t><en></en></v>
 <v><i>revoltillar</i><t>cant:ar</t><en></en></v>
 <v><i>revolucionar</i><t>cant:ar</t><en></en></v>
-<v><i>revèncer</i><t>v:èncer</t><en></en></v>
+<v><i>revèncer</i><t>vènc:er</t><en></en></v>
 <v><i>reüllar</i><t>cant:ar</t><en></en></v>
 <v><i>riallejar</i><t>enve:jar</t><en></en></v>
 <v><i>riberejar</i><t>enve:jar</t><en></en></v>
@@ -8594,7 +8594,7 @@
 <v><i>vulcanitzar</i><t>cant:ar</t><en></en></v>
 <v><i>vulgaritzar</i><t>cant:ar</t><en></en></v>
 <v><i>vulnerar</i><t>cant:ar</t><en></en></v>
-<v><i>vèncer</i><t>perd:re</t><en></en></v>
+<v><i>vèncer</i><t>vènc:er</t><en></en></v>
 <v><i>xacar</i><t>tren:car</t><en></en></v>
 <v><i>xafar</i><t>cant:ar</t><en></en></v>
 <v><i>xafardejar</i><t>enve:jar</t><en></en></v>

@@ -7,14 +7,11 @@ from verbecc.tense_template import TenseTemplate
 cg = Conjugator(lang="ca")
 
 
-# TODO: Fix all of these missing templates
-@pytest.mark.skip("known failure")
 def test_all_verbs_have_templates():
-    """Have not finished adding templates for all verbs, so this should fail"""
     verbs = cg.get_verbs()
     assert len(verbs) == 8616
     template_names = cg.get_template_names()
-    assert len(template_names) == 63
+    assert len(template_names) == 66
     missing_verbs = []
     missing_templates = set()
     for verb in verbs:
@@ -2639,8 +2636,8 @@ def test_find_verb_by_infinitive():
                 "ella premor",
                 "nosaltres premorim",
                 "vosaltres premoriu",
-                "elles premoren"
-            ]
+                "elles premoren",
+            ],
         ),
         (
             "conviure",
@@ -2654,8 +2651,8 @@ def test_find_verb_by_infinitive():
                 "ella conviu",
                 "nosaltres convivim",
                 "vosaltres conviviu",
-                "elles conviuen"
-            ]
+                "elles conviuen",
+            ],
         ),
         (
             "conviure",
@@ -2669,8 +2666,8 @@ def test_find_verb_by_infinitive():
                 "ella convivia",
                 "nosaltres convivíem",
                 "vosaltres convivíeu",
-                "elles convivien"
-            ]
+                "elles convivien",
+            ],
         ),
         (
             "conviure",
@@ -2684,9 +2681,208 @@ def test_find_verb_by_infinitive():
                 "ella convisqué",
                 "nosaltres convisquérem",
                 "vosaltres convisquéreu",
-                "elles convisqueren"
-            ]
-        )
+                "elles convisqueren",
+            ],
+        ),
+        (
+            "vèncer",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo venço",
+                "tu vences",
+                "ella venç",
+                "nosaltres vencem",
+                "vosaltres venceu",
+                "elles vencen",
+            ],
+        ),
+        (
+            "vèncer",
+            "imperatiu",
+            "imperatiu-present",
+            False,
+            "m",
+            ["venç", "venci", "vencem", "venceu", "vencin"],
+        ),
+        (
+            "vèncer",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["vençut", "vençuda", "vençuts", "vençudes"],
+        ),
+        (
+            "vèncer",
+            "infinitiu",
+            "infinitiu-present",
+            False,
+            "m",
+            ["vèncer"],
+        ),
+        (
+            "vèncer",
+            "gerundi",
+            "gerundi",
+            False,
+            "m",
+            ["vencent"],
+        ),
+        (
+            "cerndre",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo cerno",
+                "tu cerns",
+                "ella cern",
+                "nosaltres cernem",
+                "vosaltres cerneu",
+                "elles cernen",
+            ],
+        ),
+        (
+            "oir",
+            "indicatiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo oeixo",
+                "tu oeixes",
+                "ella oeix",
+                "nosaltres oïm",
+                "vosaltres oïu",
+                "elles oeixen",
+            ],
+        ),
+        (
+            "oir",
+            "indicatiu",
+            "imperfet",
+            False,
+            "f",
+            [
+                "jo oïa",
+                "tu oïes",
+                "ella oïa",
+                "nosaltres oíem",
+                "vosaltres oíeu",
+                "elles oïen",
+            ],
+        ),
+        (
+            "oir",
+            "indicatiu",
+            "passat-simple",
+            False,
+            "f",
+            [
+                "jo oí",
+                "tu oïres",
+                "ella oí",
+                "nosaltres oírem",
+                "vosaltres oíreu",
+                "elles oïren",
+            ],
+        ),
+        (
+            "oir",
+            "indicatiu",
+            "futur",
+            False,
+            "f",
+            [
+                "jo oiré",
+                "tu oiràs",
+                "ella oirà",
+                "nosaltres oirem",
+                "vosaltres oireu",
+                "elles oiran",
+            ],
+        ),
+        (
+            "oir",
+            "subjuntiu",
+            "present",
+            False,
+            "f",
+            [
+                "jo oeixi",
+                "tu oeixis",
+                "ella oeixi",
+                "nosaltres oïm",
+                "vosaltres oïu",
+                "elles oeixin",
+            ],
+        ),
+        (
+            "oir",
+            "subjuntiu",
+            "imperfet",
+            False,
+            "f",
+            [
+                "jo oís",
+                "tu oïssis",
+                "ella oís",
+                "nosaltres oíssim",
+                "vosaltres oíssiu",
+                "elles oïssin",
+            ],
+        ),
+        (
+            "oir",
+            "condicional",
+            "present",
+            False,
+            "f",
+            [
+                "jo oiria",
+                "tu oiries",
+                "ella oiria",
+                "nosaltres oiríem",
+                "vosaltres oiríeu",
+                "elles oirien",
+            ],
+        ),
+        (
+            "oir",
+            "particip",
+            "particip",
+            False,
+            "f",
+            ["oït", "oïda", "oïts", "oïdes"],
+        ),
+        (
+            "oir",
+            "infinitiu",
+            "infinitiu-present",
+            False,
+            "m",
+            ["oir"],
+        ),
+        (
+            "oir",
+            "gerundi",
+            "gerundi",
+            False,
+            "m",
+            ["oint"],
+        ),
+        (
+            "oir",
+            "imperatiu",
+            "imperatiu-present",
+            False,
+            "m",
+            ["oeix", "oeixi", "oïm", "oïu", "oeixin"],
+        ),
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
