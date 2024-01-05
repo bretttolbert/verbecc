@@ -43,6 +43,19 @@ def printjson(c):
     print(json.dumps(c, indent=4, ensure_ascii=False))
 ```
 
+- [Conjugation Example: French manger (to eat)](#conjugation-example-french-manger-to-eat)
+- [ML Prediction Conjugation Example: French uberiser (to Uberize)](#ml-prediction-conjugation-example-french-uberiser-to-uberize)
+- [Multi-Language Conjugation](#example-multi-language-conjugation)
+- [Multi-Language Conjugation using English mood and tense names via localization module](#example-multi-language-conjugation-using-english-mood-and-tense-names-via-localization-module)
+- [Catalan `ser` (to be) - with pronouns, without alternate conjugations (original behavior)](#example-catalan-ser-to-be)
+- [Catalan `ser` (to be) - without pronouns, including alternate conjugations (new features in 1.9.7)](#example-catalan-ser-to-be-with-alternate-conjugations-without-pronouns)
+- [Spanish ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-spanish-ser-to-be)
+- [French être (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-french-être-to-be)
+- [Italian essere (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-italian-essere-to-be)
+- [Portuguese ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-portuguese--ser-to-be)
+- [Romanian fi (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-romanian-fi-to-be)
+
+
 ### Conjugation Example: French `manger` (to eat)
 ```python
 >>> from verbecc import Conjugator
