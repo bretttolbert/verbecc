@@ -539,6 +539,234 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
+### Example: Catalan `ser` (to be) with alternate conjugations, without pronouns
+```python
+>>> from verbecc import Conjugator
+>>> cg = Conjugator(lang='ca') # If this is the first run, it will take a minute for the model to train, 
+                               # but it should save the model .zip file and run fast subsequently
+>>> cg.conjugate('ser')
+>>> printjson(cg.conjugate('ser', include_alternates=True, conjugate_pronouns=False))
+{
+    "verb": {
+        "infinitive": "ser",
+        "predicted": false,
+        "pred_score": 1.0,
+        "template": "és:ser",
+        "translation_en": "be",
+        "stem": ""
+    },
+    "moods": {
+        "indicatiu": {
+            "present": [
+                [
+                    "sóc"
+                ],
+                [
+                    "ets"
+                ],
+                [
+                    "és"
+                ],
+                [
+                    "som"
+                ],
+                [
+                    "sou"
+                ],
+                [
+                    "són"
+                ]
+            ],
+            "imperfet": [
+                [
+                    "era"
+                ],
+                [
+                    "eres"
+                ],
+                [
+                    "era"
+                ],
+                [
+                    "érem"
+                ],
+                [
+                    "éreu"
+                ],
+                [
+                    "eren"
+                ]
+            ],
+            "passat-simple": [
+                [
+                    "fui"
+                ],
+                [
+                    "fores"
+                ],
+                [
+                    "fou"
+                ],
+                [
+                    "fórem"
+                ],
+                [
+                    "fóreu"
+                ],
+                [
+                    "foren"
+                ]
+            ],
+            "futur": [
+                [
+                    "seré"
+                ],
+                [
+                    "seràs"
+                ],
+                [
+                    "serà"
+                ],
+                [
+                    "serem"
+                ],
+                [
+                    "sereu"
+                ],
+                [
+                    "seran"
+                ]
+            ]
+        },
+        "subjuntiu": {
+            "present": [
+                [
+                    "sigui"
+                ],
+                [
+                    "siguis"
+                ],
+                [
+                    "sigui"
+                ],
+                [
+                    "siguem"
+                ],
+                [
+                    "sigueu"
+                ],
+                [
+                    "siguin"
+                ]
+            ],
+            "imperfet": [
+                [
+                    "fos"
+                ],
+                [
+                    "fossis"
+                ],
+                [
+                    "fos"
+                ],
+                [
+                    "fóssim"
+                ],
+                [
+                    "fóssiu"
+                ],
+                [
+                    "fossin"
+                ]
+            ]
+        },
+        "imperatiu": {
+            "imperatiu-present": [
+                [
+                    "sigues"
+                ],
+                [
+                    "sigui"
+                ],
+                [
+                    "siguem"
+                ],
+                [
+                    "sigueu"
+                ],
+                [
+                    "siguin"
+                ]
+            ]
+        },
+        "condicional": {
+            "present": [
+                [
+                    "seria",
+                    "fora"
+                ],
+                [
+                    "series",
+                    "fores"
+                ],
+                [
+                    "seria",
+                    "fora"
+                ],
+                [
+                    "seríem",
+                    "fórem"
+                ],
+                [
+                    "seríeu",
+                    "fóreu"
+                ],
+                [
+                    "serien",
+                    "foren"
+                ]
+            ]
+        },
+        "infinitiu": {
+            "infinitiu-present": [
+                [
+                    "ser",
+                    "ésser"
+                ]
+            ]
+        },
+        "gerundi": {
+            "gerundi": [
+                [
+                    "sent",
+                    "essent"
+                ]
+            ]
+        },
+        "particip": {
+            "particip": [
+                [
+                    "estat",
+                    "sigut"
+                ],
+                [
+                    "estada",
+                    "siguda"
+                ],
+                [
+                    "estats",
+                    "siguts"
+                ],
+                [
+                    "estades",
+                    "sigudes"
+                ]
+            ]
+        }
+    }
+}
+```
+
 ### Example: Spanish `ser` (to be)
 ```python
 >>> from verbecc import Conjugator
