@@ -45,11 +45,33 @@ class Conjugator:
         else:
             raise InvalidLangError
 
-    def conjugate(self, infinitive: str):
-        return self._inflector.conjugate(infinitive)
+    def conjugate(
+        self, infinitive: str, include_alternates: bool = False, conjugate_pronouns=True
+    ):
+        """
+        :param include_alterates: if True, a list of one or more possible conjugations is returned
+            if False, the default conjugation is returned as a scalar string
+        :param conjugate_prouns: if True, verbecc will conjugate the pronoun together with
+            its inflected form, e.g. for the French verb apprendre, for the first-person singular
+            present tense you'd get "j'apprends" if True or "apprends" if False.
 
-    def conjugate_mood(self, infinitive: str, mood_name: str):
+        E.g. for the Catalan verb "ser"
+        include_alternates=False, conjugate_pronouns=True -> "jo seria"
+        include_alternates=True, conjugate_pronouns=False -> ["seria", "fora"]
+        """
+        return self._inflector.conjugate(
+            infinitive, include_alternates, conjugate_pronouns
+        )
+
+    def conjugate_mood(self, infinitive: str, mood_name: str) -> Dict[str, List[str]]:
         return self._inflector.conjugate_mood(infinitive, mood_name)
+
+    def conjugate_mood_include_alternates(
+        self, infinitive: str, mood_name: str
+    ) -> Dict[str, List[List[str]]]:
+        return self._inflector.conjugate_mood_include_alternates(
+            infinitive, mood_name, conjugate_pronouns=True
+        )
 
     def conjugate_mood_tense(
         self,

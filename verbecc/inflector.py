@@ -22,11 +22,36 @@ class Inflector(ABC):
         self._verb_parser = verbs_parser.VerbsParser(self.lang)
         self._conj_parser = conjugations_parser.ConjugationsParser(self.lang)
 
-    def conjugate(self, infinitive: str):
+    def conjugate(
+        self,
+        infinitive: str,
+        include_alternates: bool = False,
+        conjugate_pronouns: bool = True,
+    ):
+        """
+        :param include_alternates: whether to include alternate conjugations
+            e.g. the Catalan verbs ser/ésser have alternate conjugations in
+            the conditional tense and the participle
+            See test_inflector_ca.test_inflector_conjugate_with_alternates
+        :type include_alternates: str
+        :param conjugate_prouns: if True, verbecc will conjugate the pronoun together with
+            its inflected form, e.g. for the French verb apprendre, for the first-person singular
+            present tense you'd get "j'apprends" if True or "apprends" if False.
+        """
+        if not include_alternates and not conjugate_pronouns:
+            # No plans to support this as include_alternates is going to become the
+            # default and possibly only behavior
+            raise NotImplementedError()
+
         co = self._get_conj_obs(infinitive)
         moods = {}
         for mood in co.template.moods:
-            moods[mood] = self._conjugate_mood(co, mood)
+            if include_alternates:
+                moods[mood] = self._conjugate_mood_include_alternates(
+                    co, mood, conjugate_pronouns
+                )
+            else:
+                moods[mood] = self._conjugate_mood(co, mood)
         return {
             "verb": {
                 "infinitive": co.verb.infinitive,
@@ -43,6 +68,14 @@ class Inflector(ABC):
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood(co, mood_name)
 
+    def conjugate_mood_include_alternates(
+        self, infinitive: str, mood_name: str, conjugate_pronouns: bool = True
+    ) -> Dict[str, List[List[str]]]:
+        co = self._get_conj_obs(infinitive)
+        return self._conjugate_mood_include_alternates(
+            co, mood_name, conjugate_pronouns
+        )
+
     def conjugate_mood_tense(
         self,
         infinitive: str,
@@ -51,6 +84,9 @@ class Inflector(ABC):
         alternate=False,
         gender="m",
     ) -> List[str]:
+        """
+        This method is obsoleted by conjugate_mood_tense_include_alternates
+        """
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood_tense(co, mood_name, tense_name, alternate, gender)
 
@@ -161,6 +197,24 @@ class Inflector(ABC):
         ret.update(self._get_compound_conjugations_for_mood(co, mood_name))
         return ret
 
+    def _conjugate_mood_include_alternates(
+        self, co: ConjugationObjects, mood_name: str, conjugate_pronouns: bool = True
+    ) -> Dict[str, List[List[str]]]:
+        if mood_name not in co.template.moods:
+            raise exceptions.InvalidMoodError
+        ret = {}
+        ret.update(
+            self._get_simple_conjugations_for_mood_include_alternates(
+                co, mood_name, conjugate_pronouns
+            )
+        )
+        ret.update(
+            self._get_compound_conjugations_for_mood_include_alternates(
+                co, mood_name, conjugate_pronouns
+            )
+        )
+        return ret
+
     def _get_simple_conjugations_for_mood(
         self, co: ConjugationObjects, mood_name: str
     ) -> Dict[str, List[str]]:
@@ -168,6 +222,17 @@ class Inflector(ABC):
         mood = co.template.moods[mood_name]
         for tense_name in mood.tenses:
             ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
+        return ret
+
+    def _get_simple_conjugations_for_mood_include_alternates(
+        self, co: ConjugationObjects, mood_name: str, conjugate_pronouns: bool = True
+    ) -> Dict[str, List[List[str]]]:
+        ret = {}
+        mood = co.template.moods[mood_name]
+        for tense_name in mood.tenses:
+            ret[tense_name] = self._conjugate_mood_tense_include_alternates(
+                co, mood_name, tense_name, conjugate_pronouns=conjugate_pronouns
+            )
         return ret
 
     def _get_compound_conjugations_for_mood(
@@ -178,6 +243,18 @@ class Inflector(ABC):
         if mood_name in comp_conj_map:
             for tense_name in comp_conj_map[mood_name]:
                 ret[tense_name] = self._conjugate_mood_tense(co, mood_name, tense_name)
+        return ret
+
+    def _get_compound_conjugations_for_mood_include_alternates(
+        self, co: ConjugationObjects, mood_name: str, conjugate_pronouns=True
+    ) -> Dict[str, List[List[str]]]:
+        ret = {}
+        comp_conj_map = self._get_compound_conjugations_aux_verb_map()
+        if mood_name in comp_conj_map:
+            for tense_name in comp_conj_map[mood_name]:
+                ret[tense_name] = self._conjugate_mood_tense_include_alternates(
+                    co, mood_name, tense_name, conjugate_pronouns=conjugate_pronouns
+                )
         return ret
 
     def _auxilary_verb_uses_alternate_conjugation(self, tense_name: str) -> bool:
@@ -191,6 +268,10 @@ class Inflector(ABC):
         alternate: bool = False,
         gender: str = "m",
     ) -> List[str]:
+        """
+        :param gender: controls gender of third-person singular and plural
+        pronouns, if conjugate_pronouns is enabled. Otherwise ignored.
+        """
         comp_conj_map = self._get_compound_conjugations_aux_verb_map()
         if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
             aux_mood_name, aux_tense_name = comp_conj_map[mood_name][tense_name]
@@ -217,6 +298,48 @@ class Inflector(ABC):
                 modify_stem_strip_accents=bool(
                     co.template.modify_stem == "strip-accents"
                 ),
+            )
+
+    def _conjugate_mood_tense_include_alternates(
+        self,
+        co: ConjugationObjects,
+        mood_name: str,
+        tense_name: str,
+        alternate: bool = False,
+        gender: str = "m",
+        conjugate_pronouns: bool = True,
+    ) -> List[List[str]]:
+        """
+        :param gender: controls gender of third-person singular and plural
+        pronouns, if conjugate_pronouns is enabled. Otherwise ignored.
+        """
+        comp_conj_map = self._get_compound_conjugations_aux_verb_map()
+        if mood_name in comp_conj_map and tense_name in comp_conj_map[mood_name]:
+            aux_mood_name, aux_tense_name = comp_conj_map[mood_name][tense_name]
+            return self._conjugate_compound_include_alternates(
+                co,
+                mood_name,
+                tense_name,
+                aux_mood_name,
+                aux_tense_name,
+                self._auxilary_verb_uses_alternate_conjugation(tense_name),
+                conjugate_pronouns=conjugate_pronouns,
+            )
+        else:
+            mood = co.template.moods[mood_name]
+            if tense_name not in mood.tenses:
+                raise exceptions.InvalidTenseError
+            tense_template = mood.tenses[tense_name]
+            return self._conjugate_simple_mood_tense_include_alternates(
+                co.verb_stem,
+                mood_name,
+                tense_template,
+                is_reflexive=co.is_reflexive,
+                gender=gender,
+                modify_stem_strip_accents=bool(
+                    co.template.modify_stem == "strip-accents"
+                ),
+                conjugate_pronouns=conjugate_pronouns,
             )
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
@@ -371,6 +494,71 @@ class Inflector(ABC):
                 ret.append(s)
         return ret
 
+    def _conjugate_simple_mood_tense_include_alternates(
+        self,
+        verb_stem: str,
+        mood_name: str,
+        tense_template: tense_template.TenseTemplate,
+        is_reflexive: bool = False,
+        gender: str = "m",
+        conjugate_pronouns: bool = False,
+        modify_stem_strip_accents: bool = False,
+    ) -> List[List[str]]:
+        """
+        :param gender: controls gender of third-person singular and plural
+        pronouns, if conjugate_pronouns is enabled. Otherwise ignored.
+        """
+        if modify_stem_strip_accents and mood_name != self._get_infinitive_mood_name():
+            verb_stem = strip_accents(verb_stem)
+        ret = []
+        tense_name = tense_template.name
+        if (
+            tense_name in self._get_tenses_conjugated_without_pronouns()
+            or not conjugate_pronouns
+        ):
+            for person_ending in tense_template.person_endings:
+                person_conjugations = []
+                for ending in person_ending.get_endings():
+                    s = self._add_present_participle_if_applicable(
+                        "", is_reflexive, tense_name
+                    )
+                    if ending != "-":
+                        s += self._combine_verb_stem_and_ending(verb_stem, ending)
+                    else:
+                        s += ending
+                    if ending != "-":
+                        s = self._add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
+                            s,
+                            is_reflexive,
+                            mood_name,
+                            tense_name,
+                            person_ending.get_person(),
+                        )
+                    if ending != "-":
+                        s = self._add_adverb_if_applicable(s, mood_name, tense_name)
+                    person_conjugations.append(s)
+                ret.append(person_conjugations)
+        else:
+            for person_ending in tense_template.person_endings:
+                # There will be at least one conjugation per person-ending and
+                # potentially one or more alternate conjugations
+                person_conjugations = []
+                for ending in person_ending.get_endings():
+                    pronoun = self._get_default_pronoun(
+                        person=person_ending.get_person(),
+                        gender=gender,
+                        is_reflexive=is_reflexive,
+                    )
+                    s = "-"
+                    if ending != "-":
+                        conj = self._combine_verb_stem_and_ending(verb_stem, ending)
+                        s = self._combine_pronoun_and_conj(pronoun, conj)
+                        if mood_name == self._get_subjunctive_mood_name():
+                            s = self._add_subjunctive_relative_pronoun(s, tense_name)
+                    person_conjugations.append(s)
+                ret.append(person_conjugations)
+        return ret
+
     def _get_pronoun_suffix(self, person, gender="m", imperative=True):
         return " " + self._get_default_pronoun(person, gender)
 
@@ -398,7 +586,7 @@ class Inflector(ABC):
         aux_tense_name: str,
         aux_alternate: bool,
         gender: str = "m",
-    ):
+    ) -> List[str]:
         ret = []
         if self._compound_conjugation_not_applicable(
             co.is_reflexive, mood_name, aux_tense_name
@@ -433,6 +621,58 @@ class Inflector(ABC):
             ret = [self._add_subjunctive_relative_pronoun(i, tense_name) for i in ret]
         return ret
 
+    def _conjugate_compound_include_alternates(
+        self,
+        co: ConjugationObjects,
+        mood_name: str,
+        tense_name: str,
+        aux_mood_name: str,
+        aux_tense_name: str,
+        aux_alternate: bool,
+        gender: str = "m",
+        conjugate_pronouns: bool = False,
+    ) -> List[List[str]]:
+        """
+        :param gender: controls gender of third-person singular and plural
+        pronouns, if conjugate_pronouns is enabled. Otherwise ignored.
+        """
+        ret = []
+        if self._compound_conjugation_not_applicable(
+            co.is_reflexive, mood_name, aux_tense_name
+        ):
+            return ret
+        persons_mood_name = mood_name
+        if mood_name not in co.template.moods:
+            persons_mood_name = self._get_indicative_mood_name()
+        persons = [
+            pe.person
+            for pe in co.template.moods[persons_mood_name]
+            .tenses[aux_tense_name]
+            .person_endings
+        ]
+        aux_verb = self._get_auxilary_verb(co, mood_name, tense_name)
+        aux_co = self._get_conj_obs(aux_verb)
+        aux_tense_template = copy.deepcopy(
+            aux_co.template.moods[aux_mood_name].tenses[aux_tense_name]
+        )
+        aux_person_endings = []
+        for pe in aux_tense_template.person_endings:
+            if pe.person in persons:
+                aux_person_endings.append(pe)
+        aux_tense_template.person_endings = aux_person_endings
+        aux_conj = self._conjugate_simple_mood_tense(
+            aux_co.verb_stem, "", aux_tense_template, co.is_reflexive, aux_alternate
+        )
+        ret = self._conjugate_compound_primary_verb_include_alternates(
+            co, mood_name, tense_name, persons, aux_verb, aux_conj, gender
+        )
+        if mood_name == self._get_subjunctive_mood_name():
+            ret = [
+                [self._add_subjunctive_relative_pronoun(i, tense_name) for i in j]
+                for j in ret
+            ]
+        return ret
+
     def _conjugate_compound_primary_verb(
         self,
         co: ConjugationObjects,
@@ -442,7 +682,43 @@ class Inflector(ABC):
         aux_verb: str,
         aux_conj: List[str],
         gender: str = "m",
-    ):
+    ) -> List[str]:
+        ret = []
+        pmood = self._get_participle_mood_name()
+        ptense = self._get_participle_tense_name()
+        participle = self._conjugate_simple_mood_tense(
+            co.verb_stem, pmood, co.template.moods[pmood].tenses[ptense], gender=gender
+        )
+        if not self._is_auxilary_verb_inflected(aux_verb):
+            for hv in aux_conj:
+                p = participle[0]
+                hv = self._get_alternate_hv_inflection(hv)
+                ret.append(hv + " " + p)
+        else:
+            for i, hv in enumerate(aux_conj):
+                participle_inflection = (
+                    self._get_default_participle_inflection_for_person(persons[i])
+                )
+                p = participle[
+                    grammar_defines.PARTICIPLE_INFLECTIONS.index(participle_inflection)
+                ]
+                ret.append(hv + " " + p)
+        return ret
+
+    def _conjugate_compound_primary_verb_include_alternates(
+        self,
+        co: ConjugationObjects,
+        mood_name: str,
+        tense_name: str,
+        persons: List[str],
+        aux_verb: str,
+        aux_conj: List[str],
+        gender: str = "m",
+    ) -> List[List[str]]:
+        """
+        :param gender: controls gender of third-person singular and plural
+        pronouns, if conjugate_pronouns is enabled. Otherwise ignored.
+        """
         ret = []
         pmood = self._get_participle_mood_name()
         ptense = self._get_participle_tense_name()

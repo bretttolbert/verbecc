@@ -1,5 +1,35 @@
 # verbecc Changelog
 
+- 1.9.7 [Jan 5 2024]
+  - Added option to include alternate conjugations
+  - Added option to not conjugate pronouns e.g. return _apprends_ rather than _j'apprends_
+  - Example: `include_alternates=False, conjugate_pronouns=True` (equivalent to classic verbecc behavior)
+    ```json
+                "condicional": {
+                    "present": [
+                        "jo seria",
+                        "tu series",
+                        "ell seria",
+                        "nosaltres seríem",
+                        "vosaltres seríeu",
+                        "ells serien",
+                    ]
+                },
+    ```
+  - Example: `include_alternates=True, conjugate_pronouns=False` (observe now a list of one or more conjugations is returned in place of the scalar value)
+    ```json
+                "condicional": {
+                    "present": [
+                        ["seria", "fora"],
+                        ["series", "fores"],
+                        ["seria", "fora"],
+                        ["seríem", "fórem"],
+                        ["seríeu", "fóreu"],
+                        ["serien", "foren"],
+                    ]
+                },
+    ```
+
 - 1.9.6 [26 December 2023]
   - Improved Catalan Support
     - Added remaining missing templates for all 8616 verbs

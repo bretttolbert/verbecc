@@ -34,6 +34,9 @@ class PersonEnding:
     def get_person(self) -> str:
         return self.person
 
+    def get_endings(self) -> List[str]:
+        return self.endings
+
     def get_ending(self) -> str:
         return self.endings[0]
 

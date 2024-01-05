@@ -252,14 +252,12 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 	</Condicional>
 	<Infinitiu>
 		<infinitiu-present>
-			<p><i>ser</i></p>
-			<p><i>ésser</i></p>
+			<p><i>ser</i><i>ésser</i></p>
 		</infinitiu-present>
 	</Infinitiu>
 	<Gerundi>
 		<gerundi>
-			<p><i>sent</i></p>
-			<p><i>essent</i></p>
+			<p><i>sent</i><i>essent</i></p>
 		</gerundi>
 	</Gerundi>
 	<Particip>

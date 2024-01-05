@@ -2985,3 +2985,277 @@ def test_inflector_ca_get_default_pronoun(
         cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
         == expected_result
     )
+
+
+def test_inflector_conjugate():
+    assert cg.conjugate("ser") == {
+        "verb": {
+            "infinitive": "ser",
+            "predicted": False,
+            "pred_score": 1.0,
+            "template": "és:ser",
+            "translation_en": "be",
+            "stem": "",
+        },
+        "moods": {
+            "indicatiu": {
+                "present": [
+                    "jo sóc",
+                    "tu ets",
+                    "ell és",
+                    "nosaltres som",
+                    "vosaltres sou",
+                    "ells són",
+                ],
+                "imperfet": [
+                    "jo era",
+                    "tu eres",
+                    "ell era",
+                    "nosaltres érem",
+                    "vosaltres éreu",
+                    "ells eren",
+                ],
+                "passat-simple": [
+                    "jo fui",
+                    "tu fores",
+                    "ell fou",
+                    "nosaltres fórem",
+                    "vosaltres fóreu",
+                    "ells foren",
+                ],
+                "futur": [
+                    "jo seré",
+                    "tu seràs",
+                    "ell serà",
+                    "nosaltres serem",
+                    "vosaltres sereu",
+                    "ells seran",
+                ],
+            },
+            "subjuntiu": {
+                "present": [
+                    "jo sigui",
+                    "tu siguis",
+                    "ell sigui",
+                    "nosaltres siguem",
+                    "vosaltres sigueu",
+                    "ells siguin",
+                ],
+                "imperfet": [
+                    "jo fos",
+                    "tu fossis",
+                    "ell fos",
+                    "nosaltres fóssim",
+                    "vosaltres fóssiu",
+                    "ells fossin",
+                ],
+            },
+            "imperatiu": {
+                "imperatiu-present": ["sigues", "sigui", "siguem", "sigueu", "siguin"]
+            },
+            "condicional": {
+                "present": [
+                    "jo seria",
+                    "tu series",
+                    "ell seria",
+                    "nosaltres seríem",
+                    "vosaltres seríeu",
+                    "ells serien",
+                ]
+            },
+            "infinitiu": {"infinitiu-present": ["ser"]},
+            "gerundi": {"gerundi": ["sent"]},
+            "particip": {"particip": ["estat", "estada", "estats", "estades"]},
+        },
+    }
+
+
+def test_inflector_conjugate_with_alternates():
+    assert cg.conjugate("ser", include_alternates=True) == {
+        "verb": {
+            "infinitive": "ser",
+            "predicted": False,
+            "pred_score": 1.0,
+            "template": "és:ser",
+            "translation_en": "be",
+            "stem": "",
+        },
+        "moods": {
+            "indicatiu": {
+                "present": [
+                    ["jo sóc"],
+                    ["tu ets"],
+                    ["ell és"],
+                    ["nosaltres som"],
+                    ["vosaltres sou"],
+                    ["ells són"],
+                ],
+                "imperfet": [
+                    ["jo era"],
+                    ["tu eres"],
+                    ["ell era"],
+                    ["nosaltres érem"],
+                    ["vosaltres éreu"],
+                    ["ells eren"],
+                ],
+                "passat-simple": [
+                    ["jo fui"],
+                    ["tu fores"],
+                    ["ell fou"],
+                    ["nosaltres fórem"],
+                    ["vosaltres fóreu"],
+                    ["ells foren"],
+                ],
+                "futur": [
+                    ["jo seré"],
+                    ["tu seràs"],
+                    ["ell serà"],
+                    ["nosaltres serem"],
+                    ["vosaltres sereu"],
+                    ["ells seran"],
+                ],
+            },
+            "subjuntiu": {
+                "present": [
+                    ["jo sigui"],
+                    ["tu siguis"],
+                    ["ell sigui"],
+                    ["nosaltres siguem"],
+                    ["vosaltres sigueu"],
+                    ["ells siguin"],
+                ],
+                "imperfet": [
+                    ["jo fos"],
+                    ["tu fossis"],
+                    ["ell fos"],
+                    ["nosaltres fóssim"],
+                    ["vosaltres fóssiu"],
+                    ["ells fossin"],
+                ],
+            },
+            "imperatiu": {
+                "imperatiu-present": [
+                    ["sigues"],
+                    ["sigui"],
+                    ["siguem"],
+                    ["sigueu"],
+                    ["siguin"],
+                ]
+            },
+            "condicional": {
+                "present": [
+                    ["jo seria", "jo fora"],
+                    ["tu series", "tu fores"],
+                    ["ell seria", "ell fora"],
+                    ["nosaltres seríem", "nosaltres fórem"],
+                    ["vosaltres seríeu", "vosaltres fóreu"],
+                    ["ells serien", "ells foren"],
+                ]
+            },
+            "infinitiu": {"infinitiu-present": [["ser", "ésser"]]},
+            "gerundi": {"gerundi": [["sent", "essent"]]},
+            "particip": {
+                "particip": [
+                    ["estat", "sigut"],
+                    ["estada", "siguda"],
+                    ["estats", "siguts"],
+                    ["estades", "sigudes"],
+                ]
+            },
+        },
+    }
+
+def test_inflector_conjugate_with_alternates_noconjpronouns():
+    assert cg.conjugate("ser", include_alternates=True, conjugate_pronouns=False) == {
+        "verb": {
+            "infinitive": "ser",
+            "predicted": False,
+            "pred_score": 1.0,
+            "template": "és:ser",
+            "translation_en": "be",
+            "stem": "",
+        },
+        "moods": {
+            "indicatiu": {
+                "present": [
+                    ["sóc"],
+                    ["ets"],
+                    ["és"],
+                    ["som"],
+                    ["sou"],
+                    ["són"],
+                ],
+                "imperfet": [
+                    ["era"],
+                    ["eres"],
+                    ["era"],
+                    ["érem"],
+                    ["éreu"],
+                    ["eren"],
+                ],
+                "passat-simple": [
+                    ["fui"],
+                    ["fores"],
+                    ["fou"],
+                    ["fórem"],
+                    ["fóreu"],
+                    ["foren"],
+                ],
+                "futur": [
+                    ["seré"],
+                    ["seràs"],
+                    ["serà"],
+                    ["serem"],
+                    ["sereu"],
+                    ["seran"],
+                ],
+            },
+            "subjuntiu": {
+                "present": [
+                    ["sigui"],
+                    ["siguis"],
+                    ["sigui"],
+                    ["siguem"],
+                    ["sigueu"],
+                    ["siguin"],
+                ],
+                "imperfet": [
+                    ["fos"],
+                    ["fossis"],
+                    ["fos"],
+                    ["fóssim"],
+                    ["fóssiu"],
+                    ["fossin"],
+                ],
+            },
+            "imperatiu": {
+                "imperatiu-present": [
+                    ["sigues"],
+                    ["sigui"],
+                    ["siguem"],
+                    ["sigueu"],
+                    ["siguin"],
+                ]
+            },
+            "condicional": {
+                "present": [
+                    ["seria", "fora"],
+                    ["series", "fores"],
+                    ["seria", "fora"],
+                    ["seríem", "fórem"],
+                    ["seríeu", "fóreu"],
+                    ["serien", "foren"],
+                ]
+            },
+            "infinitiu": {"infinitiu-present": [["ser", "ésser"]]},
+            "gerundi": {"gerundi": [["sent", "essent"]]},
+            "particip": {
+                "particip": [
+                    ["estat", "sigut"],
+                    ["estada", "siguda"],
+                    ["estats", "siguts"],
+                    ["estades", "sigudes"],
+                ]
+            },
+        },
+    }
