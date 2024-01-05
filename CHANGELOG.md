@@ -1,6 +1,6 @@
 # verbecc Changelog
 
-- 1.9.7 [Jan 5 2024]
+- 1.9.7 [5 January 2024]
   - Added option to include alternate conjugations
   - Added option to not conjugate pronouns e.g. return _apprends_ rather than _j'apprends_
   - Example: `include_alternates=False, conjugate_pronouns=True` (equivalent to classic verbecc behavior)
