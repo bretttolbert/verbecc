@@ -10,9 +10,8 @@ cache:
 
 before_script:
   - python -V
-  - pip install virtualenv
-  - virtualenv venv
-  - source venv/bin/activate
+  - python -m venv .venv
+  - source .venv/bin/activate
   - pip install codecov pytest-cov build tox
 
 after_script:
