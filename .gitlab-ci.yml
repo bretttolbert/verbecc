@@ -25,7 +25,7 @@ test:
     - tox -e py312
     - pip install -r requirements.txt
     - pip install -e .
-    - python -m pytest --cov-report xml:coverage.xml --cov=verbecc
+    - python -m pytest --cov-report xml:coverage.xml --cov=verbecc .
   artifacts:
     paths:
       - coverage.xml
