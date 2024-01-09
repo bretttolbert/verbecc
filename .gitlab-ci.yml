@@ -13,17 +13,14 @@ before_script:
   - pip install virtualenv
   - virtualenv venv
   - source venv/bin/activate
+  - pip install codecov pytest-cov build tox
 
 after_script:
     - bash <(curl -s https://codecov.io/bash) -f coverage.xml -t aef49e7e-2539-47b9-aaf8-268ca78482d8
 
 test:
   script:
-    - pip install tox
     - tox -e py310
-    - pip install codecov
-    - pip install pytest-cov
-    - pip install build
     - pip install -r requirements.txt
     - pip install -e .
     - python -m pytest --cov-report xml:coverage.xml --cov=verbecc
