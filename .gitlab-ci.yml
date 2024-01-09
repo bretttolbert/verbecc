@@ -23,15 +23,14 @@ after_script:
 test:
   script:
     - tox -e py312
-    - pip install -r requirements.txt
-    - pip install -e .
-    - python -m pytest --cov-report xml:coverage.xml --cov=verbecc .
   artifacts:
     paths:
       - coverage.xml
 
 run:
   script:
+    - pip install -r requirements.txt
+    - pip install -e .
     - python -m build --sdist --wheel
   artifacts:
     paths:
