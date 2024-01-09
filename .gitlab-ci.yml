@@ -9,6 +9,7 @@ cache:
     - venv/
 
 before_script:
+  - apt-get install -y python3-venv
   - python -V
   - python -m venv .venv
   - source .venv/bin/activate
