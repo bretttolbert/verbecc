@@ -9,13 +9,13 @@ cache:
     - venv/
 
 before_script:
-  - pip3 uninstall -y setuptools
-  - pip3 install setuptools>=69.0.3
   - pip3 install virtualenv
   - python -V
   - python3 -m venv .venv
   - source .venv/bin/activate
   - pip install codecov pytest-cov build tox
+  - pip uninstall -y setuptools
+  - pip install setuptools>=69.0.3
 
 after_script:
     - bash <(curl -s https://codecov.io/bash) -f coverage.xml -t aef49e7e-2539-47b9-aaf8-268ca78482d8
