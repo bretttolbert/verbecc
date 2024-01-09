@@ -9,6 +9,8 @@ cache:
     - venv/
 
 before_script:
+  - pip3 uninstall -y setuptools
+  - pip3 install setuptools>=69.0.3
   - pip3 install virtualenv
   - python -V
   - python3 -m venv .venv
