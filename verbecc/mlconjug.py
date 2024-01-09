@@ -11,31 +11,37 @@ https://github.com/SekouD/mlconjug
 Sekou Diao notes that a newer version of mjconjug is now available (mlconjug3):
 https://github.com/SekouDiaoNlp/mlconjug3
 
+However I have updated this version to use importlib_resources instead of
+the deprecated pkg_resources API (as of today, mlconjug3 is still using
+pkg_resources)
+
+History:
 verbecc predates mlconjug and verbecc's verb conjugation implementation
 was developed independently of mlconjug, but credit to Sekou Diao for the ML
 template prediction code in this module and for and the XML conjugation templates
-for languages other than French. Credit to Pierre Sarrazin (Verbiste) for the 
-developing the original French XML conjugation template format on which both 
-verbecc and mlconjug are based.
+for languages other than French and Catalan.
+
+Credit to Pierre Sarrazin (Verbiste) for the developing the original French
+XML conjugation template format on which both verbecc and mlconjug are based.
 
 I found mlconjug and was impressed by the machine learning feature and I 
 so I borrowed this feature and retrofit it onto verbecc. 
 I chose not to add the entire mlconjug python package as a dependency because 
 it duplicates much of the functionality of verbecc and would be redundant. 
-So this one source file of verbecc is based mlconjug's mlconjug.py but 
-mlconjug and verbecc are independent projects and this file has diverged.
+mlconjug and verbecc are independent projects and this file, based on the
+origin mlconjug module, has diverged.
 
-verbecc is Open Source Software (GNU GPL license)
+verbecc is Open Source Software (GNU LGPL license)
 mlconjug is also Open Source Software (MIT license)
 Verbiste is Open Source Software (GNU GPL license)
 
-Copyright (c) 2023, Brett Tolbert <http://bretttolbert.com/>
+Copyright (c) 2024, Brett Tolbert <http://bretttolbert.com/>
 Copyright (c) 2017, SekouD <https://github.com/SekouDiaoNlp/>
 Copyright (c) 2003-2016, Pierre Sarrazin <http://sarrazip.com/>
 """
 
 __author__ = ["Sekou Diao"]
-__credits__ = ["Sekou Diao", "Pierre Sarrazin"]
+__credits__ = ["Sekou Diao", "Pierre Sarrazin", "Brett Tolbert"]
 
 
 import re
@@ -44,7 +50,7 @@ import random
 from collections import defaultdict
 from functools import partial
 import pickle
-import pkg_resources
+from importlib_resources import as_file, files
 from zipfile import ZipFile
 from typing import Dict, List, Tuple
 
@@ -286,10 +292,10 @@ def save_model(model: Model):
     with open(pickle_filename, "wb") as f:
         pickle.dump(model, f)
     zip_filename = get_model_zip_filename(model.lang)
-    with ZipFile(
-        pkg_resources.resource_filename("verbecc", zip_filename), mode="w"
-    ) as zf:
-        zf.write(pickle_filename)
+    source = files("verbecc").joinpath(zip_filename)
+    with as_file(source) as f:
+        with ZipFile(f, mode="w") as zf:
+            zf.write(pickle_filename)
     os.remove(pickle_filename)
 
 
@@ -297,9 +303,11 @@ def load_model(lang):
     model = None
     zip_filename = get_model_zip_filename(lang)
     try:
-        with ZipFile(pkg_resources.resource_stream(__name__, zip_filename)) as zf:
-            with zf.open(get_model_pickle_filename(lang), "r") as model_pickle:
-                model = pickle.loads(model_pickle.read())
+        source = files(__name__).joinpath(zip_filename)
+        with as_file(source) as f:
+            with ZipFile(f) as zf:
+                with zf.open(get_model_pickle_filename(lang), "r") as model_pickle:
+                    model = pickle.loads(model_pickle.read())
     except:
         pass
     return model

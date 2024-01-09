@@ -1,5 +1,8 @@
 # verbecc Changelog
 
+- 1.9.8 [upcoming release]
+  - Switched from deprecated `pkg_resources` library to new `importlib_resources` library
+
 - 1.9.7 [5 January 2024]
   - Added option to include alternate conjugations
   - Added option to not conjugate pronouns e.g. return _apprends_ rather than _j'apprends_

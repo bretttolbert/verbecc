@@ -1,7 +1,7 @@
 from __future__ import print_function
 from bisect import bisect_left
 from lxml import etree
-from pkg_resources import resource_filename
+from importlib_resources import as_file, files
 from typing import List
 
 from verbecc import config
@@ -15,31 +15,31 @@ class VerbsParser:
     def __init__(self, lang: str = "fr"):
         self.verbs: List[verb.Verb] = []
         parser = etree.XMLParser(encoding="utf-8")
-        tree = etree.parse(
-            resource_filename("verbecc", "data/verbs-{}.xml".format(lang)), parser
-        )
-        root = tree.getroot()
-        root_tag = "verbs-{}".format(lang)
-        if root.tag != root_tag:
-            raise exceptions.VerbsParserError(
-                "Root XML Tag {} Not Found".format(root_tag)
-            )
-        for child in root:
-            if child.tag == "v":
-                self.verbs.append(verb.Verb(child))
+        source = files("verbecc.data").joinpath("verbs-{}.xml".format(lang))
+        with as_file(source) as f:
+            tree = etree.parse(f, parser)
+            root = tree.getroot()
+            root_tag = "verbs-{}".format(lang)
+            if root.tag != root_tag:
+                raise exceptions.VerbsParserError(
+                    "Root XML Tag {} Not Found".format(root_tag)
+                )
+            for child in root:
+                if child.tag == "v":
+                    self.verbs.append(verb.Verb(child))
 
-        self.verbs = sorted(self.verbs, key=lambda v: v.infinitive)
-        self._infinitives = [v.infinitive for v in self.verbs]
-        self._verbs_no_accents = sorted(
-            self.verbs, key=lambda v: v.infinitive_no_accents
-        )
-        self._infinitives_no_accents = [
-            v.infinitive_no_accents for v in self._verbs_no_accents
-        ]
-        if config.ml:
-            self.template_predictor = mlconjug.TemplatePredictor(
-                [(v.infinitive, v.template) for v in self.verbs], lang
+            self.verbs = sorted(self.verbs, key=lambda v: v.infinitive)
+            self._infinitives = [v.infinitive for v in self.verbs]
+            self._verbs_no_accents = sorted(
+                self.verbs, key=lambda v: v.infinitive_no_accents
             )
+            self._infinitives_no_accents = [
+                v.infinitive_no_accents for v in self._verbs_no_accents
+            ]
+            if config.ml:
+                self.template_predictor = mlconjug.TemplatePredictor(
+                    [(v.infinitive, v.template) for v in self.verbs], lang
+                )
 
     def find_verb_by_infinitive(self, infinitive: str) -> verb.Verb:
         """First try to find with accents, e.g. if infinitive is 'Abañar',
@@ -62,7 +62,7 @@ class VerbsParser:
         if config.ml:
             template, pred_score = self.template_predictor.predict(query)
             verb_xml = "<v><i>{}</i><t>{}</t></v>".format(infinitive.lower(), template)
-            ret = verb.Verb(etree.fromstring(verb_xml, parser=None))
+            ret = verb.Verb(etree.fromstring(verb_xml))
             ret.predicted = True
             ret.pred_score = pred_score
             return ret

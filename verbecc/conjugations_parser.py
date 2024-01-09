@@ -2,7 +2,7 @@ from __future__ import print_function
 
 from bisect import bisect_left
 from lxml import etree
-from pkg_resources import resource_filename
+from importlib_resources import as_file, files
 from typing import List
 
 from verbecc import conjugation_template
@@ -15,21 +15,25 @@ class ConjugationsParser:
         parser = etree.XMLParser(
             dtd_validation=True, encoding="utf-8", remove_comments=True
         )
-        tree = etree.parse(
-            resource_filename("verbecc", "data/conjugations-{}.xml".format(lang)),
-            parser,
-        )
-        root = tree.getroot()
-        root_tag = "conjugation-{}".format(lang)
-        if root.tag != root_tag:
-            raise exceptions.ConjugationsParserError(
-                "Root XML Tag {} Not Found".format(root_tag)
+        source = files("verbecc.data").joinpath(f"conjugations-{lang}.xml")
+        with as_file(source) as f:
+            tree = etree.parse(
+                f,
+                parser,
             )
-        for child in root:
-            if child.tag == "template":
-                self.templates.append(conjugation_template.ConjugationTemplate(child))
-        self.templates = sorted(self.templates, key=lambda x: x.name)
-        self._keys = [template.name for template in self.templates]
+            root = tree.getroot()
+            root_tag = "conjugation-{}".format(lang)
+            if root.tag != root_tag:
+                raise exceptions.ConjugationsParserError(
+                    "Root XML Tag {} Not Found".format(root_tag)
+                )
+            for child in root:
+                if child.tag == "template":
+                    self.templates.append(
+                        conjugation_template.ConjugationTemplate(child)
+                    )
+            self.templates = sorted(self.templates, key=lambda x: x.name)
+            self._keys = [template.name for template in self.templates]
 
     def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
         """Assumes templates are already sorted by name"""
