@@ -3,8 +3,8 @@
 - `verbecc` python library
 [![Python Package Index Status](https://img.shields.io/pypi/v/verbecc.svg)](https://pypi.python.org/pypi/verbecc) 
 [![PyPi Downloads Per Month](https://img.shields.io/pypi/dm/verbecc)](https://pypistats.org/packages/verbecc)
-[![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/master/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/-/pipelines)
-[![Code Coverage](https://codecov.io/gl/bretttolbert/verbecc/branch/master/graph/badge.svg)](https://codecov.io/gl/bretttolbert/verbecc)
+[![GitLab CI pipeline status](https://gitlab.com/bretttolbert/verbecc/badges/main/pipeline.svg)](https://gitlab.com/bretttolbert/verbecc/-/pipelines)
+[![Code Coverage](https://codecov.io/gl/bretttolbert/verbecc/branch/main/graph/badge.svg)](https://codecov.io/gl/bretttolbert/verbecc)
 
 ##### [EN] Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian, Romanian and Catalan, enhanced by machine learning
 ##### [CA] Verbs completament conjugats: conjugacions verbals per a francès, espanyol, portuguès, italià, romanès i català, millorades per l'aprenentatge automàtic
