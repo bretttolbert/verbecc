@@ -11,7 +11,7 @@ cache:
 before_script:
   - apt-get install -y python3-venv
   - python -V
-  - python -m venv .venv
+  - python3 -m venv .venv
   - source .venv/bin/activate
   - pip install codecov pytest-cov build tox
 
