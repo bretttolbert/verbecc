@@ -1,12 +1,16 @@
 # verbecc Changelog
 
+- 1.10.2 [28 September 2025]
+  - Improved Italian conjugation template (split participle into _presente_ and _passato_)
+  - Improved Italian conjugation (verbs conjugated with _essere_)
+
 - 1.10.1 [28 September 2025]
   - Properly conjugate h non aspiré en français
-  - Back to uncompressed XML files
+  - Reverted back to uncompressed XML files
 
 - 1.10.0 [28 September 2025]
   - Switched from deprecated `pkg_resources` library to new `importlib_resources` library
-  - Compress XML files
+  - Compressed XML files
 
 - 1.9.7 [5 January 2024]
   - Added option to include alternate conjugations

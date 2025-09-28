@@ -3,6 +3,24 @@ from typing import Dict, List, Tuple
 from verbecc import inflector
 from verbecc import string_utils
 
+VERBS_CONJUGATED_WITH_ESSERE = [
+    "essere",
+    "andare",
+    "arrivare",
+    "cadere",
+    "entrare",
+    "partire",
+    "rimanere",
+    "uscire",
+    "venire",
+    "stare",
+    "passare",
+    "diventare",
+    "crescere",
+    "morire",
+    "nascere",
+]
+
 
 class InflectorIt(inflector.Inflector):
     @property
@@ -62,10 +80,20 @@ class InflectorIt(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ["affermativo", "negativo", "Negativo", "gerundio", "participio"]
+        return [
+            "affermativo",
+            "negativo",
+            "Negativo",
+            "gerundio",
+            "participio-presente",
+            "participio-passato",
+        ]
 
     def _get_auxilary_verb(self, co, mood_name, tense_name):
-        return "avere"
+        ret = "avere"
+        if co.verb.infinitive in VERBS_CONJUGATED_WITH_ESSERE or co.is_reflexive:
+            ret = "essere"
+        return ret
 
     def _get_infinitive_mood_name(self):
         return "infinitivo"
@@ -83,7 +111,7 @@ class InflectorIt(inflector.Inflector):
         return "participio"
 
     def _get_participle_tense_name(self):
-        return "participio"
+        return "participio-passato"
 
     def _get_compound_conjugations_aux_verb_map(
         self,

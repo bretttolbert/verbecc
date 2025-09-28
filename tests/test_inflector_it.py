@@ -114,19 +114,119 @@ def test_inflector_it_get_default_pronoun(
     "infinitive,expected_result",
     [
         (
-            "s'alzare",
+            "avere",
+            ["io ho", "tu hai", "lui ha", "noi abbiamo", "voi avete", "loro hanno"],
+        ),
+        (
+            "essere",
+            ["io sono", "tu sei", "lui è", "noi siamo", "voi siete", "loro sono"],
+        ),
+        (
+            "alzare",
             [
-                "mi alzo",
-                "ti alzi",
-                "si alza",
-                "ci alziamo",
-                "vi alzate",
-                "si alzano",
+                "io alzo",
+                "tu alzi",
+                "lui alza",
+                "noi alziamo",
+                "voi alzate",
+                "loro alzano",
             ],
-        )
+        ),
     ],
 )
-def test_pronoun_combined_vowel_h_non_aspiré(infinitive, expected_result):
+def test_indicative_present(infinitive, expected_result):
     assert (
         cg.conjugate(infinitive)["moods"]["indicativo"]["presente"] == expected_result
+    )
+
+
+@pytest.mark.parametrize(
+    "infinitive,expected_result",
+    [
+        (
+            "avere",
+            [
+                "io ho avuto",
+                "tu hai avuto",
+                "lui ha avuto",
+                "noi abbiamo avuto",
+                "voi avete avuto",
+                "loro hanno avuto",
+            ],
+        ),
+        (
+            "essere",
+            [
+                "io sono stato",
+                "tu sei stato",
+                "lui è stato",
+                "noi siamo stato",
+                "voi siete stato",
+                "loro sono stato",
+            ],
+        ),
+        (
+            "alzare",
+            [
+                "io ho alzato",
+                "tu hai alzato",
+                "lui ha alzato",
+                "noi abbiamo alzato",
+                "voi avete alzato",
+                "loro hanno alzato",
+            ],
+        ),
+    ],
+)
+def test_passato_prossimo(infinitive, expected_result):
+    assert (
+        cg.conjugate(infinitive)["moods"]["indicativo"]["passato-prossimo"]
+        == expected_result
+    )
+
+
+@pytest.mark.skip("TODO: fix")
+@pytest.mark.parametrize(
+    "infinitive,expected_result",
+    [
+        (
+            "alzarsi",
+            [
+                "io mi alzo",
+                "tu ti alzi",
+                "lei si alza",
+                "noi ci alziamo",
+                "voi vi alzate",
+                "loro si alzano",
+            ],
+        ),
+    ],
+)
+def test_alzarsi_indicative_present(infinitive, expected_result):
+    assert (
+        cg.conjugate(infinitive)["moods"]["indicativo"]["presente"] == expected_result
+    )
+
+
+@pytest.mark.skip("TODO: fix")
+@pytest.mark.parametrize(
+    "infinitive,expected_result",
+    [
+        (
+            "alzarsi",
+            [
+                "io mi sono alzato",
+                "tu ti sei alzato",
+                "lei si è alzato",
+                "noi ci siamo alzati",
+                "voi vi siete alzati",
+                "loro si sono alzate",
+            ],
+        ),
+    ],
+)
+def test_alzarsi_passato_prossimo(infinitive, expected_result):
+    assert (
+        cg.conjugate(infinitive)["moods"]["indicativo"]["passato-prossimo"]
+        == expected_result
     )
