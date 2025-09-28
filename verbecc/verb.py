@@ -1,4 +1,6 @@
 from lxml import etree
+from lxml.etree import Element
+
 from verbecc.string_utils import strip_accents
 from verbecc.exceptions import VerbsParserError
 
