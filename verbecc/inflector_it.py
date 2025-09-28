@@ -23,7 +23,7 @@ class InflectorIt(inflector.Inflector):
         return is_reflexive, infinitive
 
     def _add_reflexive_pronoun(self, s):
-        if string_utils.starts_with_vowel(s):
+        if string_utils.starts_with_vowel(s, h_is_vowel=True):
             return "s'" + s
         else:
             return "si " + s

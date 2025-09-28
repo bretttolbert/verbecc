@@ -79,13 +79,13 @@ class InflectorFr(inflector.Inflector):
         return is_reflexive, infinitive
 
     def _add_reflexive_pronoun(self, s: str) -> str:
-        if string_utils.starts_with_vowel(s):
+        if string_utils.starts_with_vowel(s, h_is_vowel=True):
             return "s'" + s
         else:
             return "se " + s
 
     def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str) -> str:
-        if string_utils.starts_with_vowel(s):
+        if string_utils.starts_with_vowel(s, h_is_vowel=True):
             return "qu'" + s
         else:
             return "que " + s
@@ -169,7 +169,7 @@ class InflectorFr(inflector.Inflector):
 
     def _combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         ret = ""
-        if pronoun[-1] == "e" and string_utils.starts_with_vowel(conj):
+        if pronoun[-1] == "e" and string_utils.starts_with_vowel(conj, h_is_vowel=True):
             ret += pronoun[:-1] + "'"
         else:
             ret += pronoun + " "

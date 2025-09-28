@@ -158,3 +158,58 @@ def test_inflector_fr_get_default_pronoun(
         inf._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
         == expected_result
     )
+
+
+@pytest.mark.parametrize(
+    "infinitive,expected_result",
+    [
+        (
+            "avoir",
+            ["j'ai", "tu as", "il a", "nous avons", "vous avez", "ils ont"],
+        ),
+        (
+            "habiter",
+            [
+                "j'habite",
+                "tu habites",
+                "il habite",
+                "nous habitons",
+                "vous habitez",
+                "ils habitent",
+            ],
+        ),
+        (
+            "s'habiller",
+            [
+                "je m'habille",
+                "tu t'habilles",
+                "il s'habille",
+                "nous nous habillons",
+                "vous vous habillez",
+                "ils s'habillent",
+            ],
+        ),
+    ],
+)
+def test_pronoun_combined_vowel_h_non_aspiré(infinitive, expected_result):
+    assert cg.conjugate(infinitive)["moods"]["indicatif"]["présent"] == expected_result
+
+
+@pytest.mark.parametrize(
+    "infinitive,expected_result",
+    [
+        (
+            "habiter",
+            [
+                "que j'habite",
+                "que tu habites",
+                "qu'il habite",
+                "que nous habitions",
+                "que vous habitiez",
+                "qu'ils habitent",
+            ],
+        )
+    ],
+)
+def test_subjonctif_vowel_h_non_aspiré(infinitive, expected_result):
+    assert cg.conjugate(infinitive)["moods"]["subjonctif"]["présent"] == expected_result

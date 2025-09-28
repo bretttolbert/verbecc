@@ -9,10 +9,13 @@ def strip_accents(s: str) -> str:
     )
 
 
-def starts_with_vowel(s: str) -> bool:
+def starts_with_vowel(s: str, h_is_vowel=False) -> bool:
     if len(s) == 0:
         return False
-    return strip_accents(s)[0] in ("a", "e", "i", "o", "u")
+    vowels = ["a", "e", "i", "o", "u"]
+    if h_is_vowel:
+        vowels.append("h")
+    return strip_accents(s)[0] in vowels
 
 
 def get_common_letters(s1: str, s2: str) -> Dict[str, int]:

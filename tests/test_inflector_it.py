@@ -108,3 +108,25 @@ def test_inflector_it_get_default_pronoun(
         cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
         == expected_result
     )
+
+
+@pytest.mark.parametrize(
+    "infinitive,expected_result",
+    [
+        (
+            "s'alzare",
+            [
+                "mi alzo",
+                "ti alzi",
+                "si alza",
+                "ci alziamo",
+                "vi alzate",
+                "si alzano",
+            ],
+        )
+    ],
+)
+def test_pronoun_combined_vowel_h_non_aspiré(infinitive, expected_result):
+    assert (
+        cg.conjugate(infinitive)["moods"]["indicativo"]["presente"] == expected_result
+    )
