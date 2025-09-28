@@ -6,9 +6,11 @@ try:
 except ImportError:
     import xml.etree.ElementTree as etree
 from importlib_resources import as_file, files
-import gzip
+
+# import gzip
 import os
-import tempfile
+
+# import tempfile
 from typing import List
 
 from verbecc import config
@@ -22,10 +24,9 @@ class VerbsParser:
     def __init__(self, lang: str = "fr"):
         self.verbs: List[verb.Verb] = []
         parser = etree.XMLParser(encoding="utf-8", remove_blank_text=True, remove_comments=True)  # type: ignore
-        source = files("verbecc.data.xml.verbs").joinpath(
-            "verbs-{}.xml.tar.gz".format(lang)
-        )
+        source = files("verbecc.data.xml.verbs").joinpath("verbs-{}.xml".format(lang))
         with as_file(source) as fp:
+            """
             with gzip.open(fp, "rt") as zf:
                 with tempfile.NamedTemporaryFile(
                     prefix=f"/tmp/verbs-{lang}.xml.out.",
@@ -44,28 +45,30 @@ class VerbsParser:
                                 tf.write(byte)
                     tf.flush()
                     tree = etree.parse(tf.name, parser)  # type: ignore
-                    root = tree.getroot()
-                    root_tag = "verbs-{}".format(lang)
-                    if root.tag != root_tag:
-                        raise exceptions.VerbsParserError(
-                            "Root XML Tag {} Not Found".format(root_tag)
-                        )
-                    for child in root:
-                        if child.tag == "v":
-                            self.verbs.append(verb.Verb(child))  # type: ignore
+            """
+            tree = etree.parse(fp, parser)  # type: ignore
+            root = tree.getroot()
+            root_tag = "verbs-{}".format(lang)
+            if root.tag != root_tag:
+                raise exceptions.VerbsParserError(
+                    "Root XML Tag {} Not Found".format(root_tag)
+                )
+            for child in root:
+                if child.tag == "v":
+                    self.verbs.append(verb.Verb(child))  # type: ignore
 
-                    self.verbs = sorted(self.verbs, key=lambda v: v.infinitive)
-                    self._infinitives = [v.infinitive for v in self.verbs]
-                    self._verbs_no_accents = sorted(
-                        self.verbs, key=lambda v: v.infinitive_no_accents
-                    )
-                    self._infinitives_no_accents = [
-                        v.infinitive_no_accents for v in self._verbs_no_accents
-                    ]
-                    if config.ml:
-                        self.template_predictor = mlconjug.TemplatePredictor(
-                            [(v.infinitive, v.template) for v in self.verbs], lang
-                        )
+            self.verbs = sorted(self.verbs, key=lambda v: v.infinitive)
+            self._infinitives = [v.infinitive for v in self.verbs]
+            self._verbs_no_accents = sorted(
+                self.verbs, key=lambda v: v.infinitive_no_accents
+            )
+            self._infinitives_no_accents = [
+                v.infinitive_no_accents for v in self._verbs_no_accents
+            ]
+            if config.ml:
+                self.template_predictor = mlconjug.TemplatePredictor(
+                    [(v.infinitive, v.template) for v in self.verbs], lang
+                )
 
     def find_verb_by_infinitive(self, infinitive: str) -> verb.Verb:
         """First try to find with accents, e.g. if infinitive is 'Abañar',

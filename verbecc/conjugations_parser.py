@@ -7,9 +7,11 @@ try:
 except ImportError:
     import xml.etree.ElementTree as etree
 from importlib_resources import as_file, files
-import gzip
+
+# import gzip
 import os
-import tempfile
+
+# import tempfile
 from typing import List
 
 from verbecc import conjugation_template
@@ -23,9 +25,10 @@ class ConjugationsParser:
             dtd_validation=True, encoding="utf-8", remove_blank_text=True, remove_comments=True  # type: ignore
         )
         source = files("verbecc.data.xml.conjugations").joinpath(
-            f"conjugations-{lang}.xml.tar.gz"
+            f"conjugations-{lang}.xml"
         )
         with as_file(source) as fp:
+            """
             with gzip.open(fp, "rt") as zf:
                 with tempfile.NamedTemporaryFile(
                     prefix=f"/tmp/conjugations-{lang}.xml.out.",
@@ -47,19 +50,21 @@ class ConjugationsParser:
                         tf.name,
                         parser,  # type: ignore
                     )
-                    root = tree.getroot()
-                    root_tag = "conjugation-{}".format(lang)
-                    if root.tag != root_tag:
-                        raise exceptions.ConjugationsParserError(
-                            "Root XML Tag {} Not Found".format(root_tag)
-                        )
-                    for child in root:
-                        if child.tag == "template":
-                            self.templates.append(
-                                conjugation_template.ConjugationTemplate(child)  # type: ignore
-                            )
-                    self.templates = sorted(self.templates, key=lambda x: x.name)
-                    self._keys = [template.name for template in self.templates]
+            """
+            tree = etree.parse(fp, parser)  # type: ignore
+            root = tree.getroot()
+            root_tag = "conjugation-{}".format(lang)
+            if root.tag != root_tag:
+                raise exceptions.ConjugationsParserError(
+                    "Root XML Tag {} Not Found".format(root_tag)
+                )
+            for child in root:
+                if child.tag == "template":
+                    self.templates.append(
+                        conjugation_template.ConjugationTemplate(child)  # type: ignore
+                    )
+            self.templates = sorted(self.templates, key=lambda x: x.name)
+            self._keys = [template.name for template in self.templates]
 
     def find_template(self, name: str) -> conjugation_template.ConjugationTemplate:
         """Assumes templates are already sorted by name"""
