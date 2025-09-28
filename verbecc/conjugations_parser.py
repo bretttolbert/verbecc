@@ -32,9 +32,10 @@ class ConjugationsParser:
                     suffix=".xml",
                     mode="wt+",
                     encoding="utf-8",
-                    delete=False,
+                    delete=True,
                 ) as tf:
                     next(zf)  # Skips the first line (gzip header plus xml header)
+                    # Regenerate xml header
                     tf.write('<?xml version="1.0" encoding="utf-8"?>' + os.linesep)
                     for line in zf:
                         # there are some null bytes at the end that must be stripped

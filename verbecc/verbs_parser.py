@@ -32,7 +32,7 @@ class VerbsParser:
                     suffix=".xml",
                     mode="wt+",
                     encoding="utf-8",
-                    delete=False,
+                    delete=True,
                 ) as tf:
                     next(zf)  # Skips the first line (gzip header plus xml header)
                     # Regenerate xml header
