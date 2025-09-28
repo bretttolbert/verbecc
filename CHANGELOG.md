@@ -1,6 +1,6 @@
 # verbecc Changelog
 
-- 1.9.8 [upcoming release]
+- 1.10.0 [28 September 2025]
   - Switched from deprecated `pkg_resources` library to new `importlib_resources` library
 
 - 1.9.7 [5 January 2024]
