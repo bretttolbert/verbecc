@@ -1,5 +1,9 @@
 # verbecc Changelog
 
+- 1.10.3 [28 September 2025]
+  - GitLab actions integration
+  - added `importlib_resources` to `requirements.txt`
+
 - 1.10.2 [28 September 2025]
   - Improved Italian conjugation template (split participle into _presente_ and _passato_)
   - Improved Italian conjugation (verbs conjugated with _essere_)
