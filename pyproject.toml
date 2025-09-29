@@ -78,3 +78,8 @@ find = {}
 
 [project.scripts]
 train-verb-models = 'verbecc.utils:train_models'
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
