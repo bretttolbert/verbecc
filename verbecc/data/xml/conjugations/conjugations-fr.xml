@@ -5676,10 +5676,10 @@
 			<p><i>isant</i></p>
 		</participe-présent>
 		<participe-passé>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
+			<p><i>ît</i></p>
+			<p><i>ît</i></p>
+			<p><i>ît</i></p>
+			<p><i>ît</i></p>
 		</participe-passé>
 	</Participe>
 </template>
@@ -8844,10 +8844,10 @@
 			<p><i>gnant</i></p>
 		</participe-présent>
 		<participe-passé>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
+			<p><i>nt</i></p>
+			<p><i>nte</i></p>
+			<p><i>nts</i></p>
+			<p><i>ntes</i></p>
 		</participe-passé>
 	</Participe>
 </template>
@@ -12101,10 +12101,10 @@
 			<p><i>ssant</i></p>
 		</participe-présent>
 		<participe-passé>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
+			<p><i>brui</i></p>
+			<p><i>bruie</i></p>
+			<p><i>bruis</i></p>
+			<p><i>bruies</i></p>
 		</participe-passé>
 	</Participe>
 </template>

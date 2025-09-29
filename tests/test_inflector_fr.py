@@ -213,3 +213,13 @@ def test_pronoun_combined_vowel_h_non_aspiré(infinitive, expected_result):
 )
 def test_subjonctif_vowel_h_non_aspiré(infinitive, expected_result):
     assert cg.conjugate(infinitive)["moods"]["subjonctif"]["présent"] == expected_result
+
+
+def test_can_conjugate_all_verbs():
+    cg = Conjugator(lang="fr")
+    verbs = cg.get_verbs()
+    all_conjugations = {}
+    for verb in verbs:
+        conjugation = cg.conjugate(verb.infinitive)
+        all_conjugations[verb] = conjugation
+    assert len(all_conjugations) == len(verbs)

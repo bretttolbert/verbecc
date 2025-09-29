@@ -1,5 +1,8 @@
 # verbecc Changelog
 
+- 1.10.4
+  - Improved French conjugation templates
+
 - 1.10.3 [28 September 2025]
   - GitLab actions integration
   - added `importlib_resources` to `requirements.txt`

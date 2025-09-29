@@ -1,3 +1,13 @@
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
+)
+
+logger = logging.getLogger(__name__)
+
 from abc import ABC, abstractmethod
 import copy
 from typing import Dict, List, Tuple
@@ -691,7 +701,15 @@ class Inflector(ABC):
         )
         if not self._is_auxilary_verb_inflected(aux_verb):
             for hv in aux_conj:
-                p = participle[0]
+                p = "-"
+                if len(participle):
+                    p = participle[0]
+                else:
+                    logger.warning(
+                        "(aux verb inflected) participle conjugation is empty: co=%s pmood=%s",
+                        co,
+                        pmood,
+                    )
                 hv = self._get_alternate_hv_inflection(hv)
                 ret.append(hv + " " + p)
         else:
@@ -699,9 +717,16 @@ class Inflector(ABC):
                 participle_inflection = (
                     self._get_default_participle_inflection_for_person(persons[i])
                 )
-                p = participle[
-                    grammar_defines.PARTICIPLE_INFLECTIONS.index(participle_inflection)
-                ]
+                p = "-"
+                participle_idx = grammar_defines.PARTICIPLE_INFLECTIONS.index(
+                    participle_inflection
+                )
+                if len(participle) > participle_idx:
+                    p = participle[participle_idx]
+                else:
+                    logger.warning(
+                        "participle conjugation is empty: co=%s pmood=%s", co, pmood
+                    )
                 ret.append(hv + " " + p)
         return ret
 
