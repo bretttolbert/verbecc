@@ -2,7 +2,8 @@ import pytest
 from lxml import etree
 
 from verbecc import Conjugator
-from verbecc import inflector_fr
+from verbecc.inflector_fr import InflectorFr
+from verbecc.inflector import Inflector
 from verbecc.tense_template import TenseTemplate
 from verbecc.exceptions import ConjugatorError
 
@@ -19,7 +20,8 @@ def test_all_verbs_have_templates():
     assert len(missing_templates) == 0
 
 
-inf = inflector_fr.InflectorFr()
+cg = Conjugator(lang="fr")
+inf = cg._inflector
 
 
 def test_add_subjunctive_relative_prounoun():
@@ -41,7 +43,7 @@ def test_split_reflexive():
     assert inf._split_reflexive("secouer") == (False, "secouer")
 
 
-inf = inflector_fr.InflectorFr()
+inf = InflectorFr()
 
 
 @pytest.mark.parametrize(
@@ -216,10 +218,41 @@ def test_subjonctif_vowel_h_non_aspiré(infinitive, expected_result):
 
 
 def test_can_conjugate_all_verbs():
-    cg = Conjugator(lang="fr")
     verbs = cg.get_verbs()
     all_conjugations = {}
     for verb in verbs:
         conjugation = cg.conjugate(verb.infinitive)
         all_conjugations[verb] = conjugation
     assert len(all_conjugations) == len(verbs)
+
+
+def test_inflector_fr_raser():
+    infinitive = "raser"
+    co = inf._get_conj_obs(infinitive)
+    ret = inf._conjugate_compound_include_alternates(
+        co, "subjonctif", "passé", "subjonctif", "présent", False, "m", False
+    )
+    assert ret == [
+        ["que j'aie rasé"],
+        ["que tu aies rasé"],
+        ["qu'il ait rasé"],
+        ["que nous ayons rasé"],
+        ["que vous ayez rasé"],
+        ["qu'ils aient rasé"],
+    ]
+
+
+def test_inflector_fr_se_raser():
+    infinitive = "se raser"
+    co = inf._get_conj_obs(infinitive)
+    ret = inf._conjugate_compound_include_alternates(
+        co, "subjonctif", "passé", "subjonctif", "présent", False, "m", False
+    )
+    assert ret == [
+        ["que je me sois rasé"],
+        ["que tu te sois rasé"],
+        ["qu'il se soit rasé"],
+        ["que nous nous soyons rasés"],
+        ["que vous vous soyez rasés"],
+        ["qu'ils se soient rasés"],
+    ]

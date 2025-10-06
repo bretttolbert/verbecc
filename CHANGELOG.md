@@ -1,5 +1,8 @@
 # verbecc Changelog
 
+- 1.10.5 [5 October 2025]
+  - Fixed issue #26 (issue with compound verb conjugations with `include_alternates=True`)
+
 - 1.10.4
   - Improved French conjugation templates
 
