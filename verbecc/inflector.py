@@ -1,7 +1,12 @@
 import logging
 
+DEVEL_MODE = False
+logging_level = logging.CRITICAL + 1  # effectively disables logging
+if DEVEL_MODE:
+    logging_level = logging.DEBUG
+
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging_level,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
 )
@@ -394,7 +399,7 @@ class Inflector(ABC):
     def _get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
-        """ "Returns a map of the tense of the helping verb for each compound mood and tense"""
+        """Returns a map of the tense of the helping verb for each compound mood and tense"""
         pass
 
     def _get_default_participle_inflection_for_person(self, person):
@@ -754,7 +759,7 @@ class Inflector(ABC):
             for hv in aux_conj:
                 p = participle[0]
                 hv = self._get_alternate_hv_inflection(hv)
-                ret.append(hv + " " + p)
+                ret.append([hv + " " + p])
         else:
             for i, hv in enumerate(aux_conj):
                 participle_inflection = (
@@ -763,5 +768,5 @@ class Inflector(ABC):
                 p = participle[
                     grammar_defines.PARTICIPLE_INFLECTIONS.index(participle_inflection)
                 ]
-                ret.append(hv + " " + p)
+                ret.append([hv + " " + p])
         return ret

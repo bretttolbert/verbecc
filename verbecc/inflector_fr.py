@@ -206,6 +206,12 @@ class InflectorFr(inflector.Inflector):
     def _get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+        """
+        compound conjugations are formed using an auxiliary
+        verb (aka helping verb)
+        this method returns a Dictionary mapping of
+        [compound-mood][compound-tense] to (aux-verb-mood, aux-verb-tense)
+        """
         return {
             "indicatif": {
                 "passé-composé": ("indicatif", "présent"),
