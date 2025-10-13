@@ -8,6 +8,6 @@ numpy==2.0.2
 packaging==25.0
 pluggy==1.6.0
 pytest==8.4.2
-scikit-learn==1.6.2
+scikit-learn==1.6.1
 scipy==1.15.3
 threadpoolctl==3.6.0
