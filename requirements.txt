@@ -1,10 +1,10 @@
 Cython==3.1.4
-importlib_resources==6.5.2
+importlib_resources==6.4.5
 iniconfig==2.1.0
 joblib==1.5.2
 lxml==6.0.2
 lxml-stubs==0.5.1
-numpy==2.3.3
+numpy==2.0.2
 packaging==25.0
 pluggy==1.6.0
 pytest==8.4.2
