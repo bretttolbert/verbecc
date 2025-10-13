@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "verbecc"
-version = "1.10.5"
+version = "1.11.0"
 dependencies = [
   "importlib_resources",
   "lxml",
@@ -61,6 +61,8 @@ classifiers = [
   'Programming Language :: Python :: 3.10',
   'Programming Language :: Python :: 3.11',
   'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
+  'Programming Language :: Python :: 3.14',
 ]
 
 [project.urls]
@@ -82,4 +84,27 @@ train-verb-models = 'verbecc.utils:train_models'
 [tool.pytest.ini_options]
 pythonpath = [
   "."
+]
+testpaths = [
+    "tests"
+]
+norecursedirs = [
+    ".git",
+    ".tox",
+    "build",
+    "dist",
+    "venv",
+    "docs",
+    "__pycache__",
+    "verbecc/data",
+    "data"
+]
+addopts = [
+    "--ignore=.git",
+    "--ignore=.tox",
+    "--ignore=build",
+    "--ignore=dist",
+    "--ignore=__pycache__",
+    "--ignore=verbecc/data",
+    "--ignore=data"
 ]

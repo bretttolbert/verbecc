@@ -1,4 +1,4 @@
-from verbecc.string_utils import (
+from verbecc.src.utils.string_utils import (
     get_common_letters,
     get_common_letter_count,
     starts_with_vowel,

@@ -1,19 +1,26 @@
 import pytest
-from verbecc import conjugator
-from verbecc import string_utils
-from verbecc import exceptions
-from verbecc import config
+from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.defs.types.exceptions import (
+    InvalidMoodError,
+    InvalidTenseError,
+    TemplateNotFoundError,
+)
+from verbecc.src.defs.constants import config
 
-cg = conjugator.Conjugator(lang="fr")
+
+@pytest.fixture(scope="module")
+def cg():
+    cg = Conjugator(lang="fr")
+    yield cg
 
 
-def test_get_infinitives():
+def test_get_infinitives(cg):
     infinitives = cg.get_infinitives()
     assert len(infinitives) > 7000
     assert "parler" in infinitives
 
 
-def test_get_template_names():
+def test_get_template_names(cg):
     template_names = cg.get_template_names()
     assert len(template_names) >= 146
     assert "aim:er" in template_names
@@ -31,12 +38,12 @@ test_verbs = [
 
 
 @pytest.mark.parametrize("infinitive", test_verbs)
-def test_conjugator_conjugate_basic(infinitive):
+def test_conjugator_conjugate_basic(cg, infinitive):
     output = cg.conjugate(infinitive)
     assert output
 
 
-def test_conjugator_predict_conjugation_er_verb_indicative_present():
+def test_conjugator_predict_conjugation_er_verb_indicative_present(cg):
     if config.ml:
         assert cg.conjugate_mood_tense("ubériser", "indicatif", "présent") == [
             "j'ubérise",
@@ -48,7 +55,7 @@ def test_conjugator_predict_conjugation_er_verb_indicative_present():
         ]
 
 
-def test_conjugator_predict_conjugation_re_verb_indicative_present():
+def test_conjugator_predict_conjugation_re_verb_indicative_present(cg):
     if config.ml:
         assert cg.conjugate_mood_tense("brettre", "indicatif", "présent") == [
             "je brets",
@@ -60,7 +67,7 @@ def test_conjugator_predict_conjugation_re_verb_indicative_present():
         ]
 
 
-def test_conjugator_conjugate_passe_compose_with_avoir():
+def test_conjugator_conjugate_passe_compose_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "indicatif", "passé-composé") == [
         "j'ai mangé",
         "tu as mangé",
@@ -71,7 +78,7 @@ def test_conjugator_conjugate_passe_compose_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_passe_compose_with_etre():
+def test_conjugator_conjugate_passe_compose_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "indicatif", "passé-composé") == [
         "je suis allé",
         "tu es allé",
@@ -82,7 +89,7 @@ def test_conjugator_conjugate_passe_compose_with_etre():
     ]
 
 
-def test_conjugator_conjugate_subjonctif_passe_with_avoir():
+def test_conjugator_conjugate_subjonctif_passe_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "subjonctif", "passé") == [
         "que j'aie mangé",
         "que tu aies mangé",
@@ -93,7 +100,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_subjonctif_passe_with_etre():
+def test_conjugator_conjugate_subjonctif_passe_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "subjonctif", "passé") == [
         "que je sois allé",
         "que tu sois allé",
@@ -104,7 +111,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_etre():
     ]
 
 
-def test_conjugator_conjugate_conditionnel_passe_with_avoir():
+def test_conjugator_conjugate_conditionnel_passe_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "conditionnel", "passé") == [
         "j'aurais mangé",
         "tu aurais mangé",
@@ -115,7 +122,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_conditionnel_passe_with_etre():
+def test_conjugator_conjugate_conditionnel_passe_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "conditionnel", "passé") == [
         "je serais allé",
         "tu serais allé",
@@ -126,7 +133,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_etre():
     ]
 
 
-def test_conjugator_conjugate_plusqueparfait_with_avoir():
+def test_conjugator_conjugate_plusqueparfait_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "indicatif", "plus-que-parfait") == [
         "j'avais mangé",
         "tu avais mangé",
@@ -137,7 +144,7 @@ def test_conjugator_conjugate_plusqueparfait_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_plusqueparfait_with_etre():
+def test_conjugator_conjugate_plusqueparfait_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "indicatif", "plus-que-parfait") == [
         "j'étais allé",
         "tu étais allé",
@@ -148,7 +155,7 @@ def test_conjugator_conjugate_plusqueparfait_with_etre():
     ]
 
 
-def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir():
+def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "subjonctif", "plus-que-parfait") == [
         "que j'eusse mangé",
         "que tu eusses mangé",
@@ -159,7 +166,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre():
+def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "subjonctif", "plus-que-parfait") == [
         "que je fusse allé",
         "que tu fusses allé",
@@ -170,7 +177,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre():
     ]
 
 
-def test_conjugator_conjugate_futur_anterieur_with_avoir():
+def test_conjugator_conjugate_futur_anterieur_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "indicatif", "futur-antérieur") == [
         "j'aurai mangé",
         "tu auras mangé",
@@ -181,7 +188,7 @@ def test_conjugator_conjugate_futur_anterieur_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_futur_anterieur_with_etre():
+def test_conjugator_conjugate_futur_anterieur_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "indicatif", "futur-antérieur") == [
         "je serai allé",
         "tu seras allé",
@@ -192,7 +199,7 @@ def test_conjugator_conjugate_futur_anterieur_with_etre():
     ]
 
 
-def test_conjugator_conjugate_passe_anterieur_with_avoir():
+def test_conjugator_conjugate_passe_anterieur_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "indicatif", "passé-antérieur") == [
         "j'eus mangé",
         "tu eus mangé",
@@ -203,7 +210,7 @@ def test_conjugator_conjugate_passe_anterieur_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_passe_anterieur_with_etre():
+def test_conjugator_conjugate_passe_anterieur_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "indicatif", "passé-antérieur") == [
         "je fus allé",
         "tu fus allé",
@@ -214,7 +221,7 @@ def test_conjugator_conjugate_passe_anterieur_with_etre():
     ]
 
 
-def test_conjugator_conjugate_imperatif_passe_with_avoir():
+def test_conjugator_conjugate_imperatif_passe_with_avoir(cg):
     assert cg.conjugate_mood_tense("manger", "imperatif", "imperatif-passé") == [
         "aie mangé",
         "ayons mangé",
@@ -222,7 +229,7 @@ def test_conjugator_conjugate_imperatif_passe_with_avoir():
     ]
 
 
-def test_conjugator_conjugate_imperatif_passe_with_etre():
+def test_conjugator_conjugate_imperatif_passe_with_etre(cg):
     assert cg.conjugate_mood_tense("aller", "imperatif", "imperatif-passé") == [
         "sois allé",
         "soyons allés",
@@ -702,22 +709,22 @@ expected_resp_conj_se_lever = {
         ("Se lever", expected_resp_conj_se_lever),
     ],
 )
-def test_conjugator_conjugate(infinitive, expected_resp):
+def test_conjugator_conjugate(cg, infinitive, expected_resp):
     assert cg.conjugate(infinitive) == expected_resp
 
 
-def test_conjugator_conjugate_invalid_mood():
-    with pytest.raises(exceptions.InvalidMoodError):
+def test_conjugator_conjugate_invalid_mood(cg):
+    with pytest.raises(InvalidMoodError):
         cg.conjugate_mood("manger", "oops")
 
 
-def test_conjugator_conjugate_invalid_tense():
-    with pytest.raises(exceptions.InvalidTenseError):
+def test_conjugator_conjugate_invalid_tense(cg):
+    with pytest.raises(InvalidTenseError):
         cg.conjugate_mood_tense("manger", "indicatif", "oops")
 
 
-def test_conjugator_find_template_template_not_found():
-    with pytest.raises(exceptions.TemplateNotFoundError):
+def test_conjugator_find_template_template_not_found(cg):
+    with pytest.raises(TemplateNotFoundError):
         cg.find_template("oops")
 
 
@@ -729,7 +736,7 @@ def test_conjugator_find_template_template_not_found():
         ("s'aim", ["s'aimanter", "s'aimer"]),
     ],
 )
-def test_conjugator_get_verbs_that_start_with(query, expected_resp):
+def test_conjugator_get_verbs_that_start_with(cg, query, expected_resp):
     assert set(cg.get_verbs_that_start_with(query, max_results=10)) == set(
         expected_resp
     )
