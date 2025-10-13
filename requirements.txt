@@ -9,5 +9,5 @@ packaging==25.0
 pluggy==1.6.0
 pytest==8.4.2
 scikit-learn==1.6.1
-scipy==1.15.3
+scipy==1.13.1
 threadpoolctl==3.6.0
