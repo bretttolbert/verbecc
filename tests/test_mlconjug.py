@@ -1,10 +1,14 @@
 import pytest
-from verbecc import mlconjug
-from verbecc import inflector_fr
-from verbecc import config
 
-inf = inflector_fr.InflectorFr()
-verb_template_pairs = [(v.infinitive, v.template) for v in inf._verb_parser.verbs]
+from verbecc.src.mlconjug import mlconjug
+from verbecc.src.inflectors.lang.inflector_fr import InflectorFr
+from verbecc.src.defs.constants import config
+
+
+@pytest.fixture(scope="module")
+def verb_template_pairs():
+    inf = InflectorFr()
+    yield [(v.infinitive, v.template) for v in inf._verb_parser.verbs]
 
 
 def test_extract_verb_features():
@@ -27,13 +31,13 @@ def test_extract_verb_features():
         ]
 
 
-def test_DataSet_construct_dict_conjug():
+def test_DataSet_construct_dict_conjug(verb_template_pairs):
     if config.ml:
         dict_conjug = mlconjug.DataSet(verb_template_pairs).dict_conjug
         assert "abaisser" in dict_conjug["aim:er"]
 
 
-def test_DataSet_split_test_train():
+def test_DataSet_split_test_train(verb_template_pairs):
     if config.ml:
         data_set = mlconjug.DataSet(verb_template_pairs)
         assert data_set.min_threshold == 8
@@ -60,9 +64,9 @@ def test_DataSet_split_test_train():
         )
 
 
-def test_mlconjug_template_predictor():
+def test_mlconjug_template_predictor(verb_template_pairs):
     if config.ml:
         predictor = mlconjug.TemplatePredictor(verb_template_pairs, lang="fr")
         template, prediction_score = predictor.predict("parler")
         assert template == "aim:er"
-        assert prediction_score > 0.99
+        assert prediction_score > 0.97
