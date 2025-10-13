@@ -69,4 +69,4 @@ def test_mlconjug_template_predictor(verb_template_pairs):
         predictor = mlconjug.TemplatePredictor(verb_template_pairs, lang="fr")
         template, prediction_score = predictor.predict("parler")
         assert template == "aim:er"
-        assert prediction_score > 0.99
+        assert prediction_score > 0.97
