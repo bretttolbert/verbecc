@@ -6,15 +6,19 @@ build-backend = "setuptools.build_meta"
 name = "verbecc"
 version = "1.11.0"
 dependencies = [
-  "importlib_resources",
-  "lxml",
-  "lxml-stubs",
-  "cython",
-  "numpy",
-  "scipy",
-  "scikit-learn",
+  "cython>=3.1.4",
+  "importlib_resources==6.4.5 ; python_version < '3.13'",
+  "importlib_resources==6.5.2 ; python_version >= '3.13'",
+  "lxml>=6.0.2",
+  "lxml-stubs>=0.5.1",
+  "numpy==1.6.1 ; python_version < '3.13'",
+  "numpy==2.3.3 ; python_version >= '3.13'",
+  "scikit-learn==1.6.1 ; python_version < '3.13'",
+  "scikit-learn==1.7.2 ; python_version >= '3.13'",
+  "scipy==1.13.1 ; python_version < '3.13'",
+  "scipy==1.14.1 ; python_version >= '3.13'",
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 authors = [{ name = "Brett Tolbert", email = "bretttolbert@gmail.com" }]
 maintainers = [{ name = "Brett Tolbert", email = "bretttolbert@gmail.com" }]
 description = "Verbs Completely Conjugated: machine learning conjugator for Catalan, French, Italian, Portuguese, Romanian and Spanish"
