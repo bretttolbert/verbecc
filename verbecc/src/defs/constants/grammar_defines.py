@@ -1,20 +1,55 @@
-from typing import Dict, Tuple
+import sys
 
-SUPPORTED_LANGUAGES: Dict[str, str] = {
-    "ca": "català",
-    "es": "español",
-    "fr": "français",
-    "it": "italiano",
-    "pt": "português",
-    "ro": "română",
+if sys.version_info >= (3, 11):
+    from enum import StrEnum
+else:
+    from backports.strenum import StrEnum
+
+from typing import Dict, Tuple, Union
+
+from verbecc.src.defs.types.language import Lanugage
+from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.person import Person
+
+# map of ISO 639 codes to long names (in target language)
+SUPPORTED_LANGUAGES: Dict[Lanugage, str] = {
+    Lanugage.Catalan: "català",
+    Lanugage.Spanish: "español",
+    Lanugage.French: "français",
+    Lanugage.Italian: "italiano",
+    Lanugage.Portuguese: "português",
+    Lanugage.Romanian: "română",
 }
 
-# This refers to grammatical person ('usted' is 3s despite being semantically 2p)
-PERSONS: Tuple[str, str, str, str, str, str] = ("1s", "2s", "3s", "1p", "2p", "3p")
+# Order of grammatical persons in data structures
+# Note: 'usted' is 3s despite being semantically 2p
+PERSONS: Tuple[Person, Person, Person, Person, Person, Person] = (
+    Person.FirstPersonSingular,
+    Person.SecondPersonSingular,
+    Person.ThirdPersonSingular,
+    Person.FirstPersonPlural,
+    Person.SecondPersonPlural,
+    Person.ThirdPersonPlural,
+)
 
-IMPERATIVE_PRESENT_PERSONS: Tuple[str, str, str] = ("2s", "1p", "2p")
+IMPERATIVE_PRESENT_PERSONS: Tuple[Person, Person, Person] = (
+    Person.SecondPersonSingular,
+    Person.FirstPersonPlural,
+    Person.SecondPersonPlural,
+)
 
-PARTICIPLE_INFLECTIONS: Tuple[str, str, str, str] = ("ms", "mp", "fs", "fp")
+# Order of participle inflections in XML
+PARTICIPLE_INFLECTIONS: Tuple[
+    ParticipleInflection,
+    ParticipleInflection,
+    ParticipleInflection,
+    ParticipleInflection,
+] = (
+    ParticipleInflection.MasculineSingular,
+    ParticipleInflection.MasculinePlural,
+    ParticipleInflection.FeminineSingular,
+    ParticipleInflection.FemininePlural,
+)
 
 ALPHABET = {
     "fr": {"vowels": "aáàâeêéèiîïoôöœuûùy", "consonants": "bcçdfghjklmnpqrstvwxyz"},

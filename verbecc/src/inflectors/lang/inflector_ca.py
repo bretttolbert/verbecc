@@ -1,5 +1,7 @@
 from typing import Dict, List, Tuple
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types import exceptions
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
@@ -18,34 +20,37 @@ class InflectorCa(inflector.Inflector):
         return s
 
     def _get_default_pronoun(
-        self, person: str, gender: str = "m", is_reflexive: bool = False
+        self,
+        person: Person,
+        gender: Gender = Gender.Masculine,
+        is_reflexive: bool = False,
     ) -> str:
         ret = ""
-        if person == "1s":
+        if person == Person.FirstPersonSingular:
             ret = "jo"
             if is_reflexive:
                 ret += " me"
-        elif person == "2s":
+        elif person == Person.SecondPersonSingular:
             ret = "tu"
             if is_reflexive:
                 ret += " te"
-        elif person == "3s":
+        elif person == Person.ThirdPersonSingular:
             ret = "ell"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
-        elif person == "1p":
+        elif person == Person.FirstPersonPlural:
             ret = "nosaltres"
             if is_reflexive:
                 ret += " nos"
-        elif person == "2p":
+        elif person == Person.SecondPersonPlural:
             ret = "vosaltres"
             if is_reflexive:
                 ret += " os"
-        elif person == "3p":
+        elif person == Person.ThirdPersonPlural:
             ret = "ells"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "elles"
             if is_reflexive:
                 ret += " se"

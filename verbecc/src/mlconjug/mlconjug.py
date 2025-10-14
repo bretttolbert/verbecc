@@ -35,7 +35,7 @@ verbecc is Open Source Software (GNU LGPL license)
 mlconjug is also Open Source Software (MIT license)
 Verbiste is Open Source Software (GNU GPL license)
 
-Copyright (c) 2024, Brett Tolbert <http://bretttolbert.com/>
+Copyright (c) 2025, Brett Tolbert <http://bretttolbert.com/>
 Copyright (c) 2017, SekouD <https://github.com/SekouDiaoNlp/>
 Copyright (c) 2003-2016, Pierre Sarrazin <http://sarrazip.com/>
 """
@@ -45,14 +45,14 @@ __credits__ = ["Sekou Diao", "Pierre Sarrazin", "Brett Tolbert"]
 
 
 import re
-import os
-import random
 from collections import defaultdict
 from functools import partial
-import pickle
 from importlib_resources import as_file, files
-from zipfile import ZipFile
+import os
+import pickle
+import random
 from typing import Dict, List, Tuple
+from zipfile import ZipFile
 
 from sklearn.feature_selection import SelectFromModel
 from sklearn.feature_extraction.text import CountVectorizer
@@ -61,6 +61,22 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.pipeline import Pipeline
 
 from verbecc.src.defs.constants.grammar_defines import ALPHABET
+
+import logging
+
+from verbecc.src.defs.constants.config import DEVEL_MODE
+
+logging_level = logging.CRITICAL + 1  # effectively disables logging
+if DEVEL_MODE:
+    logging_level = logging.DEBUG
+
+logging.basicConfig(
+    level=logging_level,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler("verbecc-mlconjug.log"), logging.StreamHandler()],
+)
+
+logger = logging.getLogger(__name__)
 
 
 class TemplatePredictor:
@@ -292,10 +308,15 @@ def save_model(model: Model):
     with open(pickle_filename, "wb") as f:
         pickle.dump(model, f)
     zip_filename = get_model_zip_filename(model.lang)
-    source = files("verbecc").joinpath(zip_filename)
-    with as_file(source) as f:
+    zip_path = files("verbecc") / zip_filename
+    with as_file(zip_path) as f:
         with ZipFile(f, mode="w") as zf:
             zf.write(pickle_filename)
+            logger.info(
+                "Saved model pickle filename %s to zip filename %s.",
+                pickle_filename,
+                zip_filename,
+            )
     os.remove(pickle_filename)
 
 
@@ -303,11 +324,19 @@ def load_model(lang):
     model = None
     zip_filename = get_model_zip_filename(lang)
     try:
-        source = files(__name__).joinpath(zip_filename)
-        with as_file(source) as f:
+        zip_path = files("verbecc") / zip_filename
+        with as_file(zip_path) as f:
             with ZipFile(f) as zf:
-                with zf.open(get_model_pickle_filename(lang), "r") as model_pickle:
+                pickle_filename = get_model_pickle_filename(lang)
+                with zf.open(pickle_filename, "r") as model_pickle:
                     model = pickle.loads(model_pickle.read())
-    except:
-        pass
+                    logger.info(
+                        "Loaded model pickle filename %s from zip filename %s",
+                        pickle_filename,
+                        zip_filename,
+                    )
+    except Exception as ex:
+        logger.warning(
+            "Exception loading model %s: %s", zip_filename, ex, exc_info=True
+        )
     return model

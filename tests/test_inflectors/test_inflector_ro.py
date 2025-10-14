@@ -1,5 +1,7 @@
 import pytest
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 
@@ -361,26 +363,26 @@ def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(cg):
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        ("1s", "m", False, "eu"),
-        ("1s", "m", True, "eu mă"),
-        ("2s", "m", False, "tu"),
-        ("2s", "m", True, "tu te"),
-        ("3s", "m", False, "el"),
-        ("3s", "m", True, "el se"),
-        ("3s", "f", False, "ea"),
-        ("3s", "f", True, "ea se"),
-        ("1p", "m", False, "noi"),
-        ("1p", "m", True, "noi ne"),
-        ("2p", "m", False, "voi"),
-        ("2p", "m", True, "voi vă"),
-        ("3p", "m", False, "ei"),
-        ("3p", "m", True, "ei se"),
-        ("3p", "f", False, "ele"),
-        ("3p", "f", True, "ele se"),
+        (Person.FirstPersonSingular, Gender.Masculine, False, "eu"),
+        (Person.FirstPersonSingular, Gender.Masculine, True, "eu mă"),
+        (Person.SecondPersonSingular, Gender.Masculine, False, "tu"),
+        (Person.SecondPersonSingular, Gender.Masculine, True, "tu te"),
+        (Person.ThirdPersonSingular, Gender.Masculine, False, "el"),
+        (Person.ThirdPersonSingular, Gender.Masculine, True, "el se"),
+        (Person.ThirdPersonSingular, Gender.Feminine, False, "ea"),
+        (Person.ThirdPersonSingular, Gender.Feminine, True, "ea se"),
+        (Person.FirstPersonPlural, Gender.Masculine, False, "noi"),
+        (Person.FirstPersonPlural, Gender.Masculine, True, "noi ne"),
+        (Person.SecondPersonPlural, Gender.Masculine, False, "voi"),
+        (Person.SecondPersonPlural, Gender.Masculine, True, "voi vă"),
+        (Person.ThirdPersonPlural, Gender.Masculine, False, "ei"),
+        (Person.ThirdPersonPlural, Gender.Masculine, True, "ei se"),
+        (Person.ThirdPersonPlural, Gender.Feminine, False, "ele"),
+        (Person.ThirdPersonPlural, Gender.Feminine, True, "ele se"),
     ],
 )
 def test_inflector_ro_get_default_pronoun(
-    cg, person, gender, is_reflexive, expected_result
+    cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
 ):
     assert (
         cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
