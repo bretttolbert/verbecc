@@ -1,6 +1,7 @@
 import logging
 
-DEVEL_MODE = False
+from verbecc.src.defs.constants.config import DEVEL_MODE
+
 logging_level = logging.CRITICAL + 1  # effectively disables logging
 if DEVEL_MODE:
     logging_level = logging.DEBUG
@@ -16,7 +17,11 @@ logger = logging.getLogger(__name__)
 from abc import ABC, abstractmethod
 from typing import Dict, List, Tuple
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.exceptions import ConjugatorError
+from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.person import Person, is_singular
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
 from verbecc.src.parsers.conjugation_template import ConjugationTemplate
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
@@ -83,6 +88,19 @@ class Inflector(ABC):
         return not self._is_impersonal_verb(infinitive)
 
     def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
+        """
+        Tests whether an infinitive is reflexive
+        Returns a 2-tuple of whether it is reflexive
+        and the non-reflexive form of the infinitive.
+
+        E.g. French:
+        "se raser" => (True, "raser")
+        "s'habiller" => (True, "habiller")
+        "parler" => (False, "parler")
+        E.g. Italian:
+        "alzarsi" => (True, "alzare")
+        "preoccuparsi" => (True, "preoccupare")
+        """
         return (False, infinitive)
 
     def _add_reflexive_pronoun(self, s: str) -> str:
@@ -139,14 +157,35 @@ class Inflector(ABC):
         """Returns a map of the tense of the helping verb for each compound mood and tense"""
         raise NotImplementedError
 
-    def _get_default_participle_inflection_for_person(self, person):
-        if person[1] == "s":
-            return "ms"
+    def _get_participle_index_for_participle_inflection(
+        self, participle_inflection: ParticipleInflection
+    ) -> int:
+        """
+        Default order is like French XML file, i.e. MS, MP, FS, FP
+        But in some lang XML files, e.g. Italian, the order is MS, FS, MP, FP
+        TODO: Standardize the XML files
+        """
+        return PARTICIPLE_INFLECTIONS.index(participle_inflection)
+
+    def _get_default_participle_inflection_for_person(
+        self, person: Person, gender: Gender = Gender.Masculine
+    ) -> ParticipleInflection:
+        if is_singular(person):
+            if gender == Gender.Masculine:
+                return ParticipleInflection.MasculineSingular
+            else:
+                return ParticipleInflection.FeminineSingular
         else:
-            return "mp"
+            if gender == Gender.Masculine:
+                return ParticipleInflection.MasculinePlural
+            else:
+                return ParticipleInflection.FemininePlural
 
     def _get_default_pronoun(
-        self, person: str, gender: str = "m", is_reflexive: bool = False
+        self,
+        person: Person,
+        gender: Gender = Gender.Masculine,
+        is_reflexive: bool = False,
     ) -> str:
         return ""
 
@@ -190,14 +229,16 @@ class Inflector(ABC):
             verb_stem = verb_stem[:-1]
         return verb_stem + ending
 
-    def _get_pronoun_suffix(self, person, gender="m", imperative=True):
+    def _get_pronoun_suffix(
+        self, person: Person, gender: Gender = Gender.Masculine, imperative=True
+    ) -> str:
         return " " + self._get_default_pronoun(person, gender)
 
     def _add_adverb_if_applicable(self, s: str, mood_name: str, tense_name: str) -> str:
         return s
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s, is_reflexive, mood_name, tense_name, person
+        self, s, is_reflexive: bool, mood_name: str, tense_name: str, person: Person
     ):
         if is_reflexive:
             s += self._get_pronoun_suffix(person)

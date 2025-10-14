@@ -1,7 +1,10 @@
 import pytest
 from typing import cast
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator, MoodsConjugation
+from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 
 
 @pytest.fixture(scope="module")
@@ -90,26 +93,26 @@ def test_inflector_it_add_subjunctive_relative_pronoun(cg):
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        ("1s", "m", False, "io"),
-        ("1s", "m", True, "mi"),
-        ("2s", "m", False, "tu"),
-        ("2s", "m", True, "ti"),
-        ("3s", "m", False, "lui"),
-        ("3s", "m", True, "si"),
-        ("3s", "f", False, "lei"),
-        ("3s", "f", True, "si"),
-        ("1p", "m", False, "noi"),
-        ("1p", "m", True, "ci"),
-        ("2p", "m", False, "voi"),
-        ("2p", "m", True, "vi"),
-        ("3p", "m", False, "loro"),
-        ("3p", "m", True, "si"),
-        ("3p", "f", False, "loro"),
-        ("3p", "f", True, "si"),
+        (Person.FirstPersonSingular, Gender.Masculine, False, "io"),
+        (Person.FirstPersonSingular, Gender.Masculine, True, "io mi"),
+        (Person.SecondPersonSingular, Gender.Masculine, False, "tu"),
+        (Person.SecondPersonSingular, Gender.Masculine, True, "tu ti"),
+        (Person.ThirdPersonSingular, Gender.Masculine, False, "lui"),
+        (Person.ThirdPersonSingular, Gender.Masculine, True, "lui si"),
+        (Person.ThirdPersonSingular, Gender.Feminine, False, "lei"),
+        (Person.ThirdPersonSingular, Gender.Feminine, True, "lei si"),
+        (Person.FirstPersonPlural, Gender.Masculine, False, "noi"),
+        (Person.FirstPersonPlural, Gender.Masculine, True, "noi ci"),
+        (Person.SecondPersonPlural, Gender.Masculine, False, "voi"),
+        (Person.SecondPersonPlural, Gender.Masculine, True, "voi vi"),
+        (Person.ThirdPersonPlural, Gender.Masculine, False, "loro"),
+        (Person.ThirdPersonPlural, Gender.Masculine, True, "loro si"),
+        (Person.ThirdPersonPlural, Gender.Feminine, False, "loro"),
+        (Person.ThirdPersonPlural, Gender.Feminine, True, "loro si"),
     ],
 )
 def test_inflector_it_get_default_pronoun(
-    cg, person, gender, is_reflexive, expected_result
+    cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
 ):
     assert (
         cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
@@ -167,9 +170,9 @@ def test_indicative_present(cg, infinitive, expected_result):
                 "io sono stato",
                 "tu sei stato",
                 "lui è stato",
-                "noi siamo stato",
-                "voi siete stato",
-                "loro sono stato",
+                "noi siamo stati",
+                "voi siete stati",
+                "loro sono stati",
             ],
         ),
         (
@@ -191,7 +194,6 @@ def test_passato_prossimo(cg, infinitive, expected_result):
     assert moods_conj["indicativo"]["passato-prossimo"] == expected_result
 
 
-@pytest.mark.skip("TODO: fix")
 @pytest.mark.parametrize(
     "infinitive,expected_result",
     [
@@ -209,29 +211,54 @@ def test_passato_prossimo(cg, infinitive, expected_result):
     ],
 )
 def test_alzarsi_indicative_present(cg, infinitive, expected_result):
-    conj = cg.conjugate(infinitive)
+    conj = cg.conjugate(infinitive, gender=Gender.Feminine)
     moods_conj = cast(MoodsConjugation, conj["moods"])
     assert moods_conj["indicativo"]["presente"] == expected_result
 
 
-@pytest.mark.skip("TODO: fix")
 @pytest.mark.parametrize(
     "infinitive,expected_result",
     [
         (
             "alzarsi",
             [
-                "io mi sono alzato",
-                "tu ti sei alzato",
-                "lei si è alzato",
-                "noi ci siamo alzati",
-                "voi vi siete alzati",
+                "io mi sono alzata",
+                "tu ti sei alzata",
+                "lei si è alzata",
+                "noi ci siamo alzate",
+                "voi vi siete alzate",
                 "loro si sono alzate",
             ],
         ),
     ],
 )
-def test_alzarsi_passato_prossimo(cg, infinitive, expected_result):
-    conj = cg.conjugate(infinitive)
+def test_inflector_it_alzarsi_indicativo_passato_prossimo(
+    cg, infinitive, expected_result
+):
+    conj = cg.conjugate(infinitive, gender=Gender.Feminine)
     moods_conj = cast(MoodsConjugation, conj["moods"])
     assert moods_conj["indicativo"]["passato-prossimo"] == expected_result
+
+
+def test_inflector_it_essere_indicativo_passato_prossimo(cg):
+    infinitive = "essere"
+    co = cg._get_conj_obs(infinitive)
+    ret = cg._conjugate_compound(
+        co,
+        "indicativo",
+        "passato-prossimo",
+        "indicativo",
+        "presente",
+        False,
+        AlternatesBehavior.All,
+        Gender.Masculine,
+        True,
+    )
+    assert ret == [
+        ["io sono stato"],
+        ["tu sei stato"],
+        ["lui è stato"],
+        ["noi siamo stati"],
+        ["voi siete stati"],
+        ["loro sono stati"],
+    ]

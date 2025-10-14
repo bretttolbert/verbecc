@@ -1,6 +1,8 @@
 import pytest
 from lxml import etree
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.parsers.tense_template import TenseTemplate
 
@@ -640,26 +642,26 @@ def test_inflector_es_conjugate_simple_mood_tense():
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        ("1s", "m", False, "yo"),
-        ("1s", "m", True, "yo me"),
-        ("2s", "m", False, "tú"),
-        ("2s", "m", True, "tú te"),
-        ("3s", "m", False, "él"),
-        ("3s", "m", True, "él se"),
-        ("3s", "f", False, "ella"),
-        ("3s", "f", True, "ella se"),
-        ("1p", "m", False, "nosotros"),
-        ("1p", "m", True, "nosotros nos"),
-        ("2p", "m", False, "vosotros"),
-        ("2p", "m", True, "vosotros os"),
-        ("3p", "m", False, "ellos"),
-        ("3p", "m", True, "ellos se"),
-        ("3p", "f", False, "ellas"),
-        ("3p", "f", True, "ellas se"),
+        (Person.FirstPersonSingular, Gender.Masculine, False, "yo"),
+        (Person.FirstPersonSingular, Gender.Masculine, True, "yo me"),
+        (Person.SecondPersonSingular, Gender.Masculine, False, "tú"),
+        (Person.SecondPersonSingular, Gender.Masculine, True, "tú te"),
+        (Person.ThirdPersonSingular, Gender.Masculine, False, "él"),
+        (Person.ThirdPersonSingular, Gender.Masculine, True, "él se"),
+        (Person.ThirdPersonSingular, Gender.Feminine, False, "ella"),
+        (Person.ThirdPersonSingular, Gender.Feminine, True, "ella se"),
+        (Person.FirstPersonPlural, Gender.Masculine, False, "nosotros"),
+        (Person.FirstPersonPlural, Gender.Masculine, True, "nosotros nos"),
+        (Person.SecondPersonPlural, Gender.Masculine, False, "vosotros"),
+        (Person.SecondPersonPlural, Gender.Masculine, True, "vosotros os"),
+        (Person.ThirdPersonPlural, Gender.Masculine, False, "ellos"),
+        (Person.ThirdPersonPlural, Gender.Masculine, True, "ellos se"),
+        (Person.ThirdPersonPlural, Gender.Feminine, False, "ellas"),
+        (Person.ThirdPersonPlural, Gender.Feminine, True, "ellas se"),
     ],
 )
 def test_inflector_es_get_default_pronoun(
-    person, gender, is_reflexive, expected_result
+    person: Person, gender: Gender, is_reflexive: bool, expected_result: str
 ):
     assert (
         cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)

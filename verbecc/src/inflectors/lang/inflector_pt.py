@@ -1,5 +1,7 @@
 from typing import Dict, List, Tuple
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
@@ -29,7 +31,12 @@ class InflectorPt(Inflector):
         return s
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s: str, is_reflexive: bool, mood_name: str, tense_name: str, person
+        self,
+        s: str,
+        is_reflexive: bool,
+        mood_name: str,
+        tense_name: str,
+        person: Person,
     ):
         imperative = mood_name == "imperativo"
         if imperative or (
@@ -38,53 +45,57 @@ class InflectorPt(Inflector):
             s += " " + self._get_pronoun_suffix(person, imperative=imperative)
         return s
 
-    def _get_default_pronoun(self, person, gender="m", is_reflexive=False):
+    def _get_default_pronoun(
+        self, person: Person, gender: Gender = Gender.Masculine, is_reflexive=False
+    ):
         ret = ""
-        if person == "1s":
+        if person == Person.FirstPersonSingular:
             ret = "eu"
             if is_reflexive:
                 ret += " me"
-        elif person == "2s":
+        elif person == Person.SecondPersonSingular:
             ret = "tu"
             if is_reflexive:
                 ret += " te"
-        elif person == "3s":
+        elif person == Person.ThirdPersonSingular:
             ret = "ele"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "ela"
             if is_reflexive:
                 ret += " se"
-        elif person == "1p":
+        elif person == Person.FirstPersonPlural:
             ret = "nós"
             if is_reflexive:
                 ret += " nos"
-        elif person == "2p":
+        elif person == Person.SecondPersonPlural:
             ret = "vós"
             if is_reflexive:
                 ret += " se"
-        elif person == "3p":
+        elif person == Person.ThirdPersonPlural:
             ret = "eles"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "elas"
             if is_reflexive:
                 ret += " se"
         return ret
 
-    def _get_pronoun_suffix(self, person, gender="m", imperative=True):
+    def _get_pronoun_suffix(
+        self, person: Person, gender: Gender = Gender.Masculine, imperative=True
+    ):
         ret = ""
-        if person == "1s":
+        if person == Person.FirstPersonSingular:
             ret = "eu"
-        if person == "2s":
+        if person == Person.SecondPersonSingular:
             ret = "tu"
-        elif person == "3s":
+        elif person == Person.ThirdPersonSingular:
             ret = "você"
             if not imperative:
                 ret = "ele"
-        elif person == "1p":
+        elif person == Person.FirstPersonPlural:
             ret = "nós"
-        elif person == "2p":
+        elif person == Person.SecondPersonPlural:
             ret = "vós"
-        elif person == "3p":
+        elif person == Person.ThirdPersonPlural:
             ret = "vocês"
             if not imperative:
                 ret = "eles"

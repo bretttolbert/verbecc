@@ -1,6 +1,8 @@
 from lxml import etree
 from typing import List
 
+from verbecc.src.defs.types.person import Person
+
 
 class PersonEnding:
     """
@@ -22,7 +24,7 @@ class PersonEnding:
     this PersonEnding is for, e.g. for aim:er, "ez" is '2p' (second person plural)
     """
 
-    def __init__(self, p_elem: etree._Element, person: str):
+    def __init__(self, p_elem: etree._Element, person: Person):
         self.person = person
         self.endings: List[str] = []
         for i_elem in p_elem.findall("i", None):
@@ -31,7 +33,7 @@ class PersonEnding:
                 ending += str(i_elem.text)
             self.endings.append(ending)
 
-    def get_person(self) -> str:
+    def get_person(self) -> Person:
         return self.person
 
     def get_endings(self) -> List[str]:

@@ -2,6 +2,8 @@ import pytest
 from lxml import etree
 from typing import cast
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator, AlternatesBehavior
 from verbecc.src.parsers.tense_template import TenseTemplate
 from verbecc.src.defs.types.exceptions import ConjugatorError
@@ -138,26 +140,26 @@ def test_inflector_fr_get_verb_stem_from_template_name(cg):
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        ("1s", "m", False, "je"),
-        ("1s", "m", True, "je me"),
-        ("2s", "m", False, "tu"),
-        ("2s", "m", True, "tu te"),
-        ("3s", "m", False, "il"),
-        ("3s", "m", True, "il se"),
-        ("3s", "f", False, "elle"),
-        ("3s", "f", True, "elle se"),
-        ("1p", "m", False, "nous"),
-        ("1p", "m", True, "nous nous"),
-        ("2p", "m", False, "vous"),
-        ("2p", "m", True, "vous vous"),
-        ("3p", "m", False, "ils"),
-        ("3p", "m", True, "ils se"),
-        ("3p", "f", False, "elles"),
-        ("3p", "f", True, "elles se"),
+        (Person.FirstPersonSingular, Gender.Masculine, False, "je"),
+        (Person.FirstPersonSingular, Gender.Masculine, True, "je me"),
+        (Person.SecondPersonSingular, Gender.Masculine, False, "tu"),
+        (Person.SecondPersonSingular, Gender.Masculine, True, "tu te"),
+        (Person.ThirdPersonSingular, Gender.Masculine, False, "il"),
+        (Person.ThirdPersonSingular, Gender.Masculine, True, "il se"),
+        (Person.ThirdPersonSingular, Gender.Feminine, False, "elle"),
+        (Person.ThirdPersonSingular, Gender.Feminine, True, "elle se"),
+        (Person.FirstPersonPlural, Gender.Masculine, False, "nous"),
+        (Person.FirstPersonPlural, Gender.Masculine, True, "nous nous"),
+        (Person.SecondPersonPlural, Gender.Masculine, False, "vous"),
+        (Person.SecondPersonPlural, Gender.Masculine, True, "vous vous"),
+        (Person.ThirdPersonPlural, Gender.Masculine, False, "ils"),
+        (Person.ThirdPersonPlural, Gender.Masculine, True, "ils se"),
+        (Person.ThirdPersonPlural, Gender.Feminine, False, "elles"),
+        (Person.ThirdPersonPlural, Gender.Feminine, True, "elles se"),
     ],
 )
 def test_inflector_fr_get_default_pronoun(
-    cg, person, gender, is_reflexive, expected_result
+    cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
 ):
     assert (
         cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
@@ -244,7 +246,7 @@ def test_inflector_fr_raser(cg):
         "présent",
         False,
         AlternatesBehavior.All,
-        "m",
+        Gender.Masculine,
         True,
     )
     assert ret == [
@@ -268,7 +270,7 @@ def test_inflector_fr_se_raser(cg):
         "présent",
         False,
         AlternatesBehavior.All,
-        "m",
+        Gender.Masculine,
         True,
     )
     assert ret == [

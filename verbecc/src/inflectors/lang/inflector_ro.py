@@ -1,5 +1,7 @@
 from typing import Dict, List, Tuple
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
@@ -29,33 +31,35 @@ class InflectorRo(Inflector):
     preceded by the reflexive pronouns “se” (in the accusative) and “și” (in the dative).
     """
 
-    def _get_default_pronoun(self, person, gender="m", is_reflexive=False):
+    def _get_default_pronoun(
+        self, person: Person, gender: Gender = Gender.Masculine, is_reflexive=False
+    ):
         ret = ""
-        if person == "1s":
+        if person == Person.FirstPersonSingular:
             ret = "eu"
             if is_reflexive:
                 ret += " mă"
-        elif person == "2s":
+        elif person == Person.SecondPersonSingular:
             ret = "tu"
             if is_reflexive:
                 ret += " te"
-        elif person == "3s":
+        elif person == Person.ThirdPersonSingular:
             ret = "el"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "ea"
             if is_reflexive:
                 ret += " se"
-        elif person == "1p":
+        elif person == Person.FirstPersonPlural:
             ret = "noi"
             if is_reflexive:
                 ret += " ne"
-        elif person == "2p":
+        elif person == Person.SecondPersonPlural:
             ret = "voi"
             if is_reflexive:
                 ret += " vă"
-        elif person == "3p":
+        elif person == Person.ThirdPersonPlural:
             ret = "ei"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "ele"
             if is_reflexive:
                 ret += " se"

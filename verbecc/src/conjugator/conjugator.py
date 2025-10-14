@@ -1,6 +1,8 @@
 import logging
 
-DEVEL_MODE = False
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.constants.config import DEVEL_MODE
+
 logging_level = logging.CRITICAL + 1  # effectively disables logging
 if DEVEL_MODE:
     logging_level = logging.DEBUG
@@ -21,6 +23,7 @@ from verbecc.src.parsers.tense_template import TenseTemplate
 from verbecc.src.parsers.conjugation_template import ConjugationTemplate
 from verbecc.src.inflectors.inflector_factory import InflectorFactory
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.exceptions import (
     VerbNotFoundError,
     InvalidMoodError,
@@ -53,6 +56,7 @@ class Conjugator:
         self,
         infinitive,
         include_alternates: bool = False,
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> Conjugation:
         """
@@ -72,7 +76,7 @@ class Conjugator:
         moods: MoodsConjugation = {}
         for mood in co.template.moods:
             moods[mood] = self._conjugate_mood(
-                co, mood, alternates_behavior, conjugate_pronouns
+                co, mood, alternates_behavior, gender, conjugate_pronouns
             )
         return {
             "verb": {
@@ -91,11 +95,12 @@ class Conjugator:
         infinitive: str,
         mood_name: str,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood(
-            co, mood_name, alternates_behavior, conjugate_pronouns
+            co, mood_name, alternates_behavior, gender, conjugate_pronouns
         )
 
     def _get_conj_obs(self, infinitive: str) -> ConjugationObjects:
@@ -137,7 +142,7 @@ class Conjugator:
         mood_name: str,
         tense_name: str,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
-        gender="m",
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
         co = self._get_conj_obs(infinitive)
@@ -150,6 +155,7 @@ class Conjugator:
         co: ConjugationObjects,
         mood_name: str,
         alternates_behavior: AlternatesBehavior,
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         if mood_name not in co.template.moods:
@@ -157,12 +163,12 @@ class Conjugator:
         ret = {}
         ret.update(
             self._get_simple_conjugations_for_mood(
-                co, mood_name, alternates_behavior, conjugate_pronouns
+                co, mood_name, alternates_behavior, gender, conjugate_pronouns
             )
         )
         ret.update(
             self._get_compound_conjugations_for_mood(
-                co, mood_name, alternates_behavior, conjugate_pronouns
+                co, mood_name, alternates_behavior, gender, conjugate_pronouns
             )
         )
         return ret
@@ -173,7 +179,7 @@ class Conjugator:
         mood_name: str,
         tense_name: str,
         alternates_behavior: AlternatesBehavior,
-        gender: str = "m",
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
         """
@@ -191,6 +197,7 @@ class Conjugator:
                 aux_tense_name,
                 self._inflector._auxilary_verb_uses_alternate_conjugation(tense_name),
                 alternates_behavior,
+                gender=gender,
                 conjugate_pronouns=conjugate_pronouns,
             )
         else:
@@ -216,6 +223,7 @@ class Conjugator:
         co: ConjugationObjects,
         mood_name: str,
         alternates_behavior: AlternatesBehavior,
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         ret = {}
@@ -226,6 +234,7 @@ class Conjugator:
                 mood_name,
                 tense_name,
                 alternates_behavior,
+                gender,
                 conjugate_pronouns=conjugate_pronouns,
             )
         return ret
@@ -235,6 +244,7 @@ class Conjugator:
         co: ConjugationObjects,
         mood_name: str,
         alternates_behavior: AlternatesBehavior,
+        gender: Gender,
         conjugate_pronouns=True,
     ) -> MoodConjugation:
         ret = {}
@@ -246,6 +256,7 @@ class Conjugator:
                     mood_name,
                     tense_name,
                     alternates_behavior,
+                    gender,
                     conjugate_pronouns=conjugate_pronouns,
                 )
         return ret
@@ -259,7 +270,7 @@ class Conjugator:
         aux_tense_name: str,
         aux_uses_alternate: bool,
         alternates_behavior: AlternatesBehavior,
-        gender: str = "m",
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
         """
@@ -338,11 +349,11 @@ class Conjugator:
         co: ConjugationObjects,
         mood_name: str,
         tense_name: str,
-        persons: List[str],
+        persons: List[Person],
         aux_verb: str,
         aux_conj: List[str],
         alternates_behavior: AlternatesBehavior,
-        gender: str = "m",
+        gender: Gender = Gender.Masculine,
     ) -> TenseConjugation:
         """
         Forms a compound conjugation composed of an auxiliary verb (aka helping verb)
@@ -459,15 +470,19 @@ class Conjugator:
             # participle is inflected, e.g. French passé composé with être
             # where aux_verb = "être"
             # e.g. je suis allé, tu es allé, il est allé, nous sommes allé(e)s, vous êtes allé(e)s, ils/elles sont allé(e)s
+            # or Italian verbs conjugated with essere
+
             for i, hv in enumerate(aux_conj):
                 participle_inflection = (
                     self._inflector._get_default_participle_inflection_for_person(
-                        persons[i]
+                        persons[i], gender
                     )
                 )
                 p = "-"
-                participle_idx = grammar_defines.PARTICIPLE_INFLECTIONS.index(
-                    participle_inflection
+                participle_idx = (
+                    self._inflector._get_participle_index_for_participle_inflection(
+                        participle_inflection
+                    )
                 )
                 if len(p_conj) > participle_idx:
                     p = p_conj[participle_idx]
@@ -491,7 +506,7 @@ class Conjugator:
         tense_template: TenseTemplate,
         is_reflexive: bool = False,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
-        gender: str = "m",
+        gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
         modify_stem_strip_accents: bool = False,
     ) -> TenseConjugation:

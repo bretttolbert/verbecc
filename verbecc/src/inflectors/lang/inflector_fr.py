@@ -1,5 +1,7 @@
 from typing import Dict, List, Tuple
 
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.utils import string_utils
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
@@ -73,6 +75,11 @@ class InflectorFr(Inflector):
         )
 
     def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
+        """
+        "se raser" => (True, "raser")
+        "s'habiller" => (True, "habiller")
+        "parler" => (False, "parler")
+        """
         is_reflexive = False
         if infinitive.startswith("se "):
             is_reflexive = True
@@ -94,38 +101,43 @@ class InflectorFr(Inflector):
         else:
             return "que " + s
 
-    def _get_pronoun_suffix(self, person: str, gender: str = "m") -> str:
+    def _get_pronoun_suffix(
+        self, person: Person, gender: Gender = Gender.Masculine
+    ) -> str:
         return "-" + self._get_default_pronoun(person, gender).replace("tu", "toi")
 
     def _get_default_pronoun(
-        self, person: str, gender: str = "m", is_reflexive: bool = False
+        self,
+        person: Person,
+        gender: Gender = Gender.Masculine,
+        is_reflexive: bool = False,
     ) -> str:
         ret = ""
-        if person == "1s":
+        if person == Person.FirstPersonSingular:
             ret = "je"
             if is_reflexive:
                 ret += " me"
-        elif person == "2s":
+        elif person == Person.SecondPersonSingular:
             ret = "tu"
             if is_reflexive:
                 ret += " te"
-        elif person == "3s":
+        elif person == Person.ThirdPersonSingular:
             ret = "il"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "elle"
             if is_reflexive:
                 ret += " se"
-        elif person == "1p":
+        elif person == Person.FirstPersonPlural:
             ret = "nous"
             if is_reflexive:
                 ret += " nous"
-        elif person == "2p":
+        elif person == Person.SecondPersonPlural:
             ret = "vous"
             if is_reflexive:
                 ret += " vous"
-        elif person == "3p":
+        elif person == Person.ThirdPersonPlural:
             ret = "ils"
-            if gender == "f":
+            if gender == Gender.Feminine:
                 ret = "elles"
             if is_reflexive:
                 ret += " se"
@@ -189,7 +201,12 @@ class InflectorFr(Inflector):
         return ret
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s: str, is_reflexive: bool, mood_name: str, tense_name: str, person: str
+        self,
+        s: str,
+        is_reflexive: bool,
+        mood_name: str,
+        tense_name: str,
+        person: Person,
     ) -> str:
         if is_reflexive:
             if mood_name != "imperatif":

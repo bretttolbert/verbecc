@@ -8,7 +8,12 @@ from verbecc.src.defs.types.data_types import (
     VerbInfo,
     Conjugation,
 )
-from verbecc.src.defs.constants.grammar_defines import SUPPORTED_LANGUAGES
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person, is_plural, is_singular
+from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.language import Lanugage
+import verbecc.src.defs.constants.localization as localization
+import verbecc.src.defs.constants.grammar_defines as grammar_defines
 from verbecc.src.parsers.mood import Mood
 from verbecc.src.parsers.verb import Verb
 from verbecc.src.defs.types.exceptions import (
