@@ -1,2 +1,2 @@
-DEVEL_MODE = True
+DEVEL_MODE = False
 ml = True
