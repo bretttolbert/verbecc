@@ -1,5 +1,11 @@
+import sys
+
+if sys.version_info >= (3, 11):
+    from enum import StrEnum
+else:
+    from backports.strenum import StrEnum
+
 from typing import Dict, Tuple, Union
-from enum import StrEnum
 
 from verbecc.src.defs.types.language import Lanugage
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection

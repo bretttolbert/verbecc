@@ -1,4 +1,9 @@
-from enum import StrEnum
+import sys
+
+if sys.version_info >= (3, 11):
+    from enum import StrEnum
+else:
+    from backports.strenum import StrEnum
 
 
 # This refers to grammatical person ('usted' is 3s despite being semantically 2p)
