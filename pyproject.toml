@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "verbecc"
-version = "1.11.1"
+version = "1.11.2"
 dependencies = [
   "cython>=3.1.4",
   "importlib_resources==6.4.5 ; python_version < '3.13'",

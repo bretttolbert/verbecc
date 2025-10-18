@@ -590,7 +590,7 @@ def test_abolir():
     """
     Reproduce error:
 
-    >           co.template.moods[persons_mood_name].tenses[aux_tense_name].person_endings]
+    >           co.template.mood_templates[persons_mood_name].tense_templates[aux_tense_name].person_endings]
     E       KeyError: 'presente'
 
     ../../PyVEnvs/Py311/lib/python3.11/site-packages/verbecc/inflector.py:259: KeyError

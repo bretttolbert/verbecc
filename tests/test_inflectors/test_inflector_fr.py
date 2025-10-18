@@ -7,7 +7,7 @@ from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator, AlternatesBehavior
 from verbecc.src.parsers.tense_template import TenseTemplate
 from verbecc.src.defs.types.exceptions import ConjugatorError
-from verbecc.src.defs.types.data_types import MoodsConjugation
+from verbecc.src.defs.types.conjugation import MoodsConjugation
 
 
 @pytest.fixture(scope="module")
@@ -235,7 +235,7 @@ def test_can_conjugate_all_verbs(cg):
     assert len(all_conjugations) == len(verbs)
 
 
-def test_inflector_fr_raser(cg):
+def test_inflector_fr_conjugate_compound_raser(cg):
     infinitive = "raser"
     co = cg._get_conj_obs(infinitive)
     ret = cg._conjugate_compound(
@@ -259,7 +259,13 @@ def test_inflector_fr_raser(cg):
     ]
 
 
-def test_inflector_fr_se_raser(cg):
+def test_inflector_fr_conjugate_compound_se_raser(cg):
+    """
+    test targeting:
+        - reflexive verb conjugation
+        - compound verb conjugation with a verb conjugated with être (inflected participle)
+        - Note: In French, all reflexive verbs are conjugated with être
+    """
     infinitive = "se raser"
     co = cg._get_conj_obs(infinitive)
     ret = cg._conjugate_compound(
@@ -280,4 +286,32 @@ def test_inflector_fr_se_raser(cg):
         ["que nous nous soyons rasés"],
         ["que vous vous soyez rasés"],
         ["qu'ils se soient rasés"],
+    ]
+
+
+def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(cg):
+    """
+    test targeting:
+        - compound verb conjugation with a verb not conjugated with être (non-inflected participle)
+    """
+    infinitive = "parler"
+    co = cg._get_conj_obs(infinitive)
+    ret = cg._conjugate_compound(
+        co,
+        "indicatif",
+        "passé-composé",
+        "indicatif",
+        "présent",
+        False,
+        AlternatesBehavior.All,
+        Gender.Masculine,
+        True,
+    )
+    assert ret == [
+        ["j'ai parlé"],
+        ["tu as parlé"],
+        ["il a parlé"],
+        ["nous avons parlé"],
+        ["vous avez parlé"],
+        ["ils ont parlé"],
     ]

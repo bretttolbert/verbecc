@@ -1,10 +1,13 @@
 from typing import Dict, List, Tuple
 
+from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.mood import MoodFr as Mood
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.tense import TenseFr as Tense
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.utils import string_utils
-from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 """
 DR & MRS VANDERTRAMPP verbs
@@ -42,7 +45,7 @@ VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS = ["être", "aller", 
 class InflectorFr(Inflector):
     @property
     def lang(self) -> str:
-        return "fr"
+        return Language.Français
 
     def __init__(self):
         super(InflectorFr, self).__init__()
@@ -63,7 +66,14 @@ class InflectorFr(Inflector):
         ret = False
         verb = self.find_verb_by_infinitive(infinitive)
         template = self.find_template(verb.template)
-        if len(template.moods["indicatif"].tenses["présent"].person_endings) < 6:
+        if (
+            len(
+                template.mood_templates[Mood.Indicatif]
+                .tense_templates[Tense.Présent]
+                .person_endings
+            )
+            < 6
+        ):
             ret = True
         return ret
 
@@ -95,7 +105,7 @@ class InflectorFr(Inflector):
         else:
             return "se " + s
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str) -> str:
+    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense) -> str:
         if string_utils.starts_with_vowel(s, h_is_vowel=True):
             return "qu'" + s
         else:
@@ -145,17 +155,17 @@ class InflectorFr(Inflector):
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return [
-            "infinitif-présent",
-            "participe-présent",
-            "imperatif-présent",
-            "participe-passé",
+            Tense.InfinitifPrésent,
+            Tense.ParticipePresent,
+            Tense.ImperatifPrésent,
+            Tense.ParticipePassé,
         ]
 
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
     ) -> str:
         ret = "avoir"
         if co.verb.infinitive in VERBS_CONJUGATED_WITH_ETRE or co.is_reflexive:
@@ -166,22 +176,22 @@ class InflectorFr(Inflector):
         return auxilary_verb == "être"
 
     def _get_infinitive_mood_name(self) -> str:
-        return "infinitif"
+        return Mood.Infinitif
 
     def _get_indicative_mood_name(self) -> str:
-        return "indicatif"
+        return Mood.Indicatif
 
     def _get_subjunctive_mood_name(self) -> str:
-        return "subjonctif"
+        return Mood.Subjonctif
 
     def _get_conditional_mood_name(self) -> str:
-        return "conditionnel"
+        return Mood.Conditionnel
 
     def _get_participle_mood_name(self) -> str:
-        return "participe"
+        return Mood.Participe
 
     def _get_participle_tense_name(self) -> str:
-        return "participe-passé"
+        return Tense.ParticipePassé
 
     def _combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         ret = ""
@@ -193,7 +203,7 @@ class InflectorFr(Inflector):
         return ret
 
     def _add_present_participle_if_applicable(
-        self, s: str, is_reflexive: bool, tense_name: str
+        self, s: str, is_reflexive: bool, tense_name: Tense
     ) -> str:
         ret = s
         if is_reflexive and tense_name == self._get_participle_tense_name():
@@ -204,12 +214,12 @@ class InflectorFr(Inflector):
         self,
         s: str,
         is_reflexive: bool,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
         person: Person,
     ) -> str:
         if is_reflexive:
-            if mood_name != "imperatif":
+            if mood_name != Mood.Imperatif:
                 s = self._add_reflexive_pronoun(s)
             else:
                 s += self._get_pronoun_suffix(person)
@@ -220,13 +230,13 @@ class InflectorFr(Inflector):
     ) -> bool:
         return (
             is_reflexive
-            and mood_name == "imperatif"
-            and hv_tense_name == "imperatif-présent"
+            and mood_name == Mood.Imperatif
+            and hv_tense_name == Tense.ImperatifPrésent
         )
 
     def _get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         """
         compound conjugations are formed using an auxiliary
         verb (aka helping verb)
@@ -234,16 +244,18 @@ class InflectorFr(Inflector):
         [compound-mood][compound-tense] to (aux-verb-mood, aux-verb-tense)
         """
         return {
-            "indicatif": {
-                "passé-composé": ("indicatif", "présent"),
-                "plus-que-parfait": ("indicatif", "imparfait"),
-                "futur-antérieur": ("indicatif", "futur-simple"),
-                "passé-antérieur": ("indicatif", "passé-simple"),
+            Mood.Indicatif: {
+                Tense.PasséCompose: (Mood.Indicatif, Tense.Présent),
+                Tense.PlusQueParfait: (Mood.Indicatif, Tense.Imparfait),
+                Tense.FutureAntériuer: (Mood.Indicatif, Tense.FuturSimple),
+                Tense.PasséAntérieur: (Mood.Indicatif, Tense.PasséSimple),
             },
-            "subjonctif": {
-                "passé": ("subjonctif", "présent"),
-                "plus-que-parfait": ("subjonctif", "imparfait"),
+            Mood.Subjonctif: {
+                Tense.Passé: (Mood.Subjonctif, Tense.Présent),
+                Tense.PlusQueParfait: (Mood.Subjonctif, Tense.Imparfait),
             },
-            "conditionnel": {"passé": ("conditionnel", "présent")},
-            "imperatif": {"imperatif-passé": ("imperatif", "imperatif-présent")},
+            Mood.Conditionnel: {Tense.Passé: (Mood.Conditionnel, Tense.Présent)},
+            Mood.Imperatif: {
+                Tense.ImperatifPassé: (Mood.Imperatif, Tense.ImperatifPrésent)
+            },
         }

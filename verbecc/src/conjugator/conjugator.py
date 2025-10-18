@@ -1,6 +1,9 @@
 import logging
 
 from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.conjugation import ConjugationInfo
 from verbecc.src.defs.constants.config import DEVEL_MODE
 
 logging_level = logging.CRITICAL + 1  # effectively disables logging
@@ -29,7 +32,7 @@ from verbecc.src.defs.types.exceptions import (
     InvalidMoodError,
     InvalidTenseError,
 )
-from verbecc.src.defs.types.data_types import (
+from verbecc.src.defs.types.conjugation import (
     PersonConjugation,
     TenseConjugation,
     MoodConjugation,
@@ -54,7 +57,7 @@ class Conjugator:
 
     def conjugate(
         self,
-        infinitive,
+        infinitive: str,
         include_alternates: bool = False,
         gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
@@ -74,26 +77,26 @@ class Conjugator:
             alternates_behavior = AlternatesBehavior.All
         co = self._get_conj_obs(infinitive)
         moods: MoodsConjugation = {}
-        for mood in co.template.moods:
-            moods[mood] = self._conjugate_mood(
-                co, mood, alternates_behavior, gender, conjugate_pronouns
+        for mood_name, _ in co.template.mood_templates.items():
+            moods[mood_name] = self._conjugate_mood(
+                co, mood_name, alternates_behavior, gender, conjugate_pronouns
             )
         return {
-            "verb": {
-                "infinitive": co.verb.infinitive,
-                "predicted": co.verb.predicted,
-                "pred_score": co.verb.pred_score,
-                "template": co.verb.template,
-                "translation_en": co.verb.translation_en,
-                "stem": co.verb_stem,
-            },
+            "verb": ConjugationInfo(
+                co.verb.infinitive,
+                co.verb.predicted,
+                co.verb.pred_score,
+                co.verb.template,
+                co.verb.translation_en,
+                co.verb_stem,
+            ).data,
             "moods": moods,
         }
 
     def conjugate_mood(
         self,
         infinitive: str,
-        mood_name: str,
+        mood_name: Mood,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
         gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
@@ -139,8 +142,8 @@ class Conjugator:
     def conjugate_mood_tense(
         self,
         infinitive: str,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
         gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
@@ -153,12 +156,12 @@ class Conjugator:
     def _conjugate_mood(
         self,
         co: ConjugationObjects,
-        mood_name: str,
+        mood_name: Mood,
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
-        if mood_name not in co.template.moods:
+        if mood_name not in co.template.mood_templates.keys():
             raise InvalidMoodError
         ret = {}
         ret.update(
@@ -176,8 +179,8 @@ class Conjugator:
     def _conjugate_mood_tense(
         self,
         co: ConjugationObjects,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
@@ -201,10 +204,10 @@ class Conjugator:
                 conjugate_pronouns=conjugate_pronouns,
             )
         else:
-            mood = co.template.moods[mood_name]
-            if tense_name not in mood.tenses:
+            mood_template = co.template.mood_templates[mood_name]
+            if tense_name not in mood_template.tense_templates:
                 raise InvalidTenseError
-            tense_template = mood.tenses[tense_name]
+            tense_template = mood_template.tense_templates[tense_name]
             return self._conjugate_simple_mood_tense(
                 co.verb_stem,
                 mood_name,
@@ -221,14 +224,14 @@ class Conjugator:
     def _get_simple_conjugations_for_mood(
         self,
         co: ConjugationObjects,
-        mood_name: str,
+        mood_name: Mood,
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.Masculine,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         ret = {}
-        mood = co.template.moods[mood_name]
-        for tense_name in mood.tenses:
+        mood_template = co.template.mood_templates[mood_name]
+        for tense_name in mood_template.tense_templates:
             ret[tense_name] = self._conjugate_mood_tense(
                 co,
                 mood_name,
@@ -242,7 +245,7 @@ class Conjugator:
     def _get_compound_conjugations_for_mood(
         self,
         co: ConjugationObjects,
-        mood_name: str,
+        mood_name: Mood,
         alternates_behavior: AlternatesBehavior,
         gender: Gender,
         conjugate_pronouns=True,
@@ -264,10 +267,10 @@ class Conjugator:
     def _conjugate_compound(
         self,
         co: ConjugationObjects,
-        mood_name: str,
-        tense_name: str,
-        aux_mood_name: str,
-        aux_tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
+        aux_mood_name: Mood,
+        aux_tense_name: Tense,
         aux_uses_alternate: bool,
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.Masculine,
@@ -283,18 +286,20 @@ class Conjugator:
         ):
             return ret
         persons_mood_name = mood_name
-        if mood_name not in co.template.moods:
+        if mood_name not in co.template.mood_templates.keys():
             persons_mood_name = self._inflector._get_indicative_mood_name()
         persons = [
             pe.person
-            for pe in co.template.moods[persons_mood_name]
-            .tenses[aux_tense_name]
+            for pe in co.template.mood_templates[persons_mood_name]
+            .tense_templates[aux_tense_name]
             .person_endings
         ]
         aux_verb = self._inflector._get_auxilary_verb(co, mood_name, tense_name)
         aux_co = self._get_conj_obs(aux_verb)
         aux_tense_template = copy.deepcopy(
-            aux_co.template.moods[aux_mood_name].tenses[aux_tense_name]
+            aux_co.template.mood_templates[aux_mood_name].tense_templates[
+                aux_tense_name
+            ]
         )
         aux_person_endings = []
         for pe in aux_tense_template.person_endings:
@@ -347,8 +352,8 @@ class Conjugator:
     def _conjugate_compound_primary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
         persons: List[Person],
         aux_verb: str,
         aux_conj: List[str],
@@ -385,7 +390,7 @@ class Conjugator:
             p_conj = self._conjugate_simple_mood_tense(
                 co.verb_stem,
                 p_mood,
-                co.template.moods[p_mood].tenses[p_tense],
+                co.template.mood_templates[p_mood].tense_templates[p_tense],
                 False,
                 AlternatesBehavior.FirstOnly,
                 gender=gender,
@@ -502,7 +507,7 @@ class Conjugator:
     def _conjugate_simple_mood_tense(
         self,
         verb_stem: str,
-        mood_name: str,
+        mood_name: Mood,
         tense_template: TenseTemplate,
         is_reflexive: bool = False,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,

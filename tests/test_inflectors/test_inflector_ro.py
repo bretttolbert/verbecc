@@ -267,7 +267,7 @@ def test_all_verbs_have_templates(cg):
         ),
         (
             "avea",
-            "conditional",
+            "condițional",
             "prezent",
             AlternatesBehavior.FirstOnly,
             [
@@ -281,7 +281,7 @@ def test_all_verbs_have_templates(cg):
         ),
         (
             "avea",
-            "conditional",
+            "condițional",
             "perfect",
             AlternatesBehavior.FirstOnly,
             [
@@ -334,9 +334,9 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(cg):
     )
 
 
-def test_inflector_ro_conjugate_mood_tense_conditional_perfect(cg):
+def test_inflector_ro_conjugate_mood_tense_condițional_perfect(cg):
     assert cg.conjugate_mood_tense(
-        "avea", "conditional", "perfect", AlternatesBehavior.FirstOnly
+        "avea", "condițional", "perfect", AlternatesBehavior.FirstOnly
     ) == [
         "eu aş fi avut",
         "tu ai fi avut",

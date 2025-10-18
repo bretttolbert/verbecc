@@ -2,6 +2,8 @@ from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.mood import MoodEs as Mood
+from verbecc.src.defs.types.tense import TenseEs as Tense
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
@@ -14,8 +16,10 @@ class InflectorEs(Inflector):
     def __init__(self):
         super(InflectorEs, self).__init__()
 
-    def _add_adverb_if_applicable(self, s: str, mood_name: str, tense_name: str) -> str:
-        if mood_name == "imperativo" and tense_name == "negativo":
+    def _add_adverb_if_applicable(
+        self, s: str, mood_name: Mood, tense_name: Tense
+    ) -> str:
+        if mood_name == Mood.Imperativo and tense_name == Tense.Negativo:
             return "no " + s
         return s
 
@@ -57,33 +61,39 @@ class InflectorEs(Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
-        return ["participo", "gerundio", "infinitivo", "afirmativo", "negativo"]
+        return [
+            Tense.Participo,
+            Tense.Gerundio,
+            Tense.Infinitivo,
+            Tense.Afirmativo,
+            Tense.Negativo,
+        ]
 
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
     ) -> str:
         return "haber"
 
     def _get_infinitive_mood_name(self):
-        return "infinitivo"
+        return Mood.Infinitivo
 
     def _get_indicative_mood_name(self):
-        return "indicativo"
+        return Mood.Indicativo
 
     def _get_subjunctive_mood_name(self):
-        return "subjuntivo"
+        return Mood.Subjuntivo
 
     def _get_conditional_mood_name(self):
-        return "condicional"
+        return Mood.Condicional
 
     def _get_participle_mood_name(self) -> str:
-        return "participo"
+        return Mood.Participo
 
     def _get_participle_tense_name(self) -> str:
-        return "participo"
+        return Tense.Participo
 
     def _get_alternate_hv_inflection(self, s: str) -> str:
         if s.endswith("hay"):
@@ -92,25 +102,34 @@ class InflectorEs(Inflector):
 
     def _get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {
-            "indicativo": {
-                "pretérito-perfecto-compuesto": ("indicativo", "presente"),
-                "pretérito-pluscuamperfecto": ("indicativo", "pretérito-imperfecto"),
-                "pretérito-anterior": ("indicativo", "pretérito-perfecto-simple"),
-                "futuro-perfecto": ("indicativo", "futuro"),
+            Mood.Indicativo: {
+                Tense.PretéritoPerfectoCompuesto: (
+                    Mood.Indicativo,
+                    Tense.Presente,
+                ),
+                Tense.PretéritoPluscuamperfecto: (
+                    Mood.Indicativo,
+                    Tense.PretéritoImperfecto,
+                ),
+                Tense.PretéritoAnterior: (
+                    Mood.Indicativo,
+                    Tense.PretéritoPerfectoSimple,
+                ),
+                Tense.FuturoPerfecto: (Mood.Indicativo, Tense.Futuro),
             },
-            "condicional": {"perfecto": ("condicional", "presente")},
-            "subjuntivo": {
-                "pretérito-perfecto": ("subjuntivo", "presente"),
-                "pretérito-pluscuamperfecto-1": (
-                    "subjuntivo",
-                    "pretérito-imperfecto-1",
+            Mood.Condicional: {Tense.Perfecto: (Mood.Condicional, Tense.Presente)},
+            Mood.Subjuntivo: {
+                Tense.PretéritoPerfecto: (Mood.Subjuntivo, Tense.Presente),
+                Tense.PretéritoPluscuamperfecto1: (
+                    Mood.Subjuntivo,
+                    Tense.PretéritoImperfecto1,
                 ),
-                "pretérito-pluscuamperfecto-2": (
-                    "subjuntivo",
-                    "pretérito-imperfecto-2",
+                Tense.PretéritoPluscuamperfecto2: (
+                    Mood.Subjuntivo,
+                    Tense.PretéritoImperfecto2,
                 ),
-                "futuro-perfecto": ("subjuntivo", "futuro"),
+                Tense.FuturoPerfecto: (Mood.Subjuntivo, Tense.Futuro),
             },
         }

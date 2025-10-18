@@ -2,7 +2,10 @@ from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.mood import MoodCa as Mood
+from verbecc.src.defs.types.tense import TenseCa as Tense
 from verbecc.src.defs.types import exceptions
+from verbecc.src.defs.types.language import Language
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
@@ -11,12 +14,14 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 class InflectorCa(inflector.Inflector):
     @property
     def lang(self) -> str:
-        return "ca"
+        return Language.Català
 
     def __init__(self):
         super(InflectorCa, self).__init__()
 
-    def _add_adverb_if_applicable(self, s: str, mood_name: str, tense_name: str) -> str:
+    def _add_adverb_if_applicable(
+        self, s: str, mood_name: Mood, tense_name: Tense
+    ) -> str:
         return s
 
     def _get_default_pronoun(
@@ -57,33 +62,38 @@ class InflectorCa(inflector.Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
-        return ["particip", "gerundi", "infinitiu-present", "imperatiu-present"]
+        return [
+            Tense.Particip,
+            Tense.Gerundi,
+            Tense.InfinitiuPresent,
+            Tense.ImperatiuPresent,
+        ]
 
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
     ) -> str:
         return "haver"
 
     def _get_infinitive_mood_name(self):
-        return "infinitiu"
+        return Mood.Infinitiu
 
     def _get_indicative_mood_name(self):
-        return "indicatiu"
+        return Mood.Indicatiu
 
     def _get_subjunctive_mood_name(self):
-        return "subjuntiu"
+        return Mood.Subjuntiu
 
     def _get_conditional_mood_name(self):
-        return "condicional"
+        return Mood.Condicional
 
     def _get_participle_mood_name(self) -> str:
-        return "particip"
+        return Mood.Participi
 
     def _get_participle_tense_name(self) -> str:
-        return "particip"
+        return Tense.Particip
 
     def _get_alternate_hv_inflection(self, s: str) -> str:
         # if s.endswith('hay'):
