@@ -7,18 +7,18 @@ else:
 
 from typing import Dict, Tuple, Union
 
-from verbecc.src.defs.types.language import Lanugage
+from verbecc.src.defs.types.language import Language
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 
-# map of ISO 639 codes to long names (in target language)
-SUPPORTED_LANGUAGES: Dict[Lanugage, str] = {
-    Lanugage.Catalan: "català",
-    Lanugage.Spanish: "español",
-    Lanugage.French: "français",
-    Lanugage.Italian: "italiano",
-    Lanugage.Portuguese: "português",
-    Lanugage.Romanian: "română",
+# map of ISO 639-1 codes to long names (in target language)
+SUPPORTED_LANGUAGES: Dict[Language, str] = {
+    Language.Català: "català",
+    Language.Español: "español",
+    Language.Français: "français",
+    Language.Italiano: "italiano",
+    Language.Português: "português",
+    Language.Română: "română",
 }
 
 # Order of grammatical persons in data structures

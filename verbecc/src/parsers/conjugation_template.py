@@ -1,7 +1,7 @@
 from lxml import etree
 from typing import Dict
 
-from verbecc.src.parsers.mood import Mood
+from verbecc.src.parsers.mood_template import MoodTemplate
 from verbecc.src.defs.types.exceptions import ConjugationTemplateError
 
 
@@ -12,10 +12,10 @@ class ConjugationTemplate:
         try:
             name_attrib = template_elem.get("name", default=None)
             self.name = str(name_attrib)
-            self.moods: Dict[str, Mood] = {}
+            self.mood_templates: Dict[str, MoodTemplate] = {}
             for mood_elem in template_elem:  # type: ignore
-                mood = Mood(mood_elem)
-                self.moods[mood_elem.tag.lower()] = mood
+                mood_template = MoodTemplate(mood_elem)
+                self.mood_templates[mood_elem.tag.lower()] = mood_template
             self.modify_stem = ""
             modify_stem_attrib = template_elem.get("modify-stem", default=None)
             if modify_stem_attrib is not None:
@@ -33,4 +33,4 @@ class ConjugationTemplate:
             )
 
     def __repr__(self):
-        return "name={} moods={}".format(self.name, self.moods)
+        return "name={} mood_templates={}".format(self.name, self.mood_templates)

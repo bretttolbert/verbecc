@@ -1,10 +1,10 @@
 import pytest
 from typing import cast
 
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator, MoodsConjugation
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.person import Person
 
 
 @pytest.fixture(scope="module")
@@ -240,7 +240,7 @@ def test_inflector_it_alzarsi_indicativo_passato_prossimo(
     assert moods_conj["indicativo"]["passato-prossimo"] == expected_result
 
 
-def test_inflector_it_essere_indicativo_passato_prossimo(cg):
+def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
     infinitive = "essere"
     co = cg._get_conj_obs(infinitive)
     ret = cg._conjugate_compound(

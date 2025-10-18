@@ -1,6 +1,8 @@
 import logging
 
 from verbecc.src.defs.constants.config import DEVEL_MODE
+from verbecc.src.defs.types.mood import MoodEn as Mood
+from verbecc.src.defs.types.tense import TenseEn as Tense
 
 logging_level = logging.CRITICAL + 1  # effectively disables logging
 if DEVEL_MODE:
@@ -106,17 +108,17 @@ class Inflector(ABC):
     def _add_reflexive_pronoun(self, s: str) -> str:
         return s
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str) -> str:
+    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense) -> str:
         return s
 
-    def _auxilary_verb_uses_alternate_conjugation(self, tense_name: str) -> bool:
+    def _auxilary_verb_uses_alternate_conjugation(self, tense_name: Tense) -> bool:
         return False
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return []
 
     def _get_auxilary_verb(
-        self, co: ConjugationObjects, mood_name: str, tense_name: str
+        self, co: ConjugationObjects, mood_name: Mood, tense_name: Tense
     ) -> str:
         return ""
 
@@ -124,25 +126,25 @@ class Inflector(ABC):
         return False
 
     def _get_infinitive_mood_name(self) -> str:
-        return "infinitive"
+        return Mood.Infinitive
 
     def _get_indicative_mood_name(self) -> str:
-        return "indicative"
+        return Mood.Indicative
 
     def _get_subjunctive_mood_name(self) -> str:
-        return "subjunctive"
+        return Mood.Subjunctive
 
     def _get_conditional_mood_name(self) -> str:
-        return "conditional"
+        return Mood.Conditional
 
     def _get_participle_mood_name(self) -> str:
-        return "partiple"
+        return Mood.Participle
 
     def _get_participle_tense_name(self) -> str:
-        return "past-participle"
+        return Tense.PastParticiple
 
     def _add_present_participle_if_applicable(
-        self, s: str, is_reflexive: bool, tense_name: str
+        self, s: str, is_reflexive: bool, tense_name: Tense
     ) -> str:
         return s
 
@@ -234,11 +236,13 @@ class Inflector(ABC):
     ) -> str:
         return " " + self._get_default_pronoun(person, gender)
 
-    def _add_adverb_if_applicable(self, s: str, mood_name: str, tense_name: str) -> str:
+    def _add_adverb_if_applicable(
+        self, s: str, mood_name: Mood, tense_name: Tense
+    ) -> str:
         return s
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s, is_reflexive: bool, mood_name: str, tense_name: str, person: Person
+        self, s, is_reflexive: bool, mood_name: Mood, tense_name: Tense, person: Person
     ):
         if is_reflexive:
             s += self._get_pronoun_suffix(person)
@@ -253,7 +257,7 @@ class Inflector(ABC):
         return False
 
     def _modify_aux_verb_conj_if_applicable(
-        self, aux_conj: List[str], mood_name: str, tense_name: str
+        self, aux_conj: List[str], mood_name: Mood, tense_name: Tense
     ) -> List[str]:
         """
         Hook for certain languages e.g. Romanian that use a different
@@ -263,7 +267,7 @@ class Inflector(ABC):
         return aux_conj
 
     def _add_compound_aux_verb_suffix_if_applicable(
-        self, s: str, mood_name: str, tense_name: str
+        self, s: str, mood_name: Mood, tense_name: Mood
     ) -> str:
         """
         Hook for certain languages e.g. Romanian that add prefixes
@@ -273,7 +277,7 @@ class Inflector(ABC):
         return s
 
     def _insert_compound_aux_verb_prefix_if_applicable(
-        self, s: str, mood_name: str, tense_name: str
+        self, s: str, mood_name: Mood, tense_name: Tense
     ) -> str:
         """
         Used by Romanian viitor-1-popular
@@ -281,10 +285,10 @@ class Inflector(ABC):
         """
         return s
 
-    def _compound_has_no_primary_verb(self, mood_name: str, tense_name: str) -> bool:
+    def _compound_has_no_primary_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
         """Used for Romanian viitor-1-popular"""
         return False
 
-    def _compound_has_no_aux_verb(self, mood_name: str, tense_name: str) -> bool:
+    def _compound_has_no_aux_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
         """Used for Romanian conjunctiv perfect"""
         return False

@@ -2,6 +2,8 @@ from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.mood import MoodRo as Mood
+from verbecc.src.defs.types.tense import TenseRo as Tense
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
@@ -16,7 +18,7 @@ class InflectorRo(Inflector):
 
     def _add_subjunctive_relative_pronoun(self, s, tense_name):
         tokens = s.split(" ")
-        if tense_name == "prezent":
+        if tense_name == Tense.Prezent:
             tokens.insert(1, "să")
         elif tense_name == "perfect":
             tokens.insert(1, "să fi")
@@ -66,49 +68,55 @@ class InflectorRo(Inflector):
         return ret
 
     def _get_tenses_conjugated_without_pronouns(self):
-        return ["participiu", "afirmativ", "imperativ", "negativ", "gerunziu"]
+        return [
+            Tense.Participiu,
+            Tense.Afirmativ,
+            Tense.Imperativ,
+            Tense.Negativ,
+            Tense.Gerunziu,
+        ]
 
-    def _get_auxilary_verb(self, co, mood_name, tense_name):
-        if tense_name in ("viitor-1", "viitor-2"):
+    def _get_auxilary_verb(self, co, mood_name: Mood, tense_name: Tense):
+        if tense_name in (Tense.Viitor1, Tense.Viitor2):
             return "voi"
-        elif tense_name == "viitor-1-popular":
+        elif tense_name == Tense.Viitor1Popular:
             return co.verb.infinitive
         return "avea"
 
     def _get_infinitive_mood_name(self):
-        return "infinitiv"
+        return Mood.Infinitiv
 
     def _get_indicative_mood_name(self):
-        return "indicativ"
+        return Mood.Indicativ
 
     def _get_subjunctive_mood_name(self):
-        return "conjunctiv"
+        return Mood.Conjunctiv
 
     def _get_conditional_mood_name(self):
-        return "conditional"
+        return Mood.Condițional
 
     def _get_participle_mood_name(self):
-        return "participiu"
+        return Mood.Participiu
 
     def _get_participle_tense_name(self):
-        return "participiu"
+        return Tense.Participiu
 
     def _get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         # TODO: those last three don't actually use an auxiliary verb, refactor to make aux verb optional
         return {
-            "indicativ": {
-                "perfect-compus": ("indicativ", "prezent"),
-                "viitor-1": ("indicativ", "prezent"),
-                "viitor-2": ("indicativ", "prezent"),
-                "viitor-1-popular": ("conjunctiv", "prezent"),
-                "viitor-2-popular": ("indicativ", "prezent"),
+            Mood.Indicativ: {
+                Tense.PerfectCompus: (Mood.Indicativ, Tense.Prezent),
+                Tense.Viitor1: (Mood.Indicativ, Tense.Prezent),
+                Tense.Viitor2: (Mood.Indicativ, Tense.Prezent),
+                Tense.Viitor1Popular: (Mood.Conjunctiv, Tense.Prezent),
+                Tense.Viitor2Popular: (Mood.Indicativ, Tense.Prezent),
             },
-            "conjunctiv": {"perfect": ("indicativ", "prezent")},
-            "conditional": {
-                "prezent": ("indicativ", "prezent"),
-                "perfect": ("indicativ", "prezent"),
+            Mood.Conjunctiv: {Tense.Perfect: (Mood.Indicativ, Tense.Prezent)},
+            Mood.Condițional: {
+                Tense.Prezent: (Mood.Indicativ, Tense.Prezent),
+                Tense.Perfect: (Mood.Indicativ, Tense.Prezent),
             },
         }
 
@@ -116,16 +124,16 @@ class InflectorRo(Inflector):
         return tense_name.startswith("viitor")
 
     def _compound_primary_verb_conjugation_uses_infinitive(
-        self, mood_name: str, tense_name: str
+        self, mood_name: Mood, tense_name: Tense
     ):
-        if mood_name == "indicativ" and tense_name == "viitor-1":
+        if mood_name == Mood.Indicativ and tense_name == Tense.Viitor1:
             return True
-        elif mood_name == "conditional" and tense_name == "prezent":
+        elif mood_name == Mood.Condițional and tense_name == Tense.Prezent:
             return True
         return False
 
     def _modify_aux_verb_conj_if_applicable(
-        self, aux_conj: List[str], mood_name: str, tense_name: str
+        self, aux_conj: List[str], mood_name: Mood, tense_name: Tense
     ):
         """E.g. for Romanian conditional present 'eu aş avea, tu ai avea, el ar avea, ...'
         and also the Romanian conditional present e.g. 'eu	aş fi avut, tu ai fi avut, ...'
@@ -136,7 +144,7 @@ class InflectorRo(Inflector):
         but for conditional it's supposed to be
             ["eu aş", "tu ai", "el ar", "noi am", "voi aţi", "ei ar"]
         """
-        if mood_name == "conditional" and tense_name in ("prezent", "perfect"):
+        if mood_name == Mood.Condițional and tense_name in (Tense.Prezent, "perfect"):
             sub_aux_conj = ["aş", "ai", "ar", "am", "aţi", "ar"]
             for i, c in enumerate(aux_conj):
                 pronoun, _ = c.split(" ")
@@ -144,41 +152,41 @@ class InflectorRo(Inflector):
         return aux_conj
 
     def _add_compound_aux_verb_suffix_if_applicable(
-        self, s: str, mood_name: str, tense_name: str
+        self, s: str, mood_name: Mood, tense_name: Tense
     ) -> str:
         """
         E.g. for Romanian indicativ viitor-ii this appends " fi" to make "eu am să fi avut" etc.
         """
-        if (mood_name == "indicativ" and tense_name == "viitor-2") or (
-            mood_name == "conditional" and tense_name == "perfect"
+        if (mood_name == Mood.Indicativ and tense_name == Tense.Viitor2) or (
+            mood_name == Mood.Condițional and tense_name == Tense.Perfect
         ):
             return s + " fi"
-        elif mood_name == "indicativ" and tense_name == "viitor-2-popular":
+        elif mood_name == Mood.Indicativ and tense_name == Tense.Viitor2Popular:
             return s + " să fi"
         # TODO: Research. Some sources e.g. verbix.com don't include " să"
-        # elif mood_name == "indicativ" and tense_name == "viitor-1":
+        # elif mood_name == Mood.Indicativ and tense_name == "viitor-1":
         #    return s + " să"
         return s
 
     def _insert_compound_aux_verb_prefix_if_applicable(
-        self, s: str, mood_name: str, tense_name: str
+        self, s: str, mood_name: Mood, tense_name: Tense
     ) -> str:
         """
         Used by Romanian viitor-1-popular
         "eu o să fac, tu o să faci, ..."
         """
-        if mood_name == "indicativ" and tense_name == "viitor-1-popular":
+        if mood_name == Mood.Indicativ and tense_name == "viitor-1-popular":
             tokens = s.split()
             return tokens[0] + " o să " + tokens[1]
         return s
 
-    def _compound_has_no_primary_verb(self, mood_name: str, tense_name: str) -> bool:
+    def _compound_has_no_primary_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
         """Used for Romanian viitor-1-popular"""
-        if mood_name == "indicativ" and tense_name == "viitor-1-popular":
+        if mood_name == Mood.Indicativ and tense_name == "viitor-1-popular":
             return True
         return False
 
-    def _compound_has_no_aux_verb(self, mood_name: str, tense_name: str) -> bool:
+    def _compound_has_no_aux_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
         """Used for Romanian conjunctiv perfect"""
         if mood_name == "conjunctiv" and tense_name == "perfect":
             return True

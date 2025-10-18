@@ -1,8 +1,11 @@
 from typing import Dict, Tuple
 
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.mood import MoodIt as Mood
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.tense import TenseIt as Tense
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.utils import string_utils
 
@@ -28,7 +31,7 @@ VERBS_CONJUGATED_WITH_ESSERE = [
 class InflectorIt(Inflector):
     @property
     def lang(self) -> str:
-        return "it"
+        return Language.Italiano
 
     def __init__(self):
         super(InflectorIt, self).__init__()
@@ -101,12 +104,12 @@ class InflectorIt(Inflector):
 
     def _get_tenses_conjugated_without_pronouns(self):
         return [
-            "affermativo",
-            "negativo",
-            "Negativo",
-            "gerundio",
-            "participio-presente",
-            "participio-passato",
+            Tense.Affermativo,
+            Tense.negativo,
+            Tense.Negativo,
+            Tense.Gerundio,
+            Tense.ParticipioPresente,
+            Tense.ParticipioPassato,
         ]
 
     def _get_auxilary_verb(self, co, mood_name, tense_name):
@@ -116,38 +119,38 @@ class InflectorIt(Inflector):
         return ret
 
     def _get_infinitive_mood_name(self):
-        return "infinitivo"
+        return Mood.Infinito
 
     def _get_indicative_mood_name(self):
-        return "indicativo"
+        return Mood.Indicativo
 
     def _get_subjunctive_mood_name(self):
-        return "congiuntivo"
+        return Mood.Congiuntivo
 
     def _get_conditional_mood_name(self):
-        return "condizionale"
+        return Mood.Condizionale
 
     def _get_participle_mood_name(self):
-        return "participio"
+        return Mood.Participio
 
     def _get_participle_tense_name(self):
-        return "participio-passato"
+        return Tense.ParticipioPassato
 
     def _get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {
-            "indicativo": {
-                "passato-prossimo": ("indicativo", "presente"),
-                "trapassato-prossimo": ("indicativo", "imperfetto"),
-                "trapassato-remoto": ("indicativo", "passato-remoto"),
-                "futuro-anteriore": ("indicativo", "futuro"),
+            Mood.Indicativo: {
+                Tense.PassatoProssimo: (Mood.Indicativo, Tense.Presente),
+                Tense.TrapassatoProssimo: (Mood.Indicativo, Tense.Imperfetto),
+                Tense.TrapassatoRemoto: (Mood.Indicativo, Tense.PassatoRemoto),
+                Tense.FuturoAnteriore: (Mood.Indicativo, Tense.Futuro),
             },
-            "congiuntivo": {
-                "passato": ("congiuntivo", "presente"),
-                "trapassato": ("congiuntivo", "imperfetto"),
+            Mood.Congiuntivo: {
+                Tense.Passato: (Mood.Congiuntivo, Tense.Presente),
+                Tense.Trapassato: (Mood.Congiuntivo, Tense.Imperfetto),
             },
-            "condizionale": {"passato": ("condizionale", "presente")},
+            Mood.Condizionale: {Tense.Passato: (Mood.Condizionale, Tense.Presente)},
         }
 
     PARTICIPLE_INFLECTIONS: Tuple[

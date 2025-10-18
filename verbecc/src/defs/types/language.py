@@ -6,10 +6,14 @@ else:
     from backports.strenum import StrEnum
 
 
-class Lanugage(StrEnum):
-    Catalan = "ca"
-    French = "fr"
-    Spanish = "es"
-    Italian = "it"
-    Portuguese = "pt"
-    Romanian = "ro"
+class Language(StrEnum):
+    """
+    Enum of supported languages as ISO 639-1 codes
+    """
+
+    Català = "ca"
+    Français = "fr"
+    Español = "es"
+    Italiano = "it"
+    Português = "pt"
+    Română = "ro"

@@ -1,32 +1,38 @@
 from typing import Dict, List, Tuple
 
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
-from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.mood import MoodPt as Mood
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.tense import TensePt as Tense
+from verbecc.src.inflectors.inflector import Inflector
 
 
 class InflectorPt(Inflector):
     @property
     def lang(self) -> str:
-        return "pt"
+        return Language.Português
 
     def __init__(self):
         super(InflectorPt, self).__init__()
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: str):
-        if tense_name == "presente":
+    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense):
+        if tense_name == Tense.Presente:
             return "que " + s
-        elif tense_name == "pretérito-imperfeito":
+        elif tense_name == Tense.PretéritoImperfeito:
             return "se " + s
-        elif tense_name == "futuro":
+        elif tense_name == Tense.Futuro:
             return "quando " + s
         return s
 
-    def _add_adverb_if_applicable(self, s: str, mood_name: str, tense_name: str):
-        if mood_name == "imperativo" and tense_name == "negativo":
+    def _add_adverb_if_applicable(self, s: str, mood_name: Mood, tense_name: Tense):
+        if mood_name == Mood.Imperativo and tense_name == Tense.Negativo:
             return "não " + s
-        elif mood_name == "infinitivo" and tense_name == "infinitivo-pessoal-presente":
+        elif (
+            mood_name == Mood.Infinitivo
+            and tense_name == Tense.InfinitivoPessoalPresente
+        ):
             return "por " + s
         return s
 
@@ -34,13 +40,14 @@ class InflectorPt(Inflector):
         self,
         s: str,
         is_reflexive: bool,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
         person: Person,
     ):
-        imperative = mood_name == "imperativo"
+        imperative = mood_name == Mood.Imperativo
         if imperative or (
-            mood_name == "infinitivo" and tense_name == "infinitivo-pessoal-presente"
+            mood_name == Mood.Infinitivo
+            and tense_name == Tense.InfinitivoPessoalPresente
         ):
             s += " " + self._get_pronoun_suffix(person, imperative=imperative)
         return s
@@ -103,69 +110,78 @@ class InflectorPt(Inflector):
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return [
-            "particípio",
-            "infinitivo",
-            "infinitivo-pessoal-presente",
-            "infinitivo-pessoal-composto",
-            "afirmativo",
-            "negativo",
-            "gerúndio",
+            Tense.Particípio,
+            Tense.Infinitivo,
+            Tense.InfinitivoPessoalPresente,
+            Tense.InfinitivoPessoalComposto,
+            Tense.Afirmativo,
+            Tense.Negativo,
+            Tense.Gerúndio,
         ]
 
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: str,
-        tense_name: str,
+        mood_name: Mood,
+        tense_name: Tense,
     ) -> str:
         return "ter"
 
     def _get_infinitive_mood_name(self):
-        return "infinitivo"
+        return Mood.Infinitivo
 
     def _get_indicative_mood_name(self):
-        return "indicativo"
+        return Mood.Indicativo
 
     def _get_subjunctive_mood_name(self) -> str:
-        return "subjuntivo"
+        return Mood.Subjuntivo
 
     def _get_conditional_mood_name(self):
-        return "condicional"
+        return Mood.Condicional
 
     def _get_participle_mood_name(self) -> str:
-        return "particípio"
+        return Mood.Particípio
 
     def _get_participle_tense_name(self) -> str:
-        return "particípio"
+        return Tense.Particípio
 
     def _get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {
-            "indicativo": {
-                "pretérito-perfeito-composto": ("indicativo", "presente"),
-                "pretérito-mais-que-perfeito-composto": (
-                    "indicativo",
-                    "pretérito-imperfeito",
+            Mood.Indicativo: {
+                Tense.PretéritoPerfeitoComposto: (Mood.Indicativo, Tense.Presente),
+                Tense.PretéritoMaisQuePerfeitoComposto: (
+                    Mood.Indicativo,
+                    Tense.PretéritoImperfeito,
                 ),
-                "pretérito-mais-que-perfeito-anterior": (
-                    "indicativo",
-                    "pretérito-mais-que-perfeito",
+                Tense.PretéritoMaisQuePerfeitoAnterior: (
+                    Mood.Indicativo,
+                    Tense.PretéritoMaisQuePerfeito,
                 ),
-                "futuro-do-presente-composto": ("indicativo", "futuro-do-presente"),
+                Tense.FuturoDoPresenteComposto: (
+                    Mood.Indicativo,
+                    Tense.FuturoDoPresente,
+                ),
             },
-            "subjuntivo": {
-                "pretérito-perfeito": ("subjuntivo", "presente"),
-                "pretérito-mais-que-perfeito": ("subjuntivo", "pretérito-imperfeito"),
-                "futuro-composto": ("subjuntivo", "futuro"),
+            Mood.Subjuntivo: {
+                Tense.PretéritoPerfeito: (Mood.Subjuntivo, Tense.Presente),
+                Tense.PretéritoMaisQuePerfeito: (
+                    Mood.Subjuntivo,
+                    Tense.PretéritoImperfeito,
+                ),
+                Tense.FuturoComposto: (Mood.Subjuntivo, Tense.Futuro),
             },
-            "condicional": {
-                "futuro-do-pretérito-composto": ("condicional", "futuro-do-pretérito")
+            Mood.Condicional: {
+                Tense.FuturoDoPretéritoComposto: (
+                    Mood.Condicional,
+                    Tense.FuturoDoPretérito,
+                )
             },
-            "infinitivo": {
-                "infinitivo-pessoal-composto": (
-                    "infinitivo",
-                    "infinitivo-pessoal-presente",
+            Mood.Infinitivo: {
+                Tense.InfinitivoPessoalComposto: (
+                    Mood.Infinitivo,
+                    Tense.InfinitivoPessoalPresente,
                 )
             },
         }
