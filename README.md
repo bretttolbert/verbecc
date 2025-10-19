@@ -1149,7 +1149,6 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 ```python
 >>> cg = Conjugator(lang='it')
 >>> printjson(cg.conjugate('essere'))
->>> printjson(cg.conjugate('essere'))
 {
     "verb": {
         "infinitive": "essere",
@@ -1194,36 +1193,36 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 "loro saranno"
             ],
             "passato-prossimo": [
-                "io ho ente/essente",
-                "tu hai ente/essente",
-                "lui ha ente/essente",
-                "noi abbiamo ente/essente",
-                "voi avete ente/essente",
-                "loro hanno ente/essente"
+                "io sono stato",
+                "tu sei stato",
+                "lui è stato",
+                "noi siamo stati",
+                "voi siete stati",
+                "loro sono stati"
             ],
             "trapassato-prossimo": [
-                "io avevo ente/essente",
-                "tu avevi ente/essente",
-                "lui aveva ente/essente",
-                "noi avevamo ente/essente",
-                "voi avevate ente/essente",
-                "loro avevano ente/essente"
+                "io ero stato",
+                "tu eri stato",
+                "lui era stato",
+                "noi eravamo stati",
+                "voi eravate stati",
+                "loro erano stati"
             ],
             "trapassato-remoto": [
-                "io ebbi ente/essente",
-                "tu avesti ente/essente",
-                "lui ebbe ente/essente",
-                "noi avemmo ente/essente",
-                "voi aveste ente/essente",
-                "loro ebbero ente/essente"
+                "io fui stato",
+                "tu fosti stato",
+                "lui fu stato",
+                "noi fummo stati",
+                "voi foste stati",
+                "loro furono stati"
             ],
             "futuro-anteriore": [
-                "io avrò ente/essente",
-                "tu avrai ente/essente",
-                "lui avrà ente/essente",
-                "noi avremo ente/essente",
-                "voi avrete ente/essente",
-                "loro avranno ente/essente"
+                "io sarò stato",
+                "tu sarai stato",
+                "lui sarà stato",
+                "noi saremo stati",
+                "voi sarete stati",
+                "loro saranno stati"
             ]
         },
         "congiuntivo": {
@@ -1244,20 +1243,20 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 "che loro fossero"
             ],
             "passato": [
-                "che io abbia ente/essente",
-                "che tu abbia ente/essente",
-                "che lui abbia ente/essente",
-                "che noi abbiamo ente/essente",
-                "che voi abbiate ente/essente",
-                "che loro abbiano ente/essente"
+                "che io sia stato",
+                "che tu sia stato",
+                "che lui sia stato",
+                "che noi siamo stati",
+                "che voi siate stati",
+                "che loro siano stati"
             ],
             "trapassato": [
-                "che io avessi ente/essente",
-                "che tu avessi ente/essente",
-                "che lui avesse ente/essente",
-                "che noi avessimo ente/essente",
-                "che voi aveste ente/essente",
-                "che loro avessero ente/essente"
+                "che io fossi stato",
+                "che tu fossi stato",
+                "che lui fosse stato",
+                "che noi fossimo stati",
+                "che voi foste stati",
+                "che loro fossero stati"
             ]
         },
         "condizionale": {
@@ -1270,12 +1269,12 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 "loro sarebbero"
             ],
             "passato": [
-                "io avrei ente/essente",
-                "tu avresti ente/essente",
-                "lui avrebbe ente/essente",
-                "noi avremmo ente/essente",
-                "voi avreste ente/essente",
-                "loro avrebbero ente/essente"
+                "io sarei stato",
+                "tu saresti stato",
+                "lui sarebbe stato",
+                "noi saremmo stati",
+                "voi sareste stati",
+                "loro sarebbero stati"
             ]
         },
         "imperativo": {
@@ -1313,8 +1312,10 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
             ]
         },
         "participio": {
-            "participio": [
-                "ente/essente",
+            "participio-presente": [
+                "ente"
+            ],
+            "participio-passato": [
                 "stato",
                 "stata",
                 "stati",

@@ -112,9 +112,9 @@ def pytest_generate_tests(metafunc):
         metafunc.parametrize("errors", errors)
 
 
-def test_per_error(errors):
+def test_per_error(errors: str):
     """Test that fails for each missing type annotation found.
-    Supposed to work with pytest using indirect parametrization.
+    Works with pytest using indirect parametrization.
     (See pytest_generate_tests above.)"""
     error = errors
     assert False, error
