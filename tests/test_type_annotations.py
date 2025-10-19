@@ -1,11 +1,11 @@
 """
-Verbecc type annotations test module.
+Type annotations pytest test module.
 Test to ensure all functions and methods have type annotations for parameters and return types.
 This test scans the source code files in the specified directory, parses them using the `ast`
 module, and checks each function and method definition for missing type annotations.
 If any missing annotations are found, the test fails and reports the specific locations
 and details of the missing annotations.
-This test module utlized the indirect parametrization feature of pytest to create a separate test case
+This test module utlizes the indirect parametrization feature of pytest to create a separate test case
 for each missing type annotation found during the scan.
 Copyright (c) 2026, Brett Tolbert <http://bretttolbert.com/>
 """
@@ -15,8 +15,7 @@ import ast
 import os
 from typing import List
 
-EXCLUDE_DIRS = {".git", "__pycache__", "venv", ".venv", "env", "build", "dist"}
-SOURCE_PATH = "verbecc/src"
+EXCLUDE_DIRS = {".git", "__pycache__", "venv", ".venv", "env", "build", "dist", "tests"}
 
 
 class Finder(ast.NodeVisitor):
@@ -109,9 +108,7 @@ def walk_root(root) -> List[str]:
 def pytest_generate_tests(metafunc):
     """Indirect parametrization for pytest to run test_per_error for each missing type annotation found."""
     if "errors" in metafunc.fixturenames:
-        errors: List[str] = walk_root(
-            os.path.join(metafunc.config.rootpath, SOURCE_PATH)
-        )
+        errors: List[str] = walk_root(metafunc.config.rootpath)
         metafunc.parametrize("errors", errors)
 
 

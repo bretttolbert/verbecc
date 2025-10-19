@@ -51,7 +51,7 @@ from importlib_resources import as_file, files
 import os
 import pickle
 import random
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Union
 from zipfile import ZipFile
 
 from sklearn.feature_selection import SelectFromModel
@@ -78,11 +78,16 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+VerbTemplatePair = Tuple[str, str]  # (verb, template)
+Vectorizor = Union[CountVectorizer, Any]
+FeatureSelector = Union[SelectFromModel, Any]
+Classifier = Union[SGDClassifier, Any]
+
 
 class TemplatePredictor:
     def __init__(
-        self, verb_template_pairs: List[Tuple[str, str]], lang: LangISOCode639_1
-    ):
+        self, verb_template_pairs: List[VerbTemplatePair], lang: LangISOCode639_1
+    ) -> None:
         self.data_set = DataSet(verb_template_pairs)
         model = load_model(lang)
         if not model:
@@ -90,8 +95,9 @@ class TemplatePredictor:
             model.train(self.data_set.train_input, self.data_set.train_labels)
             save_model(model)
         self.model = model
+        return
 
-    def predict(self, verb):
+    def predict(self, verb: str) -> Tuple[str, float]:
         prediction = self.model.predict([verb])[0]
         prediction_score = self.model.pipeline.predict_proba([verb])[0][prediction]
         template = self.data_set.templates[prediction]
@@ -109,16 +115,15 @@ class Model:
     :param feature_selector: scikit-learn Classifier with a fit_transform() method
     :param classifier: scikit-learn Classifier with a predict() method
     :param language: language of the corpus of verbs to be analyzed.
-
     """
 
     def __init__(
         self,
-        vectorizer=None,
-        feature_selector=None,
-        classifier=None,
+        vectorizer: Vectorizor = None,
+        feature_selector: FeatureSelector = None,
+        classifier: Classifier = None,
         lang: LangISOCode639_1 = LangISOCode639_1.Français,
-    ):
+    ) -> None:
         if not vectorizer:
             vectorizer = CountVectorizer(
                 analyzer=partial(extract_verb_features, lang=lang, ngram_range=(2, 7)),
@@ -148,31 +153,31 @@ class Model:
         self.lang = lang
         return
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "{0}.{1}({2}, {3}, {4})".format(
             __name__, self.__class__.__name__, *sorted(self.pipeline.named_steps)
         )
 
-    def train(self, samples, labels):
+    def train(self, samples: List[str], labels: List[int]) -> None:
         """
         Trains the pipeline on the supplied samples and labels.
 
-        :param samples: list.
+        :param samples: list[str].
             List of verbs.
-        :param labels: list.
-            List of verb templates.
+        :param labels: list[int].
+            List of verb template indices.
 
         """
         self.pipeline = self.pipeline.fit(samples, labels)
         return
 
-    def predict(self, verbs):
+    def predict(self, verbs: List[str]) -> List[str]:
         """
         Predicts the conjugation class of the provided list of verbs.
 
-        :param verbs: list.
+        :param verbs: list[str].
             List of verbs.
-        :return: list.
+        :return: list[str].
             List of predicted conjugation groups.
 
         """
@@ -186,14 +191,15 @@ class DataSet:
     | Defines helper methodss for managing Machine Learning tasks like constructing a training and testing set.
     """
 
-    def __init__(self, verb_template_pairs: List[Tuple[str, str]]):
+    def __init__(self, verb_template_pairs: List[VerbTemplatePair]) -> None:
         self.verbs = [pair[0] for pair in verb_template_pairs]
         self.templates = sorted(set([pair[1] for pair in verb_template_pairs]))
         self.dict_conjug = self._construct_dict_conjug(verb_template_pairs)
         self._split_test_train()
+        return
 
     def _construct_dict_conjug(
-        self, verb_template_pairs: List[Tuple[str, str]]
+        self, verb_template_pairs: List[VerbTemplatePair]
     ) -> Dict[str, List[str]]:
         """
         | Populates the dictionary containing the conjugation templates.
@@ -210,7 +216,7 @@ class DataSet:
             ret[template].append(verb)
         return ret
 
-    def _split_test_train(self, threshold: int = 8, proportion: float = 0.5):
+    def _split_test_train(self, threshold: int = 8, proportion: float = 0.5) -> None:
         """
         Splits the template:verbs dict into a training and a testing set.
 
@@ -229,8 +235,8 @@ class DataSet:
             )
         self.min_threshold = threshold
         self.split_proportion = proportion
-        train_set = []
-        test_set = []
+        train_set: List[VerbTemplatePair] = []
+        test_set: List[VerbTemplatePair] = []
         for template, lverbs in self.dict_conjug.items():
             if len(lverbs) <= threshold:
                 for verb in lverbs:
@@ -243,14 +249,19 @@ class DataSet:
                     test_set.append((verb, template))
         random.shuffle(train_set)
         random.shuffle(test_set)
-        self.train_input = [elmt[0] for elmt in train_set]
-        self.train_labels = [self.templates.index(elmt[1]) for elmt in train_set]
-        self.test_input = [elmt[0] for elmt in test_set]
-        self.test_labels = [self.templates.index(elmt[1]) for elmt in test_set]
-        return
+        self.train_input: List[str] = [elmt[0] for elmt in train_set]
+        self.train_labels: List[int] = [
+            self.templates.index(elmt[1]) for elmt in train_set
+        ]
+        self.test_input: List[str] = [elmt[0] for elmt in test_set]
+        self.test_labels: List[int] = [
+            self.templates.index(elmt[1]) for elmt in test_set
+        ]
 
 
-def extract_verb_features(verb, lang: LangISOCode639_1, ngram_range: Tuple[int, int]):
+def extract_verb_features(
+    verb: str, lang: LangISOCode639_1, ngram_range: Tuple[int, int]
+) -> List[str]:
     """
     | Custom Vectorizer optimized for extracting verbs features.
     | The Vectorizer subclasses sklearn.feature_extraction.text.CountVectorizer .
@@ -268,7 +279,7 @@ def extract_verb_features(verb, lang: LangISOCode639_1, ngram_range: Tuple[int, 
         Language to analyze.
     :param ngram_range: tuple.
         The range of the ngram sliding window.
-    :return: list.
+    :return: list[str].
         List of the most salient features of the verb for the task of finding it's conjugation's class.
 
     """
@@ -309,7 +320,7 @@ def get_model_pickle_filename(lang: LangISOCode639_1) -> str:
     return "trained_model-{0}.pickle".format(lang)
 
 
-def save_model(model: Model):
+def save_model(model: Model) -> None:
     pickle_filename = get_model_pickle_filename(model.lang)
     with open(pickle_filename, "wb") as f:
         pickle.dump(model, f)
@@ -326,7 +337,7 @@ def save_model(model: Model):
     os.remove(pickle_filename)
 
 
-def load_model(lang):
+def load_model(lang: LangISOCode639_1) -> Model:
     model = None
     zip_filename = get_model_zip_filename(lang)
     try:

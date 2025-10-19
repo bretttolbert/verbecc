@@ -1,17 +1,20 @@
-from lxml import etree, objectify
-import os
-
 """
 This script was used to remove unwanted tense elements
 (e.g. compound tenses) from the mlconjug conjugation XML files
 """
+
+from lxml import etree, objectify
+import os
+from typing import List
+from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.mood import Mood
 
 working_dir = "../verbecc/data"
 in_file = "conjugations-ro.xml"
 out_file = "conjugations-ro.mod.xml"
 
 
-def remove_mood_tense(root, tenses_to_remove):
+def remove_mood_tense(root: etree._Element, tenses_to_remove: List[Tense]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -23,7 +26,7 @@ def remove_mood_tense(root, tenses_to_remove):
     print("removed {} elements".format(removed_elem_cnt))
 
 
-def remove_mood(root, moods_to_remove):
+def remove_mood(root: etree._Element, moods_to_remove: List[Mood]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -34,7 +37,13 @@ def remove_mood(root, moods_to_remove):
     print("removed {} elements".format(removed_elem_cnt))
 
 
-def move_tense(root, tense_name, old_mood, new_mood, remove_old_mood):
+def move_tense(
+    root: etree._Element,
+    tense_name: Tense,
+    old_mood: Mood,
+    new_mood: Mood,
+    remove_old_mood: bool,
+) -> None:
     moved_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -58,7 +67,7 @@ def move_tense(root, tense_name, old_mood, new_mood, remove_old_mood):
     print("moved {} elements".format(moved_elem_cnt))
 
 
-def main():
+def main() -> None:
     parser = etree.XMLParser(dtd_validation=False, encoding="utf-8")
     tree = etree.parse(os.path.join(working_dir, in_file), parser)
     root = tree.getroot()

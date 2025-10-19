@@ -52,7 +52,7 @@ class Conjugator:
     conjugation logic.
     """
 
-    def __init__(self, lang: LangISOCode639_1):
+    def __init__(self, lang: LangISOCode639_1) -> None:
         self._inflector = InflectorFactory.make_inflector(lang)
 
     def conjugate(
