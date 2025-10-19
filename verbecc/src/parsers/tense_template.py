@@ -29,7 +29,7 @@ class TenseTemplate:
             <p><i>ent</i></p>
     """
 
-    def __init__(self, tense_elem: etree._Element):
+    def __init__(self, tense_elem: etree._Element) -> None:
         self.name = tense_elem.tag
         """
         Normally each <p> elem defines six grammatical persons:

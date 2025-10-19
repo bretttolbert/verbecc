@@ -43,7 +43,7 @@ class Inflector(ABC):
     def lang(self) -> LangISOCode639_1:
         raise NotImplementedError
 
-    def __init__(self):
+    def __init__(self) -> None:
         self._verb_parser = VerbsParser(self.lang)
         self._conj_parser = ConjugationsParser(self.lang)
 
@@ -70,7 +70,9 @@ class Inflector(ABC):
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         return matches
 
-    def _get_verb_stem_from_template_name(self, infinitive: str, template_name: str):
+    def _get_verb_stem_from_template_name(
+        self, infinitive: str, template_name: str
+    ) -> str:
         """Get the verb stem given an ininitive and a colon-delimited template name.
         E.g. infinitive='parler' template_name='aim:er' -> 'parl'
         Note: Catalan overrides this base class implementation to allow looser matching
@@ -84,10 +86,10 @@ class Inflector(ABC):
             )
         return infinitive[: len(infinitive) - len(template_ending)]
 
-    def _is_impersonal_verb(self, infinitive: str):
+    def _is_impersonal_verb(self, infinitive: str) -> bool:
         return False
 
-    def _verb_can_be_reflexive(self, infinitive: str):
+    def _verb_can_be_reflexive(self, infinitive: str) -> bool:
         return not self._is_impersonal_verb(infinitive)
 
     def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
@@ -123,7 +125,7 @@ class Inflector(ABC):
     ) -> str:
         return ""
 
-    def _is_auxilary_verb_inflected(self, auxilary_verb: str):
+    def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return False
 
     def _get_infinitive_mood(self) -> Mood:
@@ -233,7 +235,7 @@ class Inflector(ABC):
         return verb_stem + ending
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.Masculine, imperative=True
+        self, person: Person, gender: Gender = Gender.Masculine, imperative: bool = True
     ) -> str:
         return " " + self._get_default_pronoun(person, gender)
 
@@ -241,8 +243,8 @@ class Inflector(ABC):
         return s
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s, is_reflexive: bool, mood: Mood, tense: Tense, person: Person
-    ):
+        self, s: str, is_reflexive: bool, mood: Mood, tense: Tense, person: Person
+    ) -> str:
         if is_reflexive:
             s += self._get_pronoun_suffix(person)
         return s
@@ -254,7 +256,7 @@ class Inflector(ABC):
 
     def _compound_primary_verb_conjugation_uses_infinitive(
         self, mood: Mood, tense: Tense
-    ):
+    ) -> bool:
         return False
 
     def _modify_aux_verb_conj_if_applicable(

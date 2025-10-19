@@ -33,7 +33,7 @@ class ConjugationInfo:
         template: str,
         translation_en: str,
         stem: str,
-    ):
+    ) -> None:
         self.infinitive = infinitive
         self.predicted = predicted
         self.pred_score = pred_score
@@ -41,7 +41,7 @@ class ConjugationInfo:
         self.translation_en = translation_en
         self.stem = stem
 
-    def __str__(self):
+    def __str__(self) -> str:
         return json.dumps(
             self,
             allow_nan=False,

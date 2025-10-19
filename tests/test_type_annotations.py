@@ -112,7 +112,6 @@ def pytest_generate_tests(metafunc):
         metafunc.parametrize("errors", errors)
 
 
-@pytest.mark.skip("Skipping until I fix all type annotations")
 def test_per_error(errors):
     """Test that fails for each missing type annotation found.
     Supposed to work with pytest using indirect parametrization.

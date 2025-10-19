@@ -24,7 +24,7 @@ class PersonEnding:
     this PersonEnding is for, e.g. for aim:er, "ez" is '2p' (second person plural)
     """
 
-    def __init__(self, p_elem: etree._Element, person: Person):
+    def __init__(self, p_elem: etree._Element, person: Person) -> None:
         self.person = person
         self.endings: List[str] = []
         for i_elem in p_elem.findall("i", None):

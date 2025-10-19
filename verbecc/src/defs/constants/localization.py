@@ -119,7 +119,7 @@ TENSE_MAP = {
 }
 
 
-def xmood(lang, m):
+def xmood(lang: LangISOCode639_1, m: Mood) -> Mood:
     """Takes a mood name in English and translates it to the specified language
 
     :raises: Exception if mood or lang doesn't exist
@@ -127,7 +127,7 @@ def xmood(lang, m):
     return MOOD_MAP[m][lang]
 
 
-def xtense(lang, t):
+def xtense(lang: LangISOCode639_1, t: Tense) -> Tense:
     """Takes a tense name in English and translates it to the specified language
 
     :raises: Exception if tense or lang doesn't exist

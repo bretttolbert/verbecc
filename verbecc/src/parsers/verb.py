@@ -6,7 +6,7 @@ from verbecc.src.defs.types.exceptions import VerbsParserError
 
 
 class Verb:
-    def __init__(self, v_elem: etree._Element):
+    def __init__(self, v_elem: etree._Element) -> None:
         if v_elem.tag != "v":
             raise VerbsParserError("Unexpected element")
         try:
