@@ -1,7 +1,10 @@
 import pytest
+from typing import List
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.tense import Tense
 from verbecc.src.conjugator.conjugator import Conjugator
 
 
@@ -11,7 +14,7 @@ def cg():
     yield cg
 
 
-def test_all_verbs_have_templates(cg):
+def test_all_verbs_have_templates(cg: Conjugator):
     verbs = cg.get_verbs()
     template_names = cg.get_template_names()
     missing_templates = set()
@@ -468,7 +471,11 @@ def test_all_verbs_have_templates(cg):
     ],
 )
 def test_inflector_pt_conjugate_mood_tense(
-    cg, infinitive, mood, tense, expected_result
+    cg: Conjugator,
+    infinitive: str,
+    mood: Mood,
+    tense: Tense,
+    expected_result: List[str],
 ):
     assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
 

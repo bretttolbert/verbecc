@@ -2982,7 +2982,7 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
         </present>""",
         parser=None,
     )
-    tense_name = "present"
+    tense = "present"
     tense_template = TenseTemplate(tense_elem)
     out = cg._conjugate_simple_mood_tense(verb_stem, "indicatiu", tense_template)
     assert len(out) == 6

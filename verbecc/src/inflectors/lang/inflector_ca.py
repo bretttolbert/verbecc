@@ -16,12 +16,10 @@ class InflectorCa(inflector.Inflector):
     def lang(self) -> LangISOCode639_1:
         return LangISOCode639_1.Català
 
-    def __init__(self):
+    def __init__(self) -> None:
         super(InflectorCa, self).__init__()
 
-    def _add_adverb_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Tense
-    ) -> str:
+    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
     def _get_default_pronoun(
@@ -72,27 +70,27 @@ class InflectorCa(inflector.Inflector):
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
     ) -> str:
         return "haver"
 
-    def _get_infinitive_mood_name(self):
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinitiu
 
-    def _get_indicative_mood_name(self):
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicatiu
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Subjuntiu
 
-    def _get_conditional_mood_name(self):
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood_name(self) -> str:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Participi
 
-    def _get_participle_tense_name(self) -> str:
+    def _get_participle_tense(self) -> Tense:
         return Tense.Particip
 
     def _get_alternate_hv_inflection(self, s: str) -> str:
@@ -124,7 +122,9 @@ class InflectorCa(inflector.Inflector):
         """
         return {}
 
-    def _get_verb_stem_from_template_name(self, infinitive: str, template_name: str):
+    def _get_verb_stem_from_template_name(
+        self, infinitive: str, template_name: str
+    ) -> str:
         """Get the verb stem given an ininitive and a colon-delimited template name.
         E.g. infinitive='parlar' template_name='cant:ar' -> 'parl'
 

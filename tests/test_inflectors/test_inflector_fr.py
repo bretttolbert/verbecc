@@ -108,7 +108,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
         </présent>""",
         parser=None,
     )
-    tense_name = "présent"
+    tense = "présent"
     tense_template = TenseTemplate(tense_elem)
     out = cg._conjugate_simple_mood_tense(verb_stem, "indicatif", tense_template)
     assert len(out) == 6

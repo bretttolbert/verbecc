@@ -14,13 +14,11 @@ class InflectorEs(Inflector):
     def lang(self) -> LangISOCode639_1:
         return LangISOCode639_1.Español
 
-    def __init__(self):
+    def __init__(self) -> None:
         super(InflectorEs, self).__init__()
 
-    def _add_adverb_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Tense
-    ) -> str:
-        if mood_name == Mood.Imperativo and tense_name == Tense.Negativo:
+    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
+        if mood == Mood.Imperativo and tense == Tense.Negativo:
             return "no " + s
         return s
 
@@ -73,27 +71,27 @@ class InflectorEs(Inflector):
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
     ) -> str:
         return "haber"
 
-    def _get_infinitive_mood_name(self) -> Mood:
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinitivo
 
-    def _get_indicative_mood_name(self) -> Mood:
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood_name(self) -> Mood:
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Subjuntivo
 
-    def _get_conditional_mood_name(self) -> Mood:
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood_name(self) -> Mood:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Participo
 
-    def _get_participle_tense_name(self) -> Mood:
+    def _get_participle_tense(self) -> Mood:
         return Tense.Participo
 
     def _get_alternate_hv_inflection(self, s: str) -> str:

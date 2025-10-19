@@ -590,7 +590,7 @@ def test_abolir():
     """
     Reproduce error:
 
-    >           co.template.mood_templates[persons_mood_name].tense_templates[aux_tense_name].person_endings]
+    >           co.template.mood_templates[persons_mood].tense_templates[aux_tense].person_endings]
     E       KeyError: 'presente'
 
     ../../PyVEnvs/Py311/lib/python3.11/site-packages/verbecc/inflector.py:259: KeyError
@@ -625,7 +625,7 @@ def test_inflector_es_conjugate_simple_mood_tense():
         </presente>""",
         parser=None,
     )
-    tense_name = "présent"
+    tense = "présent"
     tense_template = TenseTemplate(tense_elem)
     out = cg._conjugate_simple_mood_tense(verb_stem, "indicativo", tense_template)
     assert len(out) == 6

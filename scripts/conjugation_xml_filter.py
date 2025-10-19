@@ -39,7 +39,7 @@ def remove_mood(root: etree._Element, moods_to_remove: List[Mood]) -> None:
 
 def move_tense(
     root: etree._Element,
-    tense_name: Tense,
+    tense: Tense,
     old_mood: Mood,
     new_mood: Mood,
     remove_old_mood: bool,
@@ -52,7 +52,7 @@ def move_tense(
             for mood_elem in template_elem:
                 if mood_elem.tag == old_mood:
                     for tense_elem in mood_elem:
-                        if tense_elem.tag == tense_name:
+                        if tense_elem.tag == tense:
                             tense_elem_to_move = tense_elem
                             mood_elem.remove(tense_elem)
                             if remove_old_mood:

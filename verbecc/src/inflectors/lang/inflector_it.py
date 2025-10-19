@@ -6,6 +6,7 @@ from verbecc.src.defs.types.mood import MoodIt as Mood
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import TenseIt as Tense
+from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.utils import string_utils
 
@@ -33,7 +34,7 @@ class InflectorIt(Inflector):
     def lang(self) -> LangISOCode639_1:
         return LangISOCode639_1.Italiano
 
-    def __init__(self):
+    def __init__(self) -> None:
         super(InflectorIt, self).__init__()
 
     def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
@@ -67,12 +68,15 @@ class InflectorIt(Inflector):
         else:
             return "si " + s
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense) -> str:
+    def _add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return "che " + s
 
     def _get_default_pronoun(
-        self, person: Person, gender: Gender = Gender.Masculine, is_reflexive=False
-    ):
+        self,
+        person: Person,
+        gender: Gender = Gender.Masculine,
+        is_reflexive: bool = False,
+    ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:
             ret = "io"
@@ -112,28 +116,30 @@ class InflectorIt(Inflector):
             Tense.ParticipioPassato,
         ]
 
-    def _get_auxilary_verb(self, co, mood_name: Mood, tense_name: Tense) -> str:
+    def _get_auxilary_verb(
+        self, co: ConjugationObjects, mood: Mood, tense: Tense
+    ) -> str:
         ret = "avere"
         if co.verb.infinitive in VERBS_CONJUGATED_WITH_ESSERE or co.is_reflexive:
             ret = "essere"
         return ret
 
-    def _get_infinitive_mood_name(self) -> Mood:
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinito
 
-    def _get_indicative_mood_name(self) -> Mood:
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood_name(self) -> Mood:
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Congiuntivo
 
-    def _get_conditional_mood_name(self) -> Mood:
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Condizionale
 
-    def _get_participle_mood_name(self) -> Mood:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Participio
 
-    def _get_participle_tense_name(self) -> Tense:
+    def _get_participle_tense(self) -> Tense:
         return Tense.ParticipioPassato
 
     def _get_compound_conjugations_aux_verb_map(

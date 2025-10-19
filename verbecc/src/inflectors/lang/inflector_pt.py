@@ -14,27 +14,22 @@ class InflectorPt(Inflector):
     def lang(self) -> LangISOCode639_1:
         return LangISOCode639_1.Português
 
-    def __init__(self):
+    def __init__(self) -> None:
         super(InflectorPt, self).__init__()
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense) -> str:
-        if tense_name == Tense.Presente:
+    def _add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
+        if tense == Tense.Presente:
             return "que " + s
-        elif tense_name == Tense.PretéritoImperfeito:
+        elif tense == Tense.PretéritoImperfeito:
             return "se " + s
-        elif tense_name == Tense.Futuro:
+        elif tense == Tense.Futuro:
             return "quando " + s
         return s
 
-    def _add_adverb_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Tense
-    ) -> str:
-        if mood_name == Mood.Imperativo and tense_name == Tense.Negativo:
+    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
+        if mood == Mood.Imperativo and tense == Tense.Negativo:
             return "não " + s
-        elif (
-            mood_name == Mood.Infinitivo
-            and tense_name == Tense.InfinitivoPessoalPresente
-        ):
+        elif mood == Mood.Infinitivo and tense == Tense.InfinitivoPessoalPresente:
             return "por " + s
         return s
 
@@ -42,20 +37,22 @@ class InflectorPt(Inflector):
         self,
         s: str,
         is_reflexive: bool,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
         person: Person,
     ) -> str:
-        imperative = mood_name == Mood.Imperativo
+        imperative: bool = mood == Mood.Imperativo
         if imperative or (
-            mood_name == Mood.Infinitivo
-            and tense_name == Tense.InfinitivoPessoalPresente
+            mood == Mood.Infinitivo and tense == Tense.InfinitivoPessoalPresente
         ):
             s += " " + self._get_pronoun_suffix(person, imperative=imperative)
         return s
 
     def _get_default_pronoun(
-        self, person: Person, gender: Gender = Gender.Masculine, is_reflexive=False
+        self,
+        person: Person,
+        gender: Gender = Gender.Masculine,
+        is_reflexive: bool = False,
     ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:
@@ -89,7 +86,7 @@ class InflectorPt(Inflector):
         return ret
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.Masculine, imperative=True
+        self, person: Person, gender: Gender = Gender.Masculine, imperative: bool = True
     ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:
@@ -124,27 +121,27 @@ class InflectorPt(Inflector):
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
     ) -> str:
         return "ter"
 
-    def _get_infinitive_mood_name(self) -> Mood:
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinitivo
 
-    def _get_indicative_mood_name(self) -> Mood:
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood_name(self) -> Mood:
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Subjuntivo
 
-    def _get_conditional_mood_name(self) -> Mood:
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood_name(self) -> Mood:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Particípio
 
-    def _get_participle_tense_name(self) -> Tense:
+    def _get_participle_tense(self) -> Tense:
         return Tense.Particípio
 
     def _get_compound_conjugations_aux_verb_map(

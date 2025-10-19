@@ -3,6 +3,7 @@ from typing import Dict
 
 from verbecc.src.parsers.mood_template import MoodTemplate
 from verbecc.src.defs.types.exceptions import ConjugationTemplateError
+from verbecc.src.defs.types.mood import Mood
 
 
 class ConjugationTemplate:
@@ -12,7 +13,7 @@ class ConjugationTemplate:
         try:
             name_attrib = template_elem.get("name", default=None)
             self.name = str(name_attrib)
-            self.mood_templates: Dict[str, MoodTemplate] = {}
+            self.mood_templates: Dict[Mood, MoodTemplate] = {}
             for mood_elem in template_elem:  # type: ignore
                 mood_template = MoodTemplate(mood_elem)
                 self.mood_templates[mood_elem.tag.lower()] = mood_template

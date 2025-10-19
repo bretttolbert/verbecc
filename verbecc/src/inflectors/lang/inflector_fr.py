@@ -47,7 +47,7 @@ class InflectorFr(Inflector):
     def lang(self) -> LangISOCode639_1:
         return LangISOCode639_1.Français
 
-    def __init__(self):
+    def __init__(self) -> None:
         super(InflectorFr, self).__init__()
 
     def get_verbs_that_start_with(self, query: str, max_results: int) -> List[str]:
@@ -105,7 +105,7 @@ class InflectorFr(Inflector):
         else:
             return "se " + s
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense) -> str:
+    def _add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         if string_utils.starts_with_vowel(s, h_is_vowel=True):
             return "qu'" + s
         else:
@@ -164,8 +164,8 @@ class InflectorFr(Inflector):
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
     ) -> str:
         ret = "avoir"
         if co.verb.infinitive in VERBS_CONJUGATED_WITH_ETRE or co.is_reflexive:
@@ -175,22 +175,22 @@ class InflectorFr(Inflector):
     def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return auxilary_verb == "être"
 
-    def _get_infinitive_mood_name(self) -> str:
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinitif
 
-    def _get_indicative_mood_name(self) -> str:
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicatif
 
-    def _get_subjunctive_mood_name(self) -> str:
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Subjonctif
 
-    def _get_conditional_mood_name(self) -> str:
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Conditionnel
 
-    def _get_participle_mood_name(self) -> str:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Participe
 
-    def _get_participle_tense_name(self) -> str:
+    def _get_participle_tense(self) -> Tense:
         return Tense.ParticipePassé
 
     def _combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
@@ -203,10 +203,10 @@ class InflectorFr(Inflector):
         return ret
 
     def _add_present_participle_if_applicable(
-        self, s: str, is_reflexive: bool, tense_name: Tense
+        self, s: str, is_reflexive: bool, tense: Tense
     ) -> str:
         ret = s
-        if is_reflexive and tense_name == self._get_participle_tense_name():
+        if is_reflexive and tense == self._get_participle_tense():
             ret += "étant "
         return ret
 
@@ -214,23 +214,23 @@ class InflectorFr(Inflector):
         self,
         s: str,
         is_reflexive: bool,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
         person: Person,
     ) -> str:
         if is_reflexive:
-            if mood_name != Mood.Imperatif:
+            if mood != Mood.Imperatif:
                 s = self._add_reflexive_pronoun(s)
             else:
                 s += self._get_pronoun_suffix(person)
         return s
 
     def _compound_conjugation_not_applicable(
-        self, is_reflexive, mood_name, hv_tense_name
+        self, is_reflexive: bool, mood: Mood, hv_tense_name: Tense
     ) -> bool:
         return (
             is_reflexive
-            and mood_name == Mood.Imperatif
+            and mood == Mood.Imperatif
             and hv_tense_name == Tense.ImperatifPrésent
         )
 
