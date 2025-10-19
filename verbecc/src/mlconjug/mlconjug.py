@@ -61,7 +61,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.pipeline import Pipeline
 
 from verbecc.src.defs.constants.grammar_defines import ALPHABET
-
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 import logging
 
 from verbecc.src.defs.constants.config import DEVEL_MODE
@@ -80,7 +80,9 @@ logger = logging.getLogger(__name__)
 
 
 class TemplatePredictor:
-    def __init__(self, verb_template_pairs: List[Tuple[str, str]], lang: str):
+    def __init__(
+        self, verb_template_pairs: List[Tuple[str, str]], lang: LangISOCode639_1
+    ):
         self.data_set = DataSet(verb_template_pairs)
         model = load_model(lang)
         if not model:
@@ -111,7 +113,11 @@ class Model:
     """
 
     def __init__(
-        self, vectorizer=None, feature_selector=None, classifier=None, lang="fr"
+        self,
+        vectorizer=None,
+        feature_selector=None,
+        classifier=None,
+        lang: LangISOCode639_1 = LangISOCode639_1.Français,
     ):
         if not vectorizer:
             vectorizer = CountVectorizer(
@@ -244,7 +250,7 @@ class DataSet:
         return
 
 
-def extract_verb_features(verb, lang: str, ngram_range: Tuple[int, int]):
+def extract_verb_features(verb, lang: LangISOCode639_1, ngram_range: Tuple[int, int]):
     """
     | Custom Vectorizer optimized for extracting verbs features.
     | The Vectorizer subclasses sklearn.feature_extraction.text.CountVectorizer .
@@ -258,7 +264,7 @@ def extract_verb_features(verb, lang: str, ngram_range: Tuple[int, int]):
 
     :param verb: string.
         Verb to vectorize.
-    :param lang: string.
+    :param lang: LangISOCode639_1.
         Language to analyze.
     :param ngram_range: tuple.
         The range of the ngram sliding window.
@@ -295,11 +301,11 @@ def extract_verb_features(verb, lang: str, ngram_range: Tuple[int, int]):
     return final_ngrams
 
 
-def get_model_zip_filename(lang: str) -> str:
+def get_model_zip_filename(lang: LangISOCode639_1) -> str:
     return "data/models/trained_model-{}.zip".format(lang)
 
 
-def get_model_pickle_filename(lang: str) -> str:
+def get_model_pickle_filename(lang: LangISOCode639_1) -> str:
     return "trained_model-{0}.pickle".format(lang)
 
 

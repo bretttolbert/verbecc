@@ -6,7 +6,7 @@ from verbecc.src.defs.types.exceptions import ConjugationTemplateError
 
 
 class ConjugationTemplate:
-    def __init__(self, template_elem: etree._Element):
+    def __init__(self, template_elem: etree._Element) -> None:
         if template_elem.tag != "template":
             raise ConjugationTemplateError("Unexpected element")
         try:
@@ -32,5 +32,5 @@ class ConjugationTemplate:
                 "Error parsing {}: {}".format(etree.tostring(template_elem), str(e))
             )
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "name={} mood_templates={}".format(self.name, self.mood_templates)

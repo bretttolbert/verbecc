@@ -5,20 +5,20 @@ if sys.version_info >= (3, 11):
 else:
     from backports.strenum import StrEnum
 
-from typing import Dict, Tuple, Union
+from typing import Dict, Tuple
 
-from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 
 # map of ISO 639-1 codes to long names (in target language)
-SUPPORTED_LANGUAGES: Dict[Language, str] = {
-    Language.Català: "català",
-    Language.Español: "español",
-    Language.Français: "français",
-    Language.Italiano: "italiano",
-    Language.Português: "português",
-    Language.Română: "română",
+SUPPORTED_LANGUAGES: Dict[LangISOCode639_1, str] = {
+    LangISOCode639_1.Català: "català",
+    LangISOCode639_1.Español: "español",
+    LangISOCode639_1.Français: "français",
+    LangISOCode639_1.Italiano: "italiano",
+    LangISOCode639_1.Português: "português",
+    LangISOCode639_1.Română: "română",
 }
 
 # Order of grammatical persons in data structures
@@ -52,11 +52,32 @@ PARTICIPLE_INFLECTIONS: Tuple[
 )
 
 ALPHABET = {
-    "fr": {"vowels": "aáàâeêéèiîïoôöœuûùy", "consonants": "bcçdfghjklmnpqrstvwxyz"},
-    "en": {"vowels": "aeiouy", "consonants": "bcdfghjklmnpqrstvwxyz"},
-    "ca": {"vowels": "aáàâeéèiïoôuûùy", "consonants": "bcdfghjklmnñpqrstvwxyz"},
-    "es": {"vowels": "aáeiíoóuúy", "consonants": "bcdfghjklmnñpqrstvwxyz"},
-    "it": {"vowels": "aàeéèiìîoóòuùy", "consonants": "bcdfghjklmnpqrstvwxyz"},
-    "pt": {"vowels": "aàãááeêéiíoóõuúy", "consonants": "bcçdfghjklmnpqrstvwxyz"},
-    "ro": {"vowels": "aăâeiîouy", "consonants": "bcdfghjklmnpqrsșştțţvwxyz"},
+    LangISOCode639_1.Français: {
+        "vowels": "aáàâeêéèiîïoôöœuûùy",
+        "consonants": "bcçdfghjklmnpqrstvwxyz",
+    },
+    LangISOCode639_1.English: {
+        "vowels": "aeiouy",
+        "consonants": "bcdfghjklmnpqrstvwxyz",
+    },
+    LangISOCode639_1.Català: {
+        "vowels": "aáàâeéèiïoôuûùy",
+        "consonants": "bcdfghjklmnñpqrstvwxyz",
+    },
+    LangISOCode639_1.Español: {
+        "vowels": "aáeiíoóuúy",
+        "consonants": "bcdfghjklmnñpqrstvwxyz",
+    },
+    LangISOCode639_1.Español: {
+        "vowels": "aàeéèiìîoóòuùy",
+        "consonants": "bcdfghjklmnpqrstvwxyz",
+    },
+    LangISOCode639_1.Português: {
+        "vowels": "aàãááeêéiíoóõuúy",
+        "consonants": "bcçdfghjklmnpqrstvwxyz",
+    },
+    LangISOCode639_1.Română: {
+        "vowels": "aăâeiîouy",
+        "consonants": "bcdfghjklmnpqrsșştțţvwxyz",
+    },
 }

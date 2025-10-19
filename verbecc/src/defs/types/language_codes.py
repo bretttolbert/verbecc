@@ -6,14 +6,15 @@ else:
     from backports.strenum import StrEnum
 
 
-class Language(StrEnum):
+class LangISOCode639_1(StrEnum):
     """
-    Enum of supported languages as ISO 639-1 codes
+    Enum of supported languages as two-letter ISO 639-1 codes
     """
 
     Català = "ca"
     Français = "fr"
     Español = "es"
+    English = "en"
     Italiano = "it"
     Português = "pt"
     Română = "ro"

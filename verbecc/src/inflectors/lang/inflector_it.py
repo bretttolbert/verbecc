@@ -1,7 +1,7 @@
-from typing import Dict, Tuple
+from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.defs.types.mood import MoodIt as Mood
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
@@ -30,8 +30,8 @@ VERBS_CONJUGATED_WITH_ESSERE = [
 
 class InflectorIt(Inflector):
     @property
-    def lang(self) -> str:
-        return Language.Italiano
+    def lang(self) -> LangISOCode639_1:
+        return LangISOCode639_1.Italiano
 
     def __init__(self):
         super(InflectorIt, self).__init__()
@@ -39,7 +39,7 @@ class InflectorIt(Inflector):
     def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return auxilary_verb == "essere"
 
-    def _split_reflexive(self, infinitive) -> Tuple[bool, str]:
+    def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
         """
         E.g. Italian:
         "alzarsi" => (True, "alzare")
@@ -61,13 +61,13 @@ class InflectorIt(Inflector):
             infinitive = infinitive[2:]
         return is_reflexive, infinitive
 
-    def _add_reflexive_pronoun(self, s):
+    def _add_reflexive_pronoun(self, s: str) -> str:
         if string_utils.starts_with_vowel(s, h_is_vowel=True):
             return "s'" + s
         else:
             return "si " + s
 
-    def _add_subjunctive_relative_pronoun(self, s, tense_name):
+    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense) -> str:
         return "che " + s
 
     def _get_default_pronoun(
@@ -102,7 +102,7 @@ class InflectorIt(Inflector):
                 ret += " si"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self):
+    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Affermativo,
             Tense.negativo,
@@ -112,28 +112,28 @@ class InflectorIt(Inflector):
             Tense.ParticipioPassato,
         ]
 
-    def _get_auxilary_verb(self, co, mood_name, tense_name):
+    def _get_auxilary_verb(self, co, mood_name: Mood, tense_name: Tense) -> str:
         ret = "avere"
         if co.verb.infinitive in VERBS_CONJUGATED_WITH_ESSERE or co.is_reflexive:
             ret = "essere"
         return ret
 
-    def _get_infinitive_mood_name(self):
+    def _get_infinitive_mood_name(self) -> Mood:
         return Mood.Infinito
 
-    def _get_indicative_mood_name(self):
+    def _get_indicative_mood_name(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood_name(self) -> Mood:
         return Mood.Congiuntivo
 
-    def _get_conditional_mood_name(self):
+    def _get_conditional_mood_name(self) -> Mood:
         return Mood.Condizionale
 
-    def _get_participle_mood_name(self):
+    def _get_participle_mood_name(self) -> Mood:
         return Mood.Participio
 
-    def _get_participle_tense_name(self):
+    def _get_participle_tense_name(self) -> Tense:
         return Tense.ParticipioPassato
 
     def _get_compound_conjugations_aux_verb_map(

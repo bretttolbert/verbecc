@@ -1,31 +1,34 @@
 from typing import Dict, List, Tuple
 
+from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.defs.types.mood import MoodRo as Mood
 from verbecc.src.defs.types.tense import TenseRo as Tense
 from verbecc.src.inflectors.inflector import Inflector
-from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 
 class InflectorRo(Inflector):
     @property
-    def lang(self) -> str:
-        return "ro"
+    def lang(self) -> LangISOCode639_1:
+        return LangISOCode639_1.Română
 
     def __init__(self):
         super(InflectorRo, self).__init__()
 
-    def _add_subjunctive_relative_pronoun(self, s, tense_name):
+    def _add_subjunctive_relative_pronoun(self, s, tense_name: Tense) -> str:
         tokens = s.split(" ")
         if tense_name == Tense.Prezent:
             tokens.insert(1, "să")
-        elif tense_name == "perfect":
+        elif tense_name == Tense.Perfect:
             tokens.insert(1, "să fi")
         return " ".join(tokens)
 
-    def _add_adverb_if_applicable(self, s, mood_name, tense_name):
-        if mood_name == "imperativ" and tense_name == "negativ":
+    def _add_adverb_if_applicable(
+        self, s: str, mood_name: Mood, tense_name: Tense
+    ) -> str:
+        if mood_name == Mood.Imperativ and tense_name == Tense.Negativ:
             return "nu " + s
         return s
 
@@ -35,7 +38,7 @@ class InflectorRo(Inflector):
 
     def _get_default_pronoun(
         self, person: Person, gender: Gender = Gender.Masculine, is_reflexive=False
-    ):
+    ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:
             ret = "eu"
@@ -67,7 +70,7 @@ class InflectorRo(Inflector):
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self):
+    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Participiu,
             Tense.Afirmativ,
@@ -76,29 +79,31 @@ class InflectorRo(Inflector):
             Tense.Gerunziu,
         ]
 
-    def _get_auxilary_verb(self, co, mood_name: Mood, tense_name: Tense):
+    def _get_auxilary_verb(
+        self, co: ConjugationObjects, mood_name: Mood, tense_name: Tense
+    ) -> str:
         if tense_name in (Tense.Viitor1, Tense.Viitor2):
             return "voi"
         elif tense_name == Tense.Viitor1Popular:
             return co.verb.infinitive
         return "avea"
 
-    def _get_infinitive_mood_name(self):
+    def _get_infinitive_mood_name(self) -> Mood:
         return Mood.Infinitiv
 
-    def _get_indicative_mood_name(self):
+    def _get_indicative_mood_name(self) -> Mood:
         return Mood.Indicativ
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood_name(self) -> Mood:
         return Mood.Conjunctiv
 
-    def _get_conditional_mood_name(self):
+    def _get_conditional_mood_name(self) -> Mood:
         return Mood.Condițional
 
-    def _get_participle_mood_name(self):
+    def _get_participle_mood_name(self) -> Mood:
         return Mood.Participiu
 
-    def _get_participle_tense_name(self):
+    def _get_participle_tense_name(self) -> Tense:
         return Tense.Participiu
 
     def _get_compound_conjugations_aux_verb_map(
@@ -120,7 +125,7 @@ class InflectorRo(Inflector):
             },
         }
 
-    def _auxilary_verb_uses_alternate_conjugation(self, tense_name) -> bool:
+    def _auxilary_verb_uses_alternate_conjugation(self, tense_name: Tense) -> bool:
         return tense_name.startswith("viitor")
 
     def _compound_primary_verb_conjugation_uses_infinitive(
@@ -175,19 +180,19 @@ class InflectorRo(Inflector):
         Used by Romanian viitor-1-popular
         "eu o să fac, tu o să faci, ..."
         """
-        if mood_name == Mood.Indicativ and tense_name == "viitor-1-popular":
+        if mood_name == Mood.Indicativ and tense_name == Tense.Viitor1Popular:
             tokens = s.split()
             return tokens[0] + " o să " + tokens[1]
         return s
 
     def _compound_has_no_primary_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
         """Used for Romanian viitor-1-popular"""
-        if mood_name == Mood.Indicativ and tense_name == "viitor-1-popular":
+        if mood_name == Mood.Indicativ and tense_name == Tense.Viitor1Popular:
             return True
         return False
 
     def _compound_has_no_aux_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
         """Used for Romanian conjunctiv perfect"""
-        if mood_name == "conjunctiv" and tense_name == "perfect":
+        if mood_name == Mood.Conjunctiv and tense_name == Tense.Perfect:
             return True
         return False

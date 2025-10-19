@@ -1,6 +1,7 @@
 from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodEs as Mood
 from verbecc.src.defs.types.tense import TenseEs as Tense
@@ -10,8 +11,8 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 class InflectorEs(Inflector):
     @property
-    def lang(self) -> str:
-        return "es"
+    def lang(self) -> LangISOCode639_1:
+        return LangISOCode639_1.Español
 
     def __init__(self):
         super(InflectorEs, self).__init__()
@@ -60,7 +61,7 @@ class InflectorEs(Inflector):
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Participo,
             Tense.Gerundio,
@@ -77,22 +78,22 @@ class InflectorEs(Inflector):
     ) -> str:
         return "haber"
 
-    def _get_infinitive_mood_name(self):
+    def _get_infinitive_mood_name(self) -> Mood:
         return Mood.Infinitivo
 
-    def _get_indicative_mood_name(self):
+    def _get_indicative_mood_name(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood_name(self) -> Mood:
         return Mood.Subjuntivo
 
-    def _get_conditional_mood_name(self):
+    def _get_conditional_mood_name(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood_name(self) -> str:
+    def _get_participle_mood_name(self) -> Mood:
         return Mood.Participo
 
-    def _get_participle_tense_name(self) -> str:
+    def _get_participle_tense_name(self) -> Mood:
         return Tense.Participo
 
     def _get_alternate_hv_inflection(self, s: str) -> str:

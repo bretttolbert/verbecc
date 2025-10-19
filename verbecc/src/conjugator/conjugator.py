@@ -40,7 +40,7 @@ from verbecc.src.defs.types.conjugation import (
     Conjugation,
 )
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
-from verbecc.src.defs.constants import grammar_defines
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.utils.string_utils import strip_accents
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 
@@ -52,7 +52,7 @@ class Conjugator:
     conjugation logic.
     """
 
-    def __init__(self, lang: str):
+    def __init__(self, lang: LangISOCode639_1):
         self._inflector = InflectorFactory.make_inflector(lang)
 
     def conjugate(
@@ -248,7 +248,7 @@ class Conjugator:
         mood_name: Mood,
         alternates_behavior: AlternatesBehavior,
         gender: Gender,
-        conjugate_pronouns=True,
+        conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         ret = {}
         comp_conj_map = self._inflector._get_compound_conjugations_aux_verb_map()

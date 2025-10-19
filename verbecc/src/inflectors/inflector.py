@@ -22,6 +22,7 @@ from typing import Dict, List, Tuple
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.exceptions import ConjugatorError
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person, is_singular
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
@@ -39,7 +40,7 @@ class Inflector(ABC):
 
     @property
     @abstractmethod
-    def lang(self) -> str:
+    def lang(self) -> LangISOCode639_1:
         raise NotImplementedError
 
     def __init__(self):

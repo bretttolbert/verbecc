@@ -1,7 +1,6 @@
-from typing import Dict
-
-from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.defs.types.exceptions import InvalidLangError
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.inflectors.lang.inflector_ca import InflectorCa
 from verbecc.src.inflectors.lang.inflector_es import InflectorEs
 from verbecc.src.inflectors.lang.inflector_fr import InflectorFr
@@ -10,22 +9,12 @@ from verbecc.src.inflectors.lang.inflector_pt import InflectorPt
 from verbecc.src.inflectors.lang.inflector_ro import InflectorRo
 
 
-SUPPORTED_LANGUAGES: Dict[str, str] = {
-    "ca": "català",
-    "es": "español",
-    "fr": "français",
-    "it": "italiano",
-    "pt": "português",
-    "ro": "română",
-}
-
-
 class InflectorFactory:
     @classmethod
-    def make_inflector(cls, lang: str) -> Inflector:
+    def make_inflector(cls, lang: LangISOCode639_1) -> Inflector:
         """
-        :param lang: two-letter language code
-        :type lang: str
+        :param lang: two-letter language code (ISO 639-1 Code)
+        :type lang: LangISOCode639_1
         """
         ret = None
         if lang == "ca":

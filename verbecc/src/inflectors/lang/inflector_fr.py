@@ -2,7 +2,7 @@ from typing import Dict, List, Tuple
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.defs.types.mood import MoodFr as Mood
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import TenseFr as Tense
@@ -44,8 +44,8 @@ VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS = ["être", "aller", 
 
 class InflectorFr(Inflector):
     @property
-    def lang(self) -> str:
-        return Language.Français
+    def lang(self) -> LangISOCode639_1:
+        return LangISOCode639_1.Français
 
     def __init__(self):
         super(InflectorFr, self).__init__()
@@ -153,7 +153,7 @@ class InflectorFr(Inflector):
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.InfinitifPrésent,
             Tense.ParticipePresent,

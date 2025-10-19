@@ -15,13 +15,14 @@ from typing import List
 
 from verbecc.src.parsers.verb import Verb
 from verbecc.src.defs.types.exceptions import VerbNotFoundError, VerbsParserError
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.defs.constants import config
 from verbecc.src.mlconjug import mlconjug
 from verbecc.src.utils import string_utils
 
 
 class VerbsParser:
-    def __init__(self, lang: str = "fr"):
+    def __init__(self, lang: LangISOCode639_1 = LangISOCode639_1.Français):
         self.verbs: List[Verb] = []
         parser = etree.XMLParser(encoding="utf-8", remove_blank_text=True, remove_comments=True)  # type: ignore
         source = files("verbecc.data.xml.verbs").joinpath("verbs-{}.xml".format(lang))

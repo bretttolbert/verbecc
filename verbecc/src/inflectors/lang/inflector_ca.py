@@ -5,7 +5,7 @@ from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodCa as Mood
 from verbecc.src.defs.types.tense import TenseCa as Tense
 from verbecc.src.defs.types import exceptions
-from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.language_codes import LangISOCode639_1
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
@@ -13,8 +13,8 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 class InflectorCa(inflector.Inflector):
     @property
-    def lang(self) -> str:
-        return Language.Català
+    def lang(self) -> LangISOCode639_1:
+        return LangISOCode639_1.Català
 
     def __init__(self):
         super(InflectorCa, self).__init__()
@@ -61,7 +61,7 @@ class InflectorCa(inflector.Inflector):
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Particip,
             Tense.Gerundi,
