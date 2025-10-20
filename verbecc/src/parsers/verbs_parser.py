@@ -22,7 +22,7 @@ from verbecc.src.utils import string_utils
 
 
 class VerbsParser:
-    def __init__(self, lang: LangISOCode639_1 = LangISOCode639_1.Français) -> None:
+    def __init__(self, lang: LangISOCode639_1 = LangISOCode639_1.Fr) -> None:
         self.verbs: List[Verb] = []
         parser = etree.XMLParser(encoding="utf-8", remove_blank_text=True, remove_comments=True)  # type: ignore
         source = files("verbecc.data.xml.verbs").joinpath("verbs-{}.xml".format(lang))

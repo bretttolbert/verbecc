@@ -173,15 +173,15 @@ class Inflector(ABC):
         return PARTICIPLE_INFLECTIONS.index(participle_inflection)
 
     def _get_default_participle_inflection_for_person(
-        self, person: Person, gender: Gender = Gender.Masculine
+        self, person: Person, gender: Gender = Gender.M
     ) -> ParticipleInflection:
         if is_singular(person):
-            if gender == Gender.Masculine:
+            if gender == Gender.M:
                 return ParticipleInflection.MasculineSingular
             else:
                 return ParticipleInflection.FeminineSingular
         else:
-            if gender == Gender.Masculine:
+            if gender == Gender.M:
                 return ParticipleInflection.MasculinePlural
             else:
                 return ParticipleInflection.FemininePlural
@@ -189,7 +189,7 @@ class Inflector(ABC):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         is_reflexive: bool = False,
     ) -> str:
         return ""
@@ -235,7 +235,7 @@ class Inflector(ABC):
         return verb_stem + ending
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.Masculine, imperative: bool = True
+        self, person: Person, gender: Gender = Gender.M, imperative: bool = True
     ) -> str:
         return " " + self._get_default_pronoun(person, gender)
 

@@ -12,7 +12,7 @@ from verbecc.src.inflectors.inflector import Inflector
 class InflectorPt(Inflector):
     @property
     def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Português
+        return LangISOCode639_1.Pt
 
     def __init__(self) -> None:
         super(InflectorPt, self).__init__()
@@ -51,7 +51,7 @@ class InflectorPt(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -65,7 +65,7 @@ class InflectorPt(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "ele"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "ela"
             if is_reflexive:
                 ret += " se"
@@ -79,14 +79,14 @@ class InflectorPt(Inflector):
                 ret += " se"
         elif person == Person.ThirdPersonPlural:
             ret = "eles"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "elas"
             if is_reflexive:
                 ret += " se"
         return ret
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.Masculine, imperative: bool = True
+        self, person: Person, gender: Gender = Gender.M, imperative: bool = True
     ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:

@@ -32,7 +32,7 @@ VERBS_CONJUGATED_WITH_ESSERE = [
 class InflectorIt(Inflector):
     @property
     def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Italiano
+        return LangISOCode639_1.It
 
     def __init__(self) -> None:
         super(InflectorIt, self).__init__()
@@ -74,7 +74,7 @@ class InflectorIt(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -88,7 +88,7 @@ class InflectorIt(Inflector):
                 ret += " ti"
         elif person == Person.ThirdPersonSingular:
             ret = "lui"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "lei"
             if is_reflexive:
                 ret += " si"

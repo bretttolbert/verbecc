@@ -13,12 +13,12 @@ from verbecc.src.defs.types.person import Person
 
 # map of ISO 639-1 codes to long names (in target language)
 SUPPORTED_LANGUAGES: Dict[LangISOCode639_1, str] = {
-    LangISOCode639_1.Català: "català",
-    LangISOCode639_1.Español: "español",
-    LangISOCode639_1.Français: "français",
-    LangISOCode639_1.Italiano: "italiano",
-    LangISOCode639_1.Português: "português",
-    LangISOCode639_1.Română: "română",
+    LangISOCode639_1.Ca: "català",
+    LangISOCode639_1.Es: "español",
+    LangISOCode639_1.Fr: "français",
+    LangISOCode639_1.It: "italiano",
+    LangISOCode639_1.Pt: "português",
+    LangISOCode639_1.Ro: "română",
 }
 
 # Order of grammatical persons in data structures
@@ -52,31 +52,31 @@ PARTICIPLE_INFLECTIONS: Tuple[
 )
 
 ALPHABET = {
-    LangISOCode639_1.Français: {
+    LangISOCode639_1.Fr: {
         "vowels": "aáàâeêéèiîïoôöœuûùy",
         "consonants": "bcçdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.English: {
+    LangISOCode639_1.En: {
         "vowels": "aeiouy",
         "consonants": "bcdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.Català: {
+    LangISOCode639_1.Ca: {
         "vowels": "aáàâeéèiïoôuûùy",
         "consonants": "bcdfghjklmnñpqrstvwxyz",
     },
-    LangISOCode639_1.Español: {
+    LangISOCode639_1.Es: {
         "vowels": "aáeiíoóuúy",
         "consonants": "bcdfghjklmnñpqrstvwxyz",
     },
-    LangISOCode639_1.Español: {
+    LangISOCode639_1.Es: {
         "vowels": "aàeéèiìîoóòuùy",
         "consonants": "bcdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.Português: {
+    LangISOCode639_1.Pt: {
         "vowels": "aàãááeêéiíoóõuúy",
         "consonants": "bcçdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.Română: {
+    LangISOCode639_1.Ro: {
         "vowels": "aăâeiîouy",
         "consonants": "bcdfghjklmnpqrsșştțţvwxyz",
     },

@@ -93,22 +93,22 @@ def test_inflector_it_add_subjunctive_relative_pronoun(cg):
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.Masculine, False, "io"),
-        (Person.FirstPersonSingular, Gender.Masculine, True, "io mi"),
-        (Person.SecondPersonSingular, Gender.Masculine, False, "tu"),
-        (Person.SecondPersonSingular, Gender.Masculine, True, "tu ti"),
-        (Person.ThirdPersonSingular, Gender.Masculine, False, "lui"),
-        (Person.ThirdPersonSingular, Gender.Masculine, True, "lui si"),
-        (Person.ThirdPersonSingular, Gender.Feminine, False, "lei"),
-        (Person.ThirdPersonSingular, Gender.Feminine, True, "lei si"),
-        (Person.FirstPersonPlural, Gender.Masculine, False, "noi"),
-        (Person.FirstPersonPlural, Gender.Masculine, True, "noi ci"),
-        (Person.SecondPersonPlural, Gender.Masculine, False, "voi"),
-        (Person.SecondPersonPlural, Gender.Masculine, True, "voi vi"),
-        (Person.ThirdPersonPlural, Gender.Masculine, False, "loro"),
-        (Person.ThirdPersonPlural, Gender.Masculine, True, "loro si"),
-        (Person.ThirdPersonPlural, Gender.Feminine, False, "loro"),
-        (Person.ThirdPersonPlural, Gender.Feminine, True, "loro si"),
+        (Person.FirstPersonSingular, Gender.M, False, "io"),
+        (Person.FirstPersonSingular, Gender.M, True, "io mi"),
+        (Person.SecondPersonSingular, Gender.M, False, "tu"),
+        (Person.SecondPersonSingular, Gender.M, True, "tu ti"),
+        (Person.ThirdPersonSingular, Gender.M, False, "lui"),
+        (Person.ThirdPersonSingular, Gender.M, True, "lui si"),
+        (Person.ThirdPersonSingular, Gender.F, False, "lei"),
+        (Person.ThirdPersonSingular, Gender.F, True, "lei si"),
+        (Person.FirstPersonPlural, Gender.M, False, "noi"),
+        (Person.FirstPersonPlural, Gender.M, True, "noi ci"),
+        (Person.SecondPersonPlural, Gender.M, False, "voi"),
+        (Person.SecondPersonPlural, Gender.M, True, "voi vi"),
+        (Person.ThirdPersonPlural, Gender.M, False, "loro"),
+        (Person.ThirdPersonPlural, Gender.M, True, "loro si"),
+        (Person.ThirdPersonPlural, Gender.F, False, "loro"),
+        (Person.ThirdPersonPlural, Gender.F, True, "loro si"),
     ],
 )
 def test_inflector_it_get_default_pronoun(
@@ -211,7 +211,7 @@ def test_passato_prossimo(cg, infinitive, expected_result):
     ],
 )
 def test_alzarsi_indicative_present(cg, infinitive, expected_result):
-    conj = cg.conjugate(infinitive, gender=Gender.Feminine)
+    conj = cg.conjugate(infinitive, gender=Gender.F)
     moods_conj = cast(MoodsConjugation, conj["moods"])
     assert moods_conj["indicativo"]["presente"] == expected_result
 
@@ -235,7 +235,7 @@ def test_alzarsi_indicative_present(cg, infinitive, expected_result):
 def test_inflector_it_alzarsi_indicativo_passato_prossimo(
     cg, infinitive, expected_result
 ):
-    conj = cg.conjugate(infinitive, gender=Gender.Feminine)
+    conj = cg.conjugate(infinitive, gender=Gender.F)
     moods_conj = cast(MoodsConjugation, conj["moods"])
     assert moods_conj["indicativo"]["passato-prossimo"] == expected_result
 
@@ -251,7 +251,7 @@ def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
         "presente",
         False,
         AlternatesBehavior.All,
-        Gender.Masculine,
+        Gender.M,
         True,
     )
     assert ret == [

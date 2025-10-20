@@ -6,12 +6,12 @@
 [![GitHub Actions CI status](https://github.com/bretttolbert/verbecc/actions/workflows/python-package.yml/badge.svg)](https://github.com/bretttolbert/verbecc/actions/workflows/python-package.yml?query=branch%3Amain)
 
 ##### [EN] Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian, Romanian and Catalan, enhanced by machine learning
-##### [CA] Verbs completament conjugats: conjugacions verbals per a francès, espanyol, portuguès, italià, romanès i català, millorades per l'aprenentatge automàtic
-##### [ES] Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués, italiano, rumano y catalán, mejoradas por aprendizaje automático
-##### [FR] Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais, italien, roumain et catalan, à l'aide de l'apprentissage automatique
-##### [IT] Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, italiano, rumeno e catalano, migliorate dall'apprendimento automatico
-##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano, romeno e catalão, aprimoradas pelo aprendizado de máquina
-##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, română și catalană, îmbunătățite de învățarea automată
+##### [CA] Verbs completament conjugats: conjugacions verbals per a francès, espanyol, portuguès, italià, romanès i CA, millorades per l'aprenentatge automàtic
+##### [ES] Verbos completamente conjugados: conjugaciones de verbos en francés, ES, portugués, IT, rumano y catalán, mejoradas por aprendizaje automático
+##### [FR] Verbes complètement conjugués: conjugaisons des verbes FR, espagnol, portugais, italien, roumain et catalan, à l'aide de l'apprentissage automatique
+##### [IT] Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, IT, rumeno e catalano, migliorate dall'apprendimento automatico
+##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, PT, IT, romeno e catalão, aprimoradas pelo aprendizado de máquina
+##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, RO și catalană, îmbunătățite de învățarea automată
 
 ### Live Demo
 - [Web GUI](http://verbe.cc)
@@ -34,10 +34,17 @@ pip install .
 
 ### Examples
 
+In the following examples, this `import` statement will be required:
+
+```python
+>>> from verbecc import Conjugator, LangISOCode639_1 as Lang
+```
+
 In the following examples, the following function will be used to make the output more readable:
 
 ```python
 import json
+
 def printjson(c):
     print(json.dumps(c, indent=4, ensure_ascii=False))
 ```
@@ -45,7 +52,7 @@ def printjson(c):
 - [Conjugation Example: French manger (to eat)](#conjugation-example-french-manger-to-eat)
 - [ML Prediction Conjugation Example: French uberiser (to Uberize)](#ml-prediction-conjugation-example-french-uberiser-to-uberize)
 - [Multi-Language Conjugation](#example-multi-language-conjugation)
-- [Multi-Language Conjugation using English mood and tense names via localization module](#example-multi-language-conjugation-using-english-mood-and-tense-names-via-localization-module)
+- [Multi-Language Conjugation using EN mood and tense names via localization module](#example-multi-language-conjugation-using-EN-mood-and-tense-names-via-localization-module)
 - [Catalan `ser` (to be) - with pronouns, without alternate conjugations (original behavior)](#example-catalan-ser-to-be)
 - [Catalan `ser` (to be) - without pronouns, including alternate conjugations (new features in 1.9.7)](#example-catalan-ser-to-be-with-alternate-conjugations-without-pronouns)
 - [Spanish ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-spanish-ser-to-be)
@@ -54,10 +61,19 @@ def printjson(c):
 - [Portuguese ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-portuguese--ser-to-be)
 - [Romanian fi (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-romanian-fi-to-be)
 
+### Typing
+
+Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [src/defs/types/conjugation.py](./verbecc/src/defs/types/conjugation.py)).
+
+Typing transition guide:
+
+- Instead of `lang='fr'` use `lang=Lang.Fr` but first you must `from verbecc import LangISOCode_639_1 as Lang`
+- Instead of `mood="indicatif"` use `mood=Mood.Indicatif` but first you must `from verbecc import MoodFr as Mood`
+- Instead of `tense="présent"` use `tense=Tense.Présent` but first you must `from verbecc import TenseFr as Tense`
+- Instead of `gender='f'` use `gender=Gender.F` but first you must `from verbecc import Gender`
 
 ### Conjugation Example: French `manger` (to eat)
 ```python
->>> from verbecc import Conjugator
 >>> cg = Conjugator(lang='fr') # If this is the first run, it will take a minute for the model to train, 
                                # but it should save the model .zip file and run fast subsequently
 >>> cg.conjugate('manger')
@@ -416,7 +432,7 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 ['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
 ```
 
-### Example: Multi-Language Conjugation using English mood and tense names via `localization` module
+### Example: Multi-Language Conjugation using EN mood and tense names via `localization` module
 
 ```python
 >>> from verbecc import Conjugator

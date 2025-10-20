@@ -12,7 +12,7 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 class InflectorEs(Inflector):
     @property
     def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Español
+        return LangISOCode639_1.Es
 
     def __init__(self) -> None:
         super(InflectorEs, self).__init__()
@@ -25,7 +25,7 @@ class InflectorEs(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -39,7 +39,7 @@ class InflectorEs(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "él"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
@@ -53,7 +53,7 @@ class InflectorEs(Inflector):
                 ret += " os"
         elif person == Person.ThirdPersonPlural:
             ret = "ellos"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "ellas"
             if is_reflexive:
                 ret += " se"

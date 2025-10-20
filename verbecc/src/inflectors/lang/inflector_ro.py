@@ -12,7 +12,7 @@ from verbecc.src.inflectors.inflector import Inflector
 class InflectorRo(Inflector):
     @property
     def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Română
+        return LangISOCode639_1.Ro
 
     def __init__(self) -> None:
         super(InflectorRo, self).__init__()
@@ -37,7 +37,7 @@ class InflectorRo(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -51,7 +51,7 @@ class InflectorRo(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "el"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "ea"
             if is_reflexive:
                 ret += " se"
@@ -65,7 +65,7 @@ class InflectorRo(Inflector):
                 ret += " vă"
         elif person == Person.ThirdPersonPlural:
             ret = "ei"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "ele"
             if is_reflexive:
                 ret += " se"

@@ -59,7 +59,7 @@ class Conjugator:
         self,
         infinitive: str,
         include_alternates: bool = False,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
     ) -> Conjugation:
         """
@@ -98,7 +98,7 @@ class Conjugator:
         infinitive: str,
         mood: Mood,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         co = self._get_conj_obs(infinitive)
@@ -145,7 +145,7 @@ class Conjugator:
         mood: Mood,
         tense: Tense,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
         co = self._get_conj_obs(infinitive)
@@ -158,7 +158,7 @@ class Conjugator:
         co: ConjugationObjects,
         mood: Mood,
         alternates_behavior: AlternatesBehavior,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         if mood not in co.template.mood_templates.keys():
@@ -182,7 +182,7 @@ class Conjugator:
         mood: Mood,
         tense: Tense,
         alternates_behavior: AlternatesBehavior,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
         """
@@ -226,7 +226,7 @@ class Conjugator:
         co: ConjugationObjects,
         mood: Mood,
         alternates_behavior: AlternatesBehavior,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         ret = {}
@@ -273,7 +273,7 @@ class Conjugator:
         aux_tense: Tense,
         aux_uses_alternate: bool,
         alternates_behavior: AlternatesBehavior,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
         """
@@ -356,7 +356,7 @@ class Conjugator:
         aux_verb: str,
         aux_conj: List[str],
         alternates_behavior: AlternatesBehavior,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
     ) -> TenseConjugation:
         """
         Forms a compound conjugation composed of an auxiliary verb (aka helping verb)
@@ -509,7 +509,7 @@ class Conjugator:
         tense_template: TenseTemplate,
         is_reflexive: bool = False,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         conjugate_pronouns: bool = True,
         modify_stem_strip_accents: bool = False,
     ) -> TenseConjugation:

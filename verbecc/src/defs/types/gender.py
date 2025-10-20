@@ -7,5 +7,5 @@ else:
 
 
 class Gender(StrEnum):
-    Masculine = "m"
-    Feminine = "f"
+    M = "m"
+    F = "f"

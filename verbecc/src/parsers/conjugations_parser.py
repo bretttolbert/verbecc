@@ -23,7 +23,7 @@ from verbecc.src.defs.types.exceptions import (
 
 
 class ConjugationsParser:
-    def __init__(self, lang: LangISOCode639_1 = LangISOCode639_1.Français) -> None:
+    def __init__(self, lang: LangISOCode639_1 = LangISOCode639_1.Fr) -> None:
         self.templates: List[ConjugationTemplate] = []
         parser = etree.XMLParser(
             dtd_validation=True, encoding="utf-8", remove_blank_text=True, remove_comments=True  # type: ignore

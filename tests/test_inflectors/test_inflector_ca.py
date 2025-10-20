@@ -42,7 +42,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo sóc",
                 "tu ets",
@@ -57,7 +57,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo era",
                 "tu eres",
@@ -72,7 +72,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo fui",
                 "tu fores",
@@ -87,7 +87,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo seré",
                 "tu seràs",
@@ -102,7 +102,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo sigui",
                 "tu siguis",
@@ -117,7 +117,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo fos",
                 "tu fossis",
@@ -132,7 +132,7 @@ def test_find_verb_by_infinitive(cg):
             "condicional",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo seria",
                 "tu series",
@@ -147,7 +147,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["sigues", "sigui", "siguem", "sigueu", "siguin"],
         ),
         (
@@ -155,7 +155,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parlo",
                 "tu parles",
@@ -170,7 +170,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parlava",
                 "tu parlaves",
@@ -185,7 +185,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parlí",
                 "tu parlares",
@@ -200,7 +200,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parlaré",
                 "tu parlaràs",
@@ -215,7 +215,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parli",
                 "tu parlis",
@@ -230,7 +230,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parlés",
                 "tu parlessis",
@@ -245,7 +245,7 @@ def test_find_verb_by_infinitive(cg):
             "condicional",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parlaria",
                 "tu parlaries",
@@ -260,7 +260,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo estic",
                 "tu estàs",
@@ -275,7 +275,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo estava",
                 "tu estaves",
@@ -290,7 +290,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo estiguí",
                 "tu estigueres",
@@ -305,7 +305,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo estaré",
                 "tu estaràs",
@@ -320,7 +320,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo estigui",
                 "tu estiguis",
@@ -335,7 +335,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo estigués",
                 "tu estiguessis",
@@ -350,7 +350,7 @@ def test_find_verb_by_infinitive(cg):
             "condicional",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo estaria",
                 "tu estaries",
@@ -365,7 +365,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo he",
                 "tu has",
@@ -380,7 +380,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo havia",
                 "tu havies",
@@ -395,7 +395,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo haguí",
                 "tu hagueres",
@@ -410,7 +410,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo hauré",
                 "tu hauràs",
@@ -425,7 +425,7 @@ def test_find_verb_by_infinitive(cg):
             "condicional",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo hauria",
                 "tu hauries",
@@ -440,7 +440,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo hagi",
                 "tu hagis",
@@ -455,7 +455,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo tinc",
                 "tu tens",
@@ -470,7 +470,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo faig",
                 "tu fas",
@@ -485,7 +485,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo feia",
                 "tu feies",
@@ -500,7 +500,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo serveixo",
                 "tu serveixes",
@@ -515,7 +515,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo veig",
                 "tu veus",
@@ -530,7 +530,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo abandono",
                 "tu abandones",
@@ -545,7 +545,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo rebo",
                 "tu reps",
@@ -560,7 +560,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo cabo",
                 "tu caps",
@@ -575,7 +575,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo començo",
                 "tu comences",
@@ -590,7 +590,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo enaiguo",
                 "tu enaigües",
@@ -605,7 +605,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo envejo",
                 "tu enveges",
@@ -620,7 +620,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo esglaio",
                 "tu esglaies",
@@ -635,7 +635,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo trenco",
                 "tu trenques",
@@ -650,7 +650,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo perdo",
                 "tu perds",
@@ -665,7 +665,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo caic",
                 "tu caus",
@@ -680,7 +680,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo collo",
                 "tu colles",
@@ -695,7 +695,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo cullo",
                 "tu culls",
@@ -710,7 +710,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo dormo",
                 "tu dorms",
@@ -725,7 +725,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo tusso",
                 "tu tusses",
@@ -740,7 +740,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo culli",
                 "tu cullis",
@@ -755,7 +755,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo dormi",
                 "tu dormis",
@@ -770,7 +770,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo tussi",
                 "tu tussis",
@@ -785,7 +785,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo dic",
                 "tu dius",
@@ -800,7 +800,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo vaig",
                 "tu vas",
@@ -815,7 +815,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo puc",
                 "tu pots",
@@ -830,7 +830,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo arribo",
                 "tu arribes",
@@ -845,7 +845,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo trobo",
                 "tu trobes",
@@ -860,7 +860,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo parteixo",
                 "tu parteixes",
@@ -875,7 +875,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo moro",
                 "tu mors",
@@ -890,7 +890,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo ixo",
                 "tu ixes",
@@ -905,7 +905,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo jec",
                 "tu jeus",
@@ -920,7 +920,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo jec",
                 "tu jeus",
@@ -935,7 +935,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo pago",
                 "tu pagues",
@@ -950,7 +950,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo menteixo",
                 "tu menteixes",
@@ -965,7 +965,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo desmenteixo",
                 "tu desmenteixes",
@@ -980,7 +980,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo naixo",
                 "tu naixes",
@@ -995,7 +995,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo naixo",
                 "tu naixes",
@@ -1010,7 +1010,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo obro",
                 "tu obres",
@@ -1025,7 +1025,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo ric",
                 "tu rius",
@@ -1040,7 +1040,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo pertanyo",
                 "tu pertanys",
@@ -1055,7 +1055,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo pertanyí",
                 "tu pertanyeres",
@@ -1070,7 +1070,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.SecondOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo pertanguí",
                 "tu pertangueres",
@@ -1085,7 +1085,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo fenyo",
                 "tu fenys",
@@ -1100,7 +1100,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo corro",
                 "tu corres",
@@ -1115,7 +1115,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo transcorro",
                 "tu transcorres",
@@ -1130,7 +1130,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             [
                 "jo imprimeixo",
                 "tu imprimeixes",
@@ -1145,7 +1145,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo imprimeixo",
                 "tu imprimeixes",
@@ -1160,7 +1160,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo vindo",
                 "tu vinds",
@@ -1175,7 +1175,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo torço",
                 "tu torces",
@@ -1190,7 +1190,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "-",
                 "-",
@@ -1205,7 +1205,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo obeeixo",
                 "tu obeeixes",
@@ -1220,7 +1220,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo beneeixo",
                 "tu beneeixes",
@@ -1235,7 +1235,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo colc",
                 "tu cols",
@@ -1250,7 +1250,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo dissolc",
                 "tu dissols",
@@ -1265,7 +1265,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo percudeixo",
                 "tu percudeixes",
@@ -1280,7 +1280,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo percudo",
                 "tu percuts",
@@ -1295,7 +1295,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo permeto",
                 "tu permets",
@@ -1310,7 +1310,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo desconec",
                 "tu desconeixes",
@@ -1325,7 +1325,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo desconeguí",
                 "tu desconegueres",
@@ -1340,7 +1340,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo parec",
                 "tu pareixes",
@@ -1355,7 +1355,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo expenc",
                 "tu expens",
@@ -1370,7 +1370,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo contenc",
                 "tu contens",
@@ -1385,7 +1385,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo atenyo",
                 "tu atenys",
@@ -1400,7 +1400,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo descloc",
                 "tu desclous",
@@ -1415,7 +1415,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["desclòs", "desclosa", "desclosos", "descloses"],
         ),
         (
@@ -1423,7 +1423,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo cloc",
                 "tu clous",
@@ -1438,7 +1438,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo abrevio",
                 "tu abrevies",
@@ -1453,7 +1453,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo abreviï",
                 "tu abreviïs",
@@ -1468,7 +1468,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["abrevia", "abreviï", "abreviem", "abrevieu", "abreviïn"],
         ),
         (
@@ -1476,7 +1476,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo componc",
                 "tu compons",
@@ -1491,7 +1491,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo contenc",
                 "tu contens",
@@ -1506,7 +1506,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo compleixo",
                 "tu compleixes",
@@ -1521,7 +1521,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo estableixo",
                 "tu estableixes",
@@ -1536,7 +1536,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo complac",
                 "tu complaus",
@@ -1551,7 +1551,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo desplac",
                 "tu desplaus",
@@ -1566,7 +1566,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["complagut", "complaguda", "complaguts", "complagudes"],
         ),
         (
@@ -1574,7 +1574,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo acreixo",
                 "tu acreixes",
@@ -1589,7 +1589,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo acreixí",
                 "tu acreixeres",
@@ -1604,7 +1604,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo acresquí",
                 "tu acresqueres",
@@ -1619,7 +1619,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo acreixés",
                 "tu acreixessis",
@@ -1634,7 +1634,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo acresqués",
                 "tu acresquessis",
@@ -1649,7 +1649,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo mereixo",
                 "tu mereixes",
@@ -1664,7 +1664,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo confonc",
                 "tu confons",
@@ -1679,7 +1679,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo consterno",
                 "tu consternes",
@@ -1694,7 +1694,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo contradic",
                 "tu contradius",
@@ -1709,7 +1709,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["contradit", "contradida", "contradits", "contradides"],
         ),
         (
@@ -1717,7 +1717,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["dit", "dita", "dits", "dites"],
         ),
         (
@@ -1725,7 +1725,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo crec",
                 "tu creus",
@@ -1740,7 +1740,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo creuré",
                 "tu creuràs",
@@ -1755,7 +1755,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo duc",
                 "tu duus",
@@ -1770,7 +1770,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo duc",
                 "tu dus",
@@ -1785,7 +1785,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["duu", "dugui", "duguem", "dueu", "duguin"],
         ),
         (
@@ -1793,7 +1793,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.SecondOnly,
-            Gender.Masculine,
+            Gender.M,
             ["du", "dugui", "duguem", "dueu", "duguin"],
         ),
         (
@@ -1801,7 +1801,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo descuso",
                 "tu descuses",
@@ -1816,7 +1816,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo descusi",
                 "tu descusis",
@@ -1831,7 +1831,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["descús", "descusi", "descosim", "descosiu", "descusin"],
         ),
         (
@@ -1839,7 +1839,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo valc",
                 "tu vals",
@@ -1854,7 +1854,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo valguí",
                 "tu valgueres",
@@ -1869,7 +1869,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo dolc",
                 "tu dols",
@@ -1884,7 +1884,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo entrelluo",
                 "tu entrelluus",
@@ -1899,7 +1899,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo entrelluo",
                 "tu entrelluus",
@@ -1914,7 +1914,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo entrelluïa",
                 "tu entrelluïes",
@@ -1929,7 +1929,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["entrelluu", "entrelluï", "entrelluïm", "entrelluïu", "entrelluïn"],
         ),
         (
@@ -1937,7 +1937,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.SecondOnly,
-            Gender.Masculine,
+            Gender.M,
             ["entrellú", "entrelluï", "entrelluïm", "entrelluïu", "entrelluïn"],
         ),
         (
@@ -1945,7 +1945,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo esglaio",
                 "tu esglaies",
@@ -1960,7 +1960,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo esglaí",
                 "tu esglaiares",
@@ -1975,7 +1975,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo esglaï",
                 "tu esglaïs",
@@ -1990,7 +1990,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.SecondOnly,
-            Gender.Masculine,
+            Gender.M,
             ["esglaia", "esglaï", "esglaiem", "esglaieu", "esglaïn"],
         ),
         (
@@ -1998,7 +1998,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["esglaiat", "esglaiada", "esglaiats", "esglaiades"],
         ),
         (
@@ -2006,7 +2006,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo evacuo",
                 "tu evacues",
@@ -2021,7 +2021,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo evacuï",
                 "tu evacuïs",
@@ -2036,7 +2036,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.SecondOnly,
-            Gender.Masculine,
+            Gender.M,
             ["evacua", "evacuï", "evacuem", "evacueu", "evacuïn"],
         ),
         (
@@ -2044,7 +2044,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo tonc",
                 "tu tons",
@@ -2059,7 +2059,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo fujo",
                 "tu fuges",
@@ -2074,7 +2074,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.SecondOnly,
-            Gender.Masculine,
+            Gender.M,
             ["fuig", "fugi", "fugim", "fugiu", "fugin"],
         ),
         (
@@ -2082,7 +2082,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo imprimeixo",
                 "tu imprimeixes",
@@ -2097,7 +2097,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["imprès", "impresa", "impresos", "impreses"],
         ),
         (
@@ -2105,7 +2105,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo ajec",
                 "tu ajeus",
@@ -2120,7 +2120,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo molc",
                 "tu mols",
@@ -2135,7 +2135,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo malvenc",
                 "tu malvens",
@@ -2150,7 +2150,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo malvenia",
                 "tu malvenies",
@@ -2165,7 +2165,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo malvenguí",
                 "tu malvengueres",
@@ -2180,7 +2180,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo malvengui",
                 "tu malvenguis",
@@ -2195,7 +2195,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo malvengués",
                 "tu malvenguessis",
@@ -2210,7 +2210,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo omplo",
                 "tu omples",
@@ -2225,7 +2225,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["omplert", "omplerta", "omplerts", "omplertes"],
         ),
         (
@@ -2233,7 +2233,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             ["omplit", "omplida", "omplits", "omplides"],
         ),
         (
@@ -2241,7 +2241,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.SecondOnly,
-            Gender.Masculine,
+            Gender.M,
             ["omple", "ompli", "omplim", "ompliu", "omplin"],
         ),
         (
@@ -2249,7 +2249,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo moc",
                 "tu mous",
@@ -2264,7 +2264,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo moguí",
                 "tu mogueres",
@@ -2279,7 +2279,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo movia",
                 "tu movies",
@@ -2294,7 +2294,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo absolc",
                 "tu absols",
@@ -2309,7 +2309,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.SecondOnly,
-            Gender.Feminine,
+            Gender.F,
             ["absolt", "absolta", "absolts", "absoltes"],
         ),
         (
@@ -2317,7 +2317,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo obro",
                 "tu obres",
@@ -2332,7 +2332,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["obert", "oberta", "oberts", "obertes"],
         ),
         (
@@ -2340,7 +2340,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo previnc",
                 "tu prevens",
@@ -2355,7 +2355,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo previnguí",
                 "tu previngueres",
@@ -2370,7 +2370,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo prevenia",
                 "tu prevenies",
@@ -2385,7 +2385,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo previndré",
                 "tu previndràs",
@@ -2400,7 +2400,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo previngui",
                 "tu previnguis",
@@ -2415,7 +2415,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo previngués",
                 "tu previnguessis",
@@ -2430,7 +2430,7 @@ def test_find_verb_by_infinitive(cg):
             "condicional",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo previndria",
                 "tu previndries",
@@ -2445,7 +2445,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["previngut", "previnguda", "previnguts", "previngudes"],
         ),
         (
@@ -2453,7 +2453,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["prevén", "previngui", "previnguem", "preveniu", "previnguin"],
         ),
         (
@@ -2461,7 +2461,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo surto",
                 "tu surts",
@@ -2476,7 +2476,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo surti",
                 "tu surtis",
@@ -2491,7 +2491,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["sortit", "sortida", "sortits", "sortides"],
         ),
         (
@@ -2499,7 +2499,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["surt", "surti", "sortim", "sortiu", "surtin"],
         ),
         (
@@ -2507,7 +2507,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo temo",
                 "tu tems",
@@ -2522,7 +2522,7 @@ def test_find_verb_by_infinitive(cg):
             "infinitiu",
             "infinitiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["témer"],
         ),
         (
@@ -2530,7 +2530,7 @@ def test_find_verb_by_infinitive(cg):
             "gerundi",
             "gerundi",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["tement"],
         ),
         (
@@ -2538,7 +2538,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["temut", "temuda", "temuts", "temudes"],
         ),
         (
@@ -2546,7 +2546,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo retrec",
                 "tu retreus",
@@ -2561,7 +2561,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo retreia",
                 "tu retreies",
@@ -2576,7 +2576,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo retraguí",
                 "tu retragueres",
@@ -2591,7 +2591,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo retraué",
                 "tu retrauàs",
@@ -2606,7 +2606,7 @@ def test_find_verb_by_infinitive(cg):
             "condicional",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo retrauia",
                 "tu retrauies",
@@ -2621,7 +2621,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo retregui",
                 "tu retreguis",
@@ -2636,7 +2636,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo premoro",
                 "tu premors",
@@ -2651,7 +2651,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo convisc",
                 "tu convius",
@@ -2666,7 +2666,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo convivia",
                 "tu convivies",
@@ -2681,7 +2681,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo convisquí",
                 "tu convisqueres",
@@ -2696,7 +2696,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo venço",
                 "tu vences",
@@ -2711,7 +2711,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["venç", "venci", "vencem", "venceu", "vencin"],
         ),
         (
@@ -2719,7 +2719,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["vençut", "vençuda", "vençuts", "vençudes"],
         ),
         (
@@ -2727,7 +2727,7 @@ def test_find_verb_by_infinitive(cg):
             "infinitiu",
             "infinitiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["vèncer"],
         ),
         (
@@ -2735,7 +2735,7 @@ def test_find_verb_by_infinitive(cg):
             "gerundi",
             "gerundi",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["vencent"],
         ),
         (
@@ -2743,7 +2743,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo cerno",
                 "tu cerns",
@@ -2758,7 +2758,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo oeixo",
                 "tu oeixes",
@@ -2773,7 +2773,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo oïa",
                 "tu oïes",
@@ -2788,7 +2788,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "passat-simple",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo oí",
                 "tu oïres",
@@ -2803,7 +2803,7 @@ def test_find_verb_by_infinitive(cg):
             "indicatiu",
             "futur",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo oiré",
                 "tu oiràs",
@@ -2818,7 +2818,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo oeixi",
                 "tu oeixis",
@@ -2833,7 +2833,7 @@ def test_find_verb_by_infinitive(cg):
             "subjuntiu",
             "imperfet",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo oís",
                 "tu oïssis",
@@ -2848,7 +2848,7 @@ def test_find_verb_by_infinitive(cg):
             "condicional",
             "present",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             [
                 "jo oiria",
                 "tu oiries",
@@ -2863,7 +2863,7 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             AlternatesBehavior.FirstOnly,
-            Gender.Feminine,
+            Gender.F,
             ["oït", "oïda", "oïts", "oïdes"],
         ),
         (
@@ -2871,7 +2871,7 @@ def test_find_verb_by_infinitive(cg):
             "infinitiu",
             "infinitiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["oir"],
         ),
         (
@@ -2879,7 +2879,7 @@ def test_find_verb_by_infinitive(cg):
             "gerundi",
             "gerundi",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["oint"],
         ),
         (
@@ -2887,7 +2887,7 @@ def test_find_verb_by_infinitive(cg):
             "imperatiu",
             "imperatiu-present",
             AlternatesBehavior.FirstOnly,
-            Gender.Masculine,
+            Gender.M,
             ["oeix", "oeixi", "oïm", "oïu", "oeixin"],
         ),
     ],
@@ -2909,7 +2909,7 @@ def test_inflector_ca_conjugate_simple_past(cg):
         "indicatiu",
         "passat-simple",
         AlternatesBehavior.FirstOnly,
-        Gender.Masculine,
+        Gender.M,
     ) == [
         "jo pertanyí",
         "tu pertanyeres",
@@ -2926,7 +2926,7 @@ def test_inflector_ca_conjugate_simple_past_alternate(cg):
         "indicatiu",
         "passat-simple",
         AlternatesBehavior.SecondOnly,
-        Gender.Masculine,
+        Gender.M,
     ) == [
         "jo pertanguí",
         "tu pertangueres",
@@ -2999,22 +2999,22 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.Masculine, False, "jo"),
-        (Person.FirstPersonSingular, Gender.Masculine, True, "jo me"),
-        (Person.SecondPersonSingular, Gender.Masculine, False, "tu"),
-        (Person.SecondPersonSingular, Gender.Masculine, True, "tu te"),
-        (Person.ThirdPersonSingular, Gender.Masculine, False, "ell"),
-        (Person.ThirdPersonSingular, Gender.Masculine, True, "ell se"),
-        (Person.ThirdPersonSingular, Gender.Feminine, False, "ella"),
-        (Person.ThirdPersonSingular, Gender.Feminine, True, "ella se"),
-        (Person.FirstPersonPlural, Gender.Masculine, False, "nosaltres"),
-        (Person.FirstPersonPlural, Gender.Masculine, True, "nosaltres nos"),
-        (Person.SecondPersonPlural, Gender.Masculine, False, "vosaltres"),
-        (Person.SecondPersonPlural, Gender.Masculine, True, "vosaltres os"),
-        (Person.ThirdPersonPlural, Gender.Masculine, False, "ells"),
-        (Person.ThirdPersonPlural, Gender.Masculine, True, "ells se"),
-        (Person.ThirdPersonPlural, Gender.Feminine, False, "elles"),
-        (Person.ThirdPersonPlural, Gender.Feminine, True, "elles se"),
+        (Person.FirstPersonSingular, Gender.M, False, "jo"),
+        (Person.FirstPersonSingular, Gender.M, True, "jo me"),
+        (Person.SecondPersonSingular, Gender.M, False, "tu"),
+        (Person.SecondPersonSingular, Gender.M, True, "tu te"),
+        (Person.ThirdPersonSingular, Gender.M, False, "ell"),
+        (Person.ThirdPersonSingular, Gender.M, True, "ell se"),
+        (Person.ThirdPersonSingular, Gender.F, False, "ella"),
+        (Person.ThirdPersonSingular, Gender.F, True, "ella se"),
+        (Person.FirstPersonPlural, Gender.M, False, "nosaltres"),
+        (Person.FirstPersonPlural, Gender.M, True, "nosaltres nos"),
+        (Person.SecondPersonPlural, Gender.M, False, "vosaltres"),
+        (Person.SecondPersonPlural, Gender.M, True, "vosaltres os"),
+        (Person.ThirdPersonPlural, Gender.M, False, "ells"),
+        (Person.ThirdPersonPlural, Gender.M, True, "ells se"),
+        (Person.ThirdPersonPlural, Gender.F, False, "elles"),
+        (Person.ThirdPersonPlural, Gender.F, True, "elles se"),
     ],
 )
 def test_inflector_ca_get_default_pronoun(

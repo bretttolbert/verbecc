@@ -43,7 +43,7 @@
     <!ATTLIST t
         xmlns CDATA #FIXED ''>
 
-	<!ELEMENT en (#PCDATA)>  <!-- english translation -->
+	<!ELEMENT en (#PCDATA)>  <!-- EN translation -->
 ]>
 
 <verbs-ca>

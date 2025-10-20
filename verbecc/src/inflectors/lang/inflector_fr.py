@@ -45,7 +45,7 @@ VERBS_THAT_CANNOT_BE_REFLEXIVE_OTHER_THAN_IMPERSONAL_VERBS = ["être", "aller", 
 class InflectorFr(Inflector):
     @property
     def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Français
+        return LangISOCode639_1.Fr
 
     def __init__(self) -> None:
         super(InflectorFr, self).__init__()
@@ -111,15 +111,13 @@ class InflectorFr(Inflector):
         else:
             return "que " + s
 
-    def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.Masculine
-    ) -> str:
+    def _get_pronoun_suffix(self, person: Person, gender: Gender = Gender.M) -> str:
         return "-" + self._get_default_pronoun(person, gender).replace("tu", "toi")
 
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.M,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -133,7 +131,7 @@ class InflectorFr(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "il"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "elle"
             if is_reflexive:
                 ret += " se"
@@ -147,7 +145,7 @@ class InflectorFr(Inflector):
                 ret += " vous"
         elif person == Person.ThirdPersonPlural:
             ret = "ils"
-            if gender == Gender.Feminine:
+            if gender == Gender.F:
                 ret = "elles"
             if is_reflexive:
                 ret += " se"

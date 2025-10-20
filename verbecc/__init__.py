@@ -12,8 +12,24 @@ from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person, is_plural, is_singular
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.language_codes import LangISOCode639_1
-from verbecc.src.defs.types.mood import Mood
-from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.mood import (
+    Mood,
+    MoodCa,
+    MoodEs,
+    MoodFr,
+    MoodIt,
+    MoodPt,
+    MoodRo,
+)
+from verbecc.src.defs.types.tense import (
+    Tense,
+    TenseCa,
+    TenseEs,
+    TenseFr,
+    TenseIt,
+    TensePt,
+    TenseRo,
+)
 import verbecc.src.defs.constants.localization as localization
 import verbecc.src.defs.constants.grammar_defines as grammar_defines
 from verbecc.src.parsers.mood_template import MoodTemplate

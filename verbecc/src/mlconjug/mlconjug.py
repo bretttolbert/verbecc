@@ -122,7 +122,7 @@ class Model:
         vectorizer: Vectorizor = None,
         feature_selector: FeatureSelector = None,
         classifier: Classifier = None,
-        lang: LangISOCode639_1 = LangISOCode639_1.Français,
+        lang: LangISOCode639_1 = LangISOCode639_1.Fr,
     ) -> None:
         if not vectorizer:
             vectorizer = CountVectorizer(
@@ -296,7 +296,7 @@ def extract_verb_features(
         "START={0}".format(verb[:n]) for n in range(min_n, min(max_n + 1, verb_len + 1))
     ]
     if lang not in ALPHABET:
-        lang = "en"  # We chose 'en' as the default alphabet because english is more standard, without accents or diactrics.
+        lang = "en"  # We chose 'en' as the default alphabet because EN is more standard, without accents or diactrics.
     vowels = sum(verb.count(c) for c in ALPHABET[lang]["vowels"])
     vowels_number = "VOW_NUM={0}".format(vowels)
     consonants = sum(verb.count(c) for c in ALPHABET[lang]["consonants"])
