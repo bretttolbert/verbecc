@@ -14,7 +14,7 @@ def test_tense_and_person():
         <p><i>ient</i><i>yent</i></p>
         </présent>"""
     tense_elem: etree._Element = etree.fromstring(tense_elem_str)
-    tense = Tense.Fr.Présent
+    tense = Tense.fr.Présent
     tense_template = TenseTemplate(tense_elem)
     assert tense_template.name == str(tense.value)
     assert tense_template.person_endings[0].get_ending() == "ie"

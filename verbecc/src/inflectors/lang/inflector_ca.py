@@ -5,7 +5,7 @@ from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodCa as Mood
 from verbecc.src.defs.types.tense import TenseCa as Tense
 from verbecc.src.defs.types import exceptions
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
@@ -13,8 +13,8 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 class InflectorCa(inflector.Inflector):
     @property
-    def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Ca
+    def lang(self) -> LangCodeISO639_1:
+        return LangCodeISO639_1.ca
 
     def __init__(self) -> None:
         super(InflectorCa, self).__init__()
@@ -25,7 +25,7 @@ class InflectorCa(inflector.Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.M,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -39,7 +39,7 @@ class InflectorCa(inflector.Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "ell"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
@@ -53,7 +53,7 @@ class InflectorCa(inflector.Inflector):
                 ret += " os"
         elif person == Person.ThirdPersonPlural:
             ret = "ells"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "elles"
             if is_reflexive:
                 ret += " se"

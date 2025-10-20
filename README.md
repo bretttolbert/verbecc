@@ -37,7 +37,7 @@ pip install .
 In the following examples, this `import` statement will be required:
 
 ```python
->>> from verbecc import Conjugator, LangISOCode639_1 as Lang
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
 ```
 
 In the following examples, the following function will be used to make the output more readable:
@@ -61,16 +61,36 @@ def printjson(c):
 - [Portuguese ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-portuguese--ser-to-be)
 - [Romanian fi (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-romanian-fi-to-be)
 
-### Typing
+### Typing - Parameter and Data Type Annotations
 
 Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [src/defs/types/conjugation.py](./verbecc/src/defs/types/conjugation.py)).
 
 Typing transition guide:
 
-- Instead of `lang='fr'` use `lang=Lang.Fr` but first you must `from verbecc import LangISOCode_639_1 as Lang`
-- Instead of `mood="indicatif"` use `mood=Mood.Indicatif` but first you must `from verbecc import MoodFr as Mood`
-- Instead of `tense="présent"` use `tense=Tense.Présent` but first you must `from verbecc import TenseFr as Tense`
-- Instead of `gender='f'` use `gender=Gender.F` but first you must `from verbecc import Gender`
+- Instead of `lang='fr'` use `lang=Lang.fr` after the import `from verbecc import LangCodeISO639_1 as Lang`
+- Instead of `mood="indicatif"` 
+    - use `mood=Mood.fr.Indicatif` after the import `from verbecc import Mood`
+    - or use `mood=Mood.Indicatif` after the import `from verbecc import MoodFr as Mood`
+- Instead of `tense="présent"`
+    - use `tense=Tense.fr.Présent` after the import `from verbecc import Tense`
+    - or use `tense=Tense.Présent` after the import `from verbecc import TenseFr as Tense`
+- Instead of `gender='f'` use `gender=Gender.f` after the import `from verbecc import Gender`
+
+Examples:
+
+```python
+>>> from verbecc import grammar_defines, localization, LangCodeISO639_1, Mood, Tense, Gender
+>>> xmood = localization.xmood
+>>> xtense = localization.xtense
+>>> grammar_defines.SUPPORTED_LANGUAGES[LangCodeISO639_1.fr]
+'français'
+>>> xtense(LangCodeISO639_1.fr, Tense.en.Present)
+<TenseFr.Présent: 'présent'>
+>>> xmood(LangCodeISO639_1.fr, Mood.en.Subjunctive)
+<MoodFr.Subjonctif: 'subjonctif'>
+>>> Gender.f
+<Gender.f: 'f'>
+```
 
 ### Conjugation Example: French `manger` (to eat)
 ```python

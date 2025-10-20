@@ -3,7 +3,7 @@ from typing import Dict, List, Tuple
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.mood import MoodRo as Mood
 from verbecc.src.defs.types.tense import TenseRo as Tense
 from verbecc.src.inflectors.inflector import Inflector
@@ -11,8 +11,8 @@ from verbecc.src.inflectors.inflector import Inflector
 
 class InflectorRo(Inflector):
     @property
-    def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Ro
+    def lang(self) -> LangCodeISO639_1:
+        return LangCodeISO639_1.ro
 
     def __init__(self) -> None:
         super(InflectorRo, self).__init__()
@@ -37,7 +37,7 @@ class InflectorRo(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.M,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -51,7 +51,7 @@ class InflectorRo(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "el"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "ea"
             if is_reflexive:
                 ret += " se"
@@ -65,7 +65,7 @@ class InflectorRo(Inflector):
                 ret += " vă"
         elif person == Person.ThirdPersonPlural:
             ret = "ei"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "ele"
             if is_reflexive:
                 ret += " se"

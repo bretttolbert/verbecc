@@ -1,7 +1,7 @@
 from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.mood import MoodIt as Mood
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
@@ -31,8 +31,8 @@ VERBS_CONJUGATED_WITH_ESSERE = [
 
 class InflectorIt(Inflector):
     @property
-    def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.It
+    def lang(self) -> LangCodeISO639_1:
+        return LangCodeISO639_1.it
 
     def __init__(self) -> None:
         super(InflectorIt, self).__init__()
@@ -74,7 +74,7 @@ class InflectorIt(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.M,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -88,7 +88,7 @@ class InflectorIt(Inflector):
                 ret += " ti"
         elif person == Person.ThirdPersonSingular:
             ret = "lui"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "lei"
             if is_reflexive:
                 ret += " si"

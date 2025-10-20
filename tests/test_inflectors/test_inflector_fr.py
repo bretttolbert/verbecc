@@ -140,22 +140,22 @@ def test_inflector_fr_get_verb_stem_from_template_name(cg):
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.M, False, "je"),
-        (Person.FirstPersonSingular, Gender.M, True, "je me"),
-        (Person.SecondPersonSingular, Gender.M, False, "tu"),
-        (Person.SecondPersonSingular, Gender.M, True, "tu te"),
-        (Person.ThirdPersonSingular, Gender.M, False, "il"),
-        (Person.ThirdPersonSingular, Gender.M, True, "il se"),
-        (Person.ThirdPersonSingular, Gender.F, False, "elle"),
-        (Person.ThirdPersonSingular, Gender.F, True, "elle se"),
-        (Person.FirstPersonPlural, Gender.M, False, "nous"),
-        (Person.FirstPersonPlural, Gender.M, True, "nous nous"),
-        (Person.SecondPersonPlural, Gender.M, False, "vous"),
-        (Person.SecondPersonPlural, Gender.M, True, "vous vous"),
-        (Person.ThirdPersonPlural, Gender.M, False, "ils"),
-        (Person.ThirdPersonPlural, Gender.M, True, "ils se"),
-        (Person.ThirdPersonPlural, Gender.F, False, "elles"),
-        (Person.ThirdPersonPlural, Gender.F, True, "elles se"),
+        (Person.FirstPersonSingular, Gender.m, False, "je"),
+        (Person.FirstPersonSingular, Gender.m, True, "je me"),
+        (Person.SecondPersonSingular, Gender.m, False, "tu"),
+        (Person.SecondPersonSingular, Gender.m, True, "tu te"),
+        (Person.ThirdPersonSingular, Gender.m, False, "il"),
+        (Person.ThirdPersonSingular, Gender.m, True, "il se"),
+        (Person.ThirdPersonSingular, Gender.f, False, "elle"),
+        (Person.ThirdPersonSingular, Gender.f, True, "elle se"),
+        (Person.FirstPersonPlural, Gender.m, False, "nous"),
+        (Person.FirstPersonPlural, Gender.m, True, "nous nous"),
+        (Person.SecondPersonPlural, Gender.m, False, "vous"),
+        (Person.SecondPersonPlural, Gender.m, True, "vous vous"),
+        (Person.ThirdPersonPlural, Gender.m, False, "ils"),
+        (Person.ThirdPersonPlural, Gender.m, True, "ils se"),
+        (Person.ThirdPersonPlural, Gender.f, False, "elles"),
+        (Person.ThirdPersonPlural, Gender.f, True, "elles se"),
     ],
 )
 def test_inflector_fr_get_default_pronoun(
@@ -246,7 +246,7 @@ def test_inflector_fr_conjugate_compound_raser(cg):
         "présent",
         False,
         AlternatesBehavior.All,
-        Gender.M,
+        Gender.m,
         True,
     )
     assert ret == [
@@ -276,7 +276,7 @@ def test_inflector_fr_conjugate_compound_se_raser(cg):
         "présent",
         False,
         AlternatesBehavior.All,
-        Gender.M,
+        Gender.m,
         True,
     )
     assert ret == [
@@ -304,7 +304,7 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(cg):
         "présent",
         False,
         AlternatesBehavior.All,
-        Gender.M,
+        Gender.m,
         True,
     )
     assert ret == [

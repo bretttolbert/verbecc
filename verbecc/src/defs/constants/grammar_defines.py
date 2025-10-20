@@ -7,18 +7,18 @@ else:
 
 from typing import Dict, Tuple
 
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 
 # map of ISO 639-1 codes to long names (in target language)
-SUPPORTED_LANGUAGES: Dict[LangISOCode639_1, str] = {
-    LangISOCode639_1.Ca: "català",
-    LangISOCode639_1.Es: "español",
-    LangISOCode639_1.Fr: "français",
-    LangISOCode639_1.It: "italiano",
-    LangISOCode639_1.Pt: "português",
-    LangISOCode639_1.Ro: "română",
+SUPPORTED_LANGUAGES: Dict[LangCodeISO639_1, str] = {
+    LangCodeISO639_1.ca: "català",
+    LangCodeISO639_1.es: "español",
+    LangCodeISO639_1.fr: "français",
+    LangCodeISO639_1.it: "italiano",
+    LangCodeISO639_1.pt: "português",
+    LangCodeISO639_1.ro: "română",
 }
 
 # Order of grammatical persons in data structures
@@ -52,31 +52,31 @@ PARTICIPLE_INFLECTIONS: Tuple[
 )
 
 ALPHABET = {
-    LangISOCode639_1.Fr: {
+    LangCodeISO639_1.fr: {
         "vowels": "aáàâeêéèiîïoôöœuûùy",
         "consonants": "bcçdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.En: {
+    LangCodeISO639_1.en: {
         "vowels": "aeiouy",
         "consonants": "bcdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.Ca: {
+    LangCodeISO639_1.ca: {
         "vowels": "aáàâeéèiïoôuûùy",
         "consonants": "bcdfghjklmnñpqrstvwxyz",
     },
-    LangISOCode639_1.Es: {
+    LangCodeISO639_1.es: {
         "vowels": "aáeiíoóuúy",
         "consonants": "bcdfghjklmnñpqrstvwxyz",
     },
-    LangISOCode639_1.Es: {
+    LangCodeISO639_1.es: {
         "vowels": "aàeéèiìîoóòuùy",
         "consonants": "bcdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.Pt: {
+    LangCodeISO639_1.pt: {
         "vowels": "aàãááeêéiíoóõuúy",
         "consonants": "bcçdfghjklmnpqrstvwxyz",
     },
-    LangISOCode639_1.Ro: {
+    LangCodeISO639_1.ro: {
         "vowels": "aăâeiîouy",
         "consonants": "bcdfghjklmnpqrsșştțţvwxyz",
     },

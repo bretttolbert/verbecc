@@ -11,7 +11,7 @@ from verbecc.src.defs.types.conjugation import (
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person, is_plural, is_singular
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.mood import (
     Mood,
     MoodCa,

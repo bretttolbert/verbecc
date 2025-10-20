@@ -78,7 +78,7 @@ class TenseTemplate:
         person_num = 0
         for p_elem in tense_elem.findall("p", namespaces=None):
             person = grammar_defines.PERSONS[person_num]
-            if self.name == Tense.Fr.ImperatifPrésent:
+            if self.name == Tense.fr.ImperatifPrésent:
                 person = grammar_defines.IMPERATIVE_PRESENT_PERSONS[person_num]
             pe = PersonEnding(p_elem, person)
             person_num += 1

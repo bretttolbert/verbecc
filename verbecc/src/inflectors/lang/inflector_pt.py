@@ -2,7 +2,7 @@ from typing import Dict, List, Tuple
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.mood import MoodPt as Mood
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import TensePt as Tense
@@ -11,8 +11,8 @@ from verbecc.src.inflectors.inflector import Inflector
 
 class InflectorPt(Inflector):
     @property
-    def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Pt
+    def lang(self) -> LangCodeISO639_1:
+        return LangCodeISO639_1.pt
 
     def __init__(self) -> None:
         super(InflectorPt, self).__init__()
@@ -51,7 +51,7 @@ class InflectorPt(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.M,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -65,7 +65,7 @@ class InflectorPt(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "ele"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "ela"
             if is_reflexive:
                 ret += " se"
@@ -79,14 +79,14 @@ class InflectorPt(Inflector):
                 ret += " se"
         elif person == Person.ThirdPersonPlural:
             ret = "eles"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "elas"
             if is_reflexive:
                 ret += " se"
         return ret
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.M, imperative: bool = True
+        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
     ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:

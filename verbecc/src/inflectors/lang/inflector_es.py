@@ -1,7 +1,7 @@
 from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodEs as Mood
 from verbecc.src.defs.types.tense import TenseEs as Tense
@@ -11,8 +11,8 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 class InflectorEs(Inflector):
     @property
-    def lang(self) -> LangISOCode639_1:
-        return LangISOCode639_1.Es
+    def lang(self) -> LangCodeISO639_1:
+        return LangCodeISO639_1.es
 
     def __init__(self) -> None:
         super(InflectorEs, self).__init__()
@@ -25,7 +25,7 @@ class InflectorEs(Inflector):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.M,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -39,7 +39,7 @@ class InflectorEs(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "él"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
@@ -53,7 +53,7 @@ class InflectorEs(Inflector):
                 ret += " os"
         elif person == Person.ThirdPersonPlural:
             ret = "ellos"
-            if gender == Gender.F:
+            if gender == Gender.f:
                 ret = "ellas"
             if is_reflexive:
                 ret += " se"

@@ -22,7 +22,7 @@ from typing import Dict, List, Tuple
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.exceptions import ConjugatorError
-from verbecc.src.defs.types.language_codes import LangISOCode639_1
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person, is_singular
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
@@ -40,7 +40,7 @@ class Inflector(ABC):
 
     @property
     @abstractmethod
-    def lang(self) -> LangISOCode639_1:
+    def lang(self) -> LangCodeISO639_1:
         raise NotImplementedError
 
     def __init__(self) -> None:
@@ -173,15 +173,15 @@ class Inflector(ABC):
         return PARTICIPLE_INFLECTIONS.index(participle_inflection)
 
     def _get_default_participle_inflection_for_person(
-        self, person: Person, gender: Gender = Gender.M
+        self, person: Person, gender: Gender = Gender.m
     ) -> ParticipleInflection:
         if is_singular(person):
-            if gender == Gender.M:
+            if gender == Gender.m:
                 return ParticipleInflection.MasculineSingular
             else:
                 return ParticipleInflection.FeminineSingular
         else:
-            if gender == Gender.M:
+            if gender == Gender.m:
                 return ParticipleInflection.MasculinePlural
             else:
                 return ParticipleInflection.FemininePlural
@@ -189,7 +189,7 @@ class Inflector(ABC):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.M,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         return ""
@@ -235,7 +235,7 @@ class Inflector(ABC):
         return verb_stem + ending
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.M, imperative: bool = True
+        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
     ) -> str:
         return " " + self._get_default_pronoun(person, gender)
 
