@@ -6,12 +6,12 @@
 [![GitHub Actions CI status](https://github.com/bretttolbert/verbecc/actions/workflows/python-package.yml/badge.svg)](https://github.com/bretttolbert/verbecc/actions/workflows/python-package.yml?query=branch%3Amain)
 
 ##### [EN] Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian, Romanian and Catalan, enhanced by machine learning
-##### [CA] Verbs completament conjugats: conjugacions verbals per a francès, espanyol, portuguès, italià, romanès i CA, millorades per l'aprenentatge automàtic
-##### [ES] Verbos completamente conjugados: conjugaciones de verbos en francés, ES, portugués, IT, rumano y catalán, mejoradas por aprendizaje automático
-##### [FR] Verbes complètement conjugués: conjugaisons des verbes FR, espagnol, portugais, italien, roumain et catalan, à l'aide de l'apprentissage automatique
-##### [IT] Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, IT, rumeno e catalano, migliorate dall'apprendimento automatico
-##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, PT, IT, romeno e catalão, aprimoradas pelo aprendizado de máquina
-##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, RO și catalană, îmbunătățite de învățarea automată
+##### [CA] Verbs completament conjugats: conjugacions verbals per a francès, espanyol, portuguès, italià, romanès i català, millorades per l'aprenentatge automàtic
+##### [ES] Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués, italiano, rumano y catalán, mejoradas por aprendizaje automático
+##### [FR] Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais, italien, roumain et catalan, à l'aide de l'apprentissage automatique
+##### [IT] Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, italiano, rumeno e catalano, migliorate dall'apprendimento automatico
+##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano, romeno e catalão, aprimoradas pelo aprendizado de máquina
+##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, română și catalană, îmbunătățite de învățarea automată
 
 ### Live Demo
 - [Web GUI](http://verbe.cc)
