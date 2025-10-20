@@ -590,7 +590,7 @@ def test_abolir():
     """
     Reproduce error:
 
-    >           co.template.mood_templates[persons_mood_name].tense_templates[aux_tense_name].person_endings]
+    >           co.template.mood_templates[persons_mood].tense_templates[aux_tense].person_endings]
     E       KeyError: 'presente'
 
     ../../PyVEnvs/Py311/lib/python3.11/site-packages/verbecc/inflector.py:259: KeyError
@@ -625,7 +625,7 @@ def test_inflector_es_conjugate_simple_mood_tense():
         </presente>""",
         parser=None,
     )
-    tense_name = "présent"
+    tense = "présent"
     tense_template = TenseTemplate(tense_elem)
     out = cg._conjugate_simple_mood_tense(verb_stem, "indicativo", tense_template)
     assert len(out) == 6
@@ -642,22 +642,22 @@ def test_inflector_es_conjugate_simple_mood_tense():
 @pytest.mark.parametrize(
     "person,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.Masculine, False, "yo"),
-        (Person.FirstPersonSingular, Gender.Masculine, True, "yo me"),
-        (Person.SecondPersonSingular, Gender.Masculine, False, "tú"),
-        (Person.SecondPersonSingular, Gender.Masculine, True, "tú te"),
-        (Person.ThirdPersonSingular, Gender.Masculine, False, "él"),
-        (Person.ThirdPersonSingular, Gender.Masculine, True, "él se"),
-        (Person.ThirdPersonSingular, Gender.Feminine, False, "ella"),
-        (Person.ThirdPersonSingular, Gender.Feminine, True, "ella se"),
-        (Person.FirstPersonPlural, Gender.Masculine, False, "nosotros"),
-        (Person.FirstPersonPlural, Gender.Masculine, True, "nosotros nos"),
-        (Person.SecondPersonPlural, Gender.Masculine, False, "vosotros"),
-        (Person.SecondPersonPlural, Gender.Masculine, True, "vosotros os"),
-        (Person.ThirdPersonPlural, Gender.Masculine, False, "ellos"),
-        (Person.ThirdPersonPlural, Gender.Masculine, True, "ellos se"),
-        (Person.ThirdPersonPlural, Gender.Feminine, False, "ellas"),
-        (Person.ThirdPersonPlural, Gender.Feminine, True, "ellas se"),
+        (Person.FirstPersonSingular, Gender.m, False, "yo"),
+        (Person.FirstPersonSingular, Gender.m, True, "yo me"),
+        (Person.SecondPersonSingular, Gender.m, False, "tú"),
+        (Person.SecondPersonSingular, Gender.m, True, "tú te"),
+        (Person.ThirdPersonSingular, Gender.m, False, "él"),
+        (Person.ThirdPersonSingular, Gender.m, True, "él se"),
+        (Person.ThirdPersonSingular, Gender.f, False, "ella"),
+        (Person.ThirdPersonSingular, Gender.f, True, "ella se"),
+        (Person.FirstPersonPlural, Gender.m, False, "nosotros"),
+        (Person.FirstPersonPlural, Gender.m, True, "nosotros nos"),
+        (Person.SecondPersonPlural, Gender.m, False, "vosotros"),
+        (Person.SecondPersonPlural, Gender.m, True, "vosotros os"),
+        (Person.ThirdPersonPlural, Gender.m, False, "ellos"),
+        (Person.ThirdPersonPlural, Gender.m, True, "ellos se"),
+        (Person.ThirdPersonPlural, Gender.f, False, "ellas"),
+        (Person.ThirdPersonPlural, Gender.f, True, "ellas se"),
     ],
 )
 def test_inflector_es_get_default_pronoun(

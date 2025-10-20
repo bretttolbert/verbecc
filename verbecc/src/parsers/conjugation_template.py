@@ -3,16 +3,17 @@ from typing import Dict
 
 from verbecc.src.parsers.mood_template import MoodTemplate
 from verbecc.src.defs.types.exceptions import ConjugationTemplateError
+from verbecc.src.defs.types.mood import Mood
 
 
 class ConjugationTemplate:
-    def __init__(self, template_elem: etree._Element):
+    def __init__(self, template_elem: etree._Element) -> None:
         if template_elem.tag != "template":
             raise ConjugationTemplateError("Unexpected element")
         try:
             name_attrib = template_elem.get("name", default=None)
             self.name = str(name_attrib)
-            self.mood_templates: Dict[str, MoodTemplate] = {}
+            self.mood_templates: Dict[Mood, MoodTemplate] = {}
             for mood_elem in template_elem:  # type: ignore
                 mood_template = MoodTemplate(mood_elem)
                 self.mood_templates[mood_elem.tag.lower()] = mood_template
@@ -32,5 +33,5 @@ class ConjugationTemplate:
                 "Error parsing {}: {}".format(etree.tostring(template_elem), str(e))
             )
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "name={} mood_templates={}".format(self.name, self.mood_templates)

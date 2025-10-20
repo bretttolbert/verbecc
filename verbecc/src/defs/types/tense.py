@@ -153,10 +153,10 @@ class TenseRo(StrEnum):
 
 
 class Tense:
-    Fr = TenseFr
-    Es = TenseEs
-    En = TenseEn
-    It = TenseIt
-    Ca = TenseCa
-    Ro = TenseRo
-    Pt = TensePt
+    fr = TenseFr
+    es = TenseEs
+    en = TenseEn
+    it = TenseIt
+    ca = TenseCa
+    ro = TenseRo
+    pt = TensePt

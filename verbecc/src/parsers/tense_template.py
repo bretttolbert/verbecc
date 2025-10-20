@@ -3,6 +3,7 @@ from typing import List
 
 from verbecc.src.parsers.person_ending import PersonEnding
 from verbecc.src.defs.constants import grammar_defines
+from verbecc.src.defs.types.tense import Tense
 
 
 class TenseTemplate:
@@ -28,7 +29,7 @@ class TenseTemplate:
             <p><i>ent</i></p>
     """
 
-    def __init__(self, tense_elem: etree._Element):
+    def __init__(self, tense_elem: etree._Element) -> None:
         self.name = tense_elem.tag
         """
         Normally each <p> elem defines six grammatical persons:
@@ -77,7 +78,7 @@ class TenseTemplate:
         person_num = 0
         for p_elem in tense_elem.findall("p", namespaces=None):
             person = grammar_defines.PERSONS[person_num]
-            if self.name == "imperatif-présent":
+            if self.name == Tense.fr.ImperatifPrésent:
                 person = grammar_defines.IMPERATIVE_PRESENT_PERSONS[person_num]
             pe = PersonEnding(p_elem, person)
             person_num += 1

@@ -22,6 +22,7 @@ from typing import Dict, List, Tuple
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.exceptions import ConjugatorError
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person, is_singular
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
@@ -39,10 +40,10 @@ class Inflector(ABC):
 
     @property
     @abstractmethod
-    def lang(self) -> str:
+    def lang(self) -> LangCodeISO639_1:
         raise NotImplementedError
 
-    def __init__(self):
+    def __init__(self) -> None:
         self._verb_parser = VerbsParser(self.lang)
         self._conj_parser = ConjugationsParser(self.lang)
 
@@ -69,7 +70,9 @@ class Inflector(ABC):
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         return matches
 
-    def _get_verb_stem_from_template_name(self, infinitive: str, template_name: str):
+    def _get_verb_stem_from_template_name(
+        self, infinitive: str, template_name: str
+    ) -> str:
         """Get the verb stem given an ininitive and a colon-delimited template name.
         E.g. infinitive='parler' template_name='aim:er' -> 'parl'
         Note: Catalan overrides this base class implementation to allow looser matching
@@ -83,10 +86,10 @@ class Inflector(ABC):
             )
         return infinitive[: len(infinitive) - len(template_ending)]
 
-    def _is_impersonal_verb(self, infinitive: str):
+    def _is_impersonal_verb(self, infinitive: str) -> bool:
         return False
 
-    def _verb_can_be_reflexive(self, infinitive: str):
+    def _verb_can_be_reflexive(self, infinitive: str) -> bool:
         return not self._is_impersonal_verb(infinitive)
 
     def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
@@ -108,43 +111,43 @@ class Inflector(ABC):
     def _add_reflexive_pronoun(self, s: str) -> str:
         return s
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense_name: Tense) -> str:
+    def _add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return s
 
-    def _auxilary_verb_uses_alternate_conjugation(self, tense_name: Tense) -> bool:
+    def _auxilary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
         return False
 
     def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return []
 
     def _get_auxilary_verb(
-        self, co: ConjugationObjects, mood_name: Mood, tense_name: Tense
+        self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
         return ""
 
-    def _is_auxilary_verb_inflected(self, auxilary_verb: str):
+    def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return False
 
-    def _get_infinitive_mood_name(self) -> str:
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinitive
 
-    def _get_indicative_mood_name(self) -> str:
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicative
 
-    def _get_subjunctive_mood_name(self) -> str:
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Subjunctive
 
-    def _get_conditional_mood_name(self) -> str:
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Conditional
 
-    def _get_participle_mood_name(self) -> str:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Participle
 
-    def _get_participle_tense_name(self) -> str:
+    def _get_participle_tense(self) -> Tense:
         return Tense.PastParticiple
 
     def _add_present_participle_if_applicable(
-        self, s: str, is_reflexive: bool, tense_name: Tense
+        self, s: str, is_reflexive: bool, tense: Tense
     ) -> str:
         return s
 
@@ -170,15 +173,15 @@ class Inflector(ABC):
         return PARTICIPLE_INFLECTIONS.index(participle_inflection)
 
     def _get_default_participle_inflection_for_person(
-        self, person: Person, gender: Gender = Gender.Masculine
+        self, person: Person, gender: Gender = Gender.m
     ) -> ParticipleInflection:
         if is_singular(person):
-            if gender == Gender.Masculine:
+            if gender == Gender.m:
                 return ParticipleInflection.MasculineSingular
             else:
                 return ParticipleInflection.FeminineSingular
         else:
-            if gender == Gender.Masculine:
+            if gender == Gender.m:
                 return ParticipleInflection.MasculinePlural
             else:
                 return ParticipleInflection.FemininePlural
@@ -186,7 +189,7 @@ class Inflector(ABC):
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         return ""
@@ -232,32 +235,32 @@ class Inflector(ABC):
         return verb_stem + ending
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.Masculine, imperative=True
+        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
     ) -> str:
         return " " + self._get_default_pronoun(person, gender)
 
-    def _add_adverb_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Tense
-    ) -> str:
+    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
     def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s, is_reflexive: bool, mood_name: Mood, tense_name: Tense, person: Person
-    ):
+        self, s: str, is_reflexive: bool, mood: Mood, tense: Tense, person: Person
+    ) -> str:
         if is_reflexive:
             s += self._get_pronoun_suffix(person)
         return s
 
     def _compound_conjugation_not_applicable(
-        self, is_reflexive, mood_name, aux_tense_name
-    ):
+        self, is_reflexive: bool, mood: Mood, aux_tense: Tense
+    ) -> bool:
         return False
 
-    def _compound_primary_verb_conjugation_uses_infinitive(self, mood: str, tense: str):
+    def _compound_primary_verb_conjugation_uses_infinitive(
+        self, mood: Mood, tense: Tense
+    ) -> bool:
         return False
 
     def _modify_aux_verb_conj_if_applicable(
-        self, aux_conj: List[str], mood_name: Mood, tense_name: Tense
+        self, aux_conj: List[str], mood: Mood, tense: Tense
     ) -> List[str]:
         """
         Hook for certain languages e.g. Romanian that use a different
@@ -267,7 +270,7 @@ class Inflector(ABC):
         return aux_conj
 
     def _add_compound_aux_verb_suffix_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Mood
+        self, s: str, mood: Mood, tense: Mood
     ) -> str:
         """
         Hook for certain languages e.g. Romanian that add prefixes
@@ -277,7 +280,7 @@ class Inflector(ABC):
         return s
 
     def _insert_compound_aux_verb_prefix_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Tense
+        self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
         Used by Romanian viitor-1-popular
@@ -285,10 +288,10 @@ class Inflector(ABC):
         """
         return s
 
-    def _compound_has_no_primary_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
+    def _compound_has_no_primary_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian viitor-1-popular"""
         return False
 
-    def _compound_has_no_aux_verb(self, mood_name: Mood, tense_name: Tense) -> bool:
+    def _compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian conjunctiv perfect"""
         return False

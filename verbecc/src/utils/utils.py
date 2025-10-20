@@ -1,7 +1,7 @@
 from verbecc.src.conjugator.conjugator import Conjugator, SUPPORTED_LANGUAGES
 
 
-def train_models():
+def train_models() -> None:
     print("Begin model training")
     for i, l in enumerate(SUPPORTED_LANGUAGES.keys()):
         print(f"Training model {i+1} of {len(SUPPORTED_LANGUAGES.keys())} lang={l}")

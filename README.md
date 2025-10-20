@@ -6,12 +6,12 @@
 [![GitHub Actions CI status](https://github.com/bretttolbert/verbecc/actions/workflows/python-package.yml/badge.svg)](https://github.com/bretttolbert/verbecc/actions/workflows/python-package.yml?query=branch%3Amain)
 
 ##### [EN] Verbs completely conjugated: verb conjugations for French, Spanish, Portuguese, Italian, Romanian and Catalan, enhanced by machine learning
-##### [CA] Verbs completament conjugats: conjugacions verbals per a francès, espanyol, portuguès, italià, romanès i català, millorades per l'aprenentatge automàtic
-##### [ES] Verbos completamente conjugados: conjugaciones de verbos en francés, español, portugués, italiano, rumano y catalán, mejoradas por aprendizaje automático
-##### [FR] Verbes complètement conjugués: conjugaisons des verbes français, espagnol, portugais, italien, roumain et catalan, à l'aide de l'apprentissage automatique
-##### [IT] Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, italiano, rumeno e catalano, migliorate dall'apprendimento automatico
-##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano, romeno e catalão, aprimoradas pelo aprendizado de máquina
-##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, română și catalană, îmbunătățite de învățarea automată
+##### [CA] Verbs completament conjugats: conjugacions verbals per a francès, espanyol, portuguès, italià, romanès i CA, millorades per l'aprenentatge automàtic
+##### [ES] Verbos completamente conjugados: conjugaciones de verbos en francés, ES, portugués, IT, rumano y catalán, mejoradas por aprendizaje automático
+##### [FR] Verbes complètement conjugués: conjugaisons des verbes FR, espagnol, portugais, italien, roumain et catalan, à l'aide de l'apprentissage automatique
+##### [IT] Verbi completamente coniugati: coniugazioni di verbi per francese, spagnolo, portoghese, IT, rumeno e catalano, migliorate dall'apprendimento automatico
+##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, PT, IT, romeno e catalão, aprimoradas pelo aprendizado de máquina
+##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, RO și catalană, îmbunătățite de învățarea automată
 
 ### Live Demo
 - [Web GUI](http://verbe.cc)
@@ -34,10 +34,17 @@ pip install .
 
 ### Examples
 
+In the following examples, this `import` statement will be required:
+
+```python
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+```
+
 In the following examples, the following function will be used to make the output more readable:
 
 ```python
 import json
+
 def printjson(c):
     print(json.dumps(c, indent=4, ensure_ascii=False))
 ```
@@ -45,7 +52,7 @@ def printjson(c):
 - [Conjugation Example: French manger (to eat)](#conjugation-example-french-manger-to-eat)
 - [ML Prediction Conjugation Example: French uberiser (to Uberize)](#ml-prediction-conjugation-example-french-uberiser-to-uberize)
 - [Multi-Language Conjugation](#example-multi-language-conjugation)
-- [Multi-Language Conjugation using English mood and tense names via localization module](#example-multi-language-conjugation-using-english-mood-and-tense-names-via-localization-module)
+- [Multi-Language Conjugation using EN mood and tense names via localization module](#example-multi-language-conjugation-using-EN-mood-and-tense-names-via-localization-module)
 - [Catalan `ser` (to be) - with pronouns, without alternate conjugations (original behavior)](#example-catalan-ser-to-be)
 - [Catalan `ser` (to be) - without pronouns, including alternate conjugations (new features in 1.9.7)](#example-catalan-ser-to-be-with-alternate-conjugations-without-pronouns)
 - [Spanish ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-spanish-ser-to-be)
@@ -54,10 +61,39 @@ def printjson(c):
 - [Portuguese ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-portuguese--ser-to-be)
 - [Romanian fi (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-romanian-fi-to-be)
 
+### Typing - Parameter and Data Type Annotations
+
+Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [src/defs/types/conjugation.py](./verbecc/src/defs/types/conjugation.py)).
+
+Typing transition guide:
+
+- Instead of `lang='fr'` use `lang=Lang.fr` after the import `from verbecc import LangCodeISO639_1 as Lang`
+- Instead of `mood="indicatif"` 
+    - use `mood=Mood.fr.Indicatif` after the import `from verbecc import Mood`
+    - or use `mood=Mood.Indicatif` after the import `from verbecc import MoodFr as Mood`
+- Instead of `tense="présent"`
+    - use `tense=Tense.fr.Présent` after the import `from verbecc import Tense`
+    - or use `tense=Tense.Présent` after the import `from verbecc import TenseFr as Tense`
+- Instead of `gender='f'` use `gender=Gender.f` after the import `from verbecc import Gender`
+
+Examples:
+
+```python
+>>> from verbecc import grammar_defines, localization, LangCodeISO639_1, Mood, Tense, Gender
+>>> xmood = localization.xmood
+>>> xtense = localization.xtense
+>>> grammar_defines.SUPPORTED_LANGUAGES[LangCodeISO639_1.fr]
+'français'
+>>> xtense(LangCodeISO639_1.fr, Tense.en.Present)
+<TenseFr.Présent: 'présent'>
+>>> xmood(LangCodeISO639_1.fr, Mood.en.Subjunctive)
+<MoodFr.Subjonctif: 'subjonctif'>
+>>> Gender.f
+<Gender.f: 'f'>
+```
 
 ### Conjugation Example: French `manger` (to eat)
 ```python
->>> from verbecc import Conjugator
 >>> cg = Conjugator(lang='fr') # If this is the first run, it will take a minute for the model to train, 
                                # but it should save the model .zip file and run fast subsequently
 >>> cg.conjugate('manger')
@@ -416,7 +452,7 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 ['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
 ```
 
-### Example: Multi-Language Conjugation using English mood and tense names via `localization` module
+### Example: Multi-Language Conjugation using EN mood and tense names via `localization` module
 
 ```python
 >>> from verbecc import Conjugator
@@ -1149,7 +1185,6 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 ```python
 >>> cg = Conjugator(lang='it')
 >>> printjson(cg.conjugate('essere'))
->>> printjson(cg.conjugate('essere'))
 {
     "verb": {
         "infinitive": "essere",
@@ -1194,36 +1229,36 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 "loro saranno"
             ],
             "passato-prossimo": [
-                "io ho ente/essente",
-                "tu hai ente/essente",
-                "lui ha ente/essente",
-                "noi abbiamo ente/essente",
-                "voi avete ente/essente",
-                "loro hanno ente/essente"
+                "io sono stato",
+                "tu sei stato",
+                "lui è stato",
+                "noi siamo stati",
+                "voi siete stati",
+                "loro sono stati"
             ],
             "trapassato-prossimo": [
-                "io avevo ente/essente",
-                "tu avevi ente/essente",
-                "lui aveva ente/essente",
-                "noi avevamo ente/essente",
-                "voi avevate ente/essente",
-                "loro avevano ente/essente"
+                "io ero stato",
+                "tu eri stato",
+                "lui era stato",
+                "noi eravamo stati",
+                "voi eravate stati",
+                "loro erano stati"
             ],
             "trapassato-remoto": [
-                "io ebbi ente/essente",
-                "tu avesti ente/essente",
-                "lui ebbe ente/essente",
-                "noi avemmo ente/essente",
-                "voi aveste ente/essente",
-                "loro ebbero ente/essente"
+                "io fui stato",
+                "tu fosti stato",
+                "lui fu stato",
+                "noi fummo stati",
+                "voi foste stati",
+                "loro furono stati"
             ],
             "futuro-anteriore": [
-                "io avrò ente/essente",
-                "tu avrai ente/essente",
-                "lui avrà ente/essente",
-                "noi avremo ente/essente",
-                "voi avrete ente/essente",
-                "loro avranno ente/essente"
+                "io sarò stato",
+                "tu sarai stato",
+                "lui sarà stato",
+                "noi saremo stati",
+                "voi sarete stati",
+                "loro saranno stati"
             ]
         },
         "congiuntivo": {
@@ -1244,20 +1279,20 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 "che loro fossero"
             ],
             "passato": [
-                "che io abbia ente/essente",
-                "che tu abbia ente/essente",
-                "che lui abbia ente/essente",
-                "che noi abbiamo ente/essente",
-                "che voi abbiate ente/essente",
-                "che loro abbiano ente/essente"
+                "che io sia stato",
+                "che tu sia stato",
+                "che lui sia stato",
+                "che noi siamo stati",
+                "che voi siate stati",
+                "che loro siano stati"
             ],
             "trapassato": [
-                "che io avessi ente/essente",
-                "che tu avessi ente/essente",
-                "che lui avesse ente/essente",
-                "che noi avessimo ente/essente",
-                "che voi aveste ente/essente",
-                "che loro avessero ente/essente"
+                "che io fossi stato",
+                "che tu fossi stato",
+                "che lui fosse stato",
+                "che noi fossimo stati",
+                "che voi foste stati",
+                "che loro fossero stati"
             ]
         },
         "condizionale": {
@@ -1270,12 +1305,12 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 "loro sarebbero"
             ],
             "passato": [
-                "io avrei ente/essente",
-                "tu avresti ente/essente",
-                "lui avrebbe ente/essente",
-                "noi avremmo ente/essente",
-                "voi avreste ente/essente",
-                "loro avrebbero ente/essente"
+                "io sarei stato",
+                "tu saresti stato",
+                "lui sarebbe stato",
+                "noi saremmo stati",
+                "voi sareste stati",
+                "loro sarebbero stati"
             ]
         },
         "imperativo": {
@@ -1313,8 +1348,10 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
             ]
         },
         "participio": {
-            "participio": [
-                "ente/essente",
+            "participio-presente": [
+                "ente"
+            ],
+            "participio-passato": [
                 "stato",
                 "stata",
                 "stati",

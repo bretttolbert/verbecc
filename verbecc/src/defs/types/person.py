@@ -16,7 +16,7 @@ class Person(StrEnum):
     ThirdPersonPlural = "3p"
 
 
-def is_plural(p: Person):
+def is_plural(p: Person) -> bool:
     return p in (
         Person.FirstPersonPlural,
         Person.SecondPersonPlural,
@@ -24,5 +24,5 @@ def is_plural(p: Person):
     )
 
 
-def is_singular(p: Person):
+def is_singular(p: Person) -> bool:
     return not is_plural(p)

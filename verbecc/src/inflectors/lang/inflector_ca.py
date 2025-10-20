@@ -5,7 +5,7 @@ from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodCa as Mood
 from verbecc.src.defs.types.tense import TenseCa as Tense
 from verbecc.src.defs.types import exceptions
-from verbecc.src.defs.types.language import Language
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
@@ -13,21 +13,19 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 class InflectorCa(inflector.Inflector):
     @property
-    def lang(self) -> str:
-        return Language.Català
+    def lang(self) -> LangCodeISO639_1:
+        return LangCodeISO639_1.ca
 
-    def __init__(self):
+    def __init__(self) -> None:
         super(InflectorCa, self).__init__()
 
-    def _add_adverb_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Tense
-    ) -> str:
+    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -41,7 +39,7 @@ class InflectorCa(inflector.Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "ell"
-            if gender == Gender.Feminine:
+            if gender == Gender.f:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
@@ -55,13 +53,13 @@ class InflectorCa(inflector.Inflector):
                 ret += " os"
         elif person == Person.ThirdPersonPlural:
             ret = "ells"
-            if gender == Gender.Feminine:
+            if gender == Gender.f:
                 ret = "elles"
             if is_reflexive:
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Particip,
             Tense.Gerundi,
@@ -72,27 +70,27 @@ class InflectorCa(inflector.Inflector):
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
     ) -> str:
         return "haver"
 
-    def _get_infinitive_mood_name(self):
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinitiu
 
-    def _get_indicative_mood_name(self):
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicatiu
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Subjuntiu
 
-    def _get_conditional_mood_name(self):
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood_name(self) -> str:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Participi
 
-    def _get_participle_tense_name(self) -> str:
+    def _get_participle_tense(self) -> Tense:
         return Tense.Particip
 
     def _get_alternate_hv_inflection(self, s: str) -> str:
@@ -124,7 +122,9 @@ class InflectorCa(inflector.Inflector):
         """
         return {}
 
-    def _get_verb_stem_from_template_name(self, infinitive: str, template_name: str):
+    def _get_verb_stem_from_template_name(
+        self, infinitive: str, template_name: str
+    ) -> str:
         """Get the verb stem given an ininitive and a colon-delimited template name.
         E.g. infinitive='parlar' template_name='cant:ar' -> 'parl'
 

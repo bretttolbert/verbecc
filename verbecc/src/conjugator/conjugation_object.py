@@ -10,7 +10,7 @@ class ConjugationObjects:
         template: ConjugationTemplate,
         verb_stem: str,
         is_reflexive: bool,
-    ):
+    ) -> None:
         """
         :param verb_stem: the verb stem after applicable template
                             stem modifications i.e. modify-stem="strip-accents"
@@ -22,7 +22,7 @@ class ConjugationObjects:
         self.verb_stem = verb_stem
         self.is_reflexive = is_reflexive
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "infinitive={} verb={} template={} verb_stem={} is_reflexive={}".format(
             self.infinitive,
             self.verb,

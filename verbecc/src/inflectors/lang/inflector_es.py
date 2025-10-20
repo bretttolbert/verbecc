@@ -1,6 +1,7 @@
 from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.language_codes import LangCodeISO639_1
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodEs as Mood
 from verbecc.src.defs.types.tense import TenseEs as Tense
@@ -10,23 +11,21 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 class InflectorEs(Inflector):
     @property
-    def lang(self) -> str:
-        return "es"
+    def lang(self) -> LangCodeISO639_1:
+        return LangCodeISO639_1.es
 
-    def __init__(self):
+    def __init__(self) -> None:
         super(InflectorEs, self).__init__()
 
-    def _add_adverb_if_applicable(
-        self, s: str, mood_name: Mood, tense_name: Tense
-    ) -> str:
-        if mood_name == Mood.Imperativo and tense_name == Tense.Negativo:
+    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
+        if mood == Mood.Imperativo and tense == Tense.Negativo:
             return "no " + s
         return s
 
     def _get_default_pronoun(
         self,
         person: Person,
-        gender: Gender = Gender.Masculine,
+        gender: Gender = Gender.m,
         is_reflexive: bool = False,
     ) -> str:
         ret = ""
@@ -40,7 +39,7 @@ class InflectorEs(Inflector):
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
             ret = "él"
-            if gender == Gender.Feminine:
+            if gender == Gender.f:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
@@ -54,13 +53,13 @@ class InflectorEs(Inflector):
                 ret += " os"
         elif person == Person.ThirdPersonPlural:
             ret = "ellos"
-            if gender == Gender.Feminine:
+            if gender == Gender.f:
                 ret = "ellas"
             if is_reflexive:
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Participo,
             Tense.Gerundio,
@@ -72,27 +71,27 @@ class InflectorEs(Inflector):
     def _get_auxilary_verb(
         self,
         co: ConjugationObjects,
-        mood_name: Mood,
-        tense_name: Tense,
+        mood: Mood,
+        tense: Tense,
     ) -> str:
         return "haber"
 
-    def _get_infinitive_mood_name(self):
+    def _get_infinitive_mood(self) -> Mood:
         return Mood.Infinitivo
 
-    def _get_indicative_mood_name(self):
+    def _get_indicative_mood(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood_name(self):
+    def _get_subjunctive_mood(self) -> Mood:
         return Mood.Subjuntivo
 
-    def _get_conditional_mood_name(self):
+    def _get_conditional_mood(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood_name(self) -> str:
+    def _get_participle_mood(self) -> Mood:
         return Mood.Participo
 
-    def _get_participle_tense_name(self) -> str:
+    def _get_participle_tense(self) -> Mood:
         return Tense.Participo
 
     def _get_alternate_hv_inflection(self, s: str) -> str:

@@ -15,7 +15,7 @@
   - Improved Italian conjugation (verbs conjugated with _essere_)
 
 - 1.10.1 [28 September 2025]
-  - Properly conjugate h non aspiré en français
+  - Properly conjugate h non aspiré en FR
   - Reverted back to uncompressed XML files
 
 - 1.10.0 [28 September 2025]
@@ -89,7 +89,7 @@
 			<p><i>--guí</i></p>
     ```
     - With the above template, `conèix` + `--guí` = `jo coneguí` and `reconèix` + `--guí` = `jo reconeguí`
-  - Added `gender` flag to support feminine pronouns
+  - Added `gender` flag to support F pronouns
   - Modified to put `-` placeholder in conjugation for tenses that aren't conjugated e.g.
   ```python
     "caldre",

@@ -9,7 +9,7 @@ def strip_accents(s: str) -> str:
     )
 
 
-def starts_with_vowel(s: str, h_is_vowel=False) -> bool:
+def starts_with_vowel(s: str, h_is_vowel: bool = False) -> bool:
     if len(s) == 0:
         return False
     vowels = ["a", "e", "i", "o", "u"]
@@ -27,7 +27,7 @@ def get_common_letter_count(s1: str, s2: str) -> int:
     return sum(get_common_letters(s1, s2).values())
 
 
-def unicodefix(s):
+def unicodefix(s: str) -> str:
     # Fix Python 2.x.
     try:
         return s.decode("utf-8")

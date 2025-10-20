@@ -76,10 +76,10 @@ class MoodPt(StrEnum):
 
 
 class Mood:
-    Ca = MoodCa
-    En = MoodEn
-    Es = MoodEs
-    Fr = MoodFr
-    It = MoodIt
-    Pt = MoodPt
-    Ro = MoodRo
+    ca = MoodCa
+    en = MoodEn
+    es = MoodEs
+    fr = MoodFr
+    it = MoodIt
+    pt = MoodPt
+    ro = MoodRo

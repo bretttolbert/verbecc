@@ -4,7 +4,7 @@
 	verbs-fr.xml - List of French verbs with their conjugation template
 	Copyright (C) 2003-2016 Pierre Sarrazin <http://sarrazip.com/>
 	
-	English translations added by Brett Tolbert
+	EN translations added by Brett Tolbert
 	<https://github.com/bretttolbert/verbecc>
 
 	This program is free software; you can redistribute it and/or
@@ -28,7 +28,7 @@
 	<!ELEMENT v (i, t, aspirate-h?)>
 	<!ELEMENT i (#PCDATA)>  <!-- infinitive -->
 	<!ELEMENT t (#PCDATA)>	<!-- template (radical:termination) -->
-	<!ELEMENT en (#PCDATA)>  <!-- english translation -->
+	<!ELEMENT en (#PCDATA)>  <!-- EN translation -->
 	<!ELEMENT aspirate-h EMPTY>  <!-- useful for verbs starting with h -->
 ]>
 
@@ -3429,7 +3429,7 @@
 <v><i>feinter</i><t>aim:er</t><en>fake</en></v>
 <v><i>fêler</i><t>aim:er</t><en>crack</en></v>
 <v><i>féliciter</i><t>aim:er</t><en>congratulate</en></v>
-<v><i>féminiser</i><t>aim:er</t><en>feminine form</en></v>
+<v><i>féminiser</i><t>aim:er</t><en>F form</en></v>
 <v><i>fendiller</i><t>aim:er</t><en>crack</en></v>
 <v><i>fendre</i><t>ten:dre</t><en>split</en></v>
 <v><i>fenestrer</i><t>aim:er</t><en>fenestrer</en></v>
@@ -6972,7 +6972,7 @@
 <v><i>virevolter</i><t>aim:er</t><en>whirl</en></v>
 <v><i>virevousser</i><t>aim:er</t><en>virevousser</en></v>
 <v><i>virguler</i><t>aim:er</t><en>virguler</en></v>
-<v><i>viriliser</i><t>aim:er</t><en>make more masculine</en></v>
+<v><i>viriliser</i><t>aim:er</t><en>make more M</en></v>
 <v><i>viroler</i><t>aim:er</t><en>viroler</en></v>
 <v><i>viser</i><t>aim:er</t><en>aim for</en></v>
 <v><i>visionner</i><t>aim:er</t><en>view</en></v>
