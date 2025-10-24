@@ -3,6 +3,7 @@ import logging
 from verbecc.src.defs.constants.config import DEVEL_MODE
 from verbecc.src.defs.types.mood import MoodEn as Mood
 from verbecc.src.defs.types.tense import TenseEn as Tense
+from verbecc.src.parsers.person_ending import PersonEnding
 
 logging_level = logging.CRITICAL + 1  # effectively disables logging
 if DEVEL_MODE:
@@ -22,11 +23,15 @@ from typing import Dict, List, Tuple
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.exceptions import ConjugatorError
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person, is_singular
+from verbecc.src.defs.types.lang_specific_options import (
+    LangSpecificOptions,
+)
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
 from verbecc.src.parsers.conjugation_template import ConjugationTemplate
+from verbecc.src.parsers.tense_template import TenseTemplate
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.parsers.verb import Verb
 from verbecc.src.parsers.verbs_parser import VerbsParser
@@ -186,11 +191,12 @@ class Inflector(ABC):
             else:
                 return ParticipleInflection.FemininePlural
 
-    def _get_default_pronoun(
+    def get_default_pronoun(
         self,
         person: Person,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
         return ""
 
@@ -237,7 +243,7 @@ class Inflector(ABC):
     def _get_pronoun_suffix(
         self, person: Person, gender: Gender = Gender.m, imperative: bool = True
     ) -> str:
-        return " " + self._get_default_pronoun(person, gender)
+        return " " + self.get_default_pronoun(person, gender)
 
     def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
@@ -295,3 +301,18 @@ class Inflector(ABC):
     def _compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian conjunctiv perfect"""
         return False
+
+    def modify_person_ending_if_applicable(
+        self,
+        person_ending: PersonEnding,
+        mood: Mood,
+        tense: Tense,
+        tense_template: TenseTemplate,
+        lang_specific_options: LangSpecificOptions,
+    ) -> PersonEnding:
+        """
+        Hook for certain languages e.g. Spanish that modify
+        the standard person endings for certain persons depending
+        on language specific options (e.g. Voseo)
+        """
+        return person_ending

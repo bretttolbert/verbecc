@@ -2,7 +2,7 @@ from typing import Dict
 
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 
 MOOD_MAP: Dict[Mood, Dict[LangCodeISO639_1, Mood]] = {
     Mood.en.Indicative: {

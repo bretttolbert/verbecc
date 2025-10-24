@@ -1,12 +1,22 @@
-from typing import Dict, List, Tuple
+import copy
+from typing import cast, Dict, List, Tuple
 
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodEs as Mood
 from verbecc.src.defs.types.tense import TenseEs as Tense
+from verbecc.src.defs.types.lang_specific_options import (
+    LangSpecificOptions,
+)
+from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
+    LangSpecificOptionsEs,
+)
+from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.parsers.tense_template import TenseTemplate
+from verbecc.src.parsers.person_ending import PersonEnding
 
 
 class InflectorEs(Inflector):
@@ -22,19 +32,30 @@ class InflectorEs(Inflector):
             return "no " + s
         return s
 
-    def _get_default_pronoun(
+    def get_default_pronoun(
         self,
         person: Person,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
+        lang_opts = None
+        if lang_specific_options is not None:
+            lang_opts = cast(LangSpecificOptionsEs, lang_specific_options)
+
         ret = ""
         if person == Person.FirstPersonSingular:
             ret = "yo"
             if is_reflexive:
                 ret += " me"
         elif person == Person.SecondPersonSingular:
-            ret = "tú"
+            if (
+                lang_opts is not None
+                and lang_opts.voseo_options != VoseoOptions.NoVoseo
+            ):
+                ret = "vos"
+            else:
+                ret = "tú"
             if is_reflexive:
                 ret += " te"
         elif person == Person.ThirdPersonSingular:
@@ -132,3 +153,73 @@ class InflectorEs(Inflector):
                 Tense.FuturoPerfecto: (Mood.Subjuntivo, Tense.Futuro),
             },
         }
+
+    def modify_person_ending_if_applicable(
+        self,
+        person_ending: PersonEnding,
+        mood: Mood,
+        tense: Tense,
+        tense_template: TenseTemplate,
+        lang_specific_options: LangSpecificOptions,
+    ) -> PersonEnding:
+        """
+        Hook for certain languages e.g. Spanish that modify
+        the standard person endings for certain persons depending
+        on language specific options (e.g. Voseo)
+
+        Vos may be used in place of tú in the second person singular
+        with corresponding changes to verb endings.
+        The verb endings for vos are different from those for tú in
+        the present indicative, present subjunctive, and imperative moods.
+        Vos is conjugated like the vosotros form but without the 'i' in the ending.
+        For example, the present indicative forms are:
+
+        vosotros bebéis -> vos bebés
+        vosotros habláis -> vos hablás
+        vosotros dormís -> vos dormís
+
+        "éis" -> "és"
+        "áis" -> "ás"
+        "ís" -> "ís"
+
+        """
+        # map of vosotros endings to vos endings
+        VOSEO_ENDINGS_MAP: Dict[str, str] = {
+            "as": "ás",
+            "es": "és",
+            "ís": "ís",
+            "áis": "ás",
+            "éis": "és",
+        }
+        lang_opts = None
+        if lang_specific_options is not None:
+            lang_opts = cast(LangSpecificOptionsEs, lang_specific_options)
+            if (
+                lang_opts is not None
+                and lang_opts.voseo_options != VoseoOptions.NoVoseo
+                and person_ending.person == Person.SecondPersonSingular
+            ):
+                if lang_opts.voseo_options != VoseoOptions.VoseoTipo3:
+                    # only voseo tipo 3 (voseo típico aka Rioplatense) is supported at the moment
+                    raise NotImplementedError
+
+                if (
+                    (mood == Mood.Indicativo and tense == Tense.Presente)
+                    or (mood == Mood.Subjuntivo and tense == Tense.Presente)
+                    or (mood == Mood.Imperativo)
+                ):
+                    # first replace with given SecondPersonSingular (tú) ending(s)
+                    # with the SecondPersonPlural (vosotros) ending(s)
+                    replacement_person_ending = copy.deepcopy(
+                        tense_template.get_person_ending(Person.SecondPersonPlural)
+                    )
+                    # change replacement PersonEnding Person from second person plural to singular
+                    replacement_person_ending.person = Person.SecondPersonSingular
+                    # modify the endings for voseo
+                    for i, ending in enumerate(replacement_person_ending.get_endings()):
+                        if ending in VOSEO_ENDINGS_MAP:
+                            replacement_person_ending.endings[i] = VOSEO_ENDINGS_MAP[
+                                ending
+                            ]
+                    return replacement_person_ending
+        return person_ending

@@ -3,6 +3,13 @@ from lxml import etree
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
+from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
+    LangSpecificOptionsEs,
+)
+from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.parsers.tense_template import TenseTemplate
 
@@ -627,7 +634,9 @@ def test_inflector_es_conjugate_simple_mood_tense():
     )
     tense = "présent"
     tense_template = TenseTemplate(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, "indicativo", tense_template)
+    out = cg._conjugate_simple_mood_tense(
+        verb_stem, "indicativo", tense, tense_template
+    )
     assert len(out) == 6
     assert out == [
         "yo abaño",
@@ -664,6 +673,93 @@ def test_inflector_es_get_default_pronoun(
     person: Person, gender: Gender, is_reflexive: bool, expected_result: str
 ):
     assert (
-        cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
+        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
         == expected_result
     )
+
+
+def test_inflector_es_conjugate_mood_tense_ar_no_voseo():
+    assert cg.conjugate_mood_tense("hablar", Mood.es.Indicativo, Tense.es.Presente) == [
+        "yo hablo",
+        "tú hablas",
+        "él habla",
+        "nosotros hablamos",
+        "vosotros habláis",
+        "ellos hablan",
+    ]
+
+
+def test_inflector_es_conjugate_mood_tense_ar_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "hablar",
+        Mood.es.Indicativo,
+        Tense.es.Presente,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "yo hablo",
+        "vos hablás",
+        "él habla",
+        "nosotros hablamos",
+        "vosotros habláis",
+        "ellos hablan",
+    ]
+
+
+def test_inflector_es_conjugate_mood_tense_er_no_voseo():
+    assert cg.conjugate_mood_tense("beber", Mood.es.Indicativo, Tense.es.Presente) == [
+        "yo bebo",
+        "tú bebes",
+        "él bebe",
+        "nosotros bebemos",
+        "vosotros bebéis",
+        "ellos beben",
+    ]
+
+
+def test_inflector_es_conjugate_mood_tense_er_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "beber",
+        Mood.es.Indicativo,
+        Tense.es.Presente,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "yo bebo",
+        "vos bebés",
+        "él bebe",
+        "nosotros bebemos",
+        "vosotros bebéis",
+        "ellos beben",
+    ]
+
+
+def test_inflector_es_conjugate_mood_tense_ir_no_voseo():
+    assert cg.conjugate_mood_tense("dormir", Mood.es.Indicativo, Tense.es.Presente) == [
+        "yo duermo",
+        "tú duermes",
+        "él duerme",
+        "nosotros dormimos",
+        "vosotros dormís",
+        "ellos duermen",
+    ]
+
+
+def test_inflector_es_conjugate_mood_tense_ir_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "dormir",
+        Mood.es.Indicativo,
+        Tense.es.Presente,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "yo duermo",
+        "vos dormís",
+        "él duerme",
+        "nosotros dormimos",
+        "vosotros dormís",
+        "ellos duermen",
+    ]

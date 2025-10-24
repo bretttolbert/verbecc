@@ -2984,7 +2984,7 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
     )
     tense = "present"
     tense_template = TenseTemplate(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, "indicatiu", tense_template)
+    out = cg._conjugate_simple_mood_tense(verb_stem, "indicatiu", tense, tense_template)
     assert len(out) == 6
     assert out == [
         "jo parlo",
@@ -3021,7 +3021,7 @@ def test_inflector_ca_get_default_pronoun(
     cg, person, gender, is_reflexive, expected_result
 ):
     assert (
-        cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
+        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
         == expected_result
     )
 

@@ -4,6 +4,7 @@ from typing import List
 from verbecc.src.parsers.person_ending import PersonEnding
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.person import Person
 
 
 class TenseTemplate:
@@ -84,6 +85,16 @@ class TenseTemplate:
             person_num += 1
             if len(pe.endings) > 0:
                 self.person_endings.append(pe)
+
+    def get_person_ending(self, person: Person) -> PersonEnding:
+        for pe in self.person_endings:
+            if pe.person == person:
+                return pe
+        raise ValueError(
+            "TenseTemplate '{}' has no PersonEnding for person '{}'".format(
+                self.name, person
+            )
+        )
 
     def __repr__(self) -> str:
         return "person_endings={}".format(self.person_endings)

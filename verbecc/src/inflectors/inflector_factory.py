@@ -1,5 +1,5 @@
 from verbecc.src.defs.types.exceptions import InvalidLangError
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.inflectors.lang.inflector_ca import InflectorCa
 from verbecc.src.inflectors.lang.inflector_es import InflectorEs

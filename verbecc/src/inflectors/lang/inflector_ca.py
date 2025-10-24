@@ -5,7 +5,10 @@ from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import MoodCa as Mood
 from verbecc.src.defs.types.tense import TenseCa as Tense
 from verbecc.src.defs.types import exceptions
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
+from verbecc.src.defs.types.lang_specific_options import (
+    LangSpecificOptions,
+)
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
@@ -22,11 +25,12 @@ class InflectorCa(inflector.Inflector):
     def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
-    def _get_default_pronoun(
+    def get_default_pronoun(
         self,
         person: Person,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:
