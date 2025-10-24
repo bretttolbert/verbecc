@@ -110,7 +110,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
     )
     tense = "présent"
     tense_template = TenseTemplate(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, "indicatif", tense_template)
+    out = cg._conjugate_simple_mood_tense(verb_stem, "indicatif", tense, tense_template)
     assert len(out) == 6
     assert out == [
         "je mange",
@@ -162,7 +162,7 @@ def test_inflector_fr_get_default_pronoun(
     cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
 ):
     assert (
-        cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
+        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
         == expected_result
     )
 

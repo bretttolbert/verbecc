@@ -2,10 +2,13 @@ from typing import Dict, List, Tuple
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import MoodPt as Mood
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import TensePt as Tense
+from verbecc.src.defs.types.lang_specific_options import (
+    LangSpecificOptions,
+)
 from verbecc.src.inflectors.inflector import Inflector
 
 
@@ -48,11 +51,12 @@ class InflectorPt(Inflector):
             s += " " + self._get_pronoun_suffix(person, imperative=imperative)
         return s
 
-    def _get_default_pronoun(
+    def get_default_pronoun(
         self,
         person: Person,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
         ret = ""
         if person == Person.FirstPersonSingular:

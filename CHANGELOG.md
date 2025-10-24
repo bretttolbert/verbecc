@@ -1,5 +1,35 @@
 # verbecc Changelog
 
+- 1.11.4 [24 October 2025]
+  - Added support for Spanish Voseo
+
+- 1.11.3 [19 October 2025]
+  - improved typing
+  - changed `Language` enum to `LangCodeISO639_1`
+
+- 1.12.2 [17 October 2025]
+  - Added typing for mood and tense using `StrEnum` (backwards-compatible with string values)
+  - Fixed typo in new `Language` enum
+  - Corrected Romanian conditional tense spelling from `conditional` to `condițional`
+
+- 1.11.1 [13 October 2025]
+  - Fixed issues with Italian
+  - Further typing improvements
+  - Added `gender` option to top-level `conjugate` method
+
+- 1.11.0 [12 October 2025]
+  - (mega refactor)
+  - **Changes should be transparent to users of top level `Conjugator.conjugate` function, however in sub-level conjugate methods the `alternate: bool` parameter has been replaced with the `alternate_options: AlternateOptions` parameter.**
+  - **Officially dropping support for python <=3.8. Python 3.8 has been EOL for over a year now. Update to python 3.9 or later. Now supporting Python 3.9, 3.10, 3.11, 3.12, 3.13 and 3.14.**
+  - Significant refactoring
+      - Eliminated a lot of code duplication introduced during initial implementation of `include_alternates` option
+      - Moved most language-specific conjugation logic into the `Inflector` sub-classes
+      - Moved most language-agnostic conjugation logic into `Conjugator`
+  - Improved typing, now have typehint definitions for all returned data structures
+  - Organized source tree into subdirectories
+  - Added fixtures to optimize unit tests
+  - Updated dependencies
+
 - 1.10.5 [5 October 2025]
   - Fixed issue #26 (issue with compound verb conjugations with `include_alternates=True`)
 

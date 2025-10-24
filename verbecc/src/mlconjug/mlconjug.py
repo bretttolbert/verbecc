@@ -61,7 +61,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.pipeline import Pipeline
 
 from verbecc.src.defs.constants.grammar_defines import ALPHABET
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 import logging
 
 from verbecc.src.defs.constants.config import DEVEL_MODE

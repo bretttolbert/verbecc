@@ -39,8 +39,11 @@ from verbecc.src.defs.types.conjugation import (
     MoodsConjugation,
     Conjugation,
 )
+from verbecc.src.defs.types.lang_specific_options import (
+    LangSpecificOptions,
+)
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
-from verbecc.src.defs.types.language_codes import LangCodeISO639_1
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.utils.string_utils import strip_accents
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 
@@ -61,16 +64,28 @@ class Conjugator:
         include_alternates: bool = False,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> Conjugation:
         """
+        :param infinitive: the infinitive form of the verb to conjugate
+        :type infinitive: str
+
         :param include_alternates: whether to include alternate conjugations
         e.g. the Catalan verbs ser/ésser have alternate conjugations in
         the conditional tense and the participle
         See test_inflector_ca.test_inflector_conjugate_with_alternates
-        :type include_alternates: str
-        :param conjugate_prouns: if True, verbecc will conjugate the pronoun together with
+        :type include_alternates: bool
+
+        :param gender: controls gender of third-person singular and plural
+        :type gender: Gender
+
+        :param conjugate_pronouns: if True, verbecc will conjugate the pronoun together with
         its inflected form, e.g. for the French verb apprendre, for the first-person singular
         present tense you'd get "j'apprends" if True or "apprends" if False.
+        :type conjugate_pronouns: bool
+
+        :param lang_specific_options: options specific to certain languages.
+        :type lang_specific_options: LangSpecificOptions
         """
         alternates_behavior = AlternatesBehavior.FirstOnly
         if include_alternates:
@@ -79,7 +94,12 @@ class Conjugator:
         moods: MoodsConjugation = {}
         for mood, _ in co.template.mood_templates.items():
             moods[mood] = self._conjugate_mood(
-                co, mood, alternates_behavior, gender, conjugate_pronouns
+                co,
+                mood,
+                alternates_behavior,
+                gender,
+                conjugate_pronouns,
+                lang_specific_options,
             )
         return {
             "verb": ConjugationInfo(
@@ -100,6 +120,7 @@ class Conjugator:
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> MoodConjugation:
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood(
@@ -147,10 +168,17 @@ class Conjugator:
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> TenseConjugation:
         co = self._get_conj_obs(infinitive)
         return self._conjugate_mood_tense(
-            co, mood, tense, alternates_behavior, gender, conjugate_pronouns
+            co,
+            mood,
+            tense,
+            alternates_behavior=alternates_behavior,
+            gender=gender,
+            conjugate_pronouns=conjugate_pronouns,
+            lang_specific_options=lang_specific_options,
         )
 
     def _conjugate_mood(
@@ -160,18 +188,29 @@ class Conjugator:
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> MoodConjugation:
         if mood not in co.template.mood_templates.keys():
             raise InvalidMoodError
         ret = {}
         ret.update(
             self._get_simple_conjugations_for_mood(
-                co, mood, alternates_behavior, gender, conjugate_pronouns
+                co,
+                mood,
+                alternates_behavior,
+                gender,
+                conjugate_pronouns,
+                lang_specific_options,
             )
         )
         ret.update(
             self._get_compound_conjugations_for_mood(
-                co, mood, alternates_behavior, gender, conjugate_pronouns
+                co,
+                mood,
+                alternates_behavior,
+                gender,
+                conjugate_pronouns,
+                lang_specific_options,
             )
         )
         return ret
@@ -184,6 +223,7 @@ class Conjugator:
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> TenseConjugation:
         """
         :param gender: controls gender of third-person singular and plural
@@ -202,6 +242,7 @@ class Conjugator:
                 alternates_behavior,
                 gender=gender,
                 conjugate_pronouns=conjugate_pronouns,
+                lang_specific_options=lang_specific_options,
             )
         else:
             mood_template = co.template.mood_templates[mood]
@@ -211,6 +252,7 @@ class Conjugator:
             return self._conjugate_simple_mood_tense(
                 co.verb_stem,
                 mood,
+                tense,
                 tense_template,
                 is_reflexive=co.is_reflexive,
                 alternates_behavior=alternates_behavior,
@@ -219,6 +261,7 @@ class Conjugator:
                     co.template.modify_stem == "strip-accents"
                 ),
                 conjugate_pronouns=conjugate_pronouns,
+                lang_specific_options=lang_specific_options,
             )
 
     def _get_simple_conjugations_for_mood(
@@ -228,6 +271,7 @@ class Conjugator:
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> MoodConjugation:
         ret = {}
         mood_template = co.template.mood_templates[mood]
@@ -239,6 +283,7 @@ class Conjugator:
                 alternates_behavior,
                 gender,
                 conjugate_pronouns=conjugate_pronouns,
+                lang_specific_options=lang_specific_options,
             )
         return ret
 
@@ -249,6 +294,7 @@ class Conjugator:
         alternates_behavior: AlternatesBehavior,
         gender: Gender,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> MoodConjugation:
         ret = {}
         comp_conj_map = self._inflector._get_compound_conjugations_aux_verb_map()
@@ -261,6 +307,7 @@ class Conjugator:
                     alternates_behavior,
                     gender,
                     conjugate_pronouns=conjugate_pronouns,
+                    lang_specific_options=lang_specific_options,
                 )
         return ret
 
@@ -275,6 +322,7 @@ class Conjugator:
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> TenseConjugation:
         """
         :param gender: controls gender of third-person singular and plural
@@ -310,11 +358,13 @@ class Conjugator:
         aux_conj = self._conjugate_simple_mood_tense(
             aux_co.verb_stem,
             "",
+            aux_tense,
             aux_tense_template,
             co.is_reflexive,
             aux_alternates_behavior,
             gender=gender,
             conjugate_pronouns=conjugate_pronouns,
+            lang_specific_options=lang_specific_options,
         )
         # cast below is safe because we're not using AlternatesBehavior.All
         aux_conj_scalar_list = cast(List[str], aux_conj)
@@ -357,6 +407,7 @@ class Conjugator:
         aux_conj: List[str],
         alternates_behavior: AlternatesBehavior,
         gender: Gender = Gender.m,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> TenseConjugation:
         """
         Forms a compound conjugation composed of an auxiliary verb (aka helping verb)
@@ -388,6 +439,7 @@ class Conjugator:
             p_conj = self._conjugate_simple_mood_tense(
                 co.verb_stem,
                 p_mood,
+                p_tense,
                 co.template.mood_templates[p_mood].tense_templates[p_tense],
                 False,
                 AlternatesBehavior.FirstOnly,
@@ -506,12 +558,14 @@ class Conjugator:
         self,
         verb_stem: str,
         mood: Mood,
+        tense: Tense,
         tense_template: TenseTemplate,
         is_reflexive: bool = False,
         alternates_behavior: AlternatesBehavior = AlternatesBehavior.FirstOnly,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
         modify_stem_strip_accents: bool = False,
+        lang_specific_options: LangSpecificOptions = None,
     ) -> TenseConjugation:
         """
         :param gender: controls gender of third-person singular and plural
@@ -526,6 +580,13 @@ class Conjugator:
             or not conjugate_pronouns
         ):
             for person_ending in tense_template.person_endings:
+                person_ending = self._inflector.modify_person_ending_if_applicable(
+                    person_ending,
+                    mood,
+                    tense,
+                    tense_template,
+                    lang_specific_options,
+                )
                 person_conjugation: PersonConjugation = []
                 endings: List[str] = []
                 if alternates_behavior == AlternatesBehavior.FirstOnly:
@@ -567,14 +628,22 @@ class Conjugator:
                     ret.append(person_conjugation[0])
         else:
             for person_ending in tense_template.person_endings:
+                person_ending = self._inflector.modify_person_ending_if_applicable(
+                    person_ending,
+                    mood,
+                    tense,
+                    tense_template,
+                    lang_specific_options,
+                )
                 # There will be at least one conjugation per person-ending and
                 # potentially one or more alternate conjugations
                 person_conjugation: PersonConjugation = []
                 for ending in person_ending.get_endings():
-                    pronoun = self._inflector._get_default_pronoun(
+                    pronoun = self._inflector.get_default_pronoun(
                         person=person_ending.get_person(),
                         gender=gender,
                         is_reflexive=is_reflexive,
+                        lang_specific_options=lang_specific_options,
                     )
                     s = "-"
                     if ending != "-":

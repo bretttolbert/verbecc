@@ -13,32 +13,56 @@
 ##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano, romeno e catalão, aprimoradas pelo aprendizado de máquina
 ##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, română și catalană, îmbunătățite de învățarea automată
 
-### Live Demo
+## Live Demo
 - [Web GUI](http://verbe.cc)
 - [HTTP API : /verbecc/conjugate/fr/manger](http://verbe.cc/verbecc/conjugate/fr/manger)
 
-### Features
+## Features
 * Conjugate verbs in six romance languages: French, Spanish, Portuguese, Italian, Romanian, Catalan
-* Uses machine learning techniques to predict conjugation of unknown verbs with 99% accurracy
-* Includes both simple and compound conjugations
-* Unit-tested
-* Continuous integration with GitLab CI/CD pipeline
+* Conjugate thousands of known verbs without the use of any of machine learning, using simple string transformations based on XML conjugation templates
+* Predict conjugation of unknown verbs with 99% accurracy using machine learning techniques
+* Includes both simple and compound conjugations (i.e. with helping/auxiliary verbs)
+* Includes alternate conjugations (optionally)
+* Supports advanced language-specific options such as the Spanish Voseo
+* Fully type-annotated python library
+* Typed return data
+* Has a plethora of unit-tests to ensure correctness of verb conjugations
+* Continuous Integration with GitHub Actions CI/CD pipeline
 * Dependencies: `scikit-learn`, `lxml`
 
-### Quick Start
+## Quick Start
 ```bash
 git clone https://github.com/bretttolbert/verbecc.git
 cd verbecc
 pip install .
 ```
 
-### Examples
+## Table of Contents
 
-In the following examples, this `import` statement will be required:
+- [General Examples](#general-examples)
+    - [Prerequisites for running the examples](#prerequisites-for-running-the-examples)
+    - [Typing - Parameter and Data Type Annotations](#typing---parameter-and-data-type-annotations)
+    - [Multi-Language Conjugation](#multi-language-conjugation)
+    - [Multi-Language Conjugation using EN mood and tense names via localization module](#multi-language-conjugation-using-en-mood-and-tense-names-via-localization-module)
+- [Français](#français)
+    - [French `manger` (to eat)](#french-manger-to-eat)
+    - [ML Prediction: French `uberiser` (to _Uberize_)](#ml-prediction-french-uberiser-to-uberize)
+    - [French `être` (to be)](#french-être-to-be)
+- [Català](#català)
+    - [Catalan `ser` (to be)](#example-catalan-ser-to-be)
+    - [Catalan `ser` (to be) - with alternate conjugations and without pronouns](#example-catalan-ser-to-be-with-alternate-conjugations-without-pronouns)
+- [Español](#español)
+    - [Spanish `ser` (to be)](#example-spanish-ser-to-be)
+    - [Spanish `ser` (to be) - with voseo](#example-spanish-ser-to-be-with-voseo)
+- [Italiano](#italiano)
+    - [Italian `essere` (to be)](#italian-essere-to-be)
+- [Português](#português)
+    - [Portuguese `ser` (to be)](#example-portuguese--ser-to-be)
+- [Română](#română)
+    - [Romanian `fi` (to be)](#romanian-fi-to-be)
+- [Credits](#credits)
 
-```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
-```
+## General Examples
 
 In the following examples, the following function will be used to make the output more readable:
 
@@ -48,18 +72,6 @@ import json
 def printjson(c):
     print(json.dumps(c, indent=4, ensure_ascii=False))
 ```
-
-- [Conjugation Example: French manger (to eat)](#conjugation-example-french-manger-to-eat)
-- [ML Prediction Conjugation Example: French uberiser (to Uberize)](#ml-prediction-conjugation-example-french-uberiser-to-uberize)
-- [Multi-Language Conjugation](#example-multi-language-conjugation)
-- [Multi-Language Conjugation using EN mood and tense names via localization module](#example-multi-language-conjugation-using-EN-mood-and-tense-names-via-localization-module)
-- [Catalan `ser` (to be) - with pronouns, without alternate conjugations (original behavior)](#example-catalan-ser-to-be)
-- [Catalan `ser` (to be) - without pronouns, including alternate conjugations (new features in 1.9.7)](#example-catalan-ser-to-be-with-alternate-conjugations-without-pronouns)
-- [Spanish ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-spanish-ser-to-be)
-- [French être (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-french-être-to-be)
-- [Italian essere (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-italian-essere-to-be)
-- [Portuguese ser (to be) - with pronouns, without alternate conjugations (original behavior)](#example-portuguese--ser-to-be)
-- [Romanian fi (to be) - with pronouns, without alternate conjugations (original behavior)](#conjugation-example-romanian-fi-to-be)
 
 ### Typing - Parameter and Data Type Annotations
 
@@ -79,23 +91,66 @@ Typing transition guide:
 Examples:
 
 ```python
->>> from verbecc import grammar_defines, localization, LangCodeISO639_1, Mood, Tense, Gender
+>>> from verbecc import grammar_defines, localization, LangCodeISO639_1 as Lang, Mood, Tense, Gender
 >>> xmood = localization.xmood
 >>> xtense = localization.xtense
->>> grammar_defines.SUPPORTED_LANGUAGES[LangCodeISO639_1.fr]
+>>> grammar_defines.SUPPORTED_LANGUAGES[Lang.fr]
 'français'
->>> xtense(LangCodeISO639_1.fr, Tense.en.Present)
+>>> xtense(Lang.fr, Tense.en.Present)
 <TenseFr.Présent: 'présent'>
->>> xmood(LangCodeISO639_1.fr, Mood.en.Subjunctive)
+>>> xmood(Lang.fr, Mood.en.Subjunctive)
 <MoodFr.Subjonctif: 'subjonctif'>
 >>> Gender.f
 <Gender.f: 'f'>
 ```
 
-### Conjugation Example: French `manger` (to eat)
+### Multi-Language Conjugation
+
 ```python
->>> cg = Conjugator(lang='fr') # If this is the first run, it will take a minute for the model to train, 
-                               # but it should save the model .zip file and run fast subsequently
+>>> from verbecc import Conjugator
+>>> Conjugator('fr').conjugate('etre')['moods']['indicatif']['présent']
+['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
+>>> Conjugator('es').conjugate('ser')['moods']['indicativo']['presente']
+['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+>>> Conjugator('pt').conjugate('ser')['moods']['indicativo']['presente']
+['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
+>>> Conjugator('ca').conjugate('ser')['moods']['indicatiu']['present']
+['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
+>>> Conjugator('it').conjugate('essere')['moods']['indicativo']['presente']
+['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
+>>> Conjugator('ro').conjugate('fi')['moods']['indicativ']['prezent']
+['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
+```
+
+### Multi-Language Conjugation using EN mood and tense names via localization module
+
+```python
+>>> from verbecc import Conjugator
+>>> from verbecc.localization import xmood, xtense
+>>> def xconj(lang, infinitive, mood, tense):
+...     return Conjugator(lang).conjugate(infinitive)['moods'][xmood(lang, mood)][xtense(lang, tense)]
+... 
+>>> xconj('fr', 'etre', 'indicative', 'present')
+['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
+>>> xconj('es', 'ser', 'indicative', 'present')
+['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+>>> xconj('pt', 'ser', 'indicative', 'present')
+['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
+>>> xconj('ca', 'ser', 'indicative', 'present')
+['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
+>>> xconj('it', 'essere', 'indicative', 'present')
+['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
+>>> xconj('ro', 'fi', 'indicative', 'present')
+['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
+```
+
+# Français
+
+### French `manger` (to eat)
+```python
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(Lang.fr) # If this is the first run, it will take a minute for the model to train, 
+                             # but it should save the model .zip file and run fast subsequently
 >>> cg.conjugate('manger')
 {'verb': {'infinitive': 'manger', 'predicted': False, 'pred_score': 1.0, 'template': 'man:ger', 'translation_en': 'eat', 'stem': 'man'}, 'moods': {'infinitif': {'infinitif-présent': ['manger']}, 'indicatif': {'présent': ['je mange', 'tu manges', 'il mange', 'nous mangeons', 'vous mangez', 'ils mangent'], 'imparfait': ['je mangeais', 'tu mangeais', 'il mangeait', 'nous mangions', 'vous mangiez', 'ils mangeaient'], 'futur-simple': ['je mangerai', 'tu mangeras', 'il mangera', 'nous mangerons', 'vous mangerez', 'ils mangeront'], 'passé-simple': ['je mangeai', 'tu mangeas', 'il mangea', 'nous mangeâmes', 'vous mangeâtes', 'ils mangèrent'], 'passé-composé': ["j'ai mangé", 'tu as mangé', 'il a mangé', 'nous avons mangé', 'vous avez mangé', 'ils ont mangé'], 'plus-que-parfait': ["j'avais mangé", 'tu avais mangé', 'il avait mangé', 'nous avions mangé', 'vous aviez mangé', 'ils avaient mangé'], 'futur-antérieur': ["j'aurai mangé", 'tu auras mangé', 'il aura mangé', 'nous aurons mangé', 'vous aurez mangé', 'ils auront mangé'], 'passé-antérieur': ["j'eus mangé", 'tu eus mangé', 'il eut mangé', 'nous eûmes mangé', 'vous eûtes mangé', 'ils eurent mangé']}, 'conditionnel': {'présent': ['je mangerais', 'tu mangerais', 'il mangerait', 'nous mangerions', 'vous mangeriez', 'ils mangeraient'], 'passé': ["j'aurais mangé", 'tu aurais mangé', 'il aurait mangé', 'nous aurions mangé', 'vous auriez mangé', 'ils auraient mangé']}, 'subjonctif': {'présent': ['que je mange', 'que tu manges', "qu'il mange", 'que nous mangions', 'que vous mangiez', "qu'ils mangent"], 'imparfait': ['que je mangeasse', 'que tu mangeasses', "qu'il mangeât", 'que nous mangeassions', 'que vous mangeassiez', "qu'ils mangeassent"], 'passé': ["que j'aie mangé", 'que tu aies mangé', "qu'il ait mangé", 'que nous ayons mangé', 'que vous ayez mangé', "qu'ils aient mangé"], 'plus-que-parfait': ["que j'eusse mangé", 'que tu eusses mangé', "qu'il eût mangé", 'que nous eussions mangé', 'que vous eussiez mangé', "qu'ils eussent mangé"]}, 'imperatif': {'imperatif-présent': ['mange', 'mangeons', 'mangez'], 'imperatif-passé': ['aie mangé', 'ayons mangé', 'ayez mangé']}, 'participe': {'participe-présent': ['mangeant'], 'participe-passé': ['mangé', 'mangés', 'mangée', 'mangées']}}}
 >>> # ok now let's make it more readable
@@ -268,11 +323,13 @@ dict_keys(['présent', 'imparfait', 'futur-simple', 'passé-simple', 'passé-com
 dict_keys(['présent', 'imparfait', 'passé', 'plus-que-parfait'])
 ```
 
-### ML Prediction Conjugation Example: French `uberiser` (to _Uberize_)
+### ML Prediction French `uberiser` (to _Uberize_)
 
 In this example, we will conjugate a verb that `verbecc` doesn't explicitly know. The conjugation will be predicted using a machine-learning model trained on `verbecc`'s French verb conjugation data XML models.
 
 ```python
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(Lang.fr)
 >>> printjson(cg.conjugate('ubériser'))
 {
     "verb": {
@@ -434,52 +491,176 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
-### Example: Multi-Language Conjugation
-
+### French `être` (to be)
 ```python
->>> from verbecc import Conjugator
->>> Conjugator('fr').conjugate('etre')['moods']['indicatif']['présent']
-['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
->>> Conjugator('es').conjugate('ser')['moods']['indicativo']['presente']
-['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
->>> Conjugator('pt').conjugate('ser')['moods']['indicativo']['presente']
-['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
->>> Conjugator('ca').conjugate('ser')['moods']['indicatiu']['present']
-['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
->>> Conjugator('it').conjugate('essere')['moods']['indicativo']['presente']
-['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
->>> Conjugator('ro').conjugate('fi')['moods']['indicativ']['prezent']
-['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(Lang.fr)
+# Observe that it finds and conjugates `être` even though we input `etre`
+>>> printjson(cg.conjugate('etre'))
+{
+    "verb": {
+        "infinitive": "être",
+        "predicted": false,
+        "pred_score": 1.0,
+        "template": ":être",
+        "translation_en": "be",
+        "stem": ""
+    },
+    "moods": {
+        "infinitif": {
+            "infinitif-présent": [
+                "être"
+            ]
+        },
+        "indicatif": {
+            "présent": [
+                "je suis",
+                "tu es",
+                "il est",
+                "nous sommes",
+                "vous êtes",
+                "ils sont"
+            ],
+            "imparfait": [
+                "j'étais",
+                "tu étais",
+                "il était",
+                "nous étions",
+                "vous étiez",
+                "ils étaient"
+            ],
+            "futur-simple": [
+                "je serai",
+                "tu seras",
+                "il sera",
+                "nous serons",
+                "vous serez",
+                "ils seront"
+            ],
+            "passé-simple": [
+                "je fus",
+                "tu fus",
+                "il fut",
+                "nous fûmes",
+                "vous fûtes",
+                "ils furent"
+            ],
+            "passé-composé": [
+                "j'ai été",
+                "tu as été",
+                "il a été",
+                "nous avons été",
+                "vous avez été",
+                "ils ont été"
+            ],
+            "plus-que-parfait": [
+                "j'avais été",
+                "tu avais été",
+                "il avait été",
+                "nous avions été",
+                "vous aviez été",
+                "ils avaient été"
+            ],
+            "futur-antérieur": [
+                "j'aurai été",
+                "tu auras été",
+                "il aura été",
+                "nous aurons été",
+                "vous aurez été",
+                "ils auront été"
+            ],
+            "passé-antérieur": [
+                "j'eus été",
+                "tu eus été",
+                "il eut été",
+                "nous eûmes été",
+                "vous eûtes été",
+                "ils eurent été"
+            ]
+        },
+        "conditionnel": {
+            "présent": [
+                "je serais",
+                "tu serais",
+                "il serait",
+                "nous serions",
+                "vous seriez",
+                "ils seraient"
+            ],
+            "passé": [
+                "j'aurais été",
+                "tu aurais été",
+                "il aurait été",
+                "nous aurions été",
+                "vous auriez été",
+                "ils auraient été"
+            ]
+        },
+        "subjonctif": {
+            "présent": [
+                "que je sois",
+                "que tu sois",
+                "qu'il soit",
+                "que nous soyons",
+                "que vous soyez",
+                "qu'ils soient"
+            ],
+            "imparfait": [
+                "que je fusse",
+                "que tu fusses",
+                "qu'il fût",
+                "que nous fussions",
+                "que vous fussiez",
+                "qu'ils fussent"
+            ],
+            "passé": [
+                "que j'aie été",
+                "que tu aies été",
+                "qu'il ait été",
+                "que nous ayons été",
+                "que vous ayez été",
+                "qu'ils aient été"
+            ],
+            "plus-que-parfait": [
+                "que j'eusse été",
+                "que tu eusses été",
+                "qu'il eût été",
+                "que nous eussions été",
+                "que vous eussiez été",
+                "qu'ils eussent été"
+            ]
+        },
+        "imperatif": {
+            "imperatif-présent": [
+                "sois",
+                "soyons",
+                "soyez"
+            ],
+            "imperatif-passé": [
+                "aie été",
+                "ayons été",
+                "ayez été"
+            ]
+        },
+        "participe": {
+            "participe-présent": [
+                "étant"
+            ],
+            "participe-passé": [
+                "été"
+            ]
+        }
+    }
+}
 ```
 
-### Example: Multi-Language Conjugation using EN mood and tense names via `localization` module
-
-```python
->>> from verbecc import Conjugator
->>> from verbecc.localization import xmood, xtense
->>> def xconj(lang, infinitive, mood, tense):
-...     return Conjugator(lang).conjugate(infinitive)['moods'][xmood(lang, mood)][xtense(lang, tense)]
-... 
->>> xconj('fr', 'etre', 'indicative', 'present')
-['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
->>> xconj('es', 'ser', 'indicative', 'present')
-['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
->>> xconj('pt', 'ser', 'indicative', 'present')
-['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
->>> xconj('ca', 'ser', 'indicative', 'present')
-['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
->>> xconj('it', 'essere', 'indicative', 'present')
-['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
->>> xconj('ro', 'fi', 'indicative', 'present')
-['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
-```
-
+# Català
 
 ### Example: Catalan `ser` (to be)
 ```python
->>> from verbecc import Conjugator
->>> cg = Conjugator(lang='ca') # If this is the first run, it will take a minute for the model to train, 
-                               # but it should save the model .zip file and run fast subsequently
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(Lang.ca) # If this is the first run, it will take a minute for the model to train, 
+                             # but it should save the model .zip file and run fast subsequently
 >>> cg.conjugate('ser')
 >>> printjson(cg.conjugate('ser'))
 {
@@ -589,9 +770,9 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Example: Catalan `ser` (to be) with alternate conjugations, without pronouns
 ```python
->>> from verbecc import Conjugator
->>> cg = Conjugator(lang='ca') # If this is the first run, it will take a minute for the model to train, 
-                               # but it should save the model .zip file and run fast subsequently
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(lang=Lang.ca) # If this is the first run, it will take a minute for the model to train, 
+                                  # but it should save the model .zip file and run fast subsequently
 >>> cg.conjugate('ser')
 >>> printjson(cg.conjugate('ser', include_alternates=True, conjugate_pronouns=False))
 {
@@ -815,11 +996,13 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
+# Español
+
 ### Example: Spanish `ser` (to be)
 ```python
->>> from verbecc import Conjugator
->>> cg = Conjugator(lang='es') # If this is the first run, it will take a minute for the model to train, 
-                               # but it should save the model .zip file and run fast subsequently
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(lang=Lang.es) # If this is the first run, it will take a minute for the model to train, 
+                                  # but it should save the model .zip file and run fast subsequently
 >>> cg.conjugate('ser')
 >>> printjson(cg.conjugate('ser'))
 {
@@ -1019,171 +1202,216 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
-### Conjugation Example: French `être` (to be)
+### Example: Spanish `ser` (to be) with voseo
 ```python
->>> cg = Conjugator(lang='fr')
-# Observe that it finds and conjugates `être` even though we input `etre`
->>> printjson(cg.conjugate('etre'))
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang, LangSpecificOptionsEs, VoseoOptions
+>>> cg = Conjugator(lang=Lang.es) # If this is the first run, it will take a minute for the model to train, 
+                               # but it should save the model .zip file and run fast subsequently
+>>> cg.conjugate('ser')
+>>> printjson(cg.conjugate('ser', lang_specific_options=LangSpecificOptionsEs(VoseoOptions.VoseoTipo3)))
 {
     "verb": {
-        "infinitive": "être",
+        "infinitive": "ser",
         "predicted": false,
         "pred_score": 1.0,
-        "template": ":être",
-        "translation_en": "be",
+        "template": ":ser",
+        "translation_en": "",
         "stem": ""
     },
     "moods": {
-        "infinitif": {
-            "infinitif-présent": [
-                "être"
+        "indicativo": {
+            "presente": [
+                "yo soy",
+                "vos sois",
+                "él es",
+                "nosotros somos",
+                "vosotros sois",
+                "ellos son"
+            ],
+            "pretérito-imperfecto": [
+                "yo era",
+                "vos eras",
+                "él era",
+                "nosotros éramos",
+                "vosotros erais",
+                "ellos eran"
+            ],
+            "pretérito-perfecto-simple": [
+                "yo fui",
+                "vos fuiste",
+                "él fue",
+                "nosotros fuimos",
+                "vosotros fuisteis",
+                "ellos fueron"
+            ],
+            "futuro": [
+                "yo seré",
+                "vos serás",
+                "él será",
+                "nosotros seremos",
+                "vosotros seréis",
+                "ellos serán"
+            ],
+            "pretérito-perfecto-compuesto": [
+                "yo he sido",
+                "vos has sido",
+                "él ha sido",
+                "nosotros hemos sido",
+                "vosotros habéis sido",
+                "ellos han sido"
+            ],
+            "pretérito-pluscuamperfecto": [
+                "yo había sido",
+                "vos habías sido",
+                "él había sido",
+                "nosotros habíamos sido",
+                "vosotros habíais sido",
+                "ellos habían sido"
+            ],
+            "pretérito-anterior": [
+                "yo hube sido",
+                "vos hubiste sido",
+                "él hubo sido",
+                "nosotros hubimos sido",
+                "vosotros hubisteis sido",
+                "ellos hubieron sido"
+            ],
+            "futuro-perfecto": [
+                "yo habré sido",
+                "vos habrás sido",
+                "él habrá sido",
+                "nosotros habremos sido",
+                "vosotros habréis sido",
+                "ellos habrán sido"
             ]
         },
-        "indicatif": {
-            "présent": [
-                "je suis",
-                "tu es",
-                "il est",
-                "nous sommes",
-                "vous êtes",
-                "ils sont"
+        "subjuntivo": {
+            "presente": [
+                "yo sea",
+                "vos seáis",
+                "él sea",
+                "nosotros seamos",
+                "vosotros seáis",
+                "ellos sean"
             ],
-            "imparfait": [
-                "j'étais",
-                "tu étais",
-                "il était",
-                "nous étions",
-                "vous étiez",
-                "ils étaient"
+            "pretérito-imperfecto-1": [
+                "yo fuera",
+                "vos fueras",
+                "él fuera",
+                "nosotros fuéramos",
+                "vosotros fuerais",
+                "ellos fueran"
             ],
-            "futur-simple": [
-                "je serai",
-                "tu seras",
-                "il sera",
-                "nous serons",
-                "vous serez",
-                "ils seront"
+            "pretérito-imperfecto-2": [
+                "yo fuese",
+                "vos fueses",
+                "él fuese",
+                "nosotros fuésemos",
+                "vosotros fueseis",
+                "ellos fuesen"
             ],
-            "passé-simple": [
-                "je fus",
-                "tu fus",
-                "il fut",
-                "nous fûmes",
-                "vous fûtes",
-                "ils furent"
+            "futuro": [
+                "yo fuere",
+                "vos fueres",
+                "él fuere",
+                "nosotros fuéremos",
+                "vosotros fuereis",
+                "ellos fueren"
             ],
-            "passé-composé": [
-                "j'ai été",
-                "tu as été",
-                "il a été",
-                "nous avons été",
-                "vous avez été",
-                "ils ont été"
+            "pretérito-perfecto": [
+                "yo haya sido",
+                "vos hayas sido",
+                "él haya sido",
+                "nosotros hayamos sido",
+                "vosotros hayáis sido",
+                "ellos hayan sido"
             ],
-            "plus-que-parfait": [
-                "j'avais été",
-                "tu avais été",
-                "il avait été",
-                "nous avions été",
-                "vous aviez été",
-                "ils avaient été"
+            "pretérito-pluscuamperfecto-1": [
+                "yo hubiera sido",
+                "vos hubieras sido",
+                "él hubiera sido",
+                "nosotros hubiéramos sido",
+                "vosotros hubierais sido",
+                "ellos hubieran sido"
             ],
-            "futur-antérieur": [
-                "j'aurai été",
-                "tu auras été",
-                "il aura été",
-                "nous aurons été",
-                "vous aurez été",
-                "ils auront été"
+            "pretérito-pluscuamperfecto-2": [
+                "yo hubiese sido",
+                "vos hubieses sido",
+                "él hubiese sido",
+                "nosotros hubiésemos sido",
+                "vosotros hubieseis sido",
+                "ellos hubiesen sido"
             ],
-            "passé-antérieur": [
-                "j'eus été",
-                "tu eus été",
-                "il eut été",
-                "nous eûmes été",
-                "vous eûtes été",
-                "ils eurent été"
+            "futuro-perfecto": [
+                "yo hubiere sido",
+                "vos hubieres sido",
+                "él hubiere sido",
+                "nosotros hubiéremos sido",
+                "vosotros hubiereis sido",
+                "ellos hubieren sido"
             ]
         },
-        "conditionnel": {
-            "présent": [
-                "je serais",
-                "tu serais",
-                "il serait",
-                "nous serions",
-                "vous seriez",
-                "ils seraient"
+        "imperativo": {
+            "afirmativo": [
+                "sé",
+                "sean",
+                "seamos",
+                "sed",
+                "sean"
             ],
-            "passé": [
-                "j'aurais été",
-                "tu aurais été",
-                "il aurait été",
-                "nous aurions été",
-                "vous auriez été",
-                "ils auraient été"
+            "negativo": [
+                "no seas",
+                "no sean",
+                "no seamos",
+                "no seáis",
+                "no sean"
             ]
         },
-        "subjonctif": {
-            "présent": [
-                "que je sois",
-                "que tu sois",
-                "qu'il soit",
-                "que nous soyons",
-                "que vous soyez",
-                "qu'ils soient"
+        "condicional": {
+            "presente": [
+                "yo sería",
+                "vos serías",
+                "él sería",
+                "nosotros seríamos",
+                "vosotros seríais",
+                "ellos serían"
             ],
-            "imparfait": [
-                "que je fusse",
-                "que tu fusses",
-                "qu'il fût",
-                "que nous fussions",
-                "que vous fussiez",
-                "qu'ils fussent"
-            ],
-            "passé": [
-                "que j'aie été",
-                "que tu aies été",
-                "qu'il ait été",
-                "que nous ayons été",
-                "que vous ayez été",
-                "qu'ils aient été"
-            ],
-            "plus-que-parfait": [
-                "que j'eusse été",
-                "que tu eusses été",
-                "qu'il eût été",
-                "que nous eussions été",
-                "que vous eussiez été",
-                "qu'ils eussent été"
+            "perfecto": [
+                "yo habría sido",
+                "vos habrías sido",
+                "él habría sido",
+                "nosotros habríamos sido",
+                "vosotros habríais sido",
+                "ellos habrían sido"
             ]
         },
-        "imperatif": {
-            "imperatif-présent": [
-                "sois",
-                "soyons",
-                "soyez"
-            ],
-            "imperatif-passé": [
-                "aie été",
-                "ayons été",
-                "ayez été"
+        "infinitivo": {
+            "infinitivo": [
+                "ser",
+                "sido"
             ]
         },
-        "participe": {
-            "participe-présent": [
-                "étant"
-            ],
-            "participe-passé": [
-                "été"
+        "gerundio": {
+            "gerundio": [
+                "siendo",
+                "sido"
+            ]
+        },
+        "participo": {
+            "participo": [
+                "sido"
             ]
         }
     }
 }
 ```
 
-### Conjugation Example: Italian `essere` (to be)
+# Italiano
+
+### Italian `essere` (to be)
 ```python
->>> cg = Conjugator(lang='it')
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(Lang.it)
 >>> printjson(cg.conjugate('essere'))
 {
     "verb": {
@@ -1362,11 +1590,13 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
+# Português
+
 ### Example: Portuguese  `ser` (to be)
 ```python
->>> from verbecc import Conjugator
->>> cg = Conjugator(lang='pt') # If this is the first run, it will take a minute for the model to train, 
-                               # but it should save the model .zip file and run fast subsequently
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(Lang.pt) # If this is the first run, it will take a minute for the model to train, 
+                             # but it should save the model .zip file and run fast subsequently
 >>> cg.conjugate('ser')
 >>> printjson(cg.conjugate('ser'))
 {
@@ -1576,9 +1806,12 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
-### Conjugation Example: Romanian `fi` (to be)
+# Română
+
+### Romanian `fi` (to be)
 ```python
->>> cg = Conjugator(lang='ro')
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
+>>> cg = Conjugator(Lang.ro)
 >>> printjson(cg.conjugate('fi'))
 {
     "verb": {

@@ -505,6 +505,6 @@ def test_inflector_pt_get_default_pronoun(
     cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
 ):
     assert (
-        cg._inflector._get_default_pronoun(person, gender, is_reflexive=is_reflexive)
+        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
         == expected_result
     )
