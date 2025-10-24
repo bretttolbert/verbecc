@@ -108,13 +108,14 @@ Examples:
 
 ```python
 >>> from functools import partial
->>> from verbecc import Conjugator, grammar_defines, LangCodeISO639_1 as Lang
+>>> from verbecc import Conjugator, LangCodeISO639_1 as Lang, grammar_defines
+>>> from verbecc import LangSpecificOptionsEs, VoseoOptions
 >>> conjugators = {lang : Conjugator(lang) for lang in grammar_defines.SUPPORTED_LANGUAGES}
 >>> conj_fr = conjugators[Lang.fr].conjugate
+>>> conj_it = conjugators[Lang.it].conjugate
 >>> conj_pt = conjugators[Lang.pt].conjugate
 >>> conj_ro = conjugators[Lang.ro].conjugate
 >>> conj_ca = conjugators[Lang.ca].conjugate
->>> conj_es = conjugators[Lang.es].conjugate
 >>> conj_es = conjugators[Lang.es].conjugate
 >>> conj_es_voseo = partial(conj_es, lang_specific_options=LangSpecificOptionsEs(VoseoOptions.VoseoTipo3))
 
