@@ -107,19 +107,32 @@ Examples:
 ### Multi-Language Conjugation
 
 ```python
->>> from verbecc import Conjugator
->>> Conjugator('fr').conjugate('etre')['moods']['indicatif']['présent']
+>>> from functools import partial
+>>> from verbecc import Conjugator, grammar_defines, LangCodeISO639_1 as Lang
+>>> conjugators = {lang : Conjugator(lang) for lang in grammar_defines.SUPPORTED_LANGUAGES}
+>>> conj_fr = conjugators[Lang.fr].conjugate
+>>> conj_pt = conjugators[Lang.pt].conjugate
+>>> conj_ro = conjugators[Lang.ro].conjugate
+>>> conj_ca = conjugators[Lang.ca].conjugate
+>>> conj_es = conjugators[Lang.es].conjugate
+>>> conj_es = conjugators[Lang.es].conjugate
+>>> conj_es_voseo = partial(conj_es, lang_specific_options=LangSpecificOptionsEs(VoseoOptions.VoseoTipo3))
+
+>>> conj_fr('etre')['moods']['indicatif']['présent']
 ['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
->>> Conjugator('es').conjugate('ser')['moods']['indicativo']['presente']
-['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
->>> Conjugator('pt').conjugate('ser')['moods']['indicativo']['presente']
+>>> conj_pt('ser')['moods']['indicativo']['presente']
 ['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
->>> Conjugator('ca').conjugate('ser')['moods']['indicatiu']['present']
+>>> conj_ca('ser')['moods']['indicatiu']['present']
 ['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
->>> Conjugator('it').conjugate('essere')['moods']['indicativo']['presente']
+>>> conj_it('essere')['moods']['indicativo']['presente']
 ['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
->>> Conjugator('ro').conjugate('fi')['moods']['indicativ']['prezent']
+>>> conj_ro('fi')['moods']['indicativ']['prezent']
 ['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
+>>> conj_es('ser')['moods']['indicativo']['presente']
+['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+>>> conj_es_voseo('ser')['moods']['indicativo']['presente']
+['yo soy', 'vos sois', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+
 ```
 
 ### Multi-Language Conjugation using EN mood and tense names via localization module
