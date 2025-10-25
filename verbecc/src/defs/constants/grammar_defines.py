@@ -121,7 +121,15 @@ PARTICIPLE_INFLECTION_IT: Tuple[
     ParticipleInflection.FemininePlural,
 )
 
-PARTICIPLE_INFLECTIONS: Dict[LangCodeISO639_1, List[Person]] = {
+PARTICIPLE_INFLECTIONS: Dict[
+    LangCodeISO639_1,
+    Tuple[
+        ParticipleInflection,
+        ParticipleInflection,
+        ParticipleInflection,
+        ParticipleInflection,
+    ],
+] = {
     LangCodeISO639_1.fr: PARTICIPLE_INFLECTION_FR,
     LangCodeISO639_1.es: PARTICIPLE_INFLECTION_ES,
     LangCodeISO639_1.ca: PARTICIPLE_INFLECTION_CA,

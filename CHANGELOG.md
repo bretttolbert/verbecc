@@ -2,7 +2,7 @@
 
 - 1.11.6 [TBR]
   - Misc. cleanup
-  - Promoted applicable Inflector methods to public
+  - Promoted applicable `Inflector` methods to public
 
 - 1.11.5 [24 October 2025]
   - Fixed Spanish Voseo imperativo afirmativo
