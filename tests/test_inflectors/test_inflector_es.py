@@ -615,7 +615,7 @@ def test_inflector_es_get_conj_obs():
     assert co.verb_stem == "abañ"
 
 
-def test_inflector_esget_verb_stem_from_template_name():
+def test_inflector_es_get_verb_stem_from_template_name():
     verb_stem = cg._inflector.get_verb_stem_from_template_name("abañar", "cort:ar")
     assert verb_stem == "abañ"
 

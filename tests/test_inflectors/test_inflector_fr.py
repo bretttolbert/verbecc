@@ -124,7 +124,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
     ]
 
 
-def test_inflector_frget_verb_stem_from_template_name(cg):
+def test_inflector_fr_get_verb_stem_from_template_name(cg):
     verb_stem = cg._inflector.get_verb_stem_from_template_name("manger", "man:ger")
     assert verb_stem == "man"
     verb_stem = cg._inflector.get_verb_stem_from_template_name("téléphoner", "aim:er")
