@@ -2,6 +2,7 @@ import pytest
 from lxml import etree
 from typing import cast
 
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator, AlternatesBehavior
@@ -96,6 +97,8 @@ def test_inflector_fr_impersonal_verbs(cg):
 
 
 def test_inflector_fr_conjugate_simple_mood_tense(cg):
+    mood = "indicatif"
+    tense = "présent"
     verb_stem = "man"
     tense_elem = etree.fromstring(
         """<présent>
@@ -108,9 +111,8 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
         </présent>""",
         parser=None,
     )
-    tense = "présent"
-    tense_template = TenseTemplate(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, "indicatif", tense, tense_template)
+    tense_template = TenseTemplate(Lang.fr, mood, tense_elem)
+    out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == [
         "je mange",

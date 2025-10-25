@@ -4,10 +4,11 @@ from typing import Dict
 from verbecc.src.parsers.mood_template import MoodTemplate
 from verbecc.src.defs.types.exceptions import ConjugationTemplateError
 from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
 class ConjugationTemplate:
-    def __init__(self, template_elem: etree._Element) -> None:
+    def __init__(self, lang: Lang, template_elem: etree._Element) -> None:
         if template_elem.tag != "template":
             raise ConjugationTemplateError("Unexpected element")
         try:
@@ -15,7 +16,7 @@ class ConjugationTemplate:
             self.name = str(name_attrib)
             self.mood_templates: Dict[Mood, MoodTemplate] = {}
             for mood_elem in template_elem:  # type: ignore
-                mood_template = MoodTemplate(mood_elem)
+                mood_template = MoodTemplate(lang=lang, mood_elem=mood_elem)
                 self.mood_templates[mood_elem.tag.lower()] = mood_template
             self.modify_stem = ""
             modify_stem_attrib = template_elem.get("modify-stem", default=None)

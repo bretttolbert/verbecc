@@ -182,15 +182,21 @@ class InflectorEs(Inflector):
         "áis" -> "ás"
         "ís" -> "ís"
 
+        For the imperativo affirmativo we just drop the 'd' and accent the vowel e.g.
+        (vosotros) hablad -> (vos) hablá
+        The imperativo negativo is the same as tú.
+
         """
         # map of vosotros endings to vos endings
-        VOSEO_ENDINGS_MAP: Dict[str, str] = {
+        # for the present indicative, present subjunctive
+        VOSEO_ENDINGS_MAP_INDICATIVE_OR_SUBJUNCTIVE_PRESENT: Dict[str, str] = {
             "as": "ás",
             "es": "és",
             "ís": "ís",
             "áis": "ás",
             "éis": "és",
         }
+        VOSEO_ENDINGS_MAP_IMPERATIVE: Dict[str, str] = {"ad": "á", "id": "í", "ed": "é"}
         lang_opts = None
         if lang_specific_options is not None:
             lang_opts = cast(LangSpecificOptionsEs, lang_specific_options)
@@ -206,7 +212,7 @@ class InflectorEs(Inflector):
                 if (
                     (mood == Mood.Indicativo and tense == Tense.Presente)
                     or (mood == Mood.Subjuntivo and tense == Tense.Presente)
-                    or (mood == Mood.Imperativo)
+                    or (mood == Mood.Imperativo and tense == Tense.Afirmativo)
                 ):
                     # first replace with given SecondPersonSingular (tú) ending(s)
                     # with the SecondPersonPlural (vosotros) ending(s)
@@ -215,11 +221,20 @@ class InflectorEs(Inflector):
                     )
                     # change replacement PersonEnding Person from second person plural to singular
                     replacement_person_ending.person = Person.SecondPersonSingular
+
                     # modify the endings for voseo
                     for i, ending in enumerate(replacement_person_ending.get_endings()):
-                        if ending in VOSEO_ENDINGS_MAP:
-                            replacement_person_ending.endings[i] = VOSEO_ENDINGS_MAP[
-                                ending
-                            ]
+                        endings_map = (
+                            VOSEO_ENDINGS_MAP_INDICATIVE_OR_SUBJUNCTIVE_PRESENT
+                        )
+                        if mood == Mood.Imperativo:
+                            endings_map = VOSEO_ENDINGS_MAP_IMPERATIVE
+                        for e in endings_map:
+                            # e.g. if ending is "sed", it endswith "ed", so "s" + "é" -> "sé"
+                            if ending.endswith(e):
+                                replacement_person_ending.endings[i] = (
+                                    ending[: -len(e)] + endings_map[e]
+                                )
+                                break
                     return replacement_person_ending
         return person_ending

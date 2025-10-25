@@ -1,5 +1,8 @@
 # verbecc Changelog
 
+- 1.11.5 [24 October 2025]
+  - Fixed Spanish Voseo imperativo
+
 - 1.11.4 [24 October 2025]
   - Added support for Spanish Voseo
 
