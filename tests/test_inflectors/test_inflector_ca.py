@@ -2960,13 +2960,13 @@ def test_inflector_ca_get_conj_obs_3(cg):
     assert co.template.modify_stem == "strip-accents"
 
 
-def test_inflector_ca_get_verb_stem_from_template_name(cg):
-    verb_stem = cg._inflector._get_verb_stem_from_template_name("parlar", "cant:ar")
+def test_inflector_caget_verb_stem_from_template_name(cg):
+    verb_stem = cg._inflector.get_verb_stem_from_template_name("parlar", "cant:ar")
     assert verb_stem == "parl"
 
 
-def test_inflector_ca_get_verb_stem_from_template_name_2(cg):
-    verb_stem = cg._inflector._get_verb_stem_from_template_name("abandonar", "cant:ar")
+def test_inflector_caget_verb_stem_from_template_name_2(cg):
+    verb_stem = cg._inflector.get_verb_stem_from_template_name("abandonar", "cant:ar")
     assert verb_stem == "abandon"
 
 

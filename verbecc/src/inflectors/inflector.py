@@ -43,14 +43,16 @@ class Inflector(ABC):
     Inflector is for all conjugation logic that is language-specific.
     """
 
-    @property
-    @abstractmethod
-    def lang(self) -> LangCodeISO639_1:
-        raise NotImplementedError
+    # public:
 
     def __init__(self) -> None:
         self._verb_parser = VerbsParser(self.lang)
         self._conj_parser = ConjugationsParser(self.lang)
+
+    @property
+    @abstractmethod
+    def lang(self) -> LangCodeISO639_1:
+        raise NotImplementedError
 
     def get_verbs(self) -> List[Verb]:
         return self._verb_parser.verbs
@@ -75,7 +77,7 @@ class Inflector(ABC):
         matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
         return matches
 
-    def _get_verb_stem_from_template_name(
+    def get_verb_stem_from_template_name(
         self, infinitive: str, template_name: str
     ) -> str:
         """Get the verb stem given an ininitive and a colon-delimited template name.
@@ -91,13 +93,10 @@ class Inflector(ABC):
             )
         return infinitive[: len(infinitive) - len(template_ending)]
 
-    def _is_impersonal_verb(self, infinitive: str) -> bool:
-        return False
-
-    def _verb_can_be_reflexive(self, infinitive: str) -> bool:
+    def verb_can_be_reflexive(self, infinitive: str) -> bool:
         return not self._is_impersonal_verb(infinitive)
 
-    def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
+    def split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
         """
         Tests whether an infinitive is reflexive
         Returns a 2-tuple of whether it is reflexive
@@ -113,61 +112,61 @@ class Inflector(ABC):
         """
         return (False, infinitive)
 
-    def _add_reflexive_pronoun(self, s: str) -> str:
+    def add_reflexive_pronoun(self, s: str) -> str:
         return s
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
+    def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return s
 
-    def _auxilary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
+    def auxilary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
         return False
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return []
 
-    def _get_auxilary_verb(
+    def get_auxilary_verb(
         self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
         return ""
 
-    def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
+    def is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return False
 
-    def _get_infinitive_mood(self) -> Mood:
+    def get_infinitive_mood(self) -> Mood:
         return Mood.Infinitive
 
-    def _get_indicative_mood(self) -> Mood:
+    def get_indicative_mood(self) -> Mood:
         return Mood.Indicative
 
-    def _get_subjunctive_mood(self) -> Mood:
+    def get_subjunctive_mood(self) -> Mood:
         return Mood.Subjunctive
 
-    def _get_conditional_mood(self) -> Mood:
+    def get_conditional_mood(self) -> Mood:
         return Mood.Conditional
 
-    def _get_participle_mood(self) -> Mood:
+    def get_participle_mood(self) -> Mood:
         return Mood.Participle
 
-    def _get_participle_tense(self) -> Tense:
+    def get_participle_tense(self) -> Tense:
         return Tense.PastParticiple
 
-    def _add_present_participle_if_applicable(
+    def add_present_participle_if_applicable(
         self, s: str, is_reflexive: bool, tense: Tense
     ) -> str:
         return s
 
-    def _get_alternate_hv_inflection(self, s: str) -> str:
+    def get_alternate_hv_inflection(self, s: str) -> str:
         """Some language override this e.g. Spanish changes ending in 'hay' to 'ay'"""
         return s
 
     @abstractmethod
-    def _get_compound_conjugations_aux_verb_map(
+    def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         """Returns a map of the tense of the helping verb for each compound mood and tense"""
         raise NotImplementedError
 
-    def _get_participle_index_for_participle_inflection(
+    def get_participle_index_for_participle_inflection(
         self, participle_inflection: ParticipleInflection
     ) -> int:
         """
@@ -175,9 +174,9 @@ class Inflector(ABC):
         But in some lang XML files, e.g. Italian, the order is MS, FS, MP, FP
         TODO: Standardize the XML files
         """
-        return PARTICIPLE_INFLECTIONS.index(participle_inflection)
+        return PARTICIPLE_INFLECTIONS[self.lang].index(participle_inflection)
 
-    def _get_default_participle_inflection_for_person(
+    def get_default_participle_inflection_for_person(
         self, person: Person, gender: Gender = Gender.m
     ) -> ParticipleInflection:
         if is_singular(person):
@@ -200,10 +199,10 @@ class Inflector(ABC):
     ) -> str:
         return ""
 
-    def _combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
+    def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         return pronoun + " " + conj
 
-    def _combine_verb_stem_and_ending(self, verb_stem: str, ending: str) -> str:
+    def combine_verb_stem_and_ending(self, verb_stem: str, ending: str) -> str:
         """
         Originally this would simply combine the verb_stem and the ending.
         E.g. "parl" + "er" = "parler"
@@ -240,32 +239,27 @@ class Inflector(ABC):
             verb_stem = verb_stem[:-1]
         return verb_stem + ending
 
-    def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
-    ) -> str:
-        return " " + self.get_default_pronoun(person, gender)
-
-    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
+    def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
-    def _add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
+    def add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
         self, s: str, is_reflexive: bool, mood: Mood, tense: Tense, person: Person
     ) -> str:
         if is_reflexive:
             s += self._get_pronoun_suffix(person)
         return s
 
-    def _compound_conjugation_not_applicable(
+    def compound_conjugation_not_applicable(
         self, is_reflexive: bool, mood: Mood, aux_tense: Tense
     ) -> bool:
         return False
 
-    def _compound_primary_verb_conjugation_uses_infinitive(
+    def compound_primary_verb_conjugation_uses_infinitive(
         self, mood: Mood, tense: Tense
     ) -> bool:
         return False
 
-    def _modify_aux_verb_conj_if_applicable(
+    def modify_aux_verb_conj_if_applicable(
         self, aux_conj: List[str], mood: Mood, tense: Tense
     ) -> List[str]:
         """
@@ -275,7 +269,7 @@ class Inflector(ABC):
         """
         return aux_conj
 
-    def _add_compound_aux_verb_suffix_if_applicable(
+    def add_compound_aux_verb_suffix_if_applicable(
         self, s: str, mood: Mood, tense: Mood
     ) -> str:
         """
@@ -285,7 +279,7 @@ class Inflector(ABC):
         """
         return s
 
-    def _insert_compound_aux_verb_prefix_if_applicable(
+    def insert_compound_aux_verb_prefix_if_applicable(
         self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
@@ -294,11 +288,11 @@ class Inflector(ABC):
         """
         return s
 
-    def _compound_has_no_primary_verb(self, mood: Mood, tense: Tense) -> bool:
+    def compound_has_no_primary_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian viitor-1-popular"""
         return False
 
-    def _compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
+    def compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian conjunctiv perfect"""
         return False
 
@@ -316,3 +310,13 @@ class Inflector(ABC):
         on language specific options (e.g. Voseo)
         """
         return person_ending
+
+    # private:
+
+    def _get_pronoun_suffix(
+        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
+    ) -> str:
+        return " " + self.get_default_pronoun(person, gender)
+
+    def _is_impersonal_verb(self, infinitive: str) -> bool:
+        return False

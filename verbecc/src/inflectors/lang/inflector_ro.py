@@ -13,14 +13,14 @@ from verbecc.src.inflectors.inflector import Inflector
 
 
 class InflectorRo(Inflector):
+    def __init__(self) -> None:
+        super(InflectorRo, self).__init__()
+
     @property
     def lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.ro
 
-    def __init__(self) -> None:
-        super(InflectorRo, self).__init__()
-
-    def _add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
+    def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         tokens = s.split(" ")
         if tense == Tense.Prezent:
             tokens.insert(1, "să")
@@ -28,7 +28,7 @@ class InflectorRo(Inflector):
             tokens.insert(1, "să fi")
         return " ".join(tokens)
 
-    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
+    def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         if mood == Mood.Imperativ and tense == Tense.Negativ:
             return "nu " + s
         return s
@@ -75,7 +75,7 @@ class InflectorRo(Inflector):
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
+    def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Participiu,
             Tense.Afirmativ,
@@ -84,7 +84,7 @@ class InflectorRo(Inflector):
             Tense.Gerunziu,
         ]
 
-    def _get_auxilary_verb(
+    def get_auxilary_verb(
         self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
         if tense in (Tense.Viitor1, Tense.Viitor2):
@@ -93,25 +93,25 @@ class InflectorRo(Inflector):
             return co.verb.infinitive
         return "avea"
 
-    def _get_infinitive_mood(self) -> Mood:
+    def get_infinitive_mood(self) -> Mood:
         return Mood.Infinitiv
 
-    def _get_indicative_mood(self) -> Mood:
+    def get_indicative_mood(self) -> Mood:
         return Mood.Indicativ
 
-    def _get_subjunctive_mood(self) -> Mood:
+    def get_subjunctive_mood(self) -> Mood:
         return Mood.Conjunctiv
 
-    def _get_conditional_mood(self) -> Mood:
+    def get_conditional_mood(self) -> Mood:
         return Mood.Condițional
 
-    def _get_participle_mood(self) -> Mood:
+    def get_participle_mood(self) -> Mood:
         return Mood.Participiu
 
-    def _get_participle_tense(self) -> Tense:
+    def get_participle_tense(self) -> Tense:
         return Tense.Participiu
 
-    def _get_compound_conjugations_aux_verb_map(
+    def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         # TODO: those last three don't actually use an auxiliary verb, refactor to make aux verb optional
@@ -130,10 +130,10 @@ class InflectorRo(Inflector):
             },
         }
 
-    def _auxilary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
+    def auxilary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
         return tense.startswith("viitor")
 
-    def _compound_primary_verb_conjugation_uses_infinitive(
+    def compound_primary_verb_conjugation_uses_infinitive(
         self, mood: Mood, tense: Tense
     ) -> bool:
         if mood == Mood.Indicativ and tense == Tense.Viitor1:
@@ -142,12 +142,12 @@ class InflectorRo(Inflector):
             return True
         return False
 
-    def _modify_aux_verb_conj_if_applicable(
+    def modify_aux_verb_conj_if_applicable(
         self, aux_conj: List[str], mood: Mood, tense: Tense
     ) -> List[str]:
         """E.g. for Romanian conditional present 'eu aş avea, tu ai avea, el ar avea, ...'
         and also the Romanian conditional present e.g. 'eu	aş fi avut, tu ai fi avut, ...'
-        although the ' fi' is added by _add_compound_aux_verb_suffix_if_applicable
+        although the ' fi' is added by add_compound_aux_verb_suffix_if_applicable
 
         Normally Romanian aux_conj would be the indicativ prezent tense of avea i.e.
             ["eu am", "tu ai", "el a", "noi am", "voi aţi", "ei au"]
@@ -161,7 +161,7 @@ class InflectorRo(Inflector):
                 aux_conj[i] = f"{pronoun} {sub_aux_conj[i]}"
         return aux_conj
 
-    def _add_compound_aux_verb_suffix_if_applicable(
+    def add_compound_aux_verb_suffix_if_applicable(
         self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
@@ -178,7 +178,7 @@ class InflectorRo(Inflector):
         #    return s + " să"
         return s
 
-    def _insert_compound_aux_verb_prefix_if_applicable(
+    def insert_compound_aux_verb_prefix_if_applicable(
         self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
@@ -190,13 +190,13 @@ class InflectorRo(Inflector):
             return tokens[0] + " o să " + tokens[1]
         return s
 
-    def _compound_has_no_primary_verb(self, mood: Mood, tense: Tense) -> bool:
+    def compound_has_no_primary_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian viitor-1-popular"""
         if mood == Mood.Indicativ and tense == Tense.Viitor1Popular:
             return True
         return False
 
-    def _compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
+    def compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian conjunctiv perfect"""
         if mood == Mood.Conjunctiv and tense == Tense.Perfect:
             return True

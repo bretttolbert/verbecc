@@ -22,7 +22,10 @@ SUPPORTED_LANGUAGES: Dict[LangCodeISO639_1, str] = {
 }
 
 # Order of grammatical persons in data structures
-# Note: 'usted' is 3s despite being semantically 2p
+# for most moods and tenses
+# Exceptions: imperative and participle
+# Note: 'usted' is grammatically 3s despite being semantically 2s
+# Note: 'usteded' is grammatically 3p despite being semantically 2p
 PERSONS: Tuple[Person, Person, Person, Person, Person, Person] = (
     Person.FirstPersonSingular,
     Person.SecondPersonSingular,
@@ -52,7 +55,7 @@ IMPERATIVE_PERSONS_ES: Tuple[Person, Person, Person, Person, Person] = (
 IMPERATIVE_PERSONS_CA = IMPERATIVE_PERSONS_ES
 
 # e.g. -, sii, sia, siamo, siate, siano
-# Italian currently has the "-" placeholder for the 1PS unlike French and Spanish
+# Italian currently has the "-" placeholder for the 1s unlike French and Spanish
 # TODO: Make them consistent
 IMPERATIVE_PERSONS_IT: Tuple[Person, Person, Person, Person, Person, Person] = (
     Person.FirstPersonSingular,
@@ -64,7 +67,7 @@ IMPERATIVE_PERSONS_IT: Tuple[Person, Person, Person, Person, Person, Person] = (
 )
 
 # e.g. -, sê tu, seja você, sejamos nós, sede vós, sejam vocês
-# Portuguese currently has the "-" placeholder for the 1PS like Italian and unlike French and Spanish
+# Portuguese currently has the "-" placeholder for the 1s like Italian and unlike French and Spanish
 # TODO: Make them consistent
 IMPERATIVE_PERSONS_PT = IMPERATIVE_PERSONS_IT
 
@@ -84,8 +87,12 @@ IMPERATIVE_PERSONS: Dict[LangCodeISO639_1, List[Person]] = {
     LangCodeISO639_1.ro: IMPERATIVE_PERSONS_IT,
 }
 
-# Order of participle inflections in XML
-PARTICIPLE_INFLECTIONS: Tuple[
+# Default order of participle inflections in XML
+# Currently overridden by some langs because the XML
+# templates are inconsistent (TODO: Standardize the XML files)
+# Default order is like French XML file, i.e. MS, MP, FS, FP
+# But in some lang XML files, e.g. Italian, the order is MS, FS, MP, FP,
+PARTICIPLE_INFLECTIONS_DEFAULT: Tuple[
     ParticipleInflection,
     ParticipleInflection,
     ParticipleInflection,
@@ -96,6 +103,32 @@ PARTICIPLE_INFLECTIONS: Tuple[
     ParticipleInflection.FeminineSingular,
     ParticipleInflection.FemininePlural,
 )
+
+PARTICIPLE_INFLECTION_FR = PARTICIPLE_INFLECTIONS_DEFAULT
+PARTICIPLE_INFLECTION_ES = PARTICIPLE_INFLECTIONS_DEFAULT
+PARTICIPLE_INFLECTION_PT = PARTICIPLE_INFLECTIONS_DEFAULT
+PARTICIPLE_INFLECTION_CA = PARTICIPLE_INFLECTIONS_DEFAULT
+PARTICIPLE_INFLECTION_RO = PARTICIPLE_INFLECTIONS_DEFAULT
+PARTICIPLE_INFLECTION_IT: Tuple[
+    ParticipleInflection,
+    ParticipleInflection,
+    ParticipleInflection,
+    ParticipleInflection,
+] = (
+    ParticipleInflection.MasculineSingular,
+    ParticipleInflection.FeminineSingular,
+    ParticipleInflection.MasculinePlural,
+    ParticipleInflection.FemininePlural,
+)
+
+PARTICIPLE_INFLECTIONS: Dict[LangCodeISO639_1, List[Person]] = {
+    LangCodeISO639_1.fr: PARTICIPLE_INFLECTION_FR,
+    LangCodeISO639_1.es: PARTICIPLE_INFLECTION_ES,
+    LangCodeISO639_1.ca: PARTICIPLE_INFLECTION_CA,
+    LangCodeISO639_1.it: PARTICIPLE_INFLECTION_IT,
+    LangCodeISO639_1.pt: PARTICIPLE_INFLECTION_PT,
+    LangCodeISO639_1.ro: PARTICIPLE_INFLECTION_RO,
+}
 
 ALPHABET = {
     LangCodeISO639_1.fr: {
