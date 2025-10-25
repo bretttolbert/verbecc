@@ -1,14 +1,18 @@
 # verbecc Changelog
 
+- 1.11.6 [TBR]
+  - Misc. cleanup
+  - Promoted applicable `Inflector` methods to public
+
 - 1.11.5 [24 October 2025]
-  - Fixed Spanish Voseo imperativo
+  - Fixed Spanish Voseo imperativo afirmativo
 
 - 1.11.4 [24 October 2025]
   - Added support for Spanish Voseo
 
 - 1.11.3 [19 October 2025]
   - improved typing
-  - changed `Language` enum to `LangCodeISO639_1`
+  - changed `Language` enum to `LangCodeISO639_1` (suggest `from verbecc import LangCodeISO639_1 as Lang`)
 
 - 1.12.2 [17 October 2025]
   - Added typing for mood and tense using `StrEnum` (backwards-compatible with string values)
@@ -25,9 +29,9 @@
   - **Changes should be transparent to users of top level `Conjugator.conjugate` function, however in sub-level conjugate methods the `alternate: bool` parameter has been replaced with the `alternate_options: AlternateOptions` parameter.**
   - **Officially dropping support for python <=3.8. Python 3.8 has been EOL for over a year now. Update to python 3.9 or later. Now supporting Python 3.9, 3.10, 3.11, 3.12, 3.13 and 3.14.**
   - Significant refactoring
-      - Eliminated a lot of code duplication introduced during initial implementation of `include_alternates` option
-      - Moved most language-specific conjugation logic into the `Inflector` sub-classes
-      - Moved most language-agnostic conjugation logic into `Conjugator`
+    - Eliminated a lot of code duplication introduced during initial implementation of `include_alternates` option
+    - Moved most language-specific conjugation logic into the `Inflector` sub-classes
+    - Moved most language-agnostic conjugation logic into `Conjugator`
   - Improved typing, now have typehint definitions for all returned data structures
   - Organized source tree into subdirectories
   - Added fixtures to optimize unit tests

@@ -83,10 +83,9 @@ def test_inflector_it_conjugate(cg):
     assert cg.conjugate("avere") != None
 
 
-def test_inflector_it_add_subjunctive_relative_pronoun(cg):
+def test_inflector_itadd_subjunctive_relative_pronoun(cg):
     assert (
-        cg._inflector._add_subjunctive_relative_pronoun("io abbia", "")
-        == "che io abbia"
+        cg._inflector.add_subjunctive_relative_pronoun("io abbia", "") == "che io abbia"
     )
 
 

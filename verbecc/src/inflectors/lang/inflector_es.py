@@ -20,14 +20,14 @@ from verbecc.src.parsers.person_ending import PersonEnding
 
 
 class InflectorEs(Inflector):
+    def __init__(self) -> None:
+        super(InflectorEs, self).__init__()
+
     @property
     def lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.es
 
-    def __init__(self) -> None:
-        super(InflectorEs, self).__init__()
-
-    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
+    def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         if mood == Mood.Imperativo and tense == Tense.Negativo:
             return "no " + s
         return s
@@ -80,7 +80,7 @@ class InflectorEs(Inflector):
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
+    def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Participo,
             Tense.Gerundio,
@@ -89,7 +89,7 @@ class InflectorEs(Inflector):
             Tense.Negativo,
         ]
 
-    def _get_auxilary_verb(
+    def get_auxilary_verb(
         self,
         co: ConjugationObjects,
         mood: Mood,
@@ -97,30 +97,30 @@ class InflectorEs(Inflector):
     ) -> str:
         return "haber"
 
-    def _get_infinitive_mood(self) -> Mood:
+    def get_infinitive_mood(self) -> Mood:
         return Mood.Infinitivo
 
-    def _get_indicative_mood(self) -> Mood:
+    def get_indicative_mood(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood(self) -> Mood:
+    def get_subjunctive_mood(self) -> Mood:
         return Mood.Subjuntivo
 
-    def _get_conditional_mood(self) -> Mood:
+    def get_conditional_mood(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood(self) -> Mood:
+    def get_participle_mood(self) -> Mood:
         return Mood.Participo
 
-    def _get_participle_tense(self) -> Mood:
+    def get_participle_tense(self) -> Mood:
         return Tense.Participo
 
-    def _get_alternate_hv_inflection(self, s: str) -> str:
+    def get_alternate_hv_inflection(self, s: str) -> str:
         if s.endswith("hay"):
             return s[:-1]
         return s
 
-    def _get_compound_conjugations_aux_verb_map(
+    def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {

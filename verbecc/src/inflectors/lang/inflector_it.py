@@ -33,17 +33,17 @@ VERBS_CONJUGATED_WITH_ESSERE = [
 
 
 class InflectorIt(Inflector):
+    def __init__(self) -> None:
+        super(InflectorIt, self).__init__()
+
     @property
     def lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.it
 
-    def __init__(self) -> None:
-        super(InflectorIt, self).__init__()
-
-    def _is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
+    def is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
         return auxilary_verb == "essere"
 
-    def _split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
+    def split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
         """
         E.g. Italian:
         "alzarsi" => (True, "alzare")
@@ -65,13 +65,13 @@ class InflectorIt(Inflector):
             infinitive = infinitive[2:]
         return is_reflexive, infinitive
 
-    def _add_reflexive_pronoun(self, s: str) -> str:
+    def add_reflexive_pronoun(self, s: str) -> str:
         if string_utils.starts_with_vowel(s, h_is_vowel=True):
             return "s'" + s
         else:
             return "si " + s
 
-    def _add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
+    def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return "che " + s
 
     def get_default_pronoun(
@@ -110,7 +110,7 @@ class InflectorIt(Inflector):
                 ret += " si"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
+    def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Affermativo,
             Tense.negativo,
@@ -120,7 +120,7 @@ class InflectorIt(Inflector):
             Tense.ParticipioPassato,
         ]
 
-    def _get_auxilary_verb(
+    def get_auxilary_verb(
         self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
         ret = "avere"
@@ -128,25 +128,25 @@ class InflectorIt(Inflector):
             ret = "essere"
         return ret
 
-    def _get_infinitive_mood(self) -> Mood:
+    def get_infinitive_mood(self) -> Mood:
         return Mood.Infinito
 
-    def _get_indicative_mood(self) -> Mood:
+    def get_indicative_mood(self) -> Mood:
         return Mood.Indicativo
 
-    def _get_subjunctive_mood(self) -> Mood:
+    def get_subjunctive_mood(self) -> Mood:
         return Mood.Congiuntivo
 
-    def _get_conditional_mood(self) -> Mood:
+    def get_conditional_mood(self) -> Mood:
         return Mood.Condizionale
 
-    def _get_participle_mood(self) -> Mood:
+    def get_participle_mood(self) -> Mood:
         return Mood.Participio
 
-    def _get_participle_tense(self) -> Tense:
+    def get_participle_tense(self) -> Tense:
         return Tense.ParticipioPassato
 
-    def _get_compound_conjugations_aux_verb_map(
+    def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {
@@ -162,27 +162,3 @@ class InflectorIt(Inflector):
             },
             Mood.Condizionale: {Tense.Passato: (Mood.Condizionale, Tense.Presente)},
         }
-
-    PARTICIPLE_INFLECTIONS: Tuple[
-        ParticipleInflection,
-        ParticipleInflection,
-        ParticipleInflection,
-        ParticipleInflection,
-    ] = (
-        ParticipleInflection.MasculineSingular,
-        ParticipleInflection.FeminineSingular,
-        ParticipleInflection.MasculinePlural,
-        ParticipleInflection.FemininePlural,
-    )
-
-    def _get_participle_index_for_participle_inflection(
-        self, participle_inflection: ParticipleInflection
-    ) -> int:
-        """
-        Default order is like French XML file, i.e. MS, MP, FS, FP
-        But in some lang XML files, e.g. Italian, the order is MS, FS, MP, FP,
-        so use the PARTICIPLE_INFLECTIONS above instead of the default one
-        in grammar defines, for now.
-        TODO: Standardize the XML files
-        """
-        return self.PARTICIPLE_INFLECTIONS.index(participle_inflection)

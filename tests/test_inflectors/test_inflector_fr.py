@@ -29,27 +29,27 @@ def test_all_verbs_have_templates(cg):
 
 def test_add_subjunctive_relative_prounoun(cg):
     assert (
-        cg._inflector._add_subjunctive_relative_pronoun("tu manges", "")
+        cg._inflector.add_subjunctive_relative_pronoun("tu manges", "")
         == "que tu manges"
     )
     assert (
-        cg._inflector._add_subjunctive_relative_pronoun("il mange", "") == "qu'il mange"
+        cg._inflector.add_subjunctive_relative_pronoun("il mange", "") == "qu'il mange"
     )
     assert (
-        cg._inflector._add_subjunctive_relative_pronoun("elles mangent", "")
+        cg._inflector.add_subjunctive_relative_pronoun("elles mangent", "")
         == "qu'elles mangent"
     )
 
 
-def test_add_reflexive_pronoun(cg):
-    assert cg._inflector._add_reflexive_pronoun("lever") == "se lever"
-    assert cg._inflector._add_reflexive_pronoun("écrouler") == "s'écrouler"
+def testadd_reflexive_pronoun(cg):
+    assert cg._inflector.add_reflexive_pronoun("lever") == "se lever"
+    assert cg._inflector.add_reflexive_pronoun("écrouler") == "s'écrouler"
 
 
-def test_split_reflexive(cg):
-    assert cg._inflector._split_reflexive("se lever") == (True, "lever")
-    assert cg._inflector._split_reflexive("s'écrouler") == (True, "écrouler")
-    assert cg._inflector._split_reflexive("secouer") == (False, "secouer")
+def testsplit_reflexive(cg):
+    assert cg._inflector.split_reflexive("se lever") == (True, "lever")
+    assert cg._inflector.split_reflexive("s'écrouler") == (True, "écrouler")
+    assert cg._inflector.split_reflexive("secouer") == (False, "secouer")
 
 
 @pytest.mark.parametrize(
@@ -61,8 +61,8 @@ def test_split_reflexive(cg):
         ("manger", True),
     ],
 )
-def test_inflector_fr_verb_can_be_reflexive(cg, infinitive, expected_result):
-    assert cg._inflector._verb_can_be_reflexive(infinitive) == expected_result
+def test_inflector_frverb_can_be_reflexive(cg, infinitive, expected_result):
+    assert cg._inflector.verb_can_be_reflexive(infinitive) == expected_result
 
 
 def test_inflector_fr_impersonal_verbs(cg):
@@ -125,18 +125,18 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
 
 
 def test_inflector_fr_get_verb_stem_from_template_name(cg):
-    verb_stem = cg._inflector._get_verb_stem_from_template_name("manger", "man:ger")
+    verb_stem = cg._inflector.get_verb_stem_from_template_name("manger", "man:ger")
     assert verb_stem == "man"
-    verb_stem = cg._inflector._get_verb_stem_from_template_name("téléphoner", "aim:er")
+    verb_stem = cg._inflector.get_verb_stem_from_template_name("téléphoner", "aim:er")
     assert verb_stem == "téléphon"
-    verb_stem = cg._inflector._get_verb_stem_from_template_name("vendre", "ten:dre")
+    verb_stem = cg._inflector.get_verb_stem_from_template_name("vendre", "ten:dre")
     assert verb_stem == "ven"
     # In the case of irregular verbs, the verb stem is empty string
-    verb_stem = cg._inflector._get_verb_stem_from_template_name("aller", ":aller")
+    verb_stem = cg._inflector.get_verb_stem_from_template_name("aller", ":aller")
     assert verb_stem == ""
     # The infinitive ending must match the template ending
     with pytest.raises(ConjugatorError):
-        verb_stem = cg._inflector._get_verb_stem_from_template_name("vendre", "man:ger")
+        verb_stem = cg._inflector.get_verb_stem_from_template_name("vendre", "man:ger")
 
 
 @pytest.mark.parametrize(

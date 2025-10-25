@@ -15,14 +15,14 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 
 class InflectorCa(inflector.Inflector):
+    def __init__(self) -> None:
+        super(InflectorCa, self).__init__()
+
     @property
     def lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.ca
 
-    def __init__(self) -> None:
-        super(InflectorCa, self).__init__()
-
-    def _add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
+    def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
     def get_default_pronoun(
@@ -63,7 +63,7 @@ class InflectorCa(inflector.Inflector):
                 ret += " se"
         return ret
 
-    def _get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
+    def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
             Tense.Particip,
             Tense.Gerundi,
@@ -71,7 +71,7 @@ class InflectorCa(inflector.Inflector):
             Tense.ImperatiuPresent,
         ]
 
-    def _get_auxilary_verb(
+    def get_auxilary_verb(
         self,
         co: ConjugationObjects,
         mood: Mood,
@@ -79,30 +79,30 @@ class InflectorCa(inflector.Inflector):
     ) -> str:
         return "haver"
 
-    def _get_infinitive_mood(self) -> Mood:
+    def get_infinitive_mood(self) -> Mood:
         return Mood.Infinitiu
 
-    def _get_indicative_mood(self) -> Mood:
+    def get_indicative_mood(self) -> Mood:
         return Mood.Indicatiu
 
-    def _get_subjunctive_mood(self) -> Mood:
+    def get_subjunctive_mood(self) -> Mood:
         return Mood.Subjuntiu
 
-    def _get_conditional_mood(self) -> Mood:
+    def get_conditional_mood(self) -> Mood:
         return Mood.Condicional
 
-    def _get_participle_mood(self) -> Mood:
+    def get_participle_mood(self) -> Mood:
         return Mood.Participi
 
-    def _get_participle_tense(self) -> Tense:
+    def get_participle_tense(self) -> Tense:
         return Tense.Particip
 
-    def _get_alternate_hv_inflection(self, s: str) -> str:
+    def get_alternate_hv_inflection(self, s: str) -> str:
         # if s.endswith('hay'):
         #     return s[:-1]
         return s
 
-    def _get_compound_conjugations_aux_verb_map(
+    def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
         """
@@ -126,13 +126,13 @@ class InflectorCa(inflector.Inflector):
         """
         return {}
 
-    def _get_verb_stem_from_template_name(
+    def get_verb_stem_from_template_name(
         self, infinitive: str, template_name: str
     ) -> str:
         """Get the verb stem given an ininitive and a colon-delimited template name.
         E.g. infinitive='parlar' template_name='cant:ar' -> 'parl'
 
-        Note: Base class _get_verb_stem_from_template_name raises exception if template
+        Note: Base class get_verb_stem_from_template_name raises exception if template
         ending doesn't match infinitive ending exactly but for Catalan, some verbs
         have endings where at least the first letter doesn't match.
 
