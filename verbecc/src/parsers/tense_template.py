@@ -5,6 +5,9 @@ from verbecc.src.parsers.person_ending import PersonEnding
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.src.defs.constants.localization import xmood
 
 
 class TenseTemplate:
@@ -30,7 +33,9 @@ class TenseTemplate:
             <p><i>ent</i></p>
     """
 
-    def __init__(self, tense_elem: etree._Element) -> None:
+    def __init__(self, lang: Lang, mood: Mood, tense_elem: etree._Element) -> None:
+        self.lang = lang
+        self.mood = mood
         self.name = tense_elem.tag
         """
         Normally each <p> elem defines six grammatical persons:
@@ -74,13 +79,16 @@ class TenseTemplate:
             <p></p>
             <p></p>
             <p><i>euvent</i></p> e.g. ils pleuvent (rare, but valid)
+
+        Spanish imperative tenses have 5, i.e. all except 1st person singular
+
         """
         self.person_endings: List[PersonEnding] = []
         person_num = 0
         for p_elem in tense_elem.findall("p", namespaces=None):
             person = grammar_defines.PERSONS[person_num]
-            if self.name == Tense.fr.ImperatifPrésent:
-                person = grammar_defines.IMPERATIVE_PRESENT_PERSONS[person_num]
+            if self.mood == xmood(self.lang, Mood.en.Imperative):
+                person = grammar_defines.IMPERATIVE_PERSONS[self.lang][person_num]
             pe = PersonEnding(p_elem, person)
             person_num += 1
             if len(pe.endings) > 0:

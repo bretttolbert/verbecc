@@ -3,6 +3,7 @@ from lxml import etree
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
@@ -620,6 +621,8 @@ def test_inflector_es_get_verb_stem_from_template_name():
 
 
 def test_inflector_es_conjugate_simple_mood_tense():
+    mood = "indicativo"
+    tense = "présent"
     verb_stem = "abañ"
     tense_elem = etree.fromstring(
         """<presente>
@@ -632,11 +635,8 @@ def test_inflector_es_conjugate_simple_mood_tense():
         </presente>""",
         parser=None,
     )
-    tense = "présent"
-    tense_template = TenseTemplate(tense_elem)
-    out = cg._conjugate_simple_mood_tense(
-        verb_stem, "indicativo", tense, tense_template
-    )
+    tense_template = TenseTemplate(Lang.es, mood, tense_elem)
+    out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == [
         "yo abaño",
@@ -678,7 +678,7 @@ def test_inflector_es_get_default_pronoun(
     )
 
 
-def test_inflector_es_conjugate_mood_tense_ar_no_voseo():
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_no_voseo():
     assert cg.conjugate_mood_tense("hablar", Mood.es.Indicativo, Tense.es.Presente) == [
         "yo hablo",
         "tú hablas",
@@ -689,7 +689,7 @@ def test_inflector_es_conjugate_mood_tense_ar_no_voseo():
     ]
 
 
-def test_inflector_es_conjugate_mood_tense_ar_voseo_tipo_3():
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "hablar",
         Mood.es.Indicativo,
@@ -707,7 +707,7 @@ def test_inflector_es_conjugate_mood_tense_ar_voseo_tipo_3():
     ]
 
 
-def test_inflector_es_conjugate_mood_tense_er_no_voseo():
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_no_voseo():
     assert cg.conjugate_mood_tense("beber", Mood.es.Indicativo, Tense.es.Presente) == [
         "yo bebo",
         "tú bebes",
@@ -718,7 +718,7 @@ def test_inflector_es_conjugate_mood_tense_er_no_voseo():
     ]
 
 
-def test_inflector_es_conjugate_mood_tense_er_voseo_tipo_3():
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "beber",
         Mood.es.Indicativo,
@@ -736,7 +736,7 @@ def test_inflector_es_conjugate_mood_tense_er_voseo_tipo_3():
     ]
 
 
-def test_inflector_es_conjugate_mood_tense_ir_no_voseo():
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_no_voseo():
     assert cg.conjugate_mood_tense("dormir", Mood.es.Indicativo, Tense.es.Presente) == [
         "yo duermo",
         "tú duermes",
@@ -747,7 +747,7 @@ def test_inflector_es_conjugate_mood_tense_ir_no_voseo():
     ]
 
 
-def test_inflector_es_conjugate_mood_tense_ir_voseo_tipo_3():
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "dormir",
         Mood.es.Indicativo,
@@ -762,4 +762,226 @@ def test_inflector_es_conjugate_mood_tense_ir_voseo_tipo_3():
         "nosotros dormimos",
         "vosotros dormís",
         "ellos duermen",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_no_voseo():
+    assert cg.conjugate_mood_tense(
+        "hablar", Mood.es.Imperativo, Tense.es.Afirmativo
+    ) == [
+        "habla",
+        "hable",
+        "hablemos",
+        "hablad",
+        "hablen",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_no_voseo():
+    assert cg.conjugate_mood_tense("hablar", Mood.es.Imperativo, Tense.es.Negativo) == [
+        "no hables",
+        "no hable",
+        "no hablemos",
+        "no habléis",
+        "no hablen",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "hablar",
+        Mood.es.Imperativo,
+        Tense.es.Afirmativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "hablá",
+        "hable",
+        "hablemos",
+        "hablad",
+        "hablen",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "hablar",
+        Mood.es.Imperativo,
+        Tense.es.Negativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "no hables",
+        "no hable",
+        "no hablemos",
+        "no habléis",
+        "no hablen",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_no_voseo():
+    assert cg.conjugate_mood_tense(
+        "vivir", Mood.es.Imperativo, Tense.es.Afirmativo
+    ) == [
+        "vive",
+        "viva",
+        "vivamos",
+        "vivid",
+        "vivan",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_no_voseo():
+    assert cg.conjugate_mood_tense("vivir", Mood.es.Imperativo, Tense.es.Negativo) == [
+        "no vivas",
+        "no viva",
+        "no vivamos",
+        "no viváis",
+        "no vivan",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "vivir",
+        Mood.es.Imperativo,
+        Tense.es.Afirmativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "viví",
+        "viva",
+        "vivamos",
+        "vivid",
+        "vivan",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "vivir",
+        Mood.es.Imperativo,
+        Tense.es.Negativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "no vivas",
+        "no viva",
+        "no vivamos",
+        "no viváis",
+        "no vivan",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_no_voseo():
+    assert cg.conjugate_mood_tense(
+        "beber", Mood.es.Imperativo, Tense.es.Afirmativo
+    ) == [
+        "bebe",
+        "beba",
+        "bebamos",
+        "bebed",
+        "beban",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_no_voseo():
+    assert cg.conjugate_mood_tense("beber", Mood.es.Imperativo, Tense.es.Negativo) == [
+        "no bebas",
+        "no beba",
+        "no bebamos",
+        "no bebáis",
+        "no beban",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "beber",
+        Mood.es.Imperativo,
+        Tense.es.Afirmativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "bebé",
+        "beba",
+        "bebamos",
+        "bebed",
+        "beban",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "beber",
+        Mood.es.Imperativo,
+        Tense.es.Negativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "no bebas",
+        "no beba",
+        "no bebamos",
+        "no bebáis",
+        "no beban",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_no_voseo():
+    assert cg.conjugate_mood_tense("ser", Mood.es.Imperativo, Tense.es.Afirmativo) == [
+        "sé",
+        "sea",
+        "seamos",
+        "sed",
+        "sean",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_no_voseo():
+    assert cg.conjugate_mood_tense("ser", Mood.es.Imperativo, Tense.es.Negativo) == [
+        "no seas",
+        "no sea",
+        "no seamos",
+        "no seáis",
+        "no sean",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "ser",
+        Mood.es.Imperativo,
+        Tense.es.Afirmativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "sé",
+        "sea",
+        "seamos",
+        "sed",
+        "sean",
+    ]
+
+
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "ser",
+        Mood.es.Imperativo,
+        Tense.es.Negativo,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "no seas",
+        "no sea",
+        "no seamos",
+        "no seáis",
+        "no sean",
     ]

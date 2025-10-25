@@ -1,6 +1,7 @@
 import pytest
 from lxml import etree
 
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator
@@ -2970,6 +2971,8 @@ def test_inflector_ca_get_verb_stem_from_template_name_2(cg):
 
 
 def test_inflector_ca_conjugate_simple_mood_tense(cg):
+    mood = "indicatiu"
+    tense = "present"
     verb_stem = "parl"
     tense_elem = etree.fromstring(
         """<present>
@@ -2982,9 +2985,8 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
         </present>""",
         parser=None,
     )
-    tense = "present"
-    tense_template = TenseTemplate(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, "indicatiu", tense, tense_template)
+    tense_template = TenseTemplate(Lang.ca, mood, tense_elem)
+    out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == [
         "jo parlo",

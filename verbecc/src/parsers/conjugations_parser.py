@@ -64,7 +64,9 @@ class ConjugationsParser:
                 )
             for child in root:
                 if child.tag == "template":
-                    self.templates.append(ConjugationTemplate(child))  # type: ignore
+                    self.templates.append(
+                        ConjugationTemplate(lang=lang, template_elem=child)
+                    )
             self.templates = sorted(self.templates, key=lambda x: x.name)
             self._keys = [template.name for template in self.templates]
 
