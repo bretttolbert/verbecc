@@ -132,7 +132,7 @@ Examples:
 >>> conj_es('ser')['moods']['indicativo']['presente']
 ['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
 >>> conj_es_voseo('ser')['moods']['indicativo']['presente']
-['yo soy', 'vos sois', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+['yo soy', 'vos sos', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
 
 ```
 
@@ -1236,7 +1236,7 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
         "indicativo": {
             "presente": [
                 "yo soy",
-                "vos sois",
+                "vos sos",
                 "él es",
                 "nosotros somos",
                 "vosotros sois",
@@ -1302,7 +1302,7 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
         "subjuntivo": {
             "presente": [
                 "yo sea",
-                "vos seáis",
+                "vos seas",
                 "él sea",
                 "nosotros seamos",
                 "vosotros seáis",

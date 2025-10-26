@@ -17,6 +17,7 @@ from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.parsers.tense_template import TenseTemplate
 from verbecc.src.parsers.person_ending import PersonEnding
+from verbecc.src.utils.string_utils import strip_accents
 
 
 class InflectorEs(Inflector):
@@ -171,32 +172,35 @@ class InflectorEs(Inflector):
         with corresponding changes to verb endings.
         The verb endings for vos are different from those for tú in
         the present indicative, present subjunctive, and imperative moods.
-        Vos is conjugated like the vosotros form but without the 'i' in the ending.
+        Vos is conjugated like the vosotros form but without the 'i'
+        as the second-to-last letter in the ending and with the vowel
+        accented.
         For example, the present indicative forms are:
 
-        vosotros bebéis -> vos bebés
-        vosotros habláis -> vos hablás
-        vosotros dormís -> vos dormís
+        Regular (indictive):
+            vosotros bebéis -> vos bebés
+            vosotros habláis -> vos hablás
+            vosotros dormís -> vos dormís
+        Regular (subjunctive):
+            vosotros seáis -> vos seas
+        Irregular:
+            vosotors sois -> vos sos
 
-        "éis" -> "és"
-        "áis" -> "ás"
-        "ís" -> "ís"
+        Regular:
+            "éis" -> "és"
+            "áis" -> "ás"
+            "ís" -> "ís"
+        Irregular:
+            "oís" -> "os"
 
         For the imperativo affirmativo we just drop the 'd' and accent the vowel e.g.
-        (vosotros) hablad -> (vos) hablá
+            (vosotros) hablad -> (vos) hablá
+            (vosotros) sed -> (vos) sé
         The imperativo negativo is the same as tú.
 
         """
-        # map of vosotros endings to vos endings
-        # for the present indicative, present subjunctive
-        VOSEO_ENDINGS_MAP_INDICATIVE_OR_SUBJUNCTIVE_PRESENT: Dict[str, str] = {
-            "as": "ás",
-            "es": "és",
-            "ís": "ís",
-            "áis": "ás",
-            "éis": "és",
-        }
-        VOSEO_ENDINGS_MAP_IMPERATIVE: Dict[str, str] = {"ad": "á", "id": "í", "ed": "é"}
+        # only need to accent 'a', 'e' and 'i', AFAIK
+        VOWEL_ACCENT_MAP = {"a": "á", "e": "é", "i": "í"}
         lang_opts = None
         if lang_specific_options is not None:
             lang_opts = cast(LangSpecificOptionsEs, lang_specific_options)
@@ -222,19 +226,40 @@ class InflectorEs(Inflector):
                     # change replacement PersonEnding Person from second person plural to singular
                     replacement_person_ending.person = Person.SecondPersonSingular
 
-                    # modify the endings for voseo
+                    # modify the endings for voseo to form the vos endings
                     for i, ending in enumerate(replacement_person_ending.get_endings()):
-                        endings_map = (
-                            VOSEO_ENDINGS_MAP_INDICATIVE_OR_SUBJUNCTIVE_PRESENT
-                        )
+
+                        if mood in (Mood.Indicativo, Mood.Subjuntivo):
+                            # step one for indicativo and subjuntivo presente:
+                            # remove 'i' in the second-to-last letter position
+                            if ending[-2] == "i":
+                                ending = ending[:-2] + ending[-1]
                         if mood == Mood.Imperativo:
-                            endings_map = VOSEO_ENDINGS_MAP_IMPERATIVE
-                        for e in endings_map:
-                            # e.g. if ending is "sed", it endswith "ed", so "s" + "é" -> "sé"
-                            if ending.endswith(e):
-                                replacement_person_ending.endings[i] = (
-                                    ending[: -len(e)] + endings_map[e]
-                                )
-                                break
+                            # step one for imperativo: remove the trailing 'd'
+                            if ending[-1] == "d":
+                                ending = ending[:-1]
+
+                        if mood == Mood.Subjuntivo:
+                            # step two for subjunctivo is to strip any accents from vowels
+                            # e.g. vosotros seáis -> vos seas
+                            ending = strip_accents(ending)
+                        else:
+                            # step two for indicativo and imperativo is to accent the vowel which
+                            # is now in the second-to-last or last letter position (if not already accented)
+
+                            # accent second-to-last letter, if vowel
+                            if len(ending) > 1:
+                                if ending[-2] in VOWEL_ACCENT_MAP:
+                                    ending = (
+                                        ending[:-2]
+                                        + VOWEL_ACCENT_MAP[ending[-2]]
+                                        + ending[-1]
+                                    )
+                            # accent last letter, if vowel
+                            if ending[-1] in VOWEL_ACCENT_MAP:
+                                ending = ending[:-1] + VOWEL_ACCENT_MAP[ending[-1]]
+
+                        # update the replacement person ending with the modified ending
+                        replacement_person_ending.endings[i] = ending
                     return replacement_person_ending
         return person_ending

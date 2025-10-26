@@ -765,6 +765,64 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3()
     ]
 
 
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_no_voseo():
+    assert cg.conjugate_mood_tense("ser", Mood.es.Indicativo, Tense.es.Presente) == [
+        "yo soy",
+        "tú eres",
+        "él es",
+        "nosotros somos",
+        "vosotros sois",
+        "ellos son",
+    ]
+
+
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "ser",
+        Mood.es.Indicativo,
+        Tense.es.Presente,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "yo soy",
+        "vos sos",
+        "él es",
+        "nosotros somos",
+        "vosotros sois",
+        "ellos son",
+    ]
+
+
+def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_no_voseo():
+    assert cg.conjugate_mood_tense("ser", Mood.es.Subjuntivo, Tense.es.Presente) == [
+        "yo sea",
+        "tú seas",
+        "él sea",
+        "nosotros seamos",
+        "vosotros seáis",
+        "ellos sean",
+    ]
+
+
+def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_voseo_tipo_3():
+    assert cg.conjugate_mood_tense(
+        "ser",
+        Mood.es.Subjuntivo,
+        Tense.es.Presente,
+        lang_specific_options=LangSpecificOptionsEs(
+            voseo_options=VoseoOptions.VoseoTipo3
+        ),
+    ) == [
+        "yo sea",
+        "vos seas",
+        "él sea",
+        "nosotros seamos",
+        "vosotros seáis",
+        "ellos sean",
+    ]
+
+
 def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_no_voseo():
     assert cg.conjugate_mood_tense(
         "hablar", Mood.es.Imperativo, Tense.es.Afirmativo

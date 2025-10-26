@@ -1,6 +1,7 @@
 # verbecc Changelog
 
 - 1.11.6 [TBR]
+  - Fixed Voseo conjugation for irregular verb `ser`
   - Misc. cleanup
   - Promoted applicable `Inflector` methods to public
 
