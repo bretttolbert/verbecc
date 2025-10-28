@@ -84,7 +84,7 @@ class InflectorRo(Inflector):
             Tense.Gerunziu,
         ]
 
-    def get_auxilary_verb(
+    def get_auxiliary_verb(
         self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
         if tense in (Tense.Viitor1, Tense.Viitor2):
@@ -130,7 +130,7 @@ class InflectorRo(Inflector):
             },
         }
 
-    def auxilary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
+    def auxiliary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
         return tense.startswith("viitor")
 
     def compound_primary_verb_conjugation_uses_infinitive(

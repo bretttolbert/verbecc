@@ -103,7 +103,7 @@ class InflectorPt(Inflector):
             Tense.Gerúndio,
         ]
 
-    def get_auxilary_verb(
+    def get_auxiliary_verb(
         self,
         co: ConjugationObjects,
         mood: Mood,

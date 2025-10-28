@@ -238,7 +238,7 @@ class Conjugator:
                 tense,
                 aux_mood,
                 aux_tense,
-                self._inflector.auxilary_verb_uses_alternate_conjugation(tense),
+                self._inflector.auxiliary_verb_uses_alternate_conjugation(tense),
                 alternates_behavior,
                 gender=gender,
                 conjugate_pronouns=conjugate_pronouns,
@@ -342,7 +342,7 @@ class Conjugator:
             .tense_templates[aux_tense]
             .person_endings
         ]
-        aux_verb = self._inflector.get_auxilary_verb(co, mood, tense)
+        aux_verb = self._inflector.get_auxiliary_verb(co, mood, tense)
         aux_co = self._get_conj_obs(aux_verb)
         aux_tense_template = copy.deepcopy(
             aux_co.template.mood_templates[aux_mood].tense_templates[aux_tense]
@@ -428,7 +428,7 @@ class Conjugator:
         ret: List[str] = []
 
         p_conj = []
-        # the Romanian indicativ viitor-1 uses the inifitive form instead of the participle
+        # the Romanian indicativ viitor-1 uses the infinitive form instead of the participle
         if self._inflector.compound_primary_verb_conjugation_uses_infinitive(
             mood, tense
         ):
@@ -448,7 +448,7 @@ class Conjugator:
             # cast is safe since we're not using AlternatesBehavior.All
             p_conj = cast(List[str], p_conj)
 
-        if not self._inflector.is_auxilary_verb_inflected(aux_verb):
+        if not self._inflector.is_auxiliary_verb_inflected(aux_verb):
             # participle is not inflected, e.g. French passé composé with avoir
             # where aux_verb = "avoir"
             # e.g. j'ai parlé, tu as parlé, il a parlé, nous avons parlé, vous avez parlé, ils ont parlé
@@ -573,30 +573,55 @@ class Conjugator:
         """
         if modify_stem_strip_accents and mood != self._inflector.get_infinitive_mood():
             verb_stem = strip_accents(verb_stem)
-        ret = []
+        ret: TenseConjugation = []
         tense = tense_template.name
+        compound = True
         if (
             tense in self._inflector.get_tenses_conjugated_without_pronouns()
             or not conjugate_pronouns
         ):
-            for person_ending in tense_template.person_endings:
-                person_ending = self._inflector.modify_person_ending_if_applicable(
-                    person_ending,
-                    mood,
-                    tense,
-                    tense_template,
-                    lang_specific_options,
-                )
-                person_conjugation: PersonConjugation = []
-                endings: List[str] = []
-                if alternates_behavior == AlternatesBehavior.FirstOnly:
-                    endings.append(person_ending.get_ending())
-                elif alternates_behavior == AlternatesBehavior.SecondOnly:
-                    endings.append(person_ending.get_alternate_ending_if_available())
-                else:  # default: AlernatesBehavior.All
-                    endings.extend(person_ending.get_endings())
-                # there may be one or more alternate endings
-                for ending in endings:
+            compound = False
+
+        for person_ending in tense_template.person_endings:
+            person_ending = self._inflector.modify_person_ending_if_applicable(
+                person_ending,
+                mood,
+                tense,
+                tense_template,
+                lang_specific_options,
+            )
+            # There will be at least one conjugation per person-ending and
+            # potentially one or more alternate conjugations
+            person_conjugation: PersonConjugation = []
+            endings: List[str] = []
+            if alternates_behavior == AlternatesBehavior.FirstOnly:
+                endings.append(person_ending.get_ending())
+            elif alternates_behavior == AlternatesBehavior.SecondOnly:
+                endings.append(person_ending.get_alternate_ending_if_available())
+            else:  # default: AlternatesBehavior.All
+                endings.extend(person_ending.get_endings())
+            # there may be one or more alternate endings
+            for ending in endings:
+                if compound:
+                    # compound conjugation
+                    pronoun = self._inflector.get_default_pronoun(
+                        person=person_ending.get_person(),
+                        gender=gender,
+                        is_reflexive=is_reflexive,
+                        lang_specific_options=lang_specific_options,
+                    )
+                    s = "-"
+                    if ending != "-":
+                        conj = self._inflector.combine_verb_stem_and_ending(
+                            verb_stem, ending
+                        )
+                        s = self._inflector.combine_pronoun_and_conj(pronoun, conj)
+                        if mood == self._inflector.get_subjunctive_mood():
+                            s = self._inflector.add_subjunctive_relative_pronoun(
+                                s, tense
+                            )
+                else:
+                    # simple conjugation
                     s = self._inflector.add_present_participle_if_applicable(
                         "", is_reflexive, tense
                     )
@@ -616,53 +641,15 @@ class Conjugator:
                         )
                     if ending != "-":
                         s = self._inflector.add_adverb_if_applicable(s, mood, tense)
-                    person_conjugation.append(s)
-                if alternates_behavior == AlternatesBehavior.All:
-                    ret.append(list(person_conjugation))
-                elif (
-                    alternates_behavior == AlternatesBehavior.SecondOnly
-                    and len(person_conjugation) > 1
-                ):
-                    ret.append(person_conjugation[1])
-                else:
-                    ret.append(person_conjugation[0])
-        else:
-            for person_ending in tense_template.person_endings:
-                person_ending = self._inflector.modify_person_ending_if_applicable(
-                    person_ending,
-                    mood,
-                    tense,
-                    tense_template,
-                    lang_specific_options,
-                )
-                # There will be at least one conjugation per person-ending and
-                # potentially one or more alternate conjugations
-                person_conjugation: PersonConjugation = []
-                for ending in person_ending.get_endings():
-                    pronoun = self._inflector.get_default_pronoun(
-                        person=person_ending.get_person(),
-                        gender=gender,
-                        is_reflexive=is_reflexive,
-                        lang_specific_options=lang_specific_options,
-                    )
-                    s = "-"
-                    if ending != "-":
-                        conj = self._inflector.combine_verb_stem_and_ending(
-                            verb_stem, ending
-                        )
-                        s = self._inflector.combine_pronoun_and_conj(pronoun, conj)
-                        if mood == self._inflector.get_subjunctive_mood():
-                            s = self._inflector.add_subjunctive_relative_pronoun(
-                                s, tense
-                            )
-                    person_conjugation.append(s)
-                if alternates_behavior == AlternatesBehavior.All:
-                    ret.append(list(person_conjugation))
-                elif (
-                    alternates_behavior == AlternatesBehavior.SecondOnly
-                    and len(person_conjugation) > 1
-                ):
-                    ret.append(person_conjugation[1])
-                else:
-                    ret.append(person_conjugation[0])
+                person_conjugation.append(s)
+            if alternates_behavior == AlternatesBehavior.All:
+                ret.append(list(person_conjugation))
+            elif (
+                alternates_behavior == AlternatesBehavior.SecondOnly
+                and len(person_conjugation) > 1
+            ):
+                ret.append(person_conjugation[1])
+            else:
+                ret.append(person_conjugation[0])
+
         return ret

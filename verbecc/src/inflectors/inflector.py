@@ -118,18 +118,18 @@ class Inflector(ABC):
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return s
 
-    def auxilary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
+    def auxiliary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
         return False
 
     def get_tenses_conjugated_without_pronouns(self) -> List[str]:
         return []
 
-    def get_auxilary_verb(
+    def get_auxiliary_verb(
         self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
         return ""
 
-    def is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
+    def is_auxiliary_verb_inflected(self, auxiliary_verb: str) -> bool:
         return False
 
     def get_infinitive_mood(self) -> Mood:
