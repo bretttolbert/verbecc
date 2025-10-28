@@ -71,7 +71,7 @@ class InflectorCa(inflector.Inflector):
             Tense.ImperatiuPresent,
         ]
 
-    def get_auxilary_verb(
+    def get_auxiliary_verb(
         self,
         co: ConjugationObjects,
         mood: Mood,

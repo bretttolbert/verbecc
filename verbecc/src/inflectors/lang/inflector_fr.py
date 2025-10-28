@@ -149,7 +149,7 @@ class InflectorFr(Inflector):
             Tense.ParticipePassé,
         ]
 
-    def get_auxilary_verb(
+    def get_auxiliary_verb(
         self,
         co: ConjugationObjects,
         mood: Mood,
@@ -160,8 +160,8 @@ class InflectorFr(Inflector):
             ret = "être"
         return ret
 
-    def is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
-        return auxilary_verb == "être"
+    def is_auxiliary_verb_inflected(self, auxiliary_verb: str) -> bool:
+        return auxiliary_verb == "être"
 
     def get_infinitive_mood(self) -> Mood:
         return Mood.Infinitif

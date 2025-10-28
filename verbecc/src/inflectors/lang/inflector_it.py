@@ -40,8 +40,8 @@ class InflectorIt(Inflector):
     def lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.it
 
-    def is_auxilary_verb_inflected(self, auxilary_verb: str) -> bool:
-        return auxilary_verb == "essere"
+    def is_auxiliary_verb_inflected(self, auxiliary_verb: str) -> bool:
+        return auxiliary_verb == "essere"
 
     def split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
         """
@@ -120,7 +120,7 @@ class InflectorIt(Inflector):
             Tense.ParticipioPassato,
         ]
 
-    def get_auxilary_verb(
+    def get_auxiliary_verb(
         self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
         ret = "avere"
