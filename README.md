@@ -20,7 +20,7 @@
 ## Features
 * Conjugate verbs in six romance languages: French, Spanish, Portuguese, Italian, Romanian, Catalan
 * Conjugate thousands of known verbs without the use of any of machine learning, using simple string transformations based on XML conjugation templates
-* Predict conjugation of unknown verbs with 99% accurracy using machine learning techniques
+* Predict conjugation of unknown verbs with 99% accuracy using machine learning techniques
 * Includes both simple and compound conjugations (i.e. with helping/auxiliary verbs)
 * Includes alternate conjugations (optionally)
 * Supports advanced language-specific options such as the Spanish Voseo
@@ -133,7 +133,6 @@ Examples:
 ['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
 >>> conj_es_voseo('ser')['moods']['indicativo']['presente']
 ['yo soy', 'vos sos', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
-
 ```
 
 ### Multi-Language Conjugation using EN mood and tense names via localization module
