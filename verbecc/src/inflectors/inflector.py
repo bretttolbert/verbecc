@@ -1,9 +1,11 @@
 import logging
 
 from verbecc.src.defs.constants.config import DEVEL_MODE
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import MoodEn as Mood
 from verbecc.src.defs.types.tense import TenseEn as Tense
 from verbecc.src.parsers.person_ending import PersonEnding
+
 
 logging_level = logging.CRITICAL + 1  # effectively disables logging
 if DEVEL_MODE:
@@ -24,7 +26,7 @@ from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.exceptions import ConjugatorError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person, is_singular
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
@@ -33,8 +35,9 @@ from verbecc.src.parsers.conjugations_parser import ConjugationsParser
 from verbecc.src.parsers.conjugation_template import ConjugationTemplate
 from verbecc.src.parsers.tense_template import TenseTemplate
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
-from verbecc.src.parsers.verb import Verb
 from verbecc.src.parsers.verbs_parser import VerbsParser
+from verbecc.src.defs.types.data.verb import Verb
+from verbecc.src.defs.types.data.verbs import Verbs
 
 
 class Inflector(ABC):
@@ -46,7 +49,7 @@ class Inflector(ABC):
     # public:
 
     def __init__(self) -> None:
-        self._verb_parser = VerbsParser(self.lang)
+        self._verbs: Verbs = VerbsParser(self.lang).parse()
         self._conj_parser = ConjugationsParser(self.lang)
 
     @property
@@ -55,10 +58,10 @@ class Inflector(ABC):
         raise NotImplementedError
 
     def get_verbs(self) -> List[Verb]:
-        return self._verb_parser.verbs
+        return list(self._verbs)
 
     def get_infinitives(self) -> List[str]:
-        return [v.infinitive for v in self._verb_parser.verbs]
+        return self._verbs.infinitives
 
     def get_templates(self) -> List[ConjugationTemplate]:
         return self._conj_parser.templates
@@ -67,15 +70,13 @@ class Inflector(ABC):
         return [t.name for t in self._conj_parser.templates]
 
     def find_verb_by_infinitive(self, infinitive: str) -> Verb:
-        return self._verb_parser.find_verb_by_infinitive(infinitive)
+        return self._verbs.find_verb_by_infinitive(infinitive)
 
     def find_template(self, name: str) -> ConjugationTemplate:
         return self._conj_parser.find_template(name)
 
     def get_verbs_that_start_with(self, query: str, max_results: int) -> List[str]:
-        query = query.lower()
-        matches = self._verb_parser.get_verbs_that_start_with(query, max_results)
-        return matches
+        return self._verbs.get_verbs_that_start_with(query.lower(), max_results)
 
     def get_verb_stem_from_template_name(
         self, infinitive: str, template_name: str

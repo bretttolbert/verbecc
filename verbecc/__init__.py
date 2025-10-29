@@ -10,7 +10,7 @@ from verbecc.src.defs.types.conjugation import (
 )
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person, is_plural, is_singular
-from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import (
     Mood,
@@ -38,7 +38,7 @@ from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
 import verbecc.src.defs.constants.localization as localization
 import verbecc.src.defs.constants.grammar_defines as grammar_defines
 from verbecc.src.parsers.mood_template import MoodTemplate
-from verbecc.src.parsers.verb import Verb
+from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.exceptions import (
     ConjugatorError,
     ConjugationTemplateError,

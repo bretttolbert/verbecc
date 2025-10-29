@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 import copy
 from typing import cast, List
 
-from verbecc.src.parsers.verb import Verb
+from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.parsers.tense_template import TenseTemplate
 from verbecc.src.parsers.conjugation_template import ConjugationTemplate
 from verbecc.src.inflectors.inflector_factory import InflectorFactory

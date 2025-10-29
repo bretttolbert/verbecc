@@ -68,7 +68,7 @@ def test_inflector_frverb_can_be_reflexive(cg, infinitive, expected_result):
 def test_inflector_fr_impersonal_verbs(cg):
     impersonal_verbs = [
         v.infinitive
-        for v in cg._inflector._verb_parser.verbs
+        for v in cg._inflector._verbs
         if cg._inflector._is_impersonal_verb(v.infinitive)
     ]
     assert set(impersonal_verbs) == set(

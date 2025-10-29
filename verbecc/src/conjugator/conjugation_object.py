@@ -1,4 +1,4 @@
-from verbecc.src.parsers.verb import Verb
+from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.parsers.conjugation_template import ConjugationTemplate
 
 

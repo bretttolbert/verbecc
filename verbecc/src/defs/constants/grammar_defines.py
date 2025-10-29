@@ -8,7 +8,7 @@ else:
 from typing import Dict, List, Tuple
 
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 
 # map of ISO 639-1 codes to long names (in target language)

@@ -8,7 +8,7 @@ from verbecc.src.defs.constants import config
 @pytest.fixture(scope="module")
 def verb_template_pairs():
     inf = InflectorFr()
-    yield [(v.infinitive, v.template) for v in inf._verb_parser.verbs]
+    yield [(v.infinitive, v.template) for v in inf._verbs]
 
 
 def test_extract_verb_features():
