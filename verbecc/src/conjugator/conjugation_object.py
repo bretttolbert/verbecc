@@ -1,5 +1,5 @@
 from verbecc.src.defs.types.data.verb import Verb
-from verbecc.src.parsers.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
 
 
 class ConjugationObjects:

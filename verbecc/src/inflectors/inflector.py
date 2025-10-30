@@ -19,6 +19,7 @@ from typing import Dict, List, Tuple
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.data.verb import Verb
@@ -31,9 +32,7 @@ from verbecc.src.defs.types.mood import MoodEn as Mood
 from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person, is_singular
 from verbecc.src.defs.types.tense import TenseEn as Tense
-from verbecc.src.parsers.conjugation_template import ConjugationTemplate
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
-from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
 from verbecc.src.parsers.verbs_parser import VerbsParser
 
 

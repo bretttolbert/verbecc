@@ -14,7 +14,8 @@ import os
 # import tempfile
 from typing import List
 
-from verbecc.src.parsers.conjugation_template import ConjugationTemplate
+from verbecc.src.parsers.conjugation_template_parser import ConjugationTemplateParser
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.exceptions import (
     ConjugationsParserError,
@@ -65,7 +66,7 @@ class ConjugationsParser:
             for child in root:
                 if child.tag == "template":
                     self.templates.append(
-                        ConjugationTemplate(lang=lang, template_elem=child)
+                        ConjugationTemplateParser(lang=lang).parse(child)
                     )
             self.templates = sorted(self.templates, key=lambda x: x.name)
             self._keys = [template.name for template in self.templates]

@@ -4,37 +4,39 @@ from typing import Dict
 
 from verbecc.src.defs.types.exceptions import ConjugationTemplateError
 from verbecc.src.defs.types.data.mood_template import MoodTemplate
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.src.parsers.parser import Parser
 from verbecc.src.parsers.mood_template_parser import MoodTemplateParser
 
 
-class ConjugationTemplate:
-    def __init__(self, lang: Lang, template_elem: etree._Element) -> None:
+class ConjugationTemplateParser(Parser):
+    def __init__(self, lang: Lang) -> None:
+        self.lang = lang
+
+    def parse(self, template_elem: etree._Element) -> ConjugationTemplate:
         if template_elem.tag != "template":
             raise ConjugationTemplateError("Unexpected element")
         try:
             name_attrib = template_elem.get("name", default=None)
-            self.name = str(name_attrib)
-            self.mood_templates: Dict[Mood, MoodTemplate] = {}
-            for mood_elem in template_elem:  # type: ignore
-                mood_template = MoodTemplateParser(lang=lang).parse(mood_elem)
-                self.mood_templates[mood_elem.tag.lower()] = mood_template
-            self.modify_stem = ""
+            name = str(name_attrib)
+            mood_templates: Dict[Mood, MoodTemplate] = {}
+            for mood_elem in template_elem:
+                mood_template = MoodTemplateParser(lang=self.lang).parse(mood_elem)
+                mood_templates[mood_elem.tag.lower()] = mood_template
+            modify_stem = ""
             modify_stem_attrib = template_elem.get("modify-stem", default=None)
             if modify_stem_attrib is not None:
-                self.modify_stem = str(modify_stem_attrib)
-                if self.modify_stem not in ("strip-accents"):
+                modify_stem = str(modify_stem_attrib)
+                if modify_stem not in ("strip-accents"):
                     raise ConjugationTemplateError(
                         "Invalid 'modify-stem' attribute value '{self.modify_stem}'"
                     )
             else:
-                self.modify_stem = ""
-
+                modify_stem = ""
+            return ConjugationTemplate(self.lang, name, mood_templates, modify_stem)
         except AttributeError as e:
             raise ConjugationTemplateError(
                 "Error parsing {}: {}".format(etree.tostring(template_elem), str(e))
             )
-
-    def __repr__(self) -> str:
-        return "name={} mood_templates={}".format(self.name, self.mood_templates)

@@ -42,7 +42,7 @@ from verbecc.src.defs.types.lang_specific_options import (
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
-from verbecc.src.parsers.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
 from verbecc.src.inflectors.inflector_factory import InflectorFactory
 from verbecc.src.utils.string_utils import strip_accents
 
