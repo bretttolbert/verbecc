@@ -1,10 +1,12 @@
 from lxml import etree
 from typing import Dict
 
-from verbecc.src.parsers.mood_template import MoodTemplate
+
 from verbecc.src.defs.types.exceptions import ConjugationTemplateError
+from verbecc.src.defs.types.data.mood_template import MoodTemplate
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.src.parsers.mood_template_parser import MoodTemplateParser
 
 
 class ConjugationTemplate:
@@ -16,7 +18,7 @@ class ConjugationTemplate:
             self.name = str(name_attrib)
             self.mood_templates: Dict[Mood, MoodTemplate] = {}
             for mood_elem in template_elem:  # type: ignore
-                mood_template = MoodTemplate(lang=lang, mood_elem=mood_elem)
+                mood_template = MoodTemplateParser(lang=lang).parse(mood_elem)
                 self.mood_templates[mood_elem.tag.lower()] = mood_template
             self.modify_stem = ""
             modify_stem_attrib = template_elem.get("modify-stem", default=None)

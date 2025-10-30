@@ -37,8 +37,12 @@ from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
 from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
 import verbecc.src.defs.constants.localization as localization
 import verbecc.src.defs.constants.grammar_defines as grammar_defines
-from verbecc.src.parsers.mood_template import MoodTemplate
 from verbecc.src.defs.types.data.verb import Verb
+from verbecc.src.defs.types.data.verbs import Verbs
+from verbecc.src.defs.types.data.mood_template import MoodTemplate
+from verbecc.src.defs.types.data.element import Element
+from verbecc.src.defs.types.data.person_ending import PersonEnding
+from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.exceptions import (
     ConjugatorError,
     ConjugationTemplateError,
