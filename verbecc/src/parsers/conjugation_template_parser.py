@@ -2,13 +2,13 @@ from lxml import etree
 from typing import Dict
 
 
-from verbecc.src.defs.types.exceptions import ConjugationTemplateError
-from verbecc.src.defs.types.data.mood_template import MoodTemplate
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
-from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.data.mood_template import MoodTemplate
+from verbecc.src.defs.types.exceptions import ConjugationTemplateError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.parsers.parser import Parser
+from verbecc.src.defs.types.mood import Mood
 from verbecc.src.parsers.mood_template_parser import MoodTemplateParser
+from verbecc.src.parsers.parser import Parser
 
 
 class ConjugationTemplateParser(Parser):

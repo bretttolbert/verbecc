@@ -1,15 +1,15 @@
 from lxml import etree
 from typing import List
 
+from verbecc.src.defs.constants import grammar_defines
+from verbecc.src.defs.constants.localization import xmood
+from verbecc.src.defs.types.data.person_ending import PersonEnding
+from verbecc.src.defs.types.data.tense_template import TenseTemplate
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.tense import TenseFactory
 from verbecc.src.parsers.parser import Parser
 from verbecc.src.parsers.person_ending_parser import PersonEndingParser
-from verbecc.src.defs.types.data.person_ending import PersonEnding
-from verbecc.src.defs.constants import grammar_defines
-from verbecc.src.defs.types.tense import TenseFactory
-from verbecc.src.defs.types.mood import Mood
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.data.tense_template import TenseTemplate
-from verbecc.src.defs.constants.localization import xmood
 
 
 class TenseTemplateParser(Parser):

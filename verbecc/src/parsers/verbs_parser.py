@@ -12,11 +12,11 @@ import os
 # import tempfile
 from typing import List
 
-from verbecc.src.parsers.verb_parser import VerbParser
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.data.verbs import Verbs
 from verbecc.src.defs.types.exceptions import VerbsParserError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
+from verbecc.src.parsers.verb_parser import VerbParser
 
 
 class VerbsParser:

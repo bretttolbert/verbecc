@@ -1,12 +1,12 @@
 from bisect import bisect_left
 from typing import Iterator, List
 
-from verbecc.src.utils import string_utils
 from verbecc.src.defs.constants import config
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.exceptions import VerbNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.mlconjug import mlconjug
+from verbecc.src.utils import string_utils
 
 
 class Verbs:

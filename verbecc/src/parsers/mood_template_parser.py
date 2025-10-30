@@ -1,9 +1,9 @@
 from lxml import etree
 from typing import Dict
 
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.data.mood_template import MoodTemplate
+from verbecc.src.defs.types.data.tense_template import TenseTemplate
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import MoodFactory
 from verbecc.src.parsers.parser import Parser
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser

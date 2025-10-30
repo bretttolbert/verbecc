@@ -1,8 +1,8 @@
 from typing import Dict
 
 from verbecc.src.defs.types.data.element import Element
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
 

@@ -1,9 +1,9 @@
 from lxml import etree
 from lxml.etree import Element
 
-from verbecc.src.parsers.parser import Parser
-from verbecc.src.defs.types.exceptions import VerbsParserError
 from verbecc.src.defs.types.data.verb import Verb
+from verbecc.src.defs.types.exceptions import VerbsParserError
+from verbecc.src.parsers.parser import Parser
 
 
 class VerbParser(Parser):

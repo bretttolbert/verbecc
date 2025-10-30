@@ -43,6 +43,8 @@ from verbecc.src.defs.types.data.mood_template import MoodTemplate
 from verbecc.src.defs.types.data.element import Element
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.data.conjugations import Conjugations
 from verbecc.src.defs.types.exceptions import (
     ConjugatorError,
     ConjugationTemplateError,

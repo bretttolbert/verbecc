@@ -1,6 +1,7 @@
 from typing import List
-from verbecc.src.defs.types.person import Person
+
 from verbecc.src.defs.types.data.element import Element
+from verbecc.src.defs.types.person import Person
 
 
 class PersonEnding(Element):

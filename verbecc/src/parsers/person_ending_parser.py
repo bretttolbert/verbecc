@@ -1,9 +1,9 @@
 from lxml import etree
 from typing import List
 
-from verbecc.src.parsers.parser import Parser
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.person import Person
+from verbecc.src.parsers.parser import Parser
 
 
 class PersonEndingParser(Parser):
