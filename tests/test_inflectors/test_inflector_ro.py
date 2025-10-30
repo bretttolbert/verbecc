@@ -1,8 +1,8 @@
 import pytest
 
+from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
-from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 
 

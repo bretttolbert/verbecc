@@ -6,7 +6,7 @@ from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
 from verbecc.src.conjugator.conjugator import Conjugator, AlternatesBehavior
-from verbecc.src.parsers.tense_template import TenseTemplate
+from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
 from verbecc.src.defs.types.exceptions import ConjugatorError
 from verbecc.src.defs.types.conjugation import MoodsConjugation
 
@@ -111,7 +111,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
         </présent>""",
         parser=None,
     )
-    tense_template = TenseTemplate(Lang.fr, mood, tense_elem)
+    tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == [

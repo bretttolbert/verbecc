@@ -1,9 +1,5 @@
 import logging
 
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.mood import Mood
-from verbecc.src.defs.types.tense import Tense
-from verbecc.src.defs.types.conjugation import ConjugationInfo
 from verbecc.src.defs.constants.config import DEVEL_MODE
 
 logging_level = logging.CRITICAL + 1  # effectively disables logging
@@ -21,11 +17,12 @@ logger = logging.getLogger(__name__)
 import copy
 from typing import cast, List
 
-from verbecc.src.defs.types.data.verb import Verb
-from verbecc.src.parsers.tense_template import TenseTemplate
-from verbecc.src.parsers.conjugation_template import ConjugationTemplate
-from verbecc.src.inflectors.inflector_factory import InflectorFactory
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.conjugation import ConjugationInfo
+from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.exceptions import (
     VerbNotFoundError,
@@ -42,10 +39,12 @@ from verbecc.src.defs.types.conjugation import (
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
-from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.utils.string_utils import strip_accents
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
+from verbecc.src.defs.types.data.tense_template import TenseTemplate
+from verbecc.src.parsers.conjugation_template import ConjugationTemplate
+from verbecc.src.inflectors.inflector_factory import InflectorFactory
+from verbecc.src.utils.string_utils import strip_accents
 
 
 class Conjugator:
@@ -574,7 +573,7 @@ class Conjugator:
         if modify_stem_strip_accents and mood != self._inflector.get_infinitive_mood():
             verb_stem = strip_accents(verb_stem)
         ret: TenseConjugation = []
-        tense = tense_template.name
+        tense = tense_template.tense
         compound = True
         if (
             tense in self._inflector.get_tenses_conjugated_without_pronouns()

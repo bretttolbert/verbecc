@@ -12,9 +12,9 @@ from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
 )
 from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
 from verbecc.src.conjugator.conjugator import Conjugator
-from verbecc.src.parsers.tense_template import TenseTemplate
+from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
 
-cg = Conjugator(lang="es")
+cg = Conjugator(lang=Lang.es)
 
 
 def test_all_verbs_have_templates():
@@ -635,7 +635,7 @@ def test_inflector_es_conjugate_simple_mood_tense():
         </presente>""",
         parser=None,
     )
-    tense_template = TenseTemplate(Lang.es, mood, tense_elem)
+    tense_template = TenseTemplateParser(Lang.es, mood).parse(tense_elem)
     out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == [

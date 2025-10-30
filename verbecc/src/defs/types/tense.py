@@ -5,6 +5,8 @@ if sys.version_info >= (3, 11):
 else:
     from backports.strenum import StrEnum
 
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+
 
 class TenseEn(StrEnum):
     Future = "future"
@@ -29,7 +31,7 @@ class TenseCa(StrEnum):
     FuturPerfet = "futur-perfet"
     Gerundi = "gerundi"
     ImperatiuPresent = "imperatiu-present"
-    Imperfet = "imperfect"
+    Imperfet = "imperfet"
     Indicatiu = "indicatiu"
     InfinitiuPresent = "infinitiu-present"
     Particip = "particip"
@@ -160,3 +162,22 @@ class Tense:
     ca = TenseCa
     ro = TenseRo
     pt = TensePt
+
+
+class TenseFactory:
+    @classmethod
+    def from_string(cls, lang: Lang, s: str) -> Tense:
+        if lang == Lang.fr:
+            return TenseFr(s)
+        elif lang == Lang.es:
+            return TenseEs(s)
+        elif lang == Lang.en:
+            return TenseEn(s)
+        elif lang == Lang.it:
+            return TenseIt(s)
+        elif lang == Lang.ca:
+            return TenseCa(s)
+        elif lang == Lang.ro:
+            return TenseRo(s)
+        elif lang == Lang.pt:
+            return TensePt(s)
