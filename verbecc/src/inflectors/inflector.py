@@ -4,7 +4,7 @@ from verbecc.src.defs.constants.config import DEVEL_MODE
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import MoodEn as Mood
 from verbecc.src.defs.types.tense import TenseEn as Tense
-from verbecc.src.parsers.person_ending import PersonEnding
+from verbecc.src.defs.types.data.person_ending import PersonEnding
 
 
 logging_level = logging.CRITICAL + 1  # effectively disables logging

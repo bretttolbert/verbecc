@@ -1,7 +1,8 @@
 from lxml import etree
 from typing import List
 
-from verbecc.src.parsers.person_ending import PersonEnding
+from verbecc.src.parsers.person_ending_parser import PersonEndingParser
+from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.person import Person
@@ -89,7 +90,7 @@ class TenseTemplate:
             person = grammar_defines.PERSONS[person_num]
             if self.mood == xmood(self.lang, Mood.en.Imperative):
                 person = grammar_defines.IMPERATIVE_PERSONS[self.lang][person_num]
-            pe = PersonEnding(p_elem, person)
+            pe = PersonEndingParser().parse(p_elem, person)
             person_num += 1
             if len(pe.endings) > 0:
                 self.person_endings.append(pe)
