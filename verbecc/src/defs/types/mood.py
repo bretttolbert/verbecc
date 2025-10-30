@@ -5,6 +5,8 @@ if sys.version_info >= (3, 11):
 else:
     from backports.strenum import StrEnum
 
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+
 
 class MoodEn(StrEnum):
     Conditional = "conditional"
@@ -50,7 +52,7 @@ class MoodCa(StrEnum):
     Imperatiu = "imperatiu"
     Indicatiu = "indicatiu"
     Infinitiu = "infinitiu"
-    Participi = "participi"
+    Participi = "particip"
     Subjuntiu = "subjuntiu"
 
 
@@ -83,3 +85,22 @@ class Mood:
     it = MoodIt
     pt = MoodPt
     ro = MoodRo
+
+
+class MoodFactory:
+    @classmethod
+    def from_string(cls, lang: Lang, s: str) -> Mood:
+        if lang == Lang.ca:
+            return MoodCa(s)
+        elif lang == Lang.en:
+            return MoodEn(s)
+        elif lang == Lang.es:
+            return MoodEs(s)
+        elif lang == Lang.fr:
+            return MoodFr(s)
+        elif lang == Lang.it:
+            return MoodIt(s)
+        elif lang == Lang.pt:
+            return MoodPt(s)
+        elif lang == Lang.ro:
+            return MoodRo

@@ -14,22 +14,25 @@ import os
 # import tempfile
 from typing import List
 
-from verbecc.src.parsers.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.data.conjugations import Conjugations
+from verbecc.src.defs.types.exceptions import ConjugationsParserError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.exceptions import (
-    ConjugationsParserError,
-    TemplateNotFoundError,
-)
+from verbecc.src.parsers.conjugation_template_parser import ConjugationTemplateParser
+from verbecc.src.parsers.parser import Parser
 
 
-class ConjugationsParser:
+class ConjugationsParser(Parser):
     def __init__(self, lang: LangCodeISO639_1 = LangCodeISO639_1.fr) -> None:
-        self.templates: List[ConjugationTemplate] = []
+        self.lang = lang
+
+    def parse(self) -> Conjugations:
+        templates: List[ConjugationTemplate] = []
         parser = etree.XMLParser(
             dtd_validation=True, encoding="utf-8", remove_blank_text=True, remove_comments=True  # type: ignore
         )
         source = files("verbecc.data.xml.conjugations").joinpath(
-            f"conjugations-{lang}.xml"
+            f"conjugations-{self.lang}.xml"
         )
         with as_file(source) as fp:
             """
@@ -57,26 +60,14 @@ class ConjugationsParser:
             """
             tree = etree.parse(fp, parser)  # type: ignore
             root = tree.getroot()
-            root_tag = "conjugation-{}".format(lang)
+            root_tag = "conjugation-{}".format(self.lang)
             if root.tag != root_tag:
                 raise ConjugationsParserError(
                     "Root XML Tag {} Not Found".format(root_tag)
                 )
             for child in root:
                 if child.tag == "template":
-                    self.templates.append(
-                        ConjugationTemplate(lang=lang, template_elem=child)
+                    templates.append(
+                        ConjugationTemplateParser(lang=self.lang).parse(child)
                     )
-            self.templates = sorted(self.templates, key=lambda x: x.name)
-            self._keys = [template.name for template in self.templates]
-
-    def find_template(self, name: str) -> ConjugationTemplate:
-        """Assumes templates are already sorted by name"""
-        i = bisect_left(self._keys, name)
-        if i != len(self._keys) and self._keys[i] == name:
-            return self.templates[i]
-        raise TemplateNotFoundError
-
-
-if __name__ == "__main__":
-    conj = ConjugationsParser()
+        return Conjugations(self.lang, sorted(templates, key=lambda x: x.name))

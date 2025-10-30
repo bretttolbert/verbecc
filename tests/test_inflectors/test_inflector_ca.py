@@ -4,8 +4,9 @@ from lxml import etree
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.conjugator.conjugator import Conjugator
-from verbecc.src.parsers.tense_template import TenseTemplate
+from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
 from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 
 
@@ -2985,7 +2986,7 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
         </present>""",
         parser=None,
     )
-    tense_template = TenseTemplate(Lang.ca, mood, tense_elem)
+    tense_template = TenseTemplateParser(Lang.ca, mood).parse(tense_elem)
     out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == [

@@ -3,7 +3,7 @@ from typing import Dict, List, Tuple
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import MoodIt as Mood
-from verbecc.src.defs.types.partiple_inflection import ParticipleInflection
+from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import TenseIt as Tense
 from verbecc.src.defs.types.lang_specific_options import (

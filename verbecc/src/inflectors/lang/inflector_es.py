@@ -13,10 +13,10 @@ from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
     LangSpecificOptionsEs,
 )
 from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
+from verbecc.src.defs.types.data.person_ending import PersonEnding
+from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
-from verbecc.src.parsers.tense_template import TenseTemplate
-from verbecc.src.parsers.person_ending import PersonEnding
 from verbecc.src.utils.string_utils import strip_accents
 
 

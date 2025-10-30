@@ -2,6 +2,7 @@
 
 - 1.11.7 [TBR]
   - Cont. refactoring
+  - Separating XML parsing code from logical types
 
 - 1.11.6 [26 October 2025]
   - Fixed Voseo conjugation for irregular verb `ser` for the subjuntivo (no vowel accents)

@@ -8,7 +8,7 @@ import json
 
 # PersonConjugation format depends on AlternatesBehavior
 # With AlternatesBehavior.All, its a List[str]
-# With AlternatesBehvioar.FirstOnly or SecondOnly, it's a str
+# With AlternatesBehavior.FirstOnly or SecondOnly, it's a str
 PersonConjugation = Union[List[str], str]
 TenseConjugation = List[PersonConjugation]
 MoodConjugation = Dict[Tense, TenseConjugation]
