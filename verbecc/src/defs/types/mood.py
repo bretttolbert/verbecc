@@ -8,7 +8,11 @@ else:
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
-class MoodEn(StrEnum):
+class Mood(StrEnum):
+    pass
+
+
+class MoodEn(Mood):
     Conditional = "conditional"
     Gerund = "gerund"
     Imperative = "imperative"
@@ -18,7 +22,7 @@ class MoodEn(StrEnum):
     Subjunctive = "subjunctive"
 
 
-class MoodFr(StrEnum):
+class MoodFr(Mood):
     Conditionnel = "conditionnel"
     Imperatif = "imperatif"
     Indicatif = "indicatif"
@@ -27,7 +31,7 @@ class MoodFr(StrEnum):
     Subjonctif = "subjonctif"
 
 
-class MoodEs(StrEnum):
+class MoodEs(Mood):
     Condicional = "condicional"
     Gerundio = "gerundio"
     Imperativo = "imperativo"
@@ -37,7 +41,7 @@ class MoodEs(StrEnum):
     Subjuntivo = "subjuntivo"
 
 
-class MoodIt(StrEnum):
+class MoodIt(Mood):
     Condizionale = "condizionale"
     Congiuntivo = "congiuntivo"
     Imperativo = "imperativo"
@@ -46,7 +50,7 @@ class MoodIt(StrEnum):
     Participio = "participio"
 
 
-class MoodCa(StrEnum):
+class MoodCa(Mood):
     Condicional = "condicional"
     Gerundi = "gerundi"
     Imperatiu = "imperatiu"
@@ -56,7 +60,8 @@ class MoodCa(StrEnum):
     Subjuntiu = "subjuntiu"
 
 
-class MoodRo(StrEnum):
+class MoodRo(Mood):
+    NA = "(nu se aplică)"  # For "not applicable", the Romanian equivalent is "nu se aplică"
     Condițional = "condițional"
     Conjunctiv = "conjunctiv"
     Gerunziu = "gerunziu"
@@ -67,7 +72,7 @@ class MoodRo(StrEnum):
     Subjunctiv = "subjunctiv"
 
 
-class MoodPt(StrEnum):
+class MoodPt(Mood):
     Condicional = "condicional"
     Gerúndio = "gerúndio"
     Imperativo = "imperativo"
@@ -77,7 +82,7 @@ class MoodPt(StrEnum):
     Subjuntivo = "subjuntivo"
 
 
-class Mood:
+class Moods:
     ca = MoodCa
     en = MoodEn
     es = MoodEs
@@ -91,16 +96,16 @@ class MoodFactory:
     @classmethod
     def from_string(cls, lang: Lang, s: str) -> Mood:
         if lang == Lang.ca:
-            return MoodCa(s)
+            return Moods.ca(s)
         elif lang == Lang.en:
-            return MoodEn(s)
+            return Moods.en(s)
         elif lang == Lang.es:
-            return MoodEs(s)
+            return Moods.es(s)
         elif lang == Lang.fr:
-            return MoodFr(s)
+            return Moods.fr(s)
         elif lang == Lang.it:
-            return MoodIt(s)
+            return Moods.it(s)
         elif lang == Lang.pt:
-            return MoodPt(s)
+            return Moods.pt(s)
         elif lang == Lang.ro:
-            return MoodRo
+            return Moods.ro(s)

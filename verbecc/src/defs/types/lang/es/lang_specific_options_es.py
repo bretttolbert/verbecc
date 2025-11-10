@@ -6,7 +6,7 @@ from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
 
 class LangSpecificOptionsEs(LangSpecificOptions):
 
-    def __init__(self, voseo_options: VoseoOptions = VoseoOptions.NoVoseo) -> None:
+    def __init__(self, voseo_options: VoseoOptions = VoseoOptions.VoseoTipo3) -> None:
         super().__init__()
         self._voseo_options = voseo_options
 

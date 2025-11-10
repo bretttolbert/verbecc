@@ -1,16 +1,21 @@
 from verbecc.src.conjugator.conjugator import Conjugator
-from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
 from verbecc.src.defs.types.conjugation import (
+    CompleteConjugation,
+    CompleteConjugationData,
+    VerbInfo,
+    VerbInfoData,
     MoodsConjugation,
+    MoodsConjugationData,
     MoodConjugation,
+    MoodConjugationData,
     TenseConjugation,
-    PersonConjugation,
-    ConjugationInfo,
+    TenseConjugationData,
     Conjugation,
+    ConjugationData,
 )
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person, is_plural, is_singular
-from verbecc.src.defs.types.participle_inflection import ParticipleInflection
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import (
     Mood,

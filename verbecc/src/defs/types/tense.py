@@ -8,7 +8,11 @@ else:
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
-class TenseEn(StrEnum):
+class Tense(StrEnum):
+    pass
+
+
+class TenseEn(Tense):
     Future = "future"
     FuturePerfect = "future-perfect"
     Gerund = "gerund"
@@ -26,7 +30,7 @@ class TenseEn(StrEnum):
     SimplePast = "simple-past"
 
 
-class TenseCa(StrEnum):
+class TenseCa(Tense):
     Futur = "futur"
     FuturPerfet = "futur-perfet"
     Gerundi = "gerundi"
@@ -44,7 +48,7 @@ class TenseCa(StrEnum):
     PretèritPluscuamperfet = "pretèrit-pluscuamperfet"
 
 
-class TenseEs(StrEnum):
+class TenseEs(Tense):
     Afirmativo = "afirmativo"
     Futuro = "futuro"
     FuturoPerfecto = "futuro-perfecto"
@@ -67,7 +71,7 @@ class TenseEs(StrEnum):
     PretéritoPluscuamperfecto2 = "pretérito-pluscuamperfecto-2"
 
 
-class TenseFr(StrEnum):
+class TenseFr(Tense):
     FutureAntériuer = "futur-antérieur"
     FuturSimple = "futur-simple"
     Imparfait = "imparfait"
@@ -84,7 +88,7 @@ class TenseFr(StrEnum):
     Présent = "présent"
 
 
-class TenseIt(StrEnum):
+class TenseIt(Tense):
     Affermativo = "affermativo"
     Futuro = "futuro"
     FuturoAnteriore = "futuro-anteriore"
@@ -104,7 +108,7 @@ class TenseIt(StrEnum):
     TrapassatoRemoto = "trapassato-remoto"
 
 
-class TensePt(StrEnum):
+class TensePt(Tense):
     Afirmativo = "afirmativo"
     Futuro = "futuro"
     FuturoComposto = "futuro-composto"
@@ -132,7 +136,7 @@ class TensePt(StrEnum):
     PretéritoPerfeitoComposto = "pretérito-perfeito-composto"
 
 
-class TenseRo(StrEnum):
+class TenseRo(Tense):
     Afirmativ = "afirmativ"
     Indicativ = "indicativ"
     Gerunziu = "gerunziu"
@@ -154,7 +158,7 @@ class TenseRo(StrEnum):
     ViitorAnterior = "viitor-anterior"
 
 
-class Tense:
+class Tenses:
     fr = TenseFr
     es = TenseEs
     en = TenseEn
@@ -168,16 +172,16 @@ class TenseFactory:
     @classmethod
     def from_string(cls, lang: Lang, s: str) -> Tense:
         if lang == Lang.fr:
-            return TenseFr(s)
+            return Tenses.fr(s)
         elif lang == Lang.es:
-            return TenseEs(s)
+            return Tenses.es(s)
         elif lang == Lang.en:
-            return TenseEn(s)
+            return Tenses.en(s)
         elif lang == Lang.it:
-            return TenseIt(s)
+            return Tenses.it(s)
         elif lang == Lang.ca:
-            return TenseCa(s)
+            return Tenses.ca(s)
         elif lang == Lang.ro:
-            return TenseRo(s)
+            return Tenses.ro(s)
         elif lang == Lang.pt:
-            return TensePt(s)
+            return Tenses.pt(s)

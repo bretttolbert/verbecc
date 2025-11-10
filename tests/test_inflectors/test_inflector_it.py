@@ -1,15 +1,18 @@
 import pytest
 from typing import cast
 
-from verbecc.src.conjugator.conjugator import Conjugator, MoodsConjugation
-from verbecc.src.defs.types.alternates_behavior import AlternatesBehavior
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.mood import Moods
+from verbecc.src.defs.types.tense import Tenses
 
 
 @pytest.fixture(scope="module")
 def cg():
-    cg = Conjugator(lang="it")
+    cg = Conjugator(lang=Lang.it)
     yield cg
 
 
@@ -90,31 +93,38 @@ def test_inflector_itadd_subjunctive_relative_pronoun(cg):
 
 
 @pytest.mark.parametrize(
-    "person,gender,is_reflexive,expected_result",
+    "person,number,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.m, False, "io"),
-        (Person.FirstPersonSingular, Gender.m, True, "io mi"),
-        (Person.SecondPersonSingular, Gender.m, False, "tu"),
-        (Person.SecondPersonSingular, Gender.m, True, "tu ti"),
-        (Person.ThirdPersonSingular, Gender.m, False, "lui"),
-        (Person.ThirdPersonSingular, Gender.m, True, "lui si"),
-        (Person.ThirdPersonSingular, Gender.f, False, "lei"),
-        (Person.ThirdPersonSingular, Gender.f, True, "lei si"),
-        (Person.FirstPersonPlural, Gender.m, False, "noi"),
-        (Person.FirstPersonPlural, Gender.m, True, "noi ci"),
-        (Person.SecondPersonPlural, Gender.m, False, "voi"),
-        (Person.SecondPersonPlural, Gender.m, True, "voi vi"),
-        (Person.ThirdPersonPlural, Gender.m, False, "loro"),
-        (Person.ThirdPersonPlural, Gender.m, True, "loro si"),
-        (Person.ThirdPersonPlural, Gender.f, False, "loro"),
-        (Person.ThirdPersonPlural, Gender.f, True, "loro si"),
+        (Person.First, Number.Singular, Gender.m, False, "io"),
+        (Person.First, Number.Singular, Gender.m, True, "io mi"),
+        (Person.Second, Number.Singular, Gender.m, False, "tu"),
+        (Person.Second, Number.Singular, Gender.m, True, "tu ti"),
+        (Person.Third, Number.Singular, Gender.m, False, "lui"),
+        (Person.Third, Number.Singular, Gender.m, True, "lui si"),
+        (Person.Third, Number.Singular, Gender.f, False, "lei"),
+        (Person.Third, Number.Singular, Gender.f, True, "lei si"),
+        (Person.First, Number.Plural, Gender.m, False, "noi"),
+        (Person.First, Number.Plural, Gender.m, True, "noi ci"),
+        (Person.Second, Number.Plural, Gender.m, False, "voi"),
+        (Person.Second, Number.Plural, Gender.m, True, "voi vi"),
+        (Person.Third, Number.Plural, Gender.m, False, "loro"),
+        (Person.Third, Number.Plural, Gender.m, True, "loro si"),
+        (Person.Third, Number.Plural, Gender.f, False, "loro"),
+        (Person.Third, Number.Plural, Gender.f, True, "loro si"),
     ],
 )
 def test_inflector_it_get_default_pronoun(
-    cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
+    cg,
+    person: Person,
+    number: Number,
+    gender: Gender,
+    is_reflexive: bool,
+    expected_result: str,
 ):
     assert (
-        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
+        cg._inflector.get_default_pronoun(
+            person, number, gender, is_reflexive=is_reflexive
+        )
         == expected_result
     )
 
@@ -144,9 +154,10 @@ def test_inflector_it_get_default_pronoun(
     ],
 )
 def test_indicative_present(cg, infinitive, expected_result):
-    conj = cg.conjugate(infinitive)
-    moods_conj = cast(MoodsConjugation, conj["moods"])
-    assert moods_conj["indicativo"]["presente"] == expected_result
+    cc = cg.conjugate(infinitive)
+    mood_conj = cc.moods["indicativo"]
+    tense_conj = mood_conj["presente"]
+    assert [c[0] for c in tense_conj] == expected_result
 
 
 @pytest.mark.parametrize(
@@ -188,9 +199,10 @@ def test_indicative_present(cg, infinitive, expected_result):
     ],
 )
 def test_passato_prossimo(cg, infinitive, expected_result):
-    conj = cg.conjugate(infinitive)
-    moods_conj = cast(MoodsConjugation, conj["moods"])
-    assert moods_conj["indicativo"]["passato-prossimo"] == expected_result
+    cc = cg.conjugate(infinitive)
+    mood_conj = cc.moods[Moods.it.Indicativo]
+    tense_conj = mood_conj[Tenses.it.PassatoProssimo]
+    assert [c[0] for c in tense_conj] == expected_result
 
 
 @pytest.mark.parametrize(
@@ -210,9 +222,10 @@ def test_passato_prossimo(cg, infinitive, expected_result):
     ],
 )
 def test_alzarsi_indicative_present(cg, infinitive, expected_result):
-    conj = cg.conjugate(infinitive, gender=Gender.f)
-    moods_conj = cast(MoodsConjugation, conj["moods"])
-    assert moods_conj["indicativo"]["presente"] == expected_result
+    cc = cg.conjugate(infinitive, gender=Gender.f)
+    mood_conj = cc.moods[Moods.it.Indicativo]
+    tense_conj = mood_conj[Tenses.it.Presente]
+    assert tense_conj == expected_result
 
 
 @pytest.mark.parametrize(
@@ -234,9 +247,10 @@ def test_alzarsi_indicative_present(cg, infinitive, expected_result):
 def test_inflector_it_alzarsi_indicativo_passato_prossimo(
     cg, infinitive, expected_result
 ):
-    conj = cg.conjugate(infinitive, gender=Gender.f)
-    moods_conj = cast(MoodsConjugation, conj["moods"])
-    assert moods_conj["indicativo"]["passato-prossimo"] == expected_result
+    cc = cg.conjugate(infinitive, gender=Gender.f)
+    mood_conj = cc.moods[Moods.it.Indicativo]
+    tense_conj = mood_conj[Tenses.it.PassatoProssimo]
+    assert [c[0] for c in tense_conj] == expected_result
 
 
 def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
@@ -249,7 +263,6 @@ def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
         "indicativo",
         "presente",
         False,
-        AlternatesBehavior.All,
         Gender.m,
         True,
     )

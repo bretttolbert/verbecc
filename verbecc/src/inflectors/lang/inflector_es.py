@@ -1,11 +1,12 @@
 import copy
-from typing import cast, Dict, List, Tuple
+from typing import cast, Dict, List, Optional, Tuple
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.mood import MoodEs as Mood
-from verbecc.src.defs.types.tense import TenseEs as Tense
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.mood import Mood, Moods
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
@@ -21,59 +22,61 @@ from verbecc.src.utils.string_utils import strip_accents
 
 
 class InflectorEs(Inflector):
-    def __init__(self) -> None:
+    def __init__(
+        self, lang_specific_options: Optional[LangSpecificOptions] = None
+    ) -> None:
         super(InflectorEs, self).__init__()
+        if lang_specific_options is not None:
+            self.lang_specific_options = cast(
+                LangSpecificOptionsEs, lang_specific_options
+            )
 
     @property
     def lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.es
 
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
-        if mood == Mood.Imperativo and tense == Tense.Negativo:
+        if mood == Moods.es.Imperativo and tense == Tenses.es.Negativo:
             return "no " + s
         return s
 
     def get_default_pronoun(
         self,
         person: Person,
+        number: Number,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
-        lang_opts = None
-        if lang_specific_options is not None:
-            lang_opts = cast(LangSpecificOptionsEs, lang_specific_options)
-
         ret = ""
-        if person == Person.FirstPersonSingular:
+        if person == Person.First and Number.Singular:
             ret = "yo"
             if is_reflexive:
                 ret += " me"
-        elif person == Person.SecondPersonSingular:
+        elif person == Person.Second and Number.Singular:
             if (
-                lang_opts is not None
-                and lang_opts.voseo_options != VoseoOptions.NoVoseo
+                self.lang_specific_options is not None
+                and self.lang_specific_options.voseo_options != VoseoOptions.NoVoseo
             ):
                 ret = "vos"
             else:
                 ret = "tú"
             if is_reflexive:
                 ret += " te"
-        elif person == Person.ThirdPersonSingular:
+        elif person == Person.Third and Number.Singular:
             ret = "él"
             if gender == Gender.f:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
-        elif person == Person.FirstPersonPlural:
+        elif person == Person.First and Number.Plural:
             ret = "nosotros"
             if is_reflexive:
                 ret += " nos"
-        elif person == Person.SecondPersonPlural:
+        elif person == Person.Second and Number.Plural:
             ret = "vosotros"
             if is_reflexive:
                 ret += " os"
-        elif person == Person.ThirdPersonPlural:
+        elif person == Person.Third and Number.Plural:
             ret = "ellos"
             if gender == Gender.f:
                 ret = "ellas"
@@ -83,11 +86,11 @@ class InflectorEs(Inflector):
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tense.Participo,
-            Tense.Gerundio,
-            Tense.Infinitivo,
-            Tense.Afirmativo,
-            Tense.Negativo,
+            Tenses.es.Participo,
+            Tenses.es.Gerundio,
+            Tenses.es.Infinitivo,
+            Tenses.es.Afirmativo,
+            Tenses.es.Negativo,
         ]
 
     def get_auxiliary_verb(
@@ -99,22 +102,22 @@ class InflectorEs(Inflector):
         return "haber"
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitivo
+        return Moods.es.Infinitivo
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicativo
+        return Moods.es.Indicativo
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Subjuntivo
+        return Moods.es.Subjuntivo
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Condicional
+        return Moods.es.Condicional
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participo
+        return Moods.es.Participo
 
-    def get_participle_tense(self) -> Mood:
-        return Tense.Participo
+    def get_participle_tense(self) -> Tense:
+        return Tenses.es.Participo
 
     def get_alternate_hv_inflection(self, s: str) -> str:
         if s.endswith("hay"):
@@ -125,33 +128,35 @@ class InflectorEs(Inflector):
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {
-            Mood.Indicativo: {
-                Tense.PretéritoPerfectoCompuesto: (
-                    Mood.Indicativo,
-                    Tense.Presente,
+            Moods.es.Indicativo: {
+                Tenses.es.PretéritoPerfectoCompuesto: (
+                    Moods.es.Indicativo,
+                    Tenses.es.Presente,
                 ),
-                Tense.PretéritoPluscuamperfecto: (
-                    Mood.Indicativo,
-                    Tense.PretéritoImperfecto,
+                Tenses.es.PretéritoPluscuamperfecto: (
+                    Moods.es.Indicativo,
+                    Tenses.es.PretéritoImperfecto,
                 ),
-                Tense.PretéritoAnterior: (
-                    Mood.Indicativo,
-                    Tense.PretéritoPerfectoSimple,
+                Tenses.es.PretéritoAnterior: (
+                    Moods.es.Indicativo,
+                    Tenses.es.PretéritoPerfectoSimple,
                 ),
-                Tense.FuturoPerfecto: (Mood.Indicativo, Tense.Futuro),
+                Tenses.es.FuturoPerfecto: (Moods.es.Indicativo, Tenses.es.Futuro),
             },
-            Mood.Condicional: {Tense.Perfecto: (Mood.Condicional, Tense.Presente)},
-            Mood.Subjuntivo: {
-                Tense.PretéritoPerfecto: (Mood.Subjuntivo, Tense.Presente),
-                Tense.PretéritoPluscuamperfecto1: (
-                    Mood.Subjuntivo,
-                    Tense.PretéritoImperfecto1,
+            Moods.es.Condicional: {
+                Tenses.es.Perfecto: (Moods.es.Condicional, Tenses.es.Presente)
+            },
+            Moods.es.Subjuntivo: {
+                Tenses.es.PretéritoPerfecto: (Moods.es.Subjuntivo, Tenses.es.Presente),
+                Tenses.es.PretéritoPluscuamperfecto1: (
+                    Moods.es.Subjuntivo,
+                    Tenses.es.PretéritoImperfecto1,
                 ),
-                Tense.PretéritoPluscuamperfecto2: (
-                    Mood.Subjuntivo,
-                    Tense.PretéritoImperfecto2,
+                Tenses.es.PretéritoPluscuamperfecto2: (
+                    Moods.es.Subjuntivo,
+                    Tenses.es.PretéritoImperfecto2,
                 ),
-                Tense.FuturoPerfecto: (Mood.Subjuntivo, Tense.Futuro),
+                Tenses.es.FuturoPerfecto: (Moods.es.Subjuntivo, Tenses.es.Futuro),
             },
         }
 
@@ -161,7 +166,6 @@ class InflectorEs(Inflector):
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
-        lang_specific_options: LangSpecificOptions,
     ) -> PersonEnding:
         """
         Hook for certain languages e.g. Spanish that modify
@@ -201,45 +205,43 @@ class InflectorEs(Inflector):
         """
         # only need to accent 'a', 'e' and 'i', AFAIK
         VOWEL_ACCENT_MAP = {"a": "á", "e": "é", "i": "í"}
-        lang_opts = None
-        if lang_specific_options is not None:
-            lang_opts = cast(LangSpecificOptionsEs, lang_specific_options)
+        if self.lang_specific_options is not None:
             if (
-                lang_opts is not None
-                and lang_opts.voseo_options != VoseoOptions.NoVoseo
-                and person_ending.person == Person.SecondPersonSingular
+                self.lang_specific_options is not None
+                and self.lang_specific_options.voseo_options != VoseoOptions.NoVoseo
+                and person_ending.person == Person._2s
             ):
-                if lang_opts.voseo_options != VoseoOptions.VoseoTipo3:
+                if self.lang_specific_options.voseo_options != VoseoOptions.VoseoTipo3:
                     # only voseo tipo 3 (voseo típico aka Rioplatense) is supported at the moment
                     raise NotImplementedError
 
                 if (
-                    (mood == Mood.Indicativo and tense == Tense.Presente)
-                    or (mood == Mood.Subjuntivo and tense == Tense.Presente)
-                    or (mood == Mood.Imperativo and tense == Tense.Afirmativo)
+                    (mood == Moods.es.Indicativo and tense == Tenses.es.Presente)
+                    or (mood == Moods.es.Subjuntivo and tense == Tenses.es.Presente)
+                    or (mood == Moods.es.Imperativo and tense == Tenses.es.Afirmativo)
                 ):
-                    # first replace with given SecondPersonSingular (tú) ending(s)
-                    # with the SecondPersonPlural (vosotros) ending(s)
+                    # first replace with given p2s (tú) ending(s)
+                    # with the p2p (vosotros) ending(s)
                     replacement_person_ending = copy.deepcopy(
-                        tense_template.get_person_ending(Person.SecondPersonPlural)
+                        tense_template.get_person_ending(Person._2p)
                     )
                     # change replacement PersonEnding Person from second person plural to singular
-                    replacement_person_ending.person = Person.SecondPersonSingular
+                    replacement_person_ending.person = Person._2s
 
                     # modify the endings for voseo to form the vos endings
                     for i, ending in enumerate(replacement_person_ending.get_endings()):
 
-                        if mood in (Mood.Indicativo, Mood.Subjuntivo):
+                        if mood in (Moods.es.Indicativo, Moods.es.Subjuntivo):
                             # step one for indicativo and subjuntivo presente:
                             # remove 'i' in the second-to-last letter position
                             if ending[-2] == "i":
                                 ending = ending[:-2] + ending[-1]
-                        if mood == Mood.Imperativo:
+                        if mood == Moods.es.Imperativo:
                             # step one for imperativo: remove the trailing 'd'
                             if ending[-1] == "d":
                                 ending = ending[:-1]
 
-                        if mood == Mood.Subjuntivo:
+                        if mood == Moods.es.Subjuntivo:
                             # step two for subjunctivo is to strip any accents from vowels
                             # e.g. vosotros seáis -> vos seas
                             ending = strip_accents(ending)

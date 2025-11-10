@@ -51,7 +51,7 @@ from importlib_resources import as_file, files
 import os
 import pickle
 import random
-from typing import Any, Dict, List, Tuple, Union
+from typing import Any, Dict, List, Optional, Tuple, Union
 from zipfile import ZipFile
 
 from sklearn.feature_selection import SelectFromModel
@@ -182,7 +182,7 @@ class Model:
 
         """
         prediction = self.pipeline.predict(verbs)
-        return prediction
+        return list(prediction)
 
 
 class DataSet:
@@ -296,7 +296,9 @@ def extract_verb_features(
         "START={0}".format(verb[:n]) for n in range(min_n, min(max_n + 1, verb_len + 1))
     ]
     if lang not in ALPHABET:
-        lang = "en"  # We chose 'en' as the default alphabet because EN is more standard, without accents or diactrics.
+        lang = (
+            LangCodeISO639_1.en
+        )  # We chose 'en' as the default alphabet because EN is more standard, without accents or diactrics.
     vowels = sum(verb.count(c) for c in ALPHABET[lang]["vowels"])
     vowels_number = "VOW_NUM={0}".format(vowels)
     consonants = sum(verb.count(c) for c in ALPHABET[lang]["consonants"])
@@ -337,7 +339,7 @@ def save_model(model: Model) -> None:
     os.remove(pickle_filename)
 
 
-def load_model(lang: LangCodeISO639_1) -> Model:
+def load_model(lang: LangCodeISO639_1) -> Optional[Model]:
     model = None
     zip_filename = get_model_zip_filename(lang)
     try:

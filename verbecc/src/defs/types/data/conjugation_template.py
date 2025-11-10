@@ -1,8 +1,9 @@
-from typing import List
+from typing import Dict
 
 from verbecc.src.defs.types.data.element import Element
 from verbecc.src.defs.types.data.mood_template import MoodTemplate
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.src.defs.types.mood import Mood
 
 
 class ConjugationTemplate(Element):
@@ -10,7 +11,7 @@ class ConjugationTemplate(Element):
         self,
         lang: Lang,
         name: str,
-        mood_templates: List[MoodTemplate],
+        mood_templates: Dict[Mood, MoodTemplate],
         modify_stem: str = "",
     ) -> None:
         self.lang = lang

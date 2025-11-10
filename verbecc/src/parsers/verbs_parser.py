@@ -1,9 +1,5 @@
 from __future__ import print_function
-
-try:
-    from lxml import etree
-except ImportError:
-    import xml.etree.ElementTree as etree
+from lxml import etree
 from importlib_resources import as_file, files
 
 # import gzip

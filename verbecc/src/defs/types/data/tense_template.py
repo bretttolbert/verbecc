@@ -6,6 +6,7 @@ from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
 
 
 class TenseTemplate(Element):
@@ -18,14 +19,12 @@ class TenseTemplate(Element):
         self.tense = tense
         self.person_endings = person_endings
 
-    def get_person_ending(self, person: Person) -> PersonEnding:
+    def get_person_ending(self, person: Person, number: Number) -> PersonEnding:
         for pe in self.person_endings:
-            if pe.person == person:
+            if pe.person == person and pe.number == number:
                 return pe
         raise ValueError(
-            "TenseTemplate '{}' has no PersonEnding for person '{}'".format(
-                self.name, person
-            )
+            f"TenseTemplate has no PersonEnding for person={person} number={number}"
         )
 
     def __repr__(self) -> str:

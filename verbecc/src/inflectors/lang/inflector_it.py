@@ -1,11 +1,12 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.mood import MoodIt as Mood
+from verbecc.src.defs.types.mood import Mood, Moods
 from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import TenseIt as Tense
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
@@ -33,7 +34,9 @@ VERBS_CONJUGATED_WITH_ESSERE = [
 
 
 class InflectorIt(Inflector):
-    def __init__(self) -> None:
+    def __init__(
+        self, lang_specific_options: Optional[LangSpecificOptions] = None
+    ) -> None:
         super(InflectorIt, self).__init__()
 
     @property
@@ -77,34 +80,34 @@ class InflectorIt(Inflector):
     def get_default_pronoun(
         self,
         person: Person,
+        number: Number,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
         ret = ""
-        if person == Person.FirstPersonSingular:
+        if person == Person.First and number == Number.Singular:
             ret = "io"
             if is_reflexive:
                 ret += " mi"
-        elif person == Person.SecondPersonSingular:
+        elif person == Person.Second and number == Number.Singular:
             ret = "tu"
             if is_reflexive:
                 ret += " ti"
-        elif person == Person.ThirdPersonSingular:
+        elif person == Person.Third and number == Number.Singular:
             ret = "lui"
             if gender == Gender.f:
                 ret = "lei"
             if is_reflexive:
                 ret += " si"
-        elif person == Person.FirstPersonPlural:
+        elif person == Person.First and number == Number.Plural:
             ret = "noi"
             if is_reflexive:
                 ret += " ci"
-        elif person == Person.SecondPersonPlural:
+        elif person == Person.Second and number == Number.Plural:
             ret = "voi"
             if is_reflexive:
                 ret += " vi"
-        elif person == Person.ThirdPersonPlural:
+        elif person == Person.Third and number == Number.Plural:
             ret = "loro"
             if is_reflexive:
                 ret += " si"
@@ -112,12 +115,12 @@ class InflectorIt(Inflector):
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tense.Affermativo,
-            Tense.negativo,
-            Tense.Negativo,
-            Tense.Gerundio,
-            Tense.ParticipioPresente,
-            Tense.ParticipioPassato,
+            Tenses.it.Affermativo,
+            Tenses.it.negativo,
+            Tenses.it.Negativo,
+            Tenses.it.Gerundio,
+            Tenses.it.ParticipioPresente,
+            Tenses.it.ParticipioPassato,
         ]
 
     def get_auxiliary_verb(
@@ -129,36 +132,44 @@ class InflectorIt(Inflector):
         return ret
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinito
+        return Moods.it.Infinito
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicativo
+        return Moods.it.Indicativo
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Congiuntivo
+        return Moods.it.Congiuntivo
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Condizionale
+        return Moods.it.Condizionale
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participio
+        return Moods.it.Participio
 
     def get_participle_tense(self) -> Tense:
-        return Tense.ParticipioPassato
+        return Tenses.it.ParticipioPassato
 
     def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {
-            Mood.Indicativo: {
-                Tense.PassatoProssimo: (Mood.Indicativo, Tense.Presente),
-                Tense.TrapassatoProssimo: (Mood.Indicativo, Tense.Imperfetto),
-                Tense.TrapassatoRemoto: (Mood.Indicativo, Tense.PassatoRemoto),
-                Tense.FuturoAnteriore: (Mood.Indicativo, Tense.Futuro),
+            Moods.it.Indicativo: {
+                Tenses.it.PassatoProssimo: (Moods.it.Indicativo, Tenses.it.Presente),
+                Tenses.it.TrapassatoProssimo: (
+                    Moods.it.Indicativo,
+                    Tenses.it.Imperfetto,
+                ),
+                Tenses.it.TrapassatoRemoto: (
+                    Moods.it.Indicativo,
+                    Tenses.it.PassatoRemoto,
+                ),
+                Tenses.it.FuturoAnteriore: (Moods.it.Indicativo, Tenses.it.Futuro),
             },
-            Mood.Congiuntivo: {
-                Tense.Passato: (Mood.Congiuntivo, Tense.Presente),
-                Tense.Trapassato: (Mood.Congiuntivo, Tense.Imperfetto),
+            Moods.it.Congiuntivo: {
+                Tenses.it.Passato: (Moods.it.Congiuntivo, Tenses.it.Presente),
+                Tenses.it.Trapassato: (Moods.it.Congiuntivo, Tenses.it.Imperfetto),
             },
-            Mood.Condizionale: {Tense.Passato: (Mood.Condizionale, Tense.Presente)},
+            Moods.it.Condizionale: {
+                Tenses.it.Passato: (Moods.it.Condizionale, Tenses.it.Presente)
+            },
         }

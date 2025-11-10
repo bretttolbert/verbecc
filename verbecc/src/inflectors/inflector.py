@@ -28,10 +28,11 @@ from verbecc.src.defs.types.exceptions import ConjugatorError
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
-from verbecc.src.defs.types.mood import MoodEn as Mood
+from verbecc.src.defs.types.mood import Mood, Moods
 from verbecc.src.defs.types.participle_inflection import ParticipleInflection
-from verbecc.src.defs.types.person import Person, is_singular
-from verbecc.src.defs.types.tense import TenseEn as Tense
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
 from verbecc.src.parsers.verbs_parser import VerbsParser
 
@@ -118,7 +119,7 @@ class Inflector(ABC):
     def auxiliary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
         return False
 
-    def get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return []
 
     def get_auxiliary_verb(
@@ -130,22 +131,22 @@ class Inflector(ABC):
         return False
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitive
+        return Moods.en.Infinitive
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicative
+        return Moods.en.Indicative
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Subjunctive
+        return Moods.en.Subjunctive
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Conditional
+        return Moods.en.Conditional
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participle
+        return Moods.en.Participle
 
     def get_participle_tense(self) -> Tense:
-        return Tense.PastParticiple
+        return Tenses.en.PastParticiple
 
     def add_present_participle_if_applicable(
         self, s: str, is_reflexive: bool, tense: Tense
@@ -159,7 +160,7 @@ class Inflector(ABC):
     @abstractmethod
     def get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         """Returns a map of the tense of the helping verb for each compound mood and tense"""
         raise NotImplementedError
 
@@ -174,9 +175,9 @@ class Inflector(ABC):
         return PARTICIPLE_INFLECTIONS[self.lang].index(participle_inflection)
 
     def get_default_participle_inflection_for_person(
-        self, person: Person, gender: Gender = Gender.m
+        self, person: Person, number: Number, gender: Gender = Gender.m
     ) -> ParticipleInflection:
-        if is_singular(person):
+        if number == Number.Singular:
             if gender == Gender.m:
                 return ParticipleInflection.MasculineSingular
             else:
@@ -190,9 +191,9 @@ class Inflector(ABC):
     def get_default_pronoun(
         self,
         person: Person,
+        number: Number,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
         return ""
 
@@ -240,10 +241,16 @@ class Inflector(ABC):
         return s
 
     def add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s: str, is_reflexive: bool, mood: Mood, tense: Tense, person: Person
+        self,
+        s: str,
+        is_reflexive: bool,
+        mood: Mood,
+        tense: Tense,
+        person: Person,
+        number: Number,
     ) -> str:
         if is_reflexive:
-            s += self._get_pronoun_suffix(person)
+            s += self._get_pronoun_suffix(person, number)
         return s
 
     def compound_conjugation_not_applicable(
@@ -267,7 +274,7 @@ class Inflector(ABC):
         return aux_conj
 
     def add_compound_aux_verb_suffix_if_applicable(
-        self, s: str, mood: Mood, tense: Mood
+        self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
         Hook for certain languages e.g. Romanian that add prefixes
@@ -299,7 +306,6 @@ class Inflector(ABC):
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
-        lang_specific_options: LangSpecificOptions,
     ) -> PersonEnding:
         """
         Hook for certain languages e.g. Spanish that modify
@@ -311,9 +317,13 @@ class Inflector(ABC):
     # private:
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
+        self,
+        person: Person,
+        number: Number,
+        gender: Gender = Gender.m,
+        imperative: bool = True,
     ) -> str:
-        return " " + self.get_default_pronoun(person, gender)
+        return " " + self.get_default_pronoun(person, number, gender)
 
     def _is_impersonal_verb(self, infinitive: str) -> bool:
         return False

@@ -1,17 +1,22 @@
 import pytest
 from lxml import etree
+from typing import cast
 
+from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.defs.types.conjugation import Conjugation, TenseConjugation
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Mood
-from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
     LangSpecificOptionsEs,
 )
 from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.defs.types.mood import Moods
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.tense import Tenses
+from verbecc.src.inflectors.inflector import Inflector
+from verbecc.src.inflectors.lang.inflector_es import InflectorEs
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
 
 cg = Conjugator(lang=Lang.es)
@@ -40,8 +45,8 @@ def test_all_verbs_have_templates():
     [
         (
             "abañar",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo abaño",
                 "tú abañas",
@@ -53,8 +58,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "estar",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo estoy",
                 "tú estás",
@@ -66,8 +71,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "ser",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo soy",
                 "tú eres",
@@ -79,8 +84,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "tener",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo tengo",
                 "tú tienes",
@@ -92,8 +97,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo he",
                 "tú has",
@@ -105,7 +110,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-imperfecto",
             [
                 "yo había",
@@ -118,7 +123,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-perfecto-simple",
             [
                 "yo hube",
@@ -131,7 +136,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "indicativo",
+            Moods.es.Indicativo,
             "futuro",
             [
                 "yo habré",
@@ -145,7 +150,7 @@ def test_all_verbs_have_templates():
         (
             "haber",
             "condicional",
-            "presente",
+            Tenses.es.Presente,
             [
                 "yo habría",
                 "tú habrías",
@@ -158,7 +163,7 @@ def test_all_verbs_have_templates():
         (
             "haber",
             "subjuntivo",
-            "presente",
+            Tenses.es.Presente,
             [
                 "yo haya",
                 "tú hayas",
@@ -209,8 +214,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "hacer",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo hago",
                 "tú haces",
@@ -222,8 +227,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "ir",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo voy",
                 "tú vas",
@@ -235,8 +240,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo como",
                 "tú comes",
@@ -248,7 +253,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-perfecto-simple",
             [
                 "yo comí",
@@ -261,7 +266,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-imperfecto",
             [
                 "yo comía",
@@ -275,7 +280,7 @@ def test_all_verbs_have_templates():
         (
             "comer",
             "condicional",
-            "presente",
+            Tenses.es.Presente,
             [
                 "yo comería",
                 "tú comerías",
@@ -287,7 +292,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-perfecto-compuesto",
             [
                 "yo he comido",
@@ -300,7 +305,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-pluscuamperfecto",
             [
                 "yo había comido",
@@ -313,7 +318,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-anterior",
             [
                 "yo hube comido",
@@ -326,7 +331,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "indicativo",
+            Moods.es.Indicativo,
             "futuro-perfecto",
             [
                 "yo habré comido",
@@ -416,8 +421,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo parezco",
                 "tú pareces",
@@ -429,7 +434,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-imperfecto",
             [
                 "yo parecía",
@@ -442,7 +447,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-perfecto-simple",
             [
                 "yo parecí",
@@ -455,7 +460,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "indicativo",
+            Moods.es.Indicativo,
             "futuro",
             [
                 "yo pareceré",
@@ -469,7 +474,7 @@ def test_all_verbs_have_templates():
         (
             "parecer",
             "subjuntivo",
-            "presente",
+            Tenses.es.Presente,
             [
                 "yo parezca",
                 "tú parezcas",
@@ -539,7 +544,7 @@ def test_all_verbs_have_templates():
         (
             "parecer",
             "condicional",
-            "presente",
+            Tenses.es.Presente,
             [
                 "yo parecería",
                 "tú parecerías",
@@ -551,7 +556,7 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "indicativo",
+            Moods.es.Indicativo,
             "pretérito-perfecto-compuesto",
             [
                 "yo he parecido",
@@ -564,8 +569,8 @@ def test_all_verbs_have_templates():
         ),
         (
             "abolir",
-            "indicativo",
-            "presente",
+            Moods.es.Indicativo,
+            Tenses.es.Presente,
             [
                 "yo abolo",
                 "tú aboles",
@@ -621,8 +626,8 @@ def test_inflector_es_get_verb_stem_from_template_name():
 
 
 def test_inflector_es_conjugate_simple_mood_tense():
-    mood = "indicativo"
-    tense = "présent"
+    mood = Moods.es.Indicativo
+    tense = Tenses.es.Presente
     verb_stem = "abañ"
     tense_elem = etree.fromstring(
         """<presente>
@@ -649,397 +654,327 @@ def test_inflector_es_conjugate_simple_mood_tense():
 
 
 @pytest.mark.parametrize(
-    "person,gender,is_reflexive,expected_result",
+    "person,number,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.m, False, "yo"),
-        (Person.FirstPersonSingular, Gender.m, True, "yo me"),
-        (Person.SecondPersonSingular, Gender.m, False, "tú"),
-        (Person.SecondPersonSingular, Gender.m, True, "tú te"),
-        (Person.ThirdPersonSingular, Gender.m, False, "él"),
-        (Person.ThirdPersonSingular, Gender.m, True, "él se"),
-        (Person.ThirdPersonSingular, Gender.f, False, "ella"),
-        (Person.ThirdPersonSingular, Gender.f, True, "ella se"),
-        (Person.FirstPersonPlural, Gender.m, False, "nosotros"),
-        (Person.FirstPersonPlural, Gender.m, True, "nosotros nos"),
-        (Person.SecondPersonPlural, Gender.m, False, "vosotros"),
-        (Person.SecondPersonPlural, Gender.m, True, "vosotros os"),
-        (Person.ThirdPersonPlural, Gender.m, False, "ellos"),
-        (Person.ThirdPersonPlural, Gender.m, True, "ellos se"),
-        (Person.ThirdPersonPlural, Gender.f, False, "ellas"),
-        (Person.ThirdPersonPlural, Gender.f, True, "ellas se"),
+        (Person.First, Number.Singular, Gender.m, False, "yo"),
+        (Person.First, Number.Singular, Gender.m, True, "yo me"),
+        (Person.Second, Number.Singular, Gender.m, False, "tú"),
+        (Person.Second, Number.Singular, Gender.m, True, "tú te"),
+        (Person.Third, Number.Singular, Gender.m, False, "él"),
+        (Person.Third, Number.Singular, Gender.m, True, "él se"),
+        (Person.Third, Number.Singular, Gender.f, False, "ella"),
+        (Person.Third, Number.Singular, Gender.f, True, "ella se"),
+        (Person.First, Number.Plural, Gender.m, False, "nosotros"),
+        (Person.First, Number.Plural, Gender.m, True, "nosotros nos"),
+        (Person.Second, Number.Plural, Gender.m, False, "vosotros"),
+        (Person.Second, Number.Plural, Gender.m, True, "vosotros os"),
+        (Person.Third, Number.Plural, Gender.m, False, "ellos"),
+        (Person.Third, Number.Plural, Gender.m, True, "ellos se"),
+        (Person.Third, Number.Plural, Gender.f, False, "ellas"),
+        (Person.Third, Number.Plural, Gender.f, True, "ellas se"),
     ],
 )
 def test_inflector_es_get_default_pronoun(
-    person: Person, gender: Gender, is_reflexive: bool, expected_result: str
+    person: Person,
+    number: Number,
+    gender: Gender,
+    is_reflexive: bool,
+    expected_result: str,
 ):
+    inf = cast(InflectorEs, cg._inflector)
     assert (
-        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
+        cg._inflector.get_default_pronoun(
+            person, number, gender, is_reflexive=is_reflexive
+        )
         == expected_result
     )
-
-
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_no_voseo():
-    assert cg.conjugate_mood_tense("hablar", Mood.es.Indicativo, Tense.es.Presente) == [
-        "yo hablo",
-        "tú hablas",
-        "él habla",
-        "nosotros hablamos",
-        "vosotros habláis",
-        "ellos hablan",
-    ]
 
 
 def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "hablar",
-        Mood.es.Indicativo,
-        Tense.es.Presente,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "yo hablo",
-        "vos hablás",
-        "él habla",
-        "nosotros hablamos",
-        "vosotros habláis",
-        "ellos hablan",
-    ]
-
-
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_no_voseo():
-    assert cg.conjugate_mood_tense("beber", Mood.es.Indicativo, Tense.es.Presente) == [
-        "yo bebo",
-        "tú bebes",
-        "él bebe",
-        "nosotros bebemos",
-        "vosotros bebéis",
-        "ellos beben",
-    ]
+        Moods.es.Indicativo,
+        Tenses.es.Presente,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.First, Number.Singular, Gender.m, "yo", ["yo hablo"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["tú hablas"]),
+            Conjugation(
+                Person.Second, Number.Singular, Gender.m, "vos", ["vos hablás"]
+            ),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["él habla"]),
+            Conjugation(
+                Person.First,
+                Number.Singular,
+                Gender.m,
+                "nosotros",
+                ["nosotros hablamos"],
+            ),
+            Conjugation(
+                Person.Second,
+                Number.Singular,
+                Gender.m,
+                "vosotros",
+                ["vosotros habláis"],
+            ),
+            Conjugation(
+                Person.Third, Number.Singular, Gender.m, "ellos", ["ellos hablan"]
+            ),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "beber",
-        Mood.es.Indicativo,
-        Tense.es.Presente,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "yo bebo",
-        "vos bebés",
-        "él bebe",
-        "nosotros bebemos",
-        "vosotros bebéis",
-        "ellos beben",
-    ]
-
-
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_no_voseo():
-    assert cg.conjugate_mood_tense("dormir", Mood.es.Indicativo, Tense.es.Presente) == [
-        "yo duermo",
-        "tú duermes",
-        "él duerme",
-        "nosotros dormimos",
-        "vosotros dormís",
-        "ellos duermen",
-    ]
+        Moods.es.Indicativo,
+        Tenses.es.Presente,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.First, Number.Singular, Gender.m, "yo", ["yo bebo"]),
+            Conjugation(Person.First, Number.Singular, Gender.m, "tú", ["tú bebes"]),
+            Conjugation(Person.First, Number.Singular, Gender.m, "vos", ["vos bebés"]),
+            Conjugation(Person.First, Number.Singular, Gender.m, "él", ["él bebe"]),
+            Conjugation(
+                Person.First,
+                Number.Plural,
+                Gender.m,
+                "nosotros",
+                ["nosotros bebemos"],
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["vosotros bebéis"]
+            ),
+            Conjugation(
+                Person.Third, Number.Plural, Gender.m, "ellos", ["ellos beben"]
+            ),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "dormir",
-        Mood.es.Indicativo,
-        Tense.es.Presente,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "yo duermo",
-        "vos dormís",
-        "él duerme",
-        "nosotros dormimos",
-        "vosotros dormís",
-        "ellos duermen",
-    ]
-
-
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_no_voseo():
-    assert cg.conjugate_mood_tense("ser", Mood.es.Indicativo, Tense.es.Presente) == [
-        "yo soy",
-        "tú eres",
-        "él es",
-        "nosotros somos",
-        "vosotros sois",
-        "ellos son",
-    ]
+        Moods.es.Indicativo,
+        Tenses.es.Presente,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.First, Number.Singular, Gender.m, "yo", ["yo duermo"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["tú duermes"]),
+            Conjugation(
+                Person.Second, Number.Singular, Gender.m, "vos", ["vos dormís"]
+            ),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["él duerme"]),
+            Conjugation(
+                Person.First,
+                Number.Plural,
+                Gender.m,
+                "nosotros",
+                ["nosotros dormimos"],
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["vosotros dormís"]
+            ),
+            Conjugation(
+                Person.Third, Number.Plural, Gender.m, "ellos", ["ellos duermen"]
+            ),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "ser",
-        Mood.es.Indicativo,
-        Tense.es.Presente,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "yo soy",
-        "vos sos",
-        "él es",
-        "nosotros somos",
-        "vosotros sois",
-        "ellos son",
-    ]
-
-
-def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_no_voseo():
-    assert cg.conjugate_mood_tense("ser", Mood.es.Subjuntivo, Tense.es.Presente) == [
-        "yo sea",
-        "tú seas",
-        "él sea",
-        "nosotros seamos",
-        "vosotros seáis",
-        "ellos sean",
-    ]
+        Moods.es.Indicativo,
+        Tenses.es.Presente,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.First, Number.Singular, Gender.m, "yo", ["yo soy"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["tú eres"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["vos sos"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["él es"]),
+            Conjugation(
+                Person.First, Number.Plural, Gender.m, "nosotros", ["nosotros somos"]
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["vosotros sois"]
+            ),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["ellos son"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "ser",
-        Mood.es.Subjuntivo,
-        Tense.es.Presente,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "yo sea",
-        "vos seas",
-        "él sea",
-        "nosotros seamos",
-        "vosotros seáis",
-        "ellos sean",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_no_voseo():
-    assert cg.conjugate_mood_tense(
-        "hablar", Mood.es.Imperativo, Tense.es.Afirmativo
-    ) == [
-        "habla",
-        "hable",
-        "hablemos",
-        "hablad",
-        "hablen",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_no_voseo():
-    assert cg.conjugate_mood_tense("hablar", Mood.es.Imperativo, Tense.es.Negativo) == [
-        "no hables",
-        "no hable",
-        "no hablemos",
-        "no habléis",
-        "no hablen",
-    ]
+        Moods.es.Subjuntivo,
+        Tenses.es.Presente,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.First, Number.Singular, Gender.m, "yo", ["yo sea"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["tú seas"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["vos seas"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["él sea"]),
+            Conjugation(
+                Person.First, Number.Plural, Gender.m, "nosotros", ["nosotros seamos"]
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["vosotros seáis"]
+            ),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["ellos sean"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "hablar",
-        Mood.es.Imperativo,
-        Tense.es.Afirmativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "hablá",
-        "hable",
-        "hablemos",
-        "hablad",
-        "hablen",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Afirmativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["habla"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["hablá"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["hable"]),
+            Conjugation(
+                Person.First, Number.Plural, Gender.m, "nosotros", ["hablemos"]
+            ),
+            Conjugation(Person.Second, Number.Plural, Gender.m, "vosotros", ["hablad"]),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["hablen"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "hablar",
-        Mood.es.Imperativo,
-        Tense.es.Negativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "no hables",
-        "no hable",
-        "no hablemos",
-        "no habléis",
-        "no hablen",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_no_voseo():
-    assert cg.conjugate_mood_tense(
-        "vivir", Mood.es.Imperativo, Tense.es.Afirmativo
-    ) == [
-        "vive",
-        "viva",
-        "vivamos",
-        "vivid",
-        "vivan",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_no_voseo():
-    assert cg.conjugate_mood_tense("vivir", Mood.es.Imperativo, Tense.es.Negativo) == [
-        "no vivas",
-        "no viva",
-        "no vivamos",
-        "no viváis",
-        "no vivan",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Negativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["no hables"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["no hables"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["no hable"]),
+            Conjugation(
+                Person.First, Number.Plural, Gender.m, "nosotros", ["no hablemos"]
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["no habléis"]
+            ),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no hablen"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "vivir",
-        Mood.es.Imperativo,
-        Tense.es.Afirmativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "viví",
-        "viva",
-        "vivamos",
-        "vivid",
-        "vivan",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Afirmativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["vive"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["viví"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["viva"]),
+            Conjugation(Person.First, Number.Plural, Gender.m, "nosotros", ["vivamos"]),
+            Conjugation(Person.Second, Number.Plural, Gender.m, "vosotros", ["vivid"]),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["vivan"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "vivir",
-        Mood.es.Imperativo,
-        Tense.es.Negativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "no vivas",
-        "no viva",
-        "no vivamos",
-        "no viváis",
-        "no vivan",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_no_voseo():
-    assert cg.conjugate_mood_tense(
-        "beber", Mood.es.Imperativo, Tense.es.Afirmativo
-    ) == [
-        "bebe",
-        "beba",
-        "bebamos",
-        "bebed",
-        "beban",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_no_voseo():
-    assert cg.conjugate_mood_tense("beber", Mood.es.Imperativo, Tense.es.Negativo) == [
-        "no bebas",
-        "no beba",
-        "no bebamos",
-        "no bebáis",
-        "no beban",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Negativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["no vivas"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["no vivas"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["no viva"]),
+            Conjugation(
+                Person.First, Number.Plural, Gender.m, "nosotros", ["no vivamos"]
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["no viváis"]
+            ),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no vivan"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "beber",
-        Mood.es.Imperativo,
-        Tense.es.Afirmativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "bebé",
-        "beba",
-        "bebamos",
-        "bebed",
-        "beban",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Afirmativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["bebe"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["bebé"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["beba"]),
+            Conjugation(Person.First, Number.Plural, Gender.m, "nosotros", ["bebamos"]),
+            Conjugation(Person.Second, Number.Plural, Gender.m, "vosotros", ["bebed"]),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["beban"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "beber",
-        Mood.es.Imperativo,
-        Tense.es.Negativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "no bebas",
-        "no beba",
-        "no bebamos",
-        "no bebáis",
-        "no beban",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_no_voseo():
-    assert cg.conjugate_mood_tense("ser", Mood.es.Imperativo, Tense.es.Afirmativo) == [
-        "sé",
-        "sea",
-        "seamos",
-        "sed",
-        "sean",
-    ]
-
-
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_no_voseo():
-    assert cg.conjugate_mood_tense("ser", Mood.es.Imperativo, Tense.es.Negativo) == [
-        "no seas",
-        "no sea",
-        "no seamos",
-        "no seáis",
-        "no sean",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Negativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["no bebas"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["no bebas"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["no beba"]),
+            Conjugation(
+                Person.First, Number.Plural, Gender.m, "nosotros", ["no bebamos"]
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["no bebáis"]
+            ),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no beban"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "ser",
-        Mood.es.Imperativo,
-        Tense.es.Afirmativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "sé",
-        "sea",
-        "seamos",
-        "sed",
-        "sean",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Afirmativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["sé"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["sé"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["sea"]),
+            Conjugation(Person.First, Number.Plural, Gender.m, "nosotros", ["seamos"]),
+            Conjugation(Person.Second, Number.Plural, Gender.m, "vosotros", ["sed"]),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["sean"]),
+        ]
+    )
 
 
 def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3():
     assert cg.conjugate_mood_tense(
         "ser",
-        Mood.es.Imperativo,
-        Tense.es.Negativo,
-        lang_specific_options=LangSpecificOptionsEs(
-            voseo_options=VoseoOptions.VoseoTipo3
-        ),
-    ) == [
-        "no seas",
-        "no sea",
-        "no seamos",
-        "no seáis",
-        "no sean",
-    ]
+        Moods.es.Imperativo,
+        Tenses.es.Negativo,
+    ) == TenseConjugation(
+        [
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tú", ["no seas"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "vos", ["no seas"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, "él", ["no sea"]),
+            Conjugation(
+                Person.First, Number.Plural, Gender.m, "nosotros", ["no seamos"]
+            ),
+            Conjugation(
+                Person.Second, Number.Plural, Gender.m, "vosotros", ["no seáis"]
+            ),
+            Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no sean"]),
+        ]
+    )

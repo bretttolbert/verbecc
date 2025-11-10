@@ -81,24 +81,24 @@ Typing transition guide:
 
 - Instead of `lang='fr'` use `lang=Lang.fr` after the import `from verbecc import LangCodeISO639_1 as Lang`
 - Instead of `mood="indicatif"` 
-    - use `mood=Mood.fr.Indicatif` after the import `from verbecc import Mood`
-    - or use `mood=Mood.Indicatif` after the import `from verbecc import MoodFr as Mood`
+    - use `mood=Moods.fr.Indicatif` after the import `from verbecc import Mood`
+    - or use `mood=Moods.Indicatif` after the import `from verbecc import MoodFr as Mood`
 - Instead of `tense="présent"`
-    - use `tense=Tense.fr.Présent` after the import `from verbecc import Tense`
-    - or use `tense=Tense.Présent` after the import `from verbecc import TenseFr as Tense`
+    - use `tense=Tenses.fr.Présent` after the import `from verbecc import Tense`
+    - or use `tense=Tenses.Présent` after the import `from verbecc import TenseFr as Tense`
 - Instead of `gender='f'` use `gender=Gender.f` after the import `from verbecc import Gender`
 
 Examples:
 
 ```python
->>> from verbecc import grammar_defines, localization, LangCodeISO639_1 as Lang, Mood, Tense, Gender
+>>> from verbecc import grammar_defines, localization, LangCodeISO639_1 as Lang, Moods, Tenses, Gender
 >>> xmood = localization.xmood
 >>> xtense = localization.xtense
 >>> grammar_defines.SUPPORTED_LANGUAGES[Lang.fr]
 'français'
->>> xtense(Lang.fr, Tense.en.Present)
+>>> xtense(Lang.fr, Tenses.en.Present)
 <TenseFr.Présent: 'présent'>
->>> xmood(Lang.fr, Mood.en.Subjunctive)
+>>> xmood(Lang.fr, Moods.en.Subjunctive)
 <MoodFr.Subjonctif: 'subjonctif'>
 >>> Gender.f
 <Gender.f: 'f'>

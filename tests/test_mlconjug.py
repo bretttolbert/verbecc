@@ -1,5 +1,6 @@
 import pytest
 
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.mlconjug import mlconjug
 from verbecc.src.inflectors.lang.inflector_fr import InflectorFr
 from verbecc.src.defs.constants import config
@@ -13,7 +14,7 @@ def verb_template_pairs():
 
 def test_extract_verb_features():
     if config.ml:
-        assert mlconjug.extract_verb_features("parler", "fr", (2, 7)) == [
+        assert mlconjug.extract_verb_features("parler", Lang.fr, (2, 7)) == [
             "END=er",
             "END=ler",
             "END=rler",
@@ -66,7 +67,7 @@ def test_DataSet_split_test_train(verb_template_pairs):
 
 def test_mlconjug_template_predictor(verb_template_pairs):
     if config.ml:
-        predictor = mlconjug.TemplatePredictor(verb_template_pairs, lang="fr")
+        predictor = mlconjug.TemplatePredictor(verb_template_pairs, lang=Lang.fr)
         template, prediction_score = predictor.predict("parler")
         assert template == "aim:er"
         assert prediction_score > 0.97

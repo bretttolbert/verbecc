@@ -1,13 +1,13 @@
 from lxml import etree
-from typing import List
+from typing import List, Optional
 
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.constants.localization import xmood
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Mood
-from verbecc.src.defs.types.tense import TenseFactory
+from verbecc.src.defs.types.mood import Mood, Moods
+from verbecc.src.defs.types.tense import Tense, TenseFactory
 from verbecc.src.parsers.parser import Parser
 from verbecc.src.parsers.person_ending_parser import PersonEndingParser
 
@@ -39,8 +39,7 @@ class TenseTemplateParser(Parser):
         self.lang = lang
         self.mood = mood
 
-    def parse(self, elem: etree._Element) -> TenseTemplate:
-        self.tense = TenseFactory.from_string(self.lang, elem.tag)
+    def parse(self, elem: Optional[etree._Element] = None) -> TenseTemplate:
         """
         Normally each <p> elem defines six grammatical persons:
             (see grammar_defines.PERSONS)
@@ -87,13 +86,18 @@ class TenseTemplateParser(Parser):
         Spanish imperative tenses have 5, i.e. all except 1st person singular
 
         """
+        if elem is None:
+            raise ValueError("elem must not be None")
+        self.tense = TenseFactory.from_string(self.lang, elem.tag)
         person_endings: List[PersonEnding] = []
         person_num = 0
         for p_elem in elem.findall("p", namespaces=None):
-            person = grammar_defines.PERSONS[person_num]
-            if self.mood == xmood(self.lang, Mood.en.Imperative):
-                person = grammar_defines.IMPERATIVE_PERSONS[self.lang][person_num]
-            pe = PersonEndingParser().parse(p_elem, person)
+            person, number = grammar_defines.PERSONS[person_num]
+            if self.mood == xmood(self.lang, Moods.en.Imperative):
+                person, number = grammar_defines.IMPERATIVE_PERSONS[self.lang][
+                    person_num
+                ]
+            pe = PersonEndingParser().parse(p_elem, person, number)
             person_num += 1
             if len(pe.endings) > 0:
                 person_endings.append(pe)

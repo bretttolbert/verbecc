@@ -1,9 +1,10 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.mood import MoodCa as Mood
-from verbecc.src.defs.types.tense import TenseCa as Tense
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.mood import Mood, Moods
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.defs.types import exceptions
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.lang_specific_options import (
@@ -15,7 +16,9 @@ from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 
 
 class InflectorCa(inflector.Inflector):
-    def __init__(self) -> None:
+    def __init__(
+        self, lang_specific_options: Optional[LangSpecificOptions] = None
+    ) -> None:
         super(InflectorCa, self).__init__()
 
     @property
@@ -28,34 +31,34 @@ class InflectorCa(inflector.Inflector):
     def get_default_pronoun(
         self,
         person: Person,
+        number: Number,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
         ret = ""
-        if person == Person.FirstPersonSingular:
+        if person == Person.First and number == Number.Singular:
             ret = "jo"
             if is_reflexive:
                 ret += " me"
-        elif person == Person.SecondPersonSingular:
+        elif person == Person.Second and number == Number.Singular:
             ret = "tu"
             if is_reflexive:
                 ret += " te"
-        elif person == Person.ThirdPersonSingular:
+        elif person == Person.Third and number == Number.Singular:
             ret = "ell"
             if gender == Gender.f:
                 ret = "ella"
             if is_reflexive:
                 ret += " se"
-        elif person == Person.FirstPersonPlural:
+        elif person == Person.First and number == Number.Plural:
             ret = "nosaltres"
             if is_reflexive:
                 ret += " nos"
-        elif person == Person.SecondPersonPlural:
+        elif person == Person.Second and number == Number.Plural:
             ret = "vosaltres"
             if is_reflexive:
                 ret += " os"
-        elif person == Person.ThirdPersonPlural:
+        elif person == Person.Third and number == Number.Plural:
             ret = "ells"
             if gender == Gender.f:
                 ret = "elles"
@@ -65,10 +68,10 @@ class InflectorCa(inflector.Inflector):
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tense.Particip,
-            Tense.Gerundi,
-            Tense.InfinitiuPresent,
-            Tense.ImperatiuPresent,
+            Tenses.ca.Particip,
+            Tenses.ca.Gerundi,
+            Tenses.ca.InfinitiuPresent,
+            Tenses.ca.ImperatiuPresent,
         ]
 
     def get_auxiliary_verb(
@@ -80,22 +83,22 @@ class InflectorCa(inflector.Inflector):
         return "haver"
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitiu
+        return Moods.ca.Infinitiu
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicatiu
+        return Moods.ca.Indicatiu
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Subjuntiu
+        return Moods.ca.Subjuntiu
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Condicional
+        return Moods.ca.Condicional
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participi
+        return Moods.ca.Participi
 
     def get_participle_tense(self) -> Tense:
-        return Tense.Particip
+        return Tenses.ca.Particip
 
     def get_alternate_hv_inflection(self, s: str) -> str:
         # if s.endswith('hay'):
@@ -104,7 +107,7 @@ class InflectorCa(inflector.Inflector):
 
     def get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         """
         TODO: Implement all these compound tenses (Spanish compound tenses in this commment, for reference)
         return {

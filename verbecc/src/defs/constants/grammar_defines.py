@@ -10,6 +10,10 @@ from typing import Dict, List, Tuple
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
+
+# placeholder used in instances where no value is available
+NO_VALUE = "-"
 
 # map of ISO 639-1 codes to long names (in target language)
 SUPPORTED_LANGUAGES: Dict[LangCodeISO639_1, str] = {
@@ -26,45 +30,45 @@ SUPPORTED_LANGUAGES: Dict[LangCodeISO639_1, str] = {
 # Exceptions: imperative and participle
 # Note: 'usted' is grammatically 3s despite being semantically 2s
 # Note: 'usteded' is grammatically 3p despite being semantically 2p
-PERSONS: Tuple[Person, Person, Person, Person, Person, Person] = (
-    Person.FirstPersonSingular,
-    Person.SecondPersonSingular,
-    Person.ThirdPersonSingular,
-    Person.FirstPersonPlural,
-    Person.SecondPersonPlural,
-    Person.ThirdPersonPlural,
-)
+PERSONS: List[Tuple[Person, Number]] = [
+    (Person.First, Number.Singular),
+    (Person.Second, Number.Singular),
+    (Person.Third, Number.Singular),
+    (Person.First, Number.Plural),
+    (Person.Second, Number.Plural),
+    (Person.Third, Number.Plural),
+]
 
 # e.g. manger : mange, mangeons, mangez
-IMPERATIVE_PERSONS_FR: Tuple[Person, Person, Person] = (
-    Person.SecondPersonSingular,
-    Person.FirstPersonPlural,
-    Person.SecondPersonPlural,
-)
+IMPERATIVE_PERSONS_FR: List[Tuple[Person, Number]] = [
+    (Person.Second, Number.Singular),
+    (Person.First, Number.Plural),
+    (Person.Second, Number.Plural),
+]
 
 # e.g. habla, hable, hablemos, hablad, hablen
-IMPERATIVE_PERSONS_ES: Tuple[Person, Person, Person, Person, Person] = (
-    Person.SecondPersonSingular,
-    Person.ThirdPersonSingular,
-    Person.FirstPersonPlural,
-    Person.SecondPersonPlural,
-    Person.ThirdPersonPlural,
-)
+IMPERATIVE_PERSONS_ES: List[Tuple[Person, Number]] = [
+    (Person.Second, Number.Singular),
+    (Person.Third, Number.Singular),
+    (Person.First, Number.Plural),
+    (Person.Second, Number.Plural),
+    (Person.Third, Number.Plural),
+]
 
 # e.g. habla, habli, hablem, hableu, hablin
 IMPERATIVE_PERSONS_CA = IMPERATIVE_PERSONS_ES
 
 # e.g. -, sii, sia, siamo, siate, siano
-# Italian currently has the "-" placeholder for the 1s unlike French and Spanish
+# Italian currently has the "-" (NO_VALUE) placeholder for the 1s unlike French and Spanish
 # TODO: Make them consistent
-IMPERATIVE_PERSONS_IT: Tuple[Person, Person, Person, Person, Person, Person] = (
-    Person.FirstPersonSingular,
-    Person.SecondPersonSingular,
-    Person.ThirdPersonSingular,
-    Person.FirstPersonPlural,
-    Person.SecondPersonPlural,
-    Person.ThirdPersonPlural,
-)
+IMPERATIVE_PERSONS_IT: List[Tuple[Person, Number]] = [
+    (Person.First, Number.Singular),
+    (Person.Second, Number.Singular),
+    (Person.Third, Number.Singular),
+    (Person.First, Number.Plural),
+    (Person.Second, Number.Plural),
+    (Person.Third, Number.Plural),
+]
 
 # e.g. -, sê tu, seja você, sejamos nós, sede vós, sejam vocês
 # Portuguese currently has the "-" placeholder for the 1s like Italian and unlike French and Spanish
@@ -73,12 +77,12 @@ IMPERATIVE_PERSONS_PT = IMPERATIVE_PERSONS_IT
 
 # The Romanian imperative is used for commands and requests and
 # is formed primarily using the second person verb forms.
-IMPERATIVE_PERSONS_RO: Tuple[Person, Person] = (
-    Person.SecondPersonSingular,
-    Person.SecondPersonPlural,
-)
+IMPERATIVE_PERSONS_RO: List[Tuple[Person, Number]] = [
+    (Person.Second, Number.Singular),
+    (Person.Second, Number.Plural),
+]
 
-IMPERATIVE_PERSONS: Dict[LangCodeISO639_1, List[Person]] = {
+IMPERATIVE_PERSONS: Dict[LangCodeISO639_1, List[Tuple[Person, Number]]] = {
     LangCodeISO639_1.fr: IMPERATIVE_PERSONS_FR,
     LangCodeISO639_1.es: IMPERATIVE_PERSONS_ES,
     LangCodeISO639_1.ca: IMPERATIVE_PERSONS_CA,

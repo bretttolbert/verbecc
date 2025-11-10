@@ -2,17 +2,18 @@ from __future__ import print_function
 
 from bisect import bisect_left
 
-try:
-    from lxml import etree
-except ImportError:
-    import xml.etree.ElementTree as etree
+# try:
+from lxml import etree
+
+# except ImportError:
+#     import xml.etree.ElementTree as etree
 from importlib_resources import as_file, files
 
 # import gzip
 import os
 
 # import tempfile
-from typing import List
+from typing import cast, List, Optional
 
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
 from verbecc.src.defs.types.data.conjugations import Conjugations
@@ -26,7 +27,12 @@ class ConjugationsParser(Parser):
     def __init__(self, lang: LangCodeISO639_1 = LangCodeISO639_1.fr) -> None:
         self.lang = lang
 
-    def parse(self) -> Conjugations:
+    def parse(self, elem: Optional[etree._Element] = None) -> Conjugations:
+        if elem is not None:
+            # this is the the only Parser that doesn't use the elem argument,
+            # of the Parser.parser() interface, so this method must implement
+            # it even though it isn't used.
+            raise ValueError("elem must be None")
         templates: List[ConjugationTemplate] = []
         parser = etree.XMLParser(
             dtd_validation=True, encoding="utf-8", remove_blank_text=True, remove_comments=True  # type: ignore
@@ -68,6 +74,8 @@ class ConjugationsParser(Parser):
             for child in root:
                 if child.tag == "template":
                     templates.append(
-                        ConjugationTemplateParser(lang=self.lang).parse(child)
+                        ConjugationTemplateParser(lang=self.lang).parse(
+                            cast(etree._Element, child)
+                        )
                     )
         return Conjugations(self.lang, sorted(templates, key=lambda x: x.name))

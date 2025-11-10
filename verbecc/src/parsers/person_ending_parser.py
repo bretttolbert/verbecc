@@ -1,8 +1,9 @@
 from lxml import etree
-from typing import List
+from typing import List, Optional
 
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
 from verbecc.src.parsers.parser import Parser
 
 
@@ -29,7 +30,12 @@ class PersonEndingParser(Parser):
     def __init__(self) -> None:
         pass
 
-    def parse(self, elem: etree._Element, person: Person) -> PersonEnding:
+    def parse(
+        self,
+        elem: Optional[etree._Element] = None,
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+    ) -> PersonEnding:
         """
         elem: a single <p> element
         Example:
@@ -37,10 +43,12 @@ class PersonEndingParser(Parser):
             <p><i>eoir</i><i>oir</i></p>
             <p></p>
         """
+        if elem is None or person is None or number is None:
+            raise ValueError("elem, person and number must not be None")
         endings: List[str] = []
         for i_elem in elem.findall("i", None):
             ending = str("")
             if i_elem.text is not None:
                 ending += str(i_elem.text)
             endings.append(ending)
-        return PersonEnding(person, endings)
+        return PersonEnding(person, number, endings)

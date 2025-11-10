@@ -49,9 +49,8 @@ class VoseoOptions(StrEnum):
     Fuente: https://es.wikipedia.org/wiki/Voseo
     """
 
-    NoVoseo = "no-voseo"  # default (tú)
     VoseoTipo1 = "voseo-tipo-1"  # Voseo Clásico
     VoseoTipo2 = "voseo-tipo-2"
-    VoseoTipo3 = "voseo-tipo-3"  # Voseo típico aka Rioplatense
+    VoseoTipo3 = "voseo-tipo-3"  # (default) Voseo típico aka Rioplatense
     VoseoTipo4 = "voseo-tipo-4"
     VoseoChileno = "voseo-chileno"

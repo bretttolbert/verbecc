@@ -1,8 +1,10 @@
 import pytest
 from typing import List
 
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
 from verbecc.src.conjugator.conjugator import Conjugator
@@ -10,7 +12,7 @@ from verbecc.src.conjugator.conjugator import Conjugator
 
 @pytest.fixture(scope="module")
 def cg():
-    cg = Conjugator(lang="pt")
+    cg = Conjugator(lang=Lang.pt)
     yield cg
 
 
@@ -481,30 +483,37 @@ def test_inflector_pt_conjugate_mood_tense(
 
 
 @pytest.mark.parametrize(
-    "person,gender,is_reflexive,expected_result",
+    "person,number,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.m, False, "eu"),
-        (Person.FirstPersonSingular, Gender.m, True, "eu me"),
-        (Person.SecondPersonSingular, Gender.m, False, "tu"),
-        (Person.SecondPersonSingular, Gender.m, True, "tu te"),
-        (Person.ThirdPersonSingular, Gender.m, False, "ele"),
-        (Person.ThirdPersonSingular, Gender.m, True, "ele se"),
-        (Person.ThirdPersonSingular, Gender.f, False, "ela"),
-        (Person.ThirdPersonSingular, Gender.f, True, "ela se"),
-        (Person.FirstPersonPlural, Gender.m, False, "nós"),
-        (Person.FirstPersonPlural, Gender.m, True, "nós nos"),
-        (Person.SecondPersonPlural, Gender.m, False, "vós"),
-        (Person.SecondPersonPlural, Gender.m, True, "vós se"),
-        (Person.ThirdPersonPlural, Gender.m, False, "eles"),
-        (Person.ThirdPersonPlural, Gender.m, True, "eles se"),
-        (Person.ThirdPersonPlural, Gender.f, False, "elas"),
-        (Person.ThirdPersonPlural, Gender.f, True, "elas se"),
+        (Person.First, Number.Singular, Gender.m, False, "eu"),
+        (Person.First, Number.Singular, Gender.m, True, "eu me"),
+        (Person.Second, Number.Singular, Gender.m, False, "tu"),
+        (Person.Second, Number.Singular, Gender.m, True, "tu te"),
+        (Person.Third, Number.Singular, Gender.m, False, "ele"),
+        (Person.Third, Number.Singular, Gender.m, True, "ele se"),
+        (Person.Third, Number.Singular, Gender.f, False, "ela"),
+        (Person.Third, Number.Singular, Gender.f, True, "ela se"),
+        (Person.First, Number.Plural, Gender.m, False, "nós"),
+        (Person.First, Number.Plural, Gender.m, True, "nós nos"),
+        (Person.Second, Number.Plural, Gender.m, False, "vós"),
+        (Person.Second, Number.Plural, Gender.m, True, "vós se"),
+        (Person.Third, Number.Plural, Gender.m, False, "eles"),
+        (Person.Third, Number.Plural, Gender.m, True, "eles se"),
+        (Person.Third, Number.Plural, Gender.f, False, "elas"),
+        (Person.Third, Number.Plural, Gender.f, True, "elas se"),
     ],
 )
 def test_inflector_pt_get_default_pronoun(
-    cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
+    cg,
+    person: Person,
+    number: Number,
+    gender: Gender,
+    is_reflexive: bool,
+    expected_result: str,
 ):
     assert (
-        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
+        cg._inflector.get_default_pronoun(
+            person, number, gender, is_reflexive=is_reflexive
+        )
         == expected_result
     )

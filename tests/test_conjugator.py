@@ -1,4 +1,6 @@
 import pytest
+
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.exceptions import (
     InvalidMoodError,
@@ -10,7 +12,7 @@ from verbecc.src.defs.constants import config
 
 @pytest.fixture(scope="module")
 def cg():
-    cg = Conjugator(lang="fr")
+    cg = Conjugator(lang=Lang.fr)
     yield cg
 
 

@@ -1,12 +1,13 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.mood import MoodFr as Mood
+from verbecc.src.defs.types.mood import Mood, Moods
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.constants.grammar_defines import PERSONS
-from verbecc.src.defs.types.tense import TenseFr as Tense
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
@@ -50,7 +51,9 @@ class InflectorFr(Inflector):
 
     # public:
 
-    def __init__(self) -> None:
+    def __init__(
+        self, lang_specific_options: Optional[LangSpecificOptions] = None
+    ) -> None:
         super(InflectorFr, self).__init__()
 
     @property
@@ -106,34 +109,34 @@ class InflectorFr(Inflector):
     def get_default_pronoun(
         self,
         person: Person,
+        number: Number,
         gender: Gender = Gender.m,
         is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
     ) -> str:
         ret = ""
-        if person == Person.FirstPersonSingular:
+        if person == Person.First and number == Number.Singular:
             ret = "je"
             if is_reflexive:
                 ret += " me"
-        elif person == Person.SecondPersonSingular:
+        elif person == Person.Second and number == Number.Singular:
             ret = "tu"
             if is_reflexive:
                 ret += " te"
-        elif person == Person.ThirdPersonSingular:
+        elif person == Person.Third and number == Number.Singular:
             ret = "il"
             if gender == Gender.f:
                 ret = "elle"
             if is_reflexive:
                 ret += " se"
-        elif person == Person.FirstPersonPlural:
+        elif person == Person.First and number == Number.Plural:
             ret = "nous"
             if is_reflexive:
                 ret += " nous"
-        elif person == Person.SecondPersonPlural:
+        elif person == Person.Second and number == Number.Plural:
             ret = "vous"
             if is_reflexive:
                 ret += " vous"
-        elif person == Person.ThirdPersonPlural:
+        elif person == Person.Third and number == Number.Plural:
             ret = "ils"
             if gender == Gender.f:
                 ret = "elles"
@@ -143,10 +146,11 @@ class InflectorFr(Inflector):
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tense.InfinitifPrésent,
-            Tense.ParticipePresent,
-            Tense.ImperatifPrésent,
-            Tense.ParticipePassé,
+            Tenses.fr.InfinitifPrésent,
+            Tenses.fr.ParticipePresent,
+            Tenses.fr.ImperatifPrésent,
+            Tenses.fr.ImperatifPassé,
+            Tenses.fr.ParticipePassé,
         ]
 
     def get_auxiliary_verb(
@@ -164,22 +168,22 @@ class InflectorFr(Inflector):
         return auxiliary_verb == "être"
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitif
+        return Moods.fr.Infinitif
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicatif
+        return Moods.fr.Indicatif
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Subjonctif
+        return Moods.fr.Subjonctif
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Conditionnel
+        return Moods.fr.Conditionnel
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participe
+        return Moods.fr.Participe
 
     def get_participle_tense(self) -> Tense:
-        return Tense.ParticipePassé
+        return Tenses.fr.ParticipePassé
 
     def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         ret = ""
@@ -205,21 +209,22 @@ class InflectorFr(Inflector):
         mood: Mood,
         tense: Tense,
         person: Person,
+        number: Number,
     ) -> str:
         if is_reflexive:
-            if mood != Mood.Imperatif:
+            if mood != Moods.fr.Imperatif:
                 s = self.add_reflexive_pronoun(s)
             else:
-                s += self._get_pronoun_suffix(person)
+                s += self._get_pronoun_suffix(person, number)
         return s
 
     def compound_conjugation_not_applicable(
-        self, is_reflexive: bool, mood: Mood, hv_tense_name: Tense
+        self, is_reflexive: bool, mood: Mood, aux_tense: Tense
     ) -> bool:
         return (
             is_reflexive
-            and mood == Mood.Imperatif
-            and hv_tense_name == Tense.ImperatifPrésent
+            and mood == Moods.fr.Imperatif
+            and aux_tense == Tenses.fr.ImperatifPrésent
         )
 
     def get_compound_conjugations_aux_verb_map(
@@ -232,34 +237,47 @@ class InflectorFr(Inflector):
         [compound-mood][compound-tense] to (aux-verb-mood, aux-verb-tense)
         """
         return {
-            Mood.Indicatif: {
-                Tense.PasséCompose: (Mood.Indicatif, Tense.Présent),
-                Tense.PlusQueParfait: (Mood.Indicatif, Tense.Imparfait),
-                Tense.FutureAntériuer: (Mood.Indicatif, Tense.FuturSimple),
-                Tense.PasséAntérieur: (Mood.Indicatif, Tense.PasséSimple),
+            Moods.fr.Indicatif: {
+                Tenses.fr.PasséCompose: (Moods.fr.Indicatif, Tenses.fr.Présent),
+                Tenses.fr.PlusQueParfait: (Moods.fr.Indicatif, Tenses.fr.Imparfait),
+                Tenses.fr.FutureAntériuer: (Moods.fr.Indicatif, Tenses.fr.FuturSimple),
+                Tenses.fr.PasséAntérieur: (Moods.fr.Indicatif, Tenses.fr.PasséSimple),
             },
-            Mood.Subjonctif: {
-                Tense.Passé: (Mood.Subjonctif, Tense.Présent),
-                Tense.PlusQueParfait: (Mood.Subjonctif, Tense.Imparfait),
+            Moods.fr.Subjonctif: {
+                Tenses.fr.Passé: (Moods.fr.Subjonctif, Tenses.fr.Présent),
+                Tenses.fr.PlusQueParfait: (Moods.fr.Subjonctif, Tenses.fr.Imparfait),
             },
-            Mood.Conditionnel: {Tense.Passé: (Mood.Conditionnel, Tense.Présent)},
-            Mood.Imperatif: {
-                Tense.ImperatifPassé: (Mood.Imperatif, Tense.ImperatifPrésent)
+            Moods.fr.Conditionnel: {
+                Tenses.fr.Passé: (Moods.fr.Conditionnel, Tenses.fr.Présent)
+            },
+            Moods.fr.Imperatif: {
+                Tenses.fr.ImperatifPassé: (
+                    Moods.fr.Imperatif,
+                    Tenses.fr.ImperatifPrésent,
+                )
             },
         }
 
     # private:
 
-    def _get_pronoun_suffix(self, person: Person, gender: Gender = Gender.m) -> str:
-        return "-" + self.get_default_pronoun(person, gender).replace("tu", "toi")
+    def _get_pronoun_suffix(
+        self,
+        person: Person,
+        number: Number,
+        gender: Gender = Gender.m,
+        imperative: bool = True,
+    ) -> str:
+        return "-" + self.get_default_pronoun(person, number, gender).replace(
+            "tu", "toi"
+        )
 
     def _is_impersonal_verb(self, infinitive: str) -> bool:
         ret = False
         verb = self.find_verb_by_infinitive(infinitive)
         template = self.find_template(verb.template)
         if len(
-            template.mood_templates[Mood.Indicatif]
-            .tense_templates[Tense.Présent]
+            template.mood_templates[Moods.fr.Indicatif]
+            .tense_templates[Tenses.fr.Présent]
             .person_endings
         ) < len(PERSONS):
             ret = True
