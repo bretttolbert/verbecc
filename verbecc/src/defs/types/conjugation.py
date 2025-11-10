@@ -147,6 +147,9 @@ class Conjugation(AbstractConjugation):
     def __iter__(self) -> Iterator[str]:
         return iter(self._conjugations)
 
+    def append(self, value: str) -> None:
+        self._conjugations.append(value)
+
     @property
     def person(self) -> Optional[Person]:
         return self._person

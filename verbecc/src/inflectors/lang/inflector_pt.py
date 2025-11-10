@@ -60,42 +60,68 @@ class InflectorPt(Inflector):
             s += " " + self._get_pronoun_suffix(person, number, imperative=imperative)
         return s
 
-    def get_default_pronoun(
+    def get_pronouns(
         self,
-        person: Person,
-        number: Number,
-        gender: Gender = Gender.m,
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
         is_reflexive: bool = False,
-    ) -> str:
-        ret = ""
-        if person == Person.First and number == Number.Singular:
-            ret = "eu"
+    ) -> List[str]:
+        ret = []
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Singular
+        ):
+            p = "eu"
             if is_reflexive:
-                ret += " me"
-        elif person == Person.Second and number == Number.Singular:
-            ret = "tu"
+                p += " me"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Singular
+        ):
+            p = "tu"
             if is_reflexive:
-                ret += " te"
-        elif person == Person.Third and number == Number.Singular:
-            ret = "ele"
-            if gender == Gender.f:
-                ret = "ela"
+                p += " te"
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = ["ele", "ela"]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = ["ele"]
+                else:
+                    pronouns = ["ela"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " se"
+                ret.append(p)
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Plural
+        ):
+            p = "nós"
             if is_reflexive:
-                ret += " se"
-        elif person == Person.First and number == Number.Plural:
-            ret = "nós"
+                p += " nos"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Plural
+        ):
+            p = "vós"
             if is_reflexive:
-                ret += " nos"
-        elif person == Person.Second and number == Number.Plural:
-            ret = "vós"
-            if is_reflexive:
-                ret += " se"
-        elif person == Person.Third and number == Number.Plural:
-            ret = "eles"
-            if gender == Gender.f:
-                ret = "elas"
-            if is_reflexive:
-                ret += " se"
+                p += " se"
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Plural
+        ):
+            pronouns = ["eles", "elas"]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = ["eles"]
+                else:
+                    pronouns = ["elas"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " se"
+                ret.append(p)
         return ret
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:

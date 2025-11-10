@@ -1,4 +1,5 @@
 import logging
+from typing import Optional
 
 from verbecc.src.defs.constants.config import DEVEL_MODE
 
@@ -188,14 +189,19 @@ class Inflector(ABC):
             else:
                 return ParticipleInflection.FemininePlural
 
-    def get_default_pronoun(
+    def get_pronouns(
         self,
-        person: Person,
-        number: Number,
-        gender: Gender = Gender.m,
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
         is_reflexive: bool = False,
-    ) -> str:
-        return ""
+    ) -> List[str]:
+        """
+        Returns a list of all pronouns matching the provided filters,
+        in the typical order, with the default pronoun first.
+        E.g. Person.Second, Number.Singular => ["tú", "vos"]
+        """
+        return []
 
     def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         return pronoun + " " + conj
@@ -306,6 +312,7 @@ class Inflector(ABC):
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
+        pronoun: str,
     ) -> PersonEnding:
         """
         Hook for certain languages e.g. Spanish that modify
@@ -323,7 +330,7 @@ class Inflector(ABC):
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
-        return " " + self.get_default_pronoun(person, number, gender)
+        return " " + self.get_pronouns(person, number, gender)[0]
 
     def _is_impersonal_verb(self, infinitive: str) -> bool:
         return False

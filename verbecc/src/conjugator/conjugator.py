@@ -325,7 +325,7 @@ class Conjugator:
         aux_tense_template.person_endings = aux_person_endings
         aux_conj = self._conjugate_simple_mood_tense(
             aux_co.verb_stem,
-            "",
+            aux_mood,  # todo: investigate (used to be "")
             aux_tense,
             aux_tense_template,
             co.is_reflexive,
@@ -557,72 +557,84 @@ class Conjugator:
             verb_stem = strip_accents(verb_stem)
         ret = TenseConjugation()
         tense = tense_template.tense
-        conjugated_with_pronoun = True
+        tense_conjugated_with_pronoun = True
         if (
-            tense in self._inflector.get_tenses_conjugated_without_pronouns()
-            or not conjugate_pronouns
+            tense
+            in self._inflector.get_tenses_conjugated_without_pronouns()
+            # or not conjugate_pronouns
         ):
-            conjugated_with_pronoun = False
+            tense_conjugated_with_pronoun = False
 
+        # There will be at least one conjugation per person-ending and
+        # potentially one or more alternate conjugations
         for person_ending in tense_template.person_endings:
-            person_ending = self._inflector.modify_person_ending_if_applicable(
-                person_ending,
-                mood,
-                tense,
-                tense_template,
-            )
-            # There will be at least one conjugation per person-ending and
-            # potentially one or more alternate conjugations
-            pronoun_conjugation = Conjugation(
-                Person.First, Number.Singular, gender, None, []
-            )
-            endings: List[str] = []
-            endings.extend(person_ending.get_endings())
+            person = person_ending.get_person()
+            number = person_ending.get_number()
 
-            # there may be one or more alternate endings
-            for ending in endings:
-                pronoun = self._inflector.get_default_pronoun(
-                    person=person_ending.get_person(),
-                    number=person_ending.get_number(),
-                    gender=gender,
-                    is_reflexive=is_reflexive,
+            pronouns = self._inflector.get_pronouns(
+                person=person,
+                number=number,
+                gender=gender,
+                is_reflexive=is_reflexive,
+            )
+            if tense_conjugated_with_pronoun:
+                # just use the default since we're only conjugating person-endings
+                pronouns = pronouns[:1]
+
+            for pronoun in pronouns:
+
+                # here's where the voseo magic happens
+                person_ending = self._inflector.modify_person_ending_if_applicable(
+                    person_ending, mood, tense, tense_template, pronoun
                 )
-                pronoun_conjugation.person = person_ending.get_person()
-                pronoun_conjugation.pronoun = pronoun
 
-                if conjugated_with_pronoun:
-                    s = grammar_defines.NO_VALUE
-                    if ending != grammar_defines.NO_VALUE:
-                        conj = self._inflector.combine_verb_stem_and_ending(
-                            verb_stem, ending
-                        )
-                        s = self._inflector.combine_pronoun_and_conj(pronoun, conj)
-                        if mood == self._inflector.get_subjunctive_mood():
-                            s = self._inflector.add_subjunctive_relative_pronoun(
-                                s, tense
+                conjugation = Conjugation(
+                    person,
+                    number,
+                    gender,
+                    pronoun,
+                )
+
+                # get endings i.e. primary and optional alternate(s)
+                endings: List[str] = []
+                endings.extend(person_ending.get_endings())
+
+                # there may be one or more alternate endings
+                for ending in endings:
+
+                    if tense_conjugated_with_pronoun:
+                        s = grammar_defines.NO_VALUE
+                        if ending != grammar_defines.NO_VALUE:
+                            conj = self._inflector.combine_verb_stem_and_ending(
+                                verb_stem, ending
                             )
-                else:
-                    # conjugation without pronoun
-                    s = self._inflector.add_present_participle_if_applicable(
-                        "", is_reflexive, tense
-                    )
-                    if ending != grammar_defines.NO_VALUE:
-                        s += self._inflector.combine_verb_stem_and_ending(
-                            verb_stem, ending
-                        )
+                            s = self._inflector.combine_pronoun_and_conj(pronoun, conj)
+                            if mood == self._inflector.get_subjunctive_mood():
+                                s = self._inflector.add_subjunctive_relative_pronoun(
+                                    s, tense
+                                )
                     else:
-                        s += ending
-                    if ending != grammar_defines.NO_VALUE:
-                        s = self._inflector.add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-                            s,
-                            is_reflexive,
-                            mood,
-                            tense,
-                            person_ending.get_person(),
-                            person_ending.get_number(),
+                        # conjugation without pronoun
+                        s = self._inflector.add_present_participle_if_applicable(
+                            "", is_reflexive, tense
                         )
-                    if ending != grammar_defines.NO_VALUE:
-                        s = self._inflector.add_adverb_if_applicable(s, mood, tense)
-                pronoun_conjugation.conjugations.append(s)
-            ret.append(pronoun_conjugation)
+                        if ending != grammar_defines.NO_VALUE:
+                            s += self._inflector.combine_verb_stem_and_ending(
+                                verb_stem, ending
+                            )
+                        else:
+                            s += ending
+                        if ending != grammar_defines.NO_VALUE:
+                            s = self._inflector.add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
+                                s,
+                                is_reflexive,
+                                mood,
+                                tense,
+                                person_ending.get_person(),
+                                person_ending.get_number(),
+                            )
+                        if ending != grammar_defines.NO_VALUE:
+                            s = self._inflector.add_adverb_if_applicable(s, mood, tense)
+                    conjugation.append(s)
+                ret.append(conjugation)
         return ret

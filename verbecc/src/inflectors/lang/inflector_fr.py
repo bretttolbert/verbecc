@@ -106,42 +106,73 @@ class InflectorFr(Inflector):
         else:
             return "que " + s
 
-    def get_default_pronoun(
+    def get_pronouns(
         self,
-        person: Person,
-        number: Number,
-        gender: Gender = Gender.m,
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
         is_reflexive: bool = False,
-    ) -> str:
-        ret = ""
-        if person == Person.First and number == Number.Singular:
-            ret = "je"
+    ) -> List[str]:
+        """
+        Returns a list of all pronouns matching the provided filters,
+        in the typical order, with the default pronoun first.
+        E.g. Person.Second, Number.Singular => ["tú", "vos"]
+        """
+        ret = []
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Singular
+        ):
+            p = "je"
             if is_reflexive:
-                ret += " me"
-        elif person == Person.Second and number == Number.Singular:
-            ret = "tu"
+                p += " me"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Singular
+        ):
+            p = "tu"
             if is_reflexive:
-                ret += " te"
-        elif person == Person.Third and number == Number.Singular:
-            ret = "il"
-            if gender == Gender.f:
-                ret = "elle"
+                p += " te"
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = ["il", "elle", "on"]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = ["il"]
+                else:
+                    pronouns = ["elle"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " se"
+                ret.append(p)
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Plural
+        ):
+            p = "nous"
             if is_reflexive:
-                ret += " se"
-        elif person == Person.First and number == Number.Plural:
-            ret = "nous"
+                p += " nous"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Plural
+        ):
+            p = "vous"
             if is_reflexive:
-                ret += " nous"
-        elif person == Person.Second and number == Number.Plural:
-            ret = "vous"
-            if is_reflexive:
-                ret += " vous"
-        elif person == Person.Third and number == Number.Plural:
-            ret = "ils"
-            if gender == Gender.f:
-                ret = "elles"
-            if is_reflexive:
-                ret += " se"
+                p += " vous"
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Plural
+        ):
+            pronouns = ["ils", "elles"]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = ["ils"]
+                else:
+                    pronouns = ["elles"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " se"
+                ret.append(p)
         return ret
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
@@ -267,9 +298,7 @@ class InflectorFr(Inflector):
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
-        return "-" + self.get_default_pronoun(person, number, gender).replace(
-            "tu", "toi"
-        )
+        return "-" + self.get_pronouns(person, number, gender)[0].replace("tu", "toi")
 
     def _is_impersonal_verb(self, infinitive: str) -> bool:
         ret = False

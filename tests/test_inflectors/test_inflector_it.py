@@ -113,7 +113,7 @@ def test_inflector_itadd_subjunctive_relative_pronoun(cg):
         (Person.Third, Number.Plural, Gender.f, True, "loro si"),
     ],
 )
-def test_inflector_it_get_default_pronoun(
+def test_inflector_it_get_pronouns(
     cg,
     person: Person,
     number: Number,
@@ -122,9 +122,7 @@ def test_inflector_it_get_default_pronoun(
     expected_result: str,
 ):
     assert (
-        cg._inflector.get_default_pronoun(
-            person, number, gender, is_reflexive=is_reflexive
-        )
+        cg._inflector.get_pronouns(person, number, gender, is_reflexive=is_reflexive)[0]
         == expected_result
     )
 
@@ -225,7 +223,7 @@ def test_alzarsi_indicative_present(cg, infinitive, expected_result):
     cc = cg.conjugate(infinitive, gender=Gender.f)
     mood_conj = cc.moods[Moods.it.Indicativo]
     tense_conj = mood_conj[Tenses.it.Presente]
-    assert tense_conj == expected_result
+    assert [c[0] for c in tense_conj] == expected_result
 
 
 @pytest.mark.parametrize(

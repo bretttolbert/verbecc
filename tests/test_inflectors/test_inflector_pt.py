@@ -503,7 +503,7 @@ def test_inflector_pt_conjugate_mood_tense(
         (Person.Third, Number.Plural, Gender.f, True, "elas se"),
     ],
 )
-def test_inflector_pt_get_default_pronoun(
+def test_inflector_pt_get_pronouns(
     cg,
     person: Person,
     number: Number,
@@ -512,8 +512,6 @@ def test_inflector_pt_get_default_pronoun(
     expected_result: str,
 ):
     assert (
-        cg._inflector.get_default_pronoun(
-            person, number, gender, is_reflexive=is_reflexive
-        )
+        cg._inflector.get_pronouns(person, number, gender, is_reflexive=is_reflexive)[0]
         == expected_result
     )

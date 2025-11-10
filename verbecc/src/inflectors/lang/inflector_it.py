@@ -77,40 +77,62 @@ class InflectorIt(Inflector):
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return "che " + s
 
-    def get_default_pronoun(
+    def get_pronouns(
         self,
-        person: Person,
-        number: Number,
-        gender: Gender = Gender.m,
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
         is_reflexive: bool = False,
-    ) -> str:
-        ret = ""
-        if person == Person.First and number == Number.Singular:
-            ret = "io"
+    ) -> List[str]:
+        ret = []
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Singular
+        ):
+            p = "io"
             if is_reflexive:
-                ret += " mi"
-        elif person == Person.Second and number == Number.Singular:
-            ret = "tu"
+                p += " mi"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Singular
+        ):
+            p = "tu"
             if is_reflexive:
-                ret += " ti"
-        elif person == Person.Third and number == Number.Singular:
-            ret = "lui"
-            if gender == Gender.f:
-                ret = "lei"
+                p += " ti"
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = ["lui", "lei"]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = ["lui"]
+                else:
+                    pronouns = ["lei"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " si"
+                ret.append(p)
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Plural
+        ):
+            p = "noi"
             if is_reflexive:
-                ret += " si"
-        elif person == Person.First and number == Number.Plural:
-            ret = "noi"
+                p += " ci"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Plural
+        ):
+            p = "voi"
             if is_reflexive:
-                ret += " ci"
-        elif person == Person.Second and number == Number.Plural:
-            ret = "voi"
+                p += " vi"
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Plural
+        ):
+            p = "loro"
             if is_reflexive:
-                ret += " vi"
-        elif person == Person.Third and number == Number.Plural:
-            ret = "loro"
-            if is_reflexive:
-                ret += " si"
+                p += " si"
+            ret.append(p)
         return ret
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:

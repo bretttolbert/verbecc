@@ -177,7 +177,7 @@ def test_inflector_fr_get_verb_stem_from_template_name(cg):
         (Person.Third, Number.Plural, Gender.f, True, "elles se"),
     ],
 )
-def test_inflector_fr_get_default_pronoun(
+def test_inflector_fr_get_pronouns(
     cg,
     person: Person,
     number: Number,
@@ -186,9 +186,7 @@ def test_inflector_fr_get_default_pronoun(
     expected_result: str,
 ):
     assert (
-        cg._inflector.get_default_pronoun(
-            person, number, gender, is_reflexive=is_reflexive
-        )
+        cg._inflector.get_pronouns(person, number, gender, is_reflexive=is_reflexive)[0]
         == expected_result
     )
 

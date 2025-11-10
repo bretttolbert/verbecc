@@ -26,6 +26,7 @@ class InflectorEs(Inflector):
         self, lang_specific_options: Optional[LangSpecificOptions] = None
     ) -> None:
         super(InflectorEs, self).__init__()
+        self.lang_specific_options = None
         if lang_specific_options is not None:
             self.lang_specific_options = cast(
                 LangSpecificOptionsEs, lang_specific_options
@@ -40,48 +41,69 @@ class InflectorEs(Inflector):
             return "no " + s
         return s
 
-    def get_default_pronoun(
+    def get_pronouns(
         self,
-        person: Person,
-        number: Number,
-        gender: Gender = Gender.m,
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
         is_reflexive: bool = False,
-    ) -> str:
-        ret = ""
-        if person == Person.First and Number.Singular:
-            ret = "yo"
+    ) -> List[str]:
+        ret = []
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Singular
+        ):
+            p = "yo"
             if is_reflexive:
-                ret += " me"
-        elif person == Person.Second and Number.Singular:
-            if (
-                self.lang_specific_options is not None
-                and self.lang_specific_options.voseo_options != VoseoOptions.NoVoseo
-            ):
-                ret = "vos"
-            else:
-                ret = "tú"
+                p += " me"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = ["tú", "vos"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " te"
+                ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = ["él", "ella", "usted"]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = ["él"]
+                else:
+                    pronouns = ["ella"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " se"
+                ret.append(p)
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Plural
+        ):
+            p = "nosotros"
             if is_reflexive:
-                ret += " te"
-        elif person == Person.Third and Number.Singular:
-            ret = "él"
-            if gender == Gender.f:
-                ret = "ella"
+                p += " nos"
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Plural
+        ):
+            p = "vosotros"
             if is_reflexive:
-                ret += " se"
-        elif person == Person.First and Number.Plural:
-            ret = "nosotros"
-            if is_reflexive:
-                ret += " nos"
-        elif person == Person.Second and Number.Plural:
-            ret = "vosotros"
-            if is_reflexive:
-                ret += " os"
-        elif person == Person.Third and Number.Plural:
-            ret = "ellos"
-            if gender == Gender.f:
-                ret = "ellas"
-            if is_reflexive:
-                ret += " se"
+                p += " os"
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Plural
+        ):
+            pronouns = ["ellos", "ellas", "ustedes"]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = ["ellos"]
+                else:
+                    pronouns = ["ellas"]
+            for p in pronouns:
+                if is_reflexive:
+                    p += " se"
+                ret.append(p)
         return ret
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
@@ -166,6 +188,7 @@ class InflectorEs(Inflector):
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
+        pronoun: str,
     ) -> PersonEnding:
         """
         Hook for certain languages e.g. Spanish that modify
@@ -207,11 +230,15 @@ class InflectorEs(Inflector):
         VOWEL_ACCENT_MAP = {"a": "á", "e": "é", "i": "í"}
         if self.lang_specific_options is not None:
             if (
-                self.lang_specific_options is not None
-                and self.lang_specific_options.voseo_options != VoseoOptions.NoVoseo
-                and person_ending.person == Person._2s
+                pronoun == "vos"
+                and person_ending.person == Person.Second
+                and person_ending.number == Number.Singular
             ):
-                if self.lang_specific_options.voseo_options != VoseoOptions.VoseoTipo3:
+                if (
+                    self.lang_specific_options is not None
+                    and self.lang_specific_options.voseo_options
+                    != VoseoOptions.VoseoTipo3
+                ):
                     # only voseo tipo 3 (voseo típico aka Rioplatense) is supported at the moment
                     raise NotImplementedError
 
@@ -223,10 +250,11 @@ class InflectorEs(Inflector):
                     # first replace with given p2s (tú) ending(s)
                     # with the p2p (vosotros) ending(s)
                     replacement_person_ending = copy.deepcopy(
-                        tense_template.get_person_ending(Person._2p)
+                        tense_template.get_person_ending(Person.Second, Number.Plural)
                     )
                     # change replacement PersonEnding Person from second person plural to singular
-                    replacement_person_ending.person = Person._2s
+                    replacement_person_ending.person = Person.Second
+                    replacement_person_ending.number = Number.Singular
 
                     # modify the endings for voseo to form the vos endings
                     for i, ending in enumerate(replacement_person_ending.get_endings()):
