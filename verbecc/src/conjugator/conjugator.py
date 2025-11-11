@@ -24,8 +24,6 @@ from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.conjugation import VerbInfo
 from verbecc.src.defs.types.data.verb import Verb
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.exceptions import (
     VerbNotFoundError,
     InvalidMoodError,
@@ -33,15 +31,10 @@ from verbecc.src.defs.types.exceptions import (
 )
 from verbecc.src.defs.types.conjugation import (
     Conjugation,
-    ConjugationData,
     TenseConjugation,
-    TenseConjugationData,
     MoodConjugation,
-    MoodConjugationData,
     MoodsConjugation,
-    MoodsConjugationData,
     CompleteConjugation,
-    CompleteConjugationData,
 )
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,

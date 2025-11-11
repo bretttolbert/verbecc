@@ -3,7 +3,6 @@ from lxml import etree
 
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.conjugation import Conjugation, TenseConjugation
-from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Moods
@@ -132,12 +131,12 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo seria"],
-                ["tu series"],
-                ["ell seria"],
-                ["nosaltres seríem"],
-                ["vosaltres seríeu"],
-                ["ells serien"],
+                ["jo seria", "jo fora"],
+                ["tu series", "tu fores"],
+                ["ell seria", "ell fora"],
+                ["nosaltres seríem", "nosaltres fórem"],
+                ["vosaltres seríeu", "vosaltres fóreu"],
+                ["ells serien", "ells foren"],
             ],
         ),
         (
@@ -349,11 +348,11 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo he"],
+                ["jo he", "jo haig"],
                 ["tu has"],
                 ["ell ha"],
-                ["nosaltres havem"],
-                ["vosaltres haveu"],
+                ["nosaltres havem", "nosaltres hem"],
+                ["vosaltres haveu", "vosaltres heu"],
                 ["ells han"],
             ],
         ),
@@ -405,12 +404,12 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo hauria"],
-                ["tu hauries"],
-                ["ell hauria"],
-                ["nosaltres hauríem"],
-                ["vosaltres hauríeu"],
-                ["ells haurien"],
+                ["jo hauria", "jo haguera"],
+                ["tu hauries", "tu hagueras"],
+                ["ell hauria", "ell haguera"],
+                ["nosaltres hauríem", "nosaltres haguérem"],
+                ["vosaltres hauríeu", "vosaltres haguéreu"],
+                ["ells haurien", "ells hagueren"],
             ],
         ),
         (
@@ -422,8 +421,8 @@ def test_find_verb_by_infinitive(cg):
                 ["jo hagi"],
                 ["tu hagis"],
                 ["ell hagi"],
-                ["nosaltres hàgim"],
-                ["vosaltres hàgiu"],
+                ["nosaltres hàgim", "nosaltres haguem"],
+                ["vosaltres hàgiu", "vosaltres hagueu"],
                 ["ells hagin"],
             ],
         ),
@@ -839,7 +838,7 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo ixo"],
+                ["jo ixo", "jo isc"],
                 ["tu ixes"],
                 ["ell ix"],
                 ["nosaltres eixim"],
@@ -895,12 +894,12 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo menteixo"],
-                ["tu menteixes"],
-                ["ell menteix"],
+                ["jo menteixo", "jo mento"],
+                ["tu menteixes", "tu ments"],
+                ["ell menteix", "ell ment"],
                 ["nosaltres mentim"],
                 ["vosaltres mentiu"],
-                ["ells menteixen"],
+                ["ells menteixen", "ells menten"],
             ],
         ),
         (
@@ -909,12 +908,12 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo desmenteixo"],
-                ["tu desmenteixes"],
-                ["ell desmenteix"],
+                ["jo desmenteixo", "jo desmento"],
+                ["tu desmenteixes", "tu desments"],
+                ["ell desmenteix", "ell desment"],
                 ["nosaltres desmentim"],
                 ["vosaltres desmentiu"],
-                ["ells desmenteixen"],
+                ["ells desmenteixen", "ells desmenten"],
             ],
         ),
         (
@@ -923,12 +922,12 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo naixo"],
-                ["tu naixes"],
-                ["ell naix"],
+                ["jo naixo", "jo neixo"],
+                ["tu naixes", "tu neixes"],
+                ["ell naix", "ell neix"],
                 ["nosaltres naixem"],
                 ["vosaltres naixeu"],
-                ["ells naixen"],
+                ["ells naixen", "ells neixen"],
             ],
         ),
         (
@@ -937,12 +936,12 @@ def test_find_verb_by_infinitive(cg):
             Tenses.ca.Present,
             Gender.m,
             [
-                ["jo naixo"],
-                ["tu naixes"],
-                ["ell naix"],
+                ["jo naixo", "jo neixo"],
+                ["tu naixes", "tu neixes"],
+                ["ell naix", "ell neix"],
                 ["nosaltres naixem"],
                 ["vosaltres naixeu"],
-                ["ells naixen"],
+                ["ells naixen", "ells neixen"],
             ],
         ),
         (
@@ -1178,8 +1177,8 @@ def test_find_verb_by_infinitive(cg):
                 ["jo percudeixo", "jo percudo"],
                 ["tu percudeixes", "tu percuts"],
                 ["ella percudeix", "ella percut"],
-                ["nosaltres percudim", "nosaltres percudim"],
-                ["vosaltres percudiu", "vosaltres percudiu"],
+                ["nosaltres percudim"],
+                ["vosaltres percudiu"],
                 ["elles percudeixen", "elles percuden"],
             ],
         ),
@@ -1590,7 +1589,7 @@ def test_find_verb_by_infinitive(cg):
             [
                 ["jo duc"],
                 ["tu duus", "tu dus"],
-                ["ella duu"],
+                ["ella duu", "ella du"],
                 ["nosaltres duem"],
                 ["vosaltres dueu"],
                 ["elles duen"],
@@ -1684,14 +1683,14 @@ def test_find_verb_by_infinitive(cg):
             "entrelluir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
+            Gender.m,
             [
                 ["jo entrelluo"],
                 ["tu entrelluus"],
-                ["ella entrelluu"],
+                ["ell entrelluu", "ell entrellú"],
                 ["nosaltres entrelluïm"],
                 ["vosaltres entrelluïu"],
-                ["elles entrelluen"],
+                ["ells entrelluen"],
             ],
         ),
         (
@@ -1702,7 +1701,7 @@ def test_find_verb_by_infinitive(cg):
             [
                 ["jo entrelluo"],
                 ["tu entrelluus"],
-                ["ella entrellú"],
+                ["ella entrelluu", "ella entrellú"],
                 ["nosaltres entrelluïm"],
                 ["vosaltres entrelluïu"],
                 ["elles entrelluen"],
@@ -1999,14 +1998,24 @@ def test_find_verb_by_infinitive(cg):
             "particip",
             "particip",
             Gender.f,
-            [["omplert"], ["omplerta"], ["omplerts"], ["omplertes"]],
+            [
+                ["omplert", "omplit"],
+                ["omplerta", "omplida"],
+                ["omplerts", "omplits"],
+                ["omplertes", "omplides"],
+            ],
         ),
         (
             "omplir",
             "particip",
             "particip",
             Gender.f,
-            [["omplit"], ["omplida"], ["omplits"], ["omplides"]],
+            [
+                ["omplert", "omplit"],
+                ["omplerta", "omplida"],
+                ["omplerts", "omplits"],
+                ["omplertes", "omplides"],
+            ],
         ),
         (
             "omplir",
@@ -2613,14 +2622,10 @@ def test_find_verb_by_infinitive(cg):
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
-    cg, infinitive, mood, tense, alternates_behavior, gender, expected_result
+    cg, infinitive, mood, tense, gender, expected_result
 ):
-    co = cg._get_conj_obs(infinitive)
-    print("template:" + co.template.name)
-    assert (
-        cg.conjugate_mood_tense(infinitive, mood, tense, alternates_behavior, gender)
-        == expected_result
-    )
+    tc = cg.conjugate_mood_tense(infinitive, mood, tense, gender)
+    assert [list(c) for c in tc] == expected_result
 
 
 def test_inflector_ca_conjugate_simple_past(cg):

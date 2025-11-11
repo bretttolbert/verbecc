@@ -28,7 +28,6 @@ from verbecc.src.defs.types.data.verbs import Verbs
 from verbecc.src.defs.types.exceptions import ConjugatorError
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.mood import Mood, Moods
 from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person

@@ -1,22 +1,14 @@
 import pytest
 from lxml import etree
-from typing import cast
 
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.conjugation import Conjugation, TenseConjugation
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
-from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
-    LangSpecificOptionsEs,
-)
-from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
 from verbecc.src.defs.types.mood import Moods
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tenses
-from verbecc.src.inflectors.inflector import Inflector
-from verbecc.src.inflectors.lang.inflector_es import InflectorEs
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
 
 cg = Conjugator(lang=Lang.es)
@@ -50,6 +42,7 @@ def test_all_verbs_have_templates():
             [
                 "yo abaño",
                 "tú abañas",
+                "vos abañas",
                 "él abaña",
                 "nosotros abañamos",
                 "vosotros abañáis",
@@ -63,6 +56,7 @@ def test_all_verbs_have_templates():
             [
                 "yo estoy",
                 "tú estás",
+                "vos estás",
                 "él está",
                 "nosotros estamos",
                 "vosotros estáis",
@@ -76,6 +70,7 @@ def test_all_verbs_have_templates():
             [
                 "yo soy",
                 "tú eres",
+                "vos eres",
                 "él es",
                 "nosotros somos",
                 "vosotros sois",
@@ -89,6 +84,7 @@ def test_all_verbs_have_templates():
             [
                 "yo tengo",
                 "tú tienes",
+                "vos tienes",
                 "él tiene",
                 "nosotros tenemos",
                 "vosotros tenéis",
@@ -102,6 +98,7 @@ def test_all_verbs_have_templates():
             [
                 "yo he",
                 "tú has",
+                "vos has",
                 "él hay",
                 "nosotros hemos",
                 "vosotros habéis",
@@ -111,10 +108,11 @@ def test_all_verbs_have_templates():
         (
             "haber",
             Moods.es.Indicativo,
-            "pretérito-imperfecto",
+            Tenses.es.PretéritoImperfecto,
             [
                 "yo había",
                 "tú habías",
+                "vos habías",
                 "él había",
                 "nosotros habíamos",
                 "vosotros habíais",
@@ -124,10 +122,11 @@ def test_all_verbs_have_templates():
         (
             "haber",
             Moods.es.Indicativo,
-            "pretérito-perfecto-simple",
+            Tenses.es.PretéritoPerfectoSimple,
             [
                 "yo hube",
                 "tú hubiste",
+                "vos hubiste",
                 "él hubo",
                 "nosotros hubimos",
                 "vosotros hubisteis",
@@ -137,10 +136,11 @@ def test_all_verbs_have_templates():
         (
             "haber",
             Moods.es.Indicativo,
-            "futuro",
+            Tenses.es.Futuro,
             [
                 "yo habré",
                 "tú habrás",
+                "vos habrás",
                 "él habrá",
                 "nosotros habremos",
                 "vosotros habréis",
@@ -149,11 +149,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "condicional",
+            Moods.es.Condicional,
             Tenses.es.Presente,
             [
                 "yo habría",
                 "tú habrías",
+                "vos habrías",
                 "él habría",
                 "nosotros habríamos",
                 "vosotros habríais",
@@ -162,11 +163,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "subjuntivo",
+            Moods.es.Subjuntivo,
             Tenses.es.Presente,
             [
                 "yo haya",
                 "tú hayas",
+                "vos hayas",
                 "él haya",
                 "nosotros hayamos",
                 "vosotros hayáis",
@@ -175,11 +177,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "subjuntivo",
-            "pretérito-imperfecto-1",
+            Moods.es.Subjuntivo,
+            Tenses.es.PretéritoImperfecto1,
             [
                 "yo hubiera",
                 "tú hubieras",
+                "vos hubieras",
                 "él hubiera",
                 "nosotros hubiéramos",
                 "vosotros hubierais",
@@ -188,11 +191,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "subjuntivo",
-            "pretérito-imperfecto-2",
+            Moods.es.Subjuntivo,
+            Tenses.es.PretéritoImperfecto2,
             [
                 "yo hubiese",
                 "tú hubieses",
+                "vos hubieses",
                 "él hubiese",
                 "nosotros hubiésemos",
                 "vosotros hubieseis",
@@ -201,11 +205,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "haber",
-            "subjuntivo",
-            "futuro",
+            Moods.es.Subjuntivo,
+            Tenses.es.Futuro,
             [
                 "yo hubiere",
                 "tú hubieres",
+                "vos hubieres",
                 "él hubiere",
                 "nosotros hubiéremos",
                 "vosotros hubiereis",
@@ -219,6 +224,7 @@ def test_all_verbs_have_templates():
             [
                 "yo hago",
                 "tú haces",
+                "vos haces",
                 "él hace",
                 "nosotros hacemos",
                 "vosotros hacéis",
@@ -232,6 +238,7 @@ def test_all_verbs_have_templates():
             [
                 "yo voy",
                 "tú vas",
+                "vos vas",
                 "él va",
                 "nosotros vamos",
                 "vosotros vais",
@@ -245,6 +252,7 @@ def test_all_verbs_have_templates():
             [
                 "yo como",
                 "tú comes",
+                "vos comes",
                 "él come",
                 "nosotros comemos",
                 "vosotros coméis",
@@ -254,10 +262,11 @@ def test_all_verbs_have_templates():
         (
             "comer",
             Moods.es.Indicativo,
-            "pretérito-perfecto-simple",
+            Tenses.es.PretéritoPerfectoSimple,
             [
                 "yo comí",
                 "tú comiste",
+                "vos comiste",
                 "él comió",
                 "nosotros comimos",
                 "vosotros comisteis",
@@ -267,10 +276,11 @@ def test_all_verbs_have_templates():
         (
             "comer",
             Moods.es.Indicativo,
-            "pretérito-imperfecto",
+            Tenses.es.PretéritoImperfecto,
             [
                 "yo comía",
                 "tú comías",
+                "vos comías",
                 "él comía",
                 "nosotros comíamos",
                 "vosotros comíais",
@@ -279,11 +289,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "condicional",
+            Moods.es.Condicional,
             Tenses.es.Presente,
             [
                 "yo comería",
                 "tú comerías",
+                "vos comerías",
                 "él comería",
                 "nosotros comeríamos",
                 "vosotros comeríais",
@@ -293,10 +304,11 @@ def test_all_verbs_have_templates():
         (
             "comer",
             Moods.es.Indicativo,
-            "pretérito-perfecto-compuesto",
+            Tenses.es.PretéritoPerfectoCompuesto,
             [
                 "yo he comido",
                 "tú has comido",
+                "vos has comido",
                 "él ha comido",
                 "nosotros hemos comido",
                 "vosotros habéis comido",
@@ -306,10 +318,11 @@ def test_all_verbs_have_templates():
         (
             "comer",
             Moods.es.Indicativo,
-            "pretérito-pluscuamperfecto",
+            Tenses.es.PretéritoPluscuamperfecto,
             [
                 "yo había comido",
                 "tú habías comido",
+                "vos habías comido",
                 "él había comido",
                 "nosotros habíamos comido",
                 "vosotros habíais comido",
@@ -319,10 +332,11 @@ def test_all_verbs_have_templates():
         (
             "comer",
             Moods.es.Indicativo,
-            "pretérito-anterior",
+            Tenses.es.PretéritoAnterior,
             [
                 "yo hube comido",
                 "tú hubiste comido",
+                "vos hubiste comido",
                 "él hubo comido",
                 "nosotros hubimos comido",
                 "vosotros hubisteis comido",
@@ -332,10 +346,11 @@ def test_all_verbs_have_templates():
         (
             "comer",
             Moods.es.Indicativo,
-            "futuro-perfecto",
+            Tenses.es.FuturoPerfecto,
             [
                 "yo habré comido",
                 "tú habrás comido",
+                "vos habrás comido",
                 "él habrá comido",
                 "nosotros habremos comido",
                 "vosotros habréis comido",
@@ -344,11 +359,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "condicional",
-            "perfecto",
+            Moods.es.Condicional,
+            Tenses.es.Perfecto,
             [
                 "yo habría comido",
                 "tú habrías comido",
+                "vos habrías comido",
                 "él habría comido",
                 "nosotros habríamos comido",
                 "vosotros habríais comido",
@@ -357,11 +373,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "subjuntivo",
-            "pretérito-perfecto",
+            Moods.es.Subjuntivo,
+            Tenses.es.PretéritoPerfecto,
             [
                 "yo haya comido",
                 "tú hayas comido",
+                "vos hayas comido",
                 "él haya comido",
                 "nosotros hayamos comido",
                 "vosotros hayáis comido",
@@ -370,11 +387,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "subjuntivo",
-            "pretérito-pluscuamperfecto-1",
+            Moods.es.Subjuntivo,
+            Tenses.es.PretéritoPluscuamperfecto1,
             [
                 "yo hubiera comido",
                 "tú hubieras comido",
+                "vos hubieras comido",
                 "él hubiera comido",
                 "nosotros hubiéramos comido",
                 "vosotros hubierais comido",
@@ -383,11 +401,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "subjuntivo",
-            "pretérito-pluscuamperfecto-2",
+            Moods.es.Subjuntivo,
+            Tenses.es.PretéritoPluscuamperfecto2,
             [
                 "yo hubiese comido",
                 "tú hubieses comido",
+                "vos hubieses comido",
                 "él hubiese comido",
                 "nosotros hubiésemos comido",
                 "vosotros hubieseis comido",
@@ -396,11 +415,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "subjuntivo",
-            "futuro-perfecto",
+            Moods.es.Subjuntivo,
+            Tenses.es.FuturoPerfecto,
             [
                 "yo hubiere comido",
                 "tú hubieres comido",
+                "vos hubieres comido",
                 "él hubiere comido",
                 "nosotros hubiéremos comido",
                 "vosotros hubiereis comido",
@@ -409,14 +429,14 @@ def test_all_verbs_have_templates():
         ),
         (
             "comer",
-            "imperativo",
-            "afirmativo",
+            Moods.es.Imperativo,
+            Tenses.es.Afirmativo,
             ["come", "coma", "comamos", "comed", "coman"],
         ),
         (
             "comer",
-            "imperativo",
-            "negativo",
+            Moods.es.Imperativo,
+            Tenses.es.Negativo,
             ["no comas", "no coma", "no comamos", "no comáis", "no coman"],
         ),
         (
@@ -426,6 +446,7 @@ def test_all_verbs_have_templates():
             [
                 "yo parezco",
                 "tú pareces",
+                "vos pareces",
                 "él parece",
                 "nosotros parecemos",
                 "vosotros parecéis",
@@ -435,10 +456,11 @@ def test_all_verbs_have_templates():
         (
             "parecer",
             Moods.es.Indicativo,
-            "pretérito-imperfecto",
+            Tenses.es.PretéritoImperfecto,
             [
                 "yo parecía",
                 "tú parecías",
+                "vos parecías",
                 "él parecía",
                 "nosotros parecíamos",
                 "vosotros parecíais",
@@ -448,10 +470,11 @@ def test_all_verbs_have_templates():
         (
             "parecer",
             Moods.es.Indicativo,
-            "pretérito-perfecto-simple",
+            Tenses.es.PretéritoPerfectoSimple,
             [
                 "yo parecí",
                 "tú pareciste",
+                "vos pareciste",
                 "él pareció",
                 "nosotros parecimos",
                 "vosotros parecisteis",
@@ -461,10 +484,11 @@ def test_all_verbs_have_templates():
         (
             "parecer",
             Moods.es.Indicativo,
-            "futuro",
+            Tenses.es.Futuro,
             [
                 "yo pareceré",
                 "tú parecerás",
+                "vos parecerás",
                 "él parecerá",
                 "nosotros pareceremos",
                 "vosotros pareceréis",
@@ -473,11 +497,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "subjuntivo",
+            Moods.es.Subjuntivo,
             Tenses.es.Presente,
             [
                 "yo parezca",
                 "tú parezcas",
+                "vos parezcas",
                 "él parezca",
                 "nosotros parezcamos",
                 "vosotros parezcáis",
@@ -486,11 +511,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "subjuntivo",
-            "pretérito-imperfecto-1",
+            Moods.es.Subjuntivo,
+            Tenses.es.PretéritoImperfecto1,
             [
                 "yo pareciera",
                 "tú parecieras",
+                "vos parecieras",
                 "él pareciera",
                 "nosotros pareciéramos",
                 "vosotros parecierais",
@@ -499,11 +525,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "subjuntivo",
-            "pretérito-imperfecto-2",
+            Moods.es.Subjuntivo,
+            Tenses.es.PretéritoImperfecto2,
             [
                 "yo pareciese",
                 "tú parecieses",
+                "vos parecieses",
                 "él pareciese",
                 "nosotros pareciésemos",
                 "vosotros parecieseis",
@@ -512,11 +539,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "subjuntivo",
-            "futuro",
+            Moods.es.Subjuntivo,
+            Tenses.es.Futuro,
             [
                 "yo pareciere",
                 "tú parecieres",
+                "vos parecieres",
                 "él pareciere",
                 "nosotros pareciéremos",
                 "vosotros pareciereis",
@@ -525,14 +553,14 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "imperativo",
-            "afirmativo",
+            Moods.es.Imperativo,
+            Tenses.es.Afirmativo,
             ["parece", "parezca", "parezcamos", "pareced", "parezcan"],
         ),
         (
             "parecer",
-            "imperativo",
-            "negativo",
+            Moods.es.Imperativo,
+            Tenses.es.Negativo,
             [
                 "no parezcas",
                 "no parezca",
@@ -543,11 +571,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "parecer",
-            "condicional",
+            Moods.es.Condicional,
             Tenses.es.Presente,
             [
                 "yo parecería",
                 "tú parecerías",
+                "vos parecerías",
                 "él parecería",
                 "nosotros pareceríamos",
                 "vosotros pareceríais",
@@ -557,10 +586,11 @@ def test_all_verbs_have_templates():
         (
             "parecer",
             Moods.es.Indicativo,
-            "pretérito-perfecto-compuesto",
+            Tenses.es.PretéritoPerfectoCompuesto,
             [
                 "yo he parecido",
                 "tú has parecido",
+                "vos has parecido",
                 "él ha parecido",
                 "nosotros hemos parecido",
                 "vosotros habéis parecido",
@@ -574,6 +604,7 @@ def test_all_verbs_have_templates():
             [
                 "yo abolo",
                 "tú aboles",
+                "vos aboles",
                 "él abole",
                 "nosotros abolimos",
                 "vosotros abolís",
@@ -582,11 +613,12 @@ def test_all_verbs_have_templates():
         ),
         (
             "abolir",
-            "subjuntivo",
-            "futuro",
+            Moods.es.Subjuntivo,
+            Tenses.es.Futuro,
             [
                 "yo aboliere",
                 "tú abolieres",
+                "vos abolieres",
                 "él aboliere",
                 "nosotros aboliéremos",
                 "vosotros aboliereis",
@@ -596,7 +628,8 @@ def test_all_verbs_have_templates():
     ],
 )
 def test_inflector_es_conjugate_mood_tense(infinitive, mood, tense, expected_result):
-    assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    assert [c[0] for c in tc] == expected_result
 
 
 def test_abolir():
