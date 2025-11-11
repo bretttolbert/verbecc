@@ -64,19 +64,12 @@ class Conjugator:
     def conjugate(
         self,
         infinitive: str,
-        include_alternates: bool = False,
         gender: Gender = Gender.m,
         conjugate_pronouns: bool = True,
     ) -> CompleteConjugation:
         """
         :param infinitive: the infinitive form of the verb to conjugate
         :type infinitive: str
-
-        :param include_alternates: whether to include alternate conjugations
-        e.g. the Catalan verbs ser/ésser have alternate conjugations in
-        the conditional tense and the participle
-        See test_inflector_ca.test_inflector_conjugate_with_alternates
-        :type include_alternates: bool
 
         :param gender: controls gender of third-person singular and plural
         :type gender: Gender
@@ -324,7 +317,6 @@ class Conjugator:
             aux_tense,
             aux_tense_template,
             co.is_reflexive,
-            # aux_alternates_behavior,
             gender=gender,
             conjugate_pronouns=conjugate_pronouns,
         )
@@ -388,13 +380,13 @@ class Conjugator:
 
         p_mood = self._inflector.get_participle_mood()
         p_tense = self._inflector.get_participle_tense()
-        p_conj = []
+        p_conj = TenseConjugation()
         # the Romanian indicativ viitor-1 uses the infinitive form instead of the participle
         # TODO: Move this language-specific logic into inflector
         if self._inflector.compound_primary_verb_conjugation_uses_infinitive(
             mood, tense
         ):
-            p_conj = [co.infinitive]
+            p_conj.append(Conjugation(None, None, None, None, [co.infinitive]))
         else:
             p_conj = self._conjugate_simple_mood_tense(
                 co.verb_stem,
@@ -404,7 +396,7 @@ class Conjugator:
                 False,
                 gender=gender,
             )
-            p_conj = cast(List[str], p_conj)
+            # p_conj = cast(List[str], p_conj)
 
         if not self._inflector.is_auxiliary_verb_inflected(aux_verb):
             # participle is not inflected, e.g. French passé composé with avoir
@@ -414,10 +406,10 @@ class Conjugator:
             # special case: Romanian conjunctiv perfect
             # TODO: Refactor further
             if self._inflector.compound_has_no_aux_verb(mood, tense):
-                participle = p_conj[0]
+                participle_c = p_conj[0]
                 for i, c in enumerate(aux_conj_scalar):
                     pronoun, _ = aux_conj_scalar[i].split()
-                    aux_conj_scalar[i] = pronoun + " " + participle
+                    aux_conj_scalar[i] = pronoun + " " + str(participle_c[0])
 
             # Normally Romanian aux_conj would be the indicativ prezent tense of avea i.e.
             # ["eu am", "tu ai", "el a", "noi am", "voi aţi", "ei au"]
@@ -481,7 +473,7 @@ class Conjugator:
                     pc_value = grammar_defines.NO_VALUE
                     if len(p_conj):
                         pc = p_conj[0]
-                        pc_value = pc[0]
+                        pc_value = str(pc[0])
                     else:
                         logger.warning(
                             "(aux verb not inflected) primary (participle) conjugation is empty: co=%s p_mood=%s p_tense=%s",
@@ -534,7 +526,7 @@ class Conjugator:
                 )
                 if len(p_conj) > participle_idx:
                     pc = p_conj[participle_idx]
-                    pc_value = pc[0]
+                    pc_value = str(pc[0])
                 else:
                     logger.warning(
                         "(aux verb inflected) primary (participle) conjugation is empty: co=%s p_mood=%s t_tense=%s",
@@ -575,9 +567,8 @@ class Conjugator:
         tense = tense_template.tense
         tense_conjugated_with_pronoun = True
         if (
-            tense
-            in self._inflector.get_tenses_conjugated_without_pronouns()
-            # or not conjugate_pronouns
+            tense in self._inflector.get_tenses_conjugated_without_pronouns()
+            or not conjugate_pronouns
         ):
             tense_conjugated_with_pronoun = False
 

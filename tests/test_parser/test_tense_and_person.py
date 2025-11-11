@@ -1,13 +1,14 @@
 from lxml import etree
 
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
-from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.mood import Moods
+from verbecc.src.defs.types.tense import Tenses
 
 
 def test_tense_and_person():
-    mood = "indicatif"
+    mood = Moods.fr.Indicatif
+    tense = Tenses.fr.Présent
     tense_elem_str: str = """<présent>
         <p><i>ie</i><i>ye</i></p>
         <p><i>ies</i><i>yes</i></p>
@@ -17,7 +18,6 @@ def test_tense_and_person():
         <p><i>ient</i><i>yent</i></p>
         </présent>"""
     tense_elem: etree._Element = etree.fromstring(tense_elem_str)
-    tense = Tense.fr.Présent
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     assert tense_template.mood == mood
     assert tense_template.tense == tense

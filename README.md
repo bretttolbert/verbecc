@@ -781,230 +781,231 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 }
 ```
 
-### Example: Catalan `ser` (to be) with alternate conjugations, without pronouns
+### Example: Catalan `ser` (to be), without pronouns in the conjugation
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(lang=Lang.ca) # If this is the first run, it will take a minute for the model to train, 
-                                  # but it should save the model .zip file and run fast subsequently
->>> cg.conjugate('ser')
->>> printjson(cg.conjugate('ser', include_alternates=True, conjugate_pronouns=False))
+>>> cg = Conjugator(lang='ca') 
+# If this is the first run, it will take a minute for the model to train, 
+# but it should save the model .zip file and run fast subsequently
+>>> cc = cg.conjugate('ser', conjugate_pronouns=False)
+>>> print(cc)
 {
-    "verb": {
-        "infinitive": "ser",
-        "predicted": false,
-        "pred_score": 1.0,
-        "template": "és:ser",
-        "translation_en": "be",
-        "stem": ""
-    },
-    "moods": {
-        "indicatiu": {
+    "moods":
+    {
+        "condicional":
+        {
             "present": [
-                [
-                    "sóc"
+                ["1", "s", "m", "jo",
+                    ["seria", "fora"]
                 ],
-                [
-                    "ets"
+                ["2", "s", "m", "tu",
+                    ["series", "fores"]
                 ],
-                [
-                    "és"
+                ["3", "s", "m", "ell",
+                    ["seria", "fora"]
                 ],
-                [
-                    "som"
+                ["1", "p", "m", "nosaltres",
+                    ["seríem", "fórem"]
                 ],
-                [
-                    "sou"
+                ["2", "p", "m", "vosaltres",
+                    ["seríeu", "fóreu"]
                 ],
-                [
-                    "són"
+                ["3", "p", "m", "ells",
+                    ["serien", "foren"]
+                ]
+            ]
+        },
+        "gerundi":
+        {
+            "gerundi": [
+                ["1", "s", "m", "jo",
+                    ["sent", "essent"]
+                ]
+            ]
+        },
+        "imperatiu":
+        {
+            "imperatiu-present": [
+                ["2", "s", "m", "tu",
+                    ["sigues"]
+                ],
+                ["3", "s", "m", "ell",
+                    ["sigui"]
+                ],
+                ["1", "p", "m", "nosaltres",
+                    ["siguem"]
+                ],
+                ["2", "p", "m", "vosaltres",
+                    ["sigueu"]
+                ],
+                ["3", "p", "m", "ells",
+                    ["siguin"]
+                ]
+            ]
+        },
+        "indicatiu":
+        {
+            "futur": [
+                ["1", "s", "m", "jo",
+                    ["seré"]
+                ],
+                ["2", "s", "m", "tu",
+                    ["seràs"]
+                ],
+                ["3", "s", "m", "ell",
+                    ["serà"]
+                ],
+                ["1", "p", "m", "nosaltres",
+                    ["serem"]
+                ],
+                ["2", "p", "m", "vosaltres",
+                    ["sereu"]
+                ],
+                ["3", "p", "m", "ells",
+                    ["seran"]
                 ]
             ],
             "imperfet": [
-                [
-                    "era"
+                ["1", "s", "m", "jo",
+                    ["era"]
                 ],
-                [
-                    "eres"
+                ["2", "s", "m", "tu",
+                    ["eres"]
                 ],
-                [
-                    "era"
+                ["3", "s", "m", "ell",
+                    ["era"]
                 ],
-                [
-                    "érem"
+                ["1", "p", "m", "nosaltres",
+                    ["érem"]
                 ],
-                [
-                    "éreu"
+                ["2", "p", "m", "vosaltres",
+                    ["éreu"]
                 ],
-                [
-                    "eren"
+                ["3", "p", "m", "ells",
+                    ["eren"]
                 ]
             ],
             "passat-simple": [
-                [
-                    "fui"
+                ["1", "s", "m", "jo",
+                    ["fui"]
                 ],
-                [
-                    "fores"
+                ["2", "s", "m", "tu",
+                    ["fores"]
                 ],
-                [
-                    "fou"
+                ["3", "s", "m", "ell",
+                    ["fou"]
                 ],
-                [
-                    "fórem"
+                ["1", "p", "m", "nosaltres",
+                    ["fórem"]
                 ],
-                [
-                    "fóreu"
+                ["2", "p", "m", "vosaltres",
+                    ["fóreu"]
                 ],
-                [
-                    "foren"
+                ["3", "p", "m", "ells",
+                    ["foren"]
                 ]
             ],
-            "futur": [
-                [
-                    "seré"
-                ],
-                [
-                    "seràs"
-                ],
-                [
-                    "serà"
-                ],
-                [
-                    "serem"
-                ],
-                [
-                    "sereu"
-                ],
-                [
-                    "seran"
-                ]
-            ]
-        },
-        "subjuntiu": {
             "present": [
-                [
-                    "sigui"
+                ["1", "s", "m", "jo",
+                    ["sóc"]
                 ],
-                [
-                    "siguis"
+                ["2", "s", "m", "tu",
+                    ["ets"]
                 ],
-                [
-                    "sigui"
+                ["3", "s", "m", "ell",
+                    ["és"]
                 ],
-                [
-                    "siguem"
+                ["1", "p", "m", "nosaltres",
+                    ["som"]
                 ],
-                [
-                    "sigueu"
+                ["2", "p", "m", "vosaltres",
+                    ["sou"]
                 ],
-                [
-                    "siguin"
-                ]
-            ],
-            "imperfet": [
-                [
-                    "fos"
-                ],
-                [
-                    "fossis"
-                ],
-                [
-                    "fos"
-                ],
-                [
-                    "fóssim"
-                ],
-                [
-                    "fóssiu"
-                ],
-                [
-                    "fossin"
+                ["3", "p", "m", "ells",
+                    ["són"]
                 ]
             ]
         },
-        "imperatiu": {
-            "imperatiu-present": [
-                [
-                    "sigues"
-                ],
-                [
-                    "sigui"
-                ],
-                [
-                    "siguem"
-                ],
-                [
-                    "sigueu"
-                ],
-                [
-                    "siguin"
-                ]
-            ]
-        },
-        "condicional": {
-            "present": [
-                [
-                    "seria",
-                    "fora"
-                ],
-                [
-                    "series",
-                    "fores"
-                ],
-                [
-                    "seria",
-                    "fora"
-                ],
-                [
-                    "seríem",
-                    "fórem"
-                ],
-                [
-                    "seríeu",
-                    "fóreu"
-                ],
-                [
-                    "serien",
-                    "foren"
-                ]
-            ]
-        },
-        "infinitiu": {
+        "infinitiu":
+        {
             "infinitiu-present": [
-                [
-                    "ser",
-                    "ésser"
+                ["1", "s", "m", "jo",
+                    ["ser", "ésser"]
                 ]
             ]
         },
-        "gerundi": {
-            "gerundi": [
-                [
-                    "sent",
-                    "essent"
-                ]
-            ]
-        },
-        "particip": {
+        "particip":
+        {
             "particip": [
                 [
-                    "estat",
-                    "sigut"
+                    null, "s", "m", "jo",
+                    ["estat", "sigut"]
                 ],
                 [
-                    "estada",
-                    "siguda"
+                    null, "p", "m", "nosaltres",
+                    ["estada", "siguda"]
                 ],
                 [
-                    "estats",
-                    "siguts"
+                    null, "s", "m", "jo",
+                    ["estats", "siguts"]
                 ],
                 [
-                    "estades",
-                    "sigudes"
+                    null, "p", "m", "nosaltres",
+                    ["estades", "sigudes"]
+                ]
+            ]
+        },
+        "subjuntiu":
+        {
+            "imperfet": [
+                ["1", "s", "m", "jo",
+                    ["fos"]
+                ],
+                ["2", "s", "m", "tu",
+                    ["fossis"]
+                ],
+                ["3", "s", "m", "ell",
+                    ["fos"]
+                ],
+                ["1", "p", "m", "nosaltres",
+                    ["fóssim"]
+                ],
+                ["2", "p", "m", "vosaltres",
+                    ["fóssiu"]
+                ],
+                ["3", "p", "m", "ells",
+                    ["fossin"]
+                ]
+            ],
+            "present": [
+                ["1", "s", "m", "jo",
+                    ["sigui"]
+                ],
+                ["2", "s", "m", "tu",
+                    ["siguis"]
+                ],
+                ["3", "s", "m", "ell",
+                    ["sigui"]
+                ],
+                ["1", "p", "m", "nosaltres",
+                    ["siguem"]
+                ],
+                ["2", "p", "m", "vosaltres",
+                    ["sigueu"]
+                ],
+                ["3", "p", "m", "ells",
+                    ["siguin"]
                 ]
             ]
         }
+    },
+    "verb":
+    {
+        "infinitive": "ser",
+        "pred_score": 1.0,
+        "predicted": false,
+        "stem": "",
+        "template": "és:ser",
+        "translation_en": "be"
     }
 }
 ```

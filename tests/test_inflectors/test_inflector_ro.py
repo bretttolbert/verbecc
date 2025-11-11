@@ -397,12 +397,10 @@ def test_all_verbs_have_templates(cg):
     ],
 )
 def test_inflector_ro_conjugate_mood_tense(
-    cg, infinitive, mood, tense, alternates_behavior, expected_result
+    cg, infinitive, mood, tense, expected_result
 ):
-    assert (
-        cg.conjugate_mood_tense(infinitive, mood, tense, alternates_behavior)
-        == expected_result
-    )
+    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    assert [c[0] for c in tc] == expected_result
 
 
 def test_inflector_ro_conjugate_mood_tense_viitor_1(cg):

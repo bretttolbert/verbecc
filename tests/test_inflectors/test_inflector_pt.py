@@ -479,7 +479,8 @@ def test_inflector_pt_conjugate_mood_tense(
     tense: Tense,
     expected_result: List[str],
 ):
-    assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    assert [c[0] for c in tc] == expected_result
 
 
 @pytest.mark.parametrize(
