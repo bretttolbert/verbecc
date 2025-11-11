@@ -176,7 +176,7 @@ class Inflector(ABC):
         return PARTICIPLE_INFLECTIONS[self.lang].index(participle_inflection)
 
     def get_default_participle_inflection_for_person(
-        self, person: Person, number: Number, gender: Gender = Gender.m
+        self, number: Number, gender: Gender = Gender.m
     ) -> ParticipleInflection:
         if number == Number.Singular:
             if gender == Gender.m:
@@ -194,7 +194,6 @@ class Inflector(ABC):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-        is_reflexive: bool = False,
     ) -> List[str]:
         """
         Returns a list of all pronouns matching the provided filters,
@@ -202,6 +201,13 @@ class Inflector(ABC):
         E.g. Person.Second, Number.Singular => ["tú", "vos"]
         """
         return []
+
+    def make_pronoun_reflexive(self, pronoun: str) -> str:
+        """
+        Adds appropriate suffix to make the pronoun reflexive
+        E.g. "il" -> "il se"
+        """
+        return pronoun
 
     def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         return pronoun + " " + conj

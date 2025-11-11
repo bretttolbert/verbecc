@@ -15,7 +15,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 import copy
-from typing import cast, List, Optional, Tuple
+from typing import cast, List, Optional
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants import grammar_defines
@@ -49,6 +49,7 @@ from verbecc.src.defs.types.lang_specific_options import (
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.inflectors.inflector_factory import InflectorFactory
 from verbecc.src.utils.string_utils import strip_accents
 
@@ -307,21 +308,22 @@ class Conjugator:
         persons_mood = mood
         if mood not in co.template.mood_templates.keys():
             persons_mood = self._inflector.get_indicative_mood()
-        persons = [
-            (pe.person, pe.number)
-            for pe in co.template.mood_templates[persons_mood]
+        person_endings = (
+            co.template.mood_templates[persons_mood]
             .tense_templates[aux_tense]
             .person_endings
-        ]
+        )
         aux_verb = self._inflector.get_auxiliary_verb(co, mood, tense)
         aux_co = self._get_conj_obs(aux_verb)
         aux_tense_template = copy.deepcopy(
             aux_co.template.mood_templates[aux_mood].tense_templates[aux_tense]
         )
         aux_person_endings = []
-        for pe in aux_tense_template.person_endings:
-            if pe.person in persons:
-                aux_person_endings.append(pe)
+        for aux_pe in aux_tense_template.person_endings:
+            if aux_pe.person is not None and aux_pe.person in [
+                pe.person for pe in person_endings if pe.person is not None
+            ]:
+                aux_person_endings.append(aux_pe)
         aux_tense_template.person_endings = aux_person_endings
         aux_conj = self._conjugate_simple_mood_tense(
             aux_co.verb_stem,
@@ -338,18 +340,22 @@ class Conjugator:
             co,
             mood,
             tense,
-            persons,
+            person_endings,
             aux_verb,
             aux_conj,
             aux_uses_alternate,
             gender,
         )
+        """
+        Seems this is now redundant
+
         if mood == self._inflector.get_subjunctive_mood():
             for i, pc in enumerate(ret):
                 for j, c in enumerate(pc.conjugations):
                     ret[i].conjugations[j] = (
                         self._inflector.add_subjunctive_relative_pronoun(c, tense)
                     )
+        """
         return ret
 
     def _conjugate_compound_primary_verb(
@@ -357,7 +363,7 @@ class Conjugator:
         co: ConjugationObjects,
         mood: Mood,
         tense: Tense,
-        persons: List[Tuple[Person, Number]],
+        person_endings: List[PersonEnding],
         aux_verb: str,
         aux_conj: TenseConjugation,
         aux_uses_alternate: bool,
@@ -479,9 +485,10 @@ class Conjugator:
             else:
                 for i, hv in enumerate(aux_conj_scalar):
                     aux_pc: Conjugation = aux_conj[i]
-                    p = grammar_defines.NO_VALUE
+                    pc_value = grammar_defines.NO_VALUE
                     if len(p_conj):
-                        p = p_conj[0]
+                        pc = p_conj[0]
+                        pc_value = pc[0]
                     else:
                         logger.warning(
                             "(aux verb not inflected) primary (participle) conjugation is empty: co=%s p_mood=%s p_tense=%s",
@@ -496,7 +503,7 @@ class Conjugator:
                             aux_pc.number,
                             aux_pc.gender,
                             aux_pc.pronoun,
-                            [hv + " " + p],
+                            [hv + " " + pc_value],
                         )
                     )
         else:
@@ -507,19 +514,34 @@ class Conjugator:
 
             for i, hv in enumerate(aux_conj_scalar):
                 aux_pc = aux_conj[i]
+                """
+                persons used to be a List[Tuple[Person, Number]]
+                get_default_participle_inflection_for_person only considers Number and Gender
+                (Person arg was unused)
+
                 participle_inflection = (
                     self._inflector.get_default_participle_inflection_for_person(
                         persons[i][0], persons[i][1], gender
                     )
                 )
-                p = grammar_defines.NO_VALUE
+                """
+
+                participle_inflection = (
+                    self._inflector.get_default_participle_inflection_for_person(
+                        person_endings[i].number, gender
+                    )
+                )
+
+                pc_value = grammar_defines.NO_VALUE
+
                 participle_idx = (
                     self._inflector.get_participle_index_for_participle_inflection(
                         participle_inflection
                     )
                 )
                 if len(p_conj) > participle_idx:
-                    p = p_conj[participle_idx]
+                    pc = p_conj[participle_idx]
+                    pc_value = pc[0]
                 else:
                     logger.warning(
                         "(aux verb inflected) primary (participle) conjugation is empty: co=%s p_mood=%s t_tense=%s",
@@ -527,13 +549,14 @@ class Conjugator:
                         p_mood,
                         p_tense,
                     )
+
                 ret.append(
                     Conjugation(
                         aux_pc.person,
                         aux_pc.number,
                         aux_pc.gender,
                         aux_pc.pronoun,
-                        [hv + " " + p],
+                        [hv + " " + pc_value],
                     )
                 )
         return ret
@@ -575,9 +598,8 @@ class Conjugator:
                 person=person,
                 number=number,
                 gender=gender,
-                is_reflexive=is_reflexive,
             )
-            if tense_conjugated_with_pronoun:
+            if not tense_conjugated_with_pronoun:
                 # just use the default since we're only conjugating person-endings
                 pronouns = pronouns[:1]
 
@@ -594,6 +616,8 @@ class Conjugator:
                     gender,
                     pronoun,
                 )
+                if is_reflexive:
+                    pronoun = self._inflector.make_pronoun_reflexive(pronoun)
 
                 # get endings i.e. primary and optional alternate(s)
                 endings: List[str] = []
@@ -601,9 +625,8 @@ class Conjugator:
 
                 # there may be one or more alternate endings
                 for ending in endings:
-
+                    s = grammar_defines.NO_VALUE
                     if tense_conjugated_with_pronoun:
-                        s = grammar_defines.NO_VALUE
                         if ending != grammar_defines.NO_VALUE:
                             conj = self._inflector.combine_verb_stem_and_ending(
                                 verb_stem, ending
@@ -625,14 +648,19 @@ class Conjugator:
                         else:
                             s += ending
                         if ending != grammar_defines.NO_VALUE:
-                            s = self._inflector.add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-                                s,
-                                is_reflexive,
-                                mood,
-                                tense,
-                                person_ending.get_person(),
-                                person_ending.get_number(),
-                            )
+                            person = person_ending.get_person()
+                            number = person_ending.get_number()
+                            if person is not None:
+                                s = self._inflector.add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
+                                    s,
+                                    is_reflexive,
+                                    mood,
+                                    tense,
+                                    person,
+                                    number,
+                                )
+                            else:
+                                logger.warning("person is None")
                         if ending != grammar_defines.NO_VALUE:
                             s = self._inflector.add_adverb_if_applicable(s, mood, tense)
                     conjugation.append(s)

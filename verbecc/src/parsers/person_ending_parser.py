@@ -4,6 +4,7 @@ from typing import List, Optional
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.gender import Gender
 from verbecc.src.parsers.parser import Parser
 
 
@@ -35,20 +36,33 @@ class PersonEndingParser(Parser):
         elem: Optional[etree._Element] = None,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
     ) -> PersonEnding:
         """
         elem: a single <p> element
-        Example:
+            Example:
             <p><i>ez</i></p>
             <p><i>eoir</i><i>oir</i></p>
             <p></p>
+        person: The grammatical person of this conjugation ending.
+            person will be None if this is a participle tense.
+        number: The grammatical number of this conjugation ending.
+        gender: The gender of this person ending.
+            gender will be None unless this is a participle tense.
+
+        Participle tense endings only have gender and number.
+        All other tense endings only have person and number.
         """
-        if elem is None or person is None or number is None:
-            raise ValueError("elem, person and number must not be None")
+        if elem is None or number is None:
+            raise ValueError("elem and number must not be None")
+        if person is None and gender is None:
+            raise ValueError("neither person nor gender were provided")
+        elif person is not None and gender is not None:
+            raise ValueError("person and gender are mutually-exclusive")
         endings: List[str] = []
         for i_elem in elem.findall("i", None):
             ending = str("")
             if i_elem.text is not None:
                 ending += str(i_elem.text)
             endings.append(ending)
-        return PersonEnding(person, number, endings)
+        return PersonEnding(person, number, gender, endings)

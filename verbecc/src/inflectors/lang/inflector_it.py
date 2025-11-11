@@ -82,22 +82,17 @@ class InflectorIt(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-        is_reflexive: bool = False,
     ) -> List[str]:
         ret = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
             p = "io"
-            if is_reflexive:
-                p += " mi"
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Singular
         ):
             p = "tu"
-            if is_reflexive:
-                p += " ti"
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Singular
@@ -108,32 +103,35 @@ class InflectorIt(Inflector):
                     pronouns = ["lui"]
                 else:
                     pronouns = ["lei"]
-            for p in pronouns:
-                if is_reflexive:
-                    p += " si"
-                ret.append(p)
+            ret.extend(pronouns)
         if (person is None or person == Person.First) and (
             number is None or number == Number.Plural
         ):
             p = "noi"
-            if is_reflexive:
-                p += " ci"
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Plural
         ):
             p = "voi"
-            if is_reflexive:
-                p += " vi"
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Plural
         ):
             p = "loro"
-            if is_reflexive:
-                p += " si"
             ret.append(p)
         return ret
+
+    def make_pronoun_reflexive(self, pronoun: str) -> str:
+        if pronoun == "io":
+            return pronoun + " mi"
+        elif pronoun == "tu":
+            return pronoun + " ti"
+        elif pronoun == "voi":
+            return pronoun + " vi"
+        elif pronoun == "noi":
+            return pronoun + " ci"
+        else:
+            return pronoun + " si"
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [

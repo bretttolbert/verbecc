@@ -108,9 +108,11 @@ def test_inflector_fr_impersonal_verbs(cg):
 
 
 def test_inflector_fr_conjugate_simple_mood_tense(cg):
+    infinitive = "manger"
     mood = Moods.fr.Indicatif
     tense = Tenses.fr.Présent
-    verb_stem = "man"
+    co = cg._get_conj_obs(infinitive)
+    assert co.verb_stem == "man"
     tense_elem = etree.fromstring(
         """<présent>
         <p><i>ge</i></p>
@@ -123,7 +125,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
+    out = cg._conjugate_simple_mood_tense(co.verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == TenseConjugation(
         [
@@ -185,10 +187,10 @@ def test_inflector_fr_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    assert (
-        cg._inflector.get_pronouns(person, number, gender, is_reflexive=is_reflexive)[0]
-        == expected_result
-    )
+    pronoun = cg._inflector.get_pronouns(person, number, gender)[0]
+    if is_reflexive:
+        pronoun = cg._inflector.make_pronoun_reflexive(pronoun)
+    assert pronoun == expected_result
 
 
 @pytest.mark.parametrize(
@@ -379,17 +381,19 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(cg):
                 Person.First, Number.Plural, Gender.m, "nous", ["nous avons parlé"]
             ),
             Conjugation(
-                Person.First, Number.Plural, Gender.m, "vous", ["vous avez parlé"]
+                Person.Second, Number.Plural, Gender.m, "vous", ["vous avez parlé"]
             ),
             Conjugation(
-                Person.First, Number.Plural, Gender.m, "ils", ["ils ont parlé"]
+                Person.Third, Number.Plural, Gender.m, "ils", ["ils ont parlé"]
             ),
         ]
     )
 
 
 def test_inflector_fr_conjugate_simple_avoir_indicatif_présent(cg):
-    verb_stem = "avoir"
+    infinitive = "avoir"
+    co = cg._get_conj_obs(infinitive)
+    assert co.verb_stem == ""
     mood = Moods.fr.Indicatif
     tense = Tenses.fr.Présent
     tense_elem = etree.fromstring(
@@ -405,7 +409,7 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent(cg):
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     ret = cg._conjugate_simple_mood_tense(
-        verb_stem,
+        co.verb_stem,
         mood,
         tense,
         tense_template,
@@ -427,7 +431,9 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent(cg):
 
 
 def test_inflector_fr_conjugate_simple_avoir_particpe_participe_passé(cg):
-    verb_stem = "avoir"
+    infinitive = "avoir"
+    co = cg._get_conj_obs(infinitive)
+    assert co.verb_stem == ""
     mood = Moods.fr.Participe
     tense = Tenses.fr.ParticipePassé
     tense_elem = etree.fromstring(
@@ -441,7 +447,7 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_passé(cg):
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     ret = cg._conjugate_simple_mood_tense(
-        verb_stem,
+        co.verb_stem,
         mood,
         tense,
         tense_template,
@@ -462,7 +468,9 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_passé(cg):
 
 
 def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(cg):
-    verb_stem = "avoir"
+    infinitive = "avoir"
+    co = cg._get_conj_obs(infinitive)
+    assert co.verb_stem == ""
     mood = Moods.fr.Participe
     tense = Tenses.fr.ParticipePresent
     tense_elem = etree.fromstring(
@@ -473,7 +481,7 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(cg):
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     ret = cg._conjugate_simple_mood_tense(
-        verb_stem,
+        co.verb_stem,
         mood,
         tense,
         tense_template,
@@ -484,7 +492,7 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(cg):
     )
     assert ret == TenseConjugation(
         [
-            Conjugation(Person.First, Number.Singular, None, None, ["ayant"]),
+            Conjugation(None, Number.Singular, Gender.m, "je", ["ayant"]),
         ]
     )
 
@@ -494,7 +502,9 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(cg):
     Test infinitif because it's the only one with neither
     person, number, gender nor pronoun.
     """
-    verb_stem = "avoir"
+    infinitive = "avoir"
+    co = cg._get_conj_obs(infinitive)
+    assert co.verb_stem == ""
     mood = Moods.fr.Infinitif
     tense = Tenses.fr.InfinitifPrésent
     tense_elem = etree.fromstring(
@@ -505,7 +515,7 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(cg):
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     ret = cg._conjugate_simple_mood_tense(
-        verb_stem,
+        co.verb_stem,
         mood,
         tense,
         tense_template,
@@ -516,13 +526,15 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(cg):
     )
     assert ret == TenseConjugation(
         [
-            Conjugation(None, None, None, None, ["avoir"]),
+            Conjugation(Person.First, Number.Singular, Gender.m, "je", ["avoir"]),
         ]
     )
 
 
 def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(cg):
-    verb_stem = "avoir"
+    infinitive = "avoir"
+    co = cg._get_conj_obs(infinitive)
+    assert co.verb_stem == ""
     mood = Moods.fr.Imperatif
     tense = Tenses.fr.ImperatifPrésent
     tense_elem = etree.fromstring(
@@ -535,7 +547,7 @@ def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(cg):
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     ret = cg._conjugate_simple_mood_tense(
-        verb_stem,
+        co.verb_stem,
         mood,
         tense,
         tense_template,
@@ -545,13 +557,14 @@ def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(cg):
         modify_stem_strip_accents=False,
     )
     # see IMPERATIVE_PERSONS_FR
-    assert ret == TenseConjugation(
+    expected_value = TenseConjugation(
         [
-            Conjugation(Person.Second, Number.Singular, None, None, ["aie"]),
-            Conjugation(Person.First, Number.Plural, None, None, ["ayons"]),
-            Conjugation(Person.Second, Number.Plural, None, None, ["ayez"]),
+            Conjugation(Person.Second, Number.Singular, Gender.m, "tu", ["aie"]),
+            Conjugation(Person.First, Number.Plural, Gender.m, "nous", ["ayons"]),
+            Conjugation(Person.Second, Number.Plural, Gender.m, "vous", ["ayez"]),
         ]
     )
+    assert ret == expected_value
 
 
 # TODO: Write a test for imperatif-passé (compound)

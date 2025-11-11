@@ -13,7 +13,7 @@ def verb_template_pairs():
 
 
 def test_extract_verb_features():
-    if config.ml:
+    if config.ENABLE_ML_PREDICTION:
         assert mlconjug.extract_verb_features("parler", Lang.fr, (2, 7)) == [
             "END=er",
             "END=ler",
@@ -33,13 +33,13 @@ def test_extract_verb_features():
 
 
 def test_DataSet_construct_dict_conjug(verb_template_pairs):
-    if config.ml:
+    if config.ENABLE_ML_PREDICTION:
         dict_conjug = mlconjug.DataSet(verb_template_pairs).dict_conjug
         assert "abaisser" in dict_conjug["aim:er"]
 
 
 def test_DataSet_split_test_train(verb_template_pairs):
-    if config.ml:
+    if config.ENABLE_ML_PREDICTION:
         data_set = mlconjug.DataSet(verb_template_pairs)
         assert data_set.min_threshold == 8
         assert data_set.split_proportion == 0.5
@@ -66,7 +66,7 @@ def test_DataSet_split_test_train(verb_template_pairs):
 
 
 def test_mlconjug_template_predictor(verb_template_pairs):
-    if config.ml:
+    if config.ENABLE_ML_PREDICTION:
         predictor = mlconjug.TemplatePredictor(verb_template_pairs, lang=Lang.fr)
         template, prediction_score = predictor.predict("parler")
         assert template == "aim:er"

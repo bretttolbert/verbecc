@@ -1,12 +1,22 @@
-from typing import List
+from typing import List, Optional
 
 from verbecc.src.defs.types.data.element import Element
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.gender import Gender
 
 
 class PersonEnding(Element):
     """
+    person: The grammatical person of this conjugation ending.
+        person will be None if this is a participle tense.
+    number: The grammatical number of this conjugation ending.
+    gender: The gender of this person ending.
+        gender will be None unless this is a participle tense.
+
+    Participle tense endings only have gender and number.
+    All other tense endings only have person and number.
+
     Ending for a specific grammatical person and number,
     for a specific verb template, mood, tense
     May also have one or more alternate endings for an alternative spellings
@@ -15,20 +25,34 @@ class PersonEnding(Element):
     E.g. Endings for pa:yer indicatif présent 1st Person Singular = ['ie', 'ye']
     Explanation: 'ye' is an alternate spelling (je paie, je paye)
     person
-    A grammar_defines.PERSONS value indicating which person
-    this PersonEnding is for, e.g. for aim:er, "ez" is '2p' (second person plural)
     """
 
-    def __init__(self, person: Person, number: Number, endings: List[str]) -> None:
+    def __init__(
+        self,
+        person: Optional[Person],
+        number: Number,
+        gender: Optional[Gender],
+        endings: List[str],
+    ) -> None:
+        if person is None and gender is None:
+            raise ValueError(
+                "neither person nor gender were provided; must provide one"
+            )
+        elif person is not None and gender is not None:
+            raise ValueError("person and gender are mutually-exclusive")
         self.person = person
         self.number = number
+        self.gender = gender
         self.endings = endings
 
-    def get_person(self) -> Person:
+    def get_person(self) -> Optional[Person]:
         return self.person
 
     def get_number(self) -> Number:
         return self.number
+
+    def get_gender(self) -> Optional[Gender]:
+        return self.gender
 
     def get_endings(self) -> List[str]:
         return self.endings

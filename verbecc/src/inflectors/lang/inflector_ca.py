@@ -33,22 +33,17 @@ class InflectorCa(inflector.Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-        is_reflexive: bool = False,
     ) -> List[str]:
         ret = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
             p = "jo"
-            if is_reflexive:
-                p += " me"
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Singular
         ):
             p = "tu"
-            if is_reflexive:
-                p += " te"
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Singular
@@ -59,23 +54,16 @@ class InflectorCa(inflector.Inflector):
                     pronouns = ["ell"]
                 else:
                     pronouns = ["ella"]
-            for p in pronouns:
-                if is_reflexive:
-                    p += " se"
-                ret.append(p)
+            ret.extend(pronouns)
         if (person is None or person == Person.First) and (
             number is None or number == Number.Plural
         ):
             p = "nosaltres"
-            if is_reflexive:
-                p += " nos"
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Plural
         ):
             p = "vosaltres"
-            if is_reflexive:
-                p += " os"
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Plural
@@ -86,11 +74,20 @@ class InflectorCa(inflector.Inflector):
                     pronouns = ["ells"]
                 else:
                     pronouns = ["elles"]
-            for p in pronouns:
-                if is_reflexive:
-                    p += " se"
-                ret.append(p)
+            ret.extend(pronouns)
         return ret
+
+    def make_pronoun_reflexive(self, pronoun: str) -> str:
+        if pronoun == "jo":
+            return pronoun + " me"
+        elif pronoun == "tu":
+            return pronoun + " te"
+        elif pronoun == "vosaltres":
+            return pronoun + " os"
+        elif pronoun == "nosaltres":
+            return pronoun + " nos"
+        else:
+            return pronoun + " se"
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [

@@ -681,11 +681,10 @@ def test_inflector_es_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    inf = cast(InflectorEs, cg._inflector)
-    assert (
-        cg._inflector.get_pronouns(person, number, gender, is_reflexive=is_reflexive)[0]
-        == expected_result
-    )
+    pronoun = cg._inflector.get_pronouns(person, number, gender)[0]
+    if is_reflexive:
+        pronoun = cg._inflector.make_pronoun_reflexive(pronoun)
+    assert pronoun == expected_result
 
 
 def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3():

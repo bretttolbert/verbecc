@@ -22,7 +22,7 @@ class Verbs:
             v.infinitive_no_accents for v in self._verbs_no_accents
         ]
         self.template_predictor = None
-        if config.ml:
+        if config.ENABLE_ML_PREDICTION:
             self.template_predictor = mlconjug.TemplatePredictor(
                 [(v.infinitive, v.template) for v in verbs], self.lang
             )
@@ -55,7 +55,7 @@ class Verbs:
             and self.infinitives_no_accents[i] == query
         ):
             return self._verbs_no_accents[i]
-        if config.ml:
+        if config.ENABLE_ML_PREDICTION and self.template_predictor is not None:
             template, pred_score = self.template_predictor.predict(query)
             ret = Verb(infinitive.lower(), template, translation_en="")
             ret.predicted = True

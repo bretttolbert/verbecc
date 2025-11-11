@@ -92,12 +92,23 @@ class TenseTemplateParser(Parser):
         person_endings: List[PersonEnding] = []
         person_num = 0
         for p_elem in elem.findall("p", namespaces=None):
-            person, number = grammar_defines.PERSONS[person_num]
-            if self.mood == xmood(self.lang, Moods.en.Imperative):
-                person, number = grammar_defines.IMPERATIVE_PERSONS[self.lang][
+            gender = None
+            person = None
+            number = None
+
+            if self.mood == xmood(self.lang, Moods.en.Participle):
+                gender, number = grammar_defines.PARTICIPLE_INFLECTIONS[self.lang][
                     person_num
-                ]
-            pe = PersonEndingParser().parse(p_elem, person, number)
+                ].value
+            else:
+                if self.mood == xmood(self.lang, Moods.en.Imperative):
+                    person, number = grammar_defines.IMPERATIVE_PERSONS[self.lang][
+                        person_num
+                    ]
+                else:
+                    person, number = grammar_defines.PERSONS[person_num]
+
+            pe = PersonEndingParser().parse(p_elem, person, number, gender)
             person_num += 1
             if len(pe.endings) > 0:
                 person_endings.append(pe)

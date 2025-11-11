@@ -96,43 +96,28 @@ IMPERATIVE_PERSONS: Dict[LangCodeISO639_1, List[Tuple[Person, Number]]] = {
 # templates are inconsistent (TODO: Standardize the XML files)
 # Default order is like French XML file, i.e. MS, MP, FS, FP
 # But in some lang XML files, e.g. Italian, the order is MS, FS, MP, FP,
-PARTICIPLE_INFLECTIONS_DEFAULT: Tuple[
-    ParticipleInflection,
-    ParticipleInflection,
-    ParticipleInflection,
-    ParticipleInflection,
-] = (
+PARTICIPLE_INFLECTIONS_DEFAULT: List[ParticipleInflection,] = [
     ParticipleInflection.MasculineSingular,
     ParticipleInflection.MasculinePlural,
     ParticipleInflection.FeminineSingular,
     ParticipleInflection.FemininePlural,
-)
+]
 
 PARTICIPLE_INFLECTION_FR = PARTICIPLE_INFLECTIONS_DEFAULT
 PARTICIPLE_INFLECTION_ES = PARTICIPLE_INFLECTIONS_DEFAULT
 PARTICIPLE_INFLECTION_PT = PARTICIPLE_INFLECTIONS_DEFAULT
 PARTICIPLE_INFLECTION_CA = PARTICIPLE_INFLECTIONS_DEFAULT
 PARTICIPLE_INFLECTION_RO = PARTICIPLE_INFLECTIONS_DEFAULT
-PARTICIPLE_INFLECTION_IT: Tuple[
-    ParticipleInflection,
-    ParticipleInflection,
-    ParticipleInflection,
-    ParticipleInflection,
-] = (
+PARTICIPLE_INFLECTION_IT: List[ParticipleInflection,] = [
     ParticipleInflection.MasculineSingular,
     ParticipleInflection.FeminineSingular,
     ParticipleInflection.MasculinePlural,
     ParticipleInflection.FemininePlural,
-)
+]
 
 PARTICIPLE_INFLECTIONS: Dict[
     LangCodeISO639_1,
-    Tuple[
-        ParticipleInflection,
-        ParticipleInflection,
-        ParticipleInflection,
-        ParticipleInflection,
-    ],
+    List[ParticipleInflection],
 ] = {
     LangCodeISO639_1.fr: PARTICIPLE_INFLECTION_FR,
     LangCodeISO639_1.es: PARTICIPLE_INFLECTION_ES,

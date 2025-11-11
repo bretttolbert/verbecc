@@ -1,4 +1,7 @@
 import pytest
+import json
+
+from tests.common import assert_json_str_equal
 
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.conjugator.conjugator import Conjugator
@@ -46,8 +49,9 @@ def test_conjugator_conjugate_basic(cg, infinitive):
 
 
 def test_conjugator_predict_conjugation_er_verb_indicative_present(cg):
-    if config.ml:
-        assert cg.conjugate_mood_tense("ubériser", "indicatif", "présent") == [
+    if config.ENABLE_ML_PREDICTION:
+        tc = cg.conjugate_mood_tense("ubériser", "indicatif", "présent")
+        assert [c[0] for c in tc] == [
             "j'ubérise",
             "tu ubérises",
             "il ubérise",
@@ -58,8 +62,9 @@ def test_conjugator_predict_conjugation_er_verb_indicative_present(cg):
 
 
 def test_conjugator_predict_conjugation_re_verb_indicative_present(cg):
-    if config.ml:
-        assert cg.conjugate_mood_tense("brettre", "indicatif", "présent") == [
+    if config.ENABLE_ML_PREDICTION:
+        tc = cg.conjugate_mood_tense("brettre", "indicatif", "présent")
+        assert [c[0] for c in tc] == [
             "je brets",
             "tu brets",
             "il bret",
@@ -70,7 +75,8 @@ def test_conjugator_predict_conjugation_re_verb_indicative_present(cg):
 
 
 def test_conjugator_conjugate_passe_compose_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "indicatif", "passé-composé") == [
+    tc = cg.conjugate_mood_tense("manger", "indicatif", "passé-composé")
+    assert [c[0] for c in tc] == [
         "j'ai mangé",
         "tu as mangé",
         "il a mangé",
@@ -81,7 +87,8 @@ def test_conjugator_conjugate_passe_compose_with_avoir(cg):
 
 
 def test_conjugator_conjugate_passe_compose_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "indicatif", "passé-composé") == [
+    tc = cg.conjugate_mood_tense("aller", "indicatif", "passé-composé")
+    assert [c[0] for c in tc] == [
         "je suis allé",
         "tu es allé",
         "il est allé",
@@ -92,7 +99,8 @@ def test_conjugator_conjugate_passe_compose_with_etre(cg):
 
 
 def test_conjugator_conjugate_subjonctif_passe_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "subjonctif", "passé") == [
+    tc = cg.conjugate_mood_tense("manger", "subjonctif", "passé")
+    assert [c[0] for c in tc] == [
         "que j'aie mangé",
         "que tu aies mangé",
         "qu'il ait mangé",
@@ -103,7 +111,8 @@ def test_conjugator_conjugate_subjonctif_passe_with_avoir(cg):
 
 
 def test_conjugator_conjugate_subjonctif_passe_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "subjonctif", "passé") == [
+    tc = cg.conjugate_mood_tense("aller", "subjonctif", "passé")
+    assert [c[0] for c in tc] == [
         "que je sois allé",
         "que tu sois allé",
         "qu'il soit allé",
@@ -114,7 +123,8 @@ def test_conjugator_conjugate_subjonctif_passe_with_etre(cg):
 
 
 def test_conjugator_conjugate_conditionnel_passe_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "conditionnel", "passé") == [
+    tc = cg.conjugate_mood_tense("manger", "conditionnel", "passé")
+    assert [c[0] for c in tc] == [
         "j'aurais mangé",
         "tu aurais mangé",
         "il aurait mangé",
@@ -125,7 +135,8 @@ def test_conjugator_conjugate_conditionnel_passe_with_avoir(cg):
 
 
 def test_conjugator_conjugate_conditionnel_passe_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "conditionnel", "passé") == [
+    tc = cg.conjugate_mood_tense("aller", "conditionnel", "passé")
+    assert [c[0] for c in tc] == [
         "je serais allé",
         "tu serais allé",
         "il serait allé",
@@ -136,7 +147,8 @@ def test_conjugator_conjugate_conditionnel_passe_with_etre(cg):
 
 
 def test_conjugator_conjugate_plusqueparfait_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "indicatif", "plus-que-parfait") == [
+    tc = cg.conjugate_mood_tense("manger", "indicatif", "plus-que-parfait")
+    assert [c[0] for c in tc] == [
         "j'avais mangé",
         "tu avais mangé",
         "il avait mangé",
@@ -147,7 +159,8 @@ def test_conjugator_conjugate_plusqueparfait_with_avoir(cg):
 
 
 def test_conjugator_conjugate_plusqueparfait_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "indicatif", "plus-que-parfait") == [
+    tc = cg.conjugate_mood_tense("aller", "indicatif", "plus-que-parfait")
+    assert [c[0] for c in tc] == [
         "j'étais allé",
         "tu étais allé",
         "il était allé",
@@ -158,7 +171,8 @@ def test_conjugator_conjugate_plusqueparfait_with_etre(cg):
 
 
 def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "subjonctif", "plus-que-parfait") == [
+    tc = cg.conjugate_mood_tense("manger", "subjonctif", "plus-que-parfait")
+    assert [c[0] for c in tc] == [
         "que j'eusse mangé",
         "que tu eusses mangé",
         "qu'il eût mangé",
@@ -169,7 +183,8 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
 
 
 def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "subjonctif", "plus-que-parfait") == [
+    tc = cg.conjugate_mood_tense("aller", "subjonctif", "plus-que-parfait")
+    assert [c[0] for c in tc] == [
         "que je fusse allé",
         "que tu fusses allé",
         "qu'il fût allé",
@@ -180,7 +195,8 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre(cg):
 
 
 def test_conjugator_conjugate_futur_anterieur_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "indicatif", "futur-antérieur") == [
+    tc = cg.conjugate_mood_tense("manger", "indicatif", "futur-antérieur")
+    assert [c[0] for c in tc] == [
         "j'aurai mangé",
         "tu auras mangé",
         "il aura mangé",
@@ -191,7 +207,8 @@ def test_conjugator_conjugate_futur_anterieur_with_avoir(cg):
 
 
 def test_conjugator_conjugate_futur_anterieur_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "indicatif", "futur-antérieur") == [
+    tc = cg.conjugate_mood_tense("aller", "indicatif", "futur-antérieur")
+    assert [c[0] for c in tc] == [
         "je serai allé",
         "tu seras allé",
         "il sera allé",
@@ -202,7 +219,8 @@ def test_conjugator_conjugate_futur_anterieur_with_etre(cg):
 
 
 def test_conjugator_conjugate_passe_anterieur_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "indicatif", "passé-antérieur") == [
+    tc = cg.conjugate_mood_tense("manger", "indicatif", "passé-antérieur")
+    assert [c[0] for c in tc] == [
         "j'eus mangé",
         "tu eus mangé",
         "il eut mangé",
@@ -213,7 +231,8 @@ def test_conjugator_conjugate_passe_anterieur_with_avoir(cg):
 
 
 def test_conjugator_conjugate_passe_anterieur_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "indicatif", "passé-antérieur") == [
+    tc = cg.conjugate_mood_tense("aller", "indicatif", "passé-antérieur")
+    assert [c[0] for c in tc] == [
         "je fus allé",
         "tu fus allé",
         "il fut allé",
@@ -224,7 +243,8 @@ def test_conjugator_conjugate_passe_anterieur_with_etre(cg):
 
 
 def test_conjugator_conjugate_imperatif_passe_with_avoir(cg):
-    assert cg.conjugate_mood_tense("manger", "imperatif", "imperatif-passé") == [
+    tc = cg.conjugate_mood_tense("manger", "imperatif", "imperatif-passé")
+    assert [c[0] for c in tc] == [
         "aie mangé",
         "ayons mangé",
         "ayez mangé",
@@ -232,7 +252,8 @@ def test_conjugator_conjugate_imperatif_passe_with_avoir(cg):
 
 
 def test_conjugator_conjugate_imperatif_passe_with_etre(cg):
-    assert cg.conjugate_mood_tense("aller", "imperatif", "imperatif-passé") == [
+    tc = cg.conjugate_mood_tense("aller", "imperatif", "imperatif-passé")
+    assert [c[0] for c in tc] == [
         "sois allé",
         "soyons allés",
         "soyez allés",
@@ -240,463 +261,533 @@ def test_conjugator_conjugate_imperatif_passe_with_etre(cg):
 
 
 expected_resp_conj_manger = {
-    "verb": {
-        "infinitive": "manger",
-        "predicted": False,
-        "pred_score": 1.0,
-        "template": "man:ger",
-        "translation_en": "eat",
-        "stem": "man",
-    },
     "moods": {
-        "infinitif": {"infinitif-présent": ["manger"]},
-        "indicatif": {
-            "présent": [
-                "je mange",
-                "tu manges",
-                "il mange",
-                "nous mangeons",
-                "vous mangez",
-                "ils mangent",
-            ],
-            "imparfait": [
-                "je mangeais",
-                "tu mangeais",
-                "il mangeait",
-                "nous mangions",
-                "vous mangiez",
-                "ils mangeaient",
-            ],
-            "futur-simple": [
-                "je mangerai",
-                "tu mangeras",
-                "il mangera",
-                "nous mangerons",
-                "vous mangerez",
-                "ils mangeront",
-            ],
-            "passé-simple": [
-                "je mangeai",
-                "tu mangeas",
-                "il mangea",
-                "nous mangeâmes",
-                "vous mangeâtes",
-                "ils mangèrent",
-            ],
-            "passé-composé": [
-                "j'ai mangé",
-                "tu as mangé",
-                "il a mangé",
-                "nous avons mangé",
-                "vous avez mangé",
-                "ils ont mangé",
-            ],
-            "plus-que-parfait": [
-                "j'avais mangé",
-                "tu avais mangé",
-                "il avait mangé",
-                "nous avions mangé",
-                "vous aviez mangé",
-                "ils avaient mangé",
-            ],
-            "futur-antérieur": [
-                "j'aurai mangé",
-                "tu auras mangé",
-                "il aura mangé",
-                "nous aurons mangé",
-                "vous aurez mangé",
-                "ils auront mangé",
-            ],
-            "passé-antérieur": [
-                "j'eus mangé",
-                "tu eus mangé",
-                "il eut mangé",
-                "nous eûmes mangé",
-                "vous eûtes mangé",
-                "ils eurent mangé",
-            ],
-        },
         "conditionnel": {
-            "présent": [
-                "je mangerais",
-                "tu mangerais",
-                "il mangerait",
-                "nous mangerions",
-                "vous mangeriez",
-                "ils mangeraient",
-            ],
             "passé": [
-                "j'aurais mangé",
-                "tu aurais mangé",
-                "il aurait mangé",
-                "nous aurions mangé",
-                "vous auriez mangé",
-                "ils auraient mangé",
+                ["1", "s", "m", "je", ["j'aurais mangé"]],
+                ["2", "s", "m", "tu", ["tu aurais mangé"]],
+                ["3", "s", "m", "il", ["il aurait mangé"]],
+                ["1", "p", "m", "nous", ["nous aurions mangé"]],
+                ["2", "p", "m", "vous", ["vous auriez mangé"]],
+                ["3", "p", "m", "ils", ["ils auraient mangé"]],
             ],
-        },
-        "subjonctif": {
             "présent": [
-                "que je mange",
-                "que tu manges",
-                "qu'il mange",
-                "que nous mangions",
-                "que vous mangiez",
-                "qu'ils mangent",
-            ],
-            "imparfait": [
-                "que je mangeasse",
-                "que tu mangeasses",
-                "qu'il mangeât",
-                "que nous mangeassions",
-                "que vous mangeassiez",
-                "qu'ils mangeassent",
-            ],
-            "passé": [
-                "que j'aie mangé",
-                "que tu aies mangé",
-                "qu'il ait mangé",
-                "que nous ayons mangé",
-                "que vous ayez mangé",
-                "qu'ils aient mangé",
-            ],
-            "plus-que-parfait": [
-                "que j'eusse mangé",
-                "que tu eusses mangé",
-                "qu'il eût mangé",
-                "que nous eussions mangé",
-                "que vous eussiez mangé",
-                "qu'ils eussent mangé",
+                ["1", "s", "m", "je", ["je mangerais"]],
+                ["2", "s", "m", "tu", ["tu mangerais"]],
+                ["3", "s", "m", "il", ["il mangerait"]],
+                ["1", "p", "m", "nous", ["nous mangerions"]],
+                ["2", "p", "m", "vous", ["vous mangeriez"]],
+                ["3", "p", "m", "ils", ["ils mangeraient"]],
             ],
         },
         "imperatif": {
-            "imperatif-présent": ["mange", "mangeons", "mangez"],
-            "imperatif-passé": ["aie mangé", "ayons mangé", "ayez mangé"],
+            "imperatif-passé": [
+                ["2", "s", "m", "tu", ["aie mangé"]],
+                ["1", "p", "m", "nous", ["ayons mangé"]],
+                ["2", "p", "m", "vous", ["ayez mangé"]],
+            ],
+            "imperatif-présent": [
+                ["2", "s", "m", "tu", ["mange"]],
+                ["1", "p", "m", "nous", ["mangeons"]],
+                ["2", "p", "m", "vous", ["mangez"]],
+            ],
         },
+        "indicatif": {
+            "futur-antérieur": [
+                ["1", "s", "m", "je", ["j'aurai mangé"]],
+                ["2", "s", "m", "tu", ["tu auras mangé"]],
+                ["3", "s", "m", "il", ["il aura mangé"]],
+                ["1", "p", "m", "nous", ["nous aurons mangé"]],
+                ["2", "p", "m", "vous", ["vous aurez mangé"]],
+                ["3", "p", "m", "ils", ["ils auront mangé"]],
+            ],
+            "futur-simple": [
+                ["1", "s", "m", "je", ["je mangerai"]],
+                ["2", "s", "m", "tu", ["tu mangeras"]],
+                ["3", "s", "m", "il", ["il mangera"]],
+                ["1", "p", "m", "nous", ["nous mangerons"]],
+                ["2", "p", "m", "vous", ["vous mangerez"]],
+                ["3", "p", "m", "ils", ["ils mangeront"]],
+            ],
+            "imparfait": [
+                ["1", "s", "m", "je", ["je mangeais"]],
+                ["2", "s", "m", "tu", ["tu mangeais"]],
+                ["3", "s", "m", "il", ["il mangeait"]],
+                ["1", "p", "m", "nous", ["nous mangions"]],
+                ["2", "p", "m", "vous", ["vous mangiez"]],
+                ["3", "p", "m", "ils", ["ils mangeaient"]],
+            ],
+            "passé-antérieur": [
+                ["1", "s", "m", "je", ["j'eus mangé"]],
+                ["2", "s", "m", "tu", ["tu eus mangé"]],
+                ["3", "s", "m", "il", ["il eut mangé"]],
+                ["1", "p", "m", "nous", ["nous eûmes mangé"]],
+                ["2", "p", "m", "vous", ["vous eûtes mangé"]],
+                ["3", "p", "m", "ils", ["ils eurent mangé"]],
+            ],
+            "passé-composé": [
+                ["1", "s", "m", "je", ["j'ai mangé"]],
+                ["2", "s", "m", "tu", ["tu as mangé"]],
+                ["3", "s", "m", "il", ["il a mangé"]],
+                ["1", "p", "m", "nous", ["nous avons mangé"]],
+                ["2", "p", "m", "vous", ["vous avez mangé"]],
+                ["3", "p", "m", "ils", ["ils ont mangé"]],
+            ],
+            "passé-simple": [
+                ["1", "s", "m", "je", ["je mangeai"]],
+                ["2", "s", "m", "tu", ["tu mangeas"]],
+                ["3", "s", "m", "il", ["il mangea"]],
+                ["1", "p", "m", "nous", ["nous mangeâmes"]],
+                ["2", "p", "m", "vous", ["vous mangeâtes"]],
+                ["3", "p", "m", "ils", ["ils mangèrent"]],
+            ],
+            "plus-que-parfait": [
+                ["1", "s", "m", "je", ["j'avais mangé"]],
+                ["2", "s", "m", "tu", ["tu avais mangé"]],
+                ["3", "s", "m", "il", ["il avait mangé"]],
+                ["1", "p", "m", "nous", ["nous avions mangé"]],
+                ["2", "p", "m", "vous", ["vous aviez mangé"]],
+                ["3", "p", "m", "ils", ["ils avaient mangé"]],
+            ],
+            "présent": [
+                ["1", "s", "m", "je", ["je mange"]],
+                ["2", "s", "m", "tu", ["tu manges"]],
+                ["3", "s", "m", "il", ["il mange"]],
+                ["1", "p", "m", "nous", ["nous mangeons"]],
+                ["2", "p", "m", "vous", ["vous mangez"]],
+                ["3", "p", "m", "ils", ["ils mangent"]],
+            ],
+        },
+        "infinitif": {"infinitif-présent": [["1", "s", "m", "je", ["manger"]]]},
         "participe": {
-            "participe-présent": ["mangeant"],
-            "participe-passé": ["mangé", "mangés", "mangée", "mangées"],
+            "participe-passé": [
+                [None, "s", "m", "je", ["mangé"]],
+                [None, "p", "m", "nous", ["mangés"]],
+                [None, "s", "m", "je", ["mangée"]],
+                [None, "p", "m", "nous", ["mangées"]],
+            ],
+            "participe-présent": [[None, "s", "m", "je", ["mangeant"]]],
         },
+        "subjonctif": {
+            "imparfait": [
+                ["1", "s", "m", "je", ["que je mangeasse"]],
+                ["2", "s", "m", "tu", ["que tu mangeasses"]],
+                ["3", "s", "m", "il", ["qu'il mangeât"]],
+                ["1", "p", "m", "nous", ["que nous mangeassions"]],
+                ["2", "p", "m", "vous", ["que vous mangeassiez"]],
+                ["3", "p", "m", "ils", ["qu'ils mangeassent"]],
+            ],
+            "passé": [
+                ["1", "s", "m", "je", ["que j'aie mangé"]],
+                ["2", "s", "m", "tu", ["que tu aies mangé"]],
+                ["3", "s", "m", "il", ["qu'il ait mangé"]],
+                ["1", "p", "m", "nous", ["que nous ayons mangé"]],
+                ["2", "p", "m", "vous", ["que vous ayez mangé"]],
+                ["3", "p", "m", "ils", ["qu'ils aient mangé"]],
+            ],
+            "plus-que-parfait": [
+                ["1", "s", "m", "je", ["que j'eusse mangé"]],
+                ["2", "s", "m", "tu", ["que tu eusses mangé"]],
+                ["3", "s", "m", "il", ["qu'il eût mangé"]],
+                ["1", "p", "m", "nous", ["que nous eussions mangé"]],
+                ["2", "p", "m", "vous", ["que vous eussiez mangé"]],
+                ["3", "p", "m", "ils", ["qu'ils eussent mangé"]],
+            ],
+            "présent": [
+                ["1", "s", "m", "je", ["que je mange"]],
+                ["2", "s", "m", "tu", ["que tu manges"]],
+                ["3", "s", "m", "il", ["qu'il mange"]],
+                ["1", "p", "m", "nous", ["que nous mangions"]],
+                ["2", "p", "m", "vous", ["que vous mangiez"]],
+                ["3", "p", "m", "ils", ["qu'ils mangent"]],
+            ],
+        },
+    },
+    "verb": {
+        "infinitive": "manger",
+        "pred_score": 1.0,
+        "predicted": False,
+        "stem": "man",
+        "template": "man:ger",
+        "translation_en": "eat",
     },
 }
 
 expected_resp_conj_pouvoir = {
-    "verb": {
-        "infinitive": "pouvoir",
-        "predicted": False,
-        "pred_score": 1.0,
-        "template": "p:ouvoir",
-        "translation_en": "power",
-        "stem": "p",
-    },
     "moods": {
-        "infinitif": {"infinitif-présent": ["pouvoir"]},
-        "indicatif": {
-            "présent": [
-                "je peux",
-                "tu peux",
-                "il peut",
-                "nous pouvons",
-                "vous pouvez",
-                "ils peuvent",
+        "conditionnel": {
+            "passé": [
+                ["1", "s", "m", "je", ["j'aurais pu"]],
+                ["2", "s", "m", "tu", ["tu aurais pu"]],
+                ["3", "s", "m", "il", ["il aurait pu"]],
+                ["1", "p", "m", "nous", ["nous aurions pu"]],
+                ["2", "p", "m", "vous", ["vous auriez pu"]],
+                ["3", "p", "m", "ils", ["ils auraient pu"]],
             ],
-            "imparfait": [
-                "je pouvais",
-                "tu pouvais",
-                "il pouvait",
-                "nous pouvions",
-                "vous pouviez",
-                "ils pouvaient",
+            "présent": [
+                ["1", "s", "m", "je", ["je pourrais"]],
+                ["2", "s", "m", "tu", ["tu pourrais"]],
+                ["3", "s", "m", "il", ["il pourrait"]],
+                ["1", "p", "m", "nous", ["nous pourrions"]],
+                ["2", "p", "m", "vous", ["vous pourriez"]],
+                ["3", "p", "m", "ils", ["ils pourraient"]],
+            ],
+        },
+        "imperatif": {"imperatif-passé": [], "imperatif-présent": []},
+        "indicatif": {
+            "futur-antérieur": [
+                ["1", "s", "m", "je", ["j'aurai pu"]],
+                ["2", "s", "m", "tu", ["tu auras pu"]],
+                ["3", "s", "m", "il", ["il aura pu"]],
+                ["1", "p", "m", "nous", ["nous aurons pu"]],
+                ["2", "p", "m", "vous", ["vous aurez pu"]],
+                ["3", "p", "m", "ils", ["ils auront pu"]],
             ],
             "futur-simple": [
-                "je pourrai",
-                "tu pourras",
-                "il pourra",
-                "nous pourrons",
-                "vous pourrez",
-                "ils pourront",
-            ],
-            "passé-simple": [
-                "je pus",
-                "tu pus",
-                "il put",
-                "nous pûmes",
-                "vous pûtes",
-                "ils purent",
-            ],
-            "passé-composé": [
-                "j'ai pu",
-                "tu as pu",
-                "il a pu",
-                "nous avons pu",
-                "vous avez pu",
-                "ils ont pu",
-            ],
-            "plus-que-parfait": [
-                "j'avais pu",
-                "tu avais pu",
-                "il avait pu",
-                "nous avions pu",
-                "vous aviez pu",
-                "ils avaient pu",
-            ],
-            "futur-antérieur": [
-                "j'aurai pu",
-                "tu auras pu",
-                "il aura pu",
-                "nous aurons pu",
-                "vous aurez pu",
-                "ils auront pu",
-            ],
-            "passé-antérieur": [
-                "j'eus pu",
-                "tu eus pu",
-                "il eut pu",
-                "nous eûmes pu",
-                "vous eûtes pu",
-                "ils eurent pu",
-            ],
-        },
-        "conditionnel": {
-            "présent": [
-                "je pourrais",
-                "tu pourrais",
-                "il pourrait",
-                "nous pourrions",
-                "vous pourriez",
-                "ils pourraient",
-            ],
-            "passé": [
-                "j'aurais pu",
-                "tu aurais pu",
-                "il aurait pu",
-                "nous aurions pu",
-                "vous auriez pu",
-                "ils auraient pu",
-            ],
-        },
-        "subjonctif": {
-            "présent": [
-                "que je puisse",
-                "que tu puisses",
-                "qu'il puisse",
-                "que nous puissions",
-                "que vous puissiez",
-                "qu'ils puissent",
+                ["1", "s", "m", "je", ["je pourrai"]],
+                ["2", "s", "m", "tu", ["tu pourras"]],
+                ["3", "s", "m", "il", ["il pourra"]],
+                ["1", "p", "m", "nous", ["nous pourrons"]],
+                ["2", "p", "m", "vous", ["vous pourrez"]],
+                ["3", "p", "m", "ils", ["ils pourront"]],
             ],
             "imparfait": [
-                "que je pusse",
-                "que tu pusses",
-                "qu'il pût",
-                "que nous pussions",
-                "que vous pussiez",
-                "qu'ils pussent",
+                ["1", "s", "m", "je", ["je pouvais"]],
+                ["2", "s", "m", "tu", ["tu pouvais"]],
+                ["3", "s", "m", "il", ["il pouvait"]],
+                ["1", "p", "m", "nous", ["nous pouvions"]],
+                ["2", "p", "m", "vous", ["vous pouviez"]],
+                ["3", "p", "m", "ils", ["ils pouvaient"]],
             ],
-            "passé": [
-                "que j'aie pu",
-                "que tu aies pu",
-                "qu'il ait pu",
-                "que nous ayons pu",
-                "que vous ayez pu",
-                "qu'ils aient pu",
+            "passé-antérieur": [
+                ["1", "s", "m", "je", ["j'eus pu"]],
+                ["2", "s", "m", "tu", ["tu eus pu"]],
+                ["3", "s", "m", "il", ["il eut pu"]],
+                ["1", "p", "m", "nous", ["nous eûmes pu"]],
+                ["2", "p", "m", "vous", ["vous eûtes pu"]],
+                ["3", "p", "m", "ils", ["ils eurent pu"]],
+            ],
+            "passé-composé": [
+                ["1", "s", "m", "je", ["j'ai pu"]],
+                ["2", "s", "m", "tu", ["tu as pu"]],
+                ["3", "s", "m", "il", ["il a pu"]],
+                ["1", "p", "m", "nous", ["nous avons pu"]],
+                ["2", "p", "m", "vous", ["vous avez pu"]],
+                ["3", "p", "m", "ils", ["ils ont pu"]],
+            ],
+            "passé-simple": [
+                ["1", "s", "m", "je", ["je pus"]],
+                ["2", "s", "m", "tu", ["tu pus"]],
+                ["3", "s", "m", "il", ["il put"]],
+                ["1", "p", "m", "nous", ["nous pûmes"]],
+                ["2", "p", "m", "vous", ["vous pûtes"]],
+                ["3", "p", "m", "ils", ["ils purent"]],
             ],
             "plus-que-parfait": [
-                "que j'eusse pu",
-                "que tu eusses pu",
-                "qu'il eût pu",
-                "que nous eussions pu",
-                "que vous eussiez pu",
-                "qu'ils eussent pu",
+                ["1", "s", "m", "je", ["j'avais pu"]],
+                ["2", "s", "m", "tu", ["tu avais pu"]],
+                ["3", "s", "m", "il", ["il avait pu"]],
+                ["1", "p", "m", "nous", ["nous avions pu"]],
+                ["2", "p", "m", "vous", ["vous aviez pu"]],
+                ["3", "p", "m", "ils", ["ils avaient pu"]],
+            ],
+            "présent": [
+                ["1", "s", "m", "je", ["je peux", "je puis"]],
+                ["2", "s", "m", "tu", ["tu peux"]],
+                ["3", "s", "m", "il", ["il peut"]],
+                ["1", "p", "m", "nous", ["nous pouvons"]],
+                ["2", "p", "m", "vous", ["vous pouvez"]],
+                ["3", "p", "m", "ils", ["ils peuvent"]],
             ],
         },
-        "imperatif": {"imperatif-présent": [], "imperatif-passé": []},
+        "infinitif": {"infinitif-présent": [["1", "s", "m", "je", ["pouvoir"]]]},
         "participe": {
-            "participe-présent": ["pouvant"],
-            "participe-passé": ["pu", "pus", "pue", "pues"],
+            "participe-passé": [
+                [None, "s", "m", "je", ["pu"]],
+                [None, "p", "m", "nous", ["pus"]],
+                [None, "s", "m", "je", ["pue"]],
+                [None, "p", "m", "nous", ["pues"]],
+            ],
+            "participe-présent": [[None, "s", "m", "je", ["pouvant"]]],
         },
+        "subjonctif": {
+            "imparfait": [
+                ["1", "s", "m", "je", ["que je pusse"]],
+                ["2", "s", "m", "tu", ["que tu pusses"]],
+                ["3", "s", "m", "il", ["qu'il pût"]],
+                ["1", "p", "m", "nous", ["que nous pussions"]],
+                ["2", "p", "m", "vous", ["que vous pussiez"]],
+                ["3", "p", "m", "ils", ["qu'ils pussent"]],
+            ],
+            "passé": [
+                ["1", "s", "m", "je", ["que j'aie pu"]],
+                ["2", "s", "m", "tu", ["que tu aies pu"]],
+                ["3", "s", "m", "il", ["qu'il ait pu"]],
+                ["1", "p", "m", "nous", ["que nous ayons pu"]],
+                ["2", "p", "m", "vous", ["que vous ayez pu"]],
+                ["3", "p", "m", "ils", ["qu'ils aient pu"]],
+            ],
+            "plus-que-parfait": [
+                ["1", "s", "m", "je", ["que j'eusse pu"]],
+                ["2", "s", "m", "tu", ["que tu eusses pu"]],
+                ["3", "s", "m", "il", ["qu'il eût pu"]],
+                ["1", "p", "m", "nous", ["que nous eussions pu"]],
+                ["2", "p", "m", "vous", ["que vous eussiez pu"]],
+                ["3", "p", "m", "ils", ["qu'ils eussent pu"]],
+            ],
+            "présent": [
+                ["1", "s", "m", "je", ["que je puisse"]],
+                ["2", "s", "m", "tu", ["que tu puisses"]],
+                ["3", "s", "m", "il", ["qu'il puisse"]],
+                ["1", "p", "m", "nous", ["que nous puissions"]],
+                ["2", "p", "m", "vous", ["que vous puissiez"]],
+                ["3", "p", "m", "ils", ["qu'ils puissent"]],
+            ],
+        },
+    },
+    "verb": {
+        "infinitive": "pouvoir",
+        "pred_score": 1.0,
+        "predicted": False,
+        "stem": "p",
+        "template": "p:ouvoir",
+        "translation_en": "power",
     },
 }
 
+
 expected_resp_conj_pleuvoir = {
-    "verb": {
-        "infinitive": "pleuvoir",
-        "predicted": False,
-        "pred_score": 1.0,
-        "template": "pl:euvoir",
-        "translation_en": "rain",
-        "stem": "pl",
-    },
     "moods": {
-        "infinitif": {"infinitif-présent": ["pleuvoir"]},
-        "indicatif": {
-            "présent": ["il pleut", "ils pleuvent"],
-            "imparfait": ["il pleuvait", "ils pleuvaient"],
-            "futur-simple": ["il pleuvra", "ils pleuvront"],
-            "passé-simple": ["il plut", "ils plurent"],
-            "passé-composé": ["il a plu", "ils ont plu"],
-            "plus-que-parfait": ["il avait plu", "ils avaient plu"],
-            "futur-antérieur": ["il aura plu", "ils auront plu"],
-            "passé-antérieur": ["il eut plu", "ils eurent plu"],
-        },
         "conditionnel": {
-            "présent": ["il pleuvrait", "ils pleuvraient"],
-            "passé": ["il aurait plu", "ils auraient plu"],
+            "passé": [
+                ["3", "s", "m", "il", ["il aurait plu"]],
+                ["3", "p", "m", "ils", ["ils auraient plu"]],
+            ],
+            "présent": [
+                ["3", "s", "m", "il", ["il pleuvrait"]],
+                ["3", "p", "m", "ils", ["ils pleuvraient"]],
+            ],
+        },
+        "imperatif": {"imperatif-passé": [], "imperatif-présent": []},
+        "indicatif": {
+            "futur-antérieur": [
+                ["3", "s", "m", "il", ["il aura plu"]],
+                ["3", "p", "m", "ils", ["ils auront plu"]],
+            ],
+            "futur-simple": [
+                ["3", "s", "m", "il", ["il pleuvra"]],
+                ["3", "p", "m", "ils", ["ils pleuvront"]],
+            ],
+            "imparfait": [
+                ["3", "s", "m", "il", ["il pleuvait"]],
+                ["3", "p", "m", "ils", ["ils pleuvaient"]],
+            ],
+            "passé-antérieur": [
+                ["3", "s", "m", "il", ["il eut plu"]],
+                ["3", "p", "m", "ils", ["ils eurent plu"]],
+            ],
+            "passé-composé": [
+                ["3", "s", "m", "il", ["il a plu"]],
+                ["3", "p", "m", "ils", ["ils ont plu"]],
+            ],
+            "passé-simple": [
+                ["3", "s", "m", "il", ["il plut"]],
+                ["3", "p", "m", "ils", ["ils plurent"]],
+            ],
+            "plus-que-parfait": [
+                ["3", "s", "m", "il", ["il avait plu"]],
+                ["3", "p", "m", "ils", ["ils avaient plu"]],
+            ],
+            "présent": [
+                ["3", "s", "m", "il", ["il pleut"]],
+                ["3", "p", "m", "ils", ["ils pleuvent"]],
+            ],
+        },
+        "infinitif": {"infinitif-présent": [["1", "s", "m", "je", ["pleuvoir"]]]},
+        "participe": {
+            "participe-passé": [
+                [None, "s", "m", "je", ["plu"]],
+                [None, "p", "m", "nous", ["plus"]],
+                [None, "s", "m", "je", ["plue"]],
+                [None, "p", "m", "nous", ["plues"]],
+            ],
+            "participe-présent": [[None, "s", "m", "je", ["pleuvant"]]],
         },
         "subjonctif": {
-            "présent": ["qu'il pleuve", "qu'ils pleuvent"],
-            "imparfait": ["qu'il plût", "qu'ils plussent"],
-            "passé": ["qu'il ait plu", "qu'ils aient plu"],
-            "plus-que-parfait": ["qu'il eût plu", "qu'ils eussent plu"],
+            "imparfait": [
+                ["3", "s", "m", "il", ["qu'il plût"]],
+                ["3", "p", "m", "ils", ["qu'ils plussent"]],
+            ],
+            "passé": [
+                ["3", "s", "m", "il", ["qu'il ait plu"]],
+                ["3", "p", "m", "ils", ["qu'ils aient plu"]],
+            ],
+            "plus-que-parfait": [
+                ["3", "s", "m", "il", ["qu'il eût plu"]],
+                ["3", "p", "m", "ils", ["qu'ils eussent plu"]],
+            ],
+            "présent": [
+                ["3", "s", "m", "il", ["qu'il pleuve"]],
+                ["3", "p", "m", "ils", ["qu'ils pleuvent"]],
+            ],
         },
-        "imperatif": {"imperatif-présent": [], "imperatif-passé": []},
-        "participe": {
-            "participe-présent": ["pleuvant"],
-            "participe-passé": ["plu", "plus", "plue", "plues"],
-        },
+    },
+    "verb": {
+        "infinitive": "pleuvoir",
+        "pred_score": 1.0,
+        "predicted": False,
+        "stem": "pl",
+        "template": "pl:euvoir",
+        "translation_en": "rain",
     },
 }
 
 expected_resp_conj_se_lever = {
-    "verb": {
-        "infinitive": "lever",
-        "predicted": False,
-        "pred_score": 1.0,
-        "template": "l:ever",
-        "translation_en": "lift",
-        "stem": "l",
-    },
     "moods": {
-        "infinitif": {"infinitif-présent": ["se lever"]},
-        "indicatif": {
-            "présent": [
-                "je me lève",
-                "tu te lèves",
-                "il se lève",
-                "nous nous levons",
-                "vous vous levez",
-                "ils se lèvent",
-            ],
-            "imparfait": [
-                "je me levais",
-                "tu te levais",
-                "il se levait",
-                "nous nous levions",
-                "vous vous leviez",
-                "ils se levaient",
-            ],
-            "futur-simple": [
-                "je me lèverai",
-                "tu te lèveras",
-                "il se lèvera",
-                "nous nous lèverons",
-                "vous vous lèverez",
-                "ils se lèveront",
-            ],
-            "passé-simple": [
-                "je me levai",
-                "tu te levas",
-                "il se leva",
-                "nous nous levâmes",
-                "vous vous levâtes",
-                "ils se levèrent",
-            ],
-            "passé-composé": [
-                "je me suis levé",
-                "tu t'es levé",
-                "il s'est levé",
-                "nous nous sommes levés",
-                "vous vous êtes levés",
-                "ils se sont levés",
-            ],
-            "plus-que-parfait": [
-                "je m'étais levé",
-                "tu t'étais levé",
-                "il s'était levé",
-                "nous nous étions levés",
-                "vous vous étiez levés",
-                "ils s'étaient levés",
-            ],
-            "futur-antérieur": [
-                "je me serai levé",
-                "tu te seras levé",
-                "il se sera levé",
-                "nous nous serons levés",
-                "vous vous serez levés",
-                "ils se seront levés",
-            ],
-            "passé-antérieur": [
-                "je me fus levé",
-                "tu te fus levé",
-                "il se fut levé",
-                "nous nous fûmes levés",
-                "vous vous fûtes levés",
-                "ils se furent levés",
-            ],
-        },
         "conditionnel": {
-            "présent": [
-                "je me lèverais",
-                "tu te lèverais",
-                "il se lèverait",
-                "nous nous lèverions",
-                "vous vous lèveriez",
-                "ils se lèveraient",
-            ],
             "passé": [
-                "je me serais levé",
-                "tu te serais levé",
-                "il se serait levé",
-                "nous nous serions levés",
-                "vous vous seriez levés",
-                "ils se seraient levés",
+                ["1", "s", "m", "je", ["je me serais levé"]],
+                ["2", "s", "m", "tu", ["tu te serais levé"]],
+                ["3", "s", "m", "il", ["il se serait levé"]],
+                ["1", "p", "m", "nous", ["nous nous serions levés"]],
+                ["2", "p", "m", "vous", ["vous vous seriez levés"]],
+                ["3", "p", "m", "ils", ["ils se seraient levés"]],
             ],
-        },
-        "subjonctif": {
             "présent": [
-                "que je me lève",
-                "que tu te lèves",
-                "qu'il se lève",
-                "que nous nous levions",
-                "que vous vous leviez",
-                "qu'ils se lèvent",
-            ],
-            "imparfait": [
-                "que je me levasse",
-                "que tu te levasses",
-                "qu'il se levât",
-                "que nous nous levassions",
-                "que vous vous levassiez",
-                "qu'ils se levassent",
-            ],
-            "passé": [
-                "que je me sois levé",
-                "que tu te sois levé",
-                "qu'il se soit levé",
-                "que nous nous soyons levés",
-                "que vous vous soyez levés",
-                "qu'ils se soient levés",
-            ],
-            "plus-que-parfait": [
-                "que je me fusse levé",
-                "que tu te fusses levé",
-                "qu'il se fût levé",
-                "que nous nous fussions levés",
-                "que vous vous fussiez levés",
-                "qu'ils se fussent levés",
+                ["1", "s", "m", "je", ["je me lèverais"]],
+                ["2", "s", "m", "tu", ["tu te lèverais"]],
+                ["3", "s", "m", "il", ["il se lèverait"]],
+                ["1", "p", "m", "nous", ["nous nous lèverions"]],
+                ["2", "p", "m", "vous", ["vous vous lèveriez"]],
+                ["3", "p", "m", "ils", ["ils se lèveraient"]],
             ],
         },
         "imperatif": {
-            "imperatif-présent": ["lève-toi", "levons-nous", "levez-vous"],
             "imperatif-passé": [],
-        },
-        "participe": {
-            "participe-présent": ["se levant"],
-            "participe-passé": [
-                "s'étant levé",
-                "s'étant levés",
-                "s'étant levée",
-                "s'étant levées",
+            "imperatif-présent": [
+                ["2", "s", "m", "tu", ["lève-toi"]],
+                ["1", "p", "m", "nous", ["levons-nous"]],
+                ["2", "p", "m", "vous", ["levez-vous"]],
             ],
         },
+        "indicatif": {
+            "futur-antérieur": [
+                ["1", "s", "m", "je", ["je me serai levé"]],
+                ["2", "s", "m", "tu", ["tu te seras levé"]],
+                ["3", "s", "m", "il", ["il se sera levé"]],
+                ["1", "p", "m", "nous", ["nous nous serons levés"]],
+                ["2", "p", "m", "vous", ["vous vous serez levés"]],
+                ["3", "p", "m", "ils", ["ils se seront levés"]],
+            ],
+            "futur-simple": [
+                ["1", "s", "m", "je", ["je me lèverai"]],
+                ["2", "s", "m", "tu", ["tu te lèveras"]],
+                ["3", "s", "m", "il", ["il se lèvera"]],
+                ["1", "p", "m", "nous", ["nous nous lèverons"]],
+                ["2", "p", "m", "vous", ["vous vous lèverez"]],
+                ["3", "p", "m", "ils", ["ils se lèveront"]],
+            ],
+            "imparfait": [
+                ["1", "s", "m", "je", ["je me levais"]],
+                ["2", "s", "m", "tu", ["tu te levais"]],
+                ["3", "s", "m", "il", ["il se levait"]],
+                ["1", "p", "m", "nous", ["nous nous levions"]],
+                ["2", "p", "m", "vous", ["vous vous leviez"]],
+                ["3", "p", "m", "ils", ["ils se levaient"]],
+            ],
+            "passé-antérieur": [
+                ["1", "s", "m", "je", ["je me fus levé"]],
+                ["2", "s", "m", "tu", ["tu te fus levé"]],
+                ["3", "s", "m", "il", ["il se fut levé"]],
+                ["1", "p", "m", "nous", ["nous nous fûmes levés"]],
+                ["2", "p", "m", "vous", ["vous vous fûtes levés"]],
+                ["3", "p", "m", "ils", ["ils se furent levés"]],
+            ],
+            "passé-composé": [
+                ["1", "s", "m", "je", ["je me suis levé"]],
+                ["2", "s", "m", "tu", ["tu t'es levé"]],
+                ["3", "s", "m", "il", ["il s'est levé"]],
+                ["1", "p", "m", "nous", ["nous nous sommes levés"]],
+                ["2", "p", "m", "vous", ["vous vous êtes levés"]],
+                ["3", "p", "m", "ils", ["ils se sont levés"]],
+            ],
+            "passé-simple": [
+                ["1", "s", "m", "je", ["je me levai"]],
+                ["2", "s", "m", "tu", ["tu te levas"]],
+                ["3", "s", "m", "il", ["il se leva"]],
+                ["1", "p", "m", "nous", ["nous nous levâmes"]],
+                ["2", "p", "m", "vous", ["vous vous levâtes"]],
+                ["3", "p", "m", "ils", ["ils se levèrent"]],
+            ],
+            "plus-que-parfait": [
+                ["1", "s", "m", "je", ["je m'étais levé"]],
+                ["2", "s", "m", "tu", ["tu t'étais levé"]],
+                ["3", "s", "m", "il", ["il s'était levé"]],
+                ["1", "p", "m", "nous", ["nous nous étions levés"]],
+                ["2", "p", "m", "vous", ["vous vous étiez levés"]],
+                ["3", "p", "m", "ils", ["ils s'étaient levés"]],
+            ],
+            "présent": [
+                ["1", "s", "m", "je", ["je me lève"]],
+                ["2", "s", "m", "tu", ["tu te lèves"]],
+                ["3", "s", "m", "il", ["il se lève"]],
+                ["1", "p", "m", "nous", ["nous nous levons"]],
+                ["2", "p", "m", "vous", ["vous vous levez"]],
+                ["3", "p", "m", "ils", ["ils se lèvent"]],
+            ],
+        },
+        "infinitif": {"infinitif-présent": [["1", "s", "m", "je", ["se lever"]]]},
+        "participe": {
+            "participe-passé": [
+                [None, "s", "m", "je", ["étant levé"]],
+                [None, "p", "m", "nous", ["étant levés"]],
+                [None, "s", "m", "je", ["étant levée"]],
+                [None, "p", "m", "nous", ["étant levées"]],
+            ],
+            "participe-présent": [[None, "s", "m", "je", ["levant"]]],
+        },
+        "subjonctif": {
+            "imparfait": [
+                ["1", "s", "m", "je", ["que je me levasse"]],
+                ["2", "s", "m", "tu", ["que tu te levasses"]],
+                ["3", "s", "m", "il", ["qu'il se levât"]],
+                ["1", "p", "m", "nous", ["que nous nous levassions"]],
+                ["2", "p", "m", "vous", ["que vous vous levassiez"]],
+                ["3", "p", "m", "ils", ["qu'ils se levassent"]],
+            ],
+            "passé": [
+                ["1", "s", "m", "je", ["que je me sois levé"]],
+                ["2", "s", "m", "tu", ["que tu te sois levé"]],
+                ["3", "s", "m", "il", ["qu'il se soit levé"]],
+                ["1", "p", "m", "nous", ["que nous nous soyons levés"]],
+                ["2", "p", "m", "vous", ["que vous vous soyez levés"]],
+                ["3", "p", "m", "ils", ["qu'ils se soient levés"]],
+            ],
+            "plus-que-parfait": [
+                ["1", "s", "m", "je", ["que je me fusse levé"]],
+                ["2", "s", "m", "tu", ["que tu te fusses levé"]],
+                ["3", "s", "m", "il", ["qu'il se fût levé"]],
+                ["1", "p", "m", "nous", ["que nous nous fussions levés"]],
+                ["2", "p", "m", "vous", ["que vous vous fussiez levés"]],
+                ["3", "p", "m", "ils", ["qu'ils se fussent levés"]],
+            ],
+            "présent": [
+                ["1", "s", "m", "je", ["que je me lève"]],
+                ["2", "s", "m", "tu", ["que tu te lèves"]],
+                ["3", "s", "m", "il", ["qu'il se lève"]],
+                ["1", "p", "m", "nous", ["que nous nous levions"]],
+                ["2", "p", "m", "vous", ["que vous vous leviez"]],
+                ["3", "p", "m", "ils", ["qu'ils se lèvent"]],
+            ],
+        },
+    },
+    "verb": {
+        "infinitive": "lever",
+        "pred_score": 1.0,
+        "predicted": False,
+        "stem": "l",
+        "template": "l:ever",
+        "translation_en": "lift",
     },
 }
 
@@ -712,7 +803,7 @@ expected_resp_conj_se_lever = {
     ],
 )
 def test_conjugator_conjugate(cg, infinitive, expected_resp):
-    assert cg.conjugate(infinitive) == expected_resp
+    assert_json_str_equal(str(cg.conjugate(infinitive)), json.dumps(expected_resp))
 
 
 def test_conjugator_conjugate_invalid_mood(cg):

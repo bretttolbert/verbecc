@@ -2766,10 +2766,10 @@ def test_inflector_ca_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    assert (
-        cg._inflector.get_pronouns(person, number, gender, is_reflexive=is_reflexive)[0]
-        == expected_result
-    )
+    pronoun = cg._inflector.get_pronouns(person, number, gender)[0]
+    if is_reflexive:
+        pronoun = cg._inflector.make_pronoun_reflexive(pronoun)
+    assert pronoun == expected_result
 
 
 def test_inflector_conjugate(cg):

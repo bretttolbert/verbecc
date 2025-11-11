@@ -1,11 +1,14 @@
 from abc import ABC, abstractmethod
 from typing import Iterator, Iterable, Union, Dict, List, Optional, Tuple
+from jsbeautifier import beautify
 
+from verbecc.src.defs.constants import config
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.gender import Gender
+from verbecc.src.utils.jsbeautifier_opts import JSBeautifierOpts
 
 import json
 
@@ -57,14 +60,21 @@ class AbstractConjugation:
         """The data of this object as primitive types (JSON-serializable)"""
         pass
 
+    def __repr__(self) -> str:
+        return str(self)
+
     def __str__(self) -> str:
         """The data of this object as a pretty-formatted JSON string"""
-        return json.dumps(
+        pretty_json = json.dumps(
             self.data,
             allow_nan=False,
             sort_keys=True,
             indent=4,
+            ensure_ascii=config.JSON_OPT_ENSURE_ASCII,
         )
+        if config.JSBEAUTIFIER_ENABLE:
+            pretty_json = beautify(pretty_json, JSBeautifierOpts.get_opts())
+        return pretty_json
 
 
 class Conjugation(AbstractConjugation):
@@ -85,7 +95,7 @@ class Conjugation(AbstractConjugation):
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
         pronoun: Optional[Pronoun] = None,
-        conjugations: List[str] = [],
+        conjugations: Optional[List[str]] = None,
     ):
         """
         :param person (optional): The grammatical person, i.e. first, second or third person.
@@ -105,9 +115,12 @@ class Conjugation(AbstractConjugation):
         self._number = number
         self._gender = gender
         self._pronoun = pronoun
-        self._conjugations = conjugations
+        if conjugations is not None:
+            self._conjugations = conjugations
+        else:
+            self._conjugations = []
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         if not isinstance(other, Conjugation):
             raise TypeError
         return (
@@ -116,6 +129,20 @@ class Conjugation(AbstractConjugation):
             and self._gender == other._gender
             and self._pronoun == other._pronoun
             and self._conjugations == other._conjugations
+        )
+
+    def __ne__(self, other) -> bool:
+        return not self.__eq__(other)
+
+    def __hash__(self) -> int:
+        return hash(
+            (
+                self._person,
+                self._number,
+                self._gender,
+                self._pronoun,
+                self._conjugations,
+            )
         )
 
     def __getitem__(self, index):
@@ -208,13 +235,22 @@ class TenseConjugation(AbstractConjugation):
     including alternate conjugations (if applicable).
     """
 
-    def __init__(self, data: List[Conjugation] = []) -> None:
-        self._data = data
+    def __init__(self, data: Optional[List[Conjugation]] = None) -> None:
+        if data is not None:
+            self._data = data
+        else:
+            self._data = []
 
     def __eq__(self, other) -> bool:
         if not isinstance(other, TenseConjugation):
             raise TypeError
         return self._data == other._data
+
+    def __ne__(self, other) -> bool:
+        return not self.__eq__(other)
+
+    def __hash__(self) -> int:
+        return hash((self._data))
 
     def __getitem__(self, index: int) -> Conjugation:
         return self._data[index]
@@ -249,13 +285,22 @@ class MoodConjugation(AbstractConjugation):
     including alternate conjugations (if applicable).
     """
 
-    def __init__(self, data: Dict[Tense, TenseConjugation] = {}) -> None:
-        self._data = data
+    def __init__(self, data: Optional[Dict[Tense, TenseConjugation]] = None) -> None:
+        if data is not None:
+            self._data = data
+        else:
+            self._data = {}
 
     def __eq__(self, other) -> bool:
         if not isinstance(other, MoodConjugation):
             raise TypeError
         return self._data == other._data
+
+    def __ne__(self, other) -> bool:
+        return not self.__eq__(other)
+
+    def __hash__(self) -> int:
+        return hash((self._data))
 
     def __getitem__(self, key: Tense) -> TenseConjugation:
         return self._data[key]
@@ -293,14 +338,22 @@ class MoodsConjugation(AbstractConjugation):
 
     def __init__(
         self,
-        data: Dict[Mood, MoodConjugation] = {},
+        data: Optional[Dict[Mood, MoodConjugation]] = None,
     ) -> None:
-        self._data = data
+        self._data = {}
+        if data is not None:
+            self._data = data
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         if not isinstance(other, MoodsConjugation):
             raise TypeError
         return self._data == other._data
+
+    def __ne__(self, other) -> bool:
+        return not self.__eq__(other)
+
+    def __hash__(self) -> int:
+        return hash((self._data))
 
     def __getitem__(self, key: Mood) -> MoodConjugation:
         return self._data[key]
@@ -358,6 +411,21 @@ class VerbInfo(AbstractConjugation):
             and self.stem == other.stem
         )
 
+    def __ne__(self, other) -> bool:
+        return not self.__eq__(other)
+
+    def __hash__(self) -> int:
+        return hash(
+            (
+                self.infinitive,
+                self.predicted,
+                self.pred_score,
+                self.template,
+                self.translation_en,
+                self.stem,
+            )
+        )
+
     @property
     def data(self) -> VerbInfoData:
         return {
@@ -387,6 +455,12 @@ class CompleteConjugation(AbstractConjugation):
             self._verb_info == other._verb_info
             and self._moods_conjugation == other._moods_conjugation
         )
+
+    def __ne__(self, other) -> bool:
+        return not self.__eq__(other)
+
+    def __hash__(self) -> int:
+        return hash((self._verb_info, self._moods_conjugation))
 
     @property
     def verb(self) -> VerbInfo:
