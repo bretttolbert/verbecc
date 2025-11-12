@@ -2732,9 +2732,8 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.ca, mood).parse(tense_elem)
-    out = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
-    assert len(out) == 6
-    assert out == [
+    tc = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
+    assert [c[0] for c in tc] == [
         ["jo parlo"],
         ["tu parles"],
         ["ell parla"],
@@ -2780,86 +2779,116 @@ def test_inflector_ca_get_pronouns(
 
 
 def test_inflector_conjugate_ser(cg):
-    assert cg.conjugate("ser") == {
-        "verb": {
-            "infinitive": "ser",
-            "predicted": False,
-            "pred_score": 1.0,
-            "template": "és:ser",
-            "translation_en": "be",
-            "stem": "",
-        },
+    cc = cg.conjugate("ser")
+    EXPECTED_RESULT = {
         "moods": {
-            Moods.ca.Indicatiu: {
-                Tenses.ca.Present: [
-                    "jo sóc",
-                    "tu ets",
-                    "ell és",
-                    "nosaltres som",
-                    "vosaltres sou",
-                    "ells són",
-                ],
-                "imperfet": [
-                    "jo era",
-                    "tu eres",
-                    "ell era",
-                    "nosaltres érem",
-                    "vosaltres éreu",
-                    "ells eren",
-                ],
-                "passat-simple": [
-                    "jo fui",
-                    "tu fores",
-                    "ell fou",
-                    "nosaltres fórem",
-                    "vosaltres fóreu",
-                    "ells foren",
-                ],
-                "futur": [
-                    "jo seré",
-                    "tu seràs",
-                    "ell serà",
-                    "nosaltres serem",
-                    "vosaltres sereu",
-                    "ells seran",
-                ],
-            },
-            "subjuntiu": {
-                Tenses.ca.Present: [
-                    "jo sigui",
-                    "tu siguis",
-                    "ell sigui",
-                    "nosaltres siguem",
-                    "vosaltres sigueu",
-                    "ells siguin",
-                ],
-                "imperfet": [
-                    "jo fos",
-                    "tu fossis",
-                    "ell fos",
-                    "nosaltres fóssim",
-                    "vosaltres fóssiu",
-                    "ells fossin",
-                ],
-            },
-            "imperatiu": {
-                "imperatiu-present": ["sigues", "sigui", "siguem", "sigueu", "siguin"]
-            },
             "condicional": {
-                Tenses.ca.Present: [
-                    "jo seria",
-                    "tu series",
-                    "ell seria",
-                    "nosaltres seríem",
-                    "vosaltres seríeu",
-                    "ells serien",
+                "present": [
+                    ["1", "s", "m", "jo", ["jo seria", "jo fora"]],
+                    ["2", "s", "m", "tu", ["tu series", "tu fores"]],
+                    ["3", "s", "m", "ell", ["ell seria", "ell fora"]],
+                    [
+                        "1",
+                        "p",
+                        "m",
+                        "nosaltres",
+                        ["nosaltres seríem", "nosaltres fórem"],
+                    ],
+                    [
+                        "2",
+                        "p",
+                        "m",
+                        "vosaltres",
+                        ["vosaltres seríeu", "vosaltres fóreu"],
+                    ],
+                    ["3", "p", "m", "ells", ["ells serien", "ells foren"]],
                 ]
             },
-            "infinitiu": {"infinitiu-present": ["ser"]},
-            "gerundi": {"gerundi": ["sent"]},
-            "particip": {"particip": ["estat", "estada", "estats", "estades"]},
+            "gerundi": {"gerundi": [["1", "s", "m", "jo", ["sent", "essent"]]]},
+            "imperatiu": {
+                "imperatiu-present": [
+                    ["2", "s", "m", "tu", ["sigues"]],
+                    ["3", "s", "m", "ell", ["sigui"]],
+                    ["1", "p", "m", "nosaltres", ["siguem"]],
+                    ["2", "p", "m", "vosaltres", ["sigueu"]],
+                    ["3", "p", "m", "ells", ["siguin"]],
+                ]
+            },
+            "indicatiu": {
+                "futur": [
+                    ["1", "s", "m", "jo", ["jo seré"]],
+                    ["2", "s", "m", "tu", ["tu seràs"]],
+                    ["3", "s", "m", "ell", ["ell serà"]],
+                    ["1", "p", "m", "nosaltres", ["nosaltres serem"]],
+                    ["2", "p", "m", "vosaltres", ["vosaltres sereu"]],
+                    ["3", "p", "m", "ells", ["ells seran"]],
+                ],
+                "imperfet": [
+                    ["1", "s", "m", "jo", ["jo era"]],
+                    ["2", "s", "m", "tu", ["tu eres"]],
+                    ["3", "s", "m", "ell", ["ell era"]],
+                    ["1", "p", "m", "nosaltres", ["nosaltres érem"]],
+                    ["2", "p", "m", "vosaltres", ["vosaltres éreu"]],
+                    ["3", "p", "m", "ells", ["ells eren"]],
+                ],
+                "passat-simple": [
+                    ["1", "s", "m", "jo", ["jo fui"]],
+                    ["2", "s", "m", "tu", ["tu fores"]],
+                    ["3", "s", "m", "ell", ["ell fou"]],
+                    ["1", "p", "m", "nosaltres", ["nosaltres fórem"]],
+                    ["2", "p", "m", "vosaltres", ["vosaltres fóreu"]],
+                    ["3", "p", "m", "ells", ["ells foren"]],
+                ],
+                "present": [
+                    ["1", "s", "m", "jo", ["jo sóc"]],
+                    ["2", "s", "m", "tu", ["tu ets"]],
+                    ["3", "s", "m", "ell", ["ell és"]],
+                    ["1", "p", "m", "nosaltres", ["nosaltres som"]],
+                    ["2", "p", "m", "vosaltres", ["vosaltres sou"]],
+                    ["3", "p", "m", "ells", ["ells són"]],
+                ],
+            },
+            "infinitiu": {
+                "infinitiu-present": [["1", "s", "m", "jo", ["ser", "ésser"]]]
+            },
+            "particip": {
+                "particip": [
+                    [None, "s", "m", None, ["estat", "sigut"]],
+                    [None, "p", "f", None, ["estada", "siguda"]],
+                    [None, "s", "m", None, ["estats", "siguts"]],
+                    [None, "p", "f", None, ["estades", "sigudes"]],
+                ]
+            },
+            "subjuntiu": {
+                "imperfet": [
+                    ["1", "s", "m", "jo", ["jo fos"]],
+                    ["2", "s", "m", "tu", ["tu fossis"]],
+                    ["3", "s", "m", "ell", ["ell fos"]],
+                    ["1", "p", "m", "nosaltres", ["nosaltres fóssim"]],
+                    ["2", "p", "m", "vosaltres", ["vosaltres fóssiu"]],
+                    ["3", "p", "m", "ells", ["ells fossin"]],
+                ],
+                "present": [
+                    ["1", "s", "m", "jo", ["jo sigui"]],
+                    ["2", "s", "m", "tu", ["tu siguis"]],
+                    ["3", "s", "m", "ell", ["ell sigui"]],
+                    ["1", "p", "m", "nosaltres", ["nosaltres siguem"]],
+                    ["2", "p", "m", "vosaltres", ["vosaltres sigueu"]],
+                    ["3", "p", "m", "ells", ["ells siguin"]],
+                ],
+            },
+        },
+        "verb": {
+            "infinitive": "ser",
+            "pred_score": 1.0,
+            "predicted": False,
+            "stem": "",
+            "template": "és:ser",
+            "translation_en": "be",
         },
     }
+
+    assert_json_str_equal(str(cc), json.dumps(EXPECTED_RESULT))
 
 
 def test_inflector_conjugate_noconjpronouns(cg):

@@ -19,6 +19,7 @@ from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import (
     Mood,
+    Moods,
     MoodCa,
     MoodEs,
     MoodFr,
@@ -28,6 +29,7 @@ from verbecc.src.defs.types.mood import (
 )
 from verbecc.src.defs.types.tense import (
     Tense,
+    Tenses,
     TenseCa,
     TenseEs,
     TenseFr,

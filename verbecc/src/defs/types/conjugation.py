@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Iterator, Iterable, Union, Dict, List, Optional, Tuple
+from typing import cast, Iterator, Iterable, Union, Dict, List, Optional, Tuple
 from jsbeautifier import beautify
 
 from verbecc.src.defs.constants import config
@@ -96,7 +96,7 @@ class Conjugation(AbstractConjugation):
         gender: Optional[Gender] = None,
         pronoun: Optional[Pronoun] = None,
         conjugations: Optional[List[str]] = None,
-    ):
+    ) -> None:
         """
         :param person (optional): The grammatical person, i.e. first, second or third person.
             omitted for the infinitive mood
@@ -120,7 +120,7 @@ class Conjugation(AbstractConjugation):
         else:
             self._conjugations = []
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, Conjugation):
             raise TypeError
         return (
@@ -131,7 +131,7 @@ class Conjugation(AbstractConjugation):
             and self._conjugations == other._conjugations
         )
 
-    def __ne__(self, other) -> bool:
+    def __ne__(self, other: object) -> bool:
         return not self.__eq__(other)
 
     def __hash__(self) -> int:
@@ -145,7 +145,7 @@ class Conjugation(AbstractConjugation):
             )
         )
 
-    def __getitem__(self, index):
+    def __getitem__(self, index: int) -> object | str:
         """
         Allows accessing elements using square bracket notation.
         Handles both integer indexing and slicing.
@@ -241,12 +241,12 @@ class TenseConjugation(AbstractConjugation):
         else:
             self._data = []
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, TenseConjugation):
             raise TypeError
         return self._data == other._data
 
-    def __ne__(self, other) -> bool:
+    def __ne__(self, other: object) -> bool:
         return not self.__eq__(other)
 
     def __hash__(self) -> int:
@@ -291,12 +291,12 @@ class MoodConjugation(AbstractConjugation):
         else:
             self._data = {}
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, MoodConjugation):
             raise TypeError
         return self._data == other._data
 
-    def __ne__(self, other) -> bool:
+    def __ne__(self, other: object) -> bool:
         return not self.__eq__(other)
 
     def __hash__(self) -> int:
@@ -305,7 +305,7 @@ class MoodConjugation(AbstractConjugation):
     def __getitem__(self, key: Tense) -> TenseConjugation:
         return self._data[key]
 
-    def __setitem__(self, key: Tense, value: TenseConjugation):
+    def __setitem__(self, key: Tense, value: TenseConjugation) -> None:
         self._data[key] = value
 
     def __len__(self) -> int:
@@ -322,10 +322,11 @@ class MoodConjugation(AbstractConjugation):
         return {t: tc.data for t, tc in self._data.items()}
 
     @classmethod
-    def combine(cls, *instances):
+    def combine(cls, a: object, b: object):  # type: ignore
         combined = {}
-        for instance in instances:
-            combined.update(instance._data)
+        for o in (a, b):
+            mood_conjugation_instance = cast(MoodConjugation, o)
+            combined.update(mood_conjugation_instance._data)
         return cls(combined)
 
 
@@ -344,12 +345,12 @@ class MoodsConjugation(AbstractConjugation):
         if data is not None:
             self._data = data
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, MoodsConjugation):
             raise TypeError
         return self._data == other._data
 
-    def __ne__(self, other) -> bool:
+    def __ne__(self, other: object) -> bool:
         return not self.__eq__(other)
 
     def __hash__(self) -> int:
@@ -367,7 +368,7 @@ class MoodsConjugation(AbstractConjugation):
     def __iter__(self) -> Iterable[Mood]:
         return iter(self._data)
 
-    def __contains__(self, key) -> bool:
+    def __contains__(self, key: Mood) -> bool:
         return key in self._data
 
     @property
@@ -399,7 +400,7 @@ class VerbInfo(AbstractConjugation):
         self.translation_en = translation_en
         self.stem = stem
 
-    def __eq__(self, other):
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, VerbInfo):
             raise TypeError
         return (
@@ -411,7 +412,7 @@ class VerbInfo(AbstractConjugation):
             and self.stem == other.stem
         )
 
-    def __ne__(self, other) -> bool:
+    def __ne__(self, other: object) -> bool:
         return not self.__eq__(other)
 
     def __hash__(self) -> int:
@@ -448,7 +449,7 @@ class CompleteConjugation(AbstractConjugation):
         self._verb_info = verb_info
         self._moods_conjugation = moods_conjugation
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, CompleteConjugation):
             raise TypeError
         return (
@@ -456,7 +457,7 @@ class CompleteConjugation(AbstractConjugation):
             and self._moods_conjugation == other._moods_conjugation
         )
 
-    def __ne__(self, other) -> bool:
+    def __ne__(self, other: object) -> bool:
         return not self.__eq__(other)
 
     def __hash__(self) -> int:

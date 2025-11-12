@@ -140,7 +140,15 @@ class InflectorRo(Inflector):
     def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
-        # TODO: those last three don't actually use an auxiliary verb, refactor to make aux verb optional
+        """
+        TODO: those last three don't actually use an auxiliary verb,
+        refactor to make aux verb optional
+
+        The Romanian conjunctive perfect tense is formed by using the particle "să"
+        followed by the auxiliary verb "fi" and the past participle of the main verb.
+
+        See Inflector.compound_has_no_aux_verb()
+        """
         return {
             Moods.ro.Indicativ: {
                 Tenses.ro.PerfectCompus: (Moods.ro.Indicativ, Tenses.ro.Prezent),
@@ -194,6 +202,13 @@ class InflectorRo(Inflector):
     ) -> str:
         """
         E.g. for Romanian indicativ viitor-ii this appends " fi" to make "eu am să fi avut" etc.
+
+        See also Inflector.insert_compound_aux_verb_prefix_if_applicable()
+        which is used for adding "să fi" for Conjunctiv Perfect,
+        e.g. to form "eu să fi făcut".
+
+        The Romanian conjunctive perfect tense is formed by using the particle "să"
+        followed by the auxiliary verb "fi" and the past participle of the main verb.
         """
         if (mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor2) or (
             mood == Moods.ro.Condițional and tense == Tenses.ro.Perfect
@@ -201,6 +216,9 @@ class InflectorRo(Inflector):
             return s + " fi"
         elif mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor2Popular:
             return s + " să fi"
+        # elif mood == Moods.ro.Conjunctiv and tense == Tenses.ro.Perfect:
+        #    # How was it working before without this?
+        #    return "să fi " + s
         # TODO: Research. Some sources e.g. verbix.com don't include " să"
         # elif mood == Moods.ro.Indicativ and tense == "viitor-1":
         #    return s + " să"
@@ -210,12 +228,21 @@ class InflectorRo(Inflector):
         self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
-        Used by Romanian viitor-1-popular
-        "eu o să fac, tu o să faci, ..."
+        Used for viitor-1-popular for inserting " o să "
+        e.g. "eu o să fac, tu o să faci, ..."
+
+        Used for Conjunctiv Perfect for inserting " să fi "
+        e.g. to form "eu să fi făcut".
+
+            The Romanian conjunctive perfect tense is formed by using the particle "să"
+            followed by the auxiliary verb "fi" and the past participle of the main verb.
+
         """
         if mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor1Popular:
+            return s.replace(" să ", " o să ")
+        elif mood == Moods.ro.Conjunctiv and tense == Tenses.ro.Perfect:
             tokens = s.split()
-            return tokens[0] + " o să " + tokens[1]
+            return tokens[0] + " să fi " + tokens[1]
         return s
 
     def compound_has_no_primary_verb(self, mood: Mood, tense: Tense) -> bool:
@@ -225,7 +252,14 @@ class InflectorRo(Inflector):
         return False
 
     def compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
-        """Used for Romanian conjunctiv perfect"""
+        """Used for Romanian Conjunctiv Perfect
+
+        The Romanian conjunctive perfect tense is formed by using the particle "să"
+        followed by the auxiliary verb "fi" and the past participle of the main verb.
+
+        But for the purposes of this function, we consider that it has no aux verb,
+        since "fi" is constant and not actually conjugated.
+        """
         if mood == Moods.ro.Conjunctiv and tense == Tenses.ro.Perfect:
             return True
         return False

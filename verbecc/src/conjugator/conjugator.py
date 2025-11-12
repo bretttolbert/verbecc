@@ -373,7 +373,7 @@ class Conjugator:
         ret = TenseConjugation()
         aux_conj_scalar: List[str] = []
         for pc in aux_conj:
-            if aux_uses_alternate:
+            if aux_uses_alternate and len(pc.conjugations) > 1:
                 aux_conj_scalar.append(pc.conjugations[1])
             else:
                 aux_conj_scalar.append(pc.conjugations[0])
@@ -419,7 +419,7 @@ class Conjugator:
                 aux_conj_scalar, mood, tense
             )
 
-            # for Romanian insert " o să " when appropriate
+            # for Romanian insert " să fi" or " o să " when appropriate
             # e.g. "eu o să face, tu o să faci, ..."
             aux_conj_scalar = [
                 self._inflector.insert_compound_aux_verb_prefix_if_applicable(
