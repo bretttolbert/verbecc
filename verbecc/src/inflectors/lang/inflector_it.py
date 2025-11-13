@@ -39,8 +39,7 @@ class InflectorIt(Inflector):
     ) -> None:
         super(InflectorIt, self).__init__()
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.it
 
     def is_auxiliary_verb_inflected(self, auxiliary_verb: str) -> bool:

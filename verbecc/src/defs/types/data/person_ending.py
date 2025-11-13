@@ -66,4 +66,4 @@ class PersonEnding(Element):
         return self.endings[0]
 
     def __repr__(self) -> str:
-        return f"person={self.person} number={self.number} endings={self.endings}"
+        return f"person={self.person} number={self.number} gender={self.gender} endings={self.endings}"

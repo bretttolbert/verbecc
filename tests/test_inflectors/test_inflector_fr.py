@@ -241,9 +241,12 @@ def test_pronoun_combined_vowel_h_non_aspiré(cg, infinitive, expected_result):
                 "que j'habite",
                 "que tu habites",
                 "qu'il habite",
+                "qu'elle habite",
+                "qu'on habite",
                 "que nous habitions",
                 "que vous habitiez",
                 "qu'ils habitent",
+                "qu'elles habitent",
             ],
         )
     ],
@@ -287,11 +290,9 @@ def test_inflector_fr_conjugate_compound_raser(cg):
                 Person.Third, Number.Singular, Gender.m, "il", ["qu'il ait rasé"]
             ),
             Conjugation(
-                Person.Third, Number.Singular, Gender.m, "elle", ["qu'elle ait rasé"]
+                Person.Third, Number.Singular, Gender.f, "elle", ["qu'elle ait rasé"]
             ),
-            Conjugation(
-                Person.Third, Number.Singular, Gender.m, "on", ["qu'on ait rasé"]
-            ),
+            Conjugation(Person.Third, Number.Singular, None, "on", ["qu'on ait rasé"]),
             Conjugation(
                 Person.First, Number.Plural, None, "nous", ["que nous ayons rasé"]
             ),

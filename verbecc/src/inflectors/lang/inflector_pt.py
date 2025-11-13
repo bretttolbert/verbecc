@@ -22,8 +22,7 @@ class InflectorPt(Inflector):
     ) -> None:
         super(InflectorPt, self).__init__()
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.pt
 
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:

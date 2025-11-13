@@ -351,10 +351,11 @@ class Conjugator:
         ret = TenseConjugation()
         aux_conj_scalar: List[str] = []
         for pc in aux_conj:
-            if aux_uses_alternate and len(pc.conjugations) > 1:
-                aux_conj_scalar.append(pc.conjugations[1])
+            conjugations = pc.get_conjugations()
+            if aux_uses_alternate and len(conjugations) > 1:
+                aux_conj_scalar.append(conjugations[1])
             else:
-                aux_conj_scalar.append(pc.conjugations[0])
+                aux_conj_scalar.append(conjugations[0])
 
         p_mood = self._inflector.get_participle_mood()
         p_tense = self._inflector.get_participle_tense()
@@ -437,10 +438,10 @@ class Conjugator:
                     aux_pc: Conjugation = aux_conj[i]
                     ret.append(
                         Conjugation(
-                            aux_pc.person,
-                            aux_pc.number,
-                            aux_pc.gender,
-                            aux_pc.pronoun,
+                            aux_pc.get_person(),
+                            aux_pc.get_number(),
+                            aux_pc.get_gender(),
+                            aux_pc.get_pronoun(),
                             [c],
                         )
                     )
@@ -461,10 +462,10 @@ class Conjugator:
                     hv = self._inflector.get_alternate_hv_inflection(hv)
                     ret.append(
                         Conjugation(
-                            aux_pc.person,
-                            aux_pc.number,
-                            aux_pc.gender,
-                            aux_pc.pronoun,
+                            aux_pc.get_person(),
+                            aux_pc.get_number(),
+                            aux_pc.get_gender(),
+                            aux_pc.get_pronoun(),
                             [hv + " " + pc_value],
                         )
                     )
@@ -492,8 +493,8 @@ class Conjugator:
                 genders = []
                 if pe.gender is not None:
                     genders.append(pe.gender)
-                elif pe.person == Person.Third and aux_pc.gender is not None:
-                    genders.append(aux_pc.gender)
+                elif pe.person == Person.Third and aux_pc.get_gender() is not None:
+                    genders.append(aux_pc.get_gender())
                 else:
                     genders.extend([Gender.m, Gender.f])
                 unique_conjugations = set(
@@ -553,10 +554,10 @@ class Conjugator:
             )
 
         return Conjugation(
-            aux_pc.person,
-            aux_pc.number,
-            aux_pc.gender,
-            aux_pc.pronoun,
+            aux_pc.get_person(),
+            aux_pc.get_number(),
+            aux_pc.get_gender(),
+            aux_pc.get_pronoun(),
             [hv + " " + pc_value],
         )
 

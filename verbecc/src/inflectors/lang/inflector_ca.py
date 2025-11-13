@@ -21,8 +21,7 @@ class InflectorCa(inflector.Inflector):
     ) -> None:
         super(InflectorCa, self).__init__()
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.ca
 
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:

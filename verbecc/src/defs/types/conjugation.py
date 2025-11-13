@@ -54,9 +54,8 @@ CompleteConjugationData = Dict[str, Union[VerbInfoData, MoodsConjugationData]]
 
 class AbstractConjugation:
 
-    @property
     @abstractmethod
-    def data(self) -> object:
+    def get_data(self) -> object:
         """The data of this object as primitive types (JSON-serializable)"""
         pass
 
@@ -66,7 +65,7 @@ class AbstractConjugation:
     def __str__(self) -> str:
         """The data of this object as a pretty-formatted JSON string"""
         pretty_json = json.dumps(
-            self.data,
+            self.get_data(),
             allow_nan=False,
             sort_keys=True,
             indent=4,
@@ -179,48 +178,37 @@ class Conjugation(AbstractConjugation):
     def append(self, value: str) -> None:
         self._conjugations.append(value)
 
-    @property
-    def person(self) -> Optional[Person]:
+    def get_person(self) -> Optional[Person]:
         return self._person
 
-    @person.setter
-    def person(self, value: Person) -> None:
+    def set_person(self, value: Person) -> None:
         self._person = value
 
-    @property
-    def number(self) -> Optional[Number]:
+    def get_number(self) -> Optional[Number]:
         return self._number
 
-    @number.setter
-    def number(self, value: Number) -> None:
+    def set_number(self, value: Number) -> None:
         self._number = value
 
-    @property
-    def gender(self) -> Optional[Gender]:
+    def get_gender(self) -> Optional[Gender]:
         return self._gender
 
-    @gender.setter
-    def gender(self, value: Gender) -> None:
+    def set_gender(self, value: Gender) -> None:
         self._gender = value
 
-    @property
-    def pronoun(self) -> Optional[Pronoun]:
+    def get_pronoun(self) -> Optional[Pronoun]:
         return self._pronoun
 
-    @pronoun.setter
-    def pronoun(self, value: str) -> None:
+    def set_pronoun(self, value: str) -> None:
         self._pronoun = value
 
-    @property
-    def conjugations(self) -> List[str]:
+    def get_conjugations(self) -> List[str]:
         return self._conjugations
 
-    @conjugations.setter
-    def conjugations(self, value: List[str]) -> None:
+    def set_conjugations(self, value: List[str]) -> None:
         self._conjugations = value
 
-    @property
-    def data(self) -> ConjugationData:
+    def get_data(self) -> ConjugationData:
         return (
             self._person,
             self._number,
@@ -280,9 +268,8 @@ class TenseConjugation(AbstractConjugation):
     def extend(self, value: Iterable[Conjugation]) -> None:
         self._data.extend(value)
 
-    @property
-    def data(self) -> TenseConjugationData:
-        return [p.data for p in self._data]
+    def get_data(self) -> TenseConjugationData:
+        return [p.get_data() for p in self._data]
 
 
 class MoodConjugation(AbstractConjugation):
@@ -326,9 +313,8 @@ class MoodConjugation(AbstractConjugation):
     def __contains__(self, key: Tense) -> bool:
         return key in self._data
 
-    @property
-    def data(self) -> MoodConjugationData:
-        return {t: tc.data for t, tc in self._data.items()}
+    def get_data(self) -> MoodConjugationData:
+        return {t: tc.get_data() for t, tc in self._data.items()}
 
     @classmethod
     def combine(cls, a: object, b: object):  # type: ignore
@@ -382,9 +368,8 @@ class MoodsConjugation(AbstractConjugation):
     def __contains__(self, key: Mood) -> bool:
         return key in self._data
 
-    @property
-    def data(self) -> MoodsConjugationData:
-        return {m: mc.data for m, mc in self._data.items()}
+    def get_data(self) -> MoodsConjugationData:
+        return {m: mc.get_data() for m, mc in self._data.items()}
 
 
 class VerbInfo(AbstractConjugation):
@@ -440,8 +425,7 @@ class VerbInfo(AbstractConjugation):
             )
         )
 
-    @property
-    def data(self) -> VerbInfoData:
+    def get_data(self) -> VerbInfoData:
         return {
             "infinitive": self.infinitive,
             "predicted": self.predicted,
@@ -478,17 +462,14 @@ class CompleteConjugation(AbstractConjugation):
     def __hash__(self) -> int:
         return hash((self._verb_info, self._moods_conjugation))
 
-    @property
-    def verb(self) -> VerbInfo:
+    def get_verb_info(self) -> VerbInfo:
         return self._verb_info
 
-    @property
-    def moods(self) -> MoodsConjugation:
+    def get_moods(self) -> MoodsConjugation:
         return self._moods_conjugation
 
-    @property
-    def data(self) -> CompleteConjugationData:
+    def get_data(self) -> CompleteConjugationData:
         return {
-            "verb": self._verb_info.data,
-            "moods": self._moods_conjugation.data,
+            "verb": self._verb_info.get_data(),
+            "moods": self._moods_conjugation.get_data(),
         }

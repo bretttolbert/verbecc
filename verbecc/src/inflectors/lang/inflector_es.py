@@ -32,8 +32,7 @@ class InflectorEs(Inflector):
                 LangSpecificOptionsEs, lang_specific_options
             )
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.es
 
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:

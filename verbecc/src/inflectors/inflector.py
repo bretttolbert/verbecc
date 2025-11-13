@@ -46,12 +46,11 @@ class Inflector(ABC):
     # public:
 
     def __init__(self) -> None:
-        self._verbs: Verbs = VerbsParser(self.lang).parse()
-        self._conjugations = ConjugationsParser(self.lang).parse()
+        self._verbs: Verbs = VerbsParser(self.get_lang()).parse()
+        self._conjugations = ConjugationsParser(self.get_lang()).parse()
 
-    @property
     @abstractmethod
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         raise NotImplementedError
 
     def get_verbs(self) -> List[Verb]:

@@ -56,8 +56,7 @@ class InflectorFr(Inflector):
     ) -> None:
         super(InflectorFr, self).__init__()
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.fr
 
     def get_verbs_that_start_with(self, query: str, max_results: int) -> List[str]:

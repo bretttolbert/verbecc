@@ -10,6 +10,5 @@ class LangSpecificOptionsEs(LangSpecificOptions):
         super().__init__()
         self._voseo_options = voseo_options
 
-    @property
-    def voseo_options(self) -> VoseoOptions:
+    def get_voseo_options(self) -> VoseoOptions:
         return self._voseo_options
