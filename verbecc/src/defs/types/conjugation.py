@@ -121,7 +121,9 @@ class Conjugation(AbstractConjugation):
             self._conjugations = []
 
     def __eq__(self, other: object) -> bool:
-        if not isinstance(other, Conjugation):
+        if other is None:
+            return False
+        elif not isinstance(other, Conjugation):
             raise TypeError
         return (
             self._person == other._person
@@ -242,7 +244,9 @@ class TenseConjugation(AbstractConjugation):
             self._data = []
 
     def __eq__(self, other: object) -> bool:
-        if not isinstance(other, TenseConjugation):
+        if other is None:
+            return False
+        elif not isinstance(other, TenseConjugation):
             raise TypeError
         return self._data == other._data
 
@@ -273,6 +277,9 @@ class TenseConjugation(AbstractConjugation):
     def append(self, value: Conjugation) -> None:
         self._data.append(value)
 
+    def extend(self, value: Iterable[Conjugation]) -> None:
+        self._data.extend(value)
+
     @property
     def data(self) -> TenseConjugationData:
         return [p.data for p in self._data]
@@ -292,7 +299,9 @@ class MoodConjugation(AbstractConjugation):
             self._data = {}
 
     def __eq__(self, other: object) -> bool:
-        if not isinstance(other, MoodConjugation):
+        if other is None:
+            return False
+        elif not isinstance(other, MoodConjugation):
             raise TypeError
         return self._data == other._data
 
@@ -346,7 +355,9 @@ class MoodsConjugation(AbstractConjugation):
             self._data = data
 
     def __eq__(self, other: object) -> bool:
-        if not isinstance(other, MoodsConjugation):
+        if other is None:
+            return False
+        elif not isinstance(other, MoodsConjugation):
             raise TypeError
         return self._data == other._data
 
@@ -401,7 +412,9 @@ class VerbInfo(AbstractConjugation):
         self.stem = stem
 
     def __eq__(self, other: object) -> bool:
-        if not isinstance(other, VerbInfo):
+        if other is None:
+            return False
+        elif not isinstance(other, VerbInfo):
             raise TypeError
         return (
             self.infinitive == other.infinitive
@@ -450,7 +463,9 @@ class CompleteConjugation(AbstractConjugation):
         self._moods_conjugation = moods_conjugation
 
     def __eq__(self, other: object) -> bool:
-        if not isinstance(other, CompleteConjugation):
+        if other is None:
+            return False
+        elif not isinstance(other, CompleteConjugation):
             raise TypeError
         return (
             self._verb_info == other._verb_info

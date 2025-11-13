@@ -77,6 +77,13 @@ class InflectorIt(Inflector):
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return "che " + s
 
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun == "lei":
+            return Gender.f
+        elif pronoun == "lui":
+            return Gender.m
+        return None
+
     def get_pronouns(
         self,
         person: Optional[Person] = None,

@@ -41,6 +41,13 @@ class InflectorEs(Inflector):
             return "no " + s
         return s
 
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun in ("ella", "ellas"):
+            return Gender.f
+        elif pronoun in ("ello", "ellos"):
+            return Gender.m
+        return None
+
     def get_pronouns(
         self,
         person: Optional[Person] = None,
@@ -184,7 +191,7 @@ class InflectorEs(Inflector):
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
-        pronoun: str,
+        pronoun: Optional[str],
     ) -> PersonEnding:
         """
         Hook for certain languages e.g. Spanish that modify
@@ -226,7 +233,8 @@ class InflectorEs(Inflector):
         VOWEL_ACCENT_MAP = {"a": "á", "e": "é", "i": "í"}
         if self.lang_specific_options is not None:
             if (
-                pronoun == "vos"
+                pronoun is not None
+                and pronoun == "vos"
                 and person_ending.person == Person.Second
                 and person_ending.number == Number.Singular
             ):

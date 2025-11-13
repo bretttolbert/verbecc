@@ -79,7 +79,8 @@ def test_all_verbs_have_templates(cg):
 def test_inflector_it_conjugate_mood_tense(
     cg, infinitive, mood, tense, expected_result
 ):
-    assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    assert [c[0] for c in tc] == expected_result
 
 
 def test_inflector_it_conjugate(cg):
@@ -153,9 +154,9 @@ def test_inflector_it_get_pronouns(
 )
 def test_indicative_present(cg, infinitive, expected_result):
     cc = cg.conjugate(infinitive)
-    mood_conj = cc.moods["indicativo"]
-    tense_conj = mood_conj["presente"]
-    assert [c[0] for c in tense_conj] == expected_result
+    mc = cc.moods["indicativo"]
+    tc = mc["presente"]
+    assert [c[0] for c in tc] == expected_result
 
 
 @pytest.mark.parametrize(
@@ -198,9 +199,9 @@ def test_indicative_present(cg, infinitive, expected_result):
 )
 def test_passato_prossimo(cg, infinitive, expected_result):
     cc = cg.conjugate(infinitive)
-    mood_conj = cc.moods[Moods.it.Indicativo]
-    tense_conj = mood_conj[Tenses.it.PassatoProssimo]
-    assert [c[0] for c in tense_conj] == expected_result
+    mc = cc.moods[Moods.it.Indicativo]
+    tc = mc[Tenses.it.PassatoProssimo]
+    assert [c[0] for c in tc] == expected_result
 
 
 @pytest.mark.parametrize(
@@ -221,9 +222,9 @@ def test_passato_prossimo(cg, infinitive, expected_result):
 )
 def test_alzarsi_indicative_present(cg, infinitive, expected_result):
     cc = cg.conjugate(infinitive, gender=Gender.f)
-    mood_conj = cc.moods[Moods.it.Indicativo]
-    tense_conj = mood_conj[Tenses.it.Presente]
-    assert [c[0] for c in tense_conj] == expected_result
+    mc = cc.moods[Moods.it.Indicativo]
+    tc = mc[Tenses.it.Presente]
+    assert [c[0] for c in tc] == expected_result
 
 
 @pytest.mark.parametrize(
@@ -246,15 +247,15 @@ def test_inflector_it_alzarsi_indicativo_passato_prossimo(
     cg, infinitive, expected_result
 ):
     cc = cg.conjugate(infinitive, gender=Gender.f)
-    mood_conj = cc.moods[Moods.it.Indicativo]
-    tense_conj = mood_conj[Tenses.it.PassatoProssimo]
-    assert [c[0] for c in tense_conj] == expected_result
+    mc = cc.moods[Moods.it.Indicativo]
+    tc = mc[Tenses.it.PassatoProssimo]
+    assert [c[0] for c in tc] == expected_result
 
 
 def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
     infinitive = "essere"
     co = cg._get_conj_obs(infinitive)
-    ret = cg._conjugate_compound(
+    tc = cg._conjugate_compound(
         co,
         "indicativo",
         "passato-prossimo",
@@ -264,7 +265,7 @@ def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
         Gender.m,
         True,
     )
-    assert ret == [
+    assert [c.conjugations for c in tc] == [
         ["io sono stato"],
         ["tu sei stato"],
         ["lui è stato"],

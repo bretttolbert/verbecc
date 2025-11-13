@@ -106,6 +106,13 @@ class InflectorFr(Inflector):
         else:
             return "que " + s
 
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun in ("elle", "elles"):
+            return Gender.f
+        elif pronoun in ("il", "ils"):
+            return Gender.m
+        return None
+
     def get_pronouns(
         self,
         person: Optional[Person] = None,
@@ -215,7 +222,7 @@ class InflectorFr(Inflector):
 
     def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         ret = ""
-        if pronoun[-1] == "e" and string_utils.starts_with_vowel(conj, h_is_vowel=True):
+        if pronoun == "je" and string_utils.starts_with_vowel(conj, h_is_vowel=True):
             ret += pronoun[:-1] + "'"
         else:
             ret += pronoun + " "

@@ -40,6 +40,13 @@ class InflectorRo(Inflector):
     preceded by the reflexive pronouns “se” (in the accusative) and “și” (in the dative).
     """
 
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun in ("ea", "ele"):
+            return Gender.f
+        elif pronoun in ("el", "ei"):
+            return Gender.m
+        return None
+
     def get_pronouns(
         self,
         person: Optional[Person] = None,

@@ -28,6 +28,13 @@ class InflectorCa(inflector.Inflector):
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun in ("ella", "elles"):
+            return Gender.f
+        elif pronoun in ("ell", "ells"):
+            return Gender.m
+        return None
+
     def get_pronouns(
         self,
         person: Optional[Person] = None,

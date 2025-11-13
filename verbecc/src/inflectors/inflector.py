@@ -188,6 +188,9 @@ class Inflector(ABC):
             else:
                 return ParticipleInflection.FemininePlural
 
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        return None
+
     def get_pronouns(
         self,
         person: Optional[Person] = None,
@@ -317,7 +320,7 @@ class Inflector(ABC):
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
-        pronoun: str,
+        pronoun: Optional[str],
     ) -> PersonEnding:
         """
         Hook for certain languages e.g. Spanish that modify

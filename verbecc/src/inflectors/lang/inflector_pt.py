@@ -60,6 +60,13 @@ class InflectorPt(Inflector):
             s += " " + self._get_pronoun_suffix(person, number, imperative=imperative)
         return s
 
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun in ("ela", "elas"):
+            return Gender.f
+        elif pronoun in ("ele", "eles"):
+            return Gender.m
+        return None
+
     def get_pronouns(
         self,
         person: Optional[Person] = None,
