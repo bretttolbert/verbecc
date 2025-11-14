@@ -5,7 +5,7 @@ from verbecc.src.defs.constants import config
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.exceptions import VerbNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.mlconjug import mlconjug
+from verbecc.src.mlconjug.predictor import TemplatePredictor
 from verbecc.src.utils import string_utils
 
 
@@ -23,7 +23,7 @@ class Verbs:
         ]
         self.template_predictor = None
         if config.ENABLE_ML_PREDICTION:
-            self.template_predictor = mlconjug.TemplatePredictor(
+            self.template_predictor = TemplatePredictor(
                 [(v.infinitive, v.template) for v in verbs], self.lang
             )
 

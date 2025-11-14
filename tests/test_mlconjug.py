@@ -1,7 +1,9 @@
 import pytest
 
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.mlconjug import mlconjug
+from verbecc.src.mlconjug.data_set import DataSet
+from verbecc.src.mlconjug.predictor import TemplatePredictor
+from verbecc.src.mlconjug.feature_extract import extract_verb_features
 from verbecc.src.inflectors.lang.inflector_fr import InflectorFr
 from verbecc.src.defs.constants import config
 
@@ -14,7 +16,7 @@ def verb_template_pairs():
 
 def test_extract_verb_features():
     if config.ENABLE_ML_PREDICTION:
-        assert mlconjug.extract_verb_features("parler", Lang.fr, (2, 7)) == [
+        assert extract_verb_features("parler", Lang.fr, (2, 7)) == [
             "END=er",
             "END=ler",
             "END=rler",
@@ -34,40 +36,36 @@ def test_extract_verb_features():
 
 def test_DataSet_construct_dict_conjug(verb_template_pairs):
     if config.ENABLE_ML_PREDICTION:
-        dict_conjug = mlconjug.DataSet(verb_template_pairs).dict_conjug
+        dict_conjug = DataSet(verb_template_pairs).dict_conjug
         assert "abaisser" in dict_conjug["aim:er"]
 
 
 def test_DataSet_split_test_train(verb_template_pairs):
     if config.ENABLE_ML_PREDICTION:
-        data_set = mlconjug.DataSet(verb_template_pairs)
-        assert data_set.min_threshold == 8
-        assert data_set.split_proportion == 0.5
-        assert len(data_set.train_input) == len(data_set.train_labels)
-        assert len(data_set.test_input) == len(data_set.test_labels)
-        for verb in data_set.test_input:
-            assert verb not in data_set.train_input
-        test_verb = data_set.test_input[0]
-        train_verb = data_set.train_input[0]
+        ds = DataSet(verb_template_pairs)
+        assert ds.min_threshold == 8
+        assert ds.split_proportion == 0.5
+        assert len(ds.train_input) == len(ds.train_labels)
+        assert len(ds.test_input) == len(ds.test_labels)
+        for verb in ds.test_input:
+            assert verb not in ds.train_input
+        test_verb = ds.test_input[0]
+        train_verb = ds.train_input[0]
         test_template = next(p[1] for p in verb_template_pairs if p[0] == test_verb)
         train_template = next(p[1] for p in verb_template_pairs if p[0] == train_verb)
         assert (
-            data_set.templates[
-                data_set.test_labels[data_set.test_input.index(test_verb)]
-            ]
+            ds.templates[ds.test_labels[ds.test_input.index(test_verb)]]
             == test_template
         )
         assert (
-            data_set.templates[
-                data_set.train_labels[data_set.train_input.index(train_verb)]
-            ]
+            ds.templates[ds.train_labels[ds.train_input.index(train_verb)]]
             == train_template
         )
 
 
 def test_mlconjug_template_predictor(verb_template_pairs):
     if config.ENABLE_ML_PREDICTION:
-        predictor = mlconjug.TemplatePredictor(verb_template_pairs, lang=Lang.fr)
+        predictor = TemplatePredictor(verb_template_pairs, lang=Lang.fr)
         template, prediction_score = predictor.predict("parler")
         assert template == "aim:er"
         assert prediction_score > 0.97
