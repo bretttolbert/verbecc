@@ -91,6 +91,7 @@ class Conjugator:
             )
         return CompleteConjugation(
             VerbInfo(
+                self._inflector.get_lang(),
                 co.verb.infinitive,
                 co.verb.predicted,
                 co.verb.pred_score,
@@ -226,7 +227,7 @@ class Conjugator:
         mood: Mood,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
-        ret = MoodConjugation()
+        ret = MoodConjugation(mood)
         mood_template = co.template.mood_templates[mood]
         for tense in mood_template.tense_templates:
             ret[tense] = self._conjugate_mood_tense(
@@ -243,7 +244,7 @@ class Conjugator:
         mood: Mood,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
-        ret = MoodConjugation()
+        ret = MoodConjugation(mood)
         comp_conj_map = self._inflector.get_compound_conjugations_aux_verb_map()
         if mood in comp_conj_map:
             for tense in comp_conj_map[mood]:
@@ -265,7 +266,7 @@ class Conjugator:
         aux_uses_alternate: bool,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
-        ret = TenseConjugation()
+        ret = TenseConjugation(tense)
         if self._inflector.compound_conjugation_not_applicable(
             co.is_reflexive, mood, aux_tense
         ):
@@ -303,21 +304,13 @@ class Conjugator:
             co,
             mood,
             tense,
-            person_endings,
+            aux_mood,
+            aux_tense,
             aux_verb,
             aux_conj,
             aux_uses_alternate,
         )
-        """
-        Seems this is now redundant
 
-        if mood == self._inflector.get_subjunctive_mood():
-            for i, pc in enumerate(ret):
-                for j, c in enumerate(pc.conjugations):
-                    ret[i].conjugations[j] = (
-                        self._inflector.add_subjunctive_relative_pronoun(c, tense)
-                    )
-        """
         return ret
 
     def _conjugate_compound_primary_verb(
@@ -325,7 +318,8 @@ class Conjugator:
         co: ConjugationObjects,
         mood: Mood,
         tense: Tense,
-        person_endings: List[PersonEnding],
+        aux_mood: Mood,
+        aux_tense: Tense,
         aux_verb: str,
         aux_conj: TenseConjugation,
         aux_uses_alternate: bool,
@@ -353,7 +347,7 @@ class Conjugator:
             vous êtes allé(e)s
             ils/elles sont allé(e)s
         """
-        ret = TenseConjugation()
+        ret = TenseConjugation(tense)
         aux_conj_scalar: List[str] = []
         for pc in aux_conj:
             conjugations = pc.get_conjugations()
@@ -364,7 +358,7 @@ class Conjugator:
 
         p_mood = self._inflector.get_participle_mood()
         p_tense = self._inflector.get_participle_tense()
-        p_conj = TenseConjugation()
+        p_conj = TenseConjugation(p_tense)
         # the Romanian indicativ viitor-1 uses the infinitive form instead of the participle
         # TODO: Move this language-specific logic into inflector
         if self._inflector.compound_primary_verb_conjugation_uses_infinitive(
@@ -565,7 +559,7 @@ class Conjugator:
     ) -> TenseConjugation:
         if modify_stem_strip_accents and mood != self._inflector.get_infinitive_mood():
             verb_stem = strip_accents(verb_stem)
-        ret = TenseConjugation()
+        ret = TenseConjugation(tense)
         tense = tense_template.tense
         tense_conjugated_with_pronoun = True
         if (
@@ -641,6 +635,7 @@ class Conjugator:
                                 )
                     else:
                         # conjugation without pronoun
+                        # e.g. fr:participe:participe-passé
                         s = self._inflector.add_present_participle_if_applicable(
                             "", is_reflexive, tense
                         )

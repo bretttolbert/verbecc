@@ -989,6 +989,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3()
         Moods.es.Indicativo,
         Tenses.es.Presente,
     ) == TenseConjugation(
+        Tenses.es.Presente,
         [
             Conjugation(Person.First, Number.Singular, None, "yo", ["yo hablo"]),
             Conjugation(Person.Second, Number.Singular, None, "tú", ["tú hablas"]),
@@ -1021,7 +1022,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3()
             Conjugation(
                 Person.Third, Number.Plural, None, "ustedes", ["ustedes hablan"]
             ),
-        ]
+        ],
     )
 
 
@@ -1031,6 +1032,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_voseo_tipo_3()
         Moods.es.Indicativo,
         Tenses.es.Presente,
     ) == TenseConjugation(
+        Tenses.es.Presente,
         [
             Conjugation(Person.First, Number.Singular, None, "yo", ["yo bebo"]),
             Conjugation(Person.Second, Number.Singular, None, "tú", ["tú bebes"]),
@@ -1057,7 +1059,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_voseo_tipo_3()
             Conjugation(
                 Person.Third, Number.Plural, None, "ustedes", ["ustedes beben"]
             ),
-        ]
+        ],
     )
 
 
@@ -1067,6 +1069,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3()
         Moods.es.Indicativo,
         Tenses.es.Presente,
     ) == TenseConjugation(
+        Tenses.es.Presente,
         [
             Conjugation(Person.First, Number.Singular, None, "yo", ["yo duermo"]),
             Conjugation(Person.Second, Number.Singular, None, "tú", ["tú duermes"]),
@@ -1095,7 +1098,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3()
             Conjugation(
                 Person.Third, Number.Plural, None, "ustedes", ["ustedes duermen"]
             ),
-        ]
+        ],
     )
 
 
@@ -1105,6 +1108,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_voseo_tipo_3(
         Moods.es.Indicativo,
         Tenses.es.Presente,
     ) == TenseConjugation(
+        Tenses.es.Presente,
         [
             Conjugation(Person.First, Number.Singular, None, "yo", ["yo soy"]),
             Conjugation(Person.Second, Number.Singular, None, "tú", ["tú eres"]),
@@ -1121,7 +1125,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_voseo_tipo_3(
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["ellos son"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["ellas son"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["ustedes son"]),
-        ]
+        ],
     )
 
 
@@ -1131,6 +1135,7 @@ def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_voseo_tipo_3(
         Moods.es.Subjuntivo,
         Tenses.es.Presente,
     ) == TenseConjugation(
+        Tenses.es.Presente,
         [
             Conjugation(Person.First, Number.Singular, None, "yo", ["yo sea"]),
             Conjugation(Person.Second, Number.Singular, None, "tú", ["tú seas"]),
@@ -1147,7 +1152,7 @@ def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_voseo_tipo_3(
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["ellos sean"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["ellas sean"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["ustedes sean"]),
-        ]
+        ],
     )
 
 
@@ -1157,6 +1162,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_voseo_tipo_3
         Moods.es.Imperativo,
         Tenses.es.Afirmativo,
     ) == TenseConjugation(
+        Tenses.es.Afirmativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["habla"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["hablá"]),
@@ -1168,7 +1174,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_voseo_tipo_3
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["hablen"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["hablen"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["hablen"]),
-        ]
+        ],
     )
 
 
@@ -1178,6 +1184,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_voseo_tipo_3()
         Moods.es.Imperativo,
         Tenses.es.Negativo,
     ) == TenseConjugation(
+        Tenses.es.Negativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["no hables"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["no hables"]),
@@ -1189,7 +1196,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_voseo_tipo_3()
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no hablen"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["no hablen"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["no hablen"]),
-        ]
+        ],
     )
 
 
@@ -1199,6 +1206,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_voseo_tipo_3
         Moods.es.Imperativo,
         Tenses.es.Afirmativo,
     ) == TenseConjugation(
+        Tenses.es.Afirmativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["vive"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["viví"]),
@@ -1210,7 +1218,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_voseo_tipo_3
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["vivan"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["vivan"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["vivan"]),
-        ]
+        ],
     )
 
 
@@ -1220,6 +1228,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_voseo_tipo_3()
         Moods.es.Imperativo,
         Tenses.es.Negativo,
     ) == TenseConjugation(
+        Tenses.es.Negativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["no vivas"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["no vivas"]),
@@ -1231,7 +1240,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_voseo_tipo_3()
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no vivan"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["no vivan"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["no vivan"]),
-        ]
+        ],
     )
 
 
@@ -1241,6 +1250,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_voseo_tipo_3
         Moods.es.Imperativo,
         Tenses.es.Afirmativo,
     ) == TenseConjugation(
+        Tenses.es.Afirmativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["bebe"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["bebé"]),
@@ -1252,7 +1262,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_voseo_tipo_3
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["beban"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["beban"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["beban"]),
-        ]
+        ],
     )
 
 
@@ -1262,6 +1272,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_voseo_tipo_3()
         Moods.es.Imperativo,
         Tenses.es.Negativo,
     ) == TenseConjugation(
+        Tenses.es.Negativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["no bebas"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["no bebas"]),
@@ -1273,7 +1284,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_voseo_tipo_3()
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no beban"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["no beban"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["no beban"]),
-        ]
+        ],
     )
 
 
@@ -1283,6 +1294,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_voseo_tipo_
         Moods.es.Imperativo,
         Tenses.es.Afirmativo,
     ) == TenseConjugation(
+        Tenses.es.Afirmativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["sé"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["sé"]),
@@ -1294,7 +1306,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_voseo_tipo_
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["sean"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["sean"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["sean"]),
-        ]
+        ],
     )
 
 
@@ -1304,6 +1316,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3(
         Moods.es.Imperativo,
         Tenses.es.Negativo,
     ) == TenseConjugation(
+        Tenses.es.Negativo,
         [
             Conjugation(Person.Second, Number.Singular, None, "tú", ["no seas"]),
             Conjugation(Person.Second, Number.Singular, None, "vos", ["no seas"]),
@@ -1315,5 +1328,5 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3(
             Conjugation(Person.Third, Number.Plural, Gender.m, "ellos", ["no sean"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "ellas", ["no sean"]),
             Conjugation(Person.Third, Number.Plural, None, "ustedes", ["no sean"]),
-        ]
+        ],
     )

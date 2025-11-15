@@ -1,12 +1,11 @@
 import pytest
-from typing import cast
 
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Moods
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tenses
 
 

@@ -42,6 +42,7 @@ class Conjugation(AbstractConjugation):
             In some languages, the first alternate conjugation is used when
             conjugating the auxiliary verb to form certain compound conjugations.
         """
+        super().__init__()
         self._person = person
         self._number = number
         self._gender = gender
@@ -148,3 +149,29 @@ class Conjugation(AbstractConjugation):
             self._pronoun,
             self._conjugations,
         )
+
+    def get_str_id(self) -> str:
+        """
+        Return unique string identifier consisting of
+        lang:verb:mood:tense:person:number:gender:pronoun
+        E.g. "fr:parler:participe:participe-passé::s:f:"
+        E.g. "fr:parler:participe:participe-passé::p:m:"
+        E.g. "fr:parler:indicatif:présent:1:s::je"
+        E.g. "fr:parler:indicatif:présent:3:s:f:elle"
+        """
+        _parent_str_id = ""
+        parent = self.get_parent()
+        if parent is not None:
+            _parent_str_id = cast(AbstractConjugation, parent).get_str_id()
+        return ":".join(
+            [
+                str(_parent_str_id),
+                "" if self._person is None else str(self._person),
+                "" if self._number is None else str(self._number),
+                "" if self._gender is None else str(self._gender),
+                "" if self._pronoun is None else str(self._pronoun),
+            ]
+        )
+
+    def set_base_str_id(self, value: str) -> None:
+        self._base_str_id = value

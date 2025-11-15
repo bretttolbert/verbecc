@@ -8,9 +8,9 @@ from verbecc.src.defs.types.conjugation import Conjugation, TenseConjugation
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Moods
-from verbecc.src.defs.types.tense import Tenses
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.tense import Tenses
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
 
 
@@ -2631,12 +2631,14 @@ def test_inflector_ca_conjugate_mood_tense(
 
 
 def test_inflector_ca_conjugate_simple_past(cg):
-    assert cg.conjugate_mood_tense(
+    cc = cg.conjugate_mood_tense(
         "pertànyer",
         Moods.ca.Indicatiu,
-        "passat-simple",
+        Tenses.ca.PassatSimple,
         Gender.m,
-    ) == TenseConjugation(
+    )
+    assert cc == TenseConjugation(
+        Tenses.ca.PassatSimple,
         [
             Conjugation(
                 Person.First,
@@ -2680,7 +2682,7 @@ def test_inflector_ca_conjugate_simple_past(cg):
                 "ells",
                 ["ells pertanyeren", "ells pertanguéren"],
             ),
-        ]
+        ],
     )
 
 

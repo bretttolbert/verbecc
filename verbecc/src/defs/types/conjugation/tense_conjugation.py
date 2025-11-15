@@ -1,5 +1,6 @@
-from typing import Iterable, Iterator, List, Optional
+from typing import cast, Iterable, Iterator, List, Optional
 
+from verbecc.src.defs.types.tense import Tense
 from verbecc.src.defs.types.conjugation.abstract_conjugation import AbstractConjugation
 from verbecc.src.defs.types.conjugation.conjugation import Conjugation
 from verbecc.src.defs.types.conjugation.tense_conjugation_data import (
@@ -14,18 +15,21 @@ class TenseConjugation(AbstractConjugation):
     including alternate conjugations (if applicable).
     """
 
-    def __init__(self, data: Optional[List[Conjugation]] = None) -> None:
+    def __init__(self, tense: Tense, data: Optional[List[Conjugation]] = None) -> None:
+        super().__init__()
+        self._tense = tense
+        self._data: List[Conjugation] = []
         if data is not None:
-            self._data = data
-        else:
-            self._data = []
+            for c in data:
+                c.set_parent(self)
+                self._data.append(c)
 
     def __eq__(self, other: object) -> bool:
         if other is None:
             return False
         elif not isinstance(other, TenseConjugation):
             raise TypeError
-        return self._data == other._data
+        return self._tense == other._tense and self._data == other._data
 
     def __ne__(self, other: object) -> bool:
         return not self.__eq__(other)
@@ -37,6 +41,7 @@ class TenseConjugation(AbstractConjugation):
         return self._data[index]
 
     def __setitem__(self, index: int, value: Conjugation) -> None:
+        value.set_parent(self)
         self._data[index] = value
 
     def __delitem__(self, index: int) -> None:
@@ -52,10 +57,26 @@ class TenseConjugation(AbstractConjugation):
         return value in self._data
 
     def append(self, value: Conjugation) -> None:
+        value.set_parent(self)
         self._data.append(value)
 
-    def extend(self, value: Iterable[Conjugation]) -> None:
-        self._data.extend(value)
+    def extend(self, values: Iterable[Conjugation]) -> None:
+        for value in values:
+            value.set_parent(self)
+            self._data.append(value)
 
     def get_data(self) -> TenseConjugationData:
         return [p.get_data() for p in self._data]
+
+    def get_str_id(self) -> str:
+        """
+        Return unique string identifier consisting of
+        lang:verb:mood:tense
+        E.g. "fr:parler:participe:participe-passé"
+        E.g. "fr:parler:indicatif:présent"
+        """
+        _parent_str_id = ""
+        parent = self.get_parent()
+        if parent is not None:
+            _parent_str_id = cast(AbstractConjugation, parent).get_str_id()
+        return ":".join([str(_parent_str_id), str(self._tense)])

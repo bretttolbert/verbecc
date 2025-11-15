@@ -1,25 +1,17 @@
 import pytest
 from lxml import etree
-from typing import cast
 
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.number import Number
 from verbecc.src.conjugator.conjugator import Conjugator
-from verbecc.src.defs.types.conjugation import (
-    TenseConjugation,
-    Conjugation,
-)
+from verbecc.src.defs.types.conjugation import Conjugation
+from verbecc.src.defs.types.conjugation import TenseConjugation
+from verbecc.src.defs.types.exceptions import ConjugatorError
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Moods
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tenses
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
-from verbecc.src.defs.types.exceptions import ConjugatorError
-from verbecc.src.defs.types.conjugation import (
-    MoodConjugation,
-    MoodsConjugation,
-    TenseConjugation,
-)
 
 
 @pytest.fixture(scope="module")
@@ -128,6 +120,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
     out = cg._conjugate_simple_mood_tense(co.verb_stem, mood, tense, tense_template)
     assert len(out) == 6
     assert out == TenseConjugation(
+        tense,
         [
             Conjugation(Person.First, Number.Singular, Gender.m, "je", ["je mange"]),
             Conjugation(Person.Second, Number.Singular, Gender.m, "tu", ["tu manges"]),
@@ -139,7 +132,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
                 Person.Second, Number.Plural, Gender.m, "vous", ["vous mangez"]
             ),
             Conjugation(Person.Third, Number.Plural, Gender.m, "ils", ["ils mangent"]),
-        ]
+        ],
     )
 
 
@@ -259,6 +252,17 @@ def test_subjonctif_vowel_h_non_aspiré(cg, infinitive, expected_result):
     assert [c[0] for c in tense_conj] == expected_result
 
 
+def test_fr_get_str_id(cg):
+    cc = cg.conjugate("parler")
+    assert cc.get_str_id() == "fr:parler"
+    mc = cc[Moods.fr.Indicatif]
+    assert mc.get_str_id() == "fr:parler:indicatif"
+    tc = mc[Tenses.fr.Présent]
+    assert tc.get_str_id() == "fr:parler:indicatif:présent"
+    assert tc[0].get_str_id() == "fr:parler:indicatif:présent:1:s::je"
+    assert tc[1].get_str_id() == "fr:parler:indicatif:présent:2:s::tu"
+
+
 def test_can_conjugate_all_verbs(cg):
     verbs = cg.get_verbs()
     all_conjugations = {}
@@ -281,6 +285,7 @@ def test_inflector_fr_conjugate_compound_raser(cg):
         conjugate_pronouns=True,
     )
     assert ret == TenseConjugation(
+        Tenses.fr.Passé,
         [
             Conjugation(Person.First, Number.Singular, None, "je", ["que j'aie rasé"]),
             Conjugation(
@@ -305,7 +310,7 @@ def test_inflector_fr_conjugate_compound_raser(cg):
             Conjugation(
                 Person.Third, Number.Plural, Gender.f, "elles", ["qu'elles aient rasé"]
             ),
-        ]
+        ],
     )
 
 
@@ -328,15 +333,42 @@ def test_inflector_fr_conjugate_compound_se_raser(cg):
         conjugate_pronouns=True,
     )
     assert ret == TenseConjugation(
+        Tenses.fr.Présent,
         [
             Conjugation(
+                Person.First, Number.Singular, Gender.f, "je", ["que je me sois rasée"]
+            ),
+            Conjugation(
                 Person.First, Number.Singular, Gender.m, "je", ["que je me sois rasé"]
+            ),
+            Conjugation(
+                Person.Second, Number.Singular, Gender.f, "tu", ["que tu te sois rasée"]
             ),
             Conjugation(
                 Person.Second, Number.Singular, Gender.m, "tu", ["que tu te sois rasé"]
             ),
             Conjugation(
                 Person.Third, Number.Singular, Gender.m, "il", ["qu'il se soit rasé"]
+            ),
+            Conjugation(
+                Person.Third,
+                Number.Singular,
+                Gender.f,
+                "elle",
+                ["qu'elle se soit rasée"],
+            ),
+            Conjugation(
+                Person.Third, Number.Singular, Gender.f, "on", ["qu'on se soit rasée"]
+            ),
+            Conjugation(
+                Person.Third, Number.Singular, Gender.m, "on", ["qu'on se soit rasé"]
+            ),
+            Conjugation(
+                Person.First,
+                Number.Plural,
+                Gender.f,
+                "nous",
+                ["que nous nous soyons rasées"],
             ),
             Conjugation(
                 Person.First,
@@ -348,6 +380,13 @@ def test_inflector_fr_conjugate_compound_se_raser(cg):
             Conjugation(
                 Person.Second,
                 Number.Plural,
+                Gender.f,
+                "vous",
+                ["que vous vous soyez rasées"],
+            ),
+            Conjugation(
+                Person.Second,
+                Number.Plural,
                 Gender.m,
                 "vous",
                 ["que vous vous soyez rasés"],
@@ -355,7 +394,14 @@ def test_inflector_fr_conjugate_compound_se_raser(cg):
             Conjugation(
                 Person.Third, Number.Plural, Gender.m, "ils", ["qu'ils se soient rasés"]
             ),
-        ]
+            Conjugation(
+                Person.Third,
+                Number.Plural,
+                Gender.f,
+                "elles",
+                ["qu'elles se soient rasées"],
+            ),
+        ],
     )
 
 
@@ -376,6 +422,7 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(cg):
         conjugate_pronouns=True,
     )
     assert ret == TenseConjugation(
+        Tenses.fr.PasséCompose,
         [
             Conjugation(Person.First, Number.Singular, None, "je", ["j'ai parlé"]),
             Conjugation(Person.Second, Number.Singular, None, "tu", ["tu as parlé"]),
@@ -396,7 +443,7 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(cg):
             Conjugation(
                 Person.Third, Number.Plural, Gender.f, "elles", ["elles ont parlé"]
             ),
-        ]
+        ],
     )
 
 
@@ -436,6 +483,7 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent_nopronouns(cg):
         modify_stem_strip_accents=False,
     )
     assert ret == TenseConjugation(
+        Tenses.fr.Présent,
         [
             Conjugation(Person.First, Number.Singular, None, "je", ["ai"]),
             Conjugation(Person.Second, Number.Singular, None, "tu", ["as"]),
@@ -446,7 +494,7 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent_nopronouns(cg):
             Conjugation(Person.Second, Number.Plural, None, "vous", ["avez"]),
             Conjugation(Person.Third, Number.Plural, Gender.m, "ils", ["ont"]),
             Conjugation(Person.Third, Number.Plural, Gender.f, "elles", ["ont"]),
-        ]
+        ],
     )
 
 
@@ -477,12 +525,13 @@ def test_inflector_fr_conjugate_simple_avoir_participe_participe_passé(cg):
     )
     # TODO: Support "ayant eu" ?
     assert ret == TenseConjugation(
+        Tenses.fr.ParticipePassé,
         [
             Conjugation(None, Number.Singular, Gender.m, None, ["eu"]),
             Conjugation(None, Number.Plural, Gender.m, None, ["eus"]),
             Conjugation(None, Number.Singular, Gender.f, None, ["eue"]),
             Conjugation(None, Number.Plural, Gender.f, None, ["eues"]),
-        ]
+        ],
     )
 
 
@@ -509,9 +558,10 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(cg):
         modify_stem_strip_accents=False,
     )
     assert ret == TenseConjugation(
+        Tenses.fr.ParticipePresent,
         [
             Conjugation(None, None, None, None, ["ayant"]),
-        ]
+        ],
     )
 
 
@@ -542,9 +592,10 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(cg):
         modify_stem_strip_accents=False,
     )
     assert ret == TenseConjugation(
+        Tenses.fr.InfinitifPrésent,
         [
             Conjugation(None, None, None, None, ["avoir"]),
-        ]
+        ],
     )
 
 
@@ -574,11 +625,12 @@ def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(cg):
     )
     # see IMPERATIVE_PERSONS_FR
     expected_value = TenseConjugation(
+        Tenses.fr.ImperatifPrésent,
         [
             Conjugation(Person.Second, Number.Singular, None, "tu", ["aie"]),
             Conjugation(Person.First, Number.Plural, None, "nous", ["ayons"]),
             Conjugation(Person.Second, Number.Plural, None, "vous", ["ayez"]),
-        ]
+        ],
     )
     assert ret == expected_value
 

@@ -1,4 +1,4 @@
-from typing import Iterable, Dict, Optional
+from typing import cast, Iterable, Dict, Optional
 
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.conjugation.abstract_conjugation import AbstractConjugation
@@ -19,9 +19,12 @@ class MoodsConjugation(AbstractConjugation):
         self,
         data: Optional[Dict[Mood, MoodConjugation]] = None,
     ) -> None:
-        self._data = {}
+        super().__init__()
+        self._data: Dict[Mood, MoodConjugation] = {}
         if data is not None:
-            self._data = data
+            for k, v in data.items():
+                v.set_parent(self)
+                self._data[k] = v
 
     def __eq__(self, other: object) -> bool:
         if other is None:
@@ -40,6 +43,7 @@ class MoodsConjugation(AbstractConjugation):
         return self._data[key]
 
     def __setitem__(self, key: Mood, value: MoodConjugation) -> None:
+        value.set_parent(self)
         self._data[key] = value
 
     def __len__(self) -> int:
@@ -53,3 +57,16 @@ class MoodsConjugation(AbstractConjugation):
 
     def get_data(self) -> MoodsConjugationData:
         return {m: mc.get_data() for m, mc in self._data.items()}
+
+    def get_str_id(self) -> str:
+        """
+        Return unique string identifier consisting of
+        lang:verb
+        E.g. "fr:parler"
+        E.g. "fr:parler"
+        """
+        _parent_str_id = ""
+        parent = self.get_parent()
+        if parent is not None:
+            _parent_str_id = cast(AbstractConjugation, parent).get_str_id()
+        return ":".join([str(_parent_str_id)])

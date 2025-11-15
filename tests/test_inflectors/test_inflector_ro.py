@@ -1,15 +1,13 @@
 import pytest
 
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.conjugator.conjugator import Conjugator
-from verbecc.src.defs.types.conjugation import (
-    TenseConjugation,
-    Conjugation,
-)
+from verbecc.src.defs.types.conjugation import Conjugation
+from verbecc.src.defs.types.conjugation import TenseConjugation
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Moods
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tenses
 
 
@@ -242,19 +240,24 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
             "avea",
             Moods.ro.Participiu,
             Tenses.ro.Participiu,
-            TenseConjugation([Conjugation(None, None, None, None, ["avut"])]),
+            TenseConjugation(
+                Tenses.ro.Participiu, [Conjugation(None, None, None, None, ["avut"])]
+            ),
         ),
         (
             "face",
             Moods.ro.Participiu,
             Tenses.ro.Participiu,
-            TenseConjugation([Conjugation(None, None, None, None, ["făcut"])]),
+            TenseConjugation(
+                Tenses.ro.Participiu, [Conjugation(None, None, None, None, ["făcut"])]
+            ),
         ),
         (
             "face",
             Moods.ro.Indicativ,
             Tenses.ro.PerfectCompus,
             TenseConjugation(
+                Tenses.ro.PerfectCompus,
                 [
                     Conjugation(
                         Person.First, Number.Singular, Gender.m, "eu", ["eu am făcut"]
@@ -274,7 +277,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                     Conjugation(
                         Person.Third, Number.Plural, Gender.m, "ei", ["ei au făcut"]
                     ),
-                ]
+                ],
             ),
         ),
         (
@@ -282,6 +285,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
             Moods.ro.Indicativ,
             Tenses.ro.MaiMultCaPerfect,
             TenseConjugation(
+                Tenses.ro.MaiMultCaPerfect,
                 [
                     Conjugation(
                         Person.First, Number.Singular, Gender.m, "eu", ["eu făcusem"]
@@ -309,7 +313,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                     Conjugation(
                         Person.Third, Number.Plural, Gender.m, "ei", ["ei făcuseră"]
                     ),
-                ]
+                ],
             ),
         ),
         (
@@ -317,6 +321,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
             Moods.ro.Indicativ,
             Tenses.ro.Prezent,
             TenseConjugation(
+                Tenses.ro.Prezent,
                 [
                     Conjugation(
                         Person.First,
@@ -360,7 +365,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                         "ei",
                         ["ei voiesc", "ei vor"],
                     ),
-                ]
+                ],
             ),
         ),
         (
@@ -368,6 +373,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
             Moods.ro.Indicativ,
             Tenses.ro.Prezent,
             TenseConjugation(
+                Tenses.ro.Prezent,
                 [
                     Conjugation(
                         Person.First, Number.Singular, Gender.m, "eu", ["eu am"]
@@ -397,7 +403,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                         ["voi aţi", "voi aveţi"],
                     ),
                     Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei au"]),
-                ]
+                ],
             ),
         ),
         (
@@ -405,6 +411,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
             Moods.ro.Indicativ,
             Tenses.ro.Imperfect,
             TenseConjugation(
+                Tenses.ro.Imperfect,
                 [
                     Conjugation(
                         Person.First, Number.Singular, Gender.m, "eu", ["eu aveam"]
@@ -424,7 +431,7 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                     Conjugation(
                         Person.Third, Number.Plural, Gender.m, "ei", ["ei aveau"]
                     ),
-                ]
+                ],
             ),
         ),
     ],
@@ -442,6 +449,7 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1(cg):
         Moods.ro.Indicativ,
         Tenses.ro.Viitor1,
     ) == TenseConjugation(
+        Tenses.ro.Viitor1,
         [
             Conjugation(Person.First, Number.Singular, Gender.m, "eu", ["eu voi face"]),
             Conjugation(
@@ -453,7 +461,7 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1(cg):
                 Person.Second, Number.Plural, Gender.m, "voi", ["voi veţi face"]
             ),
             Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei vor face"]),
-        ]
+        ],
     )
 
 
@@ -464,6 +472,7 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(cg):
         Tenses.ro.Viitor1Popular,
     )
     assert tc == TenseConjugation(
+        Tenses.ro.Viitor1Popular,
         [
             Conjugation(Person.First, Number.Singular, Gender.m, "eu", ["eu o să fac"]),
             Conjugation(
@@ -479,7 +488,7 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(cg):
                 Person.Second, Number.Plural, Gender.m, "voi", ["voi o să faceţi"]
             ),
             Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei o să facă"]),
-        ]
+        ],
     )
 
 
