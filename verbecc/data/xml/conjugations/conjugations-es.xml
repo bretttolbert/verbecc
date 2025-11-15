@@ -130,18 +130,18 @@
 	</Subjuntivo>
 	<Imperativo>
 		<afirmativo>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>iendo</i></p>
-			<p><i/></p>
-			<p><i/></p>
+			<p><i>e</i></p>
+			<p><i>a</i></p>
+			<p><i>amos</i></p>
+			<p><i>id</i></p>
+			<p><i>an</i></p>
 		</afirmativo>
 		<negativo>
-			<p><i>ir</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>ido</i></p>
-			<p><i/></p>
+			<p><i>as</i></p>
+			<p><i>a</i></p>
+			<p><i>amos</i></p>
+			<p><i>aís</i></p>
+			<p><i>an</i></p>
 		</negativo>
 	</Imperativo>
 	<Condicional>
@@ -7882,18 +7882,18 @@
 		</Subjuntivo>
 	<Imperativo>
 		<afirmativo>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i>oliendo</i></p>
-			<p><i/></p>
-			<p><i/></p>
+			<p><i>uele</i></p>
+			<p><i>uela</i></p>
+			<p><i>olamos</i></p>
+			<p><i>oled</i></p>
+			<p><i>uelan</i></p>
 		</afirmativo>
 		<negativo>
-			<p><i>oler</i></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
-			<p><i/></p>
+			<p><i>uelas</i></p>
+			<p><i>uela</i></p>
+			<p><i>olamos</i></p>
+			<p><i>olaís</i></p>
+			<p><i>uelan</i></p>
 		</negativo>
 	</Imperativo>
 	<Condicional>

@@ -841,8 +841,69 @@ def test_abolir():
 
     Error was occuring because the "<Subvuntivo>" was empty in the "abol:ir" template.
     """
-    result = cg.conjugate("abolir")
-    assert result is not None
+    cc = cg.conjugate("abolir")
+    assert cc is not None
+
+
+def test_abolir_imperativo_afirmativo():
+    """
+    Reproduce another error with this verb
+        # step one for imperativo: remove the trailing 'd'
+    >   if ending[-1] == "d":
+           ^^^^^^^^^^
+    E   IndexError: string index out of range
+
+    Error was occuring because of another issue with "abol:ir" template
+
+    Need to fix such issues in conjugations-es.xml
+    by searching for "<i/><"
+
+    """
+    tc = cg.conjugate_mood_tense("abolir", Moods.es.Imperativo, Tenses.es.Afirmativo)
+    assert [c[0] for c in tc] == [
+        "abole",
+        "abolí",
+        "abola",
+        "abola",
+        "abola",
+        "abolamos",
+        "abolid",
+        "abolan",
+        "abolan",
+        "abolan",
+    ]
+
+
+def test_soler_imperativo_afirmativo():
+    tc = cg.conjugate_mood_tense("soler", Moods.es.Imperativo, Tenses.es.Afirmativo)
+    assert [c[0] for c in tc] == [
+        "suele",
+        "solé",
+        "suela",
+        "suela",
+        "suela",
+        "solamos",
+        "soled",
+        "suelan",
+        "suelan",
+        "suelan",
+    ]
+
+
+def test_soler_imperativo_negativo():
+    tc = cg.conjugate_mood_tense("soler", Moods.es.Imperativo, Tenses.es.Negativo)
+    assert [c[0] for c in tc] == [
+        "no suelas",
+        "no suelas",
+        "no suela",
+        "no suela",
+        "no suela",
+        "no solamos",
+        "no solaís",
+        "no suelan",
+        "no suelan",
+        "no suelan",
+    ]
 
 
 def test_inflector_es_get_conj_obs():
