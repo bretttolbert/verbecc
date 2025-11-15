@@ -15,7 +15,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 import copy
-from typing import cast, List, Optional
+from typing import List, Optional
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants import grammar_defines
@@ -379,7 +379,6 @@ class Conjugator:
                 co.template.mood_templates[p_mood].tense_templates[p_tense],
                 False,
             )
-            # p_conj = cast(List[str], p_conj)
 
         if not self._inflector.is_auxiliary_verb_inflected(aux_verb):
             # participle is not inflected, e.g. French passé composé with avoir
@@ -603,8 +602,6 @@ class Conjugator:
                     person_ending, mood, tense, tense_template, pronoun
                 )
 
-                # Decide whether to use gender argument (i.e. default gender)
-                # or gender of person_ending.
                 # person_ending.gender will be None unless it's a participle ending
                 # gender will be None/null unless it matters.
                 conjugation_gender = None

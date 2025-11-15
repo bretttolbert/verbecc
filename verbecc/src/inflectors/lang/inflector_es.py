@@ -1,23 +1,20 @@
 import copy
 from typing import cast, Dict, List, Optional, Tuple
 
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.mood import Mood, Moods
-from verbecc.src.defs.types.tense import Tense, Tenses
-from verbecc.src.defs.types.lang_specific_options import (
-    LangSpecificOptions,
-)
-from verbecc.src.defs.types.lang.es.lang_specific_options_es import (
-    LangSpecificOptionsEs,
-)
-from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
+from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
+from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
+from verbecc.src.defs.types.lang_specific_options import LangSpecificOptionsEs
+from verbecc.src.defs.types.lang_specific_options import LangSpecificOptionsFactory
+from verbecc.src.defs.types.lang_specific_options import VoseoOptions
+from verbecc.src.defs.types.mood import Mood, Moods
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.inflectors.inflector import Inflector
-from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.utils.string_utils import strip_accents
 
 
@@ -26,10 +23,14 @@ class InflectorEs(Inflector):
         self, lang_specific_options: Optional[LangSpecificOptions] = None
     ) -> None:
         super(InflectorEs, self).__init__()
-        self.lang_specific_options = None
         if lang_specific_options is not None:
             self.lang_specific_options = cast(
                 LangSpecificOptionsEs, lang_specific_options
+            )
+        else:
+            self.lang_specific_options = cast(
+                LangSpecificOptionsEs,
+                LangSpecificOptionsFactory.make_lang_specific_options(self.get_lang()),
             )
 
     def get_lang(self) -> LangCodeISO639_1:
@@ -43,7 +44,7 @@ class InflectorEs(Inflector):
     def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
         if pronoun in ("ella", "ellas"):
             return Gender.f
-        elif pronoun in ("ello", "ellos"):
+        elif pronoun in ("él", "ello", "ellos"):
             return Gender.m
         return None
 

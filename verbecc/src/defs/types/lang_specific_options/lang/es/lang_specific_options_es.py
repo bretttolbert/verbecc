@@ -1,7 +1,9 @@
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
-from verbecc.src.defs.types.lang.es.voseo_options import VoseoOptions
+from verbecc.src.defs.types.lang_specific_options.lang.es.voseo_options import (
+    VoseoOptions,
+)
 
 
 class LangSpecificOptionsEs(LangSpecificOptions):
