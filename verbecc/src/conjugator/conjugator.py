@@ -515,14 +515,26 @@ class Conjugator:
                     genders.append(aux_pc.get_gender())
                 else:
                     genders.extend([Gender.f, Gender.m])
-                conjugations = [
-                    self._conjugate_compound_participle_inflected(
-                        gender, number, aux_pc, p_conj
+                p_conj_len = len(p_conj)
+                if p_conj_len > 0:
+                    ret.extend(
+                        [
+                            self._conjugate_compound_participle_inflected(
+                                gender, number, aux_pc, p_conj
+                            )
+                            for gender in genders
+                        ]
                     )
-                    for gender in genders
-                ]
-                ret.extend(conjugations)
-
+                else:
+                    # probably some verb like absoudre that isn't
+                    # conjugated in certain tenses
+                    logger.warning(
+                        "Skipping compound conjugation, "
+                        + "participle conjugation is empty. "
+                        + "aux_pc=%s aux_verb=%s",
+                        aux_pc,
+                        aux_verb,
+                    )
         return ret
 
     def _conjugate_compound_participle_inflected(
@@ -534,8 +546,8 @@ class Conjugator:
     ) -> Conjugation:
         """
         :param aux_pc: Conjugation of aux verb e.g. "suis"
-        :param pc: Conjugation in participle tense of primary verb
-            e.g. "allée"
+        :param p_conj: Conjugation in participle tense of primary verb
+            e.g. ["allé", "allée", "allés", "allées"]
         """
         pc = self.get_conjugation_by_gender_and_number(p_conj, gender, number)
         # TODO: Alternates?
@@ -567,6 +579,9 @@ class Conjugator:
             or not conjugate_pronouns
         ):
             tense_conjugated_with_pronoun = False
+
+        if len(tense_template.person_endings) == 0:
+            logger.warning("tense_template.person_endings is empty")
 
         # There will be at least one conjugation per person-ending and
         # potentially one or more alternate conjugations
@@ -617,6 +632,9 @@ class Conjugator:
                 endings: List[str] = []
                 endings.extend(person_ending.get_endings())
 
+                if len(endings) == 0:
+                    logger.warning("endings is empty")
+
                 # there may be one or more alternate endings
                 for ending in endings:
                     s = grammar_defines.NO_VALUE
@@ -663,6 +681,8 @@ class Conjugator:
                             s = self._inflector.add_adverb_if_applicable(s, mood, tense)
                     conjugation.append(s)
                 ret.append(conjugation)
+        if len(ret) == 0:
+            logger.warning("conjugation is empty")
         return ret
 
     def get_person_ending_by_gender_and_number(
@@ -703,4 +723,7 @@ class Conjugator:
         logger.warning(
             "Failed find matching Conjugation for gender=%s number=%s", gender, number
         )
+        if len(tense_conjugation) == 0:
+            logger.error("Failed to get conjugation, tense_conjugation is empty")
+            raise Exception("Failed to get conjugation, tense_conjugation is empty")
         return tense_conjugation[0]

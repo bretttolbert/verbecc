@@ -9,13 +9,13 @@ from verbecc.src.utils.jsbeautifier_opts import JSBeautifierOpts
 
 class AbstractConjugation(ABC):
 
-    def __init__(self):
+    def __init__(self) -> None:
         self._parent: Optional[AbstractConjugation] = None
 
     def get_parent(self) -> Optional[object]:
         return self._parent
 
-    def set_parent(self, value: object):
+    def set_parent(self, value: object) -> None:
         if isinstance(value, AbstractConjugation):
             self._parent = cast(AbstractConjugation, value)
         else:

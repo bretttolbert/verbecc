@@ -97,7 +97,7 @@ class InflectorCa(inflector.Inflector):
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tenses.ca.Particip,
+            Tenses.ca.Participi,
             Tenses.ca.Gerundi,
             Tenses.ca.InfinitiuPresent,
             Tenses.ca.ImperatiuPresent,
@@ -127,7 +127,7 @@ class InflectorCa(inflector.Inflector):
         return Moods.ca.Participi
 
     def get_participle_tense(self) -> Tense:
-        return Tenses.ca.Particip
+        return Tenses.ca.Participi
 
     def get_alternate_hv_inflection(self, s: str) -> str:
         # if s.endswith('hay'):

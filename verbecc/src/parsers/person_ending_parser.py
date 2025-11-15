@@ -1,3 +1,19 @@
+import logging
+
+from verbecc.src.defs.constants.config import DEVEL_MODE
+
+logging_level = logging.CRITICAL + 1  # effectively disables logging
+if DEVEL_MODE:
+    logging_level = logging.DEBUG
+
+logging.basicConfig(
+    level=logging_level,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
+)
+
+logger = logging.getLogger(__name__)
+
 from lxml import etree
 from typing import List, Optional
 
@@ -6,6 +22,7 @@ from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.parsers.parser import Parser
+from verbecc.src.defs.types import ConjugationTemplateError
 
 
 class PersonEndingParser(Parser):
@@ -60,7 +77,10 @@ class PersonEndingParser(Parser):
         elif person is not None and gender is not None:
             raise ValueError("person and gender are mutually-exclusive")
         endings: List[str] = []
-        for i_elem in elem.findall("i", None):
+        i_elems = elem.findall("i", None)
+        if len(i_elems) == 0:
+            logger.warning("Empty <p> element in conjugation template")
+        for i_elem in i_elems:
             ending = str("")
             if i_elem.text is not None:
                 ending += str(i_elem.text)

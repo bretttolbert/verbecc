@@ -24,7 +24,7 @@
 <!DOCTYPE conjugation-ca [
 <!ELEMENT conjugation-ca (template)+>
 <!ATTLIST conjugation-ca xmlns CDATA #FIXED "">
-<!ELEMENT template (Indicatiu , Subjuntiu , Imperatiu , (Condicional , Infinitiu , Gerundi , Particip)?)>
+<!ELEMENT template (Indicatiu , Subjuntiu , Imperatiu , (Condicional , Infinitiu , Gerundi , Participi)?)>
 <!ATTLIST template name NMTOKEN #REQUIRED>
 <!ATTLIST template modify-stem NMTOKEN #IMPLIED>
 <!ELEMENT Indicatiu (present , imperfet , passat-simple , futur)?>
@@ -33,7 +33,7 @@
 <!ELEMENT Condicional (present)>
 <!ELEMENT Infinitiu (infinitiu-present)>
 <!ELEMENT Gerundi (gerundi)>
-<!ELEMENT Particip (particip)>
+<!ELEMENT Participi (participi)>
 <!ELEMENT present (p , p , p , p , p , p)>
 <!ELEMENT imperfet (p , p , p , p , p , p)>
 <!ELEMENT passat-simple (p , p , p , p , p , p)>
@@ -41,7 +41,7 @@
 <!ELEMENT imperatiu-present (p , p , p , p , p)>
 <!ELEMENT infinitiu-present (p)+>
 <!ELEMENT gerundi (p)+>
-<!ELEMENT particip (p, p, p, p)>
+<!ELEMENT participi (p, p, p, p)>
 <!ELEMENT p (i)+>
 <!ELEMENT i (#PCDATA)>
 ]>
@@ -62,7 +62,7 @@ nosotros habláramos, nosotros hablásemos = nosaltres parléssim, nosaltres par
 
 4. Spanish always has two <p> in <infinitive>, Catalan may have only one
 
-5. Spanish only has one <p> elem in <particip> (How? Thought it was m, f, pm, pf)
+5. Spanish only has one <p> elem in <participi> (How? Thought it was m, f, pm, pf)
 
 6. Spanish always has two <p> in <gerund>
 
@@ -161,14 +161,14 @@ nosotros habláramos, nosotros hablásemos = nosaltres parléssim, nosaltres par
 			<p><i>eient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ist</i></p> <!-- m participle, alt m participle? -->
 			<p><i>ista</i></p> <!-- f participle, alt f participle? -->
 			<p><i>ists</i><i>istos</i></p> <!-- pm participle, alt pm participle? -->
 			<p><i>istes</i></p> <!-- pf participle, alt pf participle? -->
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- Second-conjugation (-re, -er) verbs
@@ -260,15 +260,15 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>sent</i><i>essent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
+	<Participi>
 		<!-- Should particip be divided as with French into participe-présent and participe-passé? -->
-		<particip>
+		<participi>
 			<p><i>estat</i><i>sigut</i></p> <!-- m participle, alt m participle? -->
 			<p><i>estada</i><i>siguda</i></p> <!-- f participle, alt f participle? -->
 			<p><i>estats</i><i>siguts</i></p> <!-- pm participle, alt pm participle? -->
 			<p><i>estades</i><i>sigudes</i></p> <!-- pf participle, alt pf participle? -->
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="d:ir">
@@ -353,14 +353,14 @@ voler ("to want"), caldre ("must"), dir ("to say") and dur ("to take/get").
 			<p><i>ient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ita</i></p>
 			<p><i>its</i></p>
 			<p><i>ites</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from d:ir 
@@ -448,14 +448,14 @@ Only difference is the participles
 			<p><i>ient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="r:iure">
@@ -540,14 +540,14 @@ Only difference is the participles
 			<p><i>ient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>igut</i></p>
 			<p><i>iguda</i></p>
 			<p><i>iguts</i></p>
 			<p><i>igudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="v:iure">
@@ -632,14 +632,14 @@ Only difference is the participles
 			<p><i>ient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>iscut</i></p>
 			<p><i>iscuda</i></p>
 			<p><i>iscuts</i></p>
 			<p><i>iscudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This should inherit from cantar -->
@@ -725,14 +725,14 @@ Only difference is the participles
 			<p><i>anant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>anat</i></p>
 			<p><i>anada</i></p>
 			<p><i>anats</i></p>
 			<p><i>anades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="reb:re">
@@ -817,14 +817,14 @@ Only difference is the participles
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- Very similar to re:bre -->
@@ -910,14 +910,14 @@ Only difference is the participles
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!--
@@ -1005,14 +1005,14 @@ Note: this verb is only conjugated in the third-person.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>gut</i></p>
 			<p><i>guda</i></p>
 			<p><i>guts</i></p>
 			<p><i>gudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="perd:re" modify-stem="strip-accents">
@@ -1097,14 +1097,14 @@ Note: this verb is only conjugated in the third-person.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- Very similar to comen:çar -->
@@ -1190,14 +1190,14 @@ Note: this verb is only conjugated in the third-person.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>-çut</i></p>
 			<p><i>-çuda</i></p>
 			<p><i>-çuts</i></p>
 			<p><i>-çudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perdre 
@@ -1285,14 +1285,14 @@ Very similar to j:aure and cr:eure
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perdre 
@@ -1380,14 +1380,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -1473,14 +1473,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>-vent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -1566,14 +1566,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -1659,14 +1659,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>gut</i></p>
 			<p><i>guda</i></p>
 			<p><i>guts</i></p>
 			<p><i>gudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inhert from val:er -->
@@ -1752,14 +1752,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>gut</i></p>
 			<p><i>guda</i></p>
 			<p><i>guts</i></p>
 			<p><i>gudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -1845,14 +1845,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>-ós</i></p>
 			<p><i>-osa</i></p>
 			<p><i>-osos</i></p>
 			<p><i>-oses</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -1938,14 +1938,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -2031,14 +2031,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>gut</i></p>
 			<p><i>guda</i></p>
 			<p><i>guts</i></p>
 			<p><i>gudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re-->
@@ -2124,14 +2124,14 @@ Literally exactly the same except for infinitive ending.
 			<p><i>-ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>--òs</i></p>
 			<p><i>--osa</i></p>
 			<p><i>--osos</i></p>
 			<p><i>--oses</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- WIP: TODO: Implement inheritance 
@@ -2195,14 +2195,14 @@ the stem to "feny" which is what we want.
 			<p><i>er</i></p>
 		</infinitiu-present>
 	</Infinitiu>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>_</i><i>-g_</i></p>
 			<p><i>_</i><i>-g_</i></p>
 			<p><i>_</i><i>-g_</i></p>
 			<p><i>_</i><i>-g_</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 Once inheritance is implemented, the template above should inherit
@@ -2291,14 +2291,14 @@ without inheritance below:
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i><i>-gut</i></p>
 			<p><i>uda</i><i>-guda</i></p>
 			<p><i>uts</i><i>-guts</i></p>
 			<p><i>udes</i><i>-gudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -2384,14 +2384,14 @@ without inheritance below:
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ut</i></p>
 			<p><i>uda</i></p>
 			<p><i>uts</i></p>
 			<p><i>udes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from perd:re -->
@@ -2477,14 +2477,14 @@ without inheritance below:
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>t</i></p>
 			<p><i>ta</i></p>
 			<p><i>ts</i></p>
 			<p><i>tes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="expen:dre">
@@ -2569,14 +2569,14 @@ without inheritance below:
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ès</i></p>
 			<p><i>esa</i></p>
 			<p><i>esos</i></p>
 			<p><i>eses</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- aten:dre - should inherit from expen:dre 
@@ -2665,14 +2665,14 @@ i.e. én instead of èn
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ès</i></p>
 			<p><i>esa</i></p>
 			<p><i>esos</i></p>
 			<p><i>eses</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="compon:dre">
@@ -2757,14 +2757,14 @@ i.e. én instead of èn
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ès</i></p>
 			<p><i>esa</i></p>
 			<p><i>esos</i></p>
 			<p><i>eses</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- nàixer/néixer -->
@@ -2850,14 +2850,14 @@ i.e. én instead of èn
 			<p><i>aixent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ascut</i></p>
 			<p><i>ascuda</i></p>
 			<p><i>ascuts</i></p>
 			<p><i>ascudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This should inherit from 'perd:re' as 'jau:re' 
@@ -2949,14 +2949,14 @@ first and second person plural, and 'a' becoming 'e', etc.
 			<p><i>aient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>agut</i></p>
 			<p><i>aguda</i></p>
 			<p><i>aguts</i></p>
 			<p><i>agudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!--
@@ -3044,14 +3044,14 @@ TODO: Inherit from j:aure or perd:re
 			<p><i>eient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>egut</i></p>
 			<p><i>eguda</i></p>
 			<p><i>eguts</i></p>
 			<p><i>egudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!--
@@ -3140,14 +3140,14 @@ first and second person plural
 			<p><i>uent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>dut</i></p>
 			<p><i>duta</i></p>
 			<p><i>duts</i></p>
 			<p><i>dutes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This should inherit from 'perd:re' as 'pod:er' -->
@@ -3233,14 +3233,14 @@ first and second person plural
 			<p><i>podent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>pogut</i></p>
 			<p><i>poguda</i></p>
 			<p><i>poguts</i></p>
 			<p><i>pogudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name=":caure">
@@ -3325,14 +3325,14 @@ first and second person plural
 			<p><i>caient</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>caigut</i></p>
 			<p><i>caiguda</i></p>
 			<p><i>caiguts</i></p>
 			<p><i>caigudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from :dormir 
@@ -3426,14 +3426,14 @@ See also: sort:ir
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from 'dorm:ir'
@@ -3526,14 +3526,14 @@ except in the first and second person plural.
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="dorm:ir">
@@ -3618,14 +3618,14 @@ except in the first and second person plural.
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from dorm:ir 
@@ -3729,14 +3729,14 @@ By supporting this feature, we can combine the templates
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from dorm:ir -->
@@ -3822,14 +3822,14 @@ By supporting this feature, we can combine the templates
 			<p><i>enint</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ingut</i></p>
 			<p><i>inguda</i></p>
 			<p><i>inguts</i></p>
 			<p><i>ingudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from dorm:ir -->
@@ -3915,14 +3915,14 @@ By supporting this feature, we can combine the templates
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ert</i><i>it</i></p>
 			<p><i>erta</i><i>ida</i></p>
 			<p><i>erts</i><i>its</i></p>
 			<p><i>ertes</i><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from dorm:ir -->
@@ -4008,14 +4008,14 @@ By supporting this feature, we can combine the templates
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>-ert</i></p>
 			<p><i>-erta</i></p>
 			<p><i>-erts</i></p>
 			<p><i>-ertes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from dorm:ir -->
@@ -4101,14 +4101,14 @@ By supporting this feature, we can combine the templates
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit form dorm:ir -->
@@ -4194,14 +4194,14 @@ By supporting this feature, we can combine the templates
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ït</i></p>
 			<p><i>ïda</i></p>
 			<p><i>ïts</i></p>
 			<p><i>ïdes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit form dorm:ir -->
@@ -4287,14 +4287,14 @@ By supporting this feature, we can combine the templates
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- Slightly irregular verb, should inherit from dorm:ir -->
@@ -4380,14 +4380,14 @@ By supporting this feature, we can combine the templates
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>rt</i></p>
 			<p><i>rta</i></p>
 			<p><i>rts</i></p>
 			<p><i>rtes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- Irregular verb, should inherit from dorm:ir -->
@@ -4473,14 +4473,14 @@ By supporting this feature, we can combine the templates
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>egut</i></p>
 			<p><i>eguda</i></p>
 			<p><i>eguts</i></p>
 			<p><i>egudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: inherit from dorm:ir
@@ -4568,14 +4568,14 @@ Updated: Added -ts and -t for percudir. No-op for mentir.
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!--
@@ -4664,14 +4664,14 @@ difference is the umlaut ï in some tenses.
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ït</i></p>
 			<p><i>ïda</i></p>
 			<p><i>ïts</i></p>
 			<p><i>ïdes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from dorm:ir as eix:ir -->
@@ -4757,14 +4757,14 @@ difference is the umlaut ï in some tenses.
 			<p><i>eixint</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>eixit</i></p>
 			<p><i>eixida</i></p>
 			<p><i>eixits</i></p>
 			<p><i>eixides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="desf:er">
@@ -4849,14 +4849,14 @@ difference is the umlaut ï in some tenses.
 			<p><i>ent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>et</i></p>
 			<p><i>eta</i></p>
 			<p><i>ets</i></p>
 			<p><i>etes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <template name="est:ar">
@@ -4943,14 +4943,14 @@ difference is the umlaut ï in some tenses.
 			<p><i>ado</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>at</i></p>
 			<p><i>ada</i></p>
 			<p><i>ats</i></p>
 			<p><i>ades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 
@@ -5042,14 +5042,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>ant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>at</i></p>
 			<p><i>ada</i></p>
 			<p><i>ats</i></p>
 			<p><i>ades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from cant:ar -->
@@ -5135,14 +5135,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>ant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>at</i></p>
 			<p><i>ada</i></p>
 			<p><i>ats</i></p>
 			<p><i>ades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from cant:ar -->
@@ -5228,14 +5228,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>ant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>at</i></p>
 			<p><i>ada</i></p>
 			<p><i>ats</i></p>
 			<p><i>ades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: should inherit from cant:ar -->
@@ -5321,14 +5321,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>ant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>at</i></p>
 			<p><i>ada</i></p>
 			<p><i>ats</i></p>
 			<p><i>ades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This template should inherit from base template "cant:ar" -->
@@ -5414,14 +5414,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>ant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>at</i></p>
 			<p><i>ada</i></p>
 			<p><i>ats</i></p>
 			<p><i>ades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This template should inherit from base template "cant:ar"-->
@@ -5507,14 +5507,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>çant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>çat</i></p>
 			<p><i>çada</i></p>
 			<p><i>çats</i></p>
 			<p><i>çades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This template should inherit from base template "cant:ar"-->
@@ -5600,14 +5600,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>uant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>uat</i></p>
 			<p><i>uada</i></p>
 			<p><i>uats</i></p>
 			<p><i>uades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This template should inherit from base template "cant:ar"-->
@@ -5693,14 +5693,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>jant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>jat</i></p>
 			<p><i>jada</i></p>
 			<p><i>jats</i></p>
 			<p><i>jades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: This template should inherit from the base template "cant:ar" -->
@@ -5786,14 +5786,14 @@ About 86 percent of Catalan verbs belong to this group.
 			<p><i>cant</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>cat</i></p>
 			<p><i>cada</i></p>
 			<p><i>cats</i></p>
 			<p><i>cades</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!--
@@ -5882,14 +5882,14 @@ so Catalan 'haver' should use 'h:aver'
 			<p><i>avent</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>agut</i></p>
 			<p><i>aguda</i></p>
 			<p><i>aguts</i></p>
 			<p><i>agudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!--
@@ -5978,14 +5978,14 @@ so Catalan 'tenir' should use 't:enir'
 			<p><i>enint</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ingut</i></p>
 			<p><i>inguda</i></p>
 			<p><i>inguts</i></p>
 			<p><i>ingudes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 
@@ -6076,14 +6076,14 @@ This is the second-largest group of regular verbs in the Catalan language
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>it</i></p>
 			<p><i>ida</i></p>
 			<p><i>its</i></p>
 			<p><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from serv:ir 
@@ -6171,14 +6171,14 @@ Basically just changes some "i" to "ï"
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ït</i></p>
 			<p><i>ïda</i></p>
 			<p><i>ïts</i></p>
 			<p><i>ïdes</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Inherit from serv:ir -->
@@ -6265,14 +6265,14 @@ Basically just changes some "i" to "ï"
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>--ès</i></p>
 			<p><i>--esa</i></p>
 			<p><i>--esos</i></p>
 			<p><i>--eses</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 <!-- TODO: Should inherit from serv:ir
@@ -6360,14 +6360,14 @@ Only difference is this one has some alt participles-->
 			<p><i>int</i></p>
 		</gerundi>
 	</Gerundi>
-	<Particip>
-		<particip>
+	<Participi>
+		<participi>
 			<p><i>ert</i><i>it</i></p>
 			<p><i>erta</i><i>ida</i></p>
 			<p><i>erts</i><i>its</i></p>
 			<p><i>ertes</i><i>ides</i></p>
-		</particip>
-	</Particip>
+		</participi>
+	</Participi>
 </template>
 
 </conjugation-ca>

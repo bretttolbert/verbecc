@@ -41,132 +41,138 @@ def test_find_verb_by_infinitive(cg):
 
 
 @pytest.mark.parametrize(
-    "infinitive,mood,tense,gender,expected_result",
+    "infinitive,mood,tense,expected_result",
     [
         (
             "ser",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo sóc"],
                 ["tu ets"],
                 ["ell és"],
+                ["ella és"],
                 ["nosaltres som"],
                 ["vosaltres sou"],
                 ["ells són"],
+                ["elles són"],
             ],
         ),
         (
             "ser",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.m,
+            Tenses.ca.Imperfet,
             [
                 ["jo era"],
                 ["tu eres"],
                 ["ell era"],
+                ["ella era"],
                 ["nosaltres érem"],
                 ["vosaltres éreu"],
                 ["ells eren"],
+                ["elles eren"],
             ],
         ),
         (
             "ser",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.m,
+            Tenses.ca.PassatSimple,
             [
                 ["jo fui"],
                 ["tu fores"],
                 ["ell fou"],
+                ["ella fou"],
                 ["nosaltres fórem"],
                 ["vosaltres fóreu"],
                 ["ells foren"],
+                ["elles foren"],
             ],
         ),
         (
             "ser",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.m,
+            Tenses.ca.Futur,
             [
                 ["jo seré"],
                 ["tu seràs"],
                 ["ell serà"],
+                ["ella serà"],
                 ["nosaltres serem"],
                 ["vosaltres sereu"],
                 ["ells seran"],
+                ["elles seran"],
             ],
         ),
         (
             "ser",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo sigui"],
                 ["tu siguis"],
                 ["ell sigui"],
+                ["ella sigui"],
                 ["nosaltres siguem"],
                 ["vosaltres sigueu"],
                 ["ells siguin"],
+                ["elles siguin"],
             ],
         ),
         (
             "ser",
-            "subjuntiu",
-            "imperfet",
-            Gender.m,
+            Moods.ca.Subjuntiu,
+            Tenses.ca.Imperfet,
             [
                 ["jo fos"],
                 ["tu fossis"],
                 ["ell fos"],
+                ["ella fos"],
                 ["nosaltres fóssim"],
                 ["vosaltres fóssiu"],
                 ["ells fossin"],
+                ["elles fossin"],
             ],
         ),
         (
             "ser",
-            "condicional",
+            Moods.ca.Condicional,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo seria", "jo fora"],
                 ["tu series", "tu fores"],
                 ["ell seria", "ell fora"],
+                ["ella seria", "ella fora"],
                 ["nosaltres seríem", "nosaltres fórem"],
                 ["vosaltres seríeu", "vosaltres fóreu"],
                 ["ells serien", "ells foren"],
+                ["elles serien", "elles foren"],
             ],
         ),
         (
             "ser",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["sigues"], ["sigui"], ["siguem"], ["sigueu"], ["siguin"]],
         ),
         (
             "parlar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo parlo"],
                 ["tu parles"],
                 ["ell parla"],
+                ["ella parla"],
                 ["nosaltres parlem"],
                 ["vosaltres parleu"],
                 ["ells parlen"],
+                ["elles parlen"],
             ],
         ),
         (
             "parlar",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.m,
+            Tenses.ca.Imperfet,
             [
                 ["jo parlava"],
                 ["tu parlaves"],
@@ -179,8 +185,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "parlar",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.m,
+            Tenses.ca.PassatSimple,
             [
                 ["jo parlí"],
                 ["tu parlares"],
@@ -193,8 +198,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "parlar",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.m,
+            Tenses.ca.Futur,
             [
                 ["jo parlaré"],
                 ["tu parlaràs"],
@@ -206,9 +210,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "parlar",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo parli"],
                 ["tu parlis"],
@@ -220,9 +223,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "parlar",
-            "subjuntiu",
-            "imperfet",
-            Gender.m,
+            Moods.ca.Subjuntiu,
+            Tenses.ca.Imperfet,
             [
                 ["jo parlés"],
                 ["tu parlessis"],
@@ -234,9 +236,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "parlar",
-            "condicional",
+            Moods.ca.Condicional,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo parlaria"],
                 ["tu parlaries"],
@@ -250,7 +251,6 @@ def test_find_verb_by_infinitive(cg):
             "estar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo estic"],
                 ["tu estàs"],
@@ -263,8 +263,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "estar",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.m,
+            Tenses.ca.Imperfet,
             [
                 ["jo estava"],
                 ["tu estaves"],
@@ -277,8 +276,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "estar",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.m,
+            Tenses.ca.PassatSimple,
             [
                 ["jo estiguí"],
                 ["tu estigueres"],
@@ -291,8 +289,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "estar",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.m,
+            Tenses.ca.Futur,
             [
                 ["jo estaré"],
                 ["tu estaràs"],
@@ -304,9 +301,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "estar",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo estigui"],
                 ["tu estiguis"],
@@ -318,9 +314,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "estar",
-            "subjuntiu",
-            "imperfet",
-            Gender.m,
+            Moods.ca.Subjuntiu,
+            Tenses.ca.Imperfet,
             [
                 ["jo estigués"],
                 ["tu estiguessis"],
@@ -332,9 +327,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "estar",
-            "condicional",
+            Moods.ca.Condicional,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo estaria"],
                 ["tu estaries"],
@@ -348,7 +342,6 @@ def test_find_verb_by_infinitive(cg):
             "haver",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo he", "jo haig"],
                 ["tu has"],
@@ -361,8 +354,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "haver",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.m,
+            Tenses.ca.Imperfet,
             [
                 ["jo havia"],
                 ["tu havies"],
@@ -375,8 +367,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "haver",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.m,
+            Tenses.ca.PassatSimple,
             [
                 ["jo haguí"],
                 ["tu hagueres"],
@@ -389,8 +380,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "haver",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.m,
+            Tenses.ca.Futur,
             [
                 ["jo hauré"],
                 ["tu hauràs"],
@@ -402,9 +392,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "haver",
-            "condicional",
+            Moods.ca.Condicional,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo hauria", "jo haguera"],
                 ["tu hauries", "tu hagueras"],
@@ -416,9 +405,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "haver",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo hagi"],
                 ["tu hagis"],
@@ -432,7 +420,6 @@ def test_find_verb_by_infinitive(cg):
             "tenir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo tinc"],
                 ["tu tens"],
@@ -446,7 +433,6 @@ def test_find_verb_by_infinitive(cg):
             "fer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo faig"],
                 ["tu fas"],
@@ -459,8 +445,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "fer",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.m,
+            Tenses.ca.Imperfet,
             [
                 ["jo feia"],
                 ["tu feies"],
@@ -474,7 +459,6 @@ def test_find_verb_by_infinitive(cg):
             "servir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo serveixo"],
                 ["tu serveixes"],
@@ -488,7 +472,6 @@ def test_find_verb_by_infinitive(cg):
             "veure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo veig"],
                 ["tu veus"],
@@ -502,7 +485,6 @@ def test_find_verb_by_infinitive(cg):
             "abandonar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo abandono"],
                 ["tu abandones"],
@@ -516,7 +498,6 @@ def test_find_verb_by_infinitive(cg):
             "rebre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo rebo"],
                 ["tu reps"],
@@ -530,7 +511,6 @@ def test_find_verb_by_infinitive(cg):
             "cabre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo cabo"],
                 ["tu caps"],
@@ -544,7 +524,6 @@ def test_find_verb_by_infinitive(cg):
             "començar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo començo"],
                 ["tu comences"],
@@ -558,7 +537,6 @@ def test_find_verb_by_infinitive(cg):
             "enaiguar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo enaiguo"],
                 ["tu enaigües"],
@@ -572,7 +550,6 @@ def test_find_verb_by_infinitive(cg):
             "envejar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo envejo"],
                 ["tu enveges"],
@@ -586,7 +563,6 @@ def test_find_verb_by_infinitive(cg):
             "esglaiar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo esglaio"],
                 ["tu esglaies"],
@@ -600,7 +576,6 @@ def test_find_verb_by_infinitive(cg):
             "trencar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo trenco"],
                 ["tu trenques"],
@@ -614,7 +589,6 @@ def test_find_verb_by_infinitive(cg):
             "perdre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo perdo"],
                 ["tu perds"],
@@ -628,7 +602,6 @@ def test_find_verb_by_infinitive(cg):
             "caure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo caic"],
                 ["tu caus"],
@@ -642,7 +615,6 @@ def test_find_verb_by_infinitive(cg):
             "collar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo collo"],
                 ["tu colles"],
@@ -656,7 +628,6 @@ def test_find_verb_by_infinitive(cg):
             "collir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo cullo"],
                 ["tu culls"],
@@ -670,7 +641,6 @@ def test_find_verb_by_infinitive(cg):
             "dormir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo dormo"],
                 ["tu dorms"],
@@ -684,7 +654,6 @@ def test_find_verb_by_infinitive(cg):
             "tossir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo tusso"],
                 ["tu tusses"],
@@ -696,9 +665,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "collir",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo culli"],
                 ["tu cullis"],
@@ -710,9 +678,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "dormir",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo dormi"],
                 ["tu dormis"],
@@ -724,9 +691,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "tossir",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo tussi"],
                 ["tu tussis"],
@@ -740,7 +706,6 @@ def test_find_verb_by_infinitive(cg):
             "dir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo dic"],
                 ["tu dius"],
@@ -754,7 +719,6 @@ def test_find_verb_by_infinitive(cg):
             "anar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo vaig"],
                 ["tu vas"],
@@ -768,7 +732,6 @@ def test_find_verb_by_infinitive(cg):
             "poder",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo puc"],
                 ["tu pots"],
@@ -782,7 +745,6 @@ def test_find_verb_by_infinitive(cg):
             "arribar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo arribo"],
                 ["tu arribes"],
@@ -796,7 +758,6 @@ def test_find_verb_by_infinitive(cg):
             "trobar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo trobo"],
                 ["tu trobes"],
@@ -810,7 +771,6 @@ def test_find_verb_by_infinitive(cg):
             "partir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo parteixo"],
                 ["tu parteixes"],
@@ -824,7 +784,6 @@ def test_find_verb_by_infinitive(cg):
             "morir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo moro"],
                 ["tu mors"],
@@ -838,7 +797,6 @@ def test_find_verb_by_infinitive(cg):
             "eixir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo ixo", "jo isc"],
                 ["tu ixes"],
@@ -852,7 +810,6 @@ def test_find_verb_by_infinitive(cg):
             "jaure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo jec"],
                 ["tu jeus"],
@@ -866,7 +823,6 @@ def test_find_verb_by_infinitive(cg):
             "jeure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo jec"],
                 ["tu jeus"],
@@ -880,7 +836,6 @@ def test_find_verb_by_infinitive(cg):
             "pagar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo pago"],
                 ["tu pagues"],
@@ -894,7 +849,6 @@ def test_find_verb_by_infinitive(cg):
             "mentir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo menteixo", "jo mento"],
                 ["tu menteixes", "tu ments"],
@@ -908,7 +862,6 @@ def test_find_verb_by_infinitive(cg):
             "desmentir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo desmenteixo", "jo desmento"],
                 ["tu desmenteixes", "tu desments"],
@@ -922,7 +875,6 @@ def test_find_verb_by_infinitive(cg):
             "nàixer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo naixo", "jo neixo"],
                 ["tu naixes", "tu neixes"],
@@ -936,7 +888,6 @@ def test_find_verb_by_infinitive(cg):
             "néixer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo naixo", "jo neixo"],
                 ["tu naixes", "tu neixes"],
@@ -950,7 +901,6 @@ def test_find_verb_by_infinitive(cg):
             "obrir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo obro"],
                 ["tu obres"],
@@ -964,7 +914,6 @@ def test_find_verb_by_infinitive(cg):
             "riure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo ric"],
                 ["tu rius"],
@@ -978,7 +927,6 @@ def test_find_verb_by_infinitive(cg):
             "pertànyer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo pertanyo"],
                 ["tu pertanys"],
@@ -991,8 +939,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "pertànyer",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.m,
+            Tenses.ca.PassatSimple,
             [
                 ["jo pertanyí", "jo pertanguí"],
                 ["tu pertanyeres", "tu pertangueres"],
@@ -1006,7 +953,6 @@ def test_find_verb_by_infinitive(cg):
             "fènyer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo fenyo"],
                 ["tu fenys"],
@@ -1020,7 +966,6 @@ def test_find_verb_by_infinitive(cg):
             "córrer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo corro"],
                 ["tu corres"],
@@ -1034,7 +979,6 @@ def test_find_verb_by_infinitive(cg):
             "transcórrer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo transcorro"],
                 ["tu transcorres"],
@@ -1048,7 +992,6 @@ def test_find_verb_by_infinitive(cg):
             "imprimir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo imprimeixo"],
                 ["tu imprimeixes"],
@@ -1062,7 +1005,6 @@ def test_find_verb_by_infinitive(cg):
             "imprimir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo imprimeixo"],
                 ["tu imprimeixes"],
@@ -1076,7 +1018,6 @@ def test_find_verb_by_infinitive(cg):
             "vindre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo vindo"],
                 ["tu vinds"],
@@ -1090,7 +1031,6 @@ def test_find_verb_by_infinitive(cg):
             "tòrcer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo torço"],
                 ["tu torces"],
@@ -1104,7 +1044,6 @@ def test_find_verb_by_infinitive(cg):
             "caldre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["-"],
                 ["-"],
@@ -1118,7 +1057,6 @@ def test_find_verb_by_infinitive(cg):
             "obeir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo obeeixo"],
                 ["tu obeeixes"],
@@ -1132,7 +1070,6 @@ def test_find_verb_by_infinitive(cg):
             "beneir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo beneeixo"],
                 ["tu beneeixes"],
@@ -1146,7 +1083,6 @@ def test_find_verb_by_infinitive(cg):
             "coldre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo colc"],
                 ["tu cols"],
@@ -1160,7 +1096,6 @@ def test_find_verb_by_infinitive(cg):
             "dissoldre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo dissolc"],
                 ["tu dissols"],
@@ -1174,7 +1109,6 @@ def test_find_verb_by_infinitive(cg):
             "percudir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo percudeixo", "jo percudo"],
                 ["tu percudeixes", "tu percuts"],
@@ -1188,7 +1122,6 @@ def test_find_verb_by_infinitive(cg):
             "permetre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo permeto"],
                 ["tu permets"],
@@ -1202,7 +1135,6 @@ def test_find_verb_by_infinitive(cg):
             "desconèixer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo desconec"],
                 ["tu desconeixes"],
@@ -1215,8 +1147,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "desconèixer",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo desconeguí"],
                 ["tu desconegueres"],
@@ -1230,7 +1161,6 @@ def test_find_verb_by_infinitive(cg):
             "parèixer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo parec"],
                 ["tu pareixes"],
@@ -1244,7 +1174,6 @@ def test_find_verb_by_infinitive(cg):
             "expendre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo expenc"],
                 ["tu expens"],
@@ -1258,7 +1187,6 @@ def test_find_verb_by_infinitive(cg):
             "contendre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo contenc"],
                 ["tu contens"],
@@ -1272,7 +1200,6 @@ def test_find_verb_by_infinitive(cg):
             "atènyer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo atenyo"],
                 ["tu atenys"],
@@ -1286,7 +1213,6 @@ def test_find_verb_by_infinitive(cg):
             "descloure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo descloc"],
                 ["tu desclous"],
@@ -1298,16 +1224,14 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "descloure",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["desclòs"], ["desclosa"], ["desclosos"], ["descloses"]],
         ),
         (
             "cloure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo cloc"],
                 ["tu clous"],
@@ -1321,7 +1245,6 @@ def test_find_verb_by_infinitive(cg):
             "abreviar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo abrevio"],
                 ["tu abrevies"],
@@ -1333,9 +1256,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "abreviar",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo abreviï"],
                 ["tu abreviïs"],
@@ -1349,14 +1271,12 @@ def test_find_verb_by_infinitive(cg):
             "abreviar",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["abrevia"], ["abreviï"], ["abreviem"], ["abrevieu"], ["abreviïn"]],
         ),
         (
             "compondre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo componc"],
                 ["tu compons"],
@@ -1370,7 +1290,6 @@ def test_find_verb_by_infinitive(cg):
             "contendre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo contenc"],
                 ["tu contens"],
@@ -1384,7 +1303,6 @@ def test_find_verb_by_infinitive(cg):
             "complir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo compleixo"],
                 ["tu compleixes"],
@@ -1398,7 +1316,6 @@ def test_find_verb_by_infinitive(cg):
             "establir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo estableixo"],
                 ["tu estableixes"],
@@ -1412,7 +1329,6 @@ def test_find_verb_by_infinitive(cg):
             "complaure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo complac"],
                 ["tu complaus"],
@@ -1426,7 +1342,6 @@ def test_find_verb_by_infinitive(cg):
             "desplaure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo desplac"],
                 ["tu desplaus"],
@@ -1438,16 +1353,14 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "complaure",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["complagut"], ["complaguda"], ["complaguts"], ["complagudes"]],
         ),
         (
             "acréixer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo acreixo"],
                 ["tu acreixes"],
@@ -1460,8 +1373,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "acréixer",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo acreixí", "jo acresquí"],
                 ["tu acreixeres", "tu acresqueres"],
@@ -1473,9 +1385,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "acréixer",
-            "subjuntiu",
-            "imperfet",
-            Gender.f,
+            Moods.ca.Subjuntiu,
+            Tenses.ca.Imperfet,
             [
                 ["jo acreixés", "jo acresqués"],
                 ["tu acreixessis", "tu acresquessis"],
@@ -1489,7 +1400,6 @@ def test_find_verb_by_infinitive(cg):
             "merèixer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo mereixo"],
                 ["tu mereixes"],
@@ -1503,7 +1413,6 @@ def test_find_verb_by_infinitive(cg):
             "confondre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo confonc"],
                 ["tu confons"],
@@ -1517,7 +1426,6 @@ def test_find_verb_by_infinitive(cg):
             "consternar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo consterno"],
                 ["tu consternes"],
@@ -1531,7 +1439,6 @@ def test_find_verb_by_infinitive(cg):
             "contradir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo contradic"],
                 ["tu contradius"],
@@ -1543,23 +1450,20 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "contradir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["contradit"], ["contradida"], ["contradits"], ["contradides"]],
         ),
         (
             "dir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["dit"], ["dita"], ["dits"], ["dites"]],
         ),
         (
             "creure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo crec"],
                 ["tu creus"],
@@ -1572,8 +1476,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "creure",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.f,
+            Tenses.ca.Futur,
             [
                 ["jo creuré"],
                 ["tu creuràs"],
@@ -1587,7 +1490,6 @@ def test_find_verb_by_infinitive(cg):
             "dur",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo duc"],
                 ["tu duus", "tu dus"],
@@ -1601,14 +1503,12 @@ def test_find_verb_by_infinitive(cg):
             "dur",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["duu", "du"], ["dugui"], ["duguem"], ["dueu"], ["duguin"]],
         ),
         (
             "descosir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo descuso"],
                 ["tu descuses"],
@@ -1620,9 +1520,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "descosir",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo descusi"],
                 ["tu descusis"],
@@ -1636,14 +1535,12 @@ def test_find_verb_by_infinitive(cg):
             "descosir",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["descús"], ["descusi"], ["descosim"], ["descosiu"], ["descusin"]],
         ),
         (
             "valer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo valc"],
                 ["tu vals"],
@@ -1656,8 +1553,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "valer",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo valguí"],
                 ["tu valgueres"],
@@ -1671,7 +1567,6 @@ def test_find_verb_by_infinitive(cg):
             "doldre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo dolc"],
                 ["tu dols"],
@@ -1685,7 +1580,6 @@ def test_find_verb_by_infinitive(cg):
             "entrelluir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.m,
             [
                 ["jo entrelluo"],
                 ["tu entrelluus"],
@@ -1699,7 +1593,6 @@ def test_find_verb_by_infinitive(cg):
             "entrelluir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo entrelluo"],
                 ["tu entrelluus"],
@@ -1712,8 +1605,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "entrelluir",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.f,
+            Tenses.ca.Imperfet,
             [
                 ["jo entrelluïa"],
                 ["tu entrelluïes"],
@@ -1727,7 +1619,6 @@ def test_find_verb_by_infinitive(cg):
             "entrelluir",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [
                 ["entrelluu", "entrellú"],
                 ["entrelluï"],
@@ -1740,7 +1631,6 @@ def test_find_verb_by_infinitive(cg):
             "esglaiar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo esglaio"],
                 ["tu esglaies"],
@@ -1753,8 +1643,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "esglaiar",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo esglaí"],
                 ["tu esglaiares"],
@@ -1766,9 +1655,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "esglaiar",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo esglaï"],
                 ["tu esglaïs"],
@@ -1782,21 +1670,18 @@ def test_find_verb_by_infinitive(cg):
             "esglaiar",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["esglaia"], ["esglaï"], ["esglaiem"], ["esglaieu"], ["esglaïn"]],
         ),
         (
             "esglaiar",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["esglaiat"], ["esglaiada"], ["esglaiats"], ["esglaiades"]],
         ),
         (
             "evacuar",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo evacuo"],
                 ["tu evacues"],
@@ -1808,9 +1693,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "evacuar",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo evacuï"],
                 ["tu evacuïs"],
@@ -1824,14 +1708,12 @@ def test_find_verb_by_infinitive(cg):
             "evacuar",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["evacua"], ["evacuï"], ["evacuem"], ["evacueu"], ["evacuïn"]],
         ),
         (
             "tondre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo tonc"],
                 ["tu tons"],
@@ -1845,7 +1727,6 @@ def test_find_verb_by_infinitive(cg):
             "fugir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo fujo"],
                 ["tu fuges"],
@@ -1859,14 +1740,12 @@ def test_find_verb_by_infinitive(cg):
             "fugir",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["fuig"], ["fugi"], ["fugim"], ["fugiu"], ["fugin"]],
         ),
         (
             "imprimir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo imprimeixo"],
                 ["tu imprimeixes"],
@@ -1878,16 +1757,14 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "imprimir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["imprès"], ["impresa"], ["impresos"], ["impreses"]],
         ),
         (
             "ajeure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo ajec"],
                 ["tu ajeus"],
@@ -1901,7 +1778,6 @@ def test_find_verb_by_infinitive(cg):
             "moldre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo molc"],
                 ["tu mols"],
@@ -1915,7 +1791,6 @@ def test_find_verb_by_infinitive(cg):
             "malvendre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo malvenc"],
                 ["tu malvens"],
@@ -1928,8 +1803,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "malvendre",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.f,
+            Tenses.ca.Imperfet,
             [
                 ["jo malvenia"],
                 ["tu malvenies"],
@@ -1942,8 +1816,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "malvendre",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo malvenguí"],
                 ["tu malvengueres"],
@@ -1955,9 +1828,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "malvendre",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo malvengui"],
                 ["tu malvenguis"],
@@ -1969,9 +1841,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "malvendre",
-            "subjuntiu",
-            "imperfet",
-            Gender.f,
+            Moods.ca.Subjuntiu,
+            Tenses.ca.Imperfet,
             [
                 ["jo malvengués"],
                 ["tu malvenguessis"],
@@ -1985,7 +1856,6 @@ def test_find_verb_by_infinitive(cg):
             "omplir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo omplo"],
                 ["tu omples"],
@@ -1997,9 +1867,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "omplir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [
                 ["omplert", "omplit"],
                 ["omplerta", "omplida"],
@@ -2009,9 +1878,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "omplir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [
                 ["omplert", "omplit"],
                 ["omplerta", "omplida"],
@@ -2023,14 +1891,12 @@ def test_find_verb_by_infinitive(cg):
             "omplir",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["omple"], ["ompli"], ["omplim"], ["ompliu"], ["omplin"]],
         ),
         (
             "moure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo moc"],
                 ["tu mous"],
@@ -2043,8 +1909,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "moure",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo moguí"],
                 ["tu mogueres"],
@@ -2057,8 +1922,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "moure",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.f,
+            Tenses.ca.Imperfet,
             [
                 ["jo movia"],
                 ["tu movies"],
@@ -2072,7 +1936,6 @@ def test_find_verb_by_infinitive(cg):
             "absoldre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo absolc"],
                 ["tu absols"],
@@ -2084,16 +1947,14 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "absoldre",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["absolt"], ["absolta"], ["absolts"], ["absoltes"]],
         ),
         (
             "obrir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo obro"],
                 ["tu obres"],
@@ -2105,16 +1966,14 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "obrir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["obert"], ["oberta"], ["oberts"], ["obertes"]],
         ),
         (
             "prevenir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo previnc"],
                 ["tu prevens"],
@@ -2127,8 +1986,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "prevenir",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo previnguí"],
                 ["tu previngueres"],
@@ -2141,8 +1999,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "prevenir",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.f,
+            Tenses.ca.Imperfet,
             [
                 ["jo prevenia"],
                 ["tu prevenies"],
@@ -2155,8 +2012,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "prevenir",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.f,
+            Tenses.ca.Futur,
             [
                 ["jo previndré"],
                 ["tu previndràs"],
@@ -2168,9 +2024,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "prevenir",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo previngui"],
                 ["tu previnguis"],
@@ -2182,99 +2037,100 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "prevenir",
-            "subjuntiu",
-            "imperfet",
-            Gender.f,
+            Moods.ca.Subjuntiu,
+            Tenses.ca.Imperfet,
             [
                 ["jo previngués"],
                 ["tu previnguessis"],
+                ["ell previngués"],
                 ["ella previngués"],
                 ["nosaltres previnguéssim"],
                 ["vosaltres previnguéssiu"],
+                ["ells previnguessin"],
                 ["elles previnguessin"],
             ],
         ),
         (
             "prevenir",
-            "condicional",
+            Moods.ca.Condicional,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo previndria"],
                 ["tu previndries"],
+                ["ell previndria"],
                 ["ella previndria"],
                 ["nosaltres previndríem"],
                 ["vosaltres previndríeu"],
+                ["ells previndrien"],
                 ["elles previndrien"],
             ],
         ),
         (
             "prevenir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["previngut"], ["previnguda"], ["previnguts"], ["previngudes"]],
         ),
         (
             "prevenir",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["prevén"], ["previngui"], ["previnguem"], ["preveniu"], ["previnguin"]],
         ),
         (
             "sortir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo surto"],
                 ["tu surts"],
+                ["ell surt"],
                 ["ella surt"],
                 ["nosaltres sortim"],
                 ["vosaltres sortiu"],
+                ["ells surten"],
                 ["elles surten"],
             ],
         ),
         (
             "sortir",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo surti"],
                 ["tu surtis"],
+                ["ell surti"],
                 ["ella surti"],
                 ["nosaltres sortim"],
                 ["vosaltres sortiu"],
+                ["ells surtin"],
                 ["elles surtin"],
             ],
         ),
         (
             "sortir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["sortit"], ["sortida"], ["sortits"], ["sortides"]],
         ),
         (
             "sortir",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["surt"], ["surti"], ["sortim"], ["sortiu"], ["surtin"]],
         ),
         (
             "témer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo temo"],
                 ["tu tems"],
+                ["ell tem"],
                 ["ella tem"],
                 ["nosaltres temem"],
                 ["vosaltres temeu"],
+                ["ells temen"],
                 ["elles temen"],
             ],
         ),
@@ -2282,104 +2138,107 @@ def test_find_verb_by_infinitive(cg):
             "témer",
             "infinitiu",
             "infinitiu-present",
-            Gender.m,
             [["témer"]],
         ),
         (
             "témer",
             "gerundi",
             "gerundi",
-            Gender.m,
             [["tement"]],
         ),
         (
             "témer",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["temut"], ["temuda"], ["temuts"], ["temudes"]],
         ),
         (
             "retraure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo retrec"],
                 ["tu retreus"],
+                ["ell retreu"],
                 ["ella retreu"],
                 ["nosaltres retraiem"],
                 ["vosaltres retraieu"],
+                ["ells retreuen"],
                 ["elles retreuen"],
             ],
         ),
         (
             "retraure",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.f,
+            Tenses.ca.Imperfet,
             [
                 ["jo retreia"],
                 ["tu retreies"],
+                ["ell retreia"],
                 ["ella retreia"],
                 ["nosaltres retrèiem"],
                 ["vosaltres retrèieu"],
+                ["ells retreien"],
                 ["elles retreien"],
             ],
         ),
         (
             "retraure",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo retraguí"],
                 ["tu retragueres"],
+                ["ell retragué"],
                 ["ella retragué"],
                 ["nosaltres retraguérem"],
                 ["vosaltres retraguéreu"],
+                ["ells retragueren"],
                 ["elles retragueren"],
             ],
         ),
         (
             "retraure",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.f,
+            Tenses.ca.Futur,
             [
                 ["jo retraué"],
                 ["tu retrauàs"],
+                ["ell retrauà"],
                 ["ella retrauà"],
                 ["nosaltres retrauem"],
                 ["vosaltres retraueu"],
+                ["ells retrauan"],
                 ["elles retrauan"],
             ],
         ),
         (
             "retraure",
-            "condicional",
+            Moods.ca.Condicional,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo retrauia"],
                 ["tu retrauies"],
+                ["ell retrauia"],
                 ["ella retrauia"],
                 ["nosaltres retrauíem"],
                 ["vosaltres retrauíeu"],
+                ["ells retrauien"],
                 ["elles retrauien"],
             ],
         ),
         (
             "retraure",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo retregui"],
                 ["tu retreguis"],
+                ["ell retregui"],
                 ["ella retregui"],
                 ["nosaltres retreguem"],
                 ["vosaltres retregueu"],
+                ["ells retreguin"],
                 ["elles retreguin"],
             ],
         ),
@@ -2387,7 +2246,6 @@ def test_find_verb_by_infinitive(cg):
             "premorir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo premoro"],
                 ["tu premors"],
@@ -2401,7 +2259,6 @@ def test_find_verb_by_infinitive(cg):
             "conviure",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo convisc"],
                 ["tu convius"],
@@ -2414,8 +2271,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "conviure",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.f,
+            Tenses.ca.Imperfet,
             [
                 ["jo convivia"],
                 ["tu convivies"],
@@ -2428,8 +2284,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "conviure",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo convisquí"],
                 ["tu convisqueres"],
@@ -2443,7 +2298,6 @@ def test_find_verb_by_infinitive(cg):
             "vèncer",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo venço"],
                 ["tu vences"],
@@ -2457,35 +2311,30 @@ def test_find_verb_by_infinitive(cg):
             "vèncer",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["venç"], ["venci"], ["vencem"], ["venceu"], ["vencin"]],
         ),
         (
             "vèncer",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Tenses.ca.Participi,
             [["vençut"], ["vençuda"], ["vençuts"], ["vençudes"]],
         ),
         (
             "vèncer",
             "infinitiu",
             "infinitiu-present",
-            Gender.m,
             [["vèncer"]],
         ),
         (
             "vèncer",
             "gerundi",
             "gerundi",
-            Gender.m,
             [["vencent"]],
         ),
         (
             "cerndre",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo cerno"],
                 ["tu cerns"],
@@ -2499,7 +2348,6 @@ def test_find_verb_by_infinitive(cg):
             "oir",
             Moods.ca.Indicatiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo oeixo"],
                 ["tu oeixes"],
@@ -2512,8 +2360,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "oir",
             Moods.ca.Indicatiu,
-            "imperfet",
-            Gender.f,
+            Tenses.ca.Imperfet,
             [
                 ["jo oïa"],
                 ["tu oïes"],
@@ -2526,8 +2373,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "oir",
             Moods.ca.Indicatiu,
-            "passat-simple",
-            Gender.f,
+            Tenses.ca.PassatSimple,
             [
                 ["jo oí"],
                 ["tu oïres"],
@@ -2540,8 +2386,7 @@ def test_find_verb_by_infinitive(cg):
         (
             "oir",
             Moods.ca.Indicatiu,
-            "futur",
-            Gender.f,
+            Tenses.ca.Futur,
             [
                 ["jo oiré"],
                 ["tu oiràs"],
@@ -2553,9 +2398,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "oir",
-            "subjuntiu",
+            Moods.ca.Subjuntiu,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo oeixi"],
                 ["tu oeixis"],
@@ -2567,9 +2411,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "oir",
-            "subjuntiu",
-            "imperfet",
-            Gender.f,
+            Moods.ca.Subjuntiu,
+            Tenses.ca.Imperfet,
             [
                 ["jo oís"],
                 ["tu oïssis"],
@@ -2581,9 +2424,8 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "oir",
-            "condicional",
+            Moods.ca.Condicional,
             Tenses.ca.Present,
-            Gender.f,
             [
                 ["jo oiria"],
                 ["tu oiries"],
@@ -2595,47 +2437,40 @@ def test_find_verb_by_infinitive(cg):
         ),
         (
             "oir",
-            "particip",
-            "particip",
-            Gender.f,
+            Moods.ca.Participi,
+            Moods.ca.Participi,
             [["oït"], ["oïda"], ["oïts"], ["oïdes"]],
         ),
         (
             "oir",
             "infinitiu",
             "infinitiu-present",
-            Gender.m,
             [["oir"]],
         ),
         (
             "oir",
             "gerundi",
             "gerundi",
-            Gender.m,
             [["oint"]],
         ),
         (
             "oir",
             "imperatiu",
             "imperatiu-present",
-            Gender.m,
             [["oeix"], ["oeixi"], ["oïm"], ["oïu"], ["oeixin"]],
         ),
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
-    cg, infinitive, mood, tense, gender, expected_result
+    cg, infinitive, mood, tense, expected_result
 ):
-    tc = cg.conjugate_mood_tense(infinitive, mood, tense, gender)
+    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
     assert [list(c) for c in tc] == expected_result
 
 
 def test_inflector_ca_conjugate_simple_past(cg):
     cc = cg.conjugate_mood_tense(
-        "pertànyer",
-        Moods.ca.Indicatiu,
-        Tenses.ca.PassatSimple,
-        Gender.m,
+        "pertànyer", Moods.ca.Indicatiu, Tenses.ca.PassatSimple
     )
     assert cc == TenseConjugation(
         Tenses.ca.PassatSimple,
@@ -2643,14 +2478,14 @@ def test_inflector_ca_conjugate_simple_past(cg):
             Conjugation(
                 Person.First,
                 Number.Singular,
-                Gender.m,
+                None,
                 "jo",
                 ["jo pertanyí", "jo pertanguí"],
             ),
             Conjugation(
                 Person.Second,
                 Number.Singular,
-                Gender.m,
+                None,
                 "tu",
                 ["tu pertanyeres", "tu pertangueres"],
             ),
@@ -2662,16 +2497,23 @@ def test_inflector_ca_conjugate_simple_past(cg):
                 ["ell pertanyé", "ell pertangué"],
             ),
             Conjugation(
+                Person.Third,
+                Number.Singular,
+                Gender.f,
+                "ella",
+                ["ella pertanyé", "ella pertangué"],
+            ),
+            Conjugation(
                 Person.First,
                 Number.Plural,
-                Gender.m,
+                None,
                 "nosaltres",
                 ["nosaltres pertanyérem", "nosaltres pertanguérem"],
             ),
             Conjugation(
                 Person.Second,
                 Number.Plural,
-                Gender.m,
+                None,
                 "vosaltres",
                 ["vosaltres pertanyéreu", "vosaltres pertanguéreu"],
             ),
@@ -2681,6 +2523,13 @@ def test_inflector_ca_conjugate_simple_past(cg):
                 Gender.m,
                 "ells",
                 ["ells pertanyeren", "ells pertanguéren"],
+            ),
+            Conjugation(
+                Person.Third,
+                Number.Plural,
+                Gender.f,
+                "elles",
+                ["elles pertanyeren", "elles pertanguéren"],
             ),
         ],
     )
@@ -2735,13 +2584,15 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
     )
     tense_template = TenseTemplateParser(Lang.ca, mood).parse(tense_elem)
     tc = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
-    assert [c[0] for c in tc] == [
+    assert [c.get_conjugations() for c in tc] == [
         ["jo parlo"],
         ["tu parles"],
         ["ell parla"],
+        ["ella parla"],
         ["nosaltres parlem"],
         ["vosaltres parleu"],
         ["ells parlen"],
+        ["elles parlen"],
     ]
 
 
@@ -2780,108 +2631,125 @@ def test_inflector_ca_get_pronouns(
     assert pronoun == expected_result
 
 
-def test_inflector_conjugate_ser(cg):
+def test_inflector_ca_conjugate_ser(cg):
     cc = cg.conjugate("ser")
     EXPECTED_RESULT = {
         "moods": {
-            "condicional": {
+            Moods.ca.Condicional: {
                 "present": [
-                    ["1", "s", "m", "jo", ["jo seria", "jo fora"]],
-                    ["2", "s", "m", "tu", ["tu series", "tu fores"]],
+                    ["1", "s", None, "jo", ["jo seria", "jo fora"]],
+                    ["2", "s", None, "tu", ["tu series", "tu fores"]],
                     ["3", "s", "m", "ell", ["ell seria", "ell fora"]],
+                    ["3", "s", "f", "ella", ["ella seria", "ella fora"]],
                     [
                         "1",
                         "p",
-                        "m",
+                        None,
                         "nosaltres",
                         ["nosaltres seríem", "nosaltres fórem"],
                     ],
                     [
                         "2",
                         "p",
-                        "m",
+                        None,
                         "vosaltres",
                         ["vosaltres seríeu", "vosaltres fóreu"],
                     ],
                     ["3", "p", "m", "ells", ["ells serien", "ells foren"]],
+                    ["3", "p", "f", "elles", ["elles serien", "elles foren"]],
                 ]
             },
-            "gerundi": {"gerundi": [["1", "s", "m", "jo", ["sent", "essent"]]]},
+            "gerundi": {"gerundi": [["1", "s", None, "jo", ["sent", "essent"]]]},
             "imperatiu": {
                 "imperatiu-present": [
-                    ["2", "s", "m", "tu", ["sigues"]],
+                    ["2", "s", None, "tu", ["sigues"]],
                     ["3", "s", "m", "ell", ["sigui"]],
-                    ["1", "p", "m", "nosaltres", ["siguem"]],
-                    ["2", "p", "m", "vosaltres", ["sigueu"]],
+                    ["3", "s", "f", "ella", ["sigui"]],
+                    ["1", "p", None, "nosaltres", ["siguem"]],
+                    ["2", "p", None, "vosaltres", ["sigueu"]],
                     ["3", "p", "m", "ells", ["siguin"]],
+                    ["3", "p", "f", "elles", ["siguin"]],
                 ]
             },
             "indicatiu": {
-                "futur": [
-                    ["1", "s", "m", "jo", ["jo seré"]],
-                    ["2", "s", "m", "tu", ["tu seràs"]],
+                Tenses.ca.Futur: [
+                    ["1", "s", None, "jo", ["jo seré"]],
+                    ["2", "s", None, "tu", ["tu seràs"]],
                     ["3", "s", "m", "ell", ["ell serà"]],
-                    ["1", "p", "m", "nosaltres", ["nosaltres serem"]],
-                    ["2", "p", "m", "vosaltres", ["vosaltres sereu"]],
+                    ["3", "s", "f", "ella", ["ella serà"]],
+                    ["1", "p", None, "nosaltres", ["nosaltres serem"]],
+                    ["2", "p", None, "vosaltres", ["vosaltres sereu"]],
                     ["3", "p", "m", "ells", ["ells seran"]],
+                    ["3", "p", "f", "elles", ["elles seran"]],
                 ],
-                "imperfet": [
-                    ["1", "s", "m", "jo", ["jo era"]],
-                    ["2", "s", "m", "tu", ["tu eres"]],
+                Tenses.ca.Imperfet: [
+                    ["1", "s", None, "jo", ["jo era"]],
+                    ["2", "s", None, "tu", ["tu eres"]],
                     ["3", "s", "m", "ell", ["ell era"]],
-                    ["1", "p", "m", "nosaltres", ["nosaltres érem"]],
-                    ["2", "p", "m", "vosaltres", ["vosaltres éreu"]],
+                    ["3", "s", "f", "ella", ["ella era"]],
+                    ["1", "p", None, "nosaltres", ["nosaltres érem"]],
+                    ["2", "p", None, "vosaltres", ["vosaltres éreu"]],
                     ["3", "p", "m", "ells", ["ells eren"]],
+                    ["3", "p", "f", "elles", ["elles eren"]],
                 ],
-                "passat-simple": [
-                    ["1", "s", "m", "jo", ["jo fui"]],
-                    ["2", "s", "m", "tu", ["tu fores"]],
+                Tenses.ca.PassatSimple: [
+                    ["1", "s", None, "jo", ["jo fui"]],
+                    ["2", "s", None, "tu", ["tu fores"]],
                     ["3", "s", "m", "ell", ["ell fou"]],
-                    ["1", "p", "m", "nosaltres", ["nosaltres fórem"]],
-                    ["2", "p", "m", "vosaltres", ["vosaltres fóreu"]],
+                    ["3", "s", "f", "ella", ["ella fou"]],
+                    ["1", "p", None, "nosaltres", ["nosaltres fórem"]],
+                    ["2", "p", None, "vosaltres", ["vosaltres fóreu"]],
                     ["3", "p", "m", "ells", ["ells foren"]],
+                    ["3", "p", "f", "elles", ["elles foren"]],
                 ],
                 "present": [
-                    ["1", "s", "m", "jo", ["jo sóc"]],
-                    ["2", "s", "m", "tu", ["tu ets"]],
+                    ["1", "s", None, "jo", ["jo sóc"]],
+                    ["2", "s", None, "tu", ["tu ets"]],
                     ["3", "s", "m", "ell", ["ell és"]],
-                    ["1", "p", "m", "nosaltres", ["nosaltres som"]],
-                    ["2", "p", "m", "vosaltres", ["vosaltres sou"]],
+                    ["3", "s", "f", "ella", ["ella és"]],
+                    ["1", "p", None, "nosaltres", ["nosaltres som"]],
+                    ["2", "p", None, "vosaltres", ["vosaltres sou"]],
                     ["3", "p", "m", "ells", ["ells són"]],
+                    ["3", "p", "f", "elles", ["elles són"]],
                 ],
             },
             "infinitiu": {
-                "infinitiu-present": [["1", "s", "m", "jo", ["ser", "ésser"]]]
+                "infinitiu-present": [["1", "s", None, "jo", ["ser", "ésser"]]]
             },
-            "particip": {
-                "particip": [
+            Moods.ca.Participi: {
+                Tenses.ca.Participi: [
                     [None, "s", "m", None, ["estat", "sigut"]],
-                    [None, "p", "f", None, ["estada", "siguda"]],
-                    [None, "s", "m", None, ["estats", "siguts"]],
+                    [None, "p", "m", None, ["estada", "siguda"]],
+                    [None, "s", "f", None, ["estats", "siguts"]],
                     [None, "p", "f", None, ["estades", "sigudes"]],
                 ]
             },
-            "subjuntiu": {
-                "imperfet": [
-                    ["1", "s", "m", "jo", ["jo fos"]],
-                    ["2", "s", "m", "tu", ["tu fossis"]],
+            Moods.ca.Subjuntiu: {
+                Tenses.ca.Imperfet: [
+                    ["1", "s", None, "jo", ["jo fos"]],
+                    ["2", "s", None, "tu", ["tu fossis"]],
                     ["3", "s", "m", "ell", ["ell fos"]],
-                    ["1", "p", "m", "nosaltres", ["nosaltres fóssim"]],
-                    ["2", "p", "m", "vosaltres", ["vosaltres fóssiu"]],
+                    ["3", "s", "f", "ella", ["ella fos"]],
+                    ["1", "p", None, "nosaltres", ["nosaltres fóssim"]],
+                    ["2", "p", None, "vosaltres", ["vosaltres fóssiu"]],
                     ["3", "p", "m", "ells", ["ells fossin"]],
+                    ["3", "p", "f", "elles", ["elles fossin"]],
                 ],
                 "present": [
-                    ["1", "s", "m", "jo", ["jo sigui"]],
-                    ["2", "s", "m", "tu", ["tu siguis"]],
+                    ["1", "s", None, "jo", ["jo sigui"]],
+                    ["2", "s", None, "tu", ["tu siguis"]],
                     ["3", "s", "m", "ell", ["ell sigui"]],
-                    ["1", "p", "m", "nosaltres", ["nosaltres siguem"]],
-                    ["2", "p", "m", "vosaltres", ["vosaltres sigueu"]],
+                    ["3", "s", "f", "ella", ["ella sigui"]],
+                    ["1", "p", None, "nosaltres", ["nosaltres siguem"]],
+                    ["2", "p", None, "vosaltres", ["vosaltres sigueu"]],
                     ["3", "p", "m", "ells", ["ells siguin"]],
+                    ["3", "p", "f", "elles", ["elles siguin"]],
                 ],
             },
         },
         "verb": {
             "infinitive": "ser",
+            "lang": "ca",
             "pred_score": 1.0,
             "predicted": False,
             "stem": "",
@@ -2897,92 +2765,109 @@ def test_inflector_conjugate_noconjpronouns(cg):
     cc = cg.conjugate("ser", conjugate_pronouns=False)
     expected_resp = {
         "moods": {
-            "condicional": {
+            Moods.ca.Condicional: {
                 "present": [
-                    ["1", "s", "m", "jo", ["seria", "fora"]],
-                    ["2", "s", "m", "tu", ["series", "fores"]],
+                    ["1", "s", None, "jo", ["seria", "fora"]],
+                    ["2", "s", None, "tu", ["series", "fores"]],
                     ["3", "s", "m", "ell", ["seria", "fora"]],
-                    ["1", "p", "m", "nosaltres", ["seríem", "fórem"]],
-                    ["2", "p", "m", "vosaltres", ["seríeu", "fóreu"]],
+                    ["3", "s", "f", "ella", ["seria", "fora"]],
+                    ["1", "p", None, "nosaltres", ["seríem", "fórem"]],
+                    ["2", "p", None, "vosaltres", ["seríeu", "fóreu"]],
                     ["3", "p", "m", "ells", ["serien", "foren"]],
+                    ["3", "p", "f", "elles", ["serien", "foren"]],
                 ]
             },
-            "gerundi": {"gerundi": [["1", "s", "m", "jo", ["sent", "essent"]]]},
+            "gerundi": {"gerundi": [["1", "s", None, "jo", ["sent", "essent"]]]},
             "imperatiu": {
                 "imperatiu-present": [
-                    ["2", "s", "m", "tu", ["sigues"]],
+                    ["2", "s", None, "tu", ["sigues"]],
                     ["3", "s", "m", "ell", ["sigui"]],
-                    ["1", "p", "m", "nosaltres", ["siguem"]],
-                    ["2", "p", "m", "vosaltres", ["sigueu"]],
+                    ["3", "s", "f", "ella", ["sigui"]],
+                    ["1", "p", None, "nosaltres", ["siguem"]],
+                    ["2", "p", None, "vosaltres", ["sigueu"]],
                     ["3", "p", "m", "ells", ["siguin"]],
+                    ["3", "p", "f", "elles", ["siguin"]],
                 ]
             },
             "indicatiu": {
-                "futur": [
-                    ["1", "s", "m", "jo", ["seré"]],
-                    ["2", "s", "m", "tu", ["seràs"]],
+                Tenses.ca.Futur: [
+                    ["1", "s", None, "jo", ["seré"]],
+                    ["2", "s", None, "tu", ["seràs"]],
                     ["3", "s", "m", "ell", ["serà"]],
-                    ["1", "p", "m", "nosaltres", ["serem"]],
-                    ["2", "p", "m", "vosaltres", ["sereu"]],
+                    ["3", "s", "f", "ella", ["serà"]],
+                    ["1", "p", None, "nosaltres", ["serem"]],
+                    ["2", "p", None, "vosaltres", ["sereu"]],
                     ["3", "p", "m", "ells", ["seran"]],
+                    ["3", "p", "f", "elles", ["seran"]],
                 ],
-                "imperfet": [
-                    ["1", "s", "m", "jo", ["era"]],
-                    ["2", "s", "m", "tu", ["eres"]],
+                Tenses.ca.Imperfet: [
+                    ["1", "s", None, "jo", ["era"]],
+                    ["2", "s", None, "tu", ["eres"]],
                     ["3", "s", "m", "ell", ["era"]],
-                    ["1", "p", "m", "nosaltres", ["érem"]],
-                    ["2", "p", "m", "vosaltres", ["éreu"]],
+                    ["3", "s", "f", "ella", ["era"]],
+                    ["1", "p", None, "nosaltres", ["érem"]],
+                    ["2", "p", None, "vosaltres", ["éreu"]],
                     ["3", "p", "m", "ells", ["eren"]],
+                    ["3", "p", "f", "elles", ["eren"]],
                 ],
-                "passat-simple": [
-                    ["1", "s", "m", "jo", ["fui"]],
-                    ["2", "s", "m", "tu", ["fores"]],
+                Tenses.ca.PassatSimple: [
+                    ["1", "s", None, "jo", ["fui"]],
+                    ["2", "s", None, "tu", ["fores"]],
                     ["3", "s", "m", "ell", ["fou"]],
-                    ["1", "p", "m", "nosaltres", ["fórem"]],
-                    ["2", "p", "m", "vosaltres", ["fóreu"]],
+                    ["3", "s", "f", "ella", ["fou"]],
+                    ["1", "p", None, "nosaltres", ["fórem"]],
+                    ["2", "p", None, "vosaltres", ["fóreu"]],
                     ["3", "p", "m", "ells", ["foren"]],
+                    ["3", "p", "f", "elles", ["foren"]],
                 ],
                 "present": [
-                    ["1", "s", "m", "jo", ["sóc"]],
-                    ["2", "s", "m", "tu", ["ets"]],
+                    ["1", "s", None, "jo", ["sóc"]],
+                    ["2", "s", None, "tu", ["ets"]],
                     ["3", "s", "m", "ell", ["és"]],
-                    ["1", "p", "m", "nosaltres", ["som"]],
-                    ["2", "p", "m", "vosaltres", ["sou"]],
+                    ["3", "s", "f", "ella", ["és"]],
+                    ["1", "p", None, "nosaltres", ["som"]],
+                    ["2", "p", None, "vosaltres", ["sou"]],
                     ["3", "p", "m", "ells", ["són"]],
+                    ["3", "p", "f", "elles", ["són"]],
                 ],
             },
             "infinitiu": {
-                "infinitiu-present": [["1", "s", "m", "jo", ["ser", "ésser"]]]
+                "infinitiu-present": [["1", "s", None, "jo", ["ser", "ésser"]]]
             },
-            "particip": {
-                "particip": [
-                    [None, "s", "m", "jo", ["estat", "sigut"]],
-                    [None, "p", "m", "nosaltres", ["estada", "siguda"]],
-                    [None, "s", "m", "jo", ["estats", "siguts"]],
-                    [None, "p", "m", "nosaltres", ["estades", "sigudes"]],
+            Tenses.ca.Participi: {
+                Tenses.ca.Participi: [
+                    [None, "s", "m", None, ["estat", "sigut"]],
+                    [None, "p", "m", None, ["estada", "siguda"]],
+                    [None, "s", "f", None, ["estats", "siguts"]],
+                    [None, "p", "f", None, ["estades", "sigudes"]],
                 ]
             },
-            "subjuntiu": {
-                "imperfet": [
-                    ["1", "s", "m", "jo", ["fos"]],
-                    ["2", "s", "m", "tu", ["fossis"]],
+            Moods.ca.Subjuntiu: {
+                Tenses.ca.Imperfet: [
+                    ["1", "s", None, "jo", ["fos"]],
+                    ["2", "s", None, "tu", ["fossis"]],
                     ["3", "s", "m", "ell", ["fos"]],
-                    ["1", "p", "m", "nosaltres", ["fóssim"]],
-                    ["2", "p", "m", "vosaltres", ["fóssiu"]],
+                    ["3", "s", "f", "ella", ["fos"]],
+                    ["1", "p", None, "nosaltres", ["fóssim"]],
+                    ["2", "p", None, "vosaltres", ["fóssiu"]],
                     ["3", "p", "m", "ells", ["fossin"]],
+                    ["3", "p", "f", "elles", ["fossin"]],
                 ],
                 "present": [
-                    ["1", "s", "m", "jo", ["sigui"]],
-                    ["2", "s", "m", "tu", ["siguis"]],
+                    ["1", "s", None, "jo", ["sigui"]],
+                    ["2", "s", None, "tu", ["siguis"]],
                     ["3", "s", "m", "ell", ["sigui"]],
-                    ["1", "p", "m", "nosaltres", ["siguem"]],
-                    ["2", "p", "m", "vosaltres", ["sigueu"]],
+                    ["3", "s", "f", "ella", ["sigui"]],
+                    ["1", "p", None, "nosaltres", ["siguem"]],
+                    ["2", "p", None, "vosaltres", ["sigueu"]],
                     ["3", "p", "m", "ells", ["siguin"]],
+                    ["3", "p", "f", "elles", ["siguin"]],
                 ],
             },
         },
         "verb": {
             "infinitive": "ser",
+            "lang": "ca",
             "pred_score": 1.0,
             "predicted": False,
             "stem": "",

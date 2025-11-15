@@ -769,8 +769,8 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 "essent"
             ]
         },
-        "particip": {
-            "particip": [
+        "participi": {
+            "participi": [
                 "estat",
                 "estada",
                 "estats",
@@ -933,9 +933,9 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
                 ]
             ]
         },
-        "particip":
+        "participi":
         {
-            "particip": [
+            "participi": [
                 [
                     null, "s", "m", "jo",
                     ["estat", "sigut"]

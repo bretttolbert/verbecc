@@ -156,21 +156,26 @@ def walk_root(root) -> List[str]:
     return errors
 
 
+NO_ERRORS = "(no errors)"
+
+
 def pytest_generate_tests(metafunc):
     """Indirect parametrization for pytest to run test_per_error for
     each missing type annotation found."""
-    if "errors" in metafunc.fixturenames:
+    if "error" in metafunc.fixturenames:
         errors: List[str] = walk_root(metafunc.config.rootpath)
-        metafunc.parametrize("errors", errors)
+        # below is a bit hacky but allows test_ast module to
+        # show as passing rather than as skipped due to an empty
+        # errors list being sent to parametrize
+        if len(errors) == 0:
+            errors.append(NO_ERRORS)
+        metafunc.parametrize("error", errors)
 
 
-def test_per_error(errors: str):
+def test_per_error(error: str):
     """Test that fails for each AST error found.
+    If there are no errors, it will run once and pass.
     Works with pytest using indirect parametrization.
-    (See pytest_generate_tests above.)
-
-    TODO: Get it to PASS if errors is empty
-    (currently it's SKIPPED if errors is empty)
+    (See pytest_generate_tests above)
     """
-    error = errors
-    assert False, error
+    assert error == NO_ERRORS

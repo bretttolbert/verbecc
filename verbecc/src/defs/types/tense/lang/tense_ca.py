@@ -9,7 +9,7 @@ class TenseCa(Tense):
     Imperfet = "imperfet"
     Indicatiu = "indicatiu"
     InfinitiuPresent = "infinitiu-present"
-    Particip = "particip"
+    Participi = "participi"
     PassatSimple = "passat-simple"
     Pluscuamperfet = "pluscuamperfet"
     Present = "present"

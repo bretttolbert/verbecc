@@ -109,7 +109,7 @@ TENSE_MAP: Dict[Tense, Dict[LangCodeISO639_1, Tense]] = {
         LangCodeISO639_1.ro: Tenses.ro.Gerunziu,
     },
     Tenses.en.PastParticiple: {
-        LangCodeISO639_1.ca: Tenses.ca.Particip,
+        LangCodeISO639_1.ca: Tenses.ca.Participi,
         LangCodeISO639_1.es: Tenses.es.Participo,
         LangCodeISO639_1.fr: Tenses.fr.ParticipePassé,
         LangCodeISO639_1.it: Tenses.it.ParticipioPassato,

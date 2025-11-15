@@ -12,7 +12,11 @@ from verbecc.src.defs.types.number import Number
 class TenseTemplate(Element):
 
     def __init__(
-        self, lang: Lang, mood: Mood, tense: Tense, person_endings: List[PersonEnding]
+        self,
+        lang: Lang,
+        mood: Mood,
+        tense: Tense,
+        person_endings: List[PersonEnding],
     ) -> None:
         self.lang = lang
         self.mood = mood

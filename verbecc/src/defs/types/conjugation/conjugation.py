@@ -35,7 +35,7 @@ class Conjugation(AbstractConjugation):
         :param gender (optional): The grammatical gender, i.e. masculine or feminine.
         :param pronoun (optional): The pronoun being conjugated, e.g. "il" vs. "elle" or "tú" vs. "vos",
             omitted if this tense is conjugated without pronouns (e.g. participle or imperative)
-        :param conjugations: The list of one or more conjugations.
+        :param conjugations (optional): The list of one or more conjugations.
             The first conjugation is the primary or default conjugation.
             The second conjugation, if present, is the first alternate conjugation.
             There may be any number of alternate conjugations.

@@ -7,5 +7,5 @@ class MoodCa(Mood):
     Imperatiu = "imperatiu"
     Indicatiu = "indicatiu"
     Infinitiu = "infinitiu"
-    Participi = "particip"
+    Participi = "participi"
     Subjuntiu = "subjuntiu"
