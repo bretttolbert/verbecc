@@ -1,0 +1,2 @@
+class InvalidTenseError(Exception):
+    pass

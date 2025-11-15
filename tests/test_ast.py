@@ -165,8 +165,12 @@ def pytest_generate_tests(metafunc):
 
 
 def test_per_error(errors: str):
-    """Test that fails for each missing type annotation found.
+    """Test that fails for each AST error found.
     Works with pytest using indirect parametrization.
-    (See pytest_generate_tests above.)"""
+    (See pytest_generate_tests above.)
+
+    TODO: Get it to PASS if errors is empty
+    (currently it's SKIPPED if errors is empty)
+    """
     error = errors
     assert False, error

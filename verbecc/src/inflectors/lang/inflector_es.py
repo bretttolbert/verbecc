@@ -239,7 +239,7 @@ class InflectorEs(Inflector):
             ):
                 if (
                     self.lang_specific_options is not None
-                    and self.lang_specific_options.voseo_options
+                    and self.lang_specific_options.get_voseo_options()
                     != VoseoOptions.VoseoTipo3
                 ):
                     # only voseo tipo 3 (voseo típico aka Rioplatense) is supported at the moment

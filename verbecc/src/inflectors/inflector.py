@@ -171,7 +171,7 @@ class Inflector(ABC):
         But in some lang XML files, e.g. Italian, the order is MS, FS, MP, FP
         TODO: Standardize the XML files
         """
-        return PARTICIPLE_INFLECTIONS[self.lang].index(participle_inflection)
+        return PARTICIPLE_INFLECTIONS[self.get_lang()].index(participle_inflection)
 
     def get_default_participle_inflection_for_person(
         self, number: Number, gender: Gender = Gender.m

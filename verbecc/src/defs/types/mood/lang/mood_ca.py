@@ -1,0 +1,11 @@
+from verbecc.src.defs.types.mood.mood import Mood
+
+
+class MoodCa(Mood):
+    Condicional = "condicional"
+    Gerundi = "gerundi"
+    Imperatiu = "imperatiu"
+    Indicatiu = "indicatiu"
+    Infinitiu = "infinitiu"
+    Participi = "particip"
+    Subjuntiu = "subjuntiu"

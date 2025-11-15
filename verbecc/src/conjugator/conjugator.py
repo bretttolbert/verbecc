@@ -20,10 +20,10 @@ from typing import cast, List, Optional
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
-from verbecc.src.defs.types.conjugation import VerbInfo
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.exceptions import (
     VerbNotFoundError,
@@ -34,7 +34,9 @@ from verbecc.src.defs.types.conjugation import (
     Conjugation,
     TenseConjugation,
     MoodConjugation,
+    MoodConjugationUtil,
     MoodsConjugation,
+    VerbInfo,
     CompleteConjugation,
 )
 from verbecc.src.defs.types.lang_specific_options import (
@@ -169,7 +171,7 @@ class Conjugator:
             mood,
             conjugate_pronouns,
         )
-        ret = MoodConjugation.combine(
+        ret = MoodConjugationUtil.combine(
             ret,
             self._get_compound_conjugations_for_mood(
                 co,
@@ -329,6 +331,9 @@ class Conjugator:
         aux_uses_alternate: bool,
     ) -> TenseConjugation:
         """
+        :param: person_endings = ?
+        :param: aux_conj e.g. ["suis", "es", "est", etc.]
+
         Forms a compound conjugation composed of an auxiliary verb (aka helping verb)
         conjugation and a primary verb, typically the participle tense.
         Typically the primary verb is a participle but there are exceptions e.g.
@@ -487,78 +492,66 @@ class Conjugator:
             # For the feminine conjugations for ambiguous pronouns like nous, vous, that is.
             # The conjugations for
 
+            # person_endings are the template endings for the primary verb
+            # e.g. for the infinitive "aller" in the PasséAntérieur:
+            # Tenses.fr.PasséAntérieur: (Moods.fr.Indicatif, Tenses.fr.PasséSimple),
+            # person_endings would be allai, allas, alla, etc.
+            # so they are irrelevant here, since we are using the PasséSimple
+            # of the auxiliary verb rather than the primary verb,
+            # but we can use them to get number.
+
             for i, hv in enumerate(aux_conj_scalar):
-                aux_pc = aux_conj[i]
-                pe = person_endings[i]
+                aux_pc = aux_conj[i]  # e.g. "suis"
+                # need to get person_ending, e.g. "allé", based on gender and number of aux_pc
+                gender = Gender.m
+                number = Number.Singular
+
+                aux_pc_gender = aux_pc.get_gender()
+                if aux_pc_gender is not None:
+                    gender = aux_pc_gender
+
+                aux_pc_number = aux_pc.get_number()
+                if aux_pc_number is not None:
+                    number = aux_pc_number
+
                 genders = []
-                if pe.gender is not None:
-                    genders.append(pe.gender)
-                elif pe.person == Person.Third and aux_pc.get_gender() is not None:
+                if (
+                    aux_pc.get_person() == Person.Third
+                    and aux_pc.get_gender() is not None
+                ):
                     genders.append(aux_pc.get_gender())
                 else:
-                    genders.extend([Gender.m, Gender.f])
-                unique_conjugations = set(
-                    [
-                        self._conjugate_compound_participle_inflected(
-                            gender, co, pe, p_mood, p_tense, p_conj, aux_pc, hv
-                        )
-                        for gender in genders
-                    ]
-                )
-                ret.extend(list(unique_conjugations))
+                    genders.extend([Gender.f, Gender.m])
+                conjugations = [
+                    self._conjugate_compound_participle_inflected(
+                        gender, number, aux_pc, p_conj
+                    )
+                    for gender in genders
+                ]
+                ret.extend(conjugations)
+
         return ret
 
     def _conjugate_compound_participle_inflected(
         self,
         gender: Gender,
-        co: ConjugationObjects,
-        person_ending: PersonEnding,
-        p_mood: Mood,
-        p_tense: Tense,
-        p_conj: TenseConjugation,
+        number: Number,
         aux_pc: Conjugation,
-        hv: str,
-    ):
+        p_conj: TenseConjugation,
+    ) -> Conjugation:
         """
-        persons used to be a List[Tuple[Person, Number]]
-        get_default_participle_inflection_for_person only considers Number and Gender
-        (Person arg was unused)
-
-        participle_inflection = (
-            self._inflector.get_default_participle_inflection_for_person(
-                persons[i][0], persons[i][1], gender
-            )
-        )
+        :param aux_pc: Conjugation of aux verb e.g. "suis"
+        :param pc: Conjugation in participle tense of primary verb
+            e.g. "allée"
         """
-
-        participle_inflection = (
-            self._inflector.get_default_participle_inflection_for_person(
-                person_ending.number, gender
-            )
-        )
-
-        pc_value = grammar_defines.NO_VALUE
-
-        participle_idx = self._inflector.get_participle_index_for_participle_inflection(
-            participle_inflection
-        )
-        if len(p_conj) > participle_idx:
-            pc = p_conj[participle_idx]
-            pc_value = str(pc[0])
-        else:
-            logger.warning(
-                "(aux verb inflected) primary (participle) conjugation is empty: co=%s p_mood=%s t_tense=%s",
-                co,
-                p_mood,
-                p_tense,
-            )
-
+        pc = self.get_conjugation_by_gender_and_number(p_conj, gender, number)
+        # TODO: Alternates?
         return Conjugation(
             aux_pc.get_person(),
             aux_pc.get_number(),
-            aux_pc.get_gender(),
+            gender,
             aux_pc.get_pronoun(),
-            [hv + " " + pc_value],
+            [f"{aux_pc[0]} {pc[0]}"],
         )
 
     def _conjugate_simple_mood_tense(
@@ -679,3 +672,43 @@ class Conjugator:
                     conjugation.append(s)
                 ret.append(conjugation)
         return ret
+
+    def get_person_ending_by_gender_and_number(
+        self,
+        person_endings: List[PersonEnding],
+        gender: Optional[Gender],
+        number: Optional[Number],
+    ) -> PersonEnding:
+        resolved_gender = Gender.m
+        resolved_number = Number.Singular
+        if gender is not None:
+            resolved_gender = gender
+        if number is not Number:
+            resolved_number = number
+        for pe in person_endings:
+            if pe.gender == resolved_gender and pe.number == resolved_number:
+                return pe
+        logger.warning(
+            "Failed find matching PersonEnding for gender=%s number=%s", gender, number
+        )
+        return person_endings[0]
+
+    def get_conjugation_by_gender_and_number(
+        self,
+        tense_conjugation: TenseConjugation,
+        gender: Optional[Gender],
+        number: Optional[Number],
+    ) -> Conjugation:
+        resolved_gender = Gender.m
+        resolved_number = Number.Singular
+        if gender is not None:
+            resolved_gender = gender
+        if number is not Number:
+            resolved_number = number
+        for c in tense_conjugation:
+            if c.get_gender() == resolved_gender and c.get_number() == resolved_number:
+                return c
+        logger.warning(
+            "Failed find matching Conjugation for gender=%s number=%s", gender, number
+        )
+        return tense_conjugation[0]

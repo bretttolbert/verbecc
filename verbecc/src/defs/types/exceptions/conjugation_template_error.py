@@ -1,0 +1,2 @@
+class ConjugationTemplateError(Exception):
+    pass
