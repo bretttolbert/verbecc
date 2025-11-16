@@ -64,13 +64,13 @@ class VerbInfo(AbstractConjugation):
 
     def get_data(self) -> VerbInfoData:
         return {
-            "lang": self.lang,
             "infinitive": self.infinitive,
-            "predicted": self.predicted,
+            "lang": self.lang,
             "pred_score": self.pred_score,
+            "predicted": self.predicted,
+            "stem": self.stem,
             "template": self.template,
             "translation_en": self.translation_en,
-            "stem": self.stem,
         }
 
     def get_str_id(self) -> str:

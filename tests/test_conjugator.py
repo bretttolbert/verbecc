@@ -42,8 +42,8 @@ test_verbs = [
 
 @pytest.mark.parametrize("infinitive", test_verbs)
 def test_conjugator_conjugate_basic(cg, infinitive):
-    output = cg.conjugate(infinitive)
-    assert output
+    cc = cg.conjugate(infinitive)
+    assert cc
 
 
 def test_conjugator_predict_conjugation_er_verb_indicative_present(cg):
@@ -531,6 +531,7 @@ expected_resp_conj_manger = {
     },
     "verb": {
         "infinitive": "manger",
+        "lang": "fr",
         "pred_score": 1.0,
         "predicted": False,
         "stem": "man",
@@ -715,6 +716,7 @@ expected_resp_conj_pouvoir = {
     },
     "verb": {
         "infinitive": "pouvoir",
+        "lang": "fr",
         "pred_score": 1.0,
         "predicted": False,
         "stem": "p",
@@ -844,6 +846,7 @@ expected_resp_conj_pleuvoir = {
     },
     "verb": {
         "infinitive": "pleuvoir",
+        "lang": "fr",
         "pred_score": 1.0,
         "predicted": False,
         "stem": "pl",
@@ -1070,6 +1073,7 @@ expected_resp_conj_se_lever = {
     },
     "verb": {
         "infinitive": "lever",
+        "lang": "fr",
         "pred_score": 1.0,
         "predicted": False,
         "stem": "l",

@@ -220,8 +220,19 @@ class InflectorFr(Inflector):
         return Tenses.fr.ParticipePassé
 
     def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
+        """
+        Combine the pronoun with the verb conjugation.
+        E.g. "je" + "mange" = "je mange"
+        E.g. "elle" + "a " = "elle a"
+        E.g. "je" + "ai" = "j'ai"
+        E.g. "je me" + "habille" = "je m'habille"
+        E.g. "tu te" + "habilles" = "tu t'habilles"
+        E.g. "il se" = "habille" = "il s'habilles"
+        """
         ret = ""
-        if pronoun == "je" and string_utils.starts_with_vowel(conj, h_is_vowel=True):
+        if (
+            pronoun != "elle" and pronoun.endswith("e")
+        ) and string_utils.starts_with_vowel(conj, h_is_vowel=True):
             ret += pronoun[:-1] + "'"
         else:
             ret += pronoun + " "

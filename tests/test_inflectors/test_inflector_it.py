@@ -32,7 +32,15 @@ def test_all_verbs_have_templates(cg):
             "avere",
             "indicativo",
             "presente",
-            ["io ho", "tu hai", "lui ha", "noi abbiamo", "voi avete", "loro hanno"],
+            [
+                "io ho",
+                "tu hai",
+                "lui ha",
+                "lei ha",
+                "noi abbiamo",
+                "voi avete",
+                "loro hanno",
+            ],
         ),
         (
             "avere",
@@ -42,6 +50,7 @@ def test_all_verbs_have_templates(cg):
                 "io avevo",
                 "tu avevi",
                 "lui aveva",
+                "lei aveva",
                 "noi avevamo",
                 "voi avevate",
                 "loro avevano",
@@ -55,6 +64,7 @@ def test_all_verbs_have_templates(cg):
                 "io ebbi",
                 "tu avesti",
                 "lui ebbe",
+                "lei ebbe",
                 "noi avemmo",
                 "voi aveste",
                 "loro ebbero",
@@ -68,6 +78,7 @@ def test_all_verbs_have_templates(cg):
                 "io avrò",
                 "tu avrai",
                 "lui avrà",
+                "lei avrà",
                 "noi avremo",
                 "voi avrete",
                 "loro avranno",
@@ -132,11 +143,27 @@ def test_inflector_it_get_pronouns(
     [
         (
             "avere",
-            ["io ho", "tu hai", "lui ha", "noi abbiamo", "voi avete", "loro hanno"],
+            [
+                "io ho",
+                "tu hai",
+                "lui ha",
+                "lei ha",
+                "noi abbiamo",
+                "voi avete",
+                "loro hanno",
+            ],
         ),
         (
             "essere",
-            ["io sono", "tu sei", "lui è", "noi siamo", "voi siete", "loro sono"],
+            [
+                "io sono",
+                "tu sei",
+                "lui è",
+                "lei è",
+                "noi siamo",
+                "voi siete",
+                "loro sono",
+            ],
         ),
         (
             "alzare",
@@ -144,6 +171,7 @@ def test_inflector_it_get_pronouns(
                 "io alzo",
                 "tu alzi",
                 "lui alza",
+                "lei alza",
                 "noi alziamo",
                 "voi alzate",
                 "loro alzano",
@@ -153,7 +181,7 @@ def test_inflector_it_get_pronouns(
 )
 def test_indicative_present(cg, infinitive, expected_result):
     cc = cg.conjugate(infinitive)
-    mc = cc.moods["indicativo"]
+    mc = cc["indicativo"]
     tc = mc["presente"]
     assert [c[0] for c in tc] == expected_result
 
@@ -167,6 +195,7 @@ def test_indicative_present(cg, infinitive, expected_result):
                 "io ho avuto",
                 "tu hai avuto",
                 "lui ha avuto",
+                "lei ha avuto",
                 "noi abbiamo avuto",
                 "voi avete avuto",
                 "loro hanno avuto",
@@ -175,11 +204,17 @@ def test_indicative_present(cg, infinitive, expected_result):
         (
             "essere",
             [
+                "io sono stata",
                 "io sono stato",
+                "tu sei stata",
                 "tu sei stato",
                 "lui è stato",
+                "lei è stata",
+                "noi siamo state",
                 "noi siamo stati",
+                "voi siete state",
                 "voi siete stati",
+                "loro sono state",
                 "loro sono stati",
             ],
         ),
@@ -189,6 +224,7 @@ def test_indicative_present(cg, infinitive, expected_result):
                 "io ho alzato",
                 "tu hai alzato",
                 "lui ha alzato",
+                "lei ha alzato",
                 "noi abbiamo alzato",
                 "voi avete alzato",
                 "loro hanno alzato",
@@ -198,7 +234,7 @@ def test_indicative_present(cg, infinitive, expected_result):
 )
 def test_passato_prossimo(cg, infinitive, expected_result):
     cc = cg.conjugate(infinitive)
-    mc = cc.moods[Moods.it.Indicativo]
+    mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.PassatoProssimo]
     assert [c[0] for c in tc] == expected_result
 
@@ -211,6 +247,7 @@ def test_passato_prossimo(cg, infinitive, expected_result):
             [
                 "io mi alzo",
                 "tu ti alzi",
+                "lui si alza",
                 "lei si alza",
                 "noi ci alziamo",
                 "voi vi alzate",
@@ -220,8 +257,8 @@ def test_passato_prossimo(cg, infinitive, expected_result):
     ],
 )
 def test_alzarsi_indicative_present(cg, infinitive, expected_result):
-    cc = cg.conjugate(infinitive, gender=Gender.f)
-    mc = cc.moods[Moods.it.Indicativo]
+    cc = cg.conjugate(infinitive)
+    mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.Presente]
     assert [c[0] for c in tc] == expected_result
 
@@ -233,11 +270,17 @@ def test_alzarsi_indicative_present(cg, infinitive, expected_result):
             "alzarsi",
             [
                 "io mi sono alzata",
+                "io mi sono alzato",
                 "tu ti sei alzata",
+                "tu ti sei alzato",
+                "lui si è alzato",
                 "lei si è alzata",
                 "noi ci siamo alzate",
+                "noi ci siamo alzati",
                 "voi vi siete alzate",
+                "voi vi siete alzati",
                 "loro si sono alzate",
+                "loro si sono alzati",
             ],
         ),
     ],
@@ -245,8 +288,8 @@ def test_alzarsi_indicative_present(cg, infinitive, expected_result):
 def test_inflector_it_alzarsi_indicativo_passato_prossimo(
     cg, infinitive, expected_result
 ):
-    cc = cg.conjugate(infinitive, gender=Gender.f)
-    mc = cc.moods[Moods.it.Indicativo]
+    cc = cg.conjugate(infinitive)
+    mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.PassatoProssimo]
     assert [c[0] for c in tc] == expected_result
 
@@ -261,14 +304,19 @@ def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
         "indicativo",
         "presente",
         False,
-        Gender.m,
         True,
     )
-    assert [c.conjugations for c in tc] == [
+    assert [list(c) for c in tc] == [
+        ["io sono stata"],
         ["io sono stato"],
+        ["tu sei stata"],
         ["tu sei stato"],
         ["lui è stato"],
+        ["lei è stata"],
+        ["noi siamo state"],
         ["noi siamo stati"],
+        ["voi siete state"],
         ["voi siete stati"],
+        ["loro sono state"],
         ["loro sono stati"],
     ]
