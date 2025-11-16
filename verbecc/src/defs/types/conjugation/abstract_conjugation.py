@@ -1,10 +1,9 @@
 from typing import cast, Optional
 from abc import ABC, abstractmethod
 import json
-from jsbeautifier import beautify
 
 from verbecc.src.defs.constants import config
-from verbecc.src.utils.jsbeautifier_opts import JSBeautifierOpts
+from verbecc.src.utils.jsbeautifier_utils import JSBeautifier
 
 
 class AbstractConjugation(ABC):
@@ -29,18 +28,25 @@ class AbstractConjugation(ABC):
     def __repr__(self) -> str:
         return str(self)
 
-    def __str__(self) -> str:
-        """The data of this object as a pretty-formatted JSON string"""
-        pretty_json = json.dumps(
+    def to_json(self, beautify: bool = True) -> str:
+        """The data of this object as a JSON string,
+        optionally pretty-formatted.
+        """
+        ret = json.dumps(
             self.get_data(),
             allow_nan=False,
             sort_keys=True,
             indent=4,
             ensure_ascii=config.JSON_OPT_ENSURE_ASCII,
         )
-        if config.JSBEAUTIFIER_ENABLE:
-            pretty_json = beautify(pretty_json, JSBeautifierOpts.get_opts())
-        return pretty_json
+
+        if beautify:
+            ret = JSBeautifier.beautify(ret)
+
+        return ret
+
+    def __str__(self) -> str:
+        return self.to_json()
 
     @abstractmethod
     def get_str_id(self) -> str:

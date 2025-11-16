@@ -41,7 +41,7 @@ test_verbs = [
 
 
 @pytest.mark.parametrize("infinitive", test_verbs)
-def test_conjugator_conjugate_basic(cg, infinitive):
+def test_conjugate_basic(cg, infinitive):
     cc = cg.conjugate(infinitive)
     assert cc
 
@@ -78,7 +78,7 @@ def test_conjugator_predict_conjugation_re_verb_indicative_present(cg):
         ]
 
 
-def test_conjugator_conjugate_passe_compose_with_avoir(cg):
+def test_conjugate_passe_compose_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "indicatif", "passé-composé")
     assert [c[0] for c in tc] == [
         "j'ai mangé",
@@ -93,7 +93,7 @@ def test_conjugator_conjugate_passe_compose_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_passe_compose_with_etre(cg):
+def test_conjugate_passe_compose_with_etre(cg):
     tc = cg.conjugate_mood_tense("aller", "indicatif", "passé-composé")
     assert [c[0] for c in tc] == [
         "je suis allée",
@@ -113,7 +113,7 @@ def test_conjugator_conjugate_passe_compose_with_etre(cg):
     ]
 
 
-def test_conjugator_conjugate_subjonctif_passe_with_avoir(cg):
+def test_conjugate_subjonctif_passe_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "subjonctif", "passé")
     assert [c[0] for c in tc] == [
         "que j'aie mangé",
@@ -128,7 +128,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_subjonctif_passe_with_etre(cg):
+def test_conjugate_subjonctif_passe_with_etre(cg):
     tc = cg.conjugate_mood_tense("aller", "subjonctif", "passé")
     assert [c[0] for c in tc] == [
         "que je sois allée",
@@ -148,7 +148,7 @@ def test_conjugator_conjugate_subjonctif_passe_with_etre(cg):
     ]
 
 
-def test_conjugator_conjugate_conditionnel_passe_with_avoir(cg):
+def test_conjugate_conditionnel_passe_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "conditionnel", "passé")
     assert [c[0] for c in tc] == [
         "j'aurais mangé",
@@ -163,7 +163,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_conditionnel_passe_with_etre(cg):
+def test_conjugate_conditionnel_passe_with_etre(cg):
     tc = cg.conjugate_mood_tense("aller", "conditionnel", "passé")
     assert [c[0] for c in tc] == [
         "je serais allée",
@@ -183,7 +183,7 @@ def test_conjugator_conjugate_conditionnel_passe_with_etre(cg):
     ]
 
 
-def test_conjugator_conjugate_plusqueparfait_with_avoir(cg):
+def test_conjugate_plusqueparfait_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "indicatif", "plus-que-parfait")
     assert [c[0] for c in tc] == [
         "j'avais mangé",
@@ -198,7 +198,7 @@ def test_conjugator_conjugate_plusqueparfait_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_plusqueparfait_with_etre(cg):
+def test_conjugate_plusqueparfait_with_etre(cg):
     tc = cg.conjugate_mood_tense("aller", "indicatif", "plus-que-parfait")
     assert [c[0] for c in tc] == [
         "j'étais allée",
@@ -218,7 +218,7 @@ def test_conjugator_conjugate_plusqueparfait_with_etre(cg):
     ]
 
 
-def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
+def test_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "subjonctif", "plus-que-parfait")
     assert [c[0] for c in tc] == [
         "que j'eusse mangé",
@@ -233,7 +233,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre(cg):
+def test_conjugate_subjonctif_plusqueparfait_with_etre(cg):
     tc = cg.conjugate_mood_tense("aller", "subjonctif", "plus-que-parfait")
     assert [c[0] for c in tc] == [
         "que je fusse allée",
@@ -253,7 +253,7 @@ def test_conjugator_conjugate_subjonctif_plusqueparfait_with_etre(cg):
     ]
 
 
-def test_conjugator_conjugate_futur_anterieur_with_avoir(cg):
+def test_conjugate_futur_anterieur_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "indicatif", "futur-antérieur")
     assert [c[0] for c in tc] == [
         "j'aurai mangé",
@@ -268,7 +268,7 @@ def test_conjugator_conjugate_futur_anterieur_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_futur_anterieur_with_etre(cg):
+def test_conjugate_futur_anterieur_with_etre(cg):
     tc = cg.conjugate_mood_tense("aller", "indicatif", "futur-antérieur")
     assert [c[0] for c in tc] == [
         "je serai allée",
@@ -288,7 +288,7 @@ def test_conjugator_conjugate_futur_anterieur_with_etre(cg):
     ]
 
 
-def test_conjugator_conjugate_passe_anterieur_with_avoir(cg):
+def test_conjugate_passe_anterieur_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "indicatif", "passé-antérieur")
     assert [c[0] for c in tc] == [
         "j'eus mangé",
@@ -303,27 +303,27 @@ def test_conjugator_conjugate_passe_anterieur_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_passe_anterieur_with_être(cg):
+def test_conjugate_passe_anterieur_with_être(cg):
     tc = cg.conjugate_mood_tense("aller", "indicatif", "passé-antérieur")
     assert [c[0] for c in tc] == [
         "je fus allée",
         "je fus allé",
         "tu fus allée",
         "tu fus allé",
-        "elle fut allée",
         "il fut allé",
+        "elle fut allée",
         "on fut allée",
         "on fut allé",
         "nous fûmes allées",
         "nous fûmes allés",
         "vous fûtes allées",
         "vous fûtes allés",
-        "elles furent allées",
         "ils furent allés",
+        "elles furent allées",
     ]
 
 
-def test_conjugator_conjugate_imperatif_passe_with_avoir(cg):
+def test_conjugate_imperatif_passe_with_avoir(cg):
     tc = cg.conjugate_mood_tense("manger", "imperatif", "imperatif-passé")
     assert [c[0] for c in tc] == [
         "aie mangé",
@@ -332,7 +332,7 @@ def test_conjugator_conjugate_imperatif_passe_with_avoir(cg):
     ]
 
 
-def test_conjugator_conjugate_imperatif_passe_with_etre(cg):
+def test_conjugate_imperatif_passe_with_etre(cg):
     tc = cg.conjugate_mood_tense("aller", "imperatif", "imperatif-passé")
     assert [c[0] for c in tc] == [
         "sois allée",
@@ -344,7 +344,7 @@ def test_conjugator_conjugate_imperatif_passe_with_etre(cg):
     ]
 
 
-expected_resp_conj_manger = {
+expected_value_conj_manger = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -540,7 +540,7 @@ expected_resp_conj_manger = {
     },
 }
 
-expected_resp_conj_pouvoir = {
+expected_value_conj_pouvoir = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -726,7 +726,7 @@ expected_resp_conj_pouvoir = {
 }
 
 
-expected_resp_conj_pleuvoir = {
+expected_value_conj_pleuvoir = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -855,7 +855,7 @@ expected_resp_conj_pleuvoir = {
     },
 }
 
-expected_resp_conj_se_lever = {
+expected_value_conj_se_lever = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -1082,27 +1082,57 @@ expected_resp_conj_se_lever = {
     },
 }
 
+"""
+asserts that conjugator.cojugate returns the expected_value
+Why not use @pytest.mark.parametrize?
+Because it sucks.
+Seriously I was using it but it makes the tests more difficult to debug and
+makes it impossible to call certain tests with a -k expression e.g.
 
-@pytest.mark.parametrize(
-    "infinitive,expected_resp",
-    [
-        ("manger", expected_resp_conj_manger),
-        ("pouvoir", expected_resp_conj_pouvoir),
-        ("Pouvoir", expected_resp_conj_pouvoir),
-        ("pleuvoir", expected_resp_conj_pleuvoir),
-        ("Se lever", expected_resp_conj_se_lever),
-    ],
-)
-def test_conjugator_conjugate(cg, infinitive, expected_resp):
-    assert_json_str_equal(str(cg.conjugate(infinitive)), json.dumps(expected_resp))
+python -m pytest . -vv -k test_conjugate[Se lever-expected_value4]
+
+I think this pattern of
+many "def test_<SUT>_<value>(fixtures)" to one "def run_test_<SUT>(value)" 
+as exhibited bleow is better than @pytest.mark.parametrize in many cases. 
+
+Another benefit is being able to jump directly to the specific test
+by clicking on it in VSCode. You can't do that with parametrize.
+
+"""
 
 
-def test_conjugator_conjugate_invalid_mood(cg):
+def run_test_conjugate(cg, infinitive, expected_value):
+    cc = cg.conjugate(infinitive)
+    conj_json = cc.to_json(beautify=False)
+    assert_json_str_equal(conj_json, json.dumps(expected_value))
+
+
+def test_conjugate_manger(cg):
+    run_test_conjugate(cg, "manger", expected_value_conj_manger)
+
+
+def test_conjugate_pouvoir(cg):
+    run_test_conjugate(cg, "pouvoir", expected_value_conj_pouvoir)
+
+
+def test_conjugate_Pouvoir(cg):
+    run_test_conjugate(cg, "Pouvoir", expected_value_conj_pouvoir)
+
+
+def test_conjugate_pleuvoir(cg):
+    run_test_conjugate(cg, "pleuvoir", expected_value_conj_pleuvoir)
+
+
+def test_conjugate_Se_lever(cg):
+    run_test_conjugate(cg, "Se lever", expected_value_conj_se_lever)
+
+
+def test_conjugate_invalid_mood(cg):
     with pytest.raises(InvalidMoodError):
         cg.conjugate_mood("manger", "oops")
 
 
-def test_conjugator_conjugate_invalid_tense(cg):
+def test_conjugate_invalid_tense(cg):
     with pytest.raises(InvalidTenseError):
         cg.conjugate_mood_tense("manger", "indicatif", "oops")
 
@@ -1113,14 +1143,14 @@ def test_conjugator_find_template_template_not_found(cg):
 
 
 @pytest.mark.parametrize(
-    "query,expected_resp",
+    "query,expected_value",
     [
         ("lev", ["lever", "léviger", "levretter"]),
         ("Se lev", ["se lever", "se léviger", "se levretter"]),
         ("s'aim", ["s'aimanter", "s'aimer"]),
     ],
 )
-def test_conjugator_get_verbs_that_start_with(cg, query, expected_resp):
+def test_conjugator_get_verbs_that_start_with(cg, query, expected_value):
     assert set(cg.get_verbs_that_start_with(query, max_results=10)) == set(
-        expected_resp
+        expected_value
     )

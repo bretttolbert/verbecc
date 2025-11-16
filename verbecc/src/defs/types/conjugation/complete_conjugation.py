@@ -1,4 +1,7 @@
+import json
 from typing import Iterable
+
+from verbecc.src.defs.constants import config
 from verbecc.src.defs.types.conjugation.abstract_conjugation import AbstractConjugation
 from verbecc.src.defs.types.conjugation.verb_info import VerbInfo
 from verbecc.src.defs.types.mood import Mood
