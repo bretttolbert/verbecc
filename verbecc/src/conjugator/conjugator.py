@@ -708,7 +708,7 @@ class Conjugator:
                                     s,
                                     is_reflexive,
                                     mood,
-                                    tense,
+                                    tense if primary_tense is None else primary_tense,
                                     person,
                                     number,
                                     gender,
