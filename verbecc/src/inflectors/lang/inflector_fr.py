@@ -255,12 +255,13 @@ class InflectorFr(Inflector):
         tense: Tense,
         person: Person,
         number: Number,
+        gender: Gender,
     ) -> str:
         if is_reflexive:
             if mood != Moods.fr.Imperatif:
                 s = self.add_reflexive_pronoun(s)
             else:
-                s += self._get_pronoun_suffix(person, number)
+                s += self._get_pronoun_suffix(person, number, gender)
         return s
 
     def compound_conjugation_not_applicable(

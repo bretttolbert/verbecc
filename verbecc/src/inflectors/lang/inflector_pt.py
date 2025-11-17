@@ -51,12 +51,17 @@ class InflectorPt(Inflector):
         tense: Tense,
         person: Person,
         number: Number,
+        gender: Gender,
     ) -> str:
+        if tense == Tenses.pt.InfinitivoPessoalComposto:
+            return s
         imperative: bool = mood == Moods.pt.Imperativo
         if imperative or (
             mood == Moods.pt.Infinitivo and tense == Tenses.pt.InfinitivoPessoalPresente
         ):
-            s += " " + self._get_pronoun_suffix(person, number, imperative=imperative)
+            s += " " + self._get_pronoun_suffix(
+                person, number, gender, imperative=imperative
+            )
         return s
 
     def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
@@ -216,20 +221,24 @@ class InflectorPt(Inflector):
         imperative: bool = True,
     ) -> str:
         ret = ""
-        if person == Person.First and Number.Singular:
+        if person == Person.First and number == Number.Singular:
             ret = "eu"
-        if person == Person.Second and Number.Singular:
+        elif person == Person.Second and number == Number.Singular:
             ret = "tu"
-        elif person == Person.Third and Number.Singular:
+        elif person == Person.Third and number == Number.Singular:
             ret = "você"
             if not imperative:
                 ret = "ele"
-        elif person == Person.First and Number.Plural:
+                if gender == Gender.f:
+                    ret = "ela"
+        elif person == Person.First and number == Number.Plural:
             ret = "nós"
-        elif person == Person.Second and Number.Plural:
+        elif person == Person.Second and number == Number.Plural:
             ret = "vós"
-        elif person == Person.Third and Number.Plural:
+        elif person == Person.Third and number == Number.Plural:
             ret = "vocês"
             if not imperative:
                 ret = "eles"
+                if gender == Gender.f:
+                    ret = "elas"
         return ret

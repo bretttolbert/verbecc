@@ -261,9 +261,10 @@ class Inflector(ABC):
         tense: Tense,
         person: Person,
         number: Number,
+        gender: Gender,
     ) -> str:
         if is_reflexive:
-            s += self._get_pronoun_suffix(person, number)
+            s += self._get_pronoun_suffix(person, number, gender)
         return s
 
     def compound_conjugation_not_applicable(

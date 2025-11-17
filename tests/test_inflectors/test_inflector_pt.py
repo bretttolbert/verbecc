@@ -26,6 +26,48 @@ def test_all_verbs_have_templates(cg: Conjugator):
     assert len(missing_templates) == 0
 
 
+def test_conjugate_ter_subjuntivo_preterito_perfeito(cg):
+    tc = cg.conjugate_mood_tense("ter", "subjuntivo", "pretérito-perfeito")
+    assert [c[0] for c in tc] == [
+        "eu tenha tido",
+        "tu tenhas tido",
+        "ele tenha tido",
+        "ela tenha tido",
+        "nós tenhamos tido",
+        "vós tenhais tido",
+        "eles tenham tido",
+        "elas tenham tido",
+    ]
+
+
+def test_conjugate_ter_infinitivo_pessoal_presente(cg):
+    tc = cg.conjugate_mood_tense("ter", "infinitivo", "infinitivo-pessoal-presente")
+    assert [c[0] for c in tc] == [
+        "por ter eu",
+        "por teres tu",
+        "por ter ele",
+        "por ter ela",
+        "por termos nós",
+        "por terdes vós",
+        "por terem eles",
+        "por terem elas",
+    ]
+
+
+def test_conjugate_ter_infinitivo_pessoal_composto(cg):
+    tc = cg.conjugate_mood_tense("ter", "infinitivo", "infinitivo-pessoal-composto")
+    assert [c[0] for c in tc] == [
+        "ter tido",
+        "teres tido",
+        "ter tido",
+        "ter tido",
+        "termos tido",
+        "terdes tido",
+        "terem tido",
+        "terem tido",
+    ]
+
+
 @pytest.mark.parametrize(
     "infinitive,mood,tense,expected_result",
     [
@@ -318,7 +360,16 @@ def test_all_verbs_have_templates(cg: Conjugator):
             "ter",
             "imperativo",
             "afirmativo",
-            ["-", "tem tu", "tenha você", "tenhamos nós", "tende vós", "tenham vocês"],
+            [
+                "-",
+                "tem tu",
+                "tenha você",
+                "tenha você",
+                "tenhamos nós",
+                "tende vós",
+                "tenham vocês",
+                "tenham vocês",
+            ],
         ),
         (
             "ter",
@@ -328,8 +379,10 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "-",
                 "não tenhas tu",
                 "não tenha você",
+                "não tenha você",
                 "não tenhamos nós",
                 "não tenhais vós",
+                "não tenham vocês",
                 "não tenham vocês",
             ],
         ),
@@ -341,9 +394,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu andei",
                 "tu andaste",
                 "ele andou",
+                "ela andou",
                 "nós andámos",
                 "vós andastes",
                 "eles andaram",
+                "elas andaram",
             ],
         ),
         (
@@ -354,9 +409,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu fiquei",
                 "tu ficaste",
                 "ele ficou",
+                "ela ficou",
                 "nós ficámos",
                 "vós ficastes",
                 "eles ficaram",
+                "elas ficaram",
             ],
         ),
         (
@@ -367,9 +424,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu amei",
                 "tu amaste",
                 "ele amou",
+                "ela amou",
                 "nós amámos",
                 "vós amastes",
                 "eles amaram",
+                "elas amaram",
             ],
         ),
         (
@@ -380,9 +439,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu odiei",
                 "tu odiaste",
                 "ele odiou",
+                "ela odiou",
                 "nós odiámos",
                 "vós odiastes",
                 "eles odiaram",
+                "elas odiaram",
             ],
         ),
         (
@@ -393,9 +454,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguo",
                 "tu argúis",
                 "ele argúi",
+                "ela argúi",
                 "nós arguimos",
                 "vós arguistes",
                 "eles argúem",
+                "elas argúem",
             ],
         ),
         (
@@ -406,9 +469,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu argui",
                 "tu arguiste",
                 "ele arguiu",
+                "ela arguiu",
                 "nós arguimos",
                 "vós arguistes",
                 "eles arguiram",
+                "elas arguiram",
             ],
         ),
         (
@@ -419,9 +484,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguia",
                 "tu arguas",
                 "ele arguia",
+                "ela arguia",
                 "nós arguíamos",
                 "vós arguíeis",
                 "eles arguiam",
+                "elas arguiam",
             ],
         ),
         (
@@ -432,9 +499,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguira",
                 "tu arguiras",
                 "ele arguira",
+                "ela arguira",
                 "nós arguíramos",
                 "vós arguíreis",
                 "eles arguiram",
+                "elas arguiram",
             ],
         ),
         (
@@ -490,9 +559,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "quando eu arguir",
                 "quando tu arguires",
                 "quando ele arguir",
+                "quando ela arguir",
                 "quando nós arguirmos",
                 "quando vós arguirdes",
                 "quando eles arguirem",
+                "quando elas arguirem",
             ],
         ),
         (
@@ -503,9 +574,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "por arguir eu",
                 "por arguíres tu",
                 "por arguir ele",
+                "por arguir ela",
                 "por arguirmos nós",
                 "por arguirdes vós",
                 "por arguírem eles",
+                "por arguírem elas",
             ],
         ),
         (
@@ -516,8 +589,10 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "-",
                 "argúi tu",
                 "argua você",
+                "argua você",
                 "arguamos nós",
                 "arguí vós",
+                "arguam vocês",
                 "arguam vocês",
             ],
         ),

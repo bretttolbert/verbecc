@@ -296,7 +296,8 @@ class Conjugator:
             aux_mood,  # todo: investigate (used to be "")
             aux_tense,
             aux_tense_template,
-            co.is_reflexive,
+            primary_tense=tense,
+            is_reflexive=co.is_reflexive,
             conjugate_pronouns=conjugate_pronouns,
         )
         # need to skip conjugating primary verb for certain tenses e.g. romanian viitor-1
@@ -309,6 +310,7 @@ class Conjugator:
             aux_verb,
             aux_conj,
             aux_uses_alternate,
+            conjugate_pronouns,
         )
 
         return ret
@@ -323,6 +325,7 @@ class Conjugator:
         aux_verb: str,
         aux_conj: TenseConjugation,
         aux_uses_alternate: bool,
+        conjugate_pronouns: bool,
     ) -> TenseConjugation:
         """
         :param: person_endings = ?
@@ -371,7 +374,8 @@ class Conjugator:
                 p_mood,
                 p_tense,
                 co.template.mood_templates[p_mood].tense_templates[p_tense],
-                False,
+                is_reflexive=False,
+                conjugate_pronouns=False,
             )
 
         if not self._inflector.is_auxiliary_verb_inflected(aux_verb):
@@ -565,10 +569,19 @@ class Conjugator:
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
+        primary_tense: Optional[Tense] = None,
         is_reflexive: bool = False,
         conjugate_pronouns: bool = True,
         modify_stem_strip_accents: bool = False,
     ) -> TenseConjugation:
+        """
+        primary_tense: if this is being conjugated as
+        an auxiliary verb as part of a compound tense conjugation,
+        and we are conjugating pronouns i.e. the conjugate_pronouns
+        argument is True, then this parameter should be supplied
+        as it is passed to the inflector for determining
+        which subjunctive relative pronouns to add.
+        """
         if modify_stem_strip_accents and mood != self._inflector.get_infinitive_mood():
             verb_stem = strip_accents(verb_stem)
         ret = TenseConjugation(tense)
@@ -648,12 +661,18 @@ class Conjugator:
                                     pronoun, conj
                                 )
                             if mood == self._inflector.get_subjunctive_mood():
+                                t = tense
+                                if primary_tense:
+                                    t = primary_tense
                                 s = self._inflector.add_subjunctive_relative_pronoun(
-                                    s, tense
+                                    s, t
                                 )
                     else:
                         # conjugation without pronoun
                         # e.g. fr:participe:participe-passé
+                        # and also currently conjugations that have pronoun suffixes
+                        # see test test_conjugate_ter_infinitivo_pessoal_presente
+
                         s = self._inflector.add_present_participle_if_applicable(
                             "", is_reflexive, tense
                         )
@@ -661,12 +680,30 @@ class Conjugator:
                             s += self._inflector.combine_verb_stem_and_ending(
                                 verb_stem, ending
                             )
+                            # TODO: Determine if we need this:
+                            """
+                            if mood == self._inflector.get_subjunctive_mood():
+                                s = self._inflector.add_subjunctive_relative_pronoun(
+                                    s, tense
+                                )
+                            """
                         else:
-                            s += ending
+                            s += grammar_defines.NO_VALUE
+                        # TODO: Need to iterate over all the pronouns
+                        # like we do for simple conjugations now
+                        # See failing test test_conjugate_ter_infinitivo_pessoal_presente
+                        # currently it's just doing
                         if ending != grammar_defines.NO_VALUE:
                             person = person_ending.get_person()
                             number = person_ending.get_number()
                             if person is not None:
+                                gender = Gender.m
+                                if pronoun is not None:
+                                    pronoun_gender = self._inflector.get_pronoun_gender(
+                                        pronoun
+                                    )
+                                    if pronoun_gender is not None:
+                                        gender = pronoun_gender
                                 s = self._inflector.add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
                                     s,
                                     is_reflexive,
@@ -674,11 +711,15 @@ class Conjugator:
                                     tense,
                                     person,
                                     number,
+                                    gender,
                                 )
                             else:
                                 logger.warning("person is None")
                         if ending != grammar_defines.NO_VALUE:
-                            s = self._inflector.add_adverb_if_applicable(s, mood, tense)
+                            t = tense
+                            if primary_tense:
+                                t = primary_tense
+                            s = self._inflector.add_adverb_if_applicable(s, mood, t)
                     conjugation.append(s)
                 ret.append(conjugation)
         if len(ret) == 0:
