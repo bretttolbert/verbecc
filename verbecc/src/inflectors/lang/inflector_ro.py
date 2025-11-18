@@ -23,8 +23,20 @@ class InflectorRo(Inflector):
         return LangCodeISO639_1.ro
 
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
+        """
+        :param s: a conjugation, perhaps with a pronoun e.g. "eu fac"
+        :tense s: the verb tense
+            New behavior: If this is a compound conjugation, tense is the tense
+            of the primary verb, not the auxiliary.
+
+        Note: Updated to handle Viitor1popular but may revisit this change.
+        (with compound tense Viitor1popular the aux tense is Prezent)
+
+        In the case of Viitor1popular, this function inserts "să" and then
+        insert_compound_aux_verb_prefix_if_applicable replaced it with " o să "
+        """
         tokens = s.split(" ")
-        if tense == Tenses.ro.Prezent:
+        if tense == Tenses.ro.Prezent or tense == Tenses.ro.Viitor1Popular:
             tokens.insert(1, "să")
         elif tense == Tenses.ro.Perfect:
             tokens.insert(1, "să fi")
@@ -192,12 +204,12 @@ class InflectorRo(Inflector):
         although the ' fi' is added by add_compound_aux_verb_suffix_if_applicable
 
         Normally Romanian aux_conj would be the indicativ prezent tense of avea i.e.
-            ["eu am", "tu ai", "el a", "noi am", "voi aţi", "ei au"]
+            ["eu am", "tu ai", "el a", "ea a", "noi am", "voi aţi", "ei au", "ele au"]
         but for conditional it's supposed to be
-            ["eu aş", "tu ai", "el ar", "noi am", "voi aţi", "ei ar"]
+            ["eu aş", "tu ai", "el ar", "ea ar", "noi am", "voi aţi", "ei ar", "ele ar"]
         """
         if mood == Moods.ro.Condițional and tense in (Tenses.ro.Prezent, "perfect"):
-            sub_aux_conj = ["aş", "ai", "ar", "am", "aţi", "ar"]
+            sub_aux_conj = ["aş", "ai", "ar", "ar", "am", "aţi", "ar", "ar"]
             for i, c in enumerate(aux_conj):
                 pronoun, _ = c.split(" ")
                 aux_conj[i] = f"{pronoun} {sub_aux_conj[i]}"

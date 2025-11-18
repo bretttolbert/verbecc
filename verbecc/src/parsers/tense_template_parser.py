@@ -1,3 +1,19 @@
+import logging
+
+from verbecc.src.defs.constants.config import DEVEL_MODE
+
+logging_level = logging.CRITICAL + 1  # effectively disables logging
+if DEVEL_MODE:
+    logging_level = logging.DEBUG
+
+logging.basicConfig(
+    level=logging_level,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
+)
+
+logger = logging.getLogger(__name__)
+
 from lxml import etree
 from typing import List, Optional
 
@@ -85,28 +101,51 @@ class TenseTemplateParser(Parser):
 
         Spanish imperative tenses have 5, i.e. all except 1st person singular
 
+        French infinitive-present has only 1 <p> element
+        E.g. <p><i>avoir</i></p>
+
         """
         if elem is None:
             raise ValueError("elem must not be None")
         self.tense = TenseFactory.from_string(self.lang, elem.tag)
         person_endings: List[PersonEnding] = []
         person_num = 0
-        for p_elem in elem.findall("p", namespaces=None):
+        participle_inflections = grammar_defines.PARTICIPLE_INFLECTIONS[self.lang]
+        imperative_persons = grammar_defines.IMPERATIVE_PERSONS[self.lang]
+        p_elems = elem.findall("p", namespaces=None)
+        for p_elem in p_elems:
             gender = None
             person = None
             number = None
 
-            if self.mood == xmood(self.lang, Moods.en.Participle):
-                gender, number = grammar_defines.PARTICIPLE_INFLECTIONS[self.lang][
-                    person_num
-                ].value
-            else:
-                if self.mood == xmood(self.lang, Moods.en.Imperative):
-                    person, number = grammar_defines.IMPERATIVE_PERSONS[self.lang][
-                        person_num
-                    ]
+            if len(p_elems) == 1:
+                # only 1 <p> element
+                # so it's likely a tense with a single conjugation e.g.
+                # French present participle or infinitive present
+                # e.g., for the French verb "avoir" the present participle is simply
+                # ["ayant"], a single conjugation with no gender, number or person
+                pass  # leave gender, number, person as None
+            elif self.mood == xmood(self.lang, Moods.en.Participle):
+                if len(p_elems) == len(participle_inflections):
+                    gender, number = participle_inflections[person_num].value
                 else:
-                    person, number = grammar_defines.PERSONS[person_num]
+                    logger.warning(
+                        f"Unexpected number of participle inflections {len(p_elems)} "
+                        + f"on tense template for language {self.lang}: "
+                        + f"{[etree.tostring(p) for p in p_elems]}"
+                    )
+            elif self.mood == xmood(self.lang, Moods.en.Imperative):
+                if len(p_elems) == len(imperative_persons):
+                    person, number = imperative_persons[person_num]
+                else:
+                    logger.warning(
+                        f"Unexpected number of imperative person inflections {len(p_elems)} "
+                        + f"on tense template for language {self.lang}: "
+                        + f"{[etree.tostring(p) for p in p_elems]}"
+                    )
+            else:
+                # normal case: all persons
+                person, number = grammar_defines.PERSONS[person_num]
 
             pe = PersonEndingParser().parse(p_elem, person, number, gender)
             person_num += 1

@@ -30,16 +30,10 @@ class PersonEnding(Element):
     def __init__(
         self,
         person: Optional[Person],
-        number: Number,
+        number: Optional[Number],
         gender: Optional[Gender],
         endings: List[str],
     ) -> None:
-        if person is None and gender is None:
-            raise ValueError(
-                "neither person nor gender were provided; must provide one"
-            )
-        elif person is not None and gender is not None:
-            raise ValueError("person and gender are mutually-exclusive")
         self.person = person
         self.number = number
         self.gender = gender
@@ -48,7 +42,7 @@ class PersonEnding(Element):
     def get_person(self) -> Optional[Person]:
         return self.person
 
-    def get_number(self) -> Number:
+    def get_number(self) -> Optional[Number]:
         return self.number
 
     def get_gender(self) -> Optional[Gender]:

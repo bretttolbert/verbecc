@@ -68,14 +68,14 @@ class PersonEndingParser(Parser):
             gender will be None unless this is a participle tense.
 
         Participle tense endings only have gender and number.
+        Present-Participle tense has neither person, number, nor gender,
+        because there is only a single conjugation form. E.g. "ayant"
         All other tense endings only have person and number.
+
+        Returns a PersonEnding object.
         """
-        if elem is None or number is None:
-            raise ValueError("elem and number must not be None")
-        if person is None and gender is None:
-            raise ValueError("neither person nor gender were provided")
-        elif person is not None and gender is not None:
-            raise ValueError("person and gender are mutually-exclusive")
+        if elem is None:
+            raise ValueError("elem must not be None")
         endings: List[str] = []
         i_elems = elem.findall("i", None)
         if len(i_elems) == 0:

@@ -34,7 +34,16 @@ def test_all_verbs_have_templates(cg):
             "avea",
             Moods.ro.Indicativ,
             Tenses.ro.PerfectSimplu,
-            ["eu avui", "tu avuși", "el avu", "noi avurăm", "voi avurăţi", "ei avură"],
+            [
+                "eu avui",
+                "tu avuși",
+                "el avu",
+                "ea avu",
+                "noi avurăm",
+                "voi avurăţi",
+                "ei avură",
+                "ele avură",
+            ],
         ),
         (
             "avea",
@@ -44,9 +53,11 @@ def test_all_verbs_have_templates(cg):
                 "eu am avut",
                 "tu ai avut",
                 "el a avut",
+                "ea a avut",
                 "noi am avut",
                 "voi aţi avut",
                 "ei au avut",
+                "ele au avut",
             ],
         ),
         (
@@ -57,16 +68,27 @@ def test_all_verbs_have_templates(cg):
                 "eu avusem",
                 "tu avuseși",
                 "el avuse",
+                "ea avuse",
                 "noi avuserăm",
                 "voi avuserăţi",
                 "ei avuseră",
+                "ele avuseră",
             ],
         ),
         (
             "face",
             Moods.ro.Indicativ,
             Tenses.ro.Prezent,
-            ["eu fac", "tu faci", "el face", "noi facem", "voi faceţi", "ei fac"],
+            [
+                "eu fac",
+                "tu faci",
+                "el face",
+                "ea face",
+                "noi facem",
+                "voi faceţi",
+                "ei fac",
+                "ele fac",
+            ],
         ),
         (
             "face",
@@ -76,9 +98,11 @@ def test_all_verbs_have_templates(cg):
                 "eu făceam",
                 "tu făceai",
                 "el făcea",
+                "ea făcea",
                 "noi făceam",
                 "voi făceaţi",
                 "ei făceau",
+                "ele făceau",
             ],
         ),
         (
@@ -89,9 +113,11 @@ def test_all_verbs_have_templates(cg):
                 "eu făcui",
                 "tu făcuși",
                 "el făcu",
+                "ea făcu",
                 "noi făcurăm",
                 "voi făcurăţi",
                 "ei făcură",
+                "ele făcură",
             ],
         ),
         (
@@ -102,9 +128,11 @@ def test_all_verbs_have_templates(cg):
                 "eu voi face",
                 "tu vei face",
                 "el va face",
+                "ea va face",
                 "noi vom face",
                 "voi veţi face",
                 "ei vor face",
+                "ele vor face",
             ],
         ),
         (
@@ -115,9 +143,11 @@ def test_all_verbs_have_templates(cg):
                 "eu voi fi făcut",
                 "tu vei fi făcut",
                 "el va fi făcut",
+                "ea va fi făcut",
                 "noi vom fi făcut",
                 "voi veţi fi făcut",
                 "ei vor fi făcut",
+                "ele vor fi făcut",
             ],
         ),
         (
@@ -128,9 +158,11 @@ def test_all_verbs_have_templates(cg):
                 "eu să fac",
                 "tu să faci",
                 "el să facă",
+                "ea să facă",
                 "noi să facem",
                 "voi să faceţi",
                 "ei să facă",
+                "ele să facă",
             ],
         ),
         (
@@ -141,9 +173,11 @@ def test_all_verbs_have_templates(cg):
                 "eu să fi făcut",
                 "tu să fi făcut",
                 "el să fi făcut",
+                "ea să fi făcut",
                 "noi să fi făcut",
                 "voi să fi făcut",
                 "ei să fi făcut",
+                "ele să fi făcut",
             ],
         ),
         (
@@ -154,9 +188,11 @@ def test_all_verbs_have_templates(cg):
                 "eu aş fi făcut",
                 "tu ai fi făcut",
                 "el ar fi făcut",
+                "ea ar fi făcut",
                 "noi am fi făcut",
                 "voi aţi fi făcut",
                 "ei ar fi făcut",
+                "ele ar fi făcut",
             ],
         ),
         (
@@ -167,9 +203,11 @@ def test_all_verbs_have_templates(cg):
                 "eu o să fac",
                 "tu o să faci",
                 "el o să facă",
+                "ea o să facă",
                 "noi o să facem",
                 "voi o să faceţi",
                 "ei o să facă",
+                "ele o să facă",
             ],
         ),
         (
@@ -180,9 +218,11 @@ def test_all_verbs_have_templates(cg):
                 "eu am să fi făcut",
                 "tu ai să fi făcut",
                 "el are să fi făcut",
+                "ea are să fi făcut",
                 "noi avem să fi făcut",
                 "voi aveţi să fi făcut",
                 "ei au să fi făcut",
+                "ele au să fi făcut",
             ],
         ),
         (
@@ -193,9 +233,11 @@ def test_all_verbs_have_templates(cg):
                 "eu să am",
                 "tu să ai",
                 "el să aibă",
+                "ea să aibă",
                 "noi să avem",
                 "voi să aveţi",
                 "ei să aibă",
+                "ele să aibă",
             ],
         ),
         (
@@ -206,9 +248,11 @@ def test_all_verbs_have_templates(cg):
                 "eu aş avea",
                 "tu ai avea",
                 "el ar avea",
+                "ea ar avea",
                 "noi am avea",
                 "voi aţi avea",
                 "ei ar avea",
+                "ele ar avea",
             ],
         ),
         (
@@ -219,9 +263,11 @@ def test_all_verbs_have_templates(cg):
                 "eu aş fi avut",
                 "tu ai fi avut",
                 "el ar fi avut",
+                "ea ar fi avut",
                 "noi am fi avut",
                 "voi aţi fi avut",
                 "ei ar fi avut",
+                "ele ar fi avut",
             ],
         ),
     ],
@@ -260,22 +306,28 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                 Tenses.ro.PerfectCompus,
                 [
                     Conjugation(
-                        Person.First, Number.Singular, Gender.m, "eu", ["eu am făcut"]
+                        Person.First, Number.Singular, None, "eu", ["eu am făcut"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Singular, Gender.m, "tu", ["tu ai făcut"]
+                        Person.Second, Number.Singular, None, "tu", ["tu ai făcut"]
                     ),
                     Conjugation(
                         Person.Third, Number.Singular, Gender.m, "el", ["el a făcut"]
                     ),
                     Conjugation(
-                        Person.First, Number.Plural, Gender.m, "noi", ["noi am făcut"]
+                        Person.Third, Number.Singular, Gender.f, "ea", ["ea a făcut"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Plural, Gender.m, "voi", ["voi aţi făcut"]
+                        Person.First, Number.Plural, None, "noi", ["noi am făcut"]
+                    ),
+                    Conjugation(
+                        Person.Second, Number.Plural, None, "voi", ["voi aţi făcut"]
                     ),
                     Conjugation(
                         Person.Third, Number.Plural, Gender.m, "ei", ["ei au făcut"]
+                    ),
+                    Conjugation(
+                        Person.Third, Number.Plural, Gender.f, "ele", ["ele au făcut"]
                     ),
                 ],
             ),
@@ -288,30 +340,36 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                 Tenses.ro.MaiMultCaPerfect,
                 [
                     Conjugation(
-                        Person.First, Number.Singular, Gender.m, "eu", ["eu făcusem"]
+                        Person.First, Number.Singular, None, "eu", ["eu făcusem"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Singular, Gender.m, "tu", ["tu făcuseși"]
+                        Person.Second, Number.Singular, None, "tu", ["tu făcuseși"]
                     ),
                     Conjugation(
                         Person.Third, Number.Singular, Gender.m, "el", ["el făcuse"]
                     ),
                     Conjugation(
+                        Person.Third, Number.Singular, Gender.f, "ea", ["ea făcuse"]
+                    ),
+                    Conjugation(
                         Person.First,
                         Number.Plural,
-                        Gender.m,
+                        None,
                         "noi",
                         ["noi făcuserăm"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Plural,
-                        Gender.m,
+                        None,
                         "voi",
                         ["voi făcuserăţi"],
                     ),
                     Conjugation(
                         Person.Third, Number.Plural, Gender.m, "ei", ["ei făcuseră"]
+                    ),
+                    Conjugation(
+                        Person.Third, Number.Plural, Gender.f, "ele", ["ele făcuseră"]
                     ),
                 ],
             ),
@@ -326,14 +384,14 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                     Conjugation(
                         Person.First,
                         Number.Singular,
-                        Gender.m,
+                        None,
                         "eu",
                         ["eu voiesc", "eu voi"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Singular,
-                        Gender.m,
+                        None,
                         "tu",
                         ["tu voiești", "tu vei"],
                     ),
@@ -345,16 +403,23 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                         ["el voiește", "el va"],
                     ),
                     Conjugation(
+                        Person.Third,
+                        Number.Singular,
+                        Gender.f,
+                        "ea",
+                        ["ea voiește", "ea va"],
+                    ),
+                    Conjugation(
                         Person.First,
                         Number.Plural,
-                        Gender.m,
+                        None,
                         "noi",
                         ["noi voim", "noi vom"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Plural,
-                        Gender.m,
+                        None,
                         "voi",
                         ["voi voiţi", "voi veţi"],
                     ),
@@ -364,6 +429,13 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                         Gender.m,
                         "ei",
                         ["ei voiesc", "ei vor"],
+                    ),
+                    Conjugation(
+                        Person.Third,
+                        Number.Plural,
+                        Gender.f,
+                        "ele",
+                        ["ele voiesc", "ele vor"],
                     ),
                 ],
             ),
@@ -375,12 +447,8 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
             TenseConjugation(
                 Tenses.ro.Prezent,
                 [
-                    Conjugation(
-                        Person.First, Number.Singular, Gender.m, "eu", ["eu am"]
-                    ),
-                    Conjugation(
-                        Person.Second, Number.Singular, Gender.m, "tu", ["tu ai"]
-                    ),
+                    Conjugation(Person.First, Number.Singular, None, "eu", ["eu am"]),
+                    Conjugation(Person.Second, Number.Singular, None, "tu", ["tu ai"]),
                     Conjugation(
                         Person.Third,
                         Number.Singular,
@@ -389,20 +457,30 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                         ["el a", "el are"],
                     ),
                     Conjugation(
+                        Person.Third,
+                        Number.Singular,
+                        Gender.f,
+                        "ea",
+                        ["ea a", "ea are"],
+                    ),
+                    Conjugation(
                         Person.First,
                         Number.Plural,
-                        Gender.m,
+                        None,
                         "noi",
                         ["noi am", "noi avem"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Plural,
-                        Gender.m,
+                        None,
                         "voi",
                         ["voi aţi", "voi aveţi"],
                     ),
                     Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei au"]),
+                    Conjugation(
+                        Person.Third, Number.Plural, Gender.f, "ele", ["ele au"]
+                    ),
                 ],
             ),
         ),
@@ -414,22 +492,28 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                 Tenses.ro.Imperfect,
                 [
                     Conjugation(
-                        Person.First, Number.Singular, Gender.m, "eu", ["eu aveam"]
+                        Person.First, Number.Singular, None, "eu", ["eu aveam"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Singular, Gender.m, "tu", ["tu aveai"]
+                        Person.Second, Number.Singular, None, "tu", ["tu aveai"]
                     ),
                     Conjugation(
                         Person.Third, Number.Singular, Gender.m, "el", ["el avea"]
                     ),
                     Conjugation(
-                        Person.First, Number.Plural, Gender.m, "noi", ["noi aveam"]
+                        Person.Third, Number.Singular, Gender.f, "ea", ["ea avea"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Plural, Gender.m, "voi", ["voi aveaţi"]
+                        Person.First, Number.Plural, None, "noi", ["noi aveam"]
+                    ),
+                    Conjugation(
+                        Person.Second, Number.Plural, None, "voi", ["voi aveaţi"]
                     ),
                     Conjugation(
                         Person.Third, Number.Plural, Gender.m, "ei", ["ei aveau"]
+                    ),
+                    Conjugation(
+                        Person.Third, Number.Plural, Gender.f, "ele", ["ele aveau"]
                     ),
                 ],
             ),
@@ -451,16 +535,14 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1(cg):
     ) == TenseConjugation(
         Tenses.ro.Viitor1,
         [
-            Conjugation(Person.First, Number.Singular, Gender.m, "eu", ["eu voi face"]),
-            Conjugation(
-                Person.Second, Number.Singular, Gender.m, "tu", ["tu vei face"]
-            ),
+            Conjugation(Person.First, Number.Singular, None, "eu", ["eu voi face"]),
+            Conjugation(Person.Second, Number.Singular, None, "tu", ["tu vei face"]),
             Conjugation(Person.Third, Number.Singular, Gender.m, "el", ["el va face"]),
-            Conjugation(Person.First, Number.Plural, Gender.m, "noi", ["noi vom face"]),
-            Conjugation(
-                Person.Second, Number.Plural, Gender.m, "voi", ["voi veţi face"]
-            ),
+            Conjugation(Person.Third, Number.Singular, Gender.f, "ea", ["ea va face"]),
+            Conjugation(Person.First, Number.Plural, None, "noi", ["noi vom face"]),
+            Conjugation(Person.Second, Number.Plural, None, "voi", ["voi veţi face"]),
             Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei vor face"]),
+            Conjugation(Person.Third, Number.Plural, Gender.f, "ele", ["ele vor face"]),
         ],
     )
 
@@ -474,20 +556,20 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(cg):
     assert tc == TenseConjugation(
         Tenses.ro.Viitor1Popular,
         [
-            Conjugation(Person.First, Number.Singular, Gender.m, "eu", ["eu o să fac"]),
-            Conjugation(
-                Person.Second, Number.Singular, Gender.m, "tu", ["tu o să faci"]
-            ),
+            Conjugation(Person.First, Number.Singular, None, "eu", ["eu o să fac"]),
+            Conjugation(Person.Second, Number.Singular, None, "tu", ["tu o să faci"]),
             Conjugation(
                 Person.Third, Number.Singular, Gender.m, "el", ["el o să facă"]
             ),
             Conjugation(
-                Person.First, Number.Plural, Gender.m, "noi", ["noi o să facem"]
+                Person.Third, Number.Singular, Gender.f, "ea", ["ea o să facă"]
             ),
-            Conjugation(
-                Person.Second, Number.Plural, Gender.m, "voi", ["voi o să faceţi"]
-            ),
+            Conjugation(Person.First, Number.Plural, None, "noi", ["noi o să facem"]),
+            Conjugation(Person.Second, Number.Plural, None, "voi", ["voi o să faceţi"]),
             Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei o să facă"]),
+            Conjugation(
+                Person.Third, Number.Plural, Gender.f, "ele", ["ele o să facă"]
+            ),
         ],
     )
 
@@ -498,9 +580,11 @@ def test_inflector_ro_conjugate_mood_tense_condițional_perfect(cg):
         "eu aş fi avut",
         "tu ai fi avut",
         "el ar fi avut",
+        "ea ar fi avut",
         "noi am fi avut",
         "voi aţi fi avut",
         "ei ar fi avut",
+        "ele ar fi avut",
     ]
 
 
@@ -514,9 +598,11 @@ def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(cg):
         "eu să fi făcut",
         "tu să fi făcut",
         "el să fi făcut",
+        "ea să fi făcut",
         "noi să fi făcut",
         "voi să fi făcut",
         "ei să fi făcut",
+        "ele să fi făcut",
     ]
 
 

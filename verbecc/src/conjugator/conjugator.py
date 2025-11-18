@@ -609,12 +609,17 @@ class Conjugator:
             # note: tense_conjugated_with_pronoun is False
             # for imperative tense but we still want to set the
             # `pronoun` field.
-            # the only case where we don't set the `pronoun` field
-            # is when it's participle mood because the PersonEndings
+            # the only cases where we don't set the `pronoun` field
+            # is when it's participle mood or infinitive mood.
+            # participle mood because the PersonEndings
             # are participle type, i.e. each PersonEnding has
             # gender and number instead of person and number.
             if mood == self._inflector.get_participle_mood():
                 # we're only conjugating person-endings
+                pronouns = [None]
+            # if there's a single person-ending, it won't have person/number/gender
+            # examples: infinitive tense (e.g. "ayant"), Catalan gerundi tense
+            elif len(tense_template.person_endings) == 1:
                 pronouns = [None]
 
             for pronoun in pronouns:
@@ -695,7 +700,10 @@ class Conjugator:
                         # currently it's just doing
                         if ending != grammar_defines.NO_VALUE:
                             person = person_ending.get_person()
-                            number = person_ending.get_number()
+                            number = Number.Singular
+                            person_ending_number = person_ending.get_number()
+                            if person_ending_number is not None:
+                                number = person_ending_number
                             if person is not None:
                                 gender = Gender.m
                                 if pronoun is not None:
