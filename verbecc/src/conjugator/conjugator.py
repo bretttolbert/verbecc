@@ -1,22 +1,7 @@
-import logging
-
-from verbecc.src.defs.constants.config import DEVEL_MODE
-
-logging_level = logging.CRITICAL + 1  # effectively disables logging
-if DEVEL_MODE:
-    logging_level = logging.DEBUG
-
-logging.basicConfig(
-    level=logging_level,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
-)
-
-logger = logging.getLogger(__name__)
-
 import copy
 from typing import List, Optional
 
+from verbecc.src.utils.log_utils import LogUtils
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.types.gender import Gender
@@ -62,6 +47,7 @@ class Conjugator:
         lang: LangCodeISO639_1,
         lang_specific_options: Optional[LangSpecificOptions] = None,
     ) -> None:
+        self._logger = LogUtils.get_logger(self.__class__.__name__)
         self._inflector = InflectorFactory.make_inflector(lang, lang_specific_options)
 
     def conjugate(
@@ -455,7 +441,7 @@ class Conjugator:
                         pc = p_conj[0]
                         pc_value = str(pc[0])
                     else:
-                        logger.warning(
+                        self._logger.warning(
                             "(aux verb not inflected) primary (participle) conjugation is empty: co=%s p_mood=%s p_tense=%s",
                             co,
                             p_mood,
@@ -532,7 +518,7 @@ class Conjugator:
                 else:
                     # probably some verb like absoudre that isn't
                     # conjugated in certain tenses
-                    logger.warning(
+                    self._logger.warning(
                         "Skipping compound conjugation, "
                         + "participle conjugation is empty. "
                         + "aux_pc=%s aux_verb=%s",
@@ -594,7 +580,7 @@ class Conjugator:
             tense_conjugated_with_pronoun = False
 
         if len(tense_template.person_endings) == 0:
-            logger.warning("tense_template.person_endings is empty")
+            self._logger.warning("tense_template.person_endings is empty")
 
         # There will be at least one conjugation per person-ending and
         # potentially one or more alternate conjugations
@@ -651,7 +637,7 @@ class Conjugator:
                 endings.extend(person_ending.get_endings())
 
                 if len(endings) == 0:
-                    logger.warning("endings is empty")
+                    self._logger.warning("endings is empty")
 
                 # there may be one or more alternate endings
                 for ending in endings:
@@ -722,7 +708,7 @@ class Conjugator:
                                     gender,
                                 )
                             else:
-                                logger.warning("person is None")
+                                self._logger.warning("person is None")
                         if ending != grammar_defines.NO_VALUE:
                             t = tense
                             if primary_tense:
@@ -731,7 +717,7 @@ class Conjugator:
                     conjugation.append(s)
                 ret.append(conjugation)
         if len(ret) == 0:
-            logger.warning("conjugation is empty")
+            self._logger.warning("conjugation is empty")
         return ret
 
     def get_person_ending_by_gender_and_number(
@@ -749,7 +735,7 @@ class Conjugator:
         for pe in person_endings:
             if pe.gender == resolved_gender and pe.number == resolved_number:
                 return pe
-        logger.warning(
+        self._logger.warning(
             "Failed find matching PersonEnding for gender=%s number=%s", gender, number
         )
         return person_endings[0]
@@ -769,10 +755,10 @@ class Conjugator:
         for c in tense_conjugation:
             if c.get_gender() == resolved_gender and c.get_number() == resolved_number:
                 return c
-        logger.warning(
+        self._logger.warning(
             "Failed find matching Conjugation for gender=%s number=%s", gender, number
         )
         if len(tense_conjugation) == 0:
-            logger.error("Failed to get conjugation, tense_conjugation is empty")
+            self._logger.error("Failed to get conjugation, tense_conjugation is empty")
             raise Exception("Failed to get conjugation, tense_conjugation is empty")
         return tense_conjugation[0]

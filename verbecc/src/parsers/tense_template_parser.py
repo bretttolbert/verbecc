@@ -1,22 +1,7 @@
-import logging
-
-from verbecc.src.defs.constants.config import DEVEL_MODE
-
-logging_level = logging.CRITICAL + 1  # effectively disables logging
-if DEVEL_MODE:
-    logging_level = logging.DEBUG
-
-logging.basicConfig(
-    level=logging_level,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
-)
-
-logger = logging.getLogger(__name__)
-
 from lxml import etree
 from typing import List, Optional
 
+from verbecc.src.utils.log_utils import LogUtils
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.constants.localization import xmood
 from verbecc.src.defs.types.data.person_ending import PersonEnding
@@ -52,6 +37,7 @@ class TenseTemplateParser(Parser):
     """
 
     def __init__(self, lang: Lang, mood: Mood) -> None:
+        self._logger = LogUtils.get_logger(self.__class__.__name__)
         self.lang = lang
         self.mood = mood
 
@@ -129,7 +115,7 @@ class TenseTemplateParser(Parser):
                 if len(p_elems) == len(participle_inflections):
                     gender, number = participle_inflections[person_num].value
                 else:
-                    logger.warning(
+                    self._logger.warning(
                         f"Unexpected number of participle inflections {len(p_elems)} "
                         + f"on tense template for language {self.lang}: "
                         + f"{[etree.tostring(p) for p in p_elems]}"
@@ -138,7 +124,7 @@ class TenseTemplateParser(Parser):
                 if len(p_elems) == len(imperative_persons):
                     person, number = imperative_persons[person_num]
                 else:
-                    logger.warning(
+                    self._logger.warning(
                         f"Unexpected number of imperative person inflections {len(p_elems)} "
                         + f"on tense template for language {self.lang}: "
                         + f"{[etree.tostring(p) for p in p_elems]}"

@@ -1,23 +1,7 @@
-import logging
-from typing import Optional
-
-from verbecc.src.defs.constants.config import DEVEL_MODE
-
-logging_level = logging.CRITICAL + 1  # effectively disables logging
-if DEVEL_MODE:
-    logging_level = logging.DEBUG
-
-logging.basicConfig(
-    level=logging_level,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
-)
-
-logger = logging.getLogger(__name__)
-
 from abc import ABC, abstractmethod
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 
+from verbecc.src.utils.log_utils import LogUtils
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
@@ -46,6 +30,7 @@ class Inflector(ABC):
     # public:
 
     def __init__(self) -> None:
+        self._logger = LogUtils.get_logger(self.__class__.__name__)
         self._verbs: Verbs = VerbsParser(self.get_lang()).parse()
         self._conjugations = ConjugationsParser(self.get_lang()).parse()
 
