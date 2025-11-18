@@ -1,7 +1,9 @@
 from typing import Optional
 import jsbeautifier
 
-from verbecc.src.defs.constants.config import JSBEAUTIFIER_OPTS
+from verbecc.src.utils.config_utils import ConfigUtils
+
+config = ConfigUtils.load_verbecc_config()
 
 
 class JSBeautifierOpts:
@@ -12,6 +14,6 @@ class JSBeautifierOpts:
     def get_opts(cls) -> jsbeautifier.BeautifierOptions:
         if cls.opts is None:
             cls.opts = jsbeautifier.default_options()
-            for k, v in JSBEAUTIFIER_OPTS.items():
+            for k, v in config.JSBEAUTIFIER_OPTS.items():
                 setattr(cls.opts, k, v)
         return cls.opts

@@ -5,7 +5,9 @@ from verbecc.src.mlconjug.data_set import DataSet
 from verbecc.src.mlconjug.predictor import TemplatePredictor
 from verbecc.src.mlconjug.feature_extract import extract_verb_features
 from verbecc.src.inflectors.lang.inflector_fr import InflectorFr
-from verbecc.src.defs.constants import config
+from verbecc.src.utils.config_utils import ConfigUtils
+
+config = ConfigUtils.load_verbecc_config()
 
 
 @pytest.fixture(scope="module")

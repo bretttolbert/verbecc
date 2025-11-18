@@ -5,7 +5,6 @@ import pickle
 from zipfile import ZipFile
 
 from verbecc.src.utils.log_utils import LogUtils
-from verbecc.src.defs.constants.config import DEVEL_MODE
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.mlconjug.model import Model
 

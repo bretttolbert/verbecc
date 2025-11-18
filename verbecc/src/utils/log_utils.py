@@ -4,7 +4,9 @@ import logging
 import logging.config
 import yaml
 
-from verbecc.src.defs.constants import config as verbecc_config
+from verbecc.src.utils.config_utils import ConfigUtils
+
+verbecc_config = ConfigUtils.load_verbecc_config()
 
 
 class LogUtils:

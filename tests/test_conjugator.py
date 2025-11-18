@@ -4,11 +4,13 @@ import json
 from tests.common import assert_json_str_equal
 
 from verbecc.src.conjugator.conjugator import Conjugator
-from verbecc.src.defs.constants import config
 from verbecc.src.defs.types.exceptions import InvalidMoodError
 from verbecc.src.defs.types.exceptions import InvalidTenseError
 from verbecc.src.defs.types.exceptions import TemplateNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.src.utils.config_utils import ConfigUtils
+
+config = ConfigUtils.load_verbecc_config()
 
 
 @pytest.fixture(scope="module")

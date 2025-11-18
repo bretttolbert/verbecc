@@ -1,7 +1,6 @@
 import json
 from typing import Iterable
 
-from verbecc.src.defs.constants import config
 from verbecc.src.defs.types.conjugation.abstract_conjugation import AbstractConjugation
 from verbecc.src.defs.types.conjugation.verb_info import VerbInfo
 from verbecc.src.defs.types.mood import Mood
@@ -10,6 +9,9 @@ from verbecc.src.defs.types.conjugation.moods_conjugation import MoodsConjugatio
 from verbecc.src.defs.types.conjugation.complete_conjugation_data import (
     CompleteConjugationData,
 )
+from verbecc.src.utils.config_utils import ConfigUtils
+
+config = ConfigUtils.load_verbecc_config()
 
 
 class CompleteConjugation(AbstractConjugation):

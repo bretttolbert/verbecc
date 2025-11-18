@@ -1,54 +1,69 @@
 from verbecc.src.conjugator.conjugator import Conjugator
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.constants import localization
-from verbecc.src.defs.types import CompleteConjugation
-from verbecc.src.defs.types import CompleteConjugationData
-from verbecc.src.defs.types import Conjugation
-from verbecc.src.defs.types import ConjugationData
-from verbecc.src.defs.types import Conjugations
-from verbecc.src.defs.types import ConjugationsParserError
-from verbecc.src.defs.types import ConjugationTemplate
-from verbecc.src.defs.types import ConjugationTemplateError
-from verbecc.src.defs.types import ConjugatorError
-from verbecc.src.defs.types import Element
-from verbecc.src.defs.types import Gender
-from verbecc.src.defs.types import InvalidLangError
-from verbecc.src.defs.types import InvalidMoodError
-from verbecc.src.defs.types import InvalidTenseError
-from verbecc.src.defs.types import LangCodeISO639_1
-from verbecc.src.defs.types import LangSpecificOptions
-from verbecc.src.defs.types import LangSpecificOptionsEs
-from verbecc.src.defs.types import Mood
-from verbecc.src.defs.types import MoodCa
-from verbecc.src.defs.types import MoodConjugation
-from verbecc.src.defs.types import MoodConjugationData
-from verbecc.src.defs.types import MoodEs
-from verbecc.src.defs.types import MoodFr
-from verbecc.src.defs.types import MoodIt
-from verbecc.src.defs.types import MoodPt
-from verbecc.src.defs.types import MoodRo
-from verbecc.src.defs.types import Moods
-from verbecc.src.defs.types import MoodsConjugation
-from verbecc.src.defs.types import MoodsConjugationData
-from verbecc.src.defs.types import MoodTemplate
-from verbecc.src.defs.types import Number
-from verbecc.src.defs.types import Person
-from verbecc.src.defs.types import PersonEnding
-from verbecc.src.defs.types import TemplateNotFoundError
-from verbecc.src.defs.types import Tense
-from verbecc.src.defs.types import TenseCa
-from verbecc.src.defs.types import TenseConjugation
-from verbecc.src.defs.types import TenseConjugationData
-from verbecc.src.defs.types import TenseEs
-from verbecc.src.defs.types import TenseFr
-from verbecc.src.defs.types import TenseIt
-from verbecc.src.defs.types import TensePt
-from verbecc.src.defs.types import TenseRo
-from verbecc.src.defs.types import Tenses
-from verbecc.src.defs.types import TenseTemplate
-from verbecc.src.defs.types import Verb
-from verbecc.src.defs.types import VerbInfo
-from verbecc.src.defs.types import VerbInfoData
-from verbecc.src.defs.types import VerbNotFoundError
-from verbecc.src.defs.types import Verbs
-from verbecc.src.defs.types import VoseoOptions
+from verbecc.src.defs.types.conjugation import CompleteConjugation
+from verbecc.src.defs.types.conjugation.complete_conjugation import (
+    CompleteConjugationData,
+)
+from verbecc.src.defs.types.conjugation.conjugation import Conjugation
+from verbecc.src.defs.types.conjugation.conjugation_data import ConjugationData
+from verbecc.src.defs.types.exceptions.conjugations_parser_error import (
+    ConjugationsParserError,
+)
+from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.exceptions.conjugation_template_error import (
+    ConjugationTemplateError,
+)
+from verbecc.src.defs.types.exceptions.conjugator_error import ConjugatorError
+from verbecc.src.defs.types.data.element import Element
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.exceptions.invalid_lang_error import InvalidLangError
+from verbecc.src.defs.types.exceptions.invalid_mood_error import InvalidMoodError
+from verbecc.src.defs.types.exceptions.invalid_tense_error import InvalidTenseError
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1
+from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
+from verbecc.src.defs.types.lang_specific_options.lang.es.lang_specific_options_es import (
+    LangSpecificOptionsEs,
+)
+from verbecc.src.defs.types.mood.mood import Mood
+from verbecc.src.defs.types.mood.lang.mood_ca import MoodCa
+from verbecc.src.defs.types.conjugation.mood_conjugation import MoodConjugation
+from verbecc.src.defs.types.conjugation.mood_conjugation_data import MoodConjugationData
+from verbecc.src.defs.types.mood.lang.mood_es import MoodEs
+from verbecc.src.defs.types.mood.lang.mood_fr import MoodFr
+from verbecc.src.defs.types.mood.lang.mood_it import MoodIt
+from verbecc.src.defs.types.mood.lang.mood_pt import MoodPt
+from verbecc.src.defs.types.mood.lang.mood_ro import MoodRo
+from verbecc.src.defs.types.mood.moods import Moods
+from verbecc.src.defs.types.conjugation.moods_conjugation import MoodsConjugation
+from verbecc.src.defs.types.conjugation.moods_conjugation_data import (
+    MoodsConjugationData,
+)
+from verbecc.src.defs.types.data.mood_template import MoodTemplate
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.data.person_ending import PersonEnding
+from verbecc.src.defs.types.exceptions.template_not_found_error import (
+    TemplateNotFoundError,
+)
+from verbecc.src.defs.types.tense.tense import Tense
+from verbecc.src.defs.types.tense.lang.tense_ca import TenseCa
+from verbecc.src.defs.types.conjugation.tense_conjugation import TenseConjugation
+from verbecc.src.defs.types.conjugation.tense_conjugation_data import (
+    TenseConjugationData,
+)
+from verbecc.src.defs.types.tense.lang.tense_es import TenseEs
+from verbecc.src.defs.types.tense.lang.tense_fr import TenseFr
+from verbecc.src.defs.types.tense.lang.tense_it import TenseIt
+from verbecc.src.defs.types.tense.lang.tense_pt import TensePt
+from verbecc.src.defs.types.tense.lang.tense_ro import TenseRo
+from verbecc.src.defs.types.tense.tenses import Tenses
+from verbecc.src.defs.types.data.tense_template import TenseTemplate
+from verbecc.src.defs.types.data.verb import Verb
+from verbecc.src.defs.types.conjugation.verb_info import VerbInfo
+from verbecc.src.defs.types.conjugation.verb_info_data import VerbInfoData
+from verbecc.src.defs.types.exceptions.verb_not_found_error import VerbNotFoundError
+from verbecc.src.defs.types.data.verbs import Verbs
+from verbecc.src.defs.types.lang_specific_options.lang.es.voseo_options import (
+    VoseoOptions,
+)

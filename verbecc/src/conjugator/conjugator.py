@@ -15,18 +15,14 @@ from verbecc.src.defs.types.exceptions import (
     InvalidMoodError,
     InvalidTenseError,
 )
-from verbecc.src.defs.types.conjugation import (
-    Conjugation,
-    TenseConjugation,
-    MoodConjugation,
-    MoodConjugationUtil,
-    MoodsConjugation,
-    VerbInfo,
-    CompleteConjugation,
-)
-from verbecc.src.defs.types.lang_specific_options import (
-    LangSpecificOptions,
-)
+from verbecc.src.defs.types.conjugation.tense_conjugation import TenseConjugation
+from verbecc.src.defs.types.conjugation.mood_conjugation import MoodConjugation
+from verbecc.src.defs.types.conjugation.moods_conjugation import MoodsConjugation
+from verbecc.src.defs.types.conjugation.conjugation import Conjugation
+from verbecc.src.defs.types.conjugation.mood_conjugation_util import MoodConjugationUtil
+from verbecc.src.defs.types.conjugation.complete_conjugation import CompleteConjugation
+from verbecc.src.defs.types.conjugation.verb_info import VerbInfo
+from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
