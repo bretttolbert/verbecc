@@ -30,7 +30,7 @@ class MoodsConjugation(AbstractConjugation):
         if other is None:
             return False
         elif not isinstance(other, MoodsConjugation):
-            raise TypeError
+            raise TypeError()
         return self._data == other._data
 
     def __ne__(self, other: object) -> bool:

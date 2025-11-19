@@ -36,7 +36,7 @@ class Inflector(ABC):
 
     @abstractmethod
     def get_lang(self) -> LangCodeISO639_1:
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def get_verbs(self) -> List[Verb]:
         return list(self._verbs)
@@ -146,7 +146,7 @@ class Inflector(ABC):
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         """Returns a map of the tense of the helping verb for each compound mood and tense"""
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def get_participle_index_for_participle_inflection(
         self, participle_inflection: ParticipleInflection

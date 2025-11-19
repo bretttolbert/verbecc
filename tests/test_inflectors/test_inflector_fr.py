@@ -117,7 +117,9 @@ def test_inflector_fr_conjugate_simple_mood_tense(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(co.verb_stem, mood, tense, tense_template)
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
+        co.verb_stem, mood, tense, tense_template
+    )
     assert tc == TenseConjugation(
         tense,
         [
@@ -293,7 +295,7 @@ def test_can_conjugate_all_verbs(cg):
 def test_inflector_fr_conjugate_compound_raser(cg):
     infinitive = "raser"
     co = cg._get_conj_obs(infinitive)
-    tc = cg._conjugate_compound(
+    tc = cg._tense_conjugator._conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
         Tenses.fr.Passé,
@@ -341,7 +343,7 @@ def test_inflector_fr_conjugate_compound_se_raser(cg):
     """
     infinitive = "se raser"
     co = cg._get_conj_obs(infinitive)
-    tc = cg._conjugate_compound(
+    tc = cg._tense_conjugator._conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
         Tenses.fr.Passé,
@@ -430,7 +432,7 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(cg):
     """
     infinitive = "parler"
     co = cg._get_conj_obs(infinitive)
-    tc = cg._conjugate_compound(
+    tc = cg._tense_conjugator._conjugate_compound_mood_tense(
         co,
         Moods.fr.Indicatif,
         Tenses.fr.PasséCompose,
@@ -491,7 +493,7 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent_nopronouns(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -532,7 +534,7 @@ def test_inflector_fr_conjugate_simple_avoir_participe_participe_passé(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -566,7 +568,7 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -600,7 +602,7 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -632,7 +634,7 @@ def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,

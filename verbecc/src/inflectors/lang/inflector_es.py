@@ -244,7 +244,7 @@ class InflectorEs(Inflector):
                     != VoseoOptions.VoseoTipo3
                 ):
                     # only voseo tipo 3 (voseo típico aka Rioplatense) is supported at the moment
-                    raise NotImplementedError
+                    raise NotImplementedError()
 
                 if (
                     (mood == Moods.es.Indicativo and tense == Tenses.es.Presente)

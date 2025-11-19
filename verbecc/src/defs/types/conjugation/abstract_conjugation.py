@@ -1,11 +1,15 @@
+from dataclasses import fields
 from typing import cast, Optional
 from abc import ABC, abstractmethod
 import json
 
+from verbecc.src.defs.types.config.verbecc_config import VerbeccConfig
+from verbecc.src.defs.types.config.json_opts import JSONOpts
 from verbecc.src.utils.config_utils import ConfigUtils
+from verbecc.src.utils.jsbeautifier_utils import JSBeautifier
+from verbecc.src.utils.json_utils import JSONUtils
 
 config = ConfigUtils.load_verbecc_config()
-from verbecc.src.utils.jsbeautifier_utils import JSBeautifier
 
 
 class AbstractConjugation(ABC):
@@ -20,7 +24,7 @@ class AbstractConjugation(ABC):
         if isinstance(value, AbstractConjugation):
             self._parent = cast(AbstractConjugation, value)
         else:
-            raise TypeError
+            raise TypeError()
 
     @abstractmethod
     def get_data(self) -> object:
@@ -30,22 +34,13 @@ class AbstractConjugation(ABC):
     def __repr__(self) -> str:
         return str(self)
 
-    def to_json(self, beautify: bool = True) -> str:
+    def to_json(self, beautify: bool = config.JSBEAUTIFIER_ENABLE) -> str:
         """The data of this object as a JSON string,
         optionally pretty-formatted.
+        :param beautify: Whether to pretty-format the JSON output
+        :return: JSON string
         """
-        ret = json.dumps(
-            self.get_data(),
-            allow_nan=False,
-            sort_keys=True,
-            indent=4,
-            ensure_ascii=config.JSON_OPT_ENSURE_ASCII,
-        )
-
-        if beautify:
-            ret = JSBeautifier.beautify(ret)
-
-        return ret
+        return JSONUtils.to_json(self.get_data(), beautify=beautify)
 
     def __str__(self) -> str:
         return self.to_json()

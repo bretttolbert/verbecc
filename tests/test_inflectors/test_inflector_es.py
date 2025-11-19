@@ -933,7 +933,9 @@ def test_inflector_es_conjugate_simple_mood_tense():
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.es, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
+        verb_stem, mood, tense, tense_template
+    )
     assert [c[0] for c in tc] == [
         "yo abaño",
         "tú abañas",

@@ -19,9 +19,9 @@ handlers:
     backupCount: 5
 loggers:
   verbecc:
-    level: DEBUG
+    level: CRITICAL
     handlers: [consoleHandler, fileHandler]
     propagate: False
 root:
-  level: INFO
+  level: CRITICAL
   handlers: [consoleHandler]

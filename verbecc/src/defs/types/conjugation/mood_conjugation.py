@@ -29,7 +29,7 @@ class MoodConjugation(AbstractConjugation):
         if other is None:
             return False
         elif not isinstance(other, MoodConjugation):
-            raise TypeError
+            raise TypeError()
         return self._mood == other._mood and self._data == other._data
 
     def __ne__(self, other: object) -> bool:

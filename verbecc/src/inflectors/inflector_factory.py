@@ -37,5 +37,5 @@ class InflectorFactory:
         elif lang == "ro":
             ret = InflectorRo(lang_specific_options)
         else:
-            raise InvalidLangError
+            raise InvalidLangError()
         return ret

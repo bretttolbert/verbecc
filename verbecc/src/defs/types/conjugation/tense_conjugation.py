@@ -28,7 +28,7 @@ class TenseConjugation(AbstractConjugation):
         if other is None:
             return False
         elif not isinstance(other, TenseConjugation):
-            raise TypeError
+            raise TypeError()
         return self._tense == other._tense and self._data == other._data
 
     def __ne__(self, other: object) -> bool:

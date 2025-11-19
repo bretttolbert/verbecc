@@ -67,7 +67,7 @@ class Verbs:
             ret.pred_score = pred_score
             return ret
         else:
-            raise VerbNotFoundError
+            raise VerbNotFoundError()
 
     def get_verbs_that_start_with(self, pre: str, max_results: int = 10) -> List[str]:
         ret: List[str] = []

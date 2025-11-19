@@ -35,7 +35,7 @@ class VerbInfo(AbstractConjugation):
         if other is None:
             return False
         elif not isinstance(other, VerbInfo):
-            raise TypeError
+            raise TypeError()
         return (
             self.lang == other.lang
             and self.infinitive == other.infinitive

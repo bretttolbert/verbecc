@@ -29,4 +29,4 @@ class Conjugations(Element):
         i = bisect_left(self._keys, name)
         if i != len(self._keys) and self._keys[i] == name:
             return self._templates[i]
-        raise TemplateNotFoundError
+        raise TemplateNotFoundError()

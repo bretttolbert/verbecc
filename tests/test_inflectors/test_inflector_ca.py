@@ -2944,7 +2944,9 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.ca, mood).parse(tense_elem)
-    tc = cg._conjugate_simple_mood_tense(verb_stem, mood, tense, tense_template)
+    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
+        verb_stem, mood, tense, tense_template
+    )
     assert [c.get_conjugations() for c in tc] == [
         ["jo parlo"],
         ["tu parles"],

@@ -297,7 +297,7 @@ def test_inflector_it_alzarsi_indicativo_passato_prossimo(
 def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
     infinitive = "essere"
     co = cg._get_conj_obs(infinitive)
-    tc = cg._conjugate_compound(
+    tc = cg._tense_conjugator._conjugate_compound_mood_tense(
         co,
         "indicativo",
         "passato-prossimo",

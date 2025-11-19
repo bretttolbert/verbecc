@@ -31,7 +31,7 @@ class CompleteConjugation(AbstractConjugation):
         if other is None:
             return False
         elif not isinstance(other, CompleteConjugation):
-            raise TypeError
+            raise TypeError()
         return (
             self._verb_info == other._verb_info
             and self._moods_conjugation == other._moods_conjugation

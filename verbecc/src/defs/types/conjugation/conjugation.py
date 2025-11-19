@@ -56,7 +56,7 @@ class Conjugation(AbstractConjugation):
         if other is None:
             return False
         elif not isinstance(other, Conjugation):
-            raise TypeError
+            raise TypeError()
         return (
             self._person == other._person
             and self._number == other._number

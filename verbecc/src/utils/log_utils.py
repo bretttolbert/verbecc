@@ -4,38 +4,41 @@ import logging
 import logging.config
 import yaml
 
-from verbecc.src.utils.config_utils import ConfigUtils
-
-verbecc_config = ConfigUtils.load_verbecc_config()
+LoggingConfigDict = Dict[str, Any]
 
 
 class LogUtils:
     APP_NAME = "verbecc"
+    LOGGING_CONFIG_YAML_FILENAME = "logging_config.yaml"
+    LOGGING_CONFIG_YAML_RESOURCE_PATH = (
+        files("verbecc.config") / LOGGING_CONFIG_YAML_FILENAME
+    )
     _logger: Optional[logging.Logger] = None
-
-    @classmethod
-    def setup_logging(cls) -> None:
-        """Loads logging configuration from a YAML file.
-        ENABLE_LOGGING must be enabled in order for logging to be enabled.
-        DEVEL_MODE increases verbosity from INFO to DEBUG level.
-        """
-        logging_level = logging.CRITICAL + 1  # effectively disables logging
-        if verbecc_config.ENABLE_LOGGING:
-            if verbecc_config.DEVEL_MODE:
-                logging_level = logging.DEBUG
-            else:
-                logging_level = logging.INFO
-        logging_config: Dict[str, Any] = {"level": logging_level}
-        source = files("verbecc.config").joinpath("logging_config.yaml")
-        with as_file(source) as path:
-            with path.open("r", encoding="utf-8") as f:
-                logging_config.update(yaml.safe_load(f))
-        logging.config.dictConfig(logging_config)
 
     @classmethod
     def get_logger(cls, name: str) -> logging.Logger:
         # todo: do something with name
         if LogUtils._logger is None:
-            cls.setup_logging()
+            LogUtils.set_logging_config(LogUtils.load_logging_config())
             LogUtils._logger = logging.getLogger(cls.APP_NAME)
         return LogUtils._logger
+
+    @staticmethod
+    def set_logging_config(logging_config: LoggingConfigDict) -> None:
+        """Loads logging configuration from a YAML file."""
+        logging.config.dictConfig(logging_config)
+
+    @staticmethod
+    def load_logging_config() -> LoggingConfigDict:
+        """Loads verbecc logging configuration."""
+        ret = LogUtils._load_logging_config_yaml()
+        return ret
+
+    @classmethod
+    def _load_logging_config_yaml(cls) -> LoggingConfigDict:
+        """Loads base logging configuration from yaml file."""
+        logging_config: LoggingConfigDict = {}
+        with as_file(cls.LOGGING_CONFIG_YAML_RESOURCE_PATH) as path:
+            with path.open("r", encoding="utf-8") as f:
+                logging_config.update(yaml.safe_load(f))
+                return logging_config
