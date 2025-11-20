@@ -1,4 +1,6 @@
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.src.conjugator.mood_conjugator import MoodConjugator
+from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.constants import localization
 from verbecc.src.defs.types.config.verbecc_config import VerbeccConfig
@@ -39,6 +41,7 @@ from verbecc.src.defs.types.mood.lang.mood_it import MoodIt
 from verbecc.src.defs.types.mood.lang.mood_pt import MoodPt
 from verbecc.src.defs.types.mood.lang.mood_ro import MoodRo
 from verbecc.src.defs.types.mood.moods import Moods
+from verbecc.src.defs.types.mood.mood_factory import MoodFactory
 from verbecc.src.defs.types.conjugation.moods_conjugation import MoodsConjugation
 from verbecc.src.defs.types.conjugation.moods_conjugation_data import (
     MoodsConjugationData,
@@ -62,6 +65,7 @@ from verbecc.src.defs.types.tense.lang.tense_it import TenseIt
 from verbecc.src.defs.types.tense.lang.tense_pt import TensePt
 from verbecc.src.defs.types.tense.lang.tense_ro import TenseRo
 from verbecc.src.defs.types.tense.tenses import Tenses
+from verbecc.src.defs.types.tense.tense_factory import TenseFactory
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.conjugation.verb_info import VerbInfo
@@ -71,3 +75,13 @@ from verbecc.src.defs.types.data.verbs import Verbs
 from verbecc.src.defs.types.lang_specific_options.lang.es.voseo_options import (
     VoseoOptions,
 )
+from verbecc.src.defs.types.pronoun.pronoun import Pronoun
+from verbecc.src.defs.types.pronoun.pronouns import Pronouns
+from verbecc.src.defs.types.pronoun.pronoun_factory import PronounFactory
+from verbecc.src.defs.types.pronoun.lang.pronoun_ca import PronounCa
+from verbecc.src.defs.types.pronoun.lang.pronoun_en import PronounEn
+from verbecc.src.defs.types.pronoun.lang.pronoun_es import PronounEs
+from verbecc.src.defs.types.pronoun.lang.pronoun_fr import PronounFr
+from verbecc.src.defs.types.pronoun.lang.pronoun_it import PronounIt
+from verbecc.src.defs.types.pronoun.lang.pronoun_pt import PronounPt
+from verbecc.src.defs.types.pronoun.lang.pronoun_ro import PronounRo

@@ -3,7 +3,6 @@ from typing import Dict, List, Optional, Tuple
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.mood import Mood, Moods
-from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.tense import Tense, Tenses
@@ -13,6 +12,7 @@ from verbecc.src.defs.types.lang_specific_options import (
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.utils import string_utils
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 VERBS_CONJUGATED_WITH_ESSERE = [
     "essere",
@@ -76,10 +76,10 @@ class InflectorIt(Inflector):
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
         return "che " + s
 
-    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
-        if pronoun == "lei":
+    def get_pronoun_gender(self, pronoun: Pronoun) -> Optional[Gender]:
+        if pronoun == Pronouns.it.lei:
             return Gender.f
-        elif pronoun == "lui":
+        elif pronoun == Pronouns.it.lui:
             return Gender.m
         return None
 
@@ -88,53 +88,53 @@ class InflectorIt(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-    ) -> List[str]:
+    ) -> List[Pronoun]:
         ret = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
-            p = "io"
+            p = Pronouns.it.io
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Singular
         ):
-            p = "tu"
+            p = Pronouns.it.tu
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Singular
         ):
-            pronouns = ["lui", "lei"]
+            pronouns = [Pronouns.it.lui, Pronouns.it.lei]
             if gender is not None:
                 if gender == Gender.m:
-                    pronouns = ["lui"]
+                    pronouns = [Pronouns.it.lui]
                 else:
-                    pronouns = ["lei"]
+                    pronouns = [Pronouns.it.lei]
             ret.extend(pronouns)
         if (person is None or person == Person.First) and (
             number is None or number == Number.Plural
         ):
-            p = "noi"
+            p = Pronouns.it.noi
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Plural
         ):
-            p = "voi"
+            p = Pronouns.it.voi
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Plural
         ):
-            p = "loro"
+            p = Pronouns.it.loro
             ret.append(p)
         return ret
 
-    def make_pronoun_reflexive(self, pronoun: str) -> str:
-        if pronoun == "io":
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.it.io:
             return pronoun + " mi"
-        elif pronoun == "tu":
+        elif pronoun == Pronouns.it.tu:
             return pronoun + " ti"
-        elif pronoun == "voi":
+        elif pronoun == Pronouns.it.voi:
             return pronoun + " vi"
-        elif pronoun == "noi":
+        elif pronoun == Pronouns.it.noi:
             return pronoun + " ci"
         else:
             return pronoun + " si"

@@ -2,7 +2,7 @@ from verbecc.src.defs.types.tense.tense import Tense
 
 
 class TenseFr(Tense):
-    FutureAntériuer = "futur-antérieur"
+    FuturAntérieur = "futur-antérieur"
     FuturSimple = "futur-simple"
     Imparfait = "imparfait"
     ImperatifPassé = "imperatif-passé"
@@ -12,7 +12,7 @@ class TenseFr(Tense):
     ParticipePresent = "participe-présent"
     Passé = "passé"
     PasséAntérieur = "passé-antérieur"
-    PasséCompose = "passé-composé"
+    PasséComposé = "passé-composé"
     PasséSimple = "passé-simple"
     PlusQueParfait = "plus-que-parfait"
     Présent = "présent"

@@ -1,6 +1,8 @@
 import pytest
 
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.src.conjugator.mood_conjugator import MoodConjugator
+from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.types.conjugation import Conjugation
 from verbecc.src.defs.types.conjugation import TenseConjugation
 from verbecc.src.defs.types.gender import Gender
@@ -12,14 +14,26 @@ from verbecc.src.defs.types.tense import Tenses
 
 
 @pytest.fixture(scope="module")
-def cg():
-    cg = Conjugator(lang=Lang.ro)
-    yield cg
+def ccg():
+    ccg = CompleteConjugator(lang=Lang.ro)
+    yield ccg
 
 
-def test_all_verbs_have_templates(cg):
-    verbs = cg.get_verbs()
-    template_names = cg.get_template_names()
+@pytest.fixture(scope="module")
+def mcg():
+    mcg = MoodConjugator(lang=Lang.ro)
+    yield mcg
+
+
+@pytest.fixture(scope="module")
+def tcg():
+    tcg = TenseConjugator(lang=Lang.ro)
+    yield tcg
+
+
+def test_all_verbs_have_templates(ccg):
+    verbs = ccg.get_verbs()
+    template_names = ccg.get_template_names()
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
@@ -273,9 +287,9 @@ def test_all_verbs_have_templates(cg):
     ],
 )
 def test_inflector_ro_conjugate_mood_tense_str_only(
-    cg, infinitive, mood, tense, expected_result
+    ccg, infinitive, mood, tense, expected_result
 ):
-    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [c[0] for c in tc] == expected_result
 
 
@@ -521,14 +535,14 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
     ],
 )
 def test_inflector_ro_conjugate_mood_tense_tc(
-    cg, infinitive, mood, tense, expected_result
+    ccg, infinitive, mood, tense, expected_result
 ):
-    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert tc == expected_result
 
 
-def test_inflector_ro_conjugate_mood_tense_viitor_1(cg):
-    assert cg.conjugate_mood_tense(
+def test_inflector_ro_conjugate_mood_tense_viitor_1(ccg):
+    assert ccg.conjugate_mood_tense(
         "face",
         Moods.ro.Indicativ,
         Tenses.ro.Viitor1,
@@ -547,8 +561,8 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1(cg):
     )
 
 
-def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(cg):
-    tc = cg.conjugate_mood_tense(
+def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(ccg):
+    tc = ccg.conjugate_mood_tense(
         "face",
         Moods.ro.Indicativ,
         Tenses.ro.Viitor1Popular,
@@ -574,8 +588,8 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(cg):
     )
 
 
-def test_inflector_ro_conjugate_mood_tense_condițional_perfect(cg):
-    tc = cg.conjugate_mood_tense("avea", Moods.ro.Condițional, Tenses.ro.Perfect)
+def test_inflector_ro_conjugate_mood_tense_condițional_perfect(ccg):
+    tc = ccg.conjugate_mood_tense("avea", Moods.ro.Condițional, Tenses.ro.Perfect)
     assert [c[0] for c in tc] == [
         "eu aş fi avut",
         "tu ai fi avut",
@@ -588,8 +602,8 @@ def test_inflector_ro_conjugate_mood_tense_condițional_perfect(cg):
     ]
 
 
-def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(cg):
-    tc = cg.conjugate_mood_tense(
+def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(ccg):
+    tc = ccg.conjugate_mood_tense(
         "face",
         Moods.ro.Conjunctiv,
         Tenses.ro.Perfect,
@@ -628,14 +642,14 @@ def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(cg):
     ],
 )
 def test_inflector_ro_get_pronouns(
-    cg,
+    ccg,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = cg._inflector.get_pronouns(person, number, gender)[0]
+    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = cg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result

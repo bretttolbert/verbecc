@@ -13,6 +13,7 @@ from verbecc.src.defs.types.lang_specific_options import (
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 class InflectorCa(inflector.Inflector):
@@ -27,10 +28,10 @@ class InflectorCa(inflector.Inflector):
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
-    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
-        if pronoun in ("ella", "elles"):
+    def get_pronoun_gender(self, pronoun: Pronoun) -> Optional[Gender]:
+        if pronoun in (Pronouns.ca.ella, Pronouns.ca.elles):
             return Gender.f
-        elif pronoun in ("ell", "ells"):
+        elif pronoun in (Pronouns.ca.ell, Pronouns.ca.ells):
             return Gender.m
         return None
 
@@ -39,58 +40,58 @@ class InflectorCa(inflector.Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-    ) -> List[str]:
+    ) -> List[Pronoun]:
         ret = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
-            p = "jo"
+            p = Pronouns.ca.jo
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Singular
         ):
-            p = "tu"
+            p = Pronouns.ca.tu
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Singular
         ):
-            pronouns = ["ell", "ella"]
+            pronouns = [Pronouns.ca.ell, Pronouns.ca.ella]
             if gender is not None:
                 if gender == Gender.m:
-                    pronouns = ["ell"]
+                    pronouns = [Pronouns.ca.ell]
                 else:
-                    pronouns = ["ella"]
+                    pronouns = [Pronouns.ca.ella]
             ret.extend(pronouns)
         if (person is None or person == Person.First) and (
             number is None or number == Number.Plural
         ):
-            p = "nosaltres"
+            p = Pronouns.ca.nosaltres
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Plural
         ):
-            p = "vosaltres"
+            p = Pronouns.ca.vosaltres
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Plural
         ):
-            pronouns = ["ells", "elles"]
+            pronouns = [Pronouns.ca.ells, Pronouns.ca.elles]
             if gender is not None:
                 if gender == Gender.m:
-                    pronouns = ["ells"]
+                    pronouns = [Pronouns.ca.ells]
                 else:
-                    pronouns = ["elles"]
+                    pronouns = [Pronouns.ca.elles]
             ret.extend(pronouns)
         return ret
 
-    def make_pronoun_reflexive(self, pronoun: str) -> str:
-        if pronoun == "jo":
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.ca.jo:
             return pronoun + " me"
-        elif pronoun == "tu":
+        elif pronoun == Pronouns.ca.tu:
             return pronoun + " te"
-        elif pronoun == "vosaltres":
+        elif pronoun == Pronouns.ca.vosaltres:
             return pronoun + " os"
-        elif pronoun == "nosaltres":
+        elif pronoun == Pronouns.ca.nosaltres:
             return pronoun + " nos"
         else:
             return pronoun + " se"

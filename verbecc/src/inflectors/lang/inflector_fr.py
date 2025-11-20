@@ -13,6 +13,7 @@ from verbecc.src.defs.types.lang_specific_options import (
 )
 from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.utils import string_utils
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 """
 DR & MRS VANDERTRAMPP verbs
@@ -105,10 +106,10 @@ class InflectorFr(Inflector):
         else:
             return "que " + s
 
-    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
-        if pronoun in ("elle", "elles"):
+    def get_pronoun_gender(self, pronoun: Pronoun) -> Optional[Gender]:
+        if pronoun in (Pronouns.fr.elle, Pronouns.fr.elles):
             return Gender.f
-        elif pronoun in ("il", "ils"):
+        elif pronoun in (Pronouns.fr.il, Pronouns.fr.ils):
             return Gender.m
         return None
 
@@ -117,7 +118,7 @@ class InflectorFr(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-    ) -> List[str]:
+    ) -> List[Pronoun]:
         """
         Returns a list of all pronouns matching the provided filters,
         in the typical order, with the default pronoun first.
@@ -127,53 +128,53 @@ class InflectorFr(Inflector):
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
-            p = "je"
+            p = Pronouns.fr.je
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Singular
         ):
-            p = "tu"
+            p = Pronouns.fr.tu
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Singular
         ):
-            pronouns = ["il", "elle", "on"]
+            pronouns = [Pronouns.fr.il, Pronouns.fr.elle, Pronouns.fr.on]
             if gender is not None:
                 if gender == Gender.m:
-                    pronouns = ["il"]
+                    pronouns = [Pronouns.fr.il]
                 else:
-                    pronouns = ["elle"]
+                    pronouns = [Pronouns.fr.elle]
             ret.extend(pronouns)
         if (person is None or person == Person.First) and (
             number is None or number == Number.Plural
         ):
-            p = "nous"
+            p = Pronouns.fr.nous
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Plural
         ):
-            p = "vous"
+            p = Pronouns.fr.vous
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Plural
         ):
-            pronouns = ["ils", "elles"]
+            pronouns = [Pronouns.fr.ils, Pronouns.fr.elles]
             if gender is not None:
                 if gender == Gender.m:
-                    pronouns = ["ils"]
+                    pronouns = [Pronouns.fr.ils]
                 else:
-                    pronouns = ["elles"]
+                    pronouns = [Pronouns.fr.elles]
             ret.extend(pronouns)
         return ret
 
-    def make_pronoun_reflexive(self, pronoun: str) -> str:
-        if pronoun == "je":
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.fr.je:
             return pronoun + " me"
-        elif pronoun == "tu":
+        elif pronoun == Pronouns.fr.tu:
             return pronoun + " te"
-        elif pronoun == "vous":
+        elif pronoun == Pronouns.fr.vous:
             return pronoun + " vous"
-        elif pronoun == "nous":
+        elif pronoun == Pronouns.fr.nous:
             return pronoun + " nous"
         else:
             return pronoun + " se"
@@ -284,9 +285,9 @@ class InflectorFr(Inflector):
         """
         return {
             Moods.fr.Indicatif: {
-                Tenses.fr.PasséCompose: (Moods.fr.Indicatif, Tenses.fr.Présent),
+                Tenses.fr.PasséComposé: (Moods.fr.Indicatif, Tenses.fr.Présent),
                 Tenses.fr.PlusQueParfait: (Moods.fr.Indicatif, Tenses.fr.Imparfait),
-                Tenses.fr.FutureAntériuer: (Moods.fr.Indicatif, Tenses.fr.FuturSimple),
+                Tenses.fr.FuturAntérieur: (Moods.fr.Indicatif, Tenses.fr.FuturSimple),
                 Tenses.fr.PasséAntérieur: (Moods.fr.Indicatif, Tenses.fr.PasséSimple),
             },
             Moods.fr.Subjonctif: {

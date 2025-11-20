@@ -11,6 +11,7 @@ from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
 from verbecc.src.inflectors.inflector import Inflector
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 class InflectorRo(Inflector):
@@ -52,9 +53,9 @@ class InflectorRo(Inflector):
     """
 
     def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
-        if pronoun in ("ea", "ele"):
+        if pronoun in (Pronouns.ro.ea, Pronouns.ro.ele):
             return Gender.f
-        elif pronoun in ("el", "ei"):
+        elif pronoun in (Pronouns.ro.el, Pronouns.ro.ei):
             return Gender.m
         return None
 
@@ -63,58 +64,58 @@ class InflectorRo(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-    ) -> List[str]:
+    ) -> List[Pronoun]:
         ret = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
-            p = "eu"
+            p = Pronouns.ro.eu
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Singular
         ):
-            p = "tu"
+            p = Pronouns.ro.tu
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Singular
         ):
-            pronouns = ["el", "ea"]
+            pronouns = [Pronouns.ro.el, Pronouns.ro.ea]
             if gender is not None:
                 if gender is Gender.m:
-                    pronouns = ["el"]
+                    pronouns = [Pronouns.ro.el]
                 else:
-                    pronouns = ["ea"]
+                    pronouns = [Pronouns.ro.ea]
             ret.extend(pronouns)
         if (person is None or person == Person.First) and (
             number is None or number == Number.Plural
         ):
-            p = "noi"
+            p = Pronouns.ro.noi
             ret.append(p)
         if (person is None or person == Person.Second) and (
             number is None or number == Number.Plural
         ):
-            p = "voi"
+            p = Pronouns.ro.voi
             ret.append(p)
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Plural
         ):
-            pronouns = ["ei", "ele"]
+            pronouns = [Pronouns.ro.ei, Pronouns.ro.ele]
             if gender is not None:
                 if gender is Gender.m:
-                    pronouns = ["ei"]
+                    pronouns = [Pronouns.ro.ei]
                 else:
-                    pronouns = ["ele"]
+                    pronouns = [Pronouns.ro.ele]
             ret.extend(pronouns)
         return ret
 
-    def make_pronoun_reflexive(self, pronoun: str) -> str:
-        if pronoun == "eu":
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.ro.eu:
             return pronoun + " mă"
-        elif pronoun == "tu":
+        elif pronoun == Pronouns.ro.tu:
             return pronoun + " te"
-        elif pronoun == "voi":
+        elif pronoun == Pronouns.ro.voi:
             return pronoun + " vă"
-        elif pronoun == "noi":
+        elif pronoun == Pronouns.ro.noi:
             return pronoun + " ne"
         else:
             return pronoun + " se"

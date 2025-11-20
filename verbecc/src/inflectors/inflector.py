@@ -17,6 +17,7 @@ from verbecc.src.defs.types.participle_inflection import ParticipleInflection
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.tense import Tense, Tenses
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
 from verbecc.src.parsers.verbs_parser import VerbsParser
 
@@ -172,7 +173,7 @@ class Inflector(ABC):
             else:
                 return ParticipleInflection.FemininePlural
 
-    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+    def get_pronoun_gender(self, pronoun: Pronoun) -> Optional[Gender]:
         return None
 
     def get_pronouns(
@@ -180,7 +181,7 @@ class Inflector(ABC):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
-    ) -> List[str]:
+    ) -> List[Pronoun]:
         """
         Returns a list of all pronouns matching the provided filters,
         in the typical order, with the default pronoun first.
@@ -188,7 +189,7 @@ class Inflector(ABC):
         """
         return []
 
-    def make_pronoun_reflexive(self, pronoun: str) -> str:
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
         """
         Adds appropriate suffix to make the pronoun reflexive
         E.g. "il" -> "il se"

@@ -1,24 +1,41 @@
 import pytest
 from typing import List
 
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.src.conjugator.mood_conjugator import MoodConjugator
+from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.mood import Moods
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tense
+from verbecc.src.defs.types.tense import Tenses
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 @pytest.fixture(scope="module")
-def cg():
-    cg = Conjugator(lang=Lang.pt)
-    yield cg
+def ccg():
+    ccg = CompleteConjugator(lang=Lang.pt)
+    yield ccg
 
 
-def test_all_verbs_have_templates(cg: Conjugator):
-    verbs = cg.get_verbs()
-    template_names = cg.get_template_names()
+@pytest.fixture(scope="module")
+def mcg():
+    mcg = MoodConjugator(lang=Lang.pt)
+    yield mcg
+
+
+@pytest.fixture(scope="module")
+def tcg():
+    tcg = TenseConjugator(lang=Lang.pt)
+    yield tcg
+
+
+def test_all_verbs_have_templates(ccg):
+    verbs = ccg.get_verbs()
+    template_names = ccg.get_template_names()
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
@@ -26,8 +43,10 @@ def test_all_verbs_have_templates(cg: Conjugator):
     assert len(missing_templates) == 0
 
 
-def test_conjugate_ter_subjuntivo_preterito_perfeito(cg):
-    tc = cg.conjugate_mood_tense("ter", "subjuntivo", "pretérito-perfeito")
+def test_conjugate_ter_subjuntivo_preterito_perfeito(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "ter", Moods.pt.Subjuntivo, Tenses.pt.PretéritoPerfeito
+    )
     assert [c[0] for c in tc] == [
         "eu tenha tido",
         "tu tenhas tido",
@@ -40,8 +59,10 @@ def test_conjugate_ter_subjuntivo_preterito_perfeito(cg):
     ]
 
 
-def test_conjugate_ter_infinitivo_pessoal_presente(cg):
-    tc = cg.conjugate_mood_tense("ter", "infinitivo", "infinitivo-pessoal-presente")
+def test_conjugate_ter_infinitivo_pessoal_presente(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "ter", Moods.pt.Infinitivo, Tenses.pt.InfinitivoPessoalPresente
+    )
     assert [c[0] for c in tc] == [
         "por ter eu",
         "por teres tu",
@@ -54,8 +75,10 @@ def test_conjugate_ter_infinitivo_pessoal_presente(cg):
     ]
 
 
-def test_conjugate_ter_infinitivo_pessoal_composto(cg):
-    tc = cg.conjugate_mood_tense("ter", "infinitivo", "infinitivo-pessoal-composto")
+def test_conjugate_ter_infinitivo_pessoal_composto(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "ter", Moods.pt.Infinitivo, Tenses.pt.InfinitivoPessoalComposto
+    )
     assert [c[0] for c in tc] == [
         "ter tido",
         "teres tido",
@@ -89,7 +112,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         (
             "ter",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu tive",
                 "tu tiveste",
@@ -208,7 +231,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "presente",
             [
                 "que eu tenha",
@@ -223,8 +246,8 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "subjuntivo",
-            "pretérito-perfeito",
+            Moods.pt.Subjuntivo,
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu tenha tido",
                 "tu tenhas tido",
@@ -238,7 +261,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "pretérito-imperfeito",
             [
                 "se eu tivesse",
@@ -253,7 +276,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "pretérito-mais-que-perfeito",
             [
                 "eu tivesse tido",
@@ -268,7 +291,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "futuro",
             [
                 "quando eu tiver",
@@ -283,7 +306,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "futuro-composto",
             [
                 "eu tiver tido",
@@ -328,8 +351,8 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "infinitivo",
-            "infinitivo-pessoal-presente",
+            Moods.pt.Infinitivo,
+            Tenses.pt.InfinitivoPessoalPresente,
             [
                 "por ter eu",
                 "por teres tu",
@@ -343,8 +366,8 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "ter",
-            "infinitivo",
-            "infinitivo-pessoal-composto",
+            Moods.pt.Infinitivo,
+            Tenses.pt.InfinitivoPessoalComposto,
             [
                 "ter tido",
                 "teres tido",
@@ -389,7 +412,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         (
             "andar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu andei",
                 "tu andaste",
@@ -404,7 +427,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         (
             "ficar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu fiquei",
                 "tu ficaste",
@@ -419,7 +442,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         (
             "amar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu amei",
                 "tu amaste",
@@ -434,7 +457,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         (
             "odiar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu odiei",
                 "tu odiaste",
@@ -464,7 +487,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         (
             "arguir",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu argui",
                 "tu arguiste",
@@ -538,7 +561,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "arguir",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "pretérito-imperfeito",
             [
                 "se eu arguisse",
@@ -553,7 +576,7 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "arguir",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "futuro",
             [
                 "quando eu arguir",
@@ -568,8 +591,8 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
         ),
         (
             "arguir",
-            "infinitivo",
-            "infinitivo-pessoal-presente",
+            Moods.pt.Infinitivo,
+            Tenses.pt.InfinitivoPessoalPresente,
             [
                 "por arguir eu",
                 "por arguíres tu",
@@ -599,13 +622,13 @@ def test_conjugate_ter_infinitivo_pessoal_composto(cg):
     ],
 )
 def test_inflector_pt_conjugate_mood_tense(
-    cg: Conjugator,
+    ccg,
     infinitive: str,
     mood: Mood,
     tense: Tense,
     expected_result: List[str],
 ):
-    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [c[0] for c in tc] == expected_result
 
 
@@ -631,14 +654,14 @@ def test_inflector_pt_conjugate_mood_tense(
     ],
 )
 def test_inflector_pt_get_pronouns(
-    cg,
+    ccg,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = cg._inflector.get_pronouns(person, number, gender)[0]
+    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = cg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result

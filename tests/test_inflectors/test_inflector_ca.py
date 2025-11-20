@@ -3,7 +3,9 @@ from lxml import etree
 import json
 
 from tests.common import assert_json_str_equal
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.src.conjugator.mood_conjugator import MoodConjugator
+from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.types.conjugation import Conjugation, TenseConjugation
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
@@ -12,18 +14,31 @@ from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tenses
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 @pytest.fixture(scope="module")
-def cg():
-    cg = Conjugator(lang=Lang.ca)
-    yield cg
+def ccg():
+    ccg = CompleteConjugator(lang=Lang.ca)
+    yield ccg
 
 
-def test_all_verbs_have_templates(cg):
-    verbs = cg.get_verbs()
+@pytest.fixture(scope="module")
+def mcg():
+    mcg = MoodConjugator(lang=Lang.ca)
+    yield mcg
+
+
+@pytest.fixture(scope="module")
+def tcg():
+    tcg = TenseConjugator(lang=Lang.ca)
+    yield tcg
+
+
+def test_all_verbs_have_templates(ccg):
+    verbs = ccg.get_verbs()
     assert len(verbs) == 8616
-    template_names = cg.get_template_names()
+    template_names = ccg.get_template_names()
     assert len(template_names) == 66
     missing_verbs = []
     missing_templates = set()
@@ -34,8 +49,8 @@ def test_all_verbs_have_templates(cg):
     assert len(missing_templates) == len(missing_verbs) == 0
 
 
-def test_find_verb_by_infinitive(cg):
-    v = cg.find_verb_by_infinitive("abandonar")
+def test_find_verb_by_infinitive(ccg):
+    v = ccg.find_verb_by_infinitive("abandonar")
     assert v.infinitive == "abandonar"
     assert v.template == "cant:ar"
 
@@ -2823,14 +2838,14 @@ def test_find_verb_by_infinitive(cg):
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
-    cg, infinitive, mood, tense, expected_result
+    ccg, infinitive, mood, tense, expected_result
 ):
-    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [list(c) for c in tc] == expected_result
 
 
-def test_inflector_ca_conjugate_simple_past(cg):
-    cc = cg.conjugate_mood_tense(
+def test_inflector_ca_conjugate_simple_past(ccg):
+    cc = ccg.conjugate_mood_tense(
         "pertànyer", Moods.ca.Indicatiu, Tenses.ca.PassatSimple
     )
     assert cc == TenseConjugation(
@@ -2840,95 +2855,95 @@ def test_inflector_ca_conjugate_simple_past(cg):
                 Person.First,
                 Number.Singular,
                 None,
-                "jo",
+                Pronouns.ca.jo,
                 ["jo pertanyí", "jo pertanguí"],
             ),
             Conjugation(
                 Person.Second,
                 Number.Singular,
                 None,
-                "tu",
+                Pronouns.ca.tu,
                 ["tu pertanyeres", "tu pertangueres"],
             ),
             Conjugation(
                 Person.Third,
                 Number.Singular,
                 Gender.m,
-                "ell",
+                Pronouns.ca.ell,
                 ["ell pertanyé", "ell pertangué"],
             ),
             Conjugation(
                 Person.Third,
                 Number.Singular,
                 Gender.f,
-                "ella",
+                Pronouns.ca.ella,
                 ["ella pertanyé", "ella pertangué"],
             ),
             Conjugation(
                 Person.First,
                 Number.Plural,
                 None,
-                "nosaltres",
+                Pronouns.ca.nosaltres,
                 ["nosaltres pertanyérem", "nosaltres pertanguérem"],
             ),
             Conjugation(
                 Person.Second,
                 Number.Plural,
                 None,
-                "vosaltres",
+                Pronouns.ca.vosaltres,
                 ["vosaltres pertanyéreu", "vosaltres pertanguéreu"],
             ),
             Conjugation(
                 Person.Third,
                 Number.Plural,
                 Gender.m,
-                "ells",
+                Pronouns.ca.ells,
                 ["ells pertanyeren", "ells pertanguéren"],
             ),
             Conjugation(
                 Person.Third,
                 Number.Plural,
                 Gender.f,
-                "elles",
+                Pronouns.ca.elles,
                 ["elles pertanyeren", "elles pertanguéren"],
             ),
         ],
     )
 
 
-def test_inflector_ca_get_conj_obs(cg):
-    co = cg._get_conj_obs("parlar")
+def test_inflector_ca_get_conj_obs(ccg):
+    co = ccg._get_conj_obs("parlar")
     assert co.verb.infinitive == "parlar"
     assert co.verb_stem == "parl"
     assert co.template.name == "cant:ar"
 
 
-def test_inflector_ca_get_conj_obs_2(cg):
-    co = cg._get_conj_obs("abandonar")
+def test_inflector_ca_get_conj_obs_2(ccg):
+    co = ccg._get_conj_obs("abandonar")
     assert co.verb.infinitive == "abandonar"
     assert co.verb_stem == "abandon"
     assert co.template.name == "cant:ar"
 
 
-def test_inflector_ca_get_conj_obs_3(cg):
-    co = cg._get_conj_obs("pertànyer")
+def test_inflector_ca_get_conj_obs_3(ccg):
+    co = ccg._get_conj_obs("pertànyer")
     assert co.verb.infinitive == "pertànyer"
     assert co.verb_stem == "pertàny"
     assert co.template.name == "pertàny:er"
     assert co.template.modify_stem == "strip-accents"
 
 
-def test_inflector_ca_get_verb_stem_from_template_name(cg):
-    verb_stem = cg._inflector.get_verb_stem_from_template_name("parlar", "cant:ar")
+def test_inflector_ca_get_verb_stem_from_template_name(ccg):
+    verb_stem = ccg._inflector.get_verb_stem_from_template_name("parlar", "cant:ar")
     assert verb_stem == "parl"
 
 
-def test_inflector_ca_get_verb_stem_from_template_name_2(cg):
-    verb_stem = cg._inflector.get_verb_stem_from_template_name("abandonar", "cant:ar")
+def test_inflector_ca_get_verb_stem_from_template_name_2(ccg):
+    verb_stem = ccg._inflector.get_verb_stem_from_template_name("abandonar", "cant:ar")
     assert verb_stem == "abandon"
 
 
-def test_inflector_ca_conjugate_simple_mood_tense(cg):
+def test_inflector_ca_conjugate_simple_mood_tense(tcg):
     mood = Moods.ca.Indicatiu
     tense = Tenses.ca.Present
     verb_stem = "parl"
@@ -2944,7 +2959,7 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.ca, mood).parse(tense_elem)
-    tc = cg._tense_conjugator._conjugate_simple_mood_tense(
+    tc = tcg._tense_conjugator_simple._conjugate_simple_mood_tense(
         verb_stem, mood, tense, tense_template
     )
     assert [c.get_conjugations() for c in tc] == [
@@ -2962,122 +2977,126 @@ def test_inflector_ca_conjugate_simple_mood_tense(cg):
 @pytest.mark.parametrize(
     "person,number,gender,is_reflexive,expected_result",
     [
-        (Person.First, Number.Singular, Gender.m, False, "jo"),
+        (Person.First, Number.Singular, Gender.m, False, Pronouns.ca.jo),
         (Person.First, Number.Singular, Gender.m, True, "jo me"),
-        (Person.Second, Number.Singular, Gender.m, False, "tu"),
+        (Person.Second, Number.Singular, Gender.m, False, Pronouns.ca.tu),
         (Person.Second, Number.Singular, Gender.m, True, "tu te"),
-        (Person.Third, Number.Singular, Gender.m, False, "ell"),
+        (Person.Third, Number.Singular, Gender.m, False, Pronouns.ca.ell),
         (Person.Third, Number.Singular, Gender.m, True, "ell se"),
-        (Person.Third, Number.Singular, Gender.f, False, "ella"),
+        (Person.Third, Number.Singular, Gender.f, False, Pronouns.ca.ella),
         (Person.Third, Number.Singular, Gender.f, True, "ella se"),
-        (Person.First, Number.Plural, Gender.m, False, "nosaltres"),
+        (Person.First, Number.Plural, Gender.m, False, Pronouns.ca.nosaltres),
         (Person.First, Number.Plural, Gender.m, True, "nosaltres nos"),
-        (Person.Second, Number.Plural, Gender.m, False, "vosaltres"),
+        (Person.Second, Number.Plural, Gender.m, False, Pronouns.ca.vosaltres),
         (Person.Second, Number.Plural, Gender.m, True, "vosaltres os"),
-        (Person.Third, Number.Plural, Gender.m, False, "ells"),
+        (Person.Third, Number.Plural, Gender.m, False, Pronouns.ca.ells),
         (Person.Third, Number.Plural, Gender.m, True, "ells se"),
-        (Person.Third, Number.Plural, Gender.f, False, "elles"),
+        (Person.Third, Number.Plural, Gender.f, False, Pronouns.ca.elles),
         (Person.Third, Number.Plural, Gender.f, True, "elles se"),
     ],
 )
 def test_inflector_ca_get_pronouns(
-    cg,
+    ccg,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = cg._inflector.get_pronouns(person, number, gender)[0]
+    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = cg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 
-def test_inflector_ca_conjugate_ser(cg):
-    cc = cg.conjugate("ser")
+def test_inflector_ca_conjugate_ser(ccg):
+    cc = ccg.conjugate("ser")
     EXPECTED_RESULT = {
         "moods": {
             Moods.ca.Condicional: {
                 "present": [
-                    ["1", "s", None, "jo", ["jo seria", "jo fora"]],
-                    ["2", "s", None, "tu", ["tu series", "tu fores"]],
-                    ["3", "s", "m", "ell", ["ell seria", "ell fora"]],
-                    ["3", "s", "f", "ella", ["ella seria", "ella fora"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["jo seria", "jo fora"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["tu series", "tu fores"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["ell seria", "ell fora"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["ella seria", "ella fora"]],
                     [
                         "1",
                         "p",
                         None,
-                        "nosaltres",
+                        Pronouns.ca.nosaltres,
                         ["nosaltres seríem", "nosaltres fórem"],
                     ],
                     [
                         "2",
                         "p",
                         None,
-                        "vosaltres",
+                        Pronouns.ca.vosaltres,
                         ["vosaltres seríeu", "vosaltres fóreu"],
                     ],
-                    ["3", "p", "m", "ells", ["ells serien", "ells foren"]],
-                    ["3", "p", "f", "elles", ["elles serien", "elles foren"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["ells serien", "ells foren"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["elles serien", "elles foren"]],
                 ]
             },
-            "gerundi": {"gerundi": [["1", "s", None, "jo", ["sent", "essent"]]]},
+            "gerundi": {
+                "gerundi": [["1", "s", None, Pronouns.ca.jo, ["sent", "essent"]]]
+            },
             Moods.ca.Imperatiu: {
                 Tenses.ca.ImperatiuPresent: [
-                    ["2", "s", None, "tu", ["sigues"]],
-                    ["3", "s", "m", "ell", ["sigui"]],
-                    ["3", "s", "f", "ella", ["sigui"]],
-                    ["1", "p", None, "nosaltres", ["siguem"]],
-                    ["2", "p", None, "vosaltres", ["sigueu"]],
-                    ["3", "p", "m", "ells", ["siguin"]],
-                    ["3", "p", "f", "elles", ["siguin"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["sigues"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["sigui"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["sigui"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["siguem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["sigueu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["siguin"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["siguin"]],
                 ]
             },
             "indicatiu": {
                 Tenses.ca.Futur: [
-                    ["1", "s", None, "jo", ["jo seré"]],
-                    ["2", "s", None, "tu", ["tu seràs"]],
-                    ["3", "s", "m", "ell", ["ell serà"]],
-                    ["3", "s", "f", "ella", ["ella serà"]],
-                    ["1", "p", None, "nosaltres", ["nosaltres serem"]],
-                    ["2", "p", None, "vosaltres", ["vosaltres sereu"]],
-                    ["3", "p", "m", "ells", ["ells seran"]],
-                    ["3", "p", "f", "elles", ["elles seran"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["jo seré"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["tu seràs"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["ell serà"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["ella serà"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["nosaltres serem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["vosaltres sereu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["ells seran"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["elles seran"]],
                 ],
                 Tenses.ca.Imperfet: [
-                    ["1", "s", None, "jo", ["jo era"]],
-                    ["2", "s", None, "tu", ["tu eres"]],
-                    ["3", "s", "m", "ell", ["ell era"]],
-                    ["3", "s", "f", "ella", ["ella era"]],
-                    ["1", "p", None, "nosaltres", ["nosaltres érem"]],
-                    ["2", "p", None, "vosaltres", ["vosaltres éreu"]],
-                    ["3", "p", "m", "ells", ["ells eren"]],
-                    ["3", "p", "f", "elles", ["elles eren"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["jo era"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["tu eres"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["ell era"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["ella era"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["nosaltres érem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["vosaltres éreu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["ells eren"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["elles eren"]],
                 ],
                 Tenses.ca.PassatSimple: [
-                    ["1", "s", None, "jo", ["jo fui"]],
-                    ["2", "s", None, "tu", ["tu fores"]],
-                    ["3", "s", "m", "ell", ["ell fou"]],
-                    ["3", "s", "f", "ella", ["ella fou"]],
-                    ["1", "p", None, "nosaltres", ["nosaltres fórem"]],
-                    ["2", "p", None, "vosaltres", ["vosaltres fóreu"]],
-                    ["3", "p", "m", "ells", ["ells foren"]],
-                    ["3", "p", "f", "elles", ["elles foren"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["jo fui"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["tu fores"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["ell fou"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["ella fou"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["nosaltres fórem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["vosaltres fóreu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["ells foren"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["elles foren"]],
                 ],
                 "present": [
-                    ["1", "s", None, "jo", ["jo sóc"]],
-                    ["2", "s", None, "tu", ["tu ets"]],
-                    ["3", "s", "m", "ell", ["ell és"]],
-                    ["3", "s", "f", "ella", ["ella és"]],
-                    ["1", "p", None, "nosaltres", ["nosaltres som"]],
-                    ["2", "p", None, "vosaltres", ["vosaltres sou"]],
-                    ["3", "p", "m", "ells", ["ells són"]],
-                    ["3", "p", "f", "elles", ["elles són"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["jo sóc"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["tu ets"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["ell és"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["ella és"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["nosaltres som"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["vosaltres sou"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["ells són"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["elles són"]],
                 ],
             },
             "infinitiu": {
-                "infinitiu-present": [["1", "s", None, "jo", ["ser", "ésser"]]]
+                "infinitiu-present": [
+                    ["1", "s", None, Pronouns.ca.jo, ["ser", "ésser"]]
+                ]
             },
             Moods.ca.Participi: {
                 Tenses.ca.Participi: [
@@ -3089,24 +3108,24 @@ def test_inflector_ca_conjugate_ser(cg):
             },
             Moods.ca.Subjuntiu: {
                 Tenses.ca.Imperfet: [
-                    ["1", "s", None, "jo", ["jo fos"]],
-                    ["2", "s", None, "tu", ["tu fossis"]],
-                    ["3", "s", "m", "ell", ["ell fos"]],
-                    ["3", "s", "f", "ella", ["ella fos"]],
-                    ["1", "p", None, "nosaltres", ["nosaltres fóssim"]],
-                    ["2", "p", None, "vosaltres", ["vosaltres fóssiu"]],
-                    ["3", "p", "m", "ells", ["ells fossin"]],
-                    ["3", "p", "f", "elles", ["elles fossin"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["jo fos"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["tu fossis"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["ell fos"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["ella fos"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["nosaltres fóssim"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["vosaltres fóssiu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["ells fossin"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["elles fossin"]],
                 ],
                 "present": [
-                    ["1", "s", None, "jo", ["jo sigui"]],
-                    ["2", "s", None, "tu", ["tu siguis"]],
-                    ["3", "s", "m", "ell", ["ell sigui"]],
-                    ["3", "s", "f", "ella", ["ella sigui"]],
-                    ["1", "p", None, "nosaltres", ["nosaltres siguem"]],
-                    ["2", "p", None, "vosaltres", ["vosaltres sigueu"]],
-                    ["3", "p", "m", "ells", ["ells siguin"]],
-                    ["3", "p", "f", "elles", ["elles siguin"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["jo sigui"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["tu siguis"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["ell sigui"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["ella sigui"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["nosaltres siguem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["vosaltres sigueu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["ells siguin"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["elles siguin"]],
                 ],
             },
         },
@@ -3124,78 +3143,82 @@ def test_inflector_ca_conjugate_ser(cg):
     assert_json_str_equal(str(cc), json.dumps(EXPECTED_RESULT))
 
 
-def test_inflector_conjugate_noconjpronouns(cg):
-    cc = cg.conjugate("ser", conjugate_pronouns=False)
+def test_inflector_conjugate_noconjpronouns(ccg):
+    cc = ccg.conjugate("ser", conjugate_pronouns=False)
     expected_resp = {
         "moods": {
             Moods.ca.Condicional: {
                 "present": [
-                    ["1", "s", None, "jo", ["seria", "fora"]],
-                    ["2", "s", None, "tu", ["series", "fores"]],
-                    ["3", "s", "m", "ell", ["seria", "fora"]],
-                    ["3", "s", "f", "ella", ["seria", "fora"]],
-                    ["1", "p", None, "nosaltres", ["seríem", "fórem"]],
-                    ["2", "p", None, "vosaltres", ["seríeu", "fóreu"]],
-                    ["3", "p", "m", "ells", ["serien", "foren"]],
-                    ["3", "p", "f", "elles", ["serien", "foren"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["seria", "fora"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["series", "fores"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["seria", "fora"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["seria", "fora"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["seríem", "fórem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["seríeu", "fóreu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["serien", "foren"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["serien", "foren"]],
                 ]
             },
-            "gerundi": {"gerundi": [["1", "s", None, "jo", ["sent", "essent"]]]},
+            "gerundi": {
+                "gerundi": [["1", "s", None, Pronouns.ca.jo, ["sent", "essent"]]]
+            },
             Moods.ca.Imperatiu: {
                 Tenses.ca.ImperatiuPresent: [
-                    ["2", "s", None, "tu", ["sigues"]],
-                    ["3", "s", "m", "ell", ["sigui"]],
-                    ["3", "s", "f", "ella", ["sigui"]],
-                    ["1", "p", None, "nosaltres", ["siguem"]],
-                    ["2", "p", None, "vosaltres", ["sigueu"]],
-                    ["3", "p", "m", "ells", ["siguin"]],
-                    ["3", "p", "f", "elles", ["siguin"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["sigues"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["sigui"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["sigui"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["siguem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["sigueu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["siguin"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["siguin"]],
                 ]
             },
             "indicatiu": {
                 Tenses.ca.Futur: [
-                    ["1", "s", None, "jo", ["seré"]],
-                    ["2", "s", None, "tu", ["seràs"]],
-                    ["3", "s", "m", "ell", ["serà"]],
-                    ["3", "s", "f", "ella", ["serà"]],
-                    ["1", "p", None, "nosaltres", ["serem"]],
-                    ["2", "p", None, "vosaltres", ["sereu"]],
-                    ["3", "p", "m", "ells", ["seran"]],
-                    ["3", "p", "f", "elles", ["seran"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["seré"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["seràs"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["serà"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["serà"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["serem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["sereu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["seran"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["seran"]],
                 ],
                 Tenses.ca.Imperfet: [
-                    ["1", "s", None, "jo", ["era"]],
-                    ["2", "s", None, "tu", ["eres"]],
-                    ["3", "s", "m", "ell", ["era"]],
-                    ["3", "s", "f", "ella", ["era"]],
-                    ["1", "p", None, "nosaltres", ["érem"]],
-                    ["2", "p", None, "vosaltres", ["éreu"]],
-                    ["3", "p", "m", "ells", ["eren"]],
-                    ["3", "p", "f", "elles", ["eren"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["era"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["eres"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["era"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["era"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["érem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["éreu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["eren"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["eren"]],
                 ],
                 Tenses.ca.PassatSimple: [
-                    ["1", "s", None, "jo", ["fui"]],
-                    ["2", "s", None, "tu", ["fores"]],
-                    ["3", "s", "m", "ell", ["fou"]],
-                    ["3", "s", "f", "ella", ["fou"]],
-                    ["1", "p", None, "nosaltres", ["fórem"]],
-                    ["2", "p", None, "vosaltres", ["fóreu"]],
-                    ["3", "p", "m", "ells", ["foren"]],
-                    ["3", "p", "f", "elles", ["foren"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["fui"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["fores"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["fou"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["fou"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["fórem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["fóreu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["foren"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["foren"]],
                 ],
                 "present": [
-                    ["1", "s", None, "jo", ["sóc"]],
-                    ["2", "s", None, "tu", ["ets"]],
-                    ["3", "s", "m", "ell", ["és"]],
-                    ["3", "s", "f", "ella", ["és"]],
-                    ["1", "p", None, "nosaltres", ["som"]],
-                    ["2", "p", None, "vosaltres", ["sou"]],
-                    ["3", "p", "m", "ells", ["són"]],
-                    ["3", "p", "f", "elles", ["són"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["sóc"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["ets"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["és"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["és"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["som"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["sou"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["són"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["són"]],
                 ],
             },
             "infinitiu": {
-                "infinitiu-present": [["1", "s", None, "jo", ["ser", "ésser"]]]
+                "infinitiu-present": [
+                    ["1", "s", None, Pronouns.ca.jo, ["ser", "ésser"]]
+                ]
             },
             Tenses.ca.Participi: {
                 Tenses.ca.Participi: [
@@ -3207,24 +3230,24 @@ def test_inflector_conjugate_noconjpronouns(cg):
             },
             Moods.ca.Subjuntiu: {
                 Tenses.ca.Imperfet: [
-                    ["1", "s", None, "jo", ["fos"]],
-                    ["2", "s", None, "tu", ["fossis"]],
-                    ["3", "s", "m", "ell", ["fos"]],
-                    ["3", "s", "f", "ella", ["fos"]],
-                    ["1", "p", None, "nosaltres", ["fóssim"]],
-                    ["2", "p", None, "vosaltres", ["fóssiu"]],
-                    ["3", "p", "m", "ells", ["fossin"]],
-                    ["3", "p", "f", "elles", ["fossin"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["fos"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["fossis"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["fos"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["fos"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["fóssim"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["fóssiu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["fossin"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["fossin"]],
                 ],
                 "present": [
-                    ["1", "s", None, "jo", ["sigui"]],
-                    ["2", "s", None, "tu", ["siguis"]],
-                    ["3", "s", "m", "ell", ["sigui"]],
-                    ["3", "s", "f", "ella", ["sigui"]],
-                    ["1", "p", None, "nosaltres", ["siguem"]],
-                    ["2", "p", None, "vosaltres", ["sigueu"]],
-                    ["3", "p", "m", "ells", ["siguin"]],
-                    ["3", "p", "f", "elles", ["siguin"]],
+                    ["1", "s", None, Pronouns.ca.jo, ["sigui"]],
+                    ["2", "s", None, Pronouns.ca.tu, ["siguis"]],
+                    ["3", "s", "m", Pronouns.ca.ell, ["sigui"]],
+                    ["3", "s", "f", Pronouns.ca.ella, ["sigui"]],
+                    ["1", "p", None, Pronouns.ca.nosaltres, ["siguem"]],
+                    ["2", "p", None, Pronouns.ca.vosaltres, ["sigueu"]],
+                    ["3", "p", "m", Pronouns.ca.ells, ["siguin"]],
+                    ["3", "p", "f", Pronouns.ca.elles, ["siguin"]],
                 ],
             },
         },

@@ -1,13 +1,20 @@
-from abc import abstractmethod, ABC
+from abc import ABC
 from typing import List, Optional
 
-from verbecc.src.defs.types.data.verb import Verb
+from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.defs.types.conjugation.conjugation import Conjugation
+from verbecc.src.defs.types.conjugation.tense_conjugation import TenseConjugation
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
+from verbecc.src.defs.types.data.person_ending import PersonEnding
+from verbecc.src.defs.types.data.verb import Verb
+from verbecc.src.defs.types.exceptions.verb_not_found_error import VerbNotFoundError
+from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
-from verbecc.src.defs.types.exceptions.verb_not_found_error import VerbNotFoundError
-from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
 from verbecc.src.inflectors.inflector_factory import InflectorFactory
+from verbecc.src.utils.log_utils import LogUtils
 
 
 class AbstractConjugator(ABC):
@@ -15,9 +22,11 @@ class AbstractConjugator(ABC):
     def __init__(
         self,
         lang: LangCodeISO639_1,
-        lang_specific_options: Optional[LangSpecificOptions] = None,
+        lang_specific_options: Optional[LangSpecificOptions],
+        subclass_name: str,
     ) -> None:
         self._inflector = InflectorFactory.make_inflector(lang, lang_specific_options)
+        self._logger = LogUtils.get_logger(subclass_name)
         super().__init__()
 
     def _get_conj_obs(self, infinitive: str) -> ConjugationObjects:
@@ -52,3 +61,46 @@ class AbstractConjugator(ABC):
 
     def get_verbs_that_start_with(self, query: str, max_results: int) -> List[str]:
         return self._inflector.get_verbs_that_start_with(query, max_results)
+
+    def get_person_ending_by_gender_and_number(
+        self,
+        person_endings: List[PersonEnding],
+        gender: Optional[Gender],
+        number: Optional[Number],
+    ) -> PersonEnding:
+        resolved_gender = Gender.m
+        resolved_number = Number.Singular
+        if gender is not None:
+            resolved_gender = gender
+        if number is not Number:
+            resolved_number = number
+        for pe in person_endings:
+            if pe.gender == resolved_gender and pe.number == resolved_number:
+                return pe
+        self._logger.warning(
+            "Failed find matching PersonEnding for gender=%s number=%s", gender, number
+        )
+        return person_endings[0]
+
+    def get_conjugation_by_gender_and_number(
+        self,
+        tense_conjugation: TenseConjugation,
+        gender: Optional[Gender],
+        number: Optional[Number],
+    ) -> Conjugation:
+        resolved_gender = Gender.m
+        resolved_number = Number.Singular
+        if gender is not None:
+            resolved_gender = gender
+        if number is not Number:
+            resolved_number = number
+        for c in tense_conjugation:
+            if c.get_gender() == resolved_gender and c.get_number() == resolved_number:
+                return c
+        self._logger.warning(
+            "Failed find matching Conjugation for gender=%s number=%s", gender, number
+        )
+        if len(tense_conjugation) == 0:
+            self._logger.error("Failed to get conjugation, tense_conjugation is empty")
+            raise Exception("Failed to get conjugation, tense_conjugation is empty")
+        return tense_conjugation[0]

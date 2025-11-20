@@ -3,7 +3,7 @@ from typing import cast, Iterator, List, Optional
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.pronoun import Pronoun
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 from verbecc.src.defs.types.conjugation.abstract_conjugation import AbstractConjugation
 from verbecc.src.defs.types.conjugation.conjugation_data import ConjugationData
 
@@ -132,7 +132,7 @@ class Conjugation(AbstractConjugation):
     def get_pronoun(self) -> Optional[Pronoun]:
         return self._pronoun
 
-    def set_pronoun(self, value: str) -> None:
+    def set_pronoun(self, value: Pronoun) -> None:
         self._pronoun = value
 
     def get_conjugations(self) -> List[str]:

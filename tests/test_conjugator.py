@@ -3,30 +3,46 @@ import json
 
 from tests.common import assert_json_str_equal
 
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.src.conjugator.mood_conjugator import MoodConjugator
+from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.types.exceptions import InvalidMoodError
 from verbecc.src.defs.types.exceptions import InvalidTenseError
 from verbecc.src.defs.types.exceptions import TemplateNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.utils.config_utils import ConfigUtils
+from verbecc.src.defs.types.tense import Tenses
+from verbecc.src.defs.types.mood import Moods
 
 config = ConfigUtils.load_verbecc_config()
 
 
 @pytest.fixture(scope="module")
-def cg():
-    cg = Conjugator(lang=Lang.fr)
-    yield cg
+def ccg():
+    ccg = CompleteConjugator(lang=Lang.fr)
+    yield ccg
 
 
-def test_get_infinitives(cg):
-    infinitives = cg.get_infinitives()
+@pytest.fixture(scope="module")
+def mcg():
+    mcg = MoodConjugator(lang=Lang.fr)
+    yield mcg
+
+
+@pytest.fixture(scope="module")
+def tcg():
+    tcg = TenseConjugator(lang=Lang.fr)
+    yield tcg
+
+
+def test_get_infinitives(ccg):
+    infinitives = ccg.get_infinitives()
     assert len(infinitives) > 7000
     assert "parler" in infinitives
 
 
-def test_get_template_names(cg):
-    template_names = cg.get_template_names()
+def test_get_template_names(ccg):
+    template_names = ccg.get_template_names()
     assert len(template_names) >= 146
     assert "aim:er" in template_names
 
@@ -43,14 +59,14 @@ test_verbs = [
 
 
 @pytest.mark.parametrize("infinitive", test_verbs)
-def test_conjugate_basic(cg, infinitive):
-    cc = cg.conjugate(infinitive)
+def test_conjugate_basic(ccg, infinitive):
+    cc = ccg.conjugate(infinitive)
     assert cc
 
 
-def test_conjugator_predict_conjugation_er_verb_indicative_present(cg):
+def test_conjugator_predict_conjugation_er_verb_indicative_present(ccg):
     if config.ENABLE_ML_PREDICTION:
-        tc = cg.conjugate_mood_tense("ubériser", "indicatif", "présent")
+        tc = ccg.conjugate_mood_tense("ubériser", Moods.fr.Indicatif, Tenses.fr.Présent)
         assert [c[0] for c in tc] == [
             "j'ubérise",
             "tu ubérises",
@@ -64,9 +80,9 @@ def test_conjugator_predict_conjugation_er_verb_indicative_present(cg):
         ]
 
 
-def test_conjugator_predict_conjugation_re_verb_indicative_present(cg):
+def test_conjugator_predict_conjugation_re_verb_indicative_present(ccg):
     if config.ENABLE_ML_PREDICTION:
-        tc = cg.conjugate_mood_tense("brettre", "indicatif", "présent")
+        tc = ccg.conjugate_mood_tense("brettre", Moods.fr.Indicatif, Tenses.fr.Présent)
         assert [c[0] for c in tc] == [
             "je brets",
             "tu brets",
@@ -80,8 +96,8 @@ def test_conjugator_predict_conjugation_re_verb_indicative_present(cg):
         ]
 
 
-def test_conjugate_passe_compose_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "indicatif", "passé-composé")
+def test_conjugate_passe_compose_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense("manger", Moods.fr.Indicatif, Tenses.fr.PasséComposé)
     assert [c[0] for c in tc] == [
         "j'ai mangé",
         "tu as mangé",
@@ -95,8 +111,8 @@ def test_conjugate_passe_compose_with_avoir(cg):
     ]
 
 
-def test_conjugate_passe_compose_with_etre(cg):
-    tc = cg.conjugate_mood_tense("aller", "indicatif", "passé-composé")
+def test_conjugate_passe_compose_with_etre(ccg):
+    tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.PasséComposé)
     assert [c[0] for c in tc] == [
         "je suis allée",
         "je suis allé",
@@ -115,8 +131,8 @@ def test_conjugate_passe_compose_with_etre(cg):
     ]
 
 
-def test_conjugate_subjonctif_passe_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "subjonctif", "passé")
+def test_conjugate_subjonctif_passe_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense("manger", Moods.fr.Subjonctif, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "que j'aie mangé",
         "que tu aies mangé",
@@ -130,8 +146,8 @@ def test_conjugate_subjonctif_passe_with_avoir(cg):
     ]
 
 
-def test_conjugate_subjonctif_passe_with_etre(cg):
-    tc = cg.conjugate_mood_tense("aller", "subjonctif", "passé")
+def test_conjugate_subjonctif_passe_with_etre(ccg):
+    tc = ccg.conjugate_mood_tense("aller", Moods.fr.Subjonctif, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "que je sois allée",
         "que je sois allé",
@@ -150,8 +166,8 @@ def test_conjugate_subjonctif_passe_with_etre(cg):
     ]
 
 
-def test_conjugate_conditionnel_passe_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "conditionnel", "passé")
+def test_conjugate_conditionnel_passe_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense("manger", Moods.fr.Conditionnel, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "j'aurais mangé",
         "tu aurais mangé",
@@ -165,8 +181,8 @@ def test_conjugate_conditionnel_passe_with_avoir(cg):
     ]
 
 
-def test_conjugate_conditionnel_passe_with_etre(cg):
-    tc = cg.conjugate_mood_tense("aller", "conditionnel", "passé")
+def test_conjugate_conditionnel_passe_with_etre(ccg):
+    tc = ccg.conjugate_mood_tense("aller", Moods.fr.Conditionnel, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "je serais allée",
         "je serais allé",
@@ -185,8 +201,10 @@ def test_conjugate_conditionnel_passe_with_etre(cg):
     ]
 
 
-def test_conjugate_plusqueparfait_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "indicatif", "plus-que-parfait")
+def test_conjugate_plusqueparfait_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "manger", Moods.fr.Indicatif, Tenses.fr.PlusQueParfait
+    )
     assert [c[0] for c in tc] == [
         "j'avais mangé",
         "tu avais mangé",
@@ -200,8 +218,8 @@ def test_conjugate_plusqueparfait_with_avoir(cg):
     ]
 
 
-def test_conjugate_plusqueparfait_with_etre(cg):
-    tc = cg.conjugate_mood_tense("aller", "indicatif", "plus-que-parfait")
+def test_conjugate_plusqueparfait_with_etre(ccg):
+    tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.PlusQueParfait)
     assert [c[0] for c in tc] == [
         "j'étais allée",
         "j'étais allé",
@@ -220,8 +238,10 @@ def test_conjugate_plusqueparfait_with_etre(cg):
     ]
 
 
-def test_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "subjonctif", "plus-que-parfait")
+def test_conjugate_subjonctif_plusqueparfait_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "manger", Moods.fr.Subjonctif, Tenses.fr.PlusQueParfait
+    )
     assert [c[0] for c in tc] == [
         "que j'eusse mangé",
         "que tu eusses mangé",
@@ -235,8 +255,10 @@ def test_conjugate_subjonctif_plusqueparfait_with_avoir(cg):
     ]
 
 
-def test_conjugate_subjonctif_plusqueparfait_with_etre(cg):
-    tc = cg.conjugate_mood_tense("aller", "subjonctif", "plus-que-parfait")
+def test_conjugate_subjonctif_plusqueparfait_with_etre(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "aller", Moods.fr.Subjonctif, Tenses.fr.PlusQueParfait
+    )
     assert [c[0] for c in tc] == [
         "que je fusse allée",
         "que je fusse allé",
@@ -255,8 +277,10 @@ def test_conjugate_subjonctif_plusqueparfait_with_etre(cg):
     ]
 
 
-def test_conjugate_futur_anterieur_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "indicatif", "futur-antérieur")
+def test_conjugate_futur_anterieur_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "manger", Moods.fr.Indicatif, Tenses.fr.FuturAntérieur
+    )
     assert [c[0] for c in tc] == [
         "j'aurai mangé",
         "tu auras mangé",
@@ -270,8 +294,8 @@ def test_conjugate_futur_anterieur_with_avoir(cg):
     ]
 
 
-def test_conjugate_futur_anterieur_with_etre(cg):
-    tc = cg.conjugate_mood_tense("aller", "indicatif", "futur-antérieur")
+def test_conjugate_futur_anterieur_with_etre(ccg):
+    tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.FuturAntérieur)
     assert [c[0] for c in tc] == [
         "je serai allée",
         "je serai allé",
@@ -290,8 +314,10 @@ def test_conjugate_futur_anterieur_with_etre(cg):
     ]
 
 
-def test_conjugate_passe_anterieur_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "indicatif", "passé-antérieur")
+def test_conjugate_passe_anterieur_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "manger", Moods.fr.Indicatif, Tenses.fr.PasséAntérieur
+    )
     assert [c[0] for c in tc] == [
         "j'eus mangé",
         "tu eus mangé",
@@ -305,8 +331,8 @@ def test_conjugate_passe_anterieur_with_avoir(cg):
     ]
 
 
-def test_conjugate_passe_anterieur_with_être(cg):
-    tc = cg.conjugate_mood_tense("aller", "indicatif", "passé-antérieur")
+def test_conjugate_passe_anterieur_with_être(ccg):
+    tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.PasséAntérieur)
     assert [c[0] for c in tc] == [
         "je fus allée",
         "je fus allé",
@@ -325,8 +351,10 @@ def test_conjugate_passe_anterieur_with_être(cg):
     ]
 
 
-def test_conjugate_imperatif_passe_with_avoir(cg):
-    tc = cg.conjugate_mood_tense("manger", "imperatif", "imperatif-passé")
+def test_conjugate_imperatif_passe_with_avoir(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "manger", Moods.fr.Imperatif, Tenses.fr.ImperatifPassé
+    )
     assert [c[0] for c in tc] == [
         "aie mangé",
         "ayons mangé",
@@ -334,8 +362,8 @@ def test_conjugate_imperatif_passe_with_avoir(cg):
     ]
 
 
-def test_conjugate_imperatif_passe_with_etre(cg):
-    tc = cg.conjugate_mood_tense("aller", "imperatif", "imperatif-passé")
+def test_conjugate_imperatif_passe_with_etre(ccg):
+    tc = ccg.conjugate_mood_tense("aller", Moods.fr.Imperatif, Tenses.fr.ImperatifPassé)
     assert [c[0] for c in tc] == [
         "sois allée",
         "sois allé",
@@ -348,8 +376,8 @@ def test_conjugate_imperatif_passe_with_etre(cg):
 
 expected_value_conj_manger = {
     "moods": {
-        "conditionnel": {
-            "passé": [
+        Moods.fr.Conditionnel: {
+            Tenses.fr.Passé: [
                 ["1", "s", None, "je", ["j'aurais mangé"]],
                 ["2", "s", None, "tu", ["tu aurais mangé"]],
                 ["3", "s", "m", "il", ["il aurait mangé"]],
@@ -360,7 +388,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["ils auraient mangé"]],
                 ["3", "p", "f", "elles", ["elles auraient mangé"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["je mangerais"]],
                 ["2", "s", None, "tu", ["tu mangerais"]],
                 ["3", "s", "m", "il", ["il mangerait"]],
@@ -372,8 +400,8 @@ expected_value_conj_manger = {
                 ["3", "p", "f", "elles", ["elles mangeraient"]],
             ],
         },
-        "imperatif": {
-            "imperatif-passé": [
+        Moods.fr.Imperatif: {
+            Tenses.fr.ImperatifPassé: [
                 ["2", "s", None, "tu", ["aie mangé"]],
                 ["1", "p", None, "nous", ["ayons mangé"]],
                 ["2", "p", None, "vous", ["ayez mangé"]],
@@ -384,8 +412,8 @@ expected_value_conj_manger = {
                 ["2", "p", None, "vous", ["mangez"]],
             ],
         },
-        "indicatif": {
-            "futur-antérieur": [
+        Moods.fr.Indicatif: {
+            Tenses.fr.FuturAntérieur: [
                 ["1", "s", None, "je", ["j'aurai mangé"]],
                 ["2", "s", None, "tu", ["tu auras mangé"]],
                 ["3", "s", "m", "il", ["il aura mangé"]],
@@ -418,7 +446,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["ils mangeaient"]],
                 ["3", "p", "f", "elles", ["elles mangeaient"]],
             ],
-            "passé-antérieur": [
+            Tenses.fr.PasséAntérieur: [
                 ["1", "s", None, "je", ["j'eus mangé"]],
                 ["2", "s", None, "tu", ["tu eus mangé"]],
                 ["3", "s", "m", "il", ["il eut mangé"]],
@@ -429,7 +457,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["ils eurent mangé"]],
                 ["3", "p", "f", "elles", ["elles eurent mangé"]],
             ],
-            "passé-composé": [
+            Tenses.fr.PasséComposé: [
                 ["1", "s", None, "je", ["j'ai mangé"]],
                 ["2", "s", None, "tu", ["tu as mangé"]],
                 ["3", "s", "m", "il", ["il a mangé"]],
@@ -451,7 +479,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["ils mangèrent"]],
                 ["3", "p", "f", "elles", ["elles mangèrent"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["1", "s", None, "je", ["j'avais mangé"]],
                 ["2", "s", None, "tu", ["tu avais mangé"]],
                 ["3", "s", "m", "il", ["il avait mangé"]],
@@ -462,7 +490,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["ils avaient mangé"]],
                 ["3", "p", "f", "elles", ["elles avaient mangé"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["je mange"]],
                 ["2", "s", None, "tu", ["tu manges"]],
                 ["3", "s", "m", "il", ["il mange"]],
@@ -484,7 +512,7 @@ expected_value_conj_manger = {
             ],
             "participe-présent": [[None, "s", "m", None, ["mangeant"]]],
         },
-        "subjonctif": {
+        Moods.fr.Subjonctif: {
             "imparfait": [
                 ["1", "s", None, "je", ["que je mangeasse"]],
                 ["2", "s", None, "tu", ["que tu mangeasses"]],
@@ -496,7 +524,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["qu'ils mangeassent"]],
                 ["3", "p", "f", "elles", ["qu'elles mangeassent"]],
             ],
-            "passé": [
+            Tenses.fr.Passé: [
                 ["1", "s", None, "je", ["que j'aie mangé"]],
                 ["2", "s", None, "tu", ["que tu aies mangé"]],
                 ["3", "s", "m", "il", ["qu'il ait mangé"]],
@@ -507,7 +535,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["qu'ils aient mangé"]],
                 ["3", "p", "f", "elles", ["qu'elles aient mangé"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["1", "s", None, "je", ["que j'eusse mangé"]],
                 ["2", "s", None, "tu", ["que tu eusses mangé"]],
                 ["3", "s", "m", "il", ["qu'il eût mangé"]],
@@ -518,7 +546,7 @@ expected_value_conj_manger = {
                 ["3", "p", "m", "ils", ["qu'ils eussent mangé"]],
                 ["3", "p", "f", "elles", ["qu'elles eussent mangé"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["que je mange"]],
                 ["2", "s", None, "tu", ["que tu manges"]],
                 ["3", "s", "m", "il", ["qu'il mange"]],
@@ -544,8 +572,8 @@ expected_value_conj_manger = {
 
 expected_value_conj_pouvoir = {
     "moods": {
-        "conditionnel": {
-            "passé": [
+        Moods.fr.Conditionnel: {
+            Tenses.fr.Passé: [
                 ["1", "s", None, "je", ["j'aurais pu"]],
                 ["2", "s", None, "tu", ["tu aurais pu"]],
                 ["3", "s", "m", "il", ["il aurait pu"]],
@@ -556,7 +584,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["ils auraient pu"]],
                 ["3", "p", "f", "elles", ["elles auraient pu"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["je pourrais"]],
                 ["2", "s", None, "tu", ["tu pourrais"]],
                 ["3", "s", "m", "il", ["il pourrait"]],
@@ -568,9 +596,9 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "f", "elles", ["elles pourraient"]],
             ],
         },
-        "imperatif": {"imperatif-passé": [], "imperatif-présent": []},
-        "indicatif": {
-            "futur-antérieur": [
+        Moods.fr.Imperatif: {Tenses.fr.ImperatifPassé: [], "imperatif-présent": []},
+        Moods.fr.Indicatif: {
+            Tenses.fr.FuturAntérieur: [
                 ["1", "s", None, "je", ["j'aurai pu"]],
                 ["2", "s", None, "tu", ["tu auras pu"]],
                 ["3", "s", "m", "il", ["il aura pu"]],
@@ -603,7 +631,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["ils pouvaient"]],
                 ["3", "p", "f", "elles", ["elles pouvaient"]],
             ],
-            "passé-antérieur": [
+            Tenses.fr.PasséAntérieur: [
                 ["1", "s", None, "je", ["j'eus pu"]],
                 ["2", "s", None, "tu", ["tu eus pu"]],
                 ["3", "s", "m", "il", ["il eut pu"]],
@@ -614,7 +642,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["ils eurent pu"]],
                 ["3", "p", "f", "elles", ["elles eurent pu"]],
             ],
-            "passé-composé": [
+            Tenses.fr.PasséComposé: [
                 ["1", "s", None, "je", ["j'ai pu"]],
                 ["2", "s", None, "tu", ["tu as pu"]],
                 ["3", "s", "m", "il", ["il a pu"]],
@@ -636,7 +664,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["ils purent"]],
                 ["3", "p", "f", "elles", ["elles purent"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["1", "s", None, "je", ["j'avais pu"]],
                 ["2", "s", None, "tu", ["tu avais pu"]],
                 ["3", "s", "m", "il", ["il avait pu"]],
@@ -647,7 +675,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["ils avaient pu"]],
                 ["3", "p", "f", "elles", ["elles avaient pu"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["je peux", "je puis"]],
                 ["2", "s", None, "tu", ["tu peux"]],
                 ["3", "s", "m", "il", ["il peut"]],
@@ -669,7 +697,7 @@ expected_value_conj_pouvoir = {
             ],
             "participe-présent": [[None, "s", "m", None, ["pouvant"]]],
         },
-        "subjonctif": {
+        Moods.fr.Subjonctif: {
             "imparfait": [
                 ["1", "s", None, "je", ["que je pusse"]],
                 ["2", "s", None, "tu", ["que tu pusses"]],
@@ -681,7 +709,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["qu'ils pussent"]],
                 ["3", "p", "f", "elles", ["qu'elles pussent"]],
             ],
-            "passé": [
+            Tenses.fr.Passé: [
                 ["1", "s", None, "je", ["que j'aie pu"]],
                 ["2", "s", None, "tu", ["que tu aies pu"]],
                 ["3", "s", "m", "il", ["qu'il ait pu"]],
@@ -692,7 +720,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["qu'ils aient pu"]],
                 ["3", "p", "f", "elles", ["qu'elles aient pu"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["1", "s", None, "je", ["que j'eusse pu"]],
                 ["2", "s", None, "tu", ["que tu eusses pu"]],
                 ["3", "s", "m", "il", ["qu'il eût pu"]],
@@ -703,7 +731,7 @@ expected_value_conj_pouvoir = {
                 ["3", "p", "m", "ils", ["qu'ils eussent pu"]],
                 ["3", "p", "f", "elles", ["qu'elles eussent pu"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["que je puisse"]],
                 ["2", "s", None, "tu", ["que tu puisses"]],
                 ["3", "s", "m", "il", ["qu'il puisse"]],
@@ -730,15 +758,15 @@ expected_value_conj_pouvoir = {
 
 expected_value_conj_pleuvoir = {
     "moods": {
-        "conditionnel": {
-            "passé": [
+        Moods.fr.Conditionnel: {
+            Tenses.fr.Passé: [
                 ["3", "s", "m", "il", ["il aurait plu"]],
                 ["3", "s", "f", "elle", ["elle aurait plu"]],
                 ["3", "s", None, "on", ["on aurait plu"]],
                 ["3", "p", "m", "ils", ["ils auraient plu"]],
                 ["3", "p", "f", "elles", ["elles auraient plu"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["3", "s", "m", "il", ["il pleuvrait"]],
                 ["3", "s", "f", "elle", ["elle pleuvrait"]],
                 ["3", "s", None, "on", ["on pleuvrait"]],
@@ -746,9 +774,9 @@ expected_value_conj_pleuvoir = {
                 ["3", "p", "f", "elles", ["elles pleuvraient"]],
             ],
         },
-        "imperatif": {"imperatif-passé": [], "imperatif-présent": []},
-        "indicatif": {
-            "futur-antérieur": [
+        Moods.fr.Imperatif: {Tenses.fr.ImperatifPassé: [], "imperatif-présent": []},
+        Moods.fr.Indicatif: {
+            Tenses.fr.FuturAntérieur: [
                 ["3", "s", "m", "il", ["il aura plu"]],
                 ["3", "s", "f", "elle", ["elle aura plu"]],
                 ["3", "s", None, "on", ["on aura plu"]],
@@ -769,14 +797,14 @@ expected_value_conj_pleuvoir = {
                 ["3", "p", "m", "ils", ["ils pleuvaient"]],
                 ["3", "p", "f", "elles", ["elles pleuvaient"]],
             ],
-            "passé-antérieur": [
+            Tenses.fr.PasséAntérieur: [
                 ["3", "s", "m", "il", ["il eut plu"]],
                 ["3", "s", "f", "elle", ["elle eut plu"]],
                 ["3", "s", None, "on", ["on eut plu"]],
                 ["3", "p", "m", "ils", ["ils eurent plu"]],
                 ["3", "p", "f", "elles", ["elles eurent plu"]],
             ],
-            "passé-composé": [
+            Tenses.fr.PasséComposé: [
                 ["3", "s", "m", "il", ["il a plu"]],
                 ["3", "s", "f", "elle", ["elle a plu"]],
                 ["3", "s", None, "on", ["on a plu"]],
@@ -790,14 +818,14 @@ expected_value_conj_pleuvoir = {
                 ["3", "p", "m", "ils", ["ils plurent"]],
                 ["3", "p", "f", "elles", ["elles plurent"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["3", "s", "m", "il", ["il avait plu"]],
                 ["3", "s", "f", "elle", ["elle avait plu"]],
                 ["3", "s", None, "on", ["on avait plu"]],
                 ["3", "p", "m", "ils", ["ils avaient plu"]],
                 ["3", "p", "f", "elles", ["elles avaient plu"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["3", "s", "m", "il", ["il pleut"]],
                 ["3", "s", "f", "elle", ["elle pleut"]],
                 ["3", "s", None, "on", ["on pleut"]],
@@ -815,7 +843,7 @@ expected_value_conj_pleuvoir = {
             ],
             "participe-présent": [[None, "s", "m", None, ["pleuvant"]]],
         },
-        "subjonctif": {
+        Moods.fr.Subjonctif: {
             "imparfait": [
                 ["3", "s", "m", "il", ["qu'il plût"]],
                 ["3", "s", "f", "elle", ["qu'elle plût"]],
@@ -823,21 +851,21 @@ expected_value_conj_pleuvoir = {
                 ["3", "p", "m", "ils", ["qu'ils plussent"]],
                 ["3", "p", "f", "elles", ["qu'elles plussent"]],
             ],
-            "passé": [
+            Tenses.fr.Passé: [
                 ["3", "s", "m", "il", ["qu'il ait plu"]],
                 ["3", "s", "f", "elle", ["qu'elle ait plu"]],
                 ["3", "s", None, "on", ["qu'on ait plu"]],
                 ["3", "p", "m", "ils", ["qu'ils aient plu"]],
                 ["3", "p", "f", "elles", ["qu'elles aient plu"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["3", "s", "m", "il", ["qu'il eût plu"]],
                 ["3", "s", "f", "elle", ["qu'elle eût plu"]],
                 ["3", "s", None, "on", ["qu'on eût plu"]],
                 ["3", "p", "m", "ils", ["qu'ils eussent plu"]],
                 ["3", "p", "f", "elles", ["qu'elles eussent plu"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["3", "s", "m", "il", ["qu'il pleuve"]],
                 ["3", "s", "f", "elle", ["qu'elle pleuve"]],
                 ["3", "s", None, "on", ["qu'on pleuve"]],
@@ -859,8 +887,8 @@ expected_value_conj_pleuvoir = {
 
 expected_value_conj_se_lever = {
     "moods": {
-        "conditionnel": {
-            "passé": [
+        Moods.fr.Conditionnel: {
+            Tenses.fr.Passé: [
                 ["1", "s", "f", "je", ["je me serais levée"]],
                 ["1", "s", "m", "je", ["je me serais levé"]],
                 ["2", "s", "f", "tu", ["tu te serais levée"]],
@@ -876,7 +904,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["ils se seraient levés"]],
                 ["3", "p", "f", "elles", ["elles se seraient levées"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["je me lèverais"]],
                 ["2", "s", None, "tu", ["tu te lèverais"]],
                 ["3", "s", "m", "il", ["il se lèverait"]],
@@ -888,16 +916,16 @@ expected_value_conj_se_lever = {
                 ["3", "p", "f", "elles", ["elles se lèveraient"]],
             ],
         },
-        "imperatif": {
-            "imperatif-passé": [],
+        Moods.fr.Imperatif: {
+            Tenses.fr.ImperatifPassé: [],
             "imperatif-présent": [
                 ["2", "s", None, "tu", ["lève-toi"]],
                 ["1", "p", None, "nous", ["levons-nous"]],
                 ["2", "p", None, "vous", ["levez-vous"]],
             ],
         },
-        "indicatif": {
-            "futur-antérieur": [
+        Moods.fr.Indicatif: {
+            Tenses.fr.FuturAntérieur: [
                 ["1", "s", "f", "je", ["je me serai levée"]],
                 ["1", "s", "m", "je", ["je me serai levé"]],
                 ["2", "s", "f", "tu", ["tu te seras levée"]],
@@ -935,7 +963,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["ils se levaient"]],
                 ["3", "p", "f", "elles", ["elles se levaient"]],
             ],
-            "passé-antérieur": [
+            Tenses.fr.PasséAntérieur: [
                 ["1", "s", "f", "je", ["je me fus levée"]],
                 ["1", "s", "m", "je", ["je me fus levé"]],
                 ["2", "s", "f", "tu", ["tu te fus levée"]],
@@ -951,7 +979,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["ils se furent levés"]],
                 ["3", "p", "f", "elles", ["elles se furent levées"]],
             ],
-            "passé-composé": [
+            Tenses.fr.PasséComposé: [
                 ["1", "s", "f", "je", ["je me suis levée"]],
                 ["1", "s", "m", "je", ["je me suis levé"]],
                 ["2", "s", "f", "tu", ["tu te es levée"]],
@@ -978,7 +1006,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["ils se levèrent"]],
                 ["3", "p", "f", "elles", ["elles se levèrent"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["1", "s", "f", "je", ["je me étais levée"]],
                 ["1", "s", "m", "je", ["je me étais levé"]],
                 ["2", "s", "f", "tu", ["tu te étais levée"]],
@@ -994,7 +1022,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["ils se étaient levés"]],
                 ["3", "p", "f", "elles", ["elles se étaient levées"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["je me lève"]],
                 ["2", "s", None, "tu", ["tu te lèves"]],
                 ["3", "s", "m", "il", ["il se lève"]],
@@ -1016,7 +1044,7 @@ expected_value_conj_se_lever = {
             ],
             "participe-présent": [[None, "s", "m", None, ["levant"]]],
         },
-        "subjonctif": {
+        Moods.fr.Subjonctif: {
             "imparfait": [
                 ["1", "s", None, "je", ["que je me levasse"]],
                 ["2", "s", None, "tu", ["que tu te levasses"]],
@@ -1028,7 +1056,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["qu'ils se levassent"]],
                 ["3", "p", "f", "elles", ["qu'elles se levassent"]],
             ],
-            "passé": [
+            Tenses.fr.Passé: [
                 ["1", "s", "f", "je", ["que je me sois levée"]],
                 ["1", "s", "m", "je", ["que je me sois levé"]],
                 ["2", "s", "f", "tu", ["que tu te sois levée"]],
@@ -1044,7 +1072,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["qu'ils se soient levés"]],
                 ["3", "p", "f", "elles", ["qu'elles se soient levées"]],
             ],
-            "plus-que-parfait": [
+            Tenses.fr.PlusQueParfait: [
                 ["1", "s", "f", "je", ["que je me fusse levée"]],
                 ["1", "s", "m", "je", ["que je me fusse levé"]],
                 ["2", "s", "f", "tu", ["que tu te fusses levée"]],
@@ -1060,7 +1088,7 @@ expected_value_conj_se_lever = {
                 ["3", "p", "m", "ils", ["qu'ils se fussent levés"]],
                 ["3", "p", "f", "elles", ["qu'elles se fussent levées"]],
             ],
-            "présent": [
+            Tenses.fr.Présent: [
                 ["1", "s", None, "je", ["que je me lève"]],
                 ["2", "s", None, "tu", ["que tu te lèves"]],
                 ["3", "s", "m", "il", ["qu'il se lève"]],
@@ -1103,45 +1131,45 @@ by clicking on it in VSCode. You can't do that with parametrize.
 """
 
 
-def run_test_conjugate(cg, infinitive, expected_value):
-    cc = cg.conjugate(infinitive)
+def run_test_conjugate(ccg, infinitive, expected_value):
+    cc = ccg.conjugate(infinitive)
     conj_json = cc.to_json(beautify=False)
     assert_json_str_equal(conj_json, json.dumps(expected_value))
 
 
-def test_conjugate_manger(cg):
-    run_test_conjugate(cg, "manger", expected_value_conj_manger)
+def test_conjugate_manger(ccg):
+    run_test_conjugate(ccg, "manger", expected_value_conj_manger)
 
 
-def test_conjugate_pouvoir(cg):
-    run_test_conjugate(cg, "pouvoir", expected_value_conj_pouvoir)
+def test_conjugate_pouvoir(ccg):
+    run_test_conjugate(ccg, "pouvoir", expected_value_conj_pouvoir)
 
 
-def test_conjugate_Pouvoir(cg):
-    run_test_conjugate(cg, "Pouvoir", expected_value_conj_pouvoir)
+def test_conjugate_Pouvoir(ccg):
+    run_test_conjugate(ccg, "Pouvoir", expected_value_conj_pouvoir)
 
 
-def test_conjugate_pleuvoir(cg):
-    run_test_conjugate(cg, "pleuvoir", expected_value_conj_pleuvoir)
+def test_conjugate_pleuvoir(ccg):
+    run_test_conjugate(ccg, "pleuvoir", expected_value_conj_pleuvoir)
 
 
-def test_conjugate_Se_lever(cg):
-    run_test_conjugate(cg, "Se lever", expected_value_conj_se_lever)
+def test_conjugate_Se_lever(ccg):
+    run_test_conjugate(ccg, "Se lever", expected_value_conj_se_lever)
 
 
-def test_conjugate_invalid_mood(cg):
+def test_conjugate_invalid_mood(ccg):
     with pytest.raises(InvalidMoodError):
-        cg.conjugate_mood("manger", "oops")
+        ccg.conjugate_mood("manger", "oops")
 
 
-def test_conjugate_invalid_tense(cg):
+def test_conjugate_invalid_tense(ccg):
     with pytest.raises(InvalidTenseError):
-        cg.conjugate_mood_tense("manger", "indicatif", "oops")
+        ccg.conjugate_mood_tense("manger", Moods.fr.Indicatif, "oops")
 
 
-def test_conjugator_find_template_template_not_found(cg):
+def test_conjugator_find_template_template_not_found(ccg):
     with pytest.raises(TemplateNotFoundError):
-        cg.find_template("oops")
+        ccg.find_template("oops")
 
 
 @pytest.mark.parametrize(
@@ -1152,7 +1180,23 @@ def test_conjugator_find_template_template_not_found(cg):
         ("s'aim", ["s'aimanter", "s'aimer"]),
     ],
 )
-def test_conjugator_get_verbs_that_start_with(cg, query, expected_value):
-    assert set(cg.get_verbs_that_start_with(query, max_results=10)) == set(
+def test_conjugator_get_verbs_that_start_with(ccg, query, expected_value):
+    assert set(ccg.get_verbs_that_start_with(query, max_results=10)) == set(
         expected_value
     )
+
+
+def test_ensure_ascii(tcg):
+    """
+    Test to ensure json.dumps is being called with ensure_ascii=True
+
+    With ensure_ascii=True:
+        "que j\'eusse mangé"
+    Without ensure_ascii=True:
+        "que j\'eusse mang\\u00e9"
+    """
+    tc = tcg.conjugate_mood_tense(
+        "manger", Moods.fr.Subjonctif, Tenses.fr.PlusQueParfait
+    )
+    c = tc[0]
+    assert str(c) == '["1", "s",\n    null, "je",\n    ["que j\'eusse mangé"]\n]'

@@ -1,23 +1,38 @@
 import pytest
 
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.src.conjugator.mood_conjugator import MoodConjugator
+from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Moods
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tenses
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 @pytest.fixture(scope="module")
-def cg():
-    cg = Conjugator(lang=Lang.it)
-    yield cg
+def ccg():
+    ccg = CompleteConjugator(lang=Lang.it)
+    yield ccg
 
 
-def test_all_verbs_have_templates(cg):
-    verbs = cg.get_verbs()
-    template_names = cg.get_template_names()
+@pytest.fixture(scope="module")
+def mcg():
+    mcg = MoodConjugator(lang=Lang.it)
+    yield mcg
+
+
+@pytest.fixture(scope="module")
+def tcg():
+    tcg = TenseConjugator(lang=Lang.it)
+    yield tcg
+
+
+def test_all_verbs_have_templates(ccg):
+    verbs = ccg.get_verbs()
+    template_names = ccg.get_template_names()
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
@@ -30,8 +45,8 @@ def test_all_verbs_have_templates(cg):
     [
         (
             "avere",
-            "indicativo",
-            "presente",
+            Moods.it.Indicativo,
+            Tenses.it.Presente,
             [
                 "io ho",
                 "tu hai",
@@ -44,8 +59,8 @@ def test_all_verbs_have_templates(cg):
         ),
         (
             "avere",
-            "indicativo",
-            "imperfetto",
+            Moods.it.Indicativo,
+            Tenses.it.Imperfetto,
             [
                 "io avevo",
                 "tu avevi",
@@ -58,8 +73,8 @@ def test_all_verbs_have_templates(cg):
         ),
         (
             "avere",
-            "indicativo",
-            "passato-remoto",
+            Moods.it.Indicativo,
+            Tenses.it.PassatoRemoto,
             [
                 "io ebbi",
                 "tu avesti",
@@ -72,8 +87,8 @@ def test_all_verbs_have_templates(cg):
         ),
         (
             "avere",
-            "indicativo",
-            "futuro",
+            Moods.it.Indicativo,
+            Tenses.it.Futuro,
             [
                 "io avrò",
                 "tu avrai",
@@ -87,19 +102,20 @@ def test_all_verbs_have_templates(cg):
     ],
 )
 def test_inflector_it_conjugate_mood_tense(
-    cg, infinitive, mood, tense, expected_result
+    ccg, infinitive, mood, tense, expected_result
 ):
-    tc = cg.conjugate_mood_tense(infinitive, mood, tense)
+    tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [c[0] for c in tc] == expected_result
 
 
-def test_inflector_it_conjugate(cg):
-    assert cg.conjugate("avere") != None
+def test_inflector_it_conjugate(ccg):
+    assert ccg.conjugate("avere") != None
 
 
-def test_inflector_itadd_subjunctive_relative_pronoun(cg):
+def test_inflector_itadd_subjunctive_relative_pronoun(ccg):
     assert (
-        cg._inflector.add_subjunctive_relative_pronoun("io abbia", "") == "che io abbia"
+        ccg._inflector.add_subjunctive_relative_pronoun("io abbia", "")
+        == "che io abbia"
     )
 
 
@@ -125,16 +141,16 @@ def test_inflector_itadd_subjunctive_relative_pronoun(cg):
     ],
 )
 def test_inflector_it_get_pronouns(
-    cg,
+    ccg,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = cg._inflector.get_pronouns(person, number, gender)[0]
+    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = cg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 
@@ -179,10 +195,10 @@ def test_inflector_it_get_pronouns(
         ),
     ],
 )
-def test_indicative_present(cg, infinitive, expected_result):
-    cc = cg.conjugate(infinitive)
-    mc = cc["indicativo"]
-    tc = mc["presente"]
+def test_indicative_present(ccg, infinitive, expected_result):
+    cc = ccg.conjugate(infinitive)
+    mc = cc[Moods.it.Indicativo]
+    tc = mc[Tenses.it.Presente]
     assert [c[0] for c in tc] == expected_result
 
 
@@ -232,8 +248,8 @@ def test_indicative_present(cg, infinitive, expected_result):
         ),
     ],
 )
-def test_passato_prossimo(cg, infinitive, expected_result):
-    cc = cg.conjugate(infinitive)
+def test_passato_prossimo(ccg, infinitive, expected_result):
+    cc = ccg.conjugate(infinitive)
     mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.PassatoProssimo]
     assert [c[0] for c in tc] == expected_result
@@ -256,8 +272,8 @@ def test_passato_prossimo(cg, infinitive, expected_result):
         ),
     ],
 )
-def test_alzarsi_indicative_present(cg, infinitive, expected_result):
-    cc = cg.conjugate(infinitive)
+def test_alzarsi_indicative_present(ccg, infinitive, expected_result):
+    cc = ccg.conjugate(infinitive)
     mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.Presente]
     assert [c[0] for c in tc] == expected_result
@@ -286,23 +302,23 @@ def test_alzarsi_indicative_present(cg, infinitive, expected_result):
     ],
 )
 def test_inflector_it_alzarsi_indicativo_passato_prossimo(
-    cg, infinitive, expected_result
+    ccg, infinitive, expected_result
 ):
-    cc = cg.conjugate(infinitive)
+    cc = ccg.conjugate(infinitive)
     mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.PassatoProssimo]
     assert [c[0] for c in tc] == expected_result
 
 
-def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(cg):
+def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(tcg):
     infinitive = "essere"
-    co = cg._get_conj_obs(infinitive)
-    tc = cg._tense_conjugator._conjugate_compound_mood_tense(
+    co = tcg._get_conj_obs(infinitive)
+    tc = tcg._tense_conjugator_compound._conjugate_compound_mood_tense(
         co,
-        "indicativo",
-        "passato-prossimo",
-        "indicativo",
-        "presente",
+        Moods.it.Indicativo,
+        Tenses.it.PassatoProssimo,
+        Moods.it.Indicativo,
+        Tenses.it.Presente,
         False,
         True,
     )

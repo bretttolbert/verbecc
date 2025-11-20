@@ -3,7 +3,7 @@ from typing import List, Optional, Tuple
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.pronoun import Pronoun
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 # ConjugationData is a tuple of [Person, Number, Gender, Pronoun, Conjugations]
 #

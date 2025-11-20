@@ -22,5 +22,5 @@ JSBEAUTIFIER_OPTS:
 JSON_OPTS:
   allow_nan: false
   sort_keys: true
-  ensure_ascii: true
+  ensure_ascii: false
   indent: 4

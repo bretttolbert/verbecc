@@ -62,36 +62,33 @@ pip install .
     - [Romanian `fi` (to be)](#romanian-fi-to-be)
 - [Credits](#credits)
 
-## General Examples
-
-In the following examples, the following function will be used to make the output more readable:
-
-```python
-import json
-
-def printjson(c):
-    print(json.dumps(c, indent=4, ensure_ascii=False))
-```
-
 ### Typing - Parameter and Data Type Annotations
 
 Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [src/defs/types/conjugation.py](./verbecc/src/defs/types/conjugation.py)).
 
-Typing transition guide:
-
-- Instead of `lang='fr'` use `lang=Lang.fr` after the import `from verbecc import LangCodeISO639_1 as Lang`
-- Instead of `mood="indicatif"` 
-    - use `mood=Moods.fr.Indicatif` after the import `from verbecc import Mood`
-    - or use `mood=Moods.Indicatif` after the import `from verbecc import MoodFr as Mood`
-- Instead of `tense="présent"`
-    - use `tense=Tenses.fr.Présent` after the import `from verbecc import Tense`
-    - or use `tense=Tenses.Présent` after the import `from verbecc import TenseFr as Tense`
-- Instead of `gender='f'` use `gender=Gender.f` after the import `from verbecc import Gender`
+| verbecc 1.x | verbecc 2.x |
+| --- | --- |
+| `lang='fr'` | `lang=Lang.fr` / `from verbecc import LangCodeISO639_1 as Lang` |
+| `mood="indicatif"` | `mood=Moods.fr.Indicatif` / `from verbecc import Moods` |
+| `tense="présent"` | `tense=Tenses.fr.Présent` / `from verbecc import Tenses` |
+| `gender='f'` | `gender=Gender.f` / `from verbecc import Gender` |
+| `person="1s"` | `person=Person.First, number=Number.Singular` / `from verbecc import Person, Number` | 
+| Conjugations include masculine pronouns (default) or feminine but not both | All pronouns, including both masculine and feminine third-person pronouns are included | 
+| `lang_specific_options` is a parameter of the `conjugate` method | `lang_specific_options` is a parameter of the `CompleteConjugator` class constructor |
+| `gender` is a parameter of the `conjugate` method | there is no `gender` parameter, instead all possible gender inflections are returned |
+| `alternate_options` is a parameter of the `conjugate` method | there is no `alternate_options` parameter, instead all possible conjugations, including alternates, are returned (use `c[0]` to get default conjugation, `c[1]` to get first alternate, etc.) |
+| Spanish Conjugations include `tú` (default) or `vos` but not both | All pronouns, including both `tú` and `vos` are included | 
+| Pronouns such as French `on` and Spanish `usted/ustedes` not included | French `on` and Spanish `usted/ustedes` pronouns are included |
+| Array index is used to determine `Person`, i.e. `1s, 2s, 3s, 1p, 2p, 3p` | Each `Conjugation` object in the `TenseConjugation` has `Person`, `Number` and `Gender` values (any of which may be `None` if not-applicable) |
+| Returned objects are primitive (`Dict`) data types | Returned wrapper objects are subclasses of `AbstractConjugation` (e.g. `CompleteConjugation`) with `get_data()` and `to_json()` methods |
+| `Conjugator` returns `CompleteConjugationData` | `CompleteConjugator` returns wrapper type `CompleteConjugation`, `CompleteConjugation.get_data()` returns `CompleteConjugationData` |
+| (no wrapper types) | Wrapper types hierarchy: `CompleteConjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `Conjugation` -> `conjugations: List[str]` |
+| Primitive data types hierarchy: `Conjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `PersonConjugation` | Primitive data types hierarchy: `CompleteConjugationData` > `MoodsConjugationData` > `MoodConjugationData` > `TenseConjugationData` > `ConjugationData` -> `conjugations: List[str]` |
 
 Examples:
 
 ```python
->>> from verbecc import grammar_defines, localization, LangCodeISO639_1 as Lang, Moods, Tenses, Gender
+>>> from verbecc import grammar_defines, localization, Moods, Tenses, Person, Number, Gender, LangCodeISO639_1 as Lang
 >>> xmood = localization.xmood
 >>> xtense = localization.xtense
 >>> grammar_defines.SUPPORTED_LANGUAGES[Lang.fr]
@@ -102,238 +99,690 @@ Examples:
 <MoodFr.Subjonctif: 'subjonctif'>
 >>> Gender.f
 <Gender.f: 'f'>
+>>> Number.Singular
+<Number.Singular: 's'>
+>>> Person.First
+<Person.First: '1'>
 ```
 
 ### Multi-Language Conjugation
 
 ```python
 >>> from functools import partial
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang, grammar_defines
->>> from verbecc import LangSpecificOptionsEs, VoseoOptions
->>> conjugators = {lang : Conjugator(lang) for lang in grammar_defines.SUPPORTED_LANGUAGES}
->>> conj_fr = conjugators[Lang.fr].conjugate
->>> conj_it = conjugators[Lang.it].conjugate
->>> conj_pt = conjugators[Lang.pt].conjugate
->>> conj_ro = conjugators[Lang.ro].conjugate
->>> conj_ca = conjugators[Lang.ca].conjugate
->>> conj_es = conjugators[Lang.es].conjugate
->>> conj_es_voseo = partial(conj_es, lang_specific_options=LangSpecificOptionsEs(VoseoOptions.VoseoTipo3))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang, grammar_defines, Moods, Tenses
+>>> ccgs = {lang : CompleteConjugator(lang) for lang in grammar_defines.SUPPORTED_LANGUAGES}
 
->>> conj_fr('etre')['moods']['indicatif']['présent']
-['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
->>> conj_pt('ser')['moods']['indicativo']['presente']
-['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
->>> conj_ca('ser')['moods']['indicatiu']['present']
-['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
->>> conj_it('essere')['moods']['indicativo']['presente']
-['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
->>> conj_ro('fi')['moods']['indicativ']['prezent']
-['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
->>> conj_es('ser')['moods']['indicativo']['presente']
-['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
->>> conj_es_voseo('ser')['moods']['indicativo']['presente']
-['yo soy', 'vos sos', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+>>> print([c[0] for c in ccgs[Lang.fr].conjugate('être')[Moods.fr.Indicatif][Tenses.fr.Présent]])
+['je suis', 'tu es', 'il est', 'elle est', 'on est', 'nous sommes', 'vous êtes', 'ils sont', 'elles sont']
+>>> print([c[0] for c in ccgs[Lang.es].conjugate('ser')[Moods.es.Indicativo][Tenses.es.Presente]])
+['yo soy', 'tú eres', 'vos sos', 'él es', 'ella es', 'usted es', 'nosotros somos', 'vosotros sois', 'ellos son', 'ellas son', 'ustedes son']
+>>> print([c[0] for c in ccgs[Lang.ca].conjugate('ser')[Moods.ca.Indicatiu][Tenses.ca.Present]])
+['jo sóc', 'tu ets', 'ell és', 'ella és', 'nosaltres som', 'vosaltres sou', 'ells són', 'elles són']
+>>> print([c[0] for c in ccgs[Lang.pt].conjugate('ser')[Moods.pt.Indicativo][Tenses.pt.Presente]])
+['eu sou', 'tu és', 'ele é', 'ela é', 'nós somos', 'vós sois', 'eles são', 'elas são']
+>>> print([c[0] for c in ccgs[Lang.it].conjugate('essere')[Moods.it.Indicativo][Tenses.it.Presente]])
+['io sono', 'tu sei', 'lui è', 'lei è', 'noi siamo', 'voi siete', 'loro sono']
+>>> print([c[0] for c in ccgs[Lang.it].conjugate('essere')[Moods.it.Indicativo][Tenses.it.Presente]])
+['io sono', 'tu sei', 'lui è', 'lei è', 'noi siamo', 'voi siete', 'loro sono']
+>>> print([c[0] for c in ccgs[Lang.ro].conjugate('fi')[Moods.ro.Indicativ][Tenses.ro.Prezent]])
+['eu sunt', 'tu ești', 'el e', 'ea e', 'noi suntem', 'voi sunteţi', 'ei sunt', 'ele sunt']
 ```
 
 ### Multi-Language Conjugation using EN mood and tense names via localization module
 
+Observe below that strings may be still used for mood and tense, rather than the `Mood` and `Tense` (`StrEnum`) types. E.g. `indicative` is interchangeable with `Moods.en.Indicative` and `present` is interchangeable with `Tenses.en.Present`.
+
 ```python
->>> from verbecc import Conjugator
->>> from verbecc.localization import xmood, xtense
+>>> from verbecc import CompleteConjugator, localization
 >>> def xconj(lang, infinitive, mood, tense):
-...     return Conjugator(lang).conjugate(infinitive)['moods'][xmood(lang, mood)][xtense(lang, tense)]
-... 
+    m = localization.xmood(lang, mood)
+    t = localization.xtense(lang, tense)
+    cc = CompleteConjugator(lang).conjugate(infinitive)
+    return [c[0] for c in cc[m][t]]
+
 >>> xconj('fr', 'etre', 'indicative', 'present')
-['je suis', 'tu es', 'il est', 'nous sommes', 'vous êtes', 'ils sont']
+['je suis', 'tu es', 'il est', 'elle est', 'on est', 'nous sommes', 'vous êtes', 'ils sont', 'elles sont']
 >>> xconj('es', 'ser', 'indicative', 'present')
-['yo soy', 'tú eres', 'él es', 'nosotros somos', 'vosotros sois', 'ellos son']
+['yo soy', 'tú eres', 'vos sos', 'él es', 'ella es', 'usted es', 'nosotros somos', 'vosotros sois', 'ellos son', 'ellas son', 'ustedes son']
 >>> xconj('pt', 'ser', 'indicative', 'present')
-['eu sou', 'tu és', 'ele é', 'nós somos', 'vós sois', 'eles são']
+['eu sou', 'tu és', 'ele é', 'ela é', 'nós somos', 'vós sois', 'eles são', 'elas são']
 >>> xconj('ca', 'ser', 'indicative', 'present')
-['jo sóc', 'tu ets', 'ell és', 'nosaltres som', 'vosaltres sou', 'ells són']
+['jo sóc', 'tu ets', 'ell és', 'ella és', 'nosaltres som', 'vosaltres sou', 'ells són', 'elles són']
 >>> xconj('it', 'essere', 'indicative', 'present')
-['io sono', 'tu sei', 'lui è', 'noi siamo', 'voi siete', 'loro sono']
+['io sono', 'tu sei', 'lui è', 'lei è', 'noi siamo', 'voi siete', 'loro sono']
 >>> xconj('ro', 'fi', 'indicative', 'present')
-['eu sunt', 'tu ești', 'el e', 'noi suntem', 'voi sunteţi', 'ei sunt']
+['eu sunt', 'tu ești', 'el e', 'ea e', 'noi suntem', 'voi sunteţi', 'ei sunt', 'ele sunt']
 ```
 
 # Français
 
 ### French `manger` (to eat)
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(Lang.fr) # If this is the first run, it will take a minute for the model to train, 
-                             # but it should save the model .zip file and run fast subsequently
->>> cg.conjugate('manger')
-{'verb': {'infinitive': 'manger', 'predicted': False, 'pred_score': 1.0, 'template': 'man:ger', 'translation_en': 'eat', 'stem': 'man'}, 'moods': {'infinitif': {'infinitif-présent': ['manger']}, 'indicatif': {'présent': ['je mange', 'tu manges', 'il mange', 'nous mangeons', 'vous mangez', 'ils mangent'], 'imparfait': ['je mangeais', 'tu mangeais', 'il mangeait', 'nous mangions', 'vous mangiez', 'ils mangeaient'], 'futur-simple': ['je mangerai', 'tu mangeras', 'il mangera', 'nous mangerons', 'vous mangerez', 'ils mangeront'], 'passé-simple': ['je mangeai', 'tu mangeas', 'il mangea', 'nous mangeâmes', 'vous mangeâtes', 'ils mangèrent'], 'passé-composé': ["j'ai mangé", 'tu as mangé', 'il a mangé', 'nous avons mangé', 'vous avez mangé', 'ils ont mangé'], 'plus-que-parfait': ["j'avais mangé", 'tu avais mangé', 'il avait mangé', 'nous avions mangé', 'vous aviez mangé', 'ils avaient mangé'], 'futur-antérieur': ["j'aurai mangé", 'tu auras mangé', 'il aura mangé', 'nous aurons mangé', 'vous aurez mangé', 'ils auront mangé'], 'passé-antérieur': ["j'eus mangé", 'tu eus mangé', 'il eut mangé', 'nous eûmes mangé', 'vous eûtes mangé', 'ils eurent mangé']}, 'conditionnel': {'présent': ['je mangerais', 'tu mangerais', 'il mangerait', 'nous mangerions', 'vous mangeriez', 'ils mangeraient'], 'passé': ["j'aurais mangé", 'tu aurais mangé', 'il aurait mangé', 'nous aurions mangé', 'vous auriez mangé', 'ils auraient mangé']}, 'subjonctif': {'présent': ['que je mange', 'que tu manges', "qu'il mange", 'que nous mangions', 'que vous mangiez', "qu'ils mangent"], 'imparfait': ['que je mangeasse', 'que tu mangeasses', "qu'il mangeât", 'que nous mangeassions', 'que vous mangeassiez', "qu'ils mangeassent"], 'passé': ["que j'aie mangé", 'que tu aies mangé', "qu'il ait mangé", 'que nous ayons mangé', 'que vous ayez mangé', "qu'ils aient mangé"], 'plus-que-parfait': ["que j'eusse mangé", 'que tu eusses mangé', "qu'il eût mangé", 'que nous eussions mangé', 'que vous eussiez mangé', "qu'ils eussent mangé"]}, 'imperatif': {'imperatif-présent': ['mange', 'mangeons', 'mangez'], 'imperatif-passé': ['aie mangé', 'ayons mangé', 'ayez mangé']}, 'participe': {'participe-présent': ['mangeant'], 'participe-passé': ['mangé', 'mangés', 'mangée', 'mangées']}}}
->>> # ok now let's make it more readable
->>> printjson(cg.conjugate('manger'))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(Lang.fr) 
+# If this is the first run, it will take a minute for the model to train, 
+# but it should save the model .zip file and run fast subsequently
+>>> cc = ccg.conjugate("manger")
+>>> print(cc)
 {
-    "verb": {
-        "infinitive": "manger",
-        "predicted": false,
-        "pred_score": 1.0,
-        "template": "man:ger",
-        "translation_en": "eat",
-        "stem": "man"
-    },
-    "moods": {
-        "infinitif": {
-            "infinitif-présent": [
-                "manger"
+    "moods":
+    {
+        "conditionnel":
+        {
+            "passé": [
+                ["1", "s",
+                    null, "je",
+                    ["j'aurais mangé"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu aurais mangé"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il aurait mangé"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle aurait mangé"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on aurait mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous aurions mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous auriez mangé"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils auraient mangé"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles auraient mangé"]
+                ]
+            ],
+            "présent": [
+                ["1", "s",
+                    null, "je",
+                    ["je mangerais"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu mangerais"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il mangerait"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle mangerait"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on mangerait"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous mangerions"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous mangeriez"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils mangeraient"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles mangeraient"]
+                ]
             ]
         },
-        "indicatif": {
-            "présent": [
-                "je mange",
-                "tu manges",
-                "il mange",
-                "nous mangeons",
-                "vous mangez",
-                "ils mangent"
+        "imperatif":
+        {
+            "imperatif-passé": [
+                ["2", "s",
+                    null, "tu",
+                    ["aie mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["ayons mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["ayez mangé"]
+                ]
             ],
-            "imparfait": [
-                "je mangeais",
-                "tu mangeais",
-                "il mangeait",
-                "nous mangions",
-                "vous mangiez",
-                "ils mangeaient"
+            "imperatif-présent": [
+                ["2", "s",
+                    null, "tu",
+                    ["mange"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["mangeons"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["mangez"]
+                ]
+            ]
+        },
+        "indicatif":
+        {
+            "futur-antérieur": [
+                ["1", "s",
+                    null, "je",
+                    ["j'aurai mangé"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu auras mangé"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il aura mangé"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle aura mangé"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on aura mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous aurons mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous aurez mangé"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils auront mangé"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles auront mangé"]
+                ]
             ],
             "futur-simple": [
-                "je mangerai",
-                "tu mangeras",
-                "il mangera",
-                "nous mangerons",
-                "vous mangerez",
-                "ils mangeront"
-            ],
-            "passé-simple": [
-                "je mangeai",
-                "tu mangeas",
-                "il mangea",
-                "nous mangeâmes",
-                "vous mangeâtes",
-                "ils mangèrent"
-            ],
-            "passé-composé": [
-                "j'ai mangé",
-                "tu as mangé",
-                "il a mangé",
-                "nous avons mangé",
-                "vous avez mangé",
-                "ils ont mangé"
-            ],
-            "plus-que-parfait": [
-                "j'avais mangé",
-                "tu avais mangé",
-                "il avait mangé",
-                "nous avions mangé",
-                "vous aviez mangé",
-                "ils avaient mangé"
-            ],
-            "futur-antérieur": [
-                "j'aurai mangé",
-                "tu auras mangé",
-                "il aura mangé",
-                "nous aurons mangé",
-                "vous aurez mangé",
-                "ils auront mangé"
-            ],
-            "passé-antérieur": [
-                "j'eus mangé",
-                "tu eus mangé",
-                "il eut mangé",
-                "nous eûmes mangé",
-                "vous eûtes mangé",
-                "ils eurent mangé"
-            ]
-        },
-        "conditionnel": {
-            "présent": [
-                "je mangerais",
-                "tu mangerais",
-                "il mangerait",
-                "nous mangerions",
-                "vous mangeriez",
-                "ils mangeraient"
-            ],
-            "passé": [
-                "j'aurais mangé",
-                "tu aurais mangé",
-                "il aurait mangé",
-                "nous aurions mangé",
-                "vous auriez mangé",
-                "ils auraient mangé"
-            ]
-        },
-        "subjonctif": {
-            "présent": [
-                "que je mange",
-                "que tu manges",
-                "qu'il mange",
-                "que nous mangions",
-                "que vous mangiez",
-                "qu'ils mangent"
+                ["1", "s",
+                    null, "je",
+                    ["je mangerai"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu mangeras"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il mangera"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle mangera"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on mangera"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous mangerons"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous mangerez"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils mangeront"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles mangeront"]
+                ]
             ],
             "imparfait": [
-                "que je mangeasse",
-                "que tu mangeasses",
-                "qu'il mangeât",
-                "que nous mangeassions",
-                "que vous mangeassiez",
-                "qu'ils mangeassent"
+                ["1", "s",
+                    null, "je",
+                    ["je mangeais"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu mangeais"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il mangeait"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle mangeait"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on mangeait"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous mangions"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous mangiez"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils mangeaient"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles mangeaient"]
+                ]
             ],
-            "passé": [
-                "que j'aie mangé",
-                "que tu aies mangé",
-                "qu'il ait mangé",
-                "que nous ayons mangé",
-                "que vous ayez mangé",
-                "qu'ils aient mangé"
+            "passé-antérieur": [
+                ["1", "s",
+                    null, "je",
+                    ["j'eus mangé"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu eus mangé"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il eut mangé"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle eut mangé"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on eut mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous eûmes mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous eûtes mangé"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils eurent mangé"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles eurent mangé"]
+                ]
+            ],
+            "passé-composé": [
+                ["1", "s",
+                    null, "je",
+                    ["j'ai mangé"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu as mangé"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il a mangé"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle a mangé"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on a mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous avons mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous avez mangé"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils ont mangé"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles ont mangé"]
+                ]
+            ],
+            "passé-simple": [
+                ["1", "s",
+                    null, "je",
+                    ["je mangeai"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu mangeas"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il mangea"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle mangea"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on mangea"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous mangeâmes"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous mangeâtes"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils mangèrent"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles mangèrent"]
+                ]
             ],
             "plus-que-parfait": [
-                "que j'eusse mangé",
-                "que tu eusses mangé",
-                "qu'il eût mangé",
-                "que nous eussions mangé",
-                "que vous eussiez mangé",
-                "qu'ils eussent mangé"
+                ["1", "s",
+                    null, "je",
+                    ["j'avais mangé"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu avais mangé"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il avait mangé"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle avait mangé"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on avait mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous avions mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous aviez mangé"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils avaient mangé"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles avaient mangé"]
+                ]
+            ],
+            "présent": [
+                ["1", "s",
+                    null, "je",
+                    ["je mange"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["tu manges"]
+                ],
+                ["3", "s", "m", "il",
+                    ["il mange"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["elle mange"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["on mange"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["nous mangeons"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["vous mangez"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["ils mangent"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["elles mangent"]
+                ]
             ]
         },
-        "imperatif": {
-            "imperatif-présent": [
-                "mange",
-                "mangeons",
-                "mangez"
-            ],
-            "imperatif-passé": [
-                "aie mangé",
-                "ayons mangé",
-                "ayez mangé"
+        "infinitif":
+        {
+            "infinitif-présent": [
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    ["manger"]
+                ]
             ]
         },
-        "participe": {
-            "participe-présent": [
-                "mangeant"
-            ],
+        "participe":
+        {
             "participe-passé": [
-                "mangé",
-                "mangés",
-                "mangée",
-                "mangées"
+                [
+                    null, "s", "m",
+                    null,
+                    ["mangé"]
+                ],
+                [
+                    null, "p", "m",
+                    null,
+                    ["mangés"]
+                ],
+                [
+                    null, "s", "f",
+                    null,
+                    ["mangée"]
+                ],
+                [
+                    null, "p", "f",
+                    null,
+                    ["mangées"]
+                ]
+            ],
+            "participe-présent": [
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    ["mangeant"]
+                ]
+            ]
+        },
+        "subjonctif":
+        {
+            "imparfait": [
+                ["1", "s",
+                    null, "je",
+                    ["que je mangeasse"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["que tu mangeasses"]
+                ],
+                ["3", "s", "m", "il",
+                    ["qu'il mangeât"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["qu'elle mangeât"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["qu'on mangeât"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["que nous mangeassions"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["que vous mangeassiez"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["qu'ils mangeassent"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["qu'elles mangeassent"]
+                ]
+            ],
+            "passé": [
+                ["1", "s",
+                    null, "je",
+                    ["que j'aie mangé"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["que tu aies mangé"]
+                ],
+                ["3", "s", "m", "il",
+                    ["qu'il ait mangé"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["qu'elle ait mangé"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["qu'on ait mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["que nous ayons mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["que vous ayez mangé"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["qu'ils aient mangé"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["qu'elles aient mangé"]
+                ]
+            ],
+            "plus-que-parfait": [
+                ["1", "s",
+                    null, "je",
+                    ["que j'eusse mangé"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["que tu eusses mangé"]
+                ],
+                ["3", "s", "m", "il",
+                    ["qu'il eût mangé"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["qu'elle eût mangé"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["qu'on eût mangé"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["que nous eussions mangé"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["que vous eussiez mangé"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["qu'ils eussent mangé"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["qu'elles eussent mangé"]
+                ]
+            ],
+            "présent": [
+                ["1", "s",
+                    null, "je",
+                    ["que je mange"]
+                ],
+                ["2", "s",
+                    null, "tu",
+                    ["que tu manges"]
+                ],
+                ["3", "s", "m", "il",
+                    ["qu'il mange"]
+                ],
+                ["3", "s", "f", "elle",
+                    ["qu'elle mange"]
+                ],
+                ["3", "s",
+                    null, "on",
+                    ["qu'on mange"]
+                ],
+                ["1", "p",
+                    null, "nous",
+                    ["que nous mangions"]
+                ],
+                ["2", "p",
+                    null, "vous",
+                    ["que vous mangiez"]
+                ],
+                ["3", "p", "m", "ils",
+                    ["qu'ils mangent"]
+                ],
+                ["3", "p", "f", "elles",
+                    ["qu'elles mangent"]
+                ]
             ]
         }
+    },
+    "verb":
+    {
+        "infinitive": "manger",
+        "lang": "fr",
+        "pred_score": 1.0,
+        "predicted": false,
+        "stem": "man",
+        "template": "man:ger",
+        "translation_en": "eat"
     }
 }
->>> c['moods']['indicatif']['présent']
-['je mange', 'tu manges', 'il mange', 'nous mangeons', 'vous mangez', 'ils mangent']
->>> c['moods'].keys()
-dict_keys(['infinitif', 'indicatif', 'conditionnel', 'subjonctif', 'imperatif', 'participe'])
->>> c['moods']['indicatif'].keys()
-dict_keys(['présent', 'imparfait', 'futur-simple', 'passé-simple', 'passé-composé', 'plus-que-parfait', 'futur-antérieur', 'passé-antérieur'])
->>> c['moods']['subjonctif'].keys()
-dict_keys(['présent', 'imparfait', 'passé', 'plus-que-parfait'])
+>>> cc[Moods.fr.Indicatif][Tenses.fr.Présent]
+[
+    ["1", "s",
+        null, "je",
+        ["je mange"]
+    ],
+    ["2", "s",
+        null, "tu",
+        ["tu manges"]
+    ],
+    ["3", "s", "m", "il",
+        ["il mange"]
+    ],
+    ["3", "s", "f", "elle",
+        ["elle mange"]
+    ],
+    ["3", "s",
+        null, "on",
+        ["on mange"]
+    ],
+    ["1", "p",
+        null, "nous",
+        ["nous mangeons"]
+    ],
+    ["2", "p",
+        null, "vous",
+        ["vous mangez"]
+    ],
+    ["3", "p", "m", "ils",
+        ["ils mangent"]
+    ],
+    ["3", "p", "f", "elles",
+        ["elles mangent"]
+    ]
+]
+
+>>> cc.get_moods().get_data().keys()
+dict_keys([<MoodFr.Infinitif: 'infinitif'>, <MoodFr.Indicatif: 'indicatif'>, <MoodFr.Conditionnel: 'conditionnel'>, <MoodFr.Subjonctif: 'subjonctif'>, <MoodFr.Imperatif: 'imperatif'>, <MoodFr.Participe: 'participe'>])
+>>> cc[Moods.fr.Indicatif].get_data().keys()
+dict_keys([<TenseFr.Présent: 'présent'>, <TenseFr.Imparfait: 'imparfait'>, <TenseFr.FuturSimple: 'futur-simple'>, <TenseFr.PasséSimple: 'passé-simple'>, <TenseFr.PasséComposé: 'passé-composé'>, <TenseFr.PlusQueParfait: 'plus-que-parfait'>, <TenseFr.FuturAntérieur: 'futur-antérieur'>, <TenseFr.PasséAntérieur: 'passé-antérieur'>])
+>>> cc[Moods.fr.Subjonctif].get_data().keys()
+dict_keys([<TenseFr.Présent: 'présent'>, <TenseFr.Imparfait: 'imparfait'>, <TenseFr.Passé: 'passé'>, <TenseFr.PlusQueParfait: 'plus-que-parfait'>])
 ```
 
 ### ML Prediction French `uberiser` (to _Uberize_)
@@ -341,9 +790,9 @@ dict_keys(['présent', 'imparfait', 'passé', 'plus-que-parfait'])
 In this example, we will conjugate a verb that `verbecc` doesn't explicitly know. The conjugation will be predicted using a machine-learning model trained on `verbecc`'s French verb conjugation data XML models.
 
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(Lang.fr)
->>> printjson(cg.conjugate('ubériser'))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(Lang.fr)
+>>> print(cg.conjugate('ubériser'))
 {
     "verb": {
         "infinitive": "ubériser",
@@ -506,10 +955,10 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### French `être` (to be)
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(Lang.fr)
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(Lang.fr)
 # Observe that it finds and conjugates `être` even though we input `etre`
->>> printjson(cg.conjugate('etre'))
+>>> print(cg.conjugate('etre'))
 {
     "verb": {
         "infinitive": "être",
@@ -671,11 +1120,12 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Example: Catalan `ser` (to be)
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(Lang.ca) # If this is the first run, it will take a minute for the model to train, 
-                             # but it should save the model .zip file and run fast subsequently
->>> cg.conjugate('ser')
->>> printjson(cg.conjugate('ser'))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(Lang.ca) 
+# If this is the first run, it will take a minute for the model to train, 
+# but it should save the model .zip file and run fast subsequently
+>>> ccg.conjugate('ser')
+>>> print(cg.conjugate('ser'))
 {
     "verb": {
         "infinitive": "ser",
@@ -783,10 +1233,10 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Example: Catalan `ser` (to be), without pronouns in the conjugation
 ```python
->>> cg = Conjugator(lang='ca') 
+>>> ccg = CompleteConjugator(lang='ca') 
 # If this is the first run, it will take a minute for the model to train, 
 # but it should save the model .zip file and run fast subsequently
->>> cc = cg.conjugate('ser', conjugate_pronouns=False)
+>>> cc = ccg.conjugate('ser', conjugate_pronouns=False)
 >>> print(cc)
 {
     "moods":
@@ -1014,11 +1464,12 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Example: Spanish `ser` (to be)
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(lang=Lang.es) # If this is the first run, it will take a minute for the model to train, 
-                                  # but it should save the model .zip file and run fast subsequently
->>> cg.conjugate('ser')
->>> printjson(cg.conjugate('ser'))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(lang=Lang.es) 
+# If this is the first run, it will take a minute for the model to train, 
+# but it should save the model .zip file and run fast subsequently
+>>> ccg.conjugate('ser')
+>>> print(cg.conjugate('ser'))
 {
     "verb": {
         "infinitive": "ser",
@@ -1218,11 +1669,12 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Example: Spanish `ser` (to be) with voseo
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang, LangSpecificOptionsEs, VoseoOptions
->>> cg = Conjugator(lang=Lang.es) # If this is the first run, it will take a minute for the model to train, 
-                               # but it should save the model .zip file and run fast subsequently
->>> cg.conjugate('ser')
->>> printjson(cg.conjugate('ser', lang_specific_options=LangSpecificOptionsEs(VoseoOptions.VoseoTipo3)))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang, LangSpecificOptionsEs, VoseoOptions
+>>> ccg = CompleteConjugator(lang=Lang.es) 
+# If this is the first run, it will take a minute for the model to train, 
+# but it should save the model .zip file and run fast subsequently
+>>> ccg.conjugate('ser')
+>>> print(cg.conjugate('ser', lang_specific_options=LangSpecificOptionsEs(VoseoOptions.VoseoTipo3)))
 {
     "verb": {
         "infinitive": "ser",
@@ -1424,9 +1876,9 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Italian `essere` (to be)
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(Lang.it)
->>> printjson(cg.conjugate('essere'))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(Lang.it)
+>>> print(cg.conjugate('essere'))
 {
     "verb": {
         "infinitive": "essere",
@@ -1608,11 +2060,12 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Example: Portuguese  `ser` (to be)
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(Lang.pt) # If this is the first run, it will take a minute for the model to train, 
-                             # but it should save the model .zip file and run fast subsequently
->>> cg.conjugate('ser')
->>> printjson(cg.conjugate('ser'))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(Lang.pt) 
+# If this is the first run, it will take a minute for the model to train, 
+# but it should save the model .zip file and run fast subsequently
+>>> ccg.conjugate('ser')
+>>> print(cg.conjugate('ser'))
 {
     "verb": {
         "infinitive": "ser",
@@ -1824,9 +2277,9 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 
 ### Romanian `fi` (to be)
 ```python
->>> from verbecc import Conjugator, LangCodeISO639_1 as Lang
->>> cg = Conjugator(Lang.ro)
->>> printjson(cg.conjugate('fi'))
+>>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
+>>> ccg = CompleteConjugator(Lang.ro)
+>>> print(cg.conjugate('fi'))
 {
     "verb": {
         "infinitive": "fi",
