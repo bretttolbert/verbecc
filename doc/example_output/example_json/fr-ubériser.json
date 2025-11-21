@@ -1,0 +1,926 @@
+{
+    "moods":
+    {
+        "conditionnel":
+        {
+            "passé": [
+            {
+                "c": ["j'aurais ubérisé"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu aurais ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il aurait ubérisé"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle aurait ubérisé"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on aurait ubérisé"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous aurions ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous auriez ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils auraient ubérisé"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles auraient ubérisé"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "présent": [
+            {
+                "c": ["j'ubériserais"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu ubériserais"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il ubériserait"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle ubériserait"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on ubériserait"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous ubériserions"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous ubériseriez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils ubériseraient"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles ubériseraient"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        },
+        "imperatif":
+        {
+            "imperatif-passé": [
+            {
+                "c": ["aie ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ayons ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["ayez ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            }],
+            "imperatif-présent": [
+            {
+                "c": ["ubérise"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ubérisons"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["ubérisez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            }]
+        },
+        "indicatif":
+        {
+            "futur-antérieur": [
+            {
+                "c": ["j'aurai ubérisé"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu auras ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il aura ubérisé"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle aura ubérisé"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on aura ubérisé"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous aurons ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous aurez ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils auront ubérisé"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles auront ubérisé"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "futur-simple": [
+            {
+                "c": ["j'ubériserai"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu ubériseras"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il ubérisera"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle ubérisera"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on ubérisera"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous ubériserons"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous ubériserez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils ubériseront"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles ubériseront"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "imparfait": [
+            {
+                "c": ["j'ubérisais"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu ubérisais"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il ubérisait"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle ubérisait"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on ubérisait"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous ubérisions"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous ubérisiez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils ubérisaient"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles ubérisaient"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé-antérieur": [
+            {
+                "c": ["j'eus ubérisé"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu eus ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il eut ubérisé"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle eut ubérisé"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on eut ubérisé"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous eûmes ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous eûtes ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils eurent ubérisé"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles eurent ubérisé"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé-composé": [
+            {
+                "c": ["j'ai ubérisé"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu as ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il a ubérisé"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle a ubérisé"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on a ubérisé"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous avons ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous avez ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils ont ubérisé"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles ont ubérisé"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé-simple": [
+            {
+                "c": ["j'ubérisai"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu ubérisas"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il ubérisa"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle ubérisa"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on ubérisa"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous ubérisâmes"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous ubérisâtes"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils ubérisèrent"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles ubérisèrent"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "plus-que-parfait": [
+            {
+                "c": ["j'avais ubérisé"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu avais ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il avait ubérisé"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle avait ubérisé"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on avait ubérisé"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous avions ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous aviez ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils avaient ubérisé"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles avaient ubérisé"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "présent": [
+            {
+                "c": ["j'ubérise"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu ubérises"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il ubérise"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle ubérise"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on ubérise"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous ubérisons"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous ubérisez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils ubérisent"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles ubérisent"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        },
+        "infinitif":
+        {
+            "infinitif-présent": [
+            {
+                "c": ["ubériser"]
+            }]
+        },
+        "participe":
+        {
+            "participe-passé": [
+            {
+                "c": ["ubérisé"],
+                "g": "m",
+                "n": "s"
+            },
+            {
+                "c": ["ubérisés"],
+                "g": "m",
+                "n": "p"
+            },
+            {
+                "c": ["ubérisée"],
+                "g": "f",
+                "n": "s"
+            },
+            {
+                "c": ["ubérisées"],
+                "g": "f",
+                "n": "p"
+            }],
+            "participe-présent": [
+            {
+                "c": ["ubérisant"]
+            }]
+        },
+        "subjonctif":
+        {
+            "imparfait": [
+            {
+                "c": ["que j'ubérisasse"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu ubérisasses"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il ubérisât"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle ubérisât"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on ubérisât"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous ubérisassions"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous ubérisassiez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils ubérisassent"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles ubérisassent"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé": [
+            {
+                "c": ["que j'aie ubérisé"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu aies ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il ait ubérisé"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle ait ubérisé"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on ait ubérisé"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous ayons ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous ayez ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils aient ubérisé"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles aient ubérisé"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "plus-que-parfait": [
+            {
+                "c": ["que j'eusse ubérisé"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu eusses ubérisé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il eût ubérisé"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle eût ubérisé"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on eût ubérisé"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous eussions ubérisé"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous eussiez ubérisé"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils eussent ubérisé"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles eussent ubérisé"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "présent": [
+            {
+                "c": ["que j'ubérise"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu ubérises"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il ubérise"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle ubérise"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on ubérise"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous ubérisions"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous ubérisiez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils ubérisent"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles ubérisent"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        }
+    },
+    "verb":
+    {
+        "infinitive": "ubériser",
+        "lang": "fr",
+        "pred_score": 0.9998514079726935,
+        "predicted": true,
+        "stem": "ubéris",
+        "template": "aim:er",
+        "translation_en": ""
+    }
+}

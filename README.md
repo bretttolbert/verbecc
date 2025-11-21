@@ -18,6 +18,14 @@
 - [Web GUI](http://verbe.cc)
 - [HTTP API : /verbecc/conjugate/fr/manger](http://verbe.cc/verbecc/conjugate/fr/manger)
 
+### Example Output
+
+| Français / French | Català / Catalan | Español / Castellano / Spanish | Português / Portuguese | Italiano / Italian | Română / Romanian |
+| ------ | ------ | ------- | -------- | --------- | ------ |
+| [Français / French](./doc/example_output/fr.md) | [Català / Catalan](./doc/example_output/ca.md) | [Español / Castellano /Spanish](./doc/example_output/es.md) | [Português / Portuguese](./doc/example_output/pt.md) | [Italiano / Italian](./doc/example_output/it.md) | [Română / Romanian](./doc/example_output/ro.md) |
+| [French `être` (to be)](./doc/example_output/fr.md#french-être-to-be) | [Catalan `ser` (to be)](./doc/example_output/ca.md#example-catalan-ser-to-be) | [Spanish `ser` (to be)](./doc/example_output/es.md#example-spanish-ser-to-be) | [Portuguese `ser` (to be)](./doc/example_output/pt.md#example-portuguese--ser-to-be) | [Italian `essere` (to be)](./doc/example_output/it.md#italian-essere-to-be) | [Romanian `fi` (to be)](./doc/example_output/ro.md#romanian-fi-to-be) |
+
+
 ## Features
 * **Multilingual**
     * Conjugate verbs in six romance languages: French, Spanish, Portuguese, Italian, Romanian, Catalan
@@ -61,13 +69,6 @@ pip install .
 ### Academic publications referencing verbecc
 
 - [Segura Lores, Alba. (2025) Estudio de la variación del sujeto pronominal en la ciudad de Málaga: sociolingüística cognitiva de su producción y percepción. Universität Heidelberg. pp. 69. [DOI:10.11588/heidok.00037508]](https://nbn-resolving.org/urn:nbn:de:bsz:16-heidok-375088)
-
-### Example Output
-
-| Français / French | Català / Catalan | Español / Castellano / Spanish | Português / Portuguese | Italiano / Italian | Română / Romanian |
-| ------ | ------ | ------- | -------- | --------- | ------ |
-| [Français / French](./doc/example_output/fr.md) | [Català / Catalan](./doc/example_output/ca.md) | [Español / Castellano /Spanish](./doc/example_output/es.md) | [Português / Portuguese](./doc/example_output/pt.md) | [Italiano / Italian](./doc/example_output/it.md) | [Română / Romanian](./doc/example_output/ro.md) |
-| [French `être` (to be)](./doc/example_output/fr.md#french-être-to-be) | [Catalan `ser` (to be)](./doc/example_output/ca.md#example-catalan-ser-to-be) | [Spanish `ser` (to be)](./doc/example_output/es.md#example-spanish-ser-to-be) | [Portuguese `ser` (to be)](./doc/example_output/pt.md#example-portuguese--ser-to-be) | [Italian `essere` (to be)](./doc/example_output/it.md#italian-essere-to-be) | [Romanian `fi` (to be)](./doc/example_output/ro.md#romanian-fi-to-be) |
 
 ### Typing - Parameter and Data Type Annotations
 
@@ -168,166 +169,14 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
 ```python
 >>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
 >>> ccg = CompleteConjugator(Lang.fr)
->>> print(cg.conjugate('ubériser'))
-{
-    "verb": {
-        "infinitive": "ubériser",
-        "predicted": true,
-        "pred_score": 0.9997949959188503,
-        "template": "aim:er",
-        "translation_en": "",
-        "stem": "ubéris"
-    },
-    "moods": {
-        "infinitif": {
-            "infinitif-présent": [
-                "ubériser"
-            ]
-        },
-        "indicatif": {
-            "présent": [
-                "j'ubérise",
-                "tu ubérises",
-                "il ubérise",
-                "nous ubérisons",
-                "vous ubérisez",
-                "ils ubérisent"
-            ],
-            "imparfait": [
-                "j'ubérisais",
-                "tu ubérisais",
-                "il ubérisait",
-                "nous ubérisions",
-                "vous ubérisiez",
-                "ils ubérisaient"
-            ],
-            "futur-simple": [
-                "j'ubériserai",
-                "tu ubériseras",
-                "il ubérisera",
-                "nous ubériserons",
-                "vous ubériserez",
-                "ils ubériseront"
-            ],
-            "passé-simple": [
-                "j'ubérisai",
-                "tu ubérisas",
-                "il ubérisa",
-                "nous ubérisâmes",
-                "vous ubérisâtes",
-                "ils ubérisèrent"
-            ],
-            "passé-composé": [
-                "j'ai ubérisé",
-                "tu as ubérisé",
-                "il a ubérisé",
-                "nous avons ubérisé",
-                "vous avez ubérisé",
-                "ils ont ubérisé"
-            ],
-            "plus-que-parfait": [
-                "j'avais ubérisé",
-                "tu avais ubérisé",
-                "il avait ubérisé",
-                "nous avions ubérisé",
-                "vous aviez ubérisé",
-                "ils avaient ubérisé"
-            ],
-            "futur-antérieur": [
-                "j'aurai ubérisé",
-                "tu auras ubérisé",
-                "il aura ubérisé",
-                "nous aurons ubérisé",
-                "vous aurez ubérisé",
-                "ils auront ubérisé"
-            ],
-            "passé-antérieur": [
-                "j'eus ubérisé",
-                "tu eus ubérisé",
-                "il eut ubérisé",
-                "nous eûmes ubérisé",
-                "vous eûtes ubérisé",
-                "ils eurent ubérisé"
-            ]
-        },
-        "conditionnel": {
-            "présent": [
-                "j'ubériserais",
-                "tu ubériserais",
-                "il ubériserait",
-                "nous ubériserions",
-                "vous ubériseriez",
-                "ils ubériseraient"
-            ],
-            "passé": [
-                "j'aurais ubérisé",
-                "tu aurais ubérisé",
-                "il aurait ubérisé",
-                "nous aurions ubérisé",
-                "vous auriez ubérisé",
-                "ils auraient ubérisé"
-            ]
-        },
-        "subjonctif": {
-            "présent": [
-                "que j'ubérise",
-                "que tu ubérises",
-                "qu'il ubérise",
-                "que nous ubérisions",
-                "que vous ubérisiez",
-                "qu'ils ubérisent"
-            ],
-            "imparfait": [
-                "que j'ubérisasse",
-                "que tu ubérisasses",
-                "qu'il ubérisât",
-                "que nous ubérisassions",
-                "que vous ubérisassiez",
-                "qu'ils ubérisassent"
-            ],
-            "passé": [
-                "que j'aie ubérisé",
-                "que tu aies ubérisé",
-                "qu'il ait ubérisé",
-                "que nous ayons ubérisé",
-                "que vous ayez ubérisé",
-                "qu'ils aient ubérisé"
-            ],
-            "plus-que-parfait": [
-                "que j'eusse ubérisé",
-                "que tu eusses ubérisé",
-                "qu'il eût ubérisé",
-                "que nous eussions ubérisé",
-                "que vous eussiez ubérisé",
-                "qu'ils eussent ubérisé"
-            ]
-        },
-        "imperatif": {
-            "imperatif-présent": [
-                "ubérise",
-                "ubérisons",
-                "ubérisez"
-            ],
-            "imperatif-passé": [
-                "aie ubérisé",
-                "ayons ubérisé",
-                "ayez ubérisé"
-            ]
-        },
-        "participe": {
-            "participe-présent": [
-                "ubérisant"
-            ],
-            "participe-passé": [
-                "ubérisé",
-                "ubérisés",
-                "ubérisée",
-                "ubérisées"
-            ]
-        }
-    }
-}
+>>> cc = ccg.conjugate('ubériser')
+>>> print(cc.to_json())
 ```
+[(View Output JSON)](./doc/example_output/example_json/fr-ubériser.json)
+```python
+>>> print(cc.to_yaml())
+```
+[(View Output YAML)](./doc/example_output/example_yaml/fr-ubériser.yaml)
 
 ### Credits
 - Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/)
