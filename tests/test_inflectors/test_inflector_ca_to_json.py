@@ -19,14 +19,12 @@ expected_value_conj_ser = {
             "present": [
                 {
                     "c": ["jo seria", "jo fora"],
-                    "g": None,
                     "n": "s",
                     "p": "1",
                     "pr": "jo",
                 },
                 {
                     "c": ["tu series", "tu fores"],
-                    "g": None,
                     "n": "s",
                     "p": "2",
                     "pr": "tu",
@@ -47,14 +45,12 @@ expected_value_conj_ser = {
                 },
                 {
                     "c": ["nosaltres seríem", "nosaltres fórem"],
-                    "g": None,
                     "n": "p",
                     "p": "1",
                     "pr": "nosaltres",
                 },
                 {
                     "c": ["vosaltres seríeu", "vosaltres fóreu"],
-                    "g": None,
                     "n": "p",
                     "p": "2",
                     "pr": "vosaltres",
@@ -75,60 +71,42 @@ expected_value_conj_ser = {
                 },
             ]
         },
-        "gerundi": {
-            "gerundi": [
-                {"c": ["sent", "essent"], "g": None, "n": None, "p": None, "pr": None}
-            ]
-        },
+        "gerundi": {"gerundi": [{"c": ["sent", "essent"]}]},
         "imperatiu": {
             "imperatiu-present": [
-                {"c": ["sigues"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["sigues"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["sigui"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["sigui"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["siguem"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["sigueu"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["siguem"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["sigueu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["siguin"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["siguin"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ]
         },
         "indicatiu": {
             "futur": [
-                {"c": ["jo seré"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["tu seràs"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["jo seré"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["tu seràs"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["ell serà"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["ella serà"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {
-                    "c": ["nosaltres serem"],
-                    "g": None,
-                    "n": "p",
-                    "p": "1",
-                    "pr": "nosaltres",
-                },
-                {
-                    "c": ["vosaltres sereu"],
-                    "g": None,
-                    "n": "p",
-                    "p": "2",
-                    "pr": "vosaltres",
-                },
+                {"c": ["nosaltres serem"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["vosaltres sereu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["ells seran"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["elles seran"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "imperfet": [
-                {"c": ["jo era"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["tu eres"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["jo era"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["tu eres"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["ell era"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["ella era"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
                 {
                     "c": ["nosaltres érem"],
-                    "g": None,
                     "n": "p",
                     "p": "1",
                     "pr": "nosaltres",
                 },
                 {
                     "c": ["vosaltres éreu"],
-                    "g": None,
                     "n": "p",
                     "p": "2",
                     "pr": "vosaltres",
@@ -137,20 +115,18 @@ expected_value_conj_ser = {
                 {"c": ["elles eren"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "passat-simple": [
-                {"c": ["jo fui"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["tu fores"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["jo fui"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["tu fores"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["ell fou"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["ella fou"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
                 {
                     "c": ["nosaltres fórem"],
-                    "g": None,
                     "n": "p",
                     "p": "1",
                     "pr": "nosaltres",
                 },
                 {
                     "c": ["vosaltres fóreu"],
-                    "g": None,
                     "n": "p",
                     "p": "2",
                     "pr": "vosaltres",
@@ -159,20 +135,18 @@ expected_value_conj_ser = {
                 {"c": ["elles foren"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "present": [
-                {"c": ["jo sóc"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["tu ets"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["jo sóc"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["tu ets"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["ell és"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["ella és"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
                 {
                     "c": ["nosaltres som"],
-                    "g": None,
                     "n": "p",
                     "p": "1",
                     "pr": "nosaltres",
                 },
                 {
                     "c": ["vosaltres sou"],
-                    "g": None,
                     "n": "p",
                     "p": "2",
                     "pr": "vosaltres",
@@ -181,41 +155,33 @@ expected_value_conj_ser = {
                 {"c": ["elles són"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
         },
-        "infinitiu": {
-            "infinitiu-present": [
-                {"c": ["ser", "ésser"], "g": None, "n": None, "p": None, "pr": None}
-            ]
-        },
+        "infinitiu": {"infinitiu-present": [{"c": ["ser", "ésser"]}]},
         "participi": {
             "participi": [
-                {"c": ["estat", "sigut"], "g": "m", "n": "s", "p": None, "pr": None},
-                {"c": ["estada", "siguda"], "g": "m", "n": "p", "p": None, "pr": None},
-                {"c": ["estats", "siguts"], "g": "f", "n": "s", "p": None, "pr": None},
+                {"c": ["estat", "sigut"], "g": "m", "n": "s"},
+                {"c": ["estada", "siguda"], "g": "m", "n": "p"},
+                {"c": ["estats", "siguts"], "g": "f", "n": "s"},
                 {
                     "c": ["estades", "sigudes"],
                     "g": "f",
                     "n": "p",
-                    "p": None,
-                    "pr": None,
                 },
             ]
         },
         "subjuntiu": {
             "imperfet": [
-                {"c": ["jo fos"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["tu fossis"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["jo fos"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["tu fossis"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["ell fos"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["ella fos"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
                 {
                     "c": ["nosaltres fóssim"],
-                    "g": None,
                     "n": "p",
                     "p": "1",
                     "pr": "nosaltres",
                 },
                 {
                     "c": ["vosaltres fóssiu"],
-                    "g": None,
                     "n": "p",
                     "p": "2",
                     "pr": "vosaltres",
@@ -224,20 +190,18 @@ expected_value_conj_ser = {
                 {"c": ["elles fossin"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "present": [
-                {"c": ["jo sigui"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["tu siguis"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["jo sigui"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["tu siguis"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["ell sigui"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["ella sigui"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
                 {
                     "c": ["nosaltres siguem"],
-                    "g": None,
                     "n": "p",
                     "p": "1",
                     "pr": "nosaltres",
                 },
                 {
                     "c": ["vosaltres sigueu"],
-                    "g": None,
                     "n": "p",
                     "p": "2",
                     "pr": "vosaltres",
@@ -262,20 +226,18 @@ expected_value_conj_ser_nopronouns = {
     "moods": {
         "condicional": {
             "present": [
-                {"c": ["seria", "fora"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["series", "fores"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["seria", "fora"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["series", "fores"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["seria", "fora"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["seria", "fora"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
                 {
                     "c": ["seríem", "fórem"],
-                    "g": None,
                     "n": "p",
                     "p": "1",
                     "pr": "nosaltres",
                 },
                 {
                     "c": ["seríeu", "fóreu"],
-                    "g": None,
                     "n": "p",
                     "p": "2",
                     "pr": "vosaltres",
@@ -284,101 +246,87 @@ expected_value_conj_ser_nopronouns = {
                 {"c": ["serien", "foren"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ]
         },
-        "gerundi": {
-            "gerundi": [
-                {"c": ["sent", "essent"], "g": None, "n": None, "p": None, "pr": None}
-            ]
-        },
+        "gerundi": {"gerundi": [{"c": ["sent", "essent"]}]},
         "imperatiu": {
             "imperatiu-present": [
-                {"c": ["sigues"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["sigues"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["sigui"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["sigui"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["siguem"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["sigueu"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["siguem"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["sigueu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["siguin"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["siguin"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ]
         },
         "indicatiu": {
             "futur": [
-                {"c": ["seré"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["seràs"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["seré"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["seràs"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["serà"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["serà"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["serem"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["sereu"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["serem"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["sereu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["seran"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["seran"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "imperfet": [
-                {"c": ["era"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["eres"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["era"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["eres"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["era"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["era"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["érem"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["éreu"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["érem"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["éreu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["eren"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["eren"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "passat-simple": [
-                {"c": ["fui"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["fores"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["fui"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["fores"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["fou"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["fou"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["fórem"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["fóreu"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["fórem"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["fóreu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["foren"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["foren"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "present": [
-                {"c": ["sóc"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["ets"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["sóc"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["ets"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["és"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["és"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["som"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["sou"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["som"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["sou"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["són"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["són"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
         },
-        "infinitiu": {
-            "infinitiu-present": [
-                {"c": ["ser", "ésser"], "g": None, "n": None, "p": None, "pr": None}
-            ]
-        },
+        "infinitiu": {"infinitiu-present": [{"c": ["ser", "ésser"]}]},
         "participi": {
             "participi": [
-                {"c": ["estat", "sigut"], "g": "m", "n": "s", "p": None, "pr": None},
-                {"c": ["estada", "siguda"], "g": "m", "n": "p", "p": None, "pr": None},
-                {"c": ["estats", "siguts"], "g": "f", "n": "s", "p": None, "pr": None},
-                {
-                    "c": ["estades", "sigudes"],
-                    "g": "f",
-                    "n": "p",
-                    "p": None,
-                    "pr": None,
-                },
+                {"c": ["estat", "sigut"], "g": "m", "n": "s"},
+                {"c": ["estada", "siguda"], "g": "m", "n": "p"},
+                {"c": ["estats", "siguts"], "g": "f", "n": "s"},
+                {"c": ["estades", "sigudes"], "g": "f", "n": "p"},
             ]
         },
         "subjuntiu": {
             "imperfet": [
-                {"c": ["fos"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["fossis"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["fos"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["fossis"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["fos"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["fos"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["fóssim"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["fóssiu"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["fóssim"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["fóssiu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["fossin"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["fossin"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],
             "present": [
-                {"c": ["sigui"], "g": None, "n": "s", "p": "1", "pr": "jo"},
-                {"c": ["siguis"], "g": None, "n": "s", "p": "2", "pr": "tu"},
+                {"c": ["sigui"], "n": "s", "p": "1", "pr": "jo"},
+                {"c": ["siguis"], "n": "s", "p": "2", "pr": "tu"},
                 {"c": ["sigui"], "g": "m", "n": "s", "p": "3", "pr": "ell"},
                 {"c": ["sigui"], "g": "f", "n": "s", "p": "3", "pr": "ella"},
-                {"c": ["siguem"], "g": None, "n": "p", "p": "1", "pr": "nosaltres"},
-                {"c": ["sigueu"], "g": None, "n": "p", "p": "2", "pr": "vosaltres"},
+                {"c": ["siguem"], "n": "p", "p": "1", "pr": "nosaltres"},
+                {"c": ["sigueu"], "n": "p", "p": "2", "pr": "vosaltres"},
                 {"c": ["siguin"], "g": "m", "n": "p", "p": "3", "pr": "ells"},
                 {"c": ["siguin"], "g": "f", "n": "p", "p": "3", "pr": "elles"},
             ],

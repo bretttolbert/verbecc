@@ -27,5 +27,5 @@ def test_ensure_ascii(tcg):
     c = tc[0]
     assert (
         c.to_json(indent=None, beautify=False)
-        == '{"c": ["que j\'eusse mangé"], "g": null, "n": "s", "p": "1", "pr": "je"}'
+        == '{"c": ["que j\'eusse mangé"], "n": "s", "p": "1", "pr": "je"}'
     )

@@ -1,4 +1,4 @@
-from typing import cast, Iterator, List, Optional, Union
+from typing import cast, Dict, Iterator, List, Optional, Union
 
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
@@ -149,13 +149,21 @@ class Conjugation(AbstractConjugation):
         self._conjugations = value
 
     def get_data(self) -> ConjugationData:
-        return {
-            ConjugationKeyConjugations: self._conjugations,
-            ConjugationKeyGender: self._gender,
-            ConjugationKeyNumber: self._number,
-            ConjugationKeyPerson: self._person,
-            ConjugationKeyPronoun: self._pronoun,
-        }
+        """
+        Get's the primitive ConjugationData for this Conjugation
+        The primitive representation does not include unnecessary data,
+        so if any of the Optional fields are None, they are not included.
+        """
+        ret: ConjugationData = {ConjugationKeyConjugations: self._conjugations}
+        if self._gender is not None:
+            ret[ConjugationKeyGender] = self._gender
+        if self._number is not None:
+            ret[ConjugationKeyNumber] = self._number
+        if self._person is not None:
+            ret[ConjugationKeyPerson] = self._person
+        if self._pronoun is not None:
+            ret[ConjugationKeyPronoun] = self._pronoun
+        return ret
 
     def get_str_id(self) -> str:
         """
