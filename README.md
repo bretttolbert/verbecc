@@ -13,22 +13,34 @@
 ##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano, romeno e catalão, aprimoradas pelo aprendizado de máquina
 ##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, română și catalană, îmbunătățite de învățarea automată
 
+
 ## Live Demo
 - [Web GUI](http://verbe.cc)
 - [HTTP API : /verbecc/conjugate/fr/manger](http://verbe.cc/verbecc/conjugate/fr/manger)
 
 ## Features
-* Conjugate verbs in six romance languages: French, Spanish, Portuguese, Italian, Romanian, Catalan
-* Conjugate thousands of known verbs without the use of any of machine learning, using simple string transformations based on XML conjugation templates
-* Predict conjugation of unknown verbs with 99% accuracy using machine learning techniques
-* Includes both simple and compound conjugations (i.e. with helping/auxiliary verbs)
-* Includes alternate conjugations (optionally)
-* Supports advanced language-specific options such as the Spanish Voseo
-* Fully type-annotated python library
-* Typed return data
-* Has a plethora of unit-tests to ensure correctness of verb conjugations
-* Continuous Integration with GitHub Actions CI/CD pipeline
-* Dependencies: `scikit-learn`, `lxml`
+* **Multilingual**
+    * Conjugate verbs in six romance languages: French, Spanish, Portuguese, Italian, Romanian, Catalan
+    * Includes Spanish voseo conjugation, with regional options in development.
+    * Predict conjugation of unknown verbs with 99% accuracy using machine learning techniques
+    * Conjugate thousands of known verbs without machine learning, using simple string transformations based on XML conjugation templates
+* **Complete**
+    * Includes both simple and compound conjugations (i.e. with helping/auxiliary verbs)
+    * Includes alternate conjugations (for regional variations, e.g. Catalan vs. Valencian)
+    * Includes inflections for all genders where applicable
+    * Includes inlections for misc. pronouns such as the Spanish pronouns `usted` and `ustedes` and the French pronoun `on`.
+* **Quality**
+    * Fully type-annotated python library
+        * Unit-tests require type-annotations on everything
+    * Typed return data
+    * Meticulously organized source tree
+    * Has a plethora of unit-tests to ensure correctness of verb conjugations
+    * Continuous Integration with GitHub Actions CI/CD pipeline
+        * CI tests python 3.9, 3.10, 3.11, 3.12, 3.13 and 3.14.
+    * Dependencies: `scikit-learn`, `scipy`, `numpy`, `lxml`, `pyaml`, `jsbeautifier`, `importlib_resources`
+* **Trusted**
+    * Cited in [academic publications](#academic-publications-referencing-verbecc)
+
 
 ## Quick Start
 ```bash
@@ -39,13 +51,18 @@ pip install .
 
 ## Table of Contents
 
+- [Example Output](#example-output)
 - [General Examples](#general-examples)
     - [Typing - Parameter and Data Type Annotations](#typing---parameter-and-data-type-annotations)
     - [Multi-Language Conjugation](#multi-language-conjugation)
     - [Multi-Language Conjugation using EN mood and tense names via localization module](#multi-language-conjugation-using-en-mood-and-tense-names-via-localization-module)
 - [Credits](#credits)
 
-### Example Output / Exemple de sortie du programme
+### Academic publications referencing verbecc
+
+- [Segura Lores, Alba. (2025) Estudio de la variación del sujeto pronominal en la ciudad de Málaga: sociolingüística cognitiva de su producción y percepción. Universität Heidelberg. pp. 69. [DOI:10.11588/heidok.00037508]](https://nbn-resolving.org/urn:nbn:de:bsz:16-heidok-375088)
+
+### Example Output
 
 | Français / French | Català / Catalan | Español / Castellano / Spanish | Português / Portuguese | Italiano / Italian | Română / Romanian |
 | ------ | ------ | ------- | -------- | --------- | ------ |
@@ -311,7 +328,6 @@ In this example, we will conjugate a verb that `verbecc` doesn't explicitly know
     }
 }
 ```
-
 
 ### Credits
 - Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/)

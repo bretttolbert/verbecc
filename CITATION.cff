@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: 
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Tolbert
+    given-names: Brett
+    orcid: null
+title: "Verbecc"
+version: 2.0.0
+identifiers:
+  - type: doi
+    value: null
+date-released: 2025-11-22
+keywords:
+  - verb
+  - conjugation
+  - machine learning
+  - verb,
+  - conjugator
+  - conjugation
+  - Catalan
+  - català
+  - French
+  - français
+  - Italian
+  - italiano
+  - Portuguese
+  - português
+  - Romanian
+  - română
+  - Spanish
+  - español
+  - NLP
+  - Natural Language Processing
+  - Machine Learning
+  - Linguistics
+  - Education
+  - Language Learning
+license: "MIT"
+repository-code: "https://github.com/bretttolbert/verbecc"

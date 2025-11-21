@@ -112,7 +112,8 @@ norecursedirs = [
     "docs",
     "__pycache__",
     "verbecc/data",
-    "data"
+    "data",
+    "doc"
 ]
 addopts = [
     "--ignore=.git",
@@ -121,5 +122,6 @@ addopts = [
     "--ignore=dist",
     "--ignore=__pycache__",
     "--ignore=verbecc/data",
-    "--ignore=data"
+    "--ignore=data",
+    "--ignore=doc"
 ]
