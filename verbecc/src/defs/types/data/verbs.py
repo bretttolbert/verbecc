@@ -7,7 +7,7 @@ from verbecc.src.defs.types.exceptions import VerbNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.mlconjug.predictor import TemplatePredictor
 from verbecc.src.utils import string_utils
-from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
+from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
 
 config = VerbeccConfigUtil().load_config()
 

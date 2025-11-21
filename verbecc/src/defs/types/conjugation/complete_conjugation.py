@@ -9,7 +9,7 @@ from verbecc.src.defs.types.conjugation.moods_conjugation import MoodsConjugatio
 from verbecc.src.defs.types.conjugation.complete_conjugation_data import (
     CompleteConjugationData,
 )
-from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
+from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
 
 config = VerbeccConfigUtil().load_config()
 

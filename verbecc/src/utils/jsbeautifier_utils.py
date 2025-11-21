@@ -4,7 +4,7 @@ from dataclasses import fields
 from typing import Optional
 import jsbeautifier
 
-from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
+from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
 
 
 class JSBeautifier:

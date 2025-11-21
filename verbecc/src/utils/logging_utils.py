@@ -1,7 +1,10 @@
 from typing import Optional
 import logging
 
-from verbecc.src.utils.config_util_logging import LoggingConfigUtil
+from verbecc.src.utils.config.logging_config_util import LoggingConfigUtil
+
+
+APP_NAME = "verbecc"
 
 
 class LoggingUtils:
@@ -14,5 +17,5 @@ class LoggingUtils:
             log_cfg_util = LoggingConfigUtil()
             logging_config = log_cfg_util.load_config()
             log_cfg_util.apply_config(logging_config)
-            cls._logger = logging.getLogger(LoggingConfigUtil.APP_NAME)
+            cls._logger = logging.getLogger(APP_NAME)
         return cls._logger

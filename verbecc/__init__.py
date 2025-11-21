@@ -5,7 +5,7 @@ from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.constants import localization
 from verbecc.src.defs.types.config.verbecc_config import VerbeccConfig
 from verbecc.src.defs.types.config.jsbeautifier_opts import JSBeautifierOpts
-from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
+from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
 from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.defs.types.conjugation import CompleteConjugation
 from verbecc.src.defs.types.conjugation.complete_conjugation import (

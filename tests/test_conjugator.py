@@ -10,7 +10,7 @@ from verbecc.src.defs.types.exceptions import InvalidMoodError
 from verbecc.src.defs.types.exceptions import InvalidTenseError
 from verbecc.src.defs.types.exceptions import TemplateNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
+from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
 from verbecc.src.defs.types.tense import Tenses
 from verbecc.src.defs.types.mood import Moods
 
