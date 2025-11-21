@@ -71,7 +71,7 @@ pip install .
 
 ### Typing - Parameter and Data Type Annotations
 
-Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [src/defs/types/conjugation.py](./verbecc/src/defs/types/conjugation.py)).
+Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [conjugation.py](./verbecc/src/defs/types/conjugation/conjugation.py)).
 
 | verbecc 1.x | verbecc 2.x |
 | --- | --- |
