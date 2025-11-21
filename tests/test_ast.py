@@ -21,10 +21,9 @@ Useful if you are trying to write code that is easily portable to Java.
 Copyright (c) 2026, Brett Tolbert <http://bretttolbert.com/>
 """
 
-import pytest
 import ast
 import os
-from typing import List
+from typing import List, Union
 
 EXCLUDE_DIRS = {".git", "__pycache__", "venv", ".venv", "env", "build", "dist", "tests"}
 
@@ -89,7 +88,7 @@ class Finder(ast.NodeVisitor):
                 node, node.name, node.lineno
             )
 
-    def _check_func(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> None:
+    def _check_func(self, node: Union[ast.FunctionDef, ast.AsyncFunctionDef]) -> None:
         is_method = bool(self.class_stack)
         missing = []
         # posonlyargs (py3.8+), args, kwonlyargs
