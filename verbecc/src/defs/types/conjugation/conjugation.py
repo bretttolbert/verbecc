@@ -1,9 +1,9 @@
-from typing import cast, Iterator, List, Optional
+from typing import cast, Iterator, List, Optional, Union
 
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
+from verbecc.src.defs.types.pronoun import Pronoun
 from verbecc.src.defs.types.conjugation.abstract_conjugation import AbstractConjugation
 from verbecc.src.defs.types.conjugation.conjugation_data import ConjugationData
 
@@ -79,7 +79,7 @@ class Conjugation(AbstractConjugation):
             )
         )
 
-    def __getitem__(self, index: int) -> object | str:
+    def __getitem__(self, index: int) -> Union[object, str]:
         """
         Allows accessing elements using square bracket notation.
         Handles both integer indexing and slicing.
