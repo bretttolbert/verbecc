@@ -790,4 +790,43 @@ def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(tcg):
     assert tc == expected_value
 
 
+def test_combine_pronoun_and_conj(ccg):
+    """
+    E.g. "je" + "mange" = "je mange"
+    E.g. "elle" + "a " = "elle a"
+    E.g. "je" + "ai" = "j'ai"
+    E.g. "je me" + "habille" = "je m'habille"
+    E.g. "tu te" + "habilles" = "tu t'habilles"
+    E.g. "il se" = "habille" = "il s'habille"
+    E.g. "ils se" = "habillent" = "ils s'habillent"
+    E.g. "ils se" + "étaient" = "ils s'étaient
+    """
+    assert ccg._inflector.combine_pronoun_and_conj("je", "mange") == "je mange"
+    assert ccg._inflector.combine_pronoun_and_conj("elle", "a") == "elle a"
+    assert ccg._inflector.combine_pronoun_and_conj("je", "ai") == "j'ai"
+    assert ccg._inflector.combine_pronoun_and_conj("je me", "habille") == "je m'habille"
+    assert (
+        ccg._inflector.combine_pronoun_and_conj("tu te", "habilles") == "tu t'habilles"
+    )
+    assert ccg._inflector.combine_pronoun_and_conj("il se", "habille") == "il s'habille"
+    assert (
+        ccg._inflector.combine_pronoun_and_conj("elle se", "habille")
+        == "elle s'habille"
+    )
+    assert (
+        ccg._inflector.combine_pronoun_and_conj("ils se", "habille") == "ils s'habille"
+    )
+    assert (
+        ccg._inflector.combine_pronoun_and_conj("elles se", "habille")
+        == "elles s'habille"
+    )
+    assert ccg._inflector.combine_pronoun_and_conj("je", "étais") == "j'étais"
+    assert ccg._inflector.combine_pronoun_and_conj("il", "était") == "il était"
+    assert ccg._inflector.combine_pronoun_and_conj("elle", "était") == "elle était"
+    assert ccg._inflector.combine_pronoun_and_conj("elle se", "était") == "elle s'était"
+    assert (
+        ccg._inflector.combine_pronoun_and_conj("ils se", "étaient") == "ils s'étaient"
+    )
+
+
 # TODO: Write a test for imperatif-passé (compound)

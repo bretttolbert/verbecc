@@ -34,13 +34,18 @@ class AbstractConjugation(ABC):
     def __repr__(self) -> str:
         return str(self)
 
-    def to_json(self, beautify: bool = config.JSBEAUTIFIER_ENABLE) -> str:
+    def to_json(
+        self,
+        indent: Optional[int] = config.JSON_OPTS.indent,
+        beautify: bool = config.JSBEAUTIFIER_ENABLE,
+    ) -> str:
         """The data of this object as a JSON string,
         optionally pretty-formatted.
-        :param beautify: Whether to pretty-format the JSON output
+        :param indent: Passed json.dumps(). None=no whitespace. Overrides config.JSON_OPS.indent.
+        :param beautify: Whether to pretty-format the JSON output using jsbeautifier. Overrides config.JSBEAUTIFIER_ENABLE.
         :return: JSON string
         """
-        return JSONUtils.to_json(self.get_data(), beautify=beautify)
+        return JSONUtils.to_json(self.get_data(), indent=indent, beautify=beautify)
 
     def __str__(self) -> str:
         return self.to_json()

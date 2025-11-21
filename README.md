@@ -55,7 +55,7 @@ pip install .
 - [General Examples](#general-examples)
     - [Typing - Parameter and Data Type Annotations](#typing---parameter-and-data-type-annotations)
     - [Multi-Language Conjugation](#multi-language-conjugation)
-    - [Multi-Language Conjugation using EN mood and tense names via localization module](#multi-language-conjugation-using-en-mood-and-tense-names-via-localization-module)
+    - [Multi-Language Conjugation using English mood and tense names via `localization` module](#multi-language-conjugation-using-english-mood-and-tense-names-via-localization-module)
 - [Credits](#credits)
 
 ### Academic publications referencing verbecc
@@ -135,7 +135,7 @@ Examples:
 ['eu sunt', 'tu ești', 'el e', 'ea e', 'noi suntem', 'voi sunteţi', 'ei sunt', 'ele sunt']
 ```
 
-### Multi-Language Conjugation using EN mood and tense names via localization module
+### Multi-Language Conjugation using English mood and tense names via localization module
 
 Observe below that strings may be still used for mood and tense, rather than the `Mood` and `Tense` (`StrEnum`) types. E.g. `indicative` is interchangeable with `Moods.en.Indicative` and `present` is interchangeable with `Tenses.en.Present`.
 

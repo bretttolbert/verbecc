@@ -228,7 +228,8 @@ class InflectorFr(Inflector):
         E.g. "je" + "ai" = "j'ai"
         E.g. "je me" + "habille" = "je m'habille"
         E.g. "tu te" + "habilles" = "tu t'habilles"
-        E.g. "il se" = "habille" = "il s'habilles"
+        E.g. "il se" = "habille" = "il s'habille"
+        E.g. "ils se" + "étaient" = "ils s'étaient
         """
         ret = ""
         if (

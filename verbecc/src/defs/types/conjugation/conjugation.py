@@ -5,7 +5,14 @@ from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.pronoun import Pronoun
 from verbecc.src.defs.types.conjugation.abstract_conjugation import AbstractConjugation
-from verbecc.src.defs.types.conjugation.conjugation_data import ConjugationData
+from verbecc.src.defs.types.conjugation.conjugation_data import (
+    ConjugationData,
+    ConjugationKeyPerson,
+    ConjugationKeyNumber,
+    ConjugationKeyGender,
+    ConjugationKeyPronoun,
+    ConjugationKeyConjugations,
+)
 
 
 class Conjugation(AbstractConjugation):
@@ -142,13 +149,13 @@ class Conjugation(AbstractConjugation):
         self._conjugations = value
 
     def get_data(self) -> ConjugationData:
-        return (
-            self._person,
-            self._number,
-            self._gender,
-            self._pronoun,
-            self._conjugations,
-        )
+        return {
+            ConjugationKeyConjugations: self._conjugations,
+            ConjugationKeyGender: self._gender,
+            ConjugationKeyNumber: self._number,
+            ConjugationKeyPerson: self._person,
+            ConjugationKeyPronoun: self._pronoun,
+        }
 
     def get_str_id(self) -> str:
         """
