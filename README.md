@@ -13,6 +13,17 @@
 ##### [PT] Verbos completamente conjugados: conjugações verbais para francês, espanhol, português, italiano, romeno e catalão, aprimoradas pelo aprendizado de máquina
 ##### [RO] Verbe complet conjugate: conjugări de verbe pentru franceză, spaniolă, portugheză, italiană, română și catalană, îmbunătățite de învățarea automată
 
+## Contents
+
+- [Quick Start](#quick-start)
+- [Live Demo](#live-demo)
+- [Example Output](#example-output)
+- [What's new in Verbecc 2.0](#whats-new-in-verbecc-20)
+- [Academic publications referencing Verbecc](#academic-publications-referencing-verbecc)
+- [Typing - Parameter and Data Type Annotations](#typing---parameter-and-data-type-annotations)
+- [Multi-Language Conjugation](#multi-language-conjugation)
+- [Multi-Language Conjugation using English mood and tense names via `localization` module](#multi-language-conjugation-using-english-mood-and-tense-names-via-localization-module)
+- [Credits](#credits)
 
 ## Live Demo
 - [Web GUI](http://verbe.cc)
@@ -24,7 +35,8 @@
 | ------ | ------ | ------- | -------- | --------- | ------ |
 | [Français / French](./doc/example_output/fr.md) | [Català / Catalan](./doc/example_output/ca.md) | [Español / Castellano /Spanish](./doc/example_output/es.md) | [Português / Portuguese](./doc/example_output/pt.md) | [Italiano / Italian](./doc/example_output/it.md) | [Română / Romanian](./doc/example_output/ro.md) |
 | [French `être` (to be)](./doc/example_output/fr.md#french-être-to-be) | [Catalan `ser` (to be)](./doc/example_output/ca.md#example-catalan-ser-to-be) | [Spanish `ser` (to be)](./doc/example_output/es.md#example-spanish-ser-to-be) | [Portuguese `ser` (to be)](./doc/example_output/pt.md#example-portuguese--ser-to-be) | [Italian `essere` (to be)](./doc/example_output/it.md#italian-essere-to-be) | [Romanian `fi` (to be)](./doc/example_output/ro.md#romanian-fi-to-be) |
-
+| [French `se lever` (to lift oneself)](./doc/example_output/fr.md#french-se-lever-to-lift-oneself) |  |  |  |  |  |
+| [French `ubériser` (to "uberize") (unknown verb conjugated with ML template prediction))](./doc/example_output/fr.md#ml-prediction-french-uberiser-to-uberize) |  |  |  |  |  |
 
 ## Features
 * **Multilingual**
@@ -57,22 +69,12 @@ cd verbecc
 pip install .
 ```
 
-## Table of Contents
-
-- [Example Output](#example-output)
-- [General Examples](#general-examples)
-    - [Typing - Parameter and Data Type Annotations](#typing---parameter-and-data-type-annotations)
-    - [Multi-Language Conjugation](#multi-language-conjugation)
-    - [Multi-Language Conjugation using English mood and tense names via `localization` module](#multi-language-conjugation-using-english-mood-and-tense-names-via-localization-module)
-- [Credits](#credits)
-
 ### Academic publications referencing verbecc
 
 - [Segura Lores, Alba. (2025) Estudio de la variación del sujeto pronominal en la ciudad de Málaga: sociolingüística cognitiva de su producción y percepción. Universität Heidelberg. pp. 69. [DOI:10.11588/heidok.00037508]](https://nbn-resolving.org/urn:nbn:de:bsz:16-heidok-375088)
 
-### Typing - Parameter and Data Type Annotations
 
-Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [conjugation.py](./verbecc/src/defs/types/conjugation/conjugation.py)).
+### What's new in Verbecc 2.0
 
 | verbecc 1.x | verbecc 2.x |
 | --- | --- |
@@ -92,8 +94,14 @@ Originally `verbecc` used strings for most parameters. `verbecc` is now fully ty
 | `Conjugator` returns `CompleteConjugationData` | `CompleteConjugator` returns wrapper type `CompleteConjugation`, `CompleteConjugation.get_data()` returns `CompleteConjugationData` |
 | (no wrapper types) | Wrapper types hierarchy: `CompleteConjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `Conjugation` -> `conjugations: List[str]` |
 | Primitive data types hierarchy: `Conjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `PersonConjugation` | Primitive data types hierarchy: `CompleteConjugationData` > `MoodsConjugationData` > `MoodConjugationData` > `TenseConjugationData` > `ConjugationData` -> `conjugations: List[str]` |
+| `pred_score` was always included in the output | `pred_score` is only included in output if `predicted` is `true` |
+| Only returned primitive Python data | `Conjugation` objects have both `.to_json()` and `.to_yaml()` methods | | 
 
-Examples:
+### Typing - Parameter and Data Type Annotations
+
+Originally `verbecc` used strings for most parameters. `verbecc` is now fully type-annotated but strings are still supported for backwards-compatibility and ease of use. This is accomplished using `StrEnum` for parameters and by defining a hierarchy of `typing` type definitions for the returned data objects (See [conjugation.py](./verbecc/src/defs/types/conjugation/conjugation.py)).
+
+E.g.:
 
 ```python
 >>> from verbecc import grammar_defines, localization, Moods, Tenses, Person, Number, Gender, LangCodeISO639_1 as Lang
@@ -161,22 +169,6 @@ Observe below that strings may be still used for mood and tense, rather than the
 >>> xconj('ro', 'fi', 'indicative', 'present')
 ['eu sunt', 'tu ești', 'el e', 'ea e', 'noi suntem', 'voi sunteţi', 'ei sunt', 'ele sunt']
 ```
-
-### ML Prediction French `uberiser` (to _Uberize_)
-
-In this example, we will conjugate a verb that `verbecc` doesn't explicitly know. The conjugation will be predicted using a machine-learning model trained on `verbecc`'s French verb conjugation data XML models.
-
-```python
->>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang
->>> ccg = CompleteConjugator(Lang.fr)
->>> cc = ccg.conjugate('ubériser')
->>> print(cc.to_json())
-```
-[(View Output JSON)](./doc/example_output/example_json/fr-ubériser.json)
-```python
->>> print(cc.to_yaml())
-```
-[(View Output YAML)](./doc/example_output/example_yaml/fr-ubériser.yaml)
 
 ### Credits
 - Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/)
