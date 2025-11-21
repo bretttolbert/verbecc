@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Dict, List, Tuple, Optional
 
-from verbecc.src.utils.log_utils import LogUtils
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
@@ -31,7 +31,7 @@ class Inflector(ABC):
     # public:
 
     def __init__(self) -> None:
-        self._logger = LogUtils.get_logger(self.__class__.__name__)
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
         self._verbs: Verbs = VerbsParser(self.get_lang()).parse()
         self._conjugations = ConjugationsParser(self.get_lang()).parse()
 

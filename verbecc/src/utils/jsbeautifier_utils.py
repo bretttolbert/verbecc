@@ -4,11 +4,11 @@ from dataclasses import fields
 from typing import Optional
 import jsbeautifier
 
-from verbecc.src.utils.config_utils import ConfigUtils
+from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
 
 
 class JSBeautifier:
-    config = ConfigUtils.load_verbecc_config()
+    config = VerbeccConfigUtil().load_config()
     opts: Optional[jsbeautifier.BeautifierOptions] = None
 
     @classmethod

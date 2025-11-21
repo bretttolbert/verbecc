@@ -9,9 +9,9 @@ from verbecc.src.defs.types.conjugation.moods_conjugation import MoodsConjugatio
 from verbecc.src.defs.types.conjugation.complete_conjugation_data import (
     CompleteConjugationData,
 )
-from verbecc.src.utils.config_utils import ConfigUtils
+from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
 
-config = ConfigUtils.load_verbecc_config()
+config = VerbeccConfigUtil().load_config()
 
 
 class CompleteConjugation(AbstractConjugation):

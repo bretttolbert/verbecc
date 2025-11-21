@@ -10,11 +10,11 @@ from verbecc.src.defs.types.exceptions import InvalidMoodError
 from verbecc.src.defs.types.exceptions import InvalidTenseError
 from verbecc.src.defs.types.exceptions import TemplateNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.utils.config_utils import ConfigUtils
+from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
 from verbecc.src.defs.types.tense import Tenses
 from verbecc.src.defs.types.mood import Moods
 
-config = ConfigUtils.load_verbecc_config()
+config = VerbeccConfigUtil().load_config()
 
 
 @pytest.fixture(scope="module")

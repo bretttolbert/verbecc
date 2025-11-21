@@ -14,7 +14,7 @@ from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.inflectors.inflector_factory import InflectorFactory
-from verbecc.src.utils.log_utils import LogUtils
+from verbecc.src.utils.logging_utils import LoggingUtils
 
 
 class AbstractConjugator(ABC):
@@ -26,7 +26,7 @@ class AbstractConjugator(ABC):
         subclass_name: str,
     ) -> None:
         self._inflector = InflectorFactory.make_inflector(lang, lang_specific_options)
-        self._logger = LogUtils.get_logger(subclass_name)
+        self._logger = LoggingUtils.get_logger(subclass_name)
         super().__init__()
 
     def _get_conj_obs(self, infinitive: str) -> ConjugationObjects:

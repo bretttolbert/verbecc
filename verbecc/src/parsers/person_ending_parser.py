@@ -1,7 +1,7 @@
 from lxml import etree
 from typing import List, Optional
 
-from verbecc.src.utils.log_utils import LogUtils
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.number import Number
@@ -30,7 +30,7 @@ class PersonEndingParser(Parser):
     """
 
     def __init__(self) -> None:
-        self._logger = LogUtils.get_logger(self.__class__.__name__)
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
 
     def parse(
         self,

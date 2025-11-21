@@ -3,10 +3,10 @@ import json
 
 from verbecc.src.defs.types.config.verbecc_config import VerbeccConfig
 from verbecc.src.defs.types.config.json_opts import JSONOpts
-from verbecc.src.utils.config_utils import ConfigUtils
+from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
 from verbecc.src.utils.jsbeautifier_utils import JSBeautifier
 
-config = ConfigUtils.load_verbecc_config()
+config = VerbeccConfigUtil().load_config()
 
 
 class JSONUtils:

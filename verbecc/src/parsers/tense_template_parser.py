@@ -1,7 +1,7 @@
 from lxml import etree
 from typing import List, Optional
 
-from verbecc.src.utils.log_utils import LogUtils
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.constants.localization import xmood
 from verbecc.src.defs.types.data.person_ending import PersonEnding
@@ -37,7 +37,7 @@ class TenseTemplateParser(Parser):
     """
 
     def __init__(self, lang: Lang, mood: Mood) -> None:
-        self._logger = LogUtils.get_logger(self.__class__.__name__)
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
         self.lang = lang
         self.mood = mood
 

@@ -1,20 +1,20 @@
 from bisect import bisect_left
 from typing import Iterator, List
 
-from verbecc.src.utils.log_utils import LogUtils
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.exceptions import VerbNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.mlconjug.predictor import TemplatePredictor
 from verbecc.src.utils import string_utils
-from verbecc.src.utils.config_utils import ConfigUtils
+from verbecc.src.utils.config_util_verbecc import VerbeccConfigUtil
 
-config = ConfigUtils.load_verbecc_config()
+config = VerbeccConfigUtil().load_config()
 
 
 class Verbs:
     def __init__(self, lang: LangCodeISO639_1, verbs: List[Verb]) -> None:
-        self._logger = LogUtils.get_logger(self.__class__.__name__)
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
         self.lang = lang
         self._verbs = verbs
         self._verbs_no_accents = sorted(

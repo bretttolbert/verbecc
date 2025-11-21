@@ -4,11 +4,11 @@ import os
 import pickle
 from zipfile import ZipFile
 
-from verbecc.src.utils.log_utils import LogUtils
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.mlconjug.model import Model
 
-_logger = LogUtils.get_logger(__name__)
+_logger = LoggingUtils.get_logger(__name__)
 
 
 def get_model_zip_filename(lang: LangCodeISO639_1) -> str:
