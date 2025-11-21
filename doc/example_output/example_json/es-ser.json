@@ -1,0 +1,1485 @@
+{
+    "moods":
+    {
+        "condicional":
+        {
+            "perfecto": [
+            {
+                "c": ["yo habría sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú habrías sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos habrías sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él habría sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella habría sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted habría sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros habríamos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros habríais sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos habrían sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas habrían sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes habrían sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "presente": [
+            {
+                "c": ["yo sería"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú serías"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos serías"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él sería"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella sería"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted sería"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros seríamos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros seríais"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos serían"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas serían"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes serían"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }]
+        },
+        "gerundio":
+        {
+            "gerundio": [
+            {
+                "c": ["siendo"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            }]
+        },
+        "imperativo":
+        {
+            "afirmativo": [
+            {
+                "c": ["sé"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["sé"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["sea"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["sea"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["sea"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["seamos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["sed"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["sean"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["sean"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["sean"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "negativo": [
+            {
+                "c": ["no seas"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["no seas"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["no sea"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["no sea"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["no sea"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["no seamos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["no seáis"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["no sean"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["no sean"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["no sean"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }]
+        },
+        "indicativo":
+        {
+            "futuro": [
+            {
+                "c": ["yo seré"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú serás"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos serás"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él será"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella será"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted será"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros seremos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros seréis"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos serán"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas serán"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes serán"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "futuro-perfecto": [
+            {
+                "c": ["yo habré sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú habrás sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos habrás sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él habrá sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella habrá sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted habrá sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros habremos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros habréis sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos habrán sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas habrán sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes habrán sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "presente": [
+            {
+                "c": ["yo soy"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú eres"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos sos"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él es"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella es"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted es"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros somos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros sois"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos son"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas son"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes son"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-anterior": [
+            {
+                "c": ["yo hube sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú hubiste sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos hubiste sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él hubo sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella hubo sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted hubo sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros hubimos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros hubisteis sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos hubieron sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas hubieron sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes hubieron sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-imperfecto": [
+            {
+                "c": ["yo era"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú eras"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos eras"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él era"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella era"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted era"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros éramos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros erais"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos eran"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas eran"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes eran"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-perfecto-compuesto": [
+            {
+                "c": ["yo he sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú has sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos habés sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él ha sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella ha sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted ha sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros hemos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros habéis sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos han sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas han sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes han sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-perfecto-simple": [
+            {
+                "c": ["yo fui"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú fuiste"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos fuiste"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él fue"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella fue"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted fue"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros fuimos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros fuisteis"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos fueron"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas fueron"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes fueron"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-pluscuamperfecto": [
+            {
+                "c": ["yo había sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú habías sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos habías sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él había sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella había sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted había sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros habíamos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros habíais sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos habían sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas habían sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes habían sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }]
+        },
+        "infinitivo":
+        {
+            "infinitivo": [
+            {
+                "c": ["ser"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            }]
+        },
+        "participo":
+        {
+            "participo": [
+            {
+                "c": ["sido"]
+            }]
+        },
+        "subjuntivo":
+        {
+            "futuro": [
+            {
+                "c": ["yo fuere"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú fueres"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos fueres"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él fuere"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella fuere"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted fuere"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros fuéremos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros fuereis"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos fueren"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas fueren"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes fueren"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "futuro-perfecto": [
+            {
+                "c": ["yo hubiere sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú hubieres sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos hubieres sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él hubiere sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella hubiere sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted hubiere sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros hubiéremos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros hubiereis sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos hubieren sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas hubieren sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes hubieren sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "presente": [
+            {
+                "c": ["yo sea"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú seas"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos seas"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él sea"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella sea"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted sea"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros seamos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros seáis"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos sean"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas sean"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes sean"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-imperfecto-1": [
+            {
+                "c": ["yo fuera"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú fueras"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos fueras"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él fuera"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella fuera"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted fuera"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros fuéramos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros fuerais"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos fueran"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas fueran"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes fueran"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-imperfecto-2": [
+            {
+                "c": ["yo fuese"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú fueses"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos fueses"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él fuese"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella fuese"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted fuese"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros fuésemos"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros fueseis"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos fuesen"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas fuesen"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes fuesen"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-perfecto": [
+            {
+                "c": ["yo haya sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú hayas sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos hayas sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él haya sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella haya sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted haya sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros hayamos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros hayáis sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos hayan sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas hayan sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes hayan sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-pluscuamperfecto-1": [
+            {
+                "c": ["yo hubiera sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú hubieras sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos hubieras sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él hubiera sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella hubiera sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted hubiera sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros hubiéramos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros hubierais sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos hubieran sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas hubieran sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes hubieran sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }],
+            "pretérito-pluscuamperfecto-2": [
+            {
+                "c": ["yo hubiese sido"],
+                "n": "s",
+                "p": "1",
+                "pr": "yo"
+            },
+            {
+                "c": ["tú hubieses sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "tú"
+            },
+            {
+                "c": ["vos hubieses sido"],
+                "n": "s",
+                "p": "2",
+                "pr": "vos"
+            },
+            {
+                "c": ["él hubiese sido"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "él"
+            },
+            {
+                "c": ["ella hubiese sido"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["usted hubiese sido"],
+                "n": "s",
+                "p": "3",
+                "pr": "usted"
+            },
+            {
+                "c": ["nosotros hubiésemos sido"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosotros"
+            },
+            {
+                "c": ["vosotros hubieseis sido"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosotros"
+            },
+            {
+                "c": ["ellos hubiesen sido"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ellos"
+            },
+            {
+                "c": ["ellas hubiesen sido"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ellas"
+            },
+            {
+                "c": ["ustedes hubiesen sido"],
+                "n": "p",
+                "p": "3",
+                "pr": "ustedes"
+            }]
+        }
+    },
+    "verb":
+    {
+        "infinitive": "ser",
+        "lang": "es",
+        "predicted": false,
+        "stem": "",
+        "template": ":ser",
+        "translation_en": ""
+    }
+}

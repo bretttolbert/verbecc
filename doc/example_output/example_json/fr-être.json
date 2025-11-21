@@ -1,0 +1,910 @@
+{
+    "moods":
+    {
+        "conditionnel":
+        {
+            "passé": [
+            {
+                "c": ["j'aurais été"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu aurais été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il aurait été"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle aurait été"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on aurait été"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous aurions été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous auriez été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils auraient été"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles auraient été"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "présent": [
+            {
+                "c": ["je serais"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu serais"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il serait"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle serait"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on serait"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous serions"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous seriez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils seraient"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles seraient"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        },
+        "imperatif":
+        {
+            "imperatif-passé": [
+            {
+                "c": ["aie été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ayons été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["ayez été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            }],
+            "imperatif-présent": [
+            {
+                "c": ["sois"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["soyons"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["soyez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            }]
+        },
+        "indicatif":
+        {
+            "futur-antérieur": [
+            {
+                "c": ["j'aurai été"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu auras été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il aura été"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle aura été"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on aura été"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous aurons été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous aurez été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils auront été"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles auront été"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "futur-simple": [
+            {
+                "c": ["je serai"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu seras"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il sera"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle sera"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on sera"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous serons"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous serez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils seront"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles seront"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "imparfait": [
+            {
+                "c": ["j'étais"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu étais"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il était"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle était"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on était"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous étions"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous étiez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils étaient"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles étaient"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé-antérieur": [
+            {
+                "c": ["j'eus été"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu eus été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il eut été"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle eut été"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on eut été"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous eûmes été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous eûtes été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils eurent été"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles eurent été"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé-composé": [
+            {
+                "c": ["j'ai été"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu as été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il a été"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle a été"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on a été"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous avons été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous avez été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils ont été"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles ont été"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé-simple": [
+            {
+                "c": ["je fus"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu fus"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il fut"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle fut"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on fut"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous fûmes"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous fûtes"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils furent"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles furent"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "plus-que-parfait": [
+            {
+                "c": ["j'avais été"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu avais été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il avait été"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle avait été"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on avait été"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous avions été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous aviez été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils avaient été"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles avaient été"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "présent": [
+            {
+                "c": ["je suis"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["tu es"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["il est"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["elle est"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["on est"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["nous sommes"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["vous êtes"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["ils sont"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["elles sont"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        },
+        "infinitif":
+        {
+            "infinitif-présent": [
+            {
+                "c": ["être"]
+            }]
+        },
+        "participe":
+        {
+            "participe-passé": [
+            {
+                "c": ["été"],
+                "g": "m",
+                "n": "s"
+            }],
+            "participe-présent": [
+            {
+                "c": ["étant"]
+            }]
+        },
+        "subjonctif":
+        {
+            "imparfait": [
+            {
+                "c": ["que je fusse"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu fusses"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il fût"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle fût"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on fût"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous fussions"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous fussiez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils fussent"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles fussent"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passé": [
+            {
+                "c": ["que j'aie été"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu aies été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il ait été"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle ait été"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on ait été"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous ayons été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous ayez été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils aient été"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles aient été"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "plus-que-parfait": [
+            {
+                "c": ["que j'eusse été"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu eusses été"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il eût été"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle eût été"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on eût été"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous eussions été"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous eussiez été"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils eussent été"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles eussent été"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "présent": [
+            {
+                "c": ["que je sois"],
+                "n": "s",
+                "p": "1",
+                "pr": "je"
+            },
+            {
+                "c": ["que tu sois"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["qu'il soit"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "il"
+            },
+            {
+                "c": ["qu'elle soit"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "elle"
+            },
+            {
+                "c": ["qu'on soit"],
+                "n": "s",
+                "p": "3",
+                "pr": "on"
+            },
+            {
+                "c": ["que nous soyons"],
+                "n": "p",
+                "p": "1",
+                "pr": "nous"
+            },
+            {
+                "c": ["que vous soyez"],
+                "n": "p",
+                "p": "2",
+                "pr": "vous"
+            },
+            {
+                "c": ["qu'ils soient"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ils"
+            },
+            {
+                "c": ["qu'elles soient"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        }
+    },
+    "verb":
+    {
+        "infinitive": "être",
+        "lang": "fr",
+        "predicted": false,
+        "stem": "",
+        "template": ":être",
+        "translation_en": "be"
+    }
+}

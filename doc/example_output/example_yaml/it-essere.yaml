@@ -1,0 +1,915 @@
+moods:
+  condizionale:
+    passato:
+    - c:
+      - io sarei stata
+      g: f
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - io sarei stato
+      g: m
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu saresti stata
+      g: f
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - tu saresti stato
+      g: m
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui sarebbe stato
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei sarebbe stata
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi saremmo state
+      g: f
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - noi saremmo stati
+      g: m
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi sareste state
+      g: f
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - voi sareste stati
+      g: m
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro sarebbero state
+      g: f
+      n: p
+      p: 3
+      pr: loro
+    - c:
+      - loro sarebbero stati
+      g: m
+      n: p
+      p: 3
+      pr: loro
+    presente:
+    - c:
+      - io sarei
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu saresti
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui sarebbe
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei sarebbe
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi saremmo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi sareste
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro sarebbero
+      n: p
+      p: 3
+      pr: loro
+  congiuntivo:
+    imperfetto:
+    - c:
+      - che io fossi
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - che tu fossi
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - che lui fosse
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - che lei fosse
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - che noi fossimo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - che voi foste
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - che loro fossero
+      n: p
+      p: 3
+      pr: loro
+    passato:
+    - c:
+      - che io sia stata
+      g: f
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - che io sia stato
+      g: m
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - che tu sia stata
+      g: f
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - che tu sia stato
+      g: m
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - che lui sia stato
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - che lei sia stata
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - che noi siamo state
+      g: f
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - che noi siamo stati
+      g: m
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - che voi siate state
+      g: f
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - che voi siate stati
+      g: m
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - che loro siano state
+      g: f
+      n: p
+      p: 3
+      pr: loro
+    - c:
+      - che loro siano stati
+      g: m
+      n: p
+      p: 3
+      pr: loro
+    presente:
+    - c:
+      - che io sia
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - che tu sia
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - che lui sia
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - che lei sia
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - che noi siamo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - che voi siate
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - che loro siano
+      n: p
+      p: 3
+      pr: loro
+    trapassato:
+    - c:
+      - che io fossi stata
+      g: f
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - che io fossi stato
+      g: m
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - che tu fossi stata
+      g: f
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - che tu fossi stato
+      g: m
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - che lui fosse stato
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - che lei fosse stata
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - che noi fossimo state
+      g: f
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - che noi fossimo stati
+      g: m
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - che voi foste state
+      g: f
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - che voi foste stati
+      g: m
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - che loro fossero state
+      g: f
+      n: p
+      p: 3
+      pr: loro
+    - c:
+      - che loro fossero stati
+      g: m
+      n: p
+      p: 3
+      pr: loro
+  imperativo:
+    affermativo:
+    - c:
+      - '-'
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - sii
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - sia
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - sia
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - siamo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - siate
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - siano
+      n: p
+      p: 3
+      pr: loro
+    negativo:
+    - c:
+      - '-'
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - essere
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - sia
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - sia
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - siamo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - siate
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - siano
+      n: p
+      p: 3
+      pr: loro
+  indicativo:
+    futuro:
+    - c:
+      - io sarò
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu sarai
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui sarà
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei sarà
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi saremo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi sarete
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro saranno
+      n: p
+      p: 3
+      pr: loro
+    futuro-anteriore:
+    - c:
+      - io sarò stata
+      g: f
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - io sarò stato
+      g: m
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu sarai stata
+      g: f
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - tu sarai stato
+      g: m
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui sarà stato
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei sarà stata
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi saremo state
+      g: f
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - noi saremo stati
+      g: m
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi sarete state
+      g: f
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - voi sarete stati
+      g: m
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro saranno state
+      g: f
+      n: p
+      p: 3
+      pr: loro
+    - c:
+      - loro saranno stati
+      g: m
+      n: p
+      p: 3
+      pr: loro
+    imperfetto:
+    - c:
+      - io ero
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu eri
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui era
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei era
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi eravamo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi eravate
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro erano
+      n: p
+      p: 3
+      pr: loro
+    passato-prossimo:
+    - c:
+      - io sono stata
+      g: f
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - io sono stato
+      g: m
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu sei stata
+      g: f
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - tu sei stato
+      g: m
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui è stato
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei è stata
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi siamo state
+      g: f
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - noi siamo stati
+      g: m
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi siete state
+      g: f
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - voi siete stati
+      g: m
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro sono state
+      g: f
+      n: p
+      p: 3
+      pr: loro
+    - c:
+      - loro sono stati
+      g: m
+      n: p
+      p: 3
+      pr: loro
+    passato-remoto:
+    - c:
+      - io fui
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu fosti
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui fu
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei fu
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi fummo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi foste
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro furono
+      n: p
+      p: 3
+      pr: loro
+    presente:
+    - c:
+      - io sono
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu sei
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui è
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei è
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi siamo
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi siete
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro sono
+      n: p
+      p: 3
+      pr: loro
+    trapassato-prossimo:
+    - c:
+      - io ero stata
+      g: f
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - io ero stato
+      g: m
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu eri stata
+      g: f
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - tu eri stato
+      g: m
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui era stato
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei era stata
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi eravamo state
+      g: f
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - noi eravamo stati
+      g: m
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi eravate state
+      g: f
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - voi eravate stati
+      g: m
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro erano state
+      g: f
+      n: p
+      p: 3
+      pr: loro
+    - c:
+      - loro erano stati
+      g: m
+      n: p
+      p: 3
+      pr: loro
+    trapassato-remoto:
+    - c:
+      - io fui stata
+      g: f
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - io fui stato
+      g: m
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - tu fosti stata
+      g: f
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - tu fosti stato
+      g: m
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - lui fu stato
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - lei fu stata
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - noi fummo state
+      g: f
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - noi fummo stati
+      g: m
+      n: p
+      p: 1
+      pr: noi
+    - c:
+      - voi foste state
+      g: f
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - voi foste stati
+      g: m
+      n: p
+      p: 2
+      pr: voi
+    - c:
+      - loro furono state
+      g: f
+      n: p
+      p: 3
+      pr: loro
+    - c:
+      - loro furono stati
+      g: m
+      n: p
+      p: 3
+      pr: loro
+  infinito:
+    gerundio:
+    - c:
+      - essere
+      n: s
+      p: 1
+      pr: io
+    - c:
+      - stato
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - essendo
+      g: m
+      n: s
+      p: 3
+      pr: lui
+    - c:
+      - essendo
+      g: f
+      n: s
+      p: 3
+      pr: lei
+    - c:
+      - stato
+      n: p
+      p: 1
+      pr: noi
+  participio:
+    participio-passato:
+    - c:
+      - stato
+      g: m
+      n: s
+    - c:
+      - stata
+      g: f
+      n: s
+    - c:
+      - stati
+      g: m
+      n: p
+    - c:
+      - state
+      g: f
+      n: p
+    participio-presente:
+    - c:
+      - ente
+verb:
+  infinitive: essere
+  lang: it
+  predicted: false
+  stem: ''
+  template: :essere
+  translation_en: ''

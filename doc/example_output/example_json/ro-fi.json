@@ -1,0 +1,773 @@
+{
+    "moods":
+    {
+        "conjunctiv":
+        {
+            "perfect": [
+            {
+                "c": ["eu să fi fost"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu să fi fost"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el să fi fost"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea să fi fost"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi să fi fost"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi să fi fost"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei să fi fost"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele să fi fost"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "prezent": [
+            {
+                "c": ["eu să fiu"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu să fii"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el să fie"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea să fie"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi să fim"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi să fiţi"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei să fie"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele să fie"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }]
+        },
+        "gerunziu":
+        {
+            "gerunziu": [
+            {
+                "c": ["fiind"]
+            }]
+        },
+        "imperativ":
+        {
+            "imperativ": [
+            {
+                "c": ["fii"],
+                "pr": "eu"
+            },
+            {
+                "c": ["fii"],
+                "pr": "tu"
+            },
+            {
+                "c": ["fii"],
+                "g": "m",
+                "pr": "el"
+            },
+            {
+                "c": ["fii"],
+                "g": "f",
+                "pr": "ea"
+            },
+            {
+                "c": ["fii"],
+                "pr": "noi"
+            },
+            {
+                "c": ["fii"],
+                "pr": "voi"
+            },
+            {
+                "c": ["fii"],
+                "g": "m",
+                "pr": "ei"
+            },
+            {
+                "c": ["fii"],
+                "g": "f",
+                "pr": "ele"
+            },
+            {
+                "c": ["fiţi"],
+                "pr": "eu"
+            },
+            {
+                "c": ["fiţi"],
+                "pr": "tu"
+            },
+            {
+                "c": ["fiţi"],
+                "g": "m",
+                "pr": "el"
+            },
+            {
+                "c": ["fiţi"],
+                "g": "f",
+                "pr": "ea"
+            },
+            {
+                "c": ["fiţi"],
+                "pr": "noi"
+            },
+            {
+                "c": ["fiţi"],
+                "pr": "voi"
+            },
+            {
+                "c": ["fiţi"],
+                "g": "m",
+                "pr": "ei"
+            },
+            {
+                "c": ["fiţi"],
+                "g": "f",
+                "pr": "ele"
+            }],
+            "negativ": [
+            {
+                "c": ["nu fi"],
+                "pr": "eu"
+            },
+            {
+                "c": ["nu fi"],
+                "pr": "tu"
+            },
+            {
+                "c": ["nu fi"],
+                "g": "m",
+                "pr": "el"
+            },
+            {
+                "c": ["nu fi"],
+                "g": "f",
+                "pr": "ea"
+            },
+            {
+                "c": ["nu fi"],
+                "pr": "noi"
+            },
+            {
+                "c": ["nu fi"],
+                "pr": "voi"
+            },
+            {
+                "c": ["nu fi"],
+                "g": "m",
+                "pr": "ei"
+            },
+            {
+                "c": ["nu fi"],
+                "g": "f",
+                "pr": "ele"
+            },
+            {
+                "c": ["nu fiţi"],
+                "pr": "eu"
+            },
+            {
+                "c": ["nu fiţi"],
+                "pr": "tu"
+            },
+            {
+                "c": ["nu fiţi"],
+                "g": "m",
+                "pr": "el"
+            },
+            {
+                "c": ["nu fiţi"],
+                "g": "f",
+                "pr": "ea"
+            },
+            {
+                "c": ["nu fiţi"],
+                "pr": "noi"
+            },
+            {
+                "c": ["nu fiţi"],
+                "pr": "voi"
+            },
+            {
+                "c": ["nu fiţi"],
+                "g": "m",
+                "pr": "ei"
+            },
+            {
+                "c": ["nu fiţi"],
+                "g": "f",
+                "pr": "ele"
+            }]
+        },
+        "indicativ":
+        {
+            "imperfect": [
+            {
+                "c": ["eu eram"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu erai"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el era"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea era"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi eram"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi eraţi"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei erau"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele erau"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "mai-mult-ca-perfect": [
+            {
+                "c": ["eu fusesem"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu fuseseși"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el fusese"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea fusese"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi fuseserăm"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi fuseserăţi"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei fuseseră"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele fuseseră"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "perfect-compus": [
+            {
+                "c": ["eu am fost"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu ai fost"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el a fost"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea a fost"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi am fost"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi aţi fost"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei au fost"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele au fost"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "perfect-simplu": [
+            {
+                "c": ["eu fui"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu fuși"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el fu"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea fu"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi furăm"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi furăţi"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei fură"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele fură"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "prezent": [
+            {
+                "c": ["eu sunt"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu ești"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el e"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea e"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi suntem"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi sunteţi"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei sunt"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele sunt"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "viitor-1": [
+            {
+                "c": ["eu voi fi"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu vei fi"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el va fi"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea va fi"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi vom fi"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi veţi fi"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei vor fi"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele vor fi"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "viitor-1-popular": [
+            {
+                "c": ["eu o să fiu"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu o să fii"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el o să fie"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea o să fie"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi o să fim"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi o să fiţi"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei o să fie"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele o să fie"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "viitor-2": [
+            {
+                "c": ["eu voi fi fost"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu vei fi fost"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el va fi fost"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea va fi fost"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi vom fi fost"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi veţi fi fost"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei vor fi fost"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele vor fi fost"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }],
+            "viitor-2-popular": [
+            {
+                "c": ["eu am să fi fost"],
+                "n": "s",
+                "p": "1",
+                "pr": "eu"
+            },
+            {
+                "c": ["tu ai să fi fost"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["el are să fi fost"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "el"
+            },
+            {
+                "c": ["ea are să fi fost"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ea"
+            },
+            {
+                "c": ["noi avem să fi fost"],
+                "n": "p",
+                "p": "1",
+                "pr": "noi"
+            },
+            {
+                "c": ["voi aveţi să fi fost"],
+                "n": "p",
+                "p": "2",
+                "pr": "voi"
+            },
+            {
+                "c": ["ei au să fi fost"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ei"
+            },
+            {
+                "c": ["ele au să fi fost"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "ele"
+            }]
+        },
+        "infinitiv":
+        {
+            "afirmativ": [
+            {
+                "c": ["fi"]
+            }]
+        },
+        "participiu":
+        {
+            "participiu": [
+            {
+                "c": ["fost"]
+            }]
+        }
+    },
+    "verb":
+    {
+        "infinitive": "fi",
+        "lang": "ro",
+        "predicted": false,
+        "stem": "",
+        "template": ":fi",
+        "translation_en": ""
+    }
+}
