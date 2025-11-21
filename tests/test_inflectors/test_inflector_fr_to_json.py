@@ -407,7 +407,6 @@ expected_value_conj_manger = {
     "verb": {
         "infinitive": "manger",
         "lang": "fr",
-        "pred_score": 1.0,
         "predicted": False,
         "stem": "man",
         "template": "man:ger",
@@ -679,7 +678,6 @@ expected_value_conj_pouvoir = {
     "verb": {
         "infinitive": "pouvoir",
         "lang": "fr",
-        "pred_score": 1.0,
         "predicted": False,
         "stem": "p",
         "template": "p:ouvoir",
@@ -875,7 +873,6 @@ expected_value_conj_pleuvoir = {
     "verb": {
         "infinitive": "pleuvoir",
         "lang": "fr",
-        "pred_score": 1.0,
         "predicted": False,
         "stem": "pl",
         "template": "pl:euvoir",
@@ -1551,7 +1548,6 @@ expected_value_conj_se_lever = {
     "verb": {
         "infinitive": "lever",
         "lang": "fr",
-        "pred_score": 1.0,
         "predicted": False,
         "stem": "l",
         "template": "l:ever",
@@ -1578,27 +1574,27 @@ by clicking on it in VSCode. You can't do that with parametrize.
 """
 
 
-def run_test_conjugate(ccg, infinitive, expected_value):
+def run_test_conjugate_to_json_(ccg, infinitive, expected_value):
     cc = ccg.conjugate(infinitive)
     conj_json = cc.to_json(beautify=False)
     assert_json_str_equal(conj_json, json.dumps(expected_value))
 
 
-def test_conjugate_manger(ccg):
-    run_test_conjugate(ccg, "manger", expected_value_conj_manger)
+def test_conjugate_to_json_manger(ccg):
+    run_test_conjugate_to_json_(ccg, "manger", expected_value_conj_manger)
 
 
-def test_conjugate_pouvoir(ccg):
-    run_test_conjugate(ccg, "pouvoir", expected_value_conj_pouvoir)
+def test_conjugate_to_json_pouvoir(ccg):
+    run_test_conjugate_to_json_(ccg, "pouvoir", expected_value_conj_pouvoir)
 
 
-def test_conjugate_Pouvoir(ccg):
-    run_test_conjugate(ccg, "Pouvoir", expected_value_conj_pouvoir)
+def test_conjugate_to_json_Pouvoir(ccg):
+    run_test_conjugate_to_json_(ccg, "Pouvoir", expected_value_conj_pouvoir)
 
 
-def test_conjugate_pleuvoir(ccg):
-    run_test_conjugate(ccg, "pleuvoir", expected_value_conj_pleuvoir)
+def test_conjugate_to_json_pleuvoir(ccg):
+    run_test_conjugate_to_json_(ccg, "pleuvoir", expected_value_conj_pleuvoir)
 
 
-def test_conjugate_Se_lever(ccg):
-    run_test_conjugate(ccg, "Se lever", expected_value_conj_se_lever)
+def test_conjugate_to_json_Se_lever(ccg):
+    run_test_conjugate_to_json_(ccg, "Se lever", expected_value_conj_se_lever)

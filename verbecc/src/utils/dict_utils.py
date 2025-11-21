@@ -1,4 +1,4 @@
-from typing import Dict, List, Any
+from typing import cast, Dict, List, Any, Type
 
 
 class DictUtils:
@@ -51,5 +51,23 @@ class DictUtils:
             return new_data
         elif isinstance(data, list):
             return [DictUtils.unmarshall_keys_recursive(v) for v in data]
+        else:
+            return data
+
+    @staticmethod
+    def cast_values_recursive(data: object, key: str, type: Type) -> object:
+        """
+        Recursively casts values to the given type for all items with matching keys
+        """
+        if isinstance(data, dict):
+            new_data = {}
+            for k, v in data.items():
+                if k == key:
+                    new_data[k] = type(v)
+                else:
+                    new_data[k] = DictUtils.cast_values_recursive(v, key, type)
+            return new_data
+        elif isinstance(data, list):
+            return [DictUtils.cast_values_recursive(v, key, type) for v in data]
         else:
             return data

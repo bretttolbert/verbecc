@@ -214,7 +214,6 @@ expected_value_conj_ser = {
     "verb": {
         "infinitive": "ser",
         "lang": "ca",
-        "pred_score": 1.0,
         "predicted": False,
         "stem": "",
         "template": "és:ser",
@@ -335,7 +334,6 @@ expected_value_conj_ser_nopronouns = {
     "verb": {
         "infinitive": "ser",
         "lang": "ca",
-        "pred_score": 1.0,
         "predicted": False,
         "stem": "",
         "template": "és:ser",

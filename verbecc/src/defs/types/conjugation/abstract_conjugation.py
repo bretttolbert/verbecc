@@ -2,12 +2,16 @@ from dataclasses import fields
 from typing import cast, Optional
 from abc import ABC, abstractmethod
 import json
+import yaml
 
+from verbecc.src.utils.dict_utils import DictUtils
 from verbecc.src.defs.types.config.verbecc_config import VerbeccConfig
 from verbecc.src.defs.types.config.json_opts import JSONOpts
 from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
 from verbecc.src.utils.jsbeautifier_utils import JSBeautifier
 from verbecc.src.utils.json_utils import JSONUtils
+from verbecc.src.utils.yaml_utils import YAMLUtils
+from verbecc.src.defs.types.conjugation.conjugation_data import ConjugationKeyPerson
 
 config = VerbeccConfigUtil().load_config()
 
@@ -45,10 +49,36 @@ class AbstractConjugation(ABC):
         :param beautify: Whether to pretty-format the JSON output using jsbeautifier. Overrides config.JSBEAUTIFIER_ENABLE.
         :return: JSON string
         """
-        return JSONUtils.to_json(self.get_data(), indent=indent, beautify=beautify)
+        data = self.get_data()
+        return JSONUtils.to_json(data, indent=indent, beautify=beautify)
 
     def __str__(self) -> str:
         return self.to_json()
+
+    def to_yaml(self) -> str:
+        """
+        The data of this object as a YAML string.
+        """
+        # convert it to JSON and back to convert Python types (Gender, etc.) to strings.
+        # TODO: Figure out how to do this with custom yaml.Dumper
+        data = json.loads(self.to_json())
+
+        # Cast Person from string to int, for cleaner representation in yaml
+        # (keeping it as a string in JSON, since it looks more consistent since JSON has quotes
+        # around all the string values, unlike YAML)
+        # TODO: Figure out how to do this with custom yaml.Dumper
+
+        data = DictUtils.cast_values_recursive(data, ConjugationKeyPerson, int)
+
+        # TODO: If possiuble, figure out how to prevent YAML from putting quotes around the
+        # French pronoun "on" ("on" is considered an "ambiguous value" in YAML, by default)
+        #
+        # > ambiguous values: Adhere to the YAML 1.2 specification by avoiding unquoted values
+        #   that can be interpreted as other types (like certain boolean forms,
+        #   e.g., yes, no, on, off from older YAML 1.1 specs).
+        #   Sticking to lowercase true and false for booleans can also help.
+
+        return YAMLUtils.to_yaml(data)
 
     @abstractmethod
     def get_str_id(self) -> str:
