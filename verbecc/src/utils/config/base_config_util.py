@@ -30,11 +30,14 @@ class BaseConfigUtil(Generic[T]):
             except TypeError as ex1:
                 # python <=3.9 hack
                 try:
-                    self._yaml_resource_path = (
-                        Path(__file__).parent.parent.parent
-                        / "config"
-                        / self.yaml_filename
-                    )
+                    dir_path = Path(__file__).parent.parent.parent
+                    self._yaml_resource_path = dir_path / "config" / self.yaml_filename
+                    while self._yaml_resource_path is None or not Path.exists(
+                        self._yaml_resource_path
+                    ):
+                        self._yaml_resource_path = (
+                            dir_path.parent / "config" / self.yaml_filename
+                        )
 
                 except Exception as ex2:
                     msg = (
