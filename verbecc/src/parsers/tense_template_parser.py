@@ -1,13 +1,14 @@
 from lxml import etree
-from typing import List
+from typing import List, Optional
 
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.defs.constants import grammar_defines
 from verbecc.src.defs.constants.localization import xmood
 from verbecc.src.defs.types.data.person_ending import PersonEnding
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Mood
-from verbecc.src.defs.types.tense import TenseFactory
+from verbecc.src.defs.types.mood import Mood, Moods
+from verbecc.src.defs.types.tense import Tense, TenseFactory
 from verbecc.src.parsers.parser import Parser
 from verbecc.src.parsers.person_ending_parser import PersonEndingParser
 
@@ -36,11 +37,11 @@ class TenseTemplateParser(Parser):
     """
 
     def __init__(self, lang: Lang, mood: Mood) -> None:
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
         self.lang = lang
         self.mood = mood
 
-    def parse(self, elem: etree._Element) -> TenseTemplate:
-        self.tense = TenseFactory.from_string(self.lang, elem.tag)
+    def parse(self, elem: Optional[etree._Element] = None) -> TenseTemplate:
         """
         Normally each <p> elem defines six grammatical persons:
             (see grammar_defines.PERSONS)
@@ -86,14 +87,53 @@ class TenseTemplateParser(Parser):
 
         Spanish imperative tenses have 5, i.e. all except 1st person singular
 
+        French infinitive-present has only 1 <p> element
+        E.g. <p><i>avoir</i></p>
+
         """
+        if elem is None:
+            raise ValueError("elem must not be None")
+        self.tense = TenseFactory.from_string(self.lang, elem.tag)
         person_endings: List[PersonEnding] = []
         person_num = 0
-        for p_elem in elem.findall("p", namespaces=None):
-            person = grammar_defines.PERSONS[person_num]
-            if self.mood == xmood(self.lang, Mood.en.Imperative):
-                person = grammar_defines.IMPERATIVE_PERSONS[self.lang][person_num]
-            pe = PersonEndingParser().parse(p_elem, person)
+        participle_inflections = grammar_defines.PARTICIPLE_INFLECTIONS[self.lang]
+        imperative_persons = grammar_defines.IMPERATIVE_PERSONS[self.lang]
+        p_elems = elem.findall("p", namespaces=None)
+        for p_elem in p_elems:
+            gender = None
+            person = None
+            number = None
+
+            if len(p_elems) == 1:
+                # only 1 <p> element
+                # so it's likely a tense with a single conjugation e.g.
+                # French present participle or infinitive present
+                # e.g., for the French verb "avoir" the present participle is simply
+                # ["ayant"], a single conjugation with no gender, number or person
+                pass  # leave gender, number, person as None
+            elif self.mood == xmood(self.lang, Moods.en.Participle):
+                if len(p_elems) == len(participle_inflections):
+                    gender, number = participle_inflections[person_num].value
+                else:
+                    self._logger.warning(
+                        f"Unexpected number of participle inflections {len(p_elems)} "
+                        + f"on tense template for language {self.lang}: "
+                        + f"{[etree.tostring(p) for p in p_elems]}"
+                    )
+            elif self.mood == xmood(self.lang, Moods.en.Imperative):
+                if len(p_elems) == len(imperative_persons):
+                    person, number = imperative_persons[person_num]
+                else:
+                    self._logger.warning(
+                        f"Unexpected number of imperative person inflections {len(p_elems)} "
+                        + f"on tense template for language {self.lang}: "
+                        + f"{[etree.tostring(p) for p in p_elems]}"
+                    )
+            else:
+                # normal case: all persons
+                person, number = grammar_defines.PERSONS[person_num]
+
+            pe = PersonEndingParser().parse(p_elem, person, number, gender)
             person_num += 1
             if len(pe.endings) > 0:
                 person_endings.append(pe)

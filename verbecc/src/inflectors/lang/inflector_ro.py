@@ -1,35 +1,50 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.mood import MoodRo as Mood
-from verbecc.src.defs.types.tense import TenseRo as Tense
+from verbecc.src.defs.types.mood import Mood, Moods
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
 from verbecc.src.inflectors.inflector import Inflector
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 class InflectorRo(Inflector):
-    def __init__(self) -> None:
+    def __init__(
+        self, lang_specific_options: Optional[LangSpecificOptions] = None
+    ) -> None:
         super(InflectorRo, self).__init__()
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.ro
 
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
+        """
+        :param s: a conjugation, perhaps with a pronoun e.g. "eu fac"
+        :tense s: the verb tense
+            New behavior: If this is a compound conjugation, tense is the tense
+            of the primary verb, not the auxiliary.
+
+        Note: Updated to handle Viitor1popular but may revisit this change.
+        (with compound tense Viitor1popular the aux tense is Prezent)
+
+        In the case of Viitor1popular, this function inserts "să" and then
+        insert_compound_aux_verb_prefix_if_applicable replaced it with " o să "
+        """
         tokens = s.split(" ")
-        if tense == Tense.Prezent:
+        if tense == Tenses.ro.Prezent or tense == Tenses.ro.Viitor1Popular:
             tokens.insert(1, "să")
-        elif tense == Tense.Perfect:
+        elif tense == Tenses.ro.Perfect:
             tokens.insert(1, "să fi")
         return " ".join(tokens)
 
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
-        if mood == Mood.Imperativ and tense == Tense.Negativ:
+        if mood == Moods.ro.Imperativ and tense == Tenses.ro.Negativ:
             return "nu " + s
         return s
 
@@ -37,96 +52,136 @@ class InflectorRo(Inflector):
     preceded by the reflexive pronouns “se” (in the accusative) and “și” (in the dative).
     """
 
-    def get_default_pronoun(
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun in (Pronouns.ro.ea, Pronouns.ro.ele):
+            return Gender.f
+        elif pronoun in (Pronouns.ro.el, Pronouns.ro.ei):
+            return Gender.m
+        return None
+
+    def get_pronouns(
         self,
-        person: Person,
-        gender: Gender = Gender.m,
-        is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
-    ) -> str:
-        ret = ""
-        if person == Person.FirstPersonSingular:
-            ret = "eu"
-            if is_reflexive:
-                ret += " mă"
-        elif person == Person.SecondPersonSingular:
-            ret = "tu"
-            if is_reflexive:
-                ret += " te"
-        elif person == Person.ThirdPersonSingular:
-            ret = "el"
-            if gender == Gender.f:
-                ret = "ea"
-            if is_reflexive:
-                ret += " se"
-        elif person == Person.FirstPersonPlural:
-            ret = "noi"
-            if is_reflexive:
-                ret += " ne"
-        elif person == Person.SecondPersonPlural:
-            ret = "voi"
-            if is_reflexive:
-                ret += " vă"
-        elif person == Person.ThirdPersonPlural:
-            ret = "ei"
-            if gender == Gender.f:
-                ret = "ele"
-            if is_reflexive:
-                ret += " se"
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
+    ) -> List[Pronoun]:
+        ret = []
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Singular
+        ):
+            p = Pronouns.ro.eu
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Singular
+        ):
+            p = Pronouns.ro.tu
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = [Pronouns.ro.el, Pronouns.ro.ea]
+            if gender is not None:
+                if gender is Gender.m:
+                    pronouns = [Pronouns.ro.el]
+                else:
+                    pronouns = [Pronouns.ro.ea]
+            ret.extend(pronouns)
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Plural
+        ):
+            p = Pronouns.ro.noi
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Plural
+        ):
+            p = Pronouns.ro.voi
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Plural
+        ):
+            pronouns = [Pronouns.ro.ei, Pronouns.ro.ele]
+            if gender is not None:
+                if gender is Gender.m:
+                    pronouns = [Pronouns.ro.ei]
+                else:
+                    pronouns = [Pronouns.ro.ele]
+            ret.extend(pronouns)
         return ret
+
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.ro.eu:
+            return pronoun + " mă"
+        elif pronoun == Pronouns.ro.tu:
+            return pronoun + " te"
+        elif pronoun == Pronouns.ro.voi:
+            return pronoun + " vă"
+        elif pronoun == Pronouns.ro.noi:
+            return pronoun + " ne"
+        else:
+            return pronoun + " se"
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tense.Participiu,
-            Tense.Afirmativ,
-            Tense.Imperativ,
-            Tense.Negativ,
-            Tense.Gerunziu,
+            Tenses.ro.Participiu,
+            Tenses.ro.Afirmativ,
+            Tenses.ro.Imperativ,
+            Tenses.ro.Negativ,
+            Tenses.ro.Gerunziu,
         ]
 
     def get_auxiliary_verb(
         self, co: ConjugationObjects, mood: Mood, tense: Tense
     ) -> str:
-        if tense in (Tense.Viitor1, Tense.Viitor2):
+        if tense in (Tenses.ro.Viitor1, Tenses.ro.Viitor2):
             return "voi"
-        elif tense == Tense.Viitor1Popular:
+        elif tense == Tenses.ro.Viitor1Popular:
             return co.verb.infinitive
         return "avea"
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitiv
+        return Moods.ro.Infinitiv
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicativ
+        return Moods.ro.Indicativ
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Conjunctiv
+        return Moods.ro.Conjunctiv
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Condițional
+        return Moods.ro.Condițional
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participiu
+        return Moods.ro.Participiu
 
     def get_participle_tense(self) -> Tense:
-        return Tense.Participiu
+        return Tenses.ro.Participiu
 
     def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
-        # TODO: those last three don't actually use an auxiliary verb, refactor to make aux verb optional
+        """
+        TODO: those last three don't actually use an auxiliary verb,
+        refactor to make aux verb optional
+
+        The Romanian conjunctive perfect tense is formed by using the particle "să"
+        followed by the auxiliary verb "fi" and the past participle of the main verb.
+
+        See Inflector.compound_has_no_aux_verb()
+        """
         return {
-            Mood.Indicativ: {
-                Tense.PerfectCompus: (Mood.Indicativ, Tense.Prezent),
-                Tense.Viitor1: (Mood.Indicativ, Tense.Prezent),
-                Tense.Viitor2: (Mood.Indicativ, Tense.Prezent),
-                Tense.Viitor1Popular: (Mood.Conjunctiv, Tense.Prezent),
-                Tense.Viitor2Popular: (Mood.Indicativ, Tense.Prezent),
+            Moods.ro.Indicativ: {
+                Tenses.ro.PerfectCompus: (Moods.ro.Indicativ, Tenses.ro.Prezent),
+                Tenses.ro.Viitor1: (Moods.ro.Indicativ, Tenses.ro.Prezent),
+                Tenses.ro.Viitor2: (Moods.ro.Indicativ, Tenses.ro.Prezent),
+                Tenses.ro.Viitor1Popular: (Moods.ro.Conjunctiv, Tenses.ro.Prezent),
+                Tenses.ro.Viitor2Popular: (Moods.ro.Indicativ, Tenses.ro.Prezent),
             },
-            Mood.Conjunctiv: {Tense.Perfect: (Mood.Indicativ, Tense.Prezent)},
-            Mood.Condițional: {
-                Tense.Prezent: (Mood.Indicativ, Tense.Prezent),
-                Tense.Perfect: (Mood.Indicativ, Tense.Prezent),
+            Moods.ro.Conjunctiv: {
+                Tenses.ro.Perfect: (Moods.ro.Indicativ, Tenses.ro.Prezent)
+            },
+            Moods.ro.Condițional: {
+                Tenses.ro.Prezent: (Moods.ro.Indicativ, Tenses.ro.Prezent),
+                Tenses.ro.Perfect: (Moods.ro.Indicativ, Tenses.ro.Prezent),
             },
         }
 
@@ -136,9 +191,9 @@ class InflectorRo(Inflector):
     def compound_primary_verb_conjugation_uses_infinitive(
         self, mood: Mood, tense: Tense
     ) -> bool:
-        if mood == Mood.Indicativ and tense == Tense.Viitor1:
+        if mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor1:
             return True
-        elif mood == Mood.Condițional and tense == Tense.Prezent:
+        elif mood == Moods.ro.Condițional and tense == Tenses.ro.Prezent:
             return True
         return False
 
@@ -150,12 +205,12 @@ class InflectorRo(Inflector):
         although the ' fi' is added by add_compound_aux_verb_suffix_if_applicable
 
         Normally Romanian aux_conj would be the indicativ prezent tense of avea i.e.
-            ["eu am", "tu ai", "el a", "noi am", "voi aţi", "ei au"]
+            ["eu am", "tu ai", "el a", "ea a", "noi am", "voi aţi", "ei au", "ele au"]
         but for conditional it's supposed to be
-            ["eu aş", "tu ai", "el ar", "noi am", "voi aţi", "ei ar"]
+            ["eu aş", "tu ai", "el ar", "ea ar", "noi am", "voi aţi", "ei ar", "ele ar"]
         """
-        if mood == Mood.Condițional and tense in (Tense.Prezent, "perfect"):
-            sub_aux_conj = ["aş", "ai", "ar", "am", "aţi", "ar"]
+        if mood == Moods.ro.Condițional and tense in (Tenses.ro.Prezent, "perfect"):
+            sub_aux_conj = ["aş", "ai", "ar", "ar", "am", "aţi", "ar", "ar"]
             for i, c in enumerate(aux_conj):
                 pronoun, _ = c.split(" ")
                 aux_conj[i] = f"{pronoun} {sub_aux_conj[i]}"
@@ -166,15 +221,25 @@ class InflectorRo(Inflector):
     ) -> str:
         """
         E.g. for Romanian indicativ viitor-ii this appends " fi" to make "eu am să fi avut" etc.
+
+        See also Inflector.insert_compound_aux_verb_prefix_if_applicable()
+        which is used for adding "să fi" for Conjunctiv Perfect,
+        e.g. to form "eu să fi făcut".
+
+        The Romanian conjunctive perfect tense is formed by using the particle "să"
+        followed by the auxiliary verb "fi" and the past participle of the main verb.
         """
-        if (mood == Mood.Indicativ and tense == Tense.Viitor2) or (
-            mood == Mood.Condițional and tense == Tense.Perfect
+        if (mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor2) or (
+            mood == Moods.ro.Condițional and tense == Tenses.ro.Perfect
         ):
             return s + " fi"
-        elif mood == Mood.Indicativ and tense == Tense.Viitor2Popular:
+        elif mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor2Popular:
             return s + " să fi"
+        # elif mood == Moods.ro.Conjunctiv and tense == Tenses.ro.Perfect:
+        #    # How was it working before without this?
+        #    return "să fi " + s
         # TODO: Research. Some sources e.g. verbix.com don't include " să"
-        # elif mood == Mood.Indicativ and tense == "viitor-1":
+        # elif mood == Moods.ro.Indicativ and tense == "viitor-1":
         #    return s + " să"
         return s
 
@@ -182,22 +247,38 @@ class InflectorRo(Inflector):
         self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
-        Used by Romanian viitor-1-popular
-        "eu o să fac, tu o să faci, ..."
+        Used for viitor-1-popular for inserting " o să "
+        e.g. "eu o să fac, tu o să faci, ..."
+
+        Used for Conjunctiv Perfect for inserting " să fi "
+        e.g. to form "eu să fi făcut".
+
+            The Romanian conjunctive perfect tense is formed by using the particle "să"
+            followed by the auxiliary verb "fi" and the past participle of the main verb.
+
         """
-        if mood == Mood.Indicativ and tense == Tense.Viitor1Popular:
+        if mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor1Popular:
+            return s.replace(" să ", " o să ")
+        elif mood == Moods.ro.Conjunctiv and tense == Tenses.ro.Perfect:
             tokens = s.split()
-            return tokens[0] + " o să " + tokens[1]
+            return tokens[0] + " să fi " + tokens[1]
         return s
 
     def compound_has_no_primary_verb(self, mood: Mood, tense: Tense) -> bool:
         """Used for Romanian viitor-1-popular"""
-        if mood == Mood.Indicativ and tense == Tense.Viitor1Popular:
+        if mood == Moods.ro.Indicativ and tense == Tenses.ro.Viitor1Popular:
             return True
         return False
 
     def compound_has_no_aux_verb(self, mood: Mood, tense: Tense) -> bool:
-        """Used for Romanian conjunctiv perfect"""
-        if mood == Mood.Conjunctiv and tense == Tense.Perfect:
+        """Used for Romanian Conjunctiv Perfect
+
+        The Romanian conjunctive perfect tense is formed by using the particle "să"
+        followed by the auxiliary verb "fi" and the past participle of the main verb.
+
+        But for the purposes of this function, we consider that it has no aux verb,
+        since "fi" is constant and not actually conjugated.
+        """
+        if mood == Moods.ro.Conjunctiv and tense == Tenses.ro.Perfect:
             return True
         return False

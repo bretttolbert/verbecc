@@ -1,0 +1,482 @@
+{
+    "moods":
+    {
+        "condicional":
+        {
+            "present": [
+            {
+                "c": ["jo seria", "jo fora"],
+                "n": "s",
+                "p": "1",
+                "pr": "jo"
+            },
+            {
+                "c": ["tu series", "tu fores"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ell seria", "ell fora"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["ella seria", "ella fora"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["nosaltres seríem", "nosaltres fórem"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["vosaltres seríeu", "vosaltres fóreu"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["ells serien", "ells foren"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["elles serien", "elles foren"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        },
+        "gerundi":
+        {
+            "gerundi": [
+            {
+                "c": ["sent", "essent"]
+            }]
+        },
+        "imperatiu":
+        {
+            "imperatiu-present": [
+            {
+                "c": ["sigues"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["sigui"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["sigui"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["siguem"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["sigueu"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["siguin"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["siguin"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        },
+        "indicatiu":
+        {
+            "futur": [
+            {
+                "c": ["jo seré"],
+                "n": "s",
+                "p": "1",
+                "pr": "jo"
+            },
+            {
+                "c": ["tu seràs"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ell serà"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["ella serà"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["nosaltres serem"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["vosaltres sereu"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["ells seran"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["elles seran"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "imperfet": [
+            {
+                "c": ["jo era"],
+                "n": "s",
+                "p": "1",
+                "pr": "jo"
+            },
+            {
+                "c": ["tu eres"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ell era"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["ella era"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["nosaltres érem"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["vosaltres éreu"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["ells eren"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["elles eren"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "passat-simple": [
+            {
+                "c": ["jo fui"],
+                "n": "s",
+                "p": "1",
+                "pr": "jo"
+            },
+            {
+                "c": ["tu fores"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ell fou"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["ella fou"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["nosaltres fórem"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["vosaltres fóreu"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["ells foren"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["elles foren"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "present": [
+            {
+                "c": ["jo sóc"],
+                "n": "s",
+                "p": "1",
+                "pr": "jo"
+            },
+            {
+                "c": ["tu ets"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ell és"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["ella és"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["nosaltres som"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["vosaltres sou"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["ells són"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["elles són"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        },
+        "infinitiu":
+        {
+            "infinitiu-present": [
+            {
+                "c": ["ser", "ésser"]
+            }]
+        },
+        "participi":
+        {
+            "participi": [
+            {
+                "c": ["estat", "sigut"],
+                "g": "m",
+                "n": "s"
+            },
+            {
+                "c": ["estada", "siguda"],
+                "g": "m",
+                "n": "p"
+            },
+            {
+                "c": ["estats", "siguts"],
+                "g": "f",
+                "n": "s"
+            },
+            {
+                "c": ["estades", "sigudes"],
+                "g": "f",
+                "n": "p"
+            }]
+        },
+        "subjuntiu":
+        {
+            "imperfet": [
+            {
+                "c": ["jo fos"],
+                "n": "s",
+                "p": "1",
+                "pr": "jo"
+            },
+            {
+                "c": ["tu fossis"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ell fos"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["ella fos"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["nosaltres fóssim"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["vosaltres fóssiu"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["ells fossin"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["elles fossin"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }],
+            "present": [
+            {
+                "c": ["jo sigui"],
+                "n": "s",
+                "p": "1",
+                "pr": "jo"
+            },
+            {
+                "c": ["tu siguis"],
+                "n": "s",
+                "p": "2",
+                "pr": "tu"
+            },
+            {
+                "c": ["ell sigui"],
+                "g": "m",
+                "n": "s",
+                "p": "3",
+                "pr": "ell"
+            },
+            {
+                "c": ["ella sigui"],
+                "g": "f",
+                "n": "s",
+                "p": "3",
+                "pr": "ella"
+            },
+            {
+                "c": ["nosaltres siguem"],
+                "n": "p",
+                "p": "1",
+                "pr": "nosaltres"
+            },
+            {
+                "c": ["vosaltres sigueu"],
+                "n": "p",
+                "p": "2",
+                "pr": "vosaltres"
+            },
+            {
+                "c": ["ells siguin"],
+                "g": "m",
+                "n": "p",
+                "p": "3",
+                "pr": "ells"
+            },
+            {
+                "c": ["elles siguin"],
+                "g": "f",
+                "n": "p",
+                "p": "3",
+                "pr": "elles"
+            }]
+        }
+    },
+    "verb":
+    {
+        "infinitive": "ser",
+        "lang": "ca",
+        "predicted": false,
+        "stem": "",
+        "template": "és:ser",
+        "translation_en": "be"
+    }
+}

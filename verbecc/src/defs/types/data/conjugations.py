@@ -1,12 +1,13 @@
 from bisect import bisect_left
 from typing import List, Iterator
 
+from verbecc.src.defs.types.data.element import Element
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
 from verbecc.src.defs.types.exceptions import TemplateNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 
 
-class Conjugations:
+class Conjugations(Element):
     def __init__(
         self, lang: LangCodeISO639_1, templates: List[ConjugationTemplate]
     ) -> None:
@@ -28,4 +29,4 @@ class Conjugations:
         i = bisect_left(self._keys, name)
         if i != len(self._keys) and self._keys[i] == name:
             return self._templates[i]
-        raise TemplateNotFoundError
+        raise TemplateNotFoundError()

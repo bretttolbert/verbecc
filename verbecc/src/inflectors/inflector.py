@@ -1,22 +1,7 @@
-import logging
-
-from verbecc.src.defs.constants.config import DEVEL_MODE
-
-logging_level = logging.CRITICAL + 1  # effectively disables logging
-if DEVEL_MODE:
-    logging_level = logging.DEBUG
-
-logging.basicConfig(
-    level=logging_level,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("verbecc.log"), logging.StreamHandler()],
-)
-
-logger = logging.getLogger(__name__)
-
 from abc import ABC, abstractmethod
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.constants.grammar_defines import PARTICIPLE_INFLECTIONS
 from verbecc.src.defs.types.data.conjugation_template import ConjugationTemplate
@@ -27,11 +12,12 @@ from verbecc.src.defs.types.data.verbs import Verbs
 from verbecc.src.defs.types.exceptions import ConjugatorError
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
-from verbecc.src.defs.types.mood import MoodEn as Mood
+from verbecc.src.defs.types.mood import Mood, Moods
 from verbecc.src.defs.types.participle_inflection import ParticipleInflection
-from verbecc.src.defs.types.person import Person, is_singular
-from verbecc.src.defs.types.tense import TenseEn as Tense
+from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.tense import Tense, Tenses
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 from verbecc.src.parsers.conjugations_parser import ConjugationsParser
 from verbecc.src.parsers.verbs_parser import VerbsParser
 
@@ -45,13 +31,13 @@ class Inflector(ABC):
     # public:
 
     def __init__(self) -> None:
-        self._verbs: Verbs = VerbsParser(self.lang).parse()
-        self._conjugations = ConjugationsParser(self.lang).parse()
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
+        self._verbs: Verbs = VerbsParser(self.get_lang()).parse()
+        self._conjugations = ConjugationsParser(self.get_lang()).parse()
 
-    @property
     @abstractmethod
-    def lang(self) -> LangCodeISO639_1:
-        raise NotImplementedError
+    def get_lang(self) -> LangCodeISO639_1:
+        raise NotImplementedError()
 
     def get_verbs(self) -> List[Verb]:
         return list(self._verbs)
@@ -118,7 +104,7 @@ class Inflector(ABC):
     def auxiliary_verb_uses_alternate_conjugation(self, tense: Tense) -> bool:
         return False
 
-    def get_tenses_conjugated_without_pronouns(self) -> List[str]:
+    def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return []
 
     def get_auxiliary_verb(
@@ -130,22 +116,22 @@ class Inflector(ABC):
         return False
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitive
+        return Moods.en.Infinitive
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicative
+        return Moods.en.Indicative
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Subjunctive
+        return Moods.en.Subjunctive
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Conditional
+        return Moods.en.Conditional
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participle
+        return Moods.en.Participle
 
     def get_participle_tense(self) -> Tense:
-        return Tense.PastParticiple
+        return Tenses.en.PastParticiple
 
     def add_present_participle_if_applicable(
         self, s: str, is_reflexive: bool, tense: Tense
@@ -159,9 +145,9 @@ class Inflector(ABC):
     @abstractmethod
     def get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         """Returns a map of the tense of the helping verb for each compound mood and tense"""
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def get_participle_index_for_participle_inflection(
         self, participle_inflection: ParticipleInflection
@@ -171,12 +157,12 @@ class Inflector(ABC):
         But in some lang XML files, e.g. Italian, the order is MS, FS, MP, FP
         TODO: Standardize the XML files
         """
-        return PARTICIPLE_INFLECTIONS[self.lang].index(participle_inflection)
+        return PARTICIPLE_INFLECTIONS[self.get_lang()].index(participle_inflection)
 
     def get_default_participle_inflection_for_person(
-        self, person: Person, gender: Gender = Gender.m
+        self, number: Number, gender: Gender = Gender.m
     ) -> ParticipleInflection:
-        if is_singular(person):
+        if number == Number.Singular:
             if gender == Gender.m:
                 return ParticipleInflection.MasculineSingular
             else:
@@ -187,14 +173,28 @@ class Inflector(ABC):
             else:
                 return ParticipleInflection.FemininePlural
 
-    def get_default_pronoun(
+    def get_pronoun_gender(self, pronoun: Pronoun) -> Optional[Gender]:
+        return None
+
+    def get_pronouns(
         self,
-        person: Person,
-        gender: Gender = Gender.m,
-        is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
-    ) -> str:
-        return ""
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
+    ) -> List[Pronoun]:
+        """
+        Returns a list of all pronouns matching the provided filters,
+        in the typical order, with the default pronoun first.
+        E.g. Person.Second, Number.Singular => ["tú", "vos"]
+        """
+        return []
+
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        """
+        Adds appropriate suffix to make the pronoun reflexive
+        E.g. "il" -> "il se"
+        """
+        return pronoun
 
     def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
         return pronoun + " " + conj
@@ -240,10 +240,17 @@ class Inflector(ABC):
         return s
 
     def add_reflexive_pronoun_or_pronoun_suffix_if_applicable(
-        self, s: str, is_reflexive: bool, mood: Mood, tense: Tense, person: Person
+        self,
+        s: str,
+        is_reflexive: bool,
+        mood: Mood,
+        tense: Tense,
+        person: Person,
+        number: Number,
+        gender: Gender,
     ) -> str:
         if is_reflexive:
-            s += self._get_pronoun_suffix(person)
+            s += self._get_pronoun_suffix(person, number, gender)
         return s
 
     def compound_conjugation_not_applicable(
@@ -267,7 +274,7 @@ class Inflector(ABC):
         return aux_conj
 
     def add_compound_aux_verb_suffix_if_applicable(
-        self, s: str, mood: Mood, tense: Mood
+        self, s: str, mood: Mood, tense: Tense
     ) -> str:
         """
         Hook for certain languages e.g. Romanian that add prefixes
@@ -299,7 +306,7 @@ class Inflector(ABC):
         mood: Mood,
         tense: Tense,
         tense_template: TenseTemplate,
-        lang_specific_options: LangSpecificOptions,
+        pronoun: Optional[str],
     ) -> PersonEnding:
         """
         Hook for certain languages e.g. Spanish that modify
@@ -311,9 +318,13 @@ class Inflector(ABC):
     # private:
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
+        self,
+        person: Person,
+        number: Number,
+        gender: Gender = Gender.m,
+        imperative: bool = True,
     ) -> str:
-        return " " + self.get_default_pronoun(person, gender)
+        return " " + self.get_pronouns(person, number, gender)[0]
 
     def _is_impersonal_verb(self, infinitive: str) -> bool:
         return False

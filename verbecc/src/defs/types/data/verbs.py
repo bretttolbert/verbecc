@@ -1,16 +1,20 @@
 from bisect import bisect_left
 from typing import Iterator, List
 
-from verbecc.src.defs.constants import config
+from verbecc.src.utils.logging_utils import LoggingUtils
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.exceptions import VerbNotFoundError
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.mlconjug import mlconjug
+from verbecc.src.mlconjug.predictor import TemplatePredictor
 from verbecc.src.utils import string_utils
+from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
+
+config = VerbeccConfigUtil().load_config()
 
 
 class Verbs:
     def __init__(self, lang: LangCodeISO639_1, verbs: List[Verb]) -> None:
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
         self.lang = lang
         self._verbs = verbs
         self._verbs_no_accents = sorted(
@@ -22,8 +26,9 @@ class Verbs:
             v.infinitive_no_accents for v in self._verbs_no_accents
         ]
         self.template_predictor = None
-        if config.ml:
-            self.template_predictor = mlconjug.TemplatePredictor(
+        self._logger.info("loaded verbecc config: %s", config)
+        if config.ENABLE_ML_PREDICTION:
+            self.template_predictor = TemplatePredictor(
                 [(v.infinitive, v.template) for v in verbs], self.lang
             )
 
@@ -55,14 +60,14 @@ class Verbs:
             and self.infinitives_no_accents[i] == query
         ):
             return self._verbs_no_accents[i]
-        if config.ml:
+        if config.ENABLE_ML_PREDICTION and self.template_predictor is not None:
             template, pred_score = self.template_predictor.predict(query)
             ret = Verb(infinitive.lower(), template, translation_en="")
             ret.predicted = True
             ret.pred_score = pred_score
             return ret
         else:
-            raise VerbNotFoundError
+            raise VerbNotFoundError()
 
     def get_verbs_that_start_with(self, pre: str, max_results: int = 10) -> List[str]:
         ret: List[str] = []

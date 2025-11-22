@@ -9,3 +9,4 @@ coverage.xml
 .vscode
 verbecc/data/models/*.zip
 *.log
+*.log.*

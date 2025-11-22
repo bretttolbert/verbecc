@@ -1,0 +1,2 @@
+class InvalidMoodError(Exception):
+    pass

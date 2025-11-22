@@ -1,0 +1,2 @@
+class ConjugatorError(Exception):
+    pass

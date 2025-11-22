@@ -1,0 +1,2 @@
+class ConjugationsParserError(Exception):
+    pass

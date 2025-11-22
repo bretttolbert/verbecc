@@ -1,41 +1,46 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.mood import MoodPt as Mood
+from verbecc.src.defs.types.mood import Mood, Moods
 from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import TensePt as Tense
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.defs.types.lang_specific_options import (
     LangSpecificOptions,
 )
 from verbecc.src.inflectors.inflector import Inflector
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 class InflectorPt(Inflector):
 
     # public:
 
-    def __init__(self) -> None:
+    def __init__(
+        self, lang_specific_options: Optional[LangSpecificOptions] = None
+    ) -> None:
         super(InflectorPt, self).__init__()
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.pt
 
     def add_subjunctive_relative_pronoun(self, s: str, tense: Tense) -> str:
-        if tense == Tense.Presente:
+        if tense == Tenses.pt.Presente:
             return "que " + s
-        elif tense == Tense.PretéritoImperfeito:
+        elif tense == Tenses.pt.PretéritoImperfeito:
             return "se " + s
-        elif tense == Tense.Futuro:
+        elif tense == Tenses.pt.Futuro:
             return "quando " + s
         return s
 
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
-        if mood == Mood.Imperativo and tense == Tense.Negativo:
+        if mood == Moods.pt.Imperativo and tense == Tenses.pt.Negativo:
             return "não " + s
-        elif mood == Mood.Infinitivo and tense == Tense.InfinitivoPessoalPresente:
+        elif (
+            mood == Moods.pt.Infinitivo and tense == Tenses.pt.InfinitivoPessoalPresente
+        ):
             return "por " + s
         return s
 
@@ -46,61 +51,95 @@ class InflectorPt(Inflector):
         mood: Mood,
         tense: Tense,
         person: Person,
+        number: Number,
+        gender: Gender,
     ) -> str:
-        imperative: bool = mood == Mood.Imperativo
+        if tense == Tenses.pt.InfinitivoPessoalComposto:
+            return s
+        imperative: bool = mood == Moods.pt.Imperativo
         if imperative or (
-            mood == Mood.Infinitivo and tense == Tense.InfinitivoPessoalPresente
+            mood == Moods.pt.Infinitivo and tense == Tenses.pt.InfinitivoPessoalPresente
         ):
-            s += " " + self._get_pronoun_suffix(person, imperative=imperative)
+            s += " " + self._get_pronoun_suffix(
+                person, number, gender, imperative=imperative
+            )
         return s
 
-    def get_default_pronoun(
+    def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
+        if pronoun in (Pronouns.pt.ela, Pronouns.pt.elas):
+            return Gender.f
+        elif pronoun in (Pronouns.pt.ele, Pronouns.pt.eles):
+            return Gender.m
+        return None
+
+    def get_pronouns(
         self,
-        person: Person,
-        gender: Gender = Gender.m,
-        is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
-    ) -> str:
-        ret = ""
-        if person == Person.FirstPersonSingular:
-            ret = "eu"
-            if is_reflexive:
-                ret += " me"
-        elif person == Person.SecondPersonSingular:
-            ret = "tu"
-            if is_reflexive:
-                ret += " te"
-        elif person == Person.ThirdPersonSingular:
-            ret = "ele"
-            if gender == Gender.f:
-                ret = "ela"
-            if is_reflexive:
-                ret += " se"
-        elif person == Person.FirstPersonPlural:
-            ret = "nós"
-            if is_reflexive:
-                ret += " nos"
-        elif person == Person.SecondPersonPlural:
-            ret = "vós"
-            if is_reflexive:
-                ret += " se"
-        elif person == Person.ThirdPersonPlural:
-            ret = "eles"
-            if gender == Gender.f:
-                ret = "elas"
-            if is_reflexive:
-                ret += " se"
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
+    ) -> List[Pronoun]:
+        ret = []
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Singular
+        ):
+            p = Pronouns.pt.eu
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Singular
+        ):
+            p = Pronouns.pt.tu
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = [Pronouns.pt.ele, Pronouns.pt.ela]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = [Pronouns.pt.ele]
+                else:
+                    pronouns = [Pronouns.pt.ela]
+            ret.extend(pronouns)
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Plural
+        ):
+            p = Pronouns.pt.nós
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Plural
+        ):
+            p = Pronouns.pt.vós
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Plural
+        ):
+            pronouns = [Pronouns.pt.eles, Pronouns.pt.elas]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = [Pronouns.pt.eles]
+                else:
+                    pronouns = [Pronouns.pt.elas]
+            ret.extend(pronouns)
         return ret
+
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.pt.eu:
+            return pronoun + " me"
+        elif pronoun == Pronouns.pt.tu:
+            return pronoun + " te"
+        elif pronoun == Pronouns.pt.nós:
+            return pronoun + " nos"
+        else:
+            return pronoun + " se"
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tense.Particípio,
-            Tense.Infinitivo,
-            Tense.InfinitivoPessoalPresente,
-            Tense.InfinitivoPessoalComposto,
-            Tense.Afirmativo,
-            Tense.Negativo,
-            Tense.Gerúndio,
+            Tenses.pt.Particípio,
+            Tenses.pt.Infinitivo,
+            Tenses.pt.InfinitivoPessoalPresente,
+            Tenses.pt.InfinitivoPessoalComposto,
+            Tenses.pt.Afirmativo,
+            Tenses.pt.Negativo,
+            Tenses.pt.Gerúndio,
         ]
 
     def get_auxiliary_verb(
@@ -112,60 +151,63 @@ class InflectorPt(Inflector):
         return "ter"
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitivo
+        return Moods.pt.Infinitivo
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicativo
+        return Moods.pt.Indicativo
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Subjuntivo
+        return Moods.pt.Subjuntivo
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Condicional
+        return Moods.pt.Condicional
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Particípio
+        return Moods.pt.Particípio
 
     def get_participle_tense(self) -> Tense:
-        return Tense.Particípio
+        return Tenses.pt.Particípio
 
     def get_compound_conjugations_aux_verb_map(
         self,
     ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         return {
-            Mood.Indicativo: {
-                Tense.PretéritoPerfeitoComposto: (Mood.Indicativo, Tense.Presente),
-                Tense.PretéritoMaisQuePerfeitoComposto: (
-                    Mood.Indicativo,
-                    Tense.PretéritoImperfeito,
+            Moods.pt.Indicativo: {
+                Tenses.pt.PretéritoPerfeitoComposto: (
+                    Moods.pt.Indicativo,
+                    Tenses.pt.Presente,
                 ),
-                Tense.PretéritoMaisQuePerfeitoAnterior: (
-                    Mood.Indicativo,
-                    Tense.PretéritoMaisQuePerfeito,
+                Tenses.pt.PretéritoMaisQuePerfeitoComposto: (
+                    Moods.pt.Indicativo,
+                    Tenses.pt.PretéritoImperfeito,
                 ),
-                Tense.FuturoDoPresenteComposto: (
-                    Mood.Indicativo,
-                    Tense.FuturoDoPresente,
+                Tenses.pt.PretéritoMaisQuePerfeitoAnterior: (
+                    Moods.pt.Indicativo,
+                    Tenses.pt.PretéritoMaisQuePerfeito,
+                ),
+                Tenses.pt.FuturoDoPresenteComposto: (
+                    Moods.pt.Indicativo,
+                    Tenses.pt.FuturoDoPresente,
                 ),
             },
-            Mood.Subjuntivo: {
-                Tense.PretéritoPerfeito: (Mood.Subjuntivo, Tense.Presente),
-                Tense.PretéritoMaisQuePerfeito: (
-                    Mood.Subjuntivo,
-                    Tense.PretéritoImperfeito,
+            Moods.pt.Subjuntivo: {
+                Tenses.pt.PretéritoPerfeito: (Moods.pt.Subjuntivo, Tenses.pt.Presente),
+                Tenses.pt.PretéritoMaisQuePerfeito: (
+                    Moods.pt.Subjuntivo,
+                    Tenses.pt.PretéritoImperfeito,
                 ),
-                Tense.FuturoComposto: (Mood.Subjuntivo, Tense.Futuro),
+                Tenses.pt.FuturoComposto: (Moods.pt.Subjuntivo, Tenses.pt.Futuro),
             },
-            Mood.Condicional: {
-                Tense.FuturoDoPretéritoComposto: (
-                    Mood.Condicional,
-                    Tense.FuturoDoPretérito,
+            Moods.pt.Condicional: {
+                Tenses.pt.FuturoDoPretéritoComposto: (
+                    Moods.pt.Condicional,
+                    Tenses.pt.FuturoDoPretérito,
                 )
             },
-            Mood.Infinitivo: {
-                Tense.InfinitivoPessoalComposto: (
-                    Mood.Infinitivo,
-                    Tense.InfinitivoPessoalPresente,
+            Moods.pt.Infinitivo: {
+                Tenses.pt.InfinitivoPessoalComposto: (
+                    Moods.pt.Infinitivo,
+                    Tenses.pt.InfinitivoPessoalPresente,
                 )
             },
         }
@@ -173,23 +215,31 @@ class InflectorPt(Inflector):
     # private:
 
     def _get_pronoun_suffix(
-        self, person: Person, gender: Gender = Gender.m, imperative: bool = True
+        self,
+        person: Person,
+        number: Number,
+        gender: Gender = Gender.m,
+        imperative: bool = True,
     ) -> str:
         ret = ""
-        if person == Person.FirstPersonSingular:
+        if person == Person.First and number == Number.Singular:
             ret = "eu"
-        if person == Person.SecondPersonSingular:
+        elif person == Person.Second and number == Number.Singular:
             ret = "tu"
-        elif person == Person.ThirdPersonSingular:
+        elif person == Person.Third and number == Number.Singular:
             ret = "você"
             if not imperative:
                 ret = "ele"
-        elif person == Person.FirstPersonPlural:
+                if gender == Gender.f:
+                    ret = "ela"
+        elif person == Person.First and number == Number.Plural:
             ret = "nós"
-        elif person == Person.SecondPersonPlural:
+        elif person == Person.Second and number == Number.Plural:
             ret = "vós"
-        elif person == Person.ThirdPersonPlural:
+        elif person == Person.Third and number == Number.Plural:
             ret = "vocês"
             if not imperative:
                 ret = "eles"
+                if gender == Gender.f:
+                    ret = "elas"
         return ret

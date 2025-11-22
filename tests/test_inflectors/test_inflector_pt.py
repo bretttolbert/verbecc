@@ -1,27 +1,94 @@
 import pytest
 from typing import List
 
+from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.src.conjugator.mood_conjugator import MoodConjugator
+from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.person import Person
+from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.src.defs.types.mood import Mood
+from verbecc.src.defs.types.mood import Moods
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tense
-from verbecc.src.conjugator.conjugator import Conjugator
+from verbecc.src.defs.types.tense import Tenses
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 @pytest.fixture(scope="module")
-def cg():
-    cg = Conjugator(lang="pt")
-    yield cg
+def ccg():
+    ccg = CompleteConjugator(lang=Lang.pt)
+    yield ccg
 
 
-def test_all_verbs_have_templates(cg: Conjugator):
-    verbs = cg.get_verbs()
-    template_names = cg.get_template_names()
+@pytest.fixture(scope="module")
+def mcg():
+    mcg = MoodConjugator(lang=Lang.pt)
+    yield mcg
+
+
+@pytest.fixture(scope="module")
+def tcg():
+    tcg = TenseConjugator(lang=Lang.pt)
+    yield tcg
+
+
+def test_all_verbs_have_templates(ccg):
+    verbs = ccg.get_verbs()
+    template_names = ccg.get_template_names()
     missing_templates = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
     assert len(missing_templates) == 0
+
+
+def test_conjugate_ter_subjuntivo_preterito_perfeito(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "ter", Moods.pt.Subjuntivo, Tenses.pt.PretéritoPerfeito
+    )
+    assert [c[0] for c in tc] == [
+        "eu tenha tido",
+        "tu tenhas tido",
+        "ele tenha tido",
+        "ela tenha tido",
+        "nós tenhamos tido",
+        "vós tenhais tido",
+        "eles tenham tido",
+        "elas tenham tido",
+    ]
+
+
+def test_conjugate_ter_infinitivo_pessoal_presente(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "ter", Moods.pt.Infinitivo, Tenses.pt.InfinitivoPessoalPresente
+    )
+    assert [c[0] for c in tc] == [
+        "por ter eu",
+        "por teres tu",
+        "por ter ele",
+        "por ter ela",
+        "por termos nós",
+        "por terdes vós",
+        "por terem eles",
+        "por terem elas",
+    ]
+
+
+def test_conjugate_ter_infinitivo_pessoal_composto(ccg):
+    tc = ccg.conjugate_mood_tense(
+        "ter", Moods.pt.Infinitivo, Tenses.pt.InfinitivoPessoalComposto
+    )
+    assert [c[0] for c in tc] == [
+        "ter tido",
+        "teres tido",
+        "ter tido",
+        "ter tido",
+        "termos tido",
+        "terdes tido",
+        "terem tido",
+        "terem tido",
+    ]
 
 
 @pytest.mark.parametrize(
@@ -31,19 +98,30 @@ def test_all_verbs_have_templates(cg: Conjugator):
             "ter",
             "indicativo",
             "presente",
-            ["eu tenho", "tu tens", "ele tem", "nós temos", "vós tendes", "eles têm"],
+            [
+                "eu tenho",
+                "tu tens",
+                "ele tem",
+                "ela tem",
+                "nós temos",
+                "vós tendes",
+                "eles têm",
+                "elas têm",
+            ],
         ),
         (
             "ter",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu tive",
                 "tu tiveste",
                 "ele teve",
+                "ela teve",
                 "nós tivemos",
                 "vós tivestes",
                 "eles tiveram",
+                "elas tiveram",
             ],
         ),
         (
@@ -54,9 +132,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu tinha",
                 "tu tinhas",
                 "ele tinha",
+                "ela tinha",
                 "nós tínhamos",
                 "vós tínheis",
                 "eles tinham",
+                "elas tinham",
             ],
         ),
         (
@@ -67,9 +147,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu tivera",
                 "tu tiveras",
                 "ele tivera",
+                "ela tivera",
                 "nós tivéramos",
                 "vós tivéreis",
                 "eles tiveram",
+                "elas tiveram",
             ],
         ),
         (
@@ -80,9 +162,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu tenho tido",
                 "tu tens tido",
                 "ele tem tido",
+                "ela tem tido",
                 "nós temos tido",
                 "vós tendes tido",
                 "eles têm tido",
+                "elas têm tido",
             ],
         ),
         (
@@ -93,9 +177,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu tinha tido",
                 "tu tinhas tido",
                 "ele tinha tido",
+                "ela tinha tido",
                 "nós tínhamos tido",
                 "vós tínheis tido",
                 "eles tinham tido",
+                "elas tinham tido",
             ],
         ),
         (
@@ -106,9 +192,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu tivera tido",
                 "tu tiveras tido",
                 "ele tivera tido",
+                "ela tivera tido",
                 "nós tivéramos tido",
                 "vós tivéreis tido",
                 "eles tiveram tido",
+                "elas tiveram tido",
             ],
         ),
         (
@@ -119,9 +207,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu terei",
                 "tu terás",
                 "ele terá",
+                "ela terá",
                 "nós teremos",
                 "vós tereis",
                 "eles terão",
+                "elas terão",
             ],
         ),
         (
@@ -132,87 +222,101 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu terei tido",
                 "tu terás tido",
                 "ele terá tido",
+                "ela terá tido",
                 "nós teremos tido",
                 "vós tereis tido",
                 "eles terão tido",
+                "elas terão tido",
             ],
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "presente",
             [
                 "que eu tenha",
                 "que tu tenhas",
                 "que ele tenha",
+                "que ela tenha",
                 "que nós tenhamos",
                 "que vós tenhais",
                 "que eles tenham",
+                "que elas tenham",
             ],
         ),
         (
             "ter",
-            "subjuntivo",
-            "pretérito-perfeito",
+            Moods.pt.Subjuntivo,
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu tenha tido",
                 "tu tenhas tido",
                 "ele tenha tido",
+                "ela tenha tido",
                 "nós tenhamos tido",
                 "vós tenhais tido",
                 "eles tenham tido",
+                "elas tenham tido",
             ],
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "pretérito-imperfeito",
             [
                 "se eu tivesse",
                 "se tu tivesses",
                 "se ele tivesse",
+                "se ela tivesse",
                 "se nós tivéssemos",
                 "se vós tivésseis",
                 "se eles tivessem",
+                "se elas tivessem",
             ],
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "pretérito-mais-que-perfeito",
             [
                 "eu tivesse tido",
                 "tu tivesses tido",
                 "ele tivesse tido",
+                "ela tivesse tido",
                 "nós tivéssemos tido",
                 "vós tivésseis tido",
                 "eles tivessem tido",
+                "elas tivessem tido",
             ],
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "futuro",
             [
                 "quando eu tiver",
                 "quando tu tiveres",
                 "quando ele tiver",
+                "quando ela tiver",
                 "quando nós tivermos",
                 "quando vós tiverdes",
                 "quando eles tiverem",
+                "quando elas tiverem",
             ],
         ),
         (
             "ter",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "futuro-composto",
             [
                 "eu tiver tido",
                 "tu tiveres tido",
                 "ele tiver tido",
+                "ela tiver tido",
                 "nós tivermos tido",
                 "vós tiverdes tido",
                 "eles tiverem tido",
+                "elas tiverem tido",
             ],
         ),
         (
@@ -223,9 +327,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu teria",
                 "tu terias",
                 "ele teria",
+                "ela teria",
                 "nós teríamos",
                 "vós teríeis",
                 "eles teriam",
+                "elas teriam",
             ],
         ),
         (
@@ -236,34 +342,40 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu teria tido",
                 "tu terias tido",
                 "ele teria tido",
+                "ela teria tido",
                 "nós teríamos tido",
                 "vós teríeis tido",
                 "eles teriam tido",
+                "elas teriam tido",
             ],
         ),
         (
             "ter",
-            "infinitivo",
-            "infinitivo-pessoal-presente",
+            Moods.pt.Infinitivo,
+            Tenses.pt.InfinitivoPessoalPresente,
             [
                 "por ter eu",
                 "por teres tu",
                 "por ter ele",
+                "por ter ela",
                 "por termos nós",
                 "por terdes vós",
                 "por terem eles",
+                "por terem elas",
             ],
         ),
         (
             "ter",
-            "infinitivo",
-            "infinitivo-pessoal-composto",
+            Moods.pt.Infinitivo,
+            Tenses.pt.InfinitivoPessoalComposto,
             [
                 "ter tido",
                 "teres tido",
                 "ter tido",
+                "ter tido",
                 "termos tido",
                 "terdes tido",
+                "terem tido",
                 "terem tido",
             ],
         ),
@@ -271,7 +383,16 @@ def test_all_verbs_have_templates(cg: Conjugator):
             "ter",
             "imperativo",
             "afirmativo",
-            ["-", "tem tu", "tenha você", "tenhamos nós", "tende vós", "tenham vocês"],
+            [
+                "-",
+                "tem tu",
+                "tenha você",
+                "tenha você",
+                "tenhamos nós",
+                "tende vós",
+                "tenham vocês",
+                "tenham vocês",
+            ],
         ),
         (
             "ter",
@@ -281,61 +402,71 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "-",
                 "não tenhas tu",
                 "não tenha você",
+                "não tenha você",
                 "não tenhamos nós",
                 "não tenhais vós",
+                "não tenham vocês",
                 "não tenham vocês",
             ],
         ),
         (
             "andar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu andei",
                 "tu andaste",
                 "ele andou",
+                "ela andou",
                 "nós andámos",
                 "vós andastes",
                 "eles andaram",
+                "elas andaram",
             ],
         ),
         (
             "ficar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu fiquei",
                 "tu ficaste",
                 "ele ficou",
+                "ela ficou",
                 "nós ficámos",
                 "vós ficastes",
                 "eles ficaram",
+                "elas ficaram",
             ],
         ),
         (
             "amar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu amei",
                 "tu amaste",
                 "ele amou",
+                "ela amou",
                 "nós amámos",
                 "vós amastes",
                 "eles amaram",
+                "elas amaram",
             ],
         ),
         (
             "odiar",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu odiei",
                 "tu odiaste",
                 "ele odiou",
+                "ela odiou",
                 "nós odiámos",
                 "vós odiastes",
                 "eles odiaram",
+                "elas odiaram",
             ],
         ),
         (
@@ -346,22 +477,26 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguo",
                 "tu argúis",
                 "ele argúi",
+                "ela argúi",
                 "nós arguimos",
                 "vós arguistes",
                 "eles argúem",
+                "elas argúem",
             ],
         ),
         (
             "arguir",
             "indicativo",
-            "pretérito-perfeito",
+            Tenses.pt.PretéritoPerfeito,
             [
                 "eu argui",
                 "tu arguiste",
                 "ele arguiu",
+                "ela arguiu",
                 "nós arguimos",
                 "vós arguistes",
                 "eles arguiram",
+                "elas arguiram",
             ],
         ),
         (
@@ -372,9 +507,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguia",
                 "tu arguas",
                 "ele arguia",
+                "ela arguia",
                 "nós arguíamos",
                 "vós arguíeis",
                 "eles arguiam",
+                "elas arguiam",
             ],
         ),
         (
@@ -385,9 +522,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguira",
                 "tu arguiras",
                 "ele arguira",
+                "ela arguira",
                 "nós arguíramos",
                 "vós arguíreis",
                 "eles arguiram",
+                "elas arguiram",
             ],
         ),
         (
@@ -398,9 +537,11 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguirei",
                 "tu arguirás",
                 "ele arguirá",
+                "ela arguirá",
                 "nós arguiremos",
                 "vós arguireis",
                 "eles arguirão",
+                "elas arguirão",
             ],
         ),
         (
@@ -411,48 +552,56 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "eu arguiria",
                 "tu arguirias",
                 "ele arguiria",
+                "ela arguiria",
                 "nós arguiríamos",
                 "vós arguiríeis",
                 "eles arguiriam",
+                "elas arguiriam",
             ],
         ),
         (
             "arguir",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "pretérito-imperfeito",
             [
                 "se eu arguisse",
                 "se tu arguisses",
                 "se ele arguisse",
+                "se ela arguisse",
                 "se nós arguíssemos",
                 "se vós arguísseis",
                 "se eles arguissem",
+                "se elas arguissem",
             ],
         ),
         (
             "arguir",
-            "subjuntivo",
+            Moods.pt.Subjuntivo,
             "futuro",
             [
                 "quando eu arguir",
                 "quando tu arguires",
                 "quando ele arguir",
+                "quando ela arguir",
                 "quando nós arguirmos",
                 "quando vós arguirdes",
                 "quando eles arguirem",
+                "quando elas arguirem",
             ],
         ),
         (
             "arguir",
-            "infinitivo",
-            "infinitivo-pessoal-presente",
+            Moods.pt.Infinitivo,
+            Tenses.pt.InfinitivoPessoalPresente,
             [
                 "por arguir eu",
                 "por arguíres tu",
                 "por arguir ele",
+                "por arguir ela",
                 "por arguirmos nós",
                 "por arguirdes vós",
                 "por arguírem eles",
+                "por arguírem elas",
             ],
         ),
         (
@@ -463,48 +612,56 @@ def test_all_verbs_have_templates(cg: Conjugator):
                 "-",
                 "argúi tu",
                 "argua você",
+                "argua você",
                 "arguamos nós",
                 "arguí vós",
+                "arguam vocês",
                 "arguam vocês",
             ],
         ),
     ],
 )
 def test_inflector_pt_conjugate_mood_tense(
-    cg: Conjugator,
+    ccg,
     infinitive: str,
     mood: Mood,
     tense: Tense,
     expected_result: List[str],
 ):
-    assert cg.conjugate_mood_tense(infinitive, mood, tense) == expected_result
+    tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
+    assert [c[0] for c in tc] == expected_result
 
 
 @pytest.mark.parametrize(
-    "person,gender,is_reflexive,expected_result",
+    "person,number,gender,is_reflexive,expected_result",
     [
-        (Person.FirstPersonSingular, Gender.m, False, "eu"),
-        (Person.FirstPersonSingular, Gender.m, True, "eu me"),
-        (Person.SecondPersonSingular, Gender.m, False, "tu"),
-        (Person.SecondPersonSingular, Gender.m, True, "tu te"),
-        (Person.ThirdPersonSingular, Gender.m, False, "ele"),
-        (Person.ThirdPersonSingular, Gender.m, True, "ele se"),
-        (Person.ThirdPersonSingular, Gender.f, False, "ela"),
-        (Person.ThirdPersonSingular, Gender.f, True, "ela se"),
-        (Person.FirstPersonPlural, Gender.m, False, "nós"),
-        (Person.FirstPersonPlural, Gender.m, True, "nós nos"),
-        (Person.SecondPersonPlural, Gender.m, False, "vós"),
-        (Person.SecondPersonPlural, Gender.m, True, "vós se"),
-        (Person.ThirdPersonPlural, Gender.m, False, "eles"),
-        (Person.ThirdPersonPlural, Gender.m, True, "eles se"),
-        (Person.ThirdPersonPlural, Gender.f, False, "elas"),
-        (Person.ThirdPersonPlural, Gender.f, True, "elas se"),
+        (Person.First, Number.Singular, Gender.m, False, "eu"),
+        (Person.First, Number.Singular, Gender.m, True, "eu me"),
+        (Person.Second, Number.Singular, Gender.m, False, "tu"),
+        (Person.Second, Number.Singular, Gender.m, True, "tu te"),
+        (Person.Third, Number.Singular, Gender.m, False, "ele"),
+        (Person.Third, Number.Singular, Gender.m, True, "ele se"),
+        (Person.Third, Number.Singular, Gender.f, False, "ela"),
+        (Person.Third, Number.Singular, Gender.f, True, "ela se"),
+        (Person.First, Number.Plural, Gender.m, False, "nós"),
+        (Person.First, Number.Plural, Gender.m, True, "nós nos"),
+        (Person.Second, Number.Plural, Gender.m, False, "vós"),
+        (Person.Second, Number.Plural, Gender.m, True, "vós se"),
+        (Person.Third, Number.Plural, Gender.m, False, "eles"),
+        (Person.Third, Number.Plural, Gender.m, True, "eles se"),
+        (Person.Third, Number.Plural, Gender.f, False, "elas"),
+        (Person.Third, Number.Plural, Gender.f, True, "elas se"),
     ],
 )
-def test_inflector_pt_get_default_pronoun(
-    cg, person: Person, gender: Gender, is_reflexive: bool, expected_result: str
+def test_inflector_pt_get_pronouns(
+    ccg,
+    person: Person,
+    number: Number,
+    gender: Gender,
+    is_reflexive: bool,
+    expected_result: str,
 ):
-    assert (
-        cg._inflector.get_default_pronoun(person, gender, is_reflexive=is_reflexive)
-        == expected_result
-    )
+    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
+    if is_reflexive:
+        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
+    assert pronoun == expected_result

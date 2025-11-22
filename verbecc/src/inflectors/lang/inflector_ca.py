@@ -1,9 +1,10 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from verbecc.src.defs.types.gender import Gender
 from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.mood import MoodCa as Mood
-from verbecc.src.defs.types.tense import TenseCa as Tense
+from verbecc.src.defs.types.number import Number
+from verbecc.src.defs.types.mood import Mood, Moods
+from verbecc.src.defs.types.tense import Tense, Tenses
 from verbecc.src.defs.types import exceptions
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.lang_specific_options import (
@@ -12,63 +13,95 @@ from verbecc.src.defs.types.lang_specific_options import (
 from verbecc.src.inflectors import inflector
 from verbecc.src.utils.string_utils import get_common_letter_count, strip_accents
 from verbecc.src.conjugator.conjugation_object import ConjugationObjects
+from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
 
 
 class InflectorCa(inflector.Inflector):
-    def __init__(self) -> None:
+    def __init__(
+        self, lang_specific_options: Optional[LangSpecificOptions] = None
+    ) -> None:
         super(InflectorCa, self).__init__()
 
-    @property
-    def lang(self) -> LangCodeISO639_1:
+    def get_lang(self) -> LangCodeISO639_1:
         return LangCodeISO639_1.ca
 
     def add_adverb_if_applicable(self, s: str, mood: Mood, tense: Tense) -> str:
         return s
 
-    def get_default_pronoun(
+    def get_pronoun_gender(self, pronoun: Pronoun) -> Optional[Gender]:
+        if pronoun in (Pronouns.ca.ella, Pronouns.ca.elles):
+            return Gender.f
+        elif pronoun in (Pronouns.ca.ell, Pronouns.ca.ells):
+            return Gender.m
+        return None
+
+    def get_pronouns(
         self,
-        person: Person,
-        gender: Gender = Gender.m,
-        is_reflexive: bool = False,
-        lang_specific_options: LangSpecificOptions = None,
-    ) -> str:
-        ret = ""
-        if person == Person.FirstPersonSingular:
-            ret = "jo"
-            if is_reflexive:
-                ret += " me"
-        elif person == Person.SecondPersonSingular:
-            ret = "tu"
-            if is_reflexive:
-                ret += " te"
-        elif person == Person.ThirdPersonSingular:
-            ret = "ell"
-            if gender == Gender.f:
-                ret = "ella"
-            if is_reflexive:
-                ret += " se"
-        elif person == Person.FirstPersonPlural:
-            ret = "nosaltres"
-            if is_reflexive:
-                ret += " nos"
-        elif person == Person.SecondPersonPlural:
-            ret = "vosaltres"
-            if is_reflexive:
-                ret += " os"
-        elif person == Person.ThirdPersonPlural:
-            ret = "ells"
-            if gender == Gender.f:
-                ret = "elles"
-            if is_reflexive:
-                ret += " se"
+        person: Optional[Person] = None,
+        number: Optional[Number] = None,
+        gender: Optional[Gender] = None,
+    ) -> List[Pronoun]:
+        ret = []
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Singular
+        ):
+            p = Pronouns.ca.jo
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Singular
+        ):
+            p = Pronouns.ca.tu
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Singular
+        ):
+            pronouns = [Pronouns.ca.ell, Pronouns.ca.ella]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = [Pronouns.ca.ell]
+                else:
+                    pronouns = [Pronouns.ca.ella]
+            ret.extend(pronouns)
+        if (person is None or person == Person.First) and (
+            number is None or number == Number.Plural
+        ):
+            p = Pronouns.ca.nosaltres
+            ret.append(p)
+        if (person is None or person == Person.Second) and (
+            number is None or number == Number.Plural
+        ):
+            p = Pronouns.ca.vosaltres
+            ret.append(p)
+        if (person is None or person == Person.Third) and (
+            number is None or number == Number.Plural
+        ):
+            pronouns = [Pronouns.ca.ells, Pronouns.ca.elles]
+            if gender is not None:
+                if gender == Gender.m:
+                    pronouns = [Pronouns.ca.ells]
+                else:
+                    pronouns = [Pronouns.ca.elles]
+            ret.extend(pronouns)
         return ret
+
+    def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.ca.jo:
+            return pronoun + " me"
+        elif pronoun == Pronouns.ca.tu:
+            return pronoun + " te"
+        elif pronoun == Pronouns.ca.vosaltres:
+            return pronoun + " os"
+        elif pronoun == Pronouns.ca.nosaltres:
+            return pronoun + " nos"
+        else:
+            return pronoun + " se"
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
         return [
-            Tense.Particip,
-            Tense.Gerundi,
-            Tense.InfinitiuPresent,
-            Tense.ImperatiuPresent,
+            Tenses.ca.Participi,
+            Tenses.ca.Gerundi,
+            Tenses.ca.InfinitiuPresent,
+            Tenses.ca.ImperatiuPresent,
         ]
 
     def get_auxiliary_verb(
@@ -80,22 +113,22 @@ class InflectorCa(inflector.Inflector):
         return "haver"
 
     def get_infinitive_mood(self) -> Mood:
-        return Mood.Infinitiu
+        return Moods.ca.Infinitiu
 
     def get_indicative_mood(self) -> Mood:
-        return Mood.Indicatiu
+        return Moods.ca.Indicatiu
 
     def get_subjunctive_mood(self) -> Mood:
-        return Mood.Subjuntiu
+        return Moods.ca.Subjuntiu
 
     def get_conditional_mood(self) -> Mood:
-        return Mood.Condicional
+        return Moods.ca.Condicional
 
     def get_participle_mood(self) -> Mood:
-        return Mood.Participi
+        return Moods.ca.Participi
 
     def get_participle_tense(self) -> Tense:
-        return Tense.Particip
+        return Tenses.ca.Participi
 
     def get_alternate_hv_inflection(self, s: str) -> str:
         # if s.endswith('hay'):
@@ -104,7 +137,7 @@ class InflectorCa(inflector.Inflector):
 
     def get_compound_conjugations_aux_verb_map(
         self,
-    ) -> Dict[str, Dict[str, Tuple[str, ...]]]:
+    ) -> Dict[Mood, Dict[Tense, Tuple[Mood, Tense]]]:
         """
         TODO: Implement all these compound tenses (Spanish compound tenses in this commment, for reference)
         return {

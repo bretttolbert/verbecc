@@ -1,13 +1,12 @@
 import sys
+from enum import Enum
 
-if sys.version_info >= (3, 11):
-    from enum import StrEnum
-else:
-    from backports.strenum import StrEnum
+from verbecc.src.defs.types.gender import Gender
+from verbecc.src.defs.types.number import Number
 
 
-class ParticipleInflection(StrEnum):
-    MasculineSingular = "ms"
-    MasculinePlural = "mp"
-    FeminineSingular = "fs"
-    FemininePlural = "fp"
+class ParticipleInflection(Enum):
+    MasculineSingular = (Gender.m, Number.Singular)
+    MasculinePlural = (Gender.m, Number.Plural)
+    FeminineSingular = (Gender.f, Number.Singular)
+    FemininePlural = (Gender.f, Number.Plural)

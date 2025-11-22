@@ -1,0 +1,2 @@
+class VerbNotFoundError(Exception):
+    pass

@@ -1,5 +1,5 @@
 from lxml import etree
-from lxml.etree import Element
+from typing import Optional
 
 from verbecc.src.defs.types.data.verb import Verb
 from verbecc.src.defs.types.exceptions import VerbsParserError
@@ -10,7 +10,9 @@ class VerbParser(Parser):
     def __init__(self) -> None:
         pass
 
-    def parse(self, elem: etree._Element) -> Verb:
+    def parse(self, elem: Optional[etree._Element] = None) -> Verb:
+        if elem is None:
+            raise ValueError("elem must not be None")
         infinitive = ""
         template = ""
         translation_en = ""

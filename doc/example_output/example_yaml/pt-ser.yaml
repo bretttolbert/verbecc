@@ -1,0 +1,985 @@
+moods:
+  condicional:
+    futuro-do-pretérito:
+    - c:
+      - eu seria
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu serias
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele seria
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela seria
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós seríamos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós seríeis
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles seriam
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas seriam
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    futuro-do-pretérito-composto:
+    - c:
+      - eu teria sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu terias sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele teria sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela teria sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós teríamos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós teríeis sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles teriam sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas teriam sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+  gerúndio:
+    gerúndio:
+    - c:
+      - sendo
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - sido
+      n: s
+      p: 2
+      pr: tu
+  imperativo:
+    afirmativo:
+    - c:
+      - '-'
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - sê tu
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - seja você
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - seja você
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - sejamos nós
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - sede vós
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - sejam vocês
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - sejam vocês
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    negativo:
+    - c:
+      - '-'
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - não sejas tu
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - não seja você
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - não seja você
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - não sejamos nós
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - não sejais vós
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - não sejam vocês
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - não sejam vocês
+      g: f
+      n: p
+      p: 3
+      pr: elas
+  indicativo:
+    futuro-do-presente:
+    - c:
+      - eu serei
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu serás
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele será
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela será
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós seremos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós sereis
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles serão
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas serão
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    futuro-do-presente-composto:
+    - c:
+      - eu terei sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu terás sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele terá sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela terá sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós teremos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós tereis sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles terão sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas terão sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    presente:
+    - c:
+      - eu sou
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu és
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele é
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela é
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós somos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós sois
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles são
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas são
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-imperfeito:
+    - c:
+      - eu era
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu eras
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele era
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela era
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós éramos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós éreis
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles eram
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas eram
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-mais-que-perfeito:
+    - c:
+      - eu fora
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu foras
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele fora
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela fora
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós fôramos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós fôreis
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles foram
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas foram
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-mais-que-perfeito-anterior:
+    - c:
+      - eu tivera sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu tiveras sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele tivera sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela tivera sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós tivéramos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós tivéreis sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles tiveram sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas tiveram sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-mais-que-perfeito-composto:
+    - c:
+      - eu tinha sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu tinhas sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele tinha sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela tinha sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós tínhamos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós tínheis sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles tinham sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas tinham sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-perfeito:
+    - c:
+      - eu fui
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu foste
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele foi
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela foi
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós fomos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós fostes
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles foram
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas foram
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-perfeito-composto:
+    - c:
+      - eu tenho sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu tens sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele tem sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela tem sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós temos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós tendes sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles têm sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas têm sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+  infinitivo:
+    infinitivo:
+    - c:
+      - ser
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - sido
+      n: s
+      p: 2
+      pr: tu
+    infinitivo-pessoal-composto:
+    - c:
+      - ter sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - teres sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ter sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ter sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - termos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - terdes sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - terem sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - terem sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    infinitivo-pessoal-presente:
+    - c:
+      - por ser eu
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - por seres tu
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - por ser ele
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - por ser ela
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - por sermos nós
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - por serdes vós
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - por serem eles
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - por serem elas
+      g: f
+      n: p
+      p: 3
+      pr: elas
+  particípio:
+    particípio:
+    - c:
+      - sido
+  subjuntivo:
+    futuro:
+    - c:
+      - quando eu for
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - quando tu fores
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - quando ele for
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - quando ela for
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - quando nós formos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - quando vós fordes
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - quando eles forem
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - quando elas forem
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    futuro-composto:
+    - c:
+      - eu tiver sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu tiveres sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele tiver sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela tiver sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós tivermos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós tiverdes sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles tiverem sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas tiverem sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    presente:
+    - c:
+      - que eu seja
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - que tu sejas
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - que ele seja
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - que ela seja
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - que nós sejamos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - que vós sejais
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - que eles sejam
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - que elas sejam
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-imperfeito:
+    - c:
+      - se eu fosse
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - se tu fosses
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - se ele fosse
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - se ela fosse
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - se nós fôssemos
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - se vós fôsseis
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - se eles fossem
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - se elas fossem
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-mais-que-perfeito:
+    - c:
+      - eu tivesse sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu tivesses sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele tivesse sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela tivesse sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós tivéssemos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós tivésseis sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles tivessem sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas tivessem sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+    pretérito-perfeito:
+    - c:
+      - eu tenha sido
+      n: s
+      p: 1
+      pr: eu
+    - c:
+      - tu tenhas sido
+      n: s
+      p: 2
+      pr: tu
+    - c:
+      - ele tenha sido
+      g: m
+      n: s
+      p: 3
+      pr: ele
+    - c:
+      - ela tenha sido
+      g: f
+      n: s
+      p: 3
+      pr: ela
+    - c:
+      - nós tenhamos sido
+      n: p
+      p: 1
+      pr: nós
+    - c:
+      - vós tenhais sido
+      n: p
+      p: 2
+      pr: vós
+    - c:
+      - eles tenham sido
+      g: m
+      n: p
+      p: 3
+      pr: eles
+    - c:
+      - elas tenham sido
+      g: f
+      n: p
+      p: 3
+      pr: elas
+verb:
+  infinitive: ser
+  lang: pt
+  predicted: false
+  stem: ''
+  template: :ser
+  translation_en: ''
