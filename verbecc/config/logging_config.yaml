@@ -21,12 +21,12 @@ handlers:
     backupCount: 5
 loggers:
   verbecc:
-    level: CRITICAL
+    level: INFO
     handlers:
       - consoleHandler
       - fileHandler
     propagate: false
 root:
-  level: CRITICAL
+  level: WARNING
   handlers:
     - consoleHandler

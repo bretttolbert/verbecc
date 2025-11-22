@@ -12,9 +12,8 @@ from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tense
-from verbecc.src.inflectors.inflector_factory import InflectorFactory
-from verbecc.src.utils.string_utils import strip_accents
-from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
+from verbecc.src.inflectors.inflector import Inflector
+from verbecc.src.defs.types.pronoun import Pronoun
 
 
 class Conjugator(AbstractConjugator):
@@ -34,9 +33,11 @@ class Conjugator(AbstractConjugator):
         self,
         lang: LangCodeISO639_1,
         lang_specific_options: Optional[LangSpecificOptions] = None,
+        inflector: Optional[Inflector] = None,
     ) -> None:
-        super().__init__(lang, lang_specific_options, self.__class__.__name__)
-        self._inflector = InflectorFactory.make_inflector(lang, lang_specific_options)
+        super().__init__(
+            lang, lang_specific_options, self.__class__.__name__, inflector
+        )
 
     def conjugate(
         self,
@@ -136,7 +137,7 @@ class Conjugator(AbstractConjugator):
                             gender,
                         )
                     else:
-                        self._logger.warning("person is None")
+                        self._logger.debug("person is None")
                 if ending != grammar_defines.NO_VALUE:
                     t = tense
                     if primary_tense:

@@ -26,7 +26,9 @@ class CompleteConjugator(AbstractConjugator):
         lang_specific_options: Optional[LangSpecificOptions] = None,
     ) -> None:
         super().__init__(lang, lang_specific_options, self.__class__.__name__)
-        self._mood_conjugator = MoodConjugator(lang, lang_specific_options)
+        self._mood_conjugator = MoodConjugator(
+            lang, lang_specific_options, self._inflector
+        )
 
     def conjugate(
         self,

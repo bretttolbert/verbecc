@@ -7,18 +7,26 @@ from verbecc.src.mlconjug.model import Model
 from verbecc.src.mlconjug.model_utils import load_model, save_model
 from verbecc.src.mlconjug.data_set import DataSet
 from verbecc.src.mlconjug.mltypes import VerbTemplatePair
+from verbecc.src.utils.logging_utils import LoggingUtils
 
 
 class TemplatePredictor:
     def __init__(
         self, verb_template_pairs: List[VerbTemplatePair], lang: LangCodeISO639_1
     ) -> None:
+        self._logger = LoggingUtils.get_logger(self.__class__.__name__)
         self.data_set = DataSet(verb_template_pairs)
         model = load_model(lang)
-        if not model:
+        if model:
+            self._logger.info("Loaded existing model from zip file.")
+        else:
+            self._logger.info("Could not load existing model, training new model...")
             model = Model(lang=lang)
             model.train(self.data_set.train_input, self.data_set.train_labels)
-            save_model(model)
+            zip_filename = save_model(model)
+            self._logger.info(
+                "Model training complete. Model saved to %s.", zip_filename
+            )
         self.model = model
         return
 

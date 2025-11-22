@@ -19,7 +19,11 @@ def get_model_pickle_filename(lang: LangCodeISO639_1) -> str:
     return "trained_model-{0}.pickle".format(lang)
 
 
-def save_model(model: Model) -> None:
+def save_model(model: Model) -> str:
+    """
+    Pickles model and saves it within a zip file.
+    Returns zip filename.
+    """
     pickle_filename = get_model_pickle_filename(model.lang)
     with open(pickle_filename, "wb") as f:
         pickle.dump(model, f)
@@ -34,6 +38,7 @@ def save_model(model: Model) -> None:
                 zip_filename,
             )
     os.remove(pickle_filename)
+    return zip_filename
 
 
 def load_model(lang: LangCodeISO639_1) -> Optional[Model]:
@@ -47,7 +52,7 @@ def load_model(lang: LangCodeISO639_1) -> Optional[Model]:
                 with zf.open(pickle_filename, "r") as model_pickle:
                     model = pickle.loads(model_pickle.read())
                     _logger.info(
-                        "Loaded model pickle filename %s from zip filename %s",
+                        "Loaded model pickle (filename=%s) from zip file (filename=%s)",
                         pickle_filename,
                         zip_filename,
                     )

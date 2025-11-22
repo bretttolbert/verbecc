@@ -63,7 +63,7 @@ class PersonEndingParser(Parser):
         endings: List[str] = []
         i_elems = elem.findall("i", None)
         if len(i_elems) == 0:
-            self._logger.warning("Empty <p> element in conjugation template")
+            self._logger.debug("Empty <p> element in conjugation template")
         for i_elem in i_elems:
             ending = str("")
             if i_elem.text is not None:

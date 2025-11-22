@@ -398,3 +398,7 @@ def test_conjugator_get_verbs_that_start_with(ccg, query, expected_value):
     assert set(ccg.get_verbs_that_start_with(query, max_results=10)) == set(
         expected_value
     )
+
+
+def test_conjugator_construct():
+    ccg = CompleteConjugator(lang=Lang.fr)

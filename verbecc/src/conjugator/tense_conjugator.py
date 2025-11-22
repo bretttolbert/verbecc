@@ -7,7 +7,7 @@ from verbecc.src.defs.types.exceptions import InvalidTenseError
 from verbecc.src.defs.types.conjugation.tense_conjugation import TenseConjugation
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.inflectors.inflector_factory import InflectorFactory
+from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.conjugator.abstract_conjugator import AbstractConjugator
 from verbecc.src.conjugator.tense_conjugator_simple import TenseConjugatorSimple
 from verbecc.src.conjugator.tense_conjugator_compound import TenseConjugatorCompound
@@ -24,11 +24,13 @@ class TenseConjugator(AbstractConjugator):
         self,
         lang: LangCodeISO639_1,
         lang_specific_options: Optional[LangSpecificOptions] = None,
+        inflector: Optional[Inflector] = None,
     ) -> None:
-        super().__init__(lang, lang_specific_options, self.__class__.__name__)
-        self._inflector = InflectorFactory.make_inflector(lang, lang_specific_options)
+        super().__init__(
+            lang, lang_specific_options, self.__class__.__name__, inflector
+        )
         self._tense_conjugator_simple = TenseConjugatorSimple(
-            lang, lang_specific_options
+            lang, lang_specific_options, self._inflector
         )
         self._tense_conjugator_compound = TenseConjugatorCompound(
             lang, lang_specific_options, self._tense_conjugator_simple

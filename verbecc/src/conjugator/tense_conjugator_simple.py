@@ -6,7 +6,7 @@ from verbecc.src.defs.types.conjugation.tense_conjugation import TenseConjugatio
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.data.tense_template import TenseTemplate
-from verbecc.src.inflectors.inflector_factory import InflectorFactory
+from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.utils.string_utils import strip_accents
 from verbecc.src.conjugator.abstract_conjugator import AbstractConjugator
 from verbecc.src.conjugator.conjugator import Conjugator
@@ -18,10 +18,12 @@ class TenseConjugatorSimple(AbstractConjugator):
         self,
         lang: LangCodeISO639_1,
         lang_specific_options: Optional[LangSpecificOptions] = None,
+        inflector: Optional[Inflector] = None,
     ) -> None:
-        super().__init__(lang, lang_specific_options, self.__class__.__name__)
-        self._inflector = InflectorFactory.make_inflector(lang, lang_specific_options)
-        self._conjugator = Conjugator(lang, lang_specific_options)
+        super().__init__(
+            lang, lang_specific_options, self.__class__.__name__, inflector
+        )
+        self._conjugator = Conjugator(lang, lang_specific_options, self._inflector)
 
     def _conjugate_simple_mood_tense(
         self,

@@ -13,6 +13,7 @@ from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
+from verbecc.src.inflectors.inflector import Inflector
 from verbecc.src.inflectors.inflector_factory import InflectorFactory
 from verbecc.src.utils.logging_utils import LoggingUtils
 
@@ -24,8 +25,14 @@ class AbstractConjugator(ABC):
         lang: LangCodeISO639_1,
         lang_specific_options: Optional[LangSpecificOptions],
         subclass_name: str,
+        inflector: Optional[Inflector] = None,
     ) -> None:
-        self._inflector = InflectorFactory.make_inflector(lang, lang_specific_options)
+        if inflector is not None:
+            self._inflector = inflector
+        else:
+            self._inflector = InflectorFactory.make_inflector(
+                lang, lang_specific_options
+            )
         self._logger = LoggingUtils.get_logger(subclass_name)
         super().__init__()
 

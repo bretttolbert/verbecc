@@ -11,6 +11,7 @@ from verbecc.src.defs.types.lang_code import LangCodeISO639_1
 from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.src.defs.types.mood import Mood
 from verbecc.src.defs.types.tense import Tense
+from verbecc.src.inflectors.inflector import Inflector
 
 
 class MoodConjugator(AbstractConjugator):
@@ -18,9 +19,14 @@ class MoodConjugator(AbstractConjugator):
         self,
         lang: LangCodeISO639_1,
         lang_specific_options: Optional[LangSpecificOptions] = None,
+        inflector: Optional[Inflector] = None,
     ) -> None:
-        super().__init__(lang, lang_specific_options, self.__class__.__name__)
-        self._tense_conjugator = TenseConjugator(lang, lang_specific_options)
+        super().__init__(
+            lang, lang_specific_options, self.__class__.__name__, inflector
+        )
+        self._tense_conjugator = TenseConjugator(
+            lang, lang_specific_options, self._inflector
+        )
 
     def conjugate_mood(
         self,
