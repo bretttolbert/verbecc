@@ -2,6 +2,7 @@ from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
 from verbecc.src.conjugator.mood_conjugator import MoodConjugator
 from verbecc.src.conjugator.tense_conjugator import TenseConjugator
 from verbecc.src.defs.constants import grammar_defines
+from verbecc.src.defs.constants.grammar_defines import SUPPORTED_LANGUAGES
 from verbecc.src.defs.constants import localization
 from verbecc.src.defs.types.config.verbecc_config import VerbeccConfig
 from verbecc.src.defs.types.config.jsbeautifier_opts import JSBeautifierOpts
