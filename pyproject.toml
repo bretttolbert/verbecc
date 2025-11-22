@@ -14,7 +14,7 @@ dependencies = [
   "jsbeautifier>=1.15.4,<2.0",
   "lxml-stubs>=0.5.1",
   "lxml>=6.0.2",
-  "numpy==1.6.1 ; python_version < '3.11'",
+  "numpy==1.26.2 ; python_version < '3.11'",
   "numpy==2.3.3 ; python_version >= '3.11'",
   "pyaml==25.7.0",
   "scikit-learn==1.6.1 ; python_version < '3.10'",
