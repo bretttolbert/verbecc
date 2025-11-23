@@ -76,7 +76,11 @@ class TenseConjugatorCompound(AbstractConjugator):
             aux_tense_template,
             primary_tense=tense,
             is_reflexive=co.is_reflexive,
-            conjugate_pronouns=conjugate_pronouns,
+            conjugate_pronouns=(
+                conjugate_pronouns
+                and tense
+                not in self._inflector.get_tenses_conjugated_without_pronouns()
+            ),
         )
         # need to skip conjugating primary verb for certain tenses e.g. romanian viitor-1
         ret = self._conjugate_compound_primary_verb(

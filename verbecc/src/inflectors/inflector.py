@@ -89,9 +89,16 @@ class Inflector(ABC):
         "se raser" => (True, "raser")
         "s'habiller" => (True, "habiller")
         "parler" => (False, "parler")
+
         E.g. Italian:
         "alzarsi" => (True, "alzare")
         "preoccuparsi" => (True, "preoccupare")
+
+        E.g. Spanish
+        "levantarse" => (True, "levantar")
+
+        E.g. Portuguese
+        "vestir-se" => (True, "vestir")
         """
         return (False, infinitive)
 
@@ -117,6 +124,9 @@ class Inflector(ABC):
 
     def get_infinitive_mood(self) -> Mood:
         return Moods.en.Infinitive
+
+    def get_imperative_mood(self) -> Mood:
+        return Moods.en.Imperative
 
     def get_indicative_mood(self) -> Mood:
         return Moods.en.Indicative
@@ -181,6 +191,7 @@ class Inflector(ABC):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
+        imperative: bool = False,
     ) -> List[Pronoun]:
         """
         Returns a list of all pronouns matching the provided filters,
@@ -196,7 +207,14 @@ class Inflector(ABC):
         """
         return pronoun
 
-    def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
+    def combine_pronoun_and_conj(
+        self,
+        pronoun: str,
+        conj: str,
+        mood: Optional[Mood] = None,
+        tense: Optional[Tense] = None,
+        reflexive: bool = False,
+    ) -> str:
         return pronoun + " " + conj
 
     def combine_verb_stem_and_ending(self, verb_stem: str, ending: str) -> str:
@@ -248,6 +266,7 @@ class Inflector(ABC):
         person: Person,
         number: Number,
         gender: Gender,
+        pronoun: Optional[Pronoun],
     ) -> str:
         if is_reflexive:
             s += self._get_pronoun_suffix(person, number, gender)

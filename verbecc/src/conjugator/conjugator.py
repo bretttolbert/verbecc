@@ -92,7 +92,9 @@ class Conjugator(AbstractConjugator):
                         verb_stem, ending
                     )
                     if len(pronoun_str):
-                        s = self._inflector.combine_pronoun_and_conj(pronoun_str, conj)
+                        s = self._inflector.combine_pronoun_and_conj(
+                            pronoun_str, conj, mood, tense, is_reflexive
+                        )
                     if mood == self._inflector.get_subjunctive_mood():
                         t = tense
                         if primary_tense:
@@ -135,13 +137,14 @@ class Conjugator(AbstractConjugator):
                             person,
                             number,
                             gender,
+                            pronoun,
                         )
                     else:
                         self._logger.debug("person is None")
-                if ending != grammar_defines.NO_VALUE:
-                    t = tense
-                    if primary_tense:
-                        t = primary_tense
-                    s = self._inflector.add_adverb_if_applicable(s, mood, t)
+            if ending != grammar_defines.NO_VALUE:
+                t = tense
+                if primary_tense:
+                    t = primary_tense
+                s = self._inflector.add_adverb_if_applicable(s, mood, t)
             conjugation.append(s)
         return conjugation
