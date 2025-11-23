@@ -54,6 +54,7 @@ class InflectorEs(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
+        imperative: bool = False,
     ) -> List[Pronoun]:
         ret = []
         if (person is None or person == Person.First) and (
@@ -129,6 +130,9 @@ class InflectorEs(Inflector):
 
     def get_infinitive_mood(self) -> Mood:
         return Moods.es.Infinitivo
+
+    def get_imperative_mood(self) -> Mood:
+        return Moods.es.Imperativo
 
     def get_indicative_mood(self) -> Mood:
         return Moods.es.Indicativo
@@ -298,3 +302,28 @@ class InflectorEs(Inflector):
                         replacement_person_ending.endings[i] = ending
                     return replacement_person_ending
         return person_ending
+
+    def split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
+        """
+        Tests whether an infinitive is reflexive
+        Returns a 2-tuple of whether it is reflexive
+        and the non-reflexive form of the infinitive.
+
+        E.g. French:
+        "se raser" => (True, "raser")
+        "s'habiller" => (True, "habiller")
+        "parler" => (False, "parler")
+        E.g. Italian:
+        "alzarsi" => (True, "alzare")
+        "preoccuparsi" => (True, "preoccupare")
+
+        E.g. Spanish
+        "levantarse" => (True, "levantar")
+
+        E.g. Portuguese
+        "vestir-se" => (True, "vestir")
+        """
+        if infinitive.endswith("se"):
+            return (True, infinitive[:-2])
+        else:
+            return (False, infinitive)

@@ -12,7 +12,7 @@ from verbecc.src.defs.types.number import Number
 from verbecc.src.defs.types.person import Person
 from verbecc.src.defs.types.tense import Tenses
 from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
-from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
+from verbecc.src.defs.types.pronoun import Pronouns
 
 
 @pytest.fixture(scope="module")

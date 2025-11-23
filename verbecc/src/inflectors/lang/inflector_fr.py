@@ -118,6 +118,7 @@ class InflectorFr(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
+        imperative: bool = False,
     ) -> List[Pronoun]:
         """
         Returns a list of all pronouns matching the provided filters,
@@ -205,6 +206,9 @@ class InflectorFr(Inflector):
     def get_infinitive_mood(self) -> Mood:
         return Moods.fr.Infinitif
 
+    def get_imperative_mood(self) -> Mood:
+        return Moods.fr.Imperatif
+
     def get_indicative_mood(self) -> Mood:
         return Moods.fr.Indicatif
 
@@ -220,7 +224,14 @@ class InflectorFr(Inflector):
     def get_participle_tense(self) -> Tense:
         return Tenses.fr.ParticipePassé
 
-    def combine_pronoun_and_conj(self, pronoun: str, conj: str) -> str:
+    def combine_pronoun_and_conj(
+        self,
+        pronoun: str,
+        conj: str,
+        mood: Optional[Mood] = None,
+        tense: Optional[Tense] = None,
+        reflexive: bool = False,
+    ) -> str:
         """
         Combine the pronoun with the verb conjugation.
         E.g. "je" + "mange" = "je mange"
@@ -258,6 +269,7 @@ class InflectorFr(Inflector):
         person: Person,
         number: Number,
         gender: Gender,
+        pronoun: Optional[Pronoun],
     ) -> str:
         if is_reflexive:
             if mood != Moods.fr.Imperatif:

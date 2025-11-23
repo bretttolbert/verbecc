@@ -40,6 +40,7 @@ class InflectorCa(inflector.Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
+        imperative: bool = False,
     ) -> List[Pronoun]:
         ret = []
         if (person is None or person == Person.First) and (
@@ -114,6 +115,9 @@ class InflectorCa(inflector.Inflector):
 
     def get_infinitive_mood(self) -> Mood:
         return Moods.ca.Infinitiu
+
+    def get_imperative_mood(self) -> Mood:
+        return Moods.ca.Imperatiu
 
     def get_indicative_mood(self) -> Mood:
         return Moods.ca.Indicatiu

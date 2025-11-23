@@ -67,6 +67,7 @@ class TenseConjugatorSimple(AbstractConjugator):
             pronouns = self._inflector.get_pronouns(
                 person=person,
                 number=number,
+                imperative=(mood == self._inflector.get_imperative_mood()),
             )
             # note: tense_conjugated_with_pronoun is False
             # for imperative tense but we still want to set the

@@ -53,16 +53,23 @@ class InflectorPt(Inflector):
         person: Person,
         number: Number,
         gender: Gender,
+        pronoun: Optional[Pronoun],
     ) -> str:
         if tense == Tenses.pt.InfinitivoPessoalComposto:
             return s
-        imperative: bool = mood == Moods.pt.Imperativo
-        if imperative or (
-            mood == Moods.pt.Infinitivo and tense == Tenses.pt.InfinitivoPessoalPresente
-        ):
-            s += " " + self._get_pronoun_suffix(
-                person, number, gender, imperative=imperative
-            )
+
+        if is_reflexive and pronoun is not None:
+            s += "-" + self._get_reflexive_suffix_for_pronoun(pronoun)
+        else:
+            imperative = mood == Moods.pt.Imperativo
+            if imperative or (
+                mood == Moods.pt.Infinitivo
+                and tense == Tenses.pt.InfinitivoPessoalPresente
+            ):
+                s += " " + self._get_pronoun_suffix(
+                    person, number, gender, imperative=imperative
+                )
+
         return s
 
     def get_pronoun_gender(self, pronoun: str) -> Optional[Gender]:
@@ -77,6 +84,7 @@ class InflectorPt(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
+        imperative: bool = False,
     ) -> List[Pronoun]:
         ret = []
         if (person is None or person == Person.First) and (
@@ -92,12 +100,14 @@ class InflectorPt(Inflector):
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Singular
         ):
-            pronouns = [Pronouns.pt.ele, Pronouns.pt.ela]
+            pronouns = [Pronouns.pt.ele, Pronouns.pt.ela, Pronouns.pt.você]
             if gender is not None:
                 if gender == Gender.m:
                     pronouns = [Pronouns.pt.ele]
                 else:
                     pronouns = [Pronouns.pt.ela]
+            elif imperative:
+                pronouns = [Pronouns.pt.você]
             ret.extend(pronouns)
         if (person is None or person == Person.First) and (
             number is None or number == Number.Plural
@@ -112,30 +122,48 @@ class InflectorPt(Inflector):
         if (person is None or person == Person.Third) and (
             number is None or number == Number.Plural
         ):
-            pronouns = [Pronouns.pt.eles, Pronouns.pt.elas]
+            pronouns = [Pronouns.pt.eles, Pronouns.pt.elas, Pronouns.pt.vocês]
             if gender is not None:
                 if gender == Gender.m:
                     pronouns = [Pronouns.pt.eles]
                 else:
                     pronouns = [Pronouns.pt.elas]
+            elif imperative:
+                pronouns = [Pronouns.pt.vocês]
             ret.extend(pronouns)
         return ret
 
     def make_pronoun_reflexive(self, pronoun: Pronoun) -> str:
+        """
+        In portuguese, some tenses use reflexive pronoun suffixes
+        E.g. Presente: eu visto-me
+        while others tenses don't
+        E.g. Pretérito Imperfeito: se eu me vestisse
+        This function is only for the latter case
+        (i.e. when reflexive pronoun is together with subject pronoun)
+        """
         if pronoun == Pronouns.pt.eu:
             return pronoun + " me"
         elif pronoun == Pronouns.pt.tu:
             return pronoun + " te"
         elif pronoun == Pronouns.pt.nós:
             return pronoun + " nos"
+        elif pronoun == Pronouns.pt.vós:
+            return pronoun + " vos"
         else:
             return pronoun + " se"
 
     def get_tenses_conjugated_without_pronouns(self) -> List[Tense]:
+        """
+        Many tenses conjugated without pronouns in Spanish are
+        conjugated with pronouns in Portuguese.
+        E.g. Infinitivo Pessoal (Presente) "por teres tu"
+        E.g. Imperativo Afirmativo "tem tu"
+        E.g. Imperativo Negativo "não tenhas tu"
+        """
         return [
             Tenses.pt.Particípio,
             Tenses.pt.Infinitivo,
-            Tenses.pt.InfinitivoPessoalPresente,
             Tenses.pt.InfinitivoPessoalComposto,
             Tenses.pt.Afirmativo,
             Tenses.pt.Negativo,
@@ -152,6 +180,9 @@ class InflectorPt(Inflector):
 
     def get_infinitive_mood(self) -> Mood:
         return Moods.pt.Infinitivo
+
+    def get_imperative_mood(self) -> Mood:
+        return Moods.pt.Imperativo
 
     def get_indicative_mood(self) -> Mood:
         return Moods.pt.Indicativo
@@ -214,6 +245,18 @@ class InflectorPt(Inflector):
 
     # private:
 
+    def _get_reflexive_suffix_for_pronoun(self, pronoun: Pronoun) -> str:
+        if pronoun == Pronouns.pt.eu:
+            return "me"
+        elif pronoun == Pronouns.pt.tu:
+            return "te"
+        elif pronoun == Pronouns.pt.nós:
+            return "nos"
+        elif pronoun == Pronouns.pt.vós:
+            return "vos"
+        else:
+            return "se"
+
     def _get_pronoun_suffix(
         self,
         person: Person,
@@ -243,3 +286,61 @@ class InflectorPt(Inflector):
                 if gender == Gender.f:
                     ret = "elas"
         return ret
+
+    # most Portuguese tenses use a hyphenated reflexive pronoun suffix
+    # e.g. "tiver-me vestido"
+    # except for these tenses
+    # e.g. "se eu me vestisse"
+    # e.g. "quando eu me vestir"
+    # also Imperativo Negativo (not currently supported)
+    def get_unhyphenated_reflexive_mood_tenses(self) -> List[Tuple[Mood, Tense]]:
+        return [
+            (Moods.pt.Subjuntivo, Tenses.pt.Presente),
+            (Moods.pt.Subjuntivo, Tenses.pt.PretéritoImperfeito),
+            (Moods.pt.Subjuntivo, Tenses.pt.Futuro),
+        ]
+
+    def combine_pronoun_and_conj(
+        self,
+        pronoun: str,
+        conj: str,
+        mood: Optional[Mood] = None,
+        tense: Optional[Tense] = None,
+        reflexive: bool = False,
+    ) -> str:
+        if (
+            reflexive
+            and (mood, tense) not in self.get_unhyphenated_reflexive_mood_tenses()
+        ):
+            # e.g. "eu me" + "tenho" => "eu tenho-me"
+            ps, pr = pronoun.split()
+            return f"{ps} {conj}-{pr}"
+        if tense == Tenses.pt.InfinitivoPessoalPresente:
+            return conj + " " + pronoun
+        else:
+            return pronoun + " " + conj
+
+    def split_reflexive(self, infinitive: str) -> Tuple[bool, str]:
+        """
+        Tests whether an infinitive is reflexive
+        Returns a 2-tuple of whether it is reflexive
+        and the non-reflexive form of the infinitive.
+
+        E.g. French:
+        "se raser" => (True, "raser")
+        "s'habiller" => (True, "habiller")
+        "parler" => (False, "parler")
+        E.g. Italian:
+        "alzarsi" => (True, "alzare")
+        "preoccuparsi" => (True, "preoccupare")
+
+        E.g. Spanish
+        "levantarse" => (True, "levantar")
+
+        E.g. Portuguese
+        "vestir-se" => (True, "vestir")
+        """
+        if infinitive.endswith("-se"):
+            return (True, infinitive[:-3])
+        else:
+            return (False, infinitive)

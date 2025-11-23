@@ -64,6 +64,7 @@ class InflectorRo(Inflector):
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
+        imperative: bool = False,
     ) -> List[Pronoun]:
         ret = []
         if (person is None or person == Person.First) and (
@@ -140,6 +141,9 @@ class InflectorRo(Inflector):
 
     def get_infinitive_mood(self) -> Mood:
         return Moods.ro.Infinitiv
+
+    def get_imperative_mood(self) -> Mood:
+        return Moods.ro.Imperativ
 
     def get_indicative_mood(self) -> Mood:
         return Moods.ro.Indicativ
