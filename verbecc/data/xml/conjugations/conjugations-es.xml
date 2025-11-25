@@ -11,6 +11,7 @@
 	- Removed mood name from tense names to eliminate redundancy
 	- Converted tense tag names to lowercase for ease of use
 	- Fixed issues with Spanish verbs like parecer
+	- Removed extra elements (second elem) in infinitivo and gerundio
 
 	Coypright (C) 2024 Brett Tolbert <https://github.com/bretttolbert/verbecc>
 	Copyright (C) 2018 Sekou Diao <https://github.com/SekouD>
@@ -51,8 +52,8 @@
 <!ELEMENT pretérito-imperfecto-2 (p , p , p , p , p , p)>
 <!ELEMENT afirmativo (p , p , p , p , p)>
 <!ELEMENT negativo (p , p , p , p , p)>
-<!ELEMENT infinitivo (p , p)>
-<!ELEMENT gerundio (p , p)>
+<!ELEMENT infinitivo (p)>
+<!ELEMENT gerundio (p)>
 <!ELEMENT participo (p)>
 <!ELEMENT p (i)+>
 <!ELEMENT i (#PCDATA)>
@@ -157,14 +158,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ir</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>iendo</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -271,14 +270,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uar</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uando</i></p>
-			<p><i>uado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -385,14 +382,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>rir</i></p>
-			<p><i>rido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>riendo</i></p>
-			<p><i>rido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -499,14 +494,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>incar</i></p>
-			<p><i>incado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>incando</i></p>
-			<p><i>incado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -613,14 +606,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>irar</i></p>
-			<p><i>irado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irando</i></p>
-			<p><i>irado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -727,14 +718,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -841,14 +830,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -955,14 +942,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ullar</i></p>
-			<p><i>ullado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ullando</i></p>
-			<p><i>ullado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1069,14 +1054,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>onzar</i></p>
-			<p><i>onzado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>onzando</i></p>
-			<p><i>onzado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1183,14 +1166,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uar</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uando</i></p>
-			<p><i>uado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1297,14 +1278,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>caber</i></p>
-			<p><i>cabido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>cabiendo</i></p>
-			<p><i>cabido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1411,14 +1390,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1525,14 +1502,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>zar</i></p>
-			<p><i>zado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>zando</i></p>
-			<p><i>zado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1639,14 +1614,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ocer</i></p>
-			<p><i>ocido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ociendo</i></p>
-			<p><i>ocido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1753,14 +1726,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ger</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>giendo</i></p>
-			<p><i>gido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1867,14 +1838,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olgar</i></p>
-			<p><i>olgado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olgando</i></p>
-			<p><i>olgado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -1981,14 +1950,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cer</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2095,14 +2062,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2209,14 +2174,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2323,14 +2286,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2437,14 +2398,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2551,14 +2510,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ecir</i></p>
-			<p><i>icho</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iciendo</i></p>
-			<p><i>icho</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2665,14 +2622,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ender</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endiendo</i></p>
-			<p><i>endido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2779,14 +2734,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>quir</i></p>
-			<p><i>quido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>quiendo</i></p>
-			<p><i>quido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -2893,14 +2846,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>osar</i></p>
-			<p><i>osado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>osando</i></p>
-			<p><i>osado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3007,14 +2958,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ernir</i></p>
-			<p><i>ernido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>erniendo</i></p>
-			<p><i>ernido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3121,14 +3070,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uir</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uiendo</i></p>
-			<p><i>uido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3235,14 +3182,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ormir</i></p>
-			<p><i>ormido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>urmiendo</i></p>
-			<p><i>ormido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3349,14 +3294,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>egir</i></p>
-			<p><i>egido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>igiendo</i></p>
-			<p><i>egido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3463,14 +3406,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ezar</i></p>
-			<p><i>ezado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ezando</i></p>
-			<p><i>ezado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3577,14 +3518,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ontrar</i></p>
-			<p><i>ontrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ontrando</i></p>
-			<p><i>ontrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3691,14 +3630,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>izar</i></p>
-			<p><i>izado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>izando</i></p>
-			<p><i>izado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3805,14 +3742,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erguir</i></p>
-			<p><i>erguido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irguiendo</i></p>
-			<p><i>erguido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -3919,14 +3854,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>errar</i></p>
-			<p><i>errado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>errando</i></p>
-			<p><i>errado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4033,14 +3966,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4147,14 +4078,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orzar</i></p>
-			<p><i>orzado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orzando</i></p>
-			<p><i>orzado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4261,14 +4190,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iar</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iando</i></p>
-			<p><i>iado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4375,14 +4302,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>aber</i></p>
-			<p><i>abido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>abiendo</i></p>
-			<p><i>abido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4489,14 +4414,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>acer</i></p>
-			<p><i>echo</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>aciendo</i></p>
-			<p><i>echo</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4603,14 +4526,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4717,14 +4638,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4831,14 +4750,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>gar</i></p>
-			<p><i>gado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>gando</i></p>
-			<p><i>gado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -4945,14 +4862,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>over</i></p>
-			<p><i>ovido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oviendo</i></p>
-			<p><i>ovido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5059,14 +4974,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cir</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5173,14 +5086,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cer</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5287,14 +5198,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oler</i></p>
-			<p><i>olido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oliendo</i></p>
-			<p><i>olido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5401,14 +5310,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5515,14 +5422,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cer</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5629,14 +5534,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>edir</i></p>
-			<p><i>edido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>idiendo</i></p>
-			<p><i>edido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5743,14 +5646,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ensar</i></p>
-			<p><i>ensado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ensando</i></p>
-			<p><i>ensado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5857,14 +5758,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>acer</i></p>
-			<p><i>acido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>aciendo</i></p>
-			<p><i>acido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -5971,14 +5870,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oder</i></p>
-			<p><i>odido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>udiendo</i></p>
-			<p><i>odido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6085,14 +5982,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>odrir</i></p>
-			<p><i>odrido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>udriendo</i></p>
-			<p><i>odrido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6199,14 +6094,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ecir</i></p>
-			<p><i>icho</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iciendo</i></p>
-			<p><i>icho</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6313,14 +6206,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cir</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6427,14 +6318,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ibir</i></p>
-			<p><i>ibido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ibiendo</i></p>
-			<p><i>ibido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6541,14 +6430,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erer</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eriendo</i></p>
-			<p><i>erido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6655,14 +6542,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6769,14 +6654,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>egar</i></p>
-			<p><i>egado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>egando</i></p>
-			<p><i>egado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6883,14 +6766,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eír</i></p>
-			<p><i>eído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>eído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -6997,14 +6878,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eñir</i></p>
-			<p><i>eñido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iñendo</i></p>
-			<p><i>eñido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7111,14 +6990,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>unir</i></p>
-			<p><i>unido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uniendo</i></p>
-			<p><i>unido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7225,14 +7102,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>aber</i></p>
-			<p><i>abido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>abiendo</i></p>
-			<p><i>abido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7339,14 +7214,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7453,14 +7326,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7567,14 +7438,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eguir</i></p>
-			<p><i>eguido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iguiendo</i></p>
-			<p><i>eguido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7681,14 +7550,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>entir</i></p>
-			<p><i>entido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>intiendo</i></p>
-			<p><i>entido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7795,14 +7662,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ser</i></p>
-			<p><i>sido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>siendo</i></p>
-			<p><i>sido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -7909,14 +7774,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ser</i></p>
-			<p><i>sido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>siendo</i></p>
-			<p><i>sido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8023,14 +7886,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8137,14 +7998,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ener</i></p>
-			<p><i>enido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eniendo</i></p>
-			<p><i>enido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8251,14 +8110,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8365,14 +8222,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ocar</i></p>
-			<p><i>ocado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ocando</i></p>
-			<p><i>ocado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8479,14 +8334,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8593,14 +8446,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>enir</i></p>
-			<p><i>enido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iniendo</i></p>
-			<p><i>enido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8707,14 +8558,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>isto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>isto</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8821,14 +8670,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -8935,14 +8782,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olver</i></p>
-			<p><i>uelto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olviendo</i></p>
-			<p><i>uelto</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9049,14 +8894,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cer</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9163,14 +9006,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cir</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9277,14 +9118,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>illarse</i></p>
-			<p><i>illado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>illándose</i></p>
-			<p><i>illado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9391,14 +9230,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>anarse</i></p>
-			<p><i>anado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>anándose</i></p>
-			<p><i>anado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9505,14 +9342,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>abarse</i></p>
-			<p><i>abado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>abándose</i></p>
-			<p><i>abado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9619,14 +9454,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>astarse</i></p>
-			<p><i>astado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>astándose</i></p>
-			<p><i>astado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9733,14 +9566,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eldar</i></p>
-			<p><i>eldado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eldando</i></p>
-			<p><i>eldado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9847,14 +9678,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iarse</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iándose</i></p>
-			<p><i>iado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -9961,14 +9790,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>icharse</i></p>
-			<p><i>ichado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ichándose</i></p>
-			<p><i>ichado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10075,14 +9902,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ocarse</i></p>
-			<p><i>ocado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ocándose</i></p>
-			<p><i>ocado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10189,14 +10014,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ofarse</i></p>
-			<p><i>ofado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ofándose</i></p>
-			<p><i>ofado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10303,14 +10126,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olsarse</i></p>
-			<p><i>olsado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olsándose</i></p>
-			<p><i>olsado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10417,14 +10238,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ascarse</i></p>
-			<p><i>ascado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ascándose</i></p>
-			<p><i>ascado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10531,14 +10350,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>egarse</i></p>
-			<p><i>egado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>egándose</i></p>
-			<p><i>egado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10645,14 +10462,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>icarse</i></p>
-			<p><i>icado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>icándose</i></p>
-			<p><i>icado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10759,14 +10574,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ugarse</i></p>
-			<p><i>ugado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ugándose</i></p>
-			<p><i>ugado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10873,14 +10686,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>agarse</i></p>
-			<p><i>agado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>agándose</i></p>
-			<p><i>agado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -10987,14 +10798,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>argarse</i></p>
-			<p><i>argado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>argándose</i></p>
-			<p><i>argado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11101,14 +10910,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>onarse</i></p>
-			<p><i>onado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>onándose</i></p>
-			<p><i>onado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11215,14 +11022,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>rir</i></p>
-			<p><i>ierto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>riendo</i></p>
-			<p><i>ierto</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11329,14 +11134,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>omarse</i></p>
-			<p><i>omado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>omándose</i></p>
-			<p><i>omado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11443,14 +11246,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uzarse</i></p>
-			<p><i>uzado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uzándose</i></p>
-			<p><i>uzado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11557,14 +11358,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ber</i></p>
-			<p><i>bido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>biendo</i></p>
-			<p><i>bido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11671,14 +11470,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11785,14 +11582,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olar</i></p>
-			<p><i>olado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olando</i></p>
-			<p><i>olado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -11899,14 +11694,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>esarse</i></p>
-			<p><i>esado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>esándose</i></p>
-			<p><i>esado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12013,14 +11806,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>urrarse</i></p>
-			<p><i>urrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>urrándose</i></p>
-			<p><i>urrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12127,14 +11918,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>acharse</i></p>
-			<p><i>achado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>achándose</i></p>
-			<p><i>achado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12241,14 +12030,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>acharse</i></p>
-			<p><i>achado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>achándose</i></p>
-			<p><i>achado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12355,14 +12142,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>asarse</i></p>
-			<p><i>asado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>asándose</i></p>
-			<p><i>asado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12469,14 +12254,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ambarse</i></p>
-			<p><i>ambado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ambándose</i></p>
-			<p><i>ambado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12583,14 +12366,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>urarse</i></p>
-			<p><i>urado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>urándose</i></p>
-			<p><i>urado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12697,14 +12478,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>arrarse</i></p>
-			<p><i>arrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>arrándose</i></p>
-			<p><i>arrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12811,14 +12590,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ullarse</i></p>
-			<p><i>ullado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ullándose</i></p>
-			<p><i>ullado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -12925,14 +12702,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erarse</i></p>
-			<p><i>erado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>erándose</i></p>
-			<p><i>erado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13039,14 +12814,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>atarse</i></p>
-			<p><i>atado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>atándose</i></p>
-			<p><i>atado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13153,14 +12926,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>elarse</i></p>
-			<p><i>elado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>elándose</i></p>
-			<p><i>elado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13267,14 +13038,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ertar</i></p>
-			<p><i>ertado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ertando</i></p>
-			<p><i>ertado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13381,14 +13150,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>amparse</i></p>
-			<p><i>ampado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ampándose</i></p>
-			<p><i>ampado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13495,14 +13262,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>inarse</i></p>
-			<p><i>inado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>inándose</i></p>
-			<p><i>inado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13609,14 +13374,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ocharse</i></p>
-			<p><i>ochado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ochándose</i></p>
-			<p><i>ochado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13723,14 +13486,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ucharse</i></p>
-			<p><i>uchado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uchándose</i></p>
-			<p><i>uchado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13837,14 +13598,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>aparse</i></p>
-			<p><i>apado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>apándose</i></p>
-			<p><i>apado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -13951,14 +13710,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ularse</i></p>
-			<p><i>ulado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ulándose</i></p>
-			<p><i>ulado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14065,14 +13822,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ocarse</i></p>
-			<p><i>ocado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ocándose</i></p>
-			<p><i>ocado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14179,14 +13934,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ollar</i></p>
-			<p><i>ollado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ollando</i></p>
-			<p><i>ollado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14293,14 +14046,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>edirse</i></p>
-			<p><i>edido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>idiéndose</i></p>
-			<p><i>edido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14407,14 +14158,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>unarse</i></p>
-			<p><i>unado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>unándose</i></p>
-			<p><i>unado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14521,14 +14270,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>abarse</i></p>
-			<p><i>abado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>abándose</i></p>
-			<p><i>abado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14635,14 +14382,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ordar</i></p>
-			<p><i>ordado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ordando</i></p>
-			<p><i>ordado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14749,14 +14494,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ornar</i></p>
-			<p><i>ornado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ornando</i></p>
-			<p><i>ornado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14863,14 +14606,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ucarse</i></p>
-			<p><i>ucado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ucándose</i></p>
-			<p><i>ucado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -14977,14 +14718,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ejarse</i></p>
-			<p><i>ejado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ejándose</i></p>
-			<p><i>ejado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15091,14 +14830,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ostar</i></p>
-			<p><i>ostado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ostando</i></p>
-			<p><i>ostado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15205,14 +14942,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>entar</i></p>
-			<p><i>entado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>entando</i></p>
-			<p><i>entado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15319,14 +15054,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ollarse</i></p>
-			<p><i>ollado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ollándose</i></p>
-			<p><i>ollado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15433,14 +15166,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ilmarse</i></p>
-			<p><i>ilmado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ilmándose</i></p>
-			<p><i>ilmado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15547,14 +15278,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uñarse</i></p>
-			<p><i>uñado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uñándose</i></p>
-			<p><i>uñado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15661,14 +15390,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>urdarse</i></p>
-			<p><i>urdado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>urdándose</i></p>
-			<p><i>urdado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15775,14 +15502,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>entrarse</i></p>
-			<p><i>entrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>entrándose</i></p>
-			<p><i>entrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -15889,14 +15614,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>estrar</i></p>
-			<p><i>estrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>estrando</i></p>
-			<p><i>estrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16003,14 +15726,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erir</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iriendo</i></p>
-			<p><i>erido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16117,14 +15838,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erir</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iriendo</i></p>
-			<p><i>erido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16231,14 +15950,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>izarse</i></p>
-			<p><i>izado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>izándose</i></p>
-			<p><i>izado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16345,14 +16062,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ilarse</i></p>
-			<p><i>ilado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ilándose</i></p>
-			<p><i>ilado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16459,14 +16174,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>itarse</i></p>
-			<p><i>itado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>itándose</i></p>
-			<p><i>itado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16573,14 +16286,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>bir</i></p>
-			<p><i>to</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>biendo</i></p>
-			<p><i>to</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16687,14 +16398,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>gir</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>giendo</i></p>
-			<p><i>gido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16801,14 +16510,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eñarse</i></p>
-			<p><i>eñado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eñándose</i></p>
-			<p><i>eñado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -16915,14 +16622,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ertir</i></p>
-			<p><i>ertido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irtiendo</i></p>
-			<p><i>ertido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17029,14 +16734,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olarse</i></p>
-			<p><i>olado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olándose</i></p>
-			<p><i>olado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17143,14 +16846,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>errar</i></p>
-			<p><i>errado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>errando</i></p>
-			<p><i>errado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17257,14 +16958,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ebrarse</i></p>
-			<p><i>ebrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ebrándose</i></p>
-			<p><i>ebrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17371,14 +17070,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>gir</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>giendo</i></p>
-			<p><i>gido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17485,14 +17182,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orar</i></p>
-			<p><i>orado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orando</i></p>
-			<p><i>orado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17599,14 +17294,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>osarse</i></p>
-			<p><i>osado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>osándose</i></p>
-			<p><i>osado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17713,14 +17406,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>echarse</i></p>
-			<p><i>echado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>echándose</i></p>
-			<p><i>echado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17827,14 +17518,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>utrarse</i></p>
-			<p><i>utrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>utrándose</i></p>
-			<p><i>utrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -17941,14 +17630,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>enarse</i></p>
-			<p><i>enado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>enándose</i></p>
-			<p><i>enado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18055,14 +17742,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>arbarse</i></p>
-			<p><i>arbado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>arbándose</i></p>
-			<p><i>arbado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18169,14 +17854,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ojarse</i></p>
-			<p><i>ojado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ojándose</i></p>
-			<p><i>ojado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18283,14 +17966,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ingarse</i></p>
-			<p><i>ingado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ingándose</i></p>
-			<p><i>ingado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18397,14 +18078,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>aguarse</i></p>
-			<p><i>aguado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>aguándose</i></p>
-			<p><i>aguado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18511,14 +18190,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orarse</i></p>
-			<p><i>orado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orándose</i></p>
-			<p><i>orado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18625,14 +18302,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ijar</i></p>
-			<p><i>ijado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ijando</i></p>
-			<p><i>ijado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18739,14 +18414,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ilar</i></p>
-			<p><i>ilado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ilando</i></p>
-			<p><i>ilado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18853,14 +18526,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>itar</i></p>
-			<p><i>itado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>itando</i></p>
-			<p><i>itado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -18967,14 +18638,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ajarse</i></p>
-			<p><i>ajado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ajándose</i></p>
-			<p><i>ajado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19081,14 +18750,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uchar</i></p>
-			<p><i>uchado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uchando</i></p>
-			<p><i>uchado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19195,14 +18862,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>umar</i></p>
-			<p><i>umado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>umando</i></p>
-			<p><i>umado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19309,14 +18974,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>usar</i></p>
-			<p><i>usado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>usando</i></p>
-			<p><i>usado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19423,14 +19086,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>islar</i></p>
-			<p><i>islado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>islando</i></p>
-			<p><i>islado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19537,14 +19198,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ecarse</i></p>
-			<p><i>ecado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ecándose</i></p>
-			<p><i>ecado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19651,14 +19310,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>umarse</i></p>
-			<p><i>umado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>umándose</i></p>
-			<p><i>umado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19765,14 +19422,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>artarse</i></p>
-			<p><i>artado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>artándose</i></p>
-			<p><i>artado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19879,14 +19534,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>earse</i></p>
-			<p><i>eado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eándose</i></p>
-			<p><i>eado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -19993,14 +19646,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ebrarse</i></p>
-			<p><i>ebrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ebrándose</i></p>
-			<p><i>ebrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20107,14 +19758,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>estarse</i></p>
-			<p><i>estado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>estándose</i></p>
-			<p><i>estado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20221,14 +19870,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ebrar</i></p>
-			<p><i>ebrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ebrando</i></p>
-			<p><i>ebrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20335,14 +19982,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ongar</i></p>
-			<p><i>ongado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ongando</i></p>
-			<p><i>ongado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20449,14 +20094,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ecerse</i></p>
-			<p><i>ecido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eciéndose</i></p>
-			<p><i>ecido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20563,14 +20206,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>imbrarse</i></p>
-			<p><i>imbrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>imbrándose</i></p>
-			<p><i>imbrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20677,14 +20318,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orrarse</i></p>
-			<p><i>orrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orrándose</i></p>
-			<p><i>orrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20791,14 +20430,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>inar</i></p>
-			<p><i>inado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>inando</i></p>
-			<p><i>inado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -20905,14 +20542,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>allarse</i></p>
-			<p><i>allado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>allándose</i></p>
-			<p><i>allado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21019,14 +20654,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ebarse</i></p>
-			<p><i>ebado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ebándose</i></p>
-			<p><i>ebado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21133,14 +20766,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>antarse</i></p>
-			<p><i>antado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>antándose</i></p>
-			<p><i>antado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21247,14 +20878,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>amarse</i></p>
-			<p><i>amado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>amándose</i></p>
-			<p><i>amado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21361,14 +20990,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oblar</i></p>
-			<p><i>oblado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oblando</i></p>
-			<p><i>oblado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21475,14 +21102,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iñarse</i></p>
-			<p><i>iñado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iñándose</i></p>
-			<p><i>iñado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21589,14 +21214,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>nejar</i></p>
-			<p><i>nejado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>nejando</i></p>
-			<p><i>nejado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21703,14 +21326,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oner</i></p>
-			<p><i>uesto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oniendo</i></p>
-			<p><i>uesto</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21817,14 +21438,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>nudar</i></p>
-			<p><i>nudado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>nudando</i></p>
-			<p><i>nudado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -21931,14 +21550,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>udarse</i></p>
-			<p><i>udado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>udándose</i></p>
-			<p><i>udado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22045,14 +21662,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>angarse</i></p>
-			<p><i>angado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>angándose</i></p>
-			<p><i>angado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22159,14 +21774,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iguarse</i></p>
-			<p><i>iguado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iguándose</i></p>
-			<p><i>iguado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22273,14 +21886,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22387,14 +21998,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ernar</i></p>
-			<p><i>ernado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ernando</i></p>
-			<p><i>ernado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22501,14 +22110,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>arse</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ándose</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22615,14 +22222,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ararse</i></p>
-			<p><i>arado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>arándose</i></p>
-			<p><i>arado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22729,14 +22334,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>implarse</i></p>
-			<p><i>implado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>implándose</i></p>
-			<p><i>implado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22843,14 +22446,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iparse</i></p>
-			<p><i>ipado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ipándose</i></p>
-			<p><i>ipado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -22957,14 +22558,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ongarse</i></p>
-			<p><i>ongado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ongándose</i></p>
-			<p><i>ongado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23071,14 +22670,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ismarse</i></p>
-			<p><i>ismado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ismándose</i></p>
-			<p><i>ismado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23185,14 +22782,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ozarse</i></p>
-			<p><i>ozado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ozándose</i></p>
-			<p><i>ozado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23299,14 +22894,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>etar</i></p>
-			<p><i>etado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>etando</i></p>
-			<p><i>etado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23413,14 +23006,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>obar</i></p>
-			<p><i>obado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>obando</i></p>
-			<p><i>obado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23527,14 +23118,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>üir</i></p>
-			<p><i>üido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uyendo</i></p>
-			<p><i>üido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23641,14 +23230,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iscarse</i></p>
-			<p><i>iscado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iscándose</i></p>
-			<p><i>iscado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23755,14 +23342,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>imarse</i></p>
-			<p><i>imado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>imándose</i></p>
-			<p><i>imado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23869,14 +23454,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ostarse</i></p>
-			<p><i>ostado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ostándose</i></p>
-			<p><i>ostado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -23983,14 +23566,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>untarse</i></p>
-			<p><i>untado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>untándose</i></p>
-			<p><i>untado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24097,14 +23678,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>endar</i></p>
-			<p><i>endado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endando</i></p>
-			<p><i>endado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24211,14 +23790,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>igarse</i></p>
-			<p><i>igado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>igándose</i></p>
-			<p><i>igado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24325,14 +23902,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>entirse</i></p>
-			<p><i>entido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>intiéndose</i></p>
-			<p><i>entido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24439,14 +24014,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>icar</i></p>
-			<p><i>icado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>icando</i></p>
-			<p><i>icado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24553,14 +24126,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>irarse</i></p>
-			<p><i>irado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irándose</i></p>
-			<p><i>irado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24667,14 +24238,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oldar</i></p>
-			<p><i>oldado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oldando</i></p>
-			<p><i>oldado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24781,14 +24350,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>onar</i></p>
-			<p><i>onado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>onando</i></p>
-			<p><i>onado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -24895,14 +24462,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>entarse</i></p>
-			<p><i>entado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>entándose</i></p>
-			<p><i>entado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25009,14 +24574,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25123,14 +24686,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25237,14 +24798,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ender</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endiendo</i></p>
-			<p><i>endido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25351,14 +24910,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>atenerse</i></p>
-			<p><i>atenido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ateniéndose</i></p>
-			<p><i>atenido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25465,14 +25022,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>etarse</i></p>
-			<p><i>etado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>etándose</i></p>
-			<p><i>etado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25579,14 +25134,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>estar</i></p>
-			<p><i>estado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>estando</i></p>
-			<p><i>estado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25693,14 +25246,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ujarse</i></p>
-			<p><i>ujado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ujándose</i></p>
-			<p><i>ujado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25807,14 +25358,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orcer</i></p>
-			<p><i>orcido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orciendo</i></p>
-			<p><i>orcido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -25921,14 +25470,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oscarse</i></p>
-			<p><i>oscado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oscándose</i></p>
-			<p><i>oscado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26035,14 +25582,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>illar</i></p>
-			<p><i>illado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>illando</i></p>
-			<p><i>illado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26149,14 +25694,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>esar</i></p>
-			<p><i>esado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>esando</i></p>
-			<p><i>esado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26263,14 +25806,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>unar</i></p>
-			<p><i>unado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>unando</i></p>
-			<p><i>unado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26377,14 +25918,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>upar</i></p>
-			<p><i>upado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>upando</i></p>
-			<p><i>upado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26491,14 +26030,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>upar</i></p>
-			<p><i>upado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>upando</i></p>
-			<p><i>upado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26605,14 +26142,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ecir</i></p>
-			<p><i>ecido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iciendo</i></p>
-			<p><i>ecido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26719,14 +26254,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erer</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eriendo</i></p>
-			<p><i>erido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26833,14 +26366,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>urcarse</i></p>
-			<p><i>urcado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>urcándose</i></p>
-			<p><i>urcado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -26947,14 +26478,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iarse</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iándose</i></p>
-			<p><i>iado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27061,14 +26590,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erner</i></p>
-			<p><i>ernido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>erniendo</i></p>
-			<p><i>ernido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27175,14 +26702,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>afarse</i></p>
-			<p><i>afado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>afándose</i></p>
-			<p><i>afado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27289,14 +26814,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>isparse</i></p>
-			<p><i>ispado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ispándose</i></p>
-			<p><i>ispado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27403,14 +26926,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>dar</i></p>
-			<p><i>dado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>dando</i></p>
-			<p><i>dado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27517,14 +27038,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>enderse</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endiéndose</i></p>
-			<p><i>endido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27631,14 +27150,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olarse</i></p>
-			<p><i>olado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olándose</i></p>
-			<p><i>olado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27745,14 +27262,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>egir</i></p>
-			<p><i>egido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>igiendo</i></p>
-			<p><i>egido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27859,14 +27374,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>enzar</i></p>
-			<p><i>enzado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>enzando</i></p>
-			<p><i>enzado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -27973,14 +27486,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eler</i></p>
-			<p><i>elido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eliendo</i></p>
-			<p><i>elido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28087,14 +27598,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>etrarse</i></p>
-			<p><i>etrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>etrándose</i></p>
-			<p><i>etrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28201,14 +27710,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>etir</i></p>
-			<p><i>etido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>itiendo</i></p>
-			<p><i>etido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28315,14 +27822,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ortarse</i></p>
-			<p><i>ortado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ortándose</i></p>
-			<p><i>ortado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28429,14 +27934,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>der</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>diendo</i></p>
-			<p><i>dido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28543,14 +28046,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>imir</i></p>
-			<p><i>imido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>imiendo</i></p>
-			<p><i>imido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28657,14 +28158,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ebir</i></p>
-			<p><i>ebido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ibiendo</i></p>
-			<p><i>ebido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28771,14 +28270,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28885,14 +28382,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>omerse</i></p>
-			<p><i>omido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>omiéndose</i></p>
-			<p><i>omido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -28999,14 +28494,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ecir</i></p>
-			<p><i>icho</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iciendo</i></p>
-			<p><i>icho</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29113,14 +28606,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oler</i></p>
-			<p><i>olido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oliendo</i></p>
-			<p><i>olido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29227,14 +28718,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>esar</i></p>
-			<p><i>esado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>esando</i></p>
-			<p><i>esado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29341,14 +28830,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ndir</i></p>
-			<p><i>ndido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ndiendo</i></p>
-			<p><i>ndido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29455,14 +28942,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>mir</i></p>
-			<p><i>mido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>miendo</i></p>
-			<p><i>mido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29569,14 +29054,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ontar</i></p>
-			<p><i>ontado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ontando</i></p>
-			<p><i>ontado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29683,14 +29166,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orcerse</i></p>
-			<p><i>orcido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orciéndose</i></p>
-			<p><i>orcido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29797,14 +29278,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ecirse</i></p>
-			<p><i>icho</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iciéndose</i></p>
-			<p><i>icho</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -29911,14 +29390,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>elerse</i></p>
-			<p><i>elido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eliéndose</i></p>
-			<p><i>elido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30025,14 +29502,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>encer</i></p>
-			<p><i>encido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>enciendo</i></p>
-			<p><i>encido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30139,14 +29614,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>omper</i></p>
-			<p><i>ompido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ompiendo</i></p>
-			<p><i>ompido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30253,14 +29726,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ostrar</i></p>
-			<p><i>ostrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ostrando</i></p>
-			<p><i>ostrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30367,14 +29838,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ostrarse</i></p>
-			<p><i>ostrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ostrándose</i></p>
-			<p><i>ostrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30481,14 +29950,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ordarse</i></p>
-			<p><i>ordado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ordándose</i></p>
-			<p><i>ordado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30595,14 +30062,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>itarse</i></p>
-			<p><i>itado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>itándose</i></p>
-			<p><i>itado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30709,14 +30174,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>islarse</i></p>
-			<p><i>islado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>islándose</i></p>
-			<p><i>islado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30823,14 +30286,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>istarse</i></p>
-			<p><i>istado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>istándose</i></p>
-			<p><i>istado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -30937,14 +30398,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orcar</i></p>
-			<p><i>orcado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orcando</i></p>
-			<p><i>orcado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31051,14 +30510,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ancarse</i></p>
-			<p><i>ancado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ancándose</i></p>
-			<p><i>ancado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31165,14 +30622,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ontarse</i></p>
-			<p><i>ontado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ontándose</i></p>
-			<p><i>ontado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31279,14 +30734,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ufarse</i></p>
-			<p><i>ufado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ufándose</i></p>
-			<p><i>ufado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31393,14 +30846,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>andarse</i></p>
-			<p><i>andado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>andándose</i></p>
-			<p><i>andado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31507,14 +30958,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ustar</i></p>
-			<p><i>ustado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ustando</i></p>
-			<p><i>ustado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31621,14 +31070,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>azarse</i></p>
-			<p><i>azado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>azándose</i></p>
-			<p><i>azado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31735,14 +31182,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ullirse</i></p>
-			<p><i>ullido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ulléndose</i></p>
-			<p><i>ullido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31849,14 +31294,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ullirse</i></p>
-			<p><i>ullido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ulléndose</i></p>
-			<p><i>ullido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -31963,14 +31406,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ostarse</i></p>
-			<p><i>ostado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ostándose</i></p>
-			<p><i>ostado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32077,14 +31518,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ular</i></p>
-			<p><i>ulado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ulando</i></p>
-			<p><i>ulado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32191,14 +31630,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>edrar</i></p>
-			<p><i>edrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>edrando</i></p>
-			<p><i>edrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32305,14 +31742,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ovar</i></p>
-			<p><i>ovado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ovando</i></p>
-			<p><i>ovado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32419,14 +31854,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>osar</i></p>
-			<p><i>osado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>osando</i></p>
-			<p><i>osado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32533,14 +31966,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ervir</i></p>
-			<p><i>ervido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irviendo</i></p>
-			<p><i>ervido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32647,14 +32078,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ifarse</i></p>
-			<p><i>ifado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ifándose</i></p>
-			<p><i>ifado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32761,14 +32190,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>elar</i></p>
-			<p><i>elado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>elando</i></p>
-			<p><i>elado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32875,14 +32302,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erbar</i></p>
-			<p><i>erbado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>erbando</i></p>
-			<p><i>erbado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -32989,14 +32414,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>endrar</i></p>
-			<p><i>endrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endrando</i></p>
-			<p><i>endrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33103,14 +32526,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>arcarse</i></p>
-			<p><i>arcado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>arcándose</i></p>
-			<p><i>arcado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33217,14 +32638,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>embrar</i></p>
-			<p><i>embrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>embrando</i></p>
-			<p><i>embrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33331,14 +32750,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>utrirse</i></p>
-			<p><i>utrido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>utriéndose</i></p>
-			<p><i>utrido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33445,14 +32862,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ír</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33559,14 +32974,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>otarse</i></p>
-			<p><i>otado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>otándose</i></p>
-			<p><i>otado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33673,14 +33086,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ezarse</i></p>
-			<p><i>ezado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ezándose</i></p>
-			<p><i>ezado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33787,14 +33198,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ertar</i></p>
-			<p><i>ertado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ertando</i></p>
-			<p><i>ertado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -33901,14 +33310,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uparse</i></p>
-			<p><i>upado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>upándose</i></p>
-			<p><i>upado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34015,14 +33422,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eer</i></p>
-			<p><i>eído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>eyendo</i></p>
-			<p><i>eído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34129,14 +33534,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oserse</i></p>
-			<p><i>osido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>osiéndose</i></p>
-			<p><i>osido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34243,14 +33646,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>estir</i></p>
-			<p><i>estido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>istiendo</i></p>
-			<p><i>estido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34357,14 +33758,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ivirse</i></p>
-			<p><i>ivido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iviéndose</i></p>
-			<p><i>ivido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34471,14 +33870,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ezmar</i></p>
-			<p><i>ezmado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ezmando</i></p>
-			<p><i>ezmado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34585,14 +33982,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ignarse</i></p>
-			<p><i>ignado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ignándose</i></p>
-			<p><i>ignado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34699,14 +34094,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orzarse</i></p>
-			<p><i>orzado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orzándose</i></p>
-			<p><i>orzado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34813,14 +34206,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>dir</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>diendo</i></p>
-			<p><i>dido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -34927,14 +34318,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>alarse</i></p>
-			<p><i>alado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>alándose</i></p>
-			<p><i>alado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35041,14 +34430,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>incharse</i></p>
-			<p><i>inchado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>inchándose</i></p>
-			<p><i>inchado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35155,14 +34542,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oncarse</i></p>
-			<p><i>oncado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oncándose</i></p>
-			<p><i>oncado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35269,14 +34654,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>adrarse</i></p>
-			<p><i>adrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>adrándose</i></p>
-			<p><i>adrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35383,14 +34766,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>añarse</i></p>
-			<p><i>añado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>añándose</i></p>
-			<p><i>añado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35497,14 +34878,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>anzarse</i></p>
-			<p><i>anzado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>anzándose</i></p>
-			<p><i>anzado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35611,14 +34990,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>edarse</i></p>
-			<p><i>edado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>edándose</i></p>
-			<p><i>edado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35725,14 +35102,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>azgarse</i></p>
-			<p><i>azgado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>azgándose</i></p>
-			<p><i>azgado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35839,14 +35214,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>errarse</i></p>
-			<p><i>errado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>errándose</i></p>
-			<p><i>errado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -35953,14 +35326,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oncharse</i></p>
-			<p><i>onchado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>onchándose</i></p>
-			<p><i>onchado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36067,14 +35438,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ambrarse</i></p>
-			<p><i>ambrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ambrándose</i></p>
-			<p><i>ambrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36181,14 +35550,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>utarse</i></p>
-			<p><i>utado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>utándose</i></p>
-			<p><i>utado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36295,14 +35662,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>avarse</i></p>
-			<p><i>avado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>avándose</i></p>
-			<p><i>avado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36409,14 +35774,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ajarse</i></p>
-			<p><i>ajado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ajándose</i></p>
-			<p><i>ajado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36523,14 +35886,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ivarse</i></p>
-			<p><i>ivado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ivándose</i></p>
-			<p><i>ivado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36637,14 +35998,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ancharse</i></p>
-			<p><i>anchado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>anchándose</i></p>
-			<p><i>anchado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36751,14 +36110,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ogarse</i></p>
-			<p><i>ogado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ogándose</i></p>
-			<p><i>ogado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36865,14 +36222,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uscarse</i></p>
-			<p><i>uscado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uscándose</i></p>
-			<p><i>uscado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -36979,14 +36334,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>asgarse</i></p>
-			<p><i>asgado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>asgándose</i></p>
-			<p><i>asgado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37093,14 +36446,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>usgarse</i></p>
-			<p><i>usgado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>usgándose</i></p>
-			<p><i>usgado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37207,14 +36558,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>gar</i></p>
-			<p><i>gado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>gando</i></p>
-			<p><i>gado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37321,14 +36670,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ocarse</i></p>
-			<p><i>ocado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ocándose</i></p>
-			<p><i>ocado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37435,14 +36782,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>odar</i></p>
-			<p><i>odado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>odando</i></p>
-			<p><i>odado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37549,14 +36894,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>obrarse</i></p>
-			<p><i>obrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>obrándose</i></p>
-			<p><i>obrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37663,14 +37006,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oñar</i></p>
-			<p><i>oñado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oñando</i></p>
-			<p><i>oñado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37777,14 +37118,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>acarse</i></p>
-			<p><i>acado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>acándose</i></p>
-			<p><i>acado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -37891,14 +37230,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ercarse</i></p>
-			<p><i>ercado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ercándose</i></p>
-			<p><i>ercado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38005,14 +37342,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orcarse</i></p>
-			<p><i>orcado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orcándose</i></p>
-			<p><i>orcado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38119,14 +37454,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ortar</i></p>
-			<p><i>ortado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ortando</i></p>
-			<p><i>ortado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38233,14 +37566,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orir</i></p>
-			<p><i>uerto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uriendo</i></p>
-			<p><i>uerto</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38347,14 +37678,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>emar</i></p>
-			<p><i>emado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>emando</i></p>
-			<p><i>emado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38461,14 +37790,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>omparse</i></p>
-			<p><i>ompado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ompándose</i></p>
-			<p><i>ompado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38575,14 +37902,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>umirse</i></p>
-			<p><i>umido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>umiéndose</i></p>
-			<p><i>umido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38689,14 +38014,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ijarse</i></p>
-			<p><i>ijado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ijándose</i></p>
-			<p><i>ijado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38803,14 +38126,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>inarse</i></p>
-			<p><i>inado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>inándose</i></p>
-			<p><i>inado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -38917,14 +38238,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>arse</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ándose</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39031,14 +38350,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>imir</i></p>
-			<p><i>imido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>imiendo</i></p>
-			<p><i>imido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39145,14 +38462,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39259,14 +38574,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ender</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endiendo</i></p>
-			<p><i>endido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39373,14 +38686,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>guir</i></p>
-			<p><i>guido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>guiendo</i></p>
-			<p><i>guido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39487,14 +38798,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>FALSEar</i></p>
-			<p><i>FALSEado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>FALSEando</i></p>
-			<p><i>FALSEado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39601,14 +38910,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ollarse</i></p>
-			<p><i>ollado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ollándose</i></p>
-			<p><i>ollado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39715,14 +39022,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eír</i></p>
-			<p><i>eído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>eído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39829,14 +39134,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>uar</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uando</i></p>
-			<p><i>uado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -39943,14 +39246,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>emir</i></p>
-			<p><i>emido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>imiendo</i></p>
-			<p><i>emido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40057,14 +39358,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>zar</i></p>
-			<p><i>zado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>zando</i></p>
-			<p><i>zado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40171,14 +39470,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eder</i></p>
-			<p><i>edido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ediendo</i></p>
-			<p><i>edido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40285,14 +39582,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>elar</i></p>
-			<p><i>elado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>elando</i></p>
-			<p><i>elado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40399,14 +39694,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>enchir</i></p>
-			<p><i>enchido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>inchiendo</i></p>
-			<p><i>enchido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40513,14 +39806,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>endir</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>endiendo</i></p>
-			<p><i>endido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40627,14 +39918,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ervir</i></p>
-			<p><i>ervido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irviendo</i></p>
-			<p><i>ervido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40741,14 +40030,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oparse</i></p>
-			<p><i>opado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>opándose</i></p>
-			<p><i>opado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40855,14 +40142,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>rir</i></p>
-			<p><i>rido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>riendo</i></p>
-			<p><i>rido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -40969,14 +40254,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erir</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iriendo</i></p>
-			<p><i>erido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41083,14 +40366,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>irse</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yéndose</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41197,14 +40478,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>actarse</i></p>
-			<p><i>actado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>actándose</i></p>
-			<p><i>actado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41311,14 +40590,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erdar</i></p>
-			<p><i>erdado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>erdando</i></p>
-			<p><i>erdado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41425,14 +40702,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>estar</i></p>
-			<p><i>estado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>estando</i></p>
-			<p><i>estado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41539,14 +40814,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>tir</i></p>
-			<p><i>tido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>tiendo</i></p>
-			<p><i>tido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41653,14 +40926,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>irlarse</i></p>
-			<p><i>irlado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irlándose</i></p>
-			<p><i>irlado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41767,14 +41038,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>order</i></p>
-			<p><i>ordido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ordiendo</i></p>
-			<p><i>ordido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41881,14 +41150,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>cer</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ciendo</i></p>
-			<p><i>cido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -41995,14 +41262,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>evar</i></p>
-			<p><i>evado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>evando</i></p>
-			<p><i>evado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42109,14 +41374,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42223,14 +41486,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42337,14 +41598,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erder</i></p>
-			<p><i>erdido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>erdiendo</i></p>
-			<p><i>erdido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42451,14 +41710,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>intarse</i></p>
-			<p><i>intado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>intándose</i></p>
-			<p><i>intado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42565,14 +41822,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>irrarse</i></p>
-			<p><i>irrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>irrándose</i></p>
-			<p><i>irrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42679,14 +41934,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oner</i></p>
-			<p><i>uesto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oniendo</i></p>
-			<p><i>uesto</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42793,14 +42046,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ído</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -42907,14 +42158,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>nder</i></p>
-			<p><i>ndido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ndiendo</i></p>
-			<p><i>ndido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43021,14 +42270,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43135,14 +42382,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ellarse</i></p>
-			<p><i>ellado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ellándose</i></p>
-			<p><i>ellado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43249,14 +42494,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>egrarse</i></p>
-			<p><i>egrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>egrándose</i></p>
-			<p><i>egrado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43363,14 +42606,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>urtarse</i></p>
-			<p><i>urtado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>urtándose</i></p>
-			<p><i>urtado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43477,14 +42718,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ansarse</i></p>
-			<p><i>ansado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ansándose</i></p>
-			<p><i>ansado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43591,14 +42830,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ilgarse</i></p>
-			<p><i>ilgado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ilgándose</i></p>
-			<p><i>ilgado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43705,14 +42942,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>endir</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>indiendo</i></p>
-			<p><i>endido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43819,14 +43054,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olgar</i></p>
-			<p><i>olgado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olgando</i></p>
-			<p><i>olgado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -43933,14 +43166,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>emblar</i></p>
-			<p><i>emblado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>emblando</i></p>
-			<p><i>emblado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44047,14 +43278,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>orcer</i></p>
-			<p><i>orcido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>orciendo</i></p>
-			<p><i>orcido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44161,14 +43390,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eparse</i></p>
-			<p><i>epado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>epándose</i></p>
-			<p><i>epado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44275,14 +43502,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erter</i></p>
-			<p><i>ertido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ertiendo</i></p>
-			<p><i>ertido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44389,14 +43614,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>olcar</i></p>
-			<p><i>olcado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>olcando</i></p>
-			<p><i>olcado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44503,14 +43726,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>iar</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iando</i></p>
-			<p><i>iado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44617,14 +43838,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ogar</i></p>
-			<p><i>ogado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ogando</i></p>
-			<p><i>ogado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44731,14 +43950,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>mper</i></p>
-			<p><i>to</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>mpiendo</i></p>
-			<p><i>to</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44845,14 +44062,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ornarse</i></p>
-			<p><i>ornado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ornándose</i></p>
-			<p><i>ornado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -44959,14 +44174,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erterse</i></p>
-			<p><i>ertido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ertiéndose</i></p>
-			<p><i>ertido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45073,14 +44286,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>idarse</i></p>
-			<p><i>idado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>idándose</i></p>
-			<p><i>idado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45187,14 +44398,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>oltar</i></p>
-			<p><i>oltado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>oltando</i></p>
-			<p><i>oltado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45301,14 +44510,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>onarse</i></p>
-			<p><i>onado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>onándose</i></p>
-			<p><i>onado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45415,14 +44622,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>odarse</i></p>
-			<p><i>odado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>odándose</i></p>
-			<p><i>odado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45529,14 +44734,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>yendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45643,14 +44846,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iendo</i></p>
-			<p><i>ido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45757,14 +44958,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>imarse</i></p>
-			<p><i>imado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>imándose</i></p>
-			<p><i>imado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45871,14 +45070,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>eñir</i></p>
-			<p><i>eñido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iñendo</i></p>
-			<p><i>eñido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -45985,14 +45182,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ucirse</i></p>
-			<p><i>ucido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uciéndose</i></p>
-			<p><i>ucido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -46099,14 +45294,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>ordarse</i></p>
-			<p><i>ordado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>ordándose</i></p>
-			<p><i>ordado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -46213,14 +45406,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>onar</i></p>
-			<p><i>onado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>onando</i></p>
-			<p><i>onado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -46327,14 +45518,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>unirse</i></p>
-			<p><i>unido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>uniéndose</i></p>
-			<p><i>unido</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -46441,14 +45630,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>entar</i></p>
-			<p><i>entado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>entando</i></p>
-			<p><i>entado</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>
@@ -46555,14 +45742,12 @@
 	<Infinitivo>
 		<infinitivo>
 			<p><i>erse</i></p>
-			<p><i>isto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Gerundio>
 		<gerundio>
 			<p><i>iéndose</i></p>
-			<p><i>isto</i></p>
-		</gerundio>
+			</gerundio>
 	</Gerundio>
 	<Participo>
 		<participo>

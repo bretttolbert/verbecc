@@ -1642,3 +1642,69 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3(
             ),
         ],
     )
+
+
+def test_inflector_es_conjugate_simple_ser_infinititivo(tcg):
+    """
+    Test infinitivo because it has neither person, number, gender nor pronoun.
+
+    """
+    infinitive = "ser"
+    co = tcg._get_conj_obs(infinitive)
+    assert co.verb_stem == ""
+    mood = Moods.fr.Infinitif
+    tense = Tenses.fr.InfinitifPrésent
+    tense_elem = etree.fromstring(
+        """
+        <infinitivo>
+            <p><i>ser</i></p>
+        </infinitivo>
+        """,
+        parser=None,
+    )
+    tense_template = TenseTemplateParser(Lang.es, mood).parse(tense_elem)
+    tc = tcg._tense_conjugator_simple._conjugate_simple_mood_tense(
+        co.verb_stem,
+        mood,
+        tense,
+        tense_template,
+        is_reflexive=False,
+        conjugate_pronouns=False,  # this tense is conjugated without pronouns in any case
+        modify_stem_strip_accents=False,
+    )
+    assert tc == TenseConjugation(
+        Tenses.fr.InfinitifPrésent,
+        [
+            Conjugation(None, None, None, None, ["ser"]),
+        ],
+    )
+
+
+def test_inflector_es_ser_infinitivo(tcg: TenseConjugator):
+    tc = tcg.conjugate_mood_tense("ser", Moods.es.Infinitivo, Tenses.es.Infinitivo)
+    assert tc == TenseConjugation(
+        Tenses.es.Infinitivo,
+        [
+            Conjugation(None, None, None, None, ["ser"]),
+        ],
+    )
+
+
+def test_inflector_es_ser_gerundio(tcg: TenseConjugator):
+    tc = tcg.conjugate_mood_tense("ser", Moods.es.Gerundio, Tenses.es.Gerundio)
+    assert tc == TenseConjugation(
+        Tenses.es.Gerundio,
+        [
+            Conjugation(None, None, None, None, ["siendo"]),
+        ],
+    )
+
+
+def test_inflector_es_ser_participo(tcg: TenseConjugator):
+    tc = tcg.conjugate_mood_tense("ser", Moods.es.Participo, Tenses.es.Participo)
+    assert tc == TenseConjugation(
+        Tenses.es.Participo,
+        [
+            Conjugation(None, None, None, None, ["sido"]),
+        ],
+    )

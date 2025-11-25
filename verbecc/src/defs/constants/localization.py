@@ -83,7 +83,7 @@ TENSE_MAP: Dict[Tense, Dict[LangCodeISO639_1, Tense]] = {
         LangCodeISO639_1.it: Tenses.it.Imperfetto,
         LangCodeISO639_1.pt: Tenses.pt.Imperfeito,
     },
-    Tenses.en.SimplePast: {
+    Tenses.en.PastSimple: {
         LangCodeISO639_1.ca: Tenses.ca.PassatSimple,
         LangCodeISO639_1.es: Tenses.es.PretéritoPerfectoSimple,
         LangCodeISO639_1.fr: Tenses.fr.PasséSimple,

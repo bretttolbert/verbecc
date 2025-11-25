@@ -1,6 +1,10 @@
 """
+Copyright (c) 2026, Brett Tolbert (Verbecc)
+<http://bretttolbert.com/> <https://github.com/bretttolbert/verbecc>
+
 Abstract Syntax Tree (AST) pytest test module
-Uses Python ast module with pytest to test various code attributes
+Uses Python ast module with pytest to test various source code attributes
+such as the presence or absence of type annotations
 
 1. Test Type Annotations
 Test to ensure all functions and methods have type annotations for parameters
@@ -17,8 +21,6 @@ Useful if you are trying to write code that is easily portable to Java.
 2. Test One Class Per File
 Test to ensure that there is only one class definition in each source file.
 Useful if you are trying to write code that is easily portable to Java.
-
-Copyright (c) 2026, Brett Tolbert <http://bretttolbert.com/>
 """
 
 import ast
