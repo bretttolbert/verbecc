@@ -11,6 +11,7 @@
 	- Removed mood name from tense names to eliminate redundancy
 	- Converted tense tag names to lowercase for ease of use
 	- Fixed issues with Portuguese verbs like andar, ficar, amar, odiar, arguir
+	- Removed extra elements (second elem) in infinitivo and gerundio
 
 	Coypright (C) 2024 Brett Tolbert <https://github.com/bretttolbert/verbecc>
 	Copyright (C) 2018 Sekou Diao <https://github.com/SekouD>
@@ -52,10 +53,10 @@
 <!ELEMENT futuro-do-pretérito (p , p , p , p , p , p)>
 <!ELEMENT futuro (p , p , p , p , p , p)>
 <!ELEMENT infinitivo-pessoal-presente (p , p , p , p , p , p)>
-<!ELEMENT infinitivo (p , p)>
+<!ELEMENT infinitivo (p)>
 <!ELEMENT afirmativo (p , p , p , p , p , p)>
 <!ELEMENT negativo (p , p , p , p , p , p)>
-<!ELEMENT gerúndio (p , p)>
+<!ELEMENT gerúndio (p)>
 <!ELEMENT particípio (p)>
 <!ELEMENT p (i)>
 <!ELEMENT i (#PCDATA)>
@@ -152,8 +153,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>cer</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -176,8 +176,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cendo</i></p>
-			<p><i>cido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -276,8 +275,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>udir</i></p>
-			<p><i>udido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -300,8 +298,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>udindo</i></p>
-			<p><i>udido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -400,8 +397,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uar</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -424,8 +420,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uando</i></p>
-			<p><i>uado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -524,8 +519,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>edir</i></p>
-			<p><i>edido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -548,8 +542,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>edindo</i></p>
-			<p><i>edido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -648,8 +641,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -672,8 +664,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -772,8 +763,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>azer</i></p>
-			<p><i>azido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -796,8 +786,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>azendo</i></p>
-			<p><i>azido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -896,8 +885,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uir</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -920,8 +908,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uindo</i></p>
-			<p><i>uido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1020,8 +1007,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uar</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1044,8 +1030,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uando</i></p>
-			<p><i>uado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1144,8 +1129,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>indo</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1168,8 +1152,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1268,8 +1251,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>aber</i></p>
-			<p><i>abido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1292,8 +1274,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>abendo</i></p>
-			<p><i>abido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1392,8 +1373,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>erzir</i></p>
-			<p><i>erzido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1416,8 +1396,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>erzindo</i></p>
-			<p><i>erzido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1516,8 +1495,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1540,8 +1518,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1640,8 +1617,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1664,8 +1640,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1764,8 +1739,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>çar</i></p>
-			<p><i>çado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1788,8 +1762,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>çando</i></p>
-			<p><i>çado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -1888,8 +1861,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -1912,8 +1884,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2012,8 +1983,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2036,8 +2006,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2136,8 +2105,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2160,8 +2128,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2260,8 +2227,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2284,8 +2250,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2384,8 +2349,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uir</i></p>
-			<p><i>uído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2408,8 +2372,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uindo</i></p>
-			<p><i>uído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2508,8 +2471,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2532,8 +2494,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2632,8 +2593,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ergir</i></p>
-			<p><i>ergido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2656,8 +2616,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ergindo</i></p>
-			<p><i>ergido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2756,8 +2715,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>zer</i></p>
-			<p><i>to</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2780,8 +2738,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>zendo</i></p>
-			<p><i>to</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -2880,8 +2837,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -2904,8 +2860,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3004,8 +2959,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ormir</i></p>
-			<p><i>ormido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3028,8 +2982,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ormindo</i></p>
-			<p><i>ormido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3128,8 +3081,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>upir</i></p>
-			<p><i>upido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3152,8 +3104,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>upindo</i></p>
-			<p><i>upido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3252,8 +3203,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uer</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3276,8 +3226,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uendo</i></p>
-			<p><i>uido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3376,8 +3325,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3400,8 +3348,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3500,8 +3447,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>guir</i></p>
-			<p><i>guido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3524,8 +3470,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>guindo</i></p>
-			<p><i>guido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3624,8 +3569,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3648,8 +3592,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3748,8 +3691,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>azer</i></p>
-			<p><i>eito</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3772,8 +3714,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>azendo</i></p>
-			<p><i>eito</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3872,8 +3813,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -3896,8 +3836,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -3996,8 +3935,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4020,8 +3958,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4120,8 +4057,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ugir</i></p>
-			<p><i>ugido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4144,8 +4080,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ugindo</i></p>
-			<p><i>ugido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4244,8 +4179,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4268,8 +4202,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4368,8 +4301,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>aver</i></p>
-			<p><i>avido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4392,8 +4324,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>avendo</i></p>
-			<p><i>avido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4492,8 +4423,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4516,8 +4446,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4616,8 +4545,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4640,8 +4568,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4740,8 +4667,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4764,8 +4690,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4864,8 +4789,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -4888,8 +4812,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -4988,8 +4911,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5012,8 +4934,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5112,8 +5033,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>iar</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5136,8 +5056,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>iando</i></p>
-			<p><i>iado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5236,8 +5155,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>vir</i></p>
-			<p><i>vido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5260,8 +5178,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>vindo</i></p>
-			<p><i>vido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5360,8 +5277,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>dir</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5384,8 +5300,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>dindo</i></p>
-			<p><i>dido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5484,8 +5399,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>der</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5508,8 +5422,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>dendo</i></p>
-			<p><i>dido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5608,8 +5521,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5632,8 +5544,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5732,8 +5643,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oder</i></p>
-			<p><i>odido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5756,8 +5666,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>odendo</i></p>
-			<p><i>odido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5856,8 +5765,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>olir</i></p>
-			<p><i>olido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -5880,8 +5788,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>olindo</i></p>
-			<p><i>olido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -5980,8 +5887,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ôr</i></p>
-			<p><i>osto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6004,8 +5910,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ondo</i></p>
-			<p><i>osto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6104,8 +6009,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6128,8 +6032,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6228,8 +6131,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>erir</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6252,8 +6154,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>erindo</i></p>
-			<p><i>erido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6352,8 +6253,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ibir</i></p>
-			<p><i>ibido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6376,8 +6276,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ibindo</i></p>
-			<p><i>ibido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6476,8 +6375,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ger</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6500,8 +6398,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gendo</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6600,8 +6497,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6624,8 +6520,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6724,8 +6619,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>erer</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6748,8 +6642,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>erendo</i></p>
-			<p><i>erido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6848,8 +6741,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>aver</i></p>
-			<p><i>avido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6872,8 +6764,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>avendo</i></p>
-			<p><i>avido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -6972,8 +6863,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -6996,8 +6886,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7096,8 +6985,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ectir</i></p>
-			<p><i>ectido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7120,8 +7008,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ectindo</i></p>
-			<p><i>ectido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7220,8 +7107,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>mir</i></p>
-			<p><i>mido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7244,8 +7130,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>mindo</i></p>
-			<p><i>mido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7344,8 +7229,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>rer</i></p>
-			<p><i>rido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7368,8 +7252,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>rendo</i></p>
-			<p><i>rido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7468,8 +7351,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>cir</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7492,8 +7374,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cindo</i></p>
-			<p><i>cido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7592,8 +7473,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>unir</i></p>
-			<p><i>unido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7616,8 +7496,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>unindo</i></p>
-			<p><i>unido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7716,8 +7595,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7740,8 +7618,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7840,8 +7717,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>aber</i></p>
-			<p><i>abido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7864,8 +7740,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>abendo</i></p>
-			<p><i>abido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -7964,8 +7839,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -7988,8 +7862,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8088,8 +7961,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>udar</i></p>
-			<p><i>udado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8112,8 +7984,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>udando</i></p>
-			<p><i>udado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8212,8 +8083,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>eguir</i></p>
-			<p><i>eguido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8236,8 +8106,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>eguindo</i></p>
-			<p><i>eguido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8336,8 +8205,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>entir</i></p>
-			<p><i>entido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8360,8 +8228,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>entindo</i></p>
-			<p><i>entido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8460,8 +8327,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ser</i></p>
-			<p><i>sido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8484,8 +8350,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>sendo</i></p>
-			<p><i>sido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8584,8 +8449,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ervir</i></p>
-			<p><i>ervido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8608,8 +8472,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ervindo</i></p>
-			<p><i>ervido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8708,8 +8571,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8732,8 +8594,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8832,8 +8693,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8856,8 +8716,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -8956,8 +8815,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>azer</i></p>
-			<p><i>azido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -8980,8 +8838,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>azendo</i></p>
-			<p><i>azido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9080,8 +8937,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9104,8 +8960,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9204,8 +9059,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9228,8 +9082,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9328,8 +9181,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>isto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9352,8 +9204,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>isto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9452,8 +9303,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>indo</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9476,8 +9326,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>indo</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9576,8 +9425,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9600,8 +9448,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9700,8 +9547,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9724,8 +9570,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9824,8 +9669,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ucar</i></p>
-			<p><i>ucado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9848,8 +9692,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ucando</i></p>
-			<p><i>ucado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -9948,8 +9791,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>çar-se</i></p>
-			<p><i>çado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -9972,8 +9814,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>çando-se</i></p>
-			<p><i>çado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10072,8 +9913,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ustrar</i></p>
-			<p><i>ustrado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10096,8 +9936,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ustrando</i></p>
-			<p><i>ustrado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10196,8 +10035,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10220,8 +10058,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10320,8 +10157,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car-se</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10344,8 +10180,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando-se</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10444,8 +10279,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10468,8 +10302,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10568,8 +10401,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10592,8 +10424,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10692,8 +10523,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10716,8 +10546,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10816,8 +10645,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>cer-se</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10840,8 +10668,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cendo-se</i></p>
-			<p><i>cido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -10940,8 +10767,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -10964,8 +10790,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11064,8 +10889,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ular</i></p>
-			<p><i>ulado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11088,8 +10912,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ulando</i></p>
-			<p><i>ulado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11188,8 +11011,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11212,8 +11034,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11312,8 +11133,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car-se</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11336,8 +11156,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando-se</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11436,8 +11255,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11460,8 +11278,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11560,8 +11377,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oiar</i></p>
-			<p><i>oiado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11584,8 +11400,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oiando</i></p>
-			<p><i>oiado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11684,8 +11499,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11708,8 +11522,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11808,8 +11621,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ger-se</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11832,8 +11644,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gendo-se</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -11932,8 +11743,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>rir</i></p>
-			<p><i>erto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -11956,8 +11766,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>rindo</i></p>
-			<p><i>erto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12056,8 +11865,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>rir-se</i></p>
-			<p><i>erto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12080,8 +11888,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>rindo-se</i></p>
-			<p><i>erto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12180,8 +11987,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12204,8 +12010,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12304,8 +12109,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12328,8 +12132,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12428,8 +12231,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12452,8 +12254,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12552,8 +12353,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12576,8 +12376,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12676,8 +12475,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12700,8 +12498,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12800,8 +12597,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i/></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12824,8 +12620,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i/></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -12924,8 +12719,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>nder</i></p>
-			<p><i>ndido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -12948,8 +12742,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ndendo</i></p>
-			<p><i>ndido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13048,8 +12841,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>nder-se</i></p>
-			<p><i>ndido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13072,8 +12864,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ndendo-se</i></p>
-			<p><i>ndido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13172,8 +12963,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13196,8 +12986,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13296,8 +13085,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13320,8 +13108,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13420,8 +13207,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir-se</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13444,8 +13230,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo-se</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13544,8 +13329,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>udir-se</i></p>
-			<p><i>udido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13568,8 +13352,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>udindo-se</i></p>
-			<p><i>udido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13668,8 +13451,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uar-se</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13692,8 +13474,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uando-se</i></p>
-			<p><i>uado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13792,8 +13573,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>erir-se</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13816,8 +13596,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>erindo-se</i></p>
-			<p><i>erido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -13916,8 +13695,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ever</i></p>
-			<p><i>ito</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -13940,8 +13718,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>evendo</i></p>
-			<p><i>ito</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14040,8 +13817,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ever-se</i></p>
-			<p><i>ito</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14064,8 +13840,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>evendo-se</i></p>
-			<p><i>ito</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14164,8 +13939,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ertir</i></p>
-			<p><i>ertido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14188,8 +13962,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ertindo</i></p>
-			<p><i>ertido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14288,8 +14061,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>azer-se</i></p>
-			<p><i>eito</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14312,8 +14084,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>azendo-se</i></p>
-			<p><i>eito</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14412,8 +14183,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14436,8 +14206,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14536,8 +14305,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14560,8 +14328,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14660,8 +14427,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uchar-se</i></p>
-			<p><i>uchado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14684,8 +14450,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uchando-se</i></p>
-			<p><i>uchado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14784,8 +14549,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>udar</i></p>
-			<p><i>udado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14808,8 +14572,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>udando</i></p>
-			<p><i>udado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -14908,8 +14671,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uar</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -14932,8 +14694,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uando</i></p>
-			<p><i>uado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15032,8 +14793,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15056,8 +14816,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15156,8 +14915,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>itar</i></p>
-			<p><i>itado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15180,8 +14938,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>itando</i></p>
-			<p><i>itado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15280,8 +15037,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>itar-se</i></p>
-			<p><i>itado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15304,8 +15060,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>itando-se</i></p>
-			<p><i>itado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15404,8 +15159,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>izar</i></p>
-			<p><i>izado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15428,8 +15182,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>izando</i></p>
-			<p><i>izado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15528,8 +15281,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>izar-se</i></p>
-			<p><i>izado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15552,8 +15304,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>izando-se</i></p>
-			<p><i>izado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15652,8 +15403,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15676,8 +15426,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15776,8 +15525,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>çar</i></p>
-			<p><i>çado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15800,8 +15548,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>çando</i></p>
-			<p><i>çado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -15900,8 +15647,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uar-se</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -15924,8 +15670,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uando-se</i></p>
-			<p><i>uado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16024,8 +15769,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>cer</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16048,8 +15792,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cendo</i></p>
-			<p><i>cido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16148,8 +15891,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>udar</i></p>
-			<p><i>udado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16172,8 +15914,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>udando</i></p>
-			<p><i>udado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16272,8 +16013,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>udar-se</i></p>
-			<p><i>udado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16296,8 +16036,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>udando-se</i></p>
-			<p><i>udado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16396,8 +16135,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>iar</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16420,8 +16158,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>iando</i></p>
-			<p><i>iado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16520,8 +16257,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>iar-se</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16544,8 +16280,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>iando-se</i></p>
-			<p><i>iado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16644,8 +16379,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>or</i></p>
-			<p><i>osto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16668,8 +16402,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ondo</i></p>
-			<p><i>osto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16768,8 +16501,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>or-se</i></p>
-			<p><i>osto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16792,8 +16524,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ondo-se</i></p>
-			<p><i>osto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -16892,8 +16623,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ular-se</i></p>
-			<p><i>ulado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -16916,8 +16646,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ulando-se</i></p>
-			<p><i>ulado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17016,8 +16745,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oiar-se</i></p>
-			<p><i>oiado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17040,8 +16768,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oiando-se</i></p>
-			<p><i>oiado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17140,8 +16867,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>azer-se</i></p>
-			<p><i>azido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17164,8 +16890,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>azendo-se</i></p>
-			<p><i>azido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17264,8 +16989,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>izar</i></p>
-			<p><i>izado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17288,8 +17012,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>izando</i></p>
-			<p><i>izado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17388,8 +17111,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car-se</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17412,8 +17134,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando-se</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17512,8 +17233,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uir-se</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17536,8 +17256,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uindo-se</i></p>
-			<p><i>uido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17636,8 +17355,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>inar</i></p>
-			<p><i>inado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17660,8 +17378,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>inando</i></p>
-			<p><i>inado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17760,8 +17477,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>inar-se</i></p>
-			<p><i>inado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17784,8 +17500,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>inando-se</i></p>
-			<p><i>inado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -17884,8 +17599,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ergir-se</i></p>
-			<p><i>ergido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -17908,8 +17622,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ergindo-se</i></p>
-			<p><i>ergido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18008,8 +17721,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18032,8 +17744,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18132,8 +17843,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18156,8 +17866,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18256,8 +17965,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18280,8 +17988,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18380,8 +18087,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18404,8 +18110,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18504,8 +18209,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18528,8 +18232,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18628,8 +18331,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>unar</i></p>
-			<p><i>unado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18652,8 +18354,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>unando</i></p>
-			<p><i>unado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18752,8 +18453,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>indo</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18776,8 +18476,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>indo</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -18876,8 +18575,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umar</i></p>
-			<p><i>umado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -18900,8 +18598,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umando</i></p>
-			<p><i>umado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19000,8 +18697,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19024,8 +18720,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19124,8 +18819,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19148,8 +18842,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19248,8 +18941,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>erer-se</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19272,8 +18964,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>erendo-se</i></p>
-			<p><i>erido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19372,8 +19063,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>zer</i></p>
-			<p><i>zido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19396,8 +19086,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>zendo</i></p>
-			<p><i>zido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19496,8 +19185,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>zer-se</i></p>
-			<p><i>zido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19520,8 +19208,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>zendo-se</i></p>
-			<p><i>zido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19620,8 +19307,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uar</i></p>
-			<p><i>uado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19644,8 +19330,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uando</i></p>
-			<p><i>uado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19744,8 +19429,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oiar</i></p>
-			<p><i>oiado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19768,8 +19452,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oiando</i></p>
-			<p><i>oiado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19868,8 +19551,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -19892,8 +19574,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -19992,8 +19673,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20016,8 +19696,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20116,8 +19795,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ulir</i></p>
-			<p><i>ulido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20140,8 +19818,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ulindo</i></p>
-			<p><i>ulido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20240,8 +19917,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ulir-se</i></p>
-			<p><i>ulido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20264,8 +19940,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ulindo-se</i></p>
-			<p><i>ulido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20364,8 +20039,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20388,8 +20062,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20488,8 +20161,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20512,8 +20184,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20612,8 +20283,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20636,8 +20306,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20736,8 +20405,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ernir</i></p>
-			<p><i>ernido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20760,8 +20428,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ernindo</i></p>
-			<p><i>ernido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20860,8 +20527,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -20884,8 +20550,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -20984,8 +20649,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir-se</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21008,8 +20672,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo-se</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21108,8 +20771,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umar</i></p>
-			<p><i>umado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21132,8 +20794,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umando</i></p>
-			<p><i>umado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21232,8 +20893,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21256,8 +20916,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21356,8 +21015,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21380,8 +21038,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21480,8 +21137,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>obrir</i></p>
-			<p><i>obrido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21504,8 +21160,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>obrindo</i></p>
-			<p><i>obrido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21604,8 +21259,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>obrir-se</i></p>
-			<p><i>obrido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21628,8 +21282,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>obrindo-se</i></p>
-			<p><i>obrido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21728,8 +21381,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ibir-se</i></p>
-			<p><i>ibido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21752,8 +21404,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ibindo-se</i></p>
-			<p><i>ibido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21852,8 +21503,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -21876,8 +21526,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -21976,8 +21625,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oiar</i></p>
-			<p><i>oiado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22000,8 +21648,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oiando</i></p>
-			<p><i>oiado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22100,8 +21747,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22124,8 +21770,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22224,8 +21869,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>elir</i></p>
-			<p><i>elido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22248,8 +21892,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>elindo</i></p>
-			<p><i>elido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22348,8 +21991,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>etir</i></p>
-			<p><i>etido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22372,8 +22014,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>etindo</i></p>
-			<p><i>etido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22472,8 +22113,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>etir-se</i></p>
-			<p><i>etido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22496,8 +22136,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>etindo-se</i></p>
-			<p><i>etido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22596,8 +22235,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22620,8 +22258,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22720,8 +22357,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22744,8 +22380,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22844,8 +22479,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer-se</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22868,8 +22502,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo-se</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -22968,8 +22601,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -22992,8 +22624,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23092,8 +22723,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ngir</i></p>
-			<p><i>ngido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23116,8 +22746,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ngindo</i></p>
-			<p><i>ngido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23216,8 +22845,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ngir-se</i></p>
-			<p><i>ngido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23240,8 +22868,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ngindo-se</i></p>
-			<p><i>ngido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23340,8 +22967,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umir</i></p>
-			<p><i>umido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23364,8 +22990,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umindo</i></p>
-			<p><i>umido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23464,8 +23089,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umir-se</i></p>
-			<p><i>umido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23488,8 +23112,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umindo-se</i></p>
-			<p><i>umido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23588,8 +23211,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>zer-se</i></p>
-			<p><i>to</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23612,8 +23234,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>zendo-se</i></p>
-			<p><i>to</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23712,8 +23333,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ter</i></p>
-			<p><i>tido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23736,8 +23356,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>tendo</i></p>
-			<p><i>tido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23836,8 +23455,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>omper</i></p>
-			<p><i>ompido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23860,8 +23478,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ompendo</i></p>
-			<p><i>ompido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -23960,8 +23577,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>omper-se</i></p>
-			<p><i>ompido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -23984,8 +23600,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ompendo-se</i></p>
-			<p><i>ompido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24084,8 +23699,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24108,8 +23722,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24208,8 +23821,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24232,8 +23844,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24332,8 +23943,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uspir</i></p>
-			<p><i>uspido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24356,8 +23966,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uspindo</i></p>
-			<p><i>uspido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24456,8 +24065,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24480,8 +24088,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24580,8 +24187,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>egrir</i></p>
-			<p><i>egrido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24604,8 +24210,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>egrindo</i></p>
-			<p><i>egrido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24704,8 +24309,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>egrir-se</i></p>
-			<p><i>egrido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24728,8 +24332,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>egrindo-se</i></p>
-			<p><i>egrido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24828,8 +24431,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>çar</i></p>
-			<p><i>çado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24852,8 +24454,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>çando</i></p>
-			<p><i>çado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -24952,8 +24553,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>çar-se</i></p>
-			<p><i>çado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -24976,8 +24576,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>çando-se</i></p>
-			<p><i>çado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25076,8 +24675,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>obrir</i></p>
-			<p><i>oberto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25100,8 +24698,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>obrindo</i></p>
-			<p><i>oberto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25200,8 +24797,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>obrir-se</i></p>
-			<p><i>oberto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25224,8 +24820,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>obrindo-se</i></p>
-			<p><i>oberto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25324,8 +24919,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ular</i></p>
-			<p><i>ulado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25348,8 +24942,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ulando</i></p>
-			<p><i>ulado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25448,8 +25041,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>olir</i></p>
-			<p><i>olido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25472,8 +25064,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>olindo</i></p>
-			<p><i>olido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25572,8 +25163,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>izar-se</i></p>
-			<p><i>izado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25596,8 +25186,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>izando-se</i></p>
-			<p><i>izado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25696,8 +25285,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>upir-se</i></p>
-			<p><i>upido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25720,8 +25308,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>upindo-se</i></p>
-			<p><i>upido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25820,8 +25407,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ver</i></p>
-			<p><i>vido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25844,8 +25430,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>vendo</i></p>
-			<p><i>vido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -25944,8 +25529,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ver-se</i></p>
-			<p><i>vido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -25968,8 +25552,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>vendo-se</i></p>
-			<p><i>vido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26068,8 +25651,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>estir</i></p>
-			<p><i>estido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26092,8 +25674,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>estindo</i></p>
-			<p><i>estido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26192,8 +25773,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>dir-se</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26216,8 +25796,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>dindo-se</i></p>
-			<p><i>dido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26316,8 +25895,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>entir-se</i></p>
-			<p><i>entido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26340,8 +25918,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>entindo-se</i></p>
-			<p><i>entido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26440,8 +26017,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>orir</i></p>
-			<p><i>orido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26464,8 +26040,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>orindo</i></p>
-			<p><i>orido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26564,8 +26139,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26588,8 +26162,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26688,8 +26261,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26712,8 +26284,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26812,8 +26383,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>espir</i></p>
-			<p><i>espido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26836,8 +26406,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>espindo</i></p>
-			<p><i>espido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -26936,8 +26505,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>espir-se</i></p>
-			<p><i>espido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -26960,8 +26528,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>espindo-se</i></p>
-			<p><i>espido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27060,8 +26627,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>olir-se</i></p>
-			<p><i>olido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27084,8 +26650,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>olindo-se</i></p>
-			<p><i>olido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27184,8 +26749,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27208,8 +26772,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27308,8 +26871,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>enir</i></p>
-			<p><i>enido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27332,8 +26894,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>enindo</i></p>
-			<p><i>enido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27432,8 +26993,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>enir-se</i></p>
-			<p><i>enido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27456,8 +27016,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>enindo-se</i></p>
-			<p><i>enido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27556,8 +27115,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>iar</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27580,8 +27138,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>iando</i></p>
-			<p><i>iado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27680,8 +27237,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>estir-se</i></p>
-			<p><i>estido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27704,8 +27260,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>estindo-se</i></p>
-			<p><i>estido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27804,8 +27359,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umir</i></p>
-			<p><i>umido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27828,8 +27382,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umindo</i></p>
-			<p><i>umido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -27928,8 +27481,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>der-se</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -27952,8 +27504,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>dendo-se</i></p>
-			<p><i>dido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28052,8 +27603,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>guir-se</i></p>
-			<p><i>guido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28076,8 +27626,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>guindo-se</i></p>
-			<p><i>guido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28176,8 +27725,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ertir-se</i></p>
-			<p><i>ertido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28200,8 +27748,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ertindo-se</i></p>
-			<p><i>ertido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28300,8 +27847,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer-se</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28324,8 +27870,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo-se</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28424,8 +27969,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28448,8 +27992,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28548,8 +28091,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ger</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28572,8 +28114,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gendo</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28672,8 +28213,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28696,8 +28236,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28796,8 +28335,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ue</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28820,8 +28358,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ue</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -28920,8 +28457,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ue</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -28944,8 +28480,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ue</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29044,8 +28579,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umar</i></p>
-			<p><i>umado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29068,8 +28602,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umando</i></p>
-			<p><i>umado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29168,8 +28701,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umar-se</i></p>
-			<p><i>umado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29192,8 +28724,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umando-se</i></p>
-			<p><i>umado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29292,8 +28823,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oiar-se</i></p>
-			<p><i>oiado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29316,8 +28846,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oiando-se</i></p>
-			<p><i>oiado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29416,8 +28945,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uir</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29440,8 +28968,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uindo</i></p>
-			<p><i>uido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29540,8 +29067,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uir-se</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29564,8 +29090,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uindo-se</i></p>
-			<p><i>uido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29664,8 +29189,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29688,8 +29212,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29788,8 +29311,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29812,8 +29334,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -29912,8 +29433,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>isto</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -29936,8 +29456,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>isto</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30036,8 +29555,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uvar</i></p>
-			<p><i>uvado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30060,8 +29578,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uvando</i></p>
-			<p><i>uvado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30160,8 +29677,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gar</i></p>
-			<p><i>gado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30184,8 +29700,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gando</i></p>
-			<p><i>gado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30284,8 +29799,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gar-se</i></p>
-			<p><i>gado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30308,8 +29822,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gando-se</i></p>
-			<p><i>gado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30408,8 +29921,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30432,8 +29944,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30532,8 +30043,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uer-se</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30556,8 +30066,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uendo-se</i></p>
-			<p><i>uido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30656,8 +30165,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ever</i></p>
-			<p><i>evido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30680,8 +30188,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>evendo</i></p>
-			<p><i>evido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30780,8 +30287,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ever-se</i></p>
-			<p><i>evido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30804,8 +30310,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>evendo-se</i></p>
-			<p><i>evido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -30904,8 +30409,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ecer</i></p>
-			<p><i>ecido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -30928,8 +30432,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ecendo</i></p>
-			<p><i>ecido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31028,8 +30531,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uçar</i></p>
-			<p><i>uçado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31052,8 +30554,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uçando</i></p>
-			<p><i>uçado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31152,8 +30653,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31176,8 +30676,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31276,8 +30775,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31300,8 +30798,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31400,8 +30897,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>imir</i></p>
-			<p><i>imido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31424,8 +30920,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>imindo</i></p>
-			<p><i>imido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31524,8 +31019,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>imir-se</i></p>
-			<p><i>imido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31548,8 +31042,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>imindo-se</i></p>
-			<p><i>imido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31648,8 +31141,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>iscar</i></p>
-			<p><i>iscado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31672,8 +31164,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>iscando</i></p>
-			<p><i>iscado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31772,8 +31263,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ular</i></p>
-			<p><i>ulado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31796,8 +31286,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ulando</i></p>
-			<p><i>ulado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -31896,8 +31385,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>emir</i></p>
-			<p><i>emido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -31920,8 +31408,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>emindo</i></p>
-			<p><i>emido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32020,8 +31507,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ugir-se</i></p>
-			<p><i>ugido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32044,8 +31530,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ugindo-se</i></p>
-			<p><i>ugido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32144,8 +31629,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>o</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32168,8 +31652,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>o</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32268,8 +31751,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>o</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32292,8 +31774,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>o</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32392,8 +31873,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uchar</i></p>
-			<p><i>uchado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32416,8 +31896,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uchando</i></p>
-			<p><i>uchado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32516,8 +31995,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>aver-se</i></p>
-			<p><i>avido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32540,8 +32018,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>avendo-se</i></p>
-			<p><i>avido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32640,8 +32117,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>çar</i></p>
-			<p><i>çado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32664,8 +32140,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>çando</i></p>
-			<p><i>çado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32764,8 +32239,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir-se</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32788,8 +32262,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo-se</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -32888,8 +32361,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>elir</i></p>
-			<p><i>elido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -32912,8 +32384,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>elindo</i></p>
-			<p><i>elido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33012,8 +32483,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>iar-se</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33036,8 +32506,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>iando-se</i></p>
-			<p><i>iado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33136,8 +32605,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33160,8 +32628,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33260,8 +32727,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>orrer</i></p>
-			<p><i>orrido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33284,8 +32750,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>orrendo</i></p>
-			<p><i>orrido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33384,8 +32849,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33408,8 +32872,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33508,8 +32971,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>erir</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33532,8 +32994,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>erindo</i></p>
-			<p><i>erido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33632,8 +33093,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>erir-se</i></p>
-			<p><i>erido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33656,8 +33116,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>erindo-se</i></p>
-			<p><i>erido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33756,8 +33215,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33780,8 +33238,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -33880,8 +33337,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -33904,8 +33360,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34004,8 +33459,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oiar</i></p>
-			<p><i>oiado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34028,8 +33482,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oiando</i></p>
-			<p><i>oiado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34128,8 +33581,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34152,8 +33604,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34252,8 +33703,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>atar</i></p>
-			<p><i>atado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34276,8 +33726,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>atando</i></p>
-			<p><i>atado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34376,8 +33825,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>atar-se</i></p>
-			<p><i>atado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34400,8 +33848,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>atando-se</i></p>
-			<p><i>atado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34500,8 +33947,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34524,8 +33970,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34624,8 +34069,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer-se</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34648,8 +34092,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo-se</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34748,8 +34191,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>rer</i></p>
-			<p><i>rido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34772,8 +34214,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>rendo</i></p>
-			<p><i>rido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34872,8 +34313,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>rer-se</i></p>
-			<p><i>rido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -34896,8 +34336,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>rendo-se</i></p>
-			<p><i>rido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -34996,8 +34435,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>scer</i></p>
-			<p><i>scido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35020,8 +34458,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>scendo</i></p>
-			<p><i>scido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35120,8 +34557,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35144,8 +34580,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35244,8 +34679,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35268,8 +34702,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35368,8 +34801,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>iar-se</i></p>
-			<p><i>iado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35392,8 +34824,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>iando-se</i></p>
-			<p><i>iado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35492,8 +34923,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>tir</i></p>
-			<p><i>tido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35516,8 +34946,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>tindo</i></p>
-			<p><i>tido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35616,8 +35045,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>tir-se</i></p>
-			<p><i>tido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35640,8 +35068,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>tindo-se</i></p>
-			<p><i>tido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35740,8 +35167,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>o</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35764,8 +35190,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>o</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35864,8 +35289,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>o</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -35888,8 +35312,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>o</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -35988,8 +35411,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36012,8 +35434,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36112,8 +35533,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36136,8 +35556,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36236,8 +35655,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>eguir-se</i></p>
-			<p><i>eguido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36260,8 +35678,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>eguindo-se</i></p>
-			<p><i>eguido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36360,8 +35777,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ter-se</i></p>
-			<p><i>tido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36384,8 +35800,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>tendo-se</i></p>
-			<p><i>tido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36484,8 +35899,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>der</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36508,8 +35922,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>dendo</i></p>
-			<p><i>dido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36608,8 +36021,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>der-se</i></p>
-			<p><i>dido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36632,8 +36044,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>dendo-se</i></p>
-			<p><i>dido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36732,8 +36143,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36756,8 +36166,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36856,8 +36265,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -36880,8 +36288,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -36980,8 +36387,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37004,8 +36410,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37104,8 +36509,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uir</i></p>
-			<p><i>uido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37128,8 +36532,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uindo</i></p>
-			<p><i>uido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37228,8 +36631,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ger-se</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37252,8 +36654,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gendo-se</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37352,8 +36753,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ectir-se</i></p>
-			<p><i>ectido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37376,8 +36776,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ectindo-se</i></p>
-			<p><i>ectido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37476,8 +36875,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37500,8 +36898,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37600,8 +36997,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>mir-se</i></p>
-			<p><i>mido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37624,8 +37020,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>mindo-se</i></p>
-			<p><i>mido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37724,8 +37119,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer-se</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37748,8 +37142,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo-se</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37848,8 +37241,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>elir-se</i></p>
-			<p><i>elido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37872,8 +37264,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>elindo-se</i></p>
-			<p><i>elido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -37972,8 +37363,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>cir-se</i></p>
-			<p><i>cido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -37996,8 +37386,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cindo-se</i></p>
-			<p><i>cido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38096,8 +37485,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>unir-se</i></p>
-			<p><i>unido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38120,8 +37508,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>unindo-se</i></p>
-			<p><i>unido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38220,8 +37607,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38244,8 +37630,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38344,8 +37729,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>mper</i></p>
-			<p><i>mpido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38368,8 +37752,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>mpendo</i></p>
-			<p><i>mpido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38468,8 +37851,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>mper-se</i></p>
-			<p><i>mpido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38492,8 +37874,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>mpendo-se</i></p>
-			<p><i>mpido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38592,8 +37973,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>gir</i></p>
-			<p><i>gido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38616,8 +37996,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>gindo</i></p>
-			<p><i>gido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38716,8 +38095,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38740,8 +38118,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38840,8 +38217,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar-se</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38864,8 +38240,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando-se</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -38964,8 +38339,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>udar-se</i></p>
-			<p><i>udado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -38988,8 +38362,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>udando-se</i></p>
-			<p><i>udado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39088,8 +38461,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39112,8 +38484,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39212,8 +38583,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>car-se</i></p>
-			<p><i>cado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39236,8 +38606,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>cando-se</i></p>
-			<p><i>cado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39336,8 +38705,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ervir-se</i></p>
-			<p><i>ervido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39360,8 +38728,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ervindo-se</i></p>
-			<p><i>ervido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39460,8 +38827,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>oer</i></p>
-			<p><i>oído</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39484,8 +38850,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>oendo</i></p>
-			<p><i>oído</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39584,8 +38949,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ortir</i></p>
-			<p><i>ortido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39608,8 +38972,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ortindo</i></p>
-			<p><i>ortido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39708,8 +39071,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ortir-se</i></p>
-			<p><i>ortido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39732,8 +39094,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ortindo-se</i></p>
-			<p><i>ortido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39832,8 +39193,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ubir</i></p>
-			<p><i>ubido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39856,8 +39216,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ubindo</i></p>
-			<p><i>ubido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -39956,8 +39315,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ubir-se</i></p>
-			<p><i>ubido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -39980,8 +39338,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ubindo-se</i></p>
-			<p><i>ubido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40080,8 +39437,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>umir-se</i></p>
-			<p><i>umido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40104,8 +39460,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>umindo-se</i></p>
-			<p><i>umido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40204,8 +39559,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ender</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40228,8 +39582,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endendo</i></p>
-			<p><i>endido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40328,8 +39681,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ender-se</i></p>
-			<p><i>endido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40352,8 +39704,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endendo-se</i></p>
-			<p><i>endido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40452,8 +39803,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>er-se</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40476,8 +39826,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>endo-se</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40576,8 +39925,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ossir</i></p>
-			<p><i>ossido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40600,8 +39948,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ossindo</i></p>
-			<p><i>ossido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40700,8 +40047,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ar</i></p>
-			<p><i>ado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40724,8 +40070,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>ando</i></p>
-			<p><i>ado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40824,8 +40169,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir-se</i></p>
-			<p><i>indo</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40848,8 +40192,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo-se</i></p>
-			<p><i>indo</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -40948,8 +40291,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>uvar</i></p>
-			<p><i>uvado</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -40972,8 +40314,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>uvando</i></p>
-			<p><i>uvado</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>
@@ -41072,8 +40413,7 @@
 		</infinitivo-pessoal-presente>
 		<infinitivo>
 			<p><i>ir</i></p>
-			<p><i>ido</i></p>
-		</infinitivo>
+			</infinitivo>
 	</Infinitivo>
 	<Imperativo>
 		<afirmativo>
@@ -41096,8 +40436,7 @@
 	<Gerúndio>
 		<gerúndio>
 			<p><i>indo</i></p>
-			<p><i>ido</i></p>
-		</gerúndio>
+			</gerúndio>
 	</Gerúndio>
 	<Particípio>
 		<particípio>

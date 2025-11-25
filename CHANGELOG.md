@@ -1,5 +1,14 @@
 # verbecc Changelog
 
+- 2.0.2
+  - Fixed Portuguese and Spanish infinitivo and gerundio tense verb conjugation issues
+
+- 2.0.1
+  - Fixed Portuguese and Spanish reflexive verb conjugation issues
+
+- 2.0.0
+  - Major re-write, backwards incompatible (see updated [README](./README.md#whats-new-in-verbecc-20))
+
 - 1.11.7 [TBR]
   - Cont. refactoring
   - Separating XML parsing code from logical types
