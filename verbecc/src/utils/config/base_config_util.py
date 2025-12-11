@@ -24,27 +24,19 @@ class BaseConfigUtil(Generic[T]):
         except KeyError as ex0:
             # unit-tests path
             try:
-                self._yaml_resource_path = (
-                    files("verbecc.verbecc.config") / self.yaml_filename
-                )
+                self._yaml_resource_path = files("verbecc.verbecc.config") / self.yaml_filename
             except TypeError as ex1:
                 # python <=3.9 hack
                 try:
                     dir_path = Path(__file__).parent.parent.parent
                     self._yaml_resource_path = dir_path / "config" / self.yaml_filename
-                    while self._yaml_resource_path is None or not Path.exists(
-                        self._yaml_resource_path
-                    ):
-                        self._yaml_resource_path = (
-                            dir_path.parent / "config" / self.yaml_filename
-                        )
+                    while self._yaml_resource_path is None or not Path.exists(self._yaml_resource_path):
+                        self._yaml_resource_path = dir_path.parent / "config" / self.yaml_filename
 
                 except Exception as ex2:
                     msg = (
                         "You are likely running an incompatible python version. "
-                        + "_yaml_resource_path={0} ex1={1} ex2={2}".format(
-                            self._yaml_resource_path, ex1, ex2
-                        )
+                        + f"_yaml_resource_path={self._yaml_resource_path} ex0={ex0} ex1={ex1} ex2={ex2}"
                     )
                     raise Exception(msg)
 
@@ -73,9 +65,7 @@ class BaseConfigUtil(Generic[T]):
         if ret is not None:
             return ret
         else:
-            raise TypeError(
-                "Invalid _yaml_resource_path ({0})".format(self._yaml_resource_path)
-            )
+            raise TypeError("Invalid _yaml_resource_path ({0})".format(self._yaml_resource_path))
 
     @abstractmethod
     def _load_config_from_filestream(self, filestream: TextIO) -> T:

@@ -26,8 +26,8 @@
 - [Credits](#credits)
 
 ## Live Demo
-- [Web GUI](http://verbe.cc)
-- [HTTP API : /verbecc/conjugate/fr/manger](http://verbe.cc/verbecc/conjugate/fr/manger)
+- [Web GUI](https://verbe.cc)
+- [HTTP API : /verbecc/conjugate/fr/manger](https://verbe.cc/verbecc/conjugate/fr/manger)
 
 ### Example Output
 

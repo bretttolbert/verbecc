@@ -61,9 +61,7 @@ class Finder(ast.NodeVisitor):
         parts = []
         errmsg = self._base_errmsg(TEST_TYPE_ANNOTATIONS)
         if missing_params:
-            parts.append(
-                errmsg + "params missing type annotation: " + ", ".join(missing_params)
-            )
+            parts.append(errmsg + "params missing type annotation: " + ", ".join(missing_params))
         if missing_return:
             parts.append(errmsg + "return statement missing type annotation")
         msg = (
@@ -74,21 +72,14 @@ class Finder(ast.NodeVisitor):
         print(msg)
         self._reported_errors.append(msg)
 
-    def _report_error_multiple_class_definitions_in_same_file(
-        self, node, class_name: str, lineno
-    ) -> None:
+    def _report_error_multiple_class_definitions_in_same_file(self, node, class_name: str, lineno) -> None:
         errmsg = self._base_errmsg(TEST_ONE_CLASS_PER_FILE)
-        msg = (
-            errmsg
-            + f"multiple class definitions in same file: {self.filename}:{lineno} {class_name}"
-        )
+        msg = errmsg + f"multiple class definitions in same file: {self.filename}:{lineno} {class_name}"
         self._reported_errors.append(msg)
 
     def _check_class(self, node: ast.ClassDef) -> None:
         if self._class_count > 1:
-            self._report_error_multiple_class_definitions_in_same_file(
-                node, node.name, node.lineno
-            )
+            self._report_error_multiple_class_definitions_in_same_file(node, node.name, node.lineno)
 
     def _check_func(self, node: Union[ast.FunctionDef, ast.AsyncFunctionDef]) -> None:
         is_method = bool(self.class_stack)
@@ -116,9 +107,7 @@ class Finder(ast.NodeVisitor):
         missing_return = node.returns is None
 
         if missing or missing_return:
-            self._report_error_param_or_return_missing_type_hint(
-                node, node.name, node.lineno, missing, missing_return
-            )
+            self._report_error_param_or_return_missing_type_hint(node, node.name, node.lineno, missing, missing_return)
 
     def visit_FunctionDef(self, node: ast.FunctionDef):
         self._check_func(node)
@@ -146,11 +135,7 @@ def walk_root(root) -> List[str]:
     errors = []
     for dirpath, dirnames, filenames in os.walk(root):
         # skip excluded dirs
-        dirnames[:] = [
-            d
-            for d in dirnames
-            if d not in EXCLUDE_DIRS and not d.startswith(".egg-info")
-        ]
+        dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS and not d.startswith(".egg-info")]
         for fn in filenames:
             if fn.endswith(".py"):
                 errors.extend(scan_file(os.path.join(dirpath, fn)))
