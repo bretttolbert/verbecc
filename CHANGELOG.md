@@ -1,10 +1,13 @@
 # verbecc Changelog
 
 - 2.0.3 [28 August 2026]
+  - PR #48 [dependabot] Updated pytest from 8.4.2 to 9.0.3 for python > py39 (py39 will remain on pytest 8.4.2 for compatibility)
+  - PR #44 [dependabot] Updated lxml from 6.0.2 to 6.1.0
   - PR #47:
     - Fixed Bug #46: Missing alphabet for Italian
-    - Fixed misc. other issues in gramar_defines.py
-  - PR #44 [dependabot] Updated lxml from 6.0.2 to 6.1.0
+    - Fixed `IMPERATIVE_PERSONS_RO` vs. `IMPERATIVE_PERSONS_IT` mixup--one of several bugs reported by Peter Abolins
+    - Fixed misc. other issues in [gramar_defines.py](./verbecc/src/defs/constants/grammar_defines.py)
+    - Changed `List` constants to `tuple`s to make them explicitly immutable
 
 - 2.0.2 [24 November 2025]
   - Fixed Portuguese and Spanish infinitivo and gerundio tense verb conjugation issues
