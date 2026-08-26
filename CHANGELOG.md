@@ -2,6 +2,9 @@
 
 - 2.0.3 [28 August 2026]
   - PR #48 [dependabot] Updated pytest from 8.4.2 to 9.0.3 for python > py39 (py39 will remain on pytest 8.4.2 for compatibility)
+    - To fix intermittent "failed to converge" error:
+      - Increased LinearSVC max_iter from 12000 to 20000
+      - Increased SGDClassifier max_iter from 40000 to 100000
   - PR #44 [dependabot] Updated lxml from 6.0.2 to 6.1.0
   - PR #47:
     - Fixed Bug #46: Missing alphabet for Italian
