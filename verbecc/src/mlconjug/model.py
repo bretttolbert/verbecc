@@ -45,15 +45,13 @@ class Model:
                 binary=True,
             )
         if not feature_selector:
-            feature_selector = SelectFromModel(
-                LinearSVC(penalty="l1", max_iter=12000, dual=False, verbose=0)
-            )
+            feature_selector = SelectFromModel(LinearSVC(penalty="l1", max_iter=20000, dual=False, verbose=0))
         if not classifier:
             classifier = SGDClassifier(
                 loss="log_loss",
                 penalty="elasticnet",
                 l1_ratio=0.15,
-                max_iter=40000,
+                max_iter=100000,
                 alpha=1e-5,
                 verbose=0,
             )
@@ -69,9 +67,7 @@ class Model:
         return
 
     def __repr__(self) -> str:
-        return "{0}.{1}({2}, {3}, {4})".format(
-            __name__, self.__class__.__name__, *sorted(self.pipeline.named_steps)
-        )
+        return "{0}.{1}({2}, {3}, {4})".format(__name__, self.__class__.__name__, *sorted(self.pipeline.named_steps))
 
     def train(self, samples: List[str], labels: List[int]) -> None:
         """
