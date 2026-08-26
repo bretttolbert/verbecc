@@ -1,8 +1,10 @@
 # verbecc Changelog
 
 - 2.0.3 [28 August 2026]
-  - Fixed Bug #46: Missing alphabet for Italian
-  - Fixed misc. other issues in gramar_defines.py
+  - PR #47:
+    - Fixed Bug #46: Missing alphabet for Italian
+    - Fixed misc. other issues in gramar_defines.py
+  - PR #44 [dependabot] Updated lxml from 6.0.2 to 6.1.0
 
 - 2.0.2 [24 November 2025]
   - Fixed Portuguese and Spanish infinitivo and gerundio tense verb conjugation issues
