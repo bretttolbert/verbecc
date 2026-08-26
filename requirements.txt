@@ -6,7 +6,7 @@ iniconfig==2.1.0
 joblib==1.4.2
 jsbeautifier==1.15.4
 lxml-stubs==0.5.1
-lxml==6.0.2
+lxml==6.1.0
 numpy>=2.0.2,<=2.3.3
 packaging==25.0
 pluggy==1.6.0
