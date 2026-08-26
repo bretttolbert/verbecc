@@ -11,7 +11,8 @@ numpy>=2.0.2,<=2.3.3
 packaging==25.0
 pluggy==1.6.0
 pyaml==25.7.0
-pytest==8.4.2
+pytest==8.4.2;python_version<="3.9"
+pytest==9.0.3;python_version>"3.9"
 scikit-learn>=1.6.1,<=1.7.2
 scipy>=1.13.1,<=1.16.1
 threadpoolctl==3.6.0
