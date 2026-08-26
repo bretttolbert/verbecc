@@ -1,15 +1,19 @@
 # verbecc Changelog
 
-- 2.0.2
+- 2.0.3 [28 August 2026]
+  - Fixed Bug #46: Missing alphabet for Italian
+  - Fixed misc. other issues in gramar_defines.py
+
+- 2.0.2 [24 November 2025]
   - Fixed Portuguese and Spanish infinitivo and gerundio tense verb conjugation issues
 
-- 2.0.1
+- 2.0.1 [23 November 2025]
   - Fixed Portuguese and Spanish reflexive verb conjugation issues
 
-- 2.0.0
+- 2.0.0 [22 November 2025]
   - Major re-write, backwards incompatible (see updated [README](./README.md#whats-new-in-verbecc-20))
 
-- 1.11.7 [TBR]
+- 1.11.7 [29 October 2025]
   - Cont. refactoring
   - Separating XML parsing code from logical types
 
