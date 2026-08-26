@@ -23,7 +23,7 @@
 - [Typing - Parameter and Data Type Annotations](#typing---parameter-and-data-type-annotations)
 - [Multi-Language Conjugation](#multi-language-conjugation)
 - [Multi-Language Conjugation using English mood and tense names via `localization` module](#multi-language-conjugation-using-english-mood-and-tense-names-via-localization-module)
-- [Credits](#credits)
+- [Credits / Collaborators](#credits--collaborators)
 
 ## Live Demo
 - [Web GUI](https://verbe.cc)
