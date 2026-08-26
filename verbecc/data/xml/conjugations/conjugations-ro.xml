@@ -126,12 +126,12 @@
 	</Infinitiv>
 	<Imperativ>
 		<imperativ>
-			<p><i>ai</i></p>
-			<p><i>eţi</i></p>
+			<p><i>i</i></p>
+			<p><i>veţi</i></p>
 		</imperativ>
 		<negativ>
-			<p><i>ai</i></p>
-			<p><i>eţi</i></p>
+			<p><i>vea</i></p>
+			<p><i>veţi</i></p>
 		</negativ>
 	</Imperativ>
 	<Gerunziu>
@@ -1782,12 +1782,12 @@
 	</Infinitiv>
 	<Imperativ>
 		<imperativ>
-			<p><i>ino</i></p>
-			<p><i>eniţi</i></p>
+			<p><i>-</i></p>
+			<p><i>-</i></p>
 		</imperativ>
 		<negativ>
-			<p><i>eni</i></p>
-			<p><i>eniţi</i></p>
+			<p><i>vrea</i></p>
+			<p><i>vreţi</i></p>
 		</negativ>
 	</Imperativ>
 	<Gerunziu>
@@ -7177,7 +7177,7 @@
 		</Conjunctiv>
 	<Infinitiv>
 		<afirmativ>
-			<p><i>udrir;odrir</i></p>
+			<p><i>ace</i></p>
 		</afirmativ>
 	</Infinitiv>
 	<Imperativ>
@@ -7186,7 +7186,7 @@
 			<p><i>aceţi</i></p>
 		</imperativ>
 		<negativ>
-			<p><i>udrir;odrir</i></p>
+			<p><i>ace</i></p>
 			<p><i>aceţi</i></p>
 		</negativ>
 	</Imperativ>
@@ -9725,12 +9725,12 @@
 <template name="dezmi:nţi">
 	<Indicativ>
 		<prezent>
-			<p><i>t</i></p>
+			<p><i>nt</i></p>
 			<p><i>nţi</i></p>
-			<p><i>te</i></p>
+			<p><i>nte</i></p>
 			<p><i>nţim</i></p>
 			<p><i>nţiţi</i></p>
-			<p><i>t</i></p>
+			<p><i>nt</i></p>
 		</prezent>
 		<imperfect>
 			<p><i>nţeam</i></p>
@@ -9774,7 +9774,7 @@
 	</Infinitiv>
 	<Imperativ>
 		<imperativ>
-			<p><i>te</i></p>
+			<p><i>nte</i></p>
 			<p><i>nţiţi</i></p>
 		</imperativ>
 		<negativ>

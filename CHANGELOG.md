@@ -1,16 +1,19 @@
 # verbecc Changelog
 
-- 2.0.3 [28 August 2026]
+- 2.0.3 [26 August 2026]
+  - PR #51 [Peter Abolins]
+    - Fixes [#49](https://github.com/bretttolbert/verbecc/issues/49) [ro] Four damaged templates in conjugations-ro.xml produce non-words: contraf:ace, a:vea, :vrea, dezmi:nţi
   - PR #48 [dependabot] Updated pytest from 8.4.2 to 9.0.3 for python > py39 (py39 will remain on pytest 8.4.2 for compatibility)
     - To fix intermittent "failed to converge" error:
-      - Increased LinearSVC max_iter from 12000 to 20000
-      - Increased SGDClassifier max_iter from 40000 to 100000
-  - PR #44 [dependabot] Updated lxml from 6.0.2 to 6.1.0
+      - Increased `LinearSVC` `max_iter` from 12000 to 20000
+      - Increased `SGDClassifier` `max_iter` from 40000 to 100000
+        - TODO: Make configurable
   - PR #47:
-    - Fixed Bug #46: Missing alphabet for Italian
+    - Fixed Bug [#46](https://github.com/bretttolbert/verbecc/issues/46): [it] Missing alphabet for Italian
     - Fixed `IMPERATIVE_PERSONS_RO` vs. `IMPERATIVE_PERSONS_IT` mixup--one of several bugs reported by Peter Abolins
     - Fixed misc. other issues in [gramar_defines.py](./verbecc/src/defs/constants/grammar_defines.py)
     - Changed `List` constants to `tuple`s to make them explicitly immutable
+  - PR #44 [dependabot] Updated lxml from 6.0.2 to 6.1.0
 
 - 2.0.2 [24 November 2025]
   - Fixed Portuguese and Spanish infinitivo and gerundio tense verb conjugation issues
