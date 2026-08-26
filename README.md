@@ -170,7 +170,8 @@ Observe below that strings may be still used for mood and tense, rather than the
 ['eu sunt', 'tu ești', 'el e', 'ea e', 'noi suntem', 'voi sunteţi', 'ei sunt', 'ele sunt']
 ```
 
-### Credits
+### Credits / Collaborators
+- Romanian bug fixes by [Peter Abolins](https://github.com/peterabolins), developer of [lexicro](https://lexicro.com/)
 - Created with the help of [scikit-learn](https://scikit-learn.org), [lxml](https://github.com/lxml/lxml), [pytest](https://docs.pytest.org) and [python](https://www.python.org/)
 - French verb conjugation template XML files derived from Pierre Sarrazin's C++ program [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html). 
 - Conjugation XML files (Verbiste format) for Spanish, Portuguese, Italian and Romanian and machine-learning conjugation template prediction for unknown verbs dervied from Sekou Diao's older project [mlconjug](https://github.com/SekouD/mlconjug) however they have a newer version out now: [mlconjug3](https://github.com/SekouDiaoNlp/mlconjug3/)
