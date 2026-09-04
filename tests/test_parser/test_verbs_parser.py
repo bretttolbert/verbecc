@@ -1,5 +1,5 @@
-from verbecc.src.parsers.verbs_parser import VerbsParser
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.parsers.verbs_parser import VerbsParser
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
 def test_verbs_parser():

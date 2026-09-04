@@ -1,22 +1,25 @@
 import pytest
 from lxml import etree
+from typing import Any, Generator
 
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.conjugator.mood_conjugator import MoodConjugator
-from verbecc.src.conjugator.tense_conjugator import TenseConjugator
-from verbecc.src.defs.types.conjugation import Conjugation, TenseConjugation
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Moods
-from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import Tenses
-from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
-from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.conjugator.mood_conjugator import MoodConjugator
+from verbecc.core.conjugator.tense_conjugator import TenseConjugator
+from verbecc.core.defs.types.conjugation import Conjugation, TenseConjugation
+from verbecc.core.defs.types.gender import Gender
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.mood import Moods
+from verbecc.core.defs.types.mood.mood import Mood
+from verbecc.core.defs.types.number import Number
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.tense import Tenses
+from verbecc.core.defs.types.tense.tense import Tense
+from verbecc.core.parsers.tense_template_parser import TenseTemplateParser
+from verbecc.core.defs.types.pronoun import Pronouns
 
 
 @pytest.fixture(scope="module")
-def ccg():
+def ccg() -> Generator[CompleteConjugator, None, None]:
     ccg = CompleteConjugator(lang=Lang.ca)
     yield ccg
 
@@ -28,18 +31,18 @@ def mcg():
 
 
 @pytest.fixture(scope="module")
-def tcg():
+def tcg() -> Generator[TenseConjugator, None, None]:
     tcg = TenseConjugator(lang=Lang.ca)
     yield tcg
 
 
-def test_all_verbs_have_templates(ccg):
-    verbs = ccg.get_verbs()
+def test_all_verbs_have_templates(ccg: CompleteConjugator):
+    verbs: list[Any] = ccg.get_verbs()
     assert len(verbs) == 8616
     template_names = ccg.get_template_names()
     assert len(template_names) == 66
-    missing_verbs = []
-    missing_templates = set()
+    missing_verbs: list[str] = []
+    missing_templates: set[str] = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
@@ -47,7 +50,7 @@ def test_all_verbs_have_templates(ccg):
     assert len(missing_templates) == len(missing_verbs) == 0
 
 
-def test_find_verb_by_infinitive(ccg):
+def test_find_verb_by_infinitive(ccg: CompleteConjugator):
     v = ccg.find_verb_by_infinitive("abandonar")
     assert v.infinitive == "abandonar"
     assert v.template == "cant:ar"
@@ -2836,13 +2839,17 @@ def test_find_verb_by_infinitive(ccg):
     ],
 )
 def test_inflector_ca_conjugate_mood_tense(
-    ccg, infinitive, mood, tense, expected_result
+    ccg: CompleteConjugator,
+    infinitive: str,
+    mood: Mood | str,
+    tense: Tense | str,
+    expected_result: list[list[str]],
 ):
     tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [list(c) for c in tc] == expected_result
 
 
-def test_inflector_ca_conjugate_simple_past(ccg):
+def test_inflector_ca_conjugate_simple_past(ccg: CompleteConjugator):
     cc = ccg.conjugate_mood_tense(
         "pertànyer", Moods.ca.Indicatiu, Tenses.ca.PassatSimple
     )
@@ -2909,39 +2916,41 @@ def test_inflector_ca_conjugate_simple_past(ccg):
     )
 
 
-def test_inflector_ca_get_conj_obs(ccg):
-    co = ccg._get_conj_obs("parlar")
+def test_inflector_caget_co(ccg: CompleteConjugator):
+    co = ccg.get_co("parlar")
     assert co.verb.infinitive == "parlar"
     assert co.verb_stem == "parl"
     assert co.template.name == "cant:ar"
 
 
-def test_inflector_ca_get_conj_obs_2(ccg):
-    co = ccg._get_conj_obs("abandonar")
+def test_inflector_caget_co_2(ccg: CompleteConjugator):
+    co = ccg.get_co("abandonar")
     assert co.verb.infinitive == "abandonar"
     assert co.verb_stem == "abandon"
     assert co.template.name == "cant:ar"
 
 
-def test_inflector_ca_get_conj_obs_3(ccg):
-    co = ccg._get_conj_obs("pertànyer")
+def test_inflector_caget_co_3(ccg: CompleteConjugator):
+    co = ccg.get_co("pertànyer")
     assert co.verb.infinitive == "pertànyer"
     assert co.verb_stem == "pertàny"
     assert co.template.name == "pertàny:er"
     assert co.template.modify_stem == "strip-accents"
 
 
-def test_inflector_ca_get_verb_stem_from_template_name(ccg):
-    verb_stem = ccg._inflector.get_verb_stem_from_template_name("parlar", "cant:ar")
+def test_inflector_ca_get_verb_stem_from_template_name(ccg: CompleteConjugator):
+    inflector = ccg.private_get_inflector()
+    verb_stem = inflector.get_verb_stem_from_template_name("parlar", "cant:ar")
     assert verb_stem == "parl"
 
 
-def test_inflector_ca_get_verb_stem_from_template_name_2(ccg):
-    verb_stem = ccg._inflector.get_verb_stem_from_template_name("abandonar", "cant:ar")
+def test_inflector_ca_get_verb_stem_from_template_name_2(ccg: CompleteConjugator):
+    inflector = ccg.private_get_inflector()
+    verb_stem = inflector.get_verb_stem_from_template_name("abandonar", "cant:ar")
     assert verb_stem == "abandon"
 
 
-def test_inflector_ca_conjugate_simple_mood_tense(tcg):
+def test_inflector_ca_conjugate_simple_mood_tense(tcg: TenseConjugator):
     mood = Moods.ca.Indicatiu
     tense = Tenses.ca.Present
     verb_stem = "parl"
@@ -2957,7 +2966,7 @@ def test_inflector_ca_conjugate_simple_mood_tense(tcg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.ca, mood).parse(tense_elem)
-    tc = tcg._tense_conjugator_simple._conjugate_simple_mood_tense(
+    tc: TenseConjugation = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
         verb_stem, mood, tense, tense_template
     )
     assert [c.get_conjugations() for c in tc] == [
@@ -2994,14 +3003,15 @@ def test_inflector_ca_conjugate_simple_mood_tense(tcg):
     ],
 )
 def test_inflector_ca_get_pronouns(
-    ccg,
+    ccg: CompleteConjugator,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
+    inflector = ccg.private_get_inflector()
+    pronoun = inflector.get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = inflector.make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result

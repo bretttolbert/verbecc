@@ -1,12 +1,19 @@
 import pytest
 import json
+import sys
+from pathlib import Path
+from typing import Any
 
-from tests.common import assert_json_str_equal
+try:
+    from tests.common import assert_json_str_equal
+except ModuleNotFoundError:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from common import assert_json_str_equal
 
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.conjugator.mood_conjugator import MoodConjugator
-from verbecc.src.conjugator.tense_conjugator import TenseConjugator
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.conjugator.mood_conjugator import MoodConjugator
+from verbecc.core.conjugator.tense_conjugator import TenseConjugator
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
 @pytest.fixture(scope="module")
@@ -27,7 +34,7 @@ def tcg():
     yield tcg
 
 
-expected_value_conj_manger = {
+expected_value_conj_manger: dict[str, dict[str, Any]] = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -414,7 +421,7 @@ expected_value_conj_manger = {
     },
 }
 
-expected_value_conj_pouvoir = {
+expected_value_conj_pouvoir: dict[str, dict[str, Any]] = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -686,7 +693,7 @@ expected_value_conj_pouvoir = {
 }
 
 
-expected_value_conj_pleuvoir = {
+expected_value_conj_pleuvoir: dict[str, dict[str, Any]] = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -881,7 +888,7 @@ expected_value_conj_pleuvoir = {
 }
 
 
-expected_value_conj_se_lever = {
+expected_value_conj_se_lever: dict[str, dict[str, Any]] = {
     "moods": {
         "conditionnel": {
             "passé": [
@@ -1574,27 +1581,31 @@ by clicking on it in VSCode. You can't do that with parametrize.
 """
 
 
-def run_test_conjugate_to_json_(ccg, infinitive, expected_value):
+def run_test_conjugate_to_json_(
+    ccg: CompleteConjugator,
+    infinitive: str,
+    expected_value: dict[str, dict[str, Any]],
+):
     cc = ccg.conjugate(infinitive)
     conj_json = cc.to_json(beautify=False)
     assert_json_str_equal(conj_json, json.dumps(expected_value))
 
 
-def test_conjugate_to_json_manger(ccg):
+def test_conjugate_to_json_manger(ccg: CompleteConjugator):
     run_test_conjugate_to_json_(ccg, "manger", expected_value_conj_manger)
 
 
-def test_conjugate_to_json_pouvoir(ccg):
+def test_conjugate_to_json_pouvoir(ccg: CompleteConjugator):
     run_test_conjugate_to_json_(ccg, "pouvoir", expected_value_conj_pouvoir)
 
 
-def test_conjugate_to_json_Pouvoir(ccg):
+def test_conjugate_to_json_Pouvoir(ccg: CompleteConjugator):
     run_test_conjugate_to_json_(ccg, "Pouvoir", expected_value_conj_pouvoir)
 
 
-def test_conjugate_to_json_pleuvoir(ccg):
+def test_conjugate_to_json_pleuvoir(ccg: CompleteConjugator):
     run_test_conjugate_to_json_(ccg, "pleuvoir", expected_value_conj_pleuvoir)
 
 
-def test_conjugate_to_json_Se_lever(ccg):
+def test_conjugate_to_json_Se_lever(ccg: CompleteConjugator):
     run_test_conjugate_to_json_(ccg, "Se lever", expected_value_conj_se_lever)

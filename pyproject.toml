@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "verbecc"
-version = "2.0.3"
+version = "2.1.0"
 dependencies = [
   "backports.strenum (>=1.3.1,<2.0) ; python_version < '3.11'",
   "cython>=3.1.4",
@@ -90,11 +90,11 @@ Changelog = "https://github.com/bretttolbert/verbecc/blob/master/CHANGELOG.md"
 [tool.setuptools.package-data]
 trained_models = ['verbecc/data/models/*']
 
-[tool.setuptools.packages]
-find = {}
+[tool.setuptools.packages.find]
+where = ["src"]  # <-- This tells setuptools to scan inside src/
 
 [project.scripts]
-train-verb-models = 'verbecc.src.utils.utils:train_models'
+train-verb-models = 'verbecc.core.utils.utils:train_models'
 
 [tool.pytest.ini_options]
 pythonpath = [

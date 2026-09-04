@@ -2,9 +2,9 @@ from unittest.mock import patch
 
 import pytest
 
-from verbecc.src.parsers.verbs_parser import VerbsParser
-from verbecc.src.defs.types.data.verbs import Verbs
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.parsers.verbs_parser import VerbsParser
+from verbecc.core.defs.types.data.verbs import Verbs
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
 @pytest.fixture(scope="module")

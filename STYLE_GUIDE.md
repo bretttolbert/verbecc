@@ -19,40 +19,40 @@ but with parentheses, I can't do that.
 
 Do this:
 ```python
-from verbecc.src.conjugator.conjugation_object import ConjugationObjects
-from verbecc.src.defs.types.data.person_ending import PersonEnding
-from verbecc.src.defs.types.data.tense_template import TenseTemplate
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.lang_specific_options import LangSpecificOptions
-from verbecc.src.defs.types.lang_specific_options import LangSpecificOptionsEs
-from verbecc.src.defs.types.lang_specific_options import LangSpecificOptionsFactory
-from verbecc.src.defs.types.lang_specific_options import VoseoOptions
-from verbecc.src.defs.types.mood import Mood, Moods
-from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import Tense, Tenses
-from verbecc.src.inflectors.inflector import Inflector
-from verbecc.src.utils.string_utils import strip_accents
+from verbecc.core.conjugator.conjugation_object import ConjugationObjects
+from verbecc.core.defs.types.data.person_ending import PersonEnding
+from verbecc.core.defs.types.data.tense_template import TenseTemplate
+from verbecc.core.defs.types.gender import Gender
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1
+from verbecc.core.defs.types.lang_specific_options import LangSpecificOptions
+from verbecc.core.defs.types.lang_specific_options import LangSpecificOptionsEs
+from verbecc.core.defs.types.lang_specific_options import LangSpecificOptionsFactory
+from verbecc.core.defs.types.lang_specific_options import VoseoOptions
+from verbecc.core.defs.types.mood import Mood, Moods
+from verbecc.core.defs.types.number import Number
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.tense import Tense, Tenses
+from verbecc.core.inflectors.inflector import Inflector
+from verbecc.core.utils.string_utils import strip_accents
 ```
 
 Don't do this:
 ```python
-from verbecc.src.conjugator.conjugation_object import ConjugationObjects
-from verbecc.src.defs.types.data.person_ending import PersonEnding
-from verbecc.src.defs.types.data.tense_template import TenseTemplate
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1
-from verbecc.src.defs.types.lang_specific_options import (
+from verbecc.core.conjugator.conjugation_object import ConjugationObjects
+from verbecc.core.defs.types.data.person_ending import PersonEnding
+from verbecc.core.defs.types.data.tense_template import TenseTemplate
+from verbecc.core.defs.types.gender import Gender
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1
+from verbecc.core.defs.types.lang_specific_options import (
     LangSpecificOptions,
     LangSpecificOptionsEs,
     LangSpecificOptionsFactory,
     VoseoOptions,
 )
-from verbecc.src.defs.types.mood import Mood, Moods
-from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import Tense, Tenses
-from verbecc.src.inflectors.inflector import Inflector
-from verbecc.src.utils.string_utils import strip_accents
+from verbecc.core.defs.types.mood import Mood, Moods
+from verbecc.core.defs.types.number import Number
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.tense import Tense, Tenses
+from verbecc.core.inflectors.inflector import Inflector
+from verbecc.core.utils.string_utils import strip_accents
 ```

@@ -1,11 +1,11 @@
 import pytest
 
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.mlconjug.data_set import DataSet
-from verbecc.src.mlconjug.predictor import TemplatePredictor
-from verbecc.src.mlconjug.feature_extract import extract_verb_features
-from verbecc.src.inflectors.lang.inflector_fr import InflectorFr
-from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.mlconjug.data_set import DataSet
+from verbecc.core.mlconjug.predictor import TemplatePredictor
+from verbecc.core.mlconjug.feature_extract import extract_verb_features
+from verbecc.core.inflectors.lang.inflector_fr import InflectorFr
+from verbecc.core.utils.config.verbecc_config_util import VerbeccConfigUtil
 
 config = VerbeccConfigUtil().load_config()
 

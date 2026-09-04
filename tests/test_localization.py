@@ -1,6 +1,6 @@
 import pytest
 
-from verbecc.src.defs.constants.localization import xmood, xtense
+from verbecc.core.defs.constants.localization import xmood, xtense
 
 
 @pytest.mark.parametrize(

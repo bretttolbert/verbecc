@@ -1,5 +1,23 @@
 # verbecc Changelog
 
+- 2.1.0 [7 September 2026]
+  - Fixed packaging, misc. modernization
+    - Changed structure from `verbecc/verbecc/src` to more standard `verbecc/src/verbecc`
+      - Before data was at `verbecc/verbecc/data`
+      - After data is at `verbecc/src/verbecc/data`
+      - Source is now at `verbecc/src/verbecc/core`
+      - `verbecc.core` is now `verbecc.core`
+    - Modified `pyproject.toml` to scan for packages inside `src`
+    - Removed `verbecc/__init__.py` which should not exist because this project is using a `src` layout
+      - Also purged contents of a couple of `__init__.py` files
+      - **This will undoubtedly break some things**, consequently bumping minor rev
+      - Changed `setup.cfg` `description-file` to `description_file` to fix warning
+  - Added numerous missing type annotations
+  - Contd. cleaning up (removing) excessive `__init__.py` imports
+  - Converted from `List` to modern `list`
+  - Converted from `Dict` to modern `dict`
+  - Fixed all VSCode warnings with strict type checking enabled
+
 - 2.0.3 [26 August 2026]
   - PR #51 [Peter Abolins]
     - Fixes [#49](https://github.com/bretttolbert/verbecc/issues/49) [ro] Four damaged templates in conjugations-ro.xml produce non-words: contraf:ace, a:vea, :vrea, dezmi:nţi

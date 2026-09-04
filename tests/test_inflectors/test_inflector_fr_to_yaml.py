@@ -1,9 +1,9 @@
 # coding: utf-8
 import pytest
 
-from verbecc.src.defs.types.conjugation import CompleteConjugation
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.conjugation import CompleteConjugation
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
 @pytest.fixture(scope="module")

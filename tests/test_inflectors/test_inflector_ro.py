@@ -1,22 +1,28 @@
 import pytest
 
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.conjugator.mood_conjugator import MoodConjugator
-from verbecc.src.conjugator.tense_conjugator import TenseConjugator
-from verbecc.src.defs.types.conjugation import Conjugation
-from verbecc.src.defs.types.conjugation import TenseConjugation
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Moods
-from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import Tenses
+from typing import Generator
 
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.conjugator.mood_conjugator import MoodConjugator
+from verbecc.core.conjugator.tense_conjugator import TenseConjugator
+from verbecc.core.defs.types.conjugation import Conjugation
+from verbecc.core.defs.types.conjugation import TenseConjugation
+from verbecc.core.defs.types.gender import Gender
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.mood import Moods
+from verbecc.core.defs.types.mood.mood import Mood
+from verbecc.core.defs.types.number import Number
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.tense import Tenses
+from verbecc.core.defs.types.tense.tense import Tense
+from verbecc.core.defs.types.pronoun import PronounRo
 
 @pytest.fixture(scope="module")
-def ccg():
+def ccg() -> Generator[CompleteConjugator, None, None]:
+    # Setup
     ccg = CompleteConjugator(lang=Lang.ro)
     yield ccg
+    # Teardown
 
 
 @pytest.fixture(scope="module")
@@ -31,10 +37,10 @@ def tcg():
     yield tcg
 
 
-def test_all_verbs_have_templates(ccg):
+def test_all_verbs_have_templates(ccg: CompleteConjugator):
     verbs = ccg.get_verbs()
     template_names = ccg.get_template_names()
-    missing_templates = set()
+    missing_templates : set[str] = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
@@ -287,7 +293,7 @@ def test_all_verbs_have_templates(ccg):
     ],
 )
 def test_inflector_ro_conjugate_mood_tense_str_only(
-    ccg, infinitive, mood, tense, expected_result
+    ccg: CompleteConjugator, infinitive: str, mood: Mood, tense: Tense, expected_result: list[str]
 ):
     tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [c[0] for c in tc] == expected_result
@@ -320,28 +326,28 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                 Tenses.ro.PerfectCompus,
                 [
                     Conjugation(
-                        Person.First, Number.Singular, None, "eu", ["eu am făcut"]
+                        Person.First, Number.Singular, None, PronounRo.eu, ["eu am făcut"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Singular, None, "tu", ["tu ai făcut"]
+                        Person.Second, Number.Singular, None, PronounRo.tu, ["tu ai făcut"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Singular, Gender.m, "el", ["el a făcut"]
+                        Person.Third, Number.Singular, Gender.m, PronounRo.el, ["el a făcut"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Singular, Gender.f, "ea", ["ea a făcut"]
+                        Person.Third, Number.Singular, Gender.f, PronounRo.ea, ["ea a făcut"]
                     ),
                     Conjugation(
-                        Person.First, Number.Plural, None, "noi", ["noi am făcut"]
+                        Person.First, Number.Plural, None, PronounRo.noi, ["noi am făcut"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Plural, None, "voi", ["voi aţi făcut"]
+                        Person.Second, Number.Plural, None, PronounRo.voi, ["voi aţi făcut"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Plural, Gender.m, "ei", ["ei au făcut"]
+                        Person.Third, Number.Plural, Gender.m, PronounRo.ei, ["ei au făcut"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Plural, Gender.f, "ele", ["ele au făcut"]
+                        Person.Third, Number.Plural, Gender.f, PronounRo.ele, ["ele au făcut"]
                     ),
                 ],
             ),
@@ -354,42 +360,42 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                 Tenses.ro.MaiMultCaPerfect,
                 [
                     Conjugation(
-                        Person.First, Number.Singular, None, "eu", ["eu făcusem"]
+                        Person.First, Number.Singular, None, PronounRo.eu, ["eu făcusem"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Singular, None, "tu", ["tu făcuseși"]
+                        Person.Second, Number.Singular, None, PronounRo.tu, ["tu făcuseși"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Singular, Gender.m, "el", ["el făcuse"]
+                        Person.Third, Number.Singular, Gender.m, PronounRo.el, ["el făcuse"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Singular, Gender.f, "ea", ["ea făcuse"]
+                        Person.Third, Number.Singular, Gender.f, PronounRo.ea, ["ea făcuse"]
                     ),
                     Conjugation(
                         Person.First,
                         Number.Plural,
                         None,
-                        "noi",
+                        PronounRo.noi,
                         ["noi făcuserăm"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Plural,
                         None,
-                        "voi",
+                        PronounRo.voi,
                         ["voi făcuserăţi"],
                     ),
                     Conjugation(
-                        Person.Third, Number.Plural, Gender.m, "ei", ["ei făcuseră"]
+                        Person.Third, Number.Plural, Gender.m, PronounRo.ei, ["ei făcuseră"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Plural, Gender.f, "ele", ["ele făcuseră"]
+                        Person.Third, Number.Plural, Gender.f, PronounRo.ele, ["ele făcuseră"]
                     ),
                 ],
             ),
         ),
         (
-            "voi",
+            PronounRo.voi,
             Moods.ro.Indicativ,
             Tenses.ro.Prezent,
             TenseConjugation(
@@ -399,56 +405,56 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                         Person.First,
                         Number.Singular,
                         None,
-                        "eu",
+                        PronounRo.eu,
                         ["eu voiesc", "eu voi"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Singular,
                         None,
-                        "tu",
+                        PronounRo.tu,
                         ["tu voiești", "tu vei"],
                     ),
                     Conjugation(
                         Person.Third,
                         Number.Singular,
                         Gender.m,
-                        "el",
+                        PronounRo.el,
                         ["el voiește", "el va"],
                     ),
                     Conjugation(
                         Person.Third,
                         Number.Singular,
                         Gender.f,
-                        "ea",
+                        PronounRo.ea,
                         ["ea voiește", "ea va"],
                     ),
                     Conjugation(
                         Person.First,
                         Number.Plural,
                         None,
-                        "noi",
+                        PronounRo.noi,
                         ["noi voim", "noi vom"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Plural,
                         None,
-                        "voi",
+                        PronounRo.voi,
                         ["voi voiţi", "voi veţi"],
                     ),
                     Conjugation(
                         Person.Third,
                         Number.Plural,
                         Gender.m,
-                        "ei",
+                        PronounRo.ei,
                         ["ei voiesc", "ei vor"],
                     ),
                     Conjugation(
                         Person.Third,
                         Number.Plural,
                         Gender.f,
-                        "ele",
+                        PronounRo.ele,
                         ["ele voiesc", "ele vor"],
                     ),
                 ],
@@ -461,39 +467,39 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
             TenseConjugation(
                 Tenses.ro.Prezent,
                 [
-                    Conjugation(Person.First, Number.Singular, None, "eu", ["eu am"]),
-                    Conjugation(Person.Second, Number.Singular, None, "tu", ["tu ai"]),
+                    Conjugation(Person.First, Number.Singular, None, PronounRo.eu, ["eu am"]),
+                    Conjugation(Person.Second, Number.Singular, None, PronounRo.tu, ["tu ai"]),
                     Conjugation(
                         Person.Third,
                         Number.Singular,
                         Gender.m,
-                        "el",
+                        PronounRo.el,
                         ["el a", "el are"],
                     ),
                     Conjugation(
                         Person.Third,
                         Number.Singular,
                         Gender.f,
-                        "ea",
+                        PronounRo.ea,
                         ["ea a", "ea are"],
                     ),
                     Conjugation(
                         Person.First,
                         Number.Plural,
                         None,
-                        "noi",
+                        PronounRo.noi,
                         ["noi am", "noi avem"],
                     ),
                     Conjugation(
                         Person.Second,
                         Number.Plural,
                         None,
-                        "voi",
+                        PronounRo.voi,
                         ["voi aţi", "voi aveţi"],
                     ),
-                    Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei au"]),
+                    Conjugation(Person.Third, Number.Plural, Gender.m, PronounRo.ei, ["ei au"]),
                     Conjugation(
-                        Person.Third, Number.Plural, Gender.f, "ele", ["ele au"]
+                        Person.Third, Number.Plural, Gender.f, PronounRo.ele, ["ele au"]
                     ),
                 ],
             ),
@@ -506,28 +512,28 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
                 Tenses.ro.Imperfect,
                 [
                     Conjugation(
-                        Person.First, Number.Singular, None, "eu", ["eu aveam"]
+                        Person.First, Number.Singular, None, PronounRo.eu, ["eu aveam"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Singular, None, "tu", ["tu aveai"]
+                        Person.Second, Number.Singular, None, PronounRo.tu, ["tu aveai"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Singular, Gender.m, "el", ["el avea"]
+                        Person.Third, Number.Singular, Gender.m, PronounRo.el, ["el avea"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Singular, Gender.f, "ea", ["ea avea"]
+                        Person.Third, Number.Singular, Gender.f, PronounRo.ea, ["ea avea"]
                     ),
                     Conjugation(
-                        Person.First, Number.Plural, None, "noi", ["noi aveam"]
+                        Person.First, Number.Plural, None, PronounRo.noi, ["noi aveam"]
                     ),
                     Conjugation(
-                        Person.Second, Number.Plural, None, "voi", ["voi aveaţi"]
+                        Person.Second, Number.Plural, None, PronounRo.voi, ["voi aveaţi"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Plural, Gender.m, "ei", ["ei aveau"]
+                        Person.Third, Number.Plural, Gender.m, PronounRo.ei, ["ei aveau"]
                     ),
                     Conjugation(
-                        Person.Third, Number.Plural, Gender.f, "ele", ["ele aveau"]
+                        Person.Third, Number.Plural, Gender.f, PronounRo.ele, ["ele aveau"]
                     ),
                 ],
             ),
@@ -535,13 +541,13 @@ def test_inflector_ro_conjugate_mood_tense_str_only(
     ],
 )
 def test_inflector_ro_conjugate_mood_tense_tc(
-    ccg, infinitive, mood, tense, expected_result
+    ccg: CompleteConjugator, infinitive: str, mood: Mood, tense: Tense, expected_result: TenseConjugation
 ):
     tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert tc == expected_result
 
 
-def test_inflector_ro_conjugate_mood_tense_viitor_1(ccg):
+def test_inflector_ro_conjugate_mood_tense_viitor_1(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "face",
         Moods.ro.Indicativ,
@@ -549,19 +555,19 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1(ccg):
     ) == TenseConjugation(
         Tenses.ro.Viitor1,
         [
-            Conjugation(Person.First, Number.Singular, None, "eu", ["eu voi face"]),
-            Conjugation(Person.Second, Number.Singular, None, "tu", ["tu vei face"]),
-            Conjugation(Person.Third, Number.Singular, Gender.m, "el", ["el va face"]),
-            Conjugation(Person.Third, Number.Singular, Gender.f, "ea", ["ea va face"]),
-            Conjugation(Person.First, Number.Plural, None, "noi", ["noi vom face"]),
-            Conjugation(Person.Second, Number.Plural, None, "voi", ["voi veţi face"]),
-            Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei vor face"]),
-            Conjugation(Person.Third, Number.Plural, Gender.f, "ele", ["ele vor face"]),
+            Conjugation(Person.First, Number.Singular, None, PronounRo.eu, ["eu voi face"]),
+            Conjugation(Person.Second, Number.Singular, None, PronounRo.tu, ["tu vei face"]),
+            Conjugation(Person.Third, Number.Singular, Gender.m, PronounRo.el, ["el va face"]),
+            Conjugation(Person.Third, Number.Singular, Gender.f, PronounRo.ea, ["ea va face"]),
+            Conjugation(Person.First, Number.Plural, None, PronounRo.noi, ["noi vom face"]),
+            Conjugation(Person.Second, Number.Plural, None, PronounRo.voi, ["voi veţi face"]),
+            Conjugation(Person.Third, Number.Plural, Gender.m, PronounRo.ei, ["ei vor face"]),
+            Conjugation(Person.Third, Number.Plural, Gender.f, PronounRo.ele, ["ele vor face"]),
         ],
     )
 
 
-def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(ccg):
+def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "face",
         Moods.ro.Indicativ,
@@ -570,25 +576,25 @@ def test_inflector_ro_conjugate_mood_tense_viitor_1_popular(ccg):
     assert tc == TenseConjugation(
         Tenses.ro.Viitor1Popular,
         [
-            Conjugation(Person.First, Number.Singular, None, "eu", ["eu o să fac"]),
-            Conjugation(Person.Second, Number.Singular, None, "tu", ["tu o să faci"]),
+            Conjugation(Person.First, Number.Singular, None, PronounRo.eu, ["eu o să fac"]),
+            Conjugation(Person.Second, Number.Singular, None, PronounRo.tu, ["tu o să faci"]),
             Conjugation(
-                Person.Third, Number.Singular, Gender.m, "el", ["el o să facă"]
+                Person.Third, Number.Singular, Gender.m, PronounRo.el, ["el o să facă"]
             ),
             Conjugation(
-                Person.Third, Number.Singular, Gender.f, "ea", ["ea o să facă"]
+                Person.Third, Number.Singular, Gender.f, PronounRo.ea, ["ea o să facă"]
             ),
-            Conjugation(Person.First, Number.Plural, None, "noi", ["noi o să facem"]),
-            Conjugation(Person.Second, Number.Plural, None, "voi", ["voi o să faceţi"]),
-            Conjugation(Person.Third, Number.Plural, Gender.m, "ei", ["ei o să facă"]),
+            Conjugation(Person.First, Number.Plural, None, PronounRo.noi, ["noi o să facem"]),
+            Conjugation(Person.Second, Number.Plural, None, PronounRo.voi, ["voi o să faceţi"]),
+            Conjugation(Person.Third, Number.Plural, Gender.m, PronounRo.ei, ["ei o să facă"]),
             Conjugation(
-                Person.Third, Number.Plural, Gender.f, "ele", ["ele o să facă"]
+                Person.Third, Number.Plural, Gender.f, PronounRo.ele, ["ele o să facă"]
             ),
         ],
     )
 
 
-def test_inflector_ro_conjugate_mood_tense_condițional_perfect(ccg):
+def test_inflector_ro_conjugate_mood_tense_condițional_perfect(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("avea", Moods.ro.Condițional, Tenses.ro.Perfect)
     assert [c[0] for c in tc] == [
         "eu aş fi avut",
@@ -602,7 +608,7 @@ def test_inflector_ro_conjugate_mood_tense_condițional_perfect(ccg):
     ]
 
 
-def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(ccg):
+def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "face",
         Moods.ro.Conjunctiv,
@@ -623,11 +629,11 @@ def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(ccg):
 @pytest.mark.parametrize(
     "person,number,gender,is_reflexive,expected_result",
     [
-        (Person.First, Number.Singular, Gender.m, False, "eu"),
+        (Person.First, Number.Singular, Gender.m, False, PronounRo.eu),
         (Person.First, Number.Singular, Gender.m, True, "eu mă"),
-        (Person.Second, Number.Singular, Gender.m, False, "tu"),
+        (Person.Second, Number.Singular, Gender.m, False, PronounRo.tu),
         (Person.Second, Number.Singular, Gender.m, True, "tu te"),
-        (Person.Third, Number.Singular, Gender.m, False, "el"),
+        (Person.Third, Number.Singular, Gender.m, False, PronounRo.el),
         (Person.Third, Number.Singular, Gender.m, True, "el se"),
         (Person.Third, Number.Singular, Gender.f, False, "ea"),
         (Person.Third, Number.Singular, Gender.f, True, "ea se"),
@@ -635,21 +641,21 @@ def test_inflector_ro_conjugate_mood_tense_conjunctiv_perfect(ccg):
         (Person.First, Number.Plural, Gender.m, True, "noi ne"),
         (Person.Second, Number.Plural, Gender.m, False, "voi"),
         (Person.Second, Number.Plural, Gender.m, True, "voi vă"),
-        (Person.Third, Number.Plural, Gender.m, False, "ei"),
+        (Person.Third, Number.Plural, Gender.m, False, PronounRo.ei),
         (Person.Third, Number.Plural, Gender.m, True, "ei se"),
-        (Person.Third, Number.Plural, Gender.f, False, "ele"),
+        (Person.Third, Number.Plural, Gender.f, False, PronounRo.ele),
         (Person.Third, Number.Plural, Gender.f, True, "ele se"),
     ],
 )
 def test_inflector_ro_get_pronouns(
-    ccg,
+    ccg: CompleteConjugator,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
+    pronoun = ccg.private_get_inflector().get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = ccg.private_get_inflector().make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result

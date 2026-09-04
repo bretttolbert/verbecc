@@ -18,10 +18,10 @@ from typing import Optional
 from pathlib import Path
 from lxml import etree, objectify
 import os
-from typing import List, Sequence, Tuple
-from verbecc.src.defs.types.tense import Tense, Tenses
-from verbecc.src.defs.types.mood import Mood, Moods
-from verbecc.src.utils.logging_utils import LoggingUtils
+from typing import Sequence, Tuple
+from verbecc.core.defs.types.tense import Tense, Tenses
+from verbecc.core.defs.types.mood import Mood, Moods
+from verbecc.core.utils.logging_utils import LoggingUtils
 
 INPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.xml"
 OUTPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.mod.xml"
@@ -29,7 +29,7 @@ OUTPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.mod.xml"
 logger = LoggingUtils.get_logger(__name__)
 
 
-def remove_tenses(root: etree._Element, tenses_to_remove: List[Tense]) -> None:
+def remove_tenses(root: etree._Element, tenses_to_remove: list[Tense]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -41,7 +41,7 @@ def remove_tenses(root: etree._Element, tenses_to_remove: List[Tense]) -> None:
     logger.info("removed {} elements".format(removed_elem_cnt))
 
 
-def remove_mood(root: etree._Element, moods_to_remove: List[Mood]) -> None:
+def remove_mood(root: etree._Element, moods_to_remove: list[Mood]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":

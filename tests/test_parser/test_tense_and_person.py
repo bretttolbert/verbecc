@@ -1,11 +1,11 @@
 from lxml import etree
 
-from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Moods
-from verbecc.src.defs.types.tense import Tenses
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.number import Number
+from verbecc.core.parsers.tense_template_parser import TenseTemplateParser
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.mood import Moods
+from verbecc.core.defs.types.tense import Tenses
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.number import Number
 
 
 def test_tense_and_person():

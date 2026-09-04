@@ -1,9 +1,9 @@
 import pytest
 
-from verbecc.src.conjugator.tense_conjugator import TenseConjugator
-from verbecc.src.defs.types.tense import Tenses
-from verbecc.src.defs.types.mood import Moods
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.conjugator.tense_conjugator import TenseConjugator
+from verbecc.core.defs.types.tense import Tenses
+from verbecc.core.defs.types.mood import Moods
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
 @pytest.fixture(scope="module")
