@@ -1,11 +1,11 @@
-from verbecc.core.defs.types.mood.mood import Mood
+from verbecc.core.defs.types.mood import Mood
 
 
-class MoodEs(Mood):
+class MoodPt(Mood):
     Condicional = "condicional"
-    Gerundio = "gerundio"
+    Gerúndio = "gerúndio"
     Imperativo = "imperativo"
     Indicativo = "indicativo"
     Infinitivo = "infinitivo"
-    Participo = "participo"
+    Particípio = "particípio"
     Subjuntivo = "subjuntivo"

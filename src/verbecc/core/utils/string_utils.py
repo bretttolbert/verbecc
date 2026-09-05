@@ -24,11 +24,3 @@ def get_common_letters(s1: str, s2: str) -> dict[str, int]:
 
 def get_common_letter_count(s1: str, s2: str) -> int:
     return sum(get_common_letters(s1, s2).values())
-
-
-def unicodefix(s: str) -> str:
-    # Fix Python 2.x.
-    try:
-        return s.decode("utf-8")
-    except AttributeError:
-        return s

@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Callable, Tuple, cast
 import numpy as np
 
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1
@@ -35,7 +35,11 @@ class TemplatePredictor:
         if len(predict_results) == 0:
             raise Exception("Template prediction failed")
         prediction = predict_results[0]
-        predict_proba = self.model.pipeline.predict_proba([verb])
+        predict_proba_fn = cast(
+            Callable[[list[str]], np.ndarray],
+            getattr(self.model.pipeline, "predict_proba"),
+        )
+        predict_proba = predict_proba_fn([verb])
         prediction_score = predict_proba[0][prediction]
         template = self.data_set.templates[prediction]
         return (template, prediction_score)

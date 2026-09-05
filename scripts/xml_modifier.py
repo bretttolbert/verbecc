@@ -16,22 +16,20 @@ E.g.
 
 from typing import Optional, cast
 from pathlib import Path
-from lxml import etree, objectify
 from typing import Sequence, Tuple
-from verbecc.core.defs.types.tense import Tense, Tenses
+
+from verbecc.core.defs.types.data.xml_types import XmlElement, XmlElementTree, XmlParser
 from verbecc.core.defs.types.mood import Mood, Moods
+from verbecc.core.defs.types.tense import Tense, Tenses
 from verbecc.core.utils.logging_utils import LoggingUtils
+from verbecc.core.utils.xml_utils import xml_element_remove, xml_element_repr, xml_element_to_string, xml_element_deannotate, xml_element_xpath, xml_parse
 
 INPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.xml"
 OUTPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.mod.xml"
 
 logger = LoggingUtils.get_logger(__name__)
 
-Element = etree._Element  # type: ignore
-ElementTree = etree._ElementTree  # type: ignore
-
-
-def remove_tenses(root: Element, tenses_to_remove: list[Tense]) -> None:
+def remove_tenses(root: XmlElement, tenses_to_remove: list[Tense]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -43,7 +41,7 @@ def remove_tenses(root: Element, tenses_to_remove: list[Tense]) -> None:
     logger.info("removed {} elements".format(removed_elem_cnt))
 
 
-def remove_mood(root: Element, moods_to_remove: list[Mood]) -> None:
+def remove_mood(root: XmlElement, moods_to_remove: list[Mood]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -55,11 +53,11 @@ def remove_mood(root: Element, moods_to_remove: list[Mood]) -> None:
 
 
 def find_tense(
-    template_elem: Element,
+    template_elem: XmlElement,
     mood: Mood,
     tense: Tense,
     should_remove_mood: bool = False,
-) -> Optional[Element]:
+) -> Optional[XmlElement]:
     # find tense to move
     for mood_elem in template_elem:
         if mood_elem.tag == mood:
@@ -79,7 +77,7 @@ def find_tense(
 
 
 def move_tense(
-    root: Element,
+    root: XmlElement,
     tense: Tense,
     old_mood: Mood,
     new_mood: Mood,
@@ -102,34 +100,26 @@ def move_tense(
     logger.info("moved {} elements".format(moved_elem_cnt))
 
 
-def read_input_file(path: Path) -> ElementTree:
-    parser = etree.XMLParser(dtd_validation=False, encoding="utf-8")
-    tree = etree.parse(path, parser)
+def read_input_file(path: Path) -> XmlElementTree:
+    parser = XmlParser(dtd_validation=False, encoding="utf-8")
+    tree = xml_parse(path, parser)
     return tree
 
 
-def elem_tobytes(elem: Element) -> bytes:
-    return etree.tostring(
+def elem_tobytes(elem: XmlElement) -> bytes:
+    return xml_element_to_string(
         elem,
         encoding="utf-8",
         method="xml",
         pretty_print=True,
         xml_declaration=True,
-    )
+    ).encode("utf-8")
 
 
-def elem_tostring(elem: Element) -> str:
-    return elem_tobytes(elem).decode("utf-8")
-
-
-def repr_elem(elem: Element) -> str:
-    return f"{elem.tag}: {elem} {elem_tostring(elem)}"
-
-
-def write_output_file(tree: ElementTree, path: Path) -> None:
+def write_output_file(tree: XmlElementTree, path: Path) -> None:
     root = tree.getroot()
     with open(path, "wb") as f:
-        objectify.deannotate(root, cleanup_namespaces=True)
+        xml_element_deannotate(root)
         xml = elem_tobytes(root)
         f.write(xml)
 
@@ -203,7 +193,7 @@ Spanish gerundio also has two elements.
 
 
 def remove_nth_element_of_every_matching_great_grandchild(
-    root: Element,
+    root: XmlElement,
     great_grandparent_elem_tag: str,
     grandparent_elem_tag: str,
     parent_elem_tag: str,
@@ -229,7 +219,7 @@ def remove_nth_element_of_every_matching_great_grandchild(
     cnt = 0
     # This XPath selects elements, but lxml's type stubs model ``xpath`` as
     # potentially returning scalar XPath results as well.
-    parents = cast(list[Element], root.xpath(xpath_query))
+    parents = cast(list[XmlElement], xml_element_xpath(root, xpath_query))  # type: ignore
     for parent in parents:
         # Filter children matching the target tag
         matching_children = [
@@ -242,9 +232,9 @@ def remove_nth_element_of_every_matching_great_grandchild(
             action_str = "Would have removed" if dry_run else "Removed"
 
             if not dry_run:
-                parent.remove(target_elem)
+                xml_element_remove(parent, target_elem)
 
-            logger.info(f"{action_str} elem {repr_elem(target_elem)}")
+            logger.info(f"{action_str} elem {xml_element_repr(target_elem)}")
             cnt += 1
 
     qualifier = "would have " if dry_run else ""
@@ -258,7 +248,7 @@ def remove_nth_element_of_every_matching_great_grandchild(
 
 
 def remove_second_p_element_from_every_matching_template(
-    root: Element, mood: Mood, tense: Tense, dry_run: bool = True
+    root: XmlElement, mood: Mood, tense: Tense, dry_run: bool = True
 ) -> int:
     return remove_nth_element_of_every_matching_great_grandchild(
         root,

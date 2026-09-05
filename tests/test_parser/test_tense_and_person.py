@@ -1,5 +1,6 @@
 from lxml import etree
 
+from verbecc.core.defs.types.data.xml_types import XmlElement
 from verbecc.core.parsers.tense_template_parser import TenseTemplateParser
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.core.defs.types.mood import Moods
@@ -19,7 +20,7 @@ def test_tense_and_person():
         <p><i>yez</i></p>
         <p><i>ient</i><i>yent</i></p>
         </présent>"""
-    tense_elem: etree._Element = etree.fromstring(tense_elem_str)
+    tense_elem: XmlElement = etree.fromstring(tense_elem_str)
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
     assert tense_template.mood == mood
     assert tense_template.tense == tense

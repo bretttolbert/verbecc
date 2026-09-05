@@ -1,4 +1,5 @@
 from functools import partial
+from typing import Any, cast
 import numpy as np
 
 from sklearn.feature_selection import SelectFromModel
@@ -65,7 +66,10 @@ class Model:
         return
 
     def __repr__(self) -> str:
-        return "{0}.{1}({2}, {3}, {4})".format(__name__, self.__class__.__name__, *sorted(self.pipeline.named_steps))
+        step_names = ", ".join(
+            sorted(cast(dict[str, object], self.pipeline.named_steps).keys())
+        )
+        return f"{__name__}.{self.__class__.__name__}({step_names})"
 
     def train(self, samples: list[str], labels: list[int]) -> None:
         """
@@ -77,7 +81,7 @@ class Model:
             List of verb template indices.
 
         """
-        self.pipeline = self.pipeline.fit(samples, labels)
+        self.pipeline = cast(Any, self.pipeline).fit(samples, labels)
         return
 
     def predict(self, verbs: list[str]) -> list[np.int64]:
@@ -90,5 +94,5 @@ class Model:
             List of incices of predicted conjugation templates
 
         """
-        prediction = self.pipeline.predict(verbs)
-        return list(prediction)
+        prediction = cast(Any, self.pipeline).predict(verbs)
+        return cast(list[np.int64], list(prediction))

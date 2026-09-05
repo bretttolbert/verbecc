@@ -1,6 +1,6 @@
 # verbecc Changelog
 
-- 2.1.0 [5 September 2026]
+- 2.1.0 [11 September 2026]
   - Fixed packaging, misc. modernization
     - **Dropping support for python3.9** (it has been EOL for nearly a year)
       - Migrated from `importlib_resources`to `importlib.resources`
@@ -12,9 +12,13 @@
       - `verbecc.src` is now `verbecc.core`
     - Modified `pyproject.toml` to scan for packages inside `src`
     - Removed `verbecc/__init__.py` which should not exist because this project is using a `src` layout
-      - Also purged contents of a couple of `__init__.py` files
+    - Modified (simplified) contents of a many `__init__.py` files
       - **This will undoubtedly break some things**, consequently bumping minor rev
-      - Changed `setup.cfg` `description-file` to `description_file` to fix warning
+      - Doing this to comply with new style guide rule:
+        - [R006 - `__init__.py` files shall not contain imports deeper than one level](./CONTRIBUTING.md#r006---__init__py-files-shall-not-contain-imports-deeper-than-one-level)
+        - Before: `from verbecc.core.defs.types.lang_specific_options import LangSpecificOptionsEs`
+        - After: `from verbecc.core.defs.types.lang_specific_options.lang.es import LangSpecificOptionsEs`
+    - Changed `setup.cfg` `description-file` to `description_file` to fix warning
   - Added numerous missing type annotations
     - Fixed all VSCode warnings with strict type checking enabled
     - Added `str` as optional type for public API methods, e.g. so that either specific types like `Mood` or generic strings are explicitly allowed e.g.

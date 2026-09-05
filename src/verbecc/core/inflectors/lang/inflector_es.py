@@ -7,9 +7,9 @@ from verbecc.core.defs.types.data.tense_template import TenseTemplate
 from verbecc.core.defs.types.gender import Gender
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1
 from verbecc.core.defs.types.lang_specific_options import LangSpecificOptions
-from verbecc.core.defs.types.lang_specific_options import LangSpecificOptionsEs
+from verbecc.core.defs.types.lang_specific_options.lang.es import LangSpecificOptionsEs
+from verbecc.core.defs.types.lang_specific_options.lang.es import VoseoOptions
 from verbecc.core.defs.types.lang_specific_options import LangSpecificOptionsFactory
-from verbecc.core.defs.types.lang_specific_options import VoseoOptions
 from verbecc.core.defs.types.mood import Mood, Moods
 from verbecc.core.defs.types.number import Number
 from verbecc.core.defs.types.person import Person
@@ -49,14 +49,14 @@ class InflectorEs(Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(  # noqa: C901
+    def get_pronouns(
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
         imperative: bool = False,
     ) -> list[Pronoun]:
-        ret = []
+        ret : list[Pronoun] = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
@@ -236,71 +236,66 @@ class InflectorEs(Inflector):
         """
         # only need to accent 'a', 'e' and 'i', AFAIK
         VOWEL_ACCENT_MAP = {"a": "á", "e": "é", "i": "í"}
-        if self.lang_specific_options is not None:
+        if (
+            pronoun is not None
+            and pronoun == "vos"
+            and person_ending.person == Person.Second
+            and person_ending.number == Number.Singular
+        ):
+            if self.lang_specific_options.get_voseo_options() != VoseoOptions.VoseoTipo3:
+                # only voseo tipo 3 (voseo típico aka Rioplatense) is supported at the moment
+                raise NotImplementedError()
+
             if (
-                pronoun is not None
-                and pronoun == "vos"
-                and person_ending.person == Person.Second
-                and person_ending.number == Number.Singular
+                (mood == Moods.es.Indicativo and tense == Tenses.es.Presente)
+                or (mood == Moods.es.Subjuntivo and tense == Tenses.es.Presente)
+                or (mood == Moods.es.Imperativo and tense == Tenses.es.Afirmativo)
             ):
-                if (
-                    self.lang_specific_options is not None
-                    and self.lang_specific_options.get_voseo_options()
-                    != VoseoOptions.VoseoTipo3
-                ):
-                    # only voseo tipo 3 (voseo típico aka Rioplatense) is supported at the moment
-                    raise NotImplementedError()
+                # first replace with given p2s (tú) ending(s)
+                # with the p2p (vosotros) ending(s)
+                replacement_person_ending = copy.deepcopy(
+                    tense_template.get_person_ending(Person.Second, Number.Plural)
+                )
+                # change replacement PersonEnding Person from second person plural to singular
+                replacement_person_ending.person = Person.Second
+                replacement_person_ending.number = Number.Singular
 
-                if (
-                    (mood == Moods.es.Indicativo and tense == Tenses.es.Presente)
-                    or (mood == Moods.es.Subjuntivo and tense == Tenses.es.Presente)
-                    or (mood == Moods.es.Imperativo and tense == Tenses.es.Afirmativo)
-                ):
-                    # first replace with given p2s (tú) ending(s)
-                    # with the p2p (vosotros) ending(s)
-                    replacement_person_ending = copy.deepcopy(
-                        tense_template.get_person_ending(Person.Second, Number.Plural)
-                    )
-                    # change replacement PersonEnding Person from second person plural to singular
-                    replacement_person_ending.person = Person.Second
-                    replacement_person_ending.number = Number.Singular
+                # modify the endings for voseo to form the vos endings
+                for i, ending in enumerate(replacement_person_ending.get_endings()):
 
-                    # modify the endings for voseo to form the vos endings
-                    for i, ending in enumerate(replacement_person_ending.get_endings()):
+                    if mood in (Moods.es.Indicativo, Moods.es.Subjuntivo):
+                        # step one for indicativo and subjuntivo presente:
+                        # remove 'i' in the second-to-last letter position
+                        if ending[-2] == "i":
+                            ending = ending[:-2] + ending[-1]
+                    if mood == Moods.es.Imperativo:
+                        # step one for imperativo: remove the trailing 'd'
+                        if ending[-1] == "d":
+                            ending = ending[:-1]
 
-                        if mood in (Moods.es.Indicativo, Moods.es.Subjuntivo):
-                            # step one for indicativo and subjuntivo presente:
-                            # remove 'i' in the second-to-last letter position
-                            if ending[-2] == "i":
-                                ending = ending[:-2] + ending[-1]
-                        if mood == Moods.es.Imperativo:
-                            # step one for imperativo: remove the trailing 'd'
-                            if ending[-1] == "d":
-                                ending = ending[:-1]
+                    if mood == Moods.es.Subjuntivo:
+                        # step two for subjunctivo is to strip any accents from vowels
+                        # e.g. vosotros seáis -> vos seas
+                        ending = strip_accents(ending)
+                    else:
+                        # step two for indicativo and imperativo is to accent the vowel which
+                        # is now in the second-to-last or last letter position (if not already accented)
 
-                        if mood == Moods.es.Subjuntivo:
-                            # step two for subjunctivo is to strip any accents from vowels
-                            # e.g. vosotros seáis -> vos seas
-                            ending = strip_accents(ending)
-                        else:
-                            # step two for indicativo and imperativo is to accent the vowel which
-                            # is now in the second-to-last or last letter position (if not already accented)
+                        # accent second-to-last letter, if vowel
+                        if len(ending) > 1:
+                            if ending[-2] in VOWEL_ACCENT_MAP:
+                                ending = (
+                                    ending[:-2]
+                                    + VOWEL_ACCENT_MAP[ending[-2]]
+                                    + ending[-1]
+                                )
+                        # accent last letter, if vowel
+                        if ending[-1] in VOWEL_ACCENT_MAP:
+                            ending = ending[:-1] + VOWEL_ACCENT_MAP[ending[-1]]
 
-                            # accent second-to-last letter, if vowel
-                            if len(ending) > 1:
-                                if ending[-2] in VOWEL_ACCENT_MAP:
-                                    ending = (
-                                        ending[:-2]
-                                        + VOWEL_ACCENT_MAP[ending[-2]]
-                                        + ending[-1]
-                                    )
-                            # accent last letter, if vowel
-                            if ending[-1] in VOWEL_ACCENT_MAP:
-                                ending = ending[:-1] + VOWEL_ACCENT_MAP[ending[-1]]
-
-                        # update the replacement person ending with the modified ending
-                        replacement_person_ending.endings[i] = ending
-                    return replacement_person_ending
+                    # update the replacement person ending with the modified ending
+                    replacement_person_ending.endings[i] = ending
+                return replacement_person_ending
         return person_ending
 
     def split_reflexive(self, infinitive: str) -> Tuple[bool, str]:

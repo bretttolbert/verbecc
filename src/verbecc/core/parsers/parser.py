@@ -1,12 +1,11 @@
 from abc import ABC, abstractmethod
-from lxml import etree
 from typing import Optional
 
 from verbecc.core.defs.types.data.element import Element
-
+from verbecc.core.defs.types.data.xml_types import XmlElement
 
 class Parser(ABC):
 
     @abstractmethod
-    def parse(self, elem: Optional[etree._Element] = None) -> Element:
+    def parse(self, elem: Optional[XmlElement] = None) -> Element:
         pass

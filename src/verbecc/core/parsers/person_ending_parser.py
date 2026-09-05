@@ -1,12 +1,13 @@
-from lxml import etree
 from typing import Optional
 
+from verbecc.core.defs.types.data.xml_types import XmlElement
 from verbecc.core.utils.logging_utils import LoggingUtils
 from verbecc.core.defs.types.data.person_ending import PersonEnding
 from verbecc.core.defs.types.person import Person
 from verbecc.core.defs.types.number import Number
 from verbecc.core.defs.types.gender import Gender
 from verbecc.core.parsers.parser import Parser
+from verbecc.core.utils.xml_utils import xml_element_findall, xml_element_get_text
 
 
 class PersonEndingParser(Parser):
@@ -34,7 +35,7 @@ class PersonEndingParser(Parser):
 
     def parse(
         self,
-        elem: Optional[etree._Element] = None,
+        elem: Optional[XmlElement] = None,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
         gender: Optional[Gender] = None,
@@ -61,12 +62,13 @@ class PersonEndingParser(Parser):
         if elem is None:
             raise ValueError("elem must not be None")
         endings: list[str] = []
-        i_elems = elem.findall("i", None)
+        i_elems = xml_element_findall(elem, "i")
         if len(i_elems) == 0:
             self._logger.debug("Empty <p> element in conjugation template")
         for i_elem in i_elems:
             ending = str("")
-            if i_elem.text is not None:
-                ending += str(i_elem.text)
+            i_elem_text = xml_element_get_text(i_elem)
+            if i_elem_text is not None:
+                ending += i_elem_text
             endings.append(ending)
         return PersonEnding(person, number, gender, endings)

@@ -14,6 +14,7 @@ from verbecc.core.defs.types.lang_specific_options import (
 from verbecc.core.inflectors.inflector import Inflector
 from verbecc.core.utils import string_utils
 from verbecc.core.defs.types.pronoun import Pronoun, Pronouns
+from verbecc.core.utils.warnings import NonApiWarning
 
 """
 DR & MRS VANDERTRAMPP verbs
@@ -327,9 +328,11 @@ class InflectorFr(Inflector):
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
+        NonApiWarning.warn()
         return "-" + self.get_pronouns(person, number, gender)[0].replace("tu", "toi")
 
     def private_is_impersonal_verb(self, infinitive: str) -> bool:
+        NonApiWarning.warn()
         ret = False
         verb = self.find_verb_by_infinitive(infinitive)
         template = self.find_template(verb.template)

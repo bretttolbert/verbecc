@@ -12,6 +12,7 @@ from verbecc.core.defs.types.lang_specific_options import (
 )
 from verbecc.core.inflectors.inflector import Inflector
 from verbecc.core.defs.types.pronoun import Pronoun, Pronouns
+from verbecc.core.utils.warnings import NonApiWarning
 
 
 class InflectorPt(Inflector):
@@ -86,7 +87,7 @@ class InflectorPt(Inflector):
         gender: Optional[Gender] = None,
         imperative: bool = False,
     ) -> list[Pronoun]:
-        ret = []
+        ret : list[Pronoun] = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):
@@ -264,6 +265,7 @@ class InflectorPt(Inflector):
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
+        NonApiWarning.warn()
         ret = ""
         if person == Person.First and number == Number.Singular:
             ret = "eu"

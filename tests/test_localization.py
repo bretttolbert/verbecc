@@ -11,7 +11,7 @@ from verbecc.core.defs.constants.localization import xmood, xtense
         ("ca", "indicative", "indicatiu"),
     ],
 )
-def test_xmood(lang, mood, expected):
+def test_xmood(lang: str, mood: str, expected: str):
     assert xmood(lang, mood) == expected
 
 
@@ -24,5 +24,5 @@ def test_xmood(lang, mood, expected):
         ("fr", "present", "présent"),
     ],
 )
-def test_xtense(lang, tense, expected):
+def test_xtense(lang: str, tense: str, expected: str):
     assert xtense(lang, tense) == expected

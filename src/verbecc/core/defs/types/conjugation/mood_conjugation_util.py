@@ -1,4 +1,6 @@
 from verbecc.core.defs.types.conjugation.mood_conjugation import MoodConjugation
+from verbecc.core.defs.types.conjugation.tense_conjugation import TenseConjugation
+from verbecc.core.defs.types.tense import Tense
 
 
 class MoodConjugationUtil:
@@ -11,9 +13,10 @@ class MoodConjugationUtil:
         (MoodConjugation isn't defined until MoodConjugation is initialized).
         Putting it in a separate file seems preferable to casting.
         """
-        if a._mood != b._mood:
+        if a.get_mood() != b.get_mood():
             raise TypeError("Cannot combine MoodsConjugations with different moods")
-        combined = {}
-        for mc in (a, b):
-            combined.update(mc._data)
-        return MoodConjugation(a._mood, combined)
+        combined: dict[Tense, TenseConjugation] = {
+            tense: a[tense] for tense in a.get_data()
+        }
+        combined.update({tense: b[tense] for tense in b.get_data()})
+        return MoodConjugation(a.get_mood(), combined)

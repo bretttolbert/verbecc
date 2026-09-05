@@ -1,6 +1,6 @@
-from lxml import etree
 from typing import Optional
 
+from verbecc.core.defs.types.data.xml_types import XmlElement
 from verbecc.core.utils.logging_utils import LoggingUtils
 from verbecc.core.defs.constants import grammar_defines
 from verbecc.core.defs.constants.localization import xmood
@@ -11,6 +11,7 @@ from verbecc.core.defs.types.mood import Mood, Moods
 from verbecc.core.defs.types.tense import TenseFactory
 from verbecc.core.parsers.parser import Parser
 from verbecc.core.parsers.person_ending_parser import PersonEndingParser
+from verbecc.core.utils.xml_utils import xml_element_get_tag, xml_element_to_string, xml_element_findall
 
 
 class TenseTemplateParser(Parser):
@@ -41,7 +42,7 @@ class TenseTemplateParser(Parser):
         self.lang = lang
         self.mood = mood
 
-    def parse(self, elem: Optional[etree._Element] = None) -> TenseTemplate:
+    def parse(self, elem: Optional[XmlElement] = None) -> TenseTemplate:
         """
         Normally each <p> elem defines six grammatical persons:
             (see grammar_defines.PERSONS)
@@ -93,12 +94,12 @@ class TenseTemplateParser(Parser):
         """
         if elem is None:
             raise ValueError("elem must not be None")
-        self.tense = TenseFactory.from_string(self.lang, elem.tag)
+        self.tense = TenseFactory.from_string(self.lang, xml_element_get_tag(elem))
         person_endings: list[PersonEnding] = []
         person_num = 0
         participle_inflections = grammar_defines.PARTICIPLE_INFLECTIONS[self.lang]
         imperative_persons = grammar_defines.IMPERATIVE_PERSONS[self.lang]
-        p_elems = elem.findall("p", namespaces=None)
+        p_elems = xml_element_findall(elem, "p")
         for p_elem in p_elems:
             gender = None
             person = None
@@ -118,7 +119,7 @@ class TenseTemplateParser(Parser):
                     self._logger.warning(
                         f"Unexpected number of participle inflections {len(p_elems)} "
                         + f"on tense template for language {self.lang}: "
-                        + f"{[etree.tostring(p) for p in p_elems]}"
+                        + f"{[xml_element_to_string(p) for p in p_elems]}"
                     )
             elif self.mood == xmood(self.lang, Moods.en.Imperative):
                 if len(p_elems) == len(imperative_persons):
@@ -127,7 +128,7 @@ class TenseTemplateParser(Parser):
                     self._logger.warning(
                         f"Unexpected number of imperative person inflections {len(p_elems)} "
                         + f"on tense template for language {self.lang}: "
-                        + f"{[etree.tostring(p) for p in p_elems]}"
+                        + f"{[xml_element_to_string(p) for p in p_elems]}"
                     )
             else:
                 # normal case: all persons

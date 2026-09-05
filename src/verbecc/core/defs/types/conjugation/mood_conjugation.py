@@ -54,6 +54,9 @@ class MoodConjugation(AbstractConjugation):
     def __contains__(self, key: Tense) -> bool:
         return key in self._data
 
+    def get_mood(self) -> Mood:
+        return self._mood
+
     def get_data(self) -> MoodConjugationData:
         return {t: tc.get_data() for t, tc in self._data.items()}
 

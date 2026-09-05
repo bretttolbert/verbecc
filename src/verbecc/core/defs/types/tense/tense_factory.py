@@ -1,6 +1,6 @@
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.core.defs.types.tense.tense import Tense
-from verbecc.core.defs.types.tense.tenses import Tenses
+from verbecc.core.defs.types.tense import Tense
+from verbecc.core.defs.types.tense import Tenses
 
 
 class TenseFactory:

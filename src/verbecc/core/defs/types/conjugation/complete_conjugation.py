@@ -52,7 +52,7 @@ class CompleteConjugation(AbstractConjugation):
         return len(self._moods_conjugation)
 
     def __iter__(self) -> Iterable[Mood]:
-        return iter(self._moods_conjugation._data)
+        return iter(self._moods_conjugation.get_data().keys())
 
     def __contains__(self, key: Mood) -> bool:
         return key in self._moods_conjugation

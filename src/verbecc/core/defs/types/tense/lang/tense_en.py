@@ -1,4 +1,4 @@
-from verbecc.core.defs.types.tense.tense import Tense
+from verbecc.core.defs.types.tense import Tense
 
 
 class TenseEn(Tense):

@@ -13,7 +13,7 @@ config = VerbeccConfigUtil().load_config()
 @pytest.fixture(scope="module")
 def verb_template_pairs():
     inf = InflectorFr()
-    yield [(v.infinitive, v.template) for v in inf._verbs]
+    yield [(v.infinitive, v.template) for v in inf.get_verbs()]
 
 
 def test_extract_verb_features():
@@ -36,13 +36,17 @@ def test_extract_verb_features():
         ]
 
 
-def test_DataSet_construct_dict_conjug(verb_template_pairs):
+def test_DataSet_construct_dict_conjug(
+    verb_template_pairs: list[tuple[str, str]],
+):
     if config.ENABLE_ML_PREDICTION:
         dict_conjug = DataSet(verb_template_pairs).dict_conjug
         assert "abaisser" in dict_conjug["aim:er"]
 
 
-def test_DataSet_split_test_train(verb_template_pairs):
+def test_DataSet_split_test_train(
+    verb_template_pairs: list[tuple[str, str]],
+):
     if config.ENABLE_ML_PREDICTION:
         ds = DataSet(verb_template_pairs)
         assert ds.min_threshold == 8
@@ -65,7 +69,9 @@ def test_DataSet_split_test_train(verb_template_pairs):
         )
 
 
-def test_mlconjug_template_predictor(verb_template_pairs):
+def test_mlconjug_template_predictor(
+    verb_template_pairs: list[tuple[str, str]],
+):
     if config.ENABLE_ML_PREDICTION:
         predictor = TemplatePredictor(verb_template_pairs, lang=Lang.fr)
         template, prediction_score = predictor.predict("parler")

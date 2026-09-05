@@ -10,12 +10,12 @@ from verbecc.core.defs.types.conjugation import TenseConjugation
 from verbecc.core.defs.types.gender import Gender
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.core.defs.types.mood import Moods
-from verbecc.core.defs.types.mood.mood import Mood
+from verbecc.core.defs.types.mood import Mood
 from verbecc.core.defs.types.number import Number
 from verbecc.core.defs.types.person import Person
 from verbecc.core.defs.types.tense import Tenses
-from verbecc.core.defs.types.tense.tense import Tense
-from verbecc.core.defs.types.pronoun import PronounRo
+from verbecc.core.defs.types.tense import Tense
+from verbecc.core.defs.types.pronoun.lang import PronounRo
 
 
 @pytest.fixture(scope="module")

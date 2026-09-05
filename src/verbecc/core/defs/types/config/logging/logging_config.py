@@ -14,12 +14,12 @@ from verbecc.core.defs.types.config.logging.logger_config import LoggerConfig
 class LoggingConfig:
     version: int = field(default=1)
     disable_existing_loggers: bool = field(default=False)
-    formatters: dict[str, FormatterConfig] = field(default_factory=dict)
+    formatters: dict[str, FormatterConfig] = field(default_factory=dict[str, FormatterConfig])
     handlers: dict[str, HandlerConfig] = field(
         default_factory=lambda: {
             "consoleHandler": StreamHandlerConfig(),
             "fileHandler": FileHandlerConfig(),
         }
     )
-    loggers: dict[str, LoggerConfig] = field(default_factory=dict)
+    loggers: dict[str, LoggerConfig] = field(default_factory=dict[str, LoggerConfig])
     root: Optional[LoggerConfig] = field(default_factory=LoggerConfig)

@@ -29,7 +29,7 @@ class DataSet:
         :return: defaultdict.
             defaultdict mapping each template to one or more verbs e.g. {'aim:er': ['abaisser', ...]}
         """
-        ret = defaultdict(list)
+        ret: defaultdict[str, list[str]] = defaultdict(list)
         random.shuffle(verb_template_pairs)
         for verb, template in verb_template_pairs:
             ret[template].append(verb)

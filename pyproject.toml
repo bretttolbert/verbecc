@@ -141,3 +141,10 @@ select = ["E9", "F63", "F7", "F82"]
 # Enable McCabe complexity checking (equivalent to flake8 --max-complexity=10)
 [tool.ruff.lint.mccabe]
 max-complexity = 10
+
+[tool.mypy]
+mypy_path = "typings"
+
+[[tool.mypy.overrides]]
+module = "*.pyi"
+ignore_errors = true

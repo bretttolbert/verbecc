@@ -63,7 +63,7 @@ class VerbInfo(AbstractConjugation):
         )
 
     def get_data(self) -> VerbInfoData:
-        ret = {
+        ret: VerbInfoData = {
             "infinitive": self.infinitive,
             "lang": self.lang,
             "predicted": self.predicted,

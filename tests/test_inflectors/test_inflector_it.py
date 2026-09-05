@@ -144,7 +144,7 @@ def test_inflector_itadd_subjunctive_relative_pronoun(ccg: CompleteConjugator):
     ],
 )
 def test_inflector_it_get_pronouns(
-    ccg,
+    ccg: CompleteConjugator,
     person: Person,
     number: Number,
     gender: Gender,
@@ -198,7 +198,9 @@ def test_inflector_it_get_pronouns(
         ),
     ],
 )
-def test_indicative_present(ccg: CompleteConjugator, infinitive: str, expected_result):
+def test_indicative_present(
+    ccg: CompleteConjugator, infinitive: str, expected_result: list[str]
+):
     cc = ccg.conjugate(infinitive)
     mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.Presente]
@@ -251,7 +253,9 @@ def test_indicative_present(ccg: CompleteConjugator, infinitive: str, expected_r
         ),
     ],
 )
-def test_passato_prossimo(ccg: CompleteConjugator, infinitive: str, expected_result):
+def test_passato_prossimo(
+    ccg: CompleteConjugator, infinitive: str, expected_result: list[str]
+):
     cc = ccg.conjugate(infinitive)
     mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.PassatoProssimo]
@@ -275,7 +279,9 @@ def test_passato_prossimo(ccg: CompleteConjugator, infinitive: str, expected_res
         ),
     ],
 )
-def test_alzarsi_indicative_present(ccg: CompleteConjugator, infinitive: str, expected_result):
+def test_alzarsi_indicative_present(
+    ccg: CompleteConjugator, infinitive: str, expected_result: list[str]
+):
     cc = ccg.conjugate(infinitive)
     mc = cc[Moods.it.Indicativo]
     tc = mc[Tenses.it.Presente]
@@ -305,7 +311,7 @@ def test_alzarsi_indicative_present(ccg: CompleteConjugator, infinitive: str, ex
     ],
 )
 def test_inflector_it_alzarsi_indicativo_passato_prossimo(
-    ccg: CompleteConjugator, infinitive: str, expected_result
+    ccg: CompleteConjugator, infinitive: str, expected_result: list[str]
 ):
     cc = ccg.conjugate(infinitive)
     mc = cc[Moods.it.Indicativo]
@@ -316,7 +322,7 @@ def test_inflector_it_alzarsi_indicativo_passato_prossimo(
 def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(tcg: TenseConjugator):
     infinitive = "essere"
     co = tcg.get_co(infinitive)
-    tc = tcg._tense_conjugator_compound.co_conjugate_compound_mood_tense(
+    tc = tcg.private_get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
         co,
         Moods.it.Indicativo,
         Tenses.it.PassatoProssimo,

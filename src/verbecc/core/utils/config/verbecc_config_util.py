@@ -17,7 +17,9 @@ class VerbeccConfigUtil(BaseConfigUtil[VerbeccConfig]):
 
     def _load_config_from_filestream(self, filestream: TextIO) -> VerbeccConfig:
         ret = VerbeccConfig()
-        data = VerbeccConfig.from_yaml(filestream)
+        data: VerbeccConfig | list[VerbeccConfig] = VerbeccConfig.from_yaml(  # pyright: ignore[reportUnknownMemberType]
+            filestream
+        )
         if isinstance(data, list):
             ret = data[0]
         else:

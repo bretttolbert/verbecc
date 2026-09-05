@@ -6,18 +6,18 @@ from typing import cast, Optional
 
 from verbecc.core.defs.types.data.conjugation_template import ConjugationTemplate
 from verbecc.core.defs.types.data.conjugations import Conjugations
+from verbecc.core.defs.types.data.xml_types import XmlElement
 from verbecc.core.defs.types.exceptions import ConjugationsParserError
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1
 from verbecc.core.parsers.conjugation_template_parser import ConjugationTemplateParser
 from verbecc.core.parsers.parser import Parser
 
-Element = etree._Element  # type: ignore
 
 class ConjugationsParser(Parser):
     def __init__(self, lang: LangCodeISO639_1 = LangCodeISO639_1.fr) -> None:
         self.lang = lang
 
-    def parse(self, elem: Optional[Element] = None) -> Conjugations:
+    def parse(self, elem: Optional[XmlElement] = None) -> Conjugations:
         if elem is not None:
             # this is the the only Parser that doesn't use the elem argument,
             # of the Parser.parser() interface, so this method must implement
@@ -65,7 +65,7 @@ class ConjugationsParser(Parser):
                 if child.tag == "template":
                     templates.append(
                         ConjugationTemplateParser(lang=self.lang).parse(
-                            cast(Element, child)
+                            cast(XmlElement, child)
                         )
                     )
         return Conjugations(self.lang, sorted(templates, key=lambda x: x.name))

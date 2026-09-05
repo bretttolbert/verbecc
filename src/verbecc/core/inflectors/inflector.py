@@ -344,6 +344,7 @@ class Inflector(ABC):
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
+        NonApiWarning.warn()
         return " " + self.get_pronouns(person, number, gender)[0]
 
     def private_is_impersonal_verb(self, infinitive: str) -> bool:

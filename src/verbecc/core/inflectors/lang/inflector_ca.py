@@ -42,7 +42,7 @@ class InflectorCa(inflector.Inflector):
         gender: Optional[Gender] = None,
         imperative: bool = False,
     ) -> list[Pronoun]:
-        ret = []
+        ret : list[Pronoun] = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):

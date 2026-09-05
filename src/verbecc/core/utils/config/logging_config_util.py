@@ -1,5 +1,5 @@
 from dataclasses import asdict
-from typing import TextIO
+from typing import Any, TextIO, cast
 import logging
 import logging.config
 import yaml
@@ -33,7 +33,7 @@ class LoggingConfigUtil(BaseConfigUtil[LoggingConfig]):
         try:
             data = asdict(logging_config)
             data = DictUtils.unmarshall_keys_recursive(data)
-            logging.config.dictConfig(data)
+            logging.config.dictConfig(cast(dict[str, object], data))
         except ValueError as ex:
             raise ex
 
@@ -42,10 +42,15 @@ class LoggingConfigUtil(BaseConfigUtil[LoggingConfig]):
         Manually convert the dictionary to our dataclass structure
         This part can be simplified with libraries like `dacite` or `marshmallow-dataclass`
         """
-        data = yaml.safe_load(filestream)
-        data = DictUtils.marshall_keys_recursive(data, ["class"])
+        loaded_data = yaml.safe_load(filestream)
+        data = cast(dict[str, Any], loaded_data) if isinstance(loaded_data, dict) else {}
+        data = cast(
+            dict[str, Any], DictUtils.marshall_keys_recursive(data, ["class"])
+        )
+        formatters_data = cast(dict[str, dict[str, Any]], data.get("formatters", {}))
         formatters = {
-            name: FormatterConfig(**d) for name, d in data.get("formatters", {}).items()
+            name: FormatterConfig(**formatter_data)
+            for name, formatter_data in formatters_data.items()
         }
         handlers: dict[str, HandlerConfig] = {}
         for name, d in data.get("handlers", {}).items():

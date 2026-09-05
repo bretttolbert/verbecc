@@ -1,3 +1,5 @@
+from typing import cast
+
 from verbecc.core.defs.types.mood import Mood, Moods
 from verbecc.core.defs.types.tense import Tense, Tenses
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1
@@ -119,17 +121,17 @@ TENSE_MAP: dict[Tense, dict[LangCodeISO639_1, Tense]] = {
 }
 
 
-def xmood(lang: LangCodeISO639_1, m: Mood) -> Mood:
+def xmood(lang: LangCodeISO639_1 | str, m: Mood | str) -> Mood:
     """Takes a mood name in EN and translates it to the specified language
 
     :raises: Exception if mood or lang doesn't exist
     """
-    return MOOD_MAP[m][lang]
+    return MOOD_MAP[cast(Mood, m)][cast(LangCodeISO639_1, lang)]
 
 
-def xtense(lang: LangCodeISO639_1, t: Tense) -> Tense:
+def xtense(lang: LangCodeISO639_1 | str, t: Tense | str) -> Tense:
     """Takes a tense name in EN and translates it to the specified language
 
     :raises: Exception if tense or lang doesn't exist
     """
-    return TENSE_MAP[t][lang]
+    return TENSE_MAP[cast(Tense, t)][cast(LangCodeISO639_1, lang)]
