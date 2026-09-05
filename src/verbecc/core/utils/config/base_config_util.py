@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from importlib_resources import abc, as_file, files
+from importlib.resources import abc, as_file, files
 from pathlib import Path
 from typing import Optional, TextIO, TypeVar, Generic
 
@@ -21,24 +21,9 @@ class BaseConfigUtil(Generic[T]):
         try:
             # source path
             self._yaml_resource_path = files("verbecc.config") / self.yaml_filename
-        except KeyError as ex0:
+        except KeyError:
             # unit-tests path
-            try:
-                self._yaml_resource_path = files("verbecc.verbecc.config") / self.yaml_filename
-            except TypeError as ex1:
-                # python <=3.9 hack
-                try:
-                    dir_path = Path(__file__).parent.parent.parent
-                    self._yaml_resource_path = dir_path / "config" / self.yaml_filename
-                    while self._yaml_resource_path is None or not Path.exists(self._yaml_resource_path):
-                        self._yaml_resource_path = dir_path.parent / "config" / self.yaml_filename
-
-                except Exception as ex2:
-                    msg = (
-                        "You are likely running an incompatible python version. "
-                        + f"_yaml_resource_path={self._yaml_resource_path} ex0={ex0} ex1={ex1} ex2={ex2}"
-                    )
-                    raise Exception(msg)
+            self._yaml_resource_path = files("verbecc.verbecc.config") / self.yaml_filename
 
     def load_config(self) -> T:
         """Loads and returns the configuration."""
@@ -53,15 +38,9 @@ class BaseConfigUtil(Generic[T]):
         if self._yaml_resource_path is None:
             raise Exception(f"Failed to load yaml config file {self.yaml_filename}")
         elif isinstance(self._yaml_resource_path, abc.Traversable):  # type: ignore
-            # python >= 3.10 code path:
             with as_file(self._yaml_resource_path) as path:
                 with path.open("r", encoding="utf-8") as f:
                     ret = self._load_config_from_filestream(f)
-        elif isinstance(self._yaml_resource_path, Path):
-            # python <= 3.9 code path:
-            path = self._yaml_resource_path
-            with open(path, "r", encoding="utf-8") as f:
-                ret = self._load_config_from_filestream(f)
         if ret is not None:
             return ret
         else:

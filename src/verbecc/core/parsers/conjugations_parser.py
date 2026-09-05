@@ -1,16 +1,7 @@
-from __future__ import print_function
-
-
-# try:
 from lxml import etree
 
-# except ImportError:
-#     import xml.etree.ElementTree as etree
-from importlib_resources import as_file, files
+from importlib.resources import as_file, files
 
-# import gzip
-
-# import tempfile
 from typing import cast, Optional
 
 from verbecc.core.defs.types.data.conjugation_template import ConjugationTemplate
@@ -20,12 +11,13 @@ from verbecc.core.defs.types.lang_code import LangCodeISO639_1
 from verbecc.core.parsers.conjugation_template_parser import ConjugationTemplateParser
 from verbecc.core.parsers.parser import Parser
 
+Element = etree._Element  # type: ignore
 
 class ConjugationsParser(Parser):
     def __init__(self, lang: LangCodeISO639_1 = LangCodeISO639_1.fr) -> None:
         self.lang = lang
 
-    def parse(self, elem: Optional[etree._Element] = None) -> Conjugations:
+    def parse(self, elem: Optional[Element] = None) -> Conjugations:
         if elem is not None:
             # this is the the only Parser that doesn't use the elem argument,
             # of the Parser.parser() interface, so this method must implement
@@ -73,7 +65,7 @@ class ConjugationsParser(Parser):
                 if child.tag == "template":
                     templates.append(
                         ConjugationTemplateParser(lang=self.lang).parse(
-                            cast(etree._Element, child)
+                            cast(Element, child)
                         )
                     )
         return Conjugations(self.lang, sorted(templates, key=lambda x: x.name))

@@ -1,8 +1,8 @@
 from __future__ import print_function
 from io import BytesIO
-from importlib_resources.abc import Traversable
+from importlib.resources.abc import Traversable
 from lxml import etree
-from importlib_resources import files
+from importlib.resources import files
 
 
 from verbecc.core.defs.types.data.verb import Verb

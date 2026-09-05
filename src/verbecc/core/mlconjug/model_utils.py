@@ -1,5 +1,5 @@
 from typing import Optional
-from importlib_resources import as_file, files
+from importlib.resources import as_file, files
 import os
 import pickle
 from zipfile import ZipFile

@@ -3,6 +3,8 @@
 - 2.1.0 [7 September 2026]
   - Fixed packaging, misc. modernization
     - Dropping support for python3.9 (it has been EOL for nearly a year)
+      - Migrated from `importlib_resources`to `importlib.resources`
+      - Removed python39 import resource hacks
     - Changed structure from `verbecc/verbecc/src` to more standard `verbecc/src/verbecc`
       - Before data was at `verbecc/verbecc/data`
       - After data is at `verbecc/src/verbecc/data`
@@ -18,6 +20,8 @@
   - Converted from `List` to modern `list`
   - Converted from `Dict` to modern `dict`
   - Fixed all VSCode warnings with strict type checking enabled
+  - Modified build configuration to generate type stubs
+
 
 - 2.0.3 [26 August 2026]
   - PR #51 [Peter Abolins]
