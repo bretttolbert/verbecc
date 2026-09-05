@@ -12,7 +12,7 @@ def tcg():
     yield tcg
 
 
-def test_ensure_ascii(tcg):
+def test_ensure_ascii(tcg: TenseConjugator) -> None:
     """
     Test to ensure json.dumps is being called with ensure_ascii=True
 
