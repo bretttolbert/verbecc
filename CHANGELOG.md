@@ -1,8 +1,8 @@
 # verbecc Changelog
 
-- 2.1.0 [7 September 2026]
+- 2.1.0 [5 September 2026]
   - Fixed packaging, misc. modernization
-    - Dropping support for python3.9 (it has been EOL for nearly a year)
+    - **Dropping support for python3.9** (it has been EOL for nearly a year)
       - Migrated from `importlib_resources`to `importlib.resources`
       - Removed python39 import resource hacks
     - Changed structure from `verbecc/verbecc/src` to more standard `verbecc/src/verbecc`
@@ -17,6 +17,9 @@
       - Changed `setup.cfg` `description-file` to `description_file` to fix warning
   - Added numerous missing type annotations
     - Fixed all VSCode warnings with strict type checking enabled
+    - Added `str` as optional type for public API methods, e.g. so that either specific types like `Mood` or generic strings are explicitly allowed e.g.
+      - Before: `mood: Mood`
+      - After: `mood: Mood | str`
   - Contd. cleaning up (removing) excessive `__init__.py` imports
   - Converted from `List` to modern `list`
   - Converted from `Dict` to modern `dict`
