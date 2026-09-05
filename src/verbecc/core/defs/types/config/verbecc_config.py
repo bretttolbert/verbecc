@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from dataclass_wizard import YAMLWizard
+from dataclass_wizard.v0 import YAMLWizard
 
 from verbecc.core.defs.types.config.jsbeautifier_opts import JSBeautifierOpts
 from verbecc.core.defs.types.config.json_opts import JSONOpts
