@@ -2,6 +2,7 @@
 
 - 2.1.0 [7 September 2026]
   - Fixed packaging, misc. modernization
+    - Dropping support for python3.9 (it has been EOL for nearly a year)
     - Changed structure from `verbecc/verbecc/src` to more standard `verbecc/src/verbecc`
       - Before data was at `verbecc/verbecc/data`
       - After data is at `verbecc/src/verbecc/data`
