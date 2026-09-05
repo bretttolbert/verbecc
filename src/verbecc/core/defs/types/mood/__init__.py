@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from .mood import Mood
 from .moods import Moods
 from .mood_factory import MoodFactory

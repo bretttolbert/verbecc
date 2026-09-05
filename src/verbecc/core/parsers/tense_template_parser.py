@@ -8,7 +8,7 @@ from verbecc.core.defs.types.data.person_ending import PersonEnding
 from verbecc.core.defs.types.data.tense_template import TenseTemplate
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.core.defs.types.mood import Mood, Moods
-from verbecc.core.defs.types.tense import Tense, TenseFactory
+from verbecc.core.defs.types.tense import TenseFactory
 from verbecc.core.parsers.parser import Parser
 from verbecc.core.parsers.person_ending_parser import PersonEndingParser
 

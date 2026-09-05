@@ -113,7 +113,7 @@ class InflectorFr(Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(
+    def get_pronouns(  # noqa: C901
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,

@@ -29,7 +29,7 @@ class JSONUtils:
             json_opts.indent = indent
         for field in fields(json_opts):
             kwargs[field.name] = getattr(json_opts, field.name)
-        ret = json.dumps(data, **kwargs) # type: ignore
+        ret = json.dumps(data, **kwargs)  # type: ignore
         if beautify:
             ret = JSBeautifier.beautify(ret)
         return ret

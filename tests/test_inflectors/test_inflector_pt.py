@@ -87,7 +87,7 @@ def test_conjugate_ter_imperativo_afirmativo(ccg: CompleteConjugator):
     """
     Ref: https://www.conjugacao.com.br/verbo-ter/
     """
-    tc : TenseConjugation = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Afirmativo)
+    tc: TenseConjugation = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Afirmativo)
     assert [c[0] for c in tc] == [
         "-",
         "tem tu",
@@ -102,7 +102,7 @@ def test_conjugate_ter_imperativo_negativo(ccg: CompleteConjugator):
     """
     Ref: https://www.conjugacao.com.br/verbo-ter/
     """
-    tc : TenseConjugation = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Negativo)
+    tc: TenseConjugation = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Negativo)
     assert [c[0] for c in tc] == [
         "-",
         "não tenhas tu",

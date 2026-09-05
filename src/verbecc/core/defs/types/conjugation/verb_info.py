@@ -84,5 +84,4 @@ class VerbInfo(AbstractConjugation):
         E.g. "fr:parler"
         """
         # This singleton info node represents the root node, so it has no parent.
-        _str_id = ""
         return ":".join([str(self.lang), str(self.infinitive)])

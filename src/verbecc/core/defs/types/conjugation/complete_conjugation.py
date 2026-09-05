@@ -1,4 +1,3 @@
-import json
 from typing import Iterable
 
 from verbecc.core.defs.types.conjugation.abstract_conjugation import AbstractConjugation

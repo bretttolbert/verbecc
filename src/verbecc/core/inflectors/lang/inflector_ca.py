@@ -35,7 +35,7 @@ class InflectorCa(inflector.Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(
+    def get_pronouns(  # noqa: C901
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
@@ -189,7 +189,7 @@ class InflectorCa(inflector.Inflector):
         _, template_ending = template_name.split(":")
         infinitive_no_accents = strip_accents(infinitive)
         template_ending_no_accents = strip_accents(infinitive)
-        infinitive_ending_no_accents = infinitive_no_accents[-len(template_ending) :]
+        infinitive_ending_no_accents = infinitive_no_accents[-len(template_ending):]
         if (
             not infinitive_ending_no_accents == template_ending_no_accents
             and not infinitive_no_accents[1:] == template_ending_no_accents[1:]

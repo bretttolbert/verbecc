@@ -63,7 +63,7 @@ class AbstractConjugation(ABC):
         # around all the string values, unlike YAML)
         # TODO: Figure out how to do this with custom yaml.Dumper
 
-        data = DictUtils.cast_values_recursive(data, ConjugationKeyPerson, int) # type: ignore
+        data = DictUtils.cast_values_recursive(data, ConjugationKeyPerson, int)  # type: ignore
 
         # TODO: If possiuble, figure out how to prevent YAML from putting quotes around the
         # French pronoun "on" ("on" is considered an "ambiguous value" in YAML, by default)

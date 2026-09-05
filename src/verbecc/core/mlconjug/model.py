@@ -1,9 +1,7 @@
-from typing import List
 from functools import partial
 import numpy as np
 
 from sklearn.feature_selection import SelectFromModel
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import SGDClassifier
 from sklearn.svm import LinearSVC
 from sklearn.pipeline import Pipeline

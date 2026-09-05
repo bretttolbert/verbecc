@@ -49,7 +49,7 @@ class InflectorEs(Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(
+    def get_pronouns(  # noqa: C901
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
@@ -190,7 +190,7 @@ class InflectorEs(Inflector):
             },
         }
 
-    def modify_person_ending_if_applicable(
+    def modify_person_ending_if_applicable(  # noqa: C901
         self,
         person_ending: PersonEnding,
         mood: Mood,

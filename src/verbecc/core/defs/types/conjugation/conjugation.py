@@ -50,10 +50,10 @@ class Conjugation(AbstractConjugation):
             conjugating the auxiliary verb to form certain compound conjugations.
         """
         super().__init__()
-        self._person : Optional[Person] = person
-        self._number : Optional[Number]= number
-        self._gender : Optional[Gender] = gender
-        self._pronoun : Optional[Pronoun] = pronoun
+        self._person: Optional[Person] = person
+        self._number: Optional[Number] = number
+        self._gender: Optional[Gender] = gender
+        self._pronoun: Optional[Pronoun] = pronoun
         if conjugations is not None:
             self._conjugations = conjugations
         else:

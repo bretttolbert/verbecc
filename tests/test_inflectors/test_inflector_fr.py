@@ -616,13 +616,13 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent_nopronouns(tcg: 
     tense = Tenses.fr.Présent
     tense_elem = etree.fromstring(
         """<présent>
-			<p><i>ai</i></p>
-			<p><i>as</i></p>
-			<p><i>a</i></p>
-			<p><i>avons</i></p>
-			<p><i>avez</i></p>
-			<p><i>ont</i></p>
-		</présent>""",
+            <p><i>ai</i></p>
+            <p><i>as</i></p>
+            <p><i>a</i></p>
+            <p><i>avons</i></p>
+            <p><i>avez</i></p>
+            <p><i>ont</i></p>
+        </présent>""",
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
@@ -665,11 +665,11 @@ def test_inflector_fr_conjugate_simple_avoir_participe_participe_passé(tcg: Ten
     tense = Tenses.fr.ParticipePassé
     tense_elem = etree.fromstring(
         """<participe-passé>
-			<p><i>eu</i></p>
-			<p><i>eus</i></p>
-			<p><i>eue</i></p>
-			<p><i>eues</i></p>
-		</participe-passé>""",
+            <p><i>eu</i></p>
+            <p><i>eus</i></p>
+            <p><i>eue</i></p>
+            <p><i>eues</i></p>
+        </participe-passé>""",
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
@@ -702,8 +702,8 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(tcg: Te
     tense = Tenses.fr.ParticipePresent
     tense_elem = etree.fromstring(
         """<participe-présent>
-			<p><i>ayant</i></p>
-		</participe-présent>""",
+            <p><i>ayant</i></p>
+        </participe-présent>""",
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
@@ -736,8 +736,8 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(tcg: TenseConjug
     tense = Tenses.fr.InfinitifPrésent
     tense_elem = etree.fromstring(
         """<infinitif-présent>
-			<p><i>avoir</i></p>
-		</infinitif-présent>""",
+            <p><i>avoir</i></p>
+        </infinitif-présent>""",
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
@@ -766,10 +766,10 @@ def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(tcg: TenseConjug
     tense = Tenses.fr.ImperatifPrésent
     tense_elem = etree.fromstring(
         """<imperatif-présent>
-			<p><i>aie</i></p>
-			<p><i>ayons</i></p>
-			<p><i>ayez</i></p>
-		</imperatif-présent>""",
+            <p><i>aie</i></p>
+            <p><i>ayons</i></p>
+            <p><i>ayez</i></p>
+        </imperatif-présent>""",
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)

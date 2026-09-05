@@ -79,7 +79,7 @@ class InflectorPt(Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(
+    def get_pronouns(  # noqa: C901
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
@@ -257,7 +257,7 @@ class InflectorPt(Inflector):
         else:
             return "se"
 
-    def private_get_pronoun_suffix(
+    def private_get_pronoun_suffix(  # noqa: C901
         self,
         person: Person,
         number: Number,

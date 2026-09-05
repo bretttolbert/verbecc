@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from .lang_specific_options import (
     LangSpecificOptions,
 )

@@ -17,6 +17,7 @@ from verbecc.core.defs.types.tense import Tenses
 from verbecc.core.defs.types.tense.tense import Tense
 from verbecc.core.defs.types.pronoun import PronounRo
 
+
 @pytest.fixture(scope="module")
 def ccg() -> Generator[CompleteConjugator, None, None]:
     # Setup

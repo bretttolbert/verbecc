@@ -6,7 +6,7 @@ from scripts import xml_modifier
 
 """
 The "tests" in this module are for development purposes only
-and will normally be marked skip but may be unmarked skip 
+and will normally be marked skip but may be unmarked skip
 and ran with dry_run=True (test) or dry_run=False (do)
 """
 
@@ -18,7 +18,7 @@ def test_or_do_spanish_conjugation_xml_mods():
     (unless I change dry_run to False, that is)
     """
     INPUT_PATH = Path("verbecc/data/xml/conjugations/conjugations-es.xml")
-    OUTPUT_PATH = Path("verbecc/data/xml/conjugations/conjugations-es.mod.xml") 
+    OUTPUT_PATH = Path("verbecc/data/xml/conjugations/conjugations-es.mod.xml")
     xml_modifier.do_spanish_mods(INPUT_PATH, OUTPUT_PATH, dry_run=True)
 
 

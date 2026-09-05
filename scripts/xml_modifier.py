@@ -30,6 +30,7 @@ logger = LoggingUtils.get_logger(__name__)
 Element = etree._Element  # type: ignore
 ElementTree = etree._ElementTree  # type: ignore
 
+
 def remove_tenses(root: Element, tenses_to_remove: list[Tense]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:

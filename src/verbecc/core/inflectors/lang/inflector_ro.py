@@ -48,7 +48,7 @@ class InflectorRo(Inflector):
             return "nu " + s
         return s
 
-    """TODO: There are two types of reflexive verbs in Romanian: 
+    """TODO: There are two types of reflexive verbs in Romanian:
     preceded by the reflexive pronouns “se” (in the accusative) and “și” (in the dative).
     """
 
@@ -59,7 +59,7 @@ class InflectorRo(Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(
+    def get_pronouns(  # noqa: C901
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,

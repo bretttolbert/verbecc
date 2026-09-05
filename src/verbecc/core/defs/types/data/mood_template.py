@@ -1,5 +1,3 @@
-from typing import Dict
-
 from verbecc.core.defs.types.data.element import Element
 from verbecc.core.defs.types.data.tense_template import TenseTemplate
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang

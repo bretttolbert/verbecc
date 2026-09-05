@@ -1,5 +1,5 @@
 from bisect import bisect_left
-from typing import Iterator, List
+from typing import Iterator
 
 from verbecc.core.utils.logging_utils import LoggingUtils
 from verbecc.core.defs.types.data.verb import Verb

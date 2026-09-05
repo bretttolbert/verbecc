@@ -1,4 +1,3 @@
-import jsbeautifier
 from dataclasses import fields
 
 from typing import Optional

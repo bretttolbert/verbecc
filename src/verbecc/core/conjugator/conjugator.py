@@ -39,7 +39,7 @@ class Conjugator(AbstractConjugator):
             lang, lang_specific_options, self.__class__.__name__, inflector
         )
 
-    def conjugate(
+    def conjugate(  # noqa: C901
         self,
         verb_stem: str,
         mood: Mood,

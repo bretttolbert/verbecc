@@ -112,7 +112,7 @@ def test_inflector_it_conjugate_mood_tense(
 
 
 def test_inflector_it_conjugate(ccg: CompleteConjugator):
-    assert ccg.conjugate("avere") != None
+    assert ccg.conjugate("avere") is not None
 
 
 def test_inflector_itadd_subjunctive_relative_pronoun(ccg: CompleteConjugator):

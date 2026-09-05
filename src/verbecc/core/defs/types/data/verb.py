@@ -15,7 +15,10 @@ class Verb(Element):
         self.impersonal = False
 
     def __repr__(self) -> str:
-        return "infinitive={} infinitive_no_accents={} template={} translation_en={} impersonal={} predicted={} pred_score={}".format(
+        return (
+            "infinitive={} infinitive_no_accents={} template={} translation_en={} "
+            "impersonal={} predicted={} pred_score={}"
+        ).format(
             self.infinitive,
             self.infinitive_no_accents,
             self.template,

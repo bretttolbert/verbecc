@@ -1,5 +1,3 @@
-from typing import Dict
-
 from verbecc.core.defs.types.mood import Mood, Moods
 from verbecc.core.defs.types.tense import Tense, Tenses
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1
@@ -35,7 +33,8 @@ MOOD_MAP: dict[Mood, dict[LangCodeISO639_1, Mood]] = {
         LangCodeISO639_1.fr: Moods.fr.Conditionnel,
         LangCodeISO639_1.it: Moods.it.Condizionale,
         LangCodeISO639_1.pt: Moods.pt.Condicional,
-        LangCodeISO639_1.ro: Moods.ro.NA,  # The conditional mood is formed by combining the conditional particle "ar" with the infinitive form of the verb
+        LangCodeISO639_1.ro: Moods.ro.NA,  # The conditional mood is formed by
+        # combining the conditional particle "ar" with the infinitive form of the verb
     },
     Moods.en.Infinitive: {
         LangCodeISO639_1.ca: Moods.ca.Infinitiu,
@@ -87,7 +86,8 @@ TENSE_MAP: dict[Tense, dict[LangCodeISO639_1, Tense]] = {
         LangCodeISO639_1.ca: Tenses.ca.PassatSimple,
         LangCodeISO639_1.es: Tenses.es.PretéritoPerfectoSimple,
         LangCodeISO639_1.fr: Tenses.fr.PasséSimple,
-        LangCodeISO639_1.it: Tenses.it.PassatoRemoto,  # The passato prossimo (compound tense) is roughly equivalent to the present perfect and past simple tenses
+        LangCodeISO639_1.it: Tenses.it.PassatoRemoto,  # The passato prossimo
+        # (compound tense) is roughly equivalent to the present perfect and past simple tenses
         # however passato-remoto is the literal simple past tense e.g. 'io fui, tu fosti, lui fu, noi fummo',
         LangCodeISO639_1.pt: Tenses.pt.PretéritoPerfeito,
         LangCodeISO639_1.ro: Tenses.ro.PerfectSimplu,

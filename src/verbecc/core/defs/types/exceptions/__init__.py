@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from .conjugator_error import ConjugatorError
 from .conjugations_parser_error import (
     ConjugationsParserError,

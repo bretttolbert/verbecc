@@ -1,10 +1,12 @@
+# flake8: noqa
+
 from .tense import Tense  # type: ignore
 from .tenses import Tenses  # type: ignore
-from .tense_factory import TenseFactory  # type: ignore 
+from .tense_factory import TenseFactory  # type: ignore
 from .lang.tense_ca import TenseCa  # type: ignore
 from .lang.tense_en import TenseEn  # type: ignore
-from .lang.tense_es import TenseEs  # type: ignore                  
+from .lang.tense_es import TenseEs  # type: ignore
 from .lang.tense_fr import TenseFr  # type: ignore
 from .lang.tense_it import TenseIt  # type: ignore
 from .lang.tense_pt import TensePt  # type: ignore
-from .lang.tense_ro import TenseRo  # type: ignore  
+from .lang.tense_ro import TenseRo  # type: ignore

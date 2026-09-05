@@ -1,5 +1,6 @@
 import warnings
 
+
 class NonApiWarning():
     @staticmethod
     def warn() -> None:

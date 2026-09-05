@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from .logging_config import LoggingConfig
 from .formatter_config import FormatterConfig
 from .stream_handler_config import (

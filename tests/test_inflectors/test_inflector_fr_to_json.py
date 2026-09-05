@@ -1572,8 +1572,8 @@ makes it impossible to call certain tests with a -k expression e.g.
 python -m pytest . -vv -k test_conjugate[Se lever-expected_value4]
 
 I think this pattern of
-many "def test_<SUT>_<value>(fixtures)" to one "def run_test_<SUT>(value)" 
-as exhibited bleow is better than @pytest.mark.parametrize in many cases. 
+many "def test_<SUT>_<value>(fixtures)" to one "def run_test_<SUT>(value)"
+as exhibited bleow is better than @pytest.mark.parametrize in many cases.
 
 Another benefit is being able to jump directly to the specific test
 by clicking on it in VSCode. You can't do that with parametrize.

@@ -1,6 +1,5 @@
 from __future__ import print_function
 
-from bisect import bisect_left
 
 # try:
 from lxml import etree
@@ -10,7 +9,6 @@ from lxml import etree
 from importlib_resources import as_file, files
 
 # import gzip
-import os
 
 # import tempfile
 from typing import cast, Optional
