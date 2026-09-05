@@ -9,18 +9,27 @@
       - Before data was at `verbecc/verbecc/data`
       - After data is at `verbecc/src/verbecc/data`
       - Source is now at `verbecc/src/verbecc/core`
-      - `verbecc.core` is now `verbecc.core`
+      - `verbecc.src` is now `verbecc.core`
     - Modified `pyproject.toml` to scan for packages inside `src`
     - Removed `verbecc/__init__.py` which should not exist because this project is using a `src` layout
       - Also purged contents of a couple of `__init__.py` files
       - **This will undoubtedly break some things**, consequently bumping minor rev
       - Changed `setup.cfg` `description-file` to `description_file` to fix warning
   - Added numerous missing type annotations
+    - Fixed all VSCode warnings with strict type checking enabled
   - Contd. cleaning up (removing) excessive `__init__.py` imports
   - Converted from `List` to modern `list`
   - Converted from `Dict` to modern `dict`
-  - Fixed all VSCode warnings with strict type checking enabled
   - Modified build configuration to generate type stubs
+  - Modernized github actions CI config (`.github/workflows/python-package.yml`)
+  - Migrated from `flake8` to `ruff`
+  - Updated dependencies to explicitly specify `pytest` and `ruff` as optional `dev` dependencies
+    - E.g. install verbecc including optional dev deps:
+      - From PyPi: `pip install "verbecc[dev]"`
+      - From GitHub: `pip install "git+https://github.com/bretttolbert/verbecc.git[dev]"`
+      - Local (editable): `pip install -e ".[dev]"`
+  - Updated dependencies to explicitly pull optional `yaml` deps for `dataclass-wizard`
+    - I.e. `"dataclass-wizard[yaml]>=0.39.1",`
 
 
 - 2.0.3 [26 August 2026]

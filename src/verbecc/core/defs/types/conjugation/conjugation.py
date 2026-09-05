@@ -1,4 +1,8 @@
-from typing import Self, cast, Iterator, Optional, overload
+from typing import cast, Iterator, Optional, overload
+try:
+    from typing import Self  # type: ignore
+except ImportError:
+    from typing_extensions import Self  # type: ignore
 
 from verbecc.core.defs.types.person import Person
 from verbecc.core.defs.types.number import Number
@@ -90,9 +94,9 @@ class Conjugation(AbstractConjugation):
     def __getitem__(self, index: int) -> str: ...
 
     @overload
-    def __getitem__(self, index: slice) -> Self: ...
+    def __getitem__(self, index: slice) -> Self: ... # type: ignore
 
-    def __getitem__(self, index: int | slice) -> str | Self:
+    def __getitem__(self, index: int | slice) -> str | Self:  # type: ignore
         """Allows accessing elements using square bracket notation.
 
         Handles both integer indexing and slicing.

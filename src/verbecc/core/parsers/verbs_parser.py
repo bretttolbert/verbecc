@@ -1,6 +1,11 @@
 from __future__ import print_function
 from io import BytesIO
-from importlib.resources.abc import Traversable
+try:
+    # Python 3.11+
+    from importlib.resources.abc import Traversable  # type: ignore
+except ImportError:
+    # Python 3.10 and earlier
+    from importlib.abc import Traversable  # type: ignore
 from lxml import etree
 from importlib.resources import files
 
@@ -22,7 +27,7 @@ class VerbsParser:
         source: Traversable = files("verbecc.data.xml.verbs").joinpath(
             "verbs-{}.xml".format(self.lang)
         )
-        with BytesIO(source.read_bytes()) as fp:
+        with BytesIO(source.read_bytes()) as fp:  # type: ignore
             tree = etree.parse(fp, parser)  # type: ignore
             root = tree.getroot()
             root_tag = "verbs-{}".format(self.lang)

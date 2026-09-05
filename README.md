@@ -61,20 +61,31 @@
 * **Trusted**
     * Cited in [academic publications](#academic-publications-referencing-verbecc)
 
-
 ## Quick Start
+Note: Remove `[dev]` if you don't need optional dev dependencies (`pytest` and `ruff`)
+
+### Option 1: Install from PyPi
 ```bash
-git clone https://github.com/bretttolbert/verbecc.git
-cd verbecc
-pip install .
+pip install "verbecc[dev]"
 ```
 
-### Academic publications referencing verbecc
+### Option 2: Install from GitHub repo
+```bash
+pip install "git+https://github.com/bretttolbert/verbecc.git[dev]"
+```
+
+### Option 3: Clone GitHub repo and install
+```bash
+git clone https://github.com/bretttolbert/verbecc.git && cd verbecc
+pip install -e ".[dev]"
+```
+
+## Academic publications referencing verbecc
 
 - [Segura Lores, Alba. (2025) Estudio de la variación del sujeto pronominal en la ciudad de Málaga: sociolingüística cognitiva de su producción y percepción. Universität Heidelberg. pp. 69. [DOI:10.11588/heidok.00037508]](https://nbn-resolving.org/urn:nbn:de:bsz:16-heidok-375088)
 
 
-### What's new in Verbecc 2.0
+## What's new in Verbecc 2.0
 
 | verbecc 1.x | verbecc 2.x |
 | --- | --- |

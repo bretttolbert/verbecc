@@ -1,5 +1,11 @@
 from abc import abstractmethod
-from importlib.resources import abc, as_file, files
+from importlib.resources import as_file, files
+try:
+    # Python 3.11+
+    from importlib.resources.abc import Traversable  # type: ignore
+except ImportError:
+    # Python 3.10 and earlier
+    from importlib.abc import Traversable  # type: ignore
 from pathlib import Path
 from typing import Optional, TextIO, TypeVar, Generic
 
@@ -37,7 +43,7 @@ class BaseConfigUtil(Generic[T]):
         ret: Optional[T] = None
         if self._yaml_resource_path is None:
             raise Exception(f"Failed to load yaml config file {self.yaml_filename}")
-        elif isinstance(self._yaml_resource_path, abc.Traversable):  # type: ignore
+        elif isinstance(self._yaml_resource_path, Traversable):  # type: ignore
             with as_file(self._yaml_resource_path) as path:
                 with path.open("r", encoding="utf-8") as f:
                     ret = self._load_config_from_filestream(f)
