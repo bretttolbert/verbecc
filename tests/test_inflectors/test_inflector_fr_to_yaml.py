@@ -1,7 +1,5 @@
-# coding: utf-8
 import pytest
 
-from verbecc.core.defs.types.conjugation import CompleteConjugation
 from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 
@@ -1022,5 +1020,5 @@ def run_test_conjugate_to_yaml(
     assert conj_yaml == expected_value
 
 
-def test_conjugate_to_yaml_Se_lever(ccg):
+def test_conjugate_to_yaml_Se_lever(ccg: CompleteConjugator) -> None:
     run_test_conjugate_to_yaml(ccg, "Se lever", expected_value_conj_se_lever)
