@@ -13,7 +13,7 @@ def ccg():
     yield ccg
 
 
-expected_value_conj_ser : dict[str, dict[str, object]] = {
+expected_value_conj_ser: dict[str, dict[str, object]] = {
     "moods": {
         "condicional": {
             "present": [

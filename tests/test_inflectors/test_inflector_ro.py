@@ -40,7 +40,7 @@ def tcg():
 def test_all_verbs_have_templates(ccg: CompleteConjugator):
     verbs = ccg.get_verbs()
     template_names = ccg.get_template_names()
-    missing_templates : set[str] = set()
+    missing_templates: set[str] = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)

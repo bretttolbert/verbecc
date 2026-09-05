@@ -40,7 +40,7 @@ TEST_ONE_CLASS_PER_FILE = 1
 class Finder(ast.NodeVisitor):
     def __init__(self, filename: str):
         self.filename = filename
-        self.class_stack : list[str] = []
+        self.class_stack: list[str] = []
         self._class_count = 0
         self._reported_errors: list[str] = []
 
@@ -66,7 +66,7 @@ class Finder(ast.NodeVisitor):
         missing_params: list[str],
         missing_return: bool,
     ) -> None:
-        parts : list[str] = []
+        parts: list[str] = []
         errmsg = self._base_errmsg(TEST_TYPE_ANNOTATIONS)
         if missing_params:
             parts.append(errmsg + "params missing type annotation: " + ", ".join(missing_params))
@@ -91,9 +91,9 @@ class Finder(ast.NodeVisitor):
 
     def _check_func(self, node: Union[ast.FunctionDef, ast.AsyncFunctionDef]) -> None:
         is_method = bool(self.class_stack)
-        missing : list[str] = []
+        missing: list[str] = []
         # posonlyargs (py3.8+), args, kwonlyargs
-        all_args : list[ast.arg] = []
+        all_args: list[ast.arg] = []
         if hasattr(node.args, "posonlyargs"):
             all_args.extend(node.args.posonlyargs)
         all_args.extend(node.args.args)
@@ -140,7 +140,7 @@ def scan_file(path: str) -> list[str]:
 
 
 def walk_root(root: Path | str) -> list[str]:
-    errors : list[str] = []
+    errors: list[str] = []
     for dirpath, dirnames, filenames in os.walk(root):
         # skip excluded dirs
         dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS and not d.startswith(".egg-info")]

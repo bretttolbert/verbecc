@@ -325,8 +325,8 @@ def test_fr_get_str_id(ccg: CompleteConjugator):
 
 
 def test_can_conjugate_all_verbs(ccg: CompleteConjugator):
-    verbs : list[Verb] = ccg.get_verbs()
-    all_conjugations : dict[Verb, CompleteConjugation] = {}
+    verbs: list[Verb] = ccg.get_verbs()
+    all_conjugations: dict[Verb, CompleteConjugation] = {}
     for verb in verbs:
         conjugation = ccg.conjugate(verb.infinitive)
         all_conjugations[verb] = conjugation

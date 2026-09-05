@@ -125,7 +125,7 @@ class InflectorFr(Inflector):
         in the typical order, with the default pronoun first.
         E.g. Person.Second, Number.Singular => ["tú", "vos"]
         """
-        ret : list[Pronoun] = []
+        ret: list[Pronoun] = []
         if (person is None or person == Person.First) and (
             number is None or number == Number.Singular
         ):

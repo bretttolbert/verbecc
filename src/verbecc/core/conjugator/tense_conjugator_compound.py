@@ -62,7 +62,7 @@ class TenseConjugatorCompound(AbstractConjugator):
         aux_tense_template = copy.deepcopy(
             aux_co.template.mood_templates[aux_mood].tense_templates[aux_tense]
         )
-        aux_person_endings : list[PersonEnding] = []
+        aux_person_endings: list[PersonEnding] = []
         for aux_pe in aux_tense_template.person_endings:
             if aux_pe.person is not None and aux_pe.person in [
                 pe.person for pe in person_endings if pe.person is not None
@@ -288,7 +288,7 @@ class TenseConjugatorCompound(AbstractConjugator):
                 if aux_pc_number is not None:
                     number = aux_pc_number
 
-                genders : list[Gender | None] = []
+                genders: list[Gender | None] = []
                 if (
                     aux_pc.get_person() == Person.Third
                     and aux_pc.get_gender() is not None

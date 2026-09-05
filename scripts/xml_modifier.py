@@ -14,10 +14,9 @@ E.g.
 
 """
 
-from typing import Optional
+from typing import Optional, cast
 from pathlib import Path
 from lxml import etree, objectify
-import os
 from typing import Sequence, Tuple
 from verbecc.core.defs.types.tense import Tense, Tenses
 from verbecc.core.defs.types.mood import Mood, Moods
@@ -28,8 +27,10 @@ OUTPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.mod.xml"
 
 logger = LoggingUtils.get_logger(__name__)
 
+Element = etree._Element  # type: ignore
+ElementTree = etree._ElementTree  # type: ignore
 
-def remove_tenses(root: etree._Element, tenses_to_remove: list[Tense]) -> None:
+def remove_tenses(root: Element, tenses_to_remove: list[Tense]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -41,7 +42,7 @@ def remove_tenses(root: etree._Element, tenses_to_remove: list[Tense]) -> None:
     logger.info("removed {} elements".format(removed_elem_cnt))
 
 
-def remove_mood(root: etree._Element, moods_to_remove: list[Mood]) -> None:
+def remove_mood(root: Element, moods_to_remove: list[Mood]) -> None:
     removed_elem_cnt = 0
     for template_elem in root:
         if template_elem.tag == "template":
@@ -53,11 +54,11 @@ def remove_mood(root: etree._Element, moods_to_remove: list[Mood]) -> None:
 
 
 def find_tense(
-    template_elem: etree._Element,
+    template_elem: Element,
     mood: Mood,
     tense: Tense,
     should_remove_mood: bool = False,
-) -> Optional[etree._Element]:
+) -> Optional[Element]:
     # find tense to move
     for mood_elem in template_elem:
         if mood_elem.tag == mood:
@@ -77,7 +78,7 @@ def find_tense(
 
 
 def move_tense(
-    root: etree._Element,
+    root: Element,
     tense: Tense,
     old_mood: Mood,
     new_mood: Mood,
@@ -100,13 +101,13 @@ def move_tense(
     logger.info("moved {} elements".format(moved_elem_cnt))
 
 
-def read_input_file(path: Path) -> etree._ElementTree:
+def read_input_file(path: Path) -> ElementTree:
     parser = etree.XMLParser(dtd_validation=False, encoding="utf-8")
     tree = etree.parse(path, parser)
     return tree
 
 
-def elem_tobytes(elem: etree._Element) -> bytes:
+def elem_tobytes(elem: Element) -> bytes:
     return etree.tostring(
         elem,
         encoding="utf-8",
@@ -116,15 +117,15 @@ def elem_tobytes(elem: etree._Element) -> bytes:
     )
 
 
-def elem_tostring(elem: etree._Element) -> str:
+def elem_tostring(elem: Element) -> str:
     return elem_tobytes(elem).decode("utf-8")
 
 
-def repr_elem(elem: etree._Element) -> str:
+def repr_elem(elem: Element) -> str:
     return f"{elem.tag}: {elem} {elem_tostring(elem)}"
 
 
-def write_output_file(tree: etree._ElementTree, path: Path) -> None:
+def write_output_file(tree: ElementTree, path: Path) -> None:
     root = tree.getroot()
     with open(path, "wb") as f:
         objectify.deannotate(root, cleanup_namespaces=True)
@@ -201,7 +202,7 @@ Spanish gerundio also has two elements.
 
 
 def remove_nth_element_of_every_matching_great_grandchild(
-    root: etree._Element,
+    root: Element,
     great_grandparent_elem_tag: str,
     grandparent_elem_tag: str,
     parent_elem_tag: str,
@@ -210,52 +211,53 @@ def remove_nth_element_of_every_matching_great_grandchild(
     dry_run: bool = True,
 ) -> int:
     """
-    n = the (1-based) indice of the element to remove
-
-    returns number of elements removed
+    n = the 1-based index of the element to remove.
+    Returns the number of elements removed.
     """
     if n < 1:
-        raise ValueError("n must be nonzero")
+        raise ValueError("n must be greater than or equal to 1")
+
+    # Construct XPath path leading directly to parent elements.
+    # Note: Using translate() handles case-insensitivity for the grandparent tag.
+    xpath_query = (
+        f"./{great_grandparent_elem_tag}/"
+        f"*[translate(name(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = '{grandparent_elem_tag.lower()}']/"
+        f"{parent_elem_tag}"
+    )
+
     cnt = 0
-    for great_grandparent_elem in root:
-        # E.g. template
-        if great_grandparent_elem.tag == great_grandparent_elem_tag:
-            # E.g. mood
-            for grandparent_elem in great_grandparent_elem:
-                if grandparent_elem.tag.lower() == grandparent_elem_tag:
-                    # E.g. tense
-                    for parent_elem in grandparent_elem:
-                        if parent_elem.tag == parent_elem_tag:
-                            elem_n = 1
-                            # E.g. <p> elem
-                            for elem in parent_elem:
-                                if elem.tag == elem_to_remove_tag:
-                                    if elem_n == n:
-                                        if dry_run is False:
-                                            parent_elem.remove(elem)
-                                            logger.info(
-                                                f"Removed elem {repr_elem(elem)}"
-                                            )
-                                        else:
-                                            logger.info(
-                                                f"Would have removed elem {repr_elem(elem)}"
-                                            )
-                                        cnt += 1
-                                    elem_n += 1
-    qualifier = ""
-    if dry_run:
-        qualifier = "would have "
+    # This XPath selects elements, but lxml's type stubs model ``xpath`` as
+    # potentially returning scalar XPath results as well.
+    parents = cast(list[Element], root.xpath(xpath_query))
+    for parent in parents:
+        # Filter children matching the target tag
+        matching_children = [
+            child for child in parent if child.tag == elem_to_remove_tag
+        ]
+
+        # Check if the 1-based index exists
+        if len(matching_children) >= n:
+            target_elem = matching_children[n - 1]
+            action_str = "Would have removed" if dry_run else "Removed"
+
+            if not dry_run:
+                parent.remove(target_elem)
+
+            logger.info(f"{action_str} elem {repr_elem(target_elem)}")
+            cnt += 1
+
+    qualifier = "would have " if dry_run else ""
     logger.info(
         f"{qualifier}removed {cnt} <{elem_to_remove_tag}> elements "
-        + f"descendent from parent element {parent_elem_tag}, "
-        + f"from grandparent element {grandparent_elem_tag}, "
-        + f"from great-grandparent element {great_grandparent_elem_tag}, "
+        f"descendent from parent element {parent_elem_tag}, "
+        f"from grandparent element {grandparent_elem_tag}, "
+        f"from great-grandparent element {great_grandparent_elem_tag}."
     )
     return cnt
 
 
 def remove_second_p_element_from_every_matching_template(
-    root: etree._Element, mood: Mood, tense: Tense, dry_run: bool = True
+    root: Element, mood: Mood, tense: Tense, dry_run: bool = True
 ) -> int:
     return remove_nth_element_of_every_matching_great_grandchild(
         root,
