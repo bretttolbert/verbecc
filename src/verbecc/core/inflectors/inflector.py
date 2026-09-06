@@ -20,7 +20,6 @@ from verbecc.core.defs.types.tense import Tense, Tenses
 from verbecc.core.defs.types.pronoun import Pronoun
 from verbecc.core.parsers.conjugations_parser import ConjugationsParser
 from verbecc.core.parsers.verbs_parser import VerbsParser
-from verbecc.core.utils.warnings import NonApiWarning
 
 
 class Inflector(ABC):
@@ -270,7 +269,7 @@ class Inflector(ABC):
         pronoun: Optional[Pronoun],
     ) -> str:
         if is_reflexive:
-            s += self.private_get_pronoun_suffix(person, number, gender)
+            s += self._get_pronoun_suffix(person, number, gender)
         return s
 
     def compound_conjugation_not_applicable(
@@ -337,20 +336,17 @@ class Inflector(ABC):
 
     # private:
 
-    def private_get_pronoun_suffix(
+    def _get_pronoun_suffix(
         self,
         person: Person,
         number: Number,
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
-        NonApiWarning.warn()
         return " " + self.get_pronouns(person, number, gender)[0]
 
     def private_is_impersonal_verb(self, infinitive: str) -> bool:
-        NonApiWarning.warn()
         return False
 
-    def private_get_verbs(self) -> Verbs:
-        NonApiWarning.warn()
+    def _get_verbs(self) -> Verbs:
         return self._verbs

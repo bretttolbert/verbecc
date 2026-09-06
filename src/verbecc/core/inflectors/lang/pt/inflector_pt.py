@@ -12,7 +12,6 @@ from verbecc.core.defs.types.lang_specific_options import (
 )
 from verbecc.core.inflectors.inflector import Inflector
 from verbecc.core.defs.types.pronoun import Pronoun, Pronouns
-from verbecc.core.utils.warnings import NonApiWarning
 
 
 class InflectorPt(Inflector):
@@ -67,7 +66,7 @@ class InflectorPt(Inflector):
                 mood == Moods.pt.Infinitivo
                 and tense == Tenses.pt.InfinitivoPessoalPresente
             ):
-                s += " " + self.private_get_pronoun_suffix(
+                s += " " + self._get_pronoun_suffix(
                     person, number, gender, imperative=imperative
                 )
 
@@ -80,7 +79,7 @@ class InflectorPt(Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(  # noqa: C901
+    def get_pronouns(
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
@@ -258,14 +257,13 @@ class InflectorPt(Inflector):
         else:
             return "se"
 
-    def private_get_pronoun_suffix(  # noqa: C901
+    def _get_pronoun_suffix(
         self,
         person: Person,
         number: Number,
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
-        NonApiWarning.warn()
         ret = ""
         if person == Person.First and number == Number.Singular:
             ret = "eu"

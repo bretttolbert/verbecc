@@ -1,3 +1,5 @@
+# pyright: reportPrivateUsage=false
+
 import pytest
 from lxml import etree
 
@@ -49,27 +51,27 @@ def test_all_verbs_have_templates(ccg: CompleteConjugator):
 
 def test_add_subjunctive_relative_prounoun(ccg: CompleteConjugator):
     assert (
-        ccg.private_get_inflector().add_subjunctive_relative_pronoun("tu manges", "")
+        ccg._get_inflector().add_subjunctive_relative_pronoun("tu manges", "")
         == "que tu manges"
     )
     assert (
-        ccg.private_get_inflector().add_subjunctive_relative_pronoun("il mange", "") == "qu'il mange"
+        ccg._get_inflector().add_subjunctive_relative_pronoun("il mange", "") == "qu'il mange"
     )
     assert (
-        ccg.private_get_inflector().add_subjunctive_relative_pronoun("elles mangent", "")
+        ccg._get_inflector().add_subjunctive_relative_pronoun("elles mangent", "")
         == "qu'elles mangent"
     )
 
 
 def testadd_reflexive_pronoun(ccg: CompleteConjugator):
-    assert ccg.private_get_inflector().add_reflexive_pronoun("lever") == "se lever"
-    assert ccg.private_get_inflector().add_reflexive_pronoun("écrouler") == "s'écrouler"
+    assert ccg._get_inflector().add_reflexive_pronoun("lever") == "se lever"
+    assert ccg._get_inflector().add_reflexive_pronoun("écrouler") == "s'écrouler"
 
 
 def testsplit_reflexive(ccg: CompleteConjugator):
-    assert ccg.private_get_inflector().split_reflexive("se lever") == (True, "lever")
-    assert ccg.private_get_inflector().split_reflexive("s'écrouler") == (True, "écrouler")
-    assert ccg.private_get_inflector().split_reflexive("secouer") == (False, "secouer")
+    assert ccg._get_inflector().split_reflexive("se lever") == (True, "lever")
+    assert ccg._get_inflector().split_reflexive("s'écrouler") == (True, "écrouler")
+    assert ccg._get_inflector().split_reflexive("secouer") == (False, "secouer")
 
 
 @pytest.mark.parametrize(
@@ -84,14 +86,14 @@ def testsplit_reflexive(ccg: CompleteConjugator):
 def test_inflector_fr_verb_can_be_reflexive(
     ccg: CompleteConjugator, infinitive: str, expected_result: bool
 ):
-    assert ccg.private_get_inflector().verb_can_be_reflexive(infinitive) == expected_result
+    assert ccg._get_inflector().verb_can_be_reflexive(infinitive) == expected_result
 
 
 def test_inflector_fr_impersonal_verbs(ccg: CompleteConjugator):
     impersonal_verbs = [
         v.infinitive
-        for v in ccg.private_get_inflector().private_get_verbs()
-        if ccg.private_get_inflector().private_is_impersonal_verb(v.infinitive)
+        for v in ccg._get_inflector()._get_verbs()
+        if ccg._get_inflector().private_is_impersonal_verb(v.infinitive)
     ]
     assert set(impersonal_verbs) == set(
         [
@@ -136,7 +138,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(tcg: TenseConjugator):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem, mood, tense, tense_template
     )
     assert tc == TenseConjugation(
@@ -182,18 +184,18 @@ def test_inflector_fr_conjugate_simple_mood_tense(tcg: TenseConjugator):
 
 
 def test_inflector_fr_get_verb_stem_from_template_name(ccg: CompleteConjugator):
-    verb_stem = ccg.private_get_inflector().get_verb_stem_from_template_name("manger", "man:ger")
+    verb_stem = ccg._get_inflector().get_verb_stem_from_template_name("manger", "man:ger")
     assert verb_stem == "man"
-    verb_stem = ccg.private_get_inflector().get_verb_stem_from_template_name("téléphoner", "aim:er")
+    verb_stem = ccg._get_inflector().get_verb_stem_from_template_name("téléphoner", "aim:er")
     assert verb_stem == "téléphon"
-    verb_stem = ccg.private_get_inflector().get_verb_stem_from_template_name("vendre", "ten:dre")
+    verb_stem = ccg._get_inflector().get_verb_stem_from_template_name("vendre", "ten:dre")
     assert verb_stem == "ven"
     # In the case of irregular verbs, the verb stem is empty string
-    verb_stem = ccg.private_get_inflector().get_verb_stem_from_template_name("aller", ":aller")
+    verb_stem = ccg._get_inflector().get_verb_stem_from_template_name("aller", ":aller")
     assert verb_stem == ""
     # The infinitive ending must match the template ending
     with pytest.raises(ConjugatorError):
-        verb_stem = ccg.private_get_inflector().get_verb_stem_from_template_name("vendre", "man:ger")
+        verb_stem = ccg._get_inflector().get_verb_stem_from_template_name("vendre", "man:ger")
 
 
 @pytest.mark.parametrize(
@@ -225,9 +227,9 @@ def test_inflector_fr_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg.private_get_inflector().get_pronouns(person, number, gender)[0]
+    pronoun = ccg._get_inflector().get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg.private_get_inflector().make_pronoun_reflexive(pronoun)
+        pronoun = ccg._get_inflector().make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 
@@ -336,7 +338,7 @@ def test_can_conjugate_all_verbs(ccg: CompleteConjugator):
 def test_inflector_fr_conjugate_compound_raser(tcg: TenseConjugator):
     infinitive = "raser"
     co = tcg.get_co(infinitive)
-    tc = tcg.private_get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
         Tenses.fr.Passé,
@@ -416,7 +418,7 @@ def test_inflector_fr_conjugate_compound_se_raser(tcg: TenseConjugator):
     """
     infinitive = "se raser"
     co = tcg.get_co(infinitive)
-    tc = tcg.private_get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
         Tenses.fr.Passé,
@@ -537,7 +539,7 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(tcg: 
     """
     infinitive = "parler"
     co = tcg.get_co(infinitive)
-    tc = tcg.private_get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
         co,
         Moods.fr.Indicatif,
         Tenses.fr.PasséComposé,
@@ -626,7 +628,7 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent_nopronouns(tcg: 
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -673,7 +675,7 @@ def test_inflector_fr_conjugate_simple_avoir_participe_participe_passé(tcg: Ten
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -707,7 +709,7 @@ def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(tcg: Te
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -741,7 +743,7 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(tcg: TenseConjug
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -773,7 +775,7 @@ def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(tcg: TenseConjug
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.fr, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,
@@ -805,31 +807,31 @@ def test_combine_pronoun_and_conj(ccg: CompleteConjugator):
     E.g. "ils se" = "habillent" = "ils s'habillent"
     E.g. "ils se" + "étaient" = "ils s'étaient
     """
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("je", "mange") == "je mange"
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("elle", "a") == "elle a"
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("je", "ai") == "j'ai"
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("je me", "habille") == "je m'habille"
+    assert ccg._get_inflector().combine_pronoun_and_conj("je", "mange") == "je mange"
+    assert ccg._get_inflector().combine_pronoun_and_conj("elle", "a") == "elle a"
+    assert ccg._get_inflector().combine_pronoun_and_conj("je", "ai") == "j'ai"
+    assert ccg._get_inflector().combine_pronoun_and_conj("je me", "habille") == "je m'habille"
     assert (
-        ccg.private_get_inflector().combine_pronoun_and_conj("tu te", "habilles") == "tu t'habilles"
+        ccg._get_inflector().combine_pronoun_and_conj("tu te", "habilles") == "tu t'habilles"
     )
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("il se", "habille") == "il s'habille"
+    assert ccg._get_inflector().combine_pronoun_and_conj("il se", "habille") == "il s'habille"
     assert (
-        ccg.private_get_inflector().combine_pronoun_and_conj("elle se", "habille")
+        ccg._get_inflector().combine_pronoun_and_conj("elle se", "habille")
         == "elle s'habille"
     )
     assert (
-        ccg.private_get_inflector().combine_pronoun_and_conj("ils se", "habille") == "ils s'habille"
+        ccg._get_inflector().combine_pronoun_and_conj("ils se", "habille") == "ils s'habille"
     )
     assert (
-        ccg.private_get_inflector().combine_pronoun_and_conj("elles se", "habille")
+        ccg._get_inflector().combine_pronoun_and_conj("elles se", "habille")
         == "elles s'habille"
     )
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("je", "étais") == "j'étais"
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("il", "était") == "il était"
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("elle", "était") == "elle était"
-    assert ccg.private_get_inflector().combine_pronoun_and_conj("elle se", "était") == "elle s'était"
+    assert ccg._get_inflector().combine_pronoun_and_conj("je", "étais") == "j'étais"
+    assert ccg._get_inflector().combine_pronoun_and_conj("il", "était") == "il était"
+    assert ccg._get_inflector().combine_pronoun_and_conj("elle", "était") == "elle était"
+    assert ccg._get_inflector().combine_pronoun_and_conj("elle se", "était") == "elle s'était"
     assert (
-        ccg.private_get_inflector().combine_pronoun_and_conj("ils se", "étaient") == "ils s'étaient"
+        ccg._get_inflector().combine_pronoun_and_conj("ils se", "étaient") == "ils s'étaient"
     )
 
 

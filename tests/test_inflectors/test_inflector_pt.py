@@ -1,3 +1,5 @@
+# pyright: reportPrivateUsage=false
+
 import pytest
 
 from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
@@ -759,9 +761,9 @@ def test_inflector_pt_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg.private_get_inflector().get_pronouns(person, number, gender)[0]
+    pronoun = ccg._get_inflector().get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg.private_get_inflector().make_pronoun_reflexive(pronoun)
+        pronoun = ccg._get_inflector().make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 

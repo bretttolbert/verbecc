@@ -14,7 +14,6 @@ from verbecc.core.defs.types.lang_specific_options import (
 from verbecc.core.inflectors.inflector import Inflector
 from verbecc.core.utils import string_utils
 from verbecc.core.defs.types.pronoun import Pronoun, Pronouns
-from verbecc.core.utils.warnings import NonApiWarning
 
 """
 DR & MRS VANDERTRAMPP verbs
@@ -114,7 +113,7 @@ class InflectorFr(Inflector):
             return Gender.m
         return None
 
-    def get_pronouns(  # noqa: C901
+    def get_pronouns(
         self,
         person: Optional[Person] = None,
         number: Optional[Number] = None,
@@ -276,7 +275,7 @@ class InflectorFr(Inflector):
             if mood != Moods.fr.Imperatif:
                 s = self.add_reflexive_pronoun(s)
             else:
-                s += self.private_get_pronoun_suffix(person, number, gender)
+                s += self._get_pronoun_suffix(person, number, gender)
         return s
 
     def compound_conjugation_not_applicable(
@@ -321,18 +320,16 @@ class InflectorFr(Inflector):
 
     # private:
 
-    def private_get_pronoun_suffix(
+    def _get_pronoun_suffix(
         self,
         person: Person,
         number: Number,
         gender: Gender = Gender.m,
         imperative: bool = True,
     ) -> str:
-        NonApiWarning.warn()
         return "-" + self.get_pronouns(person, number, gender)[0].replace("tu", "toi")
 
     def private_is_impersonal_verb(self, infinitive: str) -> bool:
-        NonApiWarning.warn()
         ret = False
         verb = self.find_verb_by_infinitive(infinitive)
         template = self.find_template(verb.template)

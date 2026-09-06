@@ -12,7 +12,6 @@ from verbecc.core.defs.types.mood import Mood
 from verbecc.core.defs.types.tense import Tense
 from verbecc.core.defs.types.conjugation.tense_conjugation import TenseConjugation
 from verbecc.core.inflectors.inflector import Inflector
-from verbecc.core.utils.warnings import NonApiWarning
 
 
 class CompleteConjugator(AbstractConjugator):
@@ -96,6 +95,5 @@ class CompleteConjugator(AbstractConjugator):
             conjugate_pronouns=conjugate_pronouns,
         )
 
-    def private_get_inflector(self) -> Inflector:
-        NonApiWarning.warn()
+    def _get_inflector(self) -> Inflector:
         return self._inflector

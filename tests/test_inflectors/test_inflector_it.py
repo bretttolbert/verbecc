@@ -1,3 +1,5 @@
+# pyright: reportPrivateUsage=false
+
 import pytest
 
 from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
@@ -117,7 +119,7 @@ def test_inflector_it_conjugate(ccg: CompleteConjugator):
 
 def test_inflector_itadd_subjunctive_relative_pronoun(ccg: CompleteConjugator):
     assert (
-        ccg.private_get_inflector().add_subjunctive_relative_pronoun("io abbia", "")
+        ccg._get_inflector().add_subjunctive_relative_pronoun("io abbia", "")
         == "che io abbia"
     )
 
@@ -151,9 +153,9 @@ def test_inflector_it_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg.private_get_inflector().get_pronouns(person, number, gender)[0]
+    pronoun = ccg._get_inflector().get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg.private_get_inflector().make_pronoun_reflexive(pronoun)
+        pronoun = ccg._get_inflector().make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 
@@ -322,7 +324,7 @@ def test_inflector_it_alzarsi_indicativo_passato_prossimo(
 def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(tcg: TenseConjugator):
     infinitive = "essere"
     co = tcg.get_co(infinitive)
-    tc = tcg.private_get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
         co,
         Moods.it.Indicativo,
         Tenses.it.PassatoProssimo,

@@ -15,7 +15,6 @@ from verbecc.core.defs.types.number import Number
 from verbecc.core.inflectors.inflector import Inflector
 from verbecc.core.inflectors.inflector_factory import InflectorFactory
 from verbecc.core.utils.logging_utils import LoggingUtils
-from verbecc.core.utils.warnings import NonApiWarning
 
 
 class AbstractConjugator(ABC):
@@ -112,6 +111,5 @@ class AbstractConjugator(ABC):
             raise Exception("Failed to get conjugation, tense_conjugation is empty")
         return tense_conjugation[0]
 
-    def private_get_inflector(self) -> Inflector:
-        NonApiWarning.warn()
+    def _get_inflector(self) -> Inflector:
         return self._inflector

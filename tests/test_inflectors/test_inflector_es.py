@@ -1,3 +1,5 @@
+# pyright: reportPrivateUsage=false
+
 import pytest
 from lxml import etree
 
@@ -940,7 +942,7 @@ def test_inflector_esget_co(ccg: CompleteConjugator):
 
 
 def test_inflector_es_get_verb_stem_from_template_name(ccg: CompleteConjugator):
-    verb_stem = ccg.private_get_inflector().get_verb_stem_from_template_name("abañar", "cort:ar")
+    verb_stem = ccg._get_inflector().get_verb_stem_from_template_name("abañar", "cort:ar")
     assert verb_stem == "abañ"
 
 
@@ -960,7 +962,7 @@ def test_inflector_es_conjugate_simple_mood_tense(tcg: TenseConjugator):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.es, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         verb_stem,
         mood,
         tense,
@@ -1013,9 +1015,9 @@ def test_inflector_es_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg.private_get_inflector().get_pronouns(person, number, gender)[0]
+    pronoun = ccg._get_inflector().get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg.private_get_inflector().make_pronoun_reflexive(pronoun)
+        pronoun = ccg._get_inflector().make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 
@@ -1675,7 +1677,7 @@ def test_inflector_es_conjugate_simple_ser_infinititivo(tcg: TenseConjugator):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.es, mood).parse(tense_elem)
-    tc = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,

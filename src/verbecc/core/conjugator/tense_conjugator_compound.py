@@ -97,7 +97,7 @@ class TenseConjugatorCompound(AbstractConjugator):
 
         return ret
 
-    def _conjugate_compound_primary_verb(  # noqa: C901
+    def _conjugate_compound_primary_verb(
         self,
         co: ConjugationObjects,
         mood: Mood,

@@ -1,3 +1,5 @@
+# pyright: reportPrivateUsage=false
+
 import pytest
 from lxml import etree
 from typing import Any, Generator
@@ -2939,13 +2941,13 @@ def test_inflector_caget_co_3(ccg: CompleteConjugator):
 
 
 def test_inflector_ca_get_verb_stem_from_template_name(ccg: CompleteConjugator):
-    inflector = ccg.private_get_inflector()
+    inflector = ccg._get_inflector()
     verb_stem = inflector.get_verb_stem_from_template_name("parlar", "cant:ar")
     assert verb_stem == "parl"
 
 
 def test_inflector_ca_get_verb_stem_from_template_name_2(ccg: CompleteConjugator):
-    inflector = ccg.private_get_inflector()
+    inflector = ccg._get_inflector()
     verb_stem = inflector.get_verb_stem_from_template_name("abandonar", "cant:ar")
     assert verb_stem == "abandon"
 
@@ -2966,7 +2968,7 @@ def test_inflector_ca_conjugate_simple_mood_tense(tcg: TenseConjugator):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.ca, mood).parse(tense_elem)
-    tc: TenseConjugation = tcg.private_get_tense_conjugator_simple().conjugate_simple_mood_tense(
+    tc: TenseConjugation = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         verb_stem, mood, tense, tense_template
     )
     assert [c.get_conjugations() for c in tc] == [
@@ -3010,7 +3012,7 @@ def test_inflector_ca_get_pronouns(
     is_reflexive: bool,
     expected_result: str,
 ):
-    inflector = ccg.private_get_inflector()
+    inflector = ccg._get_inflector()
     pronoun = inflector.get_pronouns(person, number, gender)[0]
     if is_reflexive:
         pronoun = inflector.make_pronoun_reflexive(pronoun)

@@ -11,7 +11,6 @@ from verbecc.core.inflectors.inflector import Inflector
 from verbecc.core.conjugator.abstract_conjugator import AbstractConjugator
 from verbecc.core.conjugator.tense_conjugator_simple import TenseConjugatorSimple
 from verbecc.core.conjugator.tense_conjugator_compound import TenseConjugatorCompound
-from verbecc.core.utils.warnings import NonApiWarning
 
 
 class TenseConjugator(AbstractConjugator):
@@ -93,10 +92,8 @@ class TenseConjugator(AbstractConjugator):
                 conjugate_pronouns=conjugate_pronouns,
             )
 
-    def private_get_tense_conjugator_simple(self) -> TenseConjugatorSimple:
-        NonApiWarning.warn()
+    def _get_tense_conjugator_simple(self) -> TenseConjugatorSimple:
         return self._tense_conjugator_simple
 
-    def private_get_tense_conjugator_compound(self) -> TenseConjugatorCompound:
-        NonApiWarning.warn()
+    def _get_tense_conjugator_compound(self) -> TenseConjugatorCompound:
         return self._tense_conjugator_compound

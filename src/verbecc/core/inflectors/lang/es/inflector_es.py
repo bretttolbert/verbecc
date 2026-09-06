@@ -190,7 +190,7 @@ class InflectorEs(Inflector):
             },
         }
 
-    def modify_person_ending_if_applicable(  # noqa: C901
+    def modify_person_ending_if_applicable(
         self,
         person_ending: PersonEnding,
         mood: Mood,

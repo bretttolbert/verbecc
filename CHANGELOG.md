@@ -1,41 +1,58 @@
 # verbecc Changelog
 
 - 2.1.0 [11 September 2026]
-  - Fixed packaging, misc. modernization
-    - **Dropping support for python3.9** (it has been EOL for nearly a year)
-      - Migrated from `importlib_resources`to `importlib.resources`
-      - Removed python39 import resource hacks
-    - Changed structure from `verbecc/verbecc/src` to more standard `verbecc/src/verbecc`
-      - Before data was at `verbecc/verbecc/data`
-      - After data is at `verbecc/src/verbecc/data`
-      - Source is now at `verbecc/src/verbecc/core`
-      - `verbecc.src` is now `verbecc.core`
-    - Modified `pyproject.toml` to scan for packages inside `src`
-    - Removed `verbecc/__init__.py` which should not exist because this project is using a `src` layout
-    - Modified (simplified) contents of a many `__init__.py` files
-      - **This will likely break some things**, consequently bumping minor rev
-      - Doing this to comply with new style guide rule:
-        - [R006 - `__init__.py` files shall not contain imports deeper than one level](./CONTRIBUTING.md#r006---__init__py-files-shall-not-contain-imports-deeper-than-one-level)
-    - Changed `setup.cfg` `description-file` to `description_file` to fix warning
-  - Added numerous missing type annotations
-    - Fixed all VSCode warnings with strict type checking enabled
-    - Added `str` as optional type for public API methods, e.g. so that either specific types like `Mood` or generic strings are explicitly allowed e.g.
-      - Before: `mood: Mood`
-      - After: `mood: Mood | str`
-  - Contd. cleaning up (removing) excessive `__init__.py` imports
-  - Converted from `List` to modern `list`
-  - Converted from `Dict` to modern `dict`
-  - Modified build configuration to generate type stubs
-  - Modernized github actions CI config (`.github/workflows/python-package.yml`)
-  - Migrated linter from `flake8` to `ruff`
-  - Updated dependencies to explicitly specify `pytest` and `ruff` as optional `dev` dependencies
-    - E.g. install verbecc including optional dev deps:
-      - From PyPi: `pip install "verbecc[dev]"`
-      - From GitHub: `pip install "git+https://github.com/bretttolbert/verbecc.git[dev]"`
-      - Local (editable): `pip install -e ".[dev]"`
-  - Updated dependencies to explicitly pull optional `yaml` deps for `dataclass-wizard`
-    - I.e. `"dataclass-wizard[yaml]>=0.39.1",`
-
+  - In a nutshell
+    - This PR (2.1.0) modernizes the project layout and drops Python 3.9 support. The biggest user-facing changes are a move to a standard src/ layout and a package rename/restructure (verbecc.src → verbecc.core). Several __init__.py files were simplified, which may break some import paths.
+  - Summary (key data points)
+    - PR: 2.1.0 — "Misc. modernization" (author: bretttolbert)
+    - URL: https://github.com/bretttolbert/verbecc/pull/54
+    - State: open (draft)
+    - Description highlights:
+      - Dropping support for Python 3.9
+      - Restructured repository to standard src layout (verbecc/src/verbecc)
+      - Renamed package/namespace from verbecc.src to verbecc.core
+      - Simplified multiple __init__.py files (potential import breakages)
+      - CHANGELOG link included in PR description
+    - Size: 252 files changed, +2,214 additions, −2,006 deletions (large refactor)
+    - Risk assessment: Medium–High
+      - Why: Large movement of files + package renames and __init__ simplifications are likely to break downstream imports, packaging, and third-party integrations. Dropping Python 3.9 reduces the test surface but may require CI and packaging updates.
+    - Tests / coverage: not reported here — recommend running test matrix on supported Python versions
+    - Breaking-change likelihood: High for consumers who imported using old package paths or relied on package layout; moderate for internal code once imports are updated.
+  - Details
+    - Fixed packaging, misc. modernization
+      - **Dropping support for python3.9** (it has been EOL for nearly a year)
+        - Migrated from `importlib_resources`to `importlib.resources`
+        - Removed python39 import resource hacks
+      - Changed structure from `verbecc/verbecc/src` to more standard `verbecc/src/verbecc`
+        - Before data was at `verbecc/verbecc/data`
+        - After data is at `verbecc/src/verbecc/data`
+        - Source is now at `verbecc/src/verbecc/core`
+        - `verbecc.src` is now `verbecc.core`
+      - Modified `pyproject.toml` to scan for packages inside `src`
+      - Removed `verbecc/__init__.py` which should not exist because this project is using a `src` layout
+      - Modified (simplified) contents of a many `__init__.py` files
+        - **This will likely break some things**, consequently bumping minor rev
+        - Doing this to comply with new style guide rule:
+          - [R006 - `__init__.py` files shall not contain imports deeper than one level](./CONTRIBUTING.md#r006---__init__py-files-shall-not-contain-imports-deeper-than-one-level)
+      - Changed `setup.cfg` `description-file` to `description_file` to fix warning
+    - Added numerous missing type annotations
+      - Fixed all VSCode warnings with strict type checking enabled
+      - Added `str` as optional type for public API methods, e.g. so that either specific types like `Mood` or generic strings are explicitly allowed e.g.
+        - Before: `mood: Mood`
+        - After: `mood: Mood | str`
+    - Contd. cleaning up (removing) excessive `__init__.py` imports
+    - Converted from `List` to modern `list`
+    - Converted from `Dict` to modern `dict`
+    - Modified build configuration to generate type stubs
+    - Modernized github actions CI config (`.github/workflows/python-package.yml`)
+    - Migrated linter from `flake8` to `ruff`
+    - Updated dependencies to explicitly specify `pytest` and `ruff` as optional `dev` dependencies
+      - E.g. install verbecc including optional dev deps:
+        - From PyPi: `pip install "verbecc[dev]"`
+        - From GitHub: `pip install "git+https://github.com/bretttolbert/verbecc.git[dev]"`
+        - Local (editable): `pip install -e ".[dev]"`
+    - Updated dependencies to explicitly pull optional `yaml` deps for `dataclass-wizard`
+      - I.e. `"dataclass-wizard[yaml]>=0.39.1",`
 
 - 2.0.3 [26 August 2026]
   - PR #51 [Peter Abolins]

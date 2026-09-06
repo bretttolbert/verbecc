@@ -2,7 +2,7 @@ from verbecc.core.defs.types.pronoun.pronoun import Pronoun
 
 
 class PronounEn(Pronoun):
-    I = "I"  # noqa: E741
+    I = "I"
     you = "you"
     he = "he"
     she = "she"
