@@ -4,7 +4,7 @@ from verbecc.core.defs.types.lang_code import LangCodeISO639_1
 from verbecc.core.defs.types.lang_specific_options.lang_specific_options import (
     LangSpecificOptions,
 )
-from verbecc.core.defs.types.lang_specific_options.lang.es.lang_specific_options_es import (
+from verbecc.core.defs.types.lang_specific_options.lang.es import (
     LangSpecificOptionsEs,
 )
 

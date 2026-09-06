@@ -1,0 +1,1 @@
+from .inflector_it import InflectorIt  # type: ignore

@@ -1,0 +1,1 @@
+from .pronoun_es import PronounEs  # type: ignore

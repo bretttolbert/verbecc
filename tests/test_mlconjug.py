@@ -4,7 +4,7 @@ from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 from verbecc.core.mlconjug.data_set import DataSet
 from verbecc.core.mlconjug.predictor import TemplatePredictor
 from verbecc.core.mlconjug.feature_extract import extract_verb_features
-from verbecc.core.inflectors.lang.inflector_fr import InflectorFr
+from verbecc.core.inflectors.lang.fr import InflectorFr
 from verbecc.core.utils.config.verbecc_config_util import VerbeccConfigUtil
 
 config = VerbeccConfigUtil().load_config()

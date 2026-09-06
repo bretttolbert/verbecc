@@ -4,12 +4,12 @@ from verbecc.core.defs.types.lang_specific_options import LangSpecificOptions
 from verbecc.core.defs.types.exceptions import InvalidLangError
 from verbecc.core.defs.types.lang_code import LangCodeISO639_1
 from verbecc.core.inflectors.inflector import Inflector
-from verbecc.core.inflectors.lang.inflector_ca import InflectorCa
-from verbecc.core.inflectors.lang.inflector_es import InflectorEs
-from verbecc.core.inflectors.lang.inflector_fr import InflectorFr
-from verbecc.core.inflectors.lang.inflector_it import InflectorIt
-from verbecc.core.inflectors.lang.inflector_pt import InflectorPt
-from verbecc.core.inflectors.lang.inflector_ro import InflectorRo
+from verbecc.core.inflectors.lang.ca import InflectorCa
+from verbecc.core.inflectors.lang.es import InflectorEs
+from verbecc.core.inflectors.lang.fr import InflectorFr
+from verbecc.core.inflectors.lang.it import InflectorIt
+from verbecc.core.inflectors.lang.pt import InflectorPt
+from verbecc.core.inflectors.lang.ro import InflectorRo
 
 
 class InflectorFactory:

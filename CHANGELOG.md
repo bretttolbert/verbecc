@@ -13,11 +13,9 @@
     - Modified `pyproject.toml` to scan for packages inside `src`
     - Removed `verbecc/__init__.py` which should not exist because this project is using a `src` layout
     - Modified (simplified) contents of a many `__init__.py` files
-      - **This will undoubtedly break some things**, consequently bumping minor rev
+      - **This will likely break some things**, consequently bumping minor rev
       - Doing this to comply with new style guide rule:
         - [R006 - `__init__.py` files shall not contain imports deeper than one level](./CONTRIBUTING.md#r006---__init__py-files-shall-not-contain-imports-deeper-than-one-level)
-        - Before: `from verbecc.core.defs.types.lang_specific_options import LangSpecificOptionsEs`
-        - After: `from verbecc.core.defs.types.lang_specific_options.lang.es import LangSpecificOptionsEs`
     - Changed `setup.cfg` `description-file` to `description_file` to fix warning
   - Added numerous missing type annotations
     - Fixed all VSCode warnings with strict type checking enabled
@@ -29,7 +27,7 @@
   - Converted from `Dict` to modern `dict`
   - Modified build configuration to generate type stubs
   - Modernized github actions CI config (`.github/workflows/python-package.yml`)
-  - Migrated from `flake8` to `ruff`
+  - Migrated linter from `flake8` to `ruff`
   - Updated dependencies to explicitly specify `pytest` and `ruff` as optional `dev` dependencies
     - E.g. install verbecc including optional dev deps:
       - From PyPi: `pip install "verbecc[dev]"`

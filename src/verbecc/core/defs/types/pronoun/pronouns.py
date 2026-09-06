@@ -1,10 +1,10 @@
-from verbecc.core.defs.types.pronoun.lang.pronoun_ca import PronounCa
-from verbecc.core.defs.types.pronoun.lang.pronoun_en import PronounEn
-from verbecc.core.defs.types.pronoun.lang.pronoun_es import PronounEs
-from verbecc.core.defs.types.pronoun.lang.pronoun_fr import PronounFr
-from verbecc.core.defs.types.pronoun.lang.pronoun_it import PronounIt
-from verbecc.core.defs.types.pronoun.lang.pronoun_pt import PronounPt
-from verbecc.core.defs.types.pronoun.lang.pronoun_ro import PronounRo
+from verbecc.core.defs.types.pronoun.lang.ca import PronounCa
+from verbecc.core.defs.types.pronoun.lang.en import PronounEn
+from verbecc.core.defs.types.pronoun.lang.es import PronounEs
+from verbecc.core.defs.types.pronoun.lang.fr import PronounFr
+from verbecc.core.defs.types.pronoun.lang.it import PronounIt
+from verbecc.core.defs.types.pronoun.lang.pt import PronounPt
+from verbecc.core.defs.types.pronoun.lang.ro import PronounRo
 
 
 class Pronouns:

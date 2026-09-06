@@ -1,10 +1,10 @@
-from verbecc.core.defs.types.tense.lang.tense_ca import TenseCa
-from verbecc.core.defs.types.tense.lang.tense_en import TenseEn
-from verbecc.core.defs.types.tense.lang.tense_es import TenseEs
-from verbecc.core.defs.types.tense.lang.tense_fr import TenseFr
-from verbecc.core.defs.types.tense.lang.tense_it import TenseIt
-from verbecc.core.defs.types.tense.lang.tense_pt import TensePt
-from verbecc.core.defs.types.tense.lang.tense_ro import TenseRo
+from verbecc.core.defs.types.tense.lang.ca import TenseCa
+from verbecc.core.defs.types.tense.lang.en import TenseEn
+from verbecc.core.defs.types.tense.lang.es import TenseEs
+from verbecc.core.defs.types.tense.lang.fr import TenseFr
+from verbecc.core.defs.types.tense.lang.it import TenseIt
+from verbecc.core.defs.types.tense.lang.pt import TensePt
+from verbecc.core.defs.types.tense.lang.ro import TenseRo
 
 
 class Tenses:
