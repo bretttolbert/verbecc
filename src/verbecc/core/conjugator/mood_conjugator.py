@@ -35,7 +35,7 @@ class MoodConjugator(AbstractConjugator):
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
         co = self.get_co(infinitive)
-        return self.co_conjugate_mood(co, mood, conjugate_pronouns)
+        return self._conjugate_mood(co, mood, conjugate_pronouns)
 
     def conjugate_mood_tense(
         self,
@@ -51,7 +51,7 @@ class MoodConjugator(AbstractConjugator):
             conjugate_pronouns=conjugate_pronouns,
         )
 
-    def co_conjugate_mood(
+    def _conjugate_mood(
         self,
         co: ConjugationObjects,
         mood: Mood | str,
@@ -59,14 +59,14 @@ class MoodConjugator(AbstractConjugator):
     ) -> MoodConjugation:
         if mood not in co.template.mood_templates.keys():
             raise InvalidMoodError()
-        ret = self.co_get_simple_conjugations_for_mood(
+        ret = self._get_simple_conjugations_for_mood(
             co,
             mood,
             conjugate_pronouns,
         )
         ret = MoodConjugationUtil.combine(
             ret,
-            self.co_get_compound_conjugations_for_mood(
+            self._get_compound_conjugations_for_mood(
                 co,
                 mood,
                 conjugate_pronouns,
@@ -74,7 +74,7 @@ class MoodConjugator(AbstractConjugator):
         )
         return ret
 
-    def co_get_simple_conjugations_for_mood(
+    def _get_simple_conjugations_for_mood(
         self,
         co: ConjugationObjects,
         mood: Mood | str,
@@ -83,7 +83,7 @@ class MoodConjugator(AbstractConjugator):
         ret = MoodConjugation(cast(Mood, mood))
         mood_template = co.template.mood_templates[cast(Mood, mood)]
         for tense in mood_template.tense_templates:
-            ret[tense] = self._tense_conjugator.co_conjugate_mood_tense(
+            ret[tense] = self._tense_conjugator._conjugate_mood_tense( # type: ignore
                 co,
                 mood,
                 tense,
@@ -91,7 +91,7 @@ class MoodConjugator(AbstractConjugator):
             )
         return ret
 
-    def co_get_compound_conjugations_for_mood(
+    def _get_compound_conjugations_for_mood(
         self,
         co: ConjugationObjects,
         mood: Mood | str,
@@ -101,7 +101,7 @@ class MoodConjugator(AbstractConjugator):
         comp_conj_map = self._inflector.get_compound_conjugations_aux_verb_map()
         if cast(Mood, mood) in comp_conj_map:
             for tense in comp_conj_map[cast(Mood, mood)]:
-                ret[tense] = self._tense_conjugator.co_conjugate_mood_tense(
+                ret[tense] = self._tense_conjugator._conjugate_mood_tense( # type: ignore
                     co,
                     mood,
                     tense,

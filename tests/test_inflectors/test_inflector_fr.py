@@ -338,7 +338,7 @@ def test_can_conjugate_all_verbs(ccg: CompleteConjugator):
 def test_inflector_fr_conjugate_compound_raser(tcg: TenseConjugator):
     infinitive = "raser"
     co = tcg.get_co(infinitive)
-    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound()._conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
         Tenses.fr.Passé,
@@ -418,7 +418,7 @@ def test_inflector_fr_conjugate_compound_se_raser(tcg: TenseConjugator):
     """
     infinitive = "se raser"
     co = tcg.get_co(infinitive)
-    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound()._conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
         Tenses.fr.Passé,
@@ -539,7 +539,7 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(tcg: 
     """
     infinitive = "parler"
     co = tcg.get_co(infinitive)
-    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound()._conjugate_compound_mood_tense(
         co,
         Moods.fr.Indicatif,
         Tenses.fr.PasséComposé,

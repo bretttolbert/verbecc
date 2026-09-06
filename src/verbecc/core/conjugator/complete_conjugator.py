@@ -51,7 +51,7 @@ class CompleteConjugator(AbstractConjugator):
         co = self.get_co(infinitive)
         moods = MoodsConjugation()
         for mood, _ in co.template.mood_templates.items():
-            moods[mood] = self._mood_conjugator.co_conjugate_mood(
+            moods[mood] = self._mood_conjugator._conjugate_mood( # type: ignore
                 co,
                 mood,
                 conjugate_pronouns,

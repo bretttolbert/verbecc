@@ -34,7 +34,7 @@ class TenseConjugatorCompound(AbstractConjugator):
         self._tense_conjugator_simple = tense_conjugator_simple
         pass
 
-    def co_conjugate_compound_mood_tense(
+    def _conjugate_compound_mood_tense(
         self,
         co: ConjugationObjects,
         mood: Mood,

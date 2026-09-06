@@ -324,7 +324,7 @@ def test_inflector_it_alzarsi_indicativo_passato_prossimo(
 def test_inflector_it_conjugate_compound_essere_indicativo_passato_prossimo(tcg: TenseConjugator):
     infinitive = "essere"
     co = tcg.get_co(infinitive)
-    tc = tcg._get_tense_conjugator_compound().co_conjugate_compound_mood_tense(
+    tc = tcg._get_tense_conjugator_compound()._conjugate_compound_mood_tense(
         co,
         Moods.it.Indicativo,
         Tenses.it.PassatoProssimo,

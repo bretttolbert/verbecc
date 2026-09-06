@@ -44,14 +44,14 @@ class TenseConjugator(AbstractConjugator):
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
         co = self.get_co(infinitive)
-        return self.co_conjugate_mood_tense(
+        return self._conjugate_mood_tense(
             co,
             mood,
             tense,
             conjugate_pronouns=conjugate_pronouns,
         )
 
-    def co_conjugate_mood_tense(
+    def _conjugate_mood_tense(
         self,
         co: ConjugationObjects,
         mood: Mood | str,
@@ -66,7 +66,7 @@ class TenseConjugator(AbstractConjugator):
             aux_uses_alternate = (
                 self._inflector.auxiliary_verb_uses_alternate_conjugation(tense_key)
             )
-            return self._tense_conjugator_compound.co_conjugate_compound_mood_tense(
+            return self._tense_conjugator_compound._conjugate_compound_mood_tense( # type: ignore
                 co,
                 mood_key,
                 tense_key,
