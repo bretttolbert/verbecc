@@ -14,7 +14,7 @@ First off, thank you for taking the time to contribute! 🎉
 
 This is primarily because I intend to port verbecc to Java and other languages and I wish to keep the implementations as consistent as possible, preferably a _1:1_ equivalence in all symbol names, _mutata mutandis_.
 
-### R002 - There shall not be more than class definition per file
+### R002 - There shall not be more than one class definition per file
 
 This simplifies porting to Java, allowing _1:1_ source file correspondence. This rule is enforced by the `test_ast` unit-tests.
 
