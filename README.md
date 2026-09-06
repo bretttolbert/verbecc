@@ -61,20 +61,31 @@
 * **Trusted**
     * Cited in [academic publications](#academic-publications-referencing-verbecc)
 
-
 ## Quick Start
+Note: Remove `[dev]` if you don't need optional dev dependencies (`pytest` and `ruff`)
+
+### Option 1: Install from PyPi
 ```bash
-git clone https://github.com/bretttolbert/verbecc.git
-cd verbecc
-pip install .
+pip install "verbecc[dev]"
 ```
 
-### Academic publications referencing verbecc
+### Option 2: Install from GitHub repo
+```bash
+pip install "git+https://github.com/bretttolbert/verbecc.git[dev]"
+```
+
+### Option 3: Clone GitHub repo and install
+```bash
+git clone https://github.com/bretttolbert/verbecc.git && cd verbecc
+pip install -e ".[dev]"
+```
+
+## Academic publications referencing verbecc
 
 - [Segura Lores, Alba. (2025) Estudio de la variación del sujeto pronominal en la ciudad de Málaga: sociolingüística cognitiva de su producción y percepción. Universität Heidelberg. pp. 69. [DOI:10.11588/heidok.00037508]](https://nbn-resolving.org/urn:nbn:de:bsz:16-heidok-375088)
 
 
-### What's new in Verbecc 2.0
+## What's new in Verbecc 2.0
 
 | verbecc 1.x | verbecc 2.x |
 | --- | --- |
@@ -92,8 +103,8 @@ pip install .
 | Array index is used to determine `Person`, i.e. `1s, 2s, 3s, 1p, 2p, 3p` | Each `Conjugation` object in the `TenseConjugation` has `Person`, `Number` and `Gender` values (any of which may be `None` if not-applicable) |
 | Returned objects are primitive (`Dict`) data types | Returned wrapper objects are subclasses of `AbstractConjugation` (e.g. `CompleteConjugation`) with `get_data()` and `to_json()` methods |
 | `Conjugator` returns `CompleteConjugationData` | `CompleteConjugator` returns wrapper type `CompleteConjugation`, `CompleteConjugation.get_data()` returns `CompleteConjugationData` |
-| (no wrapper types) | Wrapper types hierarchy: `CompleteConjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `Conjugation` -> `conjugations: List[str]` |
-| Primitive data types hierarchy: `Conjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `PersonConjugation` | Primitive data types hierarchy: `CompleteConjugationData` > `MoodsConjugationData` > `MoodConjugationData` > `TenseConjugationData` > `ConjugationData` -> `conjugations: List[str]` |
+| (no wrapper types) | Wrapper types hierarchy: `CompleteConjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `Conjugation` -> `conjugations: list[str]` |
+| Primitive data types hierarchy: `Conjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `PersonConjugation` | Primitive data types hierarchy: `CompleteConjugationData` > `MoodsConjugationData` > `MoodConjugationData` > `TenseConjugationData` > `ConjugationData` -> `conjugations: list[str]` |
 | `pred_score` was always included in the output | `pred_score` is only included in output if `predicted` is `true` |
 | Only returned primitive Python data | `Conjugation` objects have both `.to_json()` and `.to_yaml()` methods | | 
 

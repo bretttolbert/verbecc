@@ -7,6 +7,6 @@ build
 .coverage
 coverage.xml
 .vscode
-verbecc/data/models/*.zip
+src/verbecc/data/models/*.zip
 *.log
 *.log.*

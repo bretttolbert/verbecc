@@ -4,26 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "verbecc"
-version = "2.0.3"
-dependencies = [
-  "backports.strenum (>=1.3.1,<2.0) ; python_version < '3.11'",
-  "cython>=3.1.4",
-  "dataclass-wizard==0.35.1",
-  "importlib_resources==6.4.5 ; python_version < '3.13'",
-  "importlib_resources==6.5.2 ; python_version >= '3.13'",
-  "jsbeautifier>=1.15.4,<2.0",
-  "lxml-stubs>=0.5.1",
-  "lxml>=6.0.2",
-  "numpy==1.26.2 ; python_version < '3.11'",
-  "numpy==2.3.3 ; python_version >= '3.11'",
-  "pyaml==25.7.0",
-  "scikit-learn==1.6.1 ; python_version < '3.10'",
-  "scikit-learn==1.7.2 ; python_version >= '3.10'",
-  "scipy==1.13.1 ; python_version < '3.10'",
-  "scipy==1.15.3 ; python_version == '3.10'",
-  "scipy==1.16.2 ; python_version >= '3.11'",
-]
-requires-python = ">=3.9"
+version = "2.1.0"
+
+requires-python = ">=3.10"
 authors = [{ name = "Brett Tolbert", email = "bretttolbert@gmail.com" }]
 maintainers = [{ name = "Brett Tolbert", email = "bretttolbert@gmail.com" }]
 description = "Verbs Completely Conjugated: machine learning conjugator for Catalan, French, Italian, Portuguese, Romanian and Spanish"
@@ -71,13 +54,35 @@ classifiers = [
   'Programming Language :: Python :: 3.12',
   'Programming Language :: Python :: 3.13',
   'Programming Language :: Python :: 3.14',
-  'Programming Language :: Python :: 3.9',
   'Programming Language :: Python :: 3',
   'Topic :: Education',
   'Topic :: Scientific/Engineering :: Artificial Intelligence',
   'Topic :: Software Development :: Libraries :: Python Modules',
   'Topic :: Text Processing :: Linguistic',
   'Topic :: Utilities',
+]
+
+dependencies = [
+  "backports.strenum>=1.3.1,<2.0 ; python_version < '3.11'",
+  "cython>=3.0.11",
+  "dataclass-wizard[yaml]>=0.39.1",
+  "importlib_resources>=6.4.5 ; python_version < '3.13'",
+  "jsbeautifier>=1.15.4,<2.0",
+  "lxml-stubs>=0.5.1",
+  "lxml>=6.0.2",
+  "numpy>=1.26.4 ; python_version < '3.10'",
+  "numpy>=2.0.2 ; python_version >= '3.10'",
+  "pyaml>=25.7.0",
+  "scikit-learn>=1.6.1 ; python_version < '3.11'",
+  "scikit-learn>=1.7.2 ; python_version >= '3.11'",
+  "scipy>=1.13.1 ; python_version < '3.10'",
+  "scipy>=1.15.3 ; python_version >= '3.10'",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.1.0",
+  "pytest>=9.1.1",
 ]
 
 [project.urls]
@@ -88,13 +93,13 @@ Repository = "https://github.com/bretttolbert/verbecc.git"
 Changelog = "https://github.com/bretttolbert/verbecc/blob/master/CHANGELOG.md"
 
 [tool.setuptools.package-data]
-trained_models = ['verbecc/data/models/*']
+trained_models = ['verbecc/data/models/*', 'py.typed']
 
-[tool.setuptools.packages]
-find = {}
+[tool.setuptools.packages.find]
+where = ["src"]  # <-- This tells setuptools to scan inside src/
 
 [project.scripts]
-train-verb-models = 'verbecc.src.utils.utils:train_models'
+train-verb-models = 'verbecc.core.utils.utils:train_models'
 
 [tool.pytest.ini_options]
 pythonpath = [
@@ -125,3 +130,23 @@ addopts = [
     "--ignore=data",
     "--ignore=doc"
 ]
+
+[tool.ruff]
+# Set the maximum line length to match your GitHub Actions setup
+line-length = 127
+
+[tool.ruff.lint]
+# Enable Flake8 syntax/error equivalents (E9, F63, F7, F82)
+# "E" and "F" enable pycodestyle errors and Pyflakes
+select = ["E9", "F63", "F7", "F82"]
+
+# Enable McCabe complexity checking (equivalent to flake8 --max-complexity=10)
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.mypy]
+mypy_path = "typings"
+
+[[tool.mypy.overrides]]
+module = "*.pyi"
+ignore_errors = true

@@ -1,21 +1,22 @@
 import pytest
+from typing import Generator
 
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.conjugator.mood_conjugator import MoodConjugator
-from verbecc.src.conjugator.tense_conjugator import TenseConjugator
-from verbecc.src.defs.types.exceptions import InvalidMoodError
-from verbecc.src.defs.types.exceptions import InvalidTenseError
-from verbecc.src.defs.types.exceptions import TemplateNotFoundError
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.utils.config.verbecc_config_util import VerbeccConfigUtil
-from verbecc.src.defs.types.tense import Tenses
-from verbecc.src.defs.types.mood import Moods
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.conjugator.mood_conjugator import MoodConjugator
+from verbecc.core.conjugator.tense_conjugator import TenseConjugator
+from verbecc.core.defs.types.exceptions import InvalidMoodError
+from verbecc.core.defs.types.exceptions import InvalidTenseError
+from verbecc.core.defs.types.exceptions import TemplateNotFoundError
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.utils.config.verbecc_config_util import VerbeccConfigUtil
+from verbecc.core.defs.types.tense import Tenses
+from verbecc.core.defs.types.mood import Moods
 
 config = VerbeccConfigUtil().load_config()
 
 
 @pytest.fixture(scope="module")
-def ccg():
+def ccg() -> Generator[CompleteConjugator, None, None]:
     ccg = CompleteConjugator(lang=Lang.fr)
     yield ccg
 
@@ -32,13 +33,13 @@ def tcg():
     yield tcg
 
 
-def test_get_infinitives(ccg):
+def test_get_infinitives(ccg: CompleteConjugator):
     infinitives = ccg.get_infinitives()
     assert len(infinitives) > 7000
     assert "parler" in infinitives
 
 
-def test_get_template_names(ccg):
+def test_get_template_names(ccg: CompleteConjugator):
     template_names = ccg.get_template_names()
     assert len(template_names) >= 146
     assert "aim:er" in template_names
@@ -56,12 +57,12 @@ test_verbs = [
 
 
 @pytest.mark.parametrize("infinitive", test_verbs)
-def test_conjugate_basic(ccg, infinitive):
+def test_conjugate_basic(ccg: CompleteConjugator, infinitive: str):
     cc = ccg.conjugate(infinitive)
     assert cc
 
 
-def test_conjugator_predict_conjugation_er_verb_indicative_present(ccg):
+def test_conjugator_predict_conjugation_er_verb_indicative_present(ccg: CompleteConjugator):
     if config.ENABLE_ML_PREDICTION:
         tc = ccg.conjugate_mood_tense("ubériser", Moods.fr.Indicatif, Tenses.fr.Présent)
         assert [c[0] for c in tc] == [
@@ -77,7 +78,7 @@ def test_conjugator_predict_conjugation_er_verb_indicative_present(ccg):
         ]
 
 
-def test_conjugator_predict_conjugation_re_verb_indicative_present(ccg):
+def test_conjugator_predict_conjugation_re_verb_indicative_present(ccg: CompleteConjugator):
     if config.ENABLE_ML_PREDICTION:
         tc = ccg.conjugate_mood_tense("brettre", Moods.fr.Indicatif, Tenses.fr.Présent)
         assert [c[0] for c in tc] == [
@@ -93,7 +94,7 @@ def test_conjugator_predict_conjugation_re_verb_indicative_present(ccg):
         ]
 
 
-def test_conjugate_passe_compose_with_avoir(ccg):
+def test_conjugate_passe_compose_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("manger", Moods.fr.Indicatif, Tenses.fr.PasséComposé)
     assert [c[0] for c in tc] == [
         "j'ai mangé",
@@ -108,7 +109,7 @@ def test_conjugate_passe_compose_with_avoir(ccg):
     ]
 
 
-def test_conjugate_passe_compose_with_etre(ccg):
+def test_conjugate_passe_compose_with_etre(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.PasséComposé)
     assert [c[0] for c in tc] == [
         "je suis allée",
@@ -128,7 +129,7 @@ def test_conjugate_passe_compose_with_etre(ccg):
     ]
 
 
-def test_conjugate_subjonctif_passe_with_avoir(ccg):
+def test_conjugate_subjonctif_passe_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("manger", Moods.fr.Subjonctif, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "que j'aie mangé",
@@ -143,7 +144,7 @@ def test_conjugate_subjonctif_passe_with_avoir(ccg):
     ]
 
 
-def test_conjugate_subjonctif_passe_with_etre(ccg):
+def test_conjugate_subjonctif_passe_with_etre(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("aller", Moods.fr.Subjonctif, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "que je sois allée",
@@ -163,7 +164,7 @@ def test_conjugate_subjonctif_passe_with_etre(ccg):
     ]
 
 
-def test_conjugate_conditionnel_passe_with_avoir(ccg):
+def test_conjugate_conditionnel_passe_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("manger", Moods.fr.Conditionnel, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "j'aurais mangé",
@@ -178,7 +179,7 @@ def test_conjugate_conditionnel_passe_with_avoir(ccg):
     ]
 
 
-def test_conjugate_conditionnel_passe_with_etre(ccg):
+def test_conjugate_conditionnel_passe_with_etre(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("aller", Moods.fr.Conditionnel, Tenses.fr.Passé)
     assert [c[0] for c in tc] == [
         "je serais allée",
@@ -198,7 +199,7 @@ def test_conjugate_conditionnel_passe_with_etre(ccg):
     ]
 
 
-def test_conjugate_plusqueparfait_with_avoir(ccg):
+def test_conjugate_plusqueparfait_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "manger", Moods.fr.Indicatif, Tenses.fr.PlusQueParfait
     )
@@ -215,7 +216,7 @@ def test_conjugate_plusqueparfait_with_avoir(ccg):
     ]
 
 
-def test_conjugate_plusqueparfait_with_etre(ccg):
+def test_conjugate_plusqueparfait_with_etre(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.PlusQueParfait)
     assert [c[0] for c in tc] == [
         "j'étais allée",
@@ -235,7 +236,7 @@ def test_conjugate_plusqueparfait_with_etre(ccg):
     ]
 
 
-def test_conjugate_subjonctif_plusqueparfait_with_avoir(ccg):
+def test_conjugate_subjonctif_plusqueparfait_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "manger", Moods.fr.Subjonctif, Tenses.fr.PlusQueParfait
     )
@@ -252,7 +253,7 @@ def test_conjugate_subjonctif_plusqueparfait_with_avoir(ccg):
     ]
 
 
-def test_conjugate_subjonctif_plusqueparfait_with_etre(ccg):
+def test_conjugate_subjonctif_plusqueparfait_with_etre(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "aller", Moods.fr.Subjonctif, Tenses.fr.PlusQueParfait
     )
@@ -274,7 +275,7 @@ def test_conjugate_subjonctif_plusqueparfait_with_etre(ccg):
     ]
 
 
-def test_conjugate_futur_anterieur_with_avoir(ccg):
+def test_conjugate_futur_anterieur_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "manger", Moods.fr.Indicatif, Tenses.fr.FuturAntérieur
     )
@@ -291,7 +292,7 @@ def test_conjugate_futur_anterieur_with_avoir(ccg):
     ]
 
 
-def test_conjugate_futur_anterieur_with_etre(ccg):
+def test_conjugate_futur_anterieur_with_etre(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.FuturAntérieur)
     assert [c[0] for c in tc] == [
         "je serai allée",
@@ -311,7 +312,7 @@ def test_conjugate_futur_anterieur_with_etre(ccg):
     ]
 
 
-def test_conjugate_passe_anterieur_with_avoir(ccg):
+def test_conjugate_passe_anterieur_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "manger", Moods.fr.Indicatif, Tenses.fr.PasséAntérieur
     )
@@ -328,7 +329,7 @@ def test_conjugate_passe_anterieur_with_avoir(ccg):
     ]
 
 
-def test_conjugate_passe_anterieur_with_être(ccg):
+def test_conjugate_passe_anterieur_with_être(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("aller", Moods.fr.Indicatif, Tenses.fr.PasséAntérieur)
     assert [c[0] for c in tc] == [
         "je fus allée",
@@ -348,7 +349,7 @@ def test_conjugate_passe_anterieur_with_être(ccg):
     ]
 
 
-def test_conjugate_imperatif_passe_with_avoir(ccg):
+def test_conjugate_imperatif_passe_with_avoir(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "manger", Moods.fr.Imperatif, Tenses.fr.ImperatifPassé
     )
@@ -359,7 +360,7 @@ def test_conjugate_imperatif_passe_with_avoir(ccg):
     ]
 
 
-def test_conjugate_imperatif_passe_with_etre(ccg):
+def test_conjugate_imperatif_passe_with_etre(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("aller", Moods.fr.Imperatif, Tenses.fr.ImperatifPassé)
     assert [c[0] for c in tc] == [
         "sois allée",
@@ -371,17 +372,17 @@ def test_conjugate_imperatif_passe_with_etre(ccg):
     ]
 
 
-def test_conjugate_invalid_mood(ccg):
+def test_conjugate_invalid_mood(ccg: CompleteConjugator):
     with pytest.raises(InvalidMoodError):
         ccg.conjugate_mood("manger", "oops")
 
 
-def test_conjugate_invalid_tense(ccg):
+def test_conjugate_invalid_tense(ccg: CompleteConjugator):
     with pytest.raises(InvalidTenseError):
         ccg.conjugate_mood_tense("manger", Moods.fr.Indicatif, "oops")
 
 
-def test_conjugator_find_template_template_not_found(ccg):
+def test_conjugator_find_template_template_not_found(ccg: CompleteConjugator):
     with pytest.raises(TemplateNotFoundError):
         ccg.find_template("oops")
 
@@ -394,11 +395,13 @@ def test_conjugator_find_template_template_not_found(ccg):
         ("s'aim", ["s'aimanter", "s'aimer"]),
     ],
 )
-def test_conjugator_get_verbs_that_start_with(ccg, query, expected_value):
+def test_conjugator_get_verbs_that_start_with(
+    ccg: CompleteConjugator, query: str, expected_value: list[str]
+):
     assert set(ccg.get_verbs_that_start_with(query, max_results=10)) == set(
         expected_value
     )
 
 
 def test_conjugator_construct():
-    ccg = CompleteConjugator(lang=Lang.fr)
+    CompleteConjugator(lang=Lang.fr)

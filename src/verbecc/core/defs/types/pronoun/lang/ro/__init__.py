@@ -1,0 +1,1 @@
+from .pronoun_ro import PronounRo  # type: ignore
