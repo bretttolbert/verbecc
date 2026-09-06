@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, cast
 
 from verbecc.core.defs.types.data.element import Element
 from verbecc.core.defs.types.person import Person
@@ -29,14 +29,14 @@ class PersonEnding(Element):
 
     def __init__(
         self,
-        person: Optional[Person],
-        number: Optional[Number],
-        gender: Optional[Gender],
+        person: Optional[Person | str],
+        number: Optional[Number | str],
+        gender: Optional[Gender | str],
         endings: list[str],
     ) -> None:
-        self.person = person
-        self.number = number
-        self.gender = gender
+        self.person = cast(Optional[Person], person)
+        self.number = cast(Optional[Number], number)
+        self.gender = cast(Optional[Gender], gender)
         self.endings = endings
 
     def get_person(self) -> Optional[Person]:

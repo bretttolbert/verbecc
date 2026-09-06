@@ -22,7 +22,8 @@
     - Fixed packaging, misc. modernization
       - **Dropping support for python3.9** (it has been EOL for nearly a year)
         - Migrated from `importlib_resources`to `importlib.resources`
-        - Removed python39 import resource hacks
+        - Eliminates python39 import resource hacks
+        - Eliminates backports (e.g., `importlib_resources` for Python <3.13). Dependencies simplified and updated accordingly.
       - Changed structure from `verbecc/verbecc/src` to more standard `verbecc/src/verbecc`
         - Before data was at `verbecc/verbecc/data`
         - After data is at `verbecc/src/verbecc/data`
@@ -41,8 +42,10 @@
         - Before: `mood: Mood`
         - After: `mood: Mood | str`
     - Contd. cleaning up (removing) excessive `__init__.py` imports
-    - Converted from `List` to modern `list`
-    - Converted from `Dict` to modern `dict`
+    - Modernized Python syntax
+      - Systematic updates across the codebase
+      - Converted from `List` to modern `list`
+      - Converted from `Dict` to modern `dict`
     - Modified build configuration to generate type stubs
     - Modernized github actions CI config (`.github/workflows/python-package.yml`)
     - Migrated linter from `flake8` to `ruff`

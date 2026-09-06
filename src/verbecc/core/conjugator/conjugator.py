@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, cast
 
 from verbecc.core.conjugator.abstract_conjugator import AbstractConjugator
 from verbecc.core.defs.constants import grammar_defines
@@ -42,17 +42,23 @@ class Conjugator(AbstractConjugator):
     def conjugate(
         self,
         verb_stem: str,
-        mood: Mood,
-        tense: Tense,
+        mood: Mood | str,
+        tense: Tense | str,
         tense_template: TenseTemplate,
-        person: Optional[Person],
+        person: Optional[Person | str],
         person_ending: PersonEnding,
-        number: Optional[Number],
-        pronoun: Optional[Pronoun],
+        number: Optional[Number | str],
+        pronoun: Optional[Pronoun | str],
         is_reflexive: bool = False,
-        primary_tense: Optional[Tense] = None,
+        primary_tense: Optional[Tense | str] = None,
         tense_conjugated_with_pronoun: bool = True,
     ) -> Conjugation:
+        mood = cast(Mood, mood)
+        tense = cast(Tense, tense)
+        person = cast(Optional[Person], person)
+        number = cast(Optional[Number], number)
+        pronoun = cast(Optional[Pronoun], pronoun)
+        primary_tense = cast(Optional[Tense], primary_tense)
         # here's where the voseo magic happens
         person_ending = self._inflector.modify_person_ending_if_applicable(
             person_ending, mood, tense, tense_template, pronoun

@@ -12,8 +12,8 @@ class TenseTemplate(Element):
     def __init__(
         self,
         lang: Lang,
-        mood: Mood,
-        tense: Tense,
+        mood: Mood | str,
+        tense: Tense | str,
         person_endings: list[PersonEnding],
     ) -> None:
         self.lang = lang
@@ -21,7 +21,7 @@ class TenseTemplate(Element):
         self.tense = tense
         self.person_endings = person_endings
 
-    def get_person_ending(self, person: Person, number: Number) -> PersonEnding:
+    def get_person_ending(self, person: Person | str, number: Number | str) -> PersonEnding:
         for pe in self.person_endings:
             if pe.person == person and pe.number == number:
                 return pe

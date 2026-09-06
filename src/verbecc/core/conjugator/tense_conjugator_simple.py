@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, cast
 
 from verbecc.core.defs.types.mood import Mood
 from verbecc.core.defs.types.tense import Tense
@@ -47,7 +47,7 @@ class TenseConjugatorSimple(AbstractConjugator):
         if modify_stem_strip_accents and mood != self._inflector.get_infinitive_mood():
             verb_stem = strip_accents(verb_stem)
         ret = TenseConjugation(tense)
-        tense = tense_template.tense
+        tense = cast(Tense, tense_template.tense)
         tense_conjugated_with_pronoun = True
         if (
             tense in self._inflector.get_tenses_conjugated_without_pronouns()

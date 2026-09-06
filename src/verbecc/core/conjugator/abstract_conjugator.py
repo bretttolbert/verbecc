@@ -71,8 +71,8 @@ class AbstractConjugator(ABC):
     def get_person_ending_by_gender_and_number(
         self,
         person_endings: list[PersonEnding],
-        gender: Optional[Gender],
-        number: Optional[Number],
+        gender: Optional[Gender | str],
+        number: Optional[Number | str],
     ) -> PersonEnding:
         resolved_gender = Gender.m
         resolved_number = Number.Singular
@@ -91,8 +91,8 @@ class AbstractConjugator(ABC):
     def get_conjugation_by_gender_and_number(
         self,
         tense_conjugation: TenseConjugation,
-        gender: Optional[Gender],
-        number: Optional[Number],
+        gender: Optional[Gender | str],
+        number: Optional[Number | str],
     ) -> Conjugation:
         resolved_gender = Gender.m
         resolved_number = Number.Singular

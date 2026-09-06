@@ -1,4 +1,3 @@
-from __future__ import print_function
 from io import BytesIO
 try:
     # Python 3.11+
