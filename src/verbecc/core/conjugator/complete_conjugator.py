@@ -48,7 +48,7 @@ class CompleteConjugator(AbstractConjugator):
         :param lang_specific_options: options specific to certain languages.
         :type lang_specific_options: LangSpecificOptions
         """
-        co = self.get_co(infinitive)
+        co = self._get_conj_objs(infinitive)
         moods = MoodsConjugation()
         for mood, _ in co.template.mood_templates.items():
             moods[mood] = self._mood_conjugator._conjugate_mood( # type: ignore

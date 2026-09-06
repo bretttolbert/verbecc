@@ -58,7 +58,7 @@ class TenseConjugatorCompound(AbstractConjugator):
             .person_endings
         )
         aux_verb = self._inflector.get_auxiliary_verb(co, mood, tense)
-        aux_co = self.get_co(aux_verb)
+        aux_co = self._get_conj_objs(aux_verb)
         aux_tense_template = copy.deepcopy(
             aux_co.template.mood_templates[aux_mood].tense_templates[aux_tense]
         )

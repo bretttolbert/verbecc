@@ -34,7 +34,7 @@ class MoodConjugator(AbstractConjugator):
         mood: Mood | str,
         conjugate_pronouns: bool = True,
     ) -> MoodConjugation:
-        co = self.get_co(infinitive)
+        co = self._get_conj_objs(infinitive)
         return self._conjugate_mood(co, mood, conjugate_pronouns)
 
     def conjugate_mood_tense(

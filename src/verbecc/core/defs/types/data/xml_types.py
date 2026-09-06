@@ -1,4 +1,4 @@
-from typing import Iterable, TypeAlias
+from typing import TypeAlias
 from lxml import etree
 
 """
@@ -10,5 +10,5 @@ The XmlElementTree type is an alias for lxml.etree._ElementTree, which represent
 """
 
 XmlParser : TypeAlias = etree.XMLParser
-XmlElement : TypeAlias = etree._Element | Iterable[etree._Element]  # type: ignore
+XmlElement : TypeAlias = etree._Element # type: ignore
 XmlElementTree : TypeAlias = etree._ElementTree  # type: ignore

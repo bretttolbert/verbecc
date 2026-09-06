@@ -124,7 +124,7 @@ def test_inflector_fr_conjugate_simple_mood_tense(tcg: TenseConjugator):
     infinitive = "manger"
     mood = Moods.fr.Indicatif
     tense = Tenses.fr.Présent
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == "man"
     tense_elem = etree.fromstring(
         """<présent>
@@ -337,7 +337,7 @@ def test_can_conjugate_all_verbs(ccg: CompleteConjugator):
 
 def test_inflector_fr_conjugate_compound_raser(tcg: TenseConjugator):
     infinitive = "raser"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     tc = tcg._get_tense_conjugator_compound()._conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
@@ -417,7 +417,7 @@ def test_inflector_fr_conjugate_compound_se_raser(tcg: TenseConjugator):
         - Note: In French, all reflexive verbs are conjugated with être
     """
     infinitive = "se raser"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     tc = tcg._get_tense_conjugator_compound()._conjugate_compound_mood_tense(
         co,
         Moods.fr.Subjonctif,
@@ -538,7 +538,7 @@ def test_inflector_fr_conjugate_compound_parler_indicative_passé_composé(tcg: 
         - compound verb conjugation with a verb not conjugated with être (non-inflected participle)
     """
     infinitive = "parler"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     tc = tcg._get_tense_conjugator_compound()._conjugate_compound_mood_tense(
         co,
         Moods.fr.Indicatif,
@@ -612,7 +612,7 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent_nopronouns(tcg: 
     The result is Pronouns.fr.je, ["ai"] etc. instead of Pronouns.fr.je, ["j'ai"] etc.
     """
     infinitive = "avoir"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == ""
     mood = Moods.fr.Indicatif
     tense = Tenses.fr.Présent
@@ -661,7 +661,7 @@ def test_inflector_fr_conjugate_simple_avoir_indicatif_présent_nopronouns(tcg: 
 
 def test_inflector_fr_conjugate_simple_avoir_participe_participe_passé(tcg: TenseConjugator):
     infinitive = "avoir"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == ""
     mood = Moods.fr.Participe
     tense = Tenses.fr.ParticipePassé
@@ -698,7 +698,7 @@ def test_inflector_fr_conjugate_simple_avoir_participe_participe_passé(tcg: Ten
 
 def test_inflector_fr_conjugate_simple_avoir_particpe_participe_présent(tcg: TenseConjugator):
     infinitive = "avoir"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == ""
     mood = Moods.fr.Participe
     tense = Tenses.fr.ParticipePresent
@@ -732,7 +732,7 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(tcg: TenseConjug
     person, number, gender nor pronoun.
     """
     infinitive = "avoir"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == ""
     mood = Moods.fr.Infinitif
     tense = Tenses.fr.InfinitifPrésent
@@ -762,7 +762,7 @@ def test_inflector_fr_conjugate_simple_avoir_infinitif_présent(tcg: TenseConjug
 
 def test_inflector_fr_conjugate_simple_avoir_imperatif_présent(tcg: TenseConjugator):
     infinitive = "avoir"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == ""
     mood = Moods.fr.Imperatif
     tense = Tenses.fr.ImperatifPrésent

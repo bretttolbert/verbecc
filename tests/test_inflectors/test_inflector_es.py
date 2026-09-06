@@ -935,8 +935,8 @@ def test_soler_imperativo_negativo(ccg: CompleteConjugator):
     ]
 
 
-def test_inflector_esget_co(ccg: CompleteConjugator):
-    co = ccg.get_co("abañar")
+def test_inflector_es_get_conj_objs(ccg: CompleteConjugator):
+    co = ccg._get_conj_objs("abañar")
     assert co.verb.infinitive == "abañar"
     assert co.verb_stem == "abañ"
 
@@ -1664,7 +1664,7 @@ def test_inflector_es_conjugate_simple_ser_infinititivo(tcg: TenseConjugator):
 
     """
     infinitive = "ser"
-    co = tcg.get_co(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == ""
     mood = Moods.fr.Infinitif
     tense = Tenses.fr.InfinitifPrésent

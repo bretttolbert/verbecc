@@ -2918,22 +2918,22 @@ def test_inflector_ca_conjugate_simple_past(ccg: CompleteConjugator):
     )
 
 
-def test_inflector_caget_co(ccg: CompleteConjugator):
-    co = ccg.get_co("parlar")
+def test_inflector_ca_get_conj_objs(ccg: CompleteConjugator):
+    co = ccg._get_conj_objs("parlar")
     assert co.verb.infinitive == "parlar"
     assert co.verb_stem == "parl"
     assert co.template.name == "cant:ar"
 
 
 def test_inflector_caget_co_2(ccg: CompleteConjugator):
-    co = ccg.get_co("abandonar")
+    co = ccg._get_conj_objs("abandonar")
     assert co.verb.infinitive == "abandonar"
     assert co.verb_stem == "abandon"
     assert co.template.name == "cant:ar"
 
 
 def test_inflector_caget_co_3(ccg: CompleteConjugator):
-    co = ccg.get_co("pertànyer")
+    co = ccg._get_conj_objs("pertànyer")
     assert co.verb.infinitive == "pertànyer"
     assert co.verb_stem == "pertàny"
     assert co.template.name == "pertàny:er"

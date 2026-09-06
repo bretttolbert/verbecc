@@ -35,7 +35,7 @@ class AbstractConjugator(ABC):
         self._logger = LoggingUtils.get_logger(subclass_name)
         super().__init__()
 
-    def get_co(self, infinitive: str) -> ConjugationObjects:
+    def _get_conj_objs(self, infinitive: str) -> ConjugationObjects:
         infinitive = infinitive.lower()
         is_reflexive, infinitive = self._inflector.split_reflexive(infinitive)
         if is_reflexive and not self._inflector.verb_can_be_reflexive(infinitive):

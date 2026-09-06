@@ -43,7 +43,7 @@ class TenseConjugator(AbstractConjugator):
         tense: Tense | str,
         conjugate_pronouns: bool = True,
     ) -> TenseConjugation:
-        co = self.get_co(infinitive)
+        co = self._get_conj_objs(infinitive)
         return self._conjugate_mood_tense(
             co,
             mood,

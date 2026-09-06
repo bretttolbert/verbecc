@@ -4,5 +4,5 @@ from dataclasses import dataclass, field
 @dataclass
 class LoggerConfig:
     level: str = field(default="CRITICAL")
-    handlers: list[str] = field(default_factory=list[str])
+    handlers: list[str] = field(default_factory=list) # type: ignore
     propagate: bool = field(default=True)
