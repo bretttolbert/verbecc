@@ -56,7 +56,7 @@
     * Meticulously organized source tree
     * Has a plethora of unit-tests to ensure correctness of verb conjugations
     * Continuous Integration with GitHub Actions CI/CD pipeline
-        * CI tests python 3.9, 3.10, 3.11, 3.12, 3.13 and 3.14.
+        * CI tests python 3.10, 3.11, 3.12, 3.13 and 3.14.
     * Dependencies: `scikit-learn`, `scipy`, `numpy`, `lxml`, `pyaml`, `jsbeautifier`, `importlib_resources`
 * **Trusted**
     * Cited in [academic publications](#academic-publications-referencing-verbecc)
