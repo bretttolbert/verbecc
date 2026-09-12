@@ -1,0 +1,1 @@
+from .tense_ro import TenseRo  # type: ignore

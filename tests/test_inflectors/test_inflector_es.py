@@ -1,18 +1,22 @@
+# pyright: reportPrivateUsage=false
+
 import pytest
 from lxml import etree
 
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.conjugator.mood_conjugator import MoodConjugator
-from verbecc.src.conjugator.tense_conjugator import TenseConjugator
-from verbecc.src.defs.types.conjugation import Conjugation, TenseConjugation
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Moods
-from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import Tenses
-from verbecc.src.parsers.tense_template_parser import TenseTemplateParser
-from verbecc.src.defs.types.pronoun import Pronouns
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.conjugator.mood_conjugator import MoodConjugator
+from verbecc.core.conjugator.tense_conjugator import TenseConjugator
+from verbecc.core.defs.types.conjugation import Conjugation, TenseConjugation
+from verbecc.core.defs.types.gender import Gender
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.mood import Moods
+from verbecc.core.defs.types.mood import Mood
+from verbecc.core.defs.types.number import Number
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.tense import Tenses
+from verbecc.core.defs.types.tense import Tense
+from verbecc.core.parsers.tense_template_parser import TenseTemplateParser
+from verbecc.core.defs.types.pronoun import Pronouns
 
 
 @pytest.fixture(scope="module")
@@ -33,10 +37,10 @@ def tcg():
     yield tcg
 
 
-def test_all_verbs_have_templates(ccg):
+def test_all_verbs_have_templates(ccg: CompleteConjugator):
     verbs = ccg.get_verbs()
     template_names = ccg.get_template_names()
-    missing_templates = set()
+    missing_templates: set[str] = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
@@ -845,13 +849,17 @@ def test_all_verbs_have_templates(ccg):
     ],
 )
 def test_inflector_es_conjugate_mood_tense(
-    ccg, infinitive, mood, tense, expected_result
+    ccg: CompleteConjugator,
+    infinitive: str,
+    mood: Mood | str,
+    tense: Tense | str,
+    expected_result: list[str],
 ):
     tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [c[0] for c in tc] == expected_result
 
 
-def test_abolir(ccg):
+def test_abolir(ccg: CompleteConjugator):
     """
     Reproduce error:
 
@@ -866,7 +874,7 @@ def test_abolir(ccg):
     assert cc is not None
 
 
-def test_abolir_imperativo_afirmativo(ccg):
+def test_abolir_imperativo_afirmativo(ccg: CompleteConjugator):
     """
     Reproduce another error with this verb
         # step one for imperativo: remove the trailing 'd'
@@ -895,7 +903,7 @@ def test_abolir_imperativo_afirmativo(ccg):
     ]
 
 
-def test_soler_imperativo_afirmativo(ccg):
+def test_soler_imperativo_afirmativo(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("soler", Moods.es.Imperativo, Tenses.es.Afirmativo)
     assert [c[0] for c in tc] == [
         "suele",
@@ -911,7 +919,7 @@ def test_soler_imperativo_afirmativo(ccg):
     ]
 
 
-def test_soler_imperativo_negativo(ccg):
+def test_soler_imperativo_negativo(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("soler", Moods.es.Imperativo, Tenses.es.Negativo)
     assert [c[0] for c in tc] == [
         "no suelas",
@@ -927,18 +935,18 @@ def test_soler_imperativo_negativo(ccg):
     ]
 
 
-def test_inflector_es_get_conj_obs(ccg):
-    co = ccg._get_conj_obs("abañar")
+def test_inflector_es_get_conj_objs(ccg: CompleteConjugator):
+    co = ccg._get_conj_objs("abañar")
     assert co.verb.infinitive == "abañar"
     assert co.verb_stem == "abañ"
 
 
-def test_inflector_es_get_verb_stem_from_template_name(ccg):
-    verb_stem = ccg._inflector.get_verb_stem_from_template_name("abañar", "cort:ar")
+def test_inflector_es_get_verb_stem_from_template_name(ccg: CompleteConjugator):
+    verb_stem = ccg._get_inflector().get_verb_stem_from_template_name("abañar", "cort:ar")
     assert verb_stem == "abañ"
 
 
-def test_inflector_es_conjugate_simple_mood_tense(tcg):
+def test_inflector_es_conjugate_simple_mood_tense(tcg: TenseConjugator):
     mood = Moods.es.Indicativo
     tense = Tenses.es.Presente
     verb_stem = "abañ"
@@ -954,8 +962,14 @@ def test_inflector_es_conjugate_simple_mood_tense(tcg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.es, mood).parse(tense_elem)
-    tc = tcg._tense_conjugator_simple._conjugate_simple_mood_tense(
-        verb_stem, mood, tense, tense_template
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
+        verb_stem,
+        mood,
+        tense,
+        tense_template,
+        is_reflexive=False,
+        conjugate_pronouns=True,
+        modify_stem_strip_accents=False,
     )
     assert [c[0] for c in tc] == [
         "yo abaño",
@@ -994,20 +1008,20 @@ def test_inflector_es_conjugate_simple_mood_tense(tcg):
     ],
 )
 def test_inflector_es_get_pronouns(
-    ccg,
+    ccg: CompleteConjugator,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
+    pronoun = ccg._get_inflector().get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = ccg._get_inflector().make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "hablar",
         Moods.es.Indicativo,
@@ -1076,7 +1090,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ar_voseo_tipo_3(c
     )
 
 
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "beber",
         Moods.es.Indicativo,
@@ -1141,7 +1155,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_er_voseo_tipo_3(c
     )
 
 
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "dormir",
         Moods.es.Indicativo,
@@ -1210,7 +1224,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ir_voseo_tipo_3(c
     )
 
 
-def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "ser",
         Moods.es.Indicativo,
@@ -1263,7 +1277,7 @@ def test_inflector_es_conjugate_mood_indicativo_tense_presente_ser_voseo_tipo_3(
     )
 
 
-def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "ser",
         Moods.es.Subjuntivo,
@@ -1316,7 +1330,7 @@ def test_inflector_es_conjugate_mood_subjuntivo_tense_presente_ser_voseo_tipo_3(
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "hablar",
         Moods.es.Imperativo,
@@ -1358,7 +1372,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ar_voseo_tipo_3
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "hablar",
         Moods.es.Imperativo,
@@ -1400,7 +1414,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ar_voseo_tipo_3(c
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "vivir",
         Moods.es.Imperativo,
@@ -1440,7 +1454,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ir_voseo_tipo_3
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "vivir",
         Moods.es.Imperativo,
@@ -1482,7 +1496,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ir_voseo_tipo_3(c
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "beber",
         Moods.es.Imperativo,
@@ -1522,7 +1536,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_er_voseo_tipo_3
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "beber",
         Moods.es.Imperativo,
@@ -1564,7 +1578,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_er_voseo_tipo_3(c
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "ser",
         Moods.es.Imperativo,
@@ -1602,7 +1616,7 @@ def test_inflector_es_conjugate_mood_imperativo_tense_afirmativo_ser_voseo_tipo_
     )
 
 
-def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3(ccg):
+def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3(ccg: CompleteConjugator):
     assert ccg.conjugate_mood_tense(
         "ser",
         Moods.es.Imperativo,
@@ -1644,13 +1658,13 @@ def test_inflector_es_conjugate_mood_imperativo_tense_negativo_ser_voseo_tipo_3(
     )
 
 
-def test_inflector_es_conjugate_simple_ser_infinititivo(tcg):
+def test_inflector_es_conjugate_simple_ser_infinititivo(tcg: TenseConjugator):
     """
     Test infinitivo because it has neither person, number, gender nor pronoun.
 
     """
     infinitive = "ser"
-    co = tcg._get_conj_obs(infinitive)
+    co = tcg._get_conj_objs(infinitive)
     assert co.verb_stem == ""
     mood = Moods.fr.Infinitif
     tense = Tenses.fr.InfinitifPrésent
@@ -1663,7 +1677,7 @@ def test_inflector_es_conjugate_simple_ser_infinititivo(tcg):
         parser=None,
     )
     tense_template = TenseTemplateParser(Lang.es, mood).parse(tense_elem)
-    tc = tcg._tense_conjugator_simple._conjugate_simple_mood_tense(
+    tc = tcg._get_tense_conjugator_simple().conjugate_simple_mood_tense(
         co.verb_stem,
         mood,
         tense,

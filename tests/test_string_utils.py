@@ -1,9 +1,8 @@
-from verbecc.src.utils.string_utils import (
+from verbecc.core.utils.string_utils import (
     get_common_letters,
     get_common_letter_count,
     starts_with_vowel,
     strip_accents,
-    unicodefix,
 )
 
 
@@ -30,7 +29,3 @@ def test_get_common_letters_count():
     assert get_common_letter_count("brett", "tolbert") == 5
     assert get_common_letter_count("çar", "cer") == 1
     assert get_common_letter_count(strip_accents("çar"), "cer") == 2
-
-
-def test_unicodefix():
-    assert unicodefix("éparpiller") == "éparpiller"

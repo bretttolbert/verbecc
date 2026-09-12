@@ -3,8 +3,8 @@ import json
 
 from tests.common import assert_json_str_equal
 
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
 
 
 @pytest.fixture(scope="module")
@@ -13,7 +13,7 @@ def ccg():
     yield ccg
 
 
-expected_value_conj_ser = {
+expected_value_conj_ser: dict[str, dict[str, object]] = {
     "moods": {
         "condicional": {
             "present": [
@@ -221,7 +221,7 @@ expected_value_conj_ser = {
     },
 }
 
-expected_value_conj_ser_nopronouns = {
+expected_value_conj_ser_nopronouns: dict[str, dict[str, object]] = {
     "moods": {
         "condicional": {
             "present": [
@@ -342,11 +342,11 @@ expected_value_conj_ser_nopronouns = {
 }
 
 
-def test_inflector_ca_conjugate_ser_to_json(ccg):
+def test_inflector_ca_conjugate_ser_to_json(ccg: CompleteConjugator):
     cc = ccg.conjugate("ser")
     assert_json_str_equal(str(cc), json.dumps(expected_value_conj_ser))
 
 
-def test_inflector_conjugate_ser_noconjpronouns_to_json(ccg):
+def test_inflector_conjugate_ser_noconjpronouns_to_json(ccg: CompleteConjugator):
     cc = ccg.conjugate("ser", conjugate_pronouns=False)
     assert_json_str_equal(str(cc), json.dumps(expected_value_conj_ser_nopronouns))

@@ -1,0 +1,1 @@
+from .mood_fr import MoodFr  # type: ignore

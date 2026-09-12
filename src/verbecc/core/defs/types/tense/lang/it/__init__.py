@@ -1,0 +1,1 @@
+from .tense_it import TenseIt  # type: ignore
