@@ -61,24 +61,26 @@
 * **Trusted**
     * Cited in [academic publications](#academic-publications-referencing-verbecc)
 
-## Quick Start
-Note: Remove `[dev]` if you don't need optional dev dependencies (`pytest` and `ruff`)
+## Installation
 
-### Option 1: Install from PyPi
+### (User) Install from PyPi
 ```bash
-pip install "verbecc[dev]"
+pip install "verbecc"
 ```
 
-### Option 2: Install from GitHub repo
+### (User) Install from GitHub repo
 ```bash
-pip install "git+https://github.com/bretttolbert/verbecc.git[dev]"
+pip install "git+https://github.com/bretttolbert/verbecc.git"
 ```
 
-### Option 3: Clone GitHub repo and install
+### (Developer) Clone GitHub repo and install
 ```bash
-git clone https://github.com/bretttolbert/verbecc.git && cd verbecc
-pip install -e ".[dev]"
+git clone git@github.com/bretttolbert/verbecc.git && cd verbecc
+python -m pip install -e ".[dev]"
 ```
+
+### Optional dependency groups
+- `[dev]` - development dependencies (includes `pytest` and `ruff`)
 
 ## Academic publications referencing verbecc
 
