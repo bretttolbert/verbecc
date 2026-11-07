@@ -20,7 +20,7 @@ magick -background none -size 512x512 -depth 8 -define png:color-type=6 logo.svg
 # Convert feature graphic SVG to PNG (24-bit, with white background)
 # 24-bit PNG (no-alpha)
 # -flatten: Tells ImageMagick to merge the transparent layers of the SVG onto that background color, completely removing the alpha channel.
-magick -background white -size 1024x500 -depth 8 -define png:color-type=2 feature_graphic.svg -flatten feature_graphic.png
+magick -background white -size 1024x500 -depth 8 -define png:color-type=2 feature-graphic.svg -flatten feature-graphic.png
 
 # Convert text elements to path and scale to 200x200 for android compatibility
 inkscape logo.svg --export-type=svg --export-text-to-path --export-width=200 --export-height=200 -o logo-android.svg

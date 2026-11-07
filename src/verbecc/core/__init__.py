@@ -1,0 +1,1 @@
+from .conjugator import CompleteConjugator as CompleteConjugator

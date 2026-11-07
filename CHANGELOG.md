@@ -1,8 +1,8 @@
 # verbecc Changelog
 
-- 2.1.0 [11 September 2026]
+- 2.1.0 [7 November 2026]
   - In a nutshell
-    - This PR (2.1.0) modernizes the project layout and drops Python 3.9 support. The biggest user-facing changes are a move to a standard src/ layout and a package rename/restructure (verbecc.src → verbecc.core). Several __init__.py files were simplified, which may break some import paths.
+    - This PR (2.1.0) modernizes the project layout and drops Python 3.9 support. The biggest user-facing changes are a move to a standard src/ layout and a package rename/restructure (verbecc.src → verbecc.core). Development and CI now use uv with locked dependencies. Several __init__.py files were simplified, which may break some import paths, but `from verbecc import CompleteConjugator` remains supported. Fixed missing wheel data and added installed-wheel smoke tests.
   - Summary (key data points)
     - PR: 2.1.0 — "Misc. modernization" (author: bretttolbert)
     - URL: https://github.com/bretttolbert/verbecc/pull/54
@@ -12,11 +12,14 @@
       - Restructured repository to standard src layout (verbecc/src/verbecc)
       - Renamed package/namespace from verbecc.src to verbecc.core
       - Simplified multiple __init__.py files (potential import breakages)
+      - Transitioned development and CI to uv with `uv.lock`
+      - Fixed wheel resource packaging and preserved the public `CompleteConjugator` import
+      - Added clean-environment wheel smoke tests for all six supported languages
       - CHANGELOG link included in PR description
     - Size: 252 files changed, +2,214 additions, −2,006 deletions (large refactor)
     - Risk assessment: Medium–High
       - Why: Large movement of files + package renames and __init__ simplifications are likely to break downstream imports, packaging, and third-party integrations. Dropping Python 3.9 reduces the test surface but may require CI and packaging updates.
-    - Tests / coverage: not reported here — recommend running test matrix on supported Python versions
+    - Validation: 36 targeted public API, conjugator, and import-style tests passed. The installed-wheel smoke test passed locally on Python 3.14 for all six languages; CI runs it across Python 3.10–3.14. Coverage and full matrix results are not reported here.
     - Breaking-change likelihood: High for consumers who imported using old package paths or relied on package layout; moderate for internal code once imports are updated.
   - Details
     - Fixed packaging, misc. modernization
@@ -30,8 +33,13 @@
         - Source is now at `verbecc/src/verbecc/core`
         - `verbecc.src` is now `verbecc.core`
       - Modified `pyproject.toml` to scan for packages inside `src`
+      - Fixed wheels missing YAML configuration, XML conjugation/verb data, trained models, and `py.typed`
+        - Replaced the non-package `trained_models` package-data key with patterns relative to the `verbecc` package
+        - Preserved existing icon and font resources
       - Removed `verbecc/__init__.py` which should not exist because this project is using a `src` layout
       - Modified (simplified) contents of a many `__init__.py` files
+        - Restored `from verbecc import CompleteConjugator` through one-level re-exports via `core` and `core.conjugator`, preserving R005/R006 compliance
+        - Added public API regression tests for re-export identity and conjugation
         - **This will likely break some things**, consequently bumping minor rev
         - Doing this to comply with new style guide rule:
           - [R006 - `__init__.py` files shall not contain imports deeper than one level](./CONTRIBUTING.md#r006---__init__py-files-shall-not-contain-imports-deeper-than-one-level)
@@ -47,13 +55,22 @@
       - Converted from `List` to modern `list`
       - Converted from `Dict` to modern `dict`
     - Modified build configuration to generate type stubs
-    - Modernized github actions CI config (`.github/workflows/python-package.yml`)
+    - Transitioned development and GitHub Actions CI to uv
+      - Added `uv.lock` for reproducible development dependency resolution
+      - Use `uv sync --locked --extra dev` to set up the project-root `.venv`
+      - Run linting and tests with `uv run --locked --extra dev ruff check .` and `uv run --locked --extra dev pytest`
+      - Run `uv lock` after changing dependencies and commit the updated lockfile
+      - Updated the [development environment instructions](./CONTRIBUTING.md#development-environment)
+    - Modernized GitHub Actions CI config (`.github/workflows/python-package.yml`)
+      - Test Python 3.10–3.14 with uv-managed environments
+      - Build the wheel, install it and its runtime dependencies into a fresh virtual environment, and conjugate one verb per supported language
+      - Run the wheel smoke test outside the checkout with `python -I` so editable installs and source-tree imports cannot hide missing package data or broken public imports
     - Migrated linter from `flake8` to `ruff`
     - Updated dependencies to explicitly specify `pytest` and `ruff` as optional `dev` dependencies
       - E.g. install verbecc including optional dev deps:
         - From PyPi: `pip install "verbecc[dev]"`
         - From GitHub: `pip install "git+https://github.com/bretttolbert/verbecc.git[dev]"`
-        - Local (editable): `pip install -e ".[dev]"`
+        - Local development: `uv sync --locked --extra dev`
     - Updated dependencies to explicitly pull optional `yaml` deps for `dataclass-wizard`
       - I.e. `"dataclass-wizard[yaml]>=0.39.1",`
 

@@ -65,7 +65,40 @@
 
 ## Installation
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first.
+Verbecc development and CI have transitioned to
+[uv](https://docs.astral.sh/uv/), using `uv.lock` for reproducible development
+environments. uv is optional for library users: Verbecc remains a standard
+Python package that you can install with pip.
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) to follow
+the examples below.
+
+### Compatibility with pip
+
+uv's pip-compatible interface lets you replace common `pip ...` commands with
+`uv pip ...` commands while continuing to use standard Python packages and
+virtual environments:
+
+| pip | uv equivalent |
+| --- | --- |
+| `pip install verbecc` | `uv pip install verbecc` |
+| `pip install --upgrade verbecc` | `uv pip install --upgrade verbecc` |
+| `pip install -e ".[dev]"` | `uv pip install -e ".[dev]"` |
+| `pip install -r requirements.txt` | `uv pip install -r requirements.txt` |
+| `pip uninstall verbecc` | `uv pip uninstall verbecc` |
+| `pip list` | `uv pip list` |
+
+By default, `uv pip` installs into an active virtual environment or a discovered
+`.venv`; create one with `uv venv` first. To target a specific interpreter, use
+`uv pip install --python /path/to/venv/bin/python verbecc`. If you prefer pip,
+use `python -m venv .venv`, activate it, and run `python -m pip install verbecc`.
+
+This compatibility covers common workflows, not every pip option or behavior.
+uv uses its own configuration and environment variables rather than
+`pip.conf` or `PIP_*` settings; see the
+[uv/pip compatibility guide](https://docs.astral.sh/uv/pip/compatibility/).
+For development in this repository, prefer `uv sync --locked --extra dev`
+over `uv pip install -e ".[dev]"` so the committed lockfile is respected.
 
 ### (User) Install from PyPi
 ```bash

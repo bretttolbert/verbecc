@@ -24,6 +24,12 @@ Use the project-root `.venv` as your editor's Python interpreter. Dependencies
 are managed in `pyproject.toml` and `uv.lock`; run `uv lock` after changing
 dependencies and commit the updated lockfile.
 
+CI also builds a wheel and installs it with its runtime dependencies into a
+fresh virtual environment for each supported Python version. The smoke test
+runs outside the checkout in Python isolated mode, imports the public
+`CompleteConjugator` entry point, and conjugates one verb in each of the six
+supported languages to catch missing package data and broken public imports.
+
 ## Style Guide
 
 ### R001 - The Python `@property` decorator shall not be used

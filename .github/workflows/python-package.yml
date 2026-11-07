@@ -43,3 +43,27 @@ jobs:
     - name: Test with pytest
       run: |
         uv run --locked --extra dev pytest
+
+    - name: Smoke test installed wheel
+      run: |
+        smoke_dir="$(mktemp -d "$RUNNER_TEMP/verbecc-wheel.XXXXXX")"
+        uv build --wheel --out-dir "$smoke_dir/dist"
+        uv venv --python "${{ matrix.python-version }}" "$smoke_dir/venv"
+        uv pip install --python "$smoke_dir/venv/bin/python" "$smoke_dir"/dist/*.whl
+        cd "$smoke_dir"
+        "$smoke_dir/venv/bin/python" -I - <<'PY'
+        from verbecc import CompleteConjugator
+        from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+
+        for lang, infinitive in [
+            (Lang.ca, "parlar"),
+            (Lang.fr, "parler"),
+            (Lang.it, "parlare"),
+            (Lang.pt, "falar"),
+            (Lang.ro, "vorbi"),
+            (Lang.es, "hablar"),
+        ]:
+            conjugation = CompleteConjugator(lang=lang).conjugate(infinitive)
+            assert conjugation, f"No conjugation for {lang}: {infinitive}"
+            print(f"Installed wheel smoke test passed: {lang} {infinitive}")
+        PY
