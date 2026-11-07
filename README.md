@@ -1,4 +1,4 @@
-![Verbecc feature graphic](src/verbecc/resources/icons/feature_graphic.png)
+![Verbecc feature graphic](src/verbecc/resources/icons/feature-graphic.png)
 
 # Python library for verb conjugation in French, Spanish, Catalan, Italian, Portuguese, and Romanian, enhanced by machine learning
 

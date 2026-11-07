@@ -22,6 +22,9 @@ magick -background none -size 512x512 -depth 8 -define png:color-type=6 logo.svg
 # -flatten: Tells ImageMagick to merge the transparent layers of the SVG onto that background color, completely removing the alpha channel.
 magick -background white -size 1024x500 -depth 8 -define png:color-type=2 feature_graphic.svg -flatten feature_graphic.png
 
+# Convert text elements to path and scale to 200x200 for android compatibility
+inkscape logo.svg --export-type=svg --export-text-to-path --export-width=200 --export-height=200 -o logo-android.svg
+
 ```
 
 ### About the Spectral Font
