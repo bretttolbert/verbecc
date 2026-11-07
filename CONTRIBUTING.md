@@ -6,7 +6,23 @@ First off, thank you for taking the time to contribute! 🎉
 
 ## Table of Contents
 
+- [Development environment](#development-environment)
 - [Style Guide](#style-guide)
+
+## Development environment
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run
+these commands from the repository root:
+
+```bash
+uv sync --locked --extra dev
+uv run --locked --extra dev ruff check .
+uv run --locked --extra dev pytest
+```
+
+Use the project-root `.venv` as your editor's Python interpreter. Dependencies
+are managed in `pyproject.toml` and `uv.lock`; run `uv lock` after changing
+dependencies and commit the updated lockfile.
 
 ## Style Guide
 
@@ -34,7 +50,7 @@ but with parentheses, I can't do that.
 
 How to check:
 ```bash
-python -m pytest -k test_STYLE_GUIDE_R005_only_relative_imports
+uv run --locked --extra dev pytest -k test_STYLE_GUIDE_R005_only_relative_imports
 ```
 
 ### R006 - `__init__.py` files shall not contain imports deeper than one level

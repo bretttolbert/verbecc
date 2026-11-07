@@ -14,6 +14,10 @@ def test_STYLE_GUIDE_R005_only_relative_imports(project_root: Path) -> None:
     command: list[str] = [
         "find",
         str(project_root),
+        "-path",
+        str(project_root / ".venv"),
+        "-prune",
+        "-o",
         "-name",
         "__init__.py",
         "-exec",

@@ -1,3 +1,5 @@
+![Verbecc feature graphic](src/verbecc/resources/icons/feature_graphic.png)
+
 # Python library for verb conjugation in French, Spanish, Catalan, Italian, Portuguese, and Romanian, enhanced by machine learning
 
 - `verbecc` python library
@@ -63,23 +65,49 @@
 
 ## Installation
 
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first.
+
 ### (User) Install from PyPi
 ```bash
-pip install "verbecc"
+uv venv
+uv pip install "verbecc"
 ```
 
 ### (User) Install from GitHub repo
 ```bash
-pip install "git+https://github.com/bretttolbert/verbecc.git"
+uv venv
+uv pip install "git+https://github.com/bretttolbert/verbecc.git"
 ```
 
 ### (Developer) Clone GitHub repo and install
 ```bash
 git clone git@github.com/bretttolbert/verbecc.git && cd verbecc
-python -m pip install -e ".[dev]"
+uv sync --locked --extra dev
 ```
 
-### Optional dependency groups
+This creates `.venv` in the project root and installs the project in editable
+mode with its development dependencies. The default development Python version
+is recorded in `.python-version`; Python 3.10 through 3.14 remain supported.
+To use another supported version, pass `--python`, for example
+`uv sync --locked --extra dev --python 3.10`.
+
+Run commands in this environment without activating it:
+```bash
+uv run --locked --extra dev pytest
+uv run --locked --extra dev ruff check .
+```
+
+In VS Code, select `.venv/bin/python` (or `.venv\Scripts\python.exe` on
+Windows) using **Python: Select Interpreter**. For an interactive shell,
+activate the environment with `source .venv/bin/activate` on POSIX or
+`.venv\Scripts\Activate.ps1` in PowerShell.
+
+Dependencies are declared in `pyproject.toml` and pinned in the committed
+`uv.lock`, which replaces `requirements.txt`. After changing dependency
+declarations, run `uv lock` and `uv sync --locked --extra dev`, and commit
+both the manifest and lockfile.
+
+### Optional dependency extras
 - `[dev]` - development dependencies (includes `pytest` and `ruff`)
 
 ## Academic publications referencing verbecc

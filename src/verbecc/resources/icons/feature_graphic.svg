@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <rect x="0" y="0" width="1024" height="500" fill="#ffffff" />
+  <g transform="scale(0.9765625)">
+    <text x="256" y="450" text-anchor="middle" font-family="Spectral-Bold" font-size="512" font-weight="bold" fill="#000091">V</text>
+    <text x="256" y="350" text-anchor="middle" font-family="Spectral-Bold" font-size="256" font-weight="bold" fill="#000091">CC</text>
+  </g>
+  <text x="512" y="235" font-family="Spectral-Bold" font-size="72" font-weight="bold" fill="#000091">Verbecc</text>
+  <text x="512" y="315" font-family="Spectral-Bold" font-size="42" font-weight="bold" fill="#000091">Complete Conjugator</text>
+</svg>

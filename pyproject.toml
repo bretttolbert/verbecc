@@ -93,6 +93,7 @@ Changelog = "https://github.com/bretttolbert/verbecc/blob/master/CHANGELOG.md"
 
 [tool.setuptools.package-data]
 trained_models = ['verbecc/data/models/*', 'py.typed']
+verbecc = ['resources/icons/*.png', 'resources/icons/*.svg', 'resources/fonts/*.ttf']
 
 [tool.setuptools.packages.find]
 where = ["src"]  # <-- This tells setuptools to scan inside src/
