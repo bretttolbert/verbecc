@@ -610,6 +610,17 @@ wheels = [
 ]
 
 [[package]]
+name = "pytest-codeblocks"
+version = "0.18.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytest" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3a/cb/5f40df7db75c0ac2555009287bb97b322f8d79f9f2bfdfb0bdb560834c28/pytest_codeblocks-0.18.0-py3-none-any.whl", hash = "sha256:3fe944dc505107421204c83e9232e0155eea1279b9425a10bee327079b272efb", size = 8009, upload-time = "2026-06-15T20:48:02.608Z" },
+]
+
+[[package]]
 name = "pyyaml"
 version = "6.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1128,6 +1139,7 @@ dependencies = [
 [package.optional-dependencies]
 dev = [
     { name = "pytest" },
+    { name = "pytest-codeblocks" },
     { name = "ruff" },
 ]
 
@@ -1144,6 +1156,7 @@ requires-dist = [
     { name = "numpy", marker = "python_full_version >= '3.10'", specifier = ">=2.0.2" },
     { name = "pyaml", specifier = ">=25.7.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.1.1" },
+    { name = "pytest-codeblocks", marker = "extra == 'dev'", specifier = ">=0.18.0" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.1.0" },
     { name = "scikit-learn", marker = "python_full_version < '3.11'", specifier = ">=1.6.1" },
     { name = "scikit-learn", marker = "python_full_version >= '3.11'", specifier = ">=1.7.2" },

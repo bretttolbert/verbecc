@@ -44,6 +44,10 @@ jobs:
       run: |
         uv run --locked --extra dev pytest
 
+    - name: Test documentation examples
+      run: |
+        uv run --locked --extra dev pytest --codeblocks README.md doc/example_output
+
     - name: Smoke test installed wheel
       run: |
         smoke_dir="$(mktemp -d "$RUNNER_TEMP/verbecc-wheel.XXXXXX")"

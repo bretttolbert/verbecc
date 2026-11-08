@@ -82,6 +82,7 @@ dependencies = [
 dev = [
   "ruff>=0.1.0",
   "pytest>=9.1.1",
+  "pytest-codeblocks>=0.18.0",
 ]
 
 [project.urls]
@@ -126,7 +127,6 @@ norecursedirs = [
     "__pycache__",
     "verbecc/data",
     "data",
-    "doc"
 ]
 addopts = [
     "--ignore=.git",
@@ -135,8 +135,7 @@ addopts = [
     "--ignore=dist",
     "--ignore=__pycache__",
     "--ignore=verbecc/data",
-    "--ignore=data",
-    "--ignore=doc"
+    "--ignore=data"
 ]
 
 [tool.ruff]

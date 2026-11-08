@@ -101,18 +101,21 @@ For development in this repository, prefer `uv sync --locked --extra dev`
 over `uv pip install -e ".[dev]"` so the committed lockfile is respected.
 
 ### (User) Install from PyPi
+<!--pytest.mark.skip(reason="Installation instructions are not run by tests")-->
 ```bash
 uv venv
 uv pip install "verbecc"
 ```
 
 ### (User) Install from GitHub repo
+<!--pytest.mark.skip(reason="Installation instructions are not run by tests")-->
 ```bash
 uv venv
 uv pip install "git+https://github.com/bretttolbert/verbecc.git"
 ```
 
 ### (Developer) Clone GitHub repo and install
+<!--pytest.mark.skip(reason="Installation instructions are not run by tests")-->
 ```bash
 git clone git@github.com/bretttolbert/verbecc.git && cd verbecc
 uv sync --locked --extra dev
@@ -125,9 +128,16 @@ To use another supported version, pass `--python`, for example
 `uv sync --locked --extra dev --python 3.10`.
 
 Run commands in this environment without activating it:
+<!--pytest.mark.skip(reason="Installation instructions are not run by tests")-->
 ```bash
 uv run --locked --extra dev pytest
 uv run --locked --extra dev ruff check .
+```
+
+Test the Python examples in the README and generated example documentation with:
+<!--pytest.mark.skip(reason="Test runner commands are not run as examples")-->
+```bash
+uv run --locked --extra dev pytest --codeblocks README.md doc/example_output
 ```
 
 In VS Code, select `.venv/bin/python` (or `.venv\Scripts\python.exe` on
@@ -141,7 +151,7 @@ declarations, run `uv lock` and `uv sync --locked --extra dev`, and commit
 both the manifest and lockfile.
 
 ### Optional dependency extras
-- `[dev]` - development dependencies (includes `pytest` and `ruff`)
+- `[dev]` - development dependencies (includes `pytest`, `pytest-codeblocks`, and `ruff`)
 
 ## Academic publications referencing verbecc
 
@@ -178,44 +188,58 @@ Originally `verbecc` used strings for most parameters. `verbecc` is now fully ty
 E.g.:
 
 ```python
->>> from verbecc import grammar_defines, localization, Moods, Tenses, Person, Number, Gender, LangCodeISO639_1 as Lang
->>> xmood = localization.xmood
->>> xtense = localization.xtense
->>> grammar_defines.SUPPORTED_LANGUAGES[Lang.fr]
-'français'
->>> xtense(Lang.fr, Tenses.en.Present)
-<TenseFr.Présent: 'présent'>
->>> xmood(Lang.fr, Moods.en.Subjunctive)
-<MoodFr.Subjonctif: 'subjonctif'>
->>> Gender.f
-<Gender.f: 'f'>
->>> Number.Singular
-<Number.Singular: 's'>
->>> Person.First
-<Person.First: '1'>
+from verbecc.core.defs.constants import grammar_defines, localization
+from verbecc.core.defs.types.gender import Gender
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.mood.moods import Moods
+from verbecc.core.defs.types.number import Number
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.tense.tenses import Tenses
+
+xmood = localization.xmood
+xtense = localization.xtense
+
+assert grammar_defines.SUPPORTED_LANGUAGES[Lang.fr] == "français"
+assert xtense(Lang.fr, Tenses.en.Present) == Tenses.fr.Présent
+assert xmood(Lang.fr, Moods.en.Subjunctive) == Moods.fr.Subjonctif
+assert Gender.f.value == "f"
+assert Number.Singular.value == "s"
+assert Person.First.value == "1"
 ```
 
 ### Multi-Language Conjugation
 
 ```python
->>> from functools import partial
->>> from verbecc import CompleteConjugator, LangCodeISO639_1 as Lang, grammar_defines, Moods, Tenses
->>> ccgs = {lang : CompleteConjugator(lang) for lang in grammar_defines.SUPPORTED_LANGUAGES}
+from verbecc import CompleteConjugator
+from verbecc.core.defs.constants import grammar_defines
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.mood.moods import Moods
+from verbecc.core.defs.types.tense.tenses import Tenses
 
->>> print([c[0] for c in ccgs[Lang.fr].conjugate('être')[Moods.fr.Indicatif][Tenses.fr.Présent]])
-['je suis', 'tu es', 'il est', 'elle est', 'on est', 'nous sommes', 'vous êtes', 'ils sont', 'elles sont']
->>> print([c[0] for c in ccgs[Lang.es].conjugate('ser')[Moods.es.Indicativo][Tenses.es.Presente]])
-['yo soy', 'tú eres', 'vos sos', 'él es', 'ella es', 'usted es', 'nosotros somos', 'vosotros sois', 'ellos son', 'ellas son', 'ustedes son']
->>> print([c[0] for c in ccgs[Lang.ca].conjugate('ser')[Moods.ca.Indicatiu][Tenses.ca.Present]])
-['jo sóc', 'tu ets', 'ell és', 'ella és', 'nosaltres som', 'vosaltres sou', 'ells són', 'elles són']
->>> print([c[0] for c in ccgs[Lang.pt].conjugate('ser')[Moods.pt.Indicativo][Tenses.pt.Presente]])
-['eu sou', 'tu és', 'ele é', 'ela é', 'nós somos', 'vós sois', 'eles são', 'elas são']
->>> print([c[0] for c in ccgs[Lang.it].conjugate('essere')[Moods.it.Indicativo][Tenses.it.Presente]])
-['io sono', 'tu sei', 'lui è', 'lei è', 'noi siamo', 'voi siete', 'loro sono']
->>> print([c[0] for c in ccgs[Lang.it].conjugate('essere')[Moods.it.Indicativo][Tenses.it.Presente]])
-['io sono', 'tu sei', 'lui è', 'lei è', 'noi siamo', 'voi siete', 'loro sono']
->>> print([c[0] for c in ccgs[Lang.ro].conjugate('fi')[Moods.ro.Indicativ][Tenses.ro.Prezent]])
-['eu sunt', 'tu ești', 'el e', 'ea e', 'noi suntem', 'voi sunteţi', 'ei sunt', 'ele sunt']
+ccgs = {
+    lang: CompleteConjugator(lang)
+    for lang in grammar_defines.SUPPORTED_LANGUAGES
+}
+
+assert [c[0] for c in ccgs[Lang.fr].conjugate("être")[Moods.fr.Indicatif][Tenses.fr.Présent]] == [
+    "je suis", "tu es", "il est", "elle est", "on est", "nous sommes", "vous êtes", "ils sont", "elles sont"
+]
+assert [c[0] for c in ccgs[Lang.es].conjugate("ser")[Moods.es.Indicativo][Tenses.es.Presente]] == [
+    "yo soy", "tú eres", "vos sos", "él es", "ella es", "usted es", "nosotros somos", "vosotros sois", "ellos son",
+    "ellas son", "ustedes son"
+]
+assert [c[0] for c in ccgs[Lang.ca].conjugate("ser")[Moods.ca.Indicatiu][Tenses.ca.Present]] == [
+    "jo sóc", "tu ets", "ell és", "ella és", "nosaltres som", "vosaltres sou", "ells són", "elles són"
+]
+assert [c[0] for c in ccgs[Lang.pt].conjugate("ser")[Moods.pt.Indicativo][Tenses.pt.Presente]] == [
+    "eu sou", "tu és", "ele é", "ela é", "você é", "nós somos", "vós sois", "eles são", "elas são", "vocês são"
+]
+assert [c[0] for c in ccgs[Lang.it].conjugate("essere")[Moods.it.Indicativo][Tenses.it.Presente]] == [
+    "io sono", "tu sei", "lui è", "lei è", "noi siamo", "voi siete", "loro sono"
+]
+assert [c[0] for c in ccgs[Lang.ro].conjugate("fi")[Moods.ro.Indicativ][Tenses.ro.Prezent]] == [
+    "eu sunt", "tu ești", "el e", "ea e", "noi suntem", "voi sunteţi", "ei sunt", "ele sunt"
+]
 ```
 
 ### Multi-Language Conjugation using English mood and tense names via localization module
@@ -223,25 +247,34 @@ E.g.:
 Observe below that strings may be still used for mood and tense, rather than the `Mood` and `Tense` (`StrEnum`) types. E.g. `indicative` is interchangeable with `Moods.en.Indicative` and `present` is interchangeable with `Tenses.en.Present`.
 
 ```python
->>> from verbecc import CompleteConjugator, localization
->>> def xconj(lang, infinitive, mood, tense):
+from verbecc import CompleteConjugator
+from verbecc.core.defs.constants import localization
+
+def xconj(lang, infinitive, mood, tense):
     m = localization.xmood(lang, mood)
     t = localization.xtense(lang, tense)
     cc = CompleteConjugator(lang).conjugate(infinitive)
     return [c[0] for c in cc[m][t]]
 
->>> xconj('fr', 'etre', 'indicative', 'present')
-['je suis', 'tu es', 'il est', 'elle est', 'on est', 'nous sommes', 'vous êtes', 'ils sont', 'elles sont']
->>> xconj('es', 'ser', 'indicative', 'present')
-['yo soy', 'tú eres', 'vos sos', 'él es', 'ella es', 'usted es', 'nosotros somos', 'vosotros sois', 'ellos son', 'ellas son', 'ustedes son']
->>> xconj('pt', 'ser', 'indicative', 'present')
-['eu sou', 'tu és', 'ele é', 'ela é', 'nós somos', 'vós sois', 'eles são', 'elas são']
->>> xconj('ca', 'ser', 'indicative', 'present')
-['jo sóc', 'tu ets', 'ell és', 'ella és', 'nosaltres som', 'vosaltres sou', 'ells són', 'elles són']
->>> xconj('it', 'essere', 'indicative', 'present')
-['io sono', 'tu sei', 'lui è', 'lei è', 'noi siamo', 'voi siete', 'loro sono']
->>> xconj('ro', 'fi', 'indicative', 'present')
-['eu sunt', 'tu ești', 'el e', 'ea e', 'noi suntem', 'voi sunteţi', 'ei sunt', 'ele sunt']
+assert xconj("fr", "etre", "indicative", "present") == [
+    "je suis", "tu es", "il est", "elle est", "on est", "nous sommes", "vous êtes", "ils sont", "elles sont"
+]
+assert xconj("es", "ser", "indicative", "present") == [
+    "yo soy", "tú eres", "vos sos", "él es", "ella es", "usted es", "nosotros somos", "vosotros sois", "ellos son",
+    "ellas son", "ustedes son"
+]
+assert xconj("pt", "ser", "indicative", "present") == [
+    "eu sou", "tu és", "ele é", "ela é", "você é", "nós somos", "vós sois", "eles são", "elas são", "vocês são"
+]
+assert xconj("ca", "ser", "indicative", "present") == [
+    "jo sóc", "tu ets", "ell és", "ella és", "nosaltres som", "vosaltres sou", "ells són", "elles són"
+]
+assert xconj("it", "essere", "indicative", "present") == [
+    "io sono", "tu sei", "lui è", "lei è", "noi siamo", "voi siete", "loro sono"
+]
+assert xconj("ro", "fi", "indicative", "present") == [
+    "eu sunt", "tu ești", "el e", "ea e", "noi suntem", "voi sunteţi", "ei sunt", "ele sunt"
+]
 ```
 
 ### Credits / Collaborators
