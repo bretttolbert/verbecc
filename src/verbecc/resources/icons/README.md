@@ -13,6 +13,14 @@ mkdir -p ~/.local/share/fonts
 cp ../fonts/Spectral-Bold.ttf ~/.local/share/fonts/
 fc-cache -f -v
 
+# Verify that font was installed (verify installed font name/style)
+$ fc-match "Spectral"
+Spectral-Bold.ttf: "Spectral" "Bold"
+$ fc-match "Spectral Bold"
+NotoSans-Regular.ttf: "Noto Sans" "Regular"
+$ fc-list | grep -i spectral
+/home/brett/.local/share/fonts/Spectral-Bold.ttf: Spectral:style=Bold
+
 # Convert logo SVG to PNG (32-bit, with transparent background)
 # 32-bit PNG (preserves the 24-bit RGB true color channels plus an 8-bit alpha transparency channel)
 magick -background none -size 512x512 -depth 8 -define png:color-type=6 logo.svg logo.png

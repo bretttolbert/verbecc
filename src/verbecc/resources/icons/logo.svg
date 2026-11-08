@@ -1,4 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <text x="256" y="450" text-anchor="middle" font-family="Spectral-Bold" font-size="512" font-weight="bold" fill="#000091">V</text>
-  <text x="256" y="350" text-anchor="middle" font-family="Spectral-Bold" font-size="256" font-weight="bold" fill="#000091">CC</text>
+  <defs>
+    <style>
+      .logo-text { text-anchor: middle; font-family: Spectral; font-weight: bold; fill: #000091; }
+      .logo-v { font-size: 512px; }
+      .logo-cc { font-size: 256px; }
+    </style>
+  </defs>
+
+  <g id="logo-group">
+    <text x="256" y="450" class="logo-text logo-v">V</text>
+    <text x="256" y="350" class="logo-text logo-cc">CC</text>
+  </g>
+
 </svg>

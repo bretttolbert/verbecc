@@ -1,9 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
-  <rect x="0" y="0" width="1024" height="500" fill="#ffffff" />
-  <g transform="scale(0.9765625)">
-    <text x="256" y="450" text-anchor="middle" font-family="Spectral-Bold" font-size="512" font-weight="bold" fill="#000091">V</text>
-    <text x="256" y="350" text-anchor="middle" font-family="Spectral-Bold" font-size="256" font-weight="bold" fill="#000091">CC</text>
+  <defs>
+    <style>
+      .logo-text { text-anchor: middle; font-family: Spectral; font-weight: bold; fill: #000091; }
+      .logo-v { font-size: 512px; }
+      .logo-cc { font-size: 256px; }
+      .background { fill: #ffffff; }
+      .feature-text { font-family: Spectral; font-weight: bold; fill: #000091; }
+      .feature-title { font-size: 72px; }
+      .feature-subtitle { font-size: 42px; }
+    </style>
+  </defs>
+
+  <g id="background-group">
+    <rect x="0" y="0" width="1024" height="500" class="background" />
   </g>
-  <text x="512" y="235" font-family="Spectral-Bold" font-size="72" font-weight="bold" fill="#000091">Verbecc</text>
-  <text x="512" y="315" font-family="Spectral-Bold" font-size="42" font-weight="bold" fill="#000091">Complete Conjugator</text>
+
+  <g id="logo-group">
+    <text x="256" y="450" class="logo-text logo-v">V</text>
+    <text x="256" y="350" class="logo-text logo-cc">CC</text>
+  </g>
+
+  <g id="feature-text-group">
+    <text x="512" y="235" class="feature-text feature-title">
+      Verbecc</text>
+    <text x="512" y="315" class="feature-text feature-subtitle">Complete
+      Conjugator</text>
+  </g>
 </svg>
