@@ -17,8 +17,8 @@ def test_or_do_spanish_conjugation_xml_mods():
     This is just a unit-test.
     (unless I change dry_run to False, that is)
     """
-    INPUT_PATH = Path("verbecc/data/xml/conjugations/conjugations-es.xml")
-    OUTPUT_PATH = Path("verbecc/data/xml/conjugations/conjugations-es.mod.xml")
+    INPUT_PATH = Path("src/verbecc/data/xml/conjugations/conjugations-es.xml")
+    OUTPUT_PATH = Path("src/verbecc/data/xml/conjugations/conjugations-es.mod.xml")
     xml_modifier.do_spanish_mods(INPUT_PATH, OUTPUT_PATH, dry_run=True)
 
 
