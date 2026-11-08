@@ -1,18 +1,19 @@
-import pytest
-from typing import List
+# pyright: reportPrivateUsage=false
 
-from verbecc.src.conjugator.complete_conjugator import CompleteConjugator
-from verbecc.src.conjugator.mood_conjugator import MoodConjugator
-from verbecc.src.conjugator.tense_conjugator import TenseConjugator
-from verbecc.src.defs.types.gender import Gender
-from verbecc.src.defs.types.lang_code import LangCodeISO639_1 as Lang
-from verbecc.src.defs.types.mood import Mood
-from verbecc.src.defs.types.mood import Moods
-from verbecc.src.defs.types.number import Number
-from verbecc.src.defs.types.person import Person
-from verbecc.src.defs.types.tense import Tense
-from verbecc.src.defs.types.tense import Tenses
-from verbecc.src.defs.types.pronoun import Pronoun, Pronouns
+import pytest
+
+from verbecc.core.conjugator.complete_conjugator import CompleteConjugator
+from verbecc.core.conjugator.mood_conjugator import MoodConjugator
+from verbecc.core.conjugator.tense_conjugator import TenseConjugator
+from verbecc.core.defs.types.conjugation.tense_conjugation import TenseConjugation
+from verbecc.core.defs.types.gender import Gender
+from verbecc.core.defs.types.lang_code import LangCodeISO639_1 as Lang
+from verbecc.core.defs.types.mood import Mood
+from verbecc.core.defs.types.mood import Moods
+from verbecc.core.defs.types.number import Number
+from verbecc.core.defs.types.person import Person
+from verbecc.core.defs.types.tense import Tense
+from verbecc.core.defs.types.tense import Tenses
 
 
 @pytest.fixture(scope="module")
@@ -33,17 +34,17 @@ def tcg():
     yield tcg
 
 
-def test_all_verbs_have_templates(ccg):
+def test_all_verbs_have_templates(ccg: CompleteConjugator):
     verbs = ccg.get_verbs()
-    template_names = ccg.get_template_names()
-    missing_templates = set()
+    template_names: list[str] = ccg.get_template_names()
+    missing_templates: set[str] = set()
     for verb in verbs:
         if verb.template not in template_names:
             missing_templates.add(verb.template)
     assert len(missing_templates) == 0
 
 
-def test_conjugate_ter_subjuntivo_preterito_perfeito(ccg):
+def test_conjugate_ter_subjuntivo_preterito_perfeito(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "ter", Moods.pt.Subjuntivo, Tenses.pt.PretéritoPerfeito
     )
@@ -61,7 +62,7 @@ def test_conjugate_ter_subjuntivo_preterito_perfeito(ccg):
     ]
 
 
-def test_conjugate_ter_infinitivo_pessoal_presente(ccg):
+def test_conjugate_ter_infinitivo_pessoal_presente(ccg: CompleteConjugator):
     """
     Ref: https://www.conjugacao.com.br/verbo-ter/
 
@@ -84,11 +85,11 @@ def test_conjugate_ter_infinitivo_pessoal_presente(ccg):
     ]
 
 
-def test_conjugate_ter_imperativo_afirmativo(ccg):
+def test_conjugate_ter_imperativo_afirmativo(ccg: CompleteConjugator):
     """
     Ref: https://www.conjugacao.com.br/verbo-ter/
     """
-    tc = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Afirmativo)
+    tc: TenseConjugation = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Afirmativo)
     assert [c[0] for c in tc] == [
         "-",
         "tem tu",
@@ -99,11 +100,11 @@ def test_conjugate_ter_imperativo_afirmativo(ccg):
     ]
 
 
-def test_conjugate_ter_imperativo_negativo(ccg):
+def test_conjugate_ter_imperativo_negativo(ccg: CompleteConjugator):
     """
     Ref: https://www.conjugacao.com.br/verbo-ter/
     """
-    tc = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Negativo)
+    tc: TenseConjugation = ccg.conjugate_mood_tense("ter", Moods.pt.Imperativo, Tenses.pt.Negativo)
     assert [c[0] for c in tc] == [
         "-",
         "não tenhas tu",
@@ -114,7 +115,7 @@ def test_conjugate_ter_imperativo_negativo(ccg):
     ]
 
 
-def test_conjugate_ter_infinitivo_pessoal_composto(ccg):
+def test_conjugate_ter_infinitivo_pessoal_composto(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "ter", Moods.pt.Infinitivo, Tenses.pt.InfinitivoPessoalComposto
     )
@@ -721,11 +722,11 @@ def test_conjugate_ter_infinitivo_pessoal_composto(ccg):
     ],
 )
 def test_inflector_pt_conjugate_mood_tense(
-    ccg,
+    ccg: CompleteConjugator,
     infinitive: str,
     mood: Mood,
     tense: Tense,
-    expected_result: List[str],
+    expected_result: list[str],
 ):
     tc = ccg.conjugate_mood_tense(infinitive, mood, tense)
     assert [c[0] for c in tc] == expected_result
@@ -753,20 +754,20 @@ def test_inflector_pt_conjugate_mood_tense(
     ],
 )
 def test_inflector_pt_get_pronouns(
-    ccg,
+    ccg: CompleteConjugator,
     person: Person,
     number: Number,
     gender: Gender,
     is_reflexive: bool,
     expected_result: str,
 ):
-    pronoun = ccg._inflector.get_pronouns(person, number, gender)[0]
+    pronoun = ccg._get_inflector().get_pronouns(person, number, gender)[0]
     if is_reflexive:
-        pronoun = ccg._inflector.make_pronoun_reflexive(pronoun)
+        pronoun = ccg._get_inflector().make_pronoun_reflexive(pronoun)
     assert pronoun == expected_result
 
 
-def test_reflexive_indicativo_presente(ccg):
+def test_reflexive_indicativo_presente(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense("vestir-se", Moods.pt.Indicativo, Tenses.pt.Presente)
     assert [c[0] for c in tc] == [
         "eu visto-me",
@@ -782,7 +783,7 @@ def test_reflexive_indicativo_presente(ccg):
     ]
 
 
-def test_reflexive_indicativo_pretérito_perfeito_composto(ccg):
+def test_reflexive_indicativo_pretérito_perfeito_composto(ccg: CompleteConjugator):
     tc = ccg.conjugate_mood_tense(
         "vestir-se", Moods.pt.Indicativo, Tenses.pt.PretéritoPerfeitoComposto
     )

@@ -1,4 +1,5 @@
 import json
+from typing import Any
 
 
 def assert_json_str_equal(s1: str, s2: str):
@@ -6,8 +7,8 @@ def assert_json_str_equal(s1: str, s2: str):
 
     ss1_original = json.loads(s1)
     ss2_original = json.loads(s2)
-    ss1_type = type(ss1_original)
-    ss2_type = type(ss2_original)
+    ss1_type: type[Any] = type(ss1_original)  # type: ignore
+    ss2_type: type[Any] = type(ss2_original)  # type: ignore
 
     # check type first, we don't want to recurse if for example one is Dict and the other is List
     is_type_match = ss1_type == ss2_type
@@ -25,9 +26,9 @@ def assert_json_str_equal(s1: str, s2: str):
     for index, _ in enumerate(ss1):
         ss1_child_value = ss1[index]
         ss2_child_value = ss2[index]
-        ss1_child_type = type(ss1_child_value)
-        ss2_child_type = type(ss2_child_value)
-        RECURSE_TYPES = [
+        ss1_child_type: type[Any] = type(ss1_child_value)  # type: ignore
+        ss2_child_type: type[Any] = type(ss2_child_value)  # type: ignore
+        RECURSE_TYPES: list[type[Any]] = [
             type(tuple),
             type(list),
             type(dict),

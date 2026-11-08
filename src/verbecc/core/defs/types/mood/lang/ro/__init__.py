@@ -1,0 +1,1 @@
+from .mood_ro import MoodRo  # type: ignore

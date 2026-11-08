@@ -1,0 +1,1 @@
+from .mood_it import MoodIt  # type: ignore

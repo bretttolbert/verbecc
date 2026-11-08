@@ -1,3 +1,5 @@
+![Verbecc feature graphic](src/verbecc/resources/icons/feature-graphic.png)
+
 # Python library for verb conjugation in French, Spanish, Catalan, Italian, Portuguese, and Romanian, enhanced by machine learning
 
 - `verbecc` python library
@@ -56,25 +58,97 @@
     * Meticulously organized source tree
     * Has a plethora of unit-tests to ensure correctness of verb conjugations
     * Continuous Integration with GitHub Actions CI/CD pipeline
-        * CI tests python 3.9, 3.10, 3.11, 3.12, 3.13 and 3.14.
+        * CI tests python 3.10, 3.11, 3.12, 3.13 and 3.14.
     * Dependencies: `scikit-learn`, `scipy`, `numpy`, `lxml`, `pyaml`, `jsbeautifier`, `importlib_resources`
 * **Trusted**
     * Cited in [academic publications](#academic-publications-referencing-verbecc)
 
+## Installation
 
-## Quick Start
+Verbecc development and CI have transitioned to
+[uv](https://docs.astral.sh/uv/), using `uv.lock` for reproducible development
+environments. uv is optional for library users: Verbecc remains a standard
+Python package that you can install with pip.
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) to follow
+the examples below.
+
+### Compatibility with pip
+
+uv's pip-compatible interface lets you replace common `pip ...` commands with
+`uv pip ...` commands while continuing to use standard Python packages and
+virtual environments:
+
+| pip | uv equivalent |
+| --- | --- |
+| `pip install verbecc` | `uv pip install verbecc` |
+| `pip install --upgrade verbecc` | `uv pip install --upgrade verbecc` |
+| `pip install -e ".[dev]"` | `uv pip install -e ".[dev]"` |
+| `pip install -r requirements.txt` | `uv pip install -r requirements.txt` |
+| `pip uninstall verbecc` | `uv pip uninstall verbecc` |
+| `pip list` | `uv pip list` |
+
+By default, `uv pip` installs into an active virtual environment or a discovered
+`.venv`; create one with `uv venv` first. To target a specific interpreter, use
+`uv pip install --python /path/to/venv/bin/python verbecc`. If you prefer pip,
+use `python -m venv .venv`, activate it, and run `python -m pip install verbecc`.
+
+This compatibility covers common workflows, not every pip option or behavior.
+uv uses its own configuration and environment variables rather than
+`pip.conf` or `PIP_*` settings; see the
+[uv/pip compatibility guide](https://docs.astral.sh/uv/pip/compatibility/).
+For development in this repository, prefer `uv sync --locked --extra dev`
+over `uv pip install -e ".[dev]"` so the committed lockfile is respected.
+
+### (User) Install from PyPi
 ```bash
-git clone https://github.com/bretttolbert/verbecc.git
-cd verbecc
-pip install .
+uv venv
+uv pip install "verbecc"
 ```
 
-### Academic publications referencing verbecc
+### (User) Install from GitHub repo
+```bash
+uv venv
+uv pip install "git+https://github.com/bretttolbert/verbecc.git"
+```
+
+### (Developer) Clone GitHub repo and install
+```bash
+git clone git@github.com/bretttolbert/verbecc.git && cd verbecc
+uv sync --locked --extra dev
+```
+
+This creates `.venv` in the project root and installs the project in editable
+mode with its development dependencies. The default development Python version
+is recorded in `.python-version`; Python 3.10 through 3.14 remain supported.
+To use another supported version, pass `--python`, for example
+`uv sync --locked --extra dev --python 3.10`.
+
+Run commands in this environment without activating it:
+```bash
+uv run --locked --extra dev pytest
+uv run --locked --extra dev ruff check .
+```
+
+In VS Code, select `.venv/bin/python` (or `.venv\Scripts\python.exe` on
+Windows) using **Python: Select Interpreter**. For an interactive shell,
+activate the environment with `source .venv/bin/activate` on POSIX or
+`.venv\Scripts\Activate.ps1` in PowerShell.
+
+Dependencies are declared in `pyproject.toml` and pinned in the committed
+`uv.lock`, which replaces `requirements.txt`. After changing dependency
+declarations, run `uv lock` and `uv sync --locked --extra dev`, and commit
+both the manifest and lockfile.
+
+### Optional dependency extras
+- `[dev]` - development dependencies (includes `pytest` and `ruff`)
+
+## Academic publications referencing verbecc
 
 - [Segura Lores, Alba. (2025) Estudio de la variación del sujeto pronominal en la ciudad de Málaga: sociolingüística cognitiva de su producción y percepción. Universität Heidelberg. pp. 69. [DOI:10.11588/heidok.00037508]](https://nbn-resolving.org/urn:nbn:de:bsz:16-heidok-375088)
 
 
-### What's new in Verbecc 2.0
+## What's new in Verbecc 2.0
 
 | verbecc 1.x | verbecc 2.x |
 | --- | --- |
@@ -92,8 +166,8 @@ pip install .
 | Array index is used to determine `Person`, i.e. `1s, 2s, 3s, 1p, 2p, 3p` | Each `Conjugation` object in the `TenseConjugation` has `Person`, `Number` and `Gender` values (any of which may be `None` if not-applicable) |
 | Returned objects are primitive (`Dict`) data types | Returned wrapper objects are subclasses of `AbstractConjugation` (e.g. `CompleteConjugation`) with `get_data()` and `to_json()` methods |
 | `Conjugator` returns `CompleteConjugationData` | `CompleteConjugator` returns wrapper type `CompleteConjugation`, `CompleteConjugation.get_data()` returns `CompleteConjugationData` |
-| (no wrapper types) | Wrapper types hierarchy: `CompleteConjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `Conjugation` -> `conjugations: List[str]` |
-| Primitive data types hierarchy: `Conjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `PersonConjugation` | Primitive data types hierarchy: `CompleteConjugationData` > `MoodsConjugationData` > `MoodConjugationData` > `TenseConjugationData` > `ConjugationData` -> `conjugations: List[str]` |
+| (no wrapper types) | Wrapper types hierarchy: `CompleteConjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `Conjugation` -> `conjugations: list[str]` |
+| Primitive data types hierarchy: `Conjugation` > `MoodsConjugation` > `MoodConjugation` > `TenseConjugation` > `PersonConjugation` | Primitive data types hierarchy: `CompleteConjugationData` > `MoodsConjugationData` > `MoodConjugationData` > `TenseConjugationData` > `ConjugationData` -> `conjugations: list[str]` |
 | `pred_score` was always included in the output | `pred_score` is only included in output if `predicted` is `true` |
 | Only returned primitive Python data | `Conjugation` objects have both `.to_json()` and `.to_yaml()` methods | | 
 
