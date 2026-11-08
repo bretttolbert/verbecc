@@ -28,7 +28,8 @@ def xml_element_to_string(elem: XmlElement,
         elem (XmlElement): The XML element to convert.
     Returns:
         str: A string representation of the XML element."""
-    return str(etree.tostring(cast(etree._Element, elem), encoding=encoding, method=method, xml_declaration=xml_declaration, pretty_print=pretty_print))  # type: ignore
+    serialized = etree.tostring(cast(etree._Element, elem), encoding=encoding, method=method, xml_declaration=xml_declaration, pretty_print=pretty_print)  # type: ignore
+    return serialized if isinstance(serialized, str) else serialized.decode(encoding)
 
 
 def xml_parse(path: Path, parser: XmlParser) -> XmlElementTree:

@@ -24,8 +24,8 @@ from verbecc.core.defs.types.tense import Tense, Tenses
 from verbecc.core.utils.logging_utils import LoggingUtils
 from verbecc.core.utils.xml_utils import xml_element_remove, xml_element_repr, xml_element_to_string, xml_element_deannotate, xml_element_xpath, xml_parse
 
-INPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.xml"
-OUTPUT_PATH = "../verbecc/data/xml/conjugations/conjugations-es.mod.xml"
+INPUT_PATH = "src/verbecc/data/xml/conjugations/conjugations-es.xml"
+OUTPUT_PATH = "src/verbecc/data/xml/conjugations/conjugations-es.mod.xml"
 
 logger = LoggingUtils.get_logger(__name__)
 
